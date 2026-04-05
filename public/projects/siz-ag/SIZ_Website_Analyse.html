@@ -1,0 +1,1644 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIZ.ch – Umfassende Website-Analyse (April 2026)</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; color: #333; padding: 40px 20px; line-height: 1.6; }
+        h1 { text-align: center; font-size: 2em; color: #1a1a2e; margin-bottom: 8px; }
+        .subtitle { text-align: center; color: #666; font-size: 1em; margin-bottom: 40px; }
+        .container { max-width: 1100px; margin: 0 auto; }
+
+        .section-card { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 32px; }
+        .section-header { padding: 20px 28px; color: white; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+        .section-header h2 { font-size: 1.3em; margin: 0; }
+        .section-header .badge { background: rgba(255,255,255,0.25); padding: 3px 12px; border-radius: 16px; font-size: 0.82em; font-weight: 600; }
+        .section-body { padding: 24px 28px; }
+
+        .bg-red { background: linear-gradient(135deg, #C62828, #EF5350); }
+        .bg-orange { background: linear-gradient(135deg, #E65100, #FFA726); }
+        .bg-blue { background: linear-gradient(135deg, #1565C0, #42A5F5); }
+        .bg-green { background: linear-gradient(135deg, #2E7D32, #66BB6A); }
+        .bg-purple { background: linear-gradient(135deg, #6A1B9A, #AB47BC); }
+        .bg-teal { background: linear-gradient(135deg, #00695C, #26A69A); }
+        .bg-dark { background: linear-gradient(135deg, #1a1a2e, #3a3a5e); }
+        .bg-indigo { background: linear-gradient(135deg, #283593, #5C6BC0); }
+        .bg-brown { background: linear-gradient(135deg, #4E342E, #8D6E63); }
+        .bg-cyan { background: linear-gradient(135deg, #006064, #00ACC1); }
+
+        /* Score Cards */
+        .score-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 32px; }
+        .score-card { background: white; border-radius: 14px; padding: 20px; text-align: center; box-shadow: 0 3px 14px rgba(0,0,0,0.07); }
+        .score-card .score { font-size: 2.2em; font-weight: 800; display: block; }
+        .score-card .score-label { font-size: 0.82em; color: #666; display: block; margin-top: 4px; }
+        .score-card .score-detail { font-size: 0.75em; color: #999; margin-top: 6px; }
+        .score-red { color: #C62828; }
+        .score-orange { color: #E65100; }
+        .score-yellow { color: #F9A825; }
+        .score-green { color: #2E7D32; }
+
+        /* Issue Table */
+        .issue-table { width: 100%; border-collapse: collapse; margin: 12px 0; }
+        .issue-table thead th { background: #f5f7fa; padding: 10px 14px; text-align: left; font-weight: 700; font-size: 0.8em; text-transform: uppercase; letter-spacing: 0.5px; color: #555; border-bottom: 2px solid #e0e0e0; }
+        .issue-table tbody td { padding: 10px 14px; border-bottom: 1px solid #eee; font-size: 0.88em; vertical-align: top; }
+        .issue-table tbody tr:hover { background: #f8f9fa; }
+
+        .sev { display: inline-block; padding: 2px 10px; border-radius: 10px; font-size: 0.75em; font-weight: 700; }
+        .sev-critical { background: #FFCDD2; color: #C62828; }
+        .sev-important { background: #FFE0B2; color: #E65100; }
+        .sev-recommendation { background: #E3F2FD; color: #1565C0; }
+        .sev-ok { background: #C8E6C9; color: #2E7D32; }
+
+        .highlight-box { background: #E3F2FD; border-left: 4px solid #1565C0; padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 12px 0; font-size: 0.9em; }
+        .highlight-box.red { background: #FFEBEE; border-left-color: #C62828; }
+        .highlight-box.green { background: #E8F5E9; border-left-color: #43A047; }
+        .highlight-box.orange { background: #FFF3E0; border-left-color: #FF9800; }
+
+        h3 { font-size: 1.05em; color: #1a1a2e; margin: 20px 0 10px 0; }
+        p { margin-bottom: 8px; font-size: 0.93em; }
+        ul { margin: 6px 0 12px 20px; font-size: 0.9em; }
+        li { margin-bottom: 4px; }
+        code { background: #f5f5f5; padding: 1px 6px; border-radius: 4px; font-size: 0.88em; color: #C62828; }
+
+        .check-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin: 12px 0; }
+        .check-item { background: #f8f9fa; border-radius: 10px; padding: 12px 16px; display: flex; align-items: flex-start; gap: 10px; }
+        .check-icon { font-size: 1.2em; flex-shrink: 0; margin-top: 2px; }
+        .check-text { font-size: 0.88em; }
+        .check-text strong { display: block; margin-bottom: 2px; }
+
+        .footer { text-align: center; color: #999; font-size: 0.82em; margin-top: 40px; padding-top: 20px; border-top: 1px solid #e0e0e0; }
+
+        @media (max-width: 768px) {
+            body { padding: 20px 12px; }
+            h1 { font-size: 1.5em; }
+            .section-body { padding: 16px; }
+            .score-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <h1>Website-Analyse: siz.ch</h1>
+    <p class="subtitle">Umfassende inhaltliche, technische und SEO-Analyse · Stand April 2026</p>
+
+    <!-- ============================================ -->
+    <!-- GESAMTBEWERTUNG -->
+    <!-- ============================================ -->
+    <div class="score-grid">
+        <div class="score-card">
+            <span class="score score-orange">D+</span>
+            <span class="score-label">SEO On-Page</span>
+            <span class="score-detail">Generische Titles, fehlende Meta Descriptions, keine OG-Tags</span>
+        </div>
+        <div class="score-card">
+            <span class="score score-red">D</span>
+            <span class="score-label">Sicherheit</span>
+            <span class="score-detail">REST-API offen, Admin-User exponiert, keine Security-Headers</span>
+        </div>
+        <div class="score-card">
+            <span class="score score-orange">D+</span>
+            <span class="score-label">Performance</span>
+            <span class="score-detail">334 KB HTML, massives Inline-CSS, 18+ JS-Dateien</span>
+        </div>
+        <div class="score-card">
+            <span class="score score-red">D-</span>
+            <span class="score-label">Inhaltliche Vollständigkeit</span>
+            <span class="score-detail">Keine Zielgruppen-Seiten, kein KI-Bezug, keine Benefits</span>
+        </div>
+        <div class="score-card">
+            <span class="score score-yellow">C</span>
+            <span class="score-label">Barrierefreiheit</span>
+            <span class="score-detail">15/25 Bilder ohne Alt-Text, Zoom blockiert</span>
+        </div>
+        <div class="score-card">
+            <span class="score score-orange">C-</span>
+            <span class="score-label">Conversion</span>
+            <span class="score-detail">Kein Newsletter, kein Lead-Magnet, keine Preisübersicht</span>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- KRITISCHE SICHERHEITSPROBLEME -->
+    <!-- ============================================ -->
+    <div class="section-card">
+        <div class="section-header bg-red">
+            <h2>Kritische Sicherheitsprobleme</h2>
+            <span class="badge">Sofort handeln</span>
+        </div>
+        <div class="section-body">
+            <div class="highlight-box red">
+                <strong>Diese Probleme gefährden die Sicherheit der Website und sollten innerhalb von Tagen behoben werden.</strong>
+            </div>
+            <table class="issue-table">
+                <thead><tr><th>Problem</th><th>Schwere</th><th>Detail</th><th>Lösung</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td><strong>WordPress REST-API komplett öffentlich</strong></td>
+                        <td><span class="sev sev-critical">Kritisch</span></td>
+                        <td><code>/wp-json/</code> offenbart 17 API-Namespaces, 200+ Routen, Plugins, Benutzer und Seitenstruktur – ohne Authentifizierung</td>
+                        <td>REST-API für nicht-eingeloggte Nutzer sperren (Plugin «Disable REST API» oder Code-Snippet im Theme)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Admin-Benutzer «admin» exponiert</strong></td>
+                        <td><span class="sev sev-critical">Kritisch</span></td>
+                        <td>Benutzername «admin» ist über 3 Wege auffindbar: <code>/wp-json/wp/v2/users</code>, <code>/?author=1</code>, <code>author-sitemap.xml</code></td>
+                        <td>1) Benutzernamen «admin» umbenennen 2) Autoren-Archive in Yoast deaktivieren 3) REST-API einschränken</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Fehlende Security-Headers</strong></td>
+                        <td><span class="sev sev-critical">Kritisch</span></td>
+                        <td>Kein HSTS, kein X-Frame-Options, kein Content-Security-Policy, kein X-Content-Type-Options</td>
+                        <td>In <code>.htaccess</code> ergänzen: <code>Strict-Transport-Security</code>, <code>X-Frame-Options: SAMEORIGIN</code>, <code>X-Content-Type-Options: nosniff</code></td>
+                    </tr>
+                    <tr>
+                        <td><strong>WordPress-Version exponiert</strong></td>
+                        <td><span class="sev sev-critical">Kritisch</span></td>
+                        <td>WordPress 6.9.4 sichtbar im RSS-Feed (<code>/feed/</code>) – erleichtert gezielte Angriffe</td>
+                        <td><code>remove_action('wp_head', 'wp_generator');</code> und Feed-Generator filtern</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Login-Seite ungeschützt</strong></td>
+                        <td><span class="sev sev-important">Wichtig</span></td>
+                        <td><code>/wp-login.php</code> zugänglich ohne CAPTCHA, 2FA oder Rate-Limiting</td>
+                        <td>reCAPTCHA oder Login-Schutz-Plugin installieren, 2FA aktivieren</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Divi Theme-Version sichtbar</strong></td>
+                        <td><span class="sev sev-important">Wichtig</span></td>
+                        <td>Divi 4.27.6 identifizierbar über CSS/JS-Pfade – Angreifer können gezielt nach Divi-Schwachstellen suchen</td>
+                        <td>Versionsnummern aus Asset-URLs entfernen</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- TOTE LINKS & SUBDOMAINS -->
+    <!-- ============================================ -->
+    <div class="section-card">
+        <div class="section-header bg-orange">
+            <h2>Tote Links &amp; nicht erreichbare Subdomains</h2>
+            <span class="badge">10 Probleme gefunden</span>
+        </div>
+        <div class="section-body">
+
+            <h3>Nicht erreichbare Subdomains (Server offline)</h3>
+            <div class="highlight-box red">
+                <strong>4 Subdomains liefern ECONNREFUSED – kein Webserver erreichbar:</strong>
+            </div>
+            <table class="issue-table">
+                <thead><tr><th>URL</th><th>Schwere</th><th>Erwartete Funktion</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td><code>school.siz.ch</code></td>
+                        <td><span class="sev sev-critical">Kritisch</span></td>
+                        <td>Schulverwaltungsplattform / Partnerschulliste – von der Hauptseite unter «Suche Bildungsinstitute» verlinkt</td>
+                    </tr>
+                    <tr>
+                        <td><code>pruefung.siz.ch</code></td>
+                        <td><span class="sev sev-critical">Kritisch</span></td>
+                        <td>Prüfungsplattform – Kerngeschäft einer Prüfungsorganisation</td>
+                    </tr>
+                    <tr>
+                        <td><code>aargau.siz.ch</code></td>
+                        <td><span class="sev sev-important">Wichtig</span></td>
+                        <td>Regionales Kompetenzcenter Aargau</td>
+                    </tr>
+                    <tr>
+                        <td><code>rheintal.siz.ch</code></td>
+                        <td><span class="sev sev-important">Wichtig</span></td>
+                        <td>Regionales Kompetenzcenter Rheintal</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Funktionierende Subdomain: exam.siz.ch</h3>
+            <table class="issue-table">
+                <thead><tr><th>URL</th><th>Status</th><th>Funktion</th><th>Hinweise</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td><code>exam.siz.ch</code></td>
+                        <td><span class="sev sev-ok">Online</span></td>
+                        <td><strong>Online-Prüfungsplattform</strong> – Joomla-basiert. Simulierte Website-Umgebung für praktische SIZ-Modulprüfungen (z.B. <code>/AU1-036/</code> = Modul AU1, Aufgabe 036). Prüflinge führen Aufgaben direkt auf dieser Seite aus (suchen, navigieren, Texte kopieren etc.).</td>
+                        <td>
+                            <ul style="margin:4px 0 0 16px;">
+                                <li><span class="sev sev-important">Veraltete Adresse</span> – zeigt noch «Schaffhauserstrasse 61, 8302 Kloten» statt aktuelle Adresse «Reitergasse 9, 8004 Zürich»</li>
+                                <li><span class="sev sev-recommendation">Empfehlung</span> – Prüfen ob alle Module aktuelle Prüfungsseiten haben und Links auf exam.siz.ch von der Hauptseite erreichbar sind</li>
+                                <li><span class="sev sev-recommendation">SEO</span> – exam.siz.ch sollte in der robots.txt auf <code>noindex</code> stehen (Prüfungsinhalte sollen nicht von Google indexiert werden)</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>mysiz.siz.ch</code></td>
+                        <td><span class="sev sev-ok">Online</span></td>
+                        <td><strong>Login-Portal mySIZ</strong> – Zugang für Partnerschulen, Dozierende und Prüfungsteilnehmende. Von der Hauptseite als «Login mySIZ» Button verlinkt.</td>
+                        <td><span class="sev sev-recommendation">Empfehlung</span> – Neues mySIZ-System startet laut Newsflash am 09.04.2026</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="highlight-box">
+                <strong>Subdomain-Übersicht:</strong> SIZ betreibt mindestens 7 Subdomains. Davon sind 2 funktional (<code>exam.siz.ch</code>, <code>mysiz.siz.ch</code>), 4 offline (<code>school</code>, <code>pruefung</code>, <code>aargau</code>, <code>rheintal</code>). Die offline-Subdomains sollten entweder reaktiviert oder die DNS-Einträge entfernt werden.
+            </div>
+
+            <h3>exam.siz.ch – 29 Prüfungswebseiten im Detail</h3>
+            <p style="margin-bottom:12px;">Auf <code>exam.siz.ch</code> befinden sich simulierte Websites, die als Arbeitsumgebung für praktische SIZ-Prüfungen dienen. 2 Generationen: Joomla (älter) und WordPress/Divi (neuer). Aktuell existieren nur Seiten für <strong>AU1</strong> und <strong>SU1</strong> – keine anderen Module.</p>
+
+            <table class="issue-table" id="examTable">
+                <thead><tr><th style="width:30px;">#</th><th>Link</th><th>Thema</th><th>CMS</th><th style="width:60px;">Erledigt</th><th style="width:100px;">Verantwortlich</th></tr></thead>
+                <tbody>
+                    <tr><td>1</td><td><a href="https://exam.siz.ch/AU1-000/" target="_blank">exam.siz.ch/AU1-000/</a></td><td>Typografie &amp; Webdesign (Serifen, Schriftarten)</td><td>Joomla</td><td style="text-align:center;"><input type="checkbox" data-key="exam-1" onchange="saveCheck(this)"></td><td><input type="text" data-key="resp-1" onchange="saveResp(this)" style="width:90px;border:1px solid #ddd;border-radius:4px;padding:3px 6px;font-size:0.85em;" placeholder="Kürzel"></td></tr>
+                    <tr><td>2</td><td><a href="https://exam.siz.ch/AU1-031/" target="_blank">exam.siz.ch/AU1-031/</a></td><td>Lissabon, Portugal (Geschichte, Phönizier bis Neuzeit)</td><td>Joomla</td><td style="text-align:center;"><input type="checkbox" data-key="exam-2" onchange="saveCheck(this)"></td><td><input type="text" data-key="resp-2" onchange="saveResp(this)" style="width:90px;border:1px solid #ddd;border-radius:4px;padding:3px 6px;font-size:0.85em;" placeholder="Kürzel"></td></tr>
+                    <tr><td>3</td><td><a href="https://exam.siz.ch/AU1-032/" target="_blank">exam.siz.ch/AU1-032/</a></td><td>Steine (Karlu Karlu, Australien)</td><td>Joomla</td><td style="text-align:center;"><input type="checkbox" data-key="exam-3" onchange="saveCheck(this)"></td><td><input type="text" data-key="resp-3" onchange="saveResp(this)" style="width:90px;border:1px solid #ddd;border-radius:4px;padding:3px 6px;font-size:0.85em;" placeholder="Kürzel"></td></tr>
+                    <tr><td>4</td><td><a href="https://exam.siz.ch/AU1-034/" target="_blank">exam.siz.ch/AU1-034/</a></td><td>Schweizer Fasnacht (Karneval, Traditionen)</td><td>Joomla</td><td style="text-align:center;"><input type="checkbox" data-key="exam-4" onchange="saveCheck(this)"></td><td><input type="text" data-key="resp-4" onchange="saveResp(this)" style="width:90px;border:1px solid #ddd;border-radius:4px;padding:3px 6px;font-size:0.85em;" placeholder="Kürzel"></td></tr>
+                    <tr><td>5</td><td><a href="https://exam.siz.ch/AU1-035/" target="_blank">exam.siz.ch/AU1-035/</a></td><td>Eis &amp; Wasser (H2O, Aggregatzustände, Antarktis)</td><td>Joomla</td><td style="text-align:center;"><input type="checkbox" data-key="exam-5" onchange="saveCheck(this)"></td><td><input type="text" data-key="resp-5" onchange="saveResp(this)" style="width:90px;border:1px solid #ddd;border-radius:4px;padding:3px 6px;font-size:0.85em;" placeholder="Kürzel"></td></tr>
+                    <tr><td>6</td><td><a href="https://exam.siz.ch/AU1-036/" target="_blank">exam.siz.ch/AU1-036/</a></td><td>Triest, Italien (Napoleon, Hafenstadt)</td><td>Joomla</td><td style="text-align:center;"><input type="checkbox" data-key="exam-6" onchange="saveCheck(this)"></td><td><input type="text" data-key="resp-6" onchange="saveResp(this)" style="width:90px;border:1px solid #ddd;border-radius:4px;padding:3px 6px;font-size:0.85em;" placeholder="Kürzel"></td></tr>
+                    <tr><td>7</td><td><a href="https://exam.siz.ch/AU1-037/" target="_blank">exam.siz.ch/AU1-037/</a></td><td>Wien, Österreich (Habsburg, Sissi, Schlösser)</td><td>Joomla</td><td style="text-align:center;"><input type="checkbox" data-key="exam-7" onchange="saveCheck(this)"></td><td><input type="text" data-key="resp-7" onchange="saveResp(this)" style="width:90px;border:1px solid #ddd;border-radius:4px;padding:3px 6px;font-size:0.85em;" placeholder="Kürzel"></td></tr>
+                    <tr><td>8</td><td><a href="https://exam.siz.ch/AU1-038/" target="_blank">exam.siz.ch/AU1-038/</a></td><td>Verzasca, Tessin (Staudamm 220m, Bungee)</td><td>Joomla</td><td style="text-align:center;"><input type="checkbox" data-key="exam-8" onchange="saveCheck(this)"></td><td><input type="text" data-key="resp-8" onchange="saveResp(this)" style="width:90px;border:1px solid #ddd;border-radius:4px;padding:3px 6px;font-size:0.85em;" placeholder="Kürzel"></td></tr>
+                    <tr><td>9</td><td><a href="https://exam.siz.ch/AU1-039/" target="_blank">exam.siz.ch/AU1-039/</a></td><td>Island (Vulkaninsel, Gletscher, Wasserfälle)</td><td>Joomla</td><td style="text-align:center;"><input type="checkbox" data-key="exam-9" onchange="saveCheck(this)"></td><td><input type="text" data-key="resp-9" onchange="saveResp(this)" style="width:90px;border:1px solid #ddd;border-radius:4px;padding:3px 6px;font-size:0.85em;" placeholder="Kürzel"></td></tr>
+                    <tr><td>10</td><td><a href="https://exam.siz.ch/AU1-040/" target="_blank">exam.siz.ch/AU1-040/</a></td><td>Schottland (Edinburgh, Whisky Distillery)</td><td>Joomla</td><td style="text-align:center;"><input type="checkbox" data-key="exam-10" onchange="saveCheck(this)"></td><td><input type="text" data-key="resp-10" onchange="saveResp(this)" style="width:90px;border:1px solid #ddd;border-radius:4px;padding:3px 6px;font-size:0.85em;" placeholder="Kürzel"></td></tr>
+                    <tr><td>11</td><td><a href="https://exam.siz.ch/AU1-041/" target="_blank">exam.siz.ch/AU1-041/</a></td><td>Schottland (identisch mit 040)</td><td>Joomla</td><td style="text-align:center;"><input type="checkbox" data-key="exam-11" onchange="saveCheck(this)"></td><td><input type="text" data-key="resp-11" onchange="saveResp(this)" style="width:90px;border:1px solid #ddd;border-radius:4px;padding:3px 6px;font-size:0.85em;" placeholder="Kürzel"></td></tr>
+                    <tr><td>12</td><td><a href="https://exam.siz.ch/AU1-044/" target="_blank">exam.siz.ch/AU1-044/</a></td><td>Island (Nordlichter, Blog-Posts)</td><td>WordPress/Divi</td><td style="text-align:center;"><input type="checkbox" data-key="exam-12" onchange="saveCheck(this)"></td><td><input type="text" data-key="resp-12" onchange="saveResp(this)" style="width:90px;border:1px solid #ddd;border-radius:4px;padding:3px 6px;font-size:0.85em;" placeholder="Kürzel"></td></tr>
+                    <tr><td>13</td><td><a href="https://exam.siz.ch/AU1-045/" target="_blank">exam.siz.ch/AU1-045/</a></td><td>Island (identisch mit 044)</td><td>WordPress/Divi</td><td style="text-align:center;"><input type="checkbox" data-key="exam-13" onchange="saveCheck(this)"></td><td><input type="text" data-key="resp-13" onchange="saveResp(this)" style="width:90px;border:1px solid #ddd;border-radius:4px;padding:3px 6px;font-size:0.85em;" placeholder="Kürzel"></td></tr>
+                    <tr><td>14</td><td><a href="https://exam.siz.ch/AU1-046/" target="_blank">exam.siz.ch/AU1-046/</a></td><td>Mexiko (Mexico City)</td><td>WordPress/Divi</td><td style="text-align:center;"><input type="checkbox" data-key="exam-14" onchange="saveCheck(this)"></td><td><input type="text" data-key="resp-14" onchange="saveResp(this)" style="width:90px;border:1px solid #ddd;border-radius:4px;padding:3px 6px;font-size:0.85em;" placeholder="Kürzel"></td></tr>
+                    <tr><td>15</td><td><a href="https://exam.siz.ch/AU1-047/" target="_blank">exam.siz.ch/AU1-047/</a></td><td>Helsinki, Finnland</td><td>WordPress/Divi</td><td style="text-align:center;"><input type="checkbox" data-key="exam-15" onchange="saveCheck(this)"></td><td><input type="text" data-key="resp-15" onchange="saveResp(this)" style="width:90px;border:1px solid #ddd;border-radius:4px;padding:3px 6px;font-size:0.85em;" placeholder="Kürzel"></td></tr>
+                    <tr><td>16</td><td><a href="https://exam.siz.ch/AU1-048/" target="_blank">exam.siz.ch/AU1-048/</a></td><td>Sommerferien/Reiseziele (Sommerhighlights)</td><td>WordPress/Divi</td><td style="text-align:center;"><input type="checkbox" data-key="exam-16" onchange="saveCheck(this)"></td><td><input type="text" data-key="resp-16" onchange="saveResp(this)" style="width:90px;border:1px solid #ddd;border-radius:4px;padding:3px 6px;font-size:0.85em;" placeholder="Kürzel"></td></tr>
+                    <tr><td>17</td><td><a href="https://exam.siz.ch/AU1-049/" target="_blank">exam.siz.ch/AU1-049/</a></td><td>Winterhighlights (Skigebiete, Schnee)</td><td>WordPress/Divi</td><td style="text-align:center;"><input type="checkbox" data-key="exam-17" onchange="saveCheck(this)"></td><td><input type="text" data-key="resp-17" onchange="saveResp(this)" style="width:90px;border:1px solid #ddd;border-radius:4px;padding:3px 6px;font-size:0.85em;" placeholder="Kürzel"></td></tr>
+                    <tr><td>18</td><td><a href="https://exam.siz.ch/AU1-050/" target="_blank">exam.siz.ch/AU1-050/</a></td><td>KursWerk (fiktiver Kursanbieter)</td><td>WordPress/Divi</td><td style="text-align:center;"><input type="checkbox" data-key="exam-18" onchange="saveCheck(this)"></td><td><input type="text" data-key="resp-18" onchange="saveResp(this)" style="width:90px;border:1px solid #ddd;border-radius:4px;padding:3px 6px;font-size:0.85em;" placeholder="Kürzel"></td></tr>
+                    <tr><td>19</td><td><a href="https://exam.siz.ch/AU1-051/" target="_blank">exam.siz.ch/AU1-051/</a></td><td>KursWerk (identisch mit 050)</td><td>WordPress/Divi</td><td style="text-align:center;"><input type="checkbox" data-key="exam-19" onchange="saveCheck(this)"></td><td><input type="text" data-key="resp-19" onchange="saveResp(this)" style="width:90px;border:1px solid #ddd;border-radius:4px;padding:3px 6px;font-size:0.85em;" placeholder="Kürzel"></td></tr>
+                    <tr><td>20</td><td><a href="https://exam.siz.ch/AU1-052/" target="_blank">exam.siz.ch/AU1-052/</a></td><td>KursWerk (identisch mit 050)</td><td>WordPress/Divi</td><td style="text-align:center;"><input type="checkbox" data-key="exam-20" onchange="saveCheck(this)"></td><td><input type="text" data-key="resp-20" onchange="saveResp(this)" style="width:90px;border:1px solid #ddd;border-radius:4px;padding:3px 6px;font-size:0.85em;" placeholder="Kürzel"></td></tr>
+                    <tr><td>21</td><td><a href="https://exam.siz.ch/AU1-053/" target="_blank">exam.siz.ch/AU1-053/</a></td><td>KursWerk (identisch mit 050)</td><td>WordPress/Divi</td><td style="text-align:center;"><input type="checkbox" data-key="exam-21" onchange="saveCheck(this)"></td><td><input type="text" data-key="resp-21" onchange="saveResp(this)" style="width:90px;border:1px solid #ddd;border-radius:4px;padding:3px 6px;font-size:0.85em;" placeholder="Kürzel"></td></tr>
+                    <tr><td colspan="6" style="background:#f5f7fa; font-weight:700;">SU1-Module (Smart-User)</td></tr>
+                    <tr><td>22</td><td><a href="https://exam.siz.ch/SU1-031/" target="_blank">exam.siz.ch/SU1-031/</a></td><td>Korbball/Basketball (1891, James Naismith)</td><td>Joomla</td><td style="text-align:center;"><input type="checkbox" data-key="exam-22" onchange="saveCheck(this)"></td><td><input type="text" data-key="resp-22" onchange="saveResp(this)" style="width:90px;border:1px solid #ddd;border-radius:4px;padding:3px 6px;font-size:0.85em;" placeholder="Kürzel"></td></tr>
+                    <tr><td>23</td><td><a href="https://exam.siz.ch/SU1-032/" target="_blank">exam.siz.ch/SU1-032/</a></td><td>Steine (Karlu Karlu, wie AU1-032)</td><td>Joomla</td><td style="text-align:center;"><input type="checkbox" data-key="exam-23" onchange="saveCheck(this)"></td><td><input type="text" data-key="resp-23" onchange="saveResp(this)" style="width:90px;border:1px solid #ddd;border-radius:4px;padding:3px 6px;font-size:0.85em;" placeholder="Kürzel"></td></tr>
+                    <tr><td>24</td><td><a href="https://exam.siz.ch/SU1-033/" target="_blank">exam.siz.ch/SU1-033/</a></td><td>Frühling (Frühlingsboten, Naturerwachen)</td><td>Joomla</td><td style="text-align:center;"><input type="checkbox" data-key="exam-24" onchange="saveCheck(this)"></td><td><input type="text" data-key="resp-24" onchange="saveResp(this)" style="width:90px;border:1px solid #ddd;border-radius:4px;padding:3px 6px;font-size:0.85em;" placeholder="Kürzel"></td></tr>
+                    <tr><td>25</td><td><a href="https://exam.siz.ch/SU1-034/" target="_blank">exam.siz.ch/SU1-034/</a></td><td>Furka Dampfbahn (Schweizer Dampfeisenbahn)</td><td>Joomla</td><td style="text-align:center;"><input type="checkbox" data-key="exam-25" onchange="saveCheck(this)"></td><td><input type="text" data-key="resp-25" onchange="saveResp(this)" style="width:90px;border:1px solid #ddd;border-radius:4px;padding:3px 6px;font-size:0.85em;" placeholder="Kürzel"></td></tr>
+                    <tr><td>26</td><td><a href="https://exam.siz.ch/SU1-035/" target="_blank">exam.siz.ch/SU1-035/</a></td><td>Tibetische Hängebrücke, Tessin (270m, 130m hoch)</td><td>Joomla</td><td style="text-align:center;"><input type="checkbox" data-key="exam-26" onchange="saveCheck(this)"></td><td><input type="text" data-key="resp-26" onchange="saveResp(this)" style="width:90px;border:1px solid #ddd;border-radius:4px;padding:3px 6px;font-size:0.85em;" placeholder="Kürzel"></td></tr>
+                    <tr><td>27</td><td><a href="https://exam.siz.ch/SU1-036/" target="_blank">exam.siz.ch/SU1-036/</a></td><td>Schweizer Seen (1500+ Seen, Genfersee)</td><td>Joomla</td><td style="text-align:center;"><input type="checkbox" data-key="exam-27" onchange="saveCheck(this)"></td><td><input type="text" data-key="resp-27" onchange="saveResp(this)" style="width:90px;border:1px solid #ddd;border-radius:4px;padding:3px 6px;font-size:0.85em;" placeholder="Kürzel"></td></tr>
+                    <tr><td>28</td><td><a href="https://exam.siz.ch/SU1-038/" target="_blank">exam.siz.ch/SU1-038/</a></td><td>Pinguine (18 Arten, Antarktis)</td><td>Joomla</td><td style="text-align:center;"><input type="checkbox" data-key="exam-28" onchange="saveCheck(this)"></td><td><input type="text" data-key="resp-28" onchange="saveResp(this)" style="width:90px;border:1px solid #ddd;border-radius:4px;padding:3px 6px;font-size:0.85em;" placeholder="Kürzel"></td></tr>
+                    <tr><td>29</td><td><a href="https://exam.siz.ch/SU1-039/" target="_blank">exam.siz.ch/SU1-039/</a></td><td>KursWerk (fiktiver Kursanbieter)</td><td>Joomla</td><td style="text-align:center;"><input type="checkbox" data-key="exam-29" onchange="saveCheck(this)"></td><td><input type="text" data-key="resp-29" onchange="saveResp(this)" style="width:90px;border:1px solid #ddd;border-radius:4px;padding:3px 6px;font-size:0.85em;" placeholder="Kürzel"></td></tr>
+                </tbody>
+            </table>
+
+            <h3>Empfehlungen zu exam.siz.ch</h3>
+            <table class="issue-table">
+                <thead><tr><th>Empfehlung</th><th>Detail</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Adresse aktualisieren</strong></td>
+                        <td>Alle 29 Seiten zeigen «Schaffhauserstrasse 61, 8302 Kloten» – die aktuelle Adresse ist Reitergasse 9, 8004 Zürich. Footer auf allen Seiten (Joomla + WordPress) anpassen.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Impressum rechtlich nachbessern</strong></td>
+                        <td>Kein eigenständiges Impressum vorhanden (<code>/impressum/</code> gibt 404). Im Footer fehlen: E-Mail, Telefon, UID-Nummer, Vertretungsberechtigte. Auch wenn es Prüfungsseiten sind – sie sind öffentlich zugänglich und sollten minimal rechtskonform sein.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Datenschutzerklärung ergänzen</strong></td>
+                        <td>Keine Datenschutzseite auf exam.siz.ch. Mindestens ein Link auf die Datenschutzbestimmungen von siz.ch sollte im Footer stehen.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>robots.txt / noindex</strong></td>
+                        <td>Prüfungsinhalte sollten nicht von Google indexiert werden. <code>noindex</code>-Tag auf allen Seiten setzen oder via <code>robots.txt</code> blockieren. Aktuell sind die Prüfungsseiten öffentlich auffindbar.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nur AU1 und SU1 – keine anderen Module</strong></td>
+                        <td>Es existieren nur Prüfungswebseiten für 2 von 15 Modulen. Falls andere Module ebenfalls webbasierte Prüfungen erfordern, fehlen die Seiten. Falls nicht nötig: dokumentieren warum nur AU1/SU1.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Duplikate bereinigen</strong></td>
+                        <td>Mehrere Seiten sind identisch: AU1-040/041 (Schottland), AU1-044/045 (Island), AU1-050/051/052/053 (KursWerk). Prüfen ob Duplikate beabsichtigt (z.B. für Parallelprüfungen) oder versehentlich.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Zwei CMS-Systeme vereinheitlichen</strong></td>
+                        <td>Ältere Seiten laufen auf Joomla, neuere auf WordPress/Divi. Langfristig auf ein System konsolidieren, um Wartungsaufwand zu reduzieren.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Wikipedia-Inhalte: Urheberrecht prüfen</strong></td>
+                        <td>Viele Inhalte stammen offensichtlich aus Wikipedia. Da Wikipedia unter CC BY-SA-Lizenz steht, müsste die Quelle genannt werden. In einer Prüfungsumgebung ist das vermutlich unkritisch, aber ein Vermerk «Inhalte basieren auf Wikipedia (CC BY-SA)» wäre sauber.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>404-Fehler (Seite nicht gefunden)</h3>
+            <table class="issue-table">
+                <thead><tr><th>URL</th><th>Schwere</th><th>Empfehlung</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td><code>/datenschutz/</code></td>
+                        <td><span class="sev sev-critical">Kritisch</span></td>
+                        <td>Datenschutzerklärung ist rechtlich vorgeschrieben (nDSG seit 1.9.2023). Seite MUSS erstellt werden. Es gibt nur ein PDF.</td>
+                    </tr>
+                    <tr>
+                        <td><code>/angebot/ict-professional-systems-network-siz/</code></td>
+                        <td><span class="sev sev-critical">Kritisch</span></td>
+                        <td>Hauptdiplom ohne eigene Seite. 301-Redirect auf <code>/angebot/ict-power-user-siz-systems-network/</code> oder eigene Seite erstellen</td>
+                    </tr>
+                    <tr>
+                        <td><code>/partnerschulen/</code></td>
+                        <td><span class="sev sev-important">Wichtig</span></td>
+                        <td>301-Redirect auf <code>/partner/</code> einrichten</td>
+                    </tr>
+                    <tr>
+                        <td><code>/faq/</code></td>
+                        <td><span class="sev sev-important">Wichtig</span></td>
+                        <td>FAQ-Seite erstellen – hoher SEO-Wert und Nutzernutzen</td>
+                    </tr>
+                    <tr>
+                        <td><code>/downloads/</code></td>
+                        <td><span class="sev sev-important">Wichtig</span></td>
+                        <td>Download-Seite für AGB, Prüfungsreglement, Flyer erstellen</td>
+                    </tr>
+                    <tr>
+                        <td><code>/blog/</code></td>
+                        <td><span class="sev sev-recommendation">Empfehlung</span></td>
+                        <td>Redirect auf <code>/ueber-uns/news/</code> oder eigenständigen Blog erstellen</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Tippfehler auf der Website</h3>
+            <table class="issue-table">
+                <thead><tr><th>Stelle</th><th>Fehler</th><th>Korrekt</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td>Homepage, Navigation &amp; CTA-Button</td>
+                        <td><code>Suche Bildungsinsitute</code></td>
+                        <td><code>Suche Bildungsinstitute</code></td>
+                    </tr>
+                    <tr>
+                        <td>News-Bereich, 3 Links</td>
+                        <td><code>read more</code> (englisch)</td>
+                        <td><code>mehr erfahren</code> (deutsch – konsistent mit Rest der Seite)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- SEO-ANALYSE -->
+    <!-- ============================================ -->
+    <div class="section-card">
+        <div class="section-header bg-blue">
+            <h2>SEO-Analyse</h2>
+            <span class="badge">On-Page &amp; Technisch</span>
+        </div>
+        <div class="section-body">
+
+            <h3>Title-Tags</h3>
+            <table class="issue-table">
+                <thead><tr><th>Seite</th><th>Aktueller Title</th><th>Problem</th><th>Empfehlung</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td>Homepage</td>
+                        <td><code>Home - SIZ</code></td>
+                        <td><span class="sev sev-critical">Kritisch</span> – generisch, kein Keyword</td>
+                        <td><code>SIZ – Schweizerisches Informatik-Zertifikat | ICT-Diplome &amp; Prüfungen</code></td>
+                    </tr>
+                    <tr>
+                        <td>/angebot/</td>
+                        <td><code>Angebot - SIZ</code></td>
+                        <td><span class="sev sev-important">Wichtig</span> – nichtssagend</td>
+                        <td><code>ICT-Zertifikate &amp; Diplome | Vom Smart-User bis Professional | SIZ</code></td>
+                    </tr>
+                    <tr>
+                        <td>/ueber-uns/</td>
+                        <td><code>Ueber uns - SIZ</code></td>
+                        <td><span class="sev sev-important">Wichtig</span></td>
+                        <td><code>Über die SIZ AG | Führende ICT-Prüfungsorganisation der Schweiz</code></td>
+                    </tr>
+                    <tr>
+                        <td>Alle Diplomseiten</td>
+                        <td><code>[Diplom] - SIZ</code></td>
+                        <td><span class="sev sev-recommendation">Empfehlung</span> – redundantes «- SIZ»</td>
+                        <td>Keywords wie «Zertifikat», «Schweiz», «Prüfung» ergänzen</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Meta Descriptions</h3>
+            <table class="issue-table">
+                <thead><tr><th>Seite</th><th>Status</th><th>Problem</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td><code>/ueber-uns/</code></td>
+                        <td><span class="sev sev-critical">Fehlt komplett!</span></td>
+                        <td>Google generiert selbst eine – oft unpassend</td>
+                    </tr>
+                    <tr>
+                        <td>Alle Seiten</td>
+                        <td><span class="sev sev-important">Keine CTAs</span></td>
+                        <td>Keine Handlungsaufforderung wie «Jetzt informieren» oder «Prüfung anmelden»</td>
+                    </tr>
+                    <tr>
+                        <td><code>/ict-smart-user-siz/</code></td>
+                        <td><span class="sev sev-recommendation">Grammatik</span></td>
+                        <td>Fehlender Trenner nach «SIZ» am Satzanfang</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Technisches SEO</h3>
+            <table class="issue-table">
+                <thead><tr><th>Element</th><th>Status</th><th>Detail</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Hreflang-Tags</strong></td>
+                        <td><span class="sev sev-critical">Fehlen!</span></td>
+                        <td>Dreisprachige Seite (DE/FR/IT via WPML) ohne Hreflang-Tags im HTML. Google kann Sprachversionen nicht zuordnen = Duplicate Content-Risiko. Vermutlich WPML-Yoast-Integration nicht aktiviert.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Open Graph Tags</strong></td>
+                        <td><span class="sev sev-critical">Fehlen!</span></td>
+                        <td>Kein <code>og:image</code>, <code>og:title</code>, <code>og:description</code> – Social Shares auf LinkedIn/Facebook zeigen kein Bild</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Twitter Card Tags</strong></td>
+                        <td><span class="sev sev-important">Fehlen!</span></td>
+                        <td>Nur <code>twitter:card</code> vorhanden, Rest fehlt</td>
+                    </tr>
+                    <tr>
+                        <td><strong>robots.txt</strong></td>
+                        <td><span class="sev sev-important">Unvollständig</span></td>
+                        <td>Kein Sitemap-Verweis, keine Disallow-Regeln. <code>wp-admin</code> ist für Crawler offen.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sitemap</strong></td>
+                        <td><span class="sev sev-ok">Vorhanden</span></td>
+                        <td>Yoast-Sitemap mit 6 Teil-Sitemaps, 19 Seiten, 23 Posts – funktioniert</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Autoren-Sitemap</strong></td>
+                        <td><span class="sev sev-important">Sicherheitsrisiko</span></td>
+                        <td><code>author-sitemap.xml</code> offenbart Benutzernamen «admin» und «w-schmidt» – in Yoast deaktivieren</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Canonical-Tag</strong></td>
+                        <td><span class="sev sev-recommendation">Teilweise</span></td>
+                        <td>Nur in JSON-LD vorhanden, sollte auch als <code>&lt;link rel="canonical"&gt;</code> im Head stehen</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Schema.org</strong></td>
+                        <td><span class="sev sev-ok">Grundstruktur OK</span></td>
+                        <td>WebPage, Organization, BreadcrumbList, SearchAction vorhanden. Fehlt: Adresse, Telefon, <code>EducationalOrganization</code>, <code>Course</code>-Schema</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Google Fonts extern</strong></td>
+                        <td><span class="sev sev-important">DSG-Problem</span></td>
+                        <td>Roboto + Open Sans werden von <code>fonts.googleapis.com</code> geladen – Daten fliessen an Google. Sollte lokal gehostet werden.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- BILDER & BARRIEREFREIHEIT -->
+    <!-- ============================================ -->
+    <div class="section-card">
+        <div class="section-header bg-purple">
+            <h2>Barrierefreiheit &amp; Bilder</h2>
+            <span class="badge">15 von 25 Bildern ohne Alt-Text</span>
+        </div>
+        <div class="section-body">
+            <div class="highlight-box red">
+                <strong>60 % der Bilder auf der Homepage haben keinen oder leeren Alt-Text</strong> – ein schwerwiegender Barrierefreiheits- und SEO-Mangel.
+            </div>
+
+            <h3>Betroffene Bilder (Auswahl)</h3>
+            <table class="issue-table">
+                <thead><tr><th>Bild</th><th>Alt-Text</th><th>Bewertung</th></tr></thead>
+                <tbody>
+                    <tr><td>SIZ Logo (2x)</td><td><code>""</code> (leer)</td><td><span class="sev sev-critical">Schlecht</span> – das eigene Logo braucht einen Alt-Text</td></tr>
+                    <tr><td>Firmennamen_SIZ.png</td><td><code>""</code> (leer)</td><td><span class="sev sev-critical">Schlecht</span></td></tr>
+                    <tr><td>6 Partnerschul-Logos (WSF, enter-IT, EduBox, BVS, KSH, KBZ SG, BZWW)</td><td><code>""</code> (leer)</td><td><span class="sev sev-important">Schlecht</span> – Partnernamen als Alt-Text setzen</td></tr>
+                    <tr><td>Diverse Stockfotos</td><td><code>""</code> (leer)</td><td><span class="sev sev-important">Schlecht</span></td></tr>
+                    <tr><td>envelope.svg, mobile-solid.svg (Icons)</td><td><code>""</code> (leer)</td><td><span class="sev sev-recommendation">OK für dekorative Icons, aber <code>aria-hidden="true"</code> fehlt</span></td></tr>
+                </tbody>
+            </table>
+
+            <h3>Weitere Barrierefreiheitsprobleme</h3>
+            <table class="issue-table">
+                <thead><tr><th>Problem</th><th>Schwere</th><th>Detail</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Zoom blockiert</strong></td>
+                        <td><span class="sev sev-critical">Kritisch</span></td>
+                        <td><code>user-scalable=0</code> und <code>maximum-scale=1.0</code> im Viewport-Meta-Tag verhindern das Zoomen auf Mobilgeräten – Verstoss gegen WCAG 1.4.4</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Leere H4-Tags</strong></td>
+                        <td><span class="sev sev-recommendation">Empfehlung</span></td>
+                        <td>Im Quellcode befinden sich leere <code>&lt;h4&gt;</code> Tags – verwirrt Screenreader</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Divi-Navigation JavaScript-abhängig</strong></td>
+                        <td><span class="sev sev-important">Wichtig</span></td>
+                        <td>Navigation wird via JavaScript gerendert – bei deaktiviertem JS oder langsamer Verbindung nicht zugänglich</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- PERFORMANCE -->
+    <!-- ============================================ -->
+    <div class="section-card">
+        <div class="section-header bg-indigo">
+            <h2>Performance-Analyse</h2>
+            <span class="badge">Divi Theme Overhead</span>
+        </div>
+        <div class="section-body">
+            <h3>Ladezeitprobleme</h3>
+            <table class="issue-table">
+                <thead><tr><th>Problem</th><th>Schwere</th><th>Detail</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td><strong>334 KB reines HTML</strong></td>
+                        <td><span class="sev sev-critical">Kritisch</span></td>
+                        <td>Nur der HTML-Code der Homepage wiegt 334 KB – normal sind 30–80 KB. Ursache: ca. 1'500 Zeilen Inline-CSS (das komplette Divi-Framework)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>16+ externe CSS-Dateien</strong></td>
+                        <td><span class="sev sev-important">Wichtig</span></td>
+                        <td>Zusätzlich zum Inline-CSS werden 16 externe Stylesheets geladen – blockieren den Rendering-Pfad</td>
+                    </tr>
+                    <tr>
+                        <td><strong>18+ JavaScript-Dateien</strong></td>
+                        <td><span class="sev sev-important">Wichtig</span></td>
+                        <td>jQuery 3.7.1, jQuery Migrate, Divi Scripts, Swiper.js, FitVids, EasyPieChart, Salvattore, Magnific Popup, MediaElement.js, WP Google Maps, Divi Plus, Supreme Modules Pro, Divi Toolbox</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ungenutzte Plugins auf der Homepage</strong></td>
+                        <td><span class="sev sev-important">Wichtig</span></td>
+                        <td>WP Google Maps und MediaElement.js werden geladen, obwohl weder Karte noch Audio/Video auf der Homepage sichtbar sind</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3 Divi-Erweiterungen</strong></td>
+                        <td><span class="sev sev-recommendation">Empfehlung</span></td>
+                        <td>Divi Plus + Supreme Modules Pro + Divi Toolbox – erheblicher Overhead. Prüfen, ob alle 3 nötig sind.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>jQuery Migrate geladen</strong></td>
+                        <td><span class="sev sev-recommendation">Empfehlung</span></td>
+                        <td>jQuery Migrate 3.4.1 ist nur für Abwärtskompatibilität nötig – entfernen wenn möglich</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Was funktioniert</h3>
+            <div class="check-grid">
+                <div class="check-item">
+                    <span class="check-icon" style="color:#43A047;">&#10004;</span>
+                    <div class="check-text"><strong>HTTPS aktiv</strong>Redirect von HTTP auf HTTPS funktioniert</div>
+                </div>
+                <div class="check-item">
+                    <span class="check-icon" style="color:#43A047;">&#10004;</span>
+                    <div class="check-text"><strong>Caching aktiv</strong>WP Optimize als Caching-Plugin installiert</div>
+                </div>
+                <div class="check-item">
+                    <span class="check-icon" style="color:#43A047;">&#10004;</span>
+                    <div class="check-text"><strong>Responsive Design</strong>Divi-Theme ist grundsätzlich mobil-tauglich</div>
+                </div>
+                <div class="check-item">
+                    <span class="check-icon" style="color:#43A047;">&#10004;</span>
+                    <div class="check-text"><strong>Favicon vorhanden</strong>32x32, 192x192, Apple Touch 180x180</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- INHALTLICHE LÜCKEN -->
+    <!-- ============================================ -->
+    <div class="section-card">
+        <div class="section-header bg-dark">
+            <h2>Inhaltliche Lücken – Was der Website fehlt</h2>
+            <span class="badge">Grösster Handlungsbedarf</span>
+        </div>
+        <div class="section-body">
+
+            <div class="highlight-box red">
+                <strong>Kernproblem:</strong> Die Website erklärt WAS SIZ ist, aber nicht WARUM es jemanden interessieren sollte. Es fehlt komplett an Verkaufsargumentation, Zielgruppenansprache und KI-Relevanz.
+            </div>
+
+            <h3>1. Fehlende Zielgruppen-Seiten</h3>
+            <table class="issue-table">
+                <thead><tr><th>Zielgruppe</th><th>Status auf siz.ch</th><th>Empfehlung</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Unternehmen / HR</strong></td>
+                        <td><span class="sev sev-critical">Nicht vorhanden</span></td>
+                        <td>Eigene Landingpage: «Mitarbeitende zertifizieren» – ROI, Produktivität, KI-Readiness</td>
+                    </tr>
+                    <tr>
+                        <td><strong>RAV / Stellensuchende</strong></td>
+                        <td><span class="sev sev-critical">Nicht vorhanden</span></td>
+                        <td>Eigene Landingpage: «SIZ für den Wiedereinstieg» – AMM-Finanzierung, Partnerschulen, Erfolgsgeschichten</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nicht-KV-Berufe</strong></td>
+                        <td><span class="sev sev-critical">Nicht vorhanden</span></td>
+                        <td>Seite: «SIZ für Gesundheit, Detailhandel, Technik» – welches Diplom für welchen Beruf</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Quereinsteiger / Branchenwechsler</strong></td>
+                        <td><span class="sev sev-important">Nicht vorhanden</span></td>
+                        <td>Seite mit Testimonials und Karrierepfaden</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lernende / Studierende</strong></td>
+                        <td><span class="sev sev-important">Nur indirekt (BIVO-Seite)</span></td>
+                        <td>Eigene Landingpage: «Dein SIZ-Diplom für die Lehre und danach»</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>2. Fehlende Inhalte</h3>
+            <table class="issue-table">
+                <thead><tr><th>Thema</th><th>Status</th><th>Empfehlung</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td><strong>KI / AI / Künstliche Intelligenz</strong></td>
+                        <td><span class="sev sev-critical">Nirgends erwähnt!</span></td>
+                        <td>Auf JEDER Angebotsseite KI-Relevanz ergänzen. Eigene Seite: «Warum ICT-Kompetenzen im KI-Zeitalter wichtiger sind denn je»</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nutzen / Benefits / ROI</strong></td>
+                        <td><span class="sev sev-critical">Kaum vorhanden</span></td>
+                        <td>Pro Diplom klar benennen: Was bringt es? Für wen? Lohnvorteil, Karriere, Produktivität</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Kennzahlen prominent</strong></td>
+                        <td><span class="sev sev-important">Nur teilweise</span></td>
+                        <td>Auf Homepage: 250'000+ Absolventen, 100+ Schulen, seit 1991 – diese Zahlen sind die stärksten Argumente</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Vergleich mit ECDL/ICDL</strong></td>
+                        <td><span class="sev sev-important">Nicht vorhanden</span></td>
+                        <td>Viele suchen «SIZ vs. ECDL» – eine Vergleichsseite hätte enormes SEO-Potenzial</td>
+                    </tr>
+                    <tr>
+                        <td><strong>FAQ-Seite</strong></td>
+                        <td><span class="sev sev-important">Nicht vorhanden</span></td>
+                        <td>Häufige Fragen zu Prüfungen, Kosten, Anerkennung, Vorbereitung – mit FAQPage-Schema für Google-Featured-Snippets</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Blog / Ratgeber</strong></td>
+                        <td><span class="sev sev-important">Nur «Newsflash» (interne Updates)</span></td>
+                        <td>SEO-relevante Artikel: «Was ist ein ICT-Zertifikat?», «ICT-Weiterbildung Schweiz», «Excel-Kenntnisse trotz KI» etc.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Preisübersicht</strong></td>
+                        <td><span class="sev sev-recommendation">Über 6 Seiten verstreut</span></td>
+                        <td>Zentrale Kostenübersicht: Was kostet welches Diplom? Prüfungsgebühren? Kurskosten?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Download-Zentrale</strong></td>
+                        <td><span class="sev sev-recommendation">Nur als PDFs verstreut</span></td>
+                        <td>Sammelseite: Flyer, Prüfungsreglement, AGB, Infoblätter pro Diplom</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>3. Fehlende Conversion-Elemente</h3>
+            <table class="issue-table">
+                <thead><tr><th>Element</th><th>Status</th><th>Empfehlung</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Newsletter-Anmeldung</strong></td>
+                        <td><span class="sev sev-important">Nicht vorhanden</span></td>
+                        <td>E-Mail-Verteiler für News, Prüfungstermine, Tipps</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lead-Magnet / Download</strong></td>
+                        <td><span class="sev sev-recommendation">Nicht vorhanden</span></td>
+                        <td>z. B. «Welches SIZ-Diplom passt zu mir?» als PDF-Guide oder Quiz</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Beratung buchen</strong></td>
+                        <td><span class="sev sev-recommendation">Nicht vorhanden</span></td>
+                        <td>Calendly oder Kontaktformular für individuelle Beratung</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Testimonials prominent</strong></td>
+                        <td><span class="sev sev-recommendation">Nur Schulzitate im Slider</span></td>
+                        <td>Testimonials von Arbeitgebern, Absolventen, RAV-Beratern ergänzen</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- VERALTETE SEITEN -->
+    <!-- ============================================ -->
+    <div class="section-card">
+        <div class="section-header bg-brown">
+            <h2>Aktualität der Inhalte</h2>
+        </div>
+        <div class="section-body">
+            <table class="issue-table">
+                <thead><tr><th>Seite</th><th>Letzte Änderung</th><th>Bewertung</th></tr></thead>
+                <tbody>
+                    <tr><td>/ueber-uns/</td><td>19.11.2024</td><td><span class="sev sev-critical">Veraltet</span> – über 16 Monate alt, Meta Description fehlt</td></tr>
+                    <tr><td>/ueber-uns/was-ist-siz/</td><td>25.11.2024</td><td><span class="sev sev-critical">Veraltet</span> – über 16 Monate alt</td></tr>
+                    <tr><td>/kontakt/</td><td>24.09.2025</td><td><span class="sev sev-recommendation">Akzeptabel</span></td></tr>
+                    <tr><td>/bivo-2023/</td><td>08.12.2025</td><td><span class="sev sev-ok">OK</span></td></tr>
+                    <tr><td>Angebotsseiten</td><td>Feb/März 2026</td><td><span class="sev sev-ok">Aktuell</span></td></tr>
+                    <tr><td>Newsflash</td><td>April 2026</td><td><span class="sev sev-ok">Aktuell</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- TECH-STACK ÜBERSICHT -->
+    <!-- ============================================ -->
+    <div class="section-card">
+        <div class="section-header bg-cyan">
+            <h2>Technischer Stack</h2>
+        </div>
+        <div class="section-body">
+            <div class="check-grid">
+                <div class="check-item"><span class="check-icon">&#128295;</span><div class="check-text"><strong>CMS</strong>WordPress 6.9.4</div></div>
+                <div class="check-item"><span class="check-icon">&#127912;</span><div class="check-text"><strong>Theme</strong>Divi 4.27.6 (Elegant Themes)</div></div>
+                <div class="check-item"><span class="check-icon">&#128270;</span><div class="check-text"><strong>SEO</strong>Yoast SEO v27.3</div></div>
+                <div class="check-item"><span class="check-icon">&#127760;</span><div class="check-text"><strong>Sprachen</strong>WPML 4.9.2 (DE/FR/IT)</div></div>
+                <div class="check-item"><span class="check-icon">&#9889;</span><div class="check-text"><strong>Caching</strong>WP Optimize + ET Cache</div></div>
+                <div class="check-item"><span class="check-icon">&#128296;</span><div class="check-text"><strong>Server</strong>Apache</div></div>
+                <div class="check-item"><span class="check-icon">&#128279;</span><div class="check-text"><strong>Redirects</strong>Redirection Plugin</div></div>
+                <div class="check-item"><span class="check-icon">&#128230;</span><div class="check-text"><strong>Erweiterungen</strong>Divi Plus, Supreme Modules Pro, Divi Toolbox, Code Snippets, FileBird</div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- PRIORITÄTEN-PLAN -->
+    <!-- ============================================ -->
+    <div class="section-card">
+        <div class="section-header bg-green">
+            <h2>Empfohlener Massnahmenplan</h2>
+            <span class="badge">Priorisiert</span>
+        </div>
+        <div class="section-body">
+
+            <h3>Phase 1 – Sofort (diese Woche)</h3>
+            <table class="issue-table">
+                <thead><tr><th>#</th><th>Massnahme</th><th>Aufwand</th></tr></thead>
+                <tbody>
+                    <tr><td>1</td><td><strong>REST-API einschränken</strong> – Plugin installieren oder Code-Snippet einfügen</td><td>15 Min.</td></tr>
+                    <tr><td>2</td><td><strong>Security-Headers in .htaccess</strong> ergänzen (HSTS, X-Frame-Options, CSP)</td><td>15 Min.</td></tr>
+                    <tr><td>3</td><td><strong>WordPress-Version aus Feed entfernen</strong></td><td>5 Min.</td></tr>
+                    <tr><td>4</td><td><strong>Autoren-Sitemap in Yoast deaktivieren</strong></td><td>2 Min.</td></tr>
+                    <tr><td>5</td><td><strong>Admin-Benutzername umbenennen</strong> (von «admin» zu etwas Nicht-Erratbarem)</td><td>10 Min.</td></tr>
+                    <tr><td>6</td><td><strong>Tippfehler «Bildungsinsitute»</strong> korrigieren</td><td>2 Min.</td></tr>
+                    <tr><td>7</td><td><strong>«read more» → «mehr erfahren»</strong> ändern</td><td>5 Min.</td></tr>
+                </tbody>
+            </table>
+
+            <h3>Phase 2 – Kurzfristig (diese/nächste Woche)</h3>
+            <table class="issue-table">
+                <thead><tr><th>#</th><th>Massnahme</th><th>Aufwand</th></tr></thead>
+                <tbody>
+                    <tr><td>8</td><td><strong>Datenschutz-Seite erstellen</strong> (rechtlich vorgeschrieben!)</td><td>2 Std.</td></tr>
+                    <tr><td>9</td><td><strong>Subdomains prüfen</strong> – school.siz.ch, pruefung.siz.ch, aargau.siz.ch, rheintal.siz.ch aktivieren oder DNS-Einträge entfernen</td><td>1 Std.</td></tr>
+                    <tr><td>10</td><td><strong>Hreflang-Tags aktivieren</strong> – WPML-Yoast-Integration einschalten</td><td>30 Min.</td></tr>
+                    <tr><td>11</td><td><strong>Open Graph Tags aktivieren</strong> – in Yoast Social-Tab konfigurieren + og:image setzen</td><td>30 Min.</td></tr>
+                    <tr><td>12</td><td><strong>Alt-Texte für alle 15 Bilder</strong> ohne Alt-Text ergänzen</td><td>30 Min.</td></tr>
+                    <tr><td>13</td><td><strong>Homepage-Title optimieren</strong>: «Home - SIZ» → «SIZ – Schweizerisches Informatik-Zertifikat | ICT-Diplome»</td><td>10 Min.</td></tr>
+                    <tr><td>14</td><td><strong>Meta Description für /ueber-uns/</strong> ergänzen</td><td>5 Min.</td></tr>
+                    <tr><td>15</td><td><strong>Viewport: user-scalable=0 entfernen</strong> (Zoom erlauben)</td><td>5 Min.</td></tr>
+                    <tr><td>16</td><td><strong>robots.txt ergänzen</strong>: Sitemap-Verweis + wp-admin blockieren</td><td>5 Min.</td></tr>
+                    <tr><td>17</td><td><strong>Google Fonts lokal hosten</strong> (DSG-Konformität)</td><td>1 Std.</td></tr>
+                </tbody>
+            </table>
+
+            <h3>Phase 3 – Mittelfristig (nächste 4 Wochen)</h3>
+            <table class="issue-table">
+                <thead><tr><th>#</th><th>Massnahme</th><th>Aufwand</th></tr></thead>
+                <tbody>
+                    <tr><td>18</td><td><strong>Landingpage «Warum SIZ?»</strong> – KI-Argumentation, Studien, Zahlen (Basis: unser Argumentarium)</td><td>1 Tag</td></tr>
+                    <tr><td>19</td><td><strong>Landingpage «SIZ für Unternehmen»</strong> – ROI, Produktivität, KI-Readiness</td><td>1 Tag</td></tr>
+                    <tr><td>20</td><td><strong>Landingpage «SIZ für Stellensuchende»</strong> – RAV-Finanzierung, Partnerschulen, Quick Win</td><td>1 Tag</td></tr>
+                    <tr><td>21</td><td><strong>FAQ-Seite erstellen</strong> – mit FAQPage-Schema für Google-Featured-Snippets</td><td>0.5 Tage</td></tr>
+                    <tr><td>22</td><td><strong>Download-Seite erstellen</strong> – Flyer, Prüfungsreglement, AGB, Infoblätter zentral</td><td>0.5 Tage</td></tr>
+                    <tr><td>23</td><td><strong>«SIZ vs. ECDL»-Vergleichsseite</strong> – hohes SEO-Potenzial</td><td>0.5 Tage</td></tr>
+                    <tr><td>24</td><td><strong>301-Redirects einrichten</strong> für alte URLs (/partnerschulen/, /ict-professional-siz/ etc.)</td><td>30 Min.</td></tr>
+                    <tr><td>25</td><td><strong>Alle Diplomseiten um KI-Relevanz ergänzen</strong> – «Warum dieses Diplom im KI-Zeitalter?»</td><td>0.5 Tage</td></tr>
+                </tbody>
+            </table>
+
+            <h3>Phase 4 – Langfristig (nächste 3 Monate)</h3>
+            <table class="issue-table">
+                <thead><tr><th>#</th><th>Massnahme</th><th>Aufwand</th></tr></thead>
+                <tbody>
+                    <tr><td>26</td><td><strong>Blog/Ratgeber starten</strong> – SEO-Content: «Excel trotz KI», «ICT-Weiterbildung Schweiz», «Digital Skills Gap»</td><td>Laufend</td></tr>
+                    <tr><td>27</td><td><strong>Landingpages für Berufe</strong> – «SIZ für FAGE», «SIZ für Detailhandel», «SIZ für Hauswarte»</td><td>Je 0.5 Tage</td></tr>
+                    <tr><td>28</td><td><strong>Newsletter einrichten</strong> – Lead-Generierung für Schulen, HR, Lernende</td><td>1 Tag</td></tr>
+                    <tr><td>29</td><td><strong>Testimonials von Arbeitgebern und Absolventen</strong> sammeln und einbinden</td><td>Laufend</td></tr>
+                    <tr><td>30</td><td><strong>Performance-Optimierung</strong> – ungenutzte Plugins entfernen, CSS/JS minimieren, Lazy Loading</td><td>1–2 Tage</td></tr>
+                    <tr><td>31</td><td><strong>Schema.org erweitern</strong> – EducationalOrganization, Course-Schema, Kontaktdaten</td><td>2 Std.</td></tr>
+                    <tr><td>32</td><td><strong>«Welches Diplom passt zu mir?»-Quiz</strong> als Lead-Magnet</td><td>2–3 Tage</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- WAS GUT FUNKTIONIERT -->
+    <!-- ============================================ -->
+    <div class="section-card">
+        <div class="section-header bg-teal">
+            <h2>Was gut funktioniert</h2>
+            <span class="badge">Stärken beibehalten</span>
+        </div>
+        <div class="section-body">
+            <div class="check-grid">
+                <div class="check-item"><span class="check-icon" style="color:#43A047;">&#10004;</span><div class="check-text"><strong>BIVO-2023-Seite</strong>Inhaltlich die stärkste Seite – gut strukturiert, klar argumentiert. Sollte als Vorlage für andere Seiten dienen.</div></div>
+                <div class="check-item"><span class="check-icon" style="color:#43A047;">&#10004;</span><div class="check-text"><strong>Dreisprachig (DE/FR/IT)</strong>WPML korrekt eingerichtet. Sprachumschalter vorhanden.</div></div>
+                <div class="check-item"><span class="check-icon" style="color:#43A047;">&#10004;</span><div class="check-text"><strong>Sitemap &amp; Yoast SEO</strong>Grundstruktur vorhanden und funktional.</div></div>
+                <div class="check-item"><span class="check-icon" style="color:#43A047;">&#10004;</span><div class="check-text"><strong>HTTPS aktiv</strong>Korrekte Weiterleitung, SSL-Zertifikat gültig.</div></div>
+                <div class="check-item"><span class="check-icon" style="color:#43A047;">&#10004;</span><div class="check-text"><strong>Strukturierte Daten</strong>Grundlegendes Schema.org (Organization, WebPage, BreadcrumbList).</div></div>
+                <div class="check-item"><span class="check-icon" style="color:#43A047;">&#10004;</span><div class="check-text"><strong>Partnerschul-Testimonials</strong>Zitate von 6 Schulen auf der Homepage – guter Anfang.</div></div>
+                <div class="check-item"><span class="check-icon" style="color:#43A047;">&#10004;</span><div class="check-text"><strong>Regelmässige Newsflash</strong>Monatliche Updates zeigen Aktivität (Aug 2023 – Apr 2026).</div></div>
+                <div class="check-item"><span class="check-icon" style="color:#43A047;">&#10004;</span><div class="check-text"><strong>Saubere URL-Struktur</strong>Sprechende URLs, logische Hierarchie.</div></div>
+                <div class="check-item"><span class="check-icon" style="color:#43A047;">&#10004;</span><div class="check-text"><strong>Kontaktseite</strong>Telefon, E-Mail, Google Maps – gut erreichbar.</div></div>
+                <div class="check-item"><span class="check-icon" style="color:#43A047;">&#10004;</span><div class="check-text"><strong>XML-RPC blockiert</strong>Wichtiger Sicherheitsvektor korrekt geschlossen.</div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- ERWEITERT: KAPUTTE LINKS DETAIL -->
+    <!-- ============================================ -->
+    <div class="section-card">
+        <div class="section-header bg-orange">
+            <h2>Detaillierte Link-Prüfung</h2>
+            <span class="badge">126 URLs geprüft · 6 kaputt</span>
+        </div>
+        <div class="section-body">
+            <div class="highlight-box red">
+                <strong>Die Seite /angebot/ict-power-user-siz-web/ hat allein 4 kaputte PDF-Links.</strong> Offenbar wurden bei einem Update die PDFs verschoben, ohne die Links anzupassen.
+            </div>
+
+            <h3>Kaputte PDF-Links</h3>
+            <table class="issue-table">
+                <thead><tr><th>Kaputte URL</th><th>Gefunden auf</th><th>Linktext</th><th>Fix</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td><code>MID-AU3-Dez-2025.pdf.pdf</code></td>
+                        <td>/bivo-2023/</td>
+                        <td>Download Lernziele AU3</td>
+                        <td><span class="sev sev-critical">Tippfehler</span> – doppeltes <code>.pdf.pdf</code> → einfach <code>.pdf</code> korrigieren (Datei existiert!)</td>
+                    </tr>
+                    <tr>
+                        <td><code>/2024/09/SIZ_Flyer_ICT_PowerUser_Web.pdf</code></td>
+                        <td>/angebot/ict-power-user-siz-web/</td>
+                        <td>Diplombeschreibung</td>
+                        <td><span class="sev sev-critical">404</span> – PDF gelöscht oder verschoben. Neue Version hochladen.</td>
+                    </tr>
+                    <tr>
+                        <td><code>/2024/09/MID-PU21-2017-V2.pdf</code></td>
+                        <td>/angebot/ict-power-user-siz-web/</td>
+                        <td>Download Lernziele PU21</td>
+                        <td><span class="sev sev-critical">404</span> – PDF im Unterordner fehlt. Aktuelle Datei verlinken.</td>
+                    </tr>
+                    <tr>
+                        <td><code>/2024/09/MID-PU22-2017-V2.pdf</code></td>
+                        <td>/angebot/ict-power-user-siz-web/</td>
+                        <td>Download Lernziele PU22</td>
+                        <td><span class="sev sev-critical">404</span> – Gleiche Situation wie PU21.</td>
+                    </tr>
+                    <tr>
+                        <td><code>/2024/10/Lehrmittel_SIZ_Web_Version_3.18...pdf</code></td>
+                        <td>/angebot/ict-power-user-siz-web/</td>
+                        <td>Download Lehrmittelliste</td>
+                        <td><span class="sev sev-critical">404</span> – Veraltete Version. Aktuelle Lehrmittelliste verlinken.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Sonstige Link-Probleme</h3>
+            <table class="issue-table">
+                <thead><tr><th>URL</th><th>Seite</th><th>Status</th><th>Hinweis</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td><code>linkedin.com/in/wolfram-schmidt-zh/</code></td>
+                        <td>/ueber-uns/team/</td>
+                        <td><span class="sev sev-recommendation">Manuell prüfen</span></td>
+                        <td>LinkedIn blockiert automatisierte Checks (Status 999). Im Browser manuell prüfen.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Ergebnis Gesamtprüfung</h3>
+            <div class="check-grid">
+                <div class="check-item"><span class="check-icon" style="color:#43A047;">&#10004;</span><div class="check-text"><strong>120 von 126 Links OK</strong>Alle Hauptseiten, Newsflash-Beiträge und die meisten PDFs funktionieren.</div></div>
+                <div class="check-item"><span class="check-icon" style="color:#C62828;">&#10008;</span><div class="check-text"><strong>5 kaputte PDFs</strong>4 auf der Web-Angebotsseite, 1 Tippfehler auf BIVO-Seite.</div></div>
+                <div class="check-item"><span class="check-icon" style="color:#43A047;">&#10004;</span><div class="check-text"><strong>Mailto/Tel OK</strong>info@siz.ch, w.schmidt@siz.ch und Telefonnummer korrekt.</div></div>
+                <div class="check-item"><span class="check-icon" style="color:#FF9800;">&#9888;</span><div class="check-text"><strong>Sehr wenige externe Links</strong>Nur LinkedIn – keine Verlinkung zu Partnern, Verbänden, Bildungsportalen.</div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- ERWEITERT: BACKLINK-ANALYSE -->
+    <!-- ============================================ -->
+    <div class="section-card">
+        <div class="section-header bg-purple">
+            <h2>Backlink-Analyse – Wer verlinkt auf siz.ch?</h2>
+            <span class="badge">55+ Domains identifiziert</span>
+        </div>
+        <div class="section-body">
+
+            <h3>Backlink-Übersicht nach Kategorie</h3>
+            <table class="issue-table">
+                <thead><tr><th>Kategorie</th><th>Anzahl</th><th>Wichtigste Domains</th><th>Bewertung</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Bildungsportale</strong></td>
+                        <td>6</td>
+                        <td>berufsberatung.ch (Bund!), ausbildung-weiterbildung.ch, bildung-schweiz.ch, weiterbildung.ch, gatewayone.pro</td>
+                        <td><span class="sev sev-ok">Stark</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Partnerschulen</strong></td>
+                        <td>25+</td>
+                        <td>benedict.ch, wsf, kvlu.ch, zentrumbildung.ch, kbsglarus.ch, ibw.ch, fswi.ch, csbe.ch, sws, enter-it.ch, rgm.ch, akad.ch, bzwu.ch, kbzsg.ch, bwzlyss.ch, bzbs.ch u.v.m.</td>
+                        <td><span class="sev sev-ok">Stark</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Verbände (Träger)</strong></td>
+                        <td>3</td>
+                        <td>swico.ch (Aktionär), kfmv.ch (Aktionär), saq.ch</td>
+                        <td><span class="sev sev-ok">Stark</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Behörden / Kantone</strong></td>
+                        <td>2</td>
+                        <td>zh.ch (HMS-Broschüre), netwalden.ch</td>
+                        <td><span class="sev sev-important">Ausbaufähig</span> – nur 2 von 26 Kantonen</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Wikipedia</strong></td>
+                        <td>1</td>
+                        <td>de.wikipedia.org (nur Disambiguierungsseite)</td>
+                        <td><span class="sev sev-important">Schwach</span> – kein eigener Artikel</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Medien / Presse</strong></td>
+                        <td>1</td>
+                        <td>blog.benedict.ch</td>
+                        <td><span class="sev sev-critical">Sehr schwach</span> – keine NZZ, Tagi, Handelszeitung etc.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Verzeichnisse</strong></td>
+                        <td>5</td>
+                        <td>local.ch, search.ch, moneyhouse.ch, kompass.com, linkedin.com</td>
+                        <td><span class="sev sev-ok">Standard</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Hochschulen</strong></td>
+                        <td>0</td>
+                        <td>–</td>
+                        <td><span class="sev sev-critical">Fehlt komplett</span> – kein ETH, ZHAW, FHNW etc.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Backlink-Stärken</h3>
+            <ul>
+                <li><strong>berufsberatung.ch</strong> (offizielle Bundesseite) listet alle SIZ-Diplome einzeln – sehr starker Backlink</li>
+                <li><strong>25+ Partnerschulen</strong> verlinken aktiv – breites Netzwerk</li>
+                <li><strong>Trägerverbände</strong> (Swico, kfmv) verlinken prominent</li>
+            </ul>
+
+            <h3>Backlink-Lücken &amp; Empfehlungen</h3>
+            <table class="issue-table">
+                <thead><tr><th>Lücke</th><th>Schwere</th><th>Empfehlung</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Keine Presse-/Medienbacklinks</strong></td>
+                        <td><span class="sev sev-critical">Kritisch</span></td>
+                        <td>PR-Strategie: Fachartikel in Inside-IT, IT Magazine, Handelszeitung, NZZ platzieren. Thema: «ICT-Kompetenzen im KI-Zeitalter»</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Kein eigener Wikipedia-Artikel</strong></td>
+                        <td><span class="sev sev-important">Wichtig</span></td>
+                        <td>Wikipedia-Artikel «SIZ AG» erstellen (250'000 Absolventen, seit 1991, getragen von kfmv/Swico = relevanzfähig)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Keine Hochschul-Backlinks</strong></td>
+                        <td><span class="sev sev-important">Wichtig</span></td>
+                        <td>Kooperationen mit ZHAW, FHNW, PHs aufbauen – z.B. Studien zu Digital Literacy gemeinsam publizieren</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nur 2 kantonale Behörden</strong></td>
+                        <td><span class="sev sev-important">Wichtig</span></td>
+                        <td>Kontakt zu Bildungsdirektionen weiterer Kantone – SIZ in WMS/HMS-Broschüren aufnehmen lassen</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ausbildung-weiterbildung.ch rankt VOR siz.ch</strong></td>
+                        <td><span class="sev sev-important">Wichtig</span></td>
+                        <td>Eigene Inhalte stärken – wenn ein Aggregator-Portal besser rankt als die eigene Seite, fehlt Content</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- ERWEITERT: KEYWORD-ANALYSE -->
+    <!-- ============================================ -->
+    <div class="section-card">
+        <div class="section-header bg-blue">
+            <h2>Keyword-Analyse</h2>
+            <span class="badge">33 Keywords getestet</span>
+        </div>
+        <div class="section-body">
+
+            <h3>Branded Keywords – siz.ch rankt gut</h3>
+            <table class="issue-table">
+                <thead><tr><th>Keyword</th><th>Ranking</th><th>Problem?</th></tr></thead>
+                <tbody>
+                    <tr><td>«SIZ AG»</td><td><span class="sev sev-ok">Position 1</span></td><td>–</td></tr>
+                    <tr><td>«Schweizerisches Informatik-Zertifikat»</td><td><span class="sev sev-ok">Position 1</span></td><td>–</td></tr>
+                    <tr><td>«ICT Smart-User SIZ»</td><td><span class="sev sev-ok">Top 3</span></td><td>–</td></tr>
+                    <tr><td>«ICT Advanced-User SIZ»</td><td><span class="sev sev-ok">Top 3</span></td><td>–</td></tr>
+                    <tr><td>«ICT Power-User SIZ»</td><td><span class="sev sev-ok">Top 3</span></td><td>–</td></tr>
+                    <tr><td>«SIZ Diplom»</td><td><span class="sev sev-important">Position 2-3</span></td><td>ausbildung-weiterbildung.ch rankt teilweise VOR siz.ch!</td></tr>
+                    <tr><td>«SIZ Prüfung»</td><td><span class="sev sev-ok">Top 3</span></td><td>–</td></tr>
+                    <tr><td>«SIZ BIVO 2023»</td><td><span class="sev sev-ok">Position 1</span></td><td>–</td></tr>
+                </tbody>
+            </table>
+
+            <h3>Generische Keywords – Massive Lücken</h3>
+            <div class="highlight-box red">
+                <strong>Von 33 getesteten High-Value-Keywords rankt siz.ch nur bei 3–4.</strong> Bei allen anderen dominieren Konkurrenten wie Digicomp, ECDL/ICDL, Klubschule Migros oder ict-berufsbildung.ch.
+            </div>
+            <table class="issue-table">
+                <thead><tr><th>Keyword</th><th>Suchvolumen</th><th>siz.ch?</th><th>Wer rankt stattdessen?</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td><strong>«ICT Zertifikat Schweiz»</strong></td>
+                        <td>Hoch</td>
+                        <td><span class="sev sev-critical">Nicht sichtbar</span></td>
+                        <td>ict-berufsbildung.ch, Digicomp, CompTIA</td>
+                    </tr>
+                    <tr>
+                        <td><strong>«Office Zertifikat Schweiz»</strong></td>
+                        <td>Hoch</td>
+                        <td><span class="sev sev-critical">Nicht sichtbar</span></td>
+                        <td>Digicomp, Microsoft MOS, Klubschule</td>
+                    </tr>
+                    <tr>
+                        <td><strong>«ICT Weiterbildung Schweiz»</strong></td>
+                        <td>Hoch</td>
+                        <td><span class="sev sev-critical">Nicht sichtbar</span></td>
+                        <td>ict-berufsbildung.ch, Digicomp, ausbildung-weiterbildung.ch</td>
+                    </tr>
+                    <tr>
+                        <td><strong>«Excel Kurs Zertifikat Schweiz»</strong></td>
+                        <td>Mittel</td>
+                        <td><span class="sev sev-critical">Nicht sichtbar</span></td>
+                        <td>Digicomp, Klubschule Migros, microwin</td>
+                    </tr>
+                    <tr>
+                        <td><strong>«digitale Kompetenzen nachweisen»</strong></td>
+                        <td>Mittel</td>
+                        <td><span class="sev sev-critical">Nicht sichtbar</span></td>
+                        <td>Kein CH-Anbieter rankt – offene Chance!</td>
+                    </tr>
+                    <tr>
+                        <td><strong>«SIZ oder ECDL» / «SIZ vs ECDL»</strong></td>
+                        <td>Mittel</td>
+                        <td><span class="sev sev-critical">Nicht sichtbar</span></td>
+                        <td>Alte Mediaartikel (IT Magazine 2010, inside-it), ausbildung-weiterbildung.ch</td>
+                    </tr>
+                    <tr>
+                        <td><strong>«ECDL Alternative Schweiz»</strong></td>
+                        <td>Niedrig</td>
+                        <td><span class="sev sev-critical">Nicht sichtbar</span></td>
+                        <td>Niemand – offene Chance!</td>
+                    </tr>
+                    <tr>
+                        <td><strong>«IT Weiterbildung Stellensuchende»</strong></td>
+                        <td>Niedrig</td>
+                        <td><span class="sev sev-critical">Nicht sichtbar</span></td>
+                        <td>RAV-Seiten der Kantone, swissICT Booster</td>
+                    </tr>
+                    <tr>
+                        <td><strong>«digitale Kompetenzen KI»</strong></td>
+                        <td>Steigend</td>
+                        <td><span class="sev sev-critical">Nicht sichtbar</span></td>
+                        <td>Kein CH-Zertifikatsanbieter – offene Chance!</td>
+                    </tr>
+                    <tr>
+                        <td><strong>«Netzwerk Administration Zertifikat Schweiz»</strong></td>
+                        <td>Niedrig</td>
+                        <td><span class="sev sev-critical">Nicht sichtbar</span></td>
+                        <td>CompTIA, Cisco, Digicomp</td>
+                    </tr>
+                    <tr>
+                        <td><strong>«Pivot Tabellen Kurs Schweiz»</strong></td>
+                        <td>Mittel</td>
+                        <td><span class="sev sev-critical">Nicht sichtbar</span></td>
+                        <td>Digicomp dominiert</td>
+                    </tr>
+                    <tr>
+                        <td><strong>«Power Query Kurs Schweiz»</strong></td>
+                        <td>Mittel</td>
+                        <td><span class="sev sev-critical">Nicht sichtbar</span></td>
+                        <td>Digicomp dominiert</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Hauptkonkurrenten im SEO</h3>
+            <table class="issue-table">
+                <thead><tr><th>Konkurrent</th><th>Stärke</th><th>Strategie</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Digicomp</strong></td>
+                        <td><span class="sev sev-critical">Grösste Bedrohung</span></td>
+                        <td>Dominiert fast jedes kurs-spezifische Keyword (Excel, PowerShell, Netzwerk etc.). Moderner Tech-Stack, Salesforce-CRM, Blog, DigiSnack-Webinare als Lead-Magnete.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ECDL/ICDL Schweiz</strong></td>
+                        <td><span class="sev sev-important">Direkter Wettbewerber</span></td>
+                        <td>Internationale Marke, 300 Standorte, 4 Sprachen, Online-Profil für Absolventen, moderner Webauftritt.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ausbildung-weiterbildung.ch</strong></td>
+                        <td><span class="sev sev-important">Peinlich</span></td>
+                        <td>Aggregator rankt teilweise VOR siz.ch für SIZ-eigene Keywords! Zeigt: siz.ch hat zu wenig Content.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Google Grow (kostenlose IT-Zertifikate)</strong></td>
+                        <td><span class="sev sev-recommendation">Wachsende Bedrohung</span></td>
+                        <td>Kostenlose Google-Zertifikate für IT-Support, Data Analytics etc. Nimmt Marktanteile bei Einsteigern.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Keyword-Chancen (Quick Wins)</h3>
+            <div class="highlight-box green">
+                <strong>Diese Keywords sind unbesetzt oder schwach besetzt – SIZ könnte mit gezielten Landingpages schnell ranken:</strong>
+            </div>
+            <table class="issue-table">
+                <thead><tr><th>Keyword-Chance</th><th>Empfohlene Seite</th><th>Geschätzter Aufwand</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td><strong>«SIZ vs ECDL» / «SIZ oder ECDL»</strong></td>
+                        <td>Vergleichsseite: Was unterscheidet SIZ von ECDL? Vorteile, Unterschiede, Empfehlung</td>
+                        <td>0.5 Tage</td>
+                    </tr>
+                    <tr>
+                        <td><strong>«ECDL Alternative Schweiz»</strong></td>
+                        <td>Gleiche Vergleichsseite – SIZ als Schweizer Alternative positionieren</td>
+                        <td>(in obiger Seite integriert)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>«digitale Kompetenzen nachweisen»</strong></td>
+                        <td>Landingpage: «So weisen Sie Ihre digitalen Kompetenzen nach – SIZ-Diplome»</td>
+                        <td>0.5 Tage</td>
+                    </tr>
+                    <tr>
+                        <td><strong>«digitale Kompetenzen KI»</strong></td>
+                        <td>Argumentarium-Seite: «Warum ICT-Kompetenzen im KI-Zeitalter wichtiger sind» (unser Argumentarium!)</td>
+                        <td>0.5 Tage</td>
+                    </tr>
+                    <tr>
+                        <td><strong>«ICT Diplom kaufmännische Lehre»</strong></td>
+                        <td>Erweiterte BIVO-Seite mit mehr SEO-Text</td>
+                        <td>2 Stunden</td>
+                    </tr>
+                    <tr>
+                        <td><strong>«Was ist ein ICT Zertifikat?»</strong></td>
+                        <td>FAQ/Ratgeber-Artikel mit FAQPage-Schema</td>
+                        <td>2 Stunden</td>
+                    </tr>
+                    <tr>
+                        <td><strong>«Office Kurs mit Zertifikat Zürich/Bern/Basel»</strong></td>
+                        <td>Städtespezifische Landingpages mit lokalen Partnerschulen</td>
+                        <td>Je 2 Stunden</td>
+                    </tr>
+                    <tr>
+                        <td><strong>«Informatik Weiterbildung RAV»</strong></td>
+                        <td>Zielgruppen-Seite für Stellensuchende</td>
+                        <td>0.5 Tage</td>
+                    </tr>
+                    <tr>
+                        <td><strong>«IT Support Zertifikat Schweiz»</strong></td>
+                        <td>Landingpage für Systems &amp; Network Diplom mit SEO-Optimierung</td>
+                        <td>2 Stunden</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- ERWEITERT: RECHTLICHE COMPLIANCE -->
+    <!-- ============================================ -->
+    <div class="section-card">
+        <div class="section-header bg-red">
+            <h2>Rechtliche Compliance</h2>
+            <span class="badge">nDSG / Datenschutz</span>
+        </div>
+        <div class="section-body">
+            <div class="highlight-box red">
+                <strong>Zwei kritische Compliance-Verstösse identifiziert, die rechtliche Konsequenzen haben können.</strong>
+            </div>
+            <table class="issue-table">
+                <thead><tr><th>Problem</th><th>Schwere</th><th>Detail</th><th>Fix</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Keine Datenschutz-Seite</strong></td>
+                        <td><span class="sev sev-critical">Kritisch</span></td>
+                        <td><code>/datenschutz/</code> gibt 404. Es existiert nur ein PDF unter <code>/wp-content/uploads/Datenschutzbestimmungen_SIZ_2025-08-1.pdf</code> – als Link im Footer, aber keine HTML-Seite.</td>
+                        <td>Entweder HTML-Seite erstellen ODER den PDF-Link prominent im Footer und Impressum platzieren. Best Practice: HTML-Seite.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Kein Cookie-Consent-Banner</strong></td>
+                        <td><span class="sev sev-critical">Kritisch</span></td>
+                        <td>Keine Consent Management Platform (CMP) implementiert. Kein Cookie-Banner, kein Einwilligungsmechanismus. Die Seite lädt Google Fonts (extern), WP Google Maps und potenziell Tracking-Scripts.</td>
+                        <td>Cookie-Banner implementieren (z.B. Complianz, CookieYes oder Real Cookie Banner für WordPress). Alternativ: alle externen Dienste entfernen und nur First-Party-Cookies nutzen.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Google Fonts extern geladen</strong></td>
+                        <td><span class="sev sev-important">Wichtig</span></td>
+                        <td>Roboto und Open Sans werden von <code>fonts.googleapis.com</code> geladen. Dabei werden IP-Adressen der Besucher an Google übertragen – problematisch unter nDSG und DSGVO.</td>
+                        <td>Fonts lokal hosten (self-hosted). Plugin «OMGF» oder manuell in Theme einbetten.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Impressum vorhanden</strong></td>
+                        <td><span class="sev sev-ok">OK</span></td>
+                        <td>Impressum unter <code>/impressum/</code> erreichbar.</td>
+                        <td>Prüfen ob vollständig (Handelsregisternummer, UID, Vertretungsberechtigte).</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- ERWEITERT: MEHRSPRACHIGKEIT -->
+    <!-- ============================================ -->
+    <div class="section-card">
+        <div class="section-header bg-indigo">
+            <h2>Mehrsprachigkeit (FR / IT)</h2>
+            <span class="badge">Qualitätsprobleme</span>
+        </div>
+        <div class="section-body">
+            <table class="issue-table">
+                <thead><tr><th>Problem</th><th>Schwere</th><th>Detail</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Deutsche Reste in FR/IT</strong></td>
+                        <td><span class="sev sev-important">Wichtig</span></td>
+                        <td>Breadcrumbs zeigen «Startseite» statt «Accueil» (FR) oder «Pagina iniziale» (IT). Mischtext wie «piu erfahren» statt «scopri di più».</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nicht alle Seiten übersetzt</strong></td>
+                        <td><span class="sev sev-important">Wichtig</span></td>
+                        <td>Einige Unterseiten existieren nur auf Deutsch. Bei FR/IT-Navigation landen Nutzer teilweise auf der deutschen Version.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>FR/IT-URLs nicht in Sitemap</strong></td>
+                        <td><span class="sev sev-critical">Kritisch</span></td>
+                        <td>Die Yoast-Sitemap enthält nur die deutschen URLs. Französische und italienische Seiten werden Google nicht aktiv gemeldet.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Hreflang-Tags fehlen</strong></td>
+                        <td><span class="sev sev-critical">Kritisch</span></td>
+                        <td>Bereits in SEO-Analyse erwähnt. WPML-Yoast-Integration aktivieren löst dies und das Sitemap-Problem gleichzeitig.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- ERWEITERT: SOCIAL MEDIA -->
+    <!-- ============================================ -->
+    <div class="section-card">
+        <div class="section-header bg-cyan">
+            <h2>Social Media &amp; Online-Präsenz</h2>
+            <span class="badge">Minimal</span>
+        </div>
+        <div class="section-body">
+            <table class="issue-table">
+                <thead><tr><th>Kanal</th><th>Status</th><th>Detail</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td><strong>LinkedIn</strong></td>
+                        <td><span class="sev sev-ok">Vorhanden</span></td>
+                        <td><a href="https://www.linkedin.com/company/siz-ag" target="_blank">linkedin.com/company/siz-ag</a> – 183 Follower. Einziger aktiver Kanal.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Facebook</strong></td>
+                        <td><span class="sev sev-critical">Nicht vorhanden</span></td>
+                        <td>Keine Facebook-Seite gefunden.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Instagram</strong></td>
+                        <td><span class="sev sev-critical">Nicht vorhanden</span></td>
+                        <td>Keine Präsenz.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>YouTube</strong></td>
+                        <td><span class="sev sev-critical">Nicht vorhanden</span></td>
+                        <td>Keine Videos. Potenzial: Erklärvideos zu Diplomen, Testimonials, KI-Argumentation.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Twitter / X</strong></td>
+                        <td><span class="sev sev-important">Nicht vorhanden</span></td>
+                        <td>–</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="highlight-box orange">
+                <strong>Empfehlung:</strong> Mindestens LinkedIn aktiv bespielen (183 Follower ist sehr wenig für eine Organisation mit 250'000 Absolventen). YouTube für Erklärvideos und Testimonials nutzen. Facebook ist für B2B im Bildungsbereich optional.
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- ERWEITERT: KONKURRENZ-VERGLEICH -->
+    <!-- ============================================ -->
+    <div class="section-card">
+        <div class="section-header bg-dark">
+            <h2>Konkurrenz-Vergleich</h2>
+            <span class="badge">siz.ch vs. Wettbewerb</span>
+        </div>
+        <div class="section-body">
+            <table class="issue-table">
+                <thead><tr><th>Kriterium</th><th>siz.ch</th><th>ECDL/ICDL</th><th>Digicomp</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Sprachen</strong></td><td>3 (DE/FR/IT, teils lückenhaft)</td><td>4 (DE/FR/IT/EN, vollständig)</td><td>2 (DE/EN)</td></tr>
+                    <tr><td><strong>Zielgruppen-Navigation</strong></td><td>Keine</td><td>Ja (Kandidaten, Organisationen, Testcenter)</td><td>Ja (Firmen, Privatpersonen)</td></tr>
+                    <tr><td><strong>Blog / Ratgeber</strong></td><td>Nur Newsflash (intern)</td><td>News-Bereich</td><td>Blog + DigiSnack-Webinare</td></tr>
+                    <tr><td><strong>Newsletter</strong></td><td>Keiner</td><td>Vorhanden</td><td>Vorhanden</td></tr>
+                    <tr><td><strong>Lead-Magnete</strong></td><td>Keine</td><td>Online-Profil für Absolventen</td><td>Gratis-Webinare</td></tr>
+                    <tr><td><strong>Social Media</strong></td><td>Nur LinkedIn (183 Follower)</td><td>LinkedIn + Facebook + YouTube</td><td>LinkedIn + YouTube + Blog</td></tr>
+                    <tr><td><strong>KI/AI-Content</strong></td><td>Keiner</td><td>Teilweise</td><td>AI-Kurse prominent</td></tr>
+                    <tr><td><strong>FAQ-Seite</strong></td><td>Keine</td><td>Vorhanden</td><td>Vorhanden</td></tr>
+                    <tr><td><strong>Preistransparenz</strong></td><td>Verstreut</td><td>Klar strukturiert</td><td>Klar pro Kurs</td></tr>
+                    <tr><td><strong>Tech-Stack</strong></td><td>WordPress + Divi (schwer)</td><td>Custom CMS</td><td>Vue.js + Storyblok (modern)</td></tr>
+                    <tr><td><strong>Page Speed</strong></td><td>Langsam (334 KB HTML)</td><td>Mittel</td><td>Schnell</td></tr>
+                </tbody>
+            </table>
+
+            <div class="highlight-box red">
+                <strong>Fazit:</strong> siz.ch fällt in fast jedem Vergleichspunkt hinter ECDL und Digicomp zurück. Die grössten Lücken: fehlende Zielgruppen-Navigation, kein KI-Content, keine Lead-Generierung, minimale Social-Media-Präsenz.
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- ERWEITERTER MASSNAHMENPLAN -->
+    <!-- ============================================ -->
+    <div class="section-card">
+        <div class="section-header bg-green">
+            <h2>Erweiterter Massnahmenplan – Neue Punkte</h2>
+            <span class="badge">Ergänzung zu Phase 1–4</span>
+        </div>
+        <div class="section-body">
+
+            <h3>Phase 1 – Sofort (ergänzend)</h3>
+            <table class="issue-table">
+                <thead><tr><th>#</th><th>Massnahme</th><th>Aufwand</th></tr></thead>
+                <tbody>
+                    <tr><td>33</td><td><strong>5 kaputte PDF-Links fixen</strong> – besonders Power-User Web Seite + BIVO-Tippfehler</td><td>15 Min.</td></tr>
+                    <tr><td>34</td><td><strong>Cookie-Consent-Banner implementieren</strong> (nDSG-Pflicht wenn externe Dienste geladen werden)</td><td>1 Std.</td></tr>
+                </tbody>
+            </table>
+
+            <h3>Phase 2 – Kurzfristig (ergänzend)</h3>
+            <table class="issue-table">
+                <thead><tr><th>#</th><th>Massnahme</th><th>Aufwand</th></tr></thead>
+                <tbody>
+                    <tr><td>35</td><td><strong>WPML-Sitemap aktivieren</strong> – FR/IT-URLs müssen in die Sitemap</td><td>30 Min.</td></tr>
+                    <tr><td>36</td><td><strong>FR/IT-Übersetzungen bereinigen</strong> – deutsche Reste entfernen (Breadcrumbs, Buttons)</td><td>2 Std.</td></tr>
+                    <tr><td>37</td><td><strong>Datenschutz-Seite als HTML erstellen</strong> (nicht nur PDF)</td><td>1 Std.</td></tr>
+                </tbody>
+            </table>
+
+            <h3>Phase 3 – Mittelfristig (ergänzend)</h3>
+            <table class="issue-table">
+                <thead><tr><th>#</th><th>Massnahme</th><th>Aufwand</th></tr></thead>
+                <tbody>
+                    <tr><td>38</td><td><strong>Vergleichsseite «SIZ vs. ECDL/ICDL»</strong> – unbesetztes Keyword, hoher SEO-Wert</td><td>0.5 Tage</td></tr>
+                    <tr><td>39</td><td><strong>Landingpage «digitale Kompetenzen nachweisen»</strong> – unbesetztes Keyword, keine Konkurrenz</td><td>0.5 Tage</td></tr>
+                    <tr><td>40</td><td><strong>Landingpage «digitale Kompetenzen KI»</strong> – Argumentarium als Webseite publizieren</td><td>0.5 Tage</td></tr>
+                    <tr><td>41</td><td><strong>Städtespezifische Landingpages</strong> – «SIZ Kurs Zürich», «SIZ Kurs Bern» etc. mit lokalen Partnerschulen</td><td>Je 2 Std.</td></tr>
+                    <tr><td>42</td><td><strong>Wikipedia-Artikel «SIZ AG» erstellen</strong> – 250'000 Absolventen, seit 1991 = relevanzfähig</td><td>1 Tag</td></tr>
+                    <tr><td>43</td><td><strong>PR-Strategie starten</strong> – Fachartikel in Inside-IT, IT Magazine, Handelszeitung platzieren</td><td>Laufend</td></tr>
+                </tbody>
+            </table>
+
+            <h3>Phase 4 – Langfristig (ergänzend)</h3>
+            <table class="issue-table">
+                <thead><tr><th>#</th><th>Massnahme</th><th>Aufwand</th></tr></thead>
+                <tbody>
+                    <tr><td>44</td><td><strong>LinkedIn-Strategie</strong> – 183 Follower auf 1'000+ bringen. Regelmässige Posts, Erfolgsgeschichten, KI-Argumentation.</td><td>Laufend</td></tr>
+                    <tr><td>45</td><td><strong>YouTube-Kanal starten</strong> – Erklärvideos zu Diplomen, Testimonials von Absolventen und Arbeitgebern</td><td>Laufend</td></tr>
+                    <tr><td>46</td><td><strong>Backlinks von Kantonen aufbauen</strong> – Kontakt zu Bildungsdirektionen, SIZ in WMS/HMS-Broschüren platzieren</td><td>Laufend</td></tr>
+                    <tr><td>47</td><td><strong>Hochschul-Kooperationen</strong> – mit ZHAW, FHNW, PHs Studien zu Digital Literacy publizieren</td><td>Laufend</td></tr>
+                    <tr><td>48</td><td><strong>Professionelle Backlink-Analyse</strong> mit Ahrefs oder SEMrush (kostenpflichtig) für vollständiges Bild</td><td>1 Tag + Lizenzkosten</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- WAS NOCH FEHLT -->
+    <!-- ============================================ -->
+    <div class="section-card">
+        <div class="section-header bg-brown">
+            <h2>Was für eine vollständige Analyse noch fehlt</h2>
+            <span class="badge">Empfehlung</span>
+        </div>
+        <div class="section-body">
+            <p style="margin-bottom: 12px;">Folgende Daten konnten nicht automatisiert erhoben werden und sollten intern beschafft oder mit kostenpflichtigen Tools ergänzt werden:</p>
+
+            <table class="issue-table">
+                <thead><tr><th>Fehlende Info</th><th>Warum wichtig</th><th>Wie beschaffen</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Google Search Console Daten</strong></td>
+                        <td>Exakte Keyword-Rankings, Impressions, Klickraten, Indexierungsstatus, Core Web Vitals</td>
+                        <td>Zugang zur GSC von siz.ch anfordern – das ist die wichtigste Datenquelle</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Google Analytics / Matomo Daten</strong></td>
+                        <td>Besucherzahlen, Verweildauer, Absprungrate, beliebteste Seiten, Conversion-Pfade, Traffic-Quellen</td>
+                        <td>Zugang zum Analytics-Tool anfordern</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Google PageSpeed Insights</strong></td>
+                        <td>Exakte Performance-Scores (LCP, FID, CLS), Core Web Vitals, konkrete Optimierungsvorschläge</td>
+                        <td>pagespeed.web.dev aufrufen und siz.ch testen (kostenlos, manuell im Browser)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Professionelle Backlink-Analyse</strong></td>
+                        <td>Vollständige Backlink-Liste, Domain Authority, Toxic Links, Konkurrenzvergleich</td>
+                        <td>Ahrefs, SEMrush oder Moz (kostenpflichtig, ab ca. CHF 100/Monat)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Keyword-Suchvolumen (exakt)</strong></td>
+                        <td>Genaue monatliche Suchanfragen pro Keyword in der Schweiz</td>
+                        <td>Google Ads Keyword Planner (kostenlos mit Google-Ads-Konto) oder Ahrefs/SEMrush</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Heatmap / Nutzerverhalten</strong></td>
+                        <td>Wo klicken Besucher? Wo scrollen sie weg? Welche CTAs funktionieren?</td>
+                        <td>Hotjar oder Microsoft Clarity installieren (Clarity ist kostenlos)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SSL/TLS-Zertifikat-Details</strong></td>
+                        <td>Stärke der Verschlüsselung, Ablaufdatum, Konfigurationsqualität</td>
+                        <td>ssllabs.com/ssltest aufrufen (kostenlos, manuell im Browser)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Uptime-Monitoring</strong></td>
+                        <td>Ist siz.ch zuverlässig erreichbar? Ausfallzeiten?</td>
+                        <td>UptimeRobot einrichten (kostenlos bis 50 Monitore)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>E-Mail-Zustellbarkeit</strong></td>
+                        <td>SPF, DKIM, DMARC korrekt konfiguriert? E-Mails von @siz.ch landen nicht im Spam?</td>
+                        <td>mxtoolbox.com/emailhealth aufrufen (kostenlos)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Konkurrenz-Traffic-Vergleich</strong></td>
+                        <td>Wie viel Traffic hat siz.ch vs. ecdl.ch vs. digicomp.ch?</td>
+                        <td>SimilarWeb (Gratis-Version gibt Schätzungen) oder SEMrush</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="highlight-box green">
+                <strong>Empfehlung:</strong> Die 3 wichtigsten nächsten Schritte sind: 1) Google Search Console Zugang besorgen (kostenlos, gibt die wertvollsten Daten), 2) Google PageSpeed Insights manuell testen (5 Minuten), 3) Microsoft Clarity installieren (kostenlos, zeigt Nutzerverhalten). Mit diesen 3 Datenquellen plus unserer Analyse hat man ein vollständiges Bild.
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <p>Website-Analyse erstellt: April 2026 · Erweitert: April 2026</p>
+        <p style="margin-top:4px;">Analysiert mit WebFetch, Link-Checks, Keyword-Recherche und Quellcode-Analyse</p>
+        <p style="margin-top:4px;">Erstellt für die SIZ AG · 48 Massnahmen · Alle Empfehlungen basieren auf aktuellen SEO-, Security- und Compliance-Best-Practices</p>
+        </div>
+
+</div>
+
+<script>
+// =============================================
+// Erledigt + Verantwortlich Spalten zu ALLEN Tabellen
+// =============================================
+function saveCheck(el) {
+    localStorage.setItem(el.dataset.key, el.checked);
+    // Zeile visuell markieren
+    el.closest('tr').style.opacity = el.checked ? '0.55' : '1';
+    el.closest('tr').style.textDecoration = el.checked ? 'line-through' : 'none';
+}
+function saveResp(el) {
+    localStorage.setItem(el.dataset.key, el.value);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Tabellen die KEINE Erledigt-Spalte bekommen sollen (reine Info-Tabellen)
+    var skipKeywords = ['Kriterium', 'Kanal', 'Fehlende Info', 'Kategorie', 'Keyword', 'Konkurrent', 'Seite,Letzte'];
+
+    var counter = 0;
+    document.querySelectorAll('.issue-table').forEach(function(table) {
+        var thead = table.querySelector('thead tr');
+        if (!thead) return;
+
+        // Bereits Erledigt-Spalte? Überspringen
+        if (thead.innerHTML.indexOf('Erledigt') > -1) {
+            // Nur restore für bestehende exam-Checkboxen
+            return;
+        }
+
+        // Prüfen ob Info-Tabelle (überspringen)
+        var firstTh = thead.querySelector('th');
+        if (!firstTh) return;
+        var headerText = thead.innerText;
+        var skip = false;
+        skipKeywords.forEach(function(kw) {
+            if (headerText.indexOf(kw) > -1) skip = true;
+        });
+        if (skip) return;
+
+        // Spalten zum Header hinzufügen
+        var thDone = document.createElement('th');
+        thDone.textContent = 'Erledigt';
+        thDone.style.width = '60px';
+        thDone.style.textAlign = 'center';
+        thead.appendChild(thDone);
+
+        var thResp = document.createElement('th');
+        thResp.textContent = 'Verantwortlich';
+        thResp.style.width = '100px';
+        thead.appendChild(thResp);
+
+        // Zu jeder Zeile im Body hinzufügen
+        table.querySelectorAll('tbody tr').forEach(function(tr) {
+            // Zeilen mit colspan überspringen (Zwischenüberschriften)
+            if (tr.querySelector('td[colspan]')) {
+                var span = tr.querySelector('td[colspan]');
+                span.setAttribute('colspan', parseInt(span.getAttribute('colspan')) + 2);
+                return;
+            }
+
+            counter++;
+            var key = 'tbl-' + counter;
+
+            var tdCheck = document.createElement('td');
+            tdCheck.style.textAlign = 'center';
+            var cb = document.createElement('input');
+            cb.type = 'checkbox';
+            cb.dataset.key = key + '-done';
+            cb.onchange = function() { saveCheck(this); };
+            tdCheck.appendChild(cb);
+            tr.appendChild(tdCheck);
+
+            var tdResp = document.createElement('td');
+            var inp = document.createElement('input');
+            inp.type = 'text';
+            inp.dataset.key = key + '-resp';
+            inp.onchange = function() { saveResp(this); };
+            inp.style.cssText = 'width:90px;border:1px solid #ddd;border-radius:4px;padding:3px 6px;font-size:0.85em;';
+            inp.placeholder = 'Kürzel';
+            tdResp.appendChild(inp);
+            tr.appendChild(tdResp);
+        });
+    });
+
+    // Alle gespeicherten Werte wiederherstellen
+    document.querySelectorAll('input[type="checkbox"][data-key]').forEach(function(cb) {
+        var saved = localStorage.getItem(cb.dataset.key);
+        if (saved === 'true') {
+            cb.checked = true;
+            cb.closest('tr').style.opacity = '0.55';
+            cb.closest('tr').style.textDecoration = 'line-through';
+        }
+    });
+    document.querySelectorAll('input[type="text"][data-key]').forEach(function(inp) {
+        var saved = localStorage.getItem(inp.dataset.key);
+        if (saved) inp.value = saved;
+    });
+});
+</script>
+</body>
+</html>

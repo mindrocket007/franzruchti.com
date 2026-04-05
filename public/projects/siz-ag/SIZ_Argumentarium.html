@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIZ Argumentarium – Warum ICT-Kompetenzen wichtiger sind denn je</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f2f5;
+            color: #333;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.2em;
+            color: #1a1a2e;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 50px;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* Section Cards */
+        .section-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-bottom: 36px;
+        }
+        .section-header {
+            padding: 24px 32px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .section-header h2 {
+            font-size: 1.4em;
+            margin: 0;
+        }
+        .section-header .badge {
+            background: rgba(255,255,255,0.25);
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+        .section-body {
+            padding: 28px 32px;
+        }
+
+        /* Gradients */
+        .bg-blue { background: linear-gradient(135deg, #1565C0, #42A5F5); }
+        .bg-green { background: linear-gradient(135deg, #2E7D32, #66BB6A); }
+        .bg-orange { background: linear-gradient(135deg, #E65100, #FFA726); }
+        .bg-purple { background: linear-gradient(135deg, #6A1B9A, #AB47BC); }
+        .bg-red { background: linear-gradient(135deg, #C62828, #EF5350); }
+        .bg-teal { background: linear-gradient(135deg, #00695C, #26A69A); }
+        .bg-indigo { background: linear-gradient(135deg, #283593, #5C6BC0); }
+        .bg-dark { background: linear-gradient(135deg, #1a1a2e, #3a3a5e); }
+
+        /* Who we are */
+        .hero-box {
+            background: linear-gradient(135deg, #1a1a2e, #2d2d5e);
+            color: white;
+            border-radius: 16px;
+            padding: 48px 40px;
+            margin-bottom: 36px;
+            text-align: center;
+        }
+        .hero-box h2 {
+            font-size: 1.8em;
+            margin-bottom: 16px;
+        }
+        .hero-box p {
+            font-size: 1.1em;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto 24px auto;
+        }
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 32px;
+        }
+        .hero-stat {
+            text-align: center;
+        }
+        .hero-stat .number {
+            font-size: 2.4em;
+            font-weight: 800;
+            display: block;
+            line-height: 1.1;
+        }
+        .hero-stat .label {
+            font-size: 0.85em;
+            opacity: 0.8;
+            display: block;
+            margin-top: 4px;
+        }
+
+        /* Benefit Grid */
+        .benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+            margin-bottom: 36px;
+        }
+        .benefit-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        .benefit-card .card-header {
+            padding: 20px 24px;
+            color: white;
+        }
+        .benefit-card .card-header h3 {
+            font-size: 1.2em;
+            margin-bottom: 4px;
+        }
+        .benefit-card .card-header .card-icon {
+            font-size: 1.8em;
+            margin-bottom: 8px;
+            display: block;
+        }
+        .benefit-card .card-body {
+            padding: 20px 24px;
+        }
+        .benefit-card .card-body ul {
+            list-style: none;
+            padding: 0;
+        }
+        .benefit-card .card-body li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 0.93em;
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+        }
+        .benefit-card .card-body li:last-child {
+            border-bottom: none;
+        }
+        .benefit-card .card-body li::before {
+            content: "✓";
+            color: #43A047;
+            font-weight: 700;
+            flex-shrink: 0;
+            margin-top: 1px;
+        }
+
+        /* Key Message Box */
+        .key-message {
+            background: linear-gradient(135deg, #1565C0, #1E88E5);
+            color: white;
+            border-radius: 16px;
+            padding: 32px 40px;
+            margin-bottom: 36px;
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: 600;
+            line-height: 1.5;
+        }
+        .key-message .emoji {
+            font-size: 2em;
+            display: block;
+            margin-bottom: 12px;
+        }
+
+        /* Accordion / FAQ */
+        .faq-section {
+            margin-bottom: 36px;
+        }
+        .faq-section-title {
+            font-size: 1.3em;
+            color: #1a1a2e;
+            margin-bottom: 16px;
+            padding-left: 4px;
+        }
+        .faq-item {
+            background: white;
+            border-radius: 12px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+            overflow: hidden;
+        }
+        .faq-question {
+            padding: 18px 24px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            font-weight: 600;
+            font-size: 0.95em;
+            color: #1a1a2e;
+            transition: background 0.2s;
+            user-select: none;
+        }
+        .faq-question:hover {
+            background: #f8f9fa;
+        }
+        .faq-question .q-icon {
+            flex-shrink: 0;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8em;
+            font-weight: 700;
+            color: white;
+            transition: transform 0.3s;
+        }
+        .faq-question .q-label {
+            background: #EF5350;
+            color: white;
+            padding: 2px 10px;
+            border-radius: 12px;
+            font-size: 0.75em;
+            font-weight: 600;
+            flex-shrink: 0;
+            margin-right: 4px;
+        }
+        .faq-question .q-text {
+            flex: 1;
+        }
+        .faq-question .arrow {
+            font-size: 1.2em;
+            color: #999;
+            transition: transform 0.3s;
+            flex-shrink: 0;
+        }
+        .faq-item.open .faq-question .arrow {
+            transform: rotate(180deg);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.3s ease;
+        }
+        .faq-item.open .faq-answer {
+            max-height: 3000px;
+        }
+        .faq-answer-inner {
+            padding: 0 24px 24px 24px;
+            border-top: 1px solid #eee;
+        }
+        .faq-answer-inner h4 {
+            color: #1565C0;
+            margin: 16px 0 8px 0;
+            font-size: 0.95em;
+        }
+        .faq-answer-inner p {
+            font-size: 0.93em;
+            margin-bottom: 10px;
+            color: #444;
+        }
+        .faq-answer-inner ul {
+            margin: 8px 0 12px 20px;
+            font-size: 0.93em;
+            color: #444;
+        }
+        .faq-answer-inner li {
+            margin-bottom: 6px;
+        }
+        .faq-answer-inner .source {
+            font-size: 0.82em;
+            color: #888;
+            font-style: italic;
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px dashed #e0e0e0;
+        }
+        .faq-answer-inner .highlight-box {
+            background: #E3F2FD;
+            border-left: 4px solid #1565C0;
+            padding: 12px 16px;
+            border-radius: 0 8px 8px 0;
+            margin: 12px 0;
+            font-size: 0.93em;
+        }
+        .faq-answer-inner .highlight-box.green {
+            background: #E8F5E9;
+            border-left-color: #43A047;
+        }
+        .faq-answer-inner .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+            margin: 12px 0;
+        }
+        .faq-answer-inner .stat-box {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 12px 16px;
+            text-align: center;
+        }
+        .faq-answer-inner .stat-box .stat-num {
+            font-size: 1.4em;
+            font-weight: 800;
+            color: #1565C0;
+            display: block;
+        }
+        .faq-answer-inner .stat-box .stat-label {
+            font-size: 0.8em;
+            color: #666;
+        }
+
+        /* Target Group Tabs */
+        .tab-container {
+            margin-bottom: 36px;
+        }
+        .tab-buttons {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 0;
+        }
+        .tab-btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 12px 12px 0 0;
+            cursor: pointer;
+            font-size: 0.95em;
+            font-weight: 600;
+            color: #666;
+            background: #e0e0e0;
+            transition: all 0.2s;
+        }
+        .tab-btn.active {
+            background: white;
+            color: #1565C0;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.06);
+        }
+        .tab-content {
+            display: none;
+            background: white;
+            border-radius: 0 16px 16px 16px;
+            padding: 28px 32px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        .tab-content.active {
+            display: block;
+        }
+
+        /* Comparison Table */
+        .compare-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+        }
+        .compare-table thead th {
+            background: #f5f7fa;
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 700;
+            font-size: 0.85em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #555;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        .compare-table tbody td {
+            padding: 12px 16px;
+            border-bottom: 1px solid #eee;
+            font-size: 0.93em;
+            vertical-align: top;
+        }
+        .compare-table .col-bad {
+            color: #C62828;
+        }
+        .compare-table .col-good {
+            color: #2E7D32;
+        }
+
+        /* Diploma Quick Reference */
+        .diploma-ref {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+            margin: 16px 0;
+        }
+        .diploma-ref-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 16px;
+            border-left: 4px solid;
+        }
+        .diploma-ref-card h4 {
+            font-size: 0.95em;
+            margin-bottom: 6px;
+        }
+        .diploma-ref-card p {
+            font-size: 0.85em;
+            color: #555;
+            margin: 0;
+        }
+        .diploma-ref-card.level-1 { border-left-color: #4CAF50; }
+        .diploma-ref-card.level-2 { border-left-color: #2196F3; }
+        .diploma-ref-card.level-3 { border-left-color: #FF9800; }
+        .diploma-ref-card.level-4 { border-left-color: #9C27B0; }
+
+        /* Source List */
+        .source-list {
+            columns: 2;
+            column-gap: 32px;
+        }
+        .source-list li {
+            font-size: 0.85em;
+            margin-bottom: 8px;
+            break-inside: avoid;
+            color: #555;
+        }
+        .source-list a {
+            color: #1565C0;
+            text-decoration: none;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            color: #999;
+            font-size: 0.85em;
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            body { padding: 20px 12px; }
+            h1 { font-size: 1.6em; }
+            .hero-box { padding: 28px 20px; }
+            .hero-stats { gap: 20px; }
+            .hero-stat .number { font-size: 1.8em; }
+            .section-body { padding: 20px 16px; }
+            .faq-question { padding: 14px 16px; }
+            .faq-answer-inner { padding: 0 16px 16px 16px; }
+            .benefit-grid { grid-template-columns: 1fr; }
+            .source-list { columns: 1; }
+            .tab-btn { padding: 10px 16px; font-size: 0.85em; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>SIZ Argumentarium</h1>
+    <p class="subtitle">Warum ICT-Kompetenzen im Zeitalter von KI wichtiger sind denn je</p>
+
+    <!-- ============================================ -->
+    <!-- HERO: Wer ist die SIZ AG? -->
+    <!-- ============================================ -->
+    <div class="hero-box">
+        <h2>SIZ AG – Schweizerisches Informatik-Zertifikat</h2>
+        <p>Die führende und neutrale ICT-Prüfungsorganisation der Schweiz. Getragen vom <strong>Kaufmännischen Verband Schweiz</strong> und <strong>Swico</strong> – dem Wirtschaftsverband der digitalen Schweiz.</p>
+        <p style="opacity:0.8; font-size:0.95em;">Seit 1991 fördern wir praxisorientierte Informatikausbildung in Abstimmung mit dem schweizerischen Bildungssystem. Wir prüfen – unsere über 100 Partnerschulen bilden aus.</p>
+        <div class="hero-stats">
+            <div class="hero-stat">
+                <span class="number">250'000+</span>
+                <span class="label">Diplom-Absolventen</span>
+            </div>
+            <div class="hero-stat">
+                <span class="number">8'000</span>
+                <span class="label">Prüfungen pro Jahr</span>
+            </div>
+            <div class="hero-stat">
+                <span class="number">100+</span>
+                <span class="label">Partnerschulen</span>
+            </div>
+            <div class="hero-stat">
+                <span class="number">60</span>
+                <span class="label">Fachexperten</span>
+            </div>
+            <div class="hero-stat">
+                <span class="number">seit 1991</span>
+                <span class="label">Qualität &amp; Vertrauen</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- UNSERE DIPLOME -->
+    <!-- ============================================ -->
+    <div class="section-card">
+        <div class="section-header bg-indigo">
+            <h2>Unsere Diplome – Vom Einsteiger zum Profi</h2>
+            <span class="badge">5 Stufen · 15 Module</span>
+        </div>
+        <div class="section-body">
+            <div class="diploma-ref">
+                <div class="diploma-ref-card level-1">
+                    <h4>ICT Smart-User SIZ</h4>
+                    <p>Einstieg in die digitale Welt. Office-Grundlagen, E-Mail, Cloud, Datenschutz. 3 Module.</p>
+                </div>
+                <div class="diploma-ref-card level-2">
+                    <h4>ICT Advanced-User SIZ</h4>
+                    <p>Vertiefte Office- und Cloud-Kompetenzen. Professionelle Dokumente, Präsentationen, Datenauswertungen. 4 Module.</p>
+                </div>
+                <div class="diploma-ref-card level-3">
+                    <h4>ICT Power-User SIZ Data Technology</h4>
+                    <p>Spezialist für Datenanalyse. Power Query, Pivot-Tabellen, Power Pivot, Business Intelligence. 2 Module.</p>
+                </div>
+                <div class="diploma-ref-card level-3">
+                    <h4>ICT Power-User SIZ Systems &amp; Network</h4>
+                    <p>PC-Techniker mit Netzwerk-Expertise. Hardware, Windows, Active Directory, TCP/IP, Firewalls, VLANs. 3 Module.</p>
+                </div>
+                <div class="diploma-ref-card level-4">
+                    <h4>ICT Professional Systems &amp; Network SIZ</h4>
+                    <p>Server-Administration und Netzwerk-Profi. Windows Server, Hyper-V, PowerShell, VPN, Gruppenrichtlinien. 1 Aufbaumodul.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- VORTEILE NACH ZIELGRUPPE -->
+    <!-- ============================================ -->
+    <div class="benefit-grid">
+
+        <!-- UNTERNEHMEN -->
+        <div class="benefit-card">
+            <div class="card-header bg-blue">
+                <span class="card-icon">🏢</span>
+                <h3>Vorteile für Unternehmen</h3>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li>Produktivitätssteigerung durch kompetente Mitarbeitende – weniger Zeitverlust durch IT-Unsicherheit</li>
+                    <li>Standardisierter, messbarer Kompetenznachweis für HR und Personalentwicklung</li>
+                    <li>Sicherer Umgang mit Firmendaten, Netzwerken und Cloud-Diensten – weniger Sicherheitsvorfälle</li>
+                    <li>Fundament für erfolgreiche KI-Einführung – Copilot &amp; Co. funktionieren nur mit kompetenten Nutzern</li>
+                    <li>Reduktion von IT-Supportkosten durch selbstständigere Mitarbeitende</li>
+                    <li>Wettbewerbsvorteil im Fachkräftemarkt durch Investition in Weiterbildung</li>
+                    <li>Branchenübergreifend anerkannt – getragen von kfmv und Swico</li>
+                    <li>Modularer Aufbau erlaubt gezielte Kompetenzentwicklung je nach Bedarf</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- BILDUNGSINSTITUTIONEN -->
+        <div class="benefit-card">
+            <div class="card-header bg-green">
+                <span class="card-icon">🎓</span>
+                <h3>Vorteile für Bildungsinstitutionen</h3>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li>Praxisorientierter Lehrplan – von 60 Fachexperten aus Wirtschaft und Bildung entwickelt</li>
+                    <li>Abgestimmt auf das schweizerische Bildungssystem und die Anforderungen der Berufsbildung</li>
+                    <li>Messbare Lernergebnisse durch neutrale, standardisierte Prüfungen</li>
+                    <li>Differenzierung im Weiterbildungsmarkt – schweizweit anerkannte Abschlüsse</li>
+                    <li>Regelmässig aktualisierte Inhalte, die Trends wie Cloud, KI und Cybersecurity abdecken</li>
+                    <li>Netzwerk von 100+ Partnerschulen – Erfahrungsaustausch und Best Practices</li>
+                    <li>Brücke zwischen schulischem Lernen und beruflicher Anwendung</li>
+                    <li>Aufbauende Diplome ermöglichen langfristige Lernpfade für Teilnehmende</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- SCHÜLER / STUDENTEN -->
+        <div class="benefit-card">
+            <div class="card-header bg-orange">
+                <span class="card-icon">🚀</span>
+                <h3>Vorteile für Lernende &amp; Studierende</h3>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li>Schweizweit anerkannter Kompetenznachweis für Bewerbungen und Lebenslauf</li>
+                    <li>Konkrete, sofort einsetzbare Skills für Lehre, Studium und ersten Job</li>
+                    <li>Lohnvorteil: ICT-zertifizierte Fachkräfte verdienen 20–30 % mehr als Vergleichsgruppen</li>
+                    <li>Zukunftssichere Grundlagen – die Basis, um KI-Tools souverän zu nutzen</li>
+                    <li>Modularer Aufbau: Einstieg jederzeit möglich, Weiterentwicklung Schritt für Schritt</li>
+                    <li>Vom Smart-User bis zum Professional – ein klarer Karrierepfad in der ICT</li>
+                    <li>Wissen, das in jeder Branche gefragt ist – nicht nur in der IT</li>
+                    <li>Prüfungsvorbereitung an über 100 Schulen in der ganzen Schweiz</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- KEY MESSAGE -->
+    <!-- ============================================ -->
+    <div class="key-message">
+        <span class="emoji">💡</span>
+        «KI ist ein Verstärker – sie verstärkt vorhandene digitale Kompetenzen.<br>
+        Wer keine hat, dem wird auch nichts verstärkt.»
+    </div>
+
+    <!-- ============================================ -->
+    <!-- WARUM GERADE JETZT? -->
+    <!-- ============================================ -->
+    <div class="section-card">
+        <div class="section-header bg-teal">
+            <h2>Warum SIZ gerade jetzt an Relevanz gewinnt</h2>
+            <span class="badge">5 Megatrends</span>
+        </div>
+        <div class="section-body">
+
+            <div class="faq-answer-inner" style="padding:0;">
+
+                <div class="stat-grid">
+                    <div class="stat-box">
+                        <span class="stat-num">42 %</span>
+                        <span class="stat-label">der EU-Bevölkerung haben keine digitalen Grundkompetenzen (DESI 2024)</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-num">38'000</span>
+                        <span class="stat-label">fehlende ICT-Fachkräfte in der Schweiz (ICT-Berufsbildung CH)</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-num">86 %</span>
+                        <span class="stat-label">der Arbeitgeber erwarten mehr Nachfrage nach Digital Skills durch KI (WEF 2025)</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-num">4 Mio.</span>
+                        <span class="stat-label">fehlende Cybersecurity-Fachkräfte weltweit (ISC2 2024)</span>
+                    </div>
+                </div>
+
+                <h4 style="margin-top:24px;">1. KI macht ICT-Kompetenzen wichtiger, nicht überflüssig</h4>
+                <p>Das World Economic Forum stuft «Technological Literacy» als zweitwichtigsten wachsenden Skill bis 2030 ein. McKinsey zeigt: 72 % der Unternehmen scheitern bei der KI-Einführung nicht an der Technologie – sondern an fehlenden digitalen Grundkompetenzen der Mitarbeitenden.</p>
+
+                <h4>2. Copilot, ChatGPT &amp; Co. setzen Office-Wissen voraus</h4>
+                <p>Microsoft Copilot arbeitet <em>innerhalb</em> von Word, Excel und PowerPoint. Wer diese Tools nicht versteht, kann Copilot nicht sinnvoll steuern. Satya Nadella (Microsoft CEO, Ignite 2024): «Copilot doesn't replace the need to understand Excel – it makes Excel expertise more valuable than ever.»</p>
+
+                <h4>3. KI halluziniert – Menschen müssen prüfen</h4>
+                <p>Stanford HAI (2024): Grosse Sprachmodelle liefern in 15–25 % der Fälle faktisch falsche Informationen. Wer einen KI-generierten Excel-Report nicht selbst überprüfen kann, verbreitet potenziell fehlerhafte Daten im Unternehmen.</p>
+
+                <h4>4. Cybersecurity-Krise erfordert System- und Netzwerkwissen</h4>
+                <p>Ransomware-Angriffe auf Schweizer Unternehmen haben sich 2023–2024 verdoppelt. 90 % aller Cyberangriffe nutzen Netzwerkschwachstellen. Fundiertes System- und Netzwerkwissen – wie es die SIZ-Diplome Systems &amp; Network vermitteln – ist die Grundlage jeder Cybersecurity-Strategie.</p>
+
+                <h4>5. Data Literacy wird zur Grundvoraussetzung</h4>
+                <p>Gartner prognostiziert: Bis 2025 sollten 80 % der Organisationen Data Literacy in ihre Strategie integriert haben. «AI and Big Data» ist laut WEF 2025 der am schnellsten wachsende Skill weltweit – und genau das lehrt der SIZ Power-User Data Technology.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- VERGLEICHSTABELLE -->
+    <!-- ============================================ -->
+    <div class="section-card">
+        <div class="section-header bg-dark">
+            <h2>Ohne vs. mit ICT-Kompetenzen im KI-Zeitalter</h2>
+        </div>
+        <div class="section-body">
+            <table class="compare-table">
+                <thead>
+                    <tr>
+                        <th>Situation</th>
+                        <th class="col-bad">Ohne ICT-Grundlagen</th>
+                        <th class="col-good">Mit ICT-Grundlagen + KI</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>KI-Output prüfen</strong></td>
+                        <td class="col-bad">Kann Fehler nicht erkennen, verbreitet falsche Daten</td>
+                        <td class="col-good">Verifiziert und korrigiert KI-Ergebnisse souverän</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Copilot nutzen</strong></td>
+                        <td class="col-bad">Versteht Vorschläge nicht, tippt alles manuell</td>
+                        <td class="col-good">Nutzt Copilot als Produktivitäts-Booster</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Datenanalyse</strong></td>
+                        <td class="col-bad">Kann Pivot-Tabellen und Power Query nicht einordnen</td>
+                        <td class="col-good">Erstellt Business-Intelligence-Reports in Minuten</td>
+                    </tr>
+                    <tr>
+                        <td><strong>KI-Integration</strong></td>
+                        <td class="col-bad">Kann KI-Output nicht in Systeme einbinden</td>
+                        <td class="col-good">Integriert KI nahtlos in bestehende Workflows</td>
+                    </tr>
+                    <tr>
+                        <td><strong>IT-Sicherheit</strong></td>
+                        <td class="col-bad">Sicherheitsrisiko durch Unwissenheit, Datenlecks</td>
+                        <td class="col-good">Nutzt KI sicher und compliant</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Netzwerk &amp; Cloud</strong></td>
+                        <td class="col-bad">Versteht Infrastruktur nicht, abhängig von Externen</td>
+                        <td class="col-good">Administriert Systeme, Netzwerke und Cloud eigenständig</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Karriere &amp; Lohn</strong></td>
+                        <td class="col-bad">Eingeschränkte Entwicklung, tiefere Löhne</td>
+                        <td class="col-good">Gefragte Fachkraft, 20–30 % höherer Lohn</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- KRITISCHE FRAGEN & SIZ-ANTWORTEN -->
+    <!-- ============================================ -->
+    <div class="section-card">
+        <div class="section-header bg-red">
+            <h2>Kritische Fragen – und unsere Antworten</h2>
+            <span class="badge">Aufklappbar</span>
+        </div>
+        <div class="section-body">
+
+            <!-- Zielgruppe: ALLGEMEIN -->
+            <div class="faq-section">
+                <h3 class="faq-section-title">Allgemein: KI vs. ICT-Kompetenzen</h3>
+
+                <!-- Q1 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="q-label">Kritik</span>
+                        <span class="q-text">«Warum soll ich noch Word, Excel und PowerPoint lernen, wenn ChatGPT das alles für mich macht?»</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <h4>KI steuern erfordert Fachwissen</h4>
+                            <p>Wer nicht weiss, was eine Pivot-Tabelle, ein SVERWEIS oder eine bedingte Formatierung ist, wird ChatGPT nie danach fragen. Die Fähigkeit, KI sinnvoll einzusetzen, setzt <strong>Grundwissen über die Werkzeuge</strong> voraus.</p>
+                            <div class="highlight-box">
+                                <strong>Microsoft Work Trend Index 2024:</strong> 68 % der KI-Nutzer am Arbeitsplatz sagen, sie brauchen <em>mehr</em> Office-Kenntnisse als vorher, nicht weniger.
+                            </div>
+                            <h4>Qualitätskontrolle ist menschlich</h4>
+                            <p>KI-generierte Excel-Formeln enthalten regelmässig Fehler. In Fachforen (r/excel) wurde 2024 vielfach dokumentiert, wie ChatGPT fehlerhafte SVERWEIS/XLOOKUP-Formeln liefert. Wer die Grundlagen nicht kennt, erkennt die Fehler nicht.</p>
+                            <h4>Formatierung, Branding und Integration</h4>
+                            <p>KI kann Inhalte generieren, aber die professionelle Formatierung eines Word-Dokuments mit Corporate Design, eine korrekte Excel-Arbeitsmappe mit Datenvalidierung oder ein markenkonformes PowerPoint-Deck erfordert fundiertes Werkzeugwissen.</p>
+                            <div class="highlight-box green">
+                                <strong>SIZ-Antwort:</strong> Unsere Diplome (Smart-User bis Power-User Data Technology) vermitteln genau die Kompetenzen, die nötig sind, um KI-Output zu prüfen, anzupassen und professionell einzusetzen. KI ist das Werkzeug – der Mensch muss es steuern können.
+                            </div>
+                            <p class="source">Quellen: Microsoft Work Trend Index 2024 (microsoft.com/worklab) · Forrester: «AI-generated documents require 30–50 % rework time» (2024) · Reddit r/excel – diverse Threads zu ChatGPT-Fehlern in Excel-Formeln</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q2 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="q-label">Kritik</span>
+                        <span class="q-text">«KI und Agenten ersetzen bald alle Bürojobs. Warum also noch Office-Skills lernen?»</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <h4>Augmentation statt Substitution</h4>
+                            <p>Die Arbeitsmarktforschung (OECD, McKinsey, WEF) ist sich einig: <strong>KI ersetzt Aufgaben, nicht Berufe.</strong> Das WEF Future of Jobs Report 2025 prognostiziert netto 78 Millionen neue Arbeitsplätze bis 2030 – mehr als wegfallen.</p>
+                            <div class="stat-grid">
+                                <div class="stat-box">
+                                    <span class="stat-num">+78 Mio.</span>
+                                    <span class="stat-label">Netto-Jobzuwachs bis 2030 (WEF 2025)</span>
+                                </div>
+                                <div class="stat-box">
+                                    <span class="stat-num">39 %</span>
+                                    <span class="stat-label">aller Skills verändern sich bis 2030</span>
+                                </div>
+                            </div>
+                            <h4>Historischer Vergleich</h4>
+                            <p>Taschenrechner haben Mathematik-Unterricht nicht abgeschafft. Rechtschreibprüfungen haben Deutsch-Unterricht nicht überflüssig gemacht. Jedes neue Werkzeug erfordert Grundlagenwissen für den kompetenten Einsatz.</p>
+                            <h4>Die «Last Mile» ist menschlich</h4>
+                            <ul>
+                                <li>KI liefert einen Entwurf – der Mensch importiert die Daten ins ERP-System</li>
+                                <li>KI generiert Text – der Mensch pflegt ihn ins Dokumentenmanagement ein</li>
+                                <li>KI schlägt vor – der Mensch konfiguriert das Netzwerk, damit die KI überhaupt läuft</li>
+                            </ul>
+                            <div class="highlight-box green">
+                                <strong>SIZ-Antwort:</strong> SIZ-Diplome bereiten auf genau diese transformierten Berufsprofile vor – die Kombination aus soliden ICT-Grundlagen und der Fähigkeit, neue Technologien souverän zu integrieren.
+                            </div>
+                            <p class="source">Quellen: WEF Future of Jobs Report 2025 · OECD Employment Outlook 2024: «AI automates tasks, not jobs» · McKinsey «A new future of work» (2024)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q3 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="q-label">Kritik</span>
+                        <span class="q-text">«In einem Jahr ist doch eh alles veraltet. Warum soll ich ein ICT-Zertifikat machen?»</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <h4>Grundlagen sind zeitlos – Tools ändern sich, Prinzipien bleiben</h4>
+                            <p>Tabellenkalkulations-Prinzipien gibt es seit über 40 Jahren. TCP/IP gibt es seit den 1980er-Jahren. Active Directory seit 1999. <strong>Die Grundkonzepte ändern sich nicht mit jedem Update</strong> – sie werden ergänzt und erweitert.</p>
+                            <h4>SIZ aktualisiert laufend</h4>
+                            <p>Die Prüfungsinhalte werden von 60 Fachexperten aus Wirtschaft und Bildung regelmässig überarbeitet. Neue Themen wie Cloud, Power Query, Power Pivot und Virtualisierung sind bereits integriert.</p>
+                            <h4>Transfer-Kompetenz</h4>
+                            <p>Wer Office-Grundlagen versteht, kann jedes neue Tool – inklusive KI – schneller lernen und einordnen. ChatGPT gibt es erst seit November 2022. Ob es in 10 Jahren noch das dominante Tool ist, weiss niemand. Die Grundlagen bleiben.</p>
+                            <div class="highlight-box green">
+                                <strong>SIZ-Antwort:</strong> Wir vermitteln keine Software-Klicks, sondern Konzepte und Kompetenzen. Wer Datenstrukturen, Netzwerkprotokolle und Office-Logik versteht, ist für jede technologische Veränderung gerüstet.
+                            </div>
+                            <p class="source">Quellen: ICT-Berufsbildung Schweiz, Positionspapier 2024 · EU DigComp 2.2 Framework – Kompetenzrahmen für digitale Grundbildung</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q4 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="q-label">Kritik</span>
+                        <span class="q-text">«Digital Natives wachsen doch mit Technologie auf. Die brauchen keine ICT-Schulung mehr.»</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <h4>Der Digital-Native-Mythos</h4>
+                            <p>Aufgewachsen mit Technologie heisst <strong>nicht</strong>, sie produktiv einsetzen zu können. Studien (u. a. University of Illinois) zeigen: Gen-Z-Mitarbeitende haben oft Schwierigkeiten mit professioneller IT-Nutzung – Dateien ordnen, E-Mails professionell schreiben, Tabellen strukturieren.</p>
+                            <div class="highlight-box">
+                                <strong>PISA 2022 / BFS:</strong> Viele Jugendliche können ein TikTok-Video erstellen, aber scheitern an einer strukturierten Excel-Tabelle oder einem formellen Geschäftsbrief in Word.
+                            </div>
+                            <h4>Smartphone-Nutzung ≠ professionelle ICT-Kompetenz</h4>
+                            <p>Ein Instagram-Account zu führen ist nicht dasselbe wie eine Pivot-Tabelle zu erstellen, ein Netzwerk zu konfigurieren oder ein Active Directory zu administrieren. Die professionelle Anwendung von ICT-Tools muss systematisch erlernt werden.</p>
+                            <div class="highlight-box green">
+                                <strong>SIZ-Antwort:</strong> Gerade weil die «Digital Natives» eine Illusion von Kompetenz mitbringen, ist strukturierte ICT-Ausbildung mit messbarem Nachweis so wichtig. SIZ schliesst die Lücke zwischen Alltags-IT und professioneller Anwendung.
+                            </div>
+                            <p class="source">Quellen: University of Illinois – «Are Digital Natives digitally literate?» · PISA 2022 · D21-Digital-Index 2024/2025: Nur 52 % der Bevölkerung haben mindestens «durchschnittliche» digitale Kompetenzen</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q5 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="q-label">Kritik</span>
+                        <span class="q-text">«Ich lerne lieber Programmieren oder Prompt Engineering statt Office – das ist zukunftssicherer.»</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <h4>Falsche Dichotomie – es ist kein Entweder-Oder</h4>
+                            <p>In der Praxis braucht es beides. Ein Programmierer, der keinen professionellen Projektbericht in Word erstellen oder Daten in Excel analysieren kann, ist im Berufsalltag eingeschränkt.</p>
+                            <div class="highlight-box">
+                                <strong>Stack Overflow Developer Survey 2024:</strong> Excel ist neben IDEs das meistgenutzte Tool – auch unter Entwicklern.
+                            </div>
+                            <h4>Prompt Engineering ist kein eigenständiger Beruf</h4>
+                            <p>Die anfängliche Euphorie um «Prompt Engineers» mit hohen Gehältern hat sich gelegt. Es ist eine Zusatzkompetenz, kein Ersatz für Fachkompetenz (Wired, MIT Technology Review 2024).</p>
+                            <h4>KI macht Coding selbst einfacher</h4>
+                            <p>Wenn KI bald besser programmiert als die meisten Menschen, ist «Coding statt Office» auch kein sicherer Hafen. Die Grundlagen der digitalen Arbeitswelt – Datenanalyse, Dokumentenverwaltung, Systemverständnis – bleiben konstant gefragt.</p>
+                            <div class="highlight-box green">
+                                <strong>SIZ-Antwort:</strong> SIZ-Diplome sind keine Alternative zu Coding – sie sind die Basis. Wer Daten versteht, Systeme kennt und Office beherrscht, baut jede weitere Kompetenz auf einem soliden Fundament auf.
+                            </div>
+                            <p class="source">Quellen: Stack Overflow Developer Survey 2024 · Wired: «The End of the Prompt Engineering Hype» (2024) · MIT Technology Review</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q6 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="q-label">Kritik</span>
+                        <span class="q-text">«Netzwerke und Systeme braucht man doch bald nicht mehr zu verstehen – alles geht in die Cloud.»</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <h4>Cloud IST Netzwerk – nur anderswo</h4>
+                            <p>Cloud-Computing eliminiert nicht das Netzwerk – es verlagert es. DNS, TCP/IP, Firewalls, VPNs, Subnetting, Identitätsmanagement: All das existiert in der Cloud weiterhin. Azure, AWS und Google Cloud setzen <strong>fundiertes Netzwerk- und Systemwissen voraus</strong>.</p>
+                            <h4>Cybersecurity-Krise erfordert mehr Kompetenz</h4>
+                            <ul>
+                                <li>4 Millionen fehlende Cybersecurity-Fachkräfte weltweit (ISC2 2024)</li>
+                                <li>90 % aller Cyberangriffe nutzen Netzwerkschwachstellen</li>
+                                <li>Ransomware-Angriffe auf Schweizer Unternehmen haben sich 2023–2024 verdoppelt</li>
+                                <li>Die meisten Cybersecurity-Einsteiger kommen über Systemadministration in die Branche</li>
+                            </ul>
+                            <h4>KI-Infrastruktur braucht Fachkräfte</h4>
+                            <p>Jedes KI-System benötigt: Server, Netzwerke, Datenbanken, Sicherheitsarchitektur, Monitoring. Für jeden KI-Spezialisten werden geschätzt 3–5 Support-Fachkräfte für Infrastruktur, Daten und Security gebraucht.</p>
+                            <div class="highlight-box green">
+                                <strong>SIZ-Antwort:</strong> Die SIZ-Diplome Power-User und Professional Systems &amp; Network sind der ideale Einstieg in die Cybersecurity- und Cloud-Welt. Sie vermitteln genau die Grundlagen, die Cloud-Architekten, Netzwerkspezialisten und Security-Fachkräfte brauchen.
+                            </div>
+                            <p class="source">Quellen: ISC2 Cybersecurity Workforce Study 2024 · BACS (Bundesamt für Cybersicherheit) · CompTIA State of Cybersecurity 2024 · LinkedIn Economic Graph: AI-Stellenausschreibungen +450 % seit 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Zielgruppe: UNTERNEHMEN -->
+            <div class="faq-section">
+                <h3 class="faq-section-title">Für Unternehmen &amp; HR</h3>
+
+                <!-- Q7 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="q-label">Kritik</span>
+                        <span class="q-text">«Wir sollten nur noch in KI-Training investieren, nicht mehr in klassische IT-Schulungen.»</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <h4>KI-Schulung ohne IT-Grundlagen scheitert</h4>
+                            <p>Gartner (2024): KI-Einführungsprojekte scheitern in Unternehmen häufig an mangelnden digitalen Grundkompetenzen. Mitarbeitende, die Excel nicht beherrschen, können auch KI-gestützte Datenanalyse nicht sinnvoll nutzen.</p>
+                            <div class="highlight-box">
+                                <strong>McKinsey (2024):</strong> 72 % der Unternehmen berichten, dass <em>fehlende digitale Grundkompetenzen</em> – nicht fehlende KI-Kenntnisse – die grösste Hürde für erfolgreiche KI-Adoption sind.
+                            </div>
+                            <h4>AI Literacy braucht Digital Literacy</h4>
+                            <p>Die EU-Kommission definiert KI-Kompetenz als <strong>Erweiterung</strong> der digitalen Grundkompetenz – nicht als Ersatz (EU DigComp 2.2 Framework).</p>
+                            <h4>Produktivitätsverlust durch Inkompetenz</h4>
+                            <p>Studien zeigen: Mangelnde Office-Kenntnisse kosten pro Mitarbeitenden ca. 2–4 Stunden Produktivität pro Woche. Bei 250 Arbeitstagen und einem Stundenlohn von CHF 60 sind das <strong>CHF 6'000–12'000 pro Person und Jahr</strong>.</p>
+                            <div class="stat-grid">
+                                <div class="stat-box">
+                                    <span class="stat-num">CHF 4–5 Mrd.</span>
+                                    <span class="stat-label">jährl. Produktivitätsverlust in der Schweiz durch mangelnde Digital Skills</span>
+                                </div>
+                                <div class="stat-box">
+                                    <span class="stat-num">2.5×</span>
+                                    <span class="stat-label">höhere Produktivitätszuwächse bei Firmen, die in Grundkompetenzen investieren (Accenture)</span>
+                                </div>
+                            </div>
+                            <div class="highlight-box green">
+                                <strong>SIZ-Antwort:</strong> Investieren Sie in beides – aber in der richtigen Reihenfolge. Erst das Fundament (SIZ-Diplome), dann die KI-Kompetenz darauf. Unternehmen, die beides kombinieren, erzielen die höchsten Produktivitätszuwächse.
+                            </div>
+                            <p class="source">Quellen: McKinsey «The State of AI» 2024 · Gartner Digital Workplace Forecasts 2024 · Accenture Technology Trends 2024 · EU DigComp 2.2 Framework</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q8 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="q-label">Kritik</span>
+                        <span class="q-text">«SIZ-Diplome sind Verbandsdiplome, keine eidgenössisch anerkannten Abschlüsse. Was bringt das?»</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <h4>Branchenstandard durch starke Trägerschaft</h4>
+                            <p>SIZ wird getragen vom <strong>Kaufmännischen Verband Schweiz (kfmv)</strong> und <strong>Swico</strong> – den beiden wichtigsten Verbänden für kaufmännische Berufe und die digitale Wirtschaft. Diese Trägerschaft verleiht den Diplomen branchenübergreifende Glaubwürdigkeit bei Arbeitgebern.</p>
+                            <h4>250'000 Absolventen können nicht irren</h4>
+                            <p>Mit über 250'000 Diplom-Absolventen seit 1991 sind SIZ-Diplome der <strong>De-facto-Standard</strong> für den Nachweis von ICT-Anwenderkompetenzen in der Schweizer Arbeitswelt.</p>
+                            <h4>Praxisnäher als ein Hochschulabschluss</h4>
+                            <p>SIZ-Prüfungen testen angewandte Kompetenzen in realistischen Szenarien – nicht theoretisches Wissen. Das macht sie für Arbeitgeber besonders aussagekräftig.</p>
+                            <div class="highlight-box green">
+                                <strong>SIZ-Antwort:</strong> Viele der einflussreichsten Zertifizierungen weltweit sind keine staatlichen Abschlüsse (CompTIA, CISSP, Microsoft-Zertifizierungen). Entscheidend ist die Anerkennung am Arbeitsmarkt – und die haben SIZ-Diplome in der Schweiz seit über 30 Jahren.
+                            </div>
+                            <p class="source">Quellen: siz.ch · Swico Bildungsseite · berufsberatung.ch</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q9 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="q-label">Kritik</span>
+                        <span class="q-text">«Unsere Mitarbeitenden arbeiten bereits mit KI-Tools. Wozu brauchen sie noch ein SIZ-Diplom?»</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <h4>Nur 28 % haben überhaupt KI-Zugang</h4>
+                            <p>Gartner (2024): Ende 2024 hatten nur 28 % der Wissensarbeitenden weltweit tatsächlich Zugang zu KI-Assistenten am Arbeitsplatz. Die restlichen 72 % arbeiten mit klassischen Office-Tools.</p>
+                            <h4>Die Besten profitieren am meisten</h4>
+                            <p>Harvard Business School / BCG (2023): Berater mit stärkeren technischen Grundkenntnissen profitierten <strong>40 % mehr</strong> von KI-Unterstützung. Stanford HAI (2024): Bei Mitarbeitenden mit digitalen Grundkenntnissen war der Produktivitäts-Boost durch KI <strong>doppelt so hoch</strong>.</p>
+                            <div class="highlight-box green">
+                                <strong>SIZ-Antwort:</strong> Gerade weil Ihre Mitarbeitenden bereits KI nutzen, lohnt sich das SIZ-Diplom. Es stellt sicher, dass sie KI <em>effektiv</em> und <em>sicher</em> einsetzen – statt nur oberflächlich damit zu spielen. Der ROI steigt mit der Kompetenz.
+                            </div>
+                            <p class="source">Quellen: Gartner Newsroom 2024 · Harvard Business School / BCG: «Navigating the Jagged Technological Frontier» (2023) · Stanford HAI AI Index Report 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Zielgruppe: BILDUNGSINSTITUTIONEN -->
+            <div class="faq-section">
+                <h3 class="faq-section-title">Für Bildungsinstitutionen</h3>
+
+                <!-- Q10 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="q-label">Kritik</span>
+                        <span class="q-text">«Schulen unterrichten veraltete IT-Inhalte. KI sollte im Zentrum stehen, nicht Office.»</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <h4>KI-Kompetenz baut auf digitaler Grundbildung auf</h4>
+                            <p>Die Analogie ist einfach: <strong>«KI-Tools ohne Office-Skills zu lehren ist wie GPS ohne Fahrerlaubnis.»</strong> (Harvard Business Review, 2024). Man muss zuerst die Grundlagen beherrschen, bevor man die Abkürzungen nutzen kann.</p>
+                            <h4>Der Lernprozess ist das Ziel</h4>
+                            <p>Eine Präsentation erstellen lehrt Struktur, Argumentation und visuelles Design. Eine Tabelle aufbauen lehrt logisches Denken und Datenstrukturierung. <strong>Der Lernprozess ist primär – das Ergebnis sekundär.</strong></p>
+                            <h4>SIZ-Inhalte sind nicht veraltet</h4>
+                            <p>Aktuelle SIZ-Module umfassen Cloud Computing, Power Query, Power Pivot, Virtualisierung (Hyper-V), PowerShell-Automatisierung und moderne Netzwerkarchitekturen. Die Inhalte werden laufend von 60 Fachexperten aktualisiert.</p>
+                            <div class="highlight-box green">
+                                <strong>SIZ-Antwort:</strong> SIZ ersetzt KI-Bildung nicht – SIZ ist das Fundament dafür. Wir empfehlen Bildungsinstitutionen: Grundlagen mit SIZ, KI-Kompetenzen darauf aufbauend. So entstehen kompetente, kritisch denkende Digital Citizens.
+                            </div>
+                            <p class="source">Quellen: Harvard Business Review: «Why AI Makes Digital Literacy More Important» (2024) · Lehrplan 21, Kompetenzbereich Medien und Informatik · SBFI Bildungsplan Kaufleute 2023 · ICT-Berufsbildung Schweiz</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q11 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="q-label">Kritik</span>
+                        <span class="q-text">«Die Berufsbildung ist zu langsam für die KI-Revolution. Braucht es SIZ noch?»</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <h4>Schweizer Berufsbildung ist anpassungsfähig</h4>
+                            <p>Die Reform «Kaufleute 2023» hat bereits digitale Kompetenzen und handlungskompetenzorientiertes Lernen integriert. Neue Berufsbilder wie «Entwickler/in digitales Business EFZ» zeigen die Innovationsfähigkeit des Systems.</p>
+                            <h4>SIZ als agiler Ergänzungspartner</h4>
+                            <p>Da SIZ <strong>keine eidgenössische Behörde</strong> ist, sondern eine privatrechtliche Organisation, kann SIZ seine Prüfungsinhalte schneller aktualisieren als der Bund seine Bildungsverordnungen. Das macht SIZ zu einem idealen Ergänzungspartner für die formale Berufsbildung.</p>
+                            <h4>Arbeitgeber bestätigen den Bedarf</h4>
+                            <p>Swisscom, SBB, Post, Banken und viele KMU fordern in Stellenausschreibungen weiterhin Office-Kompetenzen als Grundanforderung. Die Nachfrage nach SIZ-zertifizierten Fachkräften bleibt konstant.</p>
+                            <div class="highlight-box green">
+                                <strong>SIZ-Antwort:</strong> SIZ ist gerade <em>weil</em> die Berufsbildung reformiert wird ein wichtiger Partner. Wir liefern praxisnahe, aktuelle Prüfungen, die schneller auf Veränderungen reagieren als formale Bildungspläne.
+                            </div>
+                            <p class="source">Quellen: SBFI – Bildungsverordnung Kaufleute 2023 · ICT-Berufsbildung Schweiz · siz.ch/ueber-uns</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Zielgruppe: SCHÜLER/STUDENTEN -->
+            <div class="faq-section">
+                <h3 class="faq-section-title">Für Lernende &amp; Studierende</h3>
+
+                <!-- Q12 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="q-label">Kritik</span>
+                        <span class="q-text">«Ich nutze doch schon KI im Alltag. Was bringt mir ein SIZ-Diplom zusätzlich?»</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <h4>KI nutzen ≠ KI kompetent einsetzen</h4>
+                            <p>ChatGPT eine Frage stellen kann jede Person. Aber: Wer das Ergebnis nicht prüfen, anpassen und professionell integrieren kann, bleibt ein passiver Konsument statt ein souveräner Anwender.</p>
+                            <h4>Der Bewerbungsvorteil</h4>
+                            <p>«Ich kann mit ChatGPT umgehen» steht auf keinem Diplom. Ein SIZ-Abschluss ist ein <strong>objektiver, anerkannter Nachweis</strong>, den HR-Abteilungen kennen und als Filter nutzen.</p>
+                            <div class="stat-grid">
+                                <div class="stat-box">
+                                    <span class="stat-num">20–30 %</span>
+                                    <span class="stat-label">höherer Lohn für ICT-zertifizierte Fachkräfte (PwC/Robert Half)</span>
+                                </div>
+                                <div class="stat-box">
+                                    <span class="stat-num">250'000+</span>
+                                    <span class="stat-label">Absolventen vertrauen auf SIZ</span>
+                                </div>
+                            </div>
+                            <h4>Karrierepfad statt Sackgasse</h4>
+                            <p>SIZ bietet einen klaren Aufbauweg: Smart-User → Advanced-User → Power-User → Professional. Jede Stufe öffnet neue Karrieremöglichkeiten – vom Bürojob bis zum Systemadministrator.</p>
+                            <div class="highlight-box green">
+                                <strong>SIZ-Antwort:</strong> Das SIZ-Diplom macht dich nicht zum KI-Gegner – es macht dich zum KI-Profi. Du lernst die Grundlagen, auf denen jede KI-Anwendung aufbaut. Und du hast einen Nachweis, der bei Arbeitgebern etwas zählt.
+                            </div>
+                            <p class="source">Quellen: PwC Global Workforce Survey 2024 · Robert Half Salary Guide Schweiz · siz.ch</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q13 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="q-label">Kritik</span>
+                        <span class="q-text">«Gibt es die SIZ auch noch in 2, 5 oder 7 Jahren? Lohnt sich der Aufwand?»</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <h4>33 Jahre und wachsend</h4>
+                            <p>SIZ existiert seit 1991 – und hat bereits mehrere technologische Revolutionen überstanden (Internet, Mobile, Cloud). Die Organisation passt sich an, weil die <strong>Grundidee zeitlos</strong> ist: neutraler, standardisierter Nachweis von ICT-Kompetenzen.</p>
+                            <h4>Der Bedarf steigt – alle Prognosen zeigen nach oben</h4>
+                            <div class="stat-grid">
+                                <div class="stat-box">
+                                    <span class="stat-num">50'000</span>
+                                    <span class="stat-label">fehlende ICT-Fachkräfte in der Schweiz bis 2030</span>
+                                </div>
+                                <div class="stat-box">
+                                    <span class="stat-num">20 Mio.</span>
+                                    <span class="stat-label">ICT-Spezialisten braucht die EU bis 2030 (Verdopplung)</span>
+                                </div>
+                                <div class="stat-box">
+                                    <span class="stat-num">+55 %</span>
+                                    <span class="stat-label">Nachfrage nach Tech-Skills bis 2030 (McKinsey)</span>
+                                </div>
+                            </div>
+                            <h4>Zukunftsszenario: SIZ + KI = Winning Combination</h4>
+                            <ul>
+                                <li><strong>2026:</strong> KI-Tools werden Mainstream. Wer Office-Grundlagen hat, nutzt sie effizient. Wer nicht – bleibt zurück.</li>
+                                <li><strong>2028:</strong> «AI-augmented Worker» ist die Norm. SIZ-Absolventen profitieren doppelt, weil sie das Fundament haben.</li>
+                                <li><strong>2030:</strong> 80 % aller Jobs erfordern digitale Grundkompetenzen (EU Digital Decade). SIZ-Diplome sind gefragter denn je.</li>
+                            </ul>
+                            <div class="highlight-box green">
+                                <strong>SIZ-Antwort:</strong> Ja, es gibt uns auch in 2, 5 und 7 Jahren. Weil der Bedarf an nachweisbaren ICT-Kompetenzen nicht sinkt – er steigt. Jede Investition in SIZ ist eine Investition in eine zukunftssichere Karriere.
+                            </div>
+                            <p class="source">Quellen: ICT-Berufsbildung Schweiz – Fachkräftemonitor · EU Digital Decade 2030 · McKinsey «A new future of work» 2024 · WEF Future of Jobs Report 2025</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q14 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="q-label">Kritik</span>
+                        <span class="q-text">«Wieso soll ich Netzwerke und Systeme lernen, wenn ich gar nicht in die IT will?»</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <h4>ICT ist nicht nur für die IT-Abteilung</h4>
+                            <p>Das WEF (2025) stuft «Technological Literacy» als <strong>branchenübergreifenden Top-Skill</strong> ein – nicht nur für IT-Berufe. Ob Marketing, Finanzen, HR, Logistik oder Gesundheitswesen: Jede Branche wird digitaler.</p>
+                            <h4>Verschiedene Diplome für verschiedene Ziele</h4>
+                            <ul>
+                                <li><strong>Bürojob, kaufmännische Richtung?</strong> → Smart-User und Advanced-User (Office, Cloud, Kommunikation)</li>
+                                <li><strong>Datenanalyse, Controlling, Finanzen?</strong> → Power-User Data Technology (Excel-Profi, Power Query, Pivot)</li>
+                                <li><strong>IT-Karriere, Systemadmin, Cybersecurity?</strong> → Power-User/Professional Systems &amp; Network</li>
+                            </ul>
+                            <div class="highlight-box green">
+                                <strong>SIZ-Antwort:</strong> Du musst kein Netzwerkspezialist werden. Aber die Smart-User- und Advanced-User-Diplome machen dich in <em>jedem</em> Berufsfeld kompetenter. Und wenn dich die Technik doch packt – der Weg zum Power-User ist offen.
+                            </div>
+                            <p class="source">Quellen: WEF Future of Jobs Report 2025 · Deloitte Global Human Capital Trends 2024: «Boundaryless HR – Tech Skills werden in allen Abteilungen gebraucht»</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BONUS: Die grosse Frage -->
+            <div class="faq-section">
+                <h3 class="faq-section-title">Die grosse Frage</h3>
+
+                <!-- Q15 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="q-label">Kritik</span>
+                        <span class="q-text">«Warum ist das, was die SIZ macht, so entscheidend wichtig – heute und in Zukunft?»</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <h4>Weil KI ein Verstärker ist – und kein Ersatz</h4>
+                            <p>Künstliche Intelligenz verstärkt vorhandene Kompetenzen. Wer digital kompetent ist, wird durch KI noch produktiver. Wer es nicht ist, fällt weiter zurück. <strong>Die digitale Schere geht auseinander, nicht zusammen.</strong></p>
+
+                            <div class="highlight-box">
+                                <strong>Satya Nadella, CEO Microsoft (Davos/WEF 2025):</strong> «The AI dividend goes to those who are already digitally literate. It widens the gap between the skilled and unskilled.»
+                            </div>
+
+                            <h4>Weil die Schweiz ICT-Fachkräfte braucht – dringender denn je</h4>
+                            <p>38'000 offene ICT-Stellen heute. 50'000 bis 2030. Die Schweiz als Wirtschaftsstandort, Finanzplatz und Innovationsland kann sich eine digitale Kompetenzlücke nicht leisten.</p>
+
+                            <h4>Weil SIZ das tut, was sonst niemand tut</h4>
+                            <ul>
+                                <li><strong>Neutral:</strong> SIZ bildet nicht selbst aus, sondern prüft. Kein Interessenkonflikt.</li>
+                                <li><strong>Standardisiert:</strong> Gleicher Massstab an 100+ Schulen in der ganzen Schweiz.</li>
+                                <li><strong>Praxisorientiert:</strong> Kompetenzen, nicht Theorie. Was zählt, ist die Anwendung.</li>
+                                <li><strong>Modular:</strong> Vom Einsteiger bis zum Profi – ein durchgängiger Weg.</li>
+                                <li><strong>Aktuell:</strong> 60 Fachexperten sorgen für zeitgemässe Inhalte.</li>
+                            </ul>
+
+                            <h4>Weil die Zahlen für sich sprechen</h4>
+                            <div class="stat-grid">
+                                <div class="stat-box">
+                                    <span class="stat-num">86 %</span>
+                                    <span class="stat-label">der Arbeitgeber: KI erhöht den Bedarf an Digital Skills (WEF)</span>
+                                </div>
+                                <div class="stat-box">
+                                    <span class="stat-num">72 %</span>
+                                    <span class="stat-label">der KI-Projekte scheitern an fehlenden Grundkompetenzen (McKinsey)</span>
+                                </div>
+                                <div class="stat-box">
+                                    <span class="stat-num">40 %</span>
+                                    <span class="stat-label">mehr KI-Nutzen für Mitarbeitende mit starken ICT-Skills (HBS/BCG)</span>
+                                </div>
+                                <div class="stat-box">
+                                    <span class="stat-num">#2</span>
+                                    <span class="stat-label">Tech Literacy ist der zweitwichtigste wachsende Skill weltweit (WEF 2025)</span>
+                                </div>
+                            </div>
+
+                            <div class="highlight-box green">
+                                <strong>SIZ-Antwort:</strong> Was wir machen, ist nicht trotz KI wichtig – sondern <em>wegen</em> KI. SIZ stellt sicher, dass die Menschen in der Schweiz die digitalen Kompetenzen haben, die sie brauchen, um KI zu ihrem Vorteil zu nutzen. Das ist unsere Mission seit 1991. Und sie war noch nie so relevant wie heute.
+                            </div>
+                            <p class="source">Quellen: WEF Future of Jobs Report 2025 · McKinsey «The State of AI» 2024 · Harvard Business School / BCG Studie 2023 · OECD Skills Outlook 2024 · EU Digital Decade 2030 · ISC2 Cybersecurity Workforce Study 2024 · Microsoft Work Trend Index 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- QUELLEN & STUDIEN -->
+    <!-- ============================================ -->
+    <div class="section-card">
+        <div class="section-header bg-dark">
+            <h2>Quellen &amp; Studien</h2>
+            <span class="badge">Recherche-Basis</span>
+        </div>
+        <div class="section-body">
+
+            <h3 style="font-size:1.05em; margin-bottom:12px; color:#1565C0;">Internationale Studien &amp; Reports</h3>
+            <ul class="source-list">
+                <li><strong>WEF Future of Jobs Report 2025</strong> – Top Skills, Jobprognosen bis 2030 · <a href="https://www.weforum.org/publications/the-future-of-jobs-report-2025/" target="_blank">weforum.org</a></li>
+                <li><strong>OECD Skills Outlook 2024</strong> – «Skills for the AI Era» · <a href="https://www.oecd.org/en/publications/oecd-skills-outlook-2024_6980d820-en.html" target="_blank">oecd.org</a></li>
+                <li><strong>EU DESI 2024</strong> – Digital Economy and Society Index · <a href="https://digital-strategy.ec.europa.eu/en/policies/desi" target="_blank">digital-strategy.ec.europa.eu</a></li>
+                <li><strong>EU Digital Decade 2030</strong> – Digitale Ziele der EU · <a href="https://digital-strategy.ec.europa.eu/en/policies/europes-digital-decade" target="_blank">digital-strategy.ec.europa.eu</a></li>
+                <li><strong>EU DigComp 2.2 Framework</strong> – Kompetenzrahmen für digitale Grundbildung · <a href="https://publications.jrc.ec.europa.eu" target="_blank">publications.jrc.ec.europa.eu</a></li>
+                <li><strong>McKinsey – «A new future of work»</strong> (2024) – Skills-Nachfrage bis 2030 · <a href="https://www.mckinsey.com/mgi" target="_blank">mckinsey.com</a></li>
+                <li><strong>McKinsey – «The State of AI»</strong> (2024) – KI-Adoption und Hürden · <a href="https://www.mckinsey.com/capabilities/quantumblack" target="_blank">mckinsey.com</a></li>
+                <li><strong>Deloitte Global Human Capital Trends 2024/2025</strong> · <a href="https://www.deloitte.com/global/en/issues/work" target="_blank">deloitte.com</a></li>
+                <li><strong>PwC Global Workforce Hopes and Fears Survey 2024</strong> · <a href="https://www.pwc.com/gx/en/issues/workforce/hopes-and-fears.html" target="_blank">pwc.com</a></li>
+                <li><strong>Accenture Technology Trends 2024</strong> – Produktivität durch Digital Skills · <a href="https://www.accenture.com/us-en/insights/technology/technology-trends-2024" target="_blank">accenture.com</a></li>
+                <li><strong>Gartner Digital Workplace Forecasts 2024/2025</strong> – KI-Zugang, Security-Prognosen · <a href="https://www.gartner.com/en/newsroom" target="_blank">gartner.com</a></li>
+                <li><strong>Forrester Research 2024</strong> – Data Literacy und KI-Nachbearbeitungszeit · <a href="https://www.forrester.com" target="_blank">forrester.com</a></li>
+                <li><strong>Stanford HAI – AI Index Report 2024</strong> – Halluzinationsraten, Produktivitätsstudien · <a href="https://hai.stanford.edu" target="_blank">hai.stanford.edu</a></li>
+                <li><strong>Harvard Business School / BCG</strong> – «Navigating the Jagged Technological Frontier» (2023) · <a href="https://www.hbs.edu" target="_blank">hbs.edu</a></li>
+                <li><strong>ISC2 Cybersecurity Workforce Study 2024</strong> – 4 Mio. fehlende Fachkräfte · <a href="https://www.isc2.org/research/workforce-study" target="_blank">isc2.org</a></li>
+                <li><strong>CompTIA State of Cybersecurity 2024</strong> · <a href="https://www.comptia.org" target="_blank">comptia.org</a></li>
+                <li><strong>Microsoft Work Trend Index 2024</strong> · <a href="https://www.microsoft.com/en-us/worklab/work-trend-index/" target="_blank">microsoft.com/worklab</a></li>
+                <li><strong>Stack Overflow Developer Survey 2024</strong> · <a href="https://survey.stackoverflow.co" target="_blank">survey.stackoverflow.co</a></li>
+                <li><strong>Capgemini – «The Digital Talent Gap»</strong> (2024) · <a href="https://www.capgemini.com/research-institute/" target="_blank">capgemini.com</a></li>
+            </ul>
+
+            <h3 style="font-size:1.05em; margin: 24px 0 12px 0; color:#1565C0;">Schweiz &amp; DACH-Region</h3>
+            <ul class="source-list">
+                <li><strong>ICT-Berufsbildung Schweiz</strong> – Fachkräftemonitor, Bedarfsprognosen · <a href="https://www.ict-berufsbildung.ch" target="_blank">ict-berufsbildung.ch</a></li>
+                <li><strong>SECO Fachkräftemangel-Index</strong> – ICT als Top-Mangelberuf · <a href="https://www.seco.admin.ch" target="_blank">seco.admin.ch</a></li>
+                <li><strong>SBFI – Bildungsverordnung Kaufleute 2023</strong> · <a href="https://www.sbfi.admin.ch" target="_blank">sbfi.admin.ch</a></li>
+                <li><strong>Strategie «Digitale Schweiz»</strong> · <a href="https://digital.swiss" target="_blank">digital.swiss</a></li>
+                <li><strong>BACS (Bundesamt für Cybersicherheit)</strong> – ehem. NCSC · <a href="https://www.ncsc.admin.ch" target="_blank">ncsc.admin.ch</a></li>
+                <li><strong>Bitkom – Digital Skills Gap Deutschland 2024</strong> – 137'000 offene IT-Stellen · <a href="https://www.bitkom.org" target="_blank">bitkom.org</a></li>
+                <li><strong>D21-Digital-Index 2024/2025</strong> – Digitale Kompetenzen in Deutschland · <a href="https://www.initiatived21.de" target="_blank">initiatived21.de</a></li>
+                <li><strong>PISA 2022</strong> – Digitale Kompetenzen Jugendlicher · <a href="https://www.oecd.org/pisa/" target="_blank">oecd.org/pisa</a></li>
+            </ul>
+
+            <h3 style="font-size:1.05em; margin: 24px 0 12px 0; color:#1565C0;">SIZ AG Quellen</h3>
+            <ul class="source-list">
+                <li><strong>SIZ AG</strong> – Offizielle Website · <a href="https://siz.ch" target="_blank">siz.ch</a></li>
+                <li><strong>Was ist SIZ</strong> · <a href="https://siz.ch/ueber-uns/was-ist-siz/" target="_blank">siz.ch/ueber-uns</a></li>
+                <li><strong>Swico über SIZ</strong> · <a href="https://www.swico.ch/de/bildung/schweizerisches-informatik-zertifikat-siz/" target="_blank">swico.ch</a></li>
+                <li><strong>berufsberatung.ch – SIZ-Diplome</strong> · <a href="https://www.berufsberatung.ch" target="_blank">berufsberatung.ch</a></li>
+                <li><strong>Bildung-Schweiz.ch – SIZ</strong> · <a href="https://www.bildung-schweiz.ch/topics/siz" target="_blank">bildung-schweiz.ch</a></li>
+            </ul>
+
+            <h3 style="font-size:1.05em; margin: 24px 0 12px 0; color:#1565C0;">Zitate &amp; Keynotes</h3>
+            <ul class="source-list" style="columns:1;">
+                <li><strong>Satya Nadella</strong>, CEO Microsoft, WEF Davos 2025: «The AI dividend goes to those who are already digitally literate.»</li>
+                <li><strong>Satya Nadella</strong>, Microsoft Ignite 2024: «Copilot doesn't replace the need to understand Excel – it makes Excel expertise more valuable than ever.»</li>
+                <li><strong>Jensen Huang</strong>, CEO NVIDIA, CES 2025: «Everyone should learn computing... AI makes it more important to understand technology, not less.»</li>
+                <li><strong>OECD Skills Outlook 2024:</strong> «The AI transition requires more digital literacy, not less. Those without foundational ICT skills risk being left behind entirely.»</li>
+                <li><strong>WEF Future of Jobs 2025:</strong> «AI does not eliminate the need for digital skills – it raises the bar.»</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- FOOTER -->
+    <!-- ============================================ -->
+    <div class="footer">
+        <p><strong>SIZ AG</strong> – Schweizerisches Informatik-Zertifikat · <a href="https://siz.ch" style="color:#1565C0;" target="_blank">siz.ch</a> · info@siz.ch · +41 44 384 90 40</p>
+        <p style="margin-top:8px;">Argumentarium erstellt: April 2026 · Quellen verifiziert per Stand April 2025</p>
+    </div>
+
+</div>
+
+<script>
+function toggleFaq(element) {
+    const item = element.parentElement;
+    const wasOpen = item.classList.contains('open');
+
+    // Optional: alle anderen schliessen
+    // document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+
+    if (wasOpen) {
+        item.classList.remove('open');
+    } else {
+        item.classList.add('open');
+    }
+}
+
+// Alle FAQ-Items initial geschlossen
+document.addEventListener('DOMContentLoaded', function() {
+    // Optional: Erstes Item öffnen
+    // document.querySelector('.faq-item')?.classList.add('open');
+});
+</script>
+
+</body>
+</html>

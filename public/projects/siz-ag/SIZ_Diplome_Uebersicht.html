@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIZ Diplome &amp; Module – Übersicht</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f2f5;
+            color: #333;
+            padding: 40px 20px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.2em;
+            color: #1a1a2e;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 50px;
+        }
+
+        /* Aufbaupfad */
+        .path-section {
+            max-width: 900px;
+            margin: 0 auto 60px auto;
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        .path-section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #1a1a2e;
+            font-size: 1.5em;
+        }
+        .path-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+        .path-level {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            width: 100%;
+            max-width: 700px;
+        }
+        .path-label {
+            width: 120px;
+            text-align: right;
+            font-weight: 600;
+            font-size: 0.85em;
+            color: #666;
+            flex-shrink: 0;
+        }
+        .path-boxes {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            flex: 1;
+        }
+        .path-box {
+            padding: 10px 16px;
+            border-radius: 8px;
+            color: white;
+            font-weight: 600;
+            font-size: 0.85em;
+            text-align: center;
+        }
+        .level-entry { background: #4CAF50; }
+        .level-mid { background: #2196F3; }
+        .level-advanced { background: #FF9800; }
+        .level-expert { background: #9C27B0; }
+        .path-arrow {
+            font-size: 1.8em;
+            color: #aaa;
+            text-align: center;
+            margin-left: 136px;
+        }
+
+        /* Diploma Cards */
+        .diplomas {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 36px;
+        }
+        .diploma-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        .diploma-header {
+            padding: 24px 32px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .diploma-header h2 {
+            font-size: 1.4em;
+            margin: 0;
+        }
+        .diploma-level {
+            background: rgba(255,255,255,0.25);
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+        .bg-green { background: linear-gradient(135deg, #43A047, #66BB6A); }
+        .bg-blue { background: linear-gradient(135deg, #1E88E5, #42A5F5); }
+        .bg-orange { background: linear-gradient(135deg, #EF6C00, #FFA726); }
+        .bg-orange2 { background: linear-gradient(135deg, #E65100, #FF8F00); }
+        .bg-red { background: linear-gradient(135deg, #C62828, #EF5350); }
+        .bg-purple { background: linear-gradient(135deg, #6A1B9A, #AB47BC); }
+        .bg-purple2 { background: linear-gradient(135deg, #4A148C, #8E24AA); }
+
+        .diploma-body {
+            padding: 28px 32px;
+        }
+        .diploma-meta {
+            display: flex;
+            gap: 24px;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+        .meta-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            font-size: 0.92em;
+        }
+        .meta-icon {
+            font-size: 1.2em;
+            flex-shrink: 0;
+            margin-top: 1px;
+        }
+        .meta-label {
+            font-weight: 600;
+            color: #555;
+        }
+
+        /* Module Table */
+        .module-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 8px;
+        }
+        .module-table thead th {
+            background: #f5f7fa;
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 700;
+            font-size: 0.85em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #555;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        .module-table tbody td {
+            padding: 14px 16px;
+            border-bottom: 1px solid #eee;
+            vertical-align: top;
+            font-size: 0.93em;
+            line-height: 1.5;
+        }
+        .module-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+        .module-code {
+            font-weight: 700;
+            color: #1a1a2e;
+            white-space: nowrap;
+            font-size: 1em;
+        }
+        .module-name {
+            font-weight: 600;
+            color: #333;
+        }
+        .module-responsible {
+            font-size: 0.85em;
+            color: #555;
+            white-space: nowrap;
+        }
+        .module-responsible a {
+            color: #1E88E5;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        .module-responsible a:hover {
+            text-decoration: underline;
+        }
+
+        /* Clickable module row */
+        .module-row {
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .module-row:hover {
+            background: #e8f0fe !important;
+        }
+        .module-row td:first-child::before {
+            content: "\25B6";
+            display: inline-block;
+            margin-right: 6px;
+            font-size: 0.7em;
+            transition: transform 0.3s;
+            color: #888;
+        }
+        .module-row.open td:first-child::before {
+            transform: rotate(90deg);
+        }
+        .click-hint {
+            font-size: 0.75em;
+            color: #999;
+            font-weight: normal;
+            margin-left: 8px;
+        }
+
+        /* Detail panel */
+        .module-detail {
+            display: none;
+            background: #f8fafc;
+            border-left: 4px solid #2196F3;
+        }
+        .module-detail.open {
+            display: table-row;
+        }
+        .module-detail td {
+            padding: 20px 24px 24px 24px !important;
+        }
+        .detail-content {
+            max-width: 100%;
+        }
+        .detail-content h4 {
+            color: #1a1a2e;
+            font-size: 1em;
+            margin: 16px 0 8px 0;
+            padding-bottom: 4px;
+            border-bottom: 1px solid #ddd;
+        }
+        .detail-content h4:first-child {
+            margin-top: 0;
+        }
+        .detail-content ul {
+            margin: 4px 0 4px 20px;
+            font-size: 0.9em;
+            line-height: 1.7;
+        }
+        .detail-content ul ul {
+            margin: 2px 0 2px 18px;
+            font-size: 0.95em;
+            list-style-type: circle;
+        }
+        .detail-content li {
+            color: #444;
+        }
+        .detail-lektionen {
+            display: inline-block;
+            background: #e3f2fd;
+            color: #1565C0;
+            padding: 2px 10px;
+            border-radius: 12px;
+            font-size: 0.82em;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .detail-richtziele {
+            background: #e8f5e9;
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin-bottom: 14px;
+            font-size: 0.88em;
+            line-height: 1.6;
+        }
+        .detail-richtziele strong {
+            color: #2e7d32;
+        }
+
+        .note {
+            margin-top: 16px;
+            padding: 12px 16px;
+            background: #fff3e0;
+            border-left: 4px solid #FF9800;
+            border-radius: 0 8px 8px 0;
+            font-size: 0.88em;
+            color: #e65100;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            color: #999;
+            font-size: 0.85em;
+        }
+        .legend {
+            text-align: center;
+            margin-top: 10px;
+            color: #aaa;
+            font-size: 0.82em;
+            font-style: italic;
+        }
+
+        @media (max-width: 700px) {
+            .diploma-header { padding: 18px 20px; }
+            .diploma-body { padding: 18px 20px; }
+            .diploma-meta { flex-direction: column; gap: 10px; }
+            .path-label { width: 80px; font-size: 0.75em; }
+            .path-arrow { margin-left: 96px; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>SIZ Diplome &amp; Module</h1>
+    <p class="subtitle">Schweizerisches Informatik-Zertifikat &mdash; siz.ch</p>
+
+    <!-- Aufbaupfad -->
+    <div class="path-section">
+        <h2>Aufbaupfad</h2>
+        <div class="path-container">
+            <div class="path-level">
+                <div class="path-label">Einstieg</div>
+                <div class="path-boxes">
+                    <div class="path-box level-entry">Smart-User</div>
+                </div>
+            </div>
+            <div class="path-arrow">&#8595;</div>
+            <div class="path-level">
+                <div class="path-label">Mittel</div>
+                <div class="path-boxes">
+                    <div class="path-box level-mid">Advanced-User</div>
+                </div>
+            </div>
+            <div class="path-arrow">&#8595;</div>
+            <div class="path-level">
+                <div class="path-label">Fortgeschritten</div>
+                <div class="path-boxes">
+                    <div class="path-box level-advanced">PU Data Technology</div>
+                    <div class="path-box level-advanced">PU Systems &amp; Network</div>
+                    <div class="path-box level-advanced">PU Web</div>
+                </div>
+            </div>
+            <div class="path-arrow">&#8595;</div>
+            <div class="path-level">
+                <div class="path-label">Experte</div>
+                <div class="path-boxes">
+                    <div class="path-box level-expert">Prof. Systems &amp; Network</div>
+                    <div class="path-box level-expert">Prof. Web</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class="legend">Klicke auf ein Modul, um die detaillierten Lernziele anzuzeigen.</p>
+
+    <!-- Diploma Cards -->
+    <div class="diplomas">
+
+        <!-- ============================================================ -->
+        <!-- 1. ICT Smart-User SIZ -->
+        <!-- ============================================================ -->
+        <div class="diploma-card">
+            <div class="diploma-header bg-green">
+                <h2>1. ICT Smart-User SIZ</h2>
+                <span class="diploma-level">Einstiegslevel</span>
+            </div>
+            <div class="diploma-body">
+                <div class="diploma-meta">
+                    <div class="meta-item">
+                        <span class="meta-icon">&#128100;</span>
+                        <div><span class="meta-label">Zielgruppe:</span> Sch&uuml;ler, Lernende und allgemeine Anwender</div>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-icon">&#128176;</span>
+                        <div><span class="meta-label">Pr&uuml;fungsgeb&uuml;hr:</span> CHF 90/Modul</div>
+                    </div>
+                </div>
+                <table class="module-table">
+                    <thead><tr><th>Modul <span class="click-hint">(klicken f&uuml;r Details)</span></th><th>Bezeichnung</th><th>Inhalt</th><th>Verantwortlich</th></tr></thead>
+                    <tbody>
+                        <!-- SU1 -->
+                        <tr class="module-row" onclick="toggleDetail(this)">
+                            <td class="module-code">SU1</td>
+                            <td class="module-name">Kommunikation &amp; Pr&auml;sentation</td>
+                            <td>E-Mail, Kalender, Adressverwaltung, Internet/Social Media, Datenschutz, Pr&auml;sentationen erstellen</td>
+                            <td class="module-responsible">Claudio Praiano<br><a href="mailto:c.praiano@siz.ch">c.praiano@siz.ch</a></td>
+                        </tr>
+                        <tr class="module-detail">
+                            <td colspan="4">
+                                <div class="detail-content">
+                                    <span class="detail-lektionen">20 Lektionen</span>
+                                    <div class="detail-richtziele">
+                                        <strong>Richtziele:</strong> Betriebssystem, Apps und Cloud-Dienste sicher nutzen &bull; Internet zur Informationsbeschaffung &bull; E-Mail, Kontakte, Kollaborationstools &bull; KI-gest&uuml;tzte Tools einsetzen &bull; Pr&auml;sentationen aufbereiten und darstellen
+                                    </div>
+                                    <h4>1 &ndash; ICT-Ger&auml;te und Software personalisieren</h4>
+                                    <ul>
+                                        <li>Betriebssystem personalisieren (Hintergrundbild), Tools nutzen (Task Manager, Energieoptionen)</li>
+                                        <li>Anmeldung mit Sicherheitsverfahren (Passwort, PIN, Fingerabdruck) einrichten</li>
+                                        <li>Peripherieger&auml;te &uuml;ber drahtgebundene/drahtlose Schnittstellen anbinden</li>
+                                        <li>Bezugsquelle einer App unter Sicherheitsaspekten einordnen</li>
+                                    </ul>
+                                    <h4>2 &ndash; Datei- und Ablagestrukturen</h4>
+                                    <ul>
+                                        <li>Gebr&auml;uchliche Dateitypen unterscheiden</li>
+                                        <li>Dateien/Ordner komprimieren (zippen) und extrahieren</li>
+                                        <li>Dateien lokal und Cloud: speichern, kopieren, verschieben, freigeben, umbenennen, l&ouml;schen</li>
+                                        <li>Dateien nach verschiedenen Kriterien suchen</li>
+                                    </ul>
+                                    <h4>3 &ndash; Kommunikationsmittel und Kollaborationstools</h4>
+                                    <ul>
+                                        <li><strong>Teams:</strong>
+                                            <ul>
+                                                <li>Online-Meeting organisieren und starten</li>
+                                                <li>Host zuweisen, Bildschirm freigeben</li>
+                                                <li>Interagieren und Reaktions-Tools anwenden</li>
+                                                <li>Besprechungen inkl. Transkription aufzeichnen</li>
+                                                <li>Chats und Gruppenchats nutzen</li>
+                                                <li>Audio- und Videoeinstellungen vornehmen</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>E-Mail, Kalender, Adressbuch:</strong>
+                                            <ul>
+                                                <li>E-Mails inkl. Anh&auml;ngen adressieren, versenden, empfangen, beantworten, weiterleiten</li>
+                                                <li>Verd&auml;chtige E-Mails (Spam, Phishing) erkennen</li>
+                                                <li>Kontakte erstellen, verwalten, suchen, weiterleiten, l&ouml;schen</li>
+                                                <li>Kalender f&uuml;hren: Einzel-/Gruppen-Termine erstellen, verschieben, l&ouml;schen</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <h4>4 &ndash; Internet und Daten-Weiterverwendung</h4>
+                                    <ul>
+                                        <li>Browser konfigurieren und sicher arbeiten (Verlauf, Lesezeichen)</li>
+                                        <li>Vorsichtsmassnahmen (Privat-Modus, Cookies/temp. Dateien l&ouml;schen)</li>
+                                        <li>Text, Bilder, Hyperlinks von Webseite kopieren und weiterverwenden</li>
+                                        <li><strong>KI-Tools:</strong> Prompts formulieren (Prompt-Engineering), Ergebnisse beurteilen</li>
+                                    </ul>
+                                    <h4>5 &ndash; Pr&auml;sentationen mit PowerPoint</h4>
+                                    <ul>
+                                        <li>Folien erstellen, Layout zuweisen</li>
+                                        <li>Texte/Platzhalter formatieren (Schriftart, -gr&ouml;sse, Farbe)</li>
+                                        <li>Abs&auml;tze, Einz&uuml;ge, Tabulatoren, Ausrichtung</li>
+                                        <li>Objekte einf&uuml;gen (Bilder, Formen, Diagramme, SmartArts, Audio/Video)</li>
+                                        <li>Vordefiniertes Design zuweisen, Folien&uuml;bergang bestimmen</li>
+                                        <li>Am Bildschirm/Beamer wiedergeben, Handzettel drucken</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!-- SU3 -->
+                        <tr class="module-row" onclick="toggleDetail(this)">
+                            <td class="module-code">SU3</td>
+                            <td class="module-name">Texte</td>
+                            <td>Texte erstellen/formatieren, Rechtschreibpr&uuml;fung, Tabellen, Illustrationen, Links, Kommentare (Word)</td>
+                            <td class="module-responsible">Olaf Schmelter<br><a href="mailto:o.schmelter@siz.ch">o.schmelter@siz.ch</a></td>
+                        </tr>
+                        <tr class="module-detail">
+                            <td colspan="4">
+                                <div class="detail-content">
+                                    <span class="detail-lektionen">16 Lektionen</span>
+                                    <div class="detail-richtziele">
+                                        <strong>Richtziele:</strong> Textdokumente sicher erstellen, bearbeiten und verwalten &bull; Grundlegende Formatierungen und konsistente Layouts &bull; Bilder, Links, Kommentare und Tabellen einf&uuml;gen &bull; Kopf-/Fusszeilen und Inhaltsverzeichnis &bull; Qualit&auml;t mittels Rechtschreibung und Hilfefunktionen
+                                    </div>
+                                    <h4>1 &ndash; Erstellen, Bearbeiten und Gestalten von Dokumenten</h4>
+                                    <ul>
+                                        <li><strong>Arbeiten mit Dokumenten:</strong>
+                                            <ul>
+                                                <li>Dokumente erstellen und speichern</li>
+                                                <li>Markieren, ausschneiden, kopieren, einf&uuml;gen, verschieben, l&ouml;schen</li>
+                                                <li>Texte suchen und ersetzen</li>
+                                                <li>Bilder einf&uuml;gen, platzieren, verkleinern, zuschneiden</li>
+                                                <li>Links und Kommentare einf&uuml;gen und bearbeiten</li>
+                                                <li>Rechtschreibung pr&uuml;fen</li>
+                                                <li>Bestehende Dokumentvorlagen verwenden</li>
+                                                <li>Dokumentinhalt statistisch auswerten (Zeichen, W&ouml;rter, Abs&auml;tze)</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Dokumente formatieren:</strong>
+                                            <ul>
+                                                <li>Zeichen: Schriftart, -gr&ouml;sse, -schnitt, -farbe</li>
+                                                <li>Abs&auml;tze: Ausrichtung, Einz&uuml;ge, Zeilenabstand</li>
+                                                <li>Hintergrundfarbe und Rahmen</li>
+                                                <li>Aufz&auml;hlungszeichen und Nummerierungen</li>
+                                                <li>Tabulatoren setzen und anpassen</li>
+                                                <li>Formatierungen &uuml;bertragen oder zur&uuml;cksetzen</li>
+                                                <li>Formatvorlagen zuweisen</li>
+                                                <li>Automatisches Inhaltsverzeichnis</li>
+                                                <li>Mehrspaltig formatieren</li>
+                                                <li>Seiten einrichten (Ausrichtung, R&auml;nder, Seitenumbr&uuml;che)</li>
+                                                <li>Kopf- und Fusszeilen, automatische Seitennummerierung</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <h4>2 &ndash; Erstellen und Formatieren von Tabellen</h4>
+                                    <ul>
+                                        <li>Tabellen in Dokument einf&uuml;gen</li>
+                                        <li>Spalten/Zeilen einf&uuml;gen und l&ouml;schen</li>
+                                        <li>Tabellenh&ouml;he und Spaltenbreite festlegen</li>
+                                        <li>Textausrichtung in Zellen, Rahmen und Schattierungen</li>
+                                        <li>Tabellenformatvorlagen zuweisen</li>
+                                        <li>Titelzeilen automatisch wiederholen</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!-- SU4 -->
+                        <tr class="module-row" onclick="toggleDetail(this)">
+                            <td class="module-code">SU4</td>
+                            <td class="module-name">Tabellen</td>
+                            <td>Tabellenkalkulationen (Excel), Berechnungen, Filtern, grafische Darstellung, Datenaufbereitung</td>
+                            <td class="module-responsible">Andrea Waldesb&uuml;hl<br><a href="mailto:a.waldesbuehl@siz.ch">a.waldesbuehl@siz.ch</a></td>
+                        </tr>
+                        <tr class="module-detail">
+                            <td colspan="4">
+                                <div class="detail-content">
+                                    <span class="detail-lektionen">16 Lektionen</span>
+                                    <div class="detail-richtziele">
+                                        <strong>Richtziele:</strong> Grundlegende Berechnungen in Excel &bull; Daten aufbereiten, darstellen, filtern &bull; Zahlenmaterial graphisch darstellen (einfache Diagramme)
+                                    </div>
+                                    <h4>1 &ndash; Arbeit mit Tabellen</h4>
+                                    <ul>
+                                        <li><strong>Tabellenbl&auml;tter aufbereiten:</strong>
+                                            <ul>
+                                                <li>Arbeitsmappen und Tabellenbl&auml;tter erstellen</li>
+                                                <li>Zeilen/Spalten/Zellen markieren, ausschneiden, kopieren, einf&uuml;gen, verschieben, l&ouml;schen</li>
+                                                <li>Zellen mit Notizen hinterlegen</li>
+                                                <li>Formeln kopieren und Datenreihen erstellen</li>
+                                                <li>Werte und Texte suchen</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Tabellen darstellen und ausgeben:</strong>
+                                            <ul>
+                                                <li>Zeilen, Spalten, Zellen formatieren</li>
+                                                <li>Zeilen/Spalten ein-/ausblenden</li>
+                                                <li>Zahlenformate: Standard, W&auml;hrung, Zahl, Prozent, Datum, Uhrzeit</li>
+                                                <li>Seitenlayout: Ausrichtung, Umbr&uuml;che, R&auml;nder, Wiederholungszeile, Skalierung</li>
+                                                <li>Druckbereich, Kopf-/Fusszeilen, Druckvorschau</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <h4>2 &ndash; Zellen und Funktionen</h4>
+                                    <ul>
+                                        <li>Grundrechenoperationen inkl. Klammern (+, -, *, /)</li>
+                                        <li>Funktionen: SUMME, MITTELWERT, MIN, MAX, ANZAHL, ANZAHL2, RUNDEN, HEUTE, JETZT, Z&Auml;HLENWENN</li>
+                                        <li>Datumsfunktionen: TAG, MONAT, JAHR</li>
+                                        <li>Relative und absolute Zellbez&uuml;ge</li>
+                                    </ul>
+                                    <h4>3 &ndash; Grundlegende Auswertung von Daten</h4>
+                                    <ul>
+                                        <li>Datenlisten sortieren</li>
+                                        <li>Daten mit Autofilter filtern</li>
+                                        <li>Einfache Diagramme erstellen und interpretieren (Linien, S&auml;ulen, Balken, Kreis)</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="note">Diplomvoraussetzung: Alle 3 Module m&uuml;ssen bestanden werden.</div>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 2. ICT Advanced-User SIZ -->
+        <!-- ============================================================ -->
+        <div class="diploma-card">
+            <div class="diploma-header bg-blue">
+                <h2>2. ICT Advanced-User SIZ</h2>
+                <span class="diploma-level">Mittleres Level</span>
+            </div>
+            <div class="diploma-body">
+                <div class="diploma-meta">
+                    <div class="meta-item">
+                        <span class="meta-icon">&#128100;</span>
+                        <div><span class="meta-label">Zielgruppe:</span> Fachkr&auml;fte in Schule und Beruf mit vertieftem Office- und Cloud-Wissen</div>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-icon">&#128176;</span>
+                        <div><span class="meta-label">Pr&uuml;fungsgeb&uuml;hr:</span> CHF 90/Modul</div>
+                    </div>
+                </div>
+                <table class="module-table">
+                    <thead><tr><th>Modul <span class="click-hint">(klicken f&uuml;r Details)</span></th><th>Bezeichnung</th><th>Inhalt</th><th>Verantwortlich</th></tr></thead>
+                    <tbody>
+                        <!-- AU1N -->
+                        <tr class="module-row" onclick="toggleDetail(this)">
+                            <td class="module-code">AU1N</td>
+                            <td class="module-name">Kommunikation &amp; Pr&auml;sentation <em>(ersetzt AU1+AU2)</em></td>
+                            <td>Ger&auml;te personalisieren, Dateien organisieren, OneDrive, Teams, E-Mail, KI-Tools, Pr&auml;sentationen</td>
+                            <td class="module-responsible">Claudio Praiano<br><a href="mailto:c.praiano@siz.ch">c.praiano@siz.ch</a></td>
+                        </tr>
+                        <tr class="module-detail">
+                            <td colspan="4">
+                                <div class="detail-content">
+                                    <span class="detail-lektionen">28 Lektionen &mdash; Pr&uuml;fung: 70% Kommunikation / 30% Pr&auml;sentation</span>
+                                    <div class="detail-richtziele">
+                                        <strong>Richtziele:</strong> Betriebssystem und Cloud-Dienste personalisieren &bull; Kommunikation und Kollaboration organisieren &bull; Internet sicher nutzen &bull; KI-Tools gezielt einsetzen und reflektieren &bull; Daten vor Missbrauch sch&uuml;tzen &bull; Pr&auml;sentationen wirkungsvoll planen und durchf&uuml;hren
+                                    </div>
+                                    <h4>1 &ndash; ICT-Ger&auml;te personalisieren</h4>
+                                    <ul>
+                                        <li>Betriebssystem personalisieren und Tools einsetzen</li>
+                                        <li>Sicherheitsverfahren einrichten</li>
+                                        <li>Peripherieger&auml;te anbinden</li>
+                                        <li>Apps und Software unter Sicherheitsaspekten beurteilen</li>
+                                    </ul>
+                                    <h4>2 &ndash; Datei- und Ablagestrukturen</h4>
+                                    <ul>
+                                        <li>Dateien organisieren, Eigenschaften ermitteln, nach Name/Typ/Inhalt suchen</li>
+                                        <li>Komprimieren und extrahieren</li>
+                                        <li>Datei-Verkn&uuml;pfungen erstellen, Dateigr&ouml;ssen einordnen</li>
+                                        <li><strong>OneDrive:</strong> Speicherort konfigurieren, synchronisieren, Konflikte l&ouml;sen, Versionierung, Zugriffsrechte definieren</li>
+                                    </ul>
+                                    <h4>3 &ndash; Kommunikation und Kollaboration</h4>
+                                    <ul>
+                                        <li><strong>Teams:</strong> Meetings, Host, Bildschirmfreigabe, Transkription, Chats, Audio/Video, Berechtigungen, mehrere Gruppen</li>
+                                        <li><strong>E-Mail/Kalender:</strong> Formaler Aufbau, ICS-Termine, Groupware-Terminanfragen, Aufgabenlisten, Kontakte exportieren/drucken</li>
+                                        <li>Verd&auml;chtige E-Mails erkennen, grosse Dateien &uuml;ber Transferdienste senden</li>
+                                    </ul>
+                                    <h4>4 &ndash; Internet, KI und Datensicherheit</h4>
+                                    <ul>
+                                        <li>Browser konfigurieren, sicheres Surfen, Qualit&auml;t von Quellen einordnen</li>
+                                        <li><strong>KI-Tools:</strong> Prompt-Engineering, Ergebnisse kritisch beurteilen (Bias, Halluzinationen), mit Webquellen vergleichen, Datenschutz/Urheberrecht reflektieren</li>
+                                        <li><strong>Datensicherheit:</strong> Gefahren/Risiken, Downloads analysieren, Verschl&uuml;sselung, Passwortmanager, digitale Signatur</li>
+                                    </ul>
+                                    <h4>5 &ndash; Pr&auml;sentationen mit PowerPoint</h4>
+                                    <ul>
+                                        <li>Inhaltlich strukturieren, visualisieren, adressatengerecht gestalten</li>
+                                        <li>Medien einbinden (Bilder, Videos, Grafiken, SmartArts)</li>
+                                        <li>&Uuml;berg&auml;nge, Animationen, abwechslungsreiche Layouts</li>
+                                        <li>Kollaborativ erstellen, freigeben, kommentieren</li>
+                                        <li>Wirkungsvoll durchf&uuml;hren, zielgruppengerecht aufbereiten</li>
+                                        <li>Mit KI-Unterst&uuml;tzung effizient erstellen</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!-- AU3 -->
+                        <tr class="module-row" onclick="toggleDetail(this)">
+                            <td class="module-code">AU3</td>
+                            <td class="module-name">Texte (AU3K / AU3M)</td>
+                            <td>Dokumentvorlagen, Bilder, &Uuml;berarbeitungsmodus, Serienbriefe, Formulare, Quellennachweise</td>
+                            <td class="module-responsible">AU3M: Stephan Amstutz<br><a href="mailto:s.amstutz@siz.ch">s.amstutz@siz.ch</a><br>AU3K: Olaf Schmelter<br><a href="mailto:o.schmelter@siz.ch">o.schmelter@siz.ch</a></td>
+                        </tr>
+                        <tr class="module-detail">
+                            <td colspan="4">
+                                <div class="detail-content">
+                                    <span class="detail-lektionen">28 Lektionen &mdash; AU3K = Kaufm&auml;nnisch (BIVO 2023), AU3M = Standard</span>
+                                    <div class="detail-richtziele">
+                                        <strong>Richtziele:</strong> Umfassende Dokumente professionell planen und typografisch korrekt ausarbeiten &bull; Formatvorlagen, Abschnitte, dynamische Verzeichnisse &bull; Erweiterte Tabellen, Illustrationen, SmartArts &bull; &Uuml;berarbeitung, Vergleich, Schutzfunktionen &bull; Formulare, Seriendruck, Quellenverwaltung
+                                    </div>
+                                    <h4>1 &ndash; Erstellen, Bearbeiten und Gestalten</h4>
+                                    <ul>
+                                        <li>Dokumente erstellen, speichern, drucken, Eigenschaften</li>
+                                        <li>Suchen/Ersetzen inkl. Platzhalter, Dokumente vergleichen/kombinieren</li>
+                                        <li>Zeichen-/Absatzformatierung, Symbole, Tabulatoren, Textfluss, mehrspaltig</li>
+                                        <li>Seite einrichten, Kopf-/Fusszeilen, Abschnitte, Typografie</li>
+                                        <li>Formatvorlagen zuordnen, pr&uuml;fen, &auml;ndern, neu erstellen</li>
+                                        <li>Rechtschreibung/Grammatik, Synonyme</li>
+                                        <li>&Uuml;berarbeitungsmodus: aktivieren, Kommentare, annehmen/ablehnen</li>
+                                    </ul>
+                                    <h4>2 &ndash; Tabellen</h4>
+                                    <ul>
+                                        <li>Einf&uuml;gen, umwandeln, Zellen verbinden/teilen, formatieren, sortieren</li>
+                                    </ul>
+                                    <h4>3 &ndash; Illustrationen und Formeln</h4>
+                                    <ul>
+                                        <li>Bilder statisch/dynamisch, Formen, WordArts, SmartArts, Diagramme</li>
+                                        <li>Formeleditor (nur Auspr&auml;gung M)</li>
+                                    </ul>
+                                    <h4>4 &ndash; Dokument-/Textvorlagen</h4>
+                                    <ul>
+                                        <li>Vorlagen verwenden und erstellen</li>
+                                        <li>Schutz mit/ohne Passwort</li>
+                                        <li>Schnellbausteine (nur Auspr&auml;gung K)</li>
+                                    </ul>
+                                    <h4>5 &ndash; Dynamische Elemente</h4>
+                                    <ul>
+                                        <li>Fussnoten, Indexeintr&auml;ge</li>
+                                        <li>Inhalts-/Index-/Abbildungsverzeichnis</li>
+                                        <li>Textmarken, Querverweise, Hyperlinks, Felder</li>
+                                        <li>Formulare mit Steuerelementen</li>
+                                    </ul>
+                                    <h4>6 &ndash; Seriendruck</h4>
+                                    <ul>
+                                        <li>Serienbriefe, -etiketten, -umschl&auml;ge</li>
+                                        <li>Wenn/Dann/Sonst-Regel</li>
+                                        <li>Quelldaten sortieren und filtern</li>
+                                    </ul>
+                                    <h4>7 &ndash; Zitate und Quellenangaben (nur M)</h4>
+                                    <ul>
+                                        <li>Zitieren, Quellenmanager, Literaturverzeichnis</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!-- AU4 -->
+                        <tr class="module-row" onclick="toggleDetail(this)">
+                            <td class="module-code">AU4</td>
+                            <td class="module-name">Tabellen (AU4K / AU4M)</td>
+                            <td>Komplexe Berechnungen (XVERWEIS, SUMMEWENNS), PivotTables, Diagramme</td>
+                            <td class="module-responsible">Andrea Waldesb&uuml;hl<br><a href="mailto:a.waldesbuehl@siz.ch">a.waldesbuehl@siz.ch</a></td>
+                        </tr>
+                        <tr class="module-detail">
+                            <td colspan="4">
+                                <div class="detail-content">
+                                    <span class="detail-lektionen">28 Lektionen &mdash; AU4K = Kaufm&auml;nnisch (BIVO 2023), AU4M = Standard</span>
+                                    <div class="detail-richtziele">
+                                        <strong>Richtziele:</strong> Berechnungen mit Formeln und Funktionen &bull; Daten aufbereiten, analysieren, filtern &bull; Komplexe Diagramme erstellen
+                                    </div>
+                                    <h4>1 &ndash; Tabellen bearbeiten und Ausdruck</h4>
+                                    <ul>
+                                        <li>Erstellen, markieren, kopieren, suchen/ersetzen mit Platzhaltern</li>
+                                        <li>Bedingte Formatierung, Kommentare/Notizen</li>
+                                        <li>Zahlenformate inkl. benutzerdefinierte</li>
+                                        <li>Kopf-/Fusszeilen mit Feldern/Bildern</li>
+                                        <li>Fenster teilen/fixieren, mehrere Tabellenbl&auml;tter gleichzeitig</li>
+                                        <li>Zellen sperren/Schutz</li>
+                                    </ul>
+                                    <h4>2 &ndash; Berechnungen und Funktionen</h4>
+                                    <ul>
+                                        <li>Grundrechenarten, Potenzen/Wurzeln/PI</li>
+                                        <li>Absolute/relative/gemischte Bez&uuml;ge, Prozent, Zeit/Datum</li>
+                                        <li>Texte verketten, Fehlermeldungen verstehen</li>
+                                        <li><strong>Funktionen:</strong> SUMME, MITTELWERT, MIN, MAX, ANZAHL, ANZAHL2, ANZAHLLEEREZELLEN, SUMMEWENN/S, MITTELWERTWENN/S, Z&Auml;HLENWENN/S, RANG.GLEICH, HEUTE, JETZT, JAHR, MONAT, TAG, WOCHENTAG, DATEDIF</li>
+                                        <li>Einfache/verschachtelte WENN, WENN mit ODER/UND</li>
+                                        <li>RUNDEN/AUFRUNDEN/ABRUNDEN (inkl. 5-Rappen-Rundung)</li>
+                                        <li>SVERWEIS, WVERWEIS, XVERWEIS</li>
+                                    </ul>
+                                    <h4>3 &ndash; Umfassende Datenauswertungen</h4>
+                                    <ul>
+                                        <li>Sortieren, Filtern, Teilergebnisse</li>
+                                        <li>PivotTables: erstellen, aktualisieren, Datenfelder konfigurieren, sortieren/filtern</li>
+                                        <li>PivotCharts</li>
+                                    </ul>
+                                    <h4>4 &ndash; Aussagekr&auml;ftige Diagramme</h4>
+                                    <ul>
+                                        <li>Einfache und anspruchsvolle Diagramme erstellen</li>
+                                        <li>Achsen, Legende, Datenwerte, Trendlinien</li>
+                                        <li>Sekund&auml;rachsen, Zeichnungselemente/Bilder</li>
+                                    </ul>
+                                    <h4>5 &ndash; Integration und Ausgabe</h4>
+                                    <ul>
+                                        <li>Import von Fremdformaten, Export in andere Formate</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="note">Ab 2026/27: AU1 + AU2 werden zu <strong>AU1N</strong> zusammengelegt. Diplomvoraussetzung: 3 Module bestanden, Durchschnitt mind. 4.0.</div>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 3. ICT Power-User SIZ Data Technology -->
+        <!-- ============================================================ -->
+        <div class="diploma-card">
+            <div class="diploma-header bg-orange">
+                <h2>3. ICT Power-User SIZ Data Technology</h2>
+                <span class="diploma-level">Fortgeschritten</span>
+            </div>
+            <div class="diploma-body">
+                <div class="diploma-meta">
+                    <div class="meta-item">
+                        <span class="meta-icon">&#128100;</span>
+                        <div><span class="meta-label">Zielgruppe:</span> Spezialisten f&uuml;r Datenanalyse, Auswertungen und Business Intelligence</div>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-icon">&#128176;</span>
+                        <div><span class="meta-label">Pr&uuml;fungsgeb&uuml;hr:</span> CHF 260/Modul</div>
+                    </div>
+                </div>
+                <table class="module-table">
+                    <thead><tr><th>Modul <span class="click-hint">(klicken f&uuml;r Details)</span></th><th>Bezeichnung</th><th>Inhalt</th><th>Verantwortlich</th></tr></thead>
+                    <tbody>
+                        <!-- PU41 -->
+                        <tr class="module-row" onclick="toggleDetail(this)">
+                            <td class="module-code">PU41</td>
+                            <td class="module-name">Office Integration (Tabellen &amp; Daten)</td>
+                            <td>PivotTables, Power Query, Power Pivot, Dashboards, komplexe Finanzdaten-Analyse</td>
+                            <td class="module-responsible">de: Thomas Reuteler<br><a href="mailto:t.reuteler@siz.ch">t.reuteler@siz.ch</a><br>fr: Nejna Gothuey<br><a href="mailto:n.gothuey@siz.ch">n.gothuey@siz.ch</a><br>it: Claudio Cannatella<br><a href="mailto:c.cannatella@siz.ch">c.cannatella@siz.ch</a></td>
+                        </tr>
+                        <tr class="module-detail">
+                            <td colspan="4">
+                                <div class="detail-content">
+                                    <span class="detail-lektionen">40 Lektionen</span>
+                                    <div class="detail-richtziele">
+                                        <strong>Richtziele:</strong> Vorlagen und Formulare professionell erstellen &bull; Externe Datenquellen erschliessen &bull; Umfassende Datenauswertungen und -analysen &bull; Power Pivot und Power Query Grundlagen &bull; Excel konfigurieren
+                                    </div>
+                                    <h4>1 &ndash; Vorlagen, externe Bez&uuml;ge, Business-Design</h4>
+                                    <ul>
+                                        <li>CD-Merkmale, Templates verwalten, Formularsteuerelemente</li>
+                                    </ul>
+                                    <h4>2 &ndash; Funktionen mit Excel</h4>
+                                    <ul>
+                                        <li>Komplexe/verschachtelte Funktionen</li>
+                                        <li>XVERWEIS, WVERWEIS, SVERWEIS, VERGLEICH, INDEX</li>
+                                        <li>Text-/Datums-/Zeitfunktionen, WENNFEHLER</li>
+                                        <li>Externe Bez&uuml;ge auf andere Tabellenbl&auml;tter/Arbeitsmappen</li>
+                                    </ul>
+                                    <h4>3 &ndash; Power Query</h4>
+                                    <ul>
+                                        <li>Abfragen auf Arbeitsmappen/CSV/Datenbanken</li>
+                                        <li>Bearbeiten, kombinieren, anf&uuml;gen, kopieren, speichern</li>
+                                    </ul>
+                                    <h4>4 &ndash; Pivot-Tabellen</h4>
+                                    <ul>
+                                        <li>Umfangreiche Auswertungen, berechnete Felder</li>
+                                        <li>PIVOTDATENZUORDNEN, PivotCharts</li>
+                                    </ul>
+                                    <h4>5 &ndash; Power Pivot</h4>
+                                    <ul>
+                                        <li>Datenimport, Beziehungen zwischen Tabellen</li>
+                                        <li>Auswertungen mit Feldlisten und Drilldowns</li>
+                                    </ul>
+                                    <h4>6 &ndash; &Uuml;berwachen und Sch&uuml;tzen</h4>
+                                    <ul>
+                                        <li>Eingabekontrolle, Zell-/Blatt-/Arbeitsmappenschutz</li>
+                                        <li>Bedingte Formatierung mit Formeln</li>
+                                    </ul>
+                                    <h4>7 &ndash; Namensmanager</h4>
+                                    <ul>
+                                        <li>Namen vergeben, Bereiche anpassen, verwalten</li>
+                                    </ul>
+                                    <h4>8 &ndash; Dynamische Tabellen</h4>
+                                    <ul>
+                                        <li>Tabelle formatieren, sortieren/filtern, Vorlagen, TEILERGEBNIS</li>
+                                    </ul>
+                                    <h4>9 &ndash; Einstellungen/Konfiguration</h4>
+                                    <ul>
+                                        <li>Vertrauensw&uuml;rdige Speicherorte, Optionen, Schnellzugriff</li>
+                                    </ul>
+                                    <h4>Anhang: 70 Excel-Funktionen</h4>
+                                    <ul>
+                                        <li>18 Datum/Zeit, 4 Information, 6 Logik, 8 Mathematik, 10 Nachschlagen/Verweisen, 12 Statistik, 12 Text</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!-- PU42 -->
+                        <tr class="module-row" onclick="toggleDetail(this)">
+                            <td class="module-code">PU42</td>
+                            <td class="module-name">Database / Business Intelligence</td>
+                            <td>Relationale Datenbanken, PowerQuery, Power Pivot, DAX, Power BI Desktop</td>
+                            <td class="module-responsible">Thomas Reuteler<br><a href="mailto:t.reuteler@siz.ch">t.reuteler@siz.ch</a></td>
+                        </tr>
+                        <tr class="module-detail">
+                            <td colspan="4">
+                                <div class="detail-content">
+                                    <span class="detail-lektionen">40 Lektionen</span>
+                                    <div class="detail-richtziele">
+                                        <strong>Richtziele:</strong> Relationale Datenbank verstehen &bull; Grosse Datenmengen auswerten &bull; PowerQuery und Power Pivot &bull; Informationen aus Internet beschaffen &bull; Datenauswertungen adressatengerecht pr&auml;sentieren
+                                    </div>
+                                    <h4>1 &ndash; Datenmodell und Datenbank</h4>
+                                    <ul>
+                                        <li>Relationale DB: Relation/Tupel/Attribute</li>
+                                        <li>1. und 2. Normalform</li>
+                                        <li>Datenmodell erstellen und verkn&uuml;pfen</li>
+                                        <li>OLAP-Cubes: Measures und Dimensionen</li>
+                                    </ul>
+                                    <h4>2 &ndash; Datenauswertungen</h4>
+                                    <ul>
+                                        <li><strong>PowerQuery:</strong> Import aus Access/Excel/Textdateien/Internet/JSON, Abfragen erstellen/kopieren, Power Query-Editor, Spalten berechnen, Parameter, Abfragesprache &laquo;M&raquo;</li>
+                                        <li><strong>Power Pivot:</strong> Daten modellieren/importieren, Spalten, Hierarchien, Time-Intelligence, KPIs, Cube-Funktionen</li>
+                                        <li><strong>DAX-Funktionen:</strong> Berechnungen, Zeilenkontext/Abfragekontext/Filterkontext, SUM, SUMX, AVERAGE, FILTER, ALL, CALCULATE, IF, SWITCH, RELATED, TOTALYTD, SAMEPERIODLASTYEAR, DATEADD</li>
+                                    </ul>
+                                    <h4>3 &ndash; Pr&auml;sentieren von Datenauswertungen</h4>
+                                    <ul>
+                                        <li><strong>Excel-Dashboards:</strong> Erstellen, Formularsteuerelemente, dynamische Bereiche</li>
+                                        <li><strong>Power BI Desktop:</strong> Installation, Ansichten, Daten abrufen/modellieren</li>
+                                        <li><strong>BI-Dashboards:</strong> Visualisierungen, Diagramme, Datenschnitte, Kartenansichten, Filter, Ver&ouml;ffentlichen, Mobile Devices</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!-- PU45 -->
+                        <tr class="module-row" onclick="toggleDetail(this)">
+                            <td class="module-code">PU45</td>
+                            <td class="module-name">ICT-Technologien</td>
+                            <td>Grundlagen Datenverarbeitung, Computersysteme, Softwareentwicklung, Benutzersupport</td>
+                            <td class="module-responsible">Beatrice Seiterle<br><a href="mailto:b.seiterle@siz.ch">b.seiterle@siz.ch</a></td>
+                        </tr>
+                        <tr class="module-detail">
+                            <td colspan="4">
+                                <div class="detail-content">
+                                    <span class="detail-lektionen">40 Lektionen &mdash; KV-Lernende 3. Lehrjahr, Option Technologie</span>
+                                    <div class="detail-richtziele">
+                                        <strong>Richtziele:</strong> Grundlagen Datenverarbeitung und Softwareentwicklung &bull; Technologieauswahl im kaufm&auml;nnischen Bereich &bull; Infrastruktur-Neuanschaffung einsch&auml;tzen &bull; First Support
+                                    </div>
+                                    <h4>1 &ndash; Grundbegriffe ICT</h4>
+                                    <ul>
+                                        <li>Nachrichten/Daten, EVA-/Von-Neumann-Prinzip</li>
+                                        <li>Logische Grundfunktionen der Digitaltechnik</li>
+                                        <li>Zahlensysteme/Einheiten, Bits/Bytes, Bin&auml;r/Hexadezimal</li>
+                                    </ul>
+                                    <h4>2 &ndash; Komponenten moderner Computersysteme</h4>
+                                    <ul>
+                                        <li>Ger&auml;tetypen, Vor-/Nachteile</li>
+                                        <li>Hauptplatine, BIOS, CPU, RAM, Grafikkarten, Netzwerkkarten</li>
+                                        <li>Schnittstellen: USB, FireWire, SCSI, SAS, SATA, eSATA, Thunderbolt, IR, Bluetooth, WLAN</li>
+                                        <li>Speichertypen, Peripherieger&auml;te</li>
+                                    </ul>
+                                    <h4>3 &ndash; Software / Softwareentwicklung / Lizenzmodell</h4>
+                                    <ul>
+                                        <li>Systemprogramme, Tools, Apps, Standard-/Individualprogramme</li>
+                                        <li>Datei/Dateiformat/Dateisystem</li>
+                                        <li>Code-Systeme: ASCII, ANSI, Unicode</li>
+                                        <li>Konstanten, Variablen, Arrays</li>
+                                    </ul>
+                                    <h4>4 &ndash; Logik von Programmiersprachen</h4>
+                                    <ul>
+                                        <li>Boolesche Logik (UND/ODER/NICHT)</li>
+                                        <li>Problemstellungen analysieren</li>
+                                        <li>Flowcharts, ERDs, Netzwerk-/Gantt-Diagramme interpretieren</li>
+                                    </ul>
+                                    <h4>5 &ndash; Evaluationskriterien</h4>
+                                    <ul>
+                                        <li>TCO berechnen, Nutzwertanalyse, Muss-/Kann-Ziele</li>
+                                    </ul>
+                                    <h4>6 &ndash; Benutzersupport</h4>
+                                    <ul>
+                                        <li>Benutzeranleitungen, Informationsvermittlung</li>
+                                        <li>Problemeingrenzung, Fehlersuche</li>
+                                        <li>Datenschutz- und Sicherheitsfragen</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="note">Diplomvoraussetzung: Alle 3 Module ODER 2 Module + Advanced-User-Diplom.</div>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 4. ICT Power-User SIZ Systems & Network -->
+        <!-- ============================================================ -->
+        <div class="diploma-card">
+            <div class="diploma-header bg-orange2">
+                <h2>4. ICT Power-User SIZ Systems &amp; Network</h2>
+                <span class="diploma-level">Fortgeschritten</span>
+            </div>
+            <div class="diploma-body">
+                <div class="diploma-meta">
+                    <div class="meta-item">
+                        <span class="meta-icon">&#128100;</span>
+                        <div><span class="meta-label">Zielgruppe:</span> IT-Fachkr&auml;fte und angehende System-/Netzwerkadministratoren</div>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-icon">&#128176;</span>
+                        <div><span class="meta-label">Pr&uuml;fungsgeb&uuml;hr:</span> CHF 330/Modul</div>
+                    </div>
+                </div>
+                <table class="module-table">
+                    <thead><tr><th>Modul <span class="click-hint">(klicken f&uuml;r Details)</span></th><th>Bezeichnung</th><th>Inhalt</th><th>Verantwortlich</th></tr></thead>
+                    <tbody>
+                        <!-- PU11 -->
+                        <tr class="module-row" onclick="toggleDetail(this)">
+                            <td class="module-code">PU11</td>
+                            <td class="module-name">Operating Systems &amp; System Technology</td>
+                            <td>Betriebssysteme, Hardware, Virtualisierung, Installation/Konfiguration, Recht, KI</td>
+                            <td class="module-responsible">Urs Tinner<br><a href="mailto:u.tinner@siz.ch">u.tinner@siz.ch</a></td>
+                        </tr>
+                        <tr class="module-detail">
+                            <td colspan="4">
+                                <div class="detail-content">
+                                    <span class="detail-lektionen">40 Lektionen</span>
+                                    <div class="detail-richtziele">
+                                        <strong>Richtziele:</strong> Grundlagen Datenverarbeitung &bull; Moderne Computersysteme &bull; Client-Betriebssysteme installieren/konfigurieren/warten &bull; Virtualisierungskonzepte &bull; Rechtliche Grundlagen &bull; Benutzersupport &bull; KI-Grundlagen
+                                    </div>
+                                    <h4>1 &ndash; Grundbegriffe ICT</h4>
+                                    <ul>
+                                        <li>EVA-/Von-Neumann-Prinzip, Digitaltechnik-Logik</li>
+                                        <li>Dezimal-/Bin&auml;r-/Hexadezimalsystem</li>
+                                    </ul>
+                                    <h4>2 &ndash; Komponenten</h4>
+                                    <ul>
+                                        <li>Ger&auml;tetypen inkl. Wearables/Cluster, Nutzwertanalyse</li>
+                                        <li>Hauptplatine, BIOS, TPM, CPU, RAM, Grafik-/Netzwerkkarten</li>
+                                        <li>Schnittstellen: USB, SCSI, SAS, SATA, Thunderbolt, IR, Bluetooth, HDMI, DisplayPort, M.2, NVMe, PCIe</li>
+                                        <li>Speicher: HDD, SSD, M.2, Band</li>
+                                        <li>Peripherie inkl. Visualizer, Smartboard, USV</li>
+                                        <li><strong>KI-Hardware:</strong> GPU, TPU, NPU</li>
+                                    </ul>
+                                    <h4>3 &ndash; Software</h4>
+                                    <ul>
+                                        <li>Kategorisierung, Programmiermethoden (Befehl, Variable, Schlaufe, Bedingung, Funktion)</li>
+                                        <li>Dateiformate und Risiken</li>
+                                    </ul>
+                                    <h4>4 &ndash; Betriebssysteme / Virtualisierung</h4>
+                                    <ul>
+                                        <li>Desktop-/Mobile-OS, Kernfunktionen</li>
+                                        <li>Unterschiede Mobile/Desktop/Cloud-OS</li>
+                                    </ul>
+                                    <h4>5 &ndash; Virtuelle Umgebung</h4>
+                                    <ul>
+                                        <li>Speicher-/VDI-/Server-Virtualisierung</li>
+                                        <li>Virtualisierungssoftware, virtuelle Desktops, VDI-Umgebung</li>
+                                    </ul>
+                                    <h4>6 &ndash; Installation / Konfiguration / Wartung</h4>
+                                    <ul>
+                                        <li>Datentr&auml;ger partitionieren/formatieren, Dateisysteme</li>
+                                        <li>Manuelle/automatisierte Installation</li>
+                                        <li>Systemsteuerung, Azure-Administration</li>
+                                        <li>Backup-Tools und -Strategien</li>
+                                        <li>Ereignisprotokoll, MMC, Taskmanager, Registry</li>
+                                        <li>Eingabeaufforderung und PowerShell</li>
+                                        <li>Malware-Schutz, NCSC-Compliance</li>
+                                    </ul>
+                                    <h4>7 &ndash; Gesetz und ICT</h4>
+                                    <ul>
+                                        <li>DSG/DSGVO, Personendaten, Auskunftsrechte</li>
+                                        <li>Lizenzarten: Public Domain, Open Source, Freeware, Kauf-/Miet-/Volumenlizenz, GPL, EULA</li>
+                                    </ul>
+                                    <h4>8 &ndash; Benutzersupport / Ergonomie / Umwelt</h4>
+                                    <ul>
+                                        <li>Anleitungen, Support-Software, Kommunikationsregeln</li>
+                                        <li>Ergonomie, Recycling</li>
+                                    </ul>
+                                    <h4>9 &ndash; Grundlagen KI</h4>
+                                    <ul>
+                                        <li>KI-Arten unterscheiden, Probleme/Einschr&auml;nkungen</li>
+                                        <li>KI f&uuml;r Dokumentation und Support</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!-- PU12 -->
+                        <tr class="module-row" onclick="toggleDetail(this)">
+                            <td class="module-code">PU12</td>
+                            <td class="module-name">Users &amp; Resources</td>
+                            <td>Benutzerverwaltung, Ressourcen, Datensicherheit, Mail, VoIP, SharePoint</td>
+                            <td class="module-responsible">Delil Suna<br><a href="mailto:d.suna@siz.ch">d.suna@siz.ch</a></td>
+                        </tr>
+                        <tr class="module-detail">
+                            <td colspan="4">
+                                <div class="detail-content">
+                                    <span class="detail-lektionen">30 Lektionen</span>
+                                    <div class="detail-richtziele">
+                                        <strong>Richtziele:</strong> Benutzerverwaltung (lokal, Domain, Cloud) &bull; Ressourcen bereitstellen &bull; Datensicherheit/-verf&uuml;gbarkeit/-integrit&auml;t &bull; Benutzervorlagen und GPOs &bull; Mailkonten und VoIP
+                                    </div>
+                                    <h4>1 &ndash; Konten und Gruppen</h4>
+                                    <ul>
+                                        <li>Unterschiede lokal/AD/Cloud</li>
+                                        <li>Benutzerkonten erstellen/aktivieren/sperren/l&ouml;schen</li>
+                                        <li>Gruppen mit Berechtigungen</li>
+                                        <li>GPOs erstellen, zuteilen, priorisieren</li>
+                                    </ul>
+                                    <h4>2 &ndash; Ressourcen</h4>
+                                    <ul>
+                                        <li>Ordner auf Server/NAS freigeben</li>
+                                        <li>Benutzerkontingente, Zugriffsrechte/Berechtigungskonzept</li>
+                                        <li>Print-Services: Druckerfreigaben, Druckerdienst, Warteschlange, Druckerpool</li>
+                                    </ul>
+                                    <h4>3 &ndash; Datensicherheit</h4>
+                                    <ul>
+                                        <li>Redundante Datenhaltung on-Prem/Cloud</li>
+                                        <li>Backup-Arten: Full/Incremental/Differential, Generationenprinzip</li>
+                                        <li>Imaging Tools, RAID Hardware/Software, RAID-Wiederherstellung</li>
+                                        <li>Synchronisation lokal/Cloud, Protokolle auswerten</li>
+                                        <li>Sichere Passw&ouml;rter/MFA, Verschl&uuml;sselung EFS/Harddisk</li>
+                                        <li>BYOD-Risiken und -Policy, Home-Office-Risiken</li>
+                                    </ul>
+                                    <h4>4 &ndash; Sichere Kommunikation</h4>
+                                    <ul>
+                                        <li>Browser-Zonen, Sicherheitseinstellungen lokal/GPO</li>
+                                    </ul>
+                                    <h4>5 &ndash; Kollaborations-/Kommunikationsplattformen</h4>
+                                    <ul>
+                                        <li>Mail-Umgebung: on-premise/Cloud/hybrid</li>
+                                        <li>Mailserver-Administration, Konfigurationsdatenblatt</li>
+                                        <li>Sicherheitsaspekte Mail</li>
+                                        <li>Kollaborationsplattformen: Teams, Zoom, Slack</li>
+                                        <li>SharePoint-Administration</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!-- PU13 -->
+                        <tr class="module-row" onclick="toggleDetail(this)">
+                            <td class="module-code">PU13</td>
+                            <td class="module-name">Business- &amp; SoHo-Network</td>
+                            <td>Netzwerktechnik, TCP/IP, VLAN, Routing, Firewall, VPN, Sicherheit</td>
+                            <td class="module-responsible">Daniel Schnyder<br><a href="mailto:d.schnyder@siz.ch">d.schnyder@siz.ch</a></td>
+                        </tr>
+                        <tr class="module-detail">
+                            <td colspan="4">
+                                <div class="detail-content">
+                                    <span class="detail-lektionen">40 Lektionen</span>
+                                    <div class="detail-richtziele">
+                                        <strong>Richtziele:</strong> Grundlagen Netzwerke &bull; Netzwerkprotokolle &bull; Netzwerke einrichten/erweitern/warten &bull; Internet-Anbindung &bull; LAN/WLAN &bull; DHCP/DNS &bull; IP-Routing &bull; Fernzugriff/VPN &bull; Firewall &bull; Netzwerksicherheit
+                                    </div>
+                                    <h4>1 &ndash; Grundlagen Netzwerktechnik</h4>
+                                    <ul>
+                                        <li>&Uuml;bertragungstechnik: Kupfer, Lichtwellenleiter, Funk</li>
+                                        <li>Steckertypen: RJ-45, GG-45, drahtlose Standards</li>
+                                        <li>OSI-Modell (7 Schichten)</li>
+                                        <li>Topologien: Stern, CSMA/CD, CSMA/CA</li>
+                                        <li>Hardware: Patchpanel, Hub, Switch, Router, Repeater, Bridge, Gateway, WLAN-Access-Point</li>
+                                    </ul>
+                                    <h4>2 &ndash; Netzwerk einrichten/erweitern/warten</h4>
+                                    <ul>
+                                        <li>Protokolle: HTTP, FTP, NTP, DNS, DHCP, HTTPS, SMTP, POP, IMAP, ICMP, NAT, ARP</li>
+                                        <li>IPv4/IPv6, Subnetting</li>
+                                        <li>IP-Befehle: ping, ipconfig, tracert, nslookup, netstat, net use, netsh</li>
+                                        <li>VLAN, Managed LAN, NAS, Netzwerkpl&auml;ne</li>
+                                    </ul>
+                                    <h4>3 &ndash; Internet-Anbindung</h4>
+                                    <ul>
+                                        <li>Mobile Zugangsvarianten, Router (NAT/DHCP/DNS)</li>
+                                        <li>Firewall und Portweiterleitung</li>
+                                    </ul>
+                                    <h4>4 &ndash; Remote-Verbindungen</h4>
+                                    <ul>
+                                        <li>Fernwartungstools, Remotedesktop, RDS-Server</li>
+                                    </ul>
+                                    <h4>5 &ndash; DNS und DHCP</h4>
+                                    <ul>
+                                        <li>DNS: Server, Zonen, Namensraum, Forward-/Reverse-Lookup</li>
+                                        <li>DHCP: Lease-Dauer, 4 Phasen, Scope, Adressreservierung</li>
+                                    </ul>
+                                    <h4>6 &ndash; IP-Routing</h4>
+                                    <ul>
+                                        <li>Funktionsweise, Routing-Protokolle (RIP, BGP, OSPF)</li>
+                                        <li>Statisches/dynamisches Routing</li>
+                                    </ul>
+                                    <h4>7 &ndash; Netzwerksicherheit</h4>
+                                    <ul>
+                                        <li>Angriffstechniken: MitM, DoS/DDoS, Backdoor, Spoofing, Replay, BruteForce, Dictionary</li>
+                                        <li>Zero-Trust-Prinzipien, AI-gest&uuml;tztes Monitoring</li>
+                                        <li>Firewall-Typen: Packet Filter, Proxy, Stateful Inspection, Cloud-basiert</li>
+                                        <li>URL-/Content-/SPAM-Filtering, Antiviren-Gateway, Firewallregeln</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="note">Diplomvoraussetzung: Alle 3 Module m&uuml;ssen bestanden werden.</div>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 5. ICT Power-User SIZ Web -->
+        <!-- ============================================================ -->
+        <div class="diploma-card">
+            <div class="diploma-header bg-red">
+                <h2>5. ICT Power-User SIZ Web</h2>
+                <span class="diploma-level">Fortgeschritten</span>
+            </div>
+            <div class="diploma-body">
+                <div class="diploma-meta">
+                    <div class="meta-item">
+                        <span class="meta-icon">&#128100;</span>
+                        <div><span class="meta-label">Zielgruppe:</span> Kreative Fachkr&auml;fte f&uuml;r Bildbearbeitung, Webdesign und Multimedia</div>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-icon">&#128176;</span>
+                        <div><span class="meta-label">Pr&uuml;fungsgeb&uuml;hr:</span> CHF 330/Modul</div>
+                    </div>
+                </div>
+                <table class="module-table">
+                    <thead><tr><th>Modul <span class="click-hint">(klicken f&uuml;r Details)</span></th><th>Bezeichnung</th><th>Inhalt</th><th>Verantwortlich</th></tr></thead>
+                    <tbody>
+                        <!-- PU21 -->
+                        <tr class="module-row" onclick="toggleDetail(this)">
+                            <td class="module-code">PU21</td>
+                            <td class="module-name">Bildbearbeitung</td>
+                            <td>Bilder kategorisieren, optimieren, retuschieren, komponieren; Formate, Farbr&auml;ume, Recht</td>
+                            <td class="module-responsible">&ndash;</td>
+                        </tr>
+                        <tr class="module-detail">
+                            <td colspan="4">
+                                <div class="detail-content">
+                                    <div class="detail-richtziele">
+                                        <strong>Richtziele:</strong> Professionelle Bildbearbeitung f&uuml;r Print und Web
+                                    </div>
+                                    <h4>Lernziele</h4>
+                                    <ul>
+                                        <li>Vor- und Nachteile der Bildformate und Farbr&auml;ume kennen</li>
+                                        <li>Bilder strukturiert kategorisieren und ordnen</li>
+                                        <li>Bilder retuschieren und filtern (nicht destruktive Bearbeitungsmethode)</li>
+                                        <li>Bildsprache festlegen</li>
+                                        <li>Gestaltungsvorschlag unter Ber&uuml;cksichtigung rechtlicher Bestimmungen und technischer M&ouml;glichkeiten</li>
+                                        <li>Fotos und Grafiken gem&auml;ss Gestaltungsauftrag bearbeiten</li>
+                                        <li>Composing (Fotomontage) erstellen</li>
+                                        <li>Bilder f&uuml;r Zielmedium, Bildgr&ouml;sse und Aufl&ouml;sung optimieren</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!-- PU22 -->
+                        <tr class="module-row" onclick="toggleDetail(this)">
+                            <td class="module-code">PU22</td>
+                            <td class="module-name">WCMS &amp; New Media</td>
+                            <td>HTML, CSS, Templates, CMS-Webpr&auml;senz, Social-Media-Auftritte</td>
+                            <td class="module-responsible">&ndash;</td>
+                        </tr>
+                        <tr class="module-detail">
+                            <td colspan="4">
+                                <div class="detail-content">
+                                    <div class="detail-richtziele">
+                                        <strong>Richtziele:</strong> Webpr&auml;senzen mit CMS realisieren und Social-Media-Auftritte pflegen
+                                    </div>
+                                    <h4>Lernziele</h4>
+                                    <ul>
+                                        <li>Aufgabenstellung, vorhandene Inhalte und Grafikelemente analysieren</li>
+                                        <li>Grundlegende HTML-Tags verstehen und einsetzen</li>
+                                        <li>CSS-Regel-Eigenschaften und Auswirkungen anwenden</li>
+                                        <li>Vorgegebene Templates integrieren und anpassen</li>
+                                        <li>Webauftritt mit WCMS gem&auml;ss Konzept realisieren</li>
+                                        <li>Webpr&auml;senz mit Erweiterungen und Komponenten erg&auml;nzen</li>
+                                        <li>New-Media-Auftritte konfigurieren und warten (Facebook-Unternehmensseiten, Mikroblogs, LinkedIn-Profile)</li>
+                                        <li>Content Sharing einrichten und &uuml;berwachen</li>
+                                        <li>Autoren bei Beitr&auml;gen und Publikationen beraten</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="note">Diplomvoraussetzung: Beide Module m&uuml;ssen bestanden werden.</div>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 6. ICT Professional Systems & Network SIZ -->
+        <!-- ============================================================ -->
+        <div class="diploma-card">
+            <div class="diploma-header bg-purple">
+                <h2>6. ICT Professional Systems &amp; Network SIZ</h2>
+                <span class="diploma-level">Expertenlevel</span>
+            </div>
+            <div class="diploma-body">
+                <div class="diploma-meta">
+                    <div class="meta-item">
+                        <span class="meta-icon">&#128100;</span>
+                        <div><span class="meta-label">Zielgruppe:</span> Netzwerkprofis mit Weitblick</div>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-icon">&#128176;</span>
+                        <div><span class="meta-label">Pr&uuml;fungsgeb&uuml;hr:</span> CHF 650/Modul</div>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-icon">&#9888;&#65039;</span>
+                        <div><span class="meta-label">Voraussetzung:</span> Power-User Systems &amp; Network (PU11-13)</div>
+                    </div>
+                </div>
+                <table class="module-table">
+                    <thead><tr><th>Modul <span class="click-hint">(klicken f&uuml;r Details)</span></th><th>Bezeichnung</th><th>Inhalt</th><th>Verantwortlich</th></tr></thead>
+                    <tbody>
+                        <!-- SP1 -->
+                        <tr class="module-row" onclick="toggleDetail(this)">
+                            <td class="module-code">SP1</td>
+                            <td class="module-name">Server Administration</td>
+                            <td>Serverdienste, Virtualisierung, VPN, Verzeichnisdienste, Storage, Sicherheit, PowerShell</td>
+                            <td class="module-responsible">Melih &Ouml;zkan<br><a href="mailto:m.oezkan@siz.ch">m.oezkan@siz.ch</a></td>
+                        </tr>
+                        <tr class="module-detail">
+                            <td colspan="4">
+                                <div class="detail-content">
+                                    <span class="detail-lektionen">60 Lektionen</span>
+                                    <div class="detail-richtziele">
+                                        <strong>Richtziele:</strong> Serverinfrastruktur &uuml;berwachen/warten &bull; Serverdienste konfigurieren &bull; Sicherheit &bull; Dokumentation &bull; Virtualisierung &bull; Remote/VPN &bull; On-Premise, Cloud und Hybrid
+                                    </div>
+                                    <h4>1 &ndash; Betrieb/Unterhalt Server (On-Prem &amp; Cloud)</h4>
+                                    <ul>
+                                        <li>Serverdienste: Rollen/Features, Windows Admin Center</li>
+                                        <li>Systemprotokolle und Logdateien</li>
+                                        <li>Authentifizierung: Kennwort, Kerberos, NTLMv2, Zertifikat, FIDO2, WebAuthn, MFA, Conditional Access</li>
+                                        <li><strong>PowerShell:</strong> Skripte, Registry/Dienste/GPO, Automatisierung</li>
+                                    </ul>
+                                    <h4>2 &ndash; Server-Dienste</h4>
+                                    <ul>
+                                        <li><strong>DNS:</strong> Prim&auml;r/Sekund&auml;r/Caching-only/Forwarder, Zonentransfer, SOA/NS/A/PTR/CNAME/SRV, SPF/DKIM/DMARC, Split-Brain-DNS, DNSSEC</li>
+                                        <li><strong>DHCP:</strong> Ausfallsicher, VoIP/VPN/M365/PXE-Optionen</li>
+                                        <li><strong>Cloud:</strong> IaaS/PaaS/SaaS, Azure/AWS VM</li>
+                                    </ul>
+                                    <h4>3 &ndash; Virtualisierung / Container</h4>
+                                    <ul>
+                                        <li>Server-/Desktop-/Storage-/Netzwerk-Virtualisierung, SDN</li>
+                                        <li>Docker, Windows-Container, Hyper-V-Container, Kubernetes</li>
+                                        <li>Container vs. VM, Lizenzproblematik</li>
+                                        <li>Hyper-V: VMs erstellen (GUI/PowerShell/Admin Center), virtuelle Switches, VLAN, NIC-Teaming</li>
+                                    </ul>
+                                    <h4>4 &ndash; Remote Access / VPN</h4>
+                                    <ul>
+                                        <li>Site-to-Site VPN: IKEv2, L2TP, IPsec, Always On VPN</li>
+                                        <li>RODC in Aussenstelle, MFA/Compliance</li>
+                                        <li>RDP absichern: TLS, NLA, RD-Gateway, Reverse Proxy, Azure App Proxy</li>
+                                        <li>VDI, AVD, AWS Workspaces</li>
+                                    </ul>
+                                    <h4>5 &ndash; Web-/Datei-/Mail-/Collaboration-Server</h4>
+                                    <ul>
+                                        <li>FTPS, SFTP, HTTPS, TLS 1.2/1.3, Zertifikate</li>
+                                        <li>IIS/Apache/Nginx-H&auml;rtung</li>
+                                        <li>Exchange Online/Hybrid, Autodiscover, SPF/DKIM/M365</li>
+                                        <li>Reverse-Proxy, SSL-Zertifikate</li>
+                                    </ul>
+                                    <h4>6 &ndash; Verzeichnisdienste / Identit&auml;t / Hybrid-ID</h4>
+                                    <ul>
+                                        <li>AD DS, LDAP, FreeIPA, Cloud-ID</li>
+                                        <li>Entra ID / Azure AD / AAD Connect / Cloud Sync, RBAC</li>
+                                        <li>Dom&auml;nenstruktur, AD mit PowerShell automatisiert</li>
+                                        <li>Gel&ouml;schte AD-Objekte wiederherstellen, GPOs/Anmeldeskripte</li>
+                                    </ul>
+                                    <h4>7 &ndash; Datentr&auml;gerverwaltung / Storage / DFS</h4>
+                                    <ul>
+                                        <li>Hochverf&uuml;gbarkeit, RAID Hardware/Software</li>
+                                        <li>SMB 3.x, Storage Replica, Migration Service</li>
+                                        <li>Hybride Backup-/DR-Konzepte, DFS Replikation/Namespace</li>
+                                    </ul>
+                                    <h4>8 &ndash; Sicherheit</h4>
+                                    <ul>
+                                        <li>Angriffsvektoren: Phishing, MFA-Fatigue, Password-Spray, Ransomware, Lateral Movement</li>
+                                        <li>EDR, Defender, Credential Guard, LAPS, JEA, Admin-Tiering, PAW</li>
+                                        <li>Zero-Trust, Least-Privilege</li>
+                                        <li>Dienste h&auml;rten: Web/DNS/File/Print/DHCP/RDP/VPN/SMB over QUIC</li>
+                                        <li>IPsec, IKEv2, Always-On-VPN, Zertifikatsdienste, Let&rsquo;s Encrypt</li>
+                                    </ul>
+                                    <h4>9 &ndash; Support und Dokumentation</h4>
+                                    <ul>
+                                        <li>First-/Second-Level-Support</li>
+                                        <li>Netzwerkplan, Hardware-Inventar, Systemdokumentation</li>
+                                        <li>Script-/IaC-Repository, Betriebshandbuch f&uuml;r hybride Szenarien</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 7. ICT Professional Web SIZ -->
+        <!-- ============================================================ -->
+        <div class="diploma-card">
+            <div class="diploma-header bg-purple2">
+                <h2>7. ICT Professional Web SIZ</h2>
+                <span class="diploma-level">Expertenlevel</span>
+            </div>
+            <div class="diploma-body">
+                <div class="diploma-meta">
+                    <div class="meta-item">
+                        <span class="meta-icon">&#128100;</span>
+                        <div><span class="meta-label">Zielgruppe:</span> Umfassende Webmaster</div>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-icon">&#9888;&#65039;</span>
+                        <div><span class="meta-label">Voraussetzung:</span> Power-User Web (PU21-22)</div>
+                    </div>
+                </div>
+                <table class="module-table">
+                    <thead><tr><th>Modul <span class="click-hint">(klicken f&uuml;r Details)</span></th><th>Bezeichnung</th><th>Inhalt</th><th>Verantwortlich</th></tr></thead>
+                    <tbody>
+                        <!-- SP2 -->
+                        <tr class="module-row" onclick="toggleDetail(this)">
+                            <td class="module-code">SP2</td>
+                            <td class="module-name">Web Publishing</td>
+                            <td>Dynamische Webpr&auml;senzen, Plattformen, E-Shops, Social Media, WordPress Theme Builder</td>
+                            <td class="module-responsible">&ndash;</td>
+                        </tr>
+                        <tr class="module-detail">
+                            <td colspan="4">
+                                <div class="detail-content">
+                                    <div class="detail-richtziele">
+                                        <strong>Richtziele:</strong> Dynamische, interaktive Webpr&auml;senzen und Plattformen gestalten, realisieren und implementieren
+                                    </div>
+                                    <h4>Lernziele</h4>
+                                    <ul>
+                                        <li>Dynamische, interaktive Webpr&auml;senzen gestalten und implementieren</li>
+                                        <li>Plattformen, E-Shops und Social-Media-Sites realisieren</li>
+                                        <li>HTML/CSS-Themen (Mini Case)</li>
+                                        <li>WordPress Theme Builder &ndash; Website-Templates erstellen</li>
+                                    </ul>
+                                    <div class="note" style="margin-top:12px;">Hinweis: Dieses Modul wird derzeit &uuml;berarbeitet. Detaillierte Lernziele sind auf siz.ch noch nicht ver&ouml;ffentlicht.</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <p class="footer">Stand: April 2026 &mdash; Quelle: siz.ch &mdash; 7 Diplome, 16+ Module<br>Lernziele basierend auf den offiziellen MID-Dokumenten (Modulidentifikation) von SIZ</p>
+
+    <script>
+        function toggleDetail(row) {
+            var detail = row.nextElementSibling;
+            if (detail && detail.classList.contains('module-detail')) {
+                row.classList.toggle('open');
+                detail.classList.toggle('open');
+            }
+        }
+    </script>
+
+</body>
+</html>

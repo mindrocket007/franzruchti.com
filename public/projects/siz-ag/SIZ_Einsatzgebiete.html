@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIZ im Einsatz – Wo SIZ-Diplome die Arbeitswelt stärken</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f2f5;
+            color: #333;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+        h1 { text-align: center; font-size: 2.2em; color: #1a1a2e; margin-bottom: 8px; }
+        .subtitle { text-align: center; color: #666; font-size: 1.1em; margin-bottom: 50px; }
+        .container { max-width: 1100px; margin: 0 auto; }
+
+        /* Section Cards */
+        .section-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-bottom: 36px;
+        }
+        .section-header {
+            padding: 24px 32px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .section-header h2 { font-size: 1.4em; margin: 0; }
+        .section-header .badge {
+            background: rgba(255,255,255,0.25);
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+        .section-body { padding: 28px 32px; }
+
+        .bg-blue { background: linear-gradient(135deg, #1565C0, #42A5F5); }
+        .bg-green { background: linear-gradient(135deg, #2E7D32, #66BB6A); }
+        .bg-orange { background: linear-gradient(135deg, #E65100, #FFA726); }
+        .bg-purple { background: linear-gradient(135deg, #6A1B9A, #AB47BC); }
+        .bg-red { background: linear-gradient(135deg, #C62828, #EF5350); }
+        .bg-teal { background: linear-gradient(135deg, #00695C, #26A69A); }
+        .bg-indigo { background: linear-gradient(135deg, #283593, #5C6BC0); }
+        .bg-dark { background: linear-gradient(135deg, #1a1a2e, #3a3a5e); }
+        .bg-amber { background: linear-gradient(135deg, #F57F17, #FFD54F); color: #333 !important; }
+        .bg-cyan { background: linear-gradient(135deg, #006064, #00ACC1); }
+        .bg-pink { background: linear-gradient(135deg, #880E4F, #EC407A); }
+        .bg-brown { background: linear-gradient(135deg, #4E342E, #8D6E63); }
+
+        /* Hero */
+        .hero-box {
+            background: linear-gradient(135deg, #1a1a2e, #2d2d5e);
+            color: white;
+            border-radius: 16px;
+            padding: 48px 40px;
+            margin-bottom: 36px;
+            text-align: center;
+        }
+        .hero-box h2 { font-size: 1.8em; margin-bottom: 16px; }
+        .hero-box p { font-size: 1.05em; opacity: 0.9; max-width: 850px; margin: 0 auto 16px auto; }
+        .hero-stats {
+            display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; margin-top: 32px;
+        }
+        .hero-stat { text-align: center; }
+        .hero-stat .number { font-size: 2.2em; font-weight: 800; display: block; line-height: 1.1; }
+        .hero-stat .label { font-size: 0.82em; opacity: 0.8; display: block; margin-top: 4px; }
+
+        /* Benefit Tabs */
+        .benefit-tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 0; }
+        .benefit-tab {
+            padding: 12px 24px; border: none; border-radius: 12px 12px 0 0; cursor: pointer;
+            font-size: 0.93em; font-weight: 600; color: #666; background: #e0e0e0; transition: all 0.2s;
+        }
+        .benefit-tab.active { background: white; color: #1565C0; box-shadow: 0 -2px 10px rgba(0,0,0,0.06); }
+        .benefit-panel {
+            display: none; background: white; border-radius: 0 16px 16px 16px;
+            padding: 28px 32px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        .benefit-panel.active { display: block; }
+        .benefit-panel h3 { color: #1a1a2e; font-size: 1.1em; margin-bottom: 12px; }
+        .benefit-panel ul { margin: 0 0 16px 20px; }
+        .benefit-panel li { margin-bottom: 6px; font-size: 0.93em; }
+
+        /* Category Grid */
+        .cat-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-bottom: 12px;
+        }
+        .cat-card {
+            background: white; border-radius: 14px; overflow: hidden;
+            box-shadow: 0 3px 14px rgba(0,0,0,0.07); transition: transform 0.2s;
+        }
+        .cat-card:hover { transform: translateY(-2px); }
+        .cat-card-header {
+            padding: 16px 20px; color: white; display: flex; align-items: center; gap: 12px;
+        }
+        .cat-card-header .icon { font-size: 1.6em; }
+        .cat-card-header h3 { font-size: 1.05em; margin: 0; }
+        .cat-card-body { padding: 16px 20px; }
+        .cat-card-body p { font-size: 0.9em; color: #555; margin-bottom: 10px; }
+
+        /* Beruf-Tag */
+        .beruf-tag {
+            display: inline-block; padding: 3px 10px; border-radius: 12px; font-size: 0.78em;
+            font-weight: 600; margin: 2px 4px 2px 0; background: #E3F2FD; color: #1565C0;
+        }
+        .beruf-tag.active { background: #C8E6C9; color: #2E7D32; }
+        .beruf-tag.potential { background: #FFF3E0; color: #E65100; }
+
+        /* Berufe Table */
+        .beruf-table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+        .beruf-table thead th {
+            background: #f5f7fa; padding: 12px 14px; text-align: left; font-weight: 700;
+            font-size: 0.82em; text-transform: uppercase; letter-spacing: 0.5px;
+            color: #555; border-bottom: 2px solid #e0e0e0; position: sticky; top: 0;
+        }
+        .beruf-table tbody td {
+            padding: 12px 14px; border-bottom: 1px solid #eee; font-size: 0.9em; vertical-align: top;
+        }
+        .beruf-table tbody tr:hover { background: #f8f9fa; }
+        .status-badge {
+            display: inline-block; padding: 2px 10px; border-radius: 10px; font-size: 0.78em; font-weight: 600;
+        }
+        .status-active { background: #C8E6C9; color: #2E7D32; }
+        .status-recommended { background: #FFF3E0; color: #E65100; }
+        .status-potential { background: #F3E5F5; color: #6A1B9A; }
+
+        /* School Grid */
+        .school-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin: 16px 0;
+        }
+        .school-card {
+            background: #f8f9fa; border-radius: 10px; padding: 14px 18px; border-left: 4px solid #1565C0;
+        }
+        .school-card h4 { font-size: 0.93em; margin-bottom: 4px; color: #1a1a2e; }
+        .school-card p { font-size: 0.82em; color: #666; margin: 2px 0; }
+        .school-card .school-type {
+            display: inline-block; padding: 1px 8px; border-radius: 8px;
+            font-size: 0.72em; font-weight: 600; background: #E3F2FD; color: #1565C0;
+        }
+        .school-card.green { border-left-color: #43A047; }
+        .school-card.orange { border-left-color: #FF9800; }
+        .school-card.purple { border-left-color: #9C27B0; }
+
+        /* RAV Section */
+        .rav-steps {
+            display: flex; gap: 16px; flex-wrap: wrap; margin: 16px 0;
+        }
+        .rav-step {
+            flex: 1; min-width: 200px; background: #f8f9fa; border-radius: 12px;
+            padding: 20px; text-align: center; position: relative;
+        }
+        .rav-step .step-num {
+            width: 36px; height: 36px; border-radius: 50%; background: #1565C0; color: white;
+            display: flex; align-items: center; justify-content: center; font-weight: 700;
+            margin: 0 auto 10px auto;
+        }
+        .rav-step h4 { font-size: 0.93em; margin-bottom: 6px; }
+        .rav-step p { font-size: 0.82em; color: #666; }
+
+        /* Highlight Box */
+        .highlight-box {
+            background: #E3F2FD; border-left: 4px solid #1565C0;
+            padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 14px 0; font-size: 0.93em;
+        }
+        .highlight-box.green { background: #E8F5E9; border-left-color: #43A047; }
+        .highlight-box.orange { background: #FFF3E0; border-left-color: #FF9800; }
+        .highlight-box.purple { background: #F3E5F5; border-left-color: #9C27B0; }
+
+        /* Stat Grid */
+        .stat-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 12px; margin: 14px 0;
+        }
+        .stat-box {
+            background: #f8f9fa; border-radius: 8px; padding: 14px; text-align: center;
+        }
+        .stat-box .stat-num { font-size: 1.4em; font-weight: 800; color: #1565C0; display: block; }
+        .stat-box .stat-label { font-size: 0.78em; color: #666; }
+
+        /* Module Badge */
+        .module-badge {
+            display: inline-block; padding: 2px 8px; border-radius: 8px; font-size: 0.75em;
+            font-weight: 600; margin: 1px 2px; background: #E8EAF6; color: #283593;
+        }
+        .module-badge.green { background: #E8F5E9; color: #2E7D32; }
+        .module-badge.orange { background: #FFF3E0; color: #E65100; }
+        .module-badge.purple { background: #F3E5F5; color: #6A1B9A; }
+
+        /* Accordion */
+        .acc-item {
+            background: white; border-radius: 12px; margin-bottom: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05); overflow: hidden;
+        }
+        .acc-header {
+            padding: 16px 20px; cursor: pointer; display: flex; justify-content: space-between;
+            align-items: center; gap: 12px; font-weight: 600; font-size: 0.93em;
+            color: #1a1a2e; transition: background 0.2s; user-select: none;
+        }
+        .acc-header:hover { background: #f8f9fa; }
+        .acc-header .arrow { color: #999; transition: transform 0.3s; flex-shrink: 0; }
+        .acc-item.open .acc-header .arrow { transform: rotate(180deg); }
+        .acc-body { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+        .acc-item.open .acc-body { max-height: 4000px; }
+        .acc-body-inner { padding: 0 20px 20px 20px; border-top: 1px solid #eee; }
+        .acc-body-inner h4 { color: #1565C0; margin: 14px 0 6px 0; font-size: 0.93em; }
+        .acc-body-inner p { font-size: 0.9em; color: #444; margin-bottom: 8px; }
+        .acc-body-inner ul { margin: 6px 0 10px 18px; font-size: 0.9em; color: #444; }
+        .acc-body-inner li { margin-bottom: 4px; }
+        .acc-body-inner .source { font-size: 0.78em; color: #999; font-style: italic; margin-top: 8px; padding-top: 8px; border-top: 1px dashed #e0e0e0; }
+
+        /* Key Message */
+        .key-message {
+            background: linear-gradient(135deg, #1565C0, #1E88E5); color: white;
+            border-radius: 16px; padding: 28px 36px; margin-bottom: 36px;
+            text-align: center; font-size: 1.15em; font-weight: 600; line-height: 1.5;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center; color: #999; font-size: 0.85em;
+            margin-top: 48px; padding-top: 24px; border-top: 1px solid #e0e0e0;
+        }
+        .footer a { color: #1565C0; text-decoration: none; }
+
+        @media (max-width: 768px) {
+            body { padding: 20px 12px; }
+            h1 { font-size: 1.6em; }
+            .hero-box { padding: 28px 20px; }
+            .hero-stats { gap: 16px; }
+            .hero-stat .number { font-size: 1.8em; }
+            .section-body { padding: 20px 16px; }
+            .cat-grid { grid-template-columns: 1fr; }
+            .school-grid { grid-template-columns: 1fr; }
+            .rav-steps { flex-direction: column; }
+            .benefit-tab { padding: 10px 14px; font-size: 0.82em; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>SIZ im Einsatz</h1>
+    <p class="subtitle">Wo SIZ-Diplome die Aus- und Weiterbildung in der Schweiz stärken</p>
+
+    <!-- HERO -->
+    <div class="hero-box">
+        <h2>Digitale Kompetenzen – branchenübergreifend gefragt</h2>
+        <p>SIZ-Diplome kommen in der kaufmännischen Grundbildung, an Wirtschaftsmittelschulen, in der beruflichen Weiterbildung und in der Arbeitsmarktintegration zum Einsatz. Von der Lehre bis zum Fachausweis, vom Büro bis zur Werkstatt.</p>
+        <div class="hero-stats">
+            <div class="hero-stat">
+                <span class="number">100+</span>
+                <span class="label">Partnerschulen schweizweit</span>
+            </div>
+            <div class="hero-stat">
+                <span class="number">15+</span>
+                <span class="label">Berufsfelder mit SIZ-Bezug</span>
+            </div>
+            <div class="hero-stat">
+                <span class="number">5</span>
+                <span class="label">Diplomstufen</span>
+            </div>
+            <div class="hero-stat">
+                <span class="number">15</span>
+                <span class="label">Module</span>
+            </div>
+            <div class="hero-stat">
+                <span class="number">8'000</span>
+                <span class="label">Prüfungen pro Jahr</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- VORTEILE NACH ZIELGRUPPE -->
+    <!-- ============================================ -->
+    <div style="margin-bottom: 36px;">
+        <div class="benefit-tabs">
+            <button class="benefit-tab active" onclick="switchTab(this, 'tab-lernende')">Lernende &amp; Studierende</button>
+            <button class="benefit-tab" onclick="switchTab(this, 'tab-bildung')">Bildungsorganisationen</button>
+            <button class="benefit-tab" onclick="switchTab(this, 'tab-arbeitgeber')">Arbeitgeber</button>
+            <button class="benefit-tab" onclick="switchTab(this, 'tab-rav')">RAV &amp; Stellensuchende</button>
+        </div>
+
+        <div id="tab-lernende" class="benefit-panel active">
+            <h3>Vorteile für Lernende &amp; Studierende</h3>
+            <ul>
+                <li><strong>Schweizweit anerkannter Kompetenznachweis</strong> – ein SIZ-Diplom im Lebenslauf zeigt Arbeitgebern sofort: diese Person beherrscht digitale Werkzeuge professionell</li>
+                <li><strong>Sofort einsetzbare Skills</strong> – was in den SIZ-Modulen geprüft wird, wird am nächsten Arbeitstag gebraucht: Word, Excel, PowerPoint, E-Mail, Cloud, Netzwerke</li>
+                <li><strong>Bessere Chancen auf dem Arbeitsmarkt</strong> – ICT-zertifizierte Fachkräfte verdienen 20–30 % mehr und werden bei Bewerbungen bevorzugt (PwC/Robert Half)</li>
+                <li><strong>Klarer Karrierepfad</strong> – vom Smart-User über Advanced-User zum Power-User oder Professional: jede Stufe öffnet neue Türen</li>
+                <li><strong>Branchenunabhängig wertvoll</strong> – ob KV, Gesundheit, Detailhandel, Technik oder Gastgewerbe: digitale Grundkompetenzen werden überall gebraucht</li>
+                <li><strong>Basis für KI-Kompetenz</strong> – wer Office und Systeme versteht, kann Copilot, ChatGPT und andere KI-Tools souverän nutzen</li>
+                <li><strong>Modular und flexibel</strong> – jedes einzelne Modul bringt ein Zertifikat, der Einstieg ist jederzeit möglich</li>
+            </ul>
+        </div>
+
+        <div id="tab-bildung" class="benefit-panel">
+            <h3>Vorteile für Bildungsorganisationen</h3>
+            <ul>
+                <li><strong>Neutrale, standardisierte Prüfungen</strong> – SIZ prüft unabhängig, was objektive und vergleichbare Ergebnisse garantiert</li>
+                <li><strong>Abgestimmt auf die BIVO 2023</strong> – SIZ-Module sind direkt auf die Handlungskompetenzbereiche der neuen KV-Lehre abgestimmt (HKB E «Technologie»)</li>
+                <li><strong>Lernziel-Checks (LZC) und Plattformtests</strong> – SIZ stellt digitale Prüfungsinstrumente für den Unterricht bereit</li>
+                <li><strong>Differenzierung im Bildungsmarkt</strong> – schweizweit anerkannte Abschlüsse machen Ihre Schule attraktiver</li>
+                <li><strong>Praxisorientierte Inhalte</strong> – von 60 Fachexperten aus Wirtschaft und Bildung entwickelt und laufend aktualisiert</li>
+                <li><strong>Netzwerk von 100+ Partnerschulen</strong> – Erfahrungsaustausch, Best Practices und gemeinsame Qualitätsstandards</li>
+                <li><strong>Anschlussfähig</strong> – SIZ-Diplome bilden die Brücke zwischen Grundbildung, Berufspraxis und Höherer Berufsbildung</li>
+                <li><strong>Neue Kooperationsvereinbarung ab 2026</strong> – modernisierte Zusammenarbeit zwischen SIZ und Partnerschulen</li>
+            </ul>
+        </div>
+
+        <div id="tab-arbeitgeber" class="benefit-panel">
+            <h3>Vorteile für Arbeitgeber</h3>
+            <ul>
+                <li><strong>Messbarer Kompetenznachweis</strong> – SIZ-Diplome ersetzen vage Selbsteinschätzungen durch objektive, geprüfte Qualifikationen</li>
+                <li><strong>Weniger IT-Supportkosten</strong> – Mitarbeitende mit SIZ-Diplom lösen Office- und Systemprobleme selbstständig</li>
+                <li><strong>Höhere Produktivität</strong> – Studien zeigen: mangelnde Office-Kenntnisse kosten pro Person 2–4 Stunden Produktivität pro Woche</li>
+                <li><strong>Fundament für KI-Einführung</strong> – Copilot und andere KI-Tools funktionieren nur, wenn die Grundlagen sitzen</li>
+                <li><strong>Weniger Sicherheitsvorfälle</strong> – Mitarbeitende mit System- und Netzwerkkenntnissen gehen sicherer mit Firmendaten um</li>
+                <li><strong>Getragen von kfmv und Swico</strong> – die Diplome entsprechen den Anforderungen der Schweizer Wirtschaft</li>
+                <li><strong>Modulare Weiterbildung</strong> – gezielte Kompetenzentwicklung statt Giesskanne, passend zum Anforderungsprofil</li>
+                <li><strong>Signalwirkung bei Rekrutierung</strong> – SIZ auf dem CV zeigt Engagement, Lernbereitschaft und nachgewiesene Kompetenz</li>
+            </ul>
+        </div>
+
+        <div id="tab-rav" class="benefit-panel">
+            <h3>Vorteile für RAV &amp; Stellensuchende</h3>
+            <ul>
+                <li><strong>Verbesserte Vermittelbarkeit</strong> – digitale Grundkompetenzen werden in praktisch jeder Stellenausschreibung verlangt</li>
+                <li><strong>Anerkannter Nachweis</strong> – ein SIZ-Diplom gibt der Bewerbung Gewicht, wo «gute PC-Kenntnisse» als Anforderung steht</li>
+                <li><strong>Schneller Wiedereinstieg</strong> – die kompakte Kursstruktur (4–6 Monate Teilzeit) passt perfekt in die Stellensuche</li>
+                <li><strong>Finanzierung möglich</strong> – SIZ-Kurse können als individuelle arbeitsmarktliche Massnahme (AMM) über das RAV beantragt werden</li>
+                <li><strong>Praxisnah statt theoretisch</strong> – SIZ-Prüfungen testen angewandte Kompetenzen in realistischen Szenarien</li>
+                <li><strong>Selbstvertrauen stärken</strong> – ein Diplom während der Stellensuche zeigt: «Ich nutze die Zeit, ich bilde mich weiter»</li>
+                <li><strong>Branchenübergreifend einsetzbar</strong> – ob Rückkehr ins Büro, Branchenwechsel oder Quereinstieg: SIZ öffnet Türen</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- KERNBOTSCHAFT -->
+    <!-- ============================================ -->
+    <div class="key-message">
+        SIZ-Diplome sind dort im Einsatz, wo digitale Kompetenzen den Unterschied machen:<br>
+        in der Lehre, an der Schule, im Betrieb, bei der Stellensuche – und in über 15 Berufsfeldern.
+    </div>
+
+    <!-- ============================================ -->
+    <!-- EINSATZGEBIET 1: KV & BIVO 2023 -->
+    <!-- ============================================ -->
+    <div class="section-card">
+        <div class="section-header bg-blue">
+            <h2>Kaufmännische Grundbildung (BIVO 2023)</h2>
+            <span class="badge">Offiziell integriert</span>
+        </div>
+        <div class="section-body">
+            <div class="highlight-box green">
+                <strong>SIZ ist offiziell auf die neue KV-Reform 2023 abgestimmt.</strong> Das ICT Advanced-User SIZ Diplom ist in die kaufmännische Grundbildung (Kaufleute EFZ) eingebunden – über 100 Berufsfachschulen setzen es ein.
+            </div>
+            <h3 style="margin: 18px 0 10px 0; font-size: 1.05em;">So ist SIZ in die KV-Lehre eingebettet:</h3>
+            <ul>
+                <li><strong>1. und 2. Lehrjahr:</strong> Vorbereitung auf das ICT Advanced-User SIZ Diplom – Module AU1N (Kommunikation &amp; Präsentation), AU3K (Texte), AU4K (Tabellen)</li>
+                <li><strong>3. Lehrjahr, Option «Technologie»:</strong> Zusätzliches Modul PU45 (ICT-Technologien) – Vertiefung Richtung Power-User Data Technology</li>
+                <li><strong>Handlungskompetenzbereich E:</strong> Die SIZ-Module sind direkt auf HKB E «Technologie einsetzen» der BIVO 2023 abgestimmt</li>
+                <li><strong>Lernziel-Checks (LZC):</strong> SIZ stellt handlungsorientierte Prüfungsinstrumente für den IKA-Unterricht bereit (10–20 Min. pro Check)</li>
+                <li><strong>Plattformtests (PSYS):</strong> Digitale SIZ-Lernzielkontrollen sind seit Schuljahr 24/25 in den Unterricht integriert</li>
+            </ul>
+
+            <h3 style="margin: 24px 0 12px 0; font-size: 1.05em;">Berufsfachschulen mit SIZ-Integration (Auswahl):</h3>
+            <div class="school-grid">
+                <div class="school-card">
+                    <h4>KV Luzern Berufsfachschule</h4>
+                    <p>ICT Advanced-User SIZ (kaufm.) – Module AU1N, AU3K, AU4K</p>
+                    <p>Zusatzangebot für Lernende 3. Lehrjahr + BM</p>
+                    <span class="school-type">Berufsfachschule</span>
+                </div>
+                <div class="school-card">
+                    <h4>zB. Zentrum Bildung Baden &amp; Brugg</h4>
+                    <p>ICT Advanced-User SIZ – SIZ Kompetenzcenter Aargau</p>
+                    <p>Auf BIVO 2023 abgestimmt</p>
+                    <span class="school-type">Berufsfachschule</span>
+                </div>
+                <div class="school-card">
+                    <h4>KBS Glarus</h4>
+                    <p>ICT Smart-User SIZ <strong>kostenlos für alle Lernenden aller Berufe</strong></p>
+                    <p>Testcenter für Advanced-User-Prüfungen</p>
+                    <span class="school-type">Berufsfachschule + Testcenter</span>
+                </div>
+                <div class="school-card">
+                    <h4>BWZ Lyss</h4>
+                    <p>SIZ Advanced-User Diplomkurs mit Prüfung vor Ort</p>
+                    <p>Für KV-, FAGE-, Florist- und Zimmermann-Lernende</p>
+                    <span class="school-type">Berufsbildungszentrum</span>
+                </div>
+                <div class="school-card">
+                    <h4>BBZ Freiamt (Wohlen AG)</h4>
+                    <p>ICT Advanced-User SIZ – Kompetenzcenter Aargau</p>
+                    <span class="school-type">Berufsbildungszentrum</span>
+                </div>
+                <div class="school-card">
+                    <h4>BZWU Wil-Uzwil</h4>
+                    <p>ICT Smart-User / Advanced-User – integriert in Handelsschule edupool</p>
+                    <span class="school-type">Berufsbildungszentrum</span>
+                </div>
+                <div class="school-card">
+                    <h4>Wirtschaftsschule Thun (WST)</h4>
+                    <p>ICT Advanced-User SIZ als Freikurs für KV-Lernende</p>
+                    <span class="school-type">Wirtschaftsschule</span>
+                </div>
+                <div class="school-card">
+                    <h4>Berufsfachschule Nidwalden</h4>
+                    <p>ICT Advanced-User SIZ für KV-Lernende</p>
+                    <span class="school-type">Berufsfachschule</span>
+                </div>
+            </div>
+            <p style="font-size: 0.82em; color: #999; margin-top: 8px;">Quellen: siz.ch/bivo-2023 · kvlu.ch · zentrumbildung.ch · kbsglarus.ch · bwzlyss.ch · bzwu.ch</p>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- EINSATZGEBIET 2: WMS / HMS -->
+    <!-- ============================================ -->
+    <div class="section-card">
+        <div class="section-header bg-indigo">
+            <h2>Wirtschafts- und Handelsmittelschulen (WMS/HMS)</h2>
+            <span class="badge">Fester Bestandteil</span>
+        </div>
+        <div class="section-body">
+            <p style="margin-bottom: 16px;">Das <strong>ICT Advanced-User SIZ</strong> ist an praktisch allen Wirtschafts- und Handelsmittelschulen der Deutschschweiz <strong>fester Bestandteil des Curriculums</strong>. Die Prüfung wird in 4 Teilen abgelegt: Word, PowerPoint, Excel und Outlook/Kommunikation.</p>
+            <div class="school-grid">
+                <div class="school-card purple">
+                    <h4>Kantonsschule Enge (HMS Zürich)</h4>
+                    <p>ICT Advanced-User SIZ im Informatik-Unterricht integriert</p>
+                    <span class="school-type">Handelsmittelschule</span>
+                </div>
+                <div class="school-card purple">
+                    <h4>WMS Kanton Zug</h4>
+                    <p>ICT Advanced-User SIZ – Prüfung in 4 Teilen, 5. Klasse</p>
+                    <span class="school-type">Wirtschaftsmittelschule</span>
+                </div>
+                <div class="school-card purple">
+                    <h4>Schulen kvBL (Baselland)</h4>
+                    <p>ICT Advanced-User SIZ im WMS-Curriculum</p>
+                    <span class="school-type">Wirtschaftsmittelschule</span>
+                </div>
+                <div class="school-card purple">
+                    <h4>WMS Kanton Aargau</h4>
+                    <p>ICT Advanced-User SIZ – diverse Standorte</p>
+                    <span class="school-type">Wirtschaftsmittelschule</span>
+                </div>
+                <div class="school-card purple">
+                    <h4>WMS Kanton Bern</h4>
+                    <p>SIZ-Diplome in schulisch organisierter Grundbildung (SOG)</p>
+                    <span class="school-type">Wirtschaftsmittelschule</span>
+                </div>
+                <div class="school-card purple">
+                    <h4>WMS Kanton St. Gallen</h4>
+                    <p>SIZ-Integration im WMS-Lehrplan</p>
+                    <span class="school-type">Wirtschaftsmittelschule</span>
+                </div>
+            </div>
+            <p style="font-size: 0.82em; color: #999; margin-top: 8px;">Quellen: zg.ch (WMS Zug) · ken.ch (KS Enge) · kvbl.ch (WMS BL)</p>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- EINSATZGEBIET 3: HANDELSSCHULE EDUPOOL -->
+    <!-- ============================================ -->
+    <div class="section-card">
+        <div class="section-header bg-teal">
+            <h2>Handelsschule edupool.ch</h2>
+            <span class="badge">SIZ Smart-User integriert</span>
+        </div>
+        <div class="section-body">
+            <p style="margin-bottom: 12px;">In der <strong>Handelsschule kv edupool.ch</strong> – dem beliebtesten Einstieg in die kaufmännische Weiterbildung – ist das <strong>ICT Smart-User SIZ</strong> offiziell integriert. Teilnehmende absolvieren die Module «ICT Office 1» und «ICT Office 2» und schliessen mit dem SIZ-Diplom ab.</p>
+            <ul>
+                <li><strong>ICT Office 1:</strong> Grundlagen Kommunikation, Textverarbeitung (Word), Tabellenkalkulation (Excel)</li>
+                <li><strong>ICT Office 2:</strong> Vertiefung – optional mit Abschluss ICT Advanced-User SIZ</li>
+                <li><strong>Zielgruppe:</strong> Quereinsteiger, Branchenwechsler, Wiedereinsteiger in den kaufmännischen Bereich</li>
+            </ul>
+            <div class="highlight-box green">
+                <strong>Praxisbeispiel:</strong> Die ibW Höhere Fachschule Südostschweiz (Chur) integriert den SIZ Smart-User direkt in den Handelsschule-Lehrgang. Ebenso das BZWU Wil-Uzwil und zahlreiche weitere Partnerschulen.
+            </div>
+            <p style="font-size: 0.82em; color: #999; margin-top: 8px;">Quellen: ibw.ch · bzwu.ch · siz.ch</p>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- EINSATZGEBIET 4: RAV & ARBEITSMARKT -->
+    <!-- ============================================ -->
+    <div class="section-card">
+        <div class="section-header bg-red">
+            <h2>RAV &amp; Arbeitsmarktintegration</h2>
+            <span class="badge">Arbeitsmarktliche Massnahme</span>
+        </div>
+        <div class="section-body">
+            <p style="margin-bottom: 16px;">Stellensuchende Personen können SIZ-Kurse als <strong>individuelle arbeitsmarktliche Massnahme (AMM)</strong> über das RAV finanzieren lassen. Der Weg dazu:</p>
+
+            <div class="rav-steps">
+                <div class="rav-step">
+                    <div class="step-num">1</div>
+                    <h4>SIZ-Partnerschule finden</h4>
+                    <p>Kurs und Kosten abklären bei einer Partnerschule in der Nähe</p>
+                </div>
+                <div class="rav-step">
+                    <div class="step-num">2</div>
+                    <h4>Antrag beim RAV</h4>
+                    <p>Individuelles Kursgesuch einreichen – min. 10 Tage vor Kursbeginn</p>
+                </div>
+                <div class="rav-step">
+                    <div class="step-num">3</div>
+                    <h4>RAV bewilligt</h4>
+                    <p>Der Berater prüft: verbessert der Kurs die Vermittelbarkeit wesentlich?</p>
+                </div>
+                <div class="rav-step">
+                    <div class="step-num">4</div>
+                    <h4>Kurs &amp; Prüfung</h4>
+                    <p>Ausbildung an der Partnerschule, SIZ-Diplomprüfung am Ende</p>
+                </div>
+                <div class="rav-step">
+                    <div class="step-num">5</div>
+                    <h4>Diplom &amp; Bewerbung</h4>
+                    <p>Anerkanntes SIZ-Diplom im Lebenslauf – bessere Chancen</p>
+                </div>
+            </div>
+
+            <h3 style="margin: 24px 0 10px 0; font-size: 1.05em;">SIZ-Partnerschulen, die RAV-Stellensuchenden offenstehen:</h3>
+            <div class="school-grid">
+                <div class="school-card orange">
+                    <h4>Wirtschaftsschule Five (WSF)</h4>
+                    <p>10 Standorte: Bern, Zürich, Basel, Luzern, Olten, Solothurn, Baden, Winterthur, Zug, Sursee</p>
+                    <p>Smart-User bis Professional · ab CHF 2'000</p>
+                </div>
+                <div class="school-card orange">
+                    <h4>Benedict-Schulen</h4>
+                    <p>4 Standorte: Zürich, Bern, Luzern, St. Gallen</p>
+                    <p>Smart-User bis Professional · Testcenter</p>
+                </div>
+                <div class="school-card orange">
+                    <h4>RGM Informatikschule</h4>
+                    <p>4 Standorte: Zürich, Bern, Luzern, Solothurn</p>
+                    <p>Offizielles SIZ-Prüfungszentrum</p>
+                </div>
+                <div class="school-card orange">
+                    <h4>SWS Schulen</h4>
+                    <p>Winterthur, Luzern</p>
+                    <p>Smart-User, Power-User, Professional · ab CHF 4'090</p>
+                </div>
+                <div class="school-card orange">
+                    <h4>enter-it</h4>
+                    <p>Diverse Standorte</p>
+                    <p>Smart-User CHF 1'890 · Hybrid möglich</p>
+                </div>
+                <div class="school-card orange">
+                    <h4>CsBe Computerschule Bern</h4>
+                    <p>Bern, Basel</p>
+                    <p>Smart-User, Advanced-User (kaufm. Ausrichtung)</p>
+                </div>
+            </div>
+
+            <div class="highlight-box orange" style="margin-top: 20px;">
+                <strong>Hinweis für RAV-Berater:</strong> SIZ-Kurse sind kompakt (4–6 Monate Teilzeit, ca. 60–100 Lektionen), praxisorientiert und schliessen mit einem schweizweit anerkannten Diplom ab. Ideal für Stellensuchende, die ihre digitalen Kompetenzen nachweisbar aufbauen oder auffrischen wollen.
+            </div>
+
+            <div class="highlight-box" style="margin-top: 12px;">
+                <strong>Das «Glarus-Modell» als Vorbild:</strong> Im Kanton Glarus ist der ICT Smart-User SIZ Kurs für alle Lernenden aller Berufe <strong>kostenlos</strong> (inkl. Prüfungen). Dieses Modell könnte auf RAV-Programme oder andere Kantone übertragen werden.
+            </div>
+
+            <p style="font-size: 0.82em; color: #999; margin-top: 12px;">Quellen: zh.ch (Individuelle Kurse Kanton ZH) · sg.ch (Individuelle Kursangebote Kanton SG) · siz.ch/partner · school.siz.ch/SchoolList</p>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- EINSATZGEBIET 5: BERUFE MIT SIZ -->
+    <!-- ============================================ -->
+    <div class="section-card">
+        <div class="section-header bg-green">
+            <h2>Berufe &amp; Ausbildungen mit SIZ</h2>
+            <span class="badge">Bestehend &amp; Potenzial</span>
+        </div>
+        <div class="section-body">
+
+            <p style="margin-bottom: 16px;">SIZ-Diplome sind heute primär in kaufmännischen Ausbildungen verankert. Aber das Potenzial reicht weit darüber hinaus – digitale Kompetenzen werden in praktisch jedem Beruf gebraucht.</p>
+
+            <div style="margin-bottom: 16px;">
+                <span class="status-badge status-active">Integriert</span> = SIZ ist im Lehrplan / Curriculum integriert &nbsp;
+                <span class="status-badge status-recommended">Empfohlen</span> = Hoher Nutzen, SIZ empfohlen &nbsp;
+                <span class="status-badge status-potential">Potenzial</span> = Wachsender Bedarf
+            </div>
+
+            <table class="beruf-table">
+                <thead>
+                    <tr>
+                        <th>Beruf / Ausbildung</th>
+                        <th>Status</th>
+                        <th>SIZ-Diplom / Module</th>
+                        <th>Tägliche digitale Aufgaben</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- INTEGRIERT -->
+                    <tr>
+                        <td><strong>Kaufmann/Kauffrau EFZ (KV)</strong></td>
+                        <td><span class="status-badge status-active">Integriert</span></td>
+                        <td><span class="module-badge green">Advanced-User</span> AU1N, AU3K, AU4K + <span class="module-badge orange">PU45</span> (Option Tech.)</td>
+                        <td>Office komplett, E-Mail, Cloud, Datenauswertungen, Korrespondenz, Präsentationen</td>
+                    </tr>
+                    <tr>
+                        <td><strong>WMS/HMS-Schüler</strong></td>
+                        <td><span class="status-badge status-active">Integriert</span></td>
+                        <td><span class="module-badge green">Advanced-User</span> AU1N, AU3K, AU4K</td>
+                        <td>Wie KV – Office, Kommunikation, Datenanalyse</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Handelsschule edupool</strong></td>
+                        <td><span class="status-badge status-active">Integriert</span></td>
+                        <td><span class="module-badge green">Smart-User</span> SU1, SU3, SU4</td>
+                        <td>Office-Grundlagen, E-Mail, Textverarbeitung, Tabellenkalkulation</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Büroassistent/in / Bürofachleute</strong></td>
+                        <td><span class="status-badge status-active">Integriert</span></td>
+                        <td><span class="module-badge green">Smart-User</span> SU1, SU3, SU4</td>
+                        <td>Office, E-Mail, Ablage, Korrespondenz</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Alle Lernenden Kanton Glarus</strong></td>
+                        <td><span class="status-badge status-active">Integriert</span></td>
+                        <td><span class="module-badge green">Smart-User</span> SU1, SU3, SU4 (kostenlos!)</td>
+                        <td>Alle Berufe – branchenübergreifende Grundlagen</td>
+                    </tr>
+
+                    <!-- EMPFOHLEN -->
+                    <tr style="background:#FFFDE7;">
+                        <td><strong>Detailhandelsfachmann/-frau EFZ</strong></td>
+                        <td><span class="status-badge status-recommended">Empfohlen</span></td>
+                        <td><span class="module-badge orange">Smart-User</span> SU1, SU3, SU4</td>
+                        <td>Kassensystem, Warenwirtschaft, Online-Shop, E-Mail, Bestellwesen</td>
+                    </tr>
+                    <tr style="background:#FFFDE7;">
+                        <td><strong>MPA (Med. Praxisassistentin) EFZ</strong></td>
+                        <td><span class="status-badge status-recommended">Empfohlen</span></td>
+                        <td><span class="module-badge orange">Smart-User</span> bis <span class="module-badge orange">Advanced-User</span></td>
+                        <td>Praxissoftware, Terminplanung, Patientendaten, TARMED, Korrespondenz, Statistik</td>
+                    </tr>
+                    <tr style="background:#FFFDE7;">
+                        <td><strong>FAGE (Fachperson Gesundheit) EFZ</strong></td>
+                        <td><span class="status-badge status-recommended">Empfohlen</span></td>
+                        <td><span class="module-badge orange">Smart-User</span> SU1, SU3, SU4</td>
+                        <td>Elektron. Patientendossier, Pflegedokumentation, Medikamentenverwaltung, Dienstplan</td>
+                    </tr>
+                    <tr style="background:#FFFDE7;">
+                        <td><strong>FABE (Fachperson Betreuung) EFZ</strong></td>
+                        <td><span class="status-badge status-recommended">Empfohlen</span></td>
+                        <td><span class="module-badge orange">Smart-User</span> SU1, SU3, SU4</td>
+                        <td>Betreuungsdokumentation, Elternkommunikation, Berichte, Aktivitätenplanung</td>
+                    </tr>
+                    <tr style="background:#FFFDE7;">
+                        <td><strong>Dentalassistent/in EFZ</strong></td>
+                        <td><span class="status-badge status-recommended">Empfohlen</span></td>
+                        <td><span class="module-badge orange">Smart-User</span> SU1, SU3, SU4</td>
+                        <td>Praxissoftware, Terminverwaltung, Röntgenbilder, Korrespondenz, Abrechnung</td>
+                    </tr>
+                    <tr style="background:#FFFDE7;">
+                        <td><strong>Pharma-Assistent/in EFZ</strong></td>
+                        <td><span class="status-badge status-recommended">Empfohlen</span></td>
+                        <td><span class="module-badge orange">Smart-User</span> SU1, SU3, SU4</td>
+                        <td>Apothekensoftware, Rezeptverwaltung, Lagerverwaltung, Krankenkassen-Abrechnung</td>
+                    </tr>
+                    <tr style="background:#FFFDE7;">
+                        <td><strong>Drogist/in EFZ</strong></td>
+                        <td><span class="status-badge status-recommended">Empfohlen</span></td>
+                        <td><span class="module-badge orange">Smart-User</span> bis <span class="module-badge orange">Advanced-User</span></td>
+                        <td>Kassensystem, Warenwirtschaft, Bestellwesen, Online-Shop, Kundenberatung</td>
+                    </tr>
+                    <tr style="background:#FFFDE7;">
+                        <td><strong>Buchhändler/in EFZ</strong></td>
+                        <td><span class="status-badge status-recommended">Empfohlen</span></td>
+                        <td><span class="module-badge orange">Advanced-User</span> AU1N, AU3K, AU4K</td>
+                        <td>Warenwirtschaft, E-Commerce, Kundenkorrespondenz, Online-Bestellungen</td>
+                    </tr>
+                    <tr style="background:#FFFDE7;">
+                        <td><strong>Hauswart/in (Betriebsunterhalt) EFZ</strong></td>
+                        <td><span class="status-badge status-recommended">Empfohlen</span></td>
+                        <td><span class="module-badge orange">Smart-User</span> SU1, SU3, SU4</td>
+                        <td>Rapportierung, Gebäudetechnik-Software, E-Mail, Bestellwesen, Dokumentation</td>
+                    </tr>
+
+                    <!-- POTENZIAL -->
+                    <tr>
+                        <td><strong>Logistiker/in EFZ</strong></td>
+                        <td><span class="status-badge status-potential">Potenzial</span></td>
+                        <td><span class="module-badge">Smart-User</span> SU1, SU4</td>
+                        <td>Scanner, WMS-Systeme, SAP, Inventur, Statistiken, Bestellwesen</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Hotelfachfrau/-mann EFZ</strong></td>
+                        <td><span class="status-badge status-potential">Potenzial</span></td>
+                        <td><span class="module-badge">Smart-User</span> SU1, SU3, SU4</td>
+                        <td>Buchungssysteme (PMS), Gästeverwaltung, Korrespondenz, Rechnungen</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Koch/Köchin EFZ</strong></td>
+                        <td><span class="status-badge status-potential">Potenzial</span></td>
+                        <td><span class="module-badge">Smart-User</span> SU1, SU4</td>
+                        <td>Wareneinkauf, Rezeptverwaltung, Kalkulation (Excel), Bestellsysteme</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Hauswirtschaftspraktiker/in</strong></td>
+                        <td><span class="status-badge status-potential">Potenzial</span></td>
+                        <td><span class="module-badge">Smart-User</span> SU1</td>
+                        <td>Bestellungen, Dokumentation, Kommunikation, Planung</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Zeichner/in EFZ (Hochbau)</strong></td>
+                        <td><span class="status-badge status-potential">Potenzial</span></td>
+                        <td><span class="module-badge">Smart-User</span> bis <span class="module-badge">Advanced-User</span></td>
+                        <td>CAD/BIM (separat), aber: Korrespondenz, Berichte, Tabellen, E-Mail</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Polymechaniker/in EFZ</strong></td>
+                        <td><span class="status-badge status-potential">Potenzial</span></td>
+                        <td><span class="module-badge">Smart-User</span> SU1, SU3, SU4</td>
+                        <td>CNC-Programmierung (separat), techn. Dokumentation, CAD, E-Mail</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Elektroinstallateur/in EFZ</strong></td>
+                        <td><span class="status-badge status-potential">Potenzial</span></td>
+                        <td><span class="module-badge">Smart-User</span> SU1, SU3, SU4</td>
+                        <td>Schemata, Rapportierung, Zeiterfassung, Materialbestellungen, Smart Home</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Schreiner/in EFZ</strong></td>
+                        <td><span class="status-badge status-potential">Potenzial</span></td>
+                        <td><span class="module-badge">Smart-User</span> SU1, SU3, SU4</td>
+                        <td>CAD/CAM (separat), Kalkulation, Bestellwesen, Korrespondenz</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sanitärinstallateur/in EFZ</strong></td>
+                        <td><span class="status-badge status-potential">Potenzial</span></td>
+                        <td><span class="module-badge">Smart-User</span> SU1, SU4</td>
+                        <td>Planzeichnungen, Rapporte, Zeiterfassung, Bestellwesen</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Automatiker/in EFZ</strong></td>
+                        <td><span class="status-badge status-potential">Potenzial</span></td>
+                        <td><span class="module-badge">Smart-User</span> bis <span class="module-badge">Advanced-User</span></td>
+                        <td>Steuerungssysteme (separat), techn. Dokumentation, Schaltpläne, E-Mail</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mediamatiker/in EFZ</strong></td>
+                        <td><span class="status-badge status-potential">Potenzial</span></td>
+                        <td><span class="module-badge">Advanced-User</span> als Ergänzung</td>
+                        <td>Office intensiv, Medientools, Cloud, Marketing-Daten</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="highlight-box green" style="margin-top: 16px;">
+                <strong>Erkenntnis:</strong> Der <strong>ICT Smart-User SIZ</strong> ist das ideale Diplom für alle nicht-kaufmännischen Berufe. Es vermittelt genau die Office- und Kommunikationsgrundlagen, die jeder Beruf braucht – unabhängig von der Branche. Der <strong>Advanced-User</strong> eignet sich für Berufe mit höherem Büroanteil.
+            </div>
+
+            <p style="font-size: 0.82em; color: #999; margin-top: 8px;">Quellen: siz.ch · ict-berufsbildung.ch · odasante.ch · savoirsocial.ch · swissmem-berufsbildung.ch · enter-it.ch · berufsberatung.ch</p>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- EINSATZGEBIET 6: WEITERBILDUNG -->
+    <!-- ============================================ -->
+    <div class="section-card">
+        <div class="section-header bg-purple">
+            <h2>Weiterbildungsanbieter mit SIZ-Programmen</h2>
+            <span class="badge">100+ Partnerschulen</span>
+        </div>
+        <div class="section-body">
+            <p style="margin-bottom: 16px;">SIZ-Diplome können an über 100 Partnerschulen in der ganzen Schweiz erworben werden. Die grössten Anbieter:</p>
+
+            <table class="beruf-table">
+                <thead>
+                    <tr>
+                        <th>Anbieter</th>
+                        <th>Standorte</th>
+                        <th>SIZ-Diplome</th>
+                        <th>Kosten ab</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Wirtschaftsschule Five (WSF)</strong></td>
+                        <td>10 Standorte: BE, ZH, BS, LU, SO, AG, ZG, SZ, WI + Online</td>
+                        <td>Smart-User, Advanced-User, Power-User, Professional</td>
+                        <td>CHF 2'000</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Benedict-Schulen</strong></td>
+                        <td>Zürich, Bern, Luzern, St. Gallen</td>
+                        <td>Smart-User bis Professional (alle Stufen)</td>
+                        <td>CHF 3'200</td>
+                    </tr>
+                    <tr>
+                        <td><strong>RGM Informatikschule</strong></td>
+                        <td>Zürich, Bern, Luzern, Solothurn</td>
+                        <td>Power-User, Professional, BI Power User · SIZ-Prüfungszentrum</td>
+                        <td>auf Anfrage</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SWS Schulen</strong></td>
+                        <td>Winterthur, Luzern</td>
+                        <td>Smart-User, Power-User, Professional</td>
+                        <td>CHF 4'090</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Klubschule Migros</strong></td>
+                        <td>ca. 50 Standorte schweizweit</td>
+                        <td>Smart-User, Advanced-User</td>
+                        <td>variiert</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AKAD</strong></td>
+                        <td>Zürich</td>
+                        <td>Power-User PU41 (Office Integration)</td>
+                        <td>auf Anfrage</td>
+                    </tr>
+                    <tr>
+                        <td><strong>CsBe Computerschule Bern</strong></td>
+                        <td>Bern, Basel</td>
+                        <td>Smart-User, Advanced-User (kaufm.)</td>
+                        <td>auf Anfrage</td>
+                    </tr>
+                    <tr>
+                        <td><strong>enter-it</strong></td>
+                        <td>diverse Standorte</td>
+                        <td>Smart-User, Advanced-User, Power-User, Professional</td>
+                        <td>CHF 1'890</td>
+                    </tr>
+                    <tr>
+                        <td><strong>FSWI Winterthur</strong></td>
+                        <td>Winterthur</td>
+                        <td>Smart-User, Advanced-User</td>
+                        <td>auf Anfrage</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ibW Höhere Fachschule</strong></td>
+                        <td>Chur, Sargans, Davos (GR)</td>
+                        <td>Smart-User (Handelsschule), Power-User Systems &amp; Network</td>
+                        <td>auf Anfrage</td>
+                    </tr>
+                    <tr>
+                        <td><strong>HSO Wirtschaftsschule</strong></td>
+                        <td>10 Standorte: ZH, BE, LU, BS, AG, SO, SG, ZG</td>
+                        <td>Informatik-Lehrgänge mit SIZ-Integration</td>
+                        <td>auf Anfrage</td>
+                    </tr>
+                    <tr>
+                        <td><strong>EBZ Olten (BBZ Olten)</strong></td>
+                        <td>Olten SO</td>
+                        <td>Advanced-User SIZ</td>
+                        <td>auf Anfrage</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="highlight-box" style="margin-top: 16px;">
+                <strong>Vollständige Partnerliste:</strong> Alle SIZ-Partnerschulen und Prüfungszentren finden Sie unter <strong>school.siz.ch/SchoolList</strong> oder auf <strong>siz.ch/partner</strong>.
+            </div>
+
+            <p style="font-size: 0.82em; color: #999; margin-top: 8px;">Quellen: siz.ch/partner · wirtschaftsschule-five.ch · benedict.ch · rgm.ch · sws-weiterbildung.ch · klubschule.ch · enter-it.ch · ibw.ch</p>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- EINSATZGEBIET 7: BRANCHENSPEZIFISCH -->
+    <!-- ============================================ -->
+    <div class="section-card">
+        <div class="section-header bg-cyan">
+            <h2>Branchenspezifischer Nutzen im Detail</h2>
+            <span class="badge">Aufklappbar</span>
+        </div>
+        <div class="section-body">
+
+            <!-- GESUNDHEIT -->
+            <div class="acc-item">
+                <div class="acc-header" onclick="toggleAcc(this)">
+                    <span><strong>Gesundheitswesen</strong> – FAGE, MPA, Dentalassistenz, Pharma</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="acc-body">
+                    <div class="acc-body-inner">
+                        <h4>Warum SIZ hier entscheidend ist</h4>
+                        <p>Das Gesundheitswesen wird rasant digitaler: Elektronische Patientendossiers (EPD), digitale Pflegedokumentation, Praxissoftware, TARMED-Abrechnung. Doch die Ausbildungen in FAGE, MPA und Dentalassistenz haben <strong>keinen standardisierten ICT-Prüfungsstandard</strong>.</p>
+                        <h4>Tägliche digitale Aufgaben</h4>
+                        <ul>
+                            <li><strong>FAGE:</strong> Elektronisches Patientendossier, Pflegedokumentation, Medikamentenverwaltung, Dienstplanung</li>
+                            <li><strong>MPA:</strong> Praxisverwaltungssoftware, Terminplanung, Patientendaten, TARMED-Abrechnung, medizinische Korrespondenz</li>
+                            <li><strong>Dentalassistenz:</strong> Zahnarzt-Praxissoftware, Terminverwaltung, Röntgenbilder digital, Korrespondenz</li>
+                            <li><strong>Pharma-Assistenz:</strong> Apothekensoftware, Rezeptverwaltung, Lagerverwaltung, Krankenkassen-Abrechnung</li>
+                        </ul>
+                        <h4>Empfohlene SIZ-Module</h4>
+                        <p><span class="module-badge orange">Smart-User</span> SU1 (Kommunikation), SU3 (Texte für Korrespondenz), SU4 (Tabellen für Statistik/Abrechnung)</p>
+                        <p>Für MPA mit Büroschwerpunkt: <span class="module-badge orange">Advanced-User</span> AU3K, AU4K</p>
+                        <div class="highlight-box green">
+                            <strong>Chance:</strong> Die Revision des FaGe-Bildungsplans läuft (2025). Ein idealer Zeitpunkt, SIZ-Module als standardisierten ICT-Nachweis in die Gesundheitsberufe zu integrieren.
+                        </div>
+                        <p class="source">Quellen: odasante.ch (FaGe Bildungsplan) · mpa-schweiz.fmh.ch · bzgs.ch · berufsberatung.ch</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DETAILHANDEL -->
+            <div class="acc-item">
+                <div class="acc-header" onclick="toggleAcc(this)">
+                    <span><strong>Detailhandel &amp; Verkauf</strong> – Detailhandelsfachleute, Drogist/in, Buchhändler/in</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="acc-body">
+                    <div class="acc-body-inner">
+                        <h4>Warum SIZ hier entscheidend ist</h4>
+                        <p>Die Reform 2022 hat die Digitalisierung als zentralen Treiber definiert: die Konvergenz von stationärem und Online-Handel. Die neue Fachrichtung «Betreuen von Online-Shops» zeigt, wohin die Reise geht. Doch es gibt <strong>keinen standardisierten ICT-Nachweis</strong> in der Ausbildung.</p>
+                        <h4>Tägliche digitale Aufgaben</h4>
+                        <ul>
+                            <li>Kassensysteme (POS), Warenwirtschaftssysteme, Bestellwesen</li>
+                            <li>Online-Shop-Pflege, E-Commerce-Plattformen</li>
+                            <li>Kundenkorrespondenz (E-Mail), Reklamationsmanagement</li>
+                            <li>Lagerverwaltung, Inventur, Statistiken (Excel)</li>
+                        </ul>
+                        <h4>Empfohlene SIZ-Module</h4>
+                        <p><span class="module-badge orange">Smart-User</span> SU1, SU3, SU4 für alle · <span class="module-badge orange">Advanced-User</span> für Fachrichtung Online-Shop und Drogist/in</p>
+                        <p class="source">Quellen: ehb.swiss (Reform 2022 Detailhandel) · berufsberatung.ch · yousty.ch</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GASTGEWERBE -->
+            <div class="acc-item">
+                <div class="acc-header" onclick="toggleAcc(this)">
+                    <span><strong>Gastgewerbe &amp; Hotellerie</strong> – Koch/Köchin, Hotelfachfrau/-mann</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="acc-body">
+                    <div class="acc-body-inner">
+                        <h4>Warum SIZ hier relevant ist</h4>
+                        <p>Vom Buchungssystem (PMS) über den digitalen Check-in bis zur Warenkalkulation in Excel: Gastgewerbe und Hotellerie werden zunehmend digital. Wer ins Kader aufsteigt (Küchenchef, Rezeptionsleitung), braucht solide Office-Kenntnisse.</p>
+                        <h4>Tägliche digitale Aufgaben</h4>
+                        <ul>
+                            <li><strong>Hotel:</strong> Reservierungssysteme (PMS), Gästeverwaltung, Korrespondenz, Rechnungsstellung, Channel Manager</li>
+                            <li><strong>Küche:</strong> Wareneinkauf, Rezeptverwaltung, Kalkulation (Excel), Bestellsysteme, Menüplanung</li>
+                        </ul>
+                        <h4>Empfohlene SIZ-Module</h4>
+                        <p><span class="module-badge">Smart-User</span> SU1, SU4 (Kalkulation) · SU3 für Hotellerie (Korrespondenz)</p>
+                        <p class="source">Quellen: hotelleriesuisse.ch · berufsberatung.ch</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TECHNISCHE BERUFE -->
+            <div class="acc-item">
+                <div class="acc-header" onclick="toggleAcc(this)">
+                    <span><strong>Technische Berufe &amp; Handwerk</strong> – Elektro, Sanitär, Schreiner, Polymechanik, Zeichner</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="acc-body">
+                    <div class="acc-body-inner">
+                        <h4>Warum SIZ hier wächst</h4>
+                        <p>Technische Berufe nutzen bereits spezialisierte Software (CAD, CNC, BIM). Aber die <strong>allgemeinen Office-Kompetenzen</strong> – Rapportierung, Dokumentation, Korrespondenz, Kalkulation – werden oft vorausgesetzt, aber nie geprüft. Hier schliesst SIZ die Lücke.</p>
+                        <h4>Tägliche digitale Aufgaben (branchenübergreifend)</h4>
+                        <ul>
+                            <li>Rapportierung und Zeiterfassung (digital)</li>
+                            <li>Technische Dokumentation (Word)</li>
+                            <li>Kalkulation und Offerten (Excel)</li>
+                            <li>Materialbestellungen (E-Mail, Webportale)</li>
+                            <li>Schemazeichnungen und Planzeichnungen (branchenspezifisch)</li>
+                            <li>Smart Home / Gebäudetechnik (zunehmend digital)</li>
+                        </ul>
+                        <h4>Empfohlene SIZ-Module</h4>
+                        <p><span class="module-badge">Smart-User</span> SU1, SU3, SU4 als Basis für alle technischen Berufe</p>
+                        <p>Für Zeichner/in und Automatiker/in: <span class="module-badge">Advanced-User</span> als Ergänzung</p>
+                        <div class="highlight-box">
+                            <strong>Swissmem</strong> (MEM-Industrie) betont die Digitalisierung als Schlüsselfaktor. SIZ Smart-User wäre der ideale Grundstein für Polymechaniker/innen, Automatiker/innen und Elektroniker/innen.
+                        </div>
+                        <p class="source">Quellen: swissmem-berufsbildung.ch · berufsberatung.ch · betriebsunterhalt.ch</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HAUSWART / FACILITY -->
+            <div class="acc-item">
+                <div class="acc-header" onclick="toggleAcc(this)">
+                    <span><strong>Facility Management &amp; Hauswartung</strong> – Betriebsunterhalt, Hauswart mit FA</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="acc-body">
+                    <div class="acc-body-inner">
+                        <h4>SIZ Smart-User: explizit empfohlen</h4>
+                        <p>Auf enter-it.ch wird der ICT Smart-User SIZ <strong>explizit für Facility Manager mit eidg. Fachausweis</strong> als relevante Zertifizierung genannt. Hauswarte arbeiten zunehmend mit digitalen Tools:</p>
+                        <ul>
+                            <li>Gebäudetechnik-Software und Gebäudeautomation</li>
+                            <li>Rapportierung und Arbeitszeiterfassung (digital)</li>
+                            <li>E-Mail-Kommunikation mit Verwaltung, Handwerkern, Mietern</li>
+                            <li>Bestellwesen für Material und Reinigungsmittel</li>
+                            <li>Dokumentation von Wartungsarbeiten (Word/Excel)</li>
+                        </ul>
+                        <h4>Empfohlene SIZ-Module</h4>
+                        <p><span class="module-badge orange">Smart-User</span> SU1 (Kommunikation), SU3 (Texte), SU4 (Tabellen)</p>
+                        <p class="source">Quellen: enter-it.ch/ict-smart-user-siz · betriebsunterhalt.ch</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LOGISTIK -->
+            <div class="acc-item">
+                <div class="acc-header" onclick="toggleAcc(this)">
+                    <span><strong>Logistik &amp; Supply Chain</strong> – Logistiker/in EFZ</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="acc-body">
+                    <div class="acc-body-inner">
+                        <h4>Digitalisierung verändert die Logistik massiv</h4>
+                        <p>Scanner, Warehouse-Management-Systeme (WMS), SAP, Inventur-Tools, automatisierte Bestellsysteme: Logistiker arbeiten heute intensiv digital. Aber die Grundbildung hat <strong>keinen ICT-Standard</strong>.</p>
+                        <ul>
+                            <li>Warenregistrierung und Kommissionierung (Scanner, Computer)</li>
+                            <li>Inventur und Bestandsführung (WMS, Excel)</li>
+                            <li>Statistiken und Kennzahlen (Excel)</li>
+                            <li>Lieferscheine und Dokumentation (Word)</li>
+                            <li>Kommunikation mit Lieferanten und Kunden (E-Mail)</li>
+                        </ul>
+                        <h4>Empfohlene SIZ-Module</h4>
+                        <p><span class="module-badge">Smart-User</span> SU1 (Kommunikation), SU4 (Tabellen für Statistik/Inventur)</p>
+                        <p class="source">Quellen: svbl.ch (Bildungsplan Logistiker EFZ)</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- SIZ KOMPETENZCENTER -->
+    <!-- ============================================ -->
+    <div class="section-card">
+        <div class="section-header bg-dark">
+            <h2>SIZ Kompetenzcenter &amp; regionale Strukturen</h2>
+        </div>
+        <div class="section-body">
+            <p style="margin-bottom: 16px;">SIZ betreibt regionale Kompetenzcenter, die als Anlaufstellen, Koordinationsstellen und Prüfungszentren fungieren:</p>
+            <div class="school-grid">
+                <div class="school-card green">
+                    <h4>SIZ Kompetenzcenter Aargau</h4>
+                    <p>BBZ Freiamt (Wohlen) · zB. Zentrum Bildung (Baden/Brugg)</p>
+                    <p>Koordination für den Kanton Aargau</p>
+                    <span class="school-type">aargau.siz.ch</span>
+                </div>
+                <div class="school-card green">
+                    <h4>SIZ Kompetenzcenter Rheintal</h4>
+                    <p>bzb Berufs- und Weiterbildungszentrum Buchs</p>
+                    <p>Koordination für die Region Rheintal</p>
+                    <span class="school-type">rheintal.siz.ch</span>
+                </div>
+                <div class="school-card green">
+                    <h4>SIZ Geschäftsstelle</h4>
+                    <p>Reitergasse 9, 8004 Zürich (seit Oktober 2025)</p>
+                    <p>Beim Kaufmännischen Verband Schweiz</p>
+                    <span class="school-type">siz.ch</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- MODULE-ZUORDNUNG -->
+    <!-- ============================================ -->
+    <div class="section-card">
+        <div class="section-header bg-orange" style="color:white;">
+            <h2>Welches SIZ-Diplom für welchen Einsatz?</h2>
+            <span class="badge">Orientierungshilfe</span>
+        </div>
+        <div class="section-body">
+            <table class="beruf-table">
+                <thead>
+                    <tr>
+                        <th>SIZ-Diplom</th>
+                        <th>Ideal für</th>
+                        <th>Module</th>
+                        <th>Dauer / Kosten</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>ICT Smart-User SIZ</strong></td>
+                        <td>Alle Berufe, Quereinsteiger, Stellensuchende, gewerbliche Lehren, Gesundheitsberufe, Hauswartung, Gastgewerbe, Logistik</td>
+                        <td><span class="module-badge green">SU1</span> <span class="module-badge green">SU3</span> <span class="module-badge green">SU4</span></td>
+                        <td>ca. 60 Lektionen · 4–6 Mte. · ab CHF 1'890</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ICT Advanced-User SIZ</strong></td>
+                        <td>KV-Lehre (BIVO 2023), WMS/HMS, Handelsschule, Buchhändler, Drogist, MPA mit Büroschwerpunkt</td>
+                        <td><span class="module-badge">AU1N</span> <span class="module-badge">AU3K</span> <span class="module-badge">AU4K</span></td>
+                        <td>ca. 100 Lektionen · 6 Mte. · ab CHF 3'100</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ICT Power-User Data Technology</strong></td>
+                        <td>Controlling, Finanzen, Datenanalyse, KV mit Option Technologie, angehende Buchhalter</td>
+                        <td><span class="module-badge orange">PU31</span> <span class="module-badge orange">PU41</span></td>
+                        <td>ca. 42 Lektionen · 4 Mte. · ab CHF 1'920</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ICT Power-User Systems &amp; Network</strong></td>
+                        <td>Angehende IT-Techniker, Helpdesk, Systemadministratoren, Automatiker</td>
+                        <td><span class="module-badge orange">PU11</span> <span class="module-badge orange">PU12</span> <span class="module-badge orange">PU13</span></td>
+                        <td>ca. 105 Lektionen · 6–8 Mte. · ab CHF 3'200</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ICT Professional Systems &amp; Network</strong></td>
+                        <td>Server-Administratoren, Netzwerkspezialisten, IT-Verantwortliche, Cybersecurity-Einsteiger</td>
+                        <td><span class="module-badge purple">SP1</span> (aufbauend)</td>
+                        <td>zusätzlich zu Power-User · ab CHF 3'600</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- BEST PRACTICE: GLARUS -->
+    <!-- ============================================ -->
+    <div class="section-card">
+        <div class="section-header bg-teal">
+            <h2>Best Practice: Das «Glarus-Modell»</h2>
+            <span class="badge">Vorbild für andere Kantone</span>
+        </div>
+        <div class="section-body">
+            <div class="highlight-box green">
+                <strong>Im Kanton Glarus ist der ICT Smart-User SIZ Kurs für alle Lernenden aller Berufe kostenlos</strong> – inklusive aller Modulprüfungen. Nur die Lehrmittelkosten tragen die Lernenden selbst.
+            </div>
+            <p>Die Kaufmännische Berufsfachschule Glarus (KBS) bietet:</p>
+            <ul>
+                <li><strong>Kostenlose Freikurse</strong> für alle Lernenden im Kanton Glarus (alle Berufe, nicht nur KV)</li>
+                <li><strong>3 Module:</strong> Grundkurs Kommunikation (Windows, Outlook, PowerPoint), Grundkurs Word, Grundkurs Excel</li>
+                <li><strong>Testcenter</strong> für Advanced-User-Prüfungen</li>
+            </ul>
+            <div class="stat-grid" style="margin-top: 16px;">
+                <div class="stat-box">
+                    <span class="stat-num" style="color: #00695C;">Kostenlos</span>
+                    <span class="stat-label">für alle Lernenden aller Berufe</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-num" style="color: #00695C;">3 Module</span>
+                    <span class="stat-label">Kommunikation · Word · Excel</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-num" style="color: #00695C;">Testcenter</span>
+                    <span class="stat-label">für weiterführende Prüfungen</span>
+                </div>
+            </div>
+            <div class="highlight-box" style="margin-top: 16px;">
+                <strong>Übertragbar auf:</strong> Dieses Modell könnte von anderen Kantonen übernommen werden – oder als Vorlage für RAV-Programme dienen, die Stellensuchenden systematisch digitale Grundkompetenzen mit SIZ-Zertifikat vermitteln.
+            </div>
+            <p style="font-size: 0.82em; color: #999; margin-top: 8px;">Quelle: kbsglarus.ch/weiterbildung/freikurse-informatik</p>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- ZUSAMMENFASSUNG -->
+    <!-- ============================================ -->
+    <div class="key-message">
+        SIZ-Diplome sind längst mehr als «Office-Kurse».<br>
+        Sie sind der standardisierte, neutrale Nachweis für digitale Kompetenzen –<br>
+        von der KV-Lehre über Gesundheitsberufe bis zum Hauswart, vom Schulzimmer bis zum RAV.
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <p><strong>SIZ AG</strong> – Schweizerisches Informatik-Zertifikat · <a href="https://siz.ch" target="_blank">siz.ch</a> · info@siz.ch · +41 44 384 90 40</p>
+        <p style="margin-top:4px;">Reitergasse 9, 8004 Zürich · Beim Kaufmännischen Verband Schweiz</p>
+        <p style="margin-top:8px;">Übersicht erstellt: April 2026 · Quellen verifiziert per Stand April 2025</p>
+    </div>
+
+</div>
+
+<script>
+function switchTab(btn, panelId) {
+    document.querySelectorAll('.benefit-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.benefit-panel').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById(panelId).classList.add('active');
+}
+
+function toggleAcc(el) {
+    const item = el.parentElement;
+    item.classList.toggle('open');
+}
+</script>
+
+</body>
+</html>
