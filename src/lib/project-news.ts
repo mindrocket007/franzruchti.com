@@ -624,6 +624,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 06.04.2026
       {
+        summary: "NinjaTrader expandiert per Januar 2026 nach Europa: Start in Deutschland und den Niederlanden über die MiFID-Investmentfirma Payward Europe Digital Solutions. Weitere EU-Märkte wie Frankreich und Italien sollen noch 2026 folgen. NinjaTrader gehört seit 2025 zu Kraken.",
+        source: "PR Newswire",
+        url: "https://www.prnewswire.com/news-releases/ninjatrader-expands-into-europe-to-support-the-next-generation-of-retail-futures-traders-302674573.html",
+        date: "30.01.2026",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "Finance Magnates: NinjaTrader erweitert Zugang für EU-Retail-Trader auf US-Futures – CFD-Broker zeigen wachsendes Interesse an Futures-Produkten. Die Expansion folgt der Kraken-Übernahme für $1,5 Mrd. (2025) und ermöglicht erstmals europäischen Kleinanlegern direkten Futures-Zugang.",
+        source: "Finance Magnates",
+        url: "https://www.financemagnates.com/forex/with-cfd-brokers-showing-interest-in-futures-ninjatrader-extends-access-for-eu-retail-traders/",
+        date: "Januar 2026",
+        category: "Regulierung",
+        addedAt: "2026-04-06",
+      },
+      {
         summary: "Kraken schliesst NinjaTrader-Akquisition ab (Mai 2025): Für $1,5 Mrd. – grösster Deal zwischen TradFi und Crypto. NinjaTrader bleibt eigenständige Plattform, Kraken-Nutzer erhalten Zugang zu Futures, NinjaTrader-Trader zu Crypto-Märkten. Neue Assets (Aktien, Options, Prediction Markets) angekündigt.",
         source: "BusinessWire",
         url: "https://www.businesswire.com/news/home/20250501627804/en/Kraken-Completes-Acquisition-of-NinjaTrader",
@@ -1093,6 +1109,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 06.04.2026
       {
+        summary: "BGM Zentralschweiz 2026: Artikel 'Mental Health at Work – When the Law Falls Behind' beleuchtet, warum gesetzliche Rahmenbedingungen mit der Realität psychischer Belastungen am Arbeitsplatz nicht Schritt halten. Betriebliches Gesundheitsmanagement wird zur ethischen und rechtlichen Notwendigkeit.",
+        source: "BGM Zentralschweiz",
+        url: "https://www.bgm-zentralschweiz.ch/post/mental-health-at-work-when-the-law-falls-behind",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-06",
+      },
+      {
         summary: "HealthEXPO 2026 – erstmals in der Messe Basel am 30. Mai 2026: Themenwelt Betriebliches Gesundheitsmanagement mit 120+ neuen Produkten und Services aus Medizin, Prävention, BGM und Longevity. Kompakt-Vorträge zu BGM, Burnout-Prävention und Arbeitsplatz der Zukunft für Unternehmen.",
         source: "HealthExpo / bodymedia.de",
         url: "https://healthexpo.ch/",
@@ -1355,6 +1379,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "12wy-planner": {
     news: [
       // Neu: 06.04.2026
+      {
+        summary: "Beyond Time AI 2026: Warum die 12-Week-Year-Methode klassische Jahresplanung übertrifft – durch kürzere Planungszyklen entsteht konstante Dringlichkeit und Fokus, was zu messbaren Leistungssteigerungen von bis zu 10x führt. Direkter Beleg für den Mehrwert des 12wy-planner-Ansatzes.",
+        source: "Beyond Time AI Blog",
+        url: "https://beyondtime.ai/blog/the-12-week-year-why-quarterly-planning-beats-annual-goals",
+        date: "2026",
+        category: "12 Week Year Methode",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "OKR-Software-Markt 2026 (peoplemanagingpeople.com): Umfassender Vergleich der besten OKR-Tools – KI-gestützte Zielerstellung, Quartalsplanung und Produktivitäts-SaaS etablieren sich als neuer Standard. Direktes Marktumfeld für den 12 Week Year Planner.",
+        source: "People Managing People",
+        url: "https://peoplemanagingpeople.com/tools/okr-software/",
+        date: "2026",
+        category: "SaaS & Tools",
+        addedAt: "2026-04-06",
+      },
       {
         summary: "12-Week Year Templates Guide 2026 (12week-breakthrough.com): Vollständiger Überblick über Notion-Templates, Google-Sheets-Varianten und App-basierte Lösungen für die 12-Wochen-Jahr-Methode. Wichtigster Trend 2026: Agentic Workflows – AI integriert sich direkt in Planungstools.",
         source: "12-Week Breakthrough",
@@ -1638,6 +1678,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "lampenfieber": {
     news: [
       // Neu: 06.04.2026
+      {
+        summary: "Institut für Hypnose: Hypnosetherapie bei Redeangst, Präsentationsangst und Lampenfieber – ermöglicht tiefe Entspannungszustände, in denen positive Suggestionen besonders wirksam verankert werden. Kombiniert mit Visualisierungstechniken für den Auftritt – bestätigt den Ansatz von lampenfieber-besiegen.de.",
+        source: "Institut für Hypnose",
+        url: "https://institut-fuer-hypnose.de/redeangst-praesentationsangst-und-lampenfieber/",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-06",
+      },
       {
         summary: "NOACK Hypnotherapie Berlin: Wichtige Unterscheidung – Redeangst ist nicht Lampenfieber. Redeangst als tiefere Störung mit physischen Symptomen (Herzrasen, Schweissausbrüche), die Hypnotherapie in typischerweise 2–3 Sitzungen wirksam behebt. Relevanz für Audio-Selbsthypnose-Positionierung.",
         source: "NOACK Hypnotherapie",
@@ -2110,6 +2158,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "bestattungsplaner": {
     news: [
       // Neu: 06.04.2026
+      {
+        summary: "Everlife.ch 2026: Vollständige digitale Bestattungsvorsorge in der Schweiz ab CHF 12.90/Monat – neben finanzieller Vorsorge übernimmt die Plattform auch administrative und digitale Nachlassverwaltung und spart Hinterbliebenen rund 50 Stunden Formalitäten. Direkter Wettbewerber zu bestattungsplaner.ch.",
+        source: "Everlife.ch",
+        url: "https://everlife.ch/de/finanzierung-ihrer-bestattungsvorsorge/",
+        date: "2026",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "Die Bestatter Schweiz: Ein Todesfall kostet in der Schweiz zwischen CHF 8'000 und 10'000, zahlbar innerhalb von 30 Tagen. Aktuelle Übersicht der Bestattungskosten zeigt steigenden Kostendruck – bestätigt den Bedarf für frühzeitige digitale Planung über bestattungsplaner.ch.",
+        source: "die-bestatter.ch",
+        url: "https://die-bestatter.ch/todesfall/bestattungskosten/",
+        date: "2026",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-06",
+      },
       {
         summary: "Letzte Reise (letztereise.ch): Interaktiver Online-Bestattungsplaner für Gemeinden – Age-Stiftung gefördert, bis 2026 zur Marktreife entwickelt. Schliesst Informationslücken durch zentrale Bereitstellung aller relevanten Bestattungsinformationen. Direkter Wettbewerber im Schweizer Markt.",
         source: "Letzte Reise / Age-Stiftung",
