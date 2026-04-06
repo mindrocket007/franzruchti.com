@@ -28,6 +28,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 06.04.2026
       {
+        summary: "ICT-Berufsbildung Schweiz diplomiert 145 neue ICT-Fachkräfte (März 2026): 77 von 133 Cyber-Security-Spezialisten (57,1%), 52 von 79 ICT-Plattformentwickler (68,4%) und 16 von 23 Information-Security-Manager (69,6%) bestanden die höheren Fachprüfungen.",
+        source: "IT-Markt",
+        url: "https://www.it-markt.ch/news/2026-03-31/ict-berufsbildung-schweiz-diplomiert-145-ict-fachkraefte",
+        date: "31.03.2026",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-06",
+      },
+      {
         summary: "SIZ AG lanciert am 9. April 2026 die neue mySIZ-Plattform unter my.siz.ch – vollständig überarbeitetes System. Bestehende Train@SIZ-Abonnements bleiben erhalten und erhalten neu eine unbegrenzte Gültigkeitsdauer.",
         source: "SIZ Newsflash",
         url: "https://siz.ch/newsflash-april-2026/",
@@ -592,6 +600,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 06.04.2026
       {
+        summary: "Apex Trader Funding führt ab März 2026 neue Evaluations-Regeln ein: Festes Gewinnziel bei 6% des Startkapitals, keine Mindesthandelstage – bestehendes Evaluation in einem Tag möglich. Zwei Account-Typen: End-of-Day (EOD) und Intraday Trailing Drawdown. Auszahlung: 100% der ersten 25.000 USD pro Account, 90% darüber hinaus.",
+        source: "Damn Prop Firms",
+        url: "https://damnpropfirms.com/prop-firms/apex-trader-funding-profit-target-and-payout-ladder-rules-2026/",
+        date: "März 2026",
+        category: "Futures & Trading",
+        addedAt: "2026-04-06",
+      },
+      {
         summary: "Gold Guardian Algo-Trading-Bot 2026: Vollautomatisierte Handelsentscheidungen nach vordefinierten Regeln eliminieren emotionale Einflüsse. Artikel betont: Erfolgreicher Algo-Handel erfordert sorgfältige Strategie und realistische Risikoerwartungen.",
         source: "ad-hoc-news.de",
         url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/gold-guardian-wie-ein-algo-trading-bot-den-boersenalltag-radikal/69061513",
@@ -1004,6 +1020,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "hypnovital": {
     news: [
       // Neu: 06.04.2026
+      {
+        summary: "BGM Forum Schweiz: Knapp 30% aller Erwerbstätigen zeigen Anzeichen von erhöhtem Stress und Burnout. Absenzquoten erreichten 2022 ein Allzeithoch (Ø 9,3 Tage pro Vollzeitangestellte). Das BGM Forum Schweiz bietet praxisnahe Fachinhalte, Netzwerk und Instrumente für nachhaltige betriebliche Burnout-Prävention.",
+        source: "BGM Forum Schweiz",
+        url: "https://www.bgm-forum-schweiz.ch/de/startseite/burnout-praevention.html",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-06",
+      },
       {
         summary: "BBGM-Schwerpunkte 2026: Mentale Gesundheit, hybride Arbeitswelten und KI als zentrale Themen des Bundesverbands Betriebliches Gesundheitsmanagement – KI wird als Schlüssel für massgeschneiderte BGM-Strategien gesehen.",
         source: "BBGM",
@@ -1729,6 +1753,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "marketingplan-software": {
     news: [
       // Neu: 06.04.2026
+      {
+        summary: "Digitalmarketing.gmbh: Umfassender Deep Dive zu Marketing Trends 2026 für Schweizer Unternehmen – Generative Engine Optimization (GEO) als Nachfolger von SEO, multimodale KI, DSG-konforme Lösungen und TWINT-Integration als Schweizer Spezifika. KI verändert Search, Content und Kampagnensteuerung grundlegend.",
+        source: "digitalmarketing.gmbh",
+        url: "https://www.digitalmarketing.gmbh/post/marketing-trends-2026-der-ultimative-deep-dive-f%C3%BCr-schweizer-unternehmen-daten-strategien-und-di",
+        date: "2026",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "Gewerbe Stadt St. Gallen: Content-Marketing in Zeiten von KI – praxisnahe Ansätze für KMU. KI ermöglicht effizientere Content-Erstellung, aber menschliche Expertise und Authentizität bleiben entscheidend für nachhaltiges Kundenvertrauen.",
+        source: "Gewerbe Stadt St.Gallen",
+        url: "https://stadt.gewerbe.sg/2026/03/26/content-marketing-in-zeiten-von-ki-praxisnahe-ansaetze-fuer-kmu/",
+        date: "26.03.2026",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-06",
+      },
       {
         summary: "Researchly veröffentlicht umfassenden SWOT-Analyse-Leitfaden 2026 mit 4-Schritt-Prozess, TOWS-Matrix-Ableitung, häufigen Fehlern und Hinweisen zu ergänzenden KI-gestützten Analyse-Frameworks.",
         source: "Researchly.at",
