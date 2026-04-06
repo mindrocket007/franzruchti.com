@@ -28,6 +28,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 06.04.2026
       {
+        summary: "SIZ Newsflash Januar 2026: Neues Modul PU45 ICT-Technologien lanciert – alle Lernzielkontrollen aktiviert, Testprüfungen ab April 2026, Modulfachprüfungen ab Mai 2026. Grundlegende Renovation der mySIZ-Plattform mit vereinfachter Kursanmeldung und flexibleren Prüfungsdaten angekündigt.",
+        source: "SIZ Newsflash",
+        url: "https://siz.ch/newsflash-januar-2026/",
+        date: "Januar 2026",
+        category: "SIZ AG direkt",
+        addedAt: "2026-04-06",
+      },
+      {
         summary: "SIW warnt: Die Schweiz verschläft ihren digitalen Nachwuchs – und riskiert 54'400 offene ICT-Stellen bis 2033. Jeder dritte ICT-Job bleibt unbesetzt, wenn Ausbildungskapazitäten nicht erhöht werden. SIW bietet gezielte Aus- und Weiterbildungen an, um die Lücke zu schliessen.",
         source: "SIW",
         url: "https://siw.swiss/ict-nachwuchs/",
@@ -608,6 +616,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 06.04.2026
       {
+        summary: "MooreTech LLC: KI-gestützte NinjaTrader-Strategien 2026 – von regelbasierten zu adaptiven Systemen, die Muster in Echtzeit erkennen. Praxisleitfaden für AI-powered NinjaScript-Strategien mit Backtesting auf Tick-Level und integriertem Risikomanagement.",
+        source: "MooreTech LLC",
+        url: "https://www.mooretechllc.com/algorithmic-trading/ai-powered-ninjatrader-strategies-2026/",
+        date: "2026",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-06",
+      },
+      {
         summary: "Apex Trader Funding führt ab März 2026 neue Evaluations-Regeln ein: Festes Gewinnziel bei 6% des Startkapitals, keine Mindesthandelstage – bestehendes Evaluation in einem Tag möglich. Zwei Account-Typen: End-of-Day (EOD) und Intraday Trailing Drawdown. Auszahlung: 100% der ersten 25.000 USD pro Account, 90% darüber hinaus.",
         source: "Damn Prop Firms",
         url: "https://damnpropfirms.com/prop-firms/apex-trader-funding-profit-target-and-payout-ladder-rules-2026/",
@@ -1029,6 +1045,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 06.04.2026
       {
+        summary: "hypnovital.net: Nächste Coach-Ausbildung startet am 3. Mai 2026. Hypnovital-Coaches werden in öffentlichen Kursen und in Unternehmen (BGM, Teamentwicklung) eingesetzt – aus Gruppentrainings entstehen direkte Folgeaufträge für Einzelcoachings. Kombination mit bestehender Coaching- oder Therapietätigkeit möglich.",
+        source: "hypnovital.net",
+        url: "https://hypnovital.net/coach-werden/",
+        date: "2026",
+        category: "hypnovital direkt",
+        addedAt: "2026-04-06",
+      },
+      {
         summary: "Burnout-Gefahr 2026: Psychische Belastungen am Arbeitsplatz steigen stark. KKH-Daten (Ende 2025) belegen: Burnout-bedingte Ausfälle haben in den letzten 5 Jahren deutlich zugenommen. Hypnose-Coaching und BGM-Präventionsprogramme gewinnen an Relevanz.",
         source: "ad-hoc-news.de",
         url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/burnout-gefahr-2026-psychische-belastungen-am-arbeitsplatz-steigen/68532499",
@@ -1419,6 +1443,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 06.04.2026
       {
+        summary: "Bettrocker.com: Vergleich komplementärer Therapien bei vorzeitiger Ejakulation – Akupunktur, Hypnose und Homöopathie im direkten Vergleich. Hypnose wird als Methode anerkannt, die unbewusstes Konditionierungsmuster löst; Audio-Selbsthypnose als kostengünstiger Einstieg empfohlen.",
+        source: "Bettrocker.com",
+        url: "https://bettrocker.com/akupunktur-hypnose-homoeopathie-bei-vorzeitiger-ejakulation/",
+        date: "2025",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-06",
+      },
+      {
         summary: "Paramedius Institut: Hypnose als Therapieoption bei Ejaculatio praecox – tiefenpsychologischer Ansatz zur Auflösung unbewusster Ursachen des vorzeitigen Samenergusses, Erfolgsrate über 90%.",
         source: "Paramedius Institut",
         url: "https://paramedius-institut.de/ejaculatio-praecox-hypnose/",
@@ -1518,6 +1550,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "lampenfieber": {
     news: [
       // Neu: 06.04.2026
+      {
+        summary: "Apple Books: Audiobook 'Lampenfieber & Redeangst ade! Die Hypnose gegen Auftrittsangst' verfügbar – Marktvalidierung für das Audio-Hypnose-Format als etabliertes, niedrigschwelliges Mittel zur Überwindung von Auftrittsangst. Direkter Wettbewerber im Audio-Segment.",
+        source: "Apple Books",
+        url: "https://books.apple.com/de/audiobook/lampenfieber-redeangst-ade-die-hypnose-gegen-auftrittsangst/id1616537394",
+        date: "2022",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-04-06",
+      },
       {
         summary: "Wagner Empowerment: Präsenz-Seminare 'Redeangst überwinden' mit Coaching, Mentaltraining & Hypnose – neue Termine 2026 in Frankfurt, Hamburg, München, Augsburg und Leipzig. Direkte Konkurrenz zum digitalen Hypnose-Audio-Format.",
         source: "Wagner Empowerment",
@@ -1626,6 +1666,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "learnfluencer": {
     news: [
       // Neu: 06.04.2026
+      {
+        summary: "Harvard Business Review (März 2026): 'Has AI Ended Thought Leadership?' – KI-generierter Content überschwemmt den Markt. Echte Thought Leadership erfordert jetzt mehr denn je persönliche Perspektive, Erfahrung und Originalität. Direkt relevant für Franz Ruchtis Positionierung als Learnfluencer.",
+        source: "Harvard Business Review",
+        url: "https://hbr.org/2026/03/has-ai-ended-thought-leadership",
+        date: "März 2026",
+        category: "Content & Thought Leadership",
+        addedAt: "2026-04-06",
+      },
       {
         summary: "KI-Campus: Deutschsprachige Lernplattform für Künstliche Intelligenz mit über 100 kostenlosen Kursen, Lernpfaden und Micro-Learning-Formaten – auch für Unternehmenseinsatz geeignet. Deckt KI-Grundlagen bis spezialisierte Anwendungen ab und unterstützt die KI-Kompetenzentwicklung.",
         source: "KI-Campus",
@@ -1793,6 +1841,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "marketingplan-software": {
     news: [
       // Neu: 06.04.2026
+      {
+        summary: "Aivie.ch: Marketing-Automation dank kmu.digital-Förderung 2026 – Schweizer KMU erhalten staatliche Unterstützung für Digitalisierungsprojekte inklusive Marketing-Tools. Schnittstelle zwischen Marketingkonzept-Planung und automatisierter Umsetzung wird für KMU erstmals finanzierbar.",
+        source: "Aivie.ch",
+        url: "https://aivie.ch/marketing-automation-kmu-digital-forderung/",
+        date: "2026",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "KMU-Magazin Schweiz: Meta-SWOT-Methode verbindet Brainstorming mit strategischer Analyse – der grösste Vorteil liegt im Fehlen eines digitalen Tools für metrische statt komparative Vergleiche. Marktlücke für Software, die diesen Prozess automatisiert.",
+        source: "KMU-Magazin Schweiz",
+        url: "https://www.kmu-magazin.ch/wissen/forschung-entwicklung/meta-swot-vom-brainstorming-zu-erfolgreichen-strategien",
+        date: "2026",
+        category: "Strategie & Analyse",
+        addedAt: "2026-04-06",
+      },
       {
         summary: "Digitalmarketing.gmbh: Umfassender Deep Dive zu Marketing Trends 2026 für Schweizer Unternehmen – Generative Engine Optimization (GEO) als Nachfolger von SEO, multimodale KI, DSG-konforme Lösungen und TWINT-Integration als Schweizer Spezifika. KI verändert Search, Content und Kampagnensteuerung grundlegend.",
         source: "digitalmarketing.gmbh",
