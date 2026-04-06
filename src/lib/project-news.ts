@@ -26,6 +26,31 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 06.04.2026
+      {
+        summary: "SIZ AG lanciert am 9. April 2026 die neue mySIZ-Plattform unter my.siz.ch – vollständig überarbeitetes System. Bestehende Train@SIZ-Abonnements bleiben erhalten und erhalten neu eine unbegrenzte Gültigkeitsdauer.",
+        source: "SIZ Newsflash",
+        url: "https://siz.ch/newsflash-april-2026/",
+        date: "02.04.2026",
+        category: "SIZ AG direkt",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "ICT-Regionalmeisterschaften 2026 in KW 11: Rund 250 Lernende aus Web Technologies, Software Development, Cloud Computing, Mediamatics und Cyber Security treten an. Ranglisten werden im April 2026 veröffentlicht.",
+        source: "ICT-Berufsbildung Schweiz",
+        url: "https://www.ict-berufsbildung.ch/ict-regiomeisterschaften-2026",
+        date: "April 2026",
+        category: "Arbeitsmarkt & IT",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "Schweizerischer Arbeitgeberverband zum Bildungsbericht 2026: Lernende in IT/IKT und Gesundheit/Soziales wachsen bis 2033 um 16%. 94% bestehen das Qualifikationsverfahren beim ersten Anlauf – positives Signal für die Berufsbildung.",
+        source: "Schweizerischer Arbeitgeberverband",
+        url: "https://www.arbeitgeber.ch/bildung/bildungsbericht-2026-staerkung-der-berufsbildung-hat-viele-vorteile/",
+        date: "25.03.2026",
+        category: "Bildungspolitik",
+        addedAt: "2026-04-06",
+      },
       // Neu: 05.04.2026
       {
         summary: "Swico ICT Index Q2 2026 fällt um 7,7 Punkte auf 106,2 – IT-Technology-Segment unter 100er-Marke. Hauptproblem laut Swico: fehlende oder falsche KI-Kompetenzen bei der Rekrutierung, nicht Bewerbermangel.",
@@ -565,6 +590,47 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 06.04.2026
+      {
+        summary: "Gold Guardian Algo-Trading-Bot 2026: Vollautomatisierte Handelsentscheidungen nach vordefinierten Regeln eliminieren emotionale Einflüsse. Artikel betont: Erfolgreicher Algo-Handel erfordert sorgfältige Strategie und realistische Risikoerwartungen.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/gold-guardian-wie-ein-algo-trading-bot-den-boersenalltag-radikal/69061513",
+        date: "03.04.2026",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "ESMA veröffentlicht Aufsichtsleitfaden zu algorithmischem Handel unter MiFID II (Februar 2026) – basierend auf Common Supervisory Action 2022. CMS Law analysiert praktische Implikationen für Pre-Trade-Kontrollen und Marktteilnehmer.",
+        source: "CMS Law Now",
+        url: "https://cms-lawnow.com/en/ealerts/2026/03/esma-supervisory-briefing-on-algorithmic-trading-in-the-eu-key-points-and-practical-implications",
+        date: "März 2026",
+        category: "Regulierung",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "FTMO übernimmt OANDA als Zeichen einer Regulierungswende: Die 'Demo-only'-Lücke für Prop-Firmen schliesst sich 2026. NFA und ESMA harmonisieren Regeln, Leverage-Limits sinken auf ca. 1:30 – rund 90% der unregulierten Prop-Firmen dürften scheitern oder compliant werden.",
+        source: "FXNX",
+        url: "https://fxnx.com/en/blog/prop-firm-regulations-2026-what-ftmo-s-oanda-deal-means-you",
+        date: "15.02.2026",
+        category: "Regulierung",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "NinjaTrader Connect: Neue Infrastruktur-API ermöglicht Brokerages und Fintechs Zugang zu regulierten Futures- und Prediction-Markets – mit Onboarding, Risikokontrolle und White-Label-Oberfläche über eine einzige Schnittstelle.",
+        source: "PR Newswire",
+        url: "https://www.prnewswire.com/news-releases/ninjatrader-group-unveils-ninjatrader-connect-redefining-brokerage-infrastructure-for-futures-and-prediction-markets-firms-302701464.html",
+        date: "03.03.2026",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "NinjaTrader expandiert reguliertes Futures-Trading nach Europa (zunächst Niederlande und Deutschland), mit geplantem Rollout in Frankreich und Italien im Laufe von 2026.",
+        source: "Structured Retail Products",
+        url: "https://www.structuredretailproducts.com/insights/82426/ninjatrader-expands-futures-trading-to-europe",
+        date: "02.02.2026",
+        category: "Futures & Trading",
+        addedAt: "2026-04-06",
+      },
       // Mind Rocket Trading direkt
       {
         summary: "Keine direkten Erwähnungen von mindrocket-trading.com in Medien oder Suchmaschinen gefunden. Die Domain ist noch nicht indexiert bzw. öffentlich sichtbar.",
@@ -763,6 +829,55 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 06.04.2026
+      {
+        summary: "HabitWorks-App verbessert mentale Gesundheit: Randomisierte Studie (Journal of Consulting and Clinical Psychology) belegt signifikante Verbesserungen durch kurze 5-Minuten-Übungen gegen negative Denkmuster – 77,8% der 340 Teilnehmer nutzten die App noch nach 4 Wochen.",
+        source: "MedicalXpress",
+        url: "https://medicalxpress.com/news/2026-04-smartphone-app-mental-health-habits.html",
+        date: "02.04.2026",
+        category: "Mental Health",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "Globaler Stressmanagement-Markt wächst von USD 10 Mrd. (2024) auf über USD 20 Mrd. bis 2032 – getrieben durch steigende psychische Belastungen und Nachfrage nach Yoga-, Meditations- und Resilienzprogrammen.",
+        source: "ekz-crosstour.ch",
+        url: "https://ekz-crosstour.ch/2026/03/02/der-markt-fur-stressmanagement-am-arbeitsplatz-wird-ein-enormes-wachstum-verzeichnen-2/",
+        date: "02.03.2026",
+        category: "Mental Health",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "Buchmarkt 2026: Verlage setzen auf evidenzbasierte Psychologie-Ratgeber zu emotionaler Fitness und Resilienz. Trotz stagnierender Stückzahlen steigt die Ausgabebereitschaft für Premium-Selbsthilfe-Titel.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/buchmarkt-setzt-auf-wissenschaftliche-selbsthilfe/68597801",
+        date: "21.02.2026",
+        category: "Buchmarkt & Publishing",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "Buchmarkt reagiert 2026 mit Welle wissenschaftlich fundierter Psychologie-Ratgeber zu Anti-Grübeln, Resilienz und digitalen Stressoren – BookTok etabliert sich als neuer Vermarktungskanal.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/buchmarkt-reagiert-2026-mit-welle-an-psychologie-ratgebern/68596624",
+        date: "20.02.2026",
+        category: "Buchmarkt & Publishing",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "Coaching-Markt Schweiz 2026: Walk & Talk Coaching etabliert sich als fester Bestandteil – von Führungskräften in Städten bis zu KMU-Mitarbeitenden.",
+        source: "coachingausbildungen.ch",
+        url: "https://www.coachingausbildungen.ch/walk-and-talk-coaching-schweiz-coachingmarkt-2026/",
+        date: "19.01.2026",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "Coaching-Marktanalyse Schweiz 2025/2026: Markt entwickelt sich weg von kurzfristigen Lösungen hin zu tiefen, wirkungsorientierten Formaten. Integrative Methoden und messbare Ergebnisse in kürzeren Zeiträumen prägen die Nachfrage.",
+        source: "coachingausbildungen.ch",
+        url: "https://www.coachingausbildungen.ch/coaching-markt-schweiz-trends-2025-2026-analyse/",
+        date: "12.01.2026",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-04-06",
+      },
       // mindtools direkt
       {
         summary: "Keine direkten Erwähnungen von mindtools.ch in Medien gefunden. Namenskollision mit mindtools.com (UK-basiertes Unternehmen, Kineo-Übernahme) dominiert alle Suchergebnisse.",
@@ -888,6 +1003,39 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 06.04.2026
+      {
+        summary: "FIBO Congress 2026: Referat zu Burnout-Prävention und strategischem BGM am 16. April, inkl. Menopause am Arbeitsplatz als neue Dimension der betrieblichen Gesundheitsförderung.",
+        source: "FIBO Congress",
+        url: "https://www.fibo-congress.com/2026/03/10/bgm-strategisch-nutzen-mitarbeitergesundheit-staerken-und-neue-unternehmenskooperationen-aufbauen/",
+        date: "10.03.2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "FHNW lanciert CAS Mentale Gesundheit in der Arbeitswelt (Start März 2026): Fachpersonen lernen, psychische Gesundheit im Betrieb systematisch zu fördern – mit Fokus auf hybride Arbeitswelten.",
+        source: "FHNW",
+        url: "https://www.fhnw.ch/de/weiterbildung/psychologie/cas-mentale-gesundheit-arbeitswelt",
+        date: "25.03.2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "Hypnose wird 2026 zum Mainstream-Werkzeug gegen Stress: Unternehmen setzen verstärkt auf Hypnotherapie statt Meditation. Generation Z und Führungskräfte mit Burnout-Risiko treiben Nachfrage nach 'Subconscious Wellness'-Programmen.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/hypnose-wird-2026-zum-mainstream-tool-gegen-stress/68477939",
+        date: "11.01.2026",
+        category: "Hypnose & Coaching",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "European Society of Hypnosis Congress 2026 in Glasgow: Wachsende wissenschaftliche und klinische Anerkennung von Hypnoseverfahren in Europa unterstreicht die Legitimität moderner Hypnotherapie.",
+        source: "ESH / University of Glasgow",
+        url: "https://fitwise.eventsair.com/esh2026/",
+        date: "2026",
+        category: "Hypnose & Coaching",
+        addedAt: "2026-04-06",
+      },
       {
         summary: "BGM setzt 2026 auf Strategie und Psyche – Unternehmen ruecken mentale Gesundheit in den Fokus und kombinieren digitale Tools mit persoenlichen Angeboten.",
         source: "ad-hoc-news.de",
@@ -1062,6 +1210,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 06.04.2026
+      {
+        summary: "Factorial vergleicht OKR-Software 2026 (aktualisiert 2. April): Empfiehlt je nach Unternehmensgrösse Mooncamp, Perdoo, Weekdone oder Personio – mit Fokus auf HR-Integration und Mitarbeiterbindung.",
+        source: "Factorial HR Blog",
+        url: "https://factorialhr.de/blog/okr-software/",
+        date: "02.04.2026",
+        category: "SaaS & Tools",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "TechCrunch: 'SaaSpocalypse' – KI-native Architekturen verdrängen klassische SaaS-Modelle 2026 strukturell. Der Markt steht vor einer fundamentalen Transformation, die auch Produktivitäts- und Planungstools betrifft.",
+        source: "TechCrunch",
+        url: "https://techcrunch.com/2026/03/01/saas-in-saas-out-heres-whats-driving-the-saaspocalypse/",
+        date: "01.03.2026",
+        category: "SaaS & Tools",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "Mooncamp analysiert 25 OKR-Softwarelösungen 2026: Empfiehlt Mooncamp für KMU, Tability für Startups. Wichtigste Erkenntnis: Gescheiterte Implementierungen entstehen meist durch mangelnde Nutzerakzeptanz, nicht fehlende Funktionen.",
+        source: "Mooncamp Blog",
+        url: "https://mooncamp.com/blog/best-okr-software",
+        date: "20.01.2026",
+        category: "SaaS & Tools",
+        addedAt: "2026-04-06",
+      },
       {
         summary: "Brian Morans offizielle 'Achieve'-App bietet ein vollstaendiges Execution-System mit Kalenderintegration und Fortschrittsmessung.",
         source: "12weekyear.com",
@@ -1338,6 +1511,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 06.04.2026
+      {
+        summary: "ovos play: KI-gestützte Lernbegleiter, KI-unterstützte Content-Erstellung und strategisches Blended Learning als die drei wichtigsten E-Learning-Trends 2026 – mit Appell, didaktische Expertise nicht durch KI zu ersetzen.",
+        source: "ovos play",
+        url: "https://ovosplay.com/e-learning-trends-2026/",
+        date: "22.01.2026",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "LEARNTEC 2026 (5.–7. Mai, Karlsruhe): Über 350 Aussteller mit Lösungen zu KI, Lernmanagementsystemen und Extended Reality – Leitmesse für digitale Transformation in Bildung und Weiterbildung.",
+        source: "Schule und Wirtschaft BW",
+        url: "https://www.schulewirtschaft-bw.de/aktuelles/termine/einzelansicht/learntec-2026-digitale-transformation-in-der-bildung",
+        date: "2026",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "managerSeminare stellt Learnfluencer als neue Lernvorbilder vor: Von Social Media inspirierte Persönlichkeiten, die durch authentisches Teilen eigener Lernerfahrungen eine intrinsisch motivierte Lernkultur in Unternehmen aufbauen.",
+        source: "managerSeminare",
+        url: "https://www.managerseminare.de/ms_Artikel/Lernkultur-foerdern-Die-Learnfluencer,284702",
+        date: "Oktober 2024",
+        category: "Content & Thought Leadership",
+        addedAt: "2026-04-06",
+      },
       {
         summary: "Haufe: 'Weiterbildung braucht Learnfluencer' – Learnfluencer staerken intrinsische Lernmotivation und Lernkultur in Unternehmen.",
         source: "Haufe Personal",
@@ -1448,6 +1646,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 06.04.2026
+      {
+        summary: "Researchly veröffentlicht umfassenden SWOT-Analyse-Leitfaden 2026 mit 4-Schritt-Prozess, TOWS-Matrix-Ableitung, häufigen Fehlern und Hinweisen zu ergänzenden KI-gestützten Analyse-Frameworks.",
+        source: "Researchly.at",
+        url: "https://www.researchly.at/post/swot-analyse-durchfuehren",
+        date: "30.03.2026",
+        category: "Strategie & Analyse",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "SafetyCulture listet beste SWOT-Analyse-Software 2026: SafetyCulture, SmartDraw, Creately, MindManager und Lucidchart – mit Fokus auf kollaborative Templates und digitale Berichtsgenerierung.",
+        source: "SafetyCulture",
+        url: "https://safetyculture.com/apps/swot-analysis-software/",
+        date: "23.02.2026",
+        category: "Marketing-Tools & Software",
+        addedAt: "2026-04-06",
+      },
       {
         summary: "Bitkom: 84% der Unternehmen sehen KI als wichtigsten Marketingtrend bis 2027, aber 52% fehlen die Kompetenzen.",
         source: "Bitkom e.V.",
@@ -1548,6 +1763,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 06.04.2026
+      {
+        summary: "Abschied'26: Erste umfassende Schweizer Fachmesse für Vorsorge, Bestattung und Trauer am 29.–30. Oktober 2026 in der Messe Luzern – bereits über 60 Aussteller und Partner aus In- und Ausland angemeldet.",
+        source: "Heime und Spitäler",
+        url: "https://www.heimeundspitaeler.ch/management/abschied26-die-neue-schweizer-fachmesse-fuer-vorsorge-pflege-und-trauer",
+        date: "17.07.2025",
+        category: "Markt & Trends",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "Ab April 2026 führt die Schweiz die staatlich verifizierte E-ID flächendeckend ein – mit direkten Auswirkungen auf digitale Vorsorge- und Nachlassdokumente sowie die digitale Bestattungsplanung.",
+        source: "Nume.ch",
+        url: "https://www.nume.ch/digitalisierung-schweiz-2026-e-id-automatisierung/",
+        date: "2026",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-04-06",
+      },
       {
         summary: "Stadt Zuerich prueft Kompostbestattung (Terramation) als oekologische Alternative.",
         source: "Blick",
