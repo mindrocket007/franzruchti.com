@@ -28,6 +28,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 06.04.2026
       {
+        summary: "SIW warnt: Die Schweiz verschläft ihren digitalen Nachwuchs – und riskiert 54'400 offene ICT-Stellen bis 2033. Jeder dritte ICT-Job bleibt unbesetzt, wenn Ausbildungskapazitäten nicht erhöht werden. SIW bietet gezielte Aus- und Weiterbildungen an, um die Lücke zu schliessen.",
+        source: "SIW",
+        url: "https://siw.swiss/ict-nachwuchs/",
+        date: "2026",
+        category: "Arbeitsmarkt & IT",
+        addedAt: "2026-04-06",
+      },
+      {
         summary: "ICT-Berufsbildung Schweiz diplomiert 145 neue ICT-Fachkräfte (März 2026): 77 von 133 Cyber-Security-Spezialisten (57,1%), 52 von 79 ICT-Plattformentwickler (68,4%) und 16 von 23 Information-Security-Manager (69,6%) bestanden die höheren Fachprüfungen.",
         source: "IT-Markt",
         url: "https://www.it-markt.ch/news/2026-03-31/ict-berufsbildung-schweiz-diplomiert-145-ict-fachkraefte",
@@ -1021,6 +1029,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 06.04.2026
       {
+        summary: "Burnout-Gefahr 2026: Psychische Belastungen am Arbeitsplatz steigen stark. KKH-Daten (Ende 2025) belegen: Burnout-bedingte Ausfälle haben in den letzten 5 Jahren deutlich zugenommen. Hypnose-Coaching und BGM-Präventionsprogramme gewinnen an Relevanz.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/burnout-gefahr-2026-psychische-belastungen-am-arbeitsplatz-steigen/68532499",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "Bundesgesundheitsministerium 2026: Psychische Gesundheit am Arbeitsplatz erhält Prioritätsstatus. Unternehmen werden aufgefordert, präventive Massnahmen zu etablieren – Coaching, Hypnose und Achtsamkeitstraining als empfohlene Methoden.",
+        source: "bernerbaer.ch",
+        url: "https://bernerbaer.ch/bundesgesundheitsministerium-2026-warum-psychische-gesundheit-am-arbeitsplatz-jetzt-prioritaet-hat/",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-06",
+      },
+      {
         summary: "BGM Forum Schweiz: Knapp 30% aller Erwerbstätigen zeigen Anzeichen von erhöhtem Stress und Burnout. Absenzquoten erreichten 2022 ein Allzeithoch (Ø 9,3 Tage pro Vollzeitangestellte). Das BGM Forum Schweiz bietet praxisnahe Fachinhalte, Netzwerk und Instrumente für nachhaltige betriebliche Burnout-Prävention.",
         source: "BGM Forum Schweiz",
         url: "https://www.bgm-forum-schweiz.ch/de/startseite/burnout-praevention.html",
@@ -1243,6 +1267,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "12wy-planner": {
     news: [
       // Neu: 06.04.2026
+      {
+        summary: "Gründer.de: OKR-Methode 2026 – Quartalsplanung als modernes Führungsinstrument. OKRs werden kurzfristig (quartalsweise) festgelegt und stimmen exakt mit dem 12-Week-Year-Ansatz überein. Empfehlungen für Tools und Implementierung für KMU und Start-ups.",
+        source: "Gründer.de",
+        url: "https://www.gruender.de/leadership-management/okr-methode/",
+        date: "2026",
+        category: "Produktivität & Planung",
+        addedAt: "2026-04-06",
+      },
       {
         summary: "Factorial vergleicht OKR-Software 2026 (aktualisiert 2. April): Empfiehlt je nach Unternehmensgrösse Mooncamp, Perdoo, Weekdone oder Personio – mit Fokus auf HR-Integration und Mitarbeiterbindung.",
         source: "Factorial HR Blog",
@@ -1595,6 +1627,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 06.04.2026
       {
+        summary: "KI-Campus: Deutschsprachige Lernplattform für Künstliche Intelligenz mit über 100 kostenlosen Kursen, Lernpfaden und Micro-Learning-Formaten – auch für Unternehmenseinsatz geeignet. Deckt KI-Grundlagen bis spezialisierte Anwendungen ab und unterstützt die KI-Kompetenzentwicklung.",
+        source: "KI-Campus",
+        url: "https://ki-campus.org/",
+        date: "2026",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-06",
+      },
+      {
         summary: "checkpoint eLearning: '2026 – Was Lernen im Unternehmen jetzt prägt' – KI-gestützte Assistenzsysteme, Learning in the Flow of Work und messbare Lernwirkung als Leitthemen. Unternehmen investieren verstärkt in Performance-Support statt klassische Kurse.",
         source: "checkpoint eLearning",
         url: "https://www.checkpoint-elearning.de/corporate-elearning/2026-was-lernen-im-unternehmen-jetzt-praegt",
@@ -1886,6 +1926,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "bestattungsplaner": {
     news: [
       // Neu: 06.04.2026
+      {
+        summary: "St. Galler Tagblatt: 'Wer früh bucht, stirbt billiger' – Schweizer Bestattungsinstitut wirbt aktiv um Vorsorge-Kundschaft. Digitale Buchung und transparente Preisgestaltung als neue Branchentrends. Frühzeitige Planung spart laut Anbieter bis zu 30%.",
+        source: "St. Galler Tagblatt",
+        url: "https://www.tagblatt.ch/leben/wer-frueh-bucht-stirbt-billiger-so-buhlt-ein-bestattungsinstitut-um-kundschaft-ld.1120032",
+        date: "2026",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-06",
+      },
       {
         summary: "Abschied'26: Erste umfassende Schweizer Fachmesse für Vorsorge, Bestattung und Trauer am 29.–30. Oktober 2026 in der Messe Luzern – bereits über 60 Aussteller und Partner aus In- und Ausland angemeldet.",
         source: "Heime und Spitäler",
