@@ -28,6 +28,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 06.04.2026
       {
+        summary: "ICT-Berufsbildung Schweiz Jahresbericht 2025: Revision ICT-Fachmann/-frau EFZ erfolgreich abgeschlossen – neue Bildungsverordnung ab 1. Januar 2026 in Kraft. Jahreskonferenz am 9. April 2026 in Zürich zu Lebenskompetenzen Gen Z & Alpha und Berufsbildung als strategischem Erfolgsfaktor.",
+        source: "ICT-Berufsbildung Schweiz",
+        url: "https://www.ict-berufsbildung.ch/jahresbericht-2025",
+        date: "2026",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-06",
+      },
+      {
         summary: "SIZ Newsflash Januar 2026: Neues Modul PU45 ICT-Technologien lanciert – alle Lernzielkontrollen aktiviert, Testprüfungen ab April 2026, Modulfachprüfungen ab Mai 2026. Grundlegende Renovation der mySIZ-Plattform mit vereinfachter Kursanmeldung und flexibleren Prüfungsdaten angekündigt.",
         source: "SIZ Newsflash",
         url: "https://siz.ch/newsflash-januar-2026/",
@@ -615,6 +623,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "mindrocket-trading": {
     news: [
       // Neu: 06.04.2026
+      {
+        summary: "Kraken schliesst NinjaTrader-Akquisition ab (Mai 2025): Für $1,5 Mrd. – grösster Deal zwischen TradFi und Crypto. NinjaTrader bleibt eigenständige Plattform, Kraken-Nutzer erhalten Zugang zu Futures, NinjaTrader-Trader zu Crypto-Märkten. Neue Assets (Aktien, Options, Prediction Markets) angekündigt.",
+        source: "BusinessWire",
+        url: "https://www.businesswire.com/news/home/20250501627804/en/Kraken-Completes-Acquisition-of-NinjaTrader",
+        date: "01.05.2025",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "NinjaTrader Review 2026 (StockBrokers.com): Umfassendes Urteil – besonders stark für Futures Day Trading mit tiefen Kommissionen ab $0.09/Seite, kostenlose Simulator-Version, leistungsfähige Charting-Tools. Empfohlen für aktive Futures-Trader; Schwäche: nur US-Futures für Non-EU-Kunden.",
+        source: "StockBrokers.com",
+        url: "https://www.stockbrokers.com/futures/review/ninjatrader",
+        date: "2026",
+        category: "Futures & Trading",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "CrossTrade.io: Was Krakenss NinjaTrader-Kauf für Futures-Trader bedeutet – Analyse der strategischen Integration: mehr Kapital für Produktentwicklung, kombinierte TradFi/Crypto-Infrastruktur. Keine unmittelbaren Änderungen für bestehende NinjaTrader-User erwartet.",
+        source: "CrossTrade.io",
+        url: "https://crosstrade.io/blog/kraken-acquires-ninjatrader/",
+        date: "2025",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-06",
+      },
       {
         summary: "Apex Trader Funding vs. Lucid Trading – Vergleich März 2026: Apex gewinnt bei Evaluationskosten und Track Record (über $660 Mio. ausgezahlt seit 2022), Lucid bei Freiheiten im Funded Account (kein Daily Loss Limit, keine Konsistenzregel nach März 2026). Empfehlung: Apex-Evaluation bestehen, dann Lucid-Account für aggressive Sessions erwägen.",
         source: "Prop Trading Deals",
@@ -1324,6 +1356,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 06.04.2026
       {
+        summary: "12-Week Year Templates Guide 2026 (12week-breakthrough.com): Vollständiger Überblick über Notion-Templates, Google-Sheets-Varianten und App-basierte Lösungen für die 12-Wochen-Jahr-Methode. Wichtigster Trend 2026: Agentic Workflows – AI integriert sich direkt in Planungstools.",
+        source: "12-Week Breakthrough",
+        url: "https://12week-breakthrough.com/12-week-year-templates/",
+        date: "2026",
+        category: "12 Week Year Methode",
+        addedAt: "2026-04-06",
+      },
+      {
         summary: "Gründer.de: OKR-Methode 2026 – Quartalsplanung als modernes Führungsinstrument. OKRs werden kurzfristig (quartalsweise) festgelegt und stimmen exakt mit dem 12-Week-Year-Ansatz überein. Empfehlungen für Tools und Implementierung für KMU und Start-ups.",
         source: "Gründer.de",
         url: "https://www.gruender.de/leadership-management/okr-methode/",
@@ -1475,6 +1515,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 06.04.2026
       {
+        summary: "Urologische Stiftung Gesundheit: Ejaculatio praecox betrifft 20–30% aller Männer – umfassender Ratgeber zu Ursachen (psychisch, organisch, neurologisch), Behandlungsoptionen (Behavioraltherapie, SSRIs, Dapoxetin) und Selbsthilfemethoden. Hypnose als ergänzende Methode zur Auflösung unbewusster Konditionierungen erwähnt.",
+        source: "Urologische Stiftung Gesundheit",
+        url: "https://urologische-stiftung-gesundheit.de/ratgeber/vorzeitiger-samenerguss/",
+        date: "2026",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "Gesundheitsinformation.de (IQWiG): Evidenzbasierter Überblick zu vorzeitigem Samenerguss – Behandlungsvergleich: Squeeze-Technik, Stop-Start-Methode, Psychotherapie und medikamentöse Optionen. Verhaltenstherapeutische Techniken als Erstlinientherapie empfohlen.",
+        source: "Gesundheitsinformation.de",
+        url: "https://www.gesundheitsinformation.de/vorzeitiger-samenerguss-ejaculatio-praecox.html",
+        date: "2026",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-06",
+      },
+      {
         summary: "Bettrocker.com: Vergleich komplementärer Therapien bei vorzeitiger Ejakulation – Akupunktur, Hypnose und Homöopathie im direkten Vergleich. Hypnose wird als Methode anerkannt, die unbewusstes Konditionierungsmuster löst; Audio-Selbsthypnose als kostengünstiger Einstieg empfohlen.",
         source: "Bettrocker.com",
         url: "https://bettrocker.com/akupunktur-hypnose-homoeopathie-bei-vorzeitiger-ejakulation/",
@@ -1582,6 +1638,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "lampenfieber": {
     news: [
       // Neu: 06.04.2026
+      {
+        summary: "NOACK Hypnotherapie Berlin: Wichtige Unterscheidung – Redeangst ist nicht Lampenfieber. Redeangst als tiefere Störung mit physischen Symptomen (Herzrasen, Schweissausbrüche), die Hypnotherapie in typischerweise 2–3 Sitzungen wirksam behebt. Relevanz für Audio-Selbsthypnose-Positionierung.",
+        source: "NOACK Hypnotherapie",
+        url: "https://www.noack-hypnose.de/redeangst/",
+        date: "2026",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "Hypnosepraxis Meier (Schweiz): Auftrittsangst und Lampenfieber mit Hypnose überwinden – Schweizer Anbieter bestätigt: Hypnosetherapie hilft bei Prüfungsangst, Redeangst und Bühnenangst. Direkter Schweizer Wettbewerber mit ähnlichem Leistungsversprechen.",
+        source: "Hypnosepraxis Meier CH",
+        url: "https://www.hypnosepraxismeier.ch/auftrittsangst-lampenfieber/",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-06",
+      },
       {
         summary: "Apple Books: Audiobook 'Lampenfieber & Redeangst ade! Die Hypnose gegen Auftrittsangst' verfügbar – Marktvalidierung für das Audio-Hypnose-Format als etabliertes, niedrigschwelliges Mittel zur Überwindung von Auftrittsangst. Direkter Wettbewerber im Audio-Segment.",
         source: "Apple Books",
@@ -1874,6 +1946,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 06.04.2026
       {
+        summary: "Researchly.at: SWOT-Analyse im Marketing 2026 – Schritt-für-Schritt-Anleitung und Beispiele. Stärken-Schwächen-Analyse als Fundament für datengetriebene Marketingentscheidungen. Direkte Relevanz für den Learnfluencer-Marketingplan-Generator (SWOT-Modul).",
+        source: "Researchly.at",
+        url: "https://www.researchly.at/post/swot-analyse-marketing",
+        date: "2026",
+        category: "Strategie & Analyse",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "Kundenmarketing.ch: KI-Marketing-Tools für KMU – Warum Standardlösungen kaum reichen. Analyse: Individuelle KI-Marketingstrategien für Schweizer KMU mit über 20 Jahren Marketing-Expertise vs. generische Tools. Positionierungschance für spezialisierte Marketingkonzept-Software.",
+        source: "Kundenmarketing.ch",
+        url: "https://www.kundenmarketing.ch/post/ki-marketing-tools",
+        date: "2026",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-06",
+      },
+      {
         summary: "Aivie.ch: Marketing-Automation dank kmu.digital-Förderung 2026 – Schweizer KMU erhalten staatliche Unterstützung für Digitalisierungsprojekte inklusive Marketing-Tools. Schnittstelle zwischen Marketingkonzept-Planung und automatisierter Umsetzung wird für KMU erstmals finanzierbar.",
         source: "Aivie.ch",
         url: "https://aivie.ch/marketing-automation-kmu-digital-forderung/",
@@ -2022,6 +2110,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "bestattungsplaner": {
     news: [
       // Neu: 06.04.2026
+      {
+        summary: "Letzte Reise (letztereise.ch): Interaktiver Online-Bestattungsplaner für Gemeinden – Age-Stiftung gefördert, bis 2026 zur Marktreife entwickelt. Schliesst Informationslücken durch zentrale Bereitstellung aller relevanten Bestattungsinformationen. Direkter Wettbewerber im Schweizer Markt.",
+        source: "Letzte Reise / Age-Stiftung",
+        url: "https://www.letztereise.ch/bestattungsplaner",
+        date: "2026",
+        category: "Bestattungsplaner direkt",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "SRF: Bestattungs-Vergleichsdienst stösst auf Kritik aus der Branche – Online-Vergleichsdienst für Bestattungen in der Schweiz (ähnlich bestattungsplaner.ch) sorgt für Aufregung bei traditionellen Bestattungsunternehmen. Digitalisierungsdruck auf die Branche wächst.",
+        source: "SRF News",
+        url: "https://www.srf.ch/news/schweiz/dienst-fuer-hinterbliebene-bestattungs-vergleichsdienst-stoesst-auf-kritik-aus-der-branche",
+        date: "2024",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "SSBV – Stiftung Schweizerische Bestattungsvorsorge: Vorsorgevertrag ab 12.90 CHF/Monat, Finanzierung über 25 Jahre möglich. Marktführer bei strukturierter Bestattungsvorsorge in der Schweiz. Ergänzendes Partnerangebot für bestattungsplaner.ch.",
+        source: "SSBV Schweiz",
+        url: "https://www.ssbv.swiss/",
+        date: "2026",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-04-06",
+      },
       {
         summary: "Nau.ch: Schweiz weltweit auf Platz 2 bei der Kremationsrate – 90% aller Verstorbenen werden kremiert (2023), nur Japan liegt höher. Hauptgründe: sinkende Religiosität, organisatorische Einfachheit und Kostenvorteil. Trend: 70% (2000) → 90% (2023).",
         source: "Nau.ch",
