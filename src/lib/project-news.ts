@@ -1353,6 +1353,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 06.04.2026
+      {
+        summary: "Paramedius Institut: Hypnose als Therapieoption bei Ejaculatio praecox – tiefenpsychologischer Ansatz zur Auflösung unbewusster Ursachen des vorzeitigen Samenergusses, Erfolgsrate über 90%.",
+        source: "Paramedius Institut",
+        url: "https://paramedius-institut.de/ejaculatio-praecox-hypnose/",
+        date: "2025",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "Hypnovita.de (nicht hypnovital): Pressemitteilung 'Hypnose gegen Sexualstörungen' – behandelt Ejaculatio praecox, erektile Dysfunktion und Libidoverlust via Hypnosetherapie. Vergleichbares Wettbewerbsangebot im DACH-Raum.",
+        source: "hypnovita.de",
+        url: "https://www.hypnovita.de/blog/presse/pm/hypnose-gegen-sexualstoerungen",
+        date: "2025",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "WieKannManLänger.com: Ratgeberportal zu Hypnose bei vorzeitiger Ejakulation – vergleicht Eigenanwendung per Audio-Download mit professioneller Sitzung, empfiehlt Audio-Hypnose als kostengünstigen Einstieg.",
+        source: "wiekannmanlanger.com",
+        url: "https://wiekannmanlanger.com/vorzeitige-ejakulation/hypnose-vorzeitige-ejakulation/",
+        date: "2025",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-06",
+      },
       {
         summary: "20 Minuten: Praktische Tipps zum Hinauszoegern des Orgasmus – Stop-Start-Technik und Squeeze-Methode.",
         source: "20 Minuten",
@@ -1428,6 +1453,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 06.04.2026
+      {
+        summary: "Wagner Empowerment: Präsenz-Seminare 'Redeangst überwinden' mit Coaching, Mentaltraining & Hypnose – neue Termine 2026 in Frankfurt, Hamburg, München, Augsburg und Leipzig. Direkte Konkurrenz zum digitalen Hypnose-Audio-Format.",
+        source: "Wagner Empowerment",
+        url: "https://www.wagner-empowerment.de/online-seminar-redeangst-%C3%BCberwinden/",
+        date: "2026",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "findyourway.ch (Schweiz): Hypnose bei Auftrittsangst – souveränes Auftreten durch Hypnosetherapie. Schweizer Angebot positioniert Hypnose als schnell wirksame Alternative zu klassischem Rhetorik-Training.",
+        source: "findyourway.ch",
+        url: "https://findyourway.ch/hypnose-bei-auftrittsangst-lampenfieber/",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "Hypnose365 (BGL & Salzburg): Hypnose gegen Lampenfieber, Präsentationsangst & Redeangst – kombinierter Ansatz mit Tiefenhypnose für Berufsredner, Führungskräfte und Studierende.",
+        source: "hypnose365.com",
+        url: "https://hypnose365.com/angstfrei-durch-hypnose/lampenfieber-redeangst-praesentationsangst",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-06",
+      },
       {
         summary: "Uniklinikum Wuerzburg: Studie zu Auftrittsangst bei Musikern mit VR-Therapie – 60% aller Musiker betroffen.",
         source: "UKW Wuerzburg",
@@ -1512,6 +1562,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "learnfluencer": {
     news: [
       // Neu: 06.04.2026
+      {
+        summary: "HR Today Schweiz: 'Learnfluencer werden?' – Fachartikel erklärt, wie Learnfluencer intrinsische Lernmotivation stärken, individuelle und kollektive Lernprozesse verknüpfen und Lernkultur mit Eigenverantwortung fördern. Relevanz für Franz Ruchtis Positionierung als Thought Leader.",
+        source: "HR Today",
+        url: "https://www.hrtoday.ch/de/article/learnfluencer-werden",
+        date: "2025",
+        category: "Content & Thought Leadership",
+        addedAt: "2026-04-06",
+      },
       {
         summary: "ovos play: KI-gestützte Lernbegleiter, KI-unterstützte Content-Erstellung und strategisches Blended Learning als die drei wichtigsten E-Learning-Trends 2026 – mit Appell, didaktische Expertise nicht durch KI zu ersetzen.",
         source: "ovos play",
