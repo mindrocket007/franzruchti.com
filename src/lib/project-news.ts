@@ -28,6 +28,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 06.04.2026
       {
+        summary: "ICT-Berufsbildung Schweiz: Berufsprüfung Wirtschaftsinformatik 2026 – Prüfungsunterlagen werden am 14. April 2026 an Kandidatinnen und Kandidaten versandt, schriftliche Prüfung findet am 13. Mai 2026 statt. Prüfungsgebiet umfasst IT-Projektmanagement, Business Analysis und systemische IT-Architekturen.",
+        source: "ICT-Berufsbildung Schweiz",
+        url: "https://www.ict-berufsbildung.ch/berufspruefung-wirtschaftsinformatik-2026",
+        date: "April 2026",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "ICT-Berufsbildung Schweiz: Berufsprüfung Cyber Security Specialist Frühling 2026 – Prüfungsunterlagen werden am 14. April 2026 versandt. Zertifizierung für IT-Sicherheitsfachleute auf eidgenössischem Niveau bleibt auch 2026 stark nachgefragt.",
+        source: "ICT-Berufsbildung Schweiz",
+        url: "https://www.ict-berufsbildung.ch/berufspruefung-cyber-security-specialist-fruehling-2026",
+        date: "April 2026",
+        category: "Arbeitsmarkt & IT",
+        addedAt: "2026-04-06",
+      },
+      {
         summary: "ICT Training Award 2026: Bewerbungsphase gestartet – Schweizer ICT-Ausbildungsbetriebe können sich bis 12. Juni 2026 bewerben. Award wird am 19. November 2026 im Rahmen des Digital Economy Award im Zürcher Hallenstadion vergeben, in drei Kategorien nach Betriebsgrösse (1-20, 21-100, 100+ ICT-Mitarbeitende).",
         source: "ICT-Berufsbildung Schweiz",
         url: "https://www.ict-berufsbildung.ch/jetzt-bewerben-fuer-den-ict-training-award",
@@ -1124,6 +1140,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "hypnovital": {
     news: [
       // Neu: 06.04.2026
+      {
+        summary: "SMSH Schweizerische Ärztegesellschaft für Hypnose: Anmeldung für den Jahres-Kongress 2026 öffnet am 30. April 2026. Die SMSH bietet laufend Grundausbildungskurse in medizinischer Hypnose an – wachsende wissenschaftliche und ärztliche Anerkennung stärkt die Legitimität von Hypnose-Programmen wie hypnovital.",
+        source: "SMSH",
+        url: "https://smsh.ch/",
+        date: "2026",
+        category: "Hypnose & Coaching",
+        addedAt: "2026-04-06",
+      },
       {
         summary: "BGM Zentralschweiz 2026: Artikel 'Mental Health at Work – When the Law Falls Behind' beleuchtet, warum gesetzliche Rahmenbedingungen mit der Realität psychischer Belastungen am Arbeitsplatz nicht Schritt halten. Betriebliches Gesundheitsmanagement wird zur ethischen und rechtlichen Notwendigkeit.",
         source: "BGM Zentralschweiz",
