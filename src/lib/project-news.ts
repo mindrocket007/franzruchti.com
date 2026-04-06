@@ -616,6 +616,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 06.04.2026
       {
+        summary: "Apex Trader Funding vs. Lucid Trading – Vergleich März 2026: Apex gewinnt bei Evaluationskosten und Track Record (über $660 Mio. ausgezahlt seit 2022), Lucid bei Freiheiten im Funded Account (kein Daily Loss Limit, keine Konsistenzregel nach März 2026). Empfehlung: Apex-Evaluation bestehen, dann Lucid-Account für aggressive Sessions erwägen.",
+        source: "Prop Trading Deals",
+        url: "https://proptradingdeals.com/index.php/2026/03/22/apex-trader-funding-vs-lucid-trading-which-futures-prop-firm-reigns-supreme-in-2026/",
+        date: "22.03.2026",
+        category: "Futures & Trading",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "Prop Firms mit uneingeschränktem News-Trading 2026: Vier Futures-fokussierte Firmen (inkl. Apex Trader Funding) erlauben uneingeschränktes Handeln rund um Wirtschaftsdaten-Veröffentlichungen – für Day-Trader eine zunehmend kritische Unterscheidungsmetrik bei der Firmenwahl.",
+        source: "QuantVPS",
+        url: "https://www.quantvps.com/blog/prop-firms-allow-news-trading",
+        date: "2026",
+        category: "Futures & Trading",
+        addedAt: "2026-04-06",
+      },
+      {
         summary: "MooreTech LLC: KI-gestützte NinjaTrader-Strategien 2026 – von regelbasierten zu adaptiven Systemen, die Muster in Echtzeit erkennen. Praxisleitfaden für AI-powered NinjaScript-Strategien mit Backtesting auf Tick-Level und integriertem Risikomanagement.",
         source: "MooreTech LLC",
         url: "https://www.mooretechllc.com/algorithmic-trading/ai-powered-ninjatrader-strategies-2026/",
@@ -1044,6 +1060,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "hypnovital": {
     news: [
       // Neu: 06.04.2026
+      {
+        summary: "HealthEXPO 2026 – erstmals in der Messe Basel am 30. Mai 2026: Themenwelt Betriebliches Gesundheitsmanagement mit 120+ neuen Produkten und Services aus Medizin, Prävention, BGM und Longevity. Kompakt-Vorträge zu BGM, Burnout-Prävention und Arbeitsplatz der Zukunft für Unternehmen.",
+        source: "HealthExpo / bodymedia.de",
+        url: "https://healthexpo.ch/",
+        date: "30.05.2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "BGM am fmpro Symposium 2026: Betriebliches Gesundheitsmanagement als strategischer Faktor für Facility Management und Unternehmen – praxisorientierte Inputs zu mentaler Gesundheit, Präventionskonzepten und modernen BGM-Ansätzen.",
+        source: "safety-security.ch",
+        url: "https://www.safety-security.ch/bgm-am-fmpro-symposium-2026/",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-06",
+      },
       {
         summary: "hypnovital.net: Nächste Coach-Ausbildung startet am 3. Mai 2026. Hypnovital-Coaches werden in öffentlichen Kursen und in Unternehmen (BGM, Teamentwicklung) eingesetzt – aus Gruppentrainings entstehen direkte Folgeaufträge für Einzelcoachings. Kombination mit bestehender Coaching- oder Therapietätigkeit möglich.",
         source: "hypnovital.net",
@@ -1990,6 +2022,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "bestattungsplaner": {
     news: [
       // Neu: 06.04.2026
+      {
+        summary: "Nau.ch: Schweiz weltweit auf Platz 2 bei der Kremationsrate – 90% aller Verstorbenen werden kremiert (2023), nur Japan liegt höher. Hauptgründe: sinkende Religiosität, organisatorische Einfachheit und Kostenvorteil. Trend: 70% (2000) → 90% (2023).",
+        source: "Nau.ch",
+        url: "https://www.nau.ch/news/schweiz/weltweit-an-spitze-deshalb-werden-90-prozent-der-schweizer-kremiert-66708034",
+        date: "2025",
+        category: "Markt & Trends",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "20 Minuten: Ab 250 kg lieber Erdbestattung – Schweizer Krematorien bereiten sich auf schwerere Verstorbene vor. Trend zu höherem Körpergewicht verändert Branchenstandards und Kapazitätsplanung der Krematorien in der Schweiz.",
+        source: "20 Minuten",
+        url: "https://www.20min.ch/story/bestattung-zu-schwer-fuers-krematorium-ab-250-kilo-lieber-erdbestattung-103457800",
+        date: "2025",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-06",
+      },
       {
         summary: "St. Galler Tagblatt: 'Wer früh bucht, stirbt billiger' – Schweizer Bestattungsinstitut wirbt aktiv um Vorsorge-Kundschaft. Digitale Buchung und transparente Preisgestaltung als neue Branchentrends. Frühzeitige Planung spart laut Anbieter bis zu 30%.",
         source: "St. Galler Tagblatt",
