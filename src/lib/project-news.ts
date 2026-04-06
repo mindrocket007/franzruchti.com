@@ -28,6 +28,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 06.04.2026
       {
+        summary: "ICT Training Award 2026: Bewerbungsphase gestartet – Schweizer ICT-Ausbildungsbetriebe können sich bis 12. Juni 2026 bewerben. Award wird am 19. November 2026 im Rahmen des Digital Economy Award im Zürcher Hallenstadion vergeben, in drei Kategorien nach Betriebsgrösse (1-20, 21-100, 100+ ICT-Mitarbeitende).",
+        source: "ICT-Berufsbildung Schweiz",
+        url: "https://www.ict-berufsbildung.ch/jetzt-bewerben-fuer-den-ict-training-award",
+        date: "April 2026",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "ICT-Berufsbildung Schweiz erhält neue Co-Vizepräsidentin: Eliska Vogt, Head of Junior Talent bei UBS Schweiz, übernimmt das Amt. Sie war seit 2025 im Vorstand und folgt auf Alain Gut, der die Verbandspräsidentschaft übernommen hat.",
+        source: "Netzwoche",
+        url: "https://www.netzwoche.ch/news/2026-03-27/ict-berufsbildung-schweiz-erhaelt-neue-co-vizepraesidentin",
+        date: "27.03.2026",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-06",
+      },
+      {
         summary: "ICT-Berufsbildung Schweiz Jahresbericht 2025: Revision ICT-Fachmann/-frau EFZ erfolgreich abgeschlossen – neue Bildungsverordnung ab 1. Januar 2026 in Kraft. Jahreskonferenz am 9. April 2026 in Zürich zu Lebenskompetenzen Gen Z & Alpha und Berufsbildung als strategischem Erfolgsfaktor.",
         source: "ICT-Berufsbildung Schweiz",
         url: "https://www.ict-berufsbildung.ch/jahresbericht-2025",
