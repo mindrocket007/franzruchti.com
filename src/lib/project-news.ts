@@ -1005,6 +1005,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 06.04.2026
       {
+        summary: "BBGM-Schwerpunkte 2026: Mentale Gesundheit, hybride Arbeitswelten und KI als zentrale Themen des Bundesverbands Betriebliches Gesundheitsmanagement – KI wird als Schlüssel für massgeschneiderte BGM-Strategien gesehen.",
+        source: "BBGM",
+        url: "https://bbgm.de/blog/2026/01/08/gesund-ins-neue-jahr-unsere-bbgm-schwerpunkte-fuer-2026/",
+        date: "08.01.2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-06",
+      },
+      {
         summary: "FIBO Congress 2026: Referat zu Burnout-Prävention und strategischem BGM am 16. April, inkl. Menopause am Arbeitsplatz als neue Dimension der betrieblichen Gesundheitsförderung.",
         source: "FIBO Congress",
         url: "https://www.fibo-congress.com/2026/03/10/bgm-strategisch-nutzen-mitarbeitergesundheit-staerken-und-neue-unternehmenskooperationen-aufbauen/",
@@ -1562,6 +1570,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "learnfluencer": {
     news: [
       // Neu: 06.04.2026
+      {
+        summary: "checkpoint eLearning: '2026 – Was Lernen im Unternehmen jetzt prägt' – KI-gestützte Assistenzsysteme, Learning in the Flow of Work und messbare Lernwirkung als Leitthemen. Unternehmen investieren verstärkt in Performance-Support statt klassische Kurse.",
+        source: "checkpoint eLearning",
+        url: "https://www.checkpoint-elearning.de/corporate-elearning/2026-was-lernen-im-unternehmen-jetzt-praegt",
+        date: "2026",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-06",
+      },
+      {
+        summary: "Cegos Integrata: Die wichtigsten E-Learning-Trends 2026 – KI-Personalisierung, Microlearning und Kompetenzbasierung verdrängen klassische Abschlussorientierung. 82,5% der Unternehmen sehen KI und adaptive Systeme als grössten Hebel der Personalentwicklung.",
+        source: "Cegos Integrata",
+        url: "https://www.cegos-integrata.de/blog/learning-development/digital-learning/die-wichtigsten-e-learning-trends-2026",
+        date: "2026",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-06",
+      },
       {
         summary: "HR Today Schweiz: 'Learnfluencer werden?' – Fachartikel erklärt, wie Learnfluencer intrinsische Lernmotivation stärken, individuelle und kollektive Lernprozesse verknüpfen und Lernkultur mit Eigenverantwortung fördern. Relevanz für Franz Ruchtis Positionierung als Thought Leader.",
         source: "HR Today",
