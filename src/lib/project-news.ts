@@ -1123,6 +1123,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 07.04.2026 (Recherche-Runde 2)
+      {
+        summary: "edana.ch: 'Mental-Health-App 2026 – Anforderungen, Risiken und Erfolgsfaktoren' – Entwicklung einer Mental-Health-App ist kein einfaches Wellness-Tool mehr, sondern ein digitales Gesundheitsprodukt mit hohen Regulierungsanforderungen und Nutzererwartungen. Wachsende Marktreife des Segments für digitale mentale Werkzeuge – relevanter Kontext für mindtools.ch-Positionierung.",
+        source: "edana.ch",
+        url: "https://edana.ch/en/2026/01/25/developing-a-mental-health-application-requirements-risks-and-keys-to-success/",
+        date: "25.01.2026",
+        category: "Mental Health",
+        addedAt: "2026-04-07",
+      },
+      {
+        summary: "gesundheittanken.de: 'Mentale Gesundheit Trends 2026 – Neue Entwicklungen für mehr Wohlbefinden' – Überblick zu wachsenden Trends: KI-gestützte Mental-Health-Tools, präventive Apps, digitale Selbsthilfe und personalisierte Resilienzprogramme. Wachsender Markt für niedrigschwellige digitale Lösungen wie die PDF-Werkzeuge auf mindtools.ch.",
+        source: "gesundheittanken.de",
+        url: "https://gesundheittanken.de/mentale-gesundheit-trends-2026-neue-entwicklungen-fuer-mehr-wohlbefinden/",
+        date: "2026",
+        category: "Mental Health",
+        addedAt: "2026-04-07",
+      },
+      {
+        summary: "Tages-Anzeiger: 'Coaching – Markt für Lebenshilfe boomt' – Schweizer Qualitätszeitung berichtet über den boomenden Coaching- und Selbsthilfemarkt in der Schweiz. Steigende Nachfrage nach professioneller Lebenshilfe und persönlichem Wachstum – bestätigt Marktpotenzial für mentale Werkzeuge und Selbsthilfe-PDFs wie auf mindtools.ch.",
+        source: "Tages-Anzeiger",
+        url: "https://www.tagesanzeiger.ch/coaching-markt-fuer-lebenshilfe-boomt-282357701659",
+        date: "2026",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-04-07",
+      },
       // Neu: 08.04.2026
       {
         summary: "Universität St. Gallen (HSG): Weiterbildungskurs 'KI und Management' – 3-tägiges Intensivprogramm für Führungskräfte an der Schnittstelle von Künstlicher Intelligenz und strategischem Management. Wachsendes Angebot an praxisorientierten KI-Weiterbildungen für Entscheidungsträger in der Schweiz – Marktumfeld für digitale mentale Werkzeuge und Produktivitätstools wie mindtools.ch.",
@@ -1893,6 +1918,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 07.04.2026 (Recherche-Runde 2)
+      {
+        summary: "Philipps-Universität Marburg (CLIMACS-Studie): Klinische Studie zur digitalen App MELONGA – erste CE-zertifizierte digitale Therapieanwendung (DiGA) gegen Ejaculatio praecox. Basiert auf evidenzbasierter Psychoedukation und Verhaltenstherapie, 12-Wochen-Programm. Ziele: Symptomverbesserung, höhere Lebensqualität und verbesserte sexuelle Intimität. Studie läuft seit Oktober 2023 – bestätigt Trend zu digitalen Selbsthilfe-Lösungen bei sexuellen Funktionsstörungen.",
+        source: "Philipps-Universität Marburg",
+        url: "https://www.uni-marburg.de/de/fb20/bereiche/zom/urologie/forschung/versorgungsforschung/climacs",
+        date: "2026",
+        category: "Digital Health",
+        addedAt: "2026-04-07",
+      },
+      {
+        summary: "impotenz-selbsthilfe.org: Vergleich der Behandlungsmethoden bei vorzeitigem Samenerguss – Selbsthilfetechniken (Start-Stopp, Squeeze), Beckenbodentraining, Medikamente und Hypnose. Verhaltenstechniken verlängerten die Zeit bis zum Samenerguss nach 12 Wochen Training von 30 Sekunden auf durchschnittlich 2 Minuten. Wachsendes Angebot an Selbsthilfe-Ressourcen bestätigt Nachfrage für Produkte wie orgasmus-hinauszoegern.de.",
+        source: "impotenz-selbsthilfe.org",
+        url: "https://impotenz-selbsthilfe.org/vorzeitiger-samenerguss-behandlung/",
+        date: "2026",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-07",
+      },
       // Neu: 08.04.2026
       {
         summary: "Seelenpraxis Marx (Düsseldorf): Hypnosetherapie gegen vorzeitigen Samenerguss – kombiniert Verhaltenstherapie, Psychotherapie und Hypnose. Das Unterbewusstsein wird durch Hypnose auf positive sexuelle Reaktionsmuster umgeprogrammiert – Erfolge bereits nach wenigen Sitzungen. Bestätigt die Wirksamkeit des Hypnose-Ansatzes von orgasmus-hinauszoegern.de als Audio-Alternative zur Therapie.",
@@ -2043,6 +2085,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 07.04.2026 (Recherche-Runde 2)
+      {
+        summary: "dr-rabe.de: 'Prüfungsangst und Redeangst mit Hypnosetherapie behandeln' – Hypnose wirkt auf das limbische System und verändert automatische Angstreaktionen nachhaltig. Studienbelegt (Universität Tübingen, Prof. Revenstorf): signifikante Verbesserungen bei Prüfungsangst. Bestätigt wissenschaftliche Grundlage des Hypnose-Audios lampenfieber-besiegen.de.",
+        source: "dr-rabe.de",
+        url: "https://www.dr-rabe.de/behandlungsschwerpunkte/pruefungsangst-redeangst.php",
+        date: "2026",
+        category: "Psychologie & Forschung",
+        addedAt: "2026-04-07",
+      },
+      {
+        summary: "Paolo Giannoni Hypnose (Schweiz/Luzern): 'Hypnose bei Prüfungsangst, Präsentationsangst und Auftrittsangst' – Schweizer Hypnosetherapeut mit spezifischem Angebot für alle Formen der Auftrittssituation. Direkter Schweizer Wettbewerber, der das Marktpotenzial für Hypnose-Produkte gegen Lampenfieber/Prüfungsangst bestätigt.",
+        source: "paolo-giannoni.ch",
+        url: "https://www.paolo-giannoni.ch/pr%C3%BCfungsangst-pr%C3%A4sentationsangst",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-07",
+      },
+      {
+        summary: "Presseportal.de: 'Erfolgreich im Abitur – so kann Hypnose gegen Prüfungsangst von Schülern helfen' – Pressemitteilung eines Hypnosetherapie-Anbieters zu schulischer Prüfungsangst. Wachsende Öffentlichkeitsarbeit im Hypnose-Segment bestätigt Normalisierung von Hypnose als Selbsthilfe-Methode – direktes Marktumfeld für das Audio-Produkt lampenfieber-besiegen.de.",
+        source: "Presseportal.de",
+        url: "https://www.presseportal.de/pm/162306/5233273",
+        date: "2025",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-04-07",
+      },
       // Neu: 08.04.2026
       {
         summary: "Hypnosepraxis Wengert Zürich: Lampenfieber und Bühnenangst mit Hypnose überwinden – Schweizer Anbieter in Zürich mit Fokus auf Musiker, Redner und Führungskräfte. Hypnose adressiert tiefe Ursachen von Auftrittsangst durch Neuprogrammierung des Unterbewusstseins. Weiterer Schweizer Wettbewerber im Hypnose-Lampenfieber-Segment – relevanter Marktüberblick für lampenfieber-besiegen.de.",
@@ -2673,6 +2740,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 07.04.2026 (Recherche-Runde 2)
+      {
+        summary: "Livenet.ch: 'Deutliche Zunahme von Kremation und alternativen Bestattungen' – Kremationen in der Schweiz erreichen 89–93% aller Bestattungen, Tendenz weiter steigend. Naturbestattungen (Wald, See, Berg) und neue Formen wie Kompostbestattung gewinnen an Popularität. Bestätigt strukturellen Wandel im Schweizer Bestattungsmarkt – wachsende Nachfrage nach Beratung zu alternativen Formen auf bestattungsplaner.ch.",
+        source: "Livenet.ch",
+        url: "https://www.livenet.ch/themen/gesellschaft/ethik/ethik/354033-deutliche_zunahme_von_kremation_und_alternativen_bestattungen.html",
+        date: "2026",
+        category: "Markt & Trends",
+        addedAt: "2026-04-07",
+      },
+      {
+        summary: "todesanzeigenschweiz.ch: 'Was kostet eine Beerdigung in der Schweiz?' – Gesamtkosten zwischen CHF 2'000 und über CHF 10'000 je nach Kanton und Bestattungsart. Detaillierter Kostenüberblick zeigt wachsendes Bedürfnis nach Preistransparenz. Bestätigt die Relevanz eines Online-Vergleichs- und Lead-Portals wie bestattungsplaner.ch.",
+        source: "todesanzeigenschweiz.ch",
+        url: "https://todesanzeigenschweiz.ch/blog/kosten-beerdigung-schweiz/",
+        date: "2026",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-07",
+      },
+      {
+        summary: "urnengeschaft.ch: 'Was kostet eine Beerdigung in der Schweiz?' – Kostenübersicht mit regionalem Vergleich: Kremation CHF 350–700, Urne CHF 100–500, Trauerfeier CHF 1'500–3'000. In Zürich übernimmt die Stadt Grundleistungen kostenlos für Einwohner. Preistransparenz als zentrales Kaufentscheidungskriterium – Kernnutzen eines Portals wie bestattungsplaner.ch.",
+        source: "urnengeschaft.ch",
+        url: "https://www.urnengeschaft.ch/blog/post/was-kostet-eine-beerdigung-in-der-schweiz.html",
+        date: "2026",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-07",
+      },
       // Neu: 08.04.2026
       {
         summary: "Watson.ch: Kantonsrat Zürich stimmt für Kompostbestattung – 101 Mitglieder stimmten der Prüfung der Methode zu. Nach der politischen Zustimmung muss der Regierungsrat nun eine Bericht ausarbeiten, bevor der Kantonsrat über ein Pilotprojekt entscheidet. Das Bestattungs- und Friedhofamt Zürich befürwortet die Methode. Kompostbestattung (Reerdigung/Terramation) wandelt Verstorbene in 30–40 Tagen zu Humus um – relevante Erweiterung des Bestattungsangebots für bestattungsplaner.ch-Partner.",
