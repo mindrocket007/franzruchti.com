@@ -2433,6 +2433,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 07.04.2026
       {
+        summary: "DeinAdieu.ch: Bestattungsarten in der Schweiz – 89% aller Verstorbenen werden kremiert. Naturbestattungen (See, Berg, Wald) und individuelle Abschiedsformen gewinnen an Bedeutung. Umfassender Guide zu Erdbestattung, Kremation, Baumbestattung und Seebestattung. Bestätigt den strukturellen Trend zu mehr Planung, Individualität und digitaler Information im Schweizer Bestattungsmarkt.",
+        source: "DeinAdieu.ch",
+        url: "https://www.deinadieu.ch/ratgeber/bestattungsarten/",
+        date: "2026",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-07",
+      },
+      {
+        summary: "Funere.com: Die ultimative 48-Stunden-Checkliste für den Todesfall in der Schweiz – schrittweise Anleitung für Hinterbliebene: Arzt/Behörden kontaktieren, Sterbeurkunde, Bestattungsunternehmen wählen, Versicherungen informieren. Verdeutlicht den hohen Informations- und Planungsbedarf in der Trauerphase – direktes Marktpotenzial für digitale Vorsorge-Plattformen wie bestattungsplaner.ch.",
+        source: "Funere.com",
+        url: "https://www.funere.com/ch-de/blog/todesfall-in-der-familie-die-ultimative-48-stunden-checkliste-fur-die-schweiz",
+        date: "2026",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-04-07",
+      },
+      {
         summary: "Helvetic Care: Vollständiger Guide zu Bestattung in der Schweiz – Ablauf, Kosten und Checkliste. Informationsangebote für Trauernde und Vorsorgeinteressierte etablieren sich als wichtiger digitaler Touchpoint im Schweizer Bestattungsmarkt – direkt relevant für die Positionierung von bestattungsplaner.ch.",
         source: "Helvetic Care",
         url: "https://www.helveticcare.ch/themen/bestattung",
