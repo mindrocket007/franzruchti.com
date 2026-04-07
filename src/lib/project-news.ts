@@ -1159,6 +1159,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 07.04.2026
       {
+        summary: "Nationale BGM-Tagung 2026 am 15. September im Kursaal Bern: Thema 'Gesunde Teams – Wie Zusammenarbeit gelingt'. Gute soziale Beziehungen bei der Arbeit gelten als höchst gesundheitsrelevant. Die Tagung bietet praxisorientierte Impulse für HR-Verantwortliche und BGM-Fachleute – wachsendes Marktpotenzial für BGM-Lösungen wie hypnovital.",
+        source: "BGM-Tagung.ch",
+        url: "https://www.bgm-tagung.ch/de/",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-07",
+      },
+      {
+        summary: "Betriebliche Gesundheitsförderung 2026 als strategischer Erfolgsfaktor: Erfolgreiche BGF-Strategien verbinden Bewegung, Ergonomie, mentale Gesundheit, Schlaf, Ernährung und Regeneration zu einem ganzheitlichen Ansatz. BGM wird laut Umfragen von HR-Verantwortlichen als Top-Priorität gewertet – unterstreicht das Potenzial digitaler BGM-Lösungen wie hypnovital.",
+        source: "Körpermanagement",
+        url: "https://www.koerpermanagement.com/betriebliche-gesundheitsfoerderung-2026/",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-07",
+      },
+      {
+        summary: "BGM 2026: Soziale Bindung und Fitness als zentrale Erfolgsfaktoren – Unternehmen setzen auf Kombination aus sozialer Vernetzung und körperlicher Aktivität für nachhaltige Mitarbeitergesundheit. Mentale Gesundheitsprogramme und Audio-basierte Entspannungsangebote gewinnen als ergänzende BGM-Massnahmen an Bedeutung.",
+        source: "Ad-Hoc-News",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/betriebliches-gesundheitsmanagement-soziale-bindung-und-fitness-als/68492509",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-07",
+      },
+      {
         summary: "AXA Burnout-Prävention Schweiz 2026: Rund 18–25% der Beschäftigten leiden unter emotionaler Erschöpfung oder Burnout, klinische Fälle ca. 4%. Organisationale Strategien (Arbeitslastanpassung, Flexibilisierung) erzielen langfristig stärkere Effekte als individuelle Trainingsansätze – stärkt den Bedarf für professionelles BGM wie hypnovital.",
         source: "AXA.ch",
         url: "https://www.axa.ch/de/unternehmenskunden/angebote/gesundheit-unfall/bgm-wecare/gesundheitspraevention/burnout-praevention.html",
