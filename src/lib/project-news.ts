@@ -26,6 +26,15 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 08.04.2026
+      {
+        summary: "SIZ mySIZ Go-live 9. April 2026: Die neue mySIZ-Plattform ist seit dem 9. April 2026 unter my.siz.ch erreichbar. Wichtige Änderungen: Keine Selbstregistrierung mehr möglich – Prüfungsteilnehmende werden durch ihre Schule registriert. Für Test- und Lernzielkontrollen ist kein separates Passwort mehr nötig, Prüfungsteilnehmende starten direkt aus ihrem Account. Die Auswertung ist sofort einsehbar. Datenmigration basierte auf dem Stand vom 8. April 2026 um 6:00 Uhr.",
+        source: "SIZ Newsflash",
+        url: "https://siz.ch/newsflash-april-2026/",
+        date: "09.04.2026",
+        category: "SIZ AG direkt",
+        addedAt: "2026-04-08",
+      },
       // Neu: 07.04.2026
       {
         summary: "AI Business Specialist mit eidg. Fachausweis (Schweiz 2026): Einstiegsgehalt zwischen CHF 110'000 und 140'000 jährlich – Zertifikat auf NQR-Niveau 6, international einem Bachelor gleichgestellt. Erste Berufsprüfung Herbst 2026; Bund übernimmt bis zu 50% der Kurskosten (max. CHF 9'500). Starke Aufwertung der ICT-Weiterbildungslandschaft inkl. SIZ-Prüfungsorganisation.",
@@ -596,6 +605,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
+      // Neu: 08.04.2026
+      {
+        summary: "LinkedIn: Franz Ruchti als Geschäftsführer von Mind Rocket GmbH (Alpnach OW) bleibt aktiv auf LinkedIn präsent. Das Unternehmensprofil bestätigt die Ausrichtung auf digitale Persönlichkeitsentwicklung, Coaching und E-Learning-Programme. Keine neuen Medienerwähnungen von mindrocket.ch gefunden – Website weiterhin im Aufbau.",
+        source: "LinkedIn",
+        url: "https://www.linkedin.com/in/franzruchti/",
+        date: "April 2026",
+        category: "Mind Rocket direkt",
+        addedAt: "2026-04-08",
+      },
       // Neu: 07.04.2026
       {
         summary: "inhesa.ch analysiert den Schweizer Coaching-Markt 2026: Hybride Formate dominieren, Online-Coaching ist Standard geworden. Wachsende Nachfrage nach AI-gestützten Coaching-Tools und E-Learning-Lösungen. Spezialisierung und Qualitätsfokus nehmen zu – relevanter Marktüberblick für Mind Rocket als Anbieter digitaler Persönlichkeitsentwicklungs-Programme.",
@@ -688,6 +706,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 08.04.2026
+      {
+        summary: "NinjaTrader Prop und Tradovate Prop: NT Technologies (NinjaTrader-Gruppe) lancierte am 1. Oktober 2025 eigene Prop-Trading-Plattformen unter prop.ninjatrader.com. Trader erhalten Advanced Risk Controls, TradingView-Integration, leistungsfähige Charting- und Order-Flow-Tools sowie mobilen Zugang. Partner-Prop-Firmen: Apex Trader Funding, Take Profit Trader, MyFunded Futures, Elite Trader Funding, Purdia Capital und Alpha Futures. Direkter Eintritt von NinjaTrader ins Prop-Firm-Ökosystem.",
+        source: "PR Newswire / NinjaTrader",
+        url: "https://www.prnewswire.com/news-releases/ninjatrader-group-launches-ninjatrader-prop-and-tradovate-prop-302571766.html",
+        date: "01.10.2025",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "S&P 500 Q1 2026 Bilanz: Index verlor im ersten Quartal 4,6% – Nasdaq bereits in Korrekturrgebiet (>10% vom Allzeithoch). Selling-Pressure durch neue US-Zölle (Ø 12–14%), hohe Energiepreise und Kontraktionen im verarbeitenden Gewerbe. Fed zwischen Inflationsbekämpfung und Konjunkturschutz. ES-Futures-Trader sollten defensiveres Risk Management in Betracht ziehen.",
+        source: "Yahoo Finance / The Motley Fool",
+        url: "https://finance.yahoo.com/markets/stocks/articles/p-500-down-4-6-143500128.html",
+        date: "April 2026",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "OneUpTrader S&P 500 (ES) Technische Analyse 1. April 2026: Nach dem Rückgang unter die 200-Tage-Linie verschlechterte sich die Kurstruktur deutlich. ES prallte zwar ab, aber die übergeordnete Struktur (Bruch wichtiger Supports) bleibt bärisch. Relevante Analyse für aktive ES-Futures-Daytrader zur Einschätzung der mittelfristigen Trendrichtung.",
+        source: "OneUpTrader Blog",
+        url: "https://blog.oneuptrader.com/analysis/technical-analysis/sp-500-es-technical-analysis-1-april-2026/",
+        date: "01.04.2026",
+        category: "Futures & Trading",
+        addedAt: "2026-04-08",
+      },
       // Neu: 07.04.2026
       {
         summary: "S&P 500 Futures signalisieren ruhigen Handelsstart am 7. April 2026: Trotz anhaltender Zollunsicherheiten (US-Tarife auf chinesische Waren & europäische Importe) bleibt der Markt stabil. EPS-Wachstumsprognose 2026 bei 12%, Spekulanten net long mit 150'000 Kontrakten. Für ES-Futures-Trader relevant: Earnings-Saison als nächster Katalysator.",
@@ -1064,6 +1107,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 08.04.2026
+      {
+        summary: "Universität St. Gallen (HSG): Weiterbildungskurs 'KI und Management' – 3-tägiges Intensivprogramm für Führungskräfte an der Schnittstelle von Künstlicher Intelligenz und strategischem Management. Wachsendes Angebot an praxisorientierten KI-Weiterbildungen für Entscheidungsträger in der Schweiz – Marktumfeld für digitale mentale Werkzeuge und Produktivitätstools wie mindtools.ch.",
+        source: "Universität St. Gallen (HSG)",
+        url: "https://ki-und-management.iwi.unisg.ch/",
+        date: "2026",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-04-08",
+      },
       // Neu: 07.04.2026
       {
         summary: "prevention.ch: Nationale Tagung 'Digitalisierung und mentale Gesundheit' (22. Januar 2026, Bern) – rund 100 Fachpersonen diskutierten Rolle digitaler Tools bei Prävention und Förderung psychischer Gesundheit. Neue digitale Angebote für verschiedene Zielgruppen vorgestellt. Bestätigt das Marktpotenzial für niedrigschwellige mentale Werkzeuge wie auf mindtools.ch.",
@@ -1247,6 +1299,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 08.04.2026
+      {
+        summary: "OMNI Hypnose Schweiz: Hypnose als effektives Werkzeug zur Stress- und Burnout-Prävention – Praxis berichtet von grossen Erfolgen bei der Kombination von Hypnosetherapie mit Burnout-Prävention am Arbeitsplatz. Hypnose ermöglicht tiefe Entspannung und Neuprogrammierung von Stressmustern. Bestätigt wachsende Akzeptanz von Hypnose als BGM-Massnahme in der Schweiz – direktes Marktumfeld für hypnovital.",
+        source: "OMNI Hypnose Schweiz",
+        url: "https://omnihypnosis.ch/burnout-dauermuedigkeit-erschoepfung-hypnosetherapie/",
+        date: "2026",
+        category: "Hypnose & Coaching",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "Hypnosezentrum Schweiz: Burnout-Prävention durch gezieltes Coaching mit Hypnose – frühe Intervention bevor Burnout entsteht. Kombination von Hypnosetechnik und BGM-Coaching als präventiver Ansatz etabliert sich in der Schweizer Unternehmensberatung. Wachsende Konkurrenz im Schweizer Hypnose-BGM-Markt – relevanter Benchmarking-Kontext für hypnovital.",
+        source: "Hypnosezentrum Schweiz",
+        url: "https://www.hypnosezentrum-schweiz.org/seminar-angebot/zeit-fuer-mich-burnout-praevention-und-prophylaxe/",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-08",
+      },
       // Neu: 07.04.2026
       {
         summary: "JobCloud Webinar 'Mentale Gesundheit am Arbeitsplatz': Schweizer Unternehmen werden zunehmend mit psychischen Belastungen konfrontiert. JobCloud bietet HR-Profis praxisnahe Massnahmen zur Förderung mentaler Gesundheit am Arbeitsplatz – bestätigt wachsende Nachfrage nach BGM-Lösungen wie hypnovital im Schweizer Unternehmensumfeld.",
@@ -1575,6 +1644,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 08.04.2026
+      {
+        summary: "monday.com Blog: '12 Week Year – Das Zeitmanagement-System' – Einflussreiche Produktivitätsplattform erklärt die 12-Week-Year-Methode als effektives System für 3-Monats-Sprints, das sich nahtlos mit OKRs verbindet. Wachsende Sichtbarkeit der Methode in der globalen Produktivitätscommunity – positives Signal für den 12wy-planner als spezialisiertes SaaS-Tool.",
+        source: "monday.com Blog",
+        url: "https://monday.com/blog/productivity/12-week-year-time-management-system/",
+        date: "2026",
+        category: "12 Week Year Methode",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "OMR Reviews: OKR Software Vergleich 2026 – umfassende Marktübersicht der besten OKR-Tools. Wachsender Markt für Zielplanungs-Software, der Quartalsplanung und 12-Week-Year-Ansätze systematisch abdeckt. Zeigt das kompetitive Umfeld für den 12wy-planner mit Differenzierungspotenzial durch Methodenspezifität.",
+        source: "OMR Reviews",
+        url: "https://omr.com/en/reviews/category/okr",
+        date: "2026",
+        category: "SaaS & Tools",
+        addedAt: "2026-04-08",
+      },
       // Neu: 07.04.2026
       {
         summary: "OKRs Tool: 25 beste OKR-Software-Tools 2026 im Vergleich – KI-gestützte Zielplanung und 90-Tage-Quartalsplanung etablieren sich als Standard. Bestätigt das wachsende Marktumfeld für 12-Week-Year-basierte Planungstools wie den 12wy-planner.",
@@ -1767,6 +1853,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 08.04.2026
+      {
+        summary: "Seelenpraxis Marx (Düsseldorf): Hypnosetherapie gegen vorzeitigen Samenerguss – kombiniert Verhaltenstherapie, Psychotherapie und Hypnose. Das Unterbewusstsein wird durch Hypnose auf positive sexuelle Reaktionsmuster umgeprogrammiert – Erfolge bereits nach wenigen Sitzungen. Bestätigt die Wirksamkeit des Hypnose-Ansatzes von orgasmus-hinauszoegern.de als Audio-Alternative zur Therapie.",
+        source: "Seelenpraxis Marx",
+        url: "https://www.seelenpraxis-marx.de/hypnose-behandlung-vorzeitiger-samenerguss/",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "khodamehri.com: 'Jetzt mit Hypnose vorzeitigen Samenerguss verhindern' – Selbsthypnose-Audio-Produkt als kostengünstiger Einstieg in die Hypnosetherapie gegen Ejaculatio praecox. Weiterer Wettbewerber im Audio-Selbsthypnose-Segment neben Kim Fleckenstein. Wachsender Markt für digitale Selbsthilfe-Produkte bei sexuellen Themen.",
+        source: "khodamehri.com",
+        url: "https://khodamehri.com/product/premature-ejaculation-self-hypnosis/",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-08",
+      },
       // Neu: 07.04.2026
       {
         summary: "Marktprognose 2026–2036: Sexual-Wellness-Markt wächst mit 12,7% CAGR auf USD 1,1 Billionen (AccessNewswire/Morningstar). Europa-Markt 2026 bewertet auf USD 4,03 Mrd. – Online-Kanal mit 11,2% p.a. am schnellsten wachsend. Normalisierung im Detailhandel (allgemeine Gesundheits- statt Erwachsenensortimente) senkt Kaufhürde. Direkte Marktchance für Hypnose-Audio-Selbsthilfe-Angebote.",
@@ -1900,6 +2003,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 08.04.2026
+      {
+        summary: "Hypnosepraxis Wengert Zürich: Lampenfieber und Bühnenangst mit Hypnose überwinden – Schweizer Anbieter in Zürich mit Fokus auf Musiker, Redner und Führungskräfte. Hypnose adressiert tiefe Ursachen von Auftrittsangst durch Neuprogrammierung des Unterbewusstseins. Weiterer Schweizer Wettbewerber im Hypnose-Lampenfieber-Segment – relevanter Marktüberblick für lampenfieber-besiegen.de.",
+        source: "Hypnosepraxis Wengert Zürich",
+        url: "https://hypnosepraxiswengert.ch/anwendungen/hypnose-bei-angst/mit-hypnose-lampenfieber-und-buehnenangst-ueberwinden",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "Top Gun Speaking: '20 Wege, Redeangst zu überwinden' – umfassender Ratgeber mit Methoden von Atemtechniken bis Hypnose und systematischer Desensibilisierung. Wachsende Menge an Informationsangeboten zum Thema Redeangst bestätigt anhaltende Nachfrage nach Lösungen – direktes Marktumfeld für das Hypnose-Audio-Produkt lampenfieber-besiegen.de.",
+        source: "Top Gun Speaking",
+        url: "https://topgunspeaking.com/redeangst-ueberwinden-lampenfieber/redeangst/",
+        date: "2026",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-04-08",
+      },
       // Neu: 07.04.2026
       {
         summary: "Haufe Akademie: 'Bye-bye Lampenfieber: Überwinden Sie Ihre Redeangst!' – Praxistipps für Präsentationssituationen, Vortragstechnik und mentale Vorbereitung. Haufe als führende Weiterbildungsplattform im DACH-Raum bestätigt anhaltende Nachfrage nach professionellen Lösungen gegen Redeangst und Auftrittsangst.",
@@ -2065,6 +2185,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 08.04.2026
+      {
+        summary: "HSO Wirtschaftsschule Schweiz: Anmeldeschluss für KI-Professional-Lehrgang am 12. April 2026 – Start Ende April 2026. Der Lehrgang vermittelt KI-Strategie, Prompt Engineering, KI-Ethik und Implementierung. Wachsende institutionelle Nachfrage nach formalen KI-Zertifikaten für Businessprofis in der Schweiz – bestätigt Relevanz der Learnfluencer-Positionierung an der Schnittstelle KI und Weiterbildung.",
+        source: "HSO Wirtschaftsschule Schweiz",
+        url: "https://www.hso.ch/aus-und-weiterbildungen/zertifikat-zum-ki-professional/",
+        date: "April 2026",
+        category: "Weiterbildung Schweiz",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "it-daily.net: 'Learnfluencer werden?' – Artikel erklärt Learnfluencer als Personen, die im betrieblichen Kontext intrinsische Lernmotivation der Mitarbeitenden stärken und eine eigenverantwortliche Lernkultur fördern. Wachsende Medienpräsenz des Begriffs in IT- und HR-Fachpresse – direktes Aufmerksamkeitsfenster für Franz Ruchtis Positionierung als Learnfluencer.",
+        source: "it-daily.net",
+        url: "https://www.it-daily.net/it-management/projekt-personal/learnfluencer-werden",
+        date: "2026",
+        category: "Content & Thought Leadership",
+        addedAt: "2026-04-08",
+      },
       // Neu: 07.04.2026
       {
         summary: "FFHS (Fernfachhochschule Schweiz) CAS Generative KI 2026: Blended-Learning-Lehrgang kombiniert E-Learning mit Präsenzworkshops. Wachsende Nachfrage nach formalen KI-Abschlüssen an Schweizer Fachhochschulen – direktes Marktumfeld für Learnfluencer als Thought-Leadership-Plattform an der Schnittstelle KI & Weiterbildung.",
@@ -2289,6 +2426,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 08.04.2026
+      {
+        summary: "you-media.ch: 'KI im Marketing – so profitieren Schweizer Unternehmen 2026' – GEO (Generative Engine Optimization) als neuer Standard, da Kunden direkte Antworten in KI-Suchsystemen (ChatGPT, Gemini, Perplexity) statt Linklisten erwarten. KI-Tools (ChatGPT, Jasper, Midjourney) für Content-Erstellung; Budgetempfehlung CHF 100–500/Monat. Belegt den strukturellen Wandel im Schweizer Marketing – direktes Marktumfeld für das Marketingkonzept-Tool.",
+        source: "you-media.ch",
+        url: "https://you-media.ch/ki-im-marketing-schweiz/",
+        date: "2026",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "kmu.admin.ch (SECO): KI und Marketing-Automation für KMU – Leitfaden des Bundes für Schweizer KMU zu Einsatz von KI im Marketing. AI automatisiert Routineaufgaben und personalisiert die Kundenkommunikation. Staatliche Anerkennung von KI-Marketing-Tools als strategisches Instrument stärkt Nachfrage nach professionellen Marketingkonzept-Lösungen.",
+        source: "kmu.admin.ch (SECO)",
+        url: "https://www.kmu.admin.ch/kmu/en/home/concrete-know-how/sme-management/marketing/marketing-tools/ai-automation-marketing.html",
+        date: "2026",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-08",
+      },
       // Neu: 07.04.2026
       {
         summary: "Clawria.ai: Top 10 Marketing-Automation-Tools für Schweizer KMU 2026 – Vergleich von HubSpot, Mailchimp, ActiveCampaign, Brevo und Schweizer Alternativen (z.B. Orbitype). Fokus auf DSG-Konformität, TWINT-Integration und Schweizer Kundenservice. Wettbewerbsumfeld für spezialisierte Marketingkonzept-Software, die strategische Analyse (PESTEL, SWOT, BCG) mit Automation verbindet.",
@@ -2463,6 +2617,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 08.04.2026
+      {
+        summary: "Watson.ch: Kantonsrat Zürich stimmt für Kompostbestattung – 101 Mitglieder stimmten der Prüfung der Methode zu. Nach der politischen Zustimmung muss der Regierungsrat nun eine Bericht ausarbeiten, bevor der Kantonsrat über ein Pilotprojekt entscheidet. Das Bestattungs- und Friedhofamt Zürich befürwortet die Methode. Kompostbestattung (Reerdigung/Terramation) wandelt Verstorbene in 30–40 Tagen zu Humus um – relevante Erweiterung des Bestattungsangebots für bestattungsplaner.ch-Partner.",
+        source: "watson.ch",
+        url: "https://www.watson.ch/schweiz/leben/781566080-kantonsrat-zuerich-prueft-kompostierung-als-neue-bestattungsform",
+        date: "2026",
+        category: "Recht & Regelungen",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "Trauerportal Schweiz: Umfassendes Angebot für Bestattungsplanung und -vorsorge in der Schweiz – Informationen zu Bestattungsarten, Kosten, Vorsorge und Trauerhilfe. Zeigt wachsendes Informationsbedürfnis der Bevölkerung zu digitaler Bestattungsplanung und Vorsorge-Lösungen wie bestattungsplaner.ch.",
+        source: "Trauerportal Schweiz",
+        url: "https://www.trauerportal-schweiz.ch/de/angebot/bestattungsplanung--vorsorge.html",
+        date: "2026",
+        category: "Bestattungsplaner direkt",
+        addedAt: "2026-04-08",
+      },
       // Neu: 07.04.2026
       {
         summary: "DeinAdieu.ch: Bestattungsarten in der Schweiz – 89% aller Verstorbenen werden kremiert. Naturbestattungen (See, Berg, Wald) und individuelle Abschiedsformen gewinnen an Bedeutung. Umfassender Guide zu Erdbestattung, Kremation, Baumbestattung und Seebestattung. Bestätigt den strukturellen Trend zu mehr Planung, Individualität und digitaler Information im Schweizer Bestattungsmarkt.",
