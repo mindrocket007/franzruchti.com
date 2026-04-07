@@ -733,6 +733,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
       },
       // Neu: 07.04.2026
       {
+        summary: "NinjaTrader Erfahrungen 2026 (newtrading.de): Deutschsprachiger Praxistest der NinjaTrader-Plattform – Bewertung von Features, Kosten, Prop-Trading-Anbindung und Nutzerfreundlichkeit für deutschsprachige Trader. NinjaTrader wird als leistungsfähige Futures-Plattform mit starker Algo-Trading-Unterstützung bestätigt – relevant für Mind Rocket Trading Strategie- und Plattform-Entwicklung.",
+        source: "newtrading.de",
+        url: "https://newtrading.de/ninjatrader-erfahrungen/",
+        date: "2026",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-07",
+      },
+      {
+        summary: "NinjaTrader Review 2026 (propfirmapp.com): Detaillierter Test für Prop Trader – NinjaTrader-Stärken: kostenloser Zugang, C#-Strategieautomatisierung, Tick-Level-Backtesting, Order-Flow-Analyse. Beliebteste Prop-Firm-Plattform 2026 mit breitem Ökosystem (Apex, MyFunded Futures, Elite Trader Funding u.a.). Bestätigt NinjaTraders Position als #1-Wahl für algorithmic prop trading.",
+        source: "PropFirmApp",
+        url: "https://propfirmapp.com/trading-tools/ninjatrader",
+        date: "2026",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-07",
+      },
+      {
         summary: "S&P 500 Futures signalisieren ruhigen Handelsstart am 7. April 2026: Trotz anhaltender Zollunsicherheiten (US-Tarife auf chinesische Waren & europäische Importe) bleibt der Markt stabil. EPS-Wachstumsprognose 2026 bei 12%, Spekulanten net long mit 150'000 Kontrakten. Für ES-Futures-Trader relevant: Earnings-Saison als nächster Katalysator.",
         source: "Ad-Hoc-News",
         url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/s-and-p-500-futures-signal-steady-open-amid-tariff-uncertainty-and/69060684",
@@ -1318,6 +1334,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
       },
       // Neu: 07.04.2026
       {
+        summary: "BGM 2026 – Strategischer Imperativ (management-forum.de): Betriebliches Gesundheitsmanagement entwickelt sich 2026 vom Nice-to-have zum strategischen Muss. Nachfrage nach Experten für psychische Gesundheit stieg um 20% seit Jahresbeginn. Digitale BGM-Tools, Wearables und KI-gestützte Analysen dominieren neue Programme – direktes Wachstumsumfeld für hypnovital® als digitale BGM-Lösung.",
+        source: "management-forum.de",
+        url: "https://www.management-forum.de/ueber-uns/blog/betriebliches-gesundheitsmanagement-2026-wo-stehen-wir-mit-welchen-hebeln-bringen-wir-unternehmen-nach-vorn/",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-07",
+      },
+      {
+        summary: "BGF Gesundheitsjahr 2026 als Erfolgsmodell (gesundheit-bewegt.com): Jahresplan für betriebliche Gesundheitsförderung – strukturierter BGF-Kalender mit Themen wie Bewegung, Ernährung, Stressreduktion und mentale Gesundheit. Praxis-Leitfaden für BGM-Verantwortliche; unterstreicht Relevanz von Audio-Hypnose-Programmen als skalierbare BGM-Massnahme.",
+        source: "gesundheit-bewegt.com",
+        url: "https://www.gesundheit-bewegt.com/gesundheitsjahr-2026-als-erfolgsmodell-im-bgf-und-bgm/",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-07",
+      },
+      {
         summary: "JobCloud Webinar 'Mentale Gesundheit am Arbeitsplatz': Schweizer Unternehmen werden zunehmend mit psychischen Belastungen konfrontiert. JobCloud bietet HR-Profis praxisnahe Massnahmen zur Förderung mentaler Gesundheit am Arbeitsplatz – bestätigt wachsende Nachfrage nach BGM-Lösungen wie hypnovital im Schweizer Unternehmensumfeld.",
         source: "JobCloud",
         url: "https://www.jobcloud.ch/c/de-ch/webinar-mentale-gesundheit",
@@ -1662,6 +1694,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         addedAt: "2026-04-08",
       },
       // Neu: 07.04.2026
+      {
+        summary: "Creately: 'How to Set OKRs in 2026' – umfassende Anleitung zur OKR-Zielsetzung mit Fokus auf Quartalszyklen und messbaren Key Results. OKRs etablieren sich 2026 als Standard-Rahmenwerk für agile Unternehmensplanung in kurzen Zyklen – bestätigt die strategische Relevanz des 12-Week-Year-Ansatzes als OKR-kompatible Methode.",
+        source: "Creately",
+        url: "https://creately.com/guides/how-to-create-okrs/",
+        date: "2026",
+        category: "Zielsetzung & OKR",
+        addedAt: "2026-04-07",
+      },
       {
         summary: "OKRs Tool: 25 beste OKR-Software-Tools 2026 im Vergleich – KI-gestützte Zielplanung und 90-Tage-Quartalsplanung etablieren sich als Standard. Bestätigt das wachsende Marktumfeld für 12-Week-Year-basierte Planungstools wie den 12wy-planner.",
         source: "OKRs Tool",
@@ -2203,6 +2243,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
         addedAt: "2026-04-08",
       },
       // Neu: 07.04.2026
+      {
+        summary: "Swiss Learning Hub gewinnt eLearning AWARD 2026: Schweizer Unternehmen setzt sich international mit innovativem E-Learning-Konzept durch. Schweizer EdTech-Branche erhält internationale Anerkennung – bestätigt die Qualität und Innovationskraft des Schweizer E-Learning-Markts, in dem Learnfluencer als Thought-Leadership-Plattform positioniert ist.",
+        source: "Swiss Learning Hub",
+        url: "https://www.swisslearninghub.com/en/news/we-won-the-elearning-award-2026/",
+        date: "2026",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-07",
+      },
+      {
+        summary: "eLearning Journal Siegerprojekte 2026: Übersicht der preisgekrönten E-Learning-Projekte 2026 – von KI-gestützten Lernpfaden bis immersiven Simulationen. Zeigt State of the Art im Corporate Learning und EdTech-Markt – direktes Wettbewerbs- und Marktumfeld für Learnfluencer-Inhalte zu Lernkompetenz und KI.",
+        source: "eLearning Journal",
+        url: "https://www.elearning-journal.com/siegerprojekte-2026/",
+        date: "2026",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-07",
+      },
       {
         summary: "FFHS (Fernfachhochschule Schweiz) CAS Generative KI 2026: Blended-Learning-Lehrgang kombiniert E-Learning mit Präsenzworkshops. Wachsende Nachfrage nach formalen KI-Abschlüssen an Schweizer Fachhochschulen – direktes Marktumfeld für Learnfluencer als Thought-Leadership-Plattform an der Schnittstelle KI & Weiterbildung.",
         source: "FFHS",
