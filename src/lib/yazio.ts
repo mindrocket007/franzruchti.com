@@ -193,18 +193,18 @@ export async function resolveProducts(items: YazioConsumedItems) {
   const foods = extractFoodItems(items);
 
   // Products (haben nur product_id, brauchen Details-Abruf)
-  // Nährwerte von getProductDetails sind pro 100g → mit amount skalieren
+  // Nährwerte von getProductDetails sind pro 1g/1ml → mit amount multiplizieren
   for (const item of items.products || []) {
     try {
       const details = await getProductDetails(item.product_id);
-      const factor = (item.amount || 100) / 100;
+      const amount = item.amount || 1;
       foods.push({
         mealType: item.daytime || "snack",
         foodName: details.name || "Produkt",
-        calories: Math.round((details.nutrients["energy.energy"] || 0) * factor),
-        protein: Math.round((details.nutrients["nutrient.protein"] || 0) * factor * 10) / 10,
-        carbs: Math.round((details.nutrients["nutrient.carb"] || 0) * factor * 10) / 10,
-        fat: Math.round((details.nutrients["nutrient.fat"] || 0) * factor * 10) / 10,
+        calories: Math.round((details.nutrients["energy.energy"] || 0) * amount),
+        protein: Math.round((details.nutrients["nutrient.protein"] || 0) * amount * 10) / 10,
+        carbs: Math.round((details.nutrients["nutrient.carb"] || 0) * amount * 10) / 10,
+        fat: Math.round((details.nutrients["nutrient.fat"] || 0) * amount * 10) / 10,
         yazio_id: item.id,
       });
     } catch {
