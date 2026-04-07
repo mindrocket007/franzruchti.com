@@ -37,6 +37,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
       },
       // Neu: 07.04.2026
       {
+        summary: "Professional Bachelor und Professional Master als neue Titelzusaetze fuer die hoehere Berufsbildung Schweiz: Bis 17. April 2026 laeuft die Referendumsfrist. Fachausweis-Absolvierende erhalten Zusatz 'Professional Bachelor', HFP-Absolvierende 'Professional Master'. Inkraftsetzung fruehestens Ende Sommer 2026. Staerkt internationale Sichtbarkeit von Berufsbildungsabschluessen - wachsende Attraktivitaet fuer SIZ-Zertifizierungen im Bildungsmarkt.",
+        source: "SBFI admin.ch",
+        url: "https://www.sbfi.admin.ch/de/massnahmenpaket-zur-staerkung-der-hoeheren-berufsbildung",
+        date: "April 2026",
+        category: "Bildungspolitik",
+        addedAt: "2026-04-07",
+      },
+      {
+        summary: "Bildungsbericht Schweiz 2026 (SBFI, veroeffentlicht 23.03.2026): Umfassende Standortbestimmung des gesamten Bildungssystems. Abschlussquote Sek. II leicht gesunken (91,5% auf 90,1%), 90% der Schueler nutzen generative KI. Berufsbildung waechst +16% Lernende bis 2033 in ICT und Gesundheit/Soziales. Direkte Staerkung der Relevanz von SIZ als anerkannte ICT-Pruefungsorganisation.",
+        source: "SBFI admin.ch",
+        url: "https://www.sbfi.admin.ch/de/newnsb/xxaqE43omx0pByMGNfRVe",
+        date: "23.03.2026",
+        category: "Bildungspolitik",
+        addedAt: "2026-04-07",
+      },
+      {
         summary: "AI Business Specialist mit eidg. Fachausweis (Schweiz 2026): Einstiegsgehalt zwischen CHF 110'000 und 140'000 jährlich – Zertifikat auf NQR-Niveau 6, international einem Bachelor gleichgestellt. Erste Berufsprüfung Herbst 2026; Bund übernimmt bis zu 50% der Kurskosten (max. CHF 9'500). Starke Aufwertung der ICT-Weiterbildungslandschaft inkl. SIZ-Prüfungsorganisation.",
         source: "Nume.ch",
         url: "https://www.nume.ch/ai-business-specialist-neues-eidg-diplom-schweiz-2026/",
@@ -615,6 +631,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         addedAt: "2026-04-08",
       },
       // Neu: 07.04.2026
+      {
+        summary: "Coaching-Trends Schweiz 2026: Hybride und digitale Formate dominieren den Schweizer Coaching-Markt. Wachsende Nachfrage nach wissenschaftlich fundierten Methoden, personalisierten Programmen und AI-gestuetzten Coaching-Tools. Gruppen-Coaching als kosteneffiziente Loesung waechst. Stark steigende Relevanz fuer Mind Rocket GmbH als Anbieter digitaler Persoenlichkeitsentwicklungs-Programme.",
+        source: "katharina-kowalski.com",
+        url: "https://katharina-kowalski.com/die-groessten-coaching-trends-2026-was-wirklich-funktioniert/",
+        date: "2026",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-04-07",
+      },
       {
         summary: "inhesa.ch analysiert den Schweizer Coaching-Markt 2026: Hybride Formate dominieren, Online-Coaching ist Standard geworden. Wachsende Nachfrage nach AI-gestützten Coaching-Tools und E-Learning-Lösungen. Spezialisierung und Qualitätsfokus nehmen zu – relevanter Marktüberblick für Mind Rocket als Anbieter digitaler Persönlichkeitsentwicklungs-Programme.",
         source: "inhesa.ch",
@@ -1358,6 +1382,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         addedAt: "2026-04-08",
       },
       // Neu: 07.04.2026
+      {
+        summary: "BGM Trends 2026 fuer Hypnose und Coaching: In urbanen Zentren der Schweiz wie Zuerich wird Hypnose zunehmend als serioese Therapieform anerkannt. Steigende Integration von Hypnose-Techniken in Unternehmen und BGM-Programme als proaktive Massnahme fuer mentale Gesundheit. Wachsendes Angebot evidenzbasierter Hypnose-Coaches ststaerkt Legitimierung von hypnovital-Ansaetzen.",
+        source: "V-P-T Verband Schweiz",
+        url: "https://v-p-t.ch/die-neuesten-trends-in-der-hypnosetherapie/",
+        date: "2026",
+        category: "Hypnose & Coaching",
+        addedAt: "2026-04-07",
+      },
       {
         summary: "BGM 2026 – Strategischer Imperativ (management-forum.de): Betriebliches Gesundheitsmanagement entwickelt sich 2026 vom Nice-to-have zum strategischen Muss. Nachfrage nach Experten für psychische Gesundheit stieg um 20% seit Jahresbeginn. Digitale BGM-Tools, Wearables und KI-gestützte Analysen dominieren neue Programme – direktes Wachstumsumfeld für hypnovital® als digitale BGM-Lösung.",
         source: "management-forum.de",
