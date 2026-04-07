@@ -26,6 +26,15 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 07.04.2026
+      {
+        summary: "AI Business Specialist mit eidg. Fachausweis (Schweiz 2026): Einstiegsgehalt zwischen CHF 110'000 und 140'000 jährlich – Zertifikat auf NQR-Niveau 6, international einem Bachelor gleichgestellt. Erste Berufsprüfung Herbst 2026; Bund übernimmt bis zu 50% der Kurskosten (max. CHF 9'500). Starke Aufwertung der ICT-Weiterbildungslandschaft inkl. SIZ-Prüfungsorganisation.",
+        source: "Nume.ch",
+        url: "https://www.nume.ch/ai-business-specialist-neues-eidg-diplom-schweiz-2026/",
+        date: "2026",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-07",
+      },
       // Neu: 06.04.2026
       {
         summary: "ICT-Berufsbildung Schweiz: Berufsprüfung Wirtschaftsinformatik 2026 – Prüfungsunterlagen werden am 14. April 2026 an Kandidatinnen und Kandidaten versandt, schriftliche Prüfung findet am 13. Mai 2026 statt. Prüfungsgebiet umfasst IT-Projektmanagement, Business Analysis und systemische IT-Architekturen.",
@@ -654,6 +663,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 07.04.2026
+      {
+        summary: "Apex Trader Funding grosse Regeländerungen per 1. März 2026: Zwei neue Konto-Typen (EOD und Intraday Trailing Drawdown), wöchentliche Auszahlungen automatisch innerhalb 24–48h, 84 gesperrte Länder (kein Zugang/Auszahlungen). Permanente Aussetzung aller Metall-Futures (Gold, Silber, Kupfer, Platin) wegen extremer Marktvolatilität.",
+        source: "Cat In A The Broker",
+        url: "https://www.catinathebroker.com/blog/apextraderfunding2026",
+        date: "März 2026",
+        category: "Futures & Trading",
+        addedAt: "2026-04-07",
+      },
       // Neu: 06.04.2026
       {
         summary: "NinjaTrader expandiert per Januar 2026 nach Europa: Start in Deutschland und den Niederlanden über die MiFID-Investmentfirma Payward Europe Digital Solutions. Weitere EU-Märkte wie Frankreich und Italien sollen noch 2026 folgen. NinjaTrader gehört seit 2025 zu Kraken.",
@@ -1139,6 +1157,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 07.04.2026
+      {
+        summary: "AXA Burnout-Prävention Schweiz 2026: Rund 18–25% der Beschäftigten leiden unter emotionaler Erschöpfung oder Burnout, klinische Fälle ca. 4%. Organisationale Strategien (Arbeitslastanpassung, Flexibilisierung) erzielen langfristig stärkere Effekte als individuelle Trainingsansätze – stärkt den Bedarf für professionelles BGM wie hypnovital.",
+        source: "AXA.ch",
+        url: "https://www.axa.ch/de/unternehmenskunden/angebote/gesundheit-unfall/bgm-wecare/gesundheitspraevention/burnout-praevention.html",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-07",
+      },
+      {
+        summary: "Swiss Life BGM: Impuls-Referat Burnout-Prävention als Online-Seminar für Unternehmenskunden – kombiniert Warnsignale (emotionale Erschöpfung, Zynismus, Leistungsabfall), Präventionsmassnahmen und Stressbewältigungstechniken. Belegt die wachsende Nachfrage von Grossunternehmen nach strukturierten BGM-Lösungen.",
+        source: "Swiss Life",
+        url: "https://www.swisslife.ch/de/unternehmen/unsere-loesungen/betriebliches-gesundheitsmanagement/kurse/online-seminare/burnout-praevention.html",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-07",
+      },
       // Neu: 06.04.2026
       {
         summary: "SMSH Schweizerische Ärztegesellschaft für Hypnose: Anmeldung für den Jahres-Kongress 2026 öffnet am 30. April 2026. Die SMSH bietet laufend Grundausbildungskurse in medizinischer Hypnose an – wachsende wissenschaftliche und ärztliche Anerkennung stärkt die Legitimität von Hypnose-Programmen wie hypnovital.",
