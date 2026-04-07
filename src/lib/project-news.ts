@@ -596,6 +596,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
+      // Neu: 07.04.2026
+      {
+        summary: "inhesa.ch analysiert den Schweizer Coaching-Markt 2026: Hybride Formate dominieren, Online-Coaching ist Standard geworden. Wachsende Nachfrage nach AI-gestützten Coaching-Tools und E-Learning-Lösungen. Spezialisierung und Qualitätsfokus nehmen zu – relevanter Marktüberblick für Mind Rocket als Anbieter digitaler Persönlichkeitsentwicklungs-Programme.",
+        source: "inhesa.ch",
+        url: "https://www.inhesa.ch/coaching-in-der-schweiz-aktuelle-trends-und-entwicklungen/",
+        date: "2026",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-04-07",
+      },
+      {
+        summary: "IPC Akademie 2026: Gruppencoaching wächst als kosteneffiziente Alternative – neue Dynamiken im Coaching-Business. Digitale Gruppen-Formate verbinden Skalierbarkeit mit persönlichem Austausch. Einzelcoaching bleibt wertvoll für intensive Persönlichkeitsentwicklung. Für Mind Rocket relevant als Anbieter von skalierbaren Hypnose- und Coaching-Programmen.",
+        source: "IPC Akademie",
+        url: "https://ipc-akademie.com/blog/coaching-business-2026-einzelcoaching-vs-gruppen",
+        date: "2026",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-04-07",
+      },
       {
         summary: "mindrocket.ch befindet sich im Aufbau. Mind Rocket GmbH (Alpnach OW) entwickelt Programme in drei Bereichen: Hypnovital (Gesundheit/Hypnose), Mind Rocket Trading (Finanzielle Freiheit) und Mindtools (Mentale Stärke). Motto: 'Geistig stark. Finanziell frei. Gesund leben.'",
         source: "mindrocket.ch",
@@ -1851,6 +1868,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 07.04.2026
+      {
+        summary: "Hypnosio 2026: Lampenfieber mit Hypnose behandeln – Selbstbewusstsein stärken, Aufregung in den Griff bekommen. Hypnose löst die zugrunde liegenden Ängste und Selbstwertprobleme auf; bereits 2-3 Sitzungen reichen typischerweise aus. Hypnose-Audio als eleganter Mittelweg zwischen Selbsthilfe und professioneller Therapie – bestätigt die Positionierung von lampenfieber-besiegen.de.",
+        source: "Hypnosio",
+        url: "https://www.hypnosio.de/lampenfieber-mit-hypnose-behandeln-so-bekommen-sie-ihre-aufregung-in-den-griff/",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-07",
+      },
+      {
+        summary: "Jan Mion Hypnose (Schweiz): Hypnosetherapie gegen Auftrittsangst und Lampenfieber – erreicht das Unterbewusstsein und verankert neue Reaktionsmuster für Auftrittsangst-Situationen nachhaltig. Direkter Schweizer Wettbewerber mit identischem Lösungsansatz wie lampenfieber-besiegen.de.",
+        source: "janmion.ch",
+        url: "https://janmion.ch/en/hypnosis/hypnotherapy/anxiety/performance-anxiety/",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-07",
+      },
       // Neu: 06.04.2026
       {
         summary: "Institut für Hypnose: Hypnosetherapie bei Redeangst, Präsentationsangst und Lampenfieber – ermöglicht tiefe Entspannungszustände, in denen positive Suggestionen besonders wirksam verankert werden. Kombiniert mit Visualisierungstechniken für den Auftritt – bestätigt den Ansatz von lampenfieber-besiegen.de.",
