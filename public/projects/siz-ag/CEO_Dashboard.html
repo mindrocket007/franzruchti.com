@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CEO Dashboard — SIZ Prüfungen 2024/25</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #000; color: #fff; font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.5; }
+  .container { max-width: 1400px; margin: 0 auto; padding: 24px 20px 60px; }
+  h1 { font-size: 28px; font-weight: 700; margin-bottom: 4px; }
+  .subtitle { color: #a3a3a3; font-size: 14px; margin-bottom: 32px; }
+  h2 { font-size: 18px; font-weight: 600; margin-bottom: 16px; letter-spacing: 0.5px; }
+  h3 { font-size: 15px; font-weight: 600; margin-bottom: 12px; color: #d4d4d4; }
+
+  /* KPI Cards */
+  .kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 40px; }
+  .kpi-card { background: #171717; border: 1px solid #262626; border-radius: 12px; padding: 20px; }
+  .kpi-label { font-size: 12px; color: #737373; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; margin-bottom: 6px; }
+  .kpi-value { font-size: 28px; font-weight: 700; }
+  .kpi-sub { font-size: 12px; color: #a3a3a3; margin-top: 4px; }
+
+  /* Sections */
+  .section { background: #0a0a0a; border: 1px solid #262626; border-radius: 16px; padding: 28px; margin-bottom: 24px; }
+  .section-header { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; cursor: pointer; user-select: none; }
+  .section-header h2 { margin-bottom: 0; }
+  .section-toggle { color: #737373; font-size: 20px; transition: transform 0.2s; }
+  .section-toggle.collapsed { transform: rotate(-90deg); }
+  .section-desc { color: #a3a3a3; font-size: 13px; margin-bottom: 20px; }
+
+  /* Tables */
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  thead th { text-align: left; padding: 10px 12px; color: #737373; font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px; border-bottom: 1px solid #262626; white-space: nowrap; }
+  tbody td { padding: 10px 12px; border-bottom: 1px solid #1a1a1a; vertical-align: top; }
+  tbody tr:hover { background: #111; }
+  .num { text-align: right; font-variant-numeric: tabular-nums; }
+
+  /* Tags */
+  .tag { display: inline-block; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 6px; white-space: nowrap; }
+  .tag-red { background: #450a0a; color: #fca5a5; }
+  .tag-yellow { background: #422006; color: #fcd34d; }
+  .tag-green { background: #052e16; color: #86efac; }
+  .tag-blue { background: #172554; color: #93c5fd; }
+  .tag-gray { background: #262626; color: #a3a3a3; }
+
+  /* Prio badges */
+  .prio { font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 8px; }
+  .prio-urgent { background: #dc2626; color: #fff; }
+  .prio-high { background: #b91c1c; color: #fff; }
+  .prio-medium { background: #ca8a04; color: #000; }
+
+  /* Progress bars */
+  .bar-bg { background: #262626; border-radius: 4px; height: 8px; overflow: hidden; min-width: 80px; }
+  .bar-fill { height: 100%; border-radius: 4px; transition: width 0.6s ease; }
+  .bar-green { background: linear-gradient(90deg, #22c55e, #4ade80); }
+  .bar-red { background: linear-gradient(90deg, #ef4444, #f87171); }
+  .bar-yellow { background: linear-gradient(90deg, #eab308, #facc15); }
+  .bar-blue { background: linear-gradient(90deg, #3b82f6, #60a5fa); }
+
+  /* Charts */
+  .chart-container { display: flex; gap: 24px; flex-wrap: wrap; margin-bottom: 20px; }
+  .chart-box { flex: 1; min-width: 300px; }
+  .donut-wrap { display: flex; align-items: center; gap: 20px; }
+  .donut-legend { font-size: 13px; }
+  .donut-legend-item { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+  .donut-legend-color { width: 12px; height: 12px; border-radius: 3px; }
+
+  /* Scenario cards */
+  .scenario-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+  .scenario-card { background: #171717; border: 1px solid #262626; border-radius: 12px; padding: 20px; }
+  .scenario-card h4 { font-size: 14px; font-weight: 600; margin-bottom: 8px; }
+  .scenario-card .val { font-size: 24px; font-weight: 700; }
+  .scenario-card .desc { font-size: 12px; color: #a3a3a3; margin-top: 4px; }
+
+  /* Tabs */
+  .tab-bar { display: flex; gap: 4px; margin-bottom: 20px; border-bottom: 1px solid #262626; }
+  .tab-btn { padding: 8px 16px; font-size: 13px; font-weight: 500; color: #737373; background: none; border: none; cursor: pointer; border-bottom: 2px solid transparent; transition: all 0.2s; }
+  .tab-btn:hover { color: #d4d4d4; }
+  .tab-btn.active { color: #fff; border-bottom-color: #fff; }
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+
+  /* Action items */
+  .action-text { font-size: 13px; color: #d4d4d4; line-height: 1.6; }
+  .action-text strong { color: #fff; }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .kpi-grid { grid-template-columns: 1fr 1fr; }
+    table { font-size: 12px; }
+    thead th, tbody td { padding: 8px 6px; }
+    .chart-container { flex-direction: column; }
+  }
+
+  /* Sticky nav */
+  .nav { position: sticky; top: 0; z-index: 50; background: rgba(0,0,0,0.85); backdrop-filter: blur(12px); border-bottom: 1px solid #262626; padding: 10px 20px; margin: -24px -20px 24px; }
+  .nav-inner { max-width: 1400px; margin: 0 auto; display: flex; gap: 4px; overflow-x: auto; }
+  .nav a { font-size: 12px; color: #737373; text-decoration: none; padding: 6px 12px; border-radius: 8px; white-space: nowrap; transition: all 0.15s; }
+  .nav a:hover, .nav a.active { color: #fff; background: #262626; }
+
+  .highlight-row { background: #1a1a0a !important; }
+  .loss-row { background: #1a0a0a !important; }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<!-- Navigation -->
+<div class="nav">
+  <div class="nav-inner">
+    <a href="#kpis">KPIs</a>
+    <a href="#conversion">Conversion</a>
+    <a href="#effizienz">Effizienz</a>
+    <a href="#crosssell">Cross-Selling</a>
+    <a href="#lzc">LZC-Heavy</a>
+    <a href="#empfehlungen">Empfehlungen</a>
+    <a href="#detail0">0-Prüfungen</a>
+    <a href="#top10action">Top 10 Aktion</a>
+    <a href="#potenzial">Potenzial</a>
+    <a href="#top10optim">Top 10 Optimierung</a>
+  </div>
+</div>
+
+<h1>CEO Dashboard — SIZ Prüfungen 2024/25</h1>
+<p class="subtitle">Datenbasierte Analyse aller 77 Partnerschulen. Conversion, Effizienz, Cross-Selling und Handlungsempfehlungen.</p>
+
+<!-- 1. KPIs -->
+<div id="kpis" class="kpi-grid">
+  <div class="kpi-card">
+    <div class="kpi-label">Total Schulen</div>
+    <div class="kpi-value">77</div>
+    <div class="kpi-sub">davon 62 aktiv (&gt;0 Prüfungen)</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Total Prüfungen</div>
+    <div class="kpi-value">7'844</div>
+    <div class="kpi-sub">SU: 851 | AU: 4'884 | PU/SP: 2'109</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Aktive Nutzer</div>
+    <div class="kpi-value">8'481</div>
+    <div class="kpi-sub">Ø 1.08 Prüfungen pro Nutzer</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Testprüfungen</div>
+    <div class="kpi-value">41'033</div>
+    <div class="kpi-sub">Conversion Rate: 19.1%</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">LZC + LZK</div>
+    <div class="kpi-value">56'955</div>
+    <div class="kpi-sub">7.3x mehr als echte Prüfungen</div>
+  </div>
+</div>
+
+<!-- Prüfungsarten Donut -->
+<div class="section">
+  <h2>Prüfungsarten-Verteilung</h2>
+  <div class="donut-wrap">
+    <canvas id="donutChart" width="180" height="180"></canvas>
+    <div class="donut-legend">
+      <div class="donut-legend-item"><div class="donut-legend-color" style="background:#3b82f6"></div> AU (Advanced-User): 4'884 (62.3%)</div>
+      <div class="donut-legend-item"><div class="donut-legend-color" style="background:#8b5cf6"></div> PU/SP (Power-User): 2'109 (26.9%)</div>
+      <div class="donut-legend-item"><div class="donut-legend-color" style="background:#22c55e"></div> SU (Smart-User): 851 (10.8%)</div>
+    </div>
+  </div>
+</div>
+
+<!-- 2. Conversion-Analyse -->
+<div id="conversion" class="section">
+  <div class="section-header" onclick="toggleSection(this)">
+    <span class="section-toggle">▼</span>
+    <h2>1. Conversion-Analyse: Testprüfungen → echte Prüfungen</h2>
+  </div>
+  <p class="section-desc">Wie viele Testprüfungen führen tatsächlich zu einer echten SIZ-Prüfung?</p>
+
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="showTab(this, 'conv-best')">Top 5 Best Practice</button>
+    <button class="tab-btn" onclick="showTab(this, 'conv-worst')">Worst 5 Handlungsbedarf</button>
+  </div>
+
+  <div id="conv-best" class="tab-content active">
+    <table>
+      <thead><tr><th>Schule</th><th class="num">Prüfungen</th><th class="num">Tests</th><th class="num">Conv. Rate</th><th>Visualisierung</th></tr></thead>
+      <tbody>
+        <tr><td>GSSTMO — Gemeindeschule St. Moritz</td><td class="num">33</td><td class="num">40</td><td class="num"><span class="tag tag-green">82.5%</span></td><td><div class="bar-bg"><div class="bar-fill bar-green" style="width:82.5%"></div></div></td></tr>
+        <tr><td>BZLIMM — BZ Limmattal</td><td class="num">36</td><td class="num">48</td><td class="num"><span class="tag tag-green">75.0%</span></td><td><div class="bar-bg"><div class="bar-fill bar-green" style="width:75%"></div></div></td></tr>
+        <tr><td>SWSWIN — SWS Wirtschaft & Sprachen</td><td class="num">650</td><td class="num">1'037</td><td class="num"><span class="tag tag-green">62.7%</span></td><td><div class="bar-bg"><div class="bar-fill bar-green" style="width:62.7%"></div></div></td></tr>
+        <tr><td>IBWCHU — ibW Höhere Fachschule Südostschweiz</td><td class="num">313</td><td class="num">541</td><td class="num"><span class="tag tag-green">57.9%</span></td><td><div class="bar-bg"><div class="bar-fill bar-green" style="width:57.9%"></div></div></td></tr>
+        <tr><td>HKVAAR — HKV Aarau</td><td class="num">501</td><td class="num">1'627</td><td class="num"><span class="tag tag-green">30.8%</span></td><td><div class="bar-bg"><div class="bar-fill bar-green" style="width:30.8%"></div></div></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="conv-worst" class="tab-content">
+    <table>
+      <thead><tr><th>Schule</th><th class="num">Prüf.</th><th class="num">Tests</th><th class="num">Conv.</th><th>Kommentar</th></tr></thead>
+      <tbody>
+        <tr class="loss-row"><td>BWWWEI — BZ Weinfelden</td><td class="num">28</td><td class="num">3'658</td><td class="num"><span class="tag tag-red">0.8%</span></td><td class="action-text">Prüfungsarten vorhanden, Conversion-Problem!</td></tr>
+        <tr class="loss-row"><td>ACAENG — Academia Engiadina</td><td class="num">19</td><td class="num">635</td><td class="num"><span class="tag tag-red">3.0%</span></td><td class="action-text">Kleines Volumen, AU geplant</td></tr>
+        <tr class="loss-row"><td>KSFRAU — KS Frauenfeld</td><td class="num">0</td><td class="num">468</td><td class="num"><span class="tag tag-red">0.0%</span></td><td class="action-text">Lehrer hört auf, Rektorin will beenden — drohender Verlust!</td></tr>
+        <tr class="loss-row"><td>TCBODE — SBW Talent-Campus</td><td class="num">0</td><td class="num">346</td><td class="num"><span class="tag tag-red">0.0%</span></td><td class="action-text">Privat, zu teuer, wollte kündigen, neues Angebot</td></tr>
+        <tr class="loss-row"><td>KBSCHW — KB Schwyz</td><td class="num">0</td><td class="num">180</td><td class="num"><span class="tag tag-red">0.0%</span></td><td class="action-text">Im Aufbau, AU geplant</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- 3. Nutzer-Effizienz -->
+<div id="effizienz" class="section">
+  <div class="section-header" onclick="toggleSection(this)">
+    <span class="section-toggle">▼</span>
+    <h2>2. Nutzer-Effizienz: Prüfungen pro aktivem Nutzer</h2>
+  </div>
+  <p class="section-desc">Welche Schulen holen das Maximum aus ihren Nutzern heraus?</p>
+
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="showTab(this, 'eff-top')">Top 5 Effizienteste</button>
+    <button class="tab-btn" onclick="showTab(this, 'eff-lost')">Grösste verlorene Chancen</button>
+  </div>
+
+  <div id="eff-top" class="tab-content active">
+    <table>
+      <thead><tr><th>Schule</th><th class="num">Prüfungen</th><th class="num">Nutzer</th><th class="num">Prüf./Nutzer</th><th>Visualisierung</th></tr></thead>
+      <tbody>
+        <tr><td>BWZRAP — BWZ Rapperswil-Jona</td><td class="num">125</td><td class="num">28</td><td class="num"><span class="tag tag-green">4.46</span></td><td><div class="bar-bg"><div class="bar-fill bar-green" style="width:89%"></div></div></td></tr>
+        <tr><td>BWZROR — BWZ Rorschach-Rheintal</td><td class="num">78</td><td class="num">18</td><td class="num"><span class="tag tag-green">4.33</span></td><td><div class="bar-bg"><div class="bar-fill bar-green" style="width:87%"></div></div></td></tr>
+        <tr><td>WSTHUN — Wirtschaftsschule Thun</td><td class="num">107</td><td class="num">27</td><td class="num"><span class="tag tag-green">3.96</span></td><td><div class="bar-bg"><div class="bar-fill bar-green" style="width:79%"></div></div></td></tr>
+        <tr><td>BBZFRE — BBZ Freiamt</td><td class="num">141</td><td class="num">37</td><td class="num"><span class="tag tag-green">3.81</span></td><td><div class="bar-bg"><div class="bar-fill bar-green" style="width:76%"></div></div></td></tr>
+        <tr><td>FWMZLU — FMZ Luzern</td><td class="num">184</td><td class="num">49</td><td class="num"><span class="tag tag-green">3.76</span></td><td><div class="bar-bg"><div class="bar-fill bar-green" style="width:75%"></div></div></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="eff-lost" class="tab-content">
+    <table>
+      <thead><tr><th>Schule</th><th class="num">Nutzer</th><th class="num">LZC+LZK</th><th>Status</th><th>Kommentar</th></tr></thead>
+      <tbody>
+        <tr class="highlight-row"><td>KVZURI — KV Zürich</td><td class="num">343</td><td class="num">1'254</td><td><span class="tag tag-blue">Neukunde</span></td><td class="action-text">Neu — viele Schüler AU, opt. PU. Pipeline füllt sich!</td></tr>
+        <tr><td>KBSCHW — KB Schwyz</td><td class="num">168</td><td class="num">1'100</td><td><span class="tag tag-yellow">Aufbau</span></td><td class="action-text">Im Aufbau, AU geplant</td></tr>
+        <tr><td>BBZOLT — BBZ Olten</td><td class="num">152</td><td class="num">488</td><td><span class="tag tag-yellow">Aufbau</span></td><td class="action-text">Grosses Potenzial! AU geplant</td></tr>
+        <tr><td>BFSNID — BFS Nidwalden</td><td class="num">117</td><td class="num">521</td><td><span class="tag tag-yellow">Aufbau</span></td><td class="action-text">Starkes Potenzial! SU+PU geplant</td></tr>
+        <tr class="loss-row"><td>KSFRAU — KS Frauenfeld</td><td class="num">79</td><td class="num">1'167</td><td><span class="tag tag-red">Verlust!</span></td><td class="action-text">468 Tests, 0 Prüfungen! Lehrer hört auf, Rektorin will beenden</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- 4. Cross-Selling-Potenzial -->
+<div id="crosssell" class="section">
+  <div class="section-header" onclick="toggleSection(this)">
+    <span class="section-toggle">▼</span>
+    <h2>3. Cross-Selling-Potenzial: Welche Prüfungsarten fehlen?</h2>
+  </div>
+  <p class="section-desc">SIZ bietet 3 Prüfungstypen: SU (Smart-User), AU (Advanced-User), PU/SP (Power-User/Professional). Wo fehlen Typen?</p>
+
+  <div class="chart-container">
+    <div class="chart-box">
+      <canvas id="crossSellChart" width="400" height="220"></canvas>
+    </div>
+    <div class="chart-box">
+      <h3>Grösste Cross-Selling-Chancen</h3>
+      <table>
+        <thead><tr><th>Schule</th><th>Prüf.</th><th>Hat</th><th>Fehlt</th></tr></thead>
+        <tbody>
+          <tr><td>KVBLRE</td><td class="num">580</td><td><span class="tag tag-blue">AU</span></td><td><span class="tag tag-yellow">SU + PU/SP</span></td></tr>
+          <tr><td>KSBUEL</td><td class="num">418</td><td><span class="tag tag-blue">AU</span></td><td><span class="tag tag-yellow">SU + PU/SP</span></td></tr>
+          <tr><td>KSHOTT</td><td class="num">357</td><td><span class="tag tag-blue">AU</span></td><td><span class="tag tag-yellow">SU + PU/SP</span></td></tr>
+          <tr><td>WMSBAS</td><td class="num">266</td><td><span class="tag tag-blue">AU</span></td><td><span class="tag tag-yellow">SU + PU/SP</span></td></tr>
+          <tr><td>KVBSZU</td><td class="num">216</td><td><span class="tag tag-blue">PU</span></td><td><span class="tag tag-yellow">SU + AU</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap:12px; margin-top:16px;">
+    <div class="kpi-card">
+      <div class="kpi-label">Nur AU</div>
+      <div class="kpi-value" style="font-size:22px;">25 <span style="font-size:14px; color:#a3a3a3">Schulen</span></div>
+      <div class="kpi-sub">3'300 Prüfungen → SU + PU/SP verkaufen</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Nur PU/SP</div>
+      <div class="kpi-value" style="font-size:22px;">15 <span style="font-size:14px; color:#a3a3a3">Schulen</span></div>
+      <div class="kpi-sub">920 Prüfungen → AU verkaufen</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Nur SU</div>
+      <div class="kpi-value" style="font-size:22px;">4 <span style="font-size:14px; color:#a3a3a3">Schulen</span></div>
+      <div class="kpi-sub">62 Prüfungen → AU + PU/SP verkaufen</div>
+    </div>
+    <div class="kpi-card" style="border-color:#166534;">
+      <div class="kpi-label">Multi (2+ Arten)</div>
+      <div class="kpi-value" style="font-size:22px; color:#4ade80;">18 <span style="font-size:14px; color:#86efac">Schulen</span></div>
+      <div class="kpi-sub">3'562 Prüfungen — breit aufgestellt</div>
+    </div>
+  </div>
+</div>
+
+<!-- 5. LZC-Heavy Schulen -->
+<div id="lzc" class="section">
+  <div class="section-header" onclick="toggleSection(this)">
+    <span class="section-toggle">▼</span>
+    <h2>4. LZC-Heavy Schulen: Viel Üben, wenig Prüfen</h2>
+  </div>
+  <p class="section-desc">Schulen mit vielen Lernzielkontrollen aber wenig echten Prüfungen — üben viel, prüfen wenig.</p>
+
+  <table>
+    <thead><tr><th>Schule</th><th class="num">LZC+LZK</th><th class="num">Prüfungen</th><th class="num">Nutzer</th><th>LZC/Prüf. Ratio</th><th>Diagnose</th></tr></thead>
+    <tbody>
+      <tr class="loss-row">
+        <td>BWWWEI — BZ Weinfelden</td><td class="num">4'679</td><td class="num">28</td><td class="num">448</td>
+        <td><div class="bar-bg" style="min-width:120px"><div class="bar-fill bar-red" style="width:100%"></div></div><span style="font-size:11px;color:#fca5a5;">167x</span></td>
+        <td class="action-text">448 Nutzer, 4'679 LZC aber nur 28 Prüfungen!</td>
+      </tr>
+      <tr class="loss-row">
+        <td>BWZWIU — BWZ Wil-Uzwil</td><td class="num">3'207</td><td class="num">5</td><td class="num">254</td>
+        <td><div class="bar-bg" style="min-width:120px"><div class="bar-fill bar-red" style="width:97%"></div></div><span style="font-size:11px;color:#fca5a5;">641x</span></td>
+        <td class="action-text">254 Nutzer, 3'207 LZC aber nur 5 Prüfungen!</td>
+      </tr>
+      <tr class="loss-row">
+        <td>KVZURI — KV Zürich</td><td class="num">1'254</td><td class="num">0</td><td class="num">343</td>
+        <td><div class="bar-bg" style="min-width:120px"><div class="bar-fill bar-red" style="width:27%"></div></div><span style="font-size:11px;color:#fca5a5;">∞</span></td>
+        <td class="action-text">Grösste KV-Schule CH, 0 Prüfungen! (Neukunde)</td>
+      </tr>
+      <tr>
+        <td>KSFRAU — KS Frauenfeld</td><td class="num">1'167</td><td class="num">0</td><td class="num">79</td>
+        <td><div class="bar-bg" style="min-width:120px"><div class="bar-fill bar-yellow" style="width:25%"></div></div><span style="font-size:11px;color:#fcd34d;">∞</span></td>
+        <td class="action-text">468 Tests, 1'167 LZC — 0 echte Prüfungen</td>
+      </tr>
+      <tr>
+        <td>KBSCHW — KB Schwyz</td><td class="num">1'100</td><td class="num">0</td><td class="num">168</td>
+        <td><div class="bar-bg" style="min-width:120px"><div class="bar-fill bar-yellow" style="width:24%"></div></div><span style="font-size:11px;color:#fcd34d;">∞</span></td>
+        <td class="action-text">180 Tests, 1'100 LZC — 0 echte Prüfungen</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- 6. Zusammenfassung & Empfehlungen -->
+<div id="empfehlungen" class="section" style="border-color:#1e3a5f;">
+  <div class="section-header" onclick="toggleSection(this)">
+    <span class="section-toggle">▼</span>
+    <h2>5. Handlungsempfehlungen</h2>
+  </div>
+
+  <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:16px;">
+
+    <!-- SOFORT -->
+    <div style="background:#171717; border:1px solid #991b1b; border-radius:12px; padding:20px;">
+      <h3 style="color:#fca5a5;">SOFORT (Quick Wins)</h3>
+      <ol style="font-size:13px; color:#d4d4d4; padding-left:18px; line-height:1.8;">
+        <li><strong>KVZURI kontaktieren:</strong> 343 Nutzer, 1'254 LZC, 0 Prüfungen — grösste KV-Schule der Schweiz ohne SIZ-Zertifikat!</li>
+        <li><strong>BWWWEI klären:</strong> 448 Nutzer, 3'658 Tests, 4'679 LZC aber nur 28 Prüfungen — warum prüft niemand?</li>
+        <li><strong>KSFRAU + KBSCHW nachfassen:</strong> Beide mit &gt;100 Nutzern, &gt;1'000 LZC, Tests vorhanden — aber 0 echte Prüfungen</li>
+      </ol>
+    </div>
+
+    <!-- MITTELFRISTIG -->
+    <div style="background:#171717; border:1px solid #854d0e; border-radius:12px; padding:20px;">
+      <h3 style="color:#fcd34d;">MITTELFRISTIG (Wachstum)</h3>
+      <ol start="4" style="font-size:13px; color:#d4d4d4; padding-left:18px; line-height:1.8;">
+        <li><strong>Cross-Selling bei Top-AU-Schulen:</strong> KVBLRE (580), KSBUEL (418), KSHOTT (357) nutzen nur AU → PU/SP-Module anbieten</li>
+        <li><strong>Best Practice teilen:</strong> SWSWIN (62.7% Conversion) und BWZRAP (4.5 Prüf/Nutzer) dokumentieren</li>
+        <li><strong>Westschweiz/Tessin-Expansion:</strong> Nur 3 Schulen — grosse Marktlücke</li>
+      </ol>
+    </div>
+
+    <!-- STRATEGISCH -->
+    <div style="background:#171717; border:1px solid #166534; border-radius:12px; padding:20px;">
+      <h3 style="color:#86efac;">STRATEGISCH (Portfolio)</h3>
+      <ol start="7" style="font-size:13px; color:#d4d4d4; padding-left:18px; line-height:1.8;">
+        <li><strong>15 Schulen mit 0 Prüfungen + 0 Tests:</strong> Exit oder Reaktivierungskampagne?</li>
+        <li><strong>Konzentrationsrisiko:</strong> Top 5 = 33% aller Prüfungen — Diversifikation anstreben</li>
+        <li><strong>LZC-zu-Prüfung Pipeline:</strong> 56'955 LZC vs. 7'844 Prüfungen = 7.3x Gap schliessen</li>
+      </ol>
+    </div>
+
+  </div>
+</div>
+
+<!-- 7. Detail 0-Prüfungen -->
+<div id="detail0" class="section">
+  <div class="section-header" onclick="toggleSection(this)">
+    <span class="section-toggle">▼</span>
+    <h2>6. Detailanalyse: Schulen mit 0 Prüfungen</h2>
+  </div>
+  <p class="section-desc">15 Schulen mit 0 Prüfungen — Pipeline-Blocker, Lernplattform-Nutzer und Karteileichen.</p>
+
+  <h3 style="color:#fca5a5;">Pipeline-Blocker</h3>
+  <table>
+    <thead><tr><th>Schule</th><th class="num">Nutzer</th><th class="num">Tests</th><th class="num">LZC</th><th class="num">Prüf.</th><th>Analyse</th></tr></thead>
+    <tbody>
+      <tr class="loss-row"><td>KSFRAU — KS Frauenfeld</td><td class="num">79</td><td class="num">468</td><td class="num">1'167</td><td class="num">0</td><td class="action-text">VERLUST! Rektorin will beenden, Lehrer hört 25/26 auf.</td></tr>
+      <tr><td>TCBODE — SBW Talent-Campus</td><td class="num">34</td><td class="num">346</td><td class="num">39</td><td class="num">0</td><td class="action-text">Preis war Problem — neues Angebot unterbreitet. Abwarten.</td></tr>
+      <tr><td>KBSCHW — KB Schwyz</td><td class="num">168</td><td class="num">180</td><td class="num">1'100</td><td class="num">0</td><td class="action-text">Im Aufbau — AU geplant. Potenzial vorhanden.</td></tr>
+      <tr class="highlight-row"><td>KVZURI — KV Zürich</td><td class="num">343</td><td class="num">69</td><td class="num">1'254</td><td class="num">0</td><td class="action-text">Neukunde! Pipeline füllt sich gerade erst.</td></tr>
+    </tbody>
+  </table>
+  <div style="background:#171717; border-radius:8px; padding:12px 16px; margin:12px 0 24px; font-size:13px; color:#a3a3a3;">
+    Subtotal: 624 Nutzer, 1'063 Tests, 3'560 LZC, 0 Prüfungen → Nur KBSCHW + KVZURI = echtes Potenzial (~100 Prüf.). KSFRAU droht Verlust!
+  </div>
+
+  <h3 style="color:#fcd34d;">Lernplattform-Nutzer</h3>
+  <table>
+    <thead><tr><th>Schule</th><th class="num">Nutzer</th><th class="num">Tests</th><th class="num">LZC</th><th class="num">Prüf.</th><th>Analyse</th></tr></thead>
+    <tbody>
+      <tr><td>BBZLUZ — BBZ Luzern</td><td class="num">64</td><td class="num">0</td><td class="num">569</td><td class="num">0</td><td class="action-text">SU geplant, noch nicht umgesetzt</td></tr>
+      <tr><td>BENSTG — Bénédict St. Gallen</td><td class="num">12</td><td class="num">0</td><td class="num">533</td><td class="num">0</td><td class="action-text">Nur Verlagspartner — kein Potenzial!</td></tr>
+      <tr class="highlight-row"><td>BFSNID — BFS Nidwalden</td><td class="num">117</td><td class="num">0</td><td class="num">521</td><td class="num">0</td><td class="action-text">Starkes Potenzial! 117 Nutzer, SU+PU geplant</td></tr>
+      <tr class="highlight-row"><td>BBZOLT — BBZ Olten</td><td class="num">152</td><td class="num">0</td><td class="num">488</td><td class="num">0</td><td class="action-text">Grosses Potenzial! 152 Nutzer, AU geplant</td></tr>
+      <tr><td>KBLACH — KB Lachen</td><td class="num">74</td><td class="num">0</td><td class="num">241</td><td class="num">0</td><td class="action-text">AU im 3. Lehrjahr geplant</td></tr>
+    </tbody>
+  </table>
+  <div style="background:#171717; border-radius:8px; padding:12px 16px; margin:12px 0 24px; font-size:13px; color:#a3a3a3;">
+    Echtes Potenzial: BBZOLT (152) + BFSNID (117) = 269 Nutzer mit geplanten Prüfungen
+  </div>
+
+  <h3 style="color:#737373;">Karteileichen</h3>
+  <table>
+    <thead><tr><th>Schule</th><th class="num">Nutzer</th><th class="num">LZC</th><th>Status</th></tr></thead>
+    <tbody>
+      <tr><td>BWDBER — bwd Bern</td><td class="num">3</td><td class="num">28</td><td class="action-text">Praktisch inaktiv — Vertrag prüfen</td></tr>
+      <tr><td>KAZAAR — kaz. Aarau</td><td class="num">2</td><td class="num">5</td><td class="action-text">Praktisch inaktiv — Vertrag prüfen</td></tr>
+      <tr><td>GSEBKA — Schule Ebnat-Kappel</td><td class="num">2</td><td class="num">7</td><td class="action-text">Praktisch inaktiv — Vertrag prüfen</td></tr>
+    </tbody>
+  </table>
+
+  <div style="background:#0f1729; border:1px solid #1e3a5f; border-radius:12px; padding:16px 20px; margin-top:20px;">
+    <h3 style="color:#93c5fd; margin-bottom:8px;">Korrigiertes Fazit</h3>
+    <ul style="font-size:13px; color:#d4d4d4; padding-left:18px; line-height:1.8;">
+      <li>KSFRAU ist KEIN Potenzial sondern ein <strong style="color:#fca5a5;">drohender Verlust</strong> — Rektorin will beenden!</li>
+      <li>KVZURI ist <strong style="color:#93c5fd;">Neukunde</strong> — Pipeline füllt sich gerade erst, Prüfungen kommen.</li>
+      <li>TCBODE hatte Preis-Problem — neues Angebot läuft. KBSCHW ist im Aufbau für AU.</li>
+      <li>Realistisches Potenzial: <strong>KBSCHW + KVZURI = ~100 zusätzliche Prüfungen (+1.3%)</strong>. KSFRAU aktiv sichern!</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 8. Top 10 Handlungsbedarf -->
+<div id="top10action" class="section" style="border-color:#991b1b;">
+  <div class="section-header" onclick="toggleSection(this)">
+    <span class="section-toggle">▼</span>
+    <h2>7. Top 10 Handlungsbedarf — Wo dein Einsatz am meisten bewirkt</h2>
+  </div>
+  <p class="section-desc">Scoring-Modell basierend auf Conversion-Gap, Nutzer-Potenzial, Kommentar-Signale und Risikofaktoren.</p>
+
+  <table>
+    <thead><tr><th>Prio</th><th>Schule</th><th class="num">Prüf.</th><th class="num">Nutzer</th><th class="num">Tests</th><th>Aktion</th></tr></thead>
+    <tbody>
+      <tr class="loss-row">
+        <td><span class="prio prio-urgent">DRINGEND</span></td>
+        <td>KVZURI — KV Zürich</td><td class="num">0</td><td class="num">343</td><td class="num">69</td>
+        <td class="action-text">Onboarding begleiten, erste Prüfungen planen! 343 Nutzer warten.</td>
+      </tr>
+      <tr class="loss-row">
+        <td><span class="prio prio-urgent">DRINGEND</span></td>
+        <td>KSFRAU — KS Frauenfeld</td><td class="num">0</td><td class="num">79</td><td class="num">468</td>
+        <td class="action-text">RETENTION! Sofort Gespräch mit Rektorin — sonst Verlust!</td>
+      </tr>
+      <tr class="loss-row">
+        <td><span class="prio prio-urgent">DRINGEND</span></td>
+        <td>KBSCHW — KB Schwyz</td><td class="num">0</td><td class="num">168</td><td class="num">180</td>
+        <td class="action-text">Prüfungs-Onboarding starten! 168 Nutzer + 180 Tests = bereit.</td>
+      </tr>
+      <tr>
+        <td><span class="prio prio-high">HOCH</span></td>
+        <td>BWWWEI — BZ Weinfelden</td><td class="num">28</td><td class="num">448</td><td class="num">3'658</td>
+        <td class="action-text">3'658 Tests aber nur 28 Prüf! Conversion-Blocker finden.</td>
+      </tr>
+      <tr>
+        <td><span class="prio prio-high">HOCH</span></td>
+        <td>BWZWIU — BWZ Wil-Uzwil</td><td class="num">5</td><td class="num">254</td><td class="num">96</td>
+        <td class="action-text">254 Nutzer, 3'207 LZC aber nur 5 Prüf! AU-Upselling.</td>
+      </tr>
+      <tr>
+        <td><span class="prio prio-high">HOCH</span></td>
+        <td>TCBODE — SBW Talent-Campus</td><td class="num">0</td><td class="num">34</td><td class="num">346</td>
+        <td class="action-text">Neues Preisangebot nachfassen — 346 Tests zeigen Interesse!</td>
+      </tr>
+      <tr>
+        <td><span class="prio prio-medium">MITTEL</span></td>
+        <td>BFSNID — BFS Nidwalden</td><td class="num">0</td><td class="num">117</td><td class="num">0</td>
+        <td class="action-text">Tests + Prüfungen anbieten! SU+PU geplant, 117 Nutzer.</td>
+      </tr>
+      <tr>
+        <td><span class="prio prio-medium">MITTEL</span></td>
+        <td>KSBADE — KS Baden</td><td class="num">64</td><td class="num">199</td><td class="num">915</td>
+        <td class="action-text">915 Tests → 64 Prüf (7%) — Conversion steigern.</td>
+      </tr>
+      <tr>
+        <td><span class="prio prio-medium">MITTEL</span></td>
+        <td>WKSBER — WKS Bern</td><td class="num">65</td><td class="num">708</td><td class="num">353</td>
+        <td class="action-text">708 Nutzer aber nur 65 Prüf! Cross-Selling AU+PU.</td>
+      </tr>
+      <tr>
+        <td><span class="prio prio-medium">MITTEL</span></td>
+        <td>BBZOLT — BBZ Olten</td><td class="num">0</td><td class="num">152</td><td class="num">0</td>
+        <td class="action-text">AU-Prüfungen anbieten! 152 Nutzer, AU geplant.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div style="background:#171717; border-radius:12px; padding:16px 20px; margin-top:20px; font-size:13px; color:#d4d4d4; line-height:1.7;">
+    <strong style="color:#fff;">Zusammenfassung:</strong><br>
+    <span style="color:#fca5a5;">3x DRINGEND:</span> KVZURI (Neukunde onboarden), KSFRAU (Retention!), KBSCHW (Prüfungs-Onboarding)<br>
+    <span style="color:#f87171;">3x HOCH:</span> BWWWEI (Conversion-Blocker), BWZWIU (AU-Upselling), TCBODE (Preis nachfassen)<br>
+    <span style="color:#fcd34d;">4x MITTEL:</span> BFSNID + BBZOLT (Tests+Prüfungen starten), KSBADE + WKSBER (Conversion steigern)<br>
+    <strong style="color:#4ade80;">→ Geschätztes Potenzial: +300–500 Prüfungen (+4–6%)</strong>
+  </div>
+</div>
+
+<!-- 9. Potenzialschätzung -->
+<div id="potenzial" class="section">
+  <div class="section-header" onclick="toggleSection(this)">
+    <span class="section-toggle">▼</span>
+    <h2>8. Potenzialschätzung mit öffentlichen Schülerzahlen</h2>
+  </div>
+  <p class="section-desc">Recherchierte Schülerzahlen zeigen das wahre Grössenverhältnis und ungenutztes Potenzial.</p>
+
+  <table>
+    <thead><tr><th>Schule</th><th class="num">Lernende</th><th class="num">SIZ-Nutzer</th><th class="num">Penetration</th><th class="num">SIZ-Prüf.</th><th class="num">Potenzial</th><th>Begründung</th></tr></thead>
+    <tbody>
+      <tr class="highlight-row"><td>KVZURI — KV Zürich</td><td class="num">3'800</td><td class="num">343</td><td class="num"><span class="tag tag-red">9%</span></td><td class="num">0</td><td class="num" style="color:#4ade80;">+150–400</td><td class="action-text">Grösste KV CH! Neukunde.</td></tr>
+      <tr class="highlight-row"><td>WKSBER — WKS Bern</td><td class="num">4'500</td><td class="num">708</td><td class="num"><span class="tag tag-red">16%</span></td><td class="num">65</td><td class="num" style="color:#4ade80;">+50–200</td><td class="action-text">Zweitgrösste KV CH! Nur 65 Prüf.</td></tr>
+      <tr><td>BWWWEI — BZ Weinfelden</td><td class="num">3'000+</td><td class="num">448</td><td class="num"><span class="tag tag-red">15%</span></td><td class="num">28</td><td class="num" style="color:#4ade80;">+100–300</td><td class="action-text">3'658 Tests → 28 Prüf! 0.8% Conv.</td></tr>
+      <tr><td>BWZWIU — BWZ Wil-Uzwil</td><td class="num">2'500</td><td class="num">254</td><td class="num"><span class="tag tag-red">10%</span></td><td class="num">5</td><td class="num" style="color:#4ade80;">+30–100</td><td class="action-text">3 Standorte, 3'207 LZC.</td></tr>
+      <tr><td>KBSCHW — KB Schwyz</td><td class="num">400</td><td class="num">168</td><td class="num"><span class="tag tag-green">42%</span></td><td class="num">0</td><td class="num" style="color:#4ade80;">+50–120</td><td class="action-text">Höchste Penetration! AU fehlt.</td></tr>
+      <tr class="loss-row"><td>KSFRAU — KS Frauenfeld</td><td class="num">900</td><td class="num">79</td><td class="num"><span class="tag tag-red">9%</span></td><td class="num">0</td><td class="num" style="color:#fca5a5;">-79</td><td class="action-text">HMS eingestellt, Rektorin will beenden.</td></tr>
+      <tr><td>BFSNID / KSBADE / TCBODE / BBZOLT</td><td class="num">—</td><td class="num">502</td><td class="num">—</td><td class="num">64</td><td class="num" style="color:#4ade80;">+120–270</td><td class="action-text">SU/PU/AU geplant, diverse Grössen</td></tr>
+    </tbody>
+  </table>
+
+  <h3 style="margin-top:28px;">Szenarien</h3>
+  <div class="scenario-grid">
+    <div class="scenario-card">
+      <h4 style="color:#a3a3a3;">Konservativ</h4>
+      <div class="val" style="color:#fcd34d;">+500</div>
+      <div class="desc">+6.4% Wachstum</div>
+      <div class="desc" style="margin-top:4px;">Nur KVZURI + KBSCHW + BFSNID liefern Prüfungen</div>
+    </div>
+    <div class="scenario-card" style="border-color:#166534;">
+      <h4 style="color:#4ade80;">Realistisch</h4>
+      <div class="val" style="color:#4ade80;">~+800</div>
+      <div class="desc">~+10% Wachstum</div>
+      <div class="desc" style="margin-top:4px;">KVZURI + WKSBER + BWWWEI-Conversion verdoppelt + KBSCHW</div>
+    </div>
+    <div class="scenario-card">
+      <h4 style="color:#93c5fd;">Optimistisch</h4>
+      <div class="val" style="color:#93c5fd;">+1'390</div>
+      <div class="desc">+17.7% Wachstum</div>
+      <div class="desc" style="margin-top:4px;">Alle 10 Schulen voll aktiviert, Conversion auf Durchschnitt</div>
+    </div>
+    <div class="scenario-card" style="border-color:#991b1b;">
+      <h4 style="color:#fca5a5;">Risiko</h4>
+      <div class="val" style="color:#fca5a5;">-79</div>
+      <div class="desc">-1% Verlust</div>
+      <div class="desc" style="margin-top:4px;">KSFRAU geht verloren (Rektorin will beenden)</div>
+    </div>
+  </div>
+
+  <!-- CEO Empfehlung -->
+  <div style="background:#0f1729; border:1px solid #1e3a5f; border-radius:12px; padding:20px; margin-top:24px;">
+    <h3 style="color:#93c5fd; margin-bottom:12px;">Empfehlung für CEO</h3>
+    <ol style="font-size:13px; color:#d4d4d4; padding-left:18px; line-height:2;">
+      <li><strong>KVZURI + WKSBER sofort besuchen</strong> — die zwei grössten KV-Schulen der CH mit zusammen 8'300 Lernenden und kaum SIZ-Prüfungen!</li>
+      <li><strong>BWWWEI Conversion-Blocker identifizieren</strong> — 3'658 Tests → nur 28 Prüfungen ist der krasseste Fall im ganzen Portfolio.</li>
+      <li><strong>KSFRAU Retention-Gespräch führen</strong> — noch in 2025, bevor der Lehrer aufhört. Alternative Ansprechpartner suchen.</li>
+      <li><strong>KBSCHW AU-Prüfungs-Onboarding</strong> — 42% Penetration, aber 0 Prüfungen. Der letzte Schritt fehlt.</li>
+    </ol>
+    <div style="margin-top:12px; padding:12px; background:#172554; border-radius:8px; font-size:14px; font-weight:600; color:#93c5fd;">
+      → Realistisches Ziel: +800 Prüfungen (+10%) bei gezielter Bearbeitung dieser Top 10 Schulen.
+    </div>
+  </div>
+</div>
+
+<!-- 10. Top 10 Optimierung -->
+<div id="top10optim" class="section">
+  <div class="section-header" onclick="toggleSection(this)">
+    <span class="section-toggle">▼</span>
+    <h2>9. Optimierungs-Potenzial: Top 10 Schulen — Besuchsempfehlungen</h2>
+  </div>
+  <p class="section-desc">Top 10 Schulen nach Prüfungen: Cross-Selling-Lücken, Conversion-Gaps und konkrete Besuchsempfehlungen.</p>
+
+  <table>
+    <thead><tr><th>#</th><th>Schule</th><th class="num">Prüf.</th><th class="num">Conv%</th><th>Typen</th><th>Potenzial</th><th>Aktion</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>1</td><td>SWSWIN — SWS Wirtschaft</td><td class="num">650</td><td class="num"><span class="tag tag-green">62.7%</span></td>
+        <td><span class="tag tag-yellow">2/3</span></td><td class="action-text">Fehlt: AU</td><td class="action-text">AU als Basisprüfung vorschlagen</td>
+      </tr>
+      <tr>
+        <td>2</td><td>KVBLRE — kvBL WMS Reinach</td><td class="num">580</td><td class="num"><span class="tag tag-yellow">25.3%</span></td>
+        <td><span class="tag tag-red">1/3</span></td><td class="action-text">Nur AU — SU + PU/SP fehlen!</td><td class="action-text">SU + PU als Ergänzung anbieten</td>
+      </tr>
+      <tr>
+        <td>3</td><td>HKVAAR — HKV Aarau</td><td class="num">501</td><td class="num"><span class="tag tag-yellow">30.8%</span></td>
+        <td><span class="tag tag-yellow">2/3</span></td><td class="action-text">Fehlt: SU</td><td class="action-text">SU als Einstiegsprüfung</td>
+      </tr>
+      <tr>
+        <td>4</td><td>KSBUEL — KS Büelrain</td><td class="num">418</td><td class="num"><span class="tag tag-yellow">20.6%</span></td>
+        <td><span class="tag tag-red">1/3</span></td><td class="action-text">Nur AU — SU + PU/SP fehlen</td><td class="action-text">PU/SP als Vertiefung nach AU</td>
+      </tr>
+      <tr>
+        <td>5</td><td>KSHOTT — KS Hottingen</td><td class="num">357</td><td class="num"><span class="tag tag-yellow">25.4%</span></td>
+        <td><span class="tag tag-red">1/3</span></td><td class="action-text">Nur AU — 11'693 LZC!</td><td class="action-text">Höchste LZC-Nutzung! PU/SP ergänzen</td>
+      </tr>
+      <tr>
+        <td>6</td><td>BVSSTG — BVS St. Gallen</td><td class="num">341</td><td class="num"><span class="tag tag-yellow">18.1%</span></td>
+        <td><span class="tag tag-yellow">2/3</span></td><td class="action-text">Fehlt: AU</td><td class="action-text">AU als Basisprüfung einführen</td>
+      </tr>
+      <tr style="background:#052e16;">
+        <td>7</td><td>IBWCHU — ibW Südostschweiz</td><td class="num">313</td><td class="num"><span class="tag tag-green">57.9%</span></td>
+        <td><span class="tag tag-green">3/3</span></td><td class="action-text">Best Practice!</td><td class="action-text">Vorzeige-Schule — als Referenz nutzen</td>
+      </tr>
+      <tr>
+        <td>8</td><td>KVBLLI — kvBL KBS Liestal</td><td class="num">267</td><td class="num"><span class="tag tag-yellow">20.5%</span></td>
+        <td><span class="tag tag-yellow">2/3</span></td><td class="action-text">Fehlt: SU</td><td class="action-text">SU einführen + Nutzer aktivieren</td>
+      </tr>
+      <tr class="loss-row">
+        <td>9</td><td>WMSBAS — WMS Basel</td><td class="num">266</td><td class="num"><span class="tag tag-red">7.7%</span></td>
+        <td><span class="tag tag-red">1/3</span></td><td class="action-text">7.7% Conv! +483 möglich!</td><td class="action-text">Conversion-Blocker finden!</td>
+      </tr>
+      <tr class="loss-row">
+        <td>10</td><td>BWZBUS — BWZ Buchs</td><td class="num">240</td><td class="num"><span class="tag tag-red">9.2%</span></td>
+        <td><span class="tag tag-green">3/3</span></td><td class="action-text">9.2% Conv! +322 möglich!</td><td class="action-text">Grösster Hebel! 396 Nutzer</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Quick Wins Fazit -->
+  <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap:16px; margin-top:20px;">
+    <div class="kpi-card" style="border-color:#991b1b;">
+      <div class="kpi-label">Quick Wins</div>
+      <div class="kpi-value" style="font-size:22px; color:#fca5a5;">+805</div>
+      <div class="kpi-sub">WMSBAS (+483) + BWZBUS (+322) bei Durchschnitts-Conversion</div>
+    </div>
+    <div class="kpi-card" style="border-color:#854d0e;">
+      <div class="kpi-label">Cross-Selling</div>
+      <div class="kpi-value" style="font-size:22px; color:#fcd34d;">5 von 10</div>
+      <div class="kpi-sub">Top-Schulen nutzen nur 1 von 3 Prüfungstypen</div>
+    </div>
+    <div class="kpi-card" style="border-color:#166534;">
+      <div class="kpi-label">Gesamtpotenzial Top 10</div>
+      <div class="kpi-value" style="font-size:22px; color:#4ade80;">+905 (+11.5%)</div>
+      <div class="kpi-sub">Bei Durchschnitts-Conversion 21.6%</div>
+    </div>
+  </div>
+
+  <!-- Berechnungsgrundlage -->
+  <details style="margin-top:20px;">
+    <summary style="cursor:pointer; color:#737373; font-size:13px; font-weight:600;">Berechnungsgrundlage anzeigen</summary>
+    <div style="margin-top:12px; background:#171717; border-radius:12px; padding:20px; font-size:13px; color:#d4d4d4; line-height:1.7;">
+      <p><strong style="color:#fff;">21.6% Durchschnitts-Conversion</strong> = 3'933 Prüfungen / 18'194 Testprüfungen der Top 10 Schulen</p>
+      <table style="margin:16px 0;">
+        <thead><tr><th>Schule</th><th class="num">Ist-Conv%</th><th class="num">Tests</th><th class="num">Ist-Prüf.</th><th class="num">Bei 21.6%</th><th class="num">Differenz</th></tr></thead>
+        <tbody>
+          <tr><td>WMSBAS — WMS Basel</td><td class="num">7.7%</td><td class="num">3'465</td><td class="num">266</td><td class="num">749</td><td class="num" style="color:#4ade80;">+483</td></tr>
+          <tr><td>BWZBUS — BWZ Buchs</td><td class="num">9.2%</td><td class="num">2'602</td><td class="num">240</td><td class="num">562</td><td class="num" style="color:#4ade80;">+322</td></tr>
+          <tr><td>Übrige 8 Schulen</td><td class="num">20–63%</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num" style="color:#4ade80;">~100</td></tr>
+          <tr style="border-top:1px solid #404040;"><td><strong>TOTAL</strong></td><td></td><td></td><td></td><td></td><td class="num" style="color:#4ade80; font-weight:700;">+905</td></tr>
+        </tbody>
+      </table>
+      <p style="color:#a3a3a3; margin-top:12px;">
+        <strong>Realitäts-Check:</strong> +905 ist theoretisches Maximum. Realistischere Szenarien:<br>
+        • Von 8% auf 15% Conversion = ca. +450 Prüfungen (+5.7%)<br>
+        • Von 8% auf 12% Conversion = ca. +250 Prüfungen (+3.2%)<br>
+        → <strong style="color:#fff;">Realistisches Ziel: +250–500 zusätzliche Prüfungen (+3–6%)</strong>
+      </p>
+    </div>
+  </details>
+</div>
+
+</div><!-- /container -->
+
+<script>
+// Donut Chart
+function drawDonut() {
+  const canvas = document.getElementById('donutChart');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const cx = 90, cy = 90, r = 70, w = 20;
+  const data = [
+    { val: 4884, color: '#3b82f6' },
+    { val: 2109, color: '#8b5cf6' },
+    { val: 851,  color: '#22c55e' }
+  ];
+  const total = data.reduce((s, d) => s + d.val, 0);
+  let start = -Math.PI / 2;
+  data.forEach(d => {
+    const angle = (d.val / total) * Math.PI * 2;
+    ctx.beginPath();
+    ctx.arc(cx, cy, r, start, start + angle);
+    ctx.arc(cx, cy, r - w, start + angle, start, true);
+    ctx.closePath();
+    ctx.fillStyle = d.color;
+    ctx.fill();
+    start += angle;
+  });
+  // Center text
+  ctx.fillStyle = '#fff';
+  ctx.font = 'bold 20px Geist, sans-serif';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText('7\'844', cx, cy - 6);
+  ctx.font = '11px Geist, sans-serif';
+  ctx.fillStyle = '#a3a3a3';
+  ctx.fillText('Prüfungen', cx, cy + 12);
+}
+
+// Cross-sell bar chart
+function drawCrossSell() {
+  const canvas = document.getElementById('crossSellChart');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const data = [
+    { label: 'Nur AU', val: 25, color: '#3b82f6' },
+    { label: 'Multi (2+)', val: 18, color: '#22c55e' },
+    { label: 'Nur PU/SP', val: 15, color: '#8b5cf6' },
+    { label: 'Nur SU', val: 4, color: '#eab308' }
+  ];
+  const maxVal = 25;
+  const barH = 32, gap = 14, left = 100, top = 20;
+  const w = canvas.width - left - 40;
+
+  ctx.font = '12px Geist, sans-serif';
+  data.forEach((d, i) => {
+    const y = top + i * (barH + gap);
+    // Label
+    ctx.fillStyle = '#a3a3a3';
+    ctx.textAlign = 'right';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(d.label, left - 10, y + barH / 2);
+    // Bar
+    const bw = (d.val / maxVal) * w;
+    ctx.fillStyle = d.color;
+    ctx.beginPath();
+    ctx.roundRect(left, y, bw, barH, 6);
+    ctx.fill();
+    // Value
+    ctx.fillStyle = '#fff';
+    ctx.textAlign = 'left';
+    ctx.font = 'bold 13px Geist, sans-serif';
+    ctx.fillText(d.val + ' Schulen', left + bw + 8, y + barH / 2);
+    ctx.font = '12px Geist, sans-serif';
+  });
+}
+
+// Section toggle
+function toggleSection(header) {
+  const toggle = header.querySelector('.section-toggle');
+  const section = header.parentElement;
+  const content = Array.from(section.children).filter(c => c !== header);
+  const collapsed = !toggle.classList.contains('collapsed');
+  toggle.classList.toggle('collapsed', collapsed);
+  content.forEach(c => c.style.display = collapsed ? 'none' : '');
+}
+
+// Tab switching
+function showTab(btn, id) {
+  const bar = btn.parentElement;
+  const section = bar.parentElement;
+  bar.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  section.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+
+// Sticky nav highlight
+function initNav() {
+  const links = document.querySelectorAll('.nav a');
+  const sections = Array.from(links).map(l => document.querySelector(l.getAttribute('href'))).filter(Boolean);
+
+  function update() {
+    let current = '';
+    sections.forEach(s => {
+      if (s.getBoundingClientRect().top <= 80) current = s.id;
+    });
+    links.forEach(l => {
+      l.classList.toggle('active', l.getAttribute('href') === '#' + current);
+    });
+  }
+  window.addEventListener('scroll', update);
+  update();
+}
+
+// Init
+drawDonut();
+drawCrossSell();
+initNav();
+</script>
+
+</body>
+</html>

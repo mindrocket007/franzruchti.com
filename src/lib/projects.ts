@@ -49,6 +49,31 @@ export const projects: Project[] = [
         file: "https://planner.learnfluencer.ch",
         external: true,
       },
+      {
+        slug: "ceo-agent",
+        title: "CEO Agentensystem",
+        file: "/projects/siz-ag/CEO_Agent_Hub.html",
+      },
+      {
+        slug: "ceo-100tage",
+        title: "CEO 100-Tage-Plan",
+        file: "/projects/siz-ag/CEO_Agent_100Tage.html",
+      },
+      {
+        slug: "ceo-challenge",
+        title: "CEO Challenge Chatbot",
+        file: "/projects/siz-ag/CEO_Challenge_Chatbot.html",
+      },
+      {
+        slug: "ceo-briefing",
+        title: "CEO Briefing",
+        file: "/projects/siz-ag/CEO_Briefing.html",
+      },
+      {
+        slug: "ceo-dashboard",
+        title: "CEO Dashboard",
+        file: "/projects/siz-ag/CEO_Dashboard.html",
+      },
     ],
   },
   {
