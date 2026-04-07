@@ -690,6 +690,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 07.04.2026
       {
+        summary: "S&P 500 Futures signalisieren ruhigen Handelsstart am 7. April 2026: Trotz anhaltender Zollunsicherheiten (US-Tarife auf chinesische Waren & europäische Importe) bleibt der Markt stabil. EPS-Wachstumsprognose 2026 bei 12%, Spekulanten net long mit 150'000 Kontrakten. Für ES-Futures-Trader relevant: Earnings-Saison als nächster Katalysator.",
+        source: "Ad-Hoc-News",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/s-and-p-500-futures-signal-steady-open-amid-tariff-uncertainty-and/69060684",
+        date: "07.04.2026",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-07",
+      },
+      {
         summary: "PropFirmMatch 2026: Übersicht aller Futures Prop Firms, die NinjaTrader als Handelsplattform einsetzen – direkter Vergleich von Apex Trader Funding, TopStep, My Funded Futures u.a. Nützliche Ressource für NinjaTrader-basierte Prop Trader bei der Wahl der richtigen Firma.",
         source: "PropFirmMatch",
         url: "https://propfirmmatch.com/futures/prop-firm-lists/brokers/ninjatrader",
@@ -2058,6 +2066,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "learnfluencer": {
     news: [
       // Neu: 07.04.2026
+      {
+        summary: "FFHS (Fernfachhochschule Schweiz) CAS Generative KI 2026: Blended-Learning-Lehrgang kombiniert E-Learning mit Präsenzworkshops. Wachsende Nachfrage nach formalen KI-Abschlüssen an Schweizer Fachhochschulen – direktes Marktumfeld für Learnfluencer als Thought-Leadership-Plattform an der Schnittstelle KI & Weiterbildung.",
+        source: "FFHS",
+        url: "https://www.ffhs.ch/en/degree-programmes/continuing-education/cas-generative-kuenstliche-intelligenz",
+        date: "2026",
+        category: "Weiterbildung Schweiz",
+        addedAt: "2026-04-07",
+      },
+      {
+        summary: "HSO Wirtschaftsschule Schweiz: Zertifikat KI-Professional (Business) – praxisorientierter Lehrgang mit Modulen zu KI-Strategie, Prompt Engineering, KI-Ethik und Implementierung in Unternehmen. Viermal jährlich startend, berufsbegleitend. Wachsendes Angebot an formalen KI-Zertifikaten für Businessprofis in der Schweiz.",
+        source: "HSO Wirtschaftsschule Schweiz",
+        url: "https://www.hso.ch/aus-und-weiterbildungen/zertifikat-zum-ki-professional/",
+        date: "2026",
+        category: "Weiterbildung Schweiz",
+        addedAt: "2026-04-07",
+      },
+      {
+        summary: "HSLU (Hochschule Luzern): Online-Einführungskurs Künstliche Intelligenz 2026 – SAS eLearning für Grundlagenvermittlung zu KI-Konzepten, ML und Data Science. Niedrigschwelliger Einstieg für Berufstätige; belegt wachsende institutionelle Nachfrage nach KI-Grundbildung in der Schweiz.",
+        source: "Hochschule Luzern",
+        url: "https://www.hslu.ch/de-ch/informatik/weiterbildung/applied-data-intelligence/sas-einfuehrung-in-ki/",
+        date: "2026",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-07",
+      },
       {
         summary: "Lecturio: Die 3 wichtigsten eLearning-Trends 2026 für Unternehmen – KI-basiertes adaptives Lernen, Microlearning-Formate und Skills-basiertes Lernen dominieren den Corporate-Learning-Markt. Direkt relevantes Marktumfeld für Franz Ruchtis Learnfluencer-Positionierung an der Schnittstelle von Bildung und Technologie.",
         source: "Lecturio",
