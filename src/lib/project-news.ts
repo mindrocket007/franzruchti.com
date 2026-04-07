@@ -35,6 +35,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
         category: "SIZ AG direkt",
         addedAt: "2026-04-08",
       },
+      // Neu: 07.04.2026 (Recherche-Runde 3)
+      {
+        summary: "SIW: Neue ICT-Fachkräftestudie – Bedarfsprognose Schweiz: 88'500 zusätzliche ICT-Fachkräfte werden benötigt. Selbst bei maximaler Ausbildungskapazität deckt die Schweiz nur 54% des Bedarfs. Anwendungsentwickler (+13'500, +46%) und ICT-Systemtechniker (+6'800, +49%) am stärksten nachgefragt. Bestätigt strukturelle Nachfrage nach ICT-Zertifizierungen – wachsende Relevanz von SIZ als Prüfungsorganisation.",
+        source: "SIW Schweizer Institut für Weiterbildung",
+        url: "https://siw.swiss/neue-ict-fachkraeftestudie/",
+        date: "2026",
+        category: "Arbeitsmarkt & IT",
+        addedAt: "2026-04-07",
+      },
+      {
+        summary: "Capiwell: 'Swiss IT Labour Market 2026 – Specialised Skills, Slower Growth and New Openings for Start-ups' – Verlangsamtes Wachstum im IT-Markt, aber weiterhin struktureller Fachkräftemangel. Spezialisierte Skills in KI, Cloud und Cybersecurity besonders gesucht. Neue Chancen für Nischenanbieter und zertifizierte Fachkräfte. Direktes Marktumfeld für SIZ-Zertifizierungen in einem sich wandelnden Schweizer IT-Arbeitsmarkt.",
+        source: "Capiwell.ch",
+        url: "https://capiwell.ch/en/swiss-it-labour-market-2026-specialised-skills-slower-growth-and-new-openings-for-start-ups/",
+        date: "2026",
+        category: "Arbeitsmarkt & IT",
+        addedAt: "2026-04-07",
+      },
       // Neu: 07.04.2026
       {
         summary: "Professional Bachelor und Professional Master als neue Titelzusaetze fuer die hoehere Berufsbildung Schweiz: Bis 17. April 2026 laeuft die Referendumsfrist. Fachausweis-Absolvierende erhalten Zusatz 'Professional Bachelor', HFP-Absolvierende 'Professional Master'. Inkraftsetzung fruehestens Ende Sommer 2026. Staerkt internationale Sichtbarkeit von Berufsbildungsabschluessen - wachsende Attraktivitaet fuer SIZ-Zertifizierungen im Bildungsmarkt.",
@@ -1421,6 +1438,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
         category: "BGM & Gesundheit",
         addedAt: "2026-04-08",
       },
+      // Neu: 07.04.2026 (Recherche-Runde 3)
+      {
+        summary: "EU-OSHA Kampagne 'Together for mental health at work' 2026–2028: Die Europäische Agentur für Sicherheit und Gesundheitsschutz am Arbeitsplatz startet im Oktober 2026 eine dreijährige Kampagne zur psychischen Gesundheit am Arbeitsplatz. Fokus auf Prävention psychosozialer Risiken, Sensibilisierung der Unternehmen und Stärkung praktischer BGM-Massnahmen. Wachsende institutionelle Unterstützung für BGM-Lösungen wie hypnovital auf europäischer Ebene.",
+        source: "Eurogip.fr / EU-OSHA",
+        url: "https://eurogip.fr/en/2026-2028-the-healthy-workplaces-campaign-will-focus-on-mental-health-at-work/",
+        date: "Oktober 2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-07",
+      },
+      {
+        summary: "ad-hoc-news.de: 'Betriebliches Gesundheitsmanagement wird 2026 zur Pflicht' – BGM ist kein optionales Benefit mehr: Druck durch Fachkräftemangel, neue Regulierungen und gesellschaftlichen Wandel macht systematisches Gesundheitsmanagement zur strategischen Pflichtinvestition für Unternehmen. Steigende Anforderungen schaffen wachsende Nachfrage nach skalierbaren BGM-Lösungen wie hypnovital.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/betriebliches-gesundheitsmanagement-wird-2026-zur-pflicht/68539608",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-07",
+      },
       // Neu: 07.04.2026
       {
         summary: "BGM Trends 2026 fuer Hypnose und Coaching: In urbanen Zentren der Schweiz wie Zuerich wird Hypnose zunehmend als serioese Therapieform anerkannt. Steigende Integration von Hypnose-Techniken in Unternehmen und BGM-Programme als proaktive Massnahme fuer mentale Gesundheit. Wachsendes Angebot evidenzbasierter Hypnose-Coaches ststaerkt Legitimierung von hypnovital-Ansaetzen.",
@@ -2189,6 +2223,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 07.04.2026 (Recherche-Runde 3)
+      {
+        summary: "Rampenpfau / Dr. Thomas Coucoulis: 'In drei Schritten weg vom Lampenfieber' – (1) Akzeptanz der körperlichen Lampenfieber-Reaktionen als normalen Erregungszustand, (2) Mentale Vorbereitung und Visualisierung des Auftritts, (3) Regelmässige Praxis und gezielte Exposition. Wachsender Online-Content rund um Lampenfieber-Überwindung bestätigt hohe Nachfrage nach Selbsthilfe-Methoden – direktes Marktumfeld für das Hypnose-Audio lampenfieber-besiegen.de.",
+        source: "Rampenpfau / Dr. Thomas Coucoulis",
+        url: "https://rampenpfau.de/2026/01/09/in-drei-schritten-weg-vom-lampenfieber/",
+        date: "09.01.2026",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-04-07",
+      },
       // Neu: 07.04.2026 (Recherche-Runde 2)
       {
         summary: "dr-rabe.de: 'Prüfungsangst und Redeangst mit Hypnosetherapie behandeln' – Hypnose wirkt auf das limbische System und verändert automatische Angstreaktionen nachhaltig. Studienbelegt (Universität Tübingen, Prof. Revenstorf): signifikante Verbesserungen bei Prüfungsangst. Bestätigt wissenschaftliche Grundlage des Hypnose-Audios lampenfieber-besiegen.de.",
@@ -2412,6 +2455,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
         date: "2026",
         category: "Content & Thought Leadership",
         addedAt: "2026-04-08",
+      },
+      // Neu: 07.04.2026 (Recherche-Runde 3)
+      {
+        summary: "Swiss AI Experts: 'E-Learning – Weiterbildung effizient und wirksam gestalten' – Analyse der Rolle von KI bei der Optimierung von E-Learning in Unternehmen: Adaptive Lerninhalte, KI-Feedback-Systeme und personalisierte Lernpfade erhöhen Effizienz und Lernwirksamkeit nachhaltig. Wachsende KI-Integration im Schweizer Weiterbildungsmarkt bestätigt Relevanz von Learnfluencer als Thought-Leadership-Plattform für Lernkompetenz und KI.",
+        source: "Swiss AI Experts",
+        url: "https://www.swiss-ai-experts.ch/e-learning-weiterbildung-effizient-und-wirksam-gestalten-teil-2/",
+        date: "2026",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-07",
       },
       // Neu: 07.04.2026
       {
