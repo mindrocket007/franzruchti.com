@@ -665,6 +665,46 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 07.04.2026
       {
+        summary: "S&P 500 Weekly Update 6. April 2026 (LP Futures): Wöchentliche ES-Marktanalyse – aktuelle Marktstruktur unter Druck durch Zollkonflikte. VIX über 25, Futures-Händler positionieren sich defensiv. Relevante Einblicke für ES-Futures-Trader.",
+        source: "LP Futures",
+        url: "https://lpfutures.com/sp-500-weekly-update-april-6th-2026/",
+        date: "06.04.2026",
+        category: "Futures & Trading",
+        addedAt: "2026-04-07",
+      },
+      {
+        summary: "S&P 500 Futures: Zollängste und steigende Treasury Yields (10J auf 4,35%) belasten den Markt Anfang April 2026. VIX mehrfach über 30. Defensive Sektoren outperformen, Industriewerte unter Druck. Prop Trader sollten Risk-Management anpassen.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/s-and-p-500-futures-signal-cautious-start-amid-tariff-fears-and-yield/69061072",
+        date: "April 2026",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-07",
+      },
+      {
+        summary: "Schaeffer's Investment Research (6. April 2026): 3 entscheidende technische Levels ('Yard Markers'), die S&P 500 Bullen jetzt beobachten müssen. Analyse zur Frage, ob die aktuelle Korrektur strukturell oder zyklisch ist – direkt relevant für ES-Futures-Trader.",
+        source: "Schaeffer's Investment Research",
+        url: "https://www.schaeffersresearch.com/content/analysis/2026/04/06/3-yard-markers-s-p-500-bulls-should-be-watching",
+        date: "06.04.2026",
+        category: "Futures & Trading",
+        addedAt: "2026-04-07",
+      },
+      {
+        summary: "NinjaTrader neues Dashboard (März 2026): Zentrales Hub für Account-Management, Funding, Steuerdokumente, Performance-Tracking und Community. Vereinfachte Verwaltung für Prop Trader, die mehrere Konten parallel führen.",
+        source: "NinjaTrader",
+        url: "https://ninjatrader.com/futures/blogs/ninjatrader-dashboard-features/",
+        date: "März 2026",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-07",
+      },
+      {
+        summary: "NinjaTrader 8 Prop Firm Guide März 2026: Wichtige Änderungen – professionelle Datenfees (~$124/Monat/Exchange), neue Verbindungsprobleme (R|Trader Bridge v14.17 erforderlich), Real-Time Trailing Drawdown. Umfassende Anleitung für den veränderten Prop-Trading-Markt.",
+        source: "Nexus Indicator",
+        url: "https://www.nexusindicator.com/blog-posts/ninjatrader-prop-firm-2026-update.html",
+        date: "März 2026",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-07",
+      },
+      {
         summary: "Apex Trader Funding grosse Regeländerungen per 1. März 2026: Zwei neue Konto-Typen (EOD und Intraday Trailing Drawdown), wöchentliche Auszahlungen automatisch innerhalb 24–48h, 84 gesperrte Länder (kein Zugang/Auszahlungen). Permanente Aussetzung aller Metall-Futures (Gold, Silber, Kupfer, Platin) wegen extremer Marktvolatilität.",
         source: "Cat In A The Broker",
         url: "https://www.catinathebroker.com/blog/apextraderfunding2026",
@@ -1916,6 +1956,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 07.04.2026
+      {
+        summary: "CCFE (25. März 2026): KI-Kenntnisse werden zur Einstellungsvoraussetzung in der Schweizer Finanzbranche – über 40% der Unternehmen suchen keine klassischen Buchhalter mehr, sondern digital-affine Fachleute mit KI-Kompetenz. Enormer Weiterbildungsbedarf für die Transformation der Arbeitswelt.",
+        source: "CCFE",
+        url: "https://ccfe.ch/2026/03/25/weiterbildung-finanzbranche-schweiz-2026/",
+        date: "25.03.2026",
+        category: "Weiterbildung Schweiz",
+        addedAt: "2026-04-07",
+      },
       // Neu: 06.04.2026
       {
         summary: "Harvard Business Review (März 2026): 'Has AI Ended Thought Leadership?' – KI-generierter Content überschwemmt den Markt. Echte Thought Leadership erfordert jetzt mehr denn je persönliche Perspektive, Erfahrung und Originalität. Direkt relevant für Franz Ruchtis Positionierung als Learnfluencer.",
@@ -2256,6 +2305,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 07.04.2026
+      {
+        summary: "Everlife.ch: Was kostet eine Kremation in der Schweiz? Kremation allein CHF 500–1'000, Gesamtkosten inkl. Dienstleistungen CHF 4'500–8'100. 85–90% der Verstorbenen werden kremiert. Detaillierter Kostenvergleich bestätigt wachsende Nachfrage nach Preistransparenz im digitalen Bestattungsmarkt.",
+        source: "Everlife.ch",
+        url: "https://everlife.ch/de/veroffentlichung/was-kostet-eine-kremation-in-der-schweiz/",
+        date: "2026",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-07",
+      },
       // Neu: 06.04.2026
       {
         summary: "Everlife.ch 2026: Vollständige digitale Bestattungsvorsorge in der Schweiz ab CHF 12.90/Monat – neben finanzieller Vorsorge übernimmt die Plattform auch administrative und digitale Nachlassverwaltung und spart Hinterbliebenen rund 50 Stunden Formalitäten. Direkter Wettbewerber zu bestattungsplaner.ch.",
