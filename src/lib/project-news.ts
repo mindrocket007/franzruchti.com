@@ -690,6 +690,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 07.04.2026
       {
+        summary: "PropFirmMatch 2026: Übersicht aller Futures Prop Firms, die NinjaTrader als Handelsplattform einsetzen – direkter Vergleich von Apex Trader Funding, TopStep, My Funded Futures u.a. Nützliche Ressource für NinjaTrader-basierte Prop Trader bei der Wahl der richtigen Firma.",
+        source: "PropFirmMatch",
+        url: "https://propfirmmatch.com/futures/prop-firm-lists/brokers/ninjatrader",
+        date: "2026",
+        category: "Futures & Trading",
+        addedAt: "2026-04-07",
+      },
+      {
         summary: "S&P 500 Weekly Update 6. April 2026 (LP Futures): Wöchentliche ES-Marktanalyse – aktuelle Marktstruktur unter Druck durch Zollkonflikte. VIX über 25, Futures-Händler positionieren sich defensiv. Relevante Einblicke für ES-Futures-Trader.",
         source: "LP Futures",
         url: "https://lpfutures.com/sp-500-weekly-update-april-6th-2026/",
@@ -1233,6 +1241,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 07.04.2026
       {
+        summary: "JobCloud Webinar 'Mentale Gesundheit am Arbeitsplatz': Schweizer Unternehmen werden zunehmend mit psychischen Belastungen konfrontiert. JobCloud bietet HR-Profis praxisnahe Massnahmen zur Förderung mentaler Gesundheit am Arbeitsplatz – bestätigt wachsende Nachfrage nach BGM-Lösungen wie hypnovital im Schweizer Unternehmensumfeld.",
+        source: "JobCloud",
+        url: "https://www.jobcloud.ch/c/de-ch/webinar-mentale-gesundheit",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-07",
+      },
+      {
         summary: "Nationale BGM-Tagung 2026 am 15. September im Kursaal Bern: Thema 'Gesunde Teams – Wie Zusammenarbeit gelingt'. Gute soziale Beziehungen bei der Arbeit gelten als höchst gesundheitsrelevant. Die Tagung bietet praxisorientierte Impulse für HR-Verantwortliche und BGM-Fachleute – wachsendes Marktpotenzial für BGM-Lösungen wie hypnovital.",
         source: "BGM-Tagung.ch",
         url: "https://www.bgm-tagung.ch/de/",
@@ -1553,6 +1569,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 07.04.2026
       {
+        summary: "OKRs Tool: 25 beste OKR-Software-Tools 2026 im Vergleich – KI-gestützte Zielplanung und 90-Tage-Quartalsplanung etablieren sich als Standard. Bestätigt das wachsende Marktumfeld für 12-Week-Year-basierte Planungstools wie den 12wy-planner.",
+        source: "OKRs Tool",
+        url: "https://www.okrstool.com/blog/best-okr-software",
+        date: "2026",
+        category: "SaaS & Tools",
+        addedAt: "2026-04-07",
+      },
+      {
         summary: "Atlassian 2026: Agile Quartalsplanung – 8-Schritte-Guide für langfristige agile Planung. Unterschied zwischen kurzfristigen Sprints und strategischer Quartals-/Jahresplanung erklärt – bestätigt Trend zu 90-Tage-Planungszyklen wie im 12-Week-Year-Konzept. Atlassian empfiehlt explizit rollende Quartalsziele als Grundlage für nachhaltige Produktivität.",
         source: "Atlassian",
         url: "https://www.atlassian.com/de/agile/agile-at-scale/long-term-agile-planning",
@@ -1870,6 +1894,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 07.04.2026
       {
+        summary: "Haufe Akademie: 'Bye-bye Lampenfieber: Überwinden Sie Ihre Redeangst!' – Praxistipps für Präsentationssituationen, Vortragstechnik und mentale Vorbereitung. Haufe als führende Weiterbildungsplattform im DACH-Raum bestätigt anhaltende Nachfrage nach professionellen Lösungen gegen Redeangst und Auftrittsangst.",
+        source: "Haufe Akademie",
+        url: "https://www.haufe-akademie.de/blog/themen/persoenliche-kompetenz/bye-bye-lampenfieber-ueberwinden-sie-ihre-redeangst/",
+        date: "2026",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-04-07",
+      },
+      {
         summary: "Hypnosio 2026: Lampenfieber mit Hypnose behandeln – Selbstbewusstsein stärken, Aufregung in den Griff bekommen. Hypnose löst die zugrunde liegenden Ängste und Selbstwertprobleme auf; bereits 2-3 Sitzungen reichen typischerweise aus. Hypnose-Audio als eleganter Mittelweg zwischen Selbsthilfe und professioneller Therapie – bestätigt die Positionierung von lampenfieber-besiegen.de.",
         source: "Hypnosio",
         url: "https://www.hypnosio.de/lampenfieber-mit-hypnose-behandeln-so-bekommen-sie-ihre-aufregung-in-den-griff/",
@@ -2026,6 +2058,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "learnfluencer": {
     news: [
       // Neu: 07.04.2026
+      {
+        summary: "Lecturio: Die 3 wichtigsten eLearning-Trends 2026 für Unternehmen – KI-basiertes adaptives Lernen, Microlearning-Formate und Skills-basiertes Lernen dominieren den Corporate-Learning-Markt. Direkt relevantes Marktumfeld für Franz Ruchtis Learnfluencer-Positionierung an der Schnittstelle von Bildung und Technologie.",
+        source: "Lecturio",
+        url: "https://www.lecturio.de/unternehmen/elearning-magazin/unsere-3-wichtigsten-elearning-trends-2026/",
+        date: "2026",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-07",
+      },
       {
         summary: "CCFE (25. März 2026): KI-Kenntnisse werden zur Einstellungsvoraussetzung in der Schweizer Finanzbranche – über 40% der Unternehmen suchen keine klassischen Buchhalter mehr, sondern digital-affine Fachleute mit KI-Kompetenz. Enormer Weiterbildungsbedarf für die Transformation der Arbeitswelt.",
         source: "CCFE",
@@ -2392,6 +2432,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "bestattungsplaner": {
     news: [
       // Neu: 07.04.2026
+      {
+        summary: "Helvetic Care: Vollständiger Guide zu Bestattung in der Schweiz – Ablauf, Kosten und Checkliste. Informationsangebote für Trauernde und Vorsorgeinteressierte etablieren sich als wichtiger digitaler Touchpoint im Schweizer Bestattungsmarkt – direkt relevant für die Positionierung von bestattungsplaner.ch.",
+        source: "Helvetic Care",
+        url: "https://www.helveticcare.ch/themen/bestattung",
+        date: "2026",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-07",
+      },
       {
         summary: "Everlife.ch: Was kostet eine Kremation in der Schweiz? Kremation allein CHF 500–1'000, Gesamtkosten inkl. Dienstleistungen CHF 4'500–8'100. 85–90% der Verstorbenen werden kremiert. Detaillierter Kostenvergleich bestätigt wachsende Nachfrage nach Preistransparenz im digitalen Bestattungsmarkt.",
         source: "Everlife.ch",
