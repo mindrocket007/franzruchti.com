@@ -35,6 +35,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         category: "Digitale Bildung",
         addedAt: "2026-04-07",
       },
+      {
+        summary: "Bildung-Schweiz.ch: Neuer eidg. KI-Abschluss ab 2026 – SBFI genehmigt Qualifikationsprofil für AI Business Specialist. Prüfungsordnung in Kraft, erste Berufsprüfung Herbst 2026. Bund fördert mit bis zu 50% Kurskosten (max. CHF 9'500). Direkte Stärkung des Schweizer ICT-Weiterbildungsmarkts – SIZ als Prüfungsorganisation profitiert von wachsender Nachfrage nach anerkannten ICT-Zertifikaten.",
+        source: "Bildung-Schweiz.ch",
+        url: "https://www.bildung-schweiz.ch/ratgeber/ki-abschluss-ab-2026",
+        date: "2026",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-07",
+      },
       // Neu: 06.04.2026
       {
         summary: "ICT-Berufsbildung Schweiz: Berufsprüfung Wirtschaftsinformatik 2026 – Prüfungsunterlagen werden am 14. April 2026 an Kandidatinnen und Kandidaten versandt, schriftliche Prüfung findet am 13. Mai 2026 statt. Prüfungsgebiet umfasst IT-Projektmanagement, Business Analysis und systemische IT-Architekturen.",
@@ -1023,6 +1031,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 07.04.2026
+      {
+        summary: "prevention.ch: Nationale Tagung 'Digitalisierung und mentale Gesundheit' (22. Januar 2026, Bern) – rund 100 Fachpersonen diskutierten Rolle digitaler Tools bei Prävention und Förderung psychischer Gesundheit. Neue digitale Angebote für verschiedene Zielgruppen vorgestellt. Bestätigt das Marktpotenzial für niedrigschwellige mentale Werkzeuge wie auf mindtools.ch.",
+        source: "prevention.ch",
+        url: "https://www.prevention.ch/collection/digitalisierung-und-mentale-gesundheit",
+        date: "22.01.2026",
+        category: "Mental Health",
+        addedAt: "2026-04-07",
+      },
       // Neu: 06.04.2026
       {
         summary: "HabitWorks-App verbessert mentale Gesundheit: Randomisierte Studie (Journal of Consulting and Clinical Psychology) belegt signifikante Verbesserungen durch kurze 5-Minuten-Übungen gegen negative Denkmuster – 77,8% der 340 Teilnehmer nutzten die App noch nach 4 Wochen.",
@@ -1517,6 +1534,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 07.04.2026
+      {
+        summary: "Atlassian 2026: Agile Quartalsplanung – 8-Schritte-Guide für langfristige agile Planung. Unterschied zwischen kurzfristigen Sprints und strategischer Quartals-/Jahresplanung erklärt – bestätigt Trend zu 90-Tage-Planungszyklen wie im 12-Week-Year-Konzept. Atlassian empfiehlt explizit rollende Quartalsziele als Grundlage für nachhaltige Produktivität.",
+        source: "Atlassian",
+        url: "https://www.atlassian.com/de/agile/agile-at-scale/long-term-agile-planning",
+        date: "2026",
+        category: "Produktivität & Planung",
+        addedAt: "2026-04-07",
+      },
       // Neu: 06.04.2026
       {
         summary: "Beyond Time AI 2026: Warum die 12-Week-Year-Methode klassische Jahresplanung übertrifft – durch kürzere Planungszyklen entsteht konstante Dringlichkeit und Fokus, was zu messbaren Leistungssteigerungen von bis zu 10x führt. Direkter Beleg für den Mehrwert des 12wy-planner-Ansatzes.",
@@ -1692,6 +1718,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 07.04.2026
+      {
+        summary: "Marktprognose 2026–2036: Sexual-Wellness-Markt wächst mit 12,7% CAGR auf USD 1,1 Billionen (AccessNewswire/Morningstar). Europa-Markt 2026 bewertet auf USD 4,03 Mrd. – Online-Kanal mit 11,2% p.a. am schnellsten wachsend. Normalisierung im Detailhandel (allgemeine Gesundheits- statt Erwachsenensortimente) senkt Kaufhürde. Direkte Marktchance für Hypnose-Audio-Selbsthilfe-Angebote.",
+        source: "AccessNewswire / MarketDataForecast",
+        url: "https://www.accessnewswire.com/newsroom/en/business-and-professional-services/sexual-wellness-market-forecast-2026-2036-industry-to-reach-usd-1141846",
+        date: "2026",
+        category: "Digital Health",
+        addedAt: "2026-04-07",
+      },
       // Neu: 06.04.2026
       {
         summary: "Urologische Stiftung Gesundheit: Ejaculatio praecox betrifft 20–30% aller Männer – umfassender Ratgeber zu Ursachen (psychisch, organisch, neurologisch), Behandlungsoptionen (Behavioraltherapie, SSRIs, Dapoxetin) und Selbsthilfemethoden. Hypnose als ergänzende Methode zur Auflösung unbewusster Konditionierungen erwähnt.",
@@ -1965,6 +2000,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         category: "Weiterbildung Schweiz",
         addedAt: "2026-04-07",
       },
+      {
+        summary: "Swiss School of Business and Management Geneva (SSBM): 'Top Trends in Online Education for 2026: AI, AR, and Beyond' – KI-Personalisierung, Augmented Reality, Microlearning und immersive Lernumgebungen als prägende Kräfte. Schweizer Hochschulen integrieren AR/VR in Weiterbildungsangebote – direkte Relevanz für Learnfluencer-Positionierung an Schnittstelle Bildung & Technologie.",
+        source: "SSBM Geneva",
+        url: "https://www.ssbm.ch/top-trends-in-online-education-for-2026-ai-ar-and-beyond/",
+        date: "2026",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-07",
+      },
       // Neu: 06.04.2026
       {
         summary: "Harvard Business Review (März 2026): 'Has AI Ended Thought Leadership?' – KI-generierter Content überschwemmt den Markt. Echte Thought Leadership erfordert jetzt mehr denn je persönliche Perspektive, Erfahrung und Originalität. Direkt relevant für Franz Ruchtis Positionierung als Learnfluencer.",
@@ -2140,6 +2183,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 07.04.2026
+      {
+        summary: "Clawria.ai: Top 10 Marketing-Automation-Tools für Schweizer KMU 2026 – Vergleich von HubSpot, Mailchimp, ActiveCampaign, Brevo und Schweizer Alternativen (z.B. Orbitype). Fokus auf DSG-Konformität, TWINT-Integration und Schweizer Kundenservice. Wettbewerbsumfeld für spezialisierte Marketingkonzept-Software, die strategische Analyse (PESTEL, SWOT, BCG) mit Automation verbindet.",
+        source: "Clawria.ai",
+        url: "https://clawria.ai/ressourcen/marketing-automation-tools-schweiz-kmu-vergleich/",
+        date: "2026",
+        category: "Marketing-Tools & Software",
+        addedAt: "2026-04-07",
+      },
       // Neu: 06.04.2026
       {
         summary: "Researchly.at: SWOT-Analyse im Marketing 2026 – Schritt-für-Schritt-Anleitung und Beispiele. Stärken-Schwächen-Analyse als Fundament für datengetriebene Marketingentscheidungen. Direkte Relevanz für den Learnfluencer-Marketingplan-Generator (SWOT-Modul).",
@@ -2312,6 +2364,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         url: "https://everlife.ch/de/veroffentlichung/was-kostet-eine-kremation-in-der-schweiz/",
         date: "2026",
         category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-07",
+      },
+      {
+        summary: "ref.ch: Kantonsrat Zürich stimmt für Kompostbestattung (Terramation/Re-erdigung) als neue Bestattungsform neben Erd- und Kremation – Regierungsrat muss nun Regelwerk erarbeiten. Zürich als erste Schweizer Stadt auf dem Weg zur Einführung dieser nachhaltigen Bestattungsform. Erweitert das Angebot für Bestattungspartner auf bestattungsplaner.ch.",
+        source: "ref.ch",
+        url: "https://www.ref.ch/news/kompost-bestattung-reerdigung-terramation-zurich-schweiz-friedhof-politik/",
+        date: "2026",
+        category: "Recht & Regelungen",
         addedAt: "2026-04-07",
       },
       // Neu: 06.04.2026
