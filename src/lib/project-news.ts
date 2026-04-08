@@ -765,6 +765,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 08.04.2026 (Recherche-Runde 4)
+      {
+        summary: "ES Futures unter starkem Druck – Geopolitische Spannungen und Zollrisiken belasten US-Märkte: Der S&P 500 E-Mini (ES) erreichte am 28. Januar 2026 ein Allzeithoch bei 7.043 und befindet sich seither in einer signifikanten Korrektur. Per 8. April 2026 belasten Nahost-Spannungen und Ölpreisanstieg (+3%) die Märkte weiter. Für Day Trader der Mind Rocket Trading-Community sind erhöhte Volatilität und das aktuelle Marktumfeld von unmittelbarer Bedeutung für kurzfristige Strategie-Anpassungen.",
+        source: "CME Group",
+        url: "https://www.cmegroup.com/markets/equities/sp/e-mini-sandp500.html",
+        date: "08.04.2026",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-08",
+      },
       // Neu: 08.04.2026 (Recherche-Runde 3)
       {
         summary: "S&P 500 E-Mini Futures verzeichneten am 1. April 2026 eine starke Rally (+2.9% auf 6.528 Punkte), angetrieben durch nachlassende geopolitische Spannungen und Händleroptimismus nach dem Quartalsende. VIX-Futures bei 24.80 für April-Expiry signalisieren weiterhin erhöhte Volatilität. Für ES-Day-Trader ein relevantes Marktumfeld mit erhöhten Bewegungen.",
@@ -1264,6 +1273,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 08.04.2026 (Recherche-Runde 2)
+      {
+        summary: "WildWechsel (NLP-Coach Schweiz) benennt Top-3-Trends 2026 für Persönlichkeitsentwicklung: Konsolidierung des Markts, steigende Nachfrage nach Tiefe statt oberflächlicher Motivation, und hybride Formate. Der Coaching-Markt Schweiz sortiert sich – wer nur motiviert, wird ersetzbar. Für mindtools.ch als Anbieter mentaler Werkzeuge (PDF-Bücher) bietet das eine klare Positionierungschance: Tiefe und substanzielle Werkzeuge statt Hype.",
+        source: "WildWechsel NLP",
+        url: "https://www.wildwechsel-nlp.biz/meine-3-top-trends-fuer-2026/",
+        date: "2026",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "Startupticker.ch berichtet über digitale Tools für mentale Gesundheit aus der Schweizer Startup-Szene: Earkick (ChatGPT-basiert), Oviva (Psychotherapie-App) und Pathmate Technologies (Schlafstörungen) zeigen dynamisches Marktwachstum. Für mindtools.ch relevant als Marktkontext: Der Bedarf an Selbsthilfe-Werkzeugen steigt, was die Zielgruppe für PDF-basierte mentale Werkzeuge vergrössert.",
+        source: "Startupticker.ch",
+        url: "https://www.startupticker.ch/en/news/digitale-tools-fuer-die-staerkung-der-mentalen-gesundheit",
+        date: "2026",
+        category: "Mental Health",
+        addedAt: "2026-04-08",
+      },
       // Neu: 08.04.2026
       {
         summary: "Globaler Mental-Health-Apps-Markt ueberschreitet 2026 die 8-Milliarden-Dollar-Marke – prognostiziertes Wachstum auf 35 Milliarden bis 2034 (CAGR 19%). Mental-Health-Apps sind 2026 keine einfachen Wellness-Tools mehr, sondern regulierte digitale Gesundheitsprodukte mit hohen Nutzererwartungen. Hybride Modelle, die digitale Inhalte mit menschlicher Begleitung kombinieren, sind der Top-Trend.",
@@ -1934,6 +1960,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 08.04.2026 (Recherche-Runde 4)
+      {
+        summary: "Globaler Markt für Produktivitäts-Apps 2026: USD 14,46 Milliarden Marktvolumen mit ~10% CAGR bis 2034. KI-native Tools, die proaktiv Ziele antizipieren und Planungsunterstützung bieten, setzen sich gegen generische Alternativen durch. Für 12wy-planner.vercel.app zeigt dies das Marktpotenzial und die Notwendigkeit, KI-Integration als differenzierendes Feature zu kommunizieren.",
+        source: "Niche Metric",
+        url: "https://www.nichemetric.com/blog/productivity-app-market-overview-2026",
+        date: "2026",
+        category: "SaaS & Tools",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "Vertical SaaS-Tools wachsen 2026 mit 16,3% CAGR, da branchenspezifische Nischenlösungen stärkere Retention und Pricing Power bieten als generische Plattformen. Generic AI-Produktivitäts-Apps kämpfen gegen starke Konkurrenz, während spezialisierte Tools wie ein 12-Week-Year-Planner eine verteidigbare Nische besetzen. Bestätigt die Positionierungsstrategie des 12wy-planners als methodenspezifisches SaaS-Tool.",
+        source: "Libertify",
+        url: "https://www.libertify.com/interactive-library/saas-trends-2026/",
+        date: "2026",
+        category: "SaaS & Tools",
+        addedAt: "2026-04-08",
+      },
       // Neu: 08.04.2026 (Recherche-Runde 3)
       {
         summary: "northlyapp.com: 'OKR Methode: Der komplette Leitfaden 2026' – KI-gestützte OKR-Tools ermöglichen 2026 automatisches Tracking von Leading Indicators, wöchentliche Fortschrittsberichte und frühzeitige Warnung bei Zielabweichungen. Kombination von 12-Week-Year-Rhythmus und OKR-Methodik als bewährter Standard für Produktivität und Zielausrichtung – bestätigt Nachfrage nach Tools wie dem 12wy-planner.",
@@ -2201,6 +2244,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 08.04.2026 (Recherche-Runde 4)
+      {
+        summary: "Bundesgesundheitsportal gesund.bund.de: Vorzeitiger Samenerguss (Ejaculatio praecox) betrifft rund 20–30% aller Männer unter 60 – die häufigste sexuelle Funktionsstörung. Neben medikamentösen Optionen und Verhaltenstherapie gewinnen psychologische Ansätze an Bedeutung, in die Hypnose-Audios gut einzuordnen sind. Der riesige adressierbare Markt und die zunehmende Offenheit für nicht-medikamentöse Lösungen stärken die Positionierung von orgasmus-hinauszoegern.de.",
+        source: "Bundesgesundheitsportal",
+        url: "https://gesund.bund.de/en/vorzeitiger-samenerguss",
+        date: "2026",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "Hypnose-Zentrum Zürich bestätigt: Hypnosetherapie bei sexuellen Funktionsstörungen beim Mann – inklusive vorzeitigem Samenerguss – ist besonders wirksam, wenn organische Ursachen ausgeschlossen sind. Schweizer und DACH-Praxen berichten von erfolgreichen Behandlungen. Für orgasmus-hinauszoegern.de stärkt das die Produktpositionierung als psychologisch fundierte, nicht-medikamentöse Alternative mit regionaler Glaubwürdigkeit.",
+        source: "Hypnose-Zentrum Zürich",
+        url: "https://hypnose-zentrum.com/therapiefelder/psychosomatik-und-koerper/sexualstoerungen-mit-hypnose-behandeln/",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "EjaNova – neues minimalinvasives chirurgisches Verfahren bei Glans-Hypersensitivität kann laut wissenschaftlichen Daten die Zeit bis zur Ejakulation verdreifachen. Das Verfahren zeigt, dass das Thema medizinisch ernst genommen wird und Männer aktiv nach Lösungen suchen – ein starkes Argument für die Marktnachfrage, von der orgasmus-hinauszoegern.de als günstige, nicht-invasive und sofort zugängliche Alternative profitieren kann.",
+        source: "Praxisklinik Rosengarten",
+        url: "https://praxisklinik-rosengarten.de/en/surgery/male-and-female-intimate-surgery/premature-ejaculation-ejaculatio-praecox",
+        date: "2026",
+        category: "Digital Health",
+        addedAt: "2026-04-08",
+      },
       // Neu: 08.04.2026 (Recherche-Runde 3)
       {
         summary: "Digitale Informationsplattform 'Tabubruch' zur sexuellen Gesundheit ging im Februar 2026 online (WIR – Walk In Ruhr, gefördert vom Bundesministerium für Forschung / Digital Health Factory Ruhr): Wissenschaftlich fundierte, inklusive und barrierefreie Inhalte rund um sexuelle Gesundheit. Zeigt wachsendes Interesse an digitalen Angeboten im Bereich sexuelle Gesundheit und Entstigmatisierung.",
@@ -2402,6 +2470,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 08.04.2026 (Recherche-Runde 4)
+      {
+        summary: "M.E.G.-Jahrestagung 2026 'Trauma, Trance und Therapie: Der Körper im Fokus' – wachsendes wissenschaftliches Interesse an klinischer Hypnose zeigt sich in aktiven Fachverbänden. Internationale Hypnosekongresse (u.a. in Winterthur) stärken 2026 die wissenschaftliche Glaubwürdigkeit von Hypnose-Produkten wie lampenfieber-besiegen.de im Markt.",
+        source: "M.E.G. Hypnose",
+        url: "https://megaphon.meg-hypnose.de/vorausschau-zur-m-e-g-jahrestagung-2026/",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "Aktuelle Hypnoseforschung 2025: Hypnosetherapie hat in RCT-Studien vergleichbare Wirksamkeit wie kognitive Verhaltenstherapie (KVT) bei Angstbehandlung gezeigt. Neue Forschungsfelder wie die Kombination von Hypnose mit Virtueller Realität (VR) werden aktiv erforscht. Für lampenfieber-besiegen.de liefert das wertvolle wissenschaftliche Legitimation, die auf der Landingpage eingesetzt werden kann.",
+        source: "Hypnosis Luzern",
+        url: "https://www.hypnosis-luzern.ch/post/hypnose-2025",
+        date: "2025",
+        category: "Psychologie & Forschung",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "IU-Studie: 86,8% der Menschen in Deutschland leiden unter Prüfungs- und Auftrittsangst – ein Massenphänomen, das stark mit Lampenfieber zusammenhängt. Häufigste Ursachen sind überhöhte Selbstansprüche und Angst vor Bewertung, genau das Zielgruppenprofil von lampenfieber-besiegen.de. Die Studie belegt den enormen adressierbaren Markt und bietet Material für SEO-Content und Werbecopy.",
+        source: "IU Internationale Hochschule",
+        url: "https://www.iu.de/forschung/studien/pruefungsangst/",
+        date: "2026",
+        category: "Psychologie & Forschung",
+        addedAt: "2026-04-08",
+      },
       // Neu: 08.04.2026 (Recherche-Runde 3)
       {
         summary: "Grossangelegte Studie zu App-basierter Selbsthypnose (npj Digital Medicine, Nature): 84.395 Nutzer, 282.893 Stress-Reduktions-Sessions – zeigt signifikante Verbesserungen im Stressmanagement über die ersten 10 Sitzungen. Unterstützt die wissenschaftliche Wirksamkeit digitaler Hypnose-Angebote und liefert Legitimation für Hypnose-Audio-Produkte wie lampenfieber-besiegen.de.",
@@ -3200,6 +3293,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 08.04.2026 (Recherche-Runde 2)
+      {
+        summary: "Everlife.ch: Nur rund 10% der Schweizer Todesfälle sind durch einen Bestattungsvorsorgevertrag abgedeckt – im Vergleich zu 85% in den Niederlanden ein enormes Wachstumspotenzial. Digitale Vorsorgelösungen mit digitalem Safe und Gedenkportal sind bereits verfügbar. Für bestattungsplaner.ch zeigt das, dass digitale Vorsorge-Angebote ein stark unterentwickelter, zukunftsträchtiger Markt in der Schweiz sind.",
+        source: "Everlife.ch",
+        url: "https://everlife.ch/de/bestattungsvorsorge/",
+        date: "2026",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-04-08",
+      },
       // Neu: 08.04.2026
       {
         summary: "Schweizer Verband der Bestattungsdienste 2026: 'Digitaler Nachlass – Was passiert mit Online-Accounts nach dem Tod?' – ZKB, UBS, Swisscom und bestatter.ch haben Ratgeber veroeffentlicht. Dienste wie LegacyNotes und SecureSafe ermoeglichen strukturierte Vorsorge inkl. Bestattungswuenschen. Wachsendes Bewusstsein fuer digitalen Nachlass als Teil der Bestattungsvorsorge – relevant fuer bestattungsplaner.ch.",
