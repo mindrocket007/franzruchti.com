@@ -765,6 +765,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 08.04.2026 (Recherche-Runde 3)
+      {
+        summary: "S&P 500 E-Mini Futures verzeichneten am 1. April 2026 eine starke Rally (+2.9% auf 6.528 Punkte), angetrieben durch nachlassende geopolitische Spannungen und Händleroptimismus nach dem Quartalsende. VIX-Futures bei 24.80 für April-Expiry signalisieren weiterhin erhöhte Volatilität. Für ES-Day-Trader ein relevantes Marktumfeld mit erhöhten Bewegungen.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/s-and-p-500-futures-signal-strong-opening-on-april-1-2026-amid-easing/69047075",
+        date: "01.04.2026",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "Apex Trader Funding 4.0 (März 2026): Kein Payout-Ablehnungen mehr, vereinfachte Regelstruktur, automatisierte Auszahlungen via Deel (24–48h), zwei neue Account-Typen (EOD Trail / Intraday Trail), Wegfall des MAE-Rules und der 30%-Konsistenzregel. Metals Futures (Gold, Silber, Kupfer, Platin, Palladium) wegen extremer Volatilität dauerhaft ausgesetzt – grösste Regeländerung seit Firmengründung.",
+        source: "Prop Trading Deals",
+        url: "https://proptradingdeals.com/index.php/2026/03/02/apex-trader-funding-4-0-update-passing-just-got-easier-up-to-90-off/",
+        date: "02.03.2026",
+        category: "Futures & Trading",
+        addedAt: "2026-04-08",
+      },
       // Neu: 08.04.2026 (Recherche-Runde 2)
       {
         summary: "ESMA Supervisory Briefing Algorithmischer Handel (26. Februar 2026): ESMA veroeffentlicht nicht-bindendes Dokument zu MiFID II-konformem algorithmischen Handel – adressiert Governance, Testing, Outsourcing und Pre-Trade-Kontrollen. Erstmals werden auch Hinweise zum Einsatz von KI in algorithmischen Systemen gegeben. Ziel ist europaweite Harmonisierung der Aufsichtspraxis fuer algo-basierte Handelsstrategien.",
@@ -1491,6 +1508,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 08.04.2026 (Recherche-Runde 3)
       {
+        summary: "KMU-Frauen-Anlass des Gewerbeverbands Appenzell Ausserrhoden (11. März 2026) zum Thema 'Mehr als nur Show – was wirklich hinter Hypnose steckt': Hypnosetherapeutin Alexandra Meister führte rund 22 Teilnehmerinnen in die Welt der Hypnose ein. Zeigt wachsendes Interesse an Hypnose-Coaching auch in KMU-Kontexten und bei Unternehmerinnen – relevantes Marktumfeld für hypnovital® als BGM-Lösung.",
+        source: "Gewerbeverband Appenzell Ausserrhoden",
+        url: "https://gewerbear.ch/kmu-frauen-anlass-zum-thema-hypnose/",
+        date: "11.03.2026",
+        category: "Hypnose & Coaching",
+        addedAt: "2026-04-08",
+      },
+      {
         summary: "ad-hoc-news.de: 'Betriebliches Gesundheitsmanagement wird 2026 zum strategischen Imperativ' – BGM 2026 ist strategische Kernaufgabe: Personalabteilungen müssen Gesundheitsprogramme systematisch aufbauen und messbar gestalten. Digitale Lösungen und psychische Gesundheit stehen im Fokus. Wachstumsumfeld für hypnovital® als skalierbare, digitale BGM-Audio-Lösung.",
         source: "ad-hoc-news.de",
         url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/betriebliches-gesundheitsmanagement-wird-2026-zum-strategischen-imperativ/69075884",
@@ -2176,6 +2201,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 08.04.2026 (Recherche-Runde 3)
+      {
+        summary: "Digitale Informationsplattform 'Tabubruch' zur sexuellen Gesundheit ging im Februar 2026 online (WIR – Walk In Ruhr, gefördert vom Bundesministerium für Forschung / Digital Health Factory Ruhr): Wissenschaftlich fundierte, inklusive und barrierefreie Inhalte rund um sexuelle Gesundheit. Zeigt wachsendes Interesse an digitalen Angeboten im Bereich sexuelle Gesundheit und Entstigmatisierung.",
+        source: "WIR – Walk In Ruhr",
+        url: "https://www.wir-ruhr.de/2026/02/19/tabubruch-ist-online-digitale-plattform-zur-sexuellen-gesundheit/",
+        date: "19.02.2026",
+        category: "Digital Health",
+        addedAt: "2026-04-08",
+      },
       // Neu: 08.04.2026
       {
         summary: "EAU-Kongress 2026 CLIMACS-Studie: Smartphone-App 'Melonga' verdoppelt die Ejakulationslatenzzeit von 61 auf 125 Sekunden nach nur 4 Wochen. 22% der Teilnehmer erfuellten danach nicht mehr die klinische Definition von Ejaculatio praecox. Die App kombiniert Mindfulness, Arousal-Awareness, kognitive Verhaltenstherapie und Start-Stopp-Techniken – bestaetigt Trend zu digitalen Selbsthilfe-Loesungen bei PE.",
@@ -2368,6 +2402,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 08.04.2026 (Recherche-Runde 3)
+      {
+        summary: "Grossangelegte Studie zu App-basierter Selbsthypnose (npj Digital Medicine, Nature): 84.395 Nutzer, 282.893 Stress-Reduktions-Sessions – zeigt signifikante Verbesserungen im Stressmanagement über die ersten 10 Sitzungen. Unterstützt die wissenschaftliche Wirksamkeit digitaler Hypnose-Angebote und liefert Legitimation für Hypnose-Audio-Produkte wie lampenfieber-besiegen.de.",
+        source: "npj Digital Medicine / Nature Publishing Group",
+        url: "https://www.nature.com/articles/s41746-025-02182-0",
+        date: "2025-12",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-08",
+      },
       // Neu: 08.04.2026
       {
         summary: "Studentische Gesundheit 2026: Psychische Belastung von Studierenden in Deutschland erreicht historischen Hoechststand – ueber 50% fuehlen sich belastet, bei 32% besteht konkreter Bedarf an psychologischer Unterstuetzung. Pruefungsangst ist neben Einsamkeit und Zukunftsaengsten einer der Hauptstressoren – hohe Nachfrage nach Selbsthilfe-Loesungen fuer lampenfieber-besiegen.de.",
