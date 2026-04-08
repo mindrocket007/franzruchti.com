@@ -26,6 +26,15 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 08.04.2026 (Recherche-Runde 2)
+      {
+        summary: "ICT-Berufsbildung Schweiz: Berufsbildung ist mit Abstand die groesste Zubringerin an ICT-Fachkraeften – Trotz eines prognostizierten Gesamtengpasses von 54'400 ICT-Fachkraeften bis 2033 stellt die Berufsbildung die meisten neuen Fachkraefte bereit. Der Bericht bestaetigt die zentrale Rolle der ICT-Ausbildung und Zertifizierung fuer den Schweizer Arbeitsmarkt – staerkt die strategische Relevanz von SIZ als anerkannte Pruefungsorganisation.",
+        source: "ICT-Berufsbildung Schweiz",
+        url: "https://www.ict-berufsbildung.ch/berufsbildung-mit-abstand-groesste-zubringerin-an-ict-fachkraeften",
+        date: "2026",
+        category: "Arbeitsmarkt & IT",
+        addedAt: "2026-04-08",
+      },
       // Neu: 08.04.2026
       {
         summary: "SIZ mySIZ Go-live 9. April 2026: Die neue mySIZ-Plattform ist seit dem 9. April 2026 unter my.siz.ch erreichbar. Wichtige Änderungen: Keine Selbstregistrierung mehr möglich – Prüfungsteilnehmende werden durch ihre Schule registriert. Für Test- und Lernzielkontrollen ist kein separates Passwort mehr nötig, Prüfungsteilnehmende starten direkt aus ihrem Account. Die Auswertung ist sofort einsehbar. Datenmigration basierte auf dem Stand vom 8. April 2026 um 6:00 Uhr.",
@@ -747,6 +756,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 08.04.2026 (Recherche-Runde 2)
+      {
+        summary: "ESMA Supervisory Briefing Algorithmischer Handel (26. Februar 2026): ESMA veroeffentlicht nicht-bindendes Dokument zu MiFID II-konformem algorithmischen Handel – adressiert Governance, Testing, Outsourcing und Pre-Trade-Kontrollen. Erstmals werden auch Hinweise zum Einsatz von KI in algorithmischen Systemen gegeben. Ziel ist europaweite Harmonisierung der Aufsichtspraxis fuer algo-basierte Handelsstrategien.",
+        source: "ESMA",
+        url: "https://www.esma.europa.eu/press-news/esma-news/esma-issues-supervisory-briefing-algorithmic-trading",
+        date: "26.02.2026",
+        category: "Regulierung",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "S&P 500 Q1 2026 mit -3,55% schwach: Belastet durch Oelpreisschock und geopolitische Spannungen im Nahen Osten. April zeigt historisch 68% Gewinnwahrscheinlichkeit, doch Zinsunsicherheit und anhaltende Geopolitik bremsen den Markt. UBS senkte Jahresendziel fuer den S&P 500 auf 7.500 Punkte (von 7.700).",
+        source: "ad-hoc-news.de / CNBC",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/s-and-p-500-nach-schwachem-q1-2026-korrektur-durch-oelpreisschock-und/69054358",
+        date: "April 2026",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "S&P 500 legt am 7. April 2026 leicht zu: Trotz anhaltender Zollrisiken und Nahost-Spannungen trieben Deeskalationshoffnungen die US-Leitindizes kurzzeitig an. Marktlage bleibt volatil mit erhoehten Volatilitaetshedges im Optionsmarkt – fuer ES-Futures-Trader ein weiterhin anspruchsvolles Umfeld.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/s-and-p-500-legt-leicht-zu-optimismus-trotz-zollrisiken-und/69097140",
+        date: "07.04.2026",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-08",
+      },
       // Neu: 08.04.2026
       {
         summary: "NinjaTrader Prop und Tradovate Prop: NT Technologies (NinjaTrader-Gruppe) lancierte am 1. Oktober 2025 eigene Prop-Trading-Plattformen unter prop.ninjatrader.com. Trader erhalten Advanced Risk Controls, TradingView-Integration, leistungsfähige Charting- und Order-Flow-Tools sowie mobilen Zugang. Partner-Prop-Firmen: Apex Trader Funding, Take Profit Trader, MyFunded Futures, Elite Trader Funding, Purdia Capital und Alpha Futures. Direkter Eintritt von NinjaTrader ins Prop-Firm-Ökosystem.",
@@ -1204,6 +1238,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 08.04.2026
+      {
+        summary: "Globaler Mental-Health-Apps-Markt ueberschreitet 2026 die 8-Milliarden-Dollar-Marke – prognostiziertes Wachstum auf 35 Milliarden bis 2034 (CAGR 19%). Mental-Health-Apps sind 2026 keine einfachen Wellness-Tools mehr, sondern regulierte digitale Gesundheitsprodukte mit hohen Nutzererwartungen. Hybride Modelle, die digitale Inhalte mit menschlicher Begleitung kombinieren, sind der Top-Trend.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/mental-health-apps-knacken-2026-die-8-milliarden-dollar-marke/68576968",
+        date: "2026",
+        category: "Mental Health",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "Buchmarkt 2026: KI und Persoenlichkeitsentwicklung dominieren Business-Bestseller. Der digitale Produktmarkt (E-Books, PDFs) waechst in Oesterreich, stagniert in der Schweiz – dort sind physische Buecher und hochwertige Inhalte wieder staerker gefragt. Direkt relevant fuer mindtools.ch-Positionierung mit PDF-basierten Persoenlichkeitsentwicklungs-Tools.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/buchmarkt-2026-ki-und-persoenlichkeit-dominieren-business-bestseller/69076676",
+        date: "Januar 2026",
+        category: "Buchmarkt & Publishing",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "Jugendstudie 2026: Psychische Belastung bei jungen Menschen in Deutschland und der Schweiz erreicht neuen Hoechststand. 29% der unter 30-Jaehrigen geben an, psychologische Hilfe zu benoetigen – staerkt die Nachfrage nach niederschwelligen, digitalen Mental-Health-Tools und Selbsthilfe-Formaten erheblich.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/jugendstudie-psychische-belastung-erreicht-neuen-hoechststand/69000012",
+        date: "2026",
+        category: "Mental Health",
+        addedAt: "2026-04-08",
+      },
       // Neu: 07.04.2026 (Recherche-Runde 2)
       {
         summary: "edana.ch: 'Mental-Health-App 2026 – Anforderungen, Risiken und Erfolgsfaktoren' – Entwicklung einer Mental-Health-App ist kein einfaches Wellness-Tool mehr, sondern ein digitales Gesundheitsprodukt mit hohen Regulierungsanforderungen und Nutzererwartungen. Wachsende Marktreife des Segments für digitale mentale Werkzeuge – relevanter Kontext für mindtools.ch-Positionierung.",
@@ -1421,6 +1480,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 08.04.2026 (Recherche-Runde 2)
+      {
+        summary: "Job-Stress-Index Schweiz 2026: 30,3% der Schweizer Erwerbstaetigen fuehlen sich emotional erschoepft – Rekordwert seit 2014. Gesundheitsfoerderung Schweiz plant fuer 2026 eine ueberarbeitete Neuerhebung des Index anlaesslich seines 10-jaehrigen Bestehens. Arbeitsbedingter Stress kostet die Schweizer Wirtschaft rund 6,5 Mrd. CHF jaehrlich.",
+        source: "Gesundheitsfoerderung Schweiz / friendlyworkspace.ch",
+        url: "https://friendlyworkspace.ch/de/themen/arbeitsbedingter-stress/studie-job-stress-index",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "Digitale Audio-Hypnose-Angebote gewinnen 2026 weiter an Bedeutung: Therapeuten buendeln ihre Methoden in Audio-Programme zum Download (MP3), die Themen wie Schlaf, Stress, Angst und Gewohnheiten adressieren. Hypnosetherapie wurde 2025 offiziell von Gesundheitsbehoerden anerkannt und expandiert in immersive Formate mit binauralen Audios und Self-Hypnosis-Apps – direkt relevant fuer hypnovital-Positionierung.",
+        source: "guide-bien-etre.com",
+        url: "https://www.guide-bien-etre.com/2026/02/audio-mp3-dhypnose-gratuit-est-ce-efficace/",
+        date: "Februar 2026",
+        category: "Digitale Gesundheit",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "OMNI Hypnose bietet 2026 in der Schweiz (Zuerich, Bern, St. Gallen, Zug) intensive Zertifizierungskurse fuer Hypnosetherapeuten an. Wachsendes Interesse an hypnosystemischem Coaching als Karriereoption zeigt die steigende Akzeptanz von Hypnose als professionelle Methode – bestaetigt Marktpotenzial fuer hypnovital-Programme im Schweizer BGM-Bereich.",
+        source: "OMNI Hypnosis",
+        url: "https://www.omnihypnosis.com/courses/omni-hypnosetherapeut-zertifizierung-intensiv-live-schweiz",
+        date: "2026",
+        category: "Hypnose & Coaching",
+        addedAt: "2026-04-08",
+      },
       // Neu: 08.04.2026
       {
         summary: "OMNI Hypnose Schweiz: Hypnose als effektives Werkzeug zur Stress- und Burnout-Prävention – Praxis berichtet von grossen Erfolgen bei der Kombination von Hypnosetherapie mit Burnout-Prävention am Arbeitsplatz. Hypnose ermöglicht tiefe Entspannung und Neuprogrammierung von Stressmustern. Bestätigt wachsende Akzeptanz von Hypnose als BGM-Massnahme in der Schweiz – direktes Marktumfeld für hypnovital.",
@@ -1807,6 +1891,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 08.04.2026 (Recherche-Runde 2)
+      {
+        summary: "Asian Efficiency: 'Haeufige Fehler bei der 12-Week-Year-Methode' – Die Methode komprimiert das Jahr in vier intensive 12-Wochen-Zyklen und erzwingt Fokus statt Aufschieberitis. Fuer SaaS-Anbieter wie den 12wy-planner relevant: Nutzer suchen nach digitalen Tools, die die Methodik voll abbilden (Wochen-Reviews, 85%-Execution-Target, Leading Indicators).",
+        source: "Asian Efficiency",
+        url: "https://www.asianefficiency.com/systems/common-12-week-year-mistakes/",
+        date: "2026",
+        category: "12 Week Year Methode",
+        addedAt: "2026-04-08",
+      },
       // Neu: 08.04.2026
       {
         summary: "monday.com Blog: '12 Week Year – Das Zeitmanagement-System' – Einflussreiche Produktivitätsplattform erklärt die 12-Week-Year-Methode als effektives System für 3-Monats-Sprints, das sich nahtlos mit OKRs verbindet. Wachsende Sichtbarkeit der Methode in der globalen Produktivitätscommunity – positives Signal für den 12wy-planner als spezialisiertes SaaS-Tool.",
@@ -2056,6 +2149,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 08.04.2026
+      {
+        summary: "EAU-Kongress 2026 CLIMACS-Studie: Smartphone-App 'Melonga' verdoppelt die Ejakulationslatenzzeit von 61 auf 125 Sekunden nach nur 4 Wochen. 22% der Teilnehmer erfuellten danach nicht mehr die klinische Definition von Ejaculatio praecox. Die App kombiniert Mindfulness, Arousal-Awareness, kognitive Verhaltenstherapie und Start-Stopp-Techniken – bestaetigt Trend zu digitalen Selbsthilfe-Loesungen bei PE.",
+        source: "EAU Congress / ecancer.org",
+        url: "https://ecancer.org/en/news/27903-eau-2026-smartphone-app-can-help-men-last-longer-in-bed-finds-research",
+        date: "Maerz 2026",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "Medscape berichtet ueber Melonga-Studie EAU 2026: Digitale Therapie-Apps koennen Maennern helfen, laenger durchzuhalten – und senken die Hemmschwelle zur Behandlung, da viele Betroffene aus Scham keine Arztpraxis aufsuchen. Bestaetigt den Trend zu diskret nutzbaren Selbsthilfe-Produkten im Bereich maennliche Sexualgesundheit.",
+        source: "Medscape",
+        url: "https://www.medscape.com/viewarticle/smartphone-app-may-help-men-premature-ejaculation-last-2026a100085e",
+        date: "Maerz 2026",
+        category: "Digital Health",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "Hypnosis Downloads: Spezialisiertes Audio-Programm 'Stop Premature Ejaculation' – fuehrender englischsprachiger Anbieter von Hypnose-Audio-Downloads positioniert sich direkt im PE-Selbsthilfe-Markt. Demonstriert internationale Marktnachfrage nach Hypnose-basierten Loesungen bei Ejaculatio praecox – bestaetigt Ansatz von orgasmus-hinauszoegern.de.",
+        source: "Hypnosis Downloads",
+        url: "https://www.hypnosisdownloads.com/sexual-problems/stop-premature-ejaculation",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-08",
+      },
       // Neu: 07.04.2026 (Recherche-Runde 2)
       {
         summary: "Philipps-Universität Marburg (CLIMACS-Studie): Klinische Studie zur digitalen App MELONGA – erste CE-zertifizierte digitale Therapieanwendung (DiGA) gegen Ejaculatio praecox. Basiert auf evidenzbasierter Psychoedukation und Verhaltenstherapie, 12-Wochen-Programm. Ziele: Symptomverbesserung, höhere Lebensqualität und verbesserte sexuelle Intimität. Studie läuft seit Oktober 2023 – bestätigt Trend zu digitalen Selbsthilfe-Lösungen bei sexuellen Funktionsstörungen.",
@@ -2223,6 +2341,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 08.04.2026
+      {
+        summary: "Studentische Gesundheit 2026: Psychische Belastung von Studierenden in Deutschland erreicht historischen Hoechststand – ueber 50% fuehlen sich belastet, bei 32% besteht konkreter Bedarf an psychologischer Unterstuetzung. Pruefungsangst ist neben Einsamkeit und Zukunftsaengsten einer der Hauptstressoren – hohe Nachfrage nach Selbsthilfe-Loesungen fuer lampenfieber-besiegen.de.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/studentische-gesundheit-erreicht-2026-neuen-tiefpunkt/69051435",
+        date: "2026",
+        category: "Prüfungsangst & Lampenfieber",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "Business Insider Deutschland: Jeder vierte Deutsche arbeitet nicht in seinem Traumberuf wegen Pruefungsangst. Ein Therapeut erklaert: Die Angst vor Pruefungen und oeffentlichem Auftreten ist massiv unterschaetzt und unbehandelt ein Karrierekiller – zeigt hohe Kaufbereitschaft fuer wirksame Selbsthilfe-Produkte im Bereich Lampenfieber.",
+        source: "Business Insider Deutschland",
+        url: "https://www.businessinsider.de/karriere/pruefungsangst-jeder-vierte-arbeitet-deshalb-nicht-im-traumberuf-ein-therapeut-verraet-was-ihr-dagegen-tun-koennt-a/",
+        date: "2026",
+        category: "Psychologie & Forschung",
+        addedAt: "2026-04-08",
+      },
       // Neu: 07.04.2026 (Recherche-Runde 3)
       {
         summary: "Rampenpfau / Dr. Thomas Coucoulis: 'In drei Schritten weg vom Lampenfieber' – (1) Akzeptanz der körperlichen Lampenfieber-Reaktionen als normalen Erregungszustand, (2) Mentale Vorbereitung und Visualisierung des Auftritts, (3) Regelmässige Praxis und gezielte Exposition. Wachsender Online-Content rund um Lampenfieber-Überwindung bestätigt hohe Nachfrage nach Selbsthilfe-Methoden – direktes Marktumfeld für das Hypnose-Audio lampenfieber-besiegen.de.",
@@ -2439,6 +2574,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 08.04.2026 (Recherche-Runde 2)
+      {
+        summary: "Watson.ch April 2026: 'Schweizer Firmen treiben KI voran – Mitarbeiter verunsichert' – Weniger als 30% der Schweizer Unternehmen verfuegen ueber umfassende KI-Richtlinien, was den Weiterbildungs- und Kompetenzaufbaubedarf bei Mitarbeitenden massiv erhoeht. KI-Kompetenz und Begleitung beim Wandel sind die gefragten Leistungen – direkt relevant fuer Learnfluencers Thought-Leadership-Positionierung.",
+        source: "Watson.ch",
+        url: "https://www.watson.ch/wirtschaft/unternehmen/271098444-studie-schweizer-firmen-treiben-ki-voran-mitarbeiter-verunsichert",
+        date: "April 2026",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "IT-Markt Schweiz Februar 2026: 'Schweizer Unternehmen erzielen mit KI noch kaum Umsatzwachstum' – KI steigert zwar Produktivitaet, generiert aber kaum neuen Umsatz. KMU sind langsamer bei der Implementierung als Grossunternehmen. Zeigt Bedarf an praxisnaher KI-Kompetenz und Anwendungsbegleitung – Kernthema von learnfluencer.ch.",
+        source: "IT-Markt",
+        url: "https://www.it-markt.ch/news/2026-02-11/schweizer-unternehmen-erzielen-mit-ki-noch-kaum-umsatzwachstum",
+        date: "Februar 2026",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-08",
+      },
       // Neu: 08.04.2026
       {
         summary: "HSO Wirtschaftsschule Schweiz: Anmeldeschluss für KI-Professional-Lehrgang am 12. April 2026 – Start Ende April 2026. Der Lehrgang vermittelt KI-Strategie, Prompt Engineering, KI-Ethik und Implementierung. Wachsende institutionelle Nachfrage nach formalen KI-Zertifikaten für Businessprofis in der Schweiz – bestätigt Relevanz der Learnfluencer-Positionierung an der Schnittstelle KI und Weiterbildung.",
@@ -2729,6 +2881,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 08.04.2026 (Recherche-Runde 2)
+      {
+        summary: "The Smarters: 'Top 7 MarTech Trends 2026' – Composable Stacks (modulare, flexibel austauschbare Tools), First-Party-Data statt Third-Party-Identifiern sowie die Evolution der Marketing Operations-Rolle hin zu 'Business Value Engineers'. KI nivelliert das Spielfeld fuer Mittelstaendler – bestaetigt die Relevanz von einfachen, integrierten Marketing-Planungstools fuer KMU.",
+        source: "The Smarters",
+        url: "https://thesmarketers.com/blogs/martech-trends-2026/",
+        date: "2026",
+        category: "MarTech & Trends",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "Dexata: '10 MarTech Trends 2026' – Marketing-Technologie und digitale Planung werden nicht mehr als Nischenthema, sondern als Kernkompetenz in KMU behandelt. Einfache, strukturierte Marketing-Planungstools erleben 2026 wachsende Nachfrage bei KMU – direktes Marktumfeld fuer das learnfluencer.ch Marketingkonzept-Tool.",
+        source: "Dexata",
+        url: "https://dexata.co/10-martech-trends-that-will-redefine-2026/",
+        date: "2026",
+        category: "MarTech & Trends",
+        addedAt: "2026-04-08",
+      },
       // Neu: 08.04.2026
       {
         summary: "you-media.ch: 'KI im Marketing – so profitieren Schweizer Unternehmen 2026' – GEO (Generative Engine Optimization) als neuer Standard, da Kunden direkte Antworten in KI-Suchsystemen (ChatGPT, Gemini, Perplexity) statt Linklisten erwarten. KI-Tools (ChatGPT, Jasper, Midjourney) für Content-Erstellung; Budgetempfehlung CHF 100–500/Monat. Belegt den strukturellen Wandel im Schweizer Marketing – direktes Marktumfeld für das Marketingkonzept-Tool.",
@@ -2952,6 +3121,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 08.04.2026
+      {
+        summary: "Schweizer Verband der Bestattungsdienste 2026: 'Digitaler Nachlass – Was passiert mit Online-Accounts nach dem Tod?' – ZKB, UBS, Swisscom und bestatter.ch haben Ratgeber veroeffentlicht. Dienste wie LegacyNotes und SecureSafe ermoeglichen strukturierte Vorsorge inkl. Bestattungswuenschen. Wachsendes Bewusstsein fuer digitalen Nachlass als Teil der Bestattungsvorsorge – relevant fuer bestattungsplaner.ch.",
+        source: "Schweizer Verband der Bestattungsdienste",
+        url: "https://bestatter.ch/en/digital-legacy-what-happens-to-your-online-accounts-after-death/",
+        date: "2025/2026",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "Luctum Bestattungen (Luzern): Digitalisierung im Bestattungswesen – 'erster Kontakt digital, finaler Abschluss persoenlich' als hybrides Modell der Zukunft. Bestattungen online buchen ist in der Schweiz angekommen, aber erst im Fruehstadium. Direktes Wettbewerberumfeld fuer bestattungsplaner.ch als Lead-Vermittler zwischen online-suchenden Angehoerigen und lokalen Bestattungsinstituten.",
+        source: "Luctum Bestattungen",
+        url: "https://luctum.ch/DIGITALISIERUNG/",
+        date: "2025/2026",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-08",
+      },
       // Neu: 07.04.2026 (Recherche-Runde 2)
       {
         summary: "Livenet.ch: 'Deutliche Zunahme von Kremation und alternativen Bestattungen' – Kremationen in der Schweiz erreichen 89–93% aller Bestattungen, Tendenz weiter steigend. Naturbestattungen (Wald, See, Berg) und neue Formen wie Kompostbestattung gewinnen an Popularität. Bestätigt strukturellen Wandel im Schweizer Bestattungsmarkt – wachsende Nachfrage nach Beratung zu alternativen Formen auf bestattungsplaner.ch.",
