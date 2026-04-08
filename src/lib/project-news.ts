@@ -26,6 +26,31 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 08.04.2026 (Recherche-Runde 3)
+      {
+        summary: "Netzwoche: Neuer eidg. Fachausweis 'AI Business Specialist' startet 2026 – ICT-Berufsbildung Schweiz führt mit Genehmigung des SBFI einen neuen Abschluss für KI-Spezialisten ein. Erste offizielle Berufsprüfung Herbst 2026, Vorbereitungskurse laufen bereits. Stärkt die Relevanz der ICT-Weiterbildungslandschaft inkl. SIZ-Prüfungsorganisation.",
+        source: "Netzwoche",
+        url: "https://www.netzwoche.ch/news/2025-10-14/fachausweis-ai-business-specialist-startet-2026",
+        date: "2025-10-14",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "IT-Magazine: ICT-Grundausbildung Schweiz wird revidiert – Seit Anfang 2026 gilt für Lernende im Beruf ICT-Fachfrau/-mann EFZ eine neue Bildungsverordnung. Neu verankert werden Kompetenzen in Cybersecurity, Datenschutzsensibilisierung und systematischer Prozessautomatisierung. Modernisierte Ausbildungsgrundlage stärkt Qualität der ICT-Abschlüsse und damit die Relevanz von SIZ-Zertifizierungen.",
+        source: "IT-Magazine",
+        url: "https://www.itmagazine.ch/artikel/86438/ICT-Grundausbildung_in_der_Schweiz_wird_revidiert.html",
+        date: "2026-01",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "ICT Training Award 2026 ausgeschrieben: swissICT und ICT-Berufsbildung Schweiz vergeben am 19. November 2026 im Zürcher Hallenstadion den ICT Training Award. Lehrbetriebe können sich bis 12. Juni 2026 bewerben. Der Preis würdigt besonders engagierte Ausbildungsbetriebe und stärkt das Profil der anerkannten ICT-Berufsbildung in der Schweiz.",
+        source: "ICT-Berufsbildung Schweiz",
+        url: "https://www.ict-berufsbildung.ch/grundbildung/berufsmeisterschaft",
+        date: "2026-04",
+        category: "Bildungspolitik",
+        addedAt: "2026-04-08",
+      },
       // Neu: 08.04.2026 (Recherche-Runde 2)
       {
         summary: "ICT-Berufsbildung Schweiz: Berufsbildung ist mit Abstand die groesste Zubringerin an ICT-Fachkraeften – Trotz eines prognostizierten Gesamtengpasses von 54'400 ICT-Fachkraeften bis 2033 stellt die Berufsbildung die meisten neuen Fachkraefte bereit. Der Bericht bestaetigt die zentrale Rolle der ICT-Ausbildung und Zertifizierung fuer den Schweizer Arbeitsmarkt – staerkt die strategische Relevanz von SIZ als anerkannte Pruefungsorganisation.",
@@ -2028,6 +2053,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 08.04.2026 (Recherche-Runde 5)
+      {
+        summary: "Fortune Business Insights: Globaler Produktivitäts-App-Markt 2026 – USD 14,46 Mrd. Marktvolumen, soll bis 2034 auf USD 30,85 Mrd. steigen (CAGR 9,94%). 76% des Umsatzes stammt aus Abonnements; KI-Integration ist der wichtigste Differenzierungsfaktor. Wachsendes Marktumfeld für spezialisierte Methoden-Apps wie den 12 Week Year Planner.",
+        source: "Fortune Business Insights",
+        url: "https://www.fortunebusinessinsights.com/productivity-apps-market-110254",
+        date: "2026",
+        category: "SaaS & Tools",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "Modall: SaaS-Trends 2025–2026 – 50% der horizontalen Produktivitäts-Apps werden bis 2026 akquiriert oder pivotieren. Spezialisierte Nischenanwendungen mit klarer Methode (wie 12 Week Year) haben strukturellen Vorteil gegenüber generischen Tools. Bestätigt die Positionierungsstrategie des 12wy-planners als methodenspezifisches Nischen-SaaS.",
+        source: "Modall",
+        url: "https://modall.ca/blog/saas-trends",
+        date: "2025",
+        category: "SaaS & Tools",
+        addedAt: "2026-04-08",
+      },
       // Neu: 08.04.2026 (Recherche-Runde 4)
       {
         summary: "Globaler Markt für Produktivitäts-Apps 2026: USD 14,46 Milliarden Marktvolumen mit ~10% CAGR bis 2034. KI-native Tools, die proaktiv Ziele antizipieren und Planungsunterstützung bieten, setzen sich gegen generische Alternativen durch. Für 12wy-planner.vercel.app zeigt dies das Marktpotenzial und die Notwendigkeit, KI-Integration als differenzierendes Feature zu kommunizieren.",
@@ -2312,6 +2354,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 08.04.2026 (Recherche-Runde 5)
+      {
+        summary: "Springer Nature / Gynäkologische Endokrinologie (2025): Übersichtsarbeit zu therapeutischen Potenzialen digitaler Gesundheitsanwendungen (DiGA) bei sexuellen Funktionsstörungen. Autoren Beier und von Heyden sehen DiGA als vielversprechende Ergänzung zu klassischen Therapien. Wachsender Markt für digitale Selbsthilfeangebote im Bereich sexuelle Gesundheit stärkt Positionierung von orgasmus-hinauszoegern.de.",
+        source: "Springer Nature / Gynäkologische Endokrinologie",
+        url: "https://link.springer.com/article/10.1007/s10304-025-00645-x",
+        date: "2025",
+        category: "Digital Health",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "Handelsblatt Inside Digital Health: Digitale Therapie-App zur Verbesserung sexueller Funktion beim BfArM als DiGA beantragt. Zeigt wachsenden Markt für digitale Selbsthilfe-Tools im Bereich sexuelle Gesundheit – ein Trend der auch Hypnose-Audios für Männer begünstigt. Zunehmende institutionelle Anerkennung digitaler Gesundheitsanwendungen in diesem Bereich.",
+        source: "Handelsblatt Inside Digital Health",
+        url: "https://www.handelsblatt.com/technik/medizin/inside-digital-health/sexualitaet-digitale-therapie-verbessert-weibliche-sexualfunktion/100197210.html",
+        date: "2025",
+        category: "Digital Health",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "GGG.at: Wien eröffnet 2026 das magnus*-Ambulatorium der Aids Hilfe Wien – niederschwellige Einrichtung für Diagnostik, Beratung, Behandlung und Prävention im Bereich sexuelle Gesundheit. Zeigt Ausbau von Versorgungsangeboten im DACH-Raum und wachsendes gesellschaftliches Bewusstsein für sexuelle Gesundheitsthemen.",
+        source: "GGG.at",
+        url: "https://www.ggg.at/2025/12/09/wien-bekommt-2026-ein-neues-ambulatorium-fuer-sexuelle-gesundheit/",
+        date: "2025-12-09",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-08",
+      },
       // Neu: 08.04.2026 (Recherche-Runde 4)
       {
         summary: "Bundesgesundheitsportal gesund.bund.de: Vorzeitiger Samenerguss (Ejaculatio praecox) betrifft rund 20–30% aller Männer unter 60 – die häufigste sexuelle Funktionsstörung. Neben medikamentösen Optionen und Verhaltenstherapie gewinnen psychologische Ansätze an Bedeutung, in die Hypnose-Audios gut einzuordnen sind. Der riesige adressierbare Markt und die zunehmende Offenheit für nicht-medikamentöse Lösungen stärken die Positionierung von orgasmus-hinauszoegern.de.",
@@ -2538,6 +2605,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 08.04.2026 (Recherche-Runde 6)
+      {
+        summary: "Gesellschaft für Verhaltenstherapie: Prüfungsangst-Glossar – KVT gilt als Goldstandard bei Prüfungs- und Auftrittsangst. Häufigkeit auf 10–12% der Bevölkerung geschätzt, neue hybride Ansätze kombinieren KVT mit Hypnose und Mentaltraining. Grosses, unterversorgtes Marktsegment für digitale Selbsthilfeangebote wie lampenfieber-besiegen.de.",
+        source: "Gesellschaft für Verhaltenstherapie",
+        url: "https://gfvt.de/glossar/pruefungsangst/",
+        date: "2025",
+        category: "Psychologie & Forschung",
+        addedAt: "2026-04-08",
+      },
       // Neu: 08.04.2026 (Recherche-Runde 5)
       {
         summary: "Hypnosepraxis Rausch: 'Prüfungsangst, Redeangst & Lampenfieber auflösen – Gelassenheit erleben' – Kombination von Hypnose, NLP, EFT-Tapping und Mentaltraining eliminiert Ängste typischerweise in 1–5 Einzelcoachings. Über 90% der Klienten wählen intensive Kurzzeit-Sessions an aufeinanderfolgenden Tagen. Wachsendes Angebot spezialisierter Hypnose-Anbieter im DACH-Raum bestätigt Marktreife für das Audio-Produkt lampenfieber-besiegen.de.",
@@ -2822,6 +2898,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 08.04.2026 (Recherche-Runde 7)
+      {
+        summary: "PH Zürich / DIZH: Tagung 'Digitale Transformation konkret – Lerntechnologien in Berufs- und Erwachsenenbildung' fand am 12. März 2026 statt (SGAB, PH Zürich, ICT-Berufsbildung). Thema: Wie Lerntechnologien die Erwachsenenbildung konkret verändern – praxisnahe Fallbeispiele und aktuelle Forschungserkenntnisse. Direkter Kontext für learnfluencer.ch als Thought-Leadership-Plattform im Bereich Lernkompetenz und Digitalisierung.",
+        source: "PH Zürich / DIZH",
+        url: "https://phzh.ch/weiterbildung/alle-weiterbildungen/weiterbildungsanlass/?anlassId=144647234",
+        date: "2026-03-12",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "eLearning Industry: 'Top eLearning Trends – How New Innovations Are Shaping Education' – Skills-basiertes Lernen mit Micro-Credentials, datengetriebene Lernanalyse und Systeminteroperabilität zwischen LMS und anderen Plattformen werden zu Kernthemen 2026. KI-Personalisierung steigert Engagement und Abschlussquoten messbar. Wachstumsumfeld für Lernkompetenz-Content auf learnfluencer.ch.",
+        source: "eLearning Industry",
+        url: "https://elearningindustry.com/top-elearning-trends-how-new-innovations-are-shaping-education",
+        date: "2026",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-08",
+      },
       // Neu: 08.04.2026 (Recherche-Runde 6)
       {
         summary: "Adobe: 'Top Trends Shaping Corporate E-Learning Platforms in 2026' – Adaptive Learning, KI-gestützte Personalisierung und Microlearning dominieren. 94% der Organisationen setzen Microlearning ein, Abschlussquoten steigen auf bis zu 80%. KI passt Lerninhalte in Echtzeit an individuelle Performance an. Für learnfluencer.ch als Thought-Leadership-Plattform: der Markt für KI-gestütztes Lernen explodiert – idealer Moment für Positionierung als Lernkompetenz-Experte.",
@@ -3164,6 +3257,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 08.04.2026 (Recherche-Runde 4)
+      {
+        summary: "Researchly.at: Guide zu strategischen Unternehmensanalyse-Tools 2026 – PESTEL, Porter's Five Forces, SWOT und BCG-Matrix im Überblick. KI-gestützte Software beschleunigt die Analyse, die strategische Interpretation bleibt beim Nutzer. Integrierte Multi-Framework-Tools werden als Zukunftsstandard positioniert – direkter Wettbewerbskontext für das learnfluencer.ch/tools/marketingkonzept.",
+        source: "Researchly.at",
+        url: "https://www.researchly.at/post/strategische-unternehmensanalyse-tools",
+        date: "2026",
+        category: "Strategie & Analyse",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "marketingautomation.tech: Gartner prognostiziert bis 2026 über 80% der Unternehmen integrieren generative KI-APIs in Marketing-Prozesse. Trend zu KI-gestützten Marketingkonzept-Tools beschleunigt sich – interaktive Planungstools (SWOT, 7P, KPI-Builder) entsprechen dem Marktbedarf direkt. Wachstumstreiber für das Marketingplan-Tool auf learnfluencer.ch.",
+        source: "marketingautomation.tech",
+        url: "https://www.marketingautomation.tech/marketing-trends-2026-ki/",
+        date: "2026",
+        category: "MarTech & Trends",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "KMU Mentor: 'Keine brauchbare KMU-Strategie allein mit der SWOT-Analyse' – SWOT muss mit PESTEL und Porter's Five Forces kombiniert und in konkrete Massnahmen überführt werden. Unterstreicht den Bedarf an integrierten, geführten Marketingkonzept-Tools für Schweizer KMU – direkte Positionierungsunterstützung für das learnfluencer.ch/tools/marketingkonzept.",
+        source: "KMU Mentor",
+        url: "https://www.kmu-mentor.ch/blog/keine-brauchbare-kmu-strategie-allein-mit-der-swot-analyse/",
+        date: "2025",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-08",
+      },
       // Neu: 08.04.2026 (Recherche-Runde 3)
       {
         summary: "Lorien Group: 'Online-Marketing-Strategie für KMU Schweiz 2026' – Praxisleitfaden für Schweizer KMU: weg von saisonalen Einzelaktionen, hin zu kontinuierlichem, zielausgerichtetem Marketingplan. Kernelemente: Zielgruppendefinition, Kanalstrategie, Content-Planung und Erfolgsmessung. Belegt den anhaltenden Bedarf an strukturierten, digitalen Marketingkonzept-Tools für Schweizer KMU.",
@@ -3421,6 +3539,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 08.04.2026 (Recherche-Runde 7)
+      {
+        summary: "widevoices.com: Feuerbestattung in der Schweiz 2026 – Über 90% aller Verstorbenen werden in der Schweiz kremiert (europäischer Spitzenwert). Gebühren für identische Leistungen unterscheiden sich zwischen Kantonshauptstädten um das bis zu 50-Fache. Aktuelle Preis- und Informationsübersicht für 2026 – relevanter Marktkontext für bestattungsplaner.ch.",
+        source: "widevoices.com",
+        url: "https://widevoices.com/de/articles/feuerbestattung-in-der-schweiz-preise-und-wichtige-informationen-fur-2026",
+        date: "2026",
+        category: "Kremation Trend Schweiz",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "LegacyNotes (Schweiz): Plattform für digitale Nachlassplanung kooperiert ab Dezember 2025 mit der Zürcher Kantonalbank. Nutzer können Bestattungswünsche, Trauerfeier-Details sowie digitale Accounts hinterlegen. Auch von Pensionskasse ASGA empfohlen – zunehmende institutionelle Akzeptanz digitaler Vorsorge. Wachstumsumfeld für bestattungsplaner.ch.",
+        source: "LegacyNotes",
+        url: "https://legacynotes.ch/",
+        date: "2025-12",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-04-08",
+      },
       // Neu: 08.04.2026 (Recherche-Runde 6)
       {
         summary: "Schweizer Naturbestattung (schweizer-naturbestattung.ch): Über 60 Friedwälder in der Schweiz, dazu Berg-, See-, Fluss- und Waldbestattungen. Wachsender Trend zu individuellen Naturbestattungen als Zeichen einer individualisierten Gesellschaft – immer mehr Menschen wünschen sich alternative Bestattungsformen abseits traditioneller Friedhöfe. Direkter Marktkontext für bestattungsplaner.ch als Plattform, die auch alternative Bestattungsformen vermitteln kann.",
