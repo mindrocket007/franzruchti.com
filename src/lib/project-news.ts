@@ -1532,6 +1532,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 08.04.2026 (Recherche-Runde 4)
+      {
+        summary: "5. Dreiländertagung Betriebliche Gesundheitsförderung (BGF) vom 11.–12. März 2026 in Innsbruck: Rund 200 Teilnehmende aus Deutschland, Österreich und der Schweiz diskutierten Resilienz und Krisenmanagement in der Arbeitswelt. Zentrales Fazit: Digitalisierung hat insgesamt mehr Belastungen als Entlastungen gebracht; New Work zeigt laut Auswertung von 47 Studien (2010–2024) positive Effekte auf mentale Gesundheit (Autonomie, Vertrauen, Wohlbefinden). Diversity-orientierte BGF gewinnt an Bedeutung. BGF wird als strategische Kerndisziplin für Unternehmen bestätigt – wachsendes Marktumfeld für digitale BGM-Lösungen wie hypnovital®.",
+        source: "Dreiländertagung BGF",
+        url: "https://www.dreilaendertagung.net/ruckschau/",
+        date: "11.03.2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "15. Symposium Betriebliches Gesundheitsmanagement am 9. Juni 2026 (iso-Institut, Saarbrücken): Jubiläumsveranstaltung des renommierten BGM-Fachsymposiums – Fokus auf nachhaltige BGM-Strategien und psychische Gesundheit am Arbeitsplatz. Unterstreicht die wachsende Professionalisierung des BGM-Sektors und die steigende Nachfrage nach ganzheitlichen, digitalen Gesundheitslösungen wie hypnovital®.",
+        source: "iso-Institut",
+        url: "https://www.iso-institut.de/9-juni-2026-15-symposium-betriebliches-gesundheitsmanagement/",
+        date: "09.06.2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-08",
+      },
       // Neu: 08.04.2026 (Recherche-Runde 3)
       {
         summary: "KMU-Frauen-Anlass des Gewerbeverbands Appenzell Ausserrhoden (11. März 2026) zum Thema 'Mehr als nur Show – was wirklich hinter Hypnose steckt': Hypnosetherapeutin Alexandra Meister führte rund 22 Teilnehmerinnen in die Welt der Hypnose ein. Zeigt wachsendes Interesse an Hypnose-Coaching auch in KMU-Kontexten und bei Unternehmerinnen – relevantes Marktumfeld für hypnovital® als BGM-Lösung.",
