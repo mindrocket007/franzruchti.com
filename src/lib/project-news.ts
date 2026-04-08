@@ -1557,6 +1557,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 08.04.2026 (Recherche-Runde 6)
+      {
+        summary: "IFBG BGF-Kompass 2026: Über 70 praxiserprobte Maßnahmen und förderfähige Formate für die BGF-Jahresplanung – Themen: Schlaf, mentale Gesundheit, Ernährung, Schichtarbeit. Das Institut für Betriebliche Gesundheitsförderung zeigt, dass BGF längst kein 'Nice-to-have' mehr ist, sondern strategischer Erfolgsfaktor. Audio-basierte Hypnose-Programme wie hypnovital® fügen sich nahtlos in solche BGF-Jahrespläne ein als skalierbare, digital abrufbare Massnahme.",
+        source: "IFBG",
+        url: "https://www.ifbg.eu/bgf-kompass-2026/",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-08",
+      },
       // Neu: 08.04.2026 (Recherche-Runde 5)
       {
         summary: "Institut Kuhn-Krainick: 'BGM Trends 2026 – Wirksamkeit & Orientierung für Unternehmen' – Betriebliches Gesundheitsmanagement entwickelt sich 2026 ganzheitlicher mit Schwerpunkt auf mentaler Gesundheit und hybriden Angeboten. Angesichts von Fachkräftemangel und steigenden psychischen Belastungen setzen Unternehmen zunehmend auf systematische Gesundheitsförderung. Audio-basierte Programme wie hypnovital® passen als skalierbare Ergänzung in jeden BGM-Mix.",
@@ -2813,6 +2822,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 08.04.2026 (Recherche-Runde 6)
+      {
+        summary: "Adobe: 'Top Trends Shaping Corporate E-Learning Platforms in 2026' – Adaptive Learning, KI-gestützte Personalisierung und Microlearning dominieren. 94% der Organisationen setzen Microlearning ein, Abschlussquoten steigen auf bis zu 80%. KI passt Lerninhalte in Echtzeit an individuelle Performance an. Für learnfluencer.ch als Thought-Leadership-Plattform: der Markt für KI-gestütztes Lernen explodiert – idealer Moment für Positionierung als Lernkompetenz-Experte.",
+        source: "Adobe eLearning",
+        url: "https://elearning.adobe.com/2026/02/top-trends-shaping-corporate-e-learning-platforms-in-2026/",
+        date: "Februar 2026",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "eLearning Industry: 'Top 7 eLearning Trends 2026' – Adaptive Learning mit 20,3% CAGR bis 2032 (von USD 2 Mrd. auf USD 10,9 Mrd.), Immersive Learning (AR/VR), KI-Tutoren und Learning in the Flow of Work als Haupttrends. Europäischer E-Learning-Markt auf 111 Mrd. EUR (30% des Weltmarkts). Wachstumstreiber für Learnfluencer-Inhalte zu Lernkompetenz und KI in der Weiterbildung.",
+        source: "eLearning Industry",
+        url: "https://elearningindustry.com/the-top-elearning-trends-that-will-define-2026",
+        date: "2026",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-08",
+      },
       // Neu: 08.04.2026 (Recherche-Runde 4)
       {
         summary: "ISB Academy (23. März 2026): 'KI in der Bildung – Online-Lehre und pädagogische Anwendungen' – Praxisartikel zeigt, wie KI in der Online-Lehre eingesetzt wird: adaptive Lernpfade, automatisiertes Feedback, personalisierte Aufgaben und KI-gestützte Lernbegleitung. Für Learnfluencer-Positionierung relevant: KI verändert die Rolle des Lernbegleiters – menschliche Kompetenz bei Didaktik und Motivation bleibt unverzichtbar.",
@@ -3395,6 +3421,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 08.04.2026 (Recherche-Runde 6)
+      {
+        summary: "Schweizer Naturbestattung (schweizer-naturbestattung.ch): Über 60 Friedwälder in der Schweiz, dazu Berg-, See-, Fluss- und Waldbestattungen. Wachsender Trend zu individuellen Naturbestattungen als Zeichen einer individualisierten Gesellschaft – immer mehr Menschen wünschen sich alternative Bestattungsformen abseits traditioneller Friedhöfe. Direkter Marktkontext für bestattungsplaner.ch als Plattform, die auch alternative Bestattungsformen vermitteln kann.",
+        source: "Schweizer Naturbestattung",
+        url: "https://schweizer-naturbestattung.ch/naturbestattung/",
+        date: "2026",
+        category: "Markt & Trends",
+        addedAt: "2026-04-08",
+      },
       // Neu: 08.04.2026 (Recherche-Runde 3)
       {
         summary: "ABSCHIED'26 auf MySwitzerland.com gelistet: Die offizielle Schweizer Tourismusseite bewirbt die erste Schweizer Fachmesse für Vorsorge, Pflege und Trauer (29.–30. Oktober 2026, Messe Luzern) als nationales Event. Die Messe vereint Aussteller aus Vorsorge, Pflege, Bestattung und Trauer – wachsende gesellschaftliche Bedeutung des Themas bestätigt das Marktpotenzial für digitale Plattformen wie bestattungsplaner.ch.",
