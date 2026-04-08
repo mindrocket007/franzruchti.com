@@ -765,6 +765,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 08.04.2026 (Recherche-Runde 5)
+      {
+        summary: "US Supreme Court kippt Trump-Zölle (20. Februar 2026) – ES-Futures in Turbulenz: Das Oberste Gericht (6:3) erklärte, dass der IEEPA dem Präsidenten keine Befugnis zur Erhebung von Importzöllen gibt. S&P 500 stieg am Urteilstag um 0,7%, danach neue Unsicherheit durch Trumps Ersatzmassnahmen (globaler Pauschalzoll 10% dann 15%). Für ES-Futures-Trader bleibt das politische Umfeld der dominante Volatilitätstreiber 2026.",
+        source: "CNBC Markets",
+        url: "https://www.cnbc.com/2026/02/19/stock-market-today-live-updates.html",
+        date: "20.02.2026",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "Liberation Day – 1 Jahr danach (CNBC, 2. April 2026): US-Assets unter Druck – Investoren hinterfragen 'American Exceptionalism'. Trumps Zollpolitik, Angriffe auf Fed-Unabhängigkeit und Militäroperationen im Nahen Osten sorgen für strukturelle Unsicherheit. Seesaw-Bewegungen bei S&P 500 Futures bleiben prägend – relevanter Marktkontext für ES-Daytrader.",
+        source: "CNBC",
+        url: "https://www.cnbc.com/2026/04/02/liberation-day-1-year-on-investors-are-rethinking-us-assets.html",
+        date: "02.04.2026",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "Fisher Investments: 'On Tariffs, the Supremes Have Finally Sung' – Analyse der Langzeitfolgen des Supreme-Court-Urteils. Trump ersetzt IEEPA-Zölle durch Executive Order (10–15% Globalzoll). Zollmarkt bleibt dynamisch, Volatilität hoch. Prop Trader und ES-Futures-Händler brauchen 2026 robuste politische Risiko-Filter in ihren Strategien.",
+        source: "Fisher Investments",
+        url: "https://www.fisherinvestments.com/en-us/insights/market-commentary/on-tariffs-the-supremes-have-finally-sung",
+        date: "2026",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-08",
+      },
       // Neu: 08.04.2026 (Recherche-Runde 4)
       {
         summary: "ES Futures unter starkem Druck – Geopolitische Spannungen und Zollrisiken belasten US-Märkte: Der S&P 500 E-Mini (ES) erreichte am 28. Januar 2026 ein Allzeithoch bei 7.043 und befindet sich seither in einer signifikanten Korrektur. Per 8. April 2026 belasten Nahost-Spannungen und Ölpreisanstieg (+3%) die Märkte weiter. Für Day Trader der Mind Rocket Trading-Community sind erhöhte Volatilität und das aktuelle Marktumfeld von unmittelbarer Bedeutung für kurzfristige Strategie-Anpassungen.",
@@ -1532,6 +1557,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 08.04.2026 (Recherche-Runde 5)
+      {
+        summary: "Institut Kuhn-Krainick: 'BGM Trends 2026 – Wirksamkeit & Orientierung für Unternehmen' – Betriebliches Gesundheitsmanagement entwickelt sich 2026 ganzheitlicher mit Schwerpunkt auf mentaler Gesundheit und hybriden Angeboten. Angesichts von Fachkräftemangel und steigenden psychischen Belastungen setzen Unternehmen zunehmend auf systematische Gesundheitsförderung. Audio-basierte Programme wie hypnovital® passen als skalierbare Ergänzung in jeden BGM-Mix.",
+        source: "Institut Kuhn-Krainick",
+        url: "https://www.institut-kuhn-krainick.de/nachhaltige-weiterbildung/bgmtrends2026/",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "FHNW CAS Betriebliches Gesundheitsmanagement (BGM) 2026: Berufsbegleitender Lehrgang für HR-Fachleute, Führungskräfte und BGM-Verantwortliche – umfasst psychische Gesundheit, hybride Arbeitswelten und digitale BGM-Tools. Wachsende Zahl von BGM-Spezialisten in der Schweiz stärkt die Nachfrage nach professionalisierten, zertifizierten Lösungen wie hypnovital®.",
+        source: "FHNW",
+        url: "https://www.fhnw.ch/de/weiterbildung/psychologie/cas-betriebliches-gesundheitsmanagement_bgm",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-08",
+      },
       // Neu: 08.04.2026 (Recherche-Runde 4)
       {
         summary: "5. Dreiländertagung Betriebliche Gesundheitsförderung (BGF) vom 11.–12. März 2026 in Innsbruck: Rund 200 Teilnehmende aus Deutschland, Österreich und der Schweiz diskutierten Resilienz und Krisenmanagement in der Arbeitswelt. Zentrales Fazit: Digitalisierung hat insgesamt mehr Belastungen als Entlastungen gebracht; New Work zeigt laut Auswertung von 47 Studien (2010–2024) positive Effekte auf mentale Gesundheit (Autonomie, Vertrauen, Wohlbefinden). Diversity-orientierte BGF gewinnt an Bedeutung. BGF wird als strategische Kerndisziplin für Unternehmen bestätigt – wachsendes Marktumfeld für digitale BGM-Lösungen wie hypnovital®.",
@@ -2487,6 +2529,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 08.04.2026 (Recherche-Runde 5)
+      {
+        summary: "Hypnosepraxis Rausch: 'Prüfungsangst, Redeangst & Lampenfieber auflösen – Gelassenheit erleben' – Kombination von Hypnose, NLP, EFT-Tapping und Mentaltraining eliminiert Ängste typischerweise in 1–5 Einzelcoachings. Über 90% der Klienten wählen intensive Kurzzeit-Sessions an aufeinanderfolgenden Tagen. Wachsendes Angebot spezialisierter Hypnose-Anbieter im DACH-Raum bestätigt Marktreife für das Audio-Produkt lampenfieber-besiegen.de.",
+        source: "Hypnosepraxis Rausch",
+        url: "https://www.hypnosepraxis-rausch.de/hilfe-bei/pruefungsangst-redeangst-lampenfieber-aufloesen/",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "Praxis Rosenauer: 'Hypnose bei Prüfungsangst und Lampenfieber' – Hypnosetherapie adressiert tiefenpsychologisch die Wurzeln von Auftrittsangst; formative Erlebnisse werden nachverarbeitet und emotionale Verknüpfungen gelöst. Typisches Ergebnis: signifikante Verbesserung nach 1–3 Sitzungen. Weiterer Anbieter im DACH-Markt, der die starke Nachfrage nach Hypnose-Lösungen bei Lampenfieber bestätigt.",
+        source: "Praxis Rosenauer",
+        url: "https://praxis-rosenauer.de/hypnose-pruefungsangst-lampenfieber/",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-08",
+      },
       // Neu: 08.04.2026 (Recherche-Runde 4)
       {
         summary: "M.E.G.-Jahrestagung 2026 'Trauma, Trance und Therapie: Der Körper im Fokus' – wachsendes wissenschaftliches Interesse an klinischer Hypnose zeigt sich in aktiven Fachverbänden. Internationale Hypnosekongresse (u.a. in Winterthur) stärken 2026 die wissenschaftliche Glaubwürdigkeit von Hypnose-Produkten wie lampenfieber-besiegen.de im Markt.",
@@ -2754,6 +2813,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 08.04.2026 (Recherche-Runde 4)
+      {
+        summary: "ISB Academy (23. März 2026): 'KI in der Bildung – Online-Lehre und pädagogische Anwendungen' – Praxisartikel zeigt, wie KI in der Online-Lehre eingesetzt wird: adaptive Lernpfade, automatisiertes Feedback, personalisierte Aufgaben und KI-gestützte Lernbegleitung. Für Learnfluencer-Positionierung relevant: KI verändert die Rolle des Lernbegleiters – menschliche Kompetenz bei Didaktik und Motivation bleibt unverzichtbar.",
+        source: "ISB Academy",
+        url: "https://isb.academy/2026/03/23/ki-in-der-bildung-online-lehre-und-paedagogische-anwendungen/",
+        date: "23.03.2026",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-08",
+      },
       // Neu: 08.04.2026 (Recherche-Runde 3)
       {
         summary: "ki-trainingszentrum.com: 'KI Weiterbildung Unternehmen 2026: Strategien & Trends' – Unternehmen investieren 2026 massiv in KI-Kompetenzaufbau: Upskilling-Programme, AI Literacy für alle Mitarbeitenden und spezialisierte KI-Trainings für Fachkräfte. Skalierbare E-Learning-Ansätze und Blended Learning dominieren. Bestätigt die strategische Positionierung von learnfluencer.ch im KI-Weiterbildungsmarkt.",
@@ -3070,6 +3138,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 08.04.2026 (Recherche-Runde 3)
+      {
+        summary: "Lorien Group: 'Online-Marketing-Strategie für KMU Schweiz 2026' – Praxisleitfaden für Schweizer KMU: weg von saisonalen Einzelaktionen, hin zu kontinuierlichem, zielausgerichtetem Marketingplan. Kernelemente: Zielgruppendefinition, Kanalstrategie, Content-Planung und Erfolgsmessung. Belegt den anhaltenden Bedarf an strukturierten, digitalen Marketingkonzept-Tools für Schweizer KMU.",
+        source: "Lorien Group",
+        url: "https://www.lorien.group/blog/online-marketing-strategie-kmu",
+        date: "2026",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "dpstudio.ch: 'Digitale Strategie 2026 – Leitfaden für wachstumsorientierte KMU' – Strukturierter Ansatz für Schweizer KMU zur Entwicklung einer digitalen Gesamtstrategie: Situationsanalyse (SWOT/PESTEL), Zielformulierung, Kanalauswahl und Umsetzungsplanung. Klar positioniert als Ergänzung zu KI-Tools. Direktes Marktumfeld für das Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "dpstudio.ch",
+        url: "https://dpstudio.ch/de/blog-de/digitale-strategie-fuer-das-neue-jahr-so-starten-sie-richtig-durch/",
+        date: "2026",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-08",
+      },
       // Neu: 08.04.2026 (Recherche-Runde 2)
       {
         summary: "The Smarters: 'Top 7 MarTech Trends 2026' – Composable Stacks (modulare, flexibel austauschbare Tools), First-Party-Data statt Third-Party-Identifiern sowie die Evolution der Marketing Operations-Rolle hin zu 'Business Value Engineers'. KI nivelliert das Spielfeld fuer Mittelstaendler – bestaetigt die Relevanz von einfachen, integrierten Marketing-Planungstools fuer KMU.",
@@ -3310,6 +3395,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 08.04.2026 (Recherche-Runde 3)
+      {
+        summary: "ABSCHIED'26 auf MySwitzerland.com gelistet: Die offizielle Schweizer Tourismusseite bewirbt die erste Schweizer Fachmesse für Vorsorge, Pflege und Trauer (29.–30. Oktober 2026, Messe Luzern) als nationales Event. Die Messe vereint Aussteller aus Vorsorge, Pflege, Bestattung und Trauer – wachsende gesellschaftliche Bedeutung des Themas bestätigt das Marktpotenzial für digitale Plattformen wie bestattungsplaner.ch.",
+        source: "MySwitzerland.com",
+        url: "https://www.myswitzerland.com/en-us/experiences/events/abschied26-die-schweizer-fachmesse-fuer-vorsorge-pflege-und-trauer/",
+        date: "2026",
+        category: "Markt & Trends",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "Smartville.digital: 'Fachmesse ABSCHIED'26 – grosses Interesse bereits ein Jahr vor Durchführung' – Bereits ein Jahr vor dem Termin haben sich über 60 Aussteller und Partner angemeldet. Die Messe positioniert sich als zentrales Netzwerkevent für die Schweizer Bestattungs- und Vorsorgebranche und zeigt die wachsende Professionalisierung und Digitalisierungsbereitschaft des Sektors – direktes Marktumfeld für bestattungsplaner.ch.",
+        source: "Smartville Digital",
+        url: "https://www.smartville.digital/post/fachmesse-abschied-26-grosses-interesse-bereits-einjahr-vor-durchf%C3%BChrung",
+        date: "2025",
+        category: "Markt & Trends",
+        addedAt: "2026-04-08",
+      },
+      {
+        summary: "Abschied.swiss – Offizielle Website der ABSCHIED'26 Fachmesse: Forum mit Expertenreferaten, Podiumsdiskussionen und Q&A zu aktuellen Entwicklungen rund um Vorsorge, Sterbebegleitung und Bestattungskultur. Zielgruppen: Profis aus Verwaltung, NGOs, Pflege, Recht und Seelsorge. Wachsende Vernetzung und Professionalisierung der Branche stärkt Nachfrage nach digitalen Lead-Plattformen wie bestattungsplaner.ch.",
+        source: "Abschied.swiss",
+        url: "https://www.abschied.swiss/",
+        date: "2026",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-08",
+      },
       // Neu: 08.04.2026 (Recherche-Runde 2)
       {
         summary: "Everlife.ch: Nur rund 10% der Schweizer Todesfälle sind durch einen Bestattungsvorsorgevertrag abgedeckt – im Vergleich zu 85% in den Niederlanden ein enormes Wachstumspotenzial. Digitale Vorsorgelösungen mit digitalem Safe und Gedenkportal sind bereits verfügbar. Für bestattungsplaner.ch zeigt das, dass digitale Vorsorge-Angebote ein stark unterentwickelter, zukunftsträchtiger Markt in der Schweiz sind.",
