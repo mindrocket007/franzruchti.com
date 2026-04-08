@@ -647,6 +647,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
+      // Neu: 08.04.2026 (Recherche-Runde 3)
+      {
+        summary: "coaching-ratgeber.de: 'Was ändert sich im Coaching 2026? Trends, Chancen und neue Standards' – KI-gestütztes Coaching, messbare Outcomes und hybride Formate dominieren die Branche. Neue Standards fordern Transparenz bei Coaching-Resultaten und professionelle Zertifizierung. Direkt relevant für Mind Rocket als Anbieter digitaler Coaching- und Persönlichkeitsentwicklungs-Programme.",
+        source: "coaching-ratgeber.de",
+        url: "https://www.coaching-ratgeber.de/was-aendert-sich-im-coaching-2026-trends-chancen-und-neue-standards/",
+        date: "2026",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-04-08",
+      },
       // Neu: 08.04.2026
       {
         summary: "LinkedIn: Franz Ruchti als Geschäftsführer von Mind Rocket GmbH (Alpnach OW) bleibt aktiv auf LinkedIn präsent. Das Unternehmensprofil bestätigt die Ausrichtung auf digitale Persönlichkeitsentwicklung, Coaching und E-Learning-Programme. Keine neuen Medienerwähnungen von mindrocket.ch gefunden – Website weiterhin im Aufbau.",
@@ -1480,6 +1489,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 08.04.2026 (Recherche-Runde 3)
+      {
+        summary: "ad-hoc-news.de: 'Betriebliches Gesundheitsmanagement wird 2026 zum strategischen Imperativ' – BGM 2026 ist strategische Kernaufgabe: Personalabteilungen müssen Gesundheitsprogramme systematisch aufbauen und messbar gestalten. Digitale Lösungen und psychische Gesundheit stehen im Fokus. Wachstumsumfeld für hypnovital® als skalierbare, digitale BGM-Audio-Lösung.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/betriebliches-gesundheitsmanagement-wird-2026-zum-strategischen-imperativ/69075884",
+        date: "April 2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-08",
+      },
       // Neu: 08.04.2026 (Recherche-Runde 2)
       {
         summary: "Job-Stress-Index Schweiz 2026: 30,3% der Schweizer Erwerbstaetigen fuehlen sich emotional erschoepft – Rekordwert seit 2014. Gesundheitsfoerderung Schweiz plant fuer 2026 eine ueberarbeitete Neuerhebung des Index anlaesslich seines 10-jaehrigen Bestehens. Arbeitsbedingter Stress kostet die Schweizer Wirtschaft rund 6,5 Mrd. CHF jaehrlich.",
@@ -1891,6 +1909,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 08.04.2026 (Recherche-Runde 3)
+      {
+        summary: "northlyapp.com: 'OKR Methode: Der komplette Leitfaden 2026' – KI-gestützte OKR-Tools ermöglichen 2026 automatisches Tracking von Leading Indicators, wöchentliche Fortschrittsberichte und frühzeitige Warnung bei Zielabweichungen. Kombination von 12-Week-Year-Rhythmus und OKR-Methodik als bewährter Standard für Produktivität und Zielausrichtung – bestätigt Nachfrage nach Tools wie dem 12wy-planner.",
+        source: "northlyapp.com",
+        url: "https://northlyapp.com/de/blog/okr-methode-komplett-leitfaden/",
+        date: "2026",
+        category: "Produktivität & Planung",
+        addedAt: "2026-04-08",
+      },
       // Neu: 08.04.2026 (Recherche-Runde 2)
       {
         summary: "Asian Efficiency: 'Haeufige Fehler bei der 12-Week-Year-Methode' – Die Methode komprimiert das Jahr in vier intensive 12-Wochen-Zyklen und erzwingt Fokus statt Aufschieberitis. Fuer SaaS-Anbieter wie den 12wy-planner relevant: Nutzer suchen nach digitalen Tools, die die Methodik voll abbilden (Wochen-Reviews, 85%-Execution-Target, Leading Indicators).",
@@ -2574,6 +2601,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 08.04.2026 (Recherche-Runde 3)
+      {
+        summary: "ki-trainingszentrum.com: 'KI Weiterbildung Unternehmen 2026: Strategien & Trends' – Unternehmen investieren 2026 massiv in KI-Kompetenzaufbau: Upskilling-Programme, AI Literacy für alle Mitarbeitenden und spezialisierte KI-Trainings für Fachkräfte. Skalierbare E-Learning-Ansätze und Blended Learning dominieren. Bestätigt die strategische Positionierung von learnfluencer.ch im KI-Weiterbildungsmarkt.",
+        source: "ki-trainingszentrum.com",
+        url: "https://ki-trainingszentrum.com/ki-weiterbildung-unternehmen-2026-strategien-trends/",
+        date: "2026",
+        category: "KI Kompetenz & Weiterbildung",
+        addedAt: "2026-04-08",
+      },
       // Neu: 08.04.2026 (Recherche-Runde 2)
       {
         summary: "Watson.ch April 2026: 'Schweizer Firmen treiben KI voran – Mitarbeiter verunsichert' – Weniger als 30% der Schweizer Unternehmen verfuegen ueber umfassende KI-Richtlinien, was den Weiterbildungs- und Kompetenzaufbaubedarf bei Mitarbeitenden massiv erhoeht. KI-Kompetenz und Begleitung beim Wandel sind die gefragten Leistungen – direkt relevant fuer Learnfluencers Thought-Leadership-Positionierung.",
