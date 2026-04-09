@@ -189,13 +189,18 @@ export const projects: Project[] = [
   {
     slug: "marketingplan-software",
     title: "Marketingplan Software",
-    description: "Interaktives Marketingkonzept-Tool – PESTEL, 5 Forces, SWOT, 7P, Budget, KPIs",
+    description: "Interaktives Marketingkonzept-Tool – PESTEL, 5 Forces, SWOT, Ansoff, Porter, McKinsey, 7P, Budget, KPIs",
     pages: [
       {
         slug: "tool",
         title: "Marketingkonzept-Tool (learnfluencer)",
         file: "https://learnfluencer.ch/tools/marketingkonzept",
         external: true,
+      },
+      {
+        slug: "template",
+        title: "Marketingkonzept Template (leer)",
+        file: "/projects/Marketingkonzept_Template.html",
       },
     ],
   },
