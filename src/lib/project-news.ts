@@ -816,6 +816,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 09.04.2026 (Recherche-Runde 2)
+      {
+        summary: "CNBC: 'Dow jumps 1,300 points for best day since April 2025 as U.S.-Iran ceasefire pushes oil lower' – Am 7. April 2026 legte der Dow Jones +1'325 Punkte (+2,85%) zu, nachdem Trump einen zweiwöchigen Waffenstillstand mit Iran bekanntgab. WTI Crude Oil fiel -16% (grösster Tagesrückgang seit April 2020), von ~$112 auf ~$94. S&P 500 +2,51%. ES-Futures Trader: Extremes Volatilitätsevent durch Geopolitik – Iran-Krieg seit ~5 Wochen dominiert die Marktbewegungen 2026.",
+        source: "CNBC Markets",
+        url: "https://www.cnbc.com/2026/04/07/stock-market-today-live-updates.html",
+        date: "2026-04-07",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-09",
+      },
+      {
+        summary: "ainvest.com: '2026 Midterm Market Stress Test – Tariffs, Iran, and a Fragile Fed Transition Create Triple Threat for S&P 500' – Drei simultane Risiken drücken auf den Markt: 11,7% Zollbelastung (inflationär), US-Iran-Krieg und unsichere Fed-Führungsübergabe. UBS senkt S&P-500-Ziel auf 7'500. Midterm-Jahres-Effekt historisch negativ. Zeigt das komplexe Risikoprofil für ES-Futures-Trader im Frühjahr 2026.",
+        source: "ainvest.com",
+        url: "https://www.ainvest.com/news/2026-midterm-market-stress-test-tariffs-iran-fragile-fed-transition-create-triple-threat-500-2604/",
+        date: "2026-04",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-09",
+      },
       // Neu: 09.04.2026
       {
         summary: "NinjaTrader EU-Broker startet in Europa (Januar 2026): NinjaTrader lanciert über Payward Europe (Krakens CySEC-regulierte Einheit) seinen europäischen Broker-Dienst – zunächst in den Niederlanden und Deutschland, später Frankreich und Italien. Europäische Trader können nun direkt über NinjaTrader handeln, ohne US-Broker-Zugang. Erweitert die Nutzerbasis für NinjaScript-basierte Algo-Strategien erheblich.",
