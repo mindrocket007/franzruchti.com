@@ -26,6 +26,23 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 09.04.2026
+      {
+        summary: "ICT-Berufsbildung Schweiz: Berufsprüfung ICT-Application Development Specialist 2026 – Schriftlicher Teil am 13. Mai 2026, mündlicher Teil 18.–22. Mai 2026. Kandidatinnen und Kandidaten erhalten die Unterlagen bis 14. April 2026. Belegt laufende Prüfungsaktivität im Schweizer ICT-Bildungsmarkt – SIZ als anerkannte Prüfungsorganisation ist Teil dieses Ökosystems.",
+        source: "ICT-Berufsbildung Schweiz",
+        url: "https://www.ict-berufsbildung.ch/berufspruefung-ict-application-development-specialist-2026",
+        date: "Mai 2026",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-09",
+      },
+      {
+        summary: "ICT-Berufsbildung Schweiz: Berufsprüfung ICT-Platform Development Specialist 2026 (vormals ICT-System- und Netzwerktechniker) – Prüfung im Frühjahr 2026. Neue Berufsbezeichnung seit Reorganisation des ICT-Ausbildungsrahmens. Zeigt kontinuierliche Weiterentwicklung der Schweizer ICT-Berufsbilder und stärkt die Prüfungslandschaft, in der SIZ operiert.",
+        source: "ICT-Berufsbildung Schweiz",
+        url: "https://www.ict-berufsbildung.ch/berufspruefung-ict-platform-development-specialist-2026",
+        date: "Mai 2026",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-09",
+      },
       // Neu: 08.04.2026 (Recherche-Runde 3)
       {
         summary: "Netzwoche: Neuer eidg. Fachausweis 'AI Business Specialist' startet 2026 – ICT-Berufsbildung Schweiz führt mit Genehmigung des SBFI einen neuen Abschluss für KI-Spezialisten ein. Erste offizielle Berufsprüfung Herbst 2026, Vorbereitungskurse laufen bereits. Stärkt die Relevanz der ICT-Weiterbildungslandschaft inkl. SIZ-Prüfungsorganisation.",
@@ -672,6 +689,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
+      // Neu: 09.04.2026
+      {
+        summary: "DI MIND GmbH (dimind.ch): 'Von der Erschöpfung zur Balance: Ein neues Arbeitsmodell' – Schweizer Wellbeing-Plattform thematisiert systemische Neuausrichtung nach Erschöpfungsphasen, Fokus auf Resilienz, mentale Stärke und gesunde Arbeitsgestaltung. Zeigt wachsendes Interesse an ganzheitlichen Persönlichkeitsentwicklungs-Programmen – relevantes Marktumfeld für Mind Rocket GmbH.",
+        source: "DI MIND GmbH",
+        url: "https://www.dimind.ch/post/von-der-ersch%C3%B6pfung-zur-balance-ein-neues-arbeitsmodell",
+        date: "2026",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-04-09",
+      },
       // Neu: 08.04.2026 (Recherche-Runde 3)
       {
         summary: "coaching-ratgeber.de: 'Was ändert sich im Coaching 2026? Trends, Chancen und neue Standards' – KI-gestütztes Coaching, messbare Outcomes und hybride Formate dominieren die Branche. Neue Standards fordern Transparenz bei Coaching-Resultaten und professionelle Zertifizierung. Direkt relevant für Mind Rocket als Anbieter digitaler Coaching- und Persönlichkeitsentwicklungs-Programme.",
@@ -1332,6 +1358,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 09.04.2026
+      {
+        summary: "psychotherapeut.ai: 'Digitale Selbsthilfegruppen 2026 – Hoffnung, Risiken, Blinde Flecken' – Algorithmisch moderierte Chats, anonyme Foren und Video-Meetings schaffen neue digitale Selbsthilfe-Angebote. Mental-Health-Apps überschreiten 2026 die 8-Milliarden-Dollar-Marke (19% Wachstum p.a.). Zeigt dynamisch wachsenden Markt für niedrigschwellige digitale Selbsthilfe-Werkzeuge – Positionierungschance für mindtools.ch.",
+        source: "psychotherapeut.ai",
+        url: "https://psychotherapeut.ai/digitale-selbsthilfegruppen",
+        date: "2026",
+        category: "Mental Health",
+        addedAt: "2026-04-09",
+      },
       // Neu: 08.04.2026 (Recherche-Runde 2)
       {
         summary: "WildWechsel (NLP-Coach Schweiz) benennt Top-3-Trends 2026 für Persönlichkeitsentwicklung: Konsolidierung des Markts, steigende Nachfrage nach Tiefe statt oberflächlicher Motivation, und hybride Formate. Der Coaching-Markt Schweiz sortiert sich – wer nur motiviert, wird ersetzbar. Für mindtools.ch als Anbieter mentaler Werkzeuge (PDF-Bücher) bietet das eine klare Positionierungschance: Tiefe und substanzielle Werkzeuge statt Hype.",
@@ -2087,6 +2122,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 09.04.2026
+      {
+        summary: "rocket-routine.com: 'Quartalsziele mit Hilfe von KI finden und formulieren' – KI-Assistent unterstützt bei Zielformulierung nach SMART, OKR und 12-Week-Year-Methode. Wachsender Trend zu KI-gestützter Quartalszielplanung als Standard. Direktes Marktumfeld für den 12 Week Year Planner – bestätigt Nachfrage nach strukturierten, methodenbasierten Planungstools.",
+        source: "Rocket Routine",
+        url: "https://rocket-routine.com/quartalsziele-mit-hilfe-von-ki-finden-und-formulieren/",
+        date: "2026",
+        category: "Produktivität & Planung",
+        addedAt: "2026-04-09",
+      },
+      {
+        summary: "ad-hoc-news.de: 'Strategische Roadmaps: So navigieren Unternehmen durch 2026' – Unternehmen setzen verstärkt auf strukturierte Roadmaps und Quartalsmeilensteine statt Jahrespläne. Wachsende Akzeptanz von Kurzzeitplanungs-Horizonten bestätigt die Kernidee des 12 Week Year: Jahresdenken durch 12-Wochen-Sprints ersetzen.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/strategische-roadmaps-so-navigieren-unternehmen-durch-2026/68545845",
+        date: "2026",
+        category: "Produktivität & Planung",
+        addedAt: "2026-04-09",
+      },
       // Neu: 08.04.2026 (Recherche-Runde 5)
       {
         summary: "Fortune Business Insights: Globaler Produktivitäts-App-Markt 2026 – USD 14,46 Mrd. Marktvolumen, soll bis 2034 auf USD 30,85 Mrd. steigen (CAGR 9,94%). 76% des Umsatzes stammt aus Abonnements; KI-Integration ist der wichtigste Differenzierungsfaktor. Wachsendes Marktumfeld für spezialisierte Methoden-Apps wie den 12 Week Year Planner.",
@@ -3308,6 +3360,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 09.04.2026
+      {
+        summary: "kimarketing.ch: Spezialisiertes Schweizer KI-Marketing-Portal für KMU – GEO (Generative Engine Optimization) als neuer Standard: Kunden erwarten direkte Antworten in KI-Suchsystemen (ChatGPT, Perplexity) statt klassischer Linklisten. Zeigt steigenden Bedarf nach strukturierten Marketing-Frameworks und Planungstools für Schweizer KMU – direktes Marktumfeld für das learnfluencer.ch/tools/marketingkonzept.",
+        source: "kimarketing.ch",
+        url: "https://www.kimarketing.ch/",
+        date: "2026",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-09",
+      },
+      {
+        summary: "kmu-digitalisierung.agency: 'Marketingkonzept für KMU – Die Basis erfolgreicher Kundengewinnung' – Schweizer Digitalisierungsagentur erklärt Marketingkonzept-Aufbau mit Situationsanalyse, SWOT und Buyer-Personas. Bestätigt anhaltende Marktnachfrage nach strukturierten Marketing-Frameworks – Wettbewerbsumfeld für das interaktive Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "kmu-digitalisierung.agency",
+        url: "https://kmu-digitalisierung.agency/marketingkonzept/",
+        date: "2026",
+        category: "Strategie & Analyse",
+        addedAt: "2026-04-09",
+      },
       // Neu: 08.04.2026 (Recherche-Runde 4)
       {
         summary: "Researchly.at: Guide zu strategischen Unternehmensanalyse-Tools 2026 – PESTEL, Porter's Five Forces, SWOT und BCG-Matrix im Überblick. KI-gestützte Software beschleunigt die Analyse, die strategische Interpretation bleibt beim Nutzer. Integrierte Multi-Framework-Tools werden als Zukunftsstandard positioniert – direkter Wettbewerbskontext für das learnfluencer.ch/tools/marketingkonzept.",
@@ -3590,6 +3659,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 09.04.2026
+      {
+        summary: "vorsorge-bestattung.com: Online-Plattform für Bestattungsorganisation mit kostenlosen Vorlagen, interaktivem Online-Planer und Beratung zu Todesfall und Vorsorge – Laut Anbieter spart digitale Verwaltung fast 50 Stunden Formalitäten. Wächst als weiterer digitaler Akteur im Schweizer Bestattungsmarkt – direktes Wettbewerbsumfeld für bestattungsplaner.ch.",
+        source: "vorsorge-bestattung.com",
+        url: "https://www.vorsorge-bestattung.com/",
+        date: "2026",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-04-09",
+      },
       // Neu: 08.04.2026 (Recherche-Runde 7)
       {
         summary: "widevoices.com: Feuerbestattung in der Schweiz 2026 – Über 90% aller Verstorbenen werden in der Schweiz kremiert (europäischer Spitzenwert). Gebühren für identische Leistungen unterscheiden sich zwischen Kantonshauptstädten um das bis zu 50-Fache. Aktuelle Preis- und Informationsübersicht für 2026 – relevanter Marktkontext für bestattungsplaner.ch.",
