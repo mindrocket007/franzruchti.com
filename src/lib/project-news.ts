@@ -816,6 +816,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 09.04.2026 (Recherche-Runde 3)
+      {
+        summary: "TraderVPS: 'NinjaTrader 2026 Insights – Benefits, Downsides, and Trader Feedback' – Branchenübersicht zur NinjaTrader-Plattform 2026: Stärken (günstige Kostenstruktur, C#-Customization via NinjaScript, professionelles Backtesting), Schwächen (steile Lernkurve, US-zentrische Regulierung) und wachsende internationale Trader-Community. Zeigt breite Wahrnehmung von NinjaTrader als Plattform für ernsthafte Algo-Futures-Trader – relevantes Marktumfeld für Mind Rocket Trading.",
+        source: "TraderVPS",
+        url: "https://www.tradervps.com/blog/ninjatrader-insights-benefits-downsides-trader-feedback",
+        date: "2026",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-09",
+      },
       // Neu: 09.04.2026 (Recherche-Runde 2)
       {
         summary: "CNBC: 'Dow jumps 1,300 points for best day since April 2025 as U.S.-Iran ceasefire pushes oil lower' – Am 7. April 2026 legte der Dow Jones +1'325 Punkte (+2,85%) zu, nachdem Trump einen zweiwöchigen Waffenstillstand mit Iran bekanntgab. WTI Crude Oil fiel -16% (grösster Tagesrückgang seit April 2020), von ~$112 auf ~$94. S&P 500 +2,51%. ES-Futures Trader: Extremes Volatilitätsevent durch Geopolitik – Iran-Krieg seit ~5 Wochen dominiert die Marktbewegungen 2026.",
@@ -1659,6 +1668,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 09.04.2026 (Recherche-Runde 2)
+      {
+        summary: "Sportgesundheitspark Nordbayern / Akademie: Symposium 2026 'Mentale Gesundheit & Arbeit' – Fachsymposium zu psychischer Gesundheit am Arbeitsplatz, Burnout-Prävention und resilienten Arbeitsstrukturen. Wachsendes institutionelles Interesse an BGM-Veranstaltungen zeigt Marktpotenzial für skalierbare digitale Angebote wie hypnovital® im betrieblichen Gesundheitsbereich.",
+        source: "Sportgesundheitspark Nordbayern",
+        url: "https://www.sportgesundheitspark.de/akademie/symposien-in-veranstaltungen/symposium-mentale-gesundheit-2026",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-09",
+      },
+      {
+        summary: "Blick / CSS: 'Nachhaltiges Gesundheitsmanagement für Mitarbeitende' – Schweizer Krankenversicherer CSS setzt auf Mikropausen, Bewegungsförderung und Sensibilisierung statt 'Pflästerlipolitik'. BGM wird als strategische Investition mit messbarem ROI positioniert. Zeigt wachsendes Interesse an messbarem, nachhaltigem BGM in der Schweiz – direktes Marktumfeld für hypnovital® als skalierbare digitale BGM-Massnahme.",
+        source: "Blick / CSS",
+        url: "https://www.blick.ch/life/job/wie-die-css-gesundheit-nachhaltig-im-alltag-verankert-mikropausen-und-sensibilisierung-statt-pflaesterli-politik-id21621193.html",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-09",
+      },
       // Neu: 09.04.2026
       {
         summary: "ad-hoc-news.de: 'Betriebliches Gesundheitsmanagement wird zur Chefsache' – Steigende Krankenstände und Fachkräftemangel zwingen Unternehmen 2026, BGM zur Führungsaufgabe zu erklären. CEO-Commitment, datenbasiertes Monitoring und digitale Prävention als zentrale Bausteine. Unmittelbares Marktumfeld für hypnovital® als skalierbare digitale BGM-Massnahme direkt auf Führungsebene.",
