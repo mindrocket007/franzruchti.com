@@ -790,6 +790,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 09.04.2026
+      {
+        summary: "NinjaTrader integriert Adclear für Marketing-Compliance: NinjaTrader Group (Teil von Kraken) hat eine Partnerschaft mit dem britischen Compliance-Tech-Unternehmen Adclear geschlossen. Die KI-gestützte Plattform analysiert Werbematerialien in Echtzeit – eigene Kanäle, Influencer-Content und Affiliate-Partner – sowohl für US- als auch europäische Büros. Zeigt NinjaTraders wachsende Regulierungsreife als etablierter Broker für Futures-Trader.",
+        source: "Finance Magnates",
+        url: "https://www.financemagnates.com/forex/after-ig-group-ninjatrader-also-adds-adclear-for-compliance/",
+        date: "2026",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-09",
+      },
       // Neu: 08.04.2026 (Recherche-Runde 5)
       {
         summary: "US Supreme Court kippt Trump-Zölle (20. Februar 2026) – ES-Futures in Turbulenz: Das Oberste Gericht (6:3) erklärte, dass der IEEPA dem Präsidenten keine Befugnis zur Erhebung von Importzöllen gibt. S&P 500 stieg am Urteilstag um 0,7%, danach neue Unsicherheit durch Trumps Ersatzmassnahmen (globaler Pauschalzoll 10% dann 15%). Für ES-Futures-Trader bleibt das politische Umfeld der dominante Volatilitätstreiber 2026.",
@@ -2898,6 +2907,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 09.04.2026
+      {
+        summary: "iLearn.ch – Schweizer KI-Lernplattform öffnet sich ab Winter 2026 für Bildungspartner: iLearn ist eine neue, KI-gestützte Lernplattform mit Fokus auf Kompetenzziele, Schweizer Datenschutzkonformität und pädagogischer Steuerung. Ab Winter 2026 können Schulen, Bildungsinstitutionen, Lehrmittelverlage und Unternehmen frühen Zugang erhalten und die Plattform aktiv mitgestalten. Relevanter EdTech-Akteur im Schweizer Bildungsmarkt – direkter Kontext für Franz Ruchtis Learnfluencer-Positionierung.",
+        source: "iLearn.ch",
+        url: "https://ilearn.ch/ab-winter-2026/",
+        date: "2026",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-09",
+      },
       // Neu: 08.04.2026 (Recherche-Runde 7)
       {
         summary: "PH Zürich / DIZH: Tagung 'Digitale Transformation konkret – Lerntechnologien in Berufs- und Erwachsenenbildung' fand am 12. März 2026 statt (SGAB, PH Zürich, ICT-Berufsbildung). Thema: Wie Lerntechnologien die Erwachsenenbildung konkret verändern – praxisnahe Fallbeispiele und aktuelle Forschungserkenntnisse. Direkter Kontext für learnfluencer.ch als Thought-Leadership-Plattform im Bereich Lernkompetenz und Digitalisierung.",
