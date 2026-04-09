@@ -818,6 +818,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 09.04.2026
       {
+        summary: "NinjaTrader EU-Broker startet in Europa (Januar 2026): NinjaTrader lanciert über Payward Europe (Krakens CySEC-regulierte Einheit) seinen europäischen Broker-Dienst – zunächst in den Niederlanden und Deutschland, später Frankreich und Italien. Europäische Trader können nun direkt über NinjaTrader handeln, ohne US-Broker-Zugang. Erweitert die Nutzerbasis für NinjaScript-basierte Algo-Strategien erheblich.",
+        source: "NinjaTrader",
+        url: "https://ninjatrader.com/eu/en-de/",
+        date: "Januar 2026",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-09",
+      },
+      {
+        summary: "TradoxVPS: 'Top NinjaTrader Strategies in 2026 – Futures Trading Guide' – Überblick über die effektivsten NinjaScript-Strategien 2026: Mean-Reversion mit Order Flow Confluence, Opening-Range-Breakout mit Volumenfilter und adaptiver ATR-Trailing-Stop. Zeigt den State-of-the-Art für algorithmische ES-Futures-Strategien auf NinjaTrader – direkter Referenzrahmen für die Strategie-Entwicklung bei Mind Rocket Trading.",
+        source: "TradoxVPS",
+        url: "https://tradoxvps.com/ninjatrader-strategies/",
+        date: "2026",
+        category: "Algo-Trading",
+        addedAt: "2026-04-09",
+      },
+      {
         summary: "NinjaTrader integriert Adclear für Marketing-Compliance: NinjaTrader Group (Teil von Kraken) hat eine Partnerschaft mit dem britischen Compliance-Tech-Unternehmen Adclear geschlossen. Die KI-gestützte Plattform analysiert Werbematerialien in Echtzeit – eigene Kanäle, Influencer-Content und Affiliate-Partner – sowohl für US- als auch europäische Büros. Zeigt NinjaTraders wachsende Regulierungsreife als etablierter Broker für Futures-Trader.",
         source: "Finance Magnates",
         url: "https://www.financemagnates.com/forex/after-ig-group-ninjatrader-also-adds-adclear-for-compliance/",
@@ -1627,6 +1643,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "hypnovital": {
     news: [
       // Neu: 09.04.2026
+      {
+        summary: "ad-hoc-news.de: 'Betriebliches Gesundheitsmanagement wird zur Chefsache' – Steigende Krankenstände und Fachkräftemangel zwingen Unternehmen 2026, BGM zur Führungsaufgabe zu erklären. CEO-Commitment, datenbasiertes Monitoring und digitale Prävention als zentrale Bausteine. Unmittelbares Marktumfeld für hypnovital® als skalierbare digitale BGM-Massnahme direkt auf Führungsebene.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/betriebliches-gesundheitsmanagement-wird-zur-chefsache/68664945",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-09",
+      },
+      {
+        summary: "ad-hoc-news.de: 'Corporate Health: Psychische Gesundheit und KI werden 2026 strategisch' – KI-Tools analysieren anonymisierte Gesundheitsdaten zur Früherkennung von Belastungsrisiken; psychische Gesundheit wird zum Kernbestandteil der Unternehmensstrategie. Return on Investment von 1:2,7 für gezieltes BGM belegt. Unterstützt Positionierung von hypnovital® als KI-kompatible, datengestützte BGM-Massnahme.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/corporate-health-psychische-gesundheit-und-ki-werden-2026-strategisch/69030977",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-09",
+      },
       {
         summary: "ad-hoc-news.de: 'Ikigai-Prinzip wird 2026 zur strategischen Burnout-Waffe' – Führende Unternehmen richten ihr Betriebliches Gesundheitsmanagement 2026 neu aus und integrieren das japanische Ikigai-Konzept (Lebenssinn/Sinnhaftigkeit) als präventives Burnout-Instrument. Zeigt wachsende Nachfrage nach ganzheitlichen BGM-Methoden – Positionierungschance für hypnovital® als Hypnose-Coaching-Angebot im Sinnanker-Bereich.",
         source: "ad-hoc-news.de",
@@ -2440,6 +2472,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 09.04.2026
+      {
+        summary: "TeleClinic (telemedizin.de): Vorzeitiger Samenerguss – Online-Diagnose und Rezept-Service. Die Telemedizin-Plattform bietet Männern diskrete, digitale Beratung und Verschreibung bei Ejaculatio praecox. Zeigt den wachsenden Trend zu digitalen, niedrigschwelligen Gesundheitsangeboten für Männer im DACH-Raum – direkter Marktkontext für orgasmus-hinauszoegern.de als komplementäres, nicht-medikamentöses digitales Selbsthilfeangebot.",
+        source: "TeleClinic",
+        url: "https://www.teleclinic.com/behandlungen/vorzeitiger-samenerguss/",
+        date: "2026",
+        category: "Digital Health",
+        addedAt: "2026-04-09",
+      },
       // Neu: 08.04.2026 (Recherche-Runde 5)
       {
         summary: "Springer Nature / Gynäkologische Endokrinologie (2025): Übersichtsarbeit zu therapeutischen Potenzialen digitaler Gesundheitsanwendungen (DiGA) bei sexuellen Funktionsstörungen. Autoren Beier und von Heyden sehen DiGA als vielversprechende Ergänzung zu klassischen Therapien. Wachsender Markt für digitale Selbsthilfeangebote im Bereich sexuelle Gesundheit stärkt Positionierung von orgasmus-hinauszoegern.de.",
@@ -2691,6 +2732,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 09.04.2026
+      {
+        summary: "Rampenpfau (Dr. Thomas A. Coucoulis): 'Lampenfieber – Verstehen und nutzbar machen' (März 2026) – Lampenfieber ist keine Schwäche, sondern physiologische Aktivierung. Wer lernt, Nervosität als Ressource zu nutzen statt zu bekämpfen, gewinnt Bühnenpräsenz. Aktiver Marktmitspieler im deutschsprachigen Anti-Lampenfieber-Bereich zeigt die breite Nachfrage nach Selbsthilfeinhalten – stärkt Positionierung von lampenfieber-besiegen.de.",
+        source: "Rampenpfau",
+        url: "https://rampenpfau.de/2026/03/04/lampenfieber-verstehen-und-nutzbar-machen/",
+        date: "2026-03-04",
+        category: "Auftrittsangst & Coaching",
+        addedAt: "2026-04-09",
+      },
+      {
+        summary: "Rampenpfau (Dr. Thomas A. Coucoulis): 'Speaker-Alptraum – Die Angst vor dem Blackout' (März 2026) – Blackout-Angst ist häufigste Ursache für chronisches Lampenfieber bei Vortragenden. Praktische Mentaltechniken aus dem Spitzensport zur Prävention. Zeigt das breite und anhaltende Interesse an spezialisierten Inhalten zur Redeangst-Überwindung – relevantes Marktumfeld für lampenfieber-besiegen.de.",
+        source: "Rampenpfau",
+        url: "https://rampenpfau.de/2026/03/19/speaker-alptraum-die-angst-vor-dem-blackout/",
+        date: "2026-03-19",
+        category: "Auftrittsangst & Coaching",
+        addedAt: "2026-04-09",
+      },
       // Neu: 08.04.2026 (Recherche-Runde 6)
       {
         summary: "Gesellschaft für Verhaltenstherapie: Prüfungsangst-Glossar – KVT gilt als Goldstandard bei Prüfungs- und Auftrittsangst. Häufigkeit auf 10–12% der Bevölkerung geschätzt, neue hybride Ansätze kombinieren KVT mit Hypnose und Mentaltraining. Grosses, unterversorgtes Marktsegment für digitale Selbsthilfeangebote wie lampenfieber-besiegen.de.",
@@ -2999,6 +3057,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         url: "https://ilearn.ch/ab-winter-2026/",
         date: "2026",
         category: "E-Learning & EdTech",
+        addedAt: "2026-04-09",
+      },
+      {
+        summary: "Bitkom Akademie: KI-Kompetenzschulungen 2026 – Der deutsche Digitalverband bietet strukturierte KI-Kompetenzschulungen in Übereinstimmung mit der EU-KI-Verordnung (Art. 4) an. Themen: KI-Grundlagen, Risikoklassen, Anwendungsfälle für Nicht-Techniker. Wachsendes institutionelles Angebot an KI-Basisqualifikationen zeigt die Massennachfrage nach KI-Lernkompetenz – stärkt die Positionierung von learnfluencer.ch als Schweizer Anlaufstelle für KI-Weiterbildung.",
+        source: "Bitkom Akademie",
+        url: "https://bitkom-akademie.de/KI-Kompetenzschulungen-2026",
+        date: "2026",
+        category: "KI Kompetenz & Weiterbildung",
         addedAt: "2026-04-09",
       },
       // Neu: 08.04.2026 (Recherche-Runde 7)
@@ -3377,6 +3443,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         category: "Strategie & Analyse",
         addedAt: "2026-04-09",
       },
+      {
+        summary: "digital-pr.ch: 'Kundengewinnung 2026 – Strategien für nachhaltiges Wachstum in der Schweiz' – Schweizer Digital-PR-Agentur analysiert, wie Schweizer Unternehmen 2026 Kunden gewinnen: Suchmaschinenoptimierung, Content-Marketing mit konkretem Mehrwert und strukturierte Lead-Nurturing-Prozesse. Zeigt steigende Professionalisierung im KMU-Marketing und wachsende Nachfrage nach methodisch fundierten Planungstools – direktes Marktumfeld für das Marketingkonzept-Tool.",
+        source: "digital-pr.ch",
+        url: "https://digital-pr.ch/kundengewinnung-2026-strategien-fuer-nachhaltiges-wachstum-in-der-schweiz/",
+        date: "2026",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-09",
+      },
       // Neu: 08.04.2026 (Recherche-Runde 4)
       {
         summary: "Researchly.at: Guide zu strategischen Unternehmensanalyse-Tools 2026 – PESTEL, Porter's Five Forces, SWOT und BCG-Matrix im Überblick. KI-gestützte Software beschleunigt die Analyse, die strategische Interpretation bleibt beim Nutzer. Integrierte Multi-Framework-Tools werden als Zukunftsstandard positioniert – direkter Wettbewerbskontext für das learnfluencer.ch/tools/marketingkonzept.",
@@ -3664,6 +3738,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
         summary: "vorsorge-bestattung.com: Online-Plattform für Bestattungsorganisation mit kostenlosen Vorlagen, interaktivem Online-Planer und Beratung zu Todesfall und Vorsorge – Laut Anbieter spart digitale Verwaltung fast 50 Stunden Formalitäten. Wächst als weiterer digitaler Akteur im Schweizer Bestattungsmarkt – direktes Wettbewerbsumfeld für bestattungsplaner.ch.",
         source: "vorsorge-bestattung.com",
         url: "https://www.vorsorge-bestattung.com/",
+        date: "2026",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-04-09",
+      },
+      {
+        summary: "abschiedsplaner.online: Vorsorge- und Abschiedsplaner – Schweizer Plattform für persönliche Bestattungsvorsorge und digitale Abschiedsplanung. Eigenwerbung: 'erfahrene Partner für Bestattungen, Vorsorgen, Trauern & Gedenken'. Wachsender digitaler Konkurrent im Schweizer Markt für Online-Bestattungsplanung – direktes Wettbewerbsumfeld für bestattungsplaner.ch.",
+        source: "abschiedsplaner.online",
+        url: "https://www.abschiedsplaner.online/",
+        date: "2026",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-04-09",
+      },
+      {
+        summary: "LV 1871: 'Bestattung digital planen' – Münchner Versicherer erklärt die Möglichkeiten zur digitalen Bestattungsplanung: Online-Kostenrechner, digitale Vorsorge-Dokumente und Web-Planer. Zeigt, wie digitale Bestattungsplanung in der gesamten DACH-Region zum Standard wird – Marktumfeld und Benchmark-Artikel für bestattungsplaner.ch.",
+        source: "LV 1871",
+        url: "https://www.lv1871.de/magazin/sterben-erben/bestattung-digital-planen/",
         date: "2026",
         category: "Digitale Vorsorge",
         addedAt: "2026-04-09",
