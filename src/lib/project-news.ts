@@ -1591,6 +1591,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 09.04.2026
+      {
+        summary: "ad-hoc-news.de: 'Ikigai-Prinzip wird 2026 zur strategischen Burnout-Waffe' – Führende Unternehmen richten ihr Betriebliches Gesundheitsmanagement 2026 neu aus und integrieren das japanische Ikigai-Konzept (Lebenssinn/Sinnhaftigkeit) als präventives Burnout-Instrument. Zeigt wachsende Nachfrage nach ganzheitlichen BGM-Methoden – Positionierungschance für hypnovital® als Hypnose-Coaching-Angebot im Sinnanker-Bereich.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/ikigai-prinzip-wird-2026-zur-strategischen-burnout-waffe/68447534",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-09",
+      },
+      {
+        summary: "hrtoday.ch: 'Betriebliches Gesundheitsmanagement – Moderne Burnout-Prävention für Ihr Unternehmen' – Führende Schweizer HR-Fachzeitschrift beleuchtet modernes BGM: Früherkennung, digitale Präventionslösungen, ganzheitliche Gesundheitsförderung. Zeigt wachsendes Schweizer Unternehmensinteresse an strukturierten BGM-Programmen – direktes Marktumfeld für hypnovital® als skalierbare digitale Gesundheitsmassnahme.",
+        source: "hrtoday.ch",
+        url: "https://www.hrtoday.ch/de/article/betriebliches-gesundheits-management-moderne-burnout-praevention-fuer-ihr-unternehmen",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-09",
+      },
+      {
+        summary: "Schweizerische Akademie für Burnout-Prophylaxe & Hypnose (sab-p.ch): Schweizer Bildungseinrichtung für ganzheitliche und nachhaltige Burnout-Prävention durch Hypnose – Aus- und Weiterbildungsangebote sowie persönliche Begleitung. Bestätigt die Existenz eines etablierten Schweizer Marktsegments für hypnosebasierte Burnout-Prävention – direktes Wettbewerbs- und Kooperationsumfeld für hypnovital® im BGM-Bereich.",
+        source: "sab-p.ch",
+        url: "https://www.sab-p.ch/",
+        date: "2026",
+        category: "Hypnose & Coaching",
+        addedAt: "2026-04-09",
+      },
       // Neu: 08.04.2026 (Recherche-Runde 6)
       {
         summary: "IFBG BGF-Kompass 2026: Über 70 praxiserprobte Maßnahmen und förderfähige Formate für die BGF-Jahresplanung – Themen: Schlaf, mentale Gesundheit, Ernährung, Schichtarbeit. Das Institut für Betriebliche Gesundheitsförderung zeigt, dass BGF längst kein 'Nice-to-have' mehr ist, sondern strategischer Erfolgsfaktor. Audio-basierte Hypnose-Programme wie hypnovital® fügen sich nahtlos in solche BGF-Jahrespläne ein als skalierbare, digital abrufbare Massnahme.",
@@ -2908,6 +2933,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "learnfluencer": {
     news: [
       // Neu: 09.04.2026
+      {
+        summary: "Startbase: EdTech-Startup SchuBu sichert sich siebenstellige Finanzierung für KI-Lernplattform – Der Schweizer EdTech-Markt gewinnt an Dynamik: Das Startup entwickelt eine KI-gestützte Lernplattform und erhält signifikantes Wachstumskapital. Zeigt Investoreninteresse an skalierbaren KI-basierten Bildungslösungen – bestätigt das Marktpotenzial von personalisierten Lerntools und die Relevanz einer Thought-Leadership-Position wie learnfluencer.ch im Bereich KI & Lernkompetenz.",
+        source: "Startbase",
+        url: "https://www.startbase.com/news/edtech-startup-schubu-sichert-sich-siebenstellige-finanzierung-fuer-ki-lernplattform",
+        date: "2026",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-09",
+      },
       {
         summary: "iLearn.ch – Schweizer KI-Lernplattform öffnet sich ab Winter 2026 für Bildungspartner: iLearn ist eine neue, KI-gestützte Lernplattform mit Fokus auf Kompetenzziele, Schweizer Datenschutzkonformität und pädagogischer Steuerung. Ab Winter 2026 können Schulen, Bildungsinstitutionen, Lehrmittelverlage und Unternehmen frühen Zugang erhalten und die Plattform aktiv mitgestalten. Relevanter EdTech-Akteur im Schweizer Bildungsmarkt – direkter Kontext für Franz Ruchtis Learnfluencer-Positionierung.",
         source: "iLearn.ch",
