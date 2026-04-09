@@ -825,6 +825,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 09.04.2026 (Recherche-Runde 5)
+      {
+        summary: "NinjaTrader Group lancierte im Oktober 2025 die neuen Plattformen «NinjaTrader Prop» und «Tradovate Prop» speziell für Prop-Trader, mit erweiterter Risikokontrolle, TradingView-Integration sowie Order-Flow+-Tools (TPO- und Footprint-Charts). Die Plattformen sind über Apex Trader Funding, MyFunded Futures und Take Profit Trader verfügbar. Für NinjaTrader-Nutzer im Prop-Trading-Bereich ist dies eine bedeutende Infrastrukturverbesserung – direkt relevant für Mind Rocket Trading und dessen Kunden.",
+        source: "ninjatrader.com",
+        url: "https://ninjatrader.com/news/nt-technologies-launches-new-platform-experience-for-prop-traders-under-new-brands/",
+        date: "2025-10",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-09",
+      },
+      {
+        summary: "Die SIX Swiss Exchange hat per 2. März 2026 neue Richtlinien für algorithmischen Handel in Kraft gesetzt, die robuste Systeme, ausreichende Kapazitäten für Handelsspitzen und klare Schwellenwerte vorschreiben. Für Schweizer Trader, die algorithmisch handeln, ist dies ein relevanter regulatorischer Rahmen. Insgesamt gilt die Schweiz als liberales Umfeld für Day-Trading ohne spezifische Einzelhändler-Restriktionen.",
+        source: "SIX Swiss Exchange",
+        url: "https://www.ser-ag.com/dam/downloads/regulation/trading/directives/dir03-de.pdf",
+        date: "2026-03-02",
+        category: "Regulierung",
+        addedAt: "2026-04-09",
+      },
       // Neu: 09.04.2026 (Recherche-Runde 4)
       {
         summary: "trading.ch: 'Prop Trading Schweiz' – Überblick zur rechtlichen Lage: Prop Trading bleibt in der Schweiz 2026 legal, jedoch weitgehend unreguliert. FINMA verlangt keine spezielle Lizenz für den Eigenhandel unter CHF 5 Mrd. Jahresvolumen. Für Interessenten und Kunden eines Trading-Coaching-Angebots ist Due-Diligence bei der Wahl der Prop-Firm entscheidend, da seriöse und unseriöse Anbieter nebeneinander existieren.",
@@ -1418,6 +1435,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 09.04.2026 (Recherche-Runde 3)
+      {
+        summary: "Gesundheitsförderung Schweiz dokumentiert 2026, dass jede dritte berufstätige Person an stressbedingter emotionaler Erschöpfung leidet. Spezialisierte Anbieter von Mental-Health-Tools decken den wachsenden Bedarf ab, während kantonale Aktionsprogramme die Nachfrage nach zugänglichen psychischen Gesundheitsangeboten weiter stärken. Dies ist ein direktes Marktumfeld für niedrigschwellige PDF-Tools wie jene auf mindtools.ch.",
+        source: "Gesundheitsförderung Schweiz",
+        url: "https://gesundheitsfoerderung.ch/kantonale-aktionsprogramme/themen-und-publikationen/themen/psychische-gesundheit-foerdern",
+        date: "2026-03",
+        category: "Mental Health",
+        addedAt: "2026-04-09",
+      },
       // Neu: 09.04.2026 (Recherche-Runde 2)
       {
         summary: "snfa.ch: Spezialisierte Coaching-Angebote zur Stärkung mentaler Gesundheit 2026/2027 – neurowissenschaftliche Fragebogen-Tools zu Stressmanagement, Achtsamkeit und Resilienz für Unternehmer und Privatpersonen. Zeigt, dass der Schweizer Markt für digitale Persönlichkeitsentwicklung aktiv und kaufkräftig ist – direktes Marktumfeld für die PDF-Werkzeuge auf mindtools.ch.",
@@ -1695,6 +1721,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 09.04.2026 (Recherche-Runde 3)
+      {
+        summary: "Das Schweizer Institut für Medizinische Hypnose (SIMH) und die SMSH sind aktive Fachgesellschaften mit steigendem Interesse an Hypnose als Methode zur Behandlung von Stress, Burnout und psychosomatischen Beschwerden. Multiple Anbieter haben 2026 neue Ausbildungsdurchläufe in Zürich, Bern und St. Gallen angekündigt. Der Markt für Hypnose-basierte Gesundheitsangebote wächst – direktes Wachstumsumfeld für hypnovital® als digitales Hypnose-Angebot im BGM-Bereich.",
+        source: "simh.ch",
+        url: "https://simh.ch/",
+        date: "2026-03",
+        category: "Digitale Gesundheit",
+        addedAt: "2026-04-09",
+      },
       // Neu: 09.04.2026 (Recherche-Runde 2)
       {
         summary: "Sportgesundheitspark Nordbayern / Akademie: Symposium 2026 'Mentale Gesundheit & Arbeit' – Fachsymposium zu psychischer Gesundheit am Arbeitsplatz, Burnout-Prävention und resilienten Arbeitsstrukturen. Wachsendes institutionelles Interesse an BGM-Veranstaltungen zeigt Marktpotenzial für skalierbare digitale Angebote wie hypnovital® im betrieblichen Gesundheitsbereich.",
@@ -3821,6 +3856,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 09.04.2026 (Recherche-Runde 3)
+      {
+        summary: "personalleiter.today: «Digitale Vorsorge – eine Chance für die Bestattungsbranche» – Fachbeitrag beschreibt, wie der erste Kontakt mit Bestattungsleistungen zunehmend digital stattfindet und «digitale Vorsorge» zu einem eigenständigen Geschäftsfeld mit mehr Potenzial als klassische Bestattungsvorsorge wird. Am Ende folgt immer ein persönliches Gespräch – Hybrid-Modell wie auf bestattungsplaner.ch ist die zukunftsfähige Strategie.",
+        source: "personalleiter.today",
+        url: "https://www.personalleiter.today/digitale-vorsorge-eine-chance-fuer-die-bestattungsbranche/",
+        date: "2026-03",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-04-09",
+      },
       // Neu: 09.04.2026 (Recherche-Runde 2)
       {
         summary: "Institut IDA (institut-ida.de): KI-Effizienzsteigerung in der Bestattungsbranche – Bestattungsprozesse werden durch KI und Softwarelösungen zunehmend automatisiert, digitale Gedenkplattformen und Beerdigungs-Apps gehören zum Standardrepertoire. Für einen Bestattungsplaner mit digitalem Vorsorge-Fokus ist dies Rückenwind und Differenzierungschance zugleich – technologischer Wandel öffnet den Markt für innovative Anbieter.",
