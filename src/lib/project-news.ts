@@ -26,6 +26,15 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 09.04.2026 (Recherche-Runde 2)
+      {
+        summary: "ICT-Berufsbildung Schweiz treibt 2026 den ersten neuen KI-Abschluss voran – noch im laufenden Jahr sollen die ersten Absolventinnen und Absolventen auf den Markt gebracht werden. Laut Prognosen benötigt die Schweiz bis 2033 rund 128'600 zusätzliche ICT-Fachkräfte. Ein direktes Wachstumsargument für zertifizierungsbasierte Weiterbildungsangebote wie jene von SIZ als anerkannte Prüfungsorganisation.",
+        source: "ICT-Berufsbildung Schweiz",
+        url: "https://www.ict-berufsbildung.ch/projekte/weiterbildung/neuer-ki-abschluss",
+        date: "2026-03",
+        category: "Bildungspolitik",
+        addedAt: "2026-04-09",
+      },
       // Neu: 09.04.2026
       {
         summary: "ICT-Berufsbildung Schweiz: Berufsprüfung ICT-Application Development Specialist 2026 – Schriftlicher Teil am 13. Mai 2026, mündlicher Teil 18.–22. Mai 2026. Kandidatinnen und Kandidaten erhalten die Unterlagen bis 14. April 2026. Belegt laufende Prüfungsaktivität im Schweizer ICT-Bildungsmarkt – SIZ als anerkannte Prüfungsorganisation ist Teil dieses Ökosystems.",
@@ -816,6 +825,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 09.04.2026 (Recherche-Runde 4)
+      {
+        summary: "trading.ch: 'Prop Trading Schweiz' – Überblick zur rechtlichen Lage: Prop Trading bleibt in der Schweiz 2026 legal, jedoch weitgehend unreguliert. FINMA verlangt keine spezielle Lizenz für den Eigenhandel unter CHF 5 Mrd. Jahresvolumen. Für Interessenten und Kunden eines Trading-Coaching-Angebots ist Due-Diligence bei der Wahl der Prop-Firm entscheidend, da seriöse und unseriöse Anbieter nebeneinander existieren.",
+        source: "trading.ch",
+        url: "https://trading.ch/anleitungen/prop-trading-schweiz/",
+        date: "2026-03",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-09",
+      },
       // Neu: 09.04.2026 (Recherche-Runde 3)
       {
         summary: "TraderVPS: 'NinjaTrader 2026 Insights – Benefits, Downsides, and Trader Feedback' – Branchenübersicht zur NinjaTrader-Plattform 2026: Stärken (günstige Kostenstruktur, C#-Customization via NinjaScript, professionelles Backtesting), Schwächen (steile Lernkurve, US-zentrische Regulierung) und wachsende internationale Trader-Community. Zeigt breite Wahrnehmung von NinjaTrader als Plattform für ernsthafte Algo-Futures-Trader – relevantes Marktumfeld für Mind Rocket Trading.",
@@ -1400,6 +1418,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 09.04.2026 (Recherche-Runde 2)
+      {
+        summary: "snfa.ch: Spezialisierte Coaching-Angebote zur Stärkung mentaler Gesundheit 2026/2027 – neurowissenschaftliche Fragebogen-Tools zu Stressmanagement, Achtsamkeit und Resilienz für Unternehmer und Privatpersonen. Zeigt, dass der Schweizer Markt für digitale Persönlichkeitsentwicklung aktiv und kaufkräftig ist – direktes Marktumfeld für die PDF-Werkzeuge auf mindtools.ch.",
+        source: "snfa.ch",
+        url: "https://snfa.ch/mentale-gesundheit-staerken-coaching/",
+        date: "2026-03",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-04-09",
+      },
       // Neu: 09.04.2026
       {
         summary: "psychotherapeut.ai: 'Digitale Selbsthilfegruppen 2026 – Hoffnung, Risiken, Blinde Flecken' – Algorithmisch moderierte Chats, anonyme Foren und Video-Meetings schaffen neue digitale Selbsthilfe-Angebote. Mental-Health-Apps überschreiten 2026 die 8-Milliarden-Dollar-Marke (19% Wachstum p.a.). Zeigt dynamisch wachsenden Markt für niedrigschwellige digitale Selbsthilfe-Werkzeuge – Positionierungschance für mindtools.ch.",
@@ -2515,6 +2542,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 09.04.2026 (Recherche-Runde 2)
+      {
+        summary: "Aids Hilfe Wien (aids.at): Wien bekommt ab 2026 ein neues Zentrum für sexuelle Gesundheit – das magnus*-Ambulatorium eröffnet als niederschwellige Einrichtung für Diagnostik, Beratung, Behandlung und Prävention im Bereich sexuelle Gesundheit. Diese institutionelle Aufwertung zeigt, dass sexuelle Gesundheit im DACH-Raum als öffentliches Gesundheitsthema an Akzeptanz gewinnt – ein Umfeld, das digitale Selbsthilfe-Angebote wie Hypnose-Audios normalisiert.",
+        source: "Aids Hilfe Wien",
+        url: "https://aids.at/en/presseaussendung/wien-bekommt-ab-2026-ein-neues-zentrum-fur-sexuelle-gesundheit-magnus-ambulatorium-fur-sexuelle-gesundheit/",
+        date: "2026-03",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-09",
+      },
       // Neu: 09.04.2026
       {
         summary: "TeleClinic (telemedizin.de): Vorzeitiger Samenerguss – Online-Diagnose und Rezept-Service. Die Telemedizin-Plattform bietet Männern diskrete, digitale Beratung und Verschreibung bei Ejaculatio praecox. Zeigt den wachsenden Trend zu digitalen, niedrigschwelligen Gesundheitsangeboten für Männer im DACH-Raum – direkter Marktkontext für orgasmus-hinauszoegern.de als komplementäres, nicht-medikamentöses digitales Selbsthilfeangebot.",
@@ -2775,6 +2811,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 09.04.2026 (Recherche-Runde 2)
+      {
+        summary: "Schmidthypnose.ch (Schweiz): Lampenfieber und Auftrittsangst werden explizit als Kernindikation für Hypnosetherapie aufgeführt. Im deutschsprachigen Raum ist das Angebot an Hypnose-Praktizierenden für Redeangst 2026 stark gewachsen – Differenzierung über digitale Audio-Programme und Online-Reichweite ist entscheidend für Skalierung gegenüber lokalen Praxis-Anbietern.",
+        source: "Schmidthypnose.ch",
+        url: "https://schmidthypnose.ch/en/portfolio/stage-fright/",
+        date: "2026-03",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-04-09",
+      },
       // Neu: 09.04.2026
       {
         summary: "Rampenpfau (Dr. Thomas A. Coucoulis): 'Lampenfieber – Verstehen und nutzbar machen' (März 2026) – Lampenfieber ist keine Schwäche, sondern physiologische Aktivierung. Wer lernt, Nervosität als Ressource zu nutzen statt zu bekämpfen, gewinnt Bühnenpräsenz. Aktiver Marktmitspieler im deutschsprachigen Anti-Lampenfieber-Bereich zeigt die breite Nachfrage nach Selbsthilfeinhalten – stärkt Positionierung von lampenfieber-besiegen.de.",
@@ -3776,6 +3821,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 09.04.2026 (Recherche-Runde 2)
+      {
+        summary: "Institut IDA (institut-ida.de): KI-Effizienzsteigerung in der Bestattungsbranche – Bestattungsprozesse werden durch KI und Softwarelösungen zunehmend automatisiert, digitale Gedenkplattformen und Beerdigungs-Apps gehören zum Standardrepertoire. Für einen Bestattungsplaner mit digitalem Vorsorge-Fokus ist dies Rückenwind und Differenzierungschance zugleich – technologischer Wandel öffnet den Markt für innovative Anbieter.",
+        source: "Institut IDA",
+        url: "https://institut-ida.de/effizienzsteigerung-in-der-bestattungsbranche-mit-kunstlicher-intelligenz-ein-wendepunkt-in-der-dienstleistungsqualitat/",
+        date: "2026-02",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-04-09",
+      },
       // Neu: 09.04.2026
       {
         summary: "vorsorge-bestattung.com: Online-Plattform für Bestattungsorganisation mit kostenlosen Vorlagen, interaktivem Online-Planer und Beratung zu Todesfall und Vorsorge – Laut Anbieter spart digitale Verwaltung fast 50 Stunden Formalitäten. Wächst als weiterer digitaler Akteur im Schweizer Bestattungsmarkt – direktes Wettbewerbsumfeld für bestattungsplaner.ch.",
