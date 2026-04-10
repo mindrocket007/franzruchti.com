@@ -28,6 +28,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 10.04.2026
       {
+        summary: "ICT-Berufsbildung Schweiz: Höhere Fachprüfung ICT-Manager 2026 – Die Ausschreibung für den eidgenössischen Diplomabschluss 'ICT-Manager' 2026 ist aktiv. ICT-Manager mit eidg. Diplom übernehmen anspruchsvolle Führungsaufgaben im ICT-Bereich; Vorbereitung berufsbegleitend an Weiterbildungsstätten oder im Selbststudium (2–3 Semester). Bis zu 50% der Kurskosten werden vom Bund zurückerstattet. Belegt die anhaltend hohe Nachfrage nach höherwertigen ICT-Abschlüssen in der Schweiz – direktes Marktumfeld für SIZ als anerkannte Prüfungsorganisation.",
+        source: "ICT-Berufsbildung Schweiz",
+        url: "https://www.ict-berufsbildung.ch/hoehere-fachpruefung-ict-manager-2026",
+        date: "2026",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-10",
+      },
+      {
         summary: "SwissCybersecurity.net: 'ICT-Berufsbildung Schweiz diplomiert 145 ICT-Fachkräfte' (31.03.2026) – Aus 235 Prüfungskandidaten wurden 145 neue Fachkräfte diplomiert: 77 Cyber Security Specialists, 52 Platform Development Specialists und 16 Information Security Manager. Das Schweizer Fachnetzwerk für Cybersicherheit hebt besonders den Cyber-Security-Anteil hervor – ein wachsendes Kompetenzfeld, in dem SIZ als anerkannte Prüfungsorganisation eine Schlüsselrolle spielt.",
         source: "SwissCybersecurity.net",
         url: "https://www.swisscybersecurity.net/news/2026-03-31/ict-berufsbildung-schweiz-diplomiert-145-ict-fachkraefte",
@@ -860,6 +868,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "mindrocket-trading": {
     news: [
       // Neu: 10.04.2026
+      {
+        summary: "tradereview.app: 'Ninja Trader Platform: Your 2026 Guide to Futures & Day Trading' – Umfassender Plattform-Guide: NinjaTrader hat 1,9 Mio. Nutzer weltweit, C#-basierte NinjaScript-Automatisierung, Tick-Level-Backtesting, Order Flow+-Tools, ab $0.09/Side für Micro-Kontrakte. Januar 2026: Öffnung für EU-Trader via CySEC-Broker. Seit 2025 Teil von Kraken. Bestätigt den wachsenden internationalen Markt für algorithmische NinjaTrader-Strategien – direktes Wettbewerbs- und Marktumfeld für Mind Rocket Trading.",
+        source: "tradereview.app",
+        url: "https://tradereview.app/blog/ninja-trader-platform/",
+        date: "2026",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-10",
+      },
       {
         summary: "Apex Trader Funding März 2026 Update: Größter US-Futures-Prop-Firm überarbeitete Evaluation & Payout-System fundamental (gültig ab 01.03.2026) – automatisierte Payouts via Deel (24–48h), neue Ladder-Regeln und Account-Typen. Über $750 Mio. Auszahlungen seit 2022. Zeigt wachsende Professionalisierung des Prop-Trading-Markts, den Mind Rocket Trading mit NinjaScript-basierten ES-Futures-Strategien adressiert.",
         source: "DamnPropFirms.com",
@@ -1830,6 +1846,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "hypnovital": {
     news: [
       // Neu: 10.04.2026
+      {
+        summary: "ad-hoc-news.de: 'Burnout 2026: Warum Wellness-Programme nicht mehr reichen' – Zwei Drittel der Beschäftigten zeigen 2026 Anzeichen von Burnout. Klassische Wellness-Angebote (Obstkorb, Yoga-Kurs) adressieren strukturelle Belastungsursachen nicht – gefordert werden tiefgreifende systemische Präventionsansätze auf Verhaltens- und Kognitionsebene. Belegt die wachsende Marktlücke für wirksame digitale Burnout-Präventionsmethoden wie hypnovital®.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/burnout-2026-warum-wellness-programme-nicht-mehr-reichen/69084377",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-10",
+      },
+      {
+        summary: "ad-hoc-news.de: 'Psychische Belastung erreicht 2026 neuen Höchststand' – Psychische Erkrankungsraten am Arbeitsplatz erreichen 2026 historische Höchststände. Fachkräftemangel, Digitalisierungsdruck und permanente Erreichbarkeit als Haupttreiber. Steigender politischer und unternehmerischer Druck, präventive BGM-Massnahmen einzuführen – direktes Wachstumsumfeld für hypnovital® als skalierbares digitales BGM-Präventionsprogramm.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/psychische-belastung-erreicht-2026-neuen-hoechststand/69075732",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-10",
+      },
+      {
+        summary: "it-boltwise.de: 'Burnout-Welle 2026: Psychische Gesundheit als strategische Kennzahl' – Psychische Gesundheit wandelt sich vom Soft-Topic zur messbaren Unternehmenskennzahl. Führungskräfte sind gefordert, mentale Gesundheit systematisch zu fördern; KI-gestützte BGM-Tools und digitale Präventionsprogramme gewinnen an Bedeutung. Bestätigt den Trend zu digitalisierten, skalierbaren BGM-Lösungen – strategisches Umfeld für hypnovital® als Hypnose-basiertes BGM-Angebot.",
+        source: "it-boltwise.de",
+        url: "https://www.it-boltwise.de/burnout-welle-2026-psychische-gesundheit-als-strategische-kennzahl.html",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-10",
+      },
       {
         summary: "Nume.ch: 'Mentale Gesundheit 2026: Warum gesunde Führung Pflicht ist' – In einer Arbeitswelt 2026, geprägt durch permanente digitale Erreichbarkeit, KI-Wandel und globale Krisen, rückt psychische Widerstandsfähigkeit ins Zentrum der Unternehmensstrategie. Job-Stress-Index Schweiz: ~30% der Schweizer Erwerbstätigen leiden regelmässig unter hohem Stress, ein Drittel kann sich kaum erholen. Jeder investierte BGM-Franken bringt 3–5 CHF Rückfluss. Direktes Wachstumsumfeld für hypnovital® als skalierbare digitale BGM-Präventionslösung.",
         source: "Nume.ch",
