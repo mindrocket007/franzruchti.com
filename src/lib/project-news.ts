@@ -28,6 +28,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 10.04.2026
       {
+        summary: "SIZ Newsflash März 2026: Neue KI-Regelung für SIZ-Prüfungen ab 30. März 2026 – SIZ reagiert auf technologische Entwicklungen im Bereich KI und passt Prüfungsbedingungen an. Office Add-ins mit KI-Funktion und Microsoft 365 Copilot sind in Prüfungen nicht erlaubt; Upload von Prüfungsdateien in KI-Tools ist generell verboten. Hintergrund: KI-basierte Automatisierung ermöglicht es, Prüfungsaufgaben ohne die eigentlich geforderten Kompetenzen zu lösen – was dem Zweck der SIZ-Zertifizierungen widerspricht. Direkte Massnahme der SIZ AG zur Qualitätssicherung ihrer Abschlüsse.",
+        source: "SIZ AG",
+        url: "https://siz.ch/newsflash-maerz-2026/",
+        date: "2026-03",
+        category: "SIZ AG direkt",
+        addedAt: "2026-04-10",
+      },
+      {
+        summary: "SIZ AG: Neues Modul PU45 ICT-Technologien – Test-Prüfungen ab April 2026 verfügbar, Prüfungsmodul-Prüfungen ab Mai 2026. Laut SIZ Newsflash Januar 2026 wird damit das Modulangebot aktualisiert und um zeitgemässe ICT-Inhalte ergänzt. Zeigt die kontinuierliche Weiterentwicklung des SIZ-Prüfungsangebots im sich rasch wandelnden ICT-Umfeld.",
+        source: "SIZ AG",
+        url: "https://siz.ch/newsflash-januar-2026/",
+        date: "2026-01",
+        category: "SIZ AG direkt",
+        addedAt: "2026-04-10",
+      },
+      {
         summary: "ICT-Berufsbildung Schweiz: Höhere Fachprüfung ICT-Manager 2026 – Die Ausschreibung für den eidgenössischen Diplomabschluss 'ICT-Manager' 2026 ist aktiv. ICT-Manager mit eidg. Diplom übernehmen anspruchsvolle Führungsaufgaben im ICT-Bereich; Vorbereitung berufsbegleitend an Weiterbildungsstätten oder im Selbststudium (2–3 Semester). Bis zu 50% der Kurskosten werden vom Bund zurückerstattet. Belegt die anhaltend hohe Nachfrage nach höherwertigen ICT-Abschlüssen in der Schweiz – direktes Marktumfeld für SIZ als anerkannte Prüfungsorganisation.",
         source: "ICT-Berufsbildung Schweiz",
         url: "https://www.ict-berufsbildung.ch/hoehere-fachpruefung-ict-manager-2026",
@@ -733,6 +749,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 10.04.2026
       {
+        summary: "management-forum.de: 'Betriebliches Gesundheitsmanagement 2026 – Wo stehen wir? Mit welchen Hebeln bringen wir Unternehmen nach vorn?' – Über 90% der Organisationen sehen Führungskräfte als zentrale Treiber des BGM. Hybride Arbeit und erhöhte Arbeitsdichte treiben psychische Belastungen. Nur jedes vierte Unternehmen in Deutschland und der Schweiz hat ein ganzheitliches BGM. KI-gestützte Analysen und digitale Screenings ermöglichen personalisierte, datenbasierte Gesundheitssteuerung – direktes Marktumfeld für skalierbare Persönlichkeitsentwicklungs- und Coaching-Programme wie jene von Mind Rocket GmbH.",
+        source: "management-forum.de",
+        url: "https://www.management-forum.de/ueber-uns/blog/betriebliches-gesundheitsmanagement-2026-wo-stehen-wir-mit-welchen-hebeln-bringen-wir-unternehmen-nach-vorn/",
+        date: "2026",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-04-10",
+      },
+      {
         summary: "SWI swissinfo.ch: 'Gesucht: Auswege aus der Mental-Health-Krise' – Ein Drittel der Schweizer Bevölkerung litt in den letzten zwölf Monaten unter psychischen Problemen. Schweizer Politik und Arbeitgeber stehen unter wachsendem Druck, präventive Lösungen anzubieten. Die Nachfrage nach niederschwelligen, digitalisierbaren Mental-Health- und Persönlichkeitsentwicklungs-Angeboten wächst – ein strategisches Marktumfeld für Mind Rocket GmbH.",
         source: "SWI swissinfo.ch",
         url: "https://www.swissinfo.ch/ger/politik/gesucht-auswege-aus-der-mental-health-krise/48808184",
@@ -868,6 +892,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "mindrocket-trading": {
     news: [
       // Neu: 10.04.2026
+      {
+        summary: "catinathebroker.com: 'Apex Trader Funding Rule Changes in 2026: What you Need to Know' – Apex hat im März 2026 das gesamte Modell umgebaut: Abonnementgebühren durch einmalige Zahlungen ersetzt, MAE-Regel und 5:1 Risk/Reward-Restriktion abgeschafft, End-of-Day-Drawdown-Konten eingeführt. Bisher über $721 Mio. Auszahlungen seit 2022, über 17'800 Trustpilot-Bewertungen (Ø 4.4/5). Über häufigere Payout-Möglichkeiten für qualifizierte Trader. Direkte Auswirkungen auf NinjaScript-Strategie-Trader wie Mind Rocket Trading, die Apex als Prop-Firm nutzen.",
+        source: "catinathebroker.com",
+        url: "https://www.catinathebroker.com/blog/apextraderfunding2026",
+        date: "2026-03",
+        category: "Futures & Trading",
+        addedAt: "2026-04-10",
+      },
+      {
+        summary: "oneuptrader.com: 'S&P 500 (ES) Technical Analysis – 1 April 2026' – ES erreichte Januar 2026 ein All-Time-High von 7043, gefolgt von einer grösseren Korrektur. April-Marktdaten: Preisspanne $6'571–$6'685 als Schlüsselbereich. Markt reagierte stark auf geopolitische Entwicklungen (US-Iran-Waffenruhe). Aktuelle volatile Marktphase erfordert robuste algorithmische Strategien – relevantes Marktumfeld für Mind Rocket Trading mit ES-Futures-Algorithmen.",
+        source: "oneuptrader.com / blog",
+        url: "https://blog.oneuptrader.com/analysis/technical-analysis/sp-500-es-technical-analysis-1-april-2026/",
+        date: "2026-04-01",
+        category: "Futures & Trading",
+        addedAt: "2026-04-10",
+      },
       {
         summary: "tradereview.app: 'Ninja Trader Platform: Your 2026 Guide to Futures & Day Trading' – Umfassender Plattform-Guide: NinjaTrader hat 1,9 Mio. Nutzer weltweit, C#-basierte NinjaScript-Automatisierung, Tick-Level-Backtesting, Order Flow+-Tools, ab $0.09/Side für Micro-Kontrakte. Januar 2026: Öffnung für EU-Trader via CySEC-Broker. Seit 2025 Teil von Kraken. Bestätigt den wachsenden internationalen Markt für algorithmische NinjaTrader-Strategien – direktes Wettbewerbs- und Marktumfeld für Mind Rocket Trading.",
         source: "tradereview.app",
@@ -1536,6 +1576,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 10.04.2026
       {
+        summary: "cegos-integrata.de: 'Die wichtigsten E-Learning-Trends 2026' – 82,5% der Unternehmen sehen KI und adaptive Lernsysteme als grössten Hebel für Personalentwicklung. Lernpfade passen sich in Echtzeit ans Niveau jedes Lernenden an. 80,3% der Unternehmen nutzen hybride Lernmodelle. Fokus auf Human Skills, praktische Anwendung und sofortig einsetzbare Inhalte. Bestätigt Marktpotenzial für einfach nutzbare, direkt anwendbare mentale Werkzeuge und Tools wie jene auf mindtools.ch.",
+        source: "Cegos Integrata",
+        url: "https://www.cegos-integrata.de/blog/learning-development/digital-learning/die-wichtigsten-e-learning-trends-2026",
+        date: "2026",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-04-10",
+      },
+      {
         summary: "Haufe Akademie: 'Lerntrends 2025/2026: Digitale Personalentwicklung' – Microlearning, KI-Lernassistenten und Learning-Analytics dominieren die L&D-Branche. Self-directed Learning wächst: Lernende erwarten kurze, direkt anwendbare Inhalte – genau das Marktumfeld, in dem einfach zugängliche PDF-Wissenstools wie jene auf mindtools.ch eine digitale Nische füllen.",
         source: "Haufe Akademie",
         url: "https://www.haufe-akademie.de/digital-suite/blog/ds-trends-digitales-lernen",
@@ -1846,6 +1894,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "hypnovital": {
     news: [
       // Neu: 10.04.2026
+      {
+        summary: "ad-hoc-news.de: 'Betriebliches Gesundheitsmanagement wird 2026 zum strategischen Imperativ' – BGM wandelt sich vom Soft-Faktor zur strategischen Kennzahl. Nur jedes vierte Unternehmen hat bisher ein ganzheitliches BGM, obwohl psychische Erkrankungen eine der häufigsten Ursachen für Fehlzeiten sind. Betriebliche Gesundheitsförderung mit ROI-Nachweis wird zur Erwartung von Investoren und Aufsichtsbehörden. Belegt den strukturellen Wachstumsmarkt für skalierbare digitale BGM-Programme wie hypnovital®.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/betriebliches-gesundheitsmanagement-wird-2026-zum-strategischen-imperativ/69075884",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-10",
+      },
       {
         summary: "ad-hoc-news.de: 'Burnout 2026: Warum Wellness-Programme nicht mehr reichen' – Zwei Drittel der Beschäftigten zeigen 2026 Anzeichen von Burnout. Klassische Wellness-Angebote (Obstkorb, Yoga-Kurs) adressieren strukturelle Belastungsursachen nicht – gefordert werden tiefgreifende systemische Präventionsansätze auf Verhaltens- und Kognitionsebene. Belegt die wachsende Marktlücke für wirksame digitale Burnout-Präventionsmethoden wie hypnovital®.",
         source: "ad-hoc-news.de",
@@ -2474,6 +2530,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 10.04.2026
       {
+        summary: "12week-breakthrough.com: 'The Digital Tools I Use With The 12-Week Year' – Umfassende Übersicht der besten digitalen Tools für die 12-Wochen-Methode: Notion als zentrales Planungs-Hub mit vollständigen 12-Week-Year-Templates, ClickUp für Team-Zielverfolgung, Heptabase für visuelle Ideenentwicklung. Grundprinzip: Jedes Tool sollte einem der fünf Pfeiler dienen: Vision, Goals, Execution Planning, Time Use, Measurement & Accountability. Bestätigt starke Nachfrage nach integrierten digitalen Planungs-Tools im 12WY-Ökosystem.",
+        source: "12week-breakthrough.com",
+        url: "https://12week-breakthrough.com/digital-tools-for-the-12-week-year/",
+        date: "2026",
+        category: "Produktivität & Planung",
+        addedAt: "2026-04-10",
+      },
+      {
+        summary: "brandenbodendorfer.com: 'Key2Success Digital Planner for 12 Week Year Success 2026' – Der Key2Success Digital Planner (iPad) integriert explizit das 12-Wochen-Jahr-Konzept: Quarterly Keys für klare Zielplanung, strukturierte Wochenplanung und Fortschrittsmessung. Zeigt aktives Ökosystem an kompatiblen digitalen Planner-Produkten – Wettbewerbs- und Marktumfeld für den 12 Week Year Planner SaaS als webbasierte Ergänzung.",
+        source: "brandenbodendorfer.com",
+        url: "https://brandenbodendorfer.com/apply-the-12-week-year-planner-concept/",
+        date: "2026",
+        category: "12 Week Year Methode",
+        addedAt: "2026-04-10",
+      },
+      {
         summary: "12week-breakthrough.com: 'The Complete 12-Week Year Implementation Guide for 2026' – Umfassender Praxisleitfaden für die Umsetzung der 12-Wochen-Methode 2026: Wochenplanung, Scorecards, Mindset-Shifts und Messung. KI-Tools und digitale Planner reduzieren die Einstiegshürde deutlich. Bestätigt die anhaltend hohe Nachfrage nach strukturierten Planungstools – direktes Wachstumssignal für den 12 Week Year Planner SaaS.",
         source: "12week-breakthrough.com",
         url: "https://12week-breakthrough.com/implementation-guide-2026-12-week-year/",
@@ -3095,6 +3167,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 10.04.2026
       {
+        summary: "wagner-empowerment.de: Online-Seminar 'Redeangst überwinden' 2026 – Coaching, Mentaltraining & Hypnose – Termine August 2026, November 7.–8. und November 21.–22. 2026. Methoden-Mix: Hypnose, Mentaltraining und Coaching. Wachsendes Angebot an Online-Kursen zur Redeangst im DACH-Raum bestätigt Marktakzeptanz und Kaufbereitschaft für Selbsthilfe-Produkte – direktes Wettbewerbsumfeld für lampenfieber-besiegen.de als digitales Hypnose-Audio-Programm.",
+        source: "wagner-empowerment.de",
+        url: "https://www.wagner-empowerment.de/online-seminar-redeangst-%C3%BCberwinden/",
+        date: "2026",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-04-10",
+      },
+      {
         summary: "Kim Fleckenstein (kimfleckenstein.com): Hypnose-MP3 'Lampenfieber überwinden' – Etablierte deutsche Hypnose-Autorin bietet Audio-Selbsthilfeprogramm gegen Lampenfieber an; bestätigt die Marktakzeptanz digitaler Hypnose-Audio-Produkte im DACH-Raum. Zeigt direkte Wettbewerbslandschaft für lampenfieber-besiegen.de und belegt, dass Kunden bereit sind, für Audio-Selbsthilfeprogramme zu zahlen.",
         source: "Kim Fleckenstein",
         url: "https://www.kimfleckenstein.com/shop/hypnose-mp3/lampenfieber-ueberwinden/",
@@ -3430,6 +3510,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "learnfluencer": {
     news: [
       // Neu: 10.04.2026
+      {
+        summary: "Nume.ch: 'KI-Nutzung Schweiz 2026: 76% nutzen Künstliche Intelligenz' – Über drei Viertel der erwachsenen Schweizer Bevölkerung integrieren KI-Tools täglich. Softwarezyklen haben sich auf wenige Monate verkürzt, was ständige Weiterbildung zwingend macht. Eidgenössischer KI-Abschluss: Erste Absolventinnen und Absolventen 2026 auf dem Markt. Belegt die massenhafte Verbreitung von KI in der Schweiz und die wachsende Nachfrage nach KI-Kompetenzaufbau – strategisches Kernmarktumfeld für learnfluencer.ch.",
+        source: "Nume.ch",
+        url: "https://www.nume.ch/ki-nutzung-schweiz-2026-76-nutzen-kuenstliche-intelligenz/",
+        date: "2026",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-10",
+      },
+      {
+        summary: "digitaljournal.ch: 'Die wichtigsten IT-Trends in der Schweiz 2026' – Übersicht der prägenden IT-Trends für Schweizer Unternehmen: KI-Integration in Geschäftsprozesse, Cybersecurity-Ausbau, Cloud-Migration und Data Governance. Steigende Anforderungen an KI-Kompetenz auf allen Unternehmensebenen. Direkte Relevanz für learnfluencer.ch als Plattform, die Schweizer Unternehmen und Fachkräfte bei der KI-Kompetenzentwicklung begleitet.",
+        source: "Digital Journal CH",
+        url: "https://www.digitaljournal.ch/2026/03/die-wichtigsten-it-trends-in-der.html",
+        date: "2026-03",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-10",
+      },
       {
         summary: "Computerworld.ch: 'Wie KI die betriebliche Weiterbildung transformiert' – Rund 80 HR- und L&D-Entscheider diskutierten an der ersten 'Learning Revolution' in Zürich, wie KI das Lernen in Unternehmen neu definiert. Praxisbeispiele von SBB (adaptive, selbstgesteuerte Lernprozesse), Kanton Zürich (digitale Lernformate für 70'000 Mitarbeitende) und ARGUS DATA INSIGHTS (KI-personalisierte Lernassistenten). Unterstreicht die wachsende Schweizer Nachfrage nach KI-Lernkompetenz – strategisches Thought-Leadership-Umfeld für learnfluencer.ch.",
         source: "Computerworld.ch",
@@ -3872,6 +3968,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 10.04.2026
       {
+        summary: "aivie.ch: 'Marketing-Automation mit kmu.digital 2026: Jetzt Förderung nutzen' – Schweizer KMU können 2026 über das kmu.digital-Förderprogramm bis zu 50% der Kosten für Marketing-Automation-Tools subventioniert bekommen. Aivie (Schweizer Marketing-Automation aus der Schweiz) zeigt Praxisbeispiele für strukturierte, geförderte Marketingumsetzung. Direktes Marktumfeld für einfach nutzbare Marketingkonzept-Tools wie das Framework auf learnfluencer.ch/tools/marketingkonzept.",
+        source: "aivie.ch",
+        url: "https://aivie.ch/marketing-automation-kmu-digital-forderung/",
+        date: "2026",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-10",
+      },
+      {
+        summary: "bexolutions.ch: 'KI-Marketing für Schweizer KMU 2026 – Praxisleitfaden' – KI-Marketing ist 2026 zugänglicher denn je: Automatisierung, Personalisierung und datengetriebene Entscheidungen auch für kleinere KMU. Monatliches Online-Marketing-Budget Empfehlung: CHF 1'500–5'000 nach 70-20-10-Regel. Tool-Lizenzen: CHF 100–500/Monat. Wachsendes Bewusstsein für strukturierte Marketingplanung und ROI-Messung – direktes Marktumfeld für das Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "bexolutions.ch",
+        url: "https://bexolutions.ch/ki-marketing-fur-schweizer-kmu-2026-praxisleitfaden/",
+        date: "2026",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-10",
+      },
+      {
         summary: "bexolutions.ch: 'Marketing-Automation für Schweizer KMU 2026: Tools & ROI' – Schweizer B2B-Agentur zeigt, dass KI-gestützte Marketing-Automation für KMU ab 2026 erschwinglich und unverzichtbar wird: automatisierte Leadgenerierung, Content-Personalisierung, SEO-Automatisierung. Bestätigt wachsenden Bedarf an strukturierten Marketingkonzepten und digitalen Planungstools wie learnfluencer.ch/tools/marketingkonzept für Schweizer KMU.",
         source: "bexolutions.ch",
         url: "https://bexolutions.ch/marketing-automation-fur-schweizer-kmu-2026-tools-roi/",
@@ -4211,6 +4323,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "bestattungsplaner": {
     news: [
       // Neu: 10.04.2026
+      {
+        summary: "Stiftung Schweizerische Bestattungsvorsorge (SSBV): Vorsorgevertrag nach eigenen Wünschen – Die SSBV ermöglicht Schweizern, alle organisatorischen und finanziellen Fragen rund um die Bestattung zu Lebzeiten zu regeln; flexible Zahlungsmodelle ab CHF 12.90/Monat über 25 Jahre. 2026 wächst die Nachfrage nach digitaler Vorsorge-Dokumentation. Bestätigt den Trend zu proaktiver Bestattungsplanung – direkte Zielgruppe für bestattungsplaner.ch als digitaler Orientierungsservice und Lead-Vermittler.",
+        source: "Stiftung Schweizerische Bestattungsvorsorge (SSBV)",
+        url: "https://www.ssbv.swiss/",
+        date: "2026",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-04-10",
+      },
+      {
+        summary: "everlife.ch: 'Bestattungsvorsorge Nr. 1 Schweiz – Finanzierung Ihrer Bestattungsvorsorge' – Everlife.ch positioniert sich als führende Schweizer Plattform für Bestattungsvorsorge mit digitalem Dokumentenmanagement, das Angehörige ca. 50 Stunden Formalitäten einspart. Wachsende Konkurrenz im digitalen Bestattungsvorsorge-Markt Schweiz – direktes Wettbewerbsumfeld für bestattungsplaner.ch und Bestätigung des Marktpotenzials.",
+        source: "Everlife.ch",
+        url: "https://everlife.ch/de/finanzierung-ihrer-bestattungsvorsorge/",
+        date: "2026",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-10",
+      },
       {
         summary: "Age-Stiftung Schweiz: Förderung 'Letzte Reise – Interaktiver Bestattungsplaner für Gemeinden' (letztereise.ch) – Schweizer Stiftung fördert digitalen Bestattungsplaner für Gemeinden, der 2026 zur Marktreife weiterentwickelt wird. Zeigt institutionelles Schweizer Interesse an digitaler Bestattungsvorsorge – direktes Marktvalidierungssignal für bestattungsplaner.ch als privater Lead-Vermittlungsdienst.",
         source: "Age-Stiftung Schweiz",
