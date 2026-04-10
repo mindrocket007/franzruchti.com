@@ -825,6 +825,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 10.04.2026
+      {
+        summary: "Apex Trader Funding: 'Mastering Day Trading Rules 2026' – Apex hat per 1. März 2026 die Regelstruktur für Performance Accounts (PA) grundlegend überarbeitet: Dollar-Cost-Averaging (DCA) in verlierenden Positionen ist vollständig verboten und führt zu sofortigem automatischen Account-Verlust. Pflicht-Bracket-Orders für den Live Trailing Drawdown und die 30%-Konsistenzregel bei Auszahlungen gelten neu. NinjaTrader bleibt Standardplattform. Für algorithmische Trader und EA-Nutzer (wie Mind Rocket Trading) sind diese neuen Regeln für die Strategie-Konfiguration essenziell.",
+        source: "Apex Trader Funding",
+        url: "https://apextraderfunding.com/resources/trading-market-analysis/mastering-day-trading-rules-with-apex-trader-funding-a-comprehensive-guide/",
+        date: "2026-03-01",
+        category: "Prop Trading Apex",
+        addedAt: "2026-04-10",
+      },
       // Neu: 09.04.2026 (Recherche-Runde 5)
       {
         summary: "NinjaTrader Group lancierte im Oktober 2025 die neuen Plattformen «NinjaTrader Prop» und «Tradovate Prop» speziell für Prop-Trader, mit erweiterter Risikokontrolle, TradingView-Integration sowie Order-Flow+-Tools (TPO- und Footprint-Charts). Die Plattformen sind über Apex Trader Funding, MyFunded Futures und Take Profit Trader verfügbar. Für NinjaTrader-Nutzer im Prop-Trading-Bereich ist dies eine bedeutende Infrastrukturverbesserung – direkt relevant für Mind Rocket Trading und dessen Kunden.",
@@ -1721,6 +1730,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 10.04.2026
+      {
+        summary: "DNBGF (Deutsches Netzwerk Betriebliche Gesundheitsförderung): Berliner Symposium 2026 'Mentale Gesundheit und Arbeit' – Führende Fachorganisation für betriebliches Gesundheitsmanagement veranstaltet das wichtigste BGM-Symposium Deutschlands mit Fokus auf psychische Gesundheit am Arbeitsplatz. Hohes institutionelles Interesse an Lösungen für mentale Gesundheit im Betrieb – bestätigt das Marktumfeld für hypnovital® als skalierbare, digitale BGM-Massnahme.",
+        source: "DNBGF",
+        url: "https://www.dnbgf.de/betriebliche-gesundheitsfoerderung/aktuelles/berliner-symposium-2026",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-10",
+      },
+      {
+        summary: "humanresourcesmanager.de: 'HR-Trends 2026: Mentale Gesundheit, KI und Recruiting' – Führendes deutschsprachiges HR-Fachmagazin identifiziert mentale Gesundheit als Top-HR-Trend 2026, gleichgestellt mit KI und Recruiting. Unternehmen investieren verstärkt in präventive Gesundheitsangebote, Work-Life-Balance-Programme und digitale Well-Being-Massnahmen. Direktes Marktumfeld für hypnovital® als digitales, skalierbares Gesundheitsprogramm für Unternehmen.",
+        source: "humanresourcesmanager.de",
+        url: "https://www.humanresourcesmanager.de/personalmanagement/hr-trends-fuer-2026-ki-mentale-gesundheit/",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-10",
+      },
       // Neu: 09.04.2026 (Recherche-Runde 3)
       {
         summary: "Das Schweizer Institut für Medizinische Hypnose (SIMH) und die SMSH sind aktive Fachgesellschaften mit steigendem Interesse an Hypnose als Methode zur Behandlung von Stress, Burnout und psychosomatischen Beschwerden. Multiple Anbieter haben 2026 neue Ausbildungsdurchläufe in Zürich, Bern und St. Gallen angekündigt. Der Markt für Hypnose-basierte Gesundheitsangebote wächst – direktes Wachstumsumfeld für hypnovital® als digitales Hypnose-Angebot im BGM-Bereich.",
@@ -2259,6 +2285,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 10.04.2026
+      {
+        summary: "brianpmoran.com: Brian P. Moran, Autor der '12 Week Year'-Methode, beschreibt 2026 wie KI-Tools die Umsetzung der 12-Wochen-Methode erheblich vereinfachen – automatisches Tracking, KI-generierte Fortschrittsberichte und Echtzeit-Warnungen bei Zielabweichung. Die Methode ist ein New York Times-Bestseller und wird nach über zwei Jahrzehnten von Tausenden Einzelpersonen und Unternehmen eingesetzt. Bestätigt die anhaltende Nachfrage und das Wachstum des 12-Week-Year-Ökosystems – strategisches Umfeld für den 12 Week Year Planner SaaS.",
+        source: "brianpmoran.com",
+        url: "https://brianpmoran.com/",
+        date: "2026",
+        category: "12 Week Year Methode",
+        addedAt: "2026-04-10",
+      },
       // Neu: 09.04.2026
       {
         summary: "rocket-routine.com: 'Quartalsziele mit Hilfe von KI finden und formulieren' – KI-Assistent unterstützt bei Zielformulierung nach SMART, OKR und 12-Week-Year-Methode. Wachsender Trend zu KI-gestützter Quartalszielplanung als Standard. Direktes Marktumfeld für den 12 Week Year Planner – bestätigt Nachfrage nach strukturierten, methodenbasierten Planungstools.",
@@ -3856,6 +3891,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 10.04.2026
+      {
+        summary: "StartupValley.news: 'Wie verändert Digitalisierung die Bestattungsbranche – Sind traditionelle Ansätze noch zeitgemäss?' – Analyse, wie digitale Anbieter die traditionelle Bestattungsbranche herausfordern: transparente Preise, Online-Buchung, digitale Trauerfeiern. 40% der Kunden suchen Bestatter online, bei unter 40-Jährigen über 60%. Die Bestattungsbranche ist kaum digitalisiert – ein klarer Wachstumsmarkt für Online-Vermittlungsplattformen wie bestattungsplaner.ch.",
+        source: "StartupValley.news",
+        url: "https://startupvalley.news/de/mymoria/",
+        date: "2026",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-10",
+      },
       // Neu: 09.04.2026 (Recherche-Runde 3)
       {
         summary: "personalleiter.today: «Digitale Vorsorge – eine Chance für die Bestattungsbranche» – Fachbeitrag beschreibt, wie der erste Kontakt mit Bestattungsleistungen zunehmend digital stattfindet und «digitale Vorsorge» zu einem eigenständigen Geschäftsfeld mit mehr Potenzial als klassische Bestattungsvorsorge wird. Am Ende folgt immer ein persönliches Gespräch – Hybrid-Modell wie auf bestattungsplaner.ch ist die zukunftsfähige Strategie.",
