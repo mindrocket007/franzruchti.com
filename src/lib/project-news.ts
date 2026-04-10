@@ -852,6 +852,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 10.04.2026
       {
+        summary: "BrokerChooser kürt NinjaTrader zum 'Best Futures Broker 2026' – zum zweiten Mal in Folge. Zusätzliche Auszeichnung: 'Best Broker for Trading Micro Gold (MGC) Futures 2026'. Begründung: überlegene Plattform-Features, Benutzererfahrung und niedrige Gebühren im Vergleich mit über 100 getesteten Brokern weltweit. Für algorithmische Trader wie Mind Rocket Trading, die NinjaTrader als primäre Handelsplattform nutzen, bestätigt das Award die technische Stärke und internationale Anerkennung der Plattform.",
+        source: "NinjaTrader / BrokerChooser",
+        url: "https://ninjatrader.com/futures/blogs/ninjatrader-best-futures-broker-2026/",
+        date: "2026-01",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-10",
+      },
+      {
         summary: "newtrading.de: 'NinjaTrader Erfahrungen 2026' – NinjaTrader öffnete Anfang 2026 für europäische Trader durch einen CySEC-regulierten Broker. Die Plattform bietet Ausführungsgeschwindigkeiten von durchschnittlich 0,3 Sekunden, NinjaScript-Automatisierung, Tick-Level-Backtesting und Kommissionen ab 0,09 USD/Kontrakt (Micro). Lifetime-Lizenz für 1'499 USD. Für algorithmischen ES-Futures-Handel (NinjaScript-Strategien) wie bei Mind Rocket Trading ist die EU-Expansion ein relevanter Marktschritt.",
         source: "newtrading.de",
         url: "https://newtrading.de/ninjatrader-erfahrungen/",
@@ -1781,6 +1789,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "hypnovital": {
     news: [
       // Neu: 10.04.2026
+      {
+        summary: "FutureFit 2026 (Medicongress, Schweiz): Fachkongress für HR, BGM und Führungspersonen, die Gesundheit als strategischen Erfolgsfaktor betrachten. Themen: psychische Stabilisierung am Arbeitsplatz, professionelle Wiedereingliederung und BGM-Integration in Führungsstrukturen. Bestätigt das institutionelle Interesse an skalierbaren BGM-Lösungen im Schweizer Unternehmensmarkt – direktes Wirkungsfeld für hypnovital® als digitales BGM- und Präventions-Tool.",
+        source: "Medicongress",
+        url: "https://medicongress.ch/kongress/futurefit2026/",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-10",
+      },
       {
         summary: "AXA.ch BGM WeCAre: 'Burnout-Prävention am Arbeitsplatz' – Ein Viertel aller Schweizer Erwerbstätigen fühlt sich durch die Arbeit Burnout-gefährdet, ein Drittel der Bevölkerung erlebte in den letzten zwölf Monaten psychische Probleme. Immer mehr Schweizer Unternehmen setzen gezielt auf Burnout-Präventionsprogramme. Dieses institutionelle BGM-Wachstum ist direktes Marktpotenzial für hypnovital® als skalierbare, digitale Präventionslösung.",
         source: "AXA.ch",
@@ -3277,6 +3293,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "learnfluencer": {
     news: [
       // Neu: 10.04.2026
+      {
+        summary: "swissICT #DIGITUP & GV, 5. Mai 2026, Zürich: Schweizer IT-Fachverband präsentiert 25 Vorträge und Workshops zu KI, Transformation, digitaler Souveränität und New Work – offen für Mitglieder und Nichtmitglieder. Themen umfassen KI-Transformation (Microsoft Schweiz), Human-Centered Transformation und digitale Landwirtschaft. Zeigt das lebendige Ökosystem der digitalen Transformation in der Schweiz – direktes Thought-Leadership-Umfeld für learnfluencer.ch als KI- und Lernkompetenz-Plattform.",
+        source: "swissICT",
+        url: "https://www.swissict.ch/digitup-gv-2026/",
+        date: "2026-05-05",
+        category: "Weiterbildung Schweiz",
+        addedAt: "2026-04-10",
+      },
       {
         summary: "HR Today: 'Learnfluencer werden?' – Fachmagazin für HR Schweiz beschreibt den Begriff 'Learnfluencer' als Person, die in Unternehmen die intrinsische Lernmotivation der Mitarbeitenden stärkt, individuelles und kollektives Lernen verknüpft und eine Lernkultur mit zunehmend eigenverantwortlichem Lernen etabliert. Zeigt, dass 'Learnfluencer' ein anerkanntes Konzept im Schweizer HR-Markt ist – bestätigt die Positionierung von learnfluencer.ch als Thought-Leadership-Plattform.",
         source: "HR Today",
