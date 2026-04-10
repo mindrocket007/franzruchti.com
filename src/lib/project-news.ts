@@ -26,6 +26,23 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 10.04.2026
+      {
+        summary: "Capiwell.ch: 'Der Schweizer IT-Arbeitsmarkt 2026' – Routine-Softwareentwicklung und Helpdesk-Tätigkeiten werden zunehmend automatisiert, während Rollen mit architektonischen Entscheidungen, Systemintegration und Risikomanagement stark an Bedeutung gewinnen. 2024 waren rund 266'000 Personen in ICT-Positionen beschäftigt (+70% seit 2010). Die Qualitäts- und Kompetenzanforderungen steigen – direktes Argument für höherwertige SIZ-Zertifizierungen als Nachweis von Fachkompetenz.",
+        source: "Capiwell.ch",
+        url: "https://capiwell.ch/en/swiss-it-labour-market-2026-specialised-skills-slower-growth-and-new-openings-for-start-ups/",
+        date: "2026-04",
+        category: "Arbeitsmarkt & IT",
+        addedAt: "2026-04-10",
+      },
+      {
+        summary: "Nume.ch: 'AI Business Specialist – Neues eidg. Diplom Schweiz 2026' – Die ersten staatlichen Prüfungen für den neuen Abschluss finden Herbst 2026 statt. Der Bund übernimmt bis zu 50 Prozent der Vorbereitungskosten über die Bildungsgutscheine. Stärkt die Nachfrage nach anerkannten ICT-Weiterbildungsabschlüssen insgesamt und belegt die Wachstumsdynamik in der Schweizer ICT-Zertifizierungslandschaft, in der SIZ als Prüfungsorganisation operiert.",
+        source: "Nume.ch",
+        url: "https://www.nume.ch/ai-business-specialist-neues-eidg-diplom-schweiz-2026/",
+        date: "2026-04",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-10",
+      },
       // Neu: 09.04.2026 (Recherche-Runde 2)
       {
         summary: "ICT-Berufsbildung Schweiz treibt 2026 den ersten neuen KI-Abschluss voran – noch im laufenden Jahr sollen die ersten Absolventinnen und Absolventen auf den Markt gebracht werden. Laut Prognosen benötigt die Schweiz bis 2033 rund 128'600 zusätzliche ICT-Fachkräfte. Ein direktes Wachstumsargument für zertifizierungsbasierte Weiterbildungsangebote wie jene von SIZ als anerkannte Prüfungsorganisation.",
@@ -827,6 +844,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 10.04.2026
       {
+        summary: "newtrading.de: 'NinjaTrader Erfahrungen 2026' – NinjaTrader öffnete Anfang 2026 für europäische Trader durch einen CySEC-regulierten Broker. Die Plattform bietet Ausführungsgeschwindigkeiten von durchschnittlich 0,3 Sekunden, NinjaScript-Automatisierung, Tick-Level-Backtesting und Kommissionen ab 0,09 USD/Kontrakt (Micro). Lifetime-Lizenz für 1'499 USD. Für algorithmischen ES-Futures-Handel (NinjaScript-Strategien) wie bei Mind Rocket Trading ist die EU-Expansion ein relevanter Marktschritt.",
+        source: "newtrading.de",
+        url: "https://newtrading.de/ninjatrader-erfahrungen/",
+        date: "2026-04",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-10",
+      },
+      {
         summary: "Apex Trader Funding: 'Mastering Day Trading Rules 2026' – Apex hat per 1. März 2026 die Regelstruktur für Performance Accounts (PA) grundlegend überarbeitet: Dollar-Cost-Averaging (DCA) in verlierenden Positionen ist vollständig verboten und führt zu sofortigem automatischen Account-Verlust. Pflicht-Bracket-Orders für den Live Trailing Drawdown und die 30%-Konsistenzregel bei Auszahlungen gelten neu. NinjaTrader bleibt Standardplattform. Für algorithmische Trader und EA-Nutzer (wie Mind Rocket Trading) sind diese neuen Regeln für die Strategie-Konfiguration essenziell.",
         source: "Apex Trader Funding",
         url: "https://apextraderfunding.com/resources/trading-market-analysis/mastering-day-trading-rules-with-apex-trader-funding-a-comprehensive-guide/",
@@ -1444,6 +1469,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 10.04.2026
+      {
+        summary: "SwissNova: '10 Weiterbildungstrends für Unternehmen in der Schweiz 2026' – KI-gestützte, personalisierte Lernpfade, Microlearning und integriertes Learning in Alltagstools (Teams, Slack) sind die dominierenden Trends. 87% der L&D-Teams nutzen KI täglich. Unternehmen mit KI-Training verzeichnen 26% höhere Wissensretention. Zeigt das Marktumfeld für einfach zugängliche mentale Werkzeuge und Self-Development-Tools wie jene auf mindtools.ch.",
+        source: "SwissNova",
+        url: "https://unternehmen.swissnova.swiss/weiterbildung-unternehmen-schweiz-trends-2026/",
+        date: "2026-04",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-04-10",
+      },
+      {
+        summary: "SSBM Geneva: 'Top Trends in Online Education for 2026: AI, AR, and Beyond' – KI ermöglicht Lernpfade, die sich in Echtzeit anpassen; AR/VR wird für immersive Lernerfahrungen breiter eingesetzt; Microlearning ist das bevorzugte Format. 35–45% der Anbieter erkunden Blockchain für Zertifizierungen. Wachsende Nachfrage nach zugänglichen digitalen Selbstlern-Inhalten – unterstützt das Marktpotenzial für einfache, sofort nutzbare PDF-Tools auf mindtools.ch.",
+        source: "Swiss School of Business and Management Geneva",
+        url: "https://www.ssbm.ch/top-trends-in-online-education-for-2026-ai-ar-and-beyond/",
+        date: "2026-04",
+        category: "Mental Health",
+        addedAt: "2026-04-10",
+      },
       // Neu: 09.04.2026 (Recherche-Runde 3)
       {
         summary: "Gesundheitsförderung Schweiz dokumentiert 2026, dass jede dritte berufstätige Person an stressbedingter emotionaler Erschöpfung leidet. Spezialisierte Anbieter von Mental-Health-Tools decken den wachsenden Bedarf ab, während kantonale Aktionsprogramme die Nachfrage nach zugänglichen psychischen Gesundheitsangeboten weiter stärken. Dies ist ein direktes Marktumfeld für niedrigschwellige PDF-Tools wie jene auf mindtools.ch.",
@@ -1731,6 +1773,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "hypnovital": {
     news: [
       // Neu: 10.04.2026
+      {
+        summary: "AXA.ch BGM WeCAre: 'Burnout-Prävention am Arbeitsplatz' – Ein Viertel aller Schweizer Erwerbstätigen fühlt sich durch die Arbeit Burnout-gefährdet, ein Drittel der Bevölkerung erlebte in den letzten zwölf Monaten psychische Probleme. Immer mehr Schweizer Unternehmen setzen gezielt auf Burnout-Präventionsprogramme. Dieses institutionelle BGM-Wachstum ist direktes Marktpotenzial für hypnovital® als skalierbare, digitale Präventionslösung.",
+        source: "AXA.ch",
+        url: "https://www.axa.ch/de/unternehmenskunden/angebote/gesundheit-unfall/bgm-wecare/gesundheitspraevention/burnout-praevention.html",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-10",
+      },
       {
         summary: "DNBGF (Deutsches Netzwerk Betriebliche Gesundheitsförderung): Berliner Symposium 2026 'Mentale Gesundheit und Arbeit' – Führende Fachorganisation für betriebliches Gesundheitsmanagement veranstaltet das wichtigste BGM-Symposium Deutschlands mit Fokus auf psychische Gesundheit am Arbeitsplatz. Hohes institutionelles Interesse an Lösungen für mentale Gesundheit im Betrieb – bestätigt das Marktumfeld für hypnovital® als skalierbare, digitale BGM-Massnahme.",
         source: "DNBGF",
@@ -2612,6 +2662,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 10.04.2026
+      {
+        summary: "NOACK Hypnotherapie Berlin: 'Ejaculatio Praecox (vorzeitiger Samenerguss): Aufklärung, Tipps, Hilfe' – Spezialisierter Hypnotherapeut beschreibt Hypnose als ergänzende Methode neben Verhaltenstherapie und medikamentöser Behandlung. Hervorgehobener Punkt: Psychische Faktoren spielen eine wichtige Rolle. Das wachsende Online-Angebot an professioneller Hypnotherapie im DACH-Raum zeigt die Marktnachfrage – und differenziert gleichzeitig digitale Audio-Selbsthilfeangebote wie orgasmus-hinauszoegern.de als kostengünstigen, niedrigschwelligen Einstieg.",
+        source: "NOACK Hypnotherapie Berlin",
+        url: "https://www.noack-hypnose.de/ejaculatio-praecox-bzw-vorzeitiger-samenerguss/",
+        date: "2026-04",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-10",
+      },
       // Neu: 09.04.2026 (Recherche-Runde 2)
       {
         summary: "Aids Hilfe Wien (aids.at): Wien bekommt ab 2026 ein neues Zentrum für sexuelle Gesundheit – das magnus*-Ambulatorium eröffnet als niederschwellige Einrichtung für Diagnostik, Beratung, Behandlung und Prävention im Bereich sexuelle Gesundheit. Diese institutionelle Aufwertung zeigt, dass sexuelle Gesundheit im DACH-Raum als öffentliches Gesundheitsthema an Akzeptanz gewinnt – ein Umfeld, das digitale Selbsthilfe-Angebote wie Hypnose-Audios normalisiert.",
@@ -2881,6 +2940,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 10.04.2026
+      {
+        summary: "NOACK Hypnotherapie Berlin: 'Redeangst ist kein Lampenfieber – Aufklärung, Tipps, Hilfe' – Detaillierte Unterscheidung: Lampenfieber ist temporäre Nervosität vor Auftritten, Redeangst ist eine tief verankerte psychologische Blockade. Hypnosetherapie wird explizit als Methode empfohlen, um Ursprungsursachen der Redeangst zu bearbeiten. Meist 2–3 Sitzungen ausreichend für nachhaltige Veränderung. Zeigt das wachsende Therapie-Bewusstsein im DACH-Raum – bestätigt Nachfrage nach Selbsthilfeangeboten wie lampenfieber-besiegen.de.",
+        source: "NOACK Hypnotherapie Berlin",
+        url: "https://www.noack-hypnose.de/redeangst/",
+        date: "2026-04",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-04-10",
+      },
       // Neu: 09.04.2026 (Recherche-Runde 2)
       {
         summary: "Schmidthypnose.ch (Schweiz): Lampenfieber und Auftrittsangst werden explizit als Kernindikation für Hypnosetherapie aufgeführt. Im deutschsprachigen Raum ist das Angebot an Hypnose-Praktizierenden für Redeangst 2026 stark gewachsen – Differenzierung über digitale Audio-Programme und Online-Reichweite ist entscheidend für Skalierung gegenüber lokalen Praxis-Anbietern.",
@@ -3200,6 +3268,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 10.04.2026
+      {
+        summary: "HR Today: 'Learnfluencer werden?' – Fachmagazin für HR Schweiz beschreibt den Begriff 'Learnfluencer' als Person, die in Unternehmen die intrinsische Lernmotivation der Mitarbeitenden stärkt, individuelles und kollektives Lernen verknüpft und eine Lernkultur mit zunehmend eigenverantwortlichem Lernen etabliert. Zeigt, dass 'Learnfluencer' ein anerkanntes Konzept im Schweizer HR-Markt ist – bestätigt die Positionierung von learnfluencer.ch als Thought-Leadership-Plattform.",
+        source: "HR Today",
+        url: "https://www.hrtoday.ch/de/article/learnfluencer-werden",
+        date: "2026-04",
+        category: "Content & Thought Leadership",
+        addedAt: "2026-04-10",
+      },
+      {
+        summary: "SwissNova: '10 Weiterbildungstrends für Unternehmen in der Schweiz 2026' – KI-gestützte Lernpfade, Microlearning-Formate, Learning in the Flow of Work und Skills-Based Learning dominieren 2026 die betriebliche Weiterbildung in der Schweiz. Unternehmen mit KI-Training erzielen 45% effektivere Programme. Zeigt die starke Nachfrage nach Thought Leadership und Orientierungswissen im Weiterbildungsmarkt – strategisches Umfeld für learnfluencer.ch.",
+        source: "SwissNova",
+        url: "https://unternehmen.swissnova.swiss/weiterbildung-unternehmen-schweiz-trends-2026/",
+        date: "2026-04",
+        category: "Weiterbildung Schweiz",
+        addedAt: "2026-04-10",
+      },
       // Neu: 09.04.2026
       {
         summary: "Startbase: EdTech-Startup SchuBu sichert sich siebenstellige Finanzierung für KI-Lernplattform – Der Schweizer EdTech-Markt gewinnt an Dynamik: Das Startup entwickelt eine KI-gestützte Lernplattform und erhält signifikantes Wachstumskapital. Zeigt Investoreninteresse an skalierbaren KI-basierten Bildungslösungen – bestätigt das Marktpotenzial von personalisierten Lerntools und die Relevanz einer Thought-Leadership-Position wie learnfluencer.ch im Bereich KI & Lernkompetenz.",
@@ -3584,6 +3669,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 10.04.2026
+      {
+        summary: "digitalmarketing.gmbh: 'Marketing Trends 2026: Der ultimative Deep Dive für Schweizer Unternehmen' – Daten, Strategien und die neue KI-Realität: GEO (Generative Engine Optimization) ersetzt SEO als Kerndisziplin, Messenger-Marketing (WhatsApp 98% Öffnungsrate), KI-gestützte Personalisierung und First-Party-Data als strategische Grundlage. Bestätigt steigenden Bedarf nach strukturierten Marketingkonzepten und Analyseframeworks (PESTEL, SWOT, 7P) für Schweizer Unternehmen.",
+        source: "digitalmarketing.gmbh",
+        url: "https://www.digitalmarketing.gmbh/post/marketing-trends-2026-der-ultimative-deep-dive-f%C3%BCr-schweizer-unternehmen-daten-strategien-und-di",
+        date: "2026-04",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-10",
+      },
+      {
+        summary: "KMU Performer AG: 'KMU Marketing-Trends 2026' – Microsoft Advertising wächst stark durch KI/Copilot-Integration und LinkedIn-Datenverlinkung; KI-Video-Produktion ermöglicht professionelle Clips aus einfachen Scripts; Marketing-Automation ist 2026 Standard für wettbewerbsfähige KMU. Zeigt, wie aktiv der Schweizer KMU-Markt nach praxisorientierten Marketingplanung-Tools sucht – direktes Marktumfeld für learnfluencer.ch/tools/marketingkonzept.",
+        source: "KMU Performer AG",
+        url: "https://kmu-performer.ch/trends-2026/",
+        date: "2026-04",
+        category: "Marketing-Tools & Software",
+        addedAt: "2026-04-10",
+      },
       // Neu: 09.04.2026
       {
         summary: "kimarketing.ch: Spezialisiertes Schweizer KI-Marketing-Portal für KMU – GEO (Generative Engine Optimization) als neuer Standard: Kunden erwarten direkte Antworten in KI-Suchsystemen (ChatGPT, Perplexity) statt klassischer Linklisten. Zeigt steigenden Bedarf nach strukturierten Marketing-Frameworks und Planungstools für Schweizer KMU – direktes Marktumfeld für das learnfluencer.ch/tools/marketingkonzept.",
@@ -3892,6 +3994,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "bestattungsplaner": {
     news: [
       // Neu: 10.04.2026
+      {
+        summary: "Everlife.ch: 'Was kostet eine Kremation in der Schweiz?' – Aktuell bevorzugen fast 90% der Schweizer die Kremation gegenüber der Erdbestattung (Anteil Erdbestattungen unter 10%). Grundkosten Kremation: 350–700 CHF, Gesamtkosten 4'000–8'000 CHF, in grossen Städten (Zürich, Basel, St. Gallen) oft kostenlos für Einwohner. Wachsendes Interesse an digitaler Vorsorgeplanung und Preistransparenz – direktes Marktumfeld für bestattungsplaner.ch.",
+        source: "Everlife.ch",
+        url: "https://everlife.ch/de/veroffentlichung/was-kostet-eine-kremation-in-der-schweiz/",
+        date: "2026-04",
+        category: "Markt & Trends",
+        addedAt: "2026-04-10",
+      },
       {
         summary: "StartupValley.news: 'Wie verändert Digitalisierung die Bestattungsbranche – Sind traditionelle Ansätze noch zeitgemäss?' – Analyse, wie digitale Anbieter die traditionelle Bestattungsbranche herausfordern: transparente Preise, Online-Buchung, digitale Trauerfeiern. 40% der Kunden suchen Bestatter online, bei unter 40-Jährigen über 60%. Die Bestattungsbranche ist kaum digitalisiert – ein klarer Wachstumsmarkt für Online-Vermittlungsplattformen wie bestattungsplaner.ch.",
         source: "StartupValley.news",
