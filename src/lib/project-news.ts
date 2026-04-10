@@ -3431,6 +3431,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 10.04.2026
       {
+        summary: "Computerworld.ch: 'Wie KI die betriebliche Weiterbildung transformiert' – Rund 80 HR- und L&D-Entscheider diskutierten an der ersten 'Learning Revolution' in Zürich, wie KI das Lernen in Unternehmen neu definiert. Praxisbeispiele von SBB (adaptive, selbstgesteuerte Lernprozesse), Kanton Zürich (digitale Lernformate für 70'000 Mitarbeitende) und ARGUS DATA INSIGHTS (KI-personalisierte Lernassistenten). Unterstreicht die wachsende Schweizer Nachfrage nach KI-Lernkompetenz – strategisches Thought-Leadership-Umfeld für learnfluencer.ch.",
+        source: "Computerworld.ch",
+        url: "https://www.computerworld.ch/themen/business-und-it-strategie/ki-betriebliche-weiterbildung-transformiert",
+        date: "2026",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-10",
+      },
+      {
         summary: "Unternehmensjournal.ch: 'Vom E-Learning zum Smart Business: Digitale Bildungstrends für Schweizer Unternehmen' – KI-basierte Lernplattformen analysieren Lernverhalten und passen Inhalte individuell an; Gamification, Microlearning und Blended Learning sind 2026 in Schweizer Unternehmen Standard. Bestätigt das aktive Nachfrageumfeld für eine Thought-Leadership-Plattform wie learnfluencer.ch, die KI-Lernkompetenz für Schweizer Unternehmen aufbereitet.",
         source: "Unternehmensjournal.ch",
         url: "https://www.unternehmensjournal.ch/post/vom-e-learning-zum-smart-business-digitale-bildungstrends-f%C3%BCr-schweizer-unternehmen",
