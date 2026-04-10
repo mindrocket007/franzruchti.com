@@ -723,6 +723,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
+      // Neu: 10.04.2026
+      {
+        summary: "SWI swissinfo.ch: 'Gesucht: Auswege aus der Mental-Health-Krise' – Ein Drittel der Schweizer Bevölkerung litt in den letzten zwölf Monaten unter psychischen Problemen. Schweizer Politik und Arbeitgeber stehen unter wachsendem Druck, präventive Lösungen anzubieten. Die Nachfrage nach niederschwelligen, digitalisierbaren Mental-Health- und Persönlichkeitsentwicklungs-Angeboten wächst – ein strategisches Marktumfeld für Mind Rocket GmbH.",
+        source: "SWI swissinfo.ch",
+        url: "https://www.swissinfo.ch/ger/politik/gesucht-auswege-aus-der-mental-health-krise/48808184",
+        date: "2026",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-04-10",
+      },
       // Neu: 09.04.2026
       {
         summary: "DI MIND GmbH (dimind.ch): 'Von der Erschöpfung zur Balance: Ein neues Arbeitsmodell' – Schweizer Wellbeing-Plattform thematisiert systemische Neuausrichtung nach Erschöpfungsphasen, Fokus auf Resilienz, mentale Stärke und gesunde Arbeitsgestaltung. Zeigt wachsendes Interesse an ganzheitlichen Persönlichkeitsentwicklungs-Programmen – relevantes Marktumfeld für Mind Rocket GmbH.",
@@ -851,6 +860,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "mindrocket-trading": {
     news: [
       // Neu: 10.04.2026
+      {
+        summary: "Apex Trader Funding März 2026 Update: Größter US-Futures-Prop-Firm überarbeitete Evaluation & Payout-System fundamental (gültig ab 01.03.2026) – automatisierte Payouts via Deel (24–48h), neue Ladder-Regeln und Account-Typen. Über $750 Mio. Auszahlungen seit 2022. Zeigt wachsende Professionalisierung des Prop-Trading-Markts, den Mind Rocket Trading mit NinjaScript-basierten ES-Futures-Strategien adressiert.",
+        source: "DamnPropFirms.com",
+        url: "https://damnpropfirms.com/prop-firms/apex-trader-funding-profit-target-and-payout-ladder-rules-2026/",
+        date: "2026-03",
+        category: "Futures & Trading",
+        addedAt: "2026-04-10",
+      },
       {
         summary: "BrokerChooser kürt NinjaTrader zum 'Best Futures Broker 2026' – zum zweiten Mal in Folge. Zusätzliche Auszeichnung: 'Best Broker for Trading Micro Gold (MGC) Futures 2026'. Begründung: überlegene Plattform-Features, Benutzererfahrung und niedrige Gebühren im Vergleich mit über 100 getesteten Brokern weltweit. Für algorithmische Trader wie Mind Rocket Trading, die NinjaTrader als primäre Handelsplattform nutzen, bestätigt das Award die technische Stärke und internationale Anerkennung der Plattform.",
         source: "NinjaTrader / BrokerChooser",
@@ -1487,6 +1504,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 10.04.2026
       {
+        summary: "Haufe Akademie: 'Lerntrends 2025/2026: Digitale Personalentwicklung' – Microlearning, KI-Lernassistenten und Learning-Analytics dominieren die L&D-Branche. Self-directed Learning wächst: Lernende erwarten kurze, direkt anwendbare Inhalte – genau das Marktumfeld, in dem einfach zugängliche PDF-Wissenstools wie jene auf mindtools.ch eine digitale Nische füllen.",
+        source: "Haufe Akademie",
+        url: "https://www.haufe-akademie.de/digital-suite/blog/ds-trends-digitales-lernen",
+        date: "2026",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-04-10",
+      },
+      {
         summary: "SwissNova: '10 Weiterbildungstrends für Unternehmen in der Schweiz 2026' – KI-gestützte, personalisierte Lernpfade, Microlearning und integriertes Learning in Alltagstools (Teams, Slack) sind die dominierenden Trends. 87% der L&D-Teams nutzen KI täglich. Unternehmen mit KI-Training verzeichnen 26% höhere Wissensretention. Zeigt das Marktumfeld für einfach zugängliche mentale Werkzeuge und Self-Development-Tools wie jene auf mindtools.ch.",
         source: "SwissNova",
         url: "https://unternehmen.swissnova.swiss/weiterbildung-unternehmen-schweiz-trends-2026/",
@@ -1789,6 +1814,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "hypnovital": {
     news: [
       // Neu: 10.04.2026
+      {
+        summary: "HealthExpo 2026 (Schweiz, healthexpo.ch): Nationale Gesundheitsmesse mit Fokus auf BGM, Prävention und mentale Gesundheit. Ausstellende aus den Bereichen betriebliches Gesundheitsmanagement, Therapie und digitale Prävention – ein direkt relevantes Marktumfeld für hypnovital® als skalierbares digitales BGM-Präventionsprogramm.",
+        source: "HealthExpo 2026",
+        url: "https://healthexpo.ch/",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-10",
+      },
       {
         summary: "FutureFit 2026 (Medicongress, Schweiz): Fachkongress für HR, BGM und Führungspersonen, die Gesundheit als strategischen Erfolgsfaktor betrachten. Themen: psychische Stabilisierung am Arbeitsplatz, professionelle Wiedereingliederung und BGM-Integration in Führungsstrukturen. Bestätigt das institutionelle Interesse an skalierbaren BGM-Lösungen im Schweizer Unternehmensmarkt – direktes Wirkungsfeld für hypnovital® als digitales BGM- und Präventions-Tool.",
         source: "Medicongress",
@@ -2361,6 +2394,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 10.04.2026
       {
+        summary: "12week-breakthrough.com: 'The Complete 12-Week Year Implementation Guide for 2026' – Umfassender Praxisleitfaden für die Umsetzung der 12-Wochen-Methode 2026: Wochenplanung, Scorecards, Mindset-Shifts und Messung. KI-Tools und digitale Planner reduzieren die Einstiegshürde deutlich. Bestätigt die anhaltend hohe Nachfrage nach strukturierten Planungstools – direktes Wachstumssignal für den 12 Week Year Planner SaaS.",
+        source: "12week-breakthrough.com",
+        url: "https://12week-breakthrough.com/implementation-guide-2026-12-week-year/",
+        date: "2026",
+        category: "12 Week Year Methode",
+        addedAt: "2026-04-10",
+      },
+      {
         summary: "brianpmoran.com: Brian P. Moran, Autor der '12 Week Year'-Methode, beschreibt 2026 wie KI-Tools die Umsetzung der 12-Wochen-Methode erheblich vereinfachen – automatisches Tracking, KI-generierte Fortschrittsberichte und Echtzeit-Warnungen bei Zielabweichung. Die Methode ist ein New York Times-Bestseller und wird nach über zwei Jahrzehnten von Tausenden Einzelpersonen und Unternehmen eingesetzt. Bestätigt die anhaltende Nachfrage und das Wachstum des 12-Week-Year-Ökosystems – strategisches Umfeld für den 12 Week Year Planner SaaS.",
         source: "brianpmoran.com",
         url: "https://brianpmoran.com/",
@@ -2688,6 +2729,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 10.04.2026
       {
+        summary: "gesundheit.gv.at (Österreichisches Gesundheitsportal): 'Vorzeitiger Samenerguss (Ejaculatio praecox)' – Offizielles Gesundheitsportal beschreibt Häufigkeit (bis 30% der Männer betroffen), psychologische Hauptursachen und Behandlungsoptionen inkl. Psychotherapie und Selbsthilfemethoden. Wachsende öffentliche Aufklärung über sexuelle Dysfunktionen normalisiert das Thema und steigert die Suchnachfrage nach digitalen Selbsthilfeangeboten wie orgasmus-hinauszoegern.de.",
+        source: "gesundheit.gv.at",
+        url: "https://www.gesundheit.gv.at/krankheiten/sexualorgane/sexuelle-funktionsstoerungen/vorzeitiger-samenerguss.html",
+        date: "2026",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-10",
+      },
+      {
         summary: "NOACK Hypnotherapie Berlin: 'Ejaculatio Praecox (vorzeitiger Samenerguss): Aufklärung, Tipps, Hilfe' – Spezialisierter Hypnotherapeut beschreibt Hypnose als ergänzende Methode neben Verhaltenstherapie und medikamentöser Behandlung. Hervorgehobener Punkt: Psychische Faktoren spielen eine wichtige Rolle. Das wachsende Online-Angebot an professioneller Hypnotherapie im DACH-Raum zeigt die Marktnachfrage – und differenziert gleichzeitig digitale Audio-Selbsthilfeangebote wie orgasmus-hinauszoegern.de als kostengünstigen, niedrigschwelligen Einstieg.",
         source: "NOACK Hypnotherapie Berlin",
         url: "https://www.noack-hypnose.de/ejaculatio-praecox-bzw-vorzeitiger-samenerguss/",
@@ -2965,6 +3014,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "lampenfieber": {
     news: [
       // Neu: 10.04.2026
+      {
+        summary: "Kim Fleckenstein (kimfleckenstein.com): Hypnose-MP3 'Lampenfieber überwinden' – Etablierte deutsche Hypnose-Autorin bietet Audio-Selbsthilfeprogramm gegen Lampenfieber an; bestätigt die Marktakzeptanz digitaler Hypnose-Audio-Produkte im DACH-Raum. Zeigt direkte Wettbewerbslandschaft für lampenfieber-besiegen.de und belegt, dass Kunden bereit sind, für Audio-Selbsthilfeprogramme zu zahlen.",
+        source: "Kim Fleckenstein",
+        url: "https://www.kimfleckenstein.com/shop/hypnose-mp3/lampenfieber-ueberwinden/",
+        date: "2026",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-04-10",
+      },
       {
         summary: "NOACK Hypnotherapie Berlin: 'Redeangst ist kein Lampenfieber – Aufklärung, Tipps, Hilfe' – Detaillierte Unterscheidung: Lampenfieber ist temporäre Nervosität vor Auftritten, Redeangst ist eine tief verankerte psychologische Blockade. Hypnosetherapie wird explizit als Methode empfohlen, um Ursprungsursachen der Redeangst zu bearbeiten. Meist 2–3 Sitzungen ausreichend für nachhaltige Veränderung. Zeigt das wachsende Therapie-Bewusstsein im DACH-Raum – bestätigt Nachfrage nach Selbsthilfeangeboten wie lampenfieber-besiegen.de.",
         source: "NOACK Hypnotherapie Berlin",
@@ -3293,6 +3350,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "learnfluencer": {
     news: [
       // Neu: 10.04.2026
+      {
+        summary: "Unternehmensjournal.ch: 'Vom E-Learning zum Smart Business: Digitale Bildungstrends für Schweizer Unternehmen' – KI-basierte Lernplattformen analysieren Lernverhalten und passen Inhalte individuell an; Gamification, Microlearning und Blended Learning sind 2026 in Schweizer Unternehmen Standard. Bestätigt das aktive Nachfrageumfeld für eine Thought-Leadership-Plattform wie learnfluencer.ch, die KI-Lernkompetenz für Schweizer Unternehmen aufbereitet.",
+        source: "Unternehmensjournal.ch",
+        url: "https://www.unternehmensjournal.ch/post/vom-e-learning-zum-smart-business-digitale-bildungstrends-f%C3%BCr-schweizer-unternehmen",
+        date: "2026",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-10",
+      },
       {
         summary: "swissICT #DIGITUP & GV, 5. Mai 2026, Zürich: Schweizer IT-Fachverband präsentiert 25 Vorträge und Workshops zu KI, Transformation, digitaler Souveränität und New Work – offen für Mitglieder und Nichtmitglieder. Themen umfassen KI-Transformation (Microsoft Schweiz), Human-Centered Transformation und digitale Landwirtschaft. Zeigt das lebendige Ökosystem der digitalen Transformation in der Schweiz – direktes Thought-Leadership-Umfeld für learnfluencer.ch als KI- und Lernkompetenz-Plattform.",
         source: "swissICT",
@@ -3703,6 +3768,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 10.04.2026
       {
+        summary: "bexolutions.ch: 'Marketing-Automation für Schweizer KMU 2026: Tools & ROI' – Schweizer B2B-Agentur zeigt, dass KI-gestützte Marketing-Automation für KMU ab 2026 erschwinglich und unverzichtbar wird: automatisierte Leadgenerierung, Content-Personalisierung, SEO-Automatisierung. Bestätigt wachsenden Bedarf an strukturierten Marketingkonzepten und digitalen Planungstools wie learnfluencer.ch/tools/marketingkonzept für Schweizer KMU.",
+        source: "bexolutions.ch",
+        url: "https://bexolutions.ch/marketing-automation-fur-schweizer-kmu-2026-tools-roi/",
+        date: "2026",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-10",
+      },
+      {
         summary: "digitalmarketing.gmbh: 'Marketing Trends 2026: Der ultimative Deep Dive für Schweizer Unternehmen' – Daten, Strategien und die neue KI-Realität: GEO (Generative Engine Optimization) ersetzt SEO als Kerndisziplin, Messenger-Marketing (WhatsApp 98% Öffnungsrate), KI-gestützte Personalisierung und First-Party-Data als strategische Grundlage. Bestätigt steigenden Bedarf nach strukturierten Marketingkonzepten und Analyseframeworks (PESTEL, SWOT, 7P) für Schweizer Unternehmen.",
         source: "digitalmarketing.gmbh",
         url: "https://www.digitalmarketing.gmbh/post/marketing-trends-2026-der-ultimative-deep-dive-f%C3%BCr-schweizer-unternehmen-daten-strategien-und-di",
@@ -4026,6 +4099,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "bestattungsplaner": {
     news: [
       // Neu: 10.04.2026
+      {
+        summary: "Age-Stiftung Schweiz: Förderung 'Letzte Reise – Interaktiver Bestattungsplaner für Gemeinden' (letztereise.ch) – Schweizer Stiftung fördert digitalen Bestattungsplaner für Gemeinden, der 2026 zur Marktreife weiterentwickelt wird. Zeigt institutionelles Schweizer Interesse an digitaler Bestattungsvorsorge – direktes Marktvalidierungssignal für bestattungsplaner.ch als privater Lead-Vermittlungsdienst.",
+        source: "Age-Stiftung Schweiz",
+        url: "https://www.age-stiftung.ch/foerderung/letzte-reise-interaktiver-bestattungsplaner-fuer-gemeinden",
+        date: "2026",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-04-10",
+      },
       {
         summary: "Institut für Innovation und Digitalisierung (IDA): 'Chatbots in Bestattungsunternehmen – der digitale Kurs der Bestattungsbranche' – Chatbots beantworten rund um die Uhr Fragen auf der Website, lernen mit KI kontinuierlich dazu und ersetzen die erste telefonische Kontaktaufnahme. Für kleine Bestattungsunternehmen werden diese Tools zunehmend erschwinglich. Digitale Erst-Kontaktpunkte wie bestattungsplaner.ch passen perfekt in diesen Trend: Online-Orientierung → Weiterleitung an lokale Bestatter → persönliches Gespräch.",
         source: "Institut für Innovation und Digitalisierung (IDA)",
