@@ -28,6 +28,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 10.04.2026
       {
+        summary: "SwissCybersecurity.net: 'ICT-Berufsbildung Schweiz diplomiert 145 ICT-Fachkräfte' (31.03.2026) – Aus 235 Prüfungskandidaten wurden 145 neue Fachkräfte diplomiert: 77 Cyber Security Specialists, 52 Platform Development Specialists und 16 Information Security Manager. Das Schweizer Fachnetzwerk für Cybersicherheit hebt besonders den Cyber-Security-Anteil hervor – ein wachsendes Kompetenzfeld, in dem SIZ als anerkannte Prüfungsorganisation eine Schlüsselrolle spielt.",
+        source: "SwissCybersecurity.net",
+        url: "https://www.swisscybersecurity.net/news/2026-03-31/ict-berufsbildung-schweiz-diplomiert-145-ict-fachkraefte",
+        date: "2026-03-31",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-10",
+      },
+      {
         summary: "Capiwell.ch: 'Der Schweizer IT-Arbeitsmarkt 2026' – Routine-Softwareentwicklung und Helpdesk-Tätigkeiten werden zunehmend automatisiert, während Rollen mit architektonischen Entscheidungen, Systemintegration und Risikomanagement stark an Bedeutung gewinnen. 2024 waren rund 266'000 Personen in ICT-Positionen beschäftigt (+70% seit 2010). Die Qualitäts- und Kompetenzanforderungen steigen – direktes Argument für höherwertige SIZ-Zertifizierungen als Nachweis von Fachkompetenz.",
         source: "Capiwell.ch",
         url: "https://capiwell.ch/en/swiss-it-labour-market-2026-specialised-skills-slower-growth-and-new-openings-for-start-ups/",
@@ -3994,6 +4002,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "bestattungsplaner": {
     news: [
       // Neu: 10.04.2026
+      {
+        summary: "Institut für Innovation und Digitalisierung (IDA): 'Chatbots in Bestattungsunternehmen – der digitale Kurs der Bestattungsbranche' – Chatbots beantworten rund um die Uhr Fragen auf der Website, lernen mit KI kontinuierlich dazu und ersetzen die erste telefonische Kontaktaufnahme. Für kleine Bestattungsunternehmen werden diese Tools zunehmend erschwinglich. Digitale Erst-Kontaktpunkte wie bestattungsplaner.ch passen perfekt in diesen Trend: Online-Orientierung → Weiterleitung an lokale Bestatter → persönliches Gespräch.",
+        source: "Institut für Innovation und Digitalisierung (IDA)",
+        url: "https://www.institut-ida.de/news/chatbots-in-bestattungsunternehmen-der-digitale-kurs-der-bestattungsbranche",
+        date: "2026",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-10",
+      },
+      {
+        summary: "trauerundgedenken.de: 'Digitale Trends in der Bestattungsbranche 2026: KI, Digitalisierung, virtuelle Trauerfeier' – Die Bestattungsbranche wird zunehmend durch digitale Technologien geprägt: virtuelle Todesanzeigen, GPS-Technologien auf Friedhöfen, KI-generierte Avatare der Verstorbenen, Online-Vorsorge. Online-Plattformen ermöglichen die vollständige Abwicklung – von der Sarg-Auswahl bis zur Formalitätenerledigung. Bestätigt das Marktpotenzial digitaler Vermittlungsplattformen wie bestattungsplaner.ch.",
+        source: "trauerundgedenken.de",
+        url: "https://www.trauerundgedenken.de/trauerratgeber/bestatter-und-bestattung/digitale-trends-bestattungsbranche-ki-digitalisierung-virtuelle-trauerfeier-beerdigung",
+        date: "2026",
+        category: "Markt & Trends",
+        addedAt: "2026-04-10",
+      },
       {
         summary: "Everlife.ch: 'Was kostet eine Kremation in der Schweiz?' – Aktuell bevorzugen fast 90% der Schweizer die Kremation gegenüber der Erdbestattung (Anteil Erdbestattungen unter 10%). Grundkosten Kremation: 350–700 CHF, Gesamtkosten 4'000–8'000 CHF, in grossen Städten (Zürich, Basel, St. Gallen) oft kostenlos für Einwohner. Wachsendes Interesse an digitaler Vorsorgeplanung und Preistransparenz – direktes Marktumfeld für bestattungsplaner.ch.",
         source: "Everlife.ch",
