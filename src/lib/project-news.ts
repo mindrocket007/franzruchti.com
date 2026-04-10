@@ -893,6 +893,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 10.04.2026
       {
+        summary: "thepropjournalist.com: 'Apex Trader Funding Review 2026: Payouts & Rules' – Unabhängige Analyse mit verifizierten April-2026-Auszahlungsdaten: Trader aus den USA, Taiwan, Spanien und Indien erhielten Auszahlungen. Wöchentliche Payout-Requests möglich ab 5 qualifizierten Handelstagen und 50%-Konsistenzregel. EOD- und Intraday-Trailing-Drawdown-Konten mit fairen Bedingungen und transparenten Regeln seit März 2026. NinjaTrader bleibt bevorzugte Plattform für algorithmische ES-Futures-Trader – direktes Marktumfeld für Mind Rocket Trading.",
+        source: "thepropjournalist.com",
+        url: "https://thepropjournalist.com/reviews/apex-trader-funding/",
+        date: "2026-04",
+        category: "Prop Trading Apex",
+        addedAt: "2026-04-10",
+      },
+      {
         summary: "catinathebroker.com: 'Apex Trader Funding Rule Changes in 2026: What you Need to Know' – Apex hat im März 2026 das gesamte Modell umgebaut: Abonnementgebühren durch einmalige Zahlungen ersetzt, MAE-Regel und 5:1 Risk/Reward-Restriktion abgeschafft, End-of-Day-Drawdown-Konten eingeführt. Bisher über $721 Mio. Auszahlungen seit 2022, über 17'800 Trustpilot-Bewertungen (Ø 4.4/5). Über häufigere Payout-Möglichkeiten für qualifizierte Trader. Direkte Auswirkungen auf NinjaScript-Strategie-Trader wie Mind Rocket Trading, die Apex als Prop-Firm nutzen.",
         source: "catinathebroker.com",
         url: "https://www.catinathebroker.com/blog/apextraderfunding2026",
@@ -4323,6 +4331,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "bestattungsplaner": {
     news: [
       // Neu: 10.04.2026
+      {
+        summary: "kath.ch: 'Tod, Trauer und Andenken im digitalen Zeitalter' – Schweizer Kirchenmedium beleuchtet die wachsende Digitalisierung von Trauer, Todesanzeigen und Erinnerungskultur: Online-Gedenkseiten, digitale Nachlässe und virtuelle Trauerbegleitung gehören zum neuen Standard. Gesellschaftliche Akzeptanz digitaler Abschied- und Vorsorgelösungen wächst – strategisches Umfeld für bestattungsplaner.ch als digitaler Anlaufpunkt für Bestattungsplanung in der Schweiz.",
+        source: "kath.ch",
+        url: "https://www.kath.ch/newsd/tod-trauer-und-andenken-im-digitalen-zeitalter/",
+        date: "2026-04",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-04-10",
+      },
       {
         summary: "Stiftung Schweizerische Bestattungsvorsorge (SSBV): Vorsorgevertrag nach eigenen Wünschen – Die SSBV ermöglicht Schweizern, alle organisatorischen und finanziellen Fragen rund um die Bestattung zu Lebzeiten zu regeln; flexible Zahlungsmodelle ab CHF 12.90/Monat über 25 Jahre. 2026 wächst die Nachfrage nach digitaler Vorsorge-Dokumentation. Bestätigt den Trend zu proaktiver Bestattungsplanung – direkte Zielgruppe für bestattungsplaner.ch als digitaler Orientierungsservice und Lead-Vermittler.",
         source: "Stiftung Schweizerische Bestattungsvorsorge (SSBV)",
