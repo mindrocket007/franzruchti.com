@@ -892,6 +892,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
         category: "Prop Trading Apex",
         addedAt: "2026-04-10",
       },
+      {
+        summary: "futuresproptrading.com: 'Best Futures Prop Firm 2026 – No Payout Denials, EOD Drawdown, 100% Profits' – Unabhängiger Vergleich führender Futures-Prop-Firmen 2026 mit Fokus auf transparente Auszahlungen, realistische EOD-Drawdown-Regeln und faire Gewinnteilung (bis 100%). Apex Trader Funding bleibt Marktführer für ES-Futures-Trader. Bestätigt das starke Wachstum des Prop-Trading-Sektors – direktes Marktumfeld für NinjaScript-basierte ES-Futures-Strategien von Mind Rocket Trading.",
+        source: "futuresproptrading.com",
+        url: "https://futuresproptrading.com/best-futures-prop-firm-2026/",
+        date: "2026-04",
+        category: "Prop Trading Apex",
+        addedAt: "2026-04-10",
+      },
+      {
+        summary: "DamnPropFirms.com: 'Apex Trader Funding Platforms 2026: Rithmic, Tradovate & Setup Guide' – Detaillierter Setup-Leitfaden für alle Apex-kompatiblen Handelsplattformen 2026: Rithmic, Tradovate und NinjaTrader im Vergleich. Konfigurationsschritte, Vor-/Nachteile und Empfehlungen für algorithmische Trader. NinjaTrader bleibt die bevorzugte Plattform für automatisierte ES-Futures-Strategien – direkt relevant für Mind Rocket Trading und dessen Kunden.",
+        source: "DamnPropFirms.com",
+        url: "https://damnpropfirms.com/prop-firms/apex-trader-funding-platforms-2026-rithmic-tradovate-setup-guide/",
+        date: "2026-04",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-10",
+      },
       // Neu: 09.04.2026 (Recherche-Runde 5)
       {
         summary: "NinjaTrader Group lancierte im Oktober 2025 die neuen Plattformen «NinjaTrader Prop» und «Tradovate Prop» speziell für Prop-Trader, mit erweiterter Risikokontrolle, TradingView-Integration sowie Order-Flow+-Tools (TPO- und Footprint-Charts). Die Plattformen sind über Apex Trader Funding, MyFunded Futures und Take Profit Trader verfügbar. Für NinjaTrader-Nutzer im Prop-Trading-Bereich ist dies eine bedeutende Infrastrukturverbesserung – direkt relevant für Mind Rocket Trading und dessen Kunden.",
@@ -1814,6 +1830,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "hypnovital": {
     news: [
       // Neu: 10.04.2026
+      {
+        summary: "Nume.ch: 'Mentale Gesundheit 2026: Warum gesunde Führung Pflicht ist' – In einer Arbeitswelt 2026, geprägt durch permanente digitale Erreichbarkeit, KI-Wandel und globale Krisen, rückt psychische Widerstandsfähigkeit ins Zentrum der Unternehmensstrategie. Job-Stress-Index Schweiz: ~30% der Schweizer Erwerbstätigen leiden regelmässig unter hohem Stress, ein Drittel kann sich kaum erholen. Jeder investierte BGM-Franken bringt 3–5 CHF Rückfluss. Direktes Wachstumsumfeld für hypnovital® als skalierbare digitale BGM-Präventionslösung.",
+        source: "Nume.ch",
+        url: "https://www.nume.ch/mentale-gesundheit-2026-warum-gesunde-fuehrung-pflicht-ist/",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-10",
+      },
+      {
+        summary: "ad-hoc-news.de: 'Psychische Belastung zwingt Unternehmen zum Umdenken' – Steigende psychische Erkrankungsraten zwingen Unternehmen 2026, ihre Arbeitsmodelle grundlegend zu überdenken. Fachkräftemangel, Homeoffice-Fatigue und Always-on-Kultur verstärken den Druck. Wachsende Nachfrage nach präventiven, skalierbaren BGM-Lösungen – direktes Marktumfeld für hypnovital® als digitales Hypnose-Audio-Präventionsprogramm.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/psychische-belastung-zwingt-unternehmen-zum-umdenken/68571302",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-10",
+      },
+      {
+        summary: "veroco.ch: 'Burnout-Prävention für Unternehmen' – Schweizer BGM-Spezialist bietet strukturierte Burnout-Präventionsprogramme für KMU und Grossunternehmen: Stressmanagement, Resilienztraining und präventive Gesundheitsmassnahmen. Zeigt die wachsende Nachfrage nach zertifizierten BGM-Dienstleistern in der Schweiz – bestätigt das Marktumfeld für hypnovital® als digitales, skalierbares Ergänzungsprogramm für betriebliche Gesundheit.",
+        source: "veroco.ch",
+        url: "https://www.veroco.ch/burnout-praevention-fuer-unternehmen",
+        date: "2026",
+        category: "Burnout Prävention Schweiz",
+        addedAt: "2026-04-10",
+      },
       {
         summary: "HealthExpo 2026 (Schweiz, healthexpo.ch): Nationale Gesundheitsmesse mit Fokus auf BGM, Prävention und mentale Gesundheit. Ausstellende aus den Bereichen betriebliches Gesundheitsmanagement, Therapie und digitale Prävention – ein direkt relevantes Marktumfeld für hypnovital® als skalierbares digitales BGM-Präventionsprogramm.",
         source: "HealthExpo 2026",
@@ -3382,6 +3422,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
         category: "Weiterbildung Schweiz",
         addedAt: "2026-04-10",
       },
+      {
+        summary: "SwissNova: '10 Corporate Training Trends in Switzerland to Watch in 2026' – Englischsprachiger Überblick der führenden Schweizer Corporate-Training-Plattform: KI-Lerncoaches, Skills-Gap-Analysen, Community Learning und Performance Support dominieren die L&D-Agenda 2026. 87% der L&D-Teams nutzen KI täglich; Unternehmen mit KI-Training erzielen 45% effektivere Programme. Bestätigt das aktive Nachfrageumfeld für Thought-Leadership-Content zu KI-Lernkompetenz – strategisches Umfeld für learnfluencer.ch.",
+        source: "SwissNova",
+        url: "https://company.swissnova.swiss/10-key-corporate-training-trends-in-2026/",
+        date: "2026",
+        category: "Weiterbildung Schweiz",
+        addedAt: "2026-04-10",
+      },
+      {
+        summary: "Genially Blog: 'E-Learning Trends 2026: KI, Skills und menschliche Verbindung' – Adaptives Lernen, KI-Tutoren und Social Learning ersetzen statische Kurse; 60% der Unternehmen setzen auf Microlearning, 80% auf hybride Lernmodelle. AR/VR-Integration wird Standard, Blockchain-Zertifizierungen kommen. Der Trend zu personalisierten, KI-gestützten Lernpfaden bestätigt die Marktdynamik für eine KI-Lernkompetenz-Plattform wie learnfluencer.ch.",
+        source: "Genially Blog",
+        url: "https://blog.genially.com/en/elearning-trends/",
+        date: "2026",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-10",
+      },
       // Neu: 09.04.2026
       {
         summary: "Startbase: EdTech-Startup SchuBu sichert sich siebenstellige Finanzierung für KI-Lernplattform – Der Schweizer EdTech-Markt gewinnt an Dynamik: Das Startup entwickelt eine KI-gestützte Lernplattform und erhält signifikantes Wachstumskapital. Zeigt Investoreninteresse an skalierbaren KI-basierten Bildungslösungen – bestätigt das Marktpotenzial von personalisierten Lerntools und die Relevanz einer Thought-Leadership-Position wie learnfluencer.ch im Bereich KI & Lernkompetenz.",
@@ -3789,6 +3845,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         url: "https://kmu-performer.ch/trends-2026/",
         date: "2026-04",
         category: "Marketing-Tools & Software",
+        addedAt: "2026-04-10",
+      },
+      {
+        summary: "bexolutions.ch: 'Voice Search SEO 2026 – Leitfaden für Schweizer KMU' – Voice-Search-Optimierung wird 2026 für Schweizer KMU unverzichtbar: strukturierte Daten, Featured Snippets, lokale SEO und FAQ-Content als Grundlage für Sprachsuche. GEO (Generative Engine Optimization) ergänzt klassisches SEO grundlegend. Zeigt, wie sich Marketing-Planung für KMU wandelt – direktes Argument für umfassende Marketingkonzept-Tools wie das Framework auf learnfluencer.ch/tools/marketingkonzept.",
+        source: "bexolutions.ch",
+        url: "https://bexolutions.ch/voice-search-seo-2026-leitfaden-fur-schweizer-kmu/",
+        date: "2026",
+        category: "MarTech & Trends",
         addedAt: "2026-04-10",
       },
       // Neu: 09.04.2026
