@@ -935,6 +935,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 11.04.2026 (Recherche-Runde 5)
+      {
+        summary: "CNBC: 'S&P 500 slips Friday, but posts best week since November after fragile Iran ceasefire deal' (9. April 2026) – S&P 500 legte in der Woche rund 3.6%, Nasdaq 4.7% und Dow 3.0% zu. Nach dem Tiefstand von ca. 6.310 Anfang April (fast -10% vom Jahreshoch) durch Iran-Kriegsangst führte der fragile US-Iran-Waffenstillstand zur starken Erholung. Hohe Volatilität durch geopolitische Ereignisse bietet algorithmischen Strategien wie bei Mind Rocket Trading konkrete Handelschancen.",
+        source: "CNBC",
+        url: "https://www.cnbc.com/2026/04/09/stock-market-today-live-updates.html",
+        date: "2026-04-09",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-11",
+      },
+      {
+        summary: "FinancialContent/MarketMinute: 'Markets Rebound as Ceasefire Reports Propel S&P 500 Futures Past Critical 6,600 Level' (6. April 2026) – US-Iran-Waffenstillstandsmeldungen lösten sofortige Erholung aus: ES-Futures durchbrachen die technisch wichtige 6.600er-Marke. Gamma-Schwellenwert bei 6.685, Dealer-Hedging wird oberhalb davon stützend. Typische Reaktionsmuster auf geopolitische Schockereignisse bestätigen den Wert systembasierter Futures-Strategien wie bei Mind Rocket Trading.",
+        source: "FinancialContent / MarketMinute",
+        url: "https://markets.financialcontent.com/stocks/article/marketminute-2026-4-6-markets-rebound-as-ceasefire-reports-propel-s-and-p-500-futures-past-critical-6600-level",
+        date: "2026-04-06",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-11",
+      },
       // Neu: 11.04.2026 (Recherche-Runde 4)
       {
         summary: "Finance Magnates: 'Kraken-Owned NinjaTrader Jumps into Prop Trading with Two Tech Platforms' – NinjaTrader Group, jetzt im Besitz von Kraken, lanciert NinjaTrader Prop und Tradovate Prop. Die Plattformen unterstützen Evaluation-Funded-Accounts mit erweiterten Risikokontroll-Tools, nahtloser Integration zu TradingView und Order-Flow-Analysen. NinjaTrader wird damit zur vollständig integrierten Prop-Trading-Infrastruktur – direkte Auswirkung auf Nutzer wie Mind Rocket Trading, die NinjaTrader für algorithmische ES-Futures-Strategien einsetzen.",
@@ -3833,6 +3850,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 11.04.2026 (Recherche-Runde 5)
+      {
+        summary: "ad-hoc-news.de: 'KI-Kenntnisse werden 2026 zur Einstellungs-Pflicht' – Unternehmen verlangen zunehmend KI-Grundkompetenz als Einstellungsvoraussetzung; Bewerber ohne nachweisbare KI-Kenntnisse verlieren an Wettbewerbsfähigkeit. EU AI Act (Art. 4) verpflichtet seit Februar 2025 alle Unternehmen zur Sicherstellung von KI-Grundkompetenz der Mitarbeitenden, ab August 2026 vollständig anwendbar. Bestätigt dringenden Qualifizierungsbedarf als zentrales Themenfeld für learnfluencer.ch.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/ki-kenntnisse-werden-2026-zur-einstellungs-pflicht/68491348",
+        date: "2026-04",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-11",
+      },
+      {
+        summary: "it-boltwise.de: 'Weiterbildung 2026: KI und Compliance im Fokus' – KI-Kompetenz und regulatorische Weiterbildung (EU AI Act, Datenschutz, Arbeitsrecht) werden zu Pflichtthemen in Corporate Learning. Unternehmen investieren 2026 verstärkt in strukturierte KI-Upskilling-Programme. Wachsender Markt für praxisnahe, zertifizierbare KI-Weiterbildungsformate – direktes Themenumfeld für learnfluencer.ch als KI-Lernkompetenz-Plattform.",
+        source: "it-boltwise.de",
+        url: "https://www.it-boltwise.de/weiterbildung-2026-ki-und-compliance-im-fokus.html",
+        date: "2026-04",
+        category: "Weiterbildung Schweiz",
+        addedAt: "2026-04-11",
+      },
+      {
+        summary: "persoenlich.com: 'Eidgenössischer Fachausweis für KI-Spezialisten genehmigt' – Der Bund hat die eidgenössische Berufsprüfung für KI-Spezialisten offiziell genehmigt; erste Prüfung geplant für Herbst 2026. Qualifizierte KI-Fachkräfte erhalten damit erstmals einen staatlich anerkannten Schweizer Abschluss. Staatliche Anerkennung von KI-Kompetenz als Qualifikation bestätigt Bedeutung von Weiterbildungsplattformen wie learnfluencer.ch im KI-Lernkompetenz-Markt.",
+        source: "persoenlich.com",
+        url: "https://www.persoenlich.com/digital/eidgenossischer-fachausweis-fur-ki-spezialisten-genehmigt",
+        date: "2026-04",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-11",
+      },
       // Neu: 11.04.2026 (Recherche-Runde 4)
       {
         summary: "digitaljournal.ch: 'Digitale Schule im Alltag: Neue Lernwelten' (April 2026) – Schweizer Digital-Fachportal beleuchtet, wie KI, adaptive Lernplattformen und hybride Unterrichtsmodelle den schulischen Alltag transformieren. Personalisierte Lernpfade und datengetriebene Leistungsmessung als neue Standards. Gesellschaftliche Durchdringung digitaler Lernwelten von Schule bis Beruf stärkt Nachfrage nach Thought Leadership und praxisnahen Lernkompetenz-Formaten wie learnfluencer.ch.",
