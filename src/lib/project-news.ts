@@ -909,6 +909,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         category: "Trading-Technologie",
         addedAt: "2026-04-11",
       },
+      {
+        summary: "ad-hoc-news.de: 'S&P 500 Holds Steady Amid Tariff Uncertainty and Mixed Earnings' (10. April 2026) – S&P 500 Cash-Index handelt um die 5.850-Marke mit Tagesswings von über 2%, ausgelöst durch Zoll-Eskalationen und gemischte Q1-Earnings. Institutionelle CME-Futures-Positionierung zeigt Net-Long-Ausrichtung bei erhöhter impliziter Volatilität. Für ES-Futures-Trader mit definierten Risiko-Strategien wie bei Mind Rocket Trading bietet dieses Umfeld konkrete Chancen.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/s-and-p-500-holds-steady-amid-tariff-uncertainty-and-mixed-earnings/69119059",
+        date: "2026-04-10",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-11",
+      },
       // Neu: 10.04.2026
       {
         summary: "thepropjournalist.com: 'Apex Trader Funding Review 2026: Payouts & Rules' – Unabhängige Analyse mit verifizierten April-2026-Auszahlungsdaten: Trader aus den USA, Taiwan, Spanien und Indien erhielten Auszahlungen. Wöchentliche Payout-Requests möglich ab 5 qualifizierten Handelstagen und 50%-Konsistenzregel. EOD- und Intraday-Trailing-Drawdown-Konten mit fairen Bedingungen und transparenten Regeln seit März 2026. NinjaTrader bleibt bevorzugte Plattform für algorithmische ES-Futures-Trader – direktes Marktumfeld für Mind Rocket Trading.",
@@ -1600,6 +1608,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 11.04.2026
+      {
+        summary: "openpr.com: 'Mental Health Apps Market 2026–2033 – AI Therapy & Digital Wellness' – Der globale Mental-Health-Apps-Markt wächst stark: KI-getriebene Therapie-Features, personalisiertes Mood-Tracking und digitale Wellness-Plattformen expandieren massiv bis 2033. Der Trend zeigt, dass die Zielgruppe digital-affiner wird – PDF-basierte Selbsthilfe-Inhalte können sich durch klare Positionierung und Qualitätsdifferenzierung gegenüber App-Konkurrenz behaupten.",
+        source: "openpr.com",
+        url: "https://www.openpr.com/news/4456577/mental-health-apps-market-2026-2033-ai-therapy-digital",
+        date: "2026-02",
+        category: "Mental Health",
+        addedAt: "2026-04-11",
+      },
+      {
+        summary: "NPG-RSP – Nationales Programm Gesundheit und Soziales: Website-Relaunch geplant für Juni 2026 – Das Schweizer Netzwerk Psychische Gesundheit plant einen umfassenden Website-Relaunch mit neuen Mitgliedschaftskriterien. Das Thema psychische Gesundheit wird auf nationaler Ebene politisch und strukturell aufgewertet – die Nachfrage nach praxisnahen, zugänglichen Mental-Health-Tools steigt entsprechend.",
+        source: "NPG-RSP",
+        url: "https://www.npg-rsp.ch/home.html",
+        date: "2026-04",
+        category: "Mental Health",
+        addedAt: "2026-04-11",
+      },
+      {
+        summary: "Recovery Unplugged: '7 Mental Health Trends to Follow in 2026' – Zu den wichtigsten Trends zählen KI-unterstützte Früherkennung, Telehealth-Expansion und Integration von Selbsthilfe-Inhalten in digitale Plattformen. Der Self-Help-Buchmarkt zeigt robuste Nachfrage besonders für wissenschaftlich fundierte Inhalte zu Resilienz und mentaler Belastung. Bestätigt die Relevanz des PDF-Produktansatzes von mindtools.ch, wenn klar positioniert und mit konkreten Tools versehen.",
+        source: "Recovery Unplugged",
+        url: "https://www.recoveryunplugged.com/7-mental-health-trends-to-follow-in-2026/",
+        date: "2026-01",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-04-11",
+      },
       // Neu: 10.04.2026
       {
         summary: "cegos-integrata.de: 'Die wichtigsten E-Learning-Trends 2026' – 82,5% der Unternehmen sehen KI und adaptive Lernsysteme als grössten Hebel für Personalentwicklung. Lernpfade passen sich in Echtzeit ans Niveau jedes Lernenden an. 80,3% der Unternehmen nutzen hybride Lernmodelle. Fokus auf Human Skills, praktische Anwendung und sofortig einsetzbare Inhalte. Bestätigt Marktpotenzial für einfach nutzbare, direkt anwendbare mentale Werkzeuge und Tools wie jene auf mindtools.ch.",
@@ -1934,6 +1967,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
         url: "https://smsh.ch/",
         date: "2026-09",
         category: "Hypnose & Coaching",
+        addedAt: "2026-04-11",
+      },
+      {
+        summary: "nume.ch: 'Mentale Gesundheit 2026 – Warum gesunde Führung Pflicht ist' – Mentale Fitness der Belegschaft ist direkt mit wirtschaftlichem Erfolg verknüpft: Unternehmen mit gesunder Führung verzeichnen signifikant weniger Fehlzeiten und höhere Produktivität. 2026 wird BGM von einer optionalen Massnahme zur strategischen Notwendigkeit. Direktes Argument für hypnovital® als skalierbares BGM-Programm mit nachweislichem ROI.",
+        source: "nume.ch",
+        url: "https://www.nume.ch/mentale-gesundheit-2026-warum-gesunde-fuehrung-pflicht-ist/",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-11",
+      },
+      {
+        summary: "BBGM – Bundesverband Betriebliches Gesundheitsmanagement: Berliner Symposium 2026 'Mentale Gesundheit und Arbeit' (7. Mai 2026) – Das Leitthema des wichtigsten deutschen BGM-Branchentreffens zeigt: Mentale Gesundheit am Arbeitsplatz ist 2026 das dominierende Thema der Branche. Stärkt die Positionierung von hypnovital® als Anbieter hypnosebasierter BGM-Programme mit mentalem Fokus.",
+        source: "BBGM",
+        url: "https://bbgm.de/blog/2025/11/11/berliner-symposium-2026-mentale-gesundheit-und-arbeit/",
+        date: "2026-05-07",
+        category: "BGM & Gesundheit",
         addedAt: "2026-04-11",
       },
       // Neu: 10.04.2026
@@ -2580,6 +2629,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
         category: "12 Week Year Methode",
         addedAt: "2026-04-11",
       },
+      {
+        summary: "Global Growth Insights: 'OKR Software Market Report 2026–2035' – Der OKR-Software-Markt wächst von USD 1,57 Mrd. (2025) auf USD 1,78 Mrd. (2026) und soll bis 2035 auf USD 5,54 Mrd. anwachsen; Cloud-basierte Plattformen dominieren mit 78%. Für den 12wy-Planner bestätigt das: Quartalsplanung und Goal-Execution-Methoden sind im Mainstream angekommen, und Nischen-Tools mit klarer Methodik (12 Week Year) haben differenzierte Positionierungschancen.",
+        source: "Global Growth Insights",
+        url: "https://www.globalgrowthinsights.com/market-reports/objectives-and-key-results-okr-software-market-100409",
+        date: "2026-03",
+        category: "SaaS & Tools",
+        addedAt: "2026-04-11",
+      },
+      {
+        summary: "Reclaim.ai: '14 Best Goal Tracker Apps 2026' – Aktualisierte Liste der besten Goal-Tracker-Apps betont AI-Integration (29% der neuen Features), Mobile-First-Design (26%) und Smart Alerts (21%). Der Markt für Produktivitäts-Apps wird 2026 auf USD 14,46 Mrd. geschätzt. Zeigt, dass User zunehmend integrierte und KI-gestützte Lösungen erwarten – möglicher nächster Entwicklungsschritt für den 12wy-Planner.",
+        source: "Reclaim.ai",
+        url: "https://reclaim.ai/blog/goal-tracker-apps",
+        date: "2026-04",
+        category: "Produktivität & Planung",
+        addedAt: "2026-04-11",
+      },
+      {
+        summary: "WaymakerOS: 'Best OKR Software 2026' – Umfassender Guide zeigt drei Marktsegmente: dedizierte OKR-Plattformen, HR-Suites und Work-Platforms mit integrierten Goals (Asana, Monday). Die 12-Week-Year-Methode wird zunehmend in moderne OKR-Frameworks integriert, da sie den Jahreshorizont aufbricht. Der 12wy-Planner kann sich als methodologisch klarer Nischen-Player gegenüber generischen OKR-Tools abheben.",
+        source: "WaymakerOS",
+        url: "https://www.waymakeros.com/learn/best-okr-software-2026",
+        date: "2026-02",
+        category: "Zielsetzung & OKR",
+        addedAt: "2026-04-11",
+      },
       // Neu: 10.04.2026
       {
         summary: "12week-breakthrough.com: 'The Digital Tools I Use With The 12-Week Year' – Umfassende Übersicht der besten digitalen Tools für die 12-Wochen-Methode: Notion als zentrales Planungs-Hub mit vollständigen 12-Week-Year-Templates, ClickUp für Team-Zielverfolgung, Heptabase für visuelle Ideenentwicklung. Grundprinzip: Jedes Tool sollte einem der fünf Pfeiler dienen: Vision, Goals, Execution Planning, Time Use, Measurement & Accountability. Bestätigt starke Nachfrage nach integrierten digitalen Planungs-Tools im 12WY-Ökosystem.",
@@ -2940,6 +3013,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         category: "Hypnose & Therapie",
         addedAt: "2026-04-11",
       },
+      {
+        summary: "DoktorABC: 'Priligy (Dapoxetin) Erfahrungen 2026' – Priligy ist 2026 die meistgesuchte medikamentöse Behandlung gegen vorzeitigen Samenerguss; Nutzer berichten von Nebenwirkungen wie Schwindel und Übelkeit. Das hohe Suchvolumen belegt die anhaltende Nachfrage im Markt, während Nebenwirkungsberichte psychologische Alternativen wie Hypnose-Audios attraktiver machen.",
+        source: "DoktorABC",
+        url: "https://www.doktorabc.com/de/behandlungen/priligy-dapoxetin/priligy-erfahrungen",
+        date: "2026-04",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-11",
+      },
       // Neu: 10.04.2026
       {
         summary: "gesundheit.gv.at (Österreichisches Gesundheitsportal): 'Vorzeitiger Samenerguss (Ejaculatio praecox)' – Offizielles Gesundheitsportal beschreibt Häufigkeit (bis 30% der Männer betroffen), psychologische Hauptursachen und Behandlungsoptionen inkl. Psychotherapie und Selbsthilfemethoden. Wachsende öffentliche Aufklärung über sexuelle Dysfunktionen normalisiert das Thema und steigert die Suchnachfrage nach digitalen Selbsthilfeangeboten wie orgasmus-hinauszoegern.de.",
@@ -3233,6 +3314,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
         url: "https://institut-fuer-hypnose.de/redeangst-praesentationsangst-und-lampenfieber/",
         date: "2026-04",
         category: "Hypnose & Therapie",
+        addedAt: "2026-04-11",
+      },
+      {
+        summary: "KLARpsy: 'Helfen psychologische Interventionen gegen Lampenfieber?' – Aktuelle Forschungsübersicht bestätigt Hypnose und kognitive Verhaltenstherapie als evidenzbasierte Methoden bei Auftrittsangst. Hypnose erzielt dabei besonders schnelle Ergebnisse – oft genügen 2–3 Sitzungen. Stärkt die wissenschaftliche Glaubwürdigkeit von Hypnose-Audioangeboten wie lampenfieber-besiegen.de.",
+        source: "KLARpsy",
+        url: "https://klarpsy.de/klarpsytexte/klar270_0417598/",
+        date: "2026-04",
+        category: "Psychologie & Forschung",
+        addedAt: "2026-04-11",
+      },
+      {
+        summary: "Haufe Akademie: Seminar 'Lampenfieber und Redehemmung überwinden' 2026 – Aktiv gebuchtes Seminar belegt anhaltend hohe institutionelle Nachfrage nach Lösungen gegen Auftrittsangst im beruflichen Kontext. Der Markt ist sowohl im B2C- als auch im B2B-Segment aktiv – direktes Marktumfeld für lampenfieber-besiegen.de.",
+        source: "Haufe Akademie",
+        url: "https://www.haufe-akademie.de/2852",
+        date: "2026-04",
+        category: "Lampenfieber & Auftrittsangst",
         addedAt: "2026-04-11",
       },
       // Neu: 10.04.2026
@@ -3594,6 +3691,38 @@ export const projectIntel: Record<string, ProjectIntel> = {
         url: "https://www.keelearning.de/blog/e-learning-trends-2026/",
         date: "2026-04",
         category: "E-Learning & EdTech",
+        addedAt: "2026-04-11",
+      },
+      {
+        summary: "Comparis: 'Bereits drei Viertel der Bevölkerung nutzen KI-Helfer wie ChatGPT & Co.' (2. April 2026) – Repräsentative Studie (Innofact, n=1.035): 76,1% der Schweizer nutzen KI-Chatbots (2024: 49,7%), 78% geben an, KI habe ihre Jobanforderungen bereits verändert. Der Weiterbildungsbedarf im Bereich KI steigt massiv – direkter Beleg für die Relevanz von learnfluencers Themenfeldern.",
+        source: "Comparis",
+        url: "https://www.comparis.ch/publikationen/mitteilungen/2026/04/bereits-drei-viertel-der-bevoelkerung-nutzen-ki-helfer-wie-chatgpt-co-",
+        date: "2026-04-02",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-11",
+      },
+      {
+        summary: "Netzwoche: 'FFHS lanciert KI-Weiterbildung für Führungskräfte' (8. April 2026) – Die FFHS lanciert per August 2026 den CAS 'Future Leadership und KI' (Blended Learning, CHF 5.700, Anmeldeschluss 31. Mai). Relevantes Beispiel für den wachsenden Schweizer Weiterbildungsmarkt im KI-Bereich – thematisches Marktumfeld für learnfluencer.ch.",
+        source: "Netzwoche",
+        url: "https://www.netzwoche.ch/news/2026-04-08/ffhs-lanciert-ki-weiterbildung-fuer-fuehrungskraefte",
+        date: "2026-04-08",
+        category: "Weiterbildung Schweiz",
+        addedAt: "2026-04-11",
+      },
+      {
+        summary: "Diakonie Schweiz: 'Bildungsbericht Schweiz 2026 – stabil, leistungsfähig, sozial verletzlich' – Der Bildungsbericht attestiert dem Schweizer Bildungssystem stabile Leistungsfähigkeit, hebt aber soziale Verletzlichkeit hervor. Im Kontext zunehmender KI-Durchdringung wird Weiterbildung als gesellschaftliche Schlüsselaufgabe betont – Argument für Thought Leadership wie learnfluencer.ch.",
+        source: "Diakonie Schweiz",
+        url: "https://diakonie.ch/bildungsbericht-schweiz-2026-stabil-leistungsfaehig-sozial-verletzlich/",
+        date: "2026-04",
+        category: "Weiterbildung Schweiz",
+        addedAt: "2026-04-11",
+      },
+      {
+        summary: "IT-Markt: 'Drei Viertel der Schweizer Bevölkerung nutzen bereits KI-Chatbots' (2. April 2026) – 76% der Schweizer nutzen KI-Chatbots, 41,6% davon bereits als Google-Ersatz. Das verändert, wie Menschen Informationen suchen und Lernbedarf erkennen – hochrelevant für eine Content-Plattform wie learnfluencer.ch, die über SEO und Thought Leadership sichtbar sein will.",
+        source: "IT-Markt",
+        url: "https://www.it-markt.ch/news/2026-04-02/drei-viertel-der-schweizer-bevoelkerung-nutzen-bereits-ki-chatbots",
+        date: "2026-04-02",
+        category: "Content & Thought Leadership",
         addedAt: "2026-04-11",
       },
       // Neu: 10.04.2026
