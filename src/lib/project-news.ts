@@ -26,6 +26,15 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 11.04.2026 (Recherche-Runde 3)
+      {
+        summary: "rhinoya.ch: 'ICT-Revision 2026: Was ändert sich für Lernende?' – Praxisorientierter Überblick für ICT-Fachleute und Ausbildungsbetriebe: Neue Bildungsverordnung ab August 2026 erhöht Handlungskompetenzen von 13 auf 17, integriert Englisch in Fachmodule, reduziert VPA-Umfang auf 6 Stunden mit Fachgespräch und verankert Security, Datenschutzsensibilisierung und systematische Prozessautomatisierung. Direkte Auswirkung auf Qualitätsstandards von ICT-Grundausbildung – stärkt Relevanz anerkannter Prüfungsorganisationen wie SIZ für Aufbau-Zertifizierungen.",
+        source: "rhinoya.ch",
+        url: "https://www.rhinoya.ch/blog/ict-revision-2026-was-aendert-sich",
+        date: "2026-04",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-11",
+      },
       // Neu: 11.04.2026 (Recherche-Runde 2)
       {
         summary: "ICT-Berufsbildung Schweiz: Offizieller Schlussbericht zur ICT-Bildungsbedarfsprognose bis 2033 – Struktureller Fachkräftemangel von bis zu 54'400 Stellen prognostiziert. Die Berufsbildung liefert 79% aller ICT-Absolventen; die Lehrstellenquote muss von 5,9% auf 8,1% steigen. Bericht nennt anerkannte Prüfungsorganisationen als zentralen Hebel – direktes strategisches Argument für SIZ-Zertifizierungsangebote als staatlich anerkannte Qualifikationsnachweise.",
@@ -926,6 +935,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 11.04.2026 (Recherche-Runde 3)
+      {
+        summary: "futurespropnetwork.com: 'Apex Trader Funding Review 2026: Rules, Payouts & Honest Verdict' – Unabhängige Analyse bestätigt: Apex 4.0 (März 2026) hat Evaluation und Payout-Regeln fundamental vereinfacht. Keine MAE-Regel, kein 5:1 Risk/Reward, EOD-Trailing-Drawdown, automatisierte Auszahlungen via Deel. Über $743 Mio. Gesamtauszahlungen seit 2022 dokumentiert; Trustpilot-Rating 4.4 aus 18.000+ Reviews. Bestätigt Apex Trader Funding als weiterhin führende Prop-Firm für algorithmische ES-Futures-Trader wie Mind Rocket Trading.",
+        source: "futurespropnetwork.com",
+        url: "https://futurespropnetwork.com/",
+        date: "2026-04",
+        category: "Prop Trading Apex",
+        addedAt: "2026-04-11",
+      },
       // Neu: 11.04.2026
       {
         summary: "daytrading.com: 'NinjaTrader Review 2026 – Costs, Accounts & Futures Explained' – Ab Januar 2026 ist NinjaTrader für europäische Trader zugänglich (via CySEC-reguliertem Broker Payward Europe/Kraken), Start in den Niederlanden und Deutschland. NinjaTrader Connect ermöglicht externen Unternehmen den Zugriff auf Futures- und Prediction-Markets-Infrastruktur ohne eigene Plattformentwicklung. Commissions ab $0.09 pro Seite für Micro-Kontrakte. Belegt internationale Expansion von NinjaTrader – direktes Marktumfeld für algorithmische ES-Futures-Strategien wie bei Mind Rocket Trading.",
@@ -2672,6 +2690,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 11.04.2026 (Recherche-Runde 3)
+      {
+        summary: "aheadachiever.com: '12 Week Year Plan 2026, 2027, 2028' – Digitaler Downloadplaner als Jahreskalender-Kombination mit 12-Week-Year-Methode: 4 separate Quartalsblöcke mit Wochen-Tracking, Zielsetzungs-Spalten und Scorecard-Funktion. Zeigt wachsendes kommerzielles Ökosystem rund um die 12WY-Methode mit vielfältigen Nischenprodukten im digitalen Marktplatz. Bestätigt anhaltend hohe Nachfrage nach strukturierten 12-Wochen-Planungs-Tools – direktes Marktumfeld für 12wy-planner.vercel.app.",
+        source: "Ahead Achiever",
+        url: "https://www.aheadachiever.com/digital-download/p/the-12-week-year-plan-2025-2026-2027",
+        date: "2026",
+        category: "12 Week Year Methode",
+        addedAt: "2026-04-11",
+      },
       // Neu: 11.04.2026 (Recherche-Runde 2)
       {
         summary: "AI 12-Week Year Planner (Vercel): KI-basiertes 12-Week-Year-Planungstool online – Ein weiteres unabhängiges SaaS-Projekt mit 12-Week-Year-Methode ist 2026 live. Zeigt wachsende Konkurrenz im Nischensegment. Differenzierung durch UX-Qualität, Integration und Feature-Tiefe (z.B. Fortschrittsvisualisierung, Periodenauswertung) wird zum entscheidenden Wettbewerbsfaktor für 12wy-planner.vercel.app.",
@@ -3065,6 +3092,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 11.04.2026 (Recherche-Runde 3)
+      {
+        summary: "Paracelsus Heilpraktikerschulen: 'Therapie bei vorzeitigem Samenerguss (ejaculatio praecox)' – Heilpraktiker-Fachportal beschreibt psychologische und verhaltenstherapeutische Behandlungsansätze: Stopp-Start-Methode, Squeeze-Technik, Psychotherapie und unterstützende Massnahmen. Wachsendes professionelles Online-Angebot zu ejaculatio praecox normalisiert das Thema im DACH-Raum und erhöht die Suchnachfrage nach niedrigschwelligen Selbsthilfe-Alternativen wie orgasmus-hinauszoegern.de.",
+        source: "Paracelsus Heilpraktikerschulen",
+        url: "https://www.paracelsus.de/wissen/vorzeitiger-samenerguss",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-11",
+      },
+      {
+        summary: "gesundheit-aktuell.de: 'Vorzeitiger Samenerguss (Ejaculatio praecox)' – Allgemeinmedizinisches Gesundheitsportal beschreibt Häufigkeit (ca. 20–30% der Männer betroffen), Ursachen (primär psychologisch: Leistungsangst, Stress) und Therapiemöglichkeiten inkl. Verhaltenstherapie und Entspannungsmethoden. Wachsende öffentliche Aufklärung und Entstigmatisierung sexueller Dysfunktionen treibt Nachfrage nach digitalen Selbsthilfe-Programmen – direktes Marktumfeld für orgasmus-hinauszoegern.de.",
+        source: "gesundheit-aktuell.de",
+        url: "https://www.gesundheit-aktuell.de/artikel/vorzeitiger-samenerguss-ejaculatio-praecox.html",
+        date: "2026",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-11",
+      },
       // Neu: 11.04.2026
       {
         summary: "noack-hypnose.de: 'Ejaculatio praecox bzw. vorzeitiger Samenerguss – Aufklärung, Tipps, Hilfe' – Spezialisierter Hypnotherapie-Anbieter erklärt psychologische und physiologische Ursachen sowie Behandlungsoptionen mit Schwerpunkt Hypnose und kognitive Verhaltenstherapie. Wachsende Online-Präsenz professioneller Hypnose-basierter Angebote für sexuelle Gesundheit im DACH-Raum bestätigt Marktpotenzial für digitale Selbsthilfe-Produkte wie orgasmus-hinauszoegern.de.",
@@ -4652,6 +4696,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 11.04.2026 (Recherche-Runde 3)
+      {
+        summary: "asscompact.de: 'Swiss Re und November bringen Sterbegeldversicherung' – Rückversicherer Swiss Re und InsurTech November lancieren eine neue Sterbegeldversicherung für den deutschen Markt. Modell: digitale, niedrigschwellige Absicherung von Bestattungskosten via InsurTech-Plattform. Zeigt institutionelles Interesse an der Monetarisierung der Bestattungsvorsorge – direktes Signal für das Wachstumspotenzial digitaler Bestattungsplanungs-Plattformen wie bestattungsplaner.ch in der Schweiz.",
+        source: "Asscompact.de",
+        url: "https://www.asscompact.de/nachrichten/swiss-re-und-november-bringen-sterbegeldversicherung",
+        date: "2026",
+        category: "Markt & Trends",
+        addedAt: "2026-04-11",
+      },
+      {
+        summary: "dieFamilie.ch: 'Ihr Ökosystem für das Lebensende – Everlife.ch SA' – Regionales Schweizer Medienportal porträtiert Everlife.ch als erstes End-of-Life-Ökosystem der Schweiz. Everlife hat 2025 seinen Bestattungsvergleich aufgegeben und fokussiert sich vollständig auf umfassende Lebensende-Begleitung: Vorsorgevertrag, Vollmacht, Testament, Administration. 13 Mitarbeitende, 2.000+ Kunden, 4.8 Sterne Kundenzufriedenheit. Zeigt Reife des Schweizer Digital-Bestattungsmarkts und wachsenden Wettbewerb – strategisches Umfeld für bestattungsplaner.ch als fokussierter Lead-Vermittler.",
+        source: "dieFamilie.ch",
+        url: "https://www.diefamilie.ch/N172625/ihr-okosystem-fur-das-lebensende-everlife.ch-sa.html",
+        date: "2026",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-11",
+      },
       // Neu: 11.04.2026 (Recherche-Runde 2)
       {
         summary: "Everlife.ch: 'Bestattungsbräuche im Wandel – Kremation und Digitalisierung' – 90–93% aller Schweizer Bestattungen sind heute Kremationen (1960: nur 15%). Digitale Vorsorge-Plattformen sparen Familien durchschnittlich ~50 Stunden Formalitäten. Klarer struktureller Rückenwind für bestattungsplaner.ch: Gesellschaft akzeptiert digitale Bestattungsplanung, und der Markt für Online-Lead-Vermittlung an Bestattungsunternehmen wächst.",
