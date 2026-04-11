@@ -26,6 +26,15 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 11.04.2026 (Recherche-Runde 4)
+      {
+        summary: "ICT-Berufsbildung Schweiz: Jahresbericht 2025 – Führungswechsel: Dr. Alain Gut übernimmt am 4. Dezember 2025 das Präsidium von Andreas W. Kaelin (nach 15 Jahren). Nationalrat genehmigt Änderung des Berufsbildungsgesetzes zur Stärkung der höheren Berufsbildung, inkl. Englisch als Prüfungssprache für eidg. Berufs- und Höhere Fachprüfungen. Revision ICT-Fachmann/-frau EFZ 2025 erfolgreich abgeschlossen. 96% der neu startenden ICT-Lernenden 2025 sind mit ihrer Berufswahl eher oder sehr zufrieden – starkes Signal für anhaltend hohe Nachfrage nach ICT-Grundausbildung und Zertifizierungen im Umfeld von SIZ AG.",
+        source: "ICT-Berufsbildung Schweiz",
+        url: "https://www.ict-berufsbildung.ch/jahresbericht-2025",
+        date: "2025",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-11",
+      },
       // Neu: 11.04.2026 (Recherche-Runde 3)
       {
         summary: "rhinoya.ch: 'ICT-Revision 2026: Was ändert sich für Lernende?' – Praxisorientierter Überblick für ICT-Fachleute und Ausbildungsbetriebe: Neue Bildungsverordnung ab August 2026 erhöht Handlungskompetenzen von 13 auf 17, integriert Englisch in Fachmodule, reduziert VPA-Umfang auf 6 Stunden mit Fachgespräch und verankert Security, Datenschutzsensibilisierung und systematische Prozessautomatisierung. Direkte Auswirkung auf Qualitätsstandards von ICT-Grundausbildung – stärkt Relevanz anerkannter Prüfungsorganisationen wie SIZ für Aufbau-Zertifizierungen.",
@@ -935,6 +944,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 11.04.2026 (Recherche-Runde 6)
+      {
+        summary: "PR Newswire / NinjaTrader: Offizielle Pressemitteilung 'NinjaTrader Expands Into Europe' (30. Januar 2026) – NinjaTrader startet europäisches Brokerage durch Payward Europe Digital Solutions (PEDSL-CY), einer MiFID-regulierten CySEC-Investment-Firma. Start in den Niederlanden und Deutschland; Pläne für Frankreich und Italien 2026. Europäische Trader erhalten Zugang zu US- und europäischen Futures-Kontrakten auf regulierten Börsen inkl. Charting, Order-Flow-Tools und Simulations-Sandbox. Teil von Krakens PINC-Group-Integration nach der $1,5-Mrd.-Akquisition 2025. Direktes Signal: Futures-Trading wird für europäische Retail-Trader systematisch zugänglicher – strukturell positiv für algorithmische Trader wie Mind Rocket Trading.",
+        source: "PR Newswire / NinjaTrader",
+        url: "https://www.prnewswire.com/news-releases/ninjatrader-expands-into-europe-to-support-the-next-generation-of-retail-futures-traders-302674573.html",
+        date: "2026-01-30",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-11",
+      },
       // Neu: 11.04.2026 (Recherche-Runde 5)
       {
         summary: "CNBC: 'S&P 500 slips Friday, but posts best week since November after fragile Iran ceasefire deal' (9. April 2026) – S&P 500 legte in der Woche rund 3.6%, Nasdaq 4.7% und Dow 3.0% zu. Nach dem Tiefstand von ca. 6.310 Anfang April (fast -10% vom Jahreshoch) durch Iran-Kriegsangst führte der fragile US-Iran-Waffenstillstand zur starken Erholung. Hohe Volatilität durch geopolitische Ereignisse bietet algorithmischen Strategien wie bei Mind Rocket Trading konkrete Handelschancen.",
@@ -1686,6 +1704,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 11.04.2026 (Recherche-Runde 3)
+      {
+        summary: "coachingausbildungen.ch: 'Coaching-Markt Schweiz – Trends 2025/2026, Analyse' – 2026 konsolidiert sich der Schweizer Coaching-Markt: Erwartungen an Tiefe, Seriosität und methodische Vielfalt steigen. Hybride Formate (Online + Präsenz) sind Standard. Coaching wird von einem Boom-Markt zu einem reifen, anspruchsvollen Markt. Individuelle Selbsthilfe-Tools und klare Positionierung werden zum entscheidenden Wettbewerbsvorteil – direktes Marktumfeld für mindtools.ch mit PDF-basierten Persönlichkeitsentwicklungs-Werkzeugen.",
+        source: "coachingausbildungen.ch",
+        url: "https://www.coachingausbildungen.ch/coaching-markt-schweiz-trends-2025-2026-analyse/",
+        date: "2026",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-04-11",
+      },
       // Neu: 11.04.2026 (Recherche-Runde 2)
       {
         summary: "buchmarkt.de: 'Deutschschweizer Buchmarkt hat 2025 mit leichtem Umsatzplus abgeschlossen' – Der Deutschschweizer Buchmarkt erzielte 2025 CHF 581,8 Mio. Umsatz (+1,1% ggü. 2024). Sachbuch und Ratgeber/Selbsthilfe bleiben wichtige Wachstumssegmente. Stationärer Handel hält sich besser als erwartet; Online-Anteil wächst weiter. Positives Marktumfeld für digitale PDF-Selbsthilfe-Produkte wie jene auf mindtools.ch – Zielgruppe kauft aktiv Persönlichkeitsentwicklungs-Content.",
@@ -2047,6 +2074,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 11.04.2026 (Recherche-Runde 4)
+      {
+        summary: "ad-hoc-news.de: 'Betriebliches Gesundheitsmanagement wird 2026 zum strategischen Imperativ' – BGM ist 2026 nicht mehr optional, sondern strategisch unerlässlich: Unternehmen mit systematischem BGM verzeichnen signifikant weniger Fehlzeiten und stärkere Mitarbeiterbindung. Mental Health, hybride Arbeit und KI-getriebener Wandel sind Haupttreiber. Direktes strategisches Argument für hypnovital® als skalierbare digitale BGM-Komponente für Schweizer Unternehmen.",
+        source: "Ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/betriebliches-gesundheitsmanagement-wird-2026-zum-strategischen-imperativ/69075884",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-11",
+      },
+      {
+        summary: "koerpermanagement.com: 'Betriebliche Gesundheitsförderung 2026: ein strategischer Erfolgsfaktor' – BGF ist 2026 kein Nice-to-have mehr: Unternehmen mit systematischer Gesundheitsförderung verzeichnen geringere Fehlzeiten, höhere Produktivität und stärkere Mitarbeiterbindung. BGM ist der organisatorische Rahmen, BGF die konkrete Umsetzung mit Workshops, Coaching und digitalen Programmen – wie hypnovital® als audibasiertes Präventionsprogramm positioniert ist.",
+        source: "KörperManagement",
+        url: "https://www.koerpermanagement.com/betriebliche-gesundheitsfoerderung-2026/",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-11",
+      },
       // Neu: 11.04.2026 (Recherche-Runde 3)
       {
         summary: "Institut für Führung und Psychologie Basel (IFP): Kurs 'Psychologische Stressbewältigung & Burnout-Prävention' 2026 – Zertifikatslehrgang für Führungskräfte und HR-Verantwortliche mit Fokus auf evidenzbasierte Präventionsstrategien, Resilienzförderung und Früherkennungskompetenz. Wachsendes Fortbildungsangebot für BGM-Verantwortliche bestätigt Professionalisierung des Markts – strukturelles Argument für skalierbare digitale Präventionsprogramme wie hypnovital® als Ergänzung zu Präsenzkursen.",
@@ -3850,6 +3894,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 11.04.2026 (Recherche-Runde 6)
+      {
+        summary: "SwissNova Unternehmen: 'Weiterbildung für Unternehmen in der Schweiz: 10 Trends für 2026' – Kompetenzbasiertes Lernen löst Diplomfokus ab; KI-Weiterbildung ist Pflicht für wettbewerbsfähige Schweizer Unternehmen; Micro-Credentials und Badges ermöglichen schnellere Qualifikationsnachweise; CSR-Integration in L&D wird messbar gefordert. Unterstreicht die strategische Relevanz von Thought-Leadership-Plattformen wie learnfluencer.ch als Orientierungsanker für Entscheider in der Schweizer Weiterbildungslandschaft.",
+        source: "SwissNova Unternehmen",
+        url: "https://unternehmen.swissnova.swiss/weiterbildung-unternehmen-schweiz-trends-2026/",
+        date: "2026",
+        category: "Weiterbildung Schweiz",
+        addedAt: "2026-04-11",
+      },
+      {
+        summary: "keelearning.de: 'E-Learning Trends 2026: So lernen Unternehmen morgen' – Vier dominierende Trends: KI-gestütztes adaptives Lernen (Echtzeit-Personalisierung), Skills-basiertes Lernen (Kompetenz vor Diplom), kollaboratives Social Learning (Peer-to-Peer) und Microlearning als Standard. L&D-Abteilungen werden 2026 zu strategischen Wachstumstreibern. Bestätigt den strategischen Kurs von learnfluencer.ch als Thought-Leadership-Plattform für zukunftsfähige Lernkompetenz und KI-Weiterbildung.",
+        source: "keelearning.de",
+        url: "https://www.keelearning.de/blog/e-learning-trends-2026/",
+        date: "2026",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-11",
+      },
       // Neu: 11.04.2026 (Recherche-Runde 5)
       {
         summary: "ad-hoc-news.de: 'KI-Kenntnisse werden 2026 zur Einstellungs-Pflicht' – Unternehmen verlangen zunehmend KI-Grundkompetenz als Einstellungsvoraussetzung; Bewerber ohne nachweisbare KI-Kenntnisse verlieren an Wettbewerbsfähigkeit. EU AI Act (Art. 4) verpflichtet seit Februar 2025 alle Unternehmen zur Sicherstellung von KI-Grundkompetenz der Mitarbeitenden, ab August 2026 vollständig anwendbar. Bestätigt dringenden Qualifizierungsbedarf als zentrales Themenfeld für learnfluencer.ch.",
@@ -4408,6 +4469,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 11.04.2026 (Recherche-Runde 2)
+      {
+        summary: "Lorien Group: 'Online-Marketing-Strategie für KMU Schweiz 2026' – Schweizer Marketingagentur zeigt strukturierten Aufbau einer Online-Marketingstrategie für KMU: Marktanalyse (PESTEL, Wettbewerbsanalyse), Zielgruppen-Segmentierung, Channel-Mix und KPI-Definition. GEO (Generative Engine Optimization) und KI-gestützte Content-Erstellung sind 2026 die neuen Pflichtelemente. Bestätigt wachsenden Bedarf nach strukturierten Analyseframeworks (PESTEL, SWOT, 5 Forces) wie im interaktiven Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "Lorien Group",
+        url: "https://www.lorien.group/blog/online-marketing-strategie-kmu",
+        date: "2026",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-11",
+      },
       // Neu: 11.04.2026
       {
         summary: "swissmarketingacademy.ch: 'Marketing-Analyse-Tools: Die Top 5 für Profis 2026' – Die 5 wichtigsten Marketing-Tools 2026 für Schweizer Profis: Google Analytics 4, Google Search Console, Meta Business Suite, Google Looker Studio und Semrush. Zeigt wachsenden Bedarf nach strukturierten Analyse-Frameworks – komplementäres Marktumfeld für das interaktive Marketingkonzept-Tool auf learnfluencer.ch/tools/marketingkonzept mit PESTEL, 5 Forces, SWOT, BCG und 7P.",
@@ -4781,6 +4851,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 11.04.2026 (Recherche-Runde 4)
+      {
+        summary: "StartupValley News: 'mymoria – Vom Todesfall zur digitalen Bestattungsplanung' – Marktführer für digitale Bestattungsplanung in Deutschland kombiniert Online- und Präsenz-Bestattungsservices (Omnichannel); ~170 Mitarbeitende, 50+ Standorte, aktive Übernahme-Strategie regionaler Bestatter. mymoria zeigt: Der Markt für digitale Bestattungsplanung ist investitions- und wachstumsfähig. Für bestattungsplaner.ch als fokussierter Schweizer Lead-Vermittler bestätigt dies das strukturelle Potenzial auch für den Schweizer Markt.",
+        source: "StartupValley News",
+        url: "https://startupvalley.news/de/mymoria/",
+        date: "2026",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-11",
+      },
+      {
+        summary: "bestattungsportal.biz: 'Die Zukunft der Bestattungsbranche: Technologie und Innovation' – Megatrends in der Bestattungsbranche 2026: Digitalisierung von Trauer (Online-Gedenkstätten, virtuelle Abschiede), personalisierte Bestattungsformen (Naturbestattungen, Weltraumbestattungen) und KI-gestützte Vorsorgeplattformen. Traditionelle Bestatter ohne digitale Strategie verlieren Marktanteile. Bestätigt tiefgreifenden Wandel der Branche – direktes Wachstumsumfeld für bestattungsplaner.ch als innovativer digitaler Lead-Vermittler in der Schweiz.",
+        source: "Bestattungsportal.biz",
+        url: "https://bestattungsportal.biz/die-zukunft-der-bestattungsbranche-technologie-und-innovation/",
+        date: "2026",
+        category: "Markt & Trends",
+        addedAt: "2026-04-11",
+      },
       // Neu: 11.04.2026 (Recherche-Runde 3)
       {
         summary: "asscompact.de: 'Swiss Re und November bringen Sterbegeldversicherung' – Rückversicherer Swiss Re und InsurTech November lancieren eine neue Sterbegeldversicherung für den deutschen Markt. Modell: digitale, niedrigschwellige Absicherung von Bestattungskosten via InsurTech-Plattform. Zeigt institutionelles Interesse an der Monetarisierung der Bestattungsvorsorge – direktes Signal für das Wachstumspotenzial digitaler Bestattungsplanungs-Plattformen wie bestattungsplaner.ch in der Schweiz.",
