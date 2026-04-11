@@ -765,6 +765,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
+      // Neu: 11.04.2026
+      {
+        summary: "anyhelpnow.com: 'Life Coaching Trends 2026: Innovative Methoden für persönliche Transformation' – Drei prägende Trends: KI-gestützte Selbstreflexion (personalisierte Lernpfade jenseits menschlicher Analysemöglichkeiten), hybride Coaching-Formate (virtuell + Präsenz) und ganzheitliche Wellnessansätze. Business-Model-Innovation: Memberships und Jahresprogramme statt Einzelsitzungen reduzieren Akquisitionskosten drastisch. Für Mind Rocket GmbH als Anbieter digitaler Coaching- und Persönlichkeitsentwicklungs-Programme bestätigt dies den Kurs auf skalierbare, hybrid verfügbare Angebote.",
+        source: "anyhelpnow.com",
+        url: "https://anyhelpnow.com/blog/life_coaching_trends_2026",
+        date: "2026",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-04-11",
+      },
+      {
+        summary: "entrepreneurshq.com: '114 Life Coaching Statistics 2026 – Earnings, Growth & Trends' – Globaler Life-Coaching-Markt: USD 6,25 Mrd. (2023), prognostiziert auf USD 9,1 Mrd. bis 2029. Online-Coaching verzeichnet das stärkste Wachstum, E-Learning-Integration wird zum Standard. Typische Stundenrate zertifizierter Life Coaches: USD 200–300. Der Markt für digitale Coaching- und Persönlichkeitsentwicklungs-Programme wächst stark – direktes Chancenumfeld für Mind Rocket GmbH mit skalierbaren Online-Angeboten.",
+        source: "EntrepreneursHQ",
+        url: "https://entrepreneurshq.com/life-coaching-statistics/",
+        date: "2026",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-04-11",
+      },
       // Neu: 10.04.2026
       {
         summary: "management-forum.de: 'Betriebliches Gesundheitsmanagement 2026 – Wo stehen wir? Mit welchen Hebeln bringen wir Unternehmen nach vorn?' – Über 90% der Organisationen sehen Führungskräfte als zentrale Treiber des BGM. Hybride Arbeit und erhöhte Arbeitsdichte treiben psychische Belastungen. Nur jedes vierte Unternehmen in Deutschland und der Schweiz hat ein ganzheitliches BGM. KI-gestützte Analysen und digitale Screenings ermöglichen personalisierte, datenbasierte Gesundheitssteuerung – direktes Marktumfeld für skalierbare Persönlichkeitsentwicklungs- und Coaching-Programme wie jene von Mind Rocket GmbH.",
@@ -3351,6 +3368,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 11.04.2026 (Recherche-Runde 3)
+      {
+        summary: "innermotion.de: 'Therapie von Redeangste und Lampenfieber 2026' – Münchner Angst- und Paniktherapie-Praxis (Heilpraktiker mit EMDR, Wingwave, Hypnose) beschreibt multimodalen Behandlungsansatz: Kombination aus Wingwave, Hypnoanalyse, Coaching und Psychotherapie. Bereits 2–3 Sitzungen genügen häufig, um Redeangst und Lampenfieber nachhaltig zu reduzieren und Sicherheit zu integrieren. Wachsende professionelle Nachfrage nach spezialisierten Therapieangeboten im DACH-Raum bestätigt Marktpotenzial für skalierbare Selbsthilfe-Alternativen wie lampenfieber-besiegen.de.",
+        source: "innermotion.de",
+        url: "https://innermotion.de/therapie-von-redeangste-und-lampenfieber/",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-11",
+      },
       // Neu: 11.04.2026 (Recherche-Runde 2)
       {
         summary: "nimm8.ch (Zürich): 'Auftrittsangst, Rede- und Prüfungsangst – Effektives Mentalcoaching & Hypnose' – Schweizer Anbieter kombiniert klassische Hypnose mit kognitivem Coaching für Bühnen-, Rede- und Prüfungsangst. Zeigt aktive Nachfrage im Schweizer Markt und bestätigt, dass hypnosebasierte Ansätze in der DACH-Region gesellschaftlich akzeptiert und gesucht sind – direktes Wettbewerbsumfeld für lampenfieber-besiegen.de als skalierbare Audio-Selbsthilfealternative.",
@@ -3729,6 +3755,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 11.04.2026 (Recherche-Runde 3)
+      {
+        summary: "weiterbildungsblog.de: 'Corporate Learning 2026: Trends, Gegenwind & Treffen' – Führendes deutschsprachiges Corporate-Learning-Fachportal: KI, Peer Learning und Future Skills dominieren. L&D-Experten mahnen, dass die Branche aktiver in KI experimentieren muss – von Adoption über Adaption zur Transformation. Konkrete Use Cases, schnelles Testen und iteratives Lernen statt abwartender Haltung. AI wird 2026 vom Wissensspeicher zum lernbegleitenden Coach. Belegt die strategische Relevanz von Lernkompetenz und KI-Weiterbildung als zentrales Positionierungsfeld für learnfluencer.ch.",
+        source: "weiterbildungsblog.de",
+        url: "https://www.weiterbildungsblog.de/trends-in-der-weiterbildung/kuenstliche-intelligenz/corporate-learning-2026-trends-gegenwind-treffen/",
+        date: "2026-04",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-11",
+      },
       // Neu: 11.04.2026 (Recherche-Runde 2)
       {
         summary: "Edana.ch: 'EdTech – 10 Schlüsseltrends zur Neugestaltung der Bildung' – Schweizer EdTech-Analyse zeigt: AR/VR-Learning, KI-Coaches und personalisiertes Lernen prägen 2025/2026 die Schweizer Bildungslandschaft. Gamification und datengestütztes Lernen gewinnen an Bedeutung. Belegt Innovationsdynamik im Schweizer EdTech-Markt, in dem learnfluencer.ch als Thought-Leadership-Plattform für Lernkompetenz und KI-Weiterbildung agiert.",
