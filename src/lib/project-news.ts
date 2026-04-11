@@ -944,6 +944,47 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 11.04.2026 (Recherche-Runde 8)
+      {
+        summary: "TradeInformer: 'NinjaTrader launches white label for futures and prediction markets' (März 2026) – NinjaTrader Group hat mit NinjaTrader Connect eine vollständige White-Label-Infrastruktur für Futures und Prediction Markets lanciert. Die Plattform richtet sich explizit an Fintechs, Brokerages und Handelsplattformen, die regulierte Futures und Prediction-Markets-Produkte unter ihrer eigenen Marke anbieten wollen – ohne eigene technische Infrastruktur aufzubauen. Branchenmedium TradeInformer bestätigt den strategischen B2B-Schwenk von NinjaTrader als Reaktion auf den Prediction-Markets-Boom. Für algorithmische Trader wie Mind Rocket Trading belegt dies die wachsende institutionelle Reife der NinjaTrader-Ökosphäre.",
+        source: "TradeInformer",
+        url: "https://tradeinformer.com/institutional-trading/ninjatrader-launches-b2b-futures-prediction-market-platform",
+        date: "2026-03",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-11",
+      },
+      {
+        summary: "LeapRate: 'NinjaTrader Launches Infrastructure Platform for Futures and Prediction Markets' (März 2026) – Internationales Branchen-Nachrichtenportal LeapRate berichtet über den Launch von NinjaTrader Connect: End-to-End-Plattform für Futures- und Prediction-Markets-Brokerage via Single API. Das Angebot umfasst Client-Onboarding, Funding, Clearing, Margining, Risk Surveillance und ein White-Label-Frontend. Kraken-CEO Paul Shortino: 'NinjaTrader Connect represents the evolution of the FCM.' Breite internationale Medienreaktion bestätigt die strategische Bedeutung für das gesamte Futures-Trading-Ökosystem – direktes Umfeld für algorithmische NinjaTrader-Nutzer wie Mind Rocket Trading.",
+        source: "LeapRate",
+        url: "https://www.leaprate.com/forex/brokers/ninjatrader-launches-infrastructure-platform-for-futures-and-prediction-markets/",
+        date: "2026-03",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-11",
+      },
+      {
+        summary: "FX News Group: 'Kraken launches NinjaTrader Connect platform for Prediction Markets' (März 2026) – Fintech-Newsportal FX News Group berichtet über Krakens strategische Expansion über NinjaTrader Connect in den Prediction-Markets-Sektor. Nach dem Kalshi-CFTC-Urteil (Mai 2025) sind Event Contracts regulierte US-Produkte; NinjaTrader nutzt diese Öffnung als erster institutioneller Infrastrukturanbieter. Zeigt die wachsende Überschneidung von Crypto-Exchanges, regulierten Futures-Brokern und Prediction Markets – strukturell positives Marktumfeld für NinjaScript-basierte Algo-Trader wie Mind Rocket Trading.",
+        source: "FX News Group",
+        url: "https://fxnewsgroup.com/forex-news/platforms/kraken-launches-ninjatrader-connect-platform-for-prediction-markets/",
+        date: "2026-03",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-11",
+      },
+      {
+        summary: "TradingView News / Finance Magnates: 'The Prediction Markets Frenzy Just Convinced NinjaTrader to Go B2B' – Analyse der strategischen Logik hinter NinjaTrader Connect: Prediction-Markets-Handelsvolumen erreichte 2025 $44 Mrd. (Polymarket allein: $34 Mrd.) und zog Wellen von Brokern an, die fertige Infrastruktur suchen. NinjaTrader reagiert mit B2B-Infrastruktur-Pivot statt weiterem Retail-Wachstum. Direkte Implikation: NinjaTrader entwickelt sich zur institutionellen Infrastruktur-Plattform – stärkere Stabilität und langfristige Investitionen in Plattform-Qualität. Positiv für algorithmische NinjaTrader-Nutzer wie Mind Rocket Trading.",
+        source: "TradingView News / Finance Magnates",
+        url: "https://www.tradingview.com/news/financemagnates:56d3d86ff094b:0-the-prediction-markets-frenzy-just-convinced-ninjatrader-to-go-b2b/",
+        date: "2026-03",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-11",
+      },
+      {
+        summary: "FinanceFeeds: 'NinjaTrader Launches Infrastructure Platform for Futures and Prediction Market Brokerages' (März 2026) – Internationales Trading-Nachrichtenportal FinanceFeeds berichtet über den Launch von NinjaTrader Connect. Besonders hervorgehoben: Die Plattform ist die erste ihrer Art, die regulierte Futures UND Prediction Markets gleichzeitig als Infrastruktur-Angebot kombiniert. Hintergrund: Nach dem CFTC-Rückzug im Kalshi-Fall (Mai 2025) sind Event Contracts in den USA als regulierte Produkte anerkannt – NinjaTrader sichert sich damit eine Pionierposition. Für NinjaScript-Algo-Trader wie Mind Rocket Trading stärkt dies die langfristige Plattform-Stabilität und Investitionsbereitschaft von NinjaTrader Group.",
+        source: "FinanceFeeds",
+        url: "https://financefeeds.com/ninjatrader-launches-infrastructure-platform-for-futures-and-prediction-market-brokerages/",
+        date: "2026-03",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-11",
+      },
       // Neu: 11.04.2026 (Recherche-Runde 7)
       {
         summary: "Phidias Prop Firm: 'Apex Trader Funding 4.0: Everything That Changed 2026' – Detaillierter Überblick über die Major-Update-Änderungen per 1. März 2026: Wegfall der monatlichen Gebühren (One-Time-Payment), Abschaffung der MAE-Regel und 5:1-Risikobeschränkung, keine Auszahlungsablehnungen oder Chart-Reviews mehr. Neue Intraday- und EOD-Drawdown-Optionen sowie 50%-Konsistenzregel für neue Accounts. Metals-Trading auf 4.0-Accounts temporär ausgesetzt (Gold, Silber, Kupfer). Direktes Update-Signal für Prop-Trader und algorithmische Strategien wie bei Mind Rocket Trading.",
@@ -2083,6 +2124,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 11.04.2026 (Recherche-Runde 5)
+      {
+        summary: "baselrundschau.ch: 'Trends für Gesundheit und Wohlbefinden 2026' – Regionales Schweizer Portal berichtet über aktuelle Gesundheitstrends: Personalisierte Medizin und präventive Gesundheitsversorgung stehen im Vordergrund. Digitale Gesundheitsangebote, Stressmanagement und mentale Gesundheit am Arbeitsplatz sind die Schwerpunktthemen. Wachsende gesellschaftliche Verankerung von Prävention und Wellbeing als Marktumfeld für hypnovital® als digitales Audio-BGM-Programm – auch in der deutschsprachigen Schweiz wächst die Nachfrage nach niedrigschwelligen, flexibel nutzbaren Gesundheitslösungen.",
+        source: "baselrundschau.ch",
+        url: "https://baselrundschau.ch/trends-fuer-gesundheit-und-wohlbefinden/",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-11",
+      },
+      {
+        summary: "ad-hoc-news.de: 'Betriebliches Gesundheitsmanagement setzt 2026 auf Strategie und Psyche' – BGM-Fachportal berichtet: Unternehmen setzen 2026 verstärkt auf strategisches BGM mit Schwerpunkt psychische Gesundheit. Burnout-Prävention, Resilienztraining und digitale Gesundheitsprogramme sind die gefragtesten Instrumente. Hybride Arbeit treibt die Nachfrage nach flexiblen, orts- und zeitunabhängigen Lösungen – exakt die Stärke von hypnovital® als Audio-basiertes BGM-Programm für Unternehmen.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/betriebliches-gesundheitsmanagement-setzt-2026-auf-strategie-und-psyche/68972135",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-11",
+      },
       // Neu: 11.04.2026 (Recherche-Runde 4)
       {
         summary: "ad-hoc-news.de: 'Betriebliches Gesundheitsmanagement wird 2026 zum strategischen Imperativ' – BGM ist 2026 nicht mehr optional, sondern strategisch unerlässlich: Unternehmen mit systematischem BGM verzeichnen signifikant weniger Fehlzeiten und stärkere Mitarbeiterbindung. Mental Health, hybride Arbeit und KI-getriebener Wandel sind Haupttreiber. Direktes strategisches Argument für hypnovital® als skalierbare digitale BGM-Komponente für Schweizer Unternehmen.",
@@ -4895,6 +4953,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 11.04.2026 (Recherche-Runde 5)
+      {
+        summary: "ekz-crosstour.ch: 'Der Markt für Bestattungs- und Friedhofsdienstleistungen wird bis 2030 rasant wachsen' (April 2026) – Globaler Marktbericht analysiert Wachstumstreiber: alternde Bevölkerung in Europa, steigende Nachfrage nach personalisierten Bestattungsformen (Natur, Wasser, Weltraum) und Digitalisierung des gesamten Bestattungsprozesses (Online-Vorsorge, digitale Trauerdienste). Die Schweiz mit ~90% Kremationsrate und wachsendem Interesse an Online-Bestattungsplanung bestätigt globale Trends. Direktes strukturelles Wachstumsumfeld für bestattungsplaner.ch als digitalen Schweizer Lead-Vermittler.",
+        source: "ekz-crosstour.ch",
+        url: "https://ekz-crosstour.ch/2026/04/08/der-markt-fur-bestattungs-und-friedhofsdienstleistungen-wird-bis-2847-voraussichtlich-rasant-wachsen/",
+        date: "2026-04-08",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-11",
+      },
       // Neu: 11.04.2026 (Recherche-Runde 4)
       {
         summary: "StartupValley News: 'mymoria – Vom Todesfall zur digitalen Bestattungsplanung' – Marktführer für digitale Bestattungsplanung in Deutschland kombiniert Online- und Präsenz-Bestattungsservices (Omnichannel); ~170 Mitarbeitende, 50+ Standorte, aktive Übernahme-Strategie regionaler Bestatter. mymoria zeigt: Der Markt für digitale Bestattungsplanung ist investitions- und wachstumsfähig. Für bestattungsplaner.ch als fokussierter Schweizer Lead-Vermittler bestätigt dies das strukturelle Potenzial auch für den Schweizer Markt.",
