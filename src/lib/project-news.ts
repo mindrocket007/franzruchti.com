@@ -944,6 +944,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 11.04.2026 (Recherche-Runde 7)
+      {
+        summary: "Phidias Prop Firm: 'Apex Trader Funding 4.0: Everything That Changed 2026' – Detaillierter Überblick über die Major-Update-Änderungen per 1. März 2026: Wegfall der monatlichen Gebühren (One-Time-Payment), Abschaffung der MAE-Regel und 5:1-Risikobeschränkung, keine Auszahlungsablehnungen oder Chart-Reviews mehr. Neue Intraday- und EOD-Drawdown-Optionen sowie 50%-Konsistenzregel für neue Accounts. Metals-Trading auf 4.0-Accounts temporär ausgesetzt (Gold, Silber, Kupfer). Direktes Update-Signal für Prop-Trader und algorithmische Strategien wie bei Mind Rocket Trading.",
+        source: "Phidias Prop Firm",
+        url: "https://phidiaspropfirm.com/education/apex-trader-funding-4-0-explained",
+        date: "2026-03",
+        category: "Futures & Trading",
+        addedAt: "2026-04-11",
+      },
       // Neu: 11.04.2026 (Recherche-Runde 6)
       {
         summary: "PR Newswire / NinjaTrader: Offizielle Pressemitteilung 'NinjaTrader Expands Into Europe' (30. Januar 2026) – NinjaTrader startet europäisches Brokerage durch Payward Europe Digital Solutions (PEDSL-CY), einer MiFID-regulierten CySEC-Investment-Firma. Start in den Niederlanden und Deutschland; Pläne für Frankreich und Italien 2026. Europäische Trader erhalten Zugang zu US- und europäischen Futures-Kontrakten auf regulierten Börsen inkl. Charting, Order-Flow-Tools und Simulations-Sandbox. Teil von Krakens PINC-Group-Integration nach der $1,5-Mrd.-Akquisition 2025. Direktes Signal: Futures-Trading wird für europäische Retail-Trader systematisch zugänglicher – strukturell positiv für algorithmische Trader wie Mind Rocket Trading.",
@@ -3187,6 +3196,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 11.04.2026 (Recherche-Runde 4)
+      {
+        summary: "Sequoia Health (sequoia.health/de): Neue digitale Plattform für männliche sexuelle Gesundheit – bietet individuelle Empfehlungen, Fachberatung, Tracking-Tools und multidimensionale Selbstauskunft-Instrumente für Männer. Wachsendes digitales Angebot im Bereich männliche Sexualgesundheit normalisiert das Thema und erhöht die Suchnachfrage nach niedrigschwelligen Selbsthilfe-Produkten wie orgasmus-hinauszoegern.de.",
+        source: "Sequoia Health",
+        url: "https://sequoia.health/de",
+        date: "2026",
+        category: "Digital Health",
+        addedAt: "2026-04-11",
+      },
+      {
+        summary: "BurgwedeAktuell: 'Sexuelle Gesundheit im Fokus' (März 2026) – Regionaler Aktionstag beleuchtet Beratungs- und Testmöglichkeiten rund um sexuelle Gesundheit; Gesundheitsamt nutzt öffentliche Kommunikation zur Entstigmatisierung sexueller Themen. Wachsendes gesellschaftliches Bewusstsein für sexuelle Gesundheitsthemen erhöht Akzeptanz und Suchnachfrage nach Selbsthilfe-Produkten wie orgasmus-hinauszoegern.de.",
+        source: "BurgwedeAktuell",
+        url: "https://www.burgwedel-aktuell.de/2026/03/12/sexuelle-gesundheit-im-fokus/",
+        date: "2026-03-12",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-11",
+      },
       // Neu: 11.04.2026 (Recherche-Runde 3)
       {
         summary: "Paracelsus Heilpraktikerschulen: 'Therapie bei vorzeitigem Samenerguss (ejaculatio praecox)' – Heilpraktiker-Fachportal beschreibt psychologische und verhaltenstherapeutische Behandlungsansätze: Stopp-Start-Methode, Squeeze-Technik, Psychotherapie und unterstützende Massnahmen. Wachsendes professionelles Online-Angebot zu ejaculatio praecox normalisiert das Thema im DACH-Raum und erhöht die Suchnachfrage nach niedrigschwelligen Selbsthilfe-Alternativen wie orgasmus-hinauszoegern.de.",
@@ -3894,6 +3920,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 11.04.2026 (Recherche-Runde 7)
+      {
+        summary: "w18.de: 'Berufliche Weiterbildung 2026: Diese Trends sollten Sie kennen' – Kompaktübersicht der wichtigsten Weiterbildungstrends 2026: KI-Kompetenz als Basisanforderung, personalisierte Lernpfade, Microlearning, Zunahme von Online-Formaten und branchenspezifische Upskilling-Programme. Belegt die wachsende Relevanz von Orientierungs- und Thought-Leadership-Plattformen wie learnfluencer.ch als Erstanlaufstelle für Weiterbildungsentscheider.",
+        source: "w18.de",
+        url: "https://www.w18.de/weiterbildungsnews/berufliche-weiterbildung-2026-trends-tipps-entwicklungen-mit-w18-de/",
+        date: "2026",
+        category: "Weiterbildung Schweiz",
+        addedAt: "2026-04-11",
+      },
       // Neu: 11.04.2026 (Recherche-Runde 6)
       {
         summary: "SwissNova Unternehmen: 'Weiterbildung für Unternehmen in der Schweiz: 10 Trends für 2026' – Kompetenzbasiertes Lernen löst Diplomfokus ab; KI-Weiterbildung ist Pflicht für wettbewerbsfähige Schweizer Unternehmen; Micro-Credentials und Badges ermöglichen schnellere Qualifikationsnachweise; CSR-Integration in L&D wird messbar gefordert. Unterstreicht die strategische Relevanz von Thought-Leadership-Plattformen wie learnfluencer.ch als Orientierungsanker für Entscheider in der Schweizer Weiterbildungslandschaft.",
@@ -4469,6 +4504,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 11.04.2026 (Recherche-Runde 3)
+      {
+        summary: "kundenmarketing.ch: 'Online-Marketing-Strategie 2026 – Das Geheimnis für erfolgreiches KMU Marketing!' – Schweizer Praxisanleitung für KMU: Zielgruppen-Definition, Wettbewerbsanalyse, Multi-Channel-Strategie und KPI-Tracking. GEO (Generative Engine Optimization) und KI-gestützter Content ergänzen klassische SEO als neue Pflichtdisziplinen. Zeigt wachsenden Bedarf nach strukturierten Planungs- und Analysetools für KMU – direktes Marktumfeld für das Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "kundenmarketing.ch",
+        url: "https://www.kundenmarketing.ch/post/kmu-online-marketing",
+        date: "2026",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-11",
+      },
       // Neu: 11.04.2026 (Recherche-Runde 2)
       {
         summary: "Lorien Group: 'Online-Marketing-Strategie für KMU Schweiz 2026' – Schweizer Marketingagentur zeigt strukturierten Aufbau einer Online-Marketingstrategie für KMU: Marktanalyse (PESTEL, Wettbewerbsanalyse), Zielgruppen-Segmentierung, Channel-Mix und KPI-Definition. GEO (Generative Engine Optimization) und KI-gestützte Content-Erstellung sind 2026 die neuen Pflichtelemente. Bestätigt wachsenden Bedarf nach strukturierten Analyseframeworks (PESTEL, SWOT, 5 Forces) wie im interaktiven Marketingkonzept-Tool auf learnfluencer.ch.",
