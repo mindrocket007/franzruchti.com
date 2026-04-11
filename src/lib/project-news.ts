@@ -935,6 +935,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 11.04.2026 (Recherche-Runde 4)
+      {
+        summary: "Finance Magnates: 'Kraken-Owned NinjaTrader Jumps into Prop Trading with Two Tech Platforms' – NinjaTrader Group, jetzt im Besitz von Kraken, lanciert NinjaTrader Prop und Tradovate Prop. Die Plattformen unterstützen Evaluation-Funded-Accounts mit erweiterten Risikokontroll-Tools, nahtloser Integration zu TradingView und Order-Flow-Analysen. NinjaTrader wird damit zur vollständig integrierten Prop-Trading-Infrastruktur – direkte Auswirkung auf Nutzer wie Mind Rocket Trading, die NinjaTrader für algorithmische ES-Futures-Strategien einsetzen.",
+        source: "Finance Magnates",
+        url: "https://www.financemagnates.com/forex/kraken-owned-ninjatrader-jumps-into-prop-trading-with-two-tech-platforms/",
+        date: "2026-04",
+        category: "Prop Trading Apex",
+        addedAt: "2026-04-11",
+      },
+      {
+        summary: "Finance Magnates: 'Kraken Enters Prop Trading: Breakout Acquisition Gives Funded Accounts' – Kraken nutzt die NinjaTrader-Akquisition (Mai 2025, $1.5 Mrd.), um in den boomenden Prop-Trading-Markt einzusteigen. Funded-Account-Modell auf Basis bewährter Plattform, internationaler Rollout dank Krakens MiFID-Lizenzen in UK/EU. Bestätigt strukturelles Wachstum des regulierten Prop-Trading-Markts als langfristiges Marktumfeld für algorithmische Trader wie Mind Rocket Trading.",
+        source: "Finance Magnates",
+        url: "https://www.financemagnates.com/forex/kraken-enters-prop-trading-breakout-acquisition-gives-funded-accounts/",
+        date: "2026-04",
+        category: "Futures & Trading",
+        addedAt: "2026-04-11",
+      },
       // Neu: 11.04.2026 (Recherche-Runde 3)
       {
         summary: "futurespropnetwork.com: 'Apex Trader Funding Review 2026: Rules, Payouts & Honest Verdict' – Unabhängige Analyse bestätigt: Apex 4.0 (März 2026) hat Evaluation und Payout-Regeln fundamental vereinfacht. Keine MAE-Regel, kein 5:1 Risk/Reward, EOD-Trailing-Drawdown, automatisierte Auszahlungen via Deel. Über $743 Mio. Gesamtauszahlungen seit 2022 dokumentiert; Trustpilot-Rating 4.4 aus 18.000+ Reviews. Bestätigt Apex Trader Funding als weiterhin führende Prop-Firm für algorithmische ES-Futures-Trader wie Mind Rocket Trading.",
@@ -2013,6 +2030,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 11.04.2026 (Recherche-Runde 3)
+      {
+        summary: "Institut für Führung und Psychologie Basel (IFP): Kurs 'Psychologische Stressbewältigung & Burnout-Prävention' 2026 – Zertifikatslehrgang für Führungskräfte und HR-Verantwortliche mit Fokus auf evidenzbasierte Präventionsstrategien, Resilienzförderung und Früherkennungskompetenz. Wachsendes Fortbildungsangebot für BGM-Verantwortliche bestätigt Professionalisierung des Markts – strukturelles Argument für skalierbare digitale Präventionsprogramme wie hypnovital® als Ergänzung zu Präsenzkursen.",
+        source: "IFP Basel",
+        url: "https://www.ifp-basel.ch/kurse/psychologische-stressbewaeltigung-burnout-praevention/",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-11",
+      },
+      {
+        summary: "Ergotherapie-Verband Schweiz: Kurs 'Burnout-Prävention' 2026 – Offizielles Kursangebot des Schweizer Berufsverbands für Ergotherapeuten mit Fokus auf Arbeitsplatz-Prävention, Stressmanagement und Recovery. Etablierte Gesundheitsberufe integrieren Burnout-Prävention ins Kerncurriculum – unterstreicht Normalisierung und gesellschaftliche Verankerung von Burnout als relevantes Arbeitsplatz-Thema in der Schweiz. Direkt relevantes Marktumfeld für hypnovital® als Audio-basiertes BGM-Präventionsprogramm.",
+        source: "Ergotherapie-Verband Schweiz",
+        url: "https://ergotherapie.ch/courses/burnout-praevention/",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-11",
+      },
       // Neu: 11.04.2026 (Recherche-Runde 2)
       {
         summary: "Coachingzentrum Olten: Jahresprogramm 2026 mit Hypnose- und Coaching-Angeboten – Schweizer Anbieter kombiniert Hypnosetherapie, systemisches Coaching und Körperarbeit in einem strukturierten Jahresprogramm. Breites Angebot von Stressmanagement bis Burnout-Prävention zeigt aktive Nachfrage im Schweizer Markt, in dem hypnovital® mit audibasierten Programmen als skalierbare Alternative zu Einzelsitzungen positioniert ist.",
@@ -3799,6 +3833,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 11.04.2026 (Recherche-Runde 4)
+      {
+        summary: "digitaljournal.ch: 'Digitale Schule im Alltag: Neue Lernwelten' (April 2026) – Schweizer Digital-Fachportal beleuchtet, wie KI, adaptive Lernplattformen und hybride Unterrichtsmodelle den schulischen Alltag transformieren. Personalisierte Lernpfade und datengetriebene Leistungsmessung als neue Standards. Gesellschaftliche Durchdringung digitaler Lernwelten von Schule bis Beruf stärkt Nachfrage nach Thought Leadership und praxisnahen Lernkompetenz-Formaten wie learnfluencer.ch.",
+        source: "digitaljournal.ch",
+        url: "https://www.digitaljournal.ch/2026/04/digitale-schule-im-alltag-neue.html",
+        date: "2026-04",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-11",
+      },
       // Neu: 11.04.2026 (Recherche-Runde 3)
       {
         summary: "weiterbildungsblog.de: 'Corporate Learning 2026: Trends, Gegenwind & Treffen' – Führendes deutschsprachiges Corporate-Learning-Fachportal: KI, Peer Learning und Future Skills dominieren. L&D-Experten mahnen, dass die Branche aktiver in KI experimentieren muss – von Adoption über Adaption zur Transformation. Konkrete Use Cases, schnelles Testen und iteratives Lernen statt abwartender Haltung. AI wird 2026 vom Wissensspeicher zum lernbegleitenden Coach. Belegt die strategische Relevanz von Lernkompetenz und KI-Weiterbildung als zentrales Positionierungsfeld für learnfluencer.ch.",
