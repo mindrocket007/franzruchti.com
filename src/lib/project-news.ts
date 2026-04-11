@@ -26,6 +26,15 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 11.04.2026 (Recherche-Runde 2)
+      {
+        summary: "ICT-Berufsbildung Schweiz: Offizieller Schlussbericht zur ICT-Bildungsbedarfsprognose bis 2033 – Struktureller Fachkräftemangel von bis zu 54'400 Stellen prognostiziert. Die Berufsbildung liefert 79% aller ICT-Absolventen; die Lehrstellenquote muss von 5,9% auf 8,1% steigen. Bericht nennt anerkannte Prüfungsorganisationen als zentralen Hebel – direktes strategisches Argument für SIZ-Zertifizierungsangebote als staatlich anerkannte Qualifikationsnachweise.",
+        source: "ICT-Berufsbildung Schweiz",
+        url: "https://www.ict-berufsbildung.ch/resources/BSS-Schlussbericht-ICT-Bildungsbedarf-2033-2025-09_09.pdf",
+        date: "2025-09",
+        category: "Bildungspolitik",
+        addedAt: "2026-04-11",
+      },
       // Neu: 11.04.2026
       {
         summary: "SIZ Newsflash April 2026: Neue Plattform my.siz.ch ab 9. April 2026 live – Alle bisherigen URLs werden auf https://my.siz.ch umgeleitet. Datenübernahme basiert auf dem Stand vom 8. April 2026, 06:00 Uhr. Nutzerinnen und Nutzer müssen beim ersten Login einmalig ihr Passwort zurücksetzen, sofern ihr Login nicht mit einem Microsoft-Account verknüpft ist. Zusätzlich werden Testprüfungs-Bezeichnungen angepasst: Prüfungen werden ab sofort mit dem Erscheinungsjahr gekennzeichnet. Direkte operative Kommunikation der SIZ AG zur Modernisierung ihrer Prüfungsinfrastruktur.",
@@ -1608,6 +1617,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 11.04.2026 (Recherche-Runde 2)
+      {
+        summary: "buchmarkt.de: 'Deutschschweizer Buchmarkt hat 2025 mit leichtem Umsatzplus abgeschlossen' – Der Deutschschweizer Buchmarkt erzielte 2025 CHF 581,8 Mio. Umsatz (+1,1% ggü. 2024). Sachbuch und Ratgeber/Selbsthilfe bleiben wichtige Wachstumssegmente. Stationärer Handel hält sich besser als erwartet; Online-Anteil wächst weiter. Positives Marktumfeld für digitale PDF-Selbsthilfe-Produkte wie jene auf mindtools.ch – Zielgruppe kauft aktiv Persönlichkeitsentwicklungs-Content.",
+        source: "buchmarkt.de",
+        url: "https://buchmarkt.de/2026/03/05/deutschschweizer-buchmarkt-hat-2025-mit-leichtem-umsatzplus-abgeschlossen/",
+        date: "2026-03-05",
+        category: "Buchmarkt & Publishing",
+        addedAt: "2026-04-11",
+      },
+      {
+        summary: "Fontaneweg.de: 'Bücher Trends 2026 – Was Leserinnen und Leser bewegt' – Persönlichkeitsentwicklung und mentale Gesundheit zählen zu den Top-Buchtrends 2026. Besonders hohe Suchnachfrage nach Selbsthilfe-Titeln in Januar/Februar und im Dezember (Jahreswechsel-Motivation). Zeigt optimales Timing-Fenster für Marketing-Aktivitäten und Content-Launches bei mindtools.ch.",
+        source: "Fontaneweg.de",
+        url: "https://fontaneweg.de/buecher-trends-2026-was-leserinnen-und-leser-bewegt/",
+        date: "2026",
+        category: "Buchmarkt & Publishing",
+        addedAt: "2026-04-11",
+      },
       // Neu: 11.04.2026
       {
         summary: "openpr.com: 'Mental Health Apps Market 2026–2033 – AI Therapy & Digital Wellness' – Der globale Mental-Health-Apps-Markt wächst stark: KI-getriebene Therapie-Features, personalisiertes Mood-Tracking und digitale Wellness-Plattformen expandieren massiv bis 2033. Der Trend zeigt, dass die Zielgruppe digital-affiner wird – PDF-basierte Selbsthilfe-Inhalte können sich durch klare Positionierung und Qualitätsdifferenzierung gegenüber App-Konkurrenz behaupten.",
@@ -1952,6 +1978,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 11.04.2026 (Recherche-Runde 2)
+      {
+        summary: "Coachingzentrum Olten: Jahresprogramm 2026 mit Hypnose- und Coaching-Angeboten – Schweizer Anbieter kombiniert Hypnosetherapie, systemisches Coaching und Körperarbeit in einem strukturierten Jahresprogramm. Breites Angebot von Stressmanagement bis Burnout-Prävention zeigt aktive Nachfrage im Schweizer Markt, in dem hypnovital® mit audibasierten Programmen als skalierbare Alternative zu Einzelsitzungen positioniert ist.",
+        source: "Coachingzentrum Olten",
+        url: "https://www.coachingzentrum.ch/fileadmin/dateien/dokumente/jahresprogramme/Coachingzentrum-Olten-Jahresprogramm-2026.pdf",
+        date: "2026",
+        category: "Hypnose & Coaching",
+        addedAt: "2026-04-11",
+      },
       // Neu: 11.04.2026
       {
         summary: "ad-hoc-news.de: 'Betriebliches Gesundheitsmanagement wird 2026 zur Pflicht' – BGM wandelt sich vom optionalen Soft-Faktor zur regulatorischen und strategischen Anforderung. Personalisierte, hybride Gesundheitsangebote (digitale Tools kombiniert mit persönlicher Betreuung) sind 2026 der klar wachsende Markt. Investitionen in BGM amortisieren sich durch sinkende Lohnfortzahlungskosten und höhere Mitarbeiterbindung. Bestätigt strukturellen Rückenwind für hypnovital® als skalierbares digitales BGM-Programm.",
@@ -2620,6 +2655,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 11.04.2026 (Recherche-Runde 2)
+      {
+        summary: "AI 12-Week Year Planner (Vercel): KI-basiertes 12-Week-Year-Planungstool online – Ein weiteres unabhängiges SaaS-Projekt mit 12-Week-Year-Methode ist 2026 live. Zeigt wachsende Konkurrenz im Nischensegment. Differenzierung durch UX-Qualität, Integration und Feature-Tiefe (z.B. Fortschrittsvisualisierung, Periodenauswertung) wird zum entscheidenden Wettbewerbsfaktor für 12wy-planner.vercel.app.",
+        source: "Vercel / Independent Project",
+        url: "https://ai-12-week-year-planner.vercel.app/",
+        date: "2026",
+        category: "SaaS & Tools",
+        addedAt: "2026-04-11",
+      },
       // Neu: 11.04.2026
       {
         summary: "12week-breakthrough.com: 'The Complete 12-Week Year Implementation Guide for 2026' – Detaillierter Umsetzungsleitfaden: Wocheneinteilung in Perioden 1–12, 13–24, 25–36, 37–48 als diskrete Planungsblöcke, Wochen 49–52 für Jahresintegration. Zielwert 85% Aufgabenerfüllung pro Woche als Balance zwischen Anspruch und Realismus. Integration mit OKR-Methode: Objectives als «Was», Key Results als messbares «Wie». Unterstreicht anhaltend hohe Nachfrage nach strukturierten 12-Wochen-Planungs-Tools.",
@@ -3307,6 +3351,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 11.04.2026 (Recherche-Runde 2)
+      {
+        summary: "nimm8.ch (Zürich): 'Auftrittsangst, Rede- und Prüfungsangst – Effektives Mentalcoaching & Hypnose' – Schweizer Anbieter kombiniert klassische Hypnose mit kognitivem Coaching für Bühnen-, Rede- und Prüfungsangst. Zeigt aktive Nachfrage im Schweizer Markt und bestätigt, dass hypnosebasierte Ansätze in der DACH-Region gesellschaftlich akzeptiert und gesucht sind – direktes Wettbewerbsumfeld für lampenfieber-besiegen.de als skalierbare Audio-Selbsthilfealternative.",
+        source: "nimm8.ch",
+        url: "https://www.nimm8.ch/post/beratung-bei-auftritts-rede-und-pruefungsangst-coaching-hypnose",
+        date: "2026",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-04-11",
+      },
       // Neu: 11.04.2026
       {
         summary: "Institut für Hypnose: 'Hypnose bei Lampenfieber, Präsentationsangst, Sprechangst' – Rund jede dritte Person ist von Redeangst, Präsentationsangst oder Lampenfieber betroffen. Hypnotherapie erzielt typischerweise deutlich schnellere Ergebnisse als andere Therapieformen, selbst bei hartnäckigen Ängsten und Panikstörungen – meist genügen 2–3 Sitzungen. Hynoanalytische Behandlung ermöglicht es, zugrundeliegende Lern- und Lebenserfahrungen zu bearbeiten und Angst dauerhaft aufzulösen. Bestätigt Wirksamkeit und Marktpositionierung von Hypnose-Audio-Programmen wie lampenfieber-besiegen.de.",
@@ -3676,6 +3729,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 11.04.2026 (Recherche-Runde 2)
+      {
+        summary: "Edana.ch: 'EdTech – 10 Schlüsseltrends zur Neugestaltung der Bildung' – Schweizer EdTech-Analyse zeigt: AR/VR-Learning, KI-Coaches und personalisiertes Lernen prägen 2025/2026 die Schweizer Bildungslandschaft. Gamification und datengestütztes Lernen gewinnen an Bedeutung. Belegt Innovationsdynamik im Schweizer EdTech-Markt, in dem learnfluencer.ch als Thought-Leadership-Plattform für Lernkompetenz und KI-Weiterbildung agiert.",
+        source: "Edana.ch",
+        url: "https://edana.ch/de/2025/10/05/edtech-10-trends-die-bildung-neu-definieren/",
+        date: "2025-10-05",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-11",
+      },
       // Neu: 11.04.2026
       {
         summary: "hrtoday.ch: 'Learnfluencer werden?' – Der Begriff «Learnfluencer» bezeichnet Personen, die intrinsische Lernmotivation von Mitarbeitenden stärken, individuelles und kollektives Lernen verbinden und eine verantwortungsvolle Lernkultur etablieren. Besonders relevant, da Zusammenarbeit und Kommunikation in Unternehmen zunehmend online stattfinden. Direktes Keyword-Matching für learnfluencer.ch als Thought-Leadership-Plattform – bestätigt gesellschaftliche Verankerung des Begriffs.",
@@ -4555,6 +4617,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 11.04.2026 (Recherche-Runde 2)
+      {
+        summary: "Everlife.ch: 'Bestattungsbräuche im Wandel – Kremation und Digitalisierung' – 90–93% aller Schweizer Bestattungen sind heute Kremationen (1960: nur 15%). Digitale Vorsorge-Plattformen sparen Familien durchschnittlich ~50 Stunden Formalitäten. Klarer struktureller Rückenwind für bestattungsplaner.ch: Gesellschaft akzeptiert digitale Bestattungsplanung, und der Markt für Online-Lead-Vermittlung an Bestattungsunternehmen wächst.",
+        source: "Everlife.ch",
+        url: "https://everlife.ch/de/veroffentlichung/bestattungsbrauche-im-wandel/",
+        date: "2026",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-11",
+      },
       // Neu: 11.04.2026
       {
         summary: "luzernerzeitung.ch: 'Horw: Die digitalen Bestatter' – Bericht über digitale Bestattungsservices in der Schweiz: Mit wenigen Klicks können Nutzer Bestattungen online buchen, Kanton wählen und zwischen Kremation und Erdbestattung entscheiden. Günstigstes Paket ab ca. 1500 Franken. Wachsende gesellschaftliche Akzeptanz digitaler Bestattungsdienste bestätigt strategisches Potenzial für bestattungsplaner.ch als digitalen Lead-Vermittler.",
