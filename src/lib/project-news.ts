@@ -26,6 +26,15 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 11.04.2026
+      {
+        summary: "SIZ Newsflash April 2026: Neue Plattform my.siz.ch ab 9. April 2026 live – Alle bisherigen URLs werden auf https://my.siz.ch umgeleitet. Datenübernahme basiert auf dem Stand vom 8. April 2026, 06:00 Uhr. Nutzerinnen und Nutzer müssen beim ersten Login einmalig ihr Passwort zurücksetzen, sofern ihr Login nicht mit einem Microsoft-Account verknüpft ist. Zusätzlich werden Testprüfungs-Bezeichnungen angepasst: Prüfungen werden ab sofort mit dem Erscheinungsjahr gekennzeichnet. Direkte operative Kommunikation der SIZ AG zur Modernisierung ihrer Prüfungsinfrastruktur.",
+        source: "SIZ AG",
+        url: "https://siz.ch/newsflash-april-2026/",
+        date: "2026-04",
+        category: "SIZ AG direkt",
+        addedAt: "2026-04-11",
+      },
       // Neu: 10.04.2026
       {
         summary: "SIZ Newsflash März 2026: Neue KI-Regelung für SIZ-Prüfungen ab 30. März 2026 – SIZ reagiert auf technologische Entwicklungen im Bereich KI und passt Prüfungsbedingungen an. Office Add-ins mit KI-Funktion und Microsoft 365 Copilot sind in Prüfungen nicht erlaubt; Upload von Prüfungsdateien in KI-Tools ist generell verboten. Hintergrund: KI-basierte Automatisierung ermöglicht es, Prüfungsaufgaben ohne die eigentlich geforderten Kompetenzen zu lösen – was dem Zweck der SIZ-Zertifizierungen widerspricht. Direkte Massnahme der SIZ AG zur Qualitätssicherung ihrer Abschlüsse.",
@@ -891,6 +900,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 11.04.2026
+      {
+        summary: "daytrading.com: 'NinjaTrader Review 2026 – Costs, Accounts & Futures Explained' – Ab Januar 2026 ist NinjaTrader für europäische Trader zugänglich (via CySEC-reguliertem Broker Payward Europe/Kraken), Start in den Niederlanden und Deutschland. NinjaTrader Connect ermöglicht externen Unternehmen den Zugriff auf Futures- und Prediction-Markets-Infrastruktur ohne eigene Plattformentwicklung. Commissions ab $0.09 pro Seite für Micro-Kontrakte. Belegt internationale Expansion von NinjaTrader – direktes Marktumfeld für algorithmische ES-Futures-Strategien wie bei Mind Rocket Trading.",
+        source: "DayTrading.com",
+        url: "https://www.daytrading.com/ninjatrader",
+        date: "2026-01",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-11",
+      },
       // Neu: 10.04.2026
       {
         summary: "thepropjournalist.com: 'Apex Trader Funding Review 2026: Payouts & Rules' – Unabhängige Analyse mit verifizierten April-2026-Auszahlungsdaten: Trader aus den USA, Taiwan, Spanien und Indien erhielten Auszahlungen. Wöchentliche Payout-Requests möglich ab 5 qualifizierten Handelstagen und 50%-Konsistenzregel. EOD- und Intraday-Trailing-Drawdown-Konten mit fairen Bedingungen und transparenten Regeln seit März 2026. NinjaTrader bleibt bevorzugte Plattform für algorithmische ES-Futures-Trader – direktes Marktumfeld für Mind Rocket Trading.",
@@ -1901,6 +1919,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 11.04.2026
+      {
+        summary: "ad-hoc-news.de: 'Betriebliches Gesundheitsmanagement wird 2026 zur Pflicht' – BGM wandelt sich vom optionalen Soft-Faktor zur regulatorischen und strategischen Anforderung. Personalisierte, hybride Gesundheitsangebote (digitale Tools kombiniert mit persönlicher Betreuung) sind 2026 der klar wachsende Markt. Investitionen in BGM amortisieren sich durch sinkende Lohnfortzahlungskosten und höhere Mitarbeiterbindung. Bestätigt strukturellen Rückenwind für hypnovital® als skalierbares digitales BGM-Programm.",
+        source: "Ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/betriebliches-gesundheitsmanagement-wird-2026-zur-pflicht/68539608",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-11",
+      },
+      {
+        summary: "SMSH – Schweizerische Ärztegesellschaft für Hypnose: Kurs 'Stress und Burnout' September 2026 – Die SMSH bietet Ärztinnen und Ärzten einen dedizierten Kurs zu Stress und Burnout mit Hypnose-Methodik. Wachsende institutionelle Verankerung von Hypnose im Schweizer Gesundheitswesen. Stärkt gesellschaftliche und medizinische Legitimität von hypnovital® als Hypnose-basiertem Gesundheitsprogramm.",
+        source: "SMSH",
+        url: "https://smsh.ch/",
+        date: "2026-09",
+        category: "Hypnose & Coaching",
+        addedAt: "2026-04-11",
+      },
       // Neu: 10.04.2026
       {
         summary: "ad-hoc-news.de: 'Betriebliches Gesundheitsmanagement wird 2026 zum strategischen Imperativ' – BGM wandelt sich vom Soft-Faktor zur strategischen Kennzahl. Nur jedes vierte Unternehmen hat bisher ein ganzheitliches BGM, obwohl psychische Erkrankungen eine der häufigsten Ursachen für Fehlzeiten sind. Betriebliche Gesundheitsförderung mit ROI-Nachweis wird zur Erwartung von Investoren und Aufsichtsbehörden. Belegt den strukturellen Wachstumsmarkt für skalierbare digitale BGM-Programme wie hypnovital®.",
@@ -2536,6 +2571,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 11.04.2026
+      {
+        summary: "12week-breakthrough.com: 'The Complete 12-Week Year Implementation Guide for 2026' – Detaillierter Umsetzungsleitfaden: Wocheneinteilung in Perioden 1–12, 13–24, 25–36, 37–48 als diskrete Planungsblöcke, Wochen 49–52 für Jahresintegration. Zielwert 85% Aufgabenerfüllung pro Woche als Balance zwischen Anspruch und Realismus. Integration mit OKR-Methode: Objectives als «Was», Key Results als messbares «Wie». Unterstreicht anhaltend hohe Nachfrage nach strukturierten 12-Wochen-Planungs-Tools.",
+        source: "12week-breakthrough.com",
+        url: "https://12week-breakthrough.com/implementation-guide-2026-12-week-year/",
+        date: "2026-04",
+        category: "12 Week Year Methode",
+        addedAt: "2026-04-11",
+      },
       // Neu: 10.04.2026
       {
         summary: "12week-breakthrough.com: 'The Digital Tools I Use With The 12-Week Year' – Umfassende Übersicht der besten digitalen Tools für die 12-Wochen-Methode: Notion als zentrales Planungs-Hub mit vollständigen 12-Week-Year-Templates, ClickUp für Team-Zielverfolgung, Heptabase für visuelle Ideenentwicklung. Grundprinzip: Jedes Tool sollte einem der fünf Pfeiler dienen: Vision, Goals, Execution Planning, Time Use, Measurement & Accountability. Bestätigt starke Nachfrage nach integrierten digitalen Planungs-Tools im 12WY-Ökosystem.",
@@ -2887,6 +2931,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 11.04.2026
+      {
+        summary: "noack-hypnose.de: 'Ejaculatio praecox bzw. vorzeitiger Samenerguss – Aufklärung, Tipps, Hilfe' – Spezialisierter Hypnotherapie-Anbieter erklärt psychologische und physiologische Ursachen sowie Behandlungsoptionen mit Schwerpunkt Hypnose und kognitive Verhaltenstherapie. Wachsende Online-Präsenz professioneller Hypnose-basierter Angebote für sexuelle Gesundheit im DACH-Raum bestätigt Marktpotenzial für digitale Selbsthilfe-Produkte wie orgasmus-hinauszoegern.de.",
+        source: "NOACK Hypnotherapie",
+        url: "https://www.noack-hypnose.de/ejaculatio-praecox-bzw-vorzeitiger-samenerguss/",
+        date: "2026-04",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-11",
+      },
       // Neu: 10.04.2026
       {
         summary: "gesundheit.gv.at (Österreichisches Gesundheitsportal): 'Vorzeitiger Samenerguss (Ejaculatio praecox)' – Offizielles Gesundheitsportal beschreibt Häufigkeit (bis 30% der Männer betroffen), psychologische Hauptursachen und Behandlungsoptionen inkl. Psychotherapie und Selbsthilfemethoden. Wachsende öffentliche Aufklärung über sexuelle Dysfunktionen normalisiert das Thema und steigert die Suchnachfrage nach digitalen Selbsthilfeangeboten wie orgasmus-hinauszoegern.de.",
@@ -3173,6 +3226,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 11.04.2026
+      {
+        summary: "Institut für Hypnose: 'Hypnose bei Lampenfieber, Präsentationsangst, Sprechangst' – Rund jede dritte Person ist von Redeangst, Präsentationsangst oder Lampenfieber betroffen. Hypnotherapie erzielt typischerweise deutlich schnellere Ergebnisse als andere Therapieformen, selbst bei hartnäckigen Ängsten und Panikstörungen – meist genügen 2–3 Sitzungen. Hynoanalytische Behandlung ermöglicht es, zugrundeliegende Lern- und Lebenserfahrungen zu bearbeiten und Angst dauerhaft aufzulösen. Bestätigt Wirksamkeit und Marktpositionierung von Hypnose-Audio-Programmen wie lampenfieber-besiegen.de.",
+        source: "Institut für Hypnose",
+        url: "https://institut-fuer-hypnose.de/redeangst-praesentationsangst-und-lampenfieber/",
+        date: "2026-04",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-11",
+      },
       // Neu: 10.04.2026
       {
         summary: "wagner-empowerment.de: Online-Seminar 'Redeangst überwinden' 2026 – Coaching, Mentaltraining & Hypnose – Termine August 2026, November 7.–8. und November 21.–22. 2026. Methoden-Mix: Hypnose, Mentaltraining und Coaching. Wachsendes Angebot an Online-Kursen zur Redeangst im DACH-Raum bestätigt Marktakzeptanz und Kaufbereitschaft für Selbsthilfe-Produkte – direktes Wettbewerbsumfeld für lampenfieber-besiegen.de als digitales Hypnose-Audio-Programm.",
@@ -3517,6 +3579,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 11.04.2026
+      {
+        summary: "hrtoday.ch: 'Learnfluencer werden?' – Der Begriff «Learnfluencer» bezeichnet Personen, die intrinsische Lernmotivation von Mitarbeitenden stärken, individuelles und kollektives Lernen verbinden und eine verantwortungsvolle Lernkultur etablieren. Besonders relevant, da Zusammenarbeit und Kommunikation in Unternehmen zunehmend online stattfinden. Direktes Keyword-Matching für learnfluencer.ch als Thought-Leadership-Plattform – bestätigt gesellschaftliche Verankerung des Begriffs.",
+        source: "HR Today",
+        url: "https://www.hrtoday.ch/de/article/learnfluencer-werden",
+        date: "2026-04",
+        category: "Content & Thought Leadership",
+        addedAt: "2026-04-11",
+      },
+      {
+        summary: "keelearning.de: 'E-Learning Trends 2026: So lernen Unternehmen morgen' – KI und adaptive Lernsysteme sind der grösste Hebel für Personalentwicklung 2026. Hybride Lernmodelle (Präsenz + Online + Micro-Learning) setzen sich flächendeckend durch. Fokus auf sofort anwendbare Inhalte und Human Skills (Resilienz, Kollaboration, KI-Kompetenz). Belegt wachsende strategische Bedeutung von Lernkompetenz als Kernthema für learnfluencer.ch.",
+        source: "keelearning.de",
+        url: "https://www.keelearning.de/blog/e-learning-trends-2026/",
+        date: "2026-04",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-11",
+      },
       // Neu: 10.04.2026
       {
         summary: "Nume.ch: 'KI-Nutzung Schweiz 2026: 76% nutzen Künstliche Intelligenz' – Über drei Viertel der erwachsenen Schweizer Bevölkerung integrieren KI-Tools täglich. Softwarezyklen haben sich auf wenige Monate verkürzt, was ständige Weiterbildung zwingend macht. Eidgenössischer KI-Abschluss: Erste Absolventinnen und Absolventen 2026 auf dem Markt. Belegt die massenhafte Verbreitung von KI in der Schweiz und die wachsende Nachfrage nach KI-Kompetenzaufbau – strategisches Kernmarktumfeld für learnfluencer.ch.",
@@ -3974,6 +4053,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 11.04.2026
+      {
+        summary: "swissmarketingacademy.ch: 'Marketing-Analyse-Tools: Die Top 5 für Profis 2026' – Die 5 wichtigsten Marketing-Tools 2026 für Schweizer Profis: Google Analytics 4, Google Search Console, Meta Business Suite, Google Looker Studio und Semrush. Zeigt wachsenden Bedarf nach strukturierten Analyse-Frameworks – komplementäres Marktumfeld für das interaktive Marketingkonzept-Tool auf learnfluencer.ch/tools/marketingkonzept mit PESTEL, 5 Forces, SWOT, BCG und 7P.",
+        source: "Swiss Marketing Academy",
+        url: "https://www.swissmarketingacademy.ch/magazin/marketing-analyse-tools-profis-2026/",
+        date: "2026-04",
+        category: "Marketing-Tools & Software",
+        addedAt: "2026-04-11",
+      },
+      {
+        summary: "bexolutions.ch: 'KI-Marketing für Schweizer KMU 2026 – Praxisleitfaden' – KI-Marketing ist 2026 kein Luxus mehr, sondern eine Notwendigkeit für wettbewerbsfähige Schweizer KMU. Einstieg ist einfacher und günstiger als je zuvor. Personalisierung, Datenanalyse und Content-Erstellung profitieren besonders von KI-Unterstützung. Bestätigt Wachstumsmarkt für strukturierte, digitale Marketing-Planungs-Tools wie das Marketingkonzept-Framework.",
+        source: "Bexolutions.ch",
+        url: "https://bexolutions.ch/ki-marketing-fur-schweizer-kmu-2026-praxisleitfaden/",
+        date: "2026-04",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-11",
+      },
       // Neu: 10.04.2026
       {
         summary: "aivie.ch: 'Marketing-Automation mit kmu.digital 2026: Jetzt Förderung nutzen' – Schweizer KMU können 2026 über das kmu.digital-Förderprogramm bis zu 50% der Kosten für Marketing-Automation-Tools subventioniert bekommen. Aivie (Schweizer Marketing-Automation aus der Schweiz) zeigt Praxisbeispiele für strukturierte, geförderte Marketingumsetzung. Direktes Marktumfeld für einfach nutzbare Marketingkonzept-Tools wie das Framework auf learnfluencer.ch/tools/marketingkonzept.",
@@ -4330,6 +4426,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 11.04.2026
+      {
+        summary: "luzernerzeitung.ch: 'Horw: Die digitalen Bestatter' – Bericht über digitale Bestattungsservices in der Schweiz: Mit wenigen Klicks können Nutzer Bestattungen online buchen, Kanton wählen und zwischen Kremation und Erdbestattung entscheiden. Günstigstes Paket ab ca. 1500 Franken. Wachsende gesellschaftliche Akzeptanz digitaler Bestattungsdienste bestätigt strategisches Potenzial für bestattungsplaner.ch als digitalen Lead-Vermittler.",
+        source: "Luzerner Zeitung",
+        url: "https://www.luzernerzeitung.ch/wirtschaft/horw-die-digitalen-bestatter-ld.85302",
+        date: "2026-04",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-11",
+      },
+      {
+        summary: "bestatter1.ch: 'Alle Bestattungsarten in der Schweiz' – Kremation ist mit 89% aller Bestattungen in der Schweiz die mit Abstand beliebteste Bestattungsart. Erdbestattungen machen nur noch ca. 10–15% aus. Der Trend zu individuellen, einfach planbaren Abschieds-Formen verstärkt sich kontinuierlich. Unterstreicht das strategische Potenzial für digitale Bestattungsplanung und Lead-Vermittlung via bestattungsplaner.ch.",
+        source: "Bestatter1.ch",
+        url: "https://www.bestatter1.ch/bestattungsarten",
+        date: "2026-04",
+        category: "Markt & Trends",
+        addedAt: "2026-04-11",
+      },
       // Neu: 10.04.2026
       {
         summary: "kath.ch: 'Tod, Trauer und Andenken im digitalen Zeitalter' – Schweizer Kirchenmedium beleuchtet die wachsende Digitalisierung von Trauer, Todesanzeigen und Erinnerungskultur: Online-Gedenkseiten, digitale Nachlässe und virtuelle Trauerbegleitung gehören zum neuen Standard. Gesellschaftliche Akzeptanz digitaler Abschied- und Vorsorgelösungen wächst – strategisches Umfeld für bestattungsplaner.ch als digitaler Anlaufpunkt für Bestattungsplanung in der Schweiz.",
