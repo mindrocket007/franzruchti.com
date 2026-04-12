@@ -980,6 +980,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 12.04.2026
       {
+        summary: "oneuptrader.com: 'S&P 500 (ES) Technical Analysis – Recovery On The Cards' (April 2026) – ES-Futures erholten sich scharf vom Iran-Konflikt-Tief (6.300–6.400) zurück in die Widerstandszone 6.800–6.900, nachdem der US-Iran-Waffenstillstand am 7./8. April 2026 die Märkte stark nach oben trieb. Der Markt bleibt hochvolatil, da Trader sich primär nach dem geopolitischen Umfeld positionieren und technische Faktoren vorübergehend in den Hintergrund treten. Für algorithmische ES-Futures-Strategien wie bei Mind Rocket Trading: Bounce-Setups aus politischen Schocks sind klassische Chancen für regelbasierte Systeme – sofern Risikomanagement und Drawdown-Kontrolle greifen.",
+        source: "oneuptrader.com",
+        url: "https://blog.oneuptrader.com/analysis/technical-analysis/sp-500-es-technical-analysis-recovery-on-the-cards/",
+        date: "2026-04",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-12",
+      },
+      {
+        summary: "U.S. Bank: 'Stock market under the Trump administration: What is driving markets in 2026?' – YTD-Performance S&P 500 bis 8. April: unter –1% trotz Zölle, Iran-Konflikt und Ölpreis-Schock. S&P 500 stieg am 8. April um 2,51% auf 6.782 nach der Iran-Waffenruhe. Marktresilienz getragen von starkem Gewinnwachstum, robustem Konsum, Steuererleichterungen und tieferen Zinsen. Aktuelle Volatilitätstreiber: Trump-Zollpolitik (34% China, 20% EU, 46% Vietnam), geopolitische Unsicherheit, Ölpreisvolatilität. Präzises Marktumfeld-Update für algorithmische ES-Futures-Strategien bei Mind Rocket Trading: hohe Volatilität, aber fundamentale Stütze.",
+        source: "U.S. Bank",
+        url: "https://www.usbank.com/investing/financial-perspectives/market-news/stock-market-under-trump.html",
+        date: "2026-04",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-12",
+      },
+      {
+        summary: "Tax Foundation: 'Tariff Tracker: 2026 Trump Tariffs & Trade War by the Numbers' – Laufend aktualisierter Überblick über Trumps Zollpolitik 2026: 34% auf chinesische Waren, 20% auf EU, 46% auf Vietnam. Handelskriegseskalation schafft anhaltende Makro-Unsicherheit, erhöhte Marktvolatilität und geopolitische Risikoprämien – alles klassische Treiber für ausgedehnte ES-Futures-Volatilitätsphasen. Direktes makroökonomisches Umfeld, in dem algorithmische Handelsstrategien wie bei Mind Rocket Trading besondere Relevanz entfalten.",
+        source: "Tax Foundation",
+        url: "https://taxfoundation.org/research/all/federal/trump-tariffs-trade-war/",
+        date: "2026-04",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-12",
+      },
+      {
         summary: "NinjaTrader / PR Newswire: 'NinjaTrader Unveils NinjaTrader Pulse, an Innovative Sentiment Indicator for Retail Futures Trading' – NinjaTrader lanciert NinjaTrader Pulse: Ein Echtzeit-Sentimentindikator, der anonymisierte Handelsdaten der NinjaTrader-Community aggregiert, um die tatsächliche Retail-Positionierung in den wichtigsten Futures-Kontrakten sichtbar zu machen. Unterstützte Märkte: ES, MES, NQ, MNQ, YM, MYM, CL, MCL, GC, MGC. Kostenlos für alle Demo- und Live-Account-Inhaber. Praxisrelevant für algorithmische ES-Futures-Strategien wie bei Mind Rocket Trading: Retail-Sentimentdaten können als Kontraindikator oder Positionsfilter in NinjaScript-basierte Systeme integriert werden.",
         source: "NinjaTrader / PR Newswire",
         url: "https://ninjatrader.com/news/ninjatrader-unveils-ninjatrader-pulse/",
@@ -3342,6 +3366,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 12.04.2026
       {
+        summary: "Deutsches Ärzteblatt: 'Sexualstörung: Wenig Sport und sozialer Druck können vorzeitigen Samenerguss fördern' – TU-München-Studie zeigt: Männer mit ejaculatio praecox leiden deutlich häufiger an erektiler Dysfunktion, benignem Prostatasyndrom und Libidostörungen; berichten öfter über Versagensangst und sozialen Druck. Mangelnde körperliche Aktivität als modifizierbarer Risikofaktor identifiziert. Führendes deutschsprachiges Ärzteportal bestätigt biopsychosozialen Charakter der EP – stärkt Marktpositionierung für psychologisch-basierte, mind-body-orientierte Interventionen wie das Hypnose-Audioprogramm orgasmus-hinauszoegern.de.",
+        source: "Deutsches Ärzteblatt",
+        url: "https://www.aerzteblatt.de/news/sexualstoerung-wenig-sport-und-sozialer-druck-koennen-vorzeitigen-samenerguss-foerdern-a891eb05-0c55-4723-8aeb-f581e80658de",
+        date: "2026",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-12",
+      },
+      {
+        summary: "Urologische Stiftung Gesundheit: 'Yoga lässt Männer mit vorzeitigem Samenerguss länger durchhalten' – Studie belegt, dass regelmässige Yoga-Praxis bei Männern mit EP die Ejakulationslatenzzeit signifikant verlängert. Mind-Body-Ansätze werden wissenschaftlich zunehmend als wirksame nicht-medikamentöse Interventionen anerkannt – bestätigt das Wirkprinzip mentaler Interventionen und die Marktrelevanz von Audio-Selbsthilfeprogrammen wie orgasmus-hinauszoegern.de.",
+        source: "Urologische Stiftung Gesundheit",
+        url: "https://urologische-stiftung-gesundheit.de/yoga-laesst-maenner-mit-vorzeitigem-samenerguss-laenger-durchhalten/",
+        date: "2026",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-12",
+      },
+      {
+        summary: "andovis-studie.de: Interaktives digitales Therapieprogramm für Männer mit vorzeitigem Samenerguss – Von Experten aus Sexualtherapie, Medizin und Psychologie entwickeltes digitales Programm (andovis) für Männer mit Erektionsstörung oder ejaculatio praecox. Wachsendes Angebot an digital-therapeutischen Lösungen im DACH-Raum normalisiert das Thema und erhöht gesellschaftliche Akzeptanz für digitale Selbsthilfe-Optionen – direktes Marktumfeld für orgasmus-hinauszoegern.de.",
+        source: "andovis-studie.de",
+        url: "https://www.andovis-studie.de/",
+        date: "2026",
+        category: "Digital Health",
+        addedAt: "2026-04-12",
+      },
+      {
         summary: "sofortarzt.com: 'Vorzeitiger Samenerguss: Umfassender Leitfaden zu Ursachen, Behandlung und Unterstützung' – Medizinportal listet alle Behandlungsoptionen: medikamentöse Therapie (Dapoxetin/Priligy), topische Anästhetika, Verhaltenstechniken (Start-Stopp, Squeeze) und psychologische Beratung. Ejaculatio praecox ist die häufigste sexuelle Funktionsstörung bei Männern unter 60 – ca. 20–30% aller Männer betroffen. Wachsendes digitales Informationsangebot erhöht Suchnachfrage und gesellschaftliche Akzeptanz für niedrigschwellige Selbsthilfe-Alternativen wie orgasmus-hinauszoegern.de.",
         source: "sofortarzt.com",
         url: "https://sofortarzt.com/de/vorzeitiger-samenerguss",
@@ -4099,6 +4147,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "learnfluencer": {
     news: [
       // Neu: 12.04.2026
+      {
+        summary: "Blick.ch Wirtschaft: 'Schweizer Arbeitsmarkt 2026: Diese 5 Trends prägen die Jobs – viele davon sind negativ' – Analyse der 5 grossen Arbeitstrends 2026: Mehr Tempo, Druck und Angst, aber auch neue Chancen durch Digitalisierung und KI. Arbeitnehmer müssen kontinuierlich lernen und sich anpassen; wer KI-Kompetenz aufbaut, sichert seine Marktposition. Schweizer Massenmedium bestätigt Relevanz von Lernkompetenz und KI-Upskilling als Pflichtthema – direktes Leser-Umfeld für learnfluencer.ch als praxisnahe Orientierungsplattform.",
+        source: "Blick.ch Wirtschaft",
+        url: "https://www.blick.ch/wirtschaft/mehr-tempo-druck-und-angst-die-fuenf-grossen-arbeitstrends-fuer-2026-viele-davon-sind-negativ-id21606308.html",
+        date: "2026",
+        category: "Weiterbildung Schweiz",
+        addedAt: "2026-04-12",
+      },
+      {
+        summary: "x28.ch (Schweizer HR-Plattform): 'Was der Arbeitsmarkt 2026 bereithält' – Leicht steigende Arbeitslosigkeit, aber grundsätzlich stabiler Schweizer Arbeitsmarkt. KI-Kompetenz wird zur Einstellungsvoraussetzung, Fachkräftemangel entspannt sich partiell, Weiterbildung und Kompetenzentwicklung werden zum entscheidenden Differenzierungsfaktor. Praxisnaher Schweizer HR-Marktblick bestätigt Nachfrage nach Orientierungs- und Thought-Leadership-Plattformen wie learnfluencer.ch für Weiterbildungsentscheider.",
+        source: "x28.ch",
+        url: "https://www.x28.ch/blog/arbeitsmarkt-2026/",
+        date: "2026",
+        category: "Weiterbildung Schweiz",
+        addedAt: "2026-04-12",
+      },
+      {
+        summary: "nexaria.ch: 'Die relevanten Auswirkungen von KI auf den Arbeitsmarkt 2026' – Schweizer Analyse: 76% der Bevölkerung nutzt KI-Tools regelmässig. Standardisierte Tätigkeiten werden automatisiert, hochqualifizierte Rollen profitieren. Weiterbildungen und KI-Kompetenzaufbau werden zur zentralen Anforderung für Arbeitnehmer und Unternehmen. Direktes strategisches Themenfeld für learnfluencer.ch als Thought-Leadership-Plattform für KI-Lernkompetenz und digitale Weiterbildung in der Schweiz.",
+        source: "nexaria.ch",
+        url: "https://nexaria.ch/auswirkungen-von-ki-auf-den-arbeitsmarkt/",
+        date: "2026",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-12",
+      },
       {
         summary: "Swiss Learning Hub: eLearning AWARD 2026 gewonnen – Swiss Learning Hub AG (Schweizer EdTech-Unternehmen) gewinnt den eLearning AWARD 2026 in der Kategorie 'eLearning Innovation – Schwerpunkt Wissensstandardisierung' für das SwissPOD Training in Zusammenarbeit mit Swisstransplant. Zweisprachiges (DE/FR), modulares E-Learning-Programm mit interaktiven Screen Recordings, Flipkarten und Avatar-Videos – über 160 Medizinfachkräfte in der ganzen Schweiz nutzen die Plattform. Bestätigt die Vorreiterrolle Schweizer EdTech-Anbieter bei innovativen Lernformaten – direktes Marktumfeld für learnfluencer.ch als Thought-Leadership-Plattform für Lerninnovation.",
         source: "Swiss Learning Hub",
