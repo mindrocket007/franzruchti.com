@@ -26,6 +26,15 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 12.04.2026
+      {
+        summary: "ICT-Berufsbildung Schweiz: 'ICT-Diplomfeier 2026 – Die höhere Berufsbildung bleibt wichtig für den Schweizer Arbeitsmarkt' – Offizielle Diplomfeier der höheren ICT-Berufsbildung Schweiz 2026 unterstreicht die anhaltende strategische Bedeutung von anerkannten ICT-Abschlüssen für den Schweizer Arbeitsmarkt. Angesichts des prognostizierten Fachkräftemangels von bis zu 54'400 Stellen (Prognose bis 2033) wächst der Stellenwert zertifizierter ICT-Qualifikationen weiter. Direkte Bestätigung der Marktrelevanz von SIZ AG als führende anerkannte ICT-Prüfungsorganisation in der Schweiz.",
+        source: "ICT-Berufsbildung Schweiz",
+        url: "https://www.ict-berufsbildung.ch/ict-diplomfeier-2026-die-hoehere-berufsbildung-bleibt-wichtig-fuer-den-schweizer-arbeitsmarkt",
+        date: "2026-04",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-12",
+      },
       // Neu: 11.04.2026 (Recherche-Runde 4)
       {
         summary: "ICT-Berufsbildung Schweiz: Jahresbericht 2025 – Führungswechsel: Dr. Alain Gut übernimmt am 4. Dezember 2025 das Präsidium von Andreas W. Kaelin (nach 15 Jahren). Nationalrat genehmigt Änderung des Berufsbildungsgesetzes zur Stärkung der höheren Berufsbildung, inkl. Englisch als Prüfungssprache für eidg. Berufs- und Höhere Fachprüfungen. Revision ICT-Fachmann/-frau EFZ 2025 erfolgreich abgeschlossen. 96% der neu startenden ICT-Lernenden 2025 sind mit ihrer Berufswahl eher oder sehr zufrieden – starkes Signal für anhaltend hohe Nachfrage nach ICT-Grundausbildung und Zertifizierungen im Umfeld von SIZ AG.",
@@ -4995,6 +5004,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 12.04.2026
+      {
+        summary: "zeitlupe.ch / Pro Senectute: 'Digital vorgesorgt – Tooyoo bis Ende April gratis' (April 2026) – Pro Senectute bietet Schweizer Seniorinnen und Senioren bis Ende April 2026 über Docupass-Rabattcode einen Jahreszugang zur digitalen Vorsorge-Plattform Tooyoo gratis an. Tooyoo deckt ab: medizinische Vorsorge (Patientenverfügung, Vorsorgeauftrag), digitalen Nachlass und Abdankungsorganisation (Bestattungsart, Todesanzeige). Zeigt wachsende gesellschaftliche Institutionalisierung digitaler Vorsorge als Standard in der Schweiz – direktes Marktumfeld für bestattungsplaner.ch als digitaler Lead-Vermittler und Orientierungsplattform.",
+        source: "zeitlupe.ch / Pro Senectute",
+        url: "https://zeitlupe.ch/magazin/ratgeber-docupass/digital-vorgesorgt/",
+        date: "2026-04",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-04-12",
+      },
       // Neu: 11.04.2026 (Recherche-Runde 5)
       {
         summary: "ekz-crosstour.ch: 'Der Markt für Bestattungs- und Friedhofsdienstleistungen wird bis 2030 rasant wachsen' (April 2026) – Globaler Marktbericht analysiert Wachstumstreiber: alternde Bevölkerung in Europa, steigende Nachfrage nach personalisierten Bestattungsformen (Natur, Wasser, Weltraum) und Digitalisierung des gesamten Bestattungsprozesses (Online-Vorsorge, digitale Trauerdienste). Die Schweiz mit ~90% Kremationsrate und wachsendem Interesse an Online-Bestattungsplanung bestätigt globale Trends. Direktes strukturelles Wachstumsumfeld für bestattungsplaner.ch als digitalen Schweizer Lead-Vermittler.",
