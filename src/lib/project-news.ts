@@ -2124,6 +2124,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 12.04.2026
+      {
+        summary: "IFBG: 'BGF-Kompass 2026' – Das Institut für Betriebliche Gesundheitsförderung veröffentlicht seinen praxiserprobten BGF-Kompass 2026 mit über 70 Massnahmen und förderfähigen Formaten. Schwerpunkte: mentale Gesundheit, Stressmanagement, Ernährung am Arbeitsplatz und spezifische Frauenthemen (mentale Last, Menopause). Nationale und internationale Gesundheitstage als Touchpoints für Sensibilisierungskampagnen. Wachsender strukturierter Markt für digitale BGM-Massnahmen – direktes Umfeld für hypnovital® als niedrigschwelliges Audio-Coaching-Angebot.",
+        source: "IFBG",
+        url: "https://www.ifbg.eu/bgf-kompass-2026/",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-12",
+      },
+      {
+        summary: "koerpermanagement.com: 'Betriebliche Gesundheitsförderung 2026: ein strategischer Erfolgsfaktor' – BGF ist 2026 kein 'Nice-to-have' mehr, sondern strategischer Wettbewerbsfaktor: Unternehmen mit systematischer BGF verzeichnen geringere Fehlzeiten, höhere Leistungsfähigkeit und stärkere Mitarbeiterbindung. Treiber: Fachkräftemangel, hybride Arbeit, hohe Arbeitsdichte und wachsende mentale Belastungen. Unterschied BGM (Organisationsebene) vs. BGF (Massnahmenebene: Workshops, Coachings, Online-Programme) klar definiert – bestätigt Marktposition für hypnovital® als skalierbare digitale BGF-Massnahme.",
+        source: "koerpermanagement.com",
+        url: "https://www.koerpermanagement.com/betriebliche-gesundheitsfoerderung-2026/",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-12",
+      },
       // Neu: 11.04.2026 (Recherche-Runde 5)
       {
         summary: "baselrundschau.ch: 'Trends für Gesundheit und Wohlbefinden 2026' – Regionales Schweizer Portal berichtet über aktuelle Gesundheitstrends: Personalisierte Medizin und präventive Gesundheitsversorgung stehen im Vordergrund. Digitale Gesundheitsangebote, Stressmanagement und mentale Gesundheit am Arbeitsplatz sind die Schwerpunktthemen. Wachsende gesellschaftliche Verankerung von Prävention und Wellbeing als Marktumfeld für hypnovital® als digitales Audio-BGM-Programm – auch in der deutschsprachigen Schweiz wächst die Nachfrage nach niedrigschwelligen, flexibel nutzbaren Gesundheitslösungen.",
@@ -3978,6 +3995,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 12.04.2026
+      {
+        summary: "Swiss Learning Hub: eLearning AWARD 2026 gewonnen – Swiss Learning Hub AG (Schweizer EdTech-Unternehmen) gewinnt den eLearning AWARD 2026 in der Kategorie 'eLearning Innovation – Schwerpunkt Wissensstandardisierung' für das SwissPOD Training in Zusammenarbeit mit Swisstransplant. Zweisprachiges (DE/FR), modulares E-Learning-Programm mit interaktiven Screen Recordings, Flipkarten und Avatar-Videos – über 160 Medizinfachkräfte in der ganzen Schweiz nutzen die Plattform. Bestätigt die Vorreiterrolle Schweizer EdTech-Anbieter bei innovativen Lernformaten – direktes Marktumfeld für learnfluencer.ch als Thought-Leadership-Plattform für Lerninnovation.",
+        source: "Swiss Learning Hub",
+        url: "https://www.swisslearninghub.com/en/news/we-won-the-elearning-award-2026/",
+        date: "2026-04",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-12",
+      },
+      {
+        summary: "keelearning.de: 'E-Learning Trends 2026: So lernen Unternehmen morgen' – E-Learning entwickelt sich 2026 vom reinen Kursangebot zum vernetzten Lernökosystem: KI unterstützt Personalisierung, Content-Erstellung und Lernsteuerung. Microlearning, Lernen im Arbeitsfluss (on-demand, mobil, kontextbezogen) und Fokus auf Human Skills sind die Kerntrends. Wichtig: Nicht jeder Trend passt zu jedem Unternehmen – der Bedarf nach Orientierung und priorisierter Umsetzungsberatung wächst. Direktes Argument für learnfluencer.ch als Orientierungsplattform für Weiterbildungsentscheider.",
+        source: "keelearning.de",
+        url: "https://www.keelearning.de/blog/e-learning-trends-2026/",
+        date: "2026-04",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-12",
+      },
       // Neu: 11.04.2026 (Recherche-Runde 7)
       {
         summary: "w18.de: 'Berufliche Weiterbildung 2026: Diese Trends sollten Sie kennen' – Kompaktübersicht der wichtigsten Weiterbildungstrends 2026: KI-Kompetenz als Basisanforderung, personalisierte Lernpfade, Microlearning, Zunahme von Online-Formaten und branchenspezifische Upskilling-Programme. Belegt die wachsende Relevanz von Orientierungs- und Thought-Leadership-Plattformen wie learnfluencer.ch als Erstanlaufstelle für Weiterbildungsentscheider.",
