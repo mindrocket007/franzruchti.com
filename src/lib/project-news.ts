@@ -953,6 +953,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 12.04.2026
+      {
+        summary: "NinjaTrader / PR Newswire: 'NinjaTrader Unveils NinjaTrader Pulse, an Innovative Sentiment Indicator for Retail Futures Trading' – NinjaTrader lanciert NinjaTrader Pulse: Ein Echtzeit-Sentimentindikator, der anonymisierte Handelsdaten der NinjaTrader-Community aggregiert, um die tatsächliche Retail-Positionierung in den wichtigsten Futures-Kontrakten sichtbar zu machen. Unterstützte Märkte: ES, MES, NQ, MNQ, YM, MYM, CL, MCL, GC, MGC. Kostenlos für alle Demo- und Live-Account-Inhaber. Praxisrelevant für algorithmische ES-Futures-Strategien wie bei Mind Rocket Trading: Retail-Sentimentdaten können als Kontraindikator oder Positionsfilter in NinjaScript-basierte Systeme integriert werden.",
+        source: "NinjaTrader / PR Newswire",
+        url: "https://ninjatrader.com/news/ninjatrader-unveils-ninjatrader-pulse/",
+        date: "2024-12",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-12",
+      },
       // Neu: 11.04.2026 (Recherche-Runde 8)
       {
         summary: "TradeInformer: 'NinjaTrader launches white label for futures and prediction markets' (März 2026) – NinjaTrader Group hat mit NinjaTrader Connect eine vollständige White-Label-Infrastruktur für Futures und Prediction Markets lanciert. Die Plattform richtet sich explizit an Fintechs, Brokerages und Handelsplattformen, die regulierte Futures und Prediction-Markets-Produkte unter ihrer eigenen Marke anbieten wollen – ohne eigene technische Infrastruktur aufzubauen. Branchenmedium TradeInformer bestätigt den strategischen B2B-Schwenk von NinjaTrader als Reaktion auf den Prediction-Markets-Boom. Für algorithmische Trader wie Mind Rocket Trading belegt dies die wachsende institutionelle Reife der NinjaTrader-Ökosphäre.",
@@ -1763,6 +1772,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 12.04.2026
+      {
+        summary: "buchinsider.net: 'Globaler Buchmarkt im Fokus: Trends und Entwicklungen 2026' – Analyse zeigt einen neuen Megatrend: Deep Reading. Leser suchen 2026 bewusst längere, immersive Lektüre als Gegenpol zu Social-Media-Schnellkonsum. Bücher, die echte Reflexion und Vertiefung ermöglichen, wachsen überdurchschnittlich. KI wird in Buchproduktion, Marketing und Content-Discovery verstärkt eingesetzt. Persönlichkeitsentwicklung und mentale Gesundheit bleiben verlässliche Wachstumssegmente. Direktes positives Marktumfeld für mindtools.ch mit qualitätsvollen PDF-Selbsthilfe-Werkzeugen, die auf nachhaltiges Arbeiten mit sich selbst ausgerichtet sind.",
+        source: "buchinsider.net",
+        url: "https://www.buchinsider.net/2026/01/16/globaler-buchmarkt-im-fokus/",
+        date: "2026-01",
+        category: "Buchmarkt & Publishing",
+        addedAt: "2026-04-12",
+      },
       // Neu: 11.04.2026 (Recherche-Runde 3)
       {
         summary: "coachingausbildungen.ch: 'Coaching-Markt Schweiz – Trends 2025/2026, Analyse' – 2026 konsolidiert sich der Schweizer Coaching-Markt: Erwartungen an Tiefe, Seriosität und methodische Vielfalt steigen. Hybride Formate (Online + Präsenz) sind Standard. Coaching wird von einem Boom-Markt zu einem reifen, anspruchsvollen Markt. Individuelle Selbsthilfe-Tools und klare Positionierung werden zum entscheidenden Wettbewerbsvorteil – direktes Marktumfeld für mindtools.ch mit PDF-basierten Persönlichkeitsentwicklungs-Werkzeugen.",
@@ -2886,6 +2904,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 12.04.2026
+      {
+        summary: "ClickUp: 'Free 12-Week Year Templates to Crush Your Goals' – Die global führende Produktivitätsplattform ClickUp veröffentlicht 20 spezialisierte Templates für die 12-Week-Year-Methode: u.a. 12-Week Plan Template, Productivity Template und Goal Setting Templates. Alle Templates umfassen Visions-Framework, Wochenziele, Scorecard und Fortschrittstracking in verschiedenen Views (List, Board, Calendar). Die Integration der 12WY-Methode in eine Plattform mit Millionen-Nutzerbasis signalisiert endgültige Mainstream-Adoption – für 12wy-planner.vercel.app ein Argument, sich als methodisch tiefes Spezial-SaaS-Tool klar gegenüber generischen Template-Lösungen zu differenzieren.",
+        source: "ClickUp",
+        url: "https://clickup.com/blog/12-week-year-templates/",
+        date: "2026",
+        category: "Produktivität & Planung",
+        addedAt: "2026-04-12",
+      },
       // Neu: 11.04.2026 (Recherche-Runde 3)
       {
         summary: "aheadachiever.com: '12 Week Year Plan 2026, 2027, 2028' – Digitaler Downloadplaner als Jahreskalender-Kombination mit 12-Week-Year-Methode: 4 separate Quartalsblöcke mit Wochen-Tracking, Zielsetzungs-Spalten und Scorecard-Funktion. Zeigt wachsendes kommerzielles Ökosystem rund um die 12WY-Methode mit vielfältigen Nischenprodukten im digitalen Marktplatz. Bestätigt anhaltend hohe Nachfrage nach strukturierten 12-Wochen-Planungs-Tools – direktes Marktumfeld für 12wy-planner.vercel.app.",
