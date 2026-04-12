@@ -28,6 +28,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 12.04.2026
       {
+        summary: "ICT-Berufsbildung Schweiz: 'ICT-Berufsbildung Schweiz schärft das Verbandsprofil' – Der nationale Verband richtet sich strategisch neu aus: Ziel ist die Etablierung als Kompetenzzentrum für die Digitalisierung der Berufsbildung in der Schweiz. Neue Stelle 'Head of Digitalization & Innovation' geschaffen, neue Website lanciert, neue Vision: 'Wir gestalten die ICT-Berufsbildung in der Schweiz für kompetente Fachkräfte – heute und morgen.' Direktes Signal für stärkere Marktpräsenz und Qualitätsstärkung im Umfeld von SIZ AG als führende anerkannte ICT-Prüfungsorganisation der Schweiz.",
+        source: "ICT-Berufsbildung Schweiz",
+        url: "https://www.ict-berufsbildung.ch/ict-berufsbildung-schweiz-schaerft-das-verbandsprofil",
+        date: "2026",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-12",
+      },
+      {
         summary: "ICT-Berufsbildung Schweiz: 'ICT-Diplomfeier 2026 – Die höhere Berufsbildung bleibt wichtig für den Schweizer Arbeitsmarkt' – Offizielle Diplomfeier der höheren ICT-Berufsbildung Schweiz 2026 unterstreicht die anhaltende strategische Bedeutung von anerkannten ICT-Abschlüssen für den Schweizer Arbeitsmarkt. Angesichts des prognostizierten Fachkräftemangels von bis zu 54'400 Stellen (Prognose bis 2033) wächst der Stellenwert zertifizierter ICT-Qualifikationen weiter. Direkte Bestätigung der Marktrelevanz von SIZ AG als führende anerkannte ICT-Prüfungsorganisation in der Schweiz.",
         source: "ICT-Berufsbildung Schweiz",
         url: "https://www.ict-berufsbildung.ch/ict-diplomfeier-2026-die-hoehere-berufsbildung-bleibt-wichtig-fuer-den-schweizer-arbeitsmarkt",
@@ -793,6 +801,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "mind-rocket": {
     news: [
       // Neu: 12.04.2026
+      {
+        summary: "IPC Akademie: 'Swiss Coaching Day 2026 – Der Top-Event für Coaches in Bern' – Jährliche Fachtagung für Coaches und Trainer in der Schweiz mit Fokus auf aktuelle Coaching-Methoden, KI-gestützte Tools und Markttrends 2026. Zentraler Branchentreffpunkt zeigt wachsende Professionalisierung und steigende Qualitätsansprüche im Schweizer Coaching-Markt. Wer nur Motivation anbietet, wird 2026 ersetzbar – wer echte Orientierung und nachhaltige Entwicklung ermöglicht, wird gesucht. Bestätigt strukturellen Rückenwind für methodisch fundierte Coaching- und Persönlichkeitsentwicklungs-Programme wie jene der Mind Rocket GmbH.",
+        source: "IPC Akademie",
+        url: "https://ipc-akademie.com/weiterbildungen/swiss-coaching-day/",
+        date: "2026",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-04-12",
+      },
       {
         summary: "Suva: 'Ist Burn-out eine Berufskrankheit?' – Die Suva (Schweizerische Unfallversicherungsanstalt) klärt auf: Burn-out ist in der Schweiz keine anerkannte Berufskrankheit, aber ein ernstzunehmendes Erschöpfungssyndrom mit wachsender gesellschaftlicher Relevanz. Wichtigste Präventionsmassnahmen: Stressmanagement, Ressourcenstärkung und individuelle Coachingangebote. Jede dritte Person in der Schweiz leidet unter psychischen Problemen – bestätigt wachsende Nachfrage nach niedrigschwelligen, digitalen Coaching- und Persönlichkeitsentwicklungs-Programmen wie jenen der Mind Rocket GmbH.",
         source: "Suva",
@@ -3326,6 +3342,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 12.04.2026
       {
+        summary: "sofortarzt.com: 'Vorzeitiger Samenerguss: Umfassender Leitfaden zu Ursachen, Behandlung und Unterstützung' – Medizinportal listet alle Behandlungsoptionen: medikamentöse Therapie (Dapoxetin/Priligy), topische Anästhetika, Verhaltenstechniken (Start-Stopp, Squeeze) und psychologische Beratung. Ejaculatio praecox ist die häufigste sexuelle Funktionsstörung bei Männern unter 60 – ca. 20–30% aller Männer betroffen. Wachsendes digitales Informationsangebot erhöht Suchnachfrage und gesellschaftliche Akzeptanz für niedrigschwellige Selbsthilfe-Alternativen wie orgasmus-hinauszoegern.de.",
+        source: "sofortarzt.com",
+        url: "https://sofortarzt.com/de/vorzeitiger-samenerguss",
+        date: "2026",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-12",
+      },
+      {
+        summary: "sexamed.com: 'Vorzeitiger Samenerguss: Ursachen verstehen & Lösungen finden' – Spezialisiertes Sexual-Health-Portal analysiert Ursachen (psychologisch, physiologisch, konditioniert) und bietet Selbsthilfe-Strategien. Erklärt den Mind-Body-Ansatz und die Wirkungsweise von mentalen Interventionen auf die Ejakulationskontrolle. Wachsende spezialisierte Online-Ressourcen normalisieren das Thema und senken die Hemmschwelle, aktiv nach Lösungen zu suchen – direktes Marktumfeld für das Audio-Selbsthilfeprogramm orgasmus-hinauszoegern.de.",
+        source: "sexamed.com",
+        url: "https://sexamed.com/blog/vorzeitiger-samenerguss",
+        date: "2026",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-12",
+      },
+      {
         summary: "die-hypnose-therapie.de: 'Vorzeitiger Samenerguss / Ejaculatio Praecox – Hypnosetherapie' – Umfassendes Therapieprofil: Hypnose wirkt auf unbewusste Konditionierungsmuster, die dem vorzeitigen Samenerguss zugrunde liegen, und kombiniert direkte Suggestionen mit erlernbaren Selbsthypnosetechniken für langfristige Eigenregulation. Erfolgsbilanz von ca. 83% laut Studie (2018). Zeigt wachsende Marktakzeptanz für hypnosebasierte Selbsthilfe-Lösungen im DACH-Raum – direktes Marktumfeld für das Audio-Programm orgasmus-hinauszoegern.de.",
         source: "die-hypnose-therapie.de",
         url: "https://www.die-hypnose-therapie.de/hypnose_bei/sexuelle_probleme/vorzeitiger_samenerguss/vorzeitiger_samenerguss_ejaculatio_praecox.html",
@@ -4668,6 +4700,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "marketingplan-software": {
     news: [
       // Neu: 12.04.2026
+      {
+        summary: "KMU Magazin Schweiz: 'SWOT-Mapping: Von der SWOT-Analyse zum Change Management' – Die SWOT-Analyse wird häufig nur punktuell eingesetzt und verliert dadurch ihre strategische Schlagkraft. SWOT-Mapping schlägt in drei Schritten vor, wie Stärken, Schwächen, Chancen und Risiken in konkrete, umsetzbare strategische Massnahmen übersetzt werden. Für KMU essenzielles Framework, das den Brückenschlag von Analyse zur Handlung ermöglicht – bestätigt die Nachfrage nach strukturierten, praxisorientierten Strategie-Tools wie dem interaktiven Marketingkonzept-Framework auf learnfluencer.ch.",
+        source: "KMU Magazin",
+        url: "https://www.kmu-magazin.ch/wissen/forschung-entwicklung/swot-mapping-von-der-swot-analyse-zum-change-management",
+        date: "2026",
+        category: "Strategie & Analyse",
+        addedAt: "2026-04-12",
+      },
       {
         summary: "Wrike: 'Wie Sie OKRs für Quartals- und Jahresplanung verwenden' – Praxisleitfaden für strategische Marketing- und Unternehmensplanung mit OKRs: Ziele (Objectives) und messbare Schlüsselergebnisse (Key Results) definieren, Quartalszyklus für Marketingkampagnen nutzen und KPI-Tracking integrieren. Kombination von OKR-Methodik mit klassischen Analyse-Frameworks (SWOT, PESTEL) als Best Practice für 2026. Bestätigt wachsende Nachfrage nach strukturierten digitalen Planungstools – direktes Marktumfeld für das interaktive Marketingkonzept-Tool auf learnfluencer.ch.",
         source: "Wrike",
