@@ -2141,6 +2141,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         category: "BGM & Gesundheit",
         addedAt: "2026-04-12",
       },
+      {
+        summary: "BBGM – Bundesverband Betriebliches Gesundheitsmanagement: 'Neue Handreichungen' (April 2026) – Der BBGM veröffentlicht neue praxisorientierte Handreichungen für BGM-Praktiker zu zwei Schwerpunktthemen: Substanzkonsum am Arbeitsplatz (Prävention, Erkennung, Intervention) und psychische Ersthelfer im Betrieb (First Responder für mentale Gesundheitskrisen). Erweitert das BBGM-E-Learning-Angebot und bereitet Unternehmen auf wachsende gesetzliche Anforderungen vor. Bestätigt den Trend zu niedrigschwelligen, praxisnahen Präventionsmassnahmen – direktes Marktumfeld für hypnovital® als skalierbares Audio-BGM-Tool im Bereich mentale Gesundheitsprävention.",
+        source: "BBGM",
+        url: "https://bbgm.de/blog/2026/04/08/neue-handreichungen/",
+        date: "2026-04-08",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-12",
+      },
       // Neu: 11.04.2026 (Recherche-Runde 5)
       {
         summary: "baselrundschau.ch: 'Trends für Gesundheit und Wohlbefinden 2026' – Regionales Schweizer Portal berichtet über aktuelle Gesundheitstrends: Personalisierte Medizin und präventive Gesundheitsversorgung stehen im Vordergrund. Digitale Gesundheitsangebote, Stressmanagement und mentale Gesundheit am Arbeitsplatz sind die Schwerpunktthemen. Wachsende gesellschaftliche Verankerung von Prävention und Wellbeing als Marktumfeld für hypnovital® als digitales Audio-BGM-Programm – auch in der deutschsprachigen Schweiz wächst die Nachfrage nach niedrigschwelligen, flexibel nutzbaren Gesundheitslösungen.",
