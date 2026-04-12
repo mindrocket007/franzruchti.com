@@ -987,6 +987,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 12.04.2026 (Recherche-Runde 3)
+      {
+        summary: "CNBC: 'Stocks extend relief rally on hopes that U.S.-Iran ceasefire will stick, Dow turns positive for 2026' (8. April 2026) – S&P 500 +2.51% auf 6'782.81, Nasdaq +2.80% auf 22'635.00 nach US-Iran-Waffenstillstand-Bekanntgabe. Dow dreht ins Plus für 2026. Zweite Erholungswelle nach dem April-Tief (~6'310) bestätigt explosive Volatilität bei geopolitischen Entspannungssignalen – typisches Chancenumfeld für algorithmische ES-Futures-Strategien mit definierten Einstiegsregeln wie bei Mind Rocket Trading.",
+        source: "CNBC",
+        url: "https://www.cnbc.com/2026/04/08/stock-market-today-live-updates.html",
+        date: "2026-04-08",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-12",
+      },
+      {
+        summary: "Yahoo Finance: 'Stock market today: Dow, S&P 500, Nasdaq futures pause rally after Iran says ceasefire has been broken' – Geopolitisches Ping-Pong: Kurz nach der US-Iran-Einigung meldete der Iran den Bruch des Waffenstillstands, was die Futures-Rally unmittelbar stoppte. Erinnert an fundamentale Eigenschaft hochliquider ES-Futures: Schlagzeilen-getriebene Rücksetzer innerhalb laufender Erholungen erzeugen präzise Setups für taktisches Risikomanagement – Kernkompetenz regelbasierter Algo-Strategien wie bei Mind Rocket Trading.",
+        source: "Yahoo Finance",
+        url: "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-futures-pause-rally-after-iran-says-ceasefire-has-been-broken-225323355.html",
+        date: "2026-04-10",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-12",
+      },
+      {
+        summary: "Investing.com: 'S&P 500's Next Move: Tumbling Toward a Technical Correction or a Bounce?' – Technische Analyse des S&P 500 nach dem Iran-Konflikt-Tief: S&P 500 war bis fast -10% vom Jahreshoch (7.043) gefallen; der Rebound stellte die wichtige 6.800-Zone zurück in den Fokus. Institutionelle Positionierung und Gamma-Levels bestimmen weiter die kurzfristige Richtung. Technische Korrektionsphasen mit klaren Unterstützungszonen sind definiertes Chancen-Terrain für algorithmische ES-Futures-Strategien wie bei Mind Rocket Trading.",
+        source: "Investing.com",
+        url: "https://www.investing.com/analysis/sp-500s-next-move-tumbling-toward-a-technical-correction-or-a-bounce-200677140",
+        date: "2026-04",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-12",
+      },
       // Neu: 12.04.2026 (Recherche-Runde 2)
       {
         summary: "The Block: 'NinjaTrader launches in Europe as retail futures become a global expectation' – NinjaTrader expandiert nach Europa via CySEC-regulierten Broker PEDSL-CY, startet in den Niederlanden und Deutschland mit Plänen für Frankreich und Italien. Europäische Retail-Trader erhalten Zugang zu Futures-Kontrakten auf US- und europäischen Börsen. Zeigt strukturellen Megatrend: Futures-Trading wird globaler Retail-Standard – wachsendes Marktumfeld für algorithmische ES-Futures-Strategien wie bei Mind Rocket Trading.",
@@ -5279,6 +5304,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 12.04.2026 (Recherche-Runde 2)
+      {
+        summary: "Der Gartenbau (Fachmagazin für Grün- und Bestattungsberufe): 'ABSCHIED'26 – Neue Schweizer Fachmesse für Vorsorge, Pflege und Trauer' – Berichterstattung im Schweizer Fachmagazin für Grün- und Bestattungsberufe zur ersten nationalen Branchenmesse (29./30. Oktober 2026, Luzern) bestätigt wachsenden Professionalisierungsdruck und Digitalisierungsbereitschaft im Bestattungsgewerbe. Aussteller aus Vorsorge, Pflege, Bestattung und Trauer – direktes strukturelles Marktumfeld für bestattungsplaner.ch als digitale Lead-Plattform.",
+        source: "Der Gartenbau",
+        url: "https://www.dergartenbau.ch/artikel/abschied26-neue-schweizer-fachmesse-fuer-vorsorge-pflege-und-trauer",
+        date: "2025/2026",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-12",
+      },
       // Neu: 12.04.2026
       {
         summary: "zeitlupe.ch / Pro Senectute: 'Digital vorgesorgt – Tooyoo bis Ende April gratis' (April 2026) – Pro Senectute bietet Schweizer Seniorinnen und Senioren bis Ende April 2026 über Docupass-Rabattcode einen Jahreszugang zur digitalen Vorsorge-Plattform Tooyoo gratis an. Tooyoo deckt ab: medizinische Vorsorge (Patientenverfügung, Vorsorgeauftrag), digitalen Nachlass und Abdankungsorganisation (Bestattungsart, Todesanzeige). Zeigt wachsende gesellschaftliche Institutionalisierung digitaler Vorsorge als Standard in der Schweiz – direktes Marktumfeld für bestattungsplaner.ch als digitaler Lead-Vermittler und Orientierungsplattform.",
