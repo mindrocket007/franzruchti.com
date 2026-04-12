@@ -26,6 +26,15 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 12.04.2026 (Recherche-Runde 2)
+      {
+        summary: "digitalswitzerland: 'Opportunitätskosten des ICT-Fachkräftemangels' – digitalswitzerland analysiert die volkswirtschaftlichen Kosten des Schweizer ICT-Fachkräftemangels: Zwei von drei ICT-Fachleuten arbeiten ausserhalb der ICT-Kernbranche – der Mangel trifft alle Sektoren der Wirtschaft. Erhebliche Opportunitätskosten durch unbesetzte Stellen unterstreichen die strategische Dringlichkeit von anerkannten ICT-Qualifikationsnachweisen als Instrument zur Fachkräftesicherung – direktes Marktargument für die Bedeutung staatlich anerkannter SIZ-Zertifikate.",
+        source: "digitalswitzerland",
+        url: "https://digitalswitzerland.com/de/opportunitatskosten-des-ict-fachkraftemangels/",
+        date: "2026",
+        category: "Bildungspolitik",
+        addedAt: "2026-04-12",
+      },
       // Neu: 12.04.2026
       {
         summary: "ICT-Berufsbildung Schweiz: 'ICT-Berufsbildung Schweiz schärft das Verbandsprofil' – Der nationale Verband richtet sich strategisch neu aus: Ziel ist die Etablierung als Kompetenzzentrum für die Digitalisierung der Berufsbildung in der Schweiz. Neue Stelle 'Head of Digitalization & Innovation' geschaffen, neue Website lanciert, neue Vision: 'Wir gestalten die ICT-Berufsbildung in der Schweiz für kompetente Fachkräfte – heute und morgen.' Direktes Signal für stärkere Marktpräsenz und Qualitätsstärkung im Umfeld von SIZ AG als führende anerkannte ICT-Prüfungsorganisation der Schweiz.",
@@ -978,6 +987,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 12.04.2026 (Recherche-Runde 2)
+      {
+        summary: "The Block: 'NinjaTrader launches in Europe as retail futures become a global expectation' – NinjaTrader expandiert nach Europa via CySEC-regulierten Broker PEDSL-CY, startet in den Niederlanden und Deutschland mit Plänen für Frankreich und Italien. Europäische Retail-Trader erhalten Zugang zu Futures-Kontrakten auf US- und europäischen Börsen. Zeigt strukturellen Megatrend: Futures-Trading wird globaler Retail-Standard – wachsendes Marktumfeld für algorithmische ES-Futures-Strategien wie bei Mind Rocket Trading.",
+        source: "The Block",
+        url: "https://www.theblock.co/post/387857/ninjatrader-launches-europe-retail-futures-become-global-expectation",
+        date: "2026-01",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-12",
+      },
       // Neu: 12.04.2026
       {
         summary: "oneuptrader.com: 'S&P 500 (ES) Technical Analysis – Recovery On The Cards' (April 2026) – ES-Futures erholten sich scharf vom Iran-Konflikt-Tief (6.300–6.400) zurück in die Widerstandszone 6.800–6.900, nachdem der US-Iran-Waffenstillstand am 7./8. April 2026 die Märkte stark nach oben trieb. Der Markt bleibt hochvolatil, da Trader sich primär nach dem geopolitischen Umfeld positionieren und technische Faktoren vorübergehend in den Hintergrund treten. Für algorithmische ES-Futures-Strategien wie bei Mind Rocket Trading: Bounce-Setups aus politischen Schocks sind klassische Chancen für regelbasierte Systeme – sofern Risikomanagement und Drawdown-Kontrolle greifen.",
@@ -2224,6 +2242,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 12.04.2026 (Recherche-Runde 2)
+      {
+        summary: "firmenevents-schweiz.ch: 'Anti-Burnout-Workshop: Erhöhen Sie Ihr Wohlbefinden und Ihre Produktivität' – Strukturierter Anti-Burnout-Workshop für Schweizer Unternehmen: Identifikation individueller Stressmuster, Erlernen von Resilienz-Techniken, Aufbau nachhaltiger Work-Life-Balance-Strategien. Wachsendes B2B-Angebot an präventiven BGM-Workshops zeigt steigenden Bedarf – bestätigt hypnovital® als skalierbares, digitales Komplementärangebot für mental gesunde Unternehmenskultur.",
+        source: "firmenevents-schweiz.ch",
+        url: "https://www.firmenevents-schweiz.ch/event/anti-burnout-workshop/",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-12",
+      },
+      {
+        summary: "Angestellte Schweiz: 'So beugst du einem Burnout vor' – Praxisguide des Interessenverbands Angestellte Schweiz: Frühwarnsignale erkennen, Grenzen setzen, Regenerationsroutinen aufbauen. Bestätigt: Burnout-Prävention ist 2026 ein Kernanliegen der Schweizer Arbeitnehmerschaft. Steigende gesellschaftliche Sensibilisierung für mentale Gesundheit am Arbeitsplatz – struktureller Rückenwind für niedrigschwellige Audio-Präventionsangebote wie hypnovital®.",
+        source: "Angestellte Schweiz",
+        url: "https://angestellte.ch/so-beugst-du-einem-burnout-vor",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-12",
+      },
       // Neu: 12.04.2026
       {
         summary: "IFBG: 'BGF-Kompass 2026' – Das Institut für Betriebliche Gesundheitsförderung veröffentlicht seinen praxiserprobten BGF-Kompass 2026 mit über 70 Massnahmen und förderfähigen Formaten. Schwerpunkte: mentale Gesundheit, Stressmanagement, Ernährung am Arbeitsplatz und spezifische Frauenthemen (mentale Last, Menopause). Nationale und internationale Gesundheitstage als Touchpoints für Sensibilisierungskampagnen. Wachsender strukturierter Markt für digitale BGM-Massnahmen – direktes Umfeld für hypnovital® als niedrigschwelliges Audio-Coaching-Angebot.",
@@ -2985,6 +3020,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 12.04.2026 (Recherche-Runde 2)
+      {
+        summary: "annakoschinski.de: 'Warum ich nicht weiter als 12 Wochen plane' – Praxisreflexion einer Unternehmerin: 12-Wochen-Planung schafft überschaubaren Fokus, verhindert Prokrastination durch Jahres-Endspurt und erzwingt regelmässige Strategie-Überprüfung. Organische Community rund um die 12-Week-Year-Methode von Brian Moran wächst – bestätigt steigende Nachfrage nach spezialisierten Planungs-Tools wie 12wy-planner.vercel.app.",
+        source: "annakoschinski.de",
+        url: "https://annakoschinski.de/projekte-planen/",
+        date: "2026",
+        category: "12 Week Year Methode",
+        addedAt: "2026-04-12",
+      },
+      {
+        summary: "tiladigital.com: 'Quartalsplanung statt nur Jahresplanung im Business' – Praktischer Leitfaden: Quartalsplanung (12-Wochen-Zyklen) statt reiner Jahresplanung erhöht Flexibilität, Messbarkeit und Motivationskurve. Vierteljährliche Überprüfung ermöglicht schnellere Kurskorrektur und verhindert das typische Jahres-Endspurt-Problem. Wachsende deutschsprachige Business-Community hinter 12-Wochen-Planungsmethodik – bestätigt Nachfrage nach fokussierten Planungs-Tools wie 12wy-planner.vercel.app.",
+        source: "tiladigital.com",
+        url: "https://tiladigital.com/blog/quartalsplanung-jahresplanung/",
+        date: "2026",
+        category: "Produktivität & Planung",
+        addedAt: "2026-04-12",
+      },
+      {
+        summary: "produktiv-sein.de: 'Quartalsplanung und Debriefing – warum beides für deinen Erfolg so wichtig ist' – Erklärt, warum regelmässige Quartalsplanung mit strukturiertem Debriefing die Erfolgsquote erhöht: Ziele werden nicht nur gesetzt, sondern aktiv nachverfolgt und bewertet. Kombination aus Planung und Reflexion ist der Kern der 12-Week-Year-Methode – bestätigt die methodische Tiefe, die 12wy-planner.vercel.app als spezialisiertes SaaS-Tool adressiert.",
+        source: "produktiv-sein.de",
+        url: "https://produktiv-sein.de/produktivitaets-blog/quartalsplanung-und-debriefing-warum-beides-fuer-deinen-erfolg-so-wichtig-ist/",
+        date: "2026",
+        category: "Produktivität & Planung",
+        addedAt: "2026-04-12",
+      },
       // Neu: 12.04.2026
       {
         summary: "ClickUp: 'Free 12-Week Year Templates to Crush Your Goals' – Die global führende Produktivitätsplattform ClickUp veröffentlicht 20 spezialisierte Templates für die 12-Week-Year-Methode: u.a. 12-Week Plan Template, Productivity Template und Goal Setting Templates. Alle Templates umfassen Visions-Framework, Wochenziele, Scorecard und Fortschrittstracking in verschiedenen Views (List, Board, Calendar). Die Integration der 12WY-Methode in eine Plattform mit Millionen-Nutzerbasis signalisiert endgültige Mainstream-Adoption – für 12wy-planner.vercel.app ein Argument, sich als methodisch tiefes Spezial-SaaS-Tool klar gegenüber generischen Template-Lösungen zu differenzieren.",
