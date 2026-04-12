@@ -1011,6 +1011,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
         category: "Trading-Technologie",
         addedAt: "2026-04-12",
       },
+      {
+        summary: "MasteryTrader Academy: 'NinjaTrader Prop Firm Setup Mistakes (2026)' – Detaillierter Praxisleitfaden zu den häufigsten Konfigurationsfehlern beim ersten Prop-Firm-Trade mit NinjaTrader: falsche Kontotyp-Auswahl (Live vs. Sim-Funded), fehlende Broker-Verknüpfung, veralteter R|Trader-Pro-Bridge (Version 14.17+ erforderlich). Wachsendes professionelles Ökosystem rund um NinjaTrader Prop Trading – bestätigt zunehmende Verbreitung und Relevanz algorithmischer ES-Futures-Strategien wie bei Mind Rocket Trading.",
+        source: "MasteryTrader Academy",
+        url: "https://masterytraderacademy.com/first-prop-firm-trade-ninjatrader/",
+        date: "2026",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-12",
+      },
+      {
+        summary: "TradeScope: 'Best Prop Firms for NinjaTrader Traders in 2026' – Aktueller Marktüberblick: Über 9 Prop Firms mit 60+ Account-Typen für NinjaTrader-Trader verfügbar (Apex, Topstep, MyFunded Futures u.a.). Branchenweites Enforcement von Professional Data Fees (~$124/Monat/Exchange) ab März 2026 nach CME-Klassifizierung funded Trader als 'Professional'. Neue Konsistenzregel 50% für alle 2026-Accounts eingeführt. Direktes Marktumfeld-Update für algorithmische NinjaTrader-Nutzer wie Mind Rocket Trading.",
+        source: "TradeScope",
+        url: "https://tradescope.dev/blog/best-prop-firms-for-ninjatrader-traders/",
+        date: "2026",
+        category: "Futures & Trading",
+        addedAt: "2026-04-12",
+      },
       // Neu: 11.04.2026 (Recherche-Runde 8)
       {
         summary: "TradeInformer: 'NinjaTrader launches white label for futures and prediction markets' (März 2026) – NinjaTrader Group hat mit NinjaTrader Connect eine vollständige White-Label-Infrastruktur für Futures und Prediction Markets lanciert. Die Plattform richtet sich explizit an Fintechs, Brokerages und Handelsplattformen, die regulierte Futures und Prediction-Markets-Produkte unter ihrer eigenen Marke anbieten wollen – ohne eigene technische Infrastruktur aufzubauen. Branchenmedium TradeInformer bestätigt den strategischen B2B-Schwenk von NinjaTrader als Reaktion auf den Prediction-Markets-Boom. Für algorithmische Trader wie Mind Rocket Trading belegt dies die wachsende institutionelle Reife der NinjaTrader-Ökosphäre.",
@@ -1830,6 +1846,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         category: "Buchmarkt & Publishing",
         addedAt: "2026-04-12",
       },
+      {
+        summary: "Urban List: '27 Self-Help Books Worth Reading In 2026' – Kuratierte Liste der empfehlenswertesten Selbsthilfe-Bücher 2026 mit breiter internationaler Reichweite. Belegt anhaltend hohe kulturelle Relevanz und Kaufbereitschaft für Persönlichkeitsentwicklungs-Inhalte. Wachsendes Interesse an praxisorientierten Mental-Health-Tools und Selbsthilfe-Content – direktes positives Marktumfeld für mindtools.ch mit PDF-basierten Persönlichkeitsentwicklungs-Werkzeugen.",
+        source: "Urban List",
+        url: "https://www.theurbanlist.com/a-list/best-self-help-books",
+        date: "2026",
+        category: "Buchmarkt & Publishing",
+        addedAt: "2026-04-12",
+      },
       // Neu: 11.04.2026 (Recherche-Runde 3)
       {
         summary: "coachingausbildungen.ch: 'Coaching-Markt Schweiz – Trends 2025/2026, Analyse' – 2026 konsolidiert sich der Schweizer Coaching-Markt: Erwartungen an Tiefe, Seriosität und methodische Vielfalt steigen. Hybride Formate (Online + Präsenz) sind Standard. Coaching wird von einem Boom-Markt zu einem reifen, anspruchsvollen Markt. Individuelle Selbsthilfe-Tools und klare Positionierung werden zum entscheidenden Wettbewerbsvorteil – direktes Marktumfeld für mindtools.ch mit PDF-basierten Persönlichkeitsentwicklungs-Werkzeugen.",
@@ -2222,6 +2246,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         source: "BBGM",
         url: "https://bbgm.de/blog/2026/04/08/neue-handreichungen/",
         date: "2026-04-08",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-12",
+      },
+      {
+        summary: "ad-hoc-news.de: 'Betriebliches Gesundheitsmanagement wird 2026 zur wirtschaftlichen Pflicht' – BGM ist 2026 nicht mehr nur Kostenfaktor, sondern wirtschaftliche Notwendigkeit: Unternehmen, die in mentale Gesundheit und Mitarbeiterwohl investieren, erzielen nachweislich bessere Geschäftsergebnisse. Psychische Erkrankungen verursachen jährlich Produktionsausfälle von über 15 Mrd. Euro. Direktes strukturelles Marktargument für hypnovital® als niedrigschwelliges, skalierbares Audio-BGM-Programm zur Burnout-Prävention.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/betriebliches-gesundheitsmanagement-wird-2026-zur-wirtschaftlichen-pflicht/68500400",
+        date: "2026",
         category: "BGM & Gesundheit",
         addedAt: "2026-04-12",
       },
@@ -3410,6 +3442,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         source: "die-hypnose-therapie.de",
         url: "https://www.die-hypnose-therapie.de/hypnose_bei/sexuelle_probleme/vorzeitiger_samenerguss/vorzeitiger_samenerguss_ejaculatio_praecox.html",
         date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-12",
+      },
+      {
+        summary: "Springer Nature: 'Guter Sex dank Selbsthypnose – So behandeln Sie Ihre sexuellen Probleme' – Wissenschaftlicher Ratgeber aus 30 Jahren Sexualtherapie- und Hypnotherapie-Praxis: Selbsthypnose als wirkungsvolle Methode bei sexuellen Funktionsstörungen inkl. Ejaculatio praecox. Bestätigt wissenschaftliche Akzeptanz und das Marktpotenzial für Hypnose-basierte Selbsthilfeprogramme bei sexuellen Problemen – direkte Wirkprinzip-Validierung für orgasmus-hinauszoegern.de.",
+        source: "Springer Nature",
+        url: "https://link.springer.com/book/10.1007/978-3-662-62379-4",
+        date: "2021",
         category: "Hypnose & Therapie",
         addedAt: "2026-04-12",
       },
