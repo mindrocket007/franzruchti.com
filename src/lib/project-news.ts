@@ -792,6 +792,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
+      // Neu: 12.04.2026
+      {
+        summary: "Suva: 'Ist Burn-out eine Berufskrankheit?' – Die Suva (Schweizerische Unfallversicherungsanstalt) klärt auf: Burn-out ist in der Schweiz keine anerkannte Berufskrankheit, aber ein ernstzunehmendes Erschöpfungssyndrom mit wachsender gesellschaftlicher Relevanz. Wichtigste Präventionsmassnahmen: Stressmanagement, Ressourcenstärkung und individuelle Coachingangebote. Jede dritte Person in der Schweiz leidet unter psychischen Problemen – bestätigt wachsende Nachfrage nach niedrigschwelligen, digitalen Coaching- und Persönlichkeitsentwicklungs-Programmen wie jenen der Mind Rocket GmbH.",
+        source: "Suva",
+        url: "https://www.suva.ch/de-ch/ueber-uns/magazin-und-medien/magazin/ist-ein-burn-out-eine-berufskrankheit",
+        date: "2026",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-04-12",
+      },
       // Neu: 11.04.2026
       {
         summary: "anyhelpnow.com: 'Life Coaching Trends 2026: Innovative Methoden für persönliche Transformation' – Drei prägende Trends: KI-gestützte Selbstreflexion (personalisierte Lernpfade jenseits menschlicher Analysemöglichkeiten), hybride Coaching-Formate (virtuell + Präsenz) und ganzheitliche Wellnessansätze. Business-Model-Innovation: Memberships und Jahresprogramme statt Einzelsitzungen reduzieren Akquisitionskosten drastisch. Für Mind Rocket GmbH als Anbieter digitaler Coaching- und Persönlichkeitsentwicklungs-Programme bestätigt dies den Kurs auf skalierbare, hybrid verfügbare Angebote.",
@@ -3315,6 +3324,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 12.04.2026
+      {
+        summary: "die-hypnose-therapie.de: 'Vorzeitiger Samenerguss / Ejaculatio Praecox – Hypnosetherapie' – Umfassendes Therapieprofil: Hypnose wirkt auf unbewusste Konditionierungsmuster, die dem vorzeitigen Samenerguss zugrunde liegen, und kombiniert direkte Suggestionen mit erlernbaren Selbsthypnosetechniken für langfristige Eigenregulation. Erfolgsbilanz von ca. 83% laut Studie (2018). Zeigt wachsende Marktakzeptanz für hypnosebasierte Selbsthilfe-Lösungen im DACH-Raum – direktes Marktumfeld für das Audio-Programm orgasmus-hinauszoegern.de.",
+        source: "die-hypnose-therapie.de",
+        url: "https://www.die-hypnose-therapie.de/hypnose_bei/sexuelle_probleme/vorzeitiger_samenerguss/vorzeitiger_samenerguss_ejaculatio_praecox.html",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-12",
+      },
       // Neu: 11.04.2026 (Recherche-Runde 4)
       {
         summary: "Sequoia Health (sequoia.health/de): Neue digitale Plattform für männliche sexuelle Gesundheit – bietet individuelle Empfehlungen, Fachberatung, Tracking-Tools und multidimensionale Selbstauskunft-Instrumente für Männer. Wachsendes digitales Angebot im Bereich männliche Sexualgesundheit normalisiert das Thema und erhöht die Suchnachfrage nach niedrigschwelligen Selbsthilfe-Produkten wie orgasmus-hinauszoegern.de.",
@@ -3652,6 +3670,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 12.04.2026
+      {
+        summary: "joweissco.de: 'Hypnose bei Redeangst – Endlich frei vor anderen sprechen' – Erklärt den Mechanismus hypnosebasierter Redeangst-Therapie: Angst entsteht durch unbewusste Konditionierung; Hypnose arbeitet direkt im Unterbewusstsein und löst diese Muster auf. Fallbeispiele zeigen nachhaltige Besserung bereits nach wenigen Sitzungen. Wachsendes deutschsprachiges Angebot professioneller Hypnose-Dienstleister im Segment Redeangst belegt Marktakzeptanz und Kaufbereitschaft für skalierbare Audio-Selbsthilfealternativen wie lampenfieber-besiegen.de.",
+        source: "joweissco.de",
+        url: "https://www.joweissco.de/hypnose-bei-redeangst",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-12",
+      },
       // Neu: 11.04.2026 (Recherche-Runde 3)
       {
         summary: "innermotion.de: 'Therapie von Redeangste und Lampenfieber 2026' – Münchner Angst- und Paniktherapie-Praxis (Heilpraktiker mit EMDR, Wingwave, Hypnose) beschreibt multimodalen Behandlungsansatz: Kombination aus Wingwave, Hypnoanalyse, Coaching und Psychotherapie. Bereits 2–3 Sitzungen genügen häufig, um Redeangst und Lampenfieber nachhaltig zu reduzieren und Sicherheit zu integrieren. Wachsende professionelle Nachfrage nach spezialisierten Therapieangeboten im DACH-Raum bestätigt Marktpotenzial für skalierbare Selbsthilfe-Alternativen wie lampenfieber-besiegen.de.",
@@ -4640,6 +4667,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 12.04.2026
+      {
+        summary: "Wrike: 'Wie Sie OKRs für Quartals- und Jahresplanung verwenden' – Praxisleitfaden für strategische Marketing- und Unternehmensplanung mit OKRs: Ziele (Objectives) und messbare Schlüsselergebnisse (Key Results) definieren, Quartalszyklus für Marketingkampagnen nutzen und KPI-Tracking integrieren. Kombination von OKR-Methodik mit klassischen Analyse-Frameworks (SWOT, PESTEL) als Best Practice für 2026. Bestätigt wachsende Nachfrage nach strukturierten digitalen Planungstools – direktes Marktumfeld für das interaktive Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "Wrike",
+        url: "https://www.wrike.com/blog/okrs-quarterly-planning/",
+        date: "2026",
+        category: "Strategie & Analyse",
+        addedAt: "2026-04-12",
+      },
       // Neu: 11.04.2026 (Recherche-Runde 3)
       {
         summary: "kundenmarketing.ch: 'Online-Marketing-Strategie 2026 – Das Geheimnis für erfolgreiches KMU Marketing!' – Schweizer Praxisanleitung für KMU: Zielgruppen-Definition, Wettbewerbsanalyse, Multi-Channel-Strategie und KPI-Tracking. GEO (Generative Engine Optimization) und KI-gestützter Content ergänzen klassische SEO als neue Pflichtdisziplinen. Zeigt wachsenden Bedarf nach strukturierten Planungs- und Analysetools für KMU – direktes Marktumfeld für das Marketingkonzept-Tool auf learnfluencer.ch.",
