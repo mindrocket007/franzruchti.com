@@ -1965,6 +1965,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 13.04.2026
       {
+        summary: "Mindtools.com: 'Product Update February 2026' – Marktführer MindTools (mindtools.com, 27 Mio. Nutzer/Jahr) lanciert fünf neue Bite-Sized-Masterclasses für Manager direkt von führenden Denkern des Fachgebiets. Neue Kineo-Kurse zu ethischer Führung und Infektionsprävention am Arbeitsplatz ergänzen die Plattform. Der globale Wettbewerber auf dem grossen mindtools.com stärkt seinen Markenvorsprung gegenüber dem kleineren mindtools.ch und verdeutlicht die Notwendigkeit einer klaren Nischenpositionierung für das Schweizer Angebot.",
+        source: "Mindtools.com",
+        url: "https://www.mindtools.com/blog/mindtools-product-update-february-2026/",
+        date: "2026-02",
+        category: "Buchmarkt & Publishing",
+        addedAt: "2026-04-13",
+      },
+      {
         summary: "headletic.de: 'Persönlichkeitsentwicklung Bücher – Die 10 besten für 2026' – Kuratierte deutschsprachige Buchempfehlungsliste für persönliche Weiterentwicklung 2026: Praktische Ratgeber für Mindset, Gewohnheiten, Resilienz und mentale Stärke. Zeigt anhaltend hohe Nachfrage nach strukturierten, praxisorientierten Persönlichkeitsentwicklungs-Ressourcen im DACH-Raum – direktes Marktumfeld für mindtools.ch als ergänzende digitale Plattform mit PDF-Selbsthilfe-Werkzeugen und mentalen Tools.",
         source: "headletic.de",
         url: "https://headletic.de/persoenlichkeitsentwicklung-buchempfehlungen/",
@@ -3188,6 +3196,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 13.04.2026
       {
+        summary: "blog.mean.ceo: 'B2B SaaS Trends | April 2026 (Startup Edition)' – KI-Tools entwickeln sich von Assistenten zu autonomen Entscheidungsträgern; agentic AI übernimmt End-to-End-Workflows ohne kontinuierliche menschliche Eingabe. AI-native SaaS-Startups verzeichnen 75% mehr Investitionen YoY. Bis zur Hälfte aller Unternehmen investieren 2026 über 50% ihres Digitalisierungsbudgets in KI-Automation. Zeigt das rasante Wachstum des Produktivitäts-SaaS-Markts – strategisches Umfeld für den 12wy-planner als fokussiertes, AI-integrierbares Kurzzyklus-Planungstool.",
+        source: "blog.mean.ceo",
+        url: "https://blog.mean.ceo/b2b-saas-trends-april-2026/",
+        date: "2026-04",
+        category: "SaaS & Tools",
+        addedAt: "2026-04-13",
+      },
+      {
         summary: "okrstool.com: '25 Best OKR Software for 2026 (100% Tested)' – Kuratierter Vergleich der besten OKR-Software-Tools 2026: AI-gestützte Zielsetzungshilfen, automatisches Tracking und einfache Team-Alignierung als neue Standards. Tools wie Tability, Weekdone und Range dominieren durch KI-Ziel-Editor, Fortschrittsanalyse und asynchrone Check-Ins. Wachsender SaaS-Markt für strukturierte Zielplanung und Produktivitäts-Tracking – direktes Wettbewerbs- und Marktumfeld für den spezialisierten 12wy-planner als fokussiertes 12-Week-Year-Tool.",
         source: "okrstool.com",
         url: "https://www.okrstool.com/blog/best-okr-software",
@@ -3640,6 +3656,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "orgasmus": {
     news: [
       // Neu: 13.04.2026
+      {
+        summary: "GoSpring.de: 'Vorzeitigen Samenerguss erfolgreich behandeln' – Umfassender deutschsprachiger Ratgeber zu allen Behandlungsmethoden: medikamentös (Dapoxetin, Fortacin Spray), lokal (Lidocain, GoLonger Kondom), verhaltensbasiert (Start-Stopp, Squeeze-Methode) und Beckenbodentraining. Wachsende Akzeptanz für niedrigschwellige digitale Informationsangebote und Selbsthilfe-Produkte für Männergesundheit – bestätigt die Marktrelevanz von orgasmus-hinauszoegern.de als komplementäres, nicht-medikamentöses Hypnose-Audioprogramm.",
+        source: "GoSpring.de",
+        url: "https://www.gospring.de/ratgeber/vorzeitiger-samenerguss/behandlung",
+        date: "2026",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-13",
+      },
       {
         summary: "hypnose-empfehlung.ch: 'Hypnose gegen vorzeitigen Samenerguss' – Schweizerisches Hypnose-Empfehlungsportal erklärt: Hypnose kann die unbewussten Verhaltensmuster, die zu vorzeitigem Samenerguss führen, direkt adressieren. Selbsthypnose-Audiodateien gelten als wirksame, diskrete Alternative für Männer, die keine persönliche Therapiesitzung wünschen. Wachsende Akzeptanz digitaler Audio-Selbsthilfe-Angebote im DACH-Raum bestätigt Marktrelevanz von orgasmus-hinauszoegern.de als niedrigschwellige Online-Lösung.",
         source: "hypnose-empfehlung.ch",
