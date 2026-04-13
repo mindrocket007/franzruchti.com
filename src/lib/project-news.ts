@@ -1062,6 +1062,39 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 13.04.2026 (Recherche-Runde 4)
+      {
+        summary: "WilmerHale (17. März 2026): 'CFTC Seeks Public Input on Prediction Markets Regulation' – Die US-Commodity Futures Trading Commission (CFTC) sucht öffentlichen Input zur Regulierung von Prediction Markets und Event Contracts. Die CFTC prüft Einordnung von Wetten auf politische, wirtschaftliche und gesellschaftliche Ereignisse im bestehenden Futures-Regelwerk. Zunehmende Regulierungsaufmerksamkeit auf algorithmische Handels- und Prop-Trading-Aktivitäten – relevantes regulatorisches Marktumfeld für algorithmische ES-Futures-Trader wie Mind Rocket Trading.",
+        source: "WilmerHale",
+        url: "https://www.wilmerhale.com/en/insights/client-alerts/20260317-cftc-seeks-public-input-on-prediction-markets-regulation",
+        date: "2026-03-17",
+        category: "Regulierung",
+        addedAt: "2026-04-13",
+      },
+      {
+        summary: "Morgan Lewis (März 2026): 'CFTC and Division of Market Oversight Issue Two Releases on Prediction Markets and Event Contracts' – CFTC und Division of Market Oversight veröffentlichen Stellungnahmen zur Regulierung von Prediction Markets und Event Contracts: Klärungsbedarf zu CFTC-Jurisdiktion, DCM-Anforderungen und Retail-Investor-Schutz. Zunehmende regulatorische Fokussierung der CFTC auf Futures-nahe Märkte – direkt relevantes regulatorisches Umfeld für prop-finanzierte algorithmische ES-Futures-Trader wie bei Mind Rocket Trading.",
+        source: "Morgan Lewis",
+        url: "https://www.morganlewis.com/pubs/2026/03/cftc-and-division-of-market-oversight-issue-two-releases-on-prediction-markets-and-event-contracts",
+        date: "2026-03",
+        category: "Regulierung",
+        addedAt: "2026-04-13",
+      },
+      {
+        summary: "New York City Servers: 'Prop Firm Rule Changes for 2026: What's Coming and How to Prepare' – Erwartete regulatorische Änderungen für Prop Firms 2026: CFTC- und FCA-Registrierungspflicht, CTA-Klassifizierung für evaluationsbasierte Prop Firms, strengere KYC/AML-Anforderungen, formelle Profit-Split-Transparenz, standardisierte News-Trading-Blackout-Perioden und erhöhte Kapitaladäquanzstandards. Direkte strategische Relevanz für prop-finanzierte algorithmische ES-Futures-Trader wie Mind Rocket Trading (Apex Prop Firm).",
+        source: "New York City Servers",
+        url: "https://newyorkcityservers.com/blog/prop-firm-rule-changes-2026",
+        date: "2026",
+        category: "Regulierung",
+        addedAt: "2026-04-13",
+      },
+      {
+        summary: "Tradeify: 'Futures Prop Firm Statistics in 2026' – Aktuelle Statistiken und Marktdaten zu Futures Prop Firms 2026: Wachstum des Prop-Firm-Sektors trotz Regulierungsdruck, Verlagerung von Forex zu Futures Prop Firms nach regulatorischen Einschränkungen, NinjaTrader als führende Plattform für algorithmische Futures-Strategien. Wachsender Markt bestätigt die strategische Relevanz algorithmischer ES-Futures-Systeme wie bei Mind Rocket Trading.",
+        source: "Tradeify",
+        url: "https://tradeify.co/post/futures-prop-firm-statistics-2026",
+        date: "2026",
+        category: "Futures & Trading",
+        addedAt: "2026-04-13",
+      },
       // Neu: 13.04.2026 (Recherche-Runde 3)
       {
         summary: "Bloomberg (10. April 2026): 'Goldman Traders See Record Fast-Money Heading Into US Stocks' – Goldman Sachs Trader-Desk: Algorithmische/systematische Fonds (CTAs) stehen nach extremer Untergewichtung (Verkauf von ~$48 Mrd. S&P-500-Futures in einem Monat) kurz vor historischer Kaufwelle. Rekordhohe Fast-Money-Flows in US-Aktien erwartet. CTAs folgen Preistrends statt Fundamentaldaten – bei Momentum-Drehen entstehen starke, schnelle Bewegungen in ES-Futures. Für algorithmische ES-Futures-Strategien wie bei Mind Rocket Trading: CTA-Reinvestition ist klassischer Volatilitätsbeschleuniger und Trendverstärker in ES.",
@@ -5773,6 +5806,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 13.04.2026 (Recherche-Runde 3)
+      {
+        summary: "SWI swissinfo.ch: 'Individuelle und anonyme Bestattungen im Trend' – SWI swissinfo.ch dokumentiert den gesellschaftlichen Wandel in der Schweizer Bestattungskultur: Klassische Erdbestattung im Sarg rückläufig, individuelle und anonyme Formen (Urne nach Hause, Waldbestattung, Gletscherbeisetzung, Naturbestattung) auf dem Vormarsch. Schweizer Sonderrecht erlaubt, die Urne nach Kremation nach Hause zu nehmen. Demografischer Wandel hin zu individualisierten Abschieden stärkt die Nachfrage nach unabhängigen Online-Bestattungsplanungsportalen wie bestattungsplaner.ch als erste neutrale Orientierungshilfe.",
+        source: "SWI swissinfo.ch",
+        url: "https://www.swissinfo.ch/ger/leben-und-altern/individuelle-und-anonyme-bestattungen-im-trend/7633700",
+        date: "2024",
+        category: "Markt & Trends",
+        addedAt: "2026-04-13",
+      },
       // Neu: 13.04.2026 (Recherche-Runde 2)
       {
         summary: "Age-Stiftung Schweiz: 'Letzte Reise – Interaktiver Bestattungsplaner für Gemeinden' – Die Schweizer Age-Stiftung fördert das Projekt letztereise.ch: Interaktiver Online-Bestattungsplaner als Orientierungshilfe für Gemeinden und Bürger bei der Planung ihrer letzten Ruhe. Beta-Version wird bis 2026 zur Marktreife weiterentwickelt. Zeigt: Öffentliche und non-profit Institutionen in der Schweiz erkennen den gesellschaftlichen Bedarf für digitale Bestattungsplanung – bestätigt die Marktrelevanz digitaler Planungsportale wie bestattungsplaner.ch.",
