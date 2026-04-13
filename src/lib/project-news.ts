@@ -1062,6 +1062,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 13.04.2026 (Recherche-Runde 3)
+      {
+        summary: "Bloomberg (10. April 2026): 'Goldman Traders See Record Fast-Money Heading Into US Stocks' – Goldman Sachs Trader-Desk: Algorithmische/systematische Fonds (CTAs) stehen nach extremer Untergewichtung (Verkauf von ~$48 Mrd. S&P-500-Futures in einem Monat) kurz vor historischer Kaufwelle. Rekordhohe Fast-Money-Flows in US-Aktien erwartet. CTAs folgen Preistrends statt Fundamentaldaten – bei Momentum-Drehen entstehen starke, schnelle Bewegungen in ES-Futures. Für algorithmische ES-Futures-Strategien wie bei Mind Rocket Trading: CTA-Reinvestition ist klassischer Volatilitätsbeschleuniger und Trendverstärker in ES.",
+        source: "Bloomberg",
+        url: "https://www.bloomberg.com/news/articles/2026-04-10/goldman-traders-see-record-fast-money-heading-into-us-stocks",
+        date: "2026-04-10",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-13",
+      },
+      {
+        summary: "Investing.com / Goldman Sachs (April 2026): 'Goldman Sachs sees record algo-driven stock buying ahead' – Goldman Sachs analysiert: Systematische Fonds bereit, rekordhohe ~$55 Mrd. in US-Aktien (davon ~$20 Mrd. in US-Aktien direkt) zu deployen – nach Iran-Konflikt-bedingtem Sell-off auf Mehrjahres-Tief in der Positionierung. Algorithmische CTAs kaufen und verkaufen Futures mechanisch nach Preistrends; aktuell extremes Untergewicht schafft technische Kaufzwangslage. Direkte Implikation für ES-Futures: erhöhte algorithmische Aktivität und Richtungsimpulse – präzises Marktumfeld für regelbasierte ES-Futures-Strategien wie bei Mind Rocket Trading.",
+        source: "Investing.com / Goldman Sachs",
+        url: "https://www.investing.com/news/stock-market-news/goldman-sachs-sees-record-algodriven-stock-buying-ahead-93CH-4608376",
+        date: "2026-04",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-13",
+      },
       // Neu: 13.04.2026 (Recherche-Runde 2)
       {
         summary: "CatInAtheBroker: 'Apex Trader Funding Rule Changes in 2026' – Apex Trader Funding (führende Futures Prop Trading Firm) implementiert per März 2026 fundamentale Regeländerungen: neues One-Time-Payment (OTP) Modell ohne monatliche Gebühren, strenges 30-Tage-Evaluierungsfenster, End-of-Day (EOD) Drawdown-Konten für mehr Intraday-Flexibilität, Edelmetall-Futures (Gold, Silber, Kupfer, Platin) dauerhaft eingestellt. Direkter Einfluss auf das Umfeld prop-finanzierter algorithmischer ES-Futures-Trader wie bei Mind Rocket Trading.",
@@ -4598,6 +4615,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 13.04.2026 (Recherche-Runde 3)
+      {
+        summary: "SVEB (alice.ch): 'SVEB lanciert Hackathon zum Thema KI in der Weiterbildung' (März 2026) – Schweizer Verband für Weiterbildung (SVEB) führt ersten KI-Hackathon (11./12. März 2026, Zürich) durch: Weiterbildungsexperten, Bildungsorganisationen, Trainer und Behördenvertreter erarbeiten gemeinsam praxisnahe KI-Anwendungskonzepte für die Weiterbildung. Leitfrage: Wie kann KI sinnvoll und gewinnbringend in der Weiterbildung eingesetzt werden? SVEB-Commitment: KI-Kompetenz für alle zugänglich machen. Direktes institutionelles Signal für wachsende Nachfrage nach praxisnahem KI-Lernkompetenz-Content – strategisches Kernthema von learnfluencer.ch.",
+        source: "SVEB / alice.ch",
+        url: "https://alice.ch/de/news/sveb-lanciert-hackathon-zum-thema-ki-in-der-weiterbildung/",
+        date: "2026-03",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-13",
+      },
+      {
+        summary: "SVEB (alice.ch): 'Innovationspreise: KI-Lösungen für die Weiterbildung gesucht' (2026) – Der Schweizer Verband für Weiterbildung schreibt Innovationspreise für wegweisende KI-Lösungen im Bereich Weiterbildung aus. Institutionelle Förderung und Preisausschreibungen zeigen: Die Schweizer Weiterbildungsbranche investiert aktiv in KI-getriebene Lernlösungen und sucht zukunftsweisende Anwendungsfälle. Wachsende Institutionalisierung von KI in der Weiterbildung – direktes Marktumfeld für learnfluencer.ch als Thought-Leadership-Plattform für KI-Lernkompetenz in der digitalen Transformation.",
+        source: "SVEB / alice.ch",
+        url: "https://alice.ch/de/news/wettbewerbe-ki-loesungen-fuer-die-weiterbildung-gesucht/",
+        date: "2026",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-13",
+      },
       // Neu: 13.04.2026 (Recherche-Runde 2)
       {
         summary: "swissnova.swiss: 'Weiterbildung für Unternehmen in der Schweiz: 10 Trends für 2026' – Zehn massgebliche Trends für Unternehmensweiterbildung in der Schweiz 2026: KI-gestützte Personalisierung, Microlearning, hybride Lernformate, Kompetenzorientierung und kontinuierliches Lernen als neue Standards. Lernkompetenz wird zur Kernkompetenz am Schweizer Arbeitsmarkt – direktes Themenumfeld für learnfluencer.ch als Thought-Leadership-Plattform für Lernkompetenz in der digitalen Transformation.",
