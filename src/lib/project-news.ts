@@ -26,6 +26,23 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 13.04.2026
+      {
+        summary: "EHB und ICT-Berufsbildung Schweiz: Gemeinsame Schulungs- und Informationsveranstaltungen zum neuen nationalen Standardisierungs- und Qualitätssystem für die ICT-Grundbildung – Blended-Learning-Format mit Präsenzteil für praktischen Austausch. EHB unterstützt Berufsfachschullehrpersonen und üK-Instruktoren bei der Umsetzung der neuen Bildungsverordnung. Systemische Qualitätssicherung der ICT-Grundbildung stärkt das Fundament, auf dem SIZ AG als staatlich anerkannte Prüfungsorganisation aufbaut.",
+        source: "EHB / ICT-Berufsbildung Schweiz",
+        url: "https://www.ehb.swiss/ehb-und-ict-berufsbildung-schweiz-schulen-und-informieren",
+        date: "2026",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-13",
+      },
+      {
+        summary: "ICT-Berufsbildung Schweiz / SBFI: 'Generative KI-Integration in der Berufsbildung' – ICT-Berufsbildung Schweiz erstellt mit Unterstützung des SBFI einen umfassenden Erfahrungsbericht zur Integration und Anwendung von KI in der höheren Berufsbildung: konkrete Anwendungsszenarien, Herausforderungen, Lösungsansätze und Best Practices. Ziel: Akzeptanz und Verständnis für KI in der Bildung fördern – positioniert SIZ als anerkannte Prüfungsorganisation im Umfeld einer sich aktiv KI-integrierenden Berufsbildungslandschaft.",
+        source: "ICT-Berufsbildung Schweiz / SBFI",
+        url: "https://www.ict-berufsbildung.ch/projekte/digitalisierung/generative-ki-integration-in-der-berufsbildung",
+        date: "2026",
+        category: "Bildungspolitik",
+        addedAt: "2026-04-13",
+      },
       // Neu: 12.04.2026 (Recherche-Runde 2)
       {
         summary: "digitalswitzerland: 'Opportunitätskosten des ICT-Fachkräftemangels' – digitalswitzerland analysiert die volkswirtschaftlichen Kosten des Schweizer ICT-Fachkräftemangels: Zwei von drei ICT-Fachleuten arbeiten ausserhalb der ICT-Kernbranche – der Mangel trifft alle Sektoren der Wirtschaft. Erhebliche Opportunitätskosten durch unbesetzte Stellen unterstreichen die strategische Dringlichkeit von anerkannten ICT-Qualifikationsnachweisen als Instrument zur Fachkräftesicherung – direktes Marktargument für die Bedeutung staatlich anerkannter SIZ-Zertifikate.",
@@ -987,6 +1004,39 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 13.04.2026
+      {
+        summary: "The Motley Fool: 'S&P 500 Update This Week: 4 Signals to Watch After Delta's Earnings' (12. April 2026) – Wochenrückblick KW 15: S&P 500 bei 5'672 (+0.1% am Freitag), Q1-Earnings-Saison startet positiv (47 Berichte, im Schnitt +4.2% über EPS-Erwartungen vs. hist. +3%). Risikofaktoren: neue US-Zölle (25%) auf Elektronik und Autoteile ab 10. April, 20% des S&P-500-Marktkapitals mit China-Exposure. Für algorithmische ES-Futures-Strategien wie bei Mind Rocket Trading: Earnings-Surprises und Zoll-Eskalationen sind klassische Intraday-Volatilitätskatalysatoren.",
+        source: "The Motley Fool",
+        url: "https://www.fool.com/investing/2026/04/12/sp-500-update-this-week-4-signals-to-watch-after-s/",
+        date: "2026-04-12",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-13",
+      },
+      {
+        summary: "The Motley Fool: 'The Stock Market Just Flashed a Buy Signal. History Says the S&P 500 Will Do This Next.' (7. April 2026) – AAII Sentiment Survey: bearish Sentiment bei 51.4% am 2. April – extremer Pessimismus-Ausreisser. Historisch (seit 1987): S&P 500 stieg in den 12 Monaten nach Bearish-Readings über 50% im Durchschnitt um +16%, Median-Prognose 7'636 bis Dezember 2026. Konträre Stimmungssignale sind klassische taktische Einstiegsindikatoren für trend-folgende algorithmische ES-Futures-Strategien wie bei Mind Rocket Trading.",
+        source: "The Motley Fool",
+        url: "https://www.fool.com/investing/2026/04/07/stock-market-flash-buy-signal-sp-500-do-this-next/",
+        date: "2026-04-07",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-13",
+      },
+      {
+        summary: "ad-hoc-news.de: 'S&P 500 Holds Steady Amid Tariff Uncertainty and Earnings Anticipation' (April 2026) – S&P 500 stabilisiert sich trotz neuer US-Zölle (25% auf Elektronik und Autoteile ab 10. April). Q1-Earnings-Saison liefert erste positive Überraschungen: JPMorgan und Wells Fargo mit starken Nettozinseinnahmen. Marktlage: volatile Seitwärtsbewegung zwischen geopolitischen Schocks und fundamentaler Stärke – präzises Marktumfeld für regelbasierte algorithmische ES-Futures-Strategien wie bei Mind Rocket Trading.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/s-and-p-500-holds-steady-amid-tariff-uncertainty-and-earnings-anticipation/69134485",
+        date: "2026-04",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-13",
+      },
+      {
+        summary: "IndexBox: 'S&P 500 2026 Performance & Strategy: Riding Out Volatility for Long-Term Gains' – YTD-Performance: S&P 500 -4% durch Zollpolitik, Iran-Konflikt und Ölpreisschock. Analyse: Historisch generieren Korrekturen von >5% langfristig überdurchschnittliche Renditen für Anleger mit klarem Plan. Aktuelle Volatilitätsstruktur zeigt erhöhte Chancen für regelbasierte Einstiegssysteme – direktes Argument für algorithmische ES-Futures-Strategien mit definierten Ein- und Ausstiegsregeln wie bei Mind Rocket Trading.",
+        source: "IndexBox",
+        url: "https://www.indexbox.io/blog/sp-500-down-4-in-2026-navigating-market-volatility-with-a-long-term-view/",
+        date: "2026-04",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-13",
+      },
       // Neu: 12.04.2026 (Recherche-Runde 3)
       {
         summary: "CNBC: 'Stocks extend relief rally on hopes that U.S.-Iran ceasefire will stick, Dow turns positive for 2026' (8. April 2026) – S&P 500 +2.51% auf 6'782.81, Nasdaq +2.80% auf 22'635.00 nach US-Iran-Waffenstillstand-Bekanntgabe. Dow dreht ins Plus für 2026. Zweite Erholungswelle nach dem April-Tief (~6'310) bestätigt explosive Volatilität bei geopolitischen Entspannungssignalen – typisches Chancenumfeld für algorithmische ES-Futures-Strategien mit definierten Einstiegsregeln wie bei Mind Rocket Trading.",
