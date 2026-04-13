@@ -1046,6 +1046,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         category: "Markt & Wirtschaft",
         addedAt: "2026-04-13",
       },
+      {
+        summary: "livestreamtrading.com: 'Apex Trader Funding Review 2026: Rules, Payouts & Discount Code' – Detaillierter Review der marktführenden Futures-Prop-Firma Apex Trader Funding: Kompletter Neuaufbau der Programmstruktur per 1. März 2026 – schneller, klarer und trader-freundlicher. Keine Mindesttradingdays zum Bestehen, Auszahlungen ab 5 Trading-Tagen, keine Auszahlungsverweigerungen bei Regelkonformität, 100% Profit-Split für funded Accounts. Zwei Drawdown-Modelle (EOD und Intraday Trailing). Platforms: Rithmic, Tradovate, WealthCharts – inkl. NinjaTrader. Über 718 Mio. USD ausgezahlt seit 2022. Als führende Plattform für algorithmische ES-Futures-Händler direkt relevant für das Marktumfeld von Mind Rocket Trading.",
+        source: "livestreamtrading.com",
+        url: "https://livestreamtrading.com/apex-funded-trader-review/",
+        date: "2026",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-13",
+      },
       // Neu: 12.04.2026 (Recherche-Runde 3)
       {
         summary: "CNBC: 'Stocks extend relief rally on hopes that U.S.-Iran ceasefire will stick, Dow turns positive for 2026' (8. April 2026) – S&P 500 +2.51% auf 6'782.81, Nasdaq +2.80% auf 22'635.00 nach US-Iran-Waffenstillstand-Bekanntgabe. Dow dreht ins Plus für 2026. Zweite Erholungswelle nach dem April-Tief (~6'310) bestätigt explosive Volatilität bei geopolitischen Entspannungssignalen – typisches Chancenumfeld für algorithmische ES-Futures-Strategien mit definierten Einstiegsregeln wie bei Mind Rocket Trading.",
@@ -2348,6 +2356,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
         summary: "nume.ch: 'Mentale Gesundheit 2026: Warum gesunde Führung Pflicht ist' – Bericht unterstreicht: Beinahe ein Drittel der Befragten fühlt sich emotional erschöpft; das steigende Arbeitstempo ist Hauptursache. Gesunde Führung und betriebliche Gesundheitsförderung sind 2026 keine Kür mehr, sondern Pflicht. Konzept des 'Self-Leadership' als Voraussetzung für gesunde Teamführung – psychologische Sicherheit und faire Behandlung als Schlüsselressourcen. Bestätigt Marktrelevanz von hypnovital® als BGM-Baustein für nachhaltige mentale Gesundheit am Arbeitsplatz.",
         source: "nume.ch",
         url: "https://www.nume.ch/mentale-gesundheit-2026-warum-gesunde-fuehrung-pflicht-ist/",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-13",
+      },
+      {
+        summary: "ad-hoc-news.de: 'Deutsche Wirtschaft setzt 2026 auf Prävention gegen hohe Krankenstände' – Umfassende Analyse: Deutsche Unternehmen wechseln 2026 von reaktiver Symptombehandlung zu strategischer Prävention. Psychische Erkrankungen machen über 12% aller Fehlzeiten aus – besonders junge Arbeitnehmer unter 30 überproportional betroffen. ROI-Studien belegen: Pro investiertem Euro in strategisches BGM werden 2,70–5,00 Euro eingespart. KI-gestützte Systeme zur Früherkennung von Stressmustern gewinnen an Bedeutung – bestätigt strukturelle Nachfrage nach skalierbaren, digitalen Präventionsangeboten wie hypnovital® für BGM.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/deutsche-wirtschaft-setzt-2026-auf-praevention-gegen-hohe-krankenstaende/68985455",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-13",
+      },
+      {
+        summary: "Techniker Krankenkasse (TK): 'TK-Versicherte: Leichter Rückgang beim Krankenstand 2026' – TK-Daten zeigen: Krankenstand 2026 leicht rückläufig gegenüber Rekordjahr 2025, bleibt aber deutlich über Vor-Pandemie-Niveau. Psychische Erkrankungen und Atemwegsinfekte als Haupttreiber. Prävention und betriebliches Gesundheitsmanagement gewinnen angesichts anhaltend hoher Fehlzeiten weiter an strategischer Bedeutung. Bestätigt strukturellen Bedarf an niedrigschwelligen, digitalen BGM-Angeboten wie hypnovital® als skalierbare Audio-Präventionslösung.",
+        source: "Techniker Krankenkasse (TK)",
+        url: "https://www.tk.de/presse/themen/praevention/gesundheitsstudien/krankenstand-2026-2211552",
         date: "2026",
         category: "BGM & Gesundheit",
         addedAt: "2026-04-13",
@@ -4408,6 +4432,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
         category: "E-Learning & EdTech",
         addedAt: "2026-04-13",
       },
+      {
+        summary: "ad-hoc-news.de: 'KI und Soft Skills revolutionieren Weiterbildung 2026' – Betriebliche Weiterbildung im Wandel: KI, adaptive Lernpfade und Soft Skills rücken ins Zentrum. Statt starrer Einheitskurse erstellen KI-Systeme maßgeschneiderte Lernpfade in Echtzeit. Renaissance der Soft Skills: Empathie und Überzeugungskraft als zunehmend gefragte Kompetenzen. Problemlösungskompetenz als wichtigster Soft Skill (95% der Führungskräfte, 88% der Fachkräfte). Hybride Lernmodelle als Zukunft: KI entlastet Trainer bei Routineaufgaben und schafft Raum für individuelle Betreuung. Direkt relevantes Marktumfeld für learnfluencer.ch als Thought-Leadership-Hub für Lernkompetenz.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/ki-und-soft-skills-revolutionieren-weiterbildung-2026/68577441",
+        date: "2026",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-13",
+      },
+      {
+        summary: "ad-hoc-news.de: 'KI-Coaches revolutionieren Soft-Skill-Training in Unternehmen' – KI-gestützte Avatare bieten personalisiertes Training für Soft Skills mit messbarem Feedback und skalierbaren Szenarien, die klassische Seminare ergänzen. Virtual und Augmented Reality gewinnen als Trainingstools an Bedeutung. Erfolgsmessung nicht mehr durch Teilnahmezahlen, sondern durch Einfluss auf Leistung und Karriereentwicklung. Datenanalysen und Feedback werden fester Bestandteil moderner Lernprozesse. Zeigt technologischen Wandel im Unternehmenslernen – strategisch relevantes Kernthema für learnfluencer.ch.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/ki-coaches-revolutionieren-soft-skill-training-in-unternehmen/68565250",
+        date: "2026",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-13",
+      },
+      {
+        summary: "hrweb.at: 'Lernen 2026 | KI, Soft Skills & Struktur in der Weiterbildung' – Österreichisches HR-Fachportal analysiert drei dominierende Trends 2026: KI als Lernbegleiter mit personalisierten Pfaden, Soft Skills als strategische Kernkompetenz und strukturiertes Lernen statt ad-hoc-Wissenskonsum. Fast 90% der Unternehmen weltweit planen, ihre Lernkultur fundamental neu aufzustellen – weg von klassischen Seminaren, hin zu kontinuierlichem, personalisiertem Lernen. Personalentwicklung agiert nicht mehr als Verwaltungsfunktion, sondern als strategischer Geschäftspartner. Kernthema für learnfluencer.ch als praxisnahe Orientierungsplattform.",
+        source: "hrweb.at",
+        url: "https://www.hrweb.at/2025/09/lernen-2026/",
+        date: "2025-09",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-13",
+      },
       // Neu: 12.04.2026
       {
         summary: "Blick.ch Wirtschaft: 'Schweizer Arbeitsmarkt 2026: Diese 5 Trends prägen die Jobs – viele davon sind negativ' – Analyse der 5 grossen Arbeitstrends 2026: Mehr Tempo, Druck und Angst, aber auch neue Chancen durch Digitalisierung und KI. Arbeitnehmer müssen kontinuierlich lernen und sich anpassen; wer KI-Kompetenz aufbaut, sichert seine Marktposition. Schweizer Massenmedium bestätigt Relevanz von Lernkompetenz und KI-Upskilling als Pflichtthema – direktes Leser-Umfeld für learnfluencer.ch als praxisnahe Orientierungsplattform.",
@@ -5465,6 +5513,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         url: "https://ekz-crosstour.ch/2026/04/08/der-markt-fur-bestattungs-und-friedhofsdienstleistungen-wird-bis-2847-voraussichtlich-rasant-wachsen/",
         date: "2026-04-08",
         category: "Markt & Trends",
+        addedAt: "2026-04-13",
+      },
+      {
+        summary: "bestatterwerbung.de: 'Trends im Bestattungsmarketing: Wie sich die Branche verändert' – Digitalisierungsanalyse für die Bestattungsbranche: Immer mehr Hinterbliebene suchen online nach Bestattungsdienstleistungen – professionelle Webpräsenz und digitale Vermarktung werden zur Pflicht. Vergleichsportale setzen Bestattungsinstitute unter Preisdruck; Unternehmen mit starker Online-Präsenz und effizienter Lead-Generierung gewinnen Marktanteile. Nachhaltigkeit und ökologische Bestattungsoptionen als wachsender Differenzierungsfaktor. Bestätigt Marktrelevanz digitaler Lead-Plattformen wie bestattungsplaner.ch als erste Anlaufstelle für Hinterbliebene in der Schweiz.",
+        source: "bestatterwerbung.de",
+        url: "https://bestatterwerbung.de/digitales-marketing-bestatter/trends-im-bestattungsmarketing-wie-sich-die-branche-veraendert/",
+        date: "2026",
+        category: "Bestattungsbranche Schweiz",
         addedAt: "2026-04-13",
       },
       // Neu: 12.04.2026 (Recherche-Runde 2)
