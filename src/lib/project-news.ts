@@ -28,6 +28,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 13.04.2026
       {
+        summary: "Netzwoche: 'digitalswitzerland lanciert KI-Leitfaden für Führungskräfte' (10. März 2026) – digitalswitzerland präsentiert am KI-Flagship-Event einen umfassenden KI-Praxisleitfaden für Schweizer Führungskräfte und KMU: konkrete Anwendungsfälle, Implementierungsstrategien und Orientierungshilfen im Umgang mit KI im Unternehmensalltag. Stärkt die gesamte Schweizer ICT-Qualifizierungslandschaft und damit die Relevanz staatlich anerkannter ICT-Zertifizierungsträger wie SIZ AG als verlässliche Qualitätsinstanz im sich rasch digitalisierenden Schweizer Unternehmensumfeld.",
+        source: "Netzwoche / digitalswitzerland",
+        url: "https://www.netzwoche.ch/news/2026-03-10/digitalswitzerland-lanciert-ki-leitfaden-fuer-fuehrungskraefte",
+        date: "2026-03-10",
+        category: "Wirtschaft & Digitalisierung",
+        addedAt: "2026-04-13",
+      },
+      {
+        summary: "Blick.ch / Ringier: 'Digital Shapers 2026 – Diese Köpfe bringen die Schweiz digital vorwärts' – Zum achten Mal zeichnen BILANZ, Handelszeitung und digitalswitzerland 100 Persönlichkeiten aus, die die digitale Schweiz prägen. Kategorie 'AI Acrobats' zeigt: Frauen dominieren KI-Entwicklung (6 von 10 Ausgezeichneten). Wachsende gesellschaftliche Sichtbarkeit von ICT-Themen und digitaler Bildung stärkt das öffentliche Bewusstsein für anerkannte ICT-Qualifikationen – direktes Positionierungsumfeld für SIZ AG.",
+        source: "Blick.ch / Ringier",
+        url: "https://www.blick.ch/wirtschaft/digital-shapers-2026-diese-koepfe-bringen-die-schweiz-digital-vorwaerts-id21811755.html",
+        date: "2026",
+        category: "Wirtschaft & Digitalisierung",
+        addedAt: "2026-04-13",
+      },
+      {
         summary: "EHB und ICT-Berufsbildung Schweiz: Gemeinsame Schulungs- und Informationsveranstaltungen zum neuen nationalen Standardisierungs- und Qualitätssystem für die ICT-Grundbildung – Blended-Learning-Format mit Präsenzteil für praktischen Austausch. EHB unterstützt Berufsfachschullehrpersonen und üK-Instruktoren bei der Umsetzung der neuen Bildungsverordnung. Systemische Qualitätssicherung der ICT-Grundbildung stärkt das Fundament, auf dem SIZ AG als staatlich anerkannte Prüfungsorganisation aufbaut.",
         source: "EHB / ICT-Berufsbildung Schweiz",
         url: "https://www.ehb.swiss/ehb-und-ict-berufsbildung-schweiz-schulen-und-informieren",
@@ -1948,6 +1964,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "mindtools": {
     news: [
       // Neu: 13.04.2026
+      {
+        summary: "headletic.de: 'Persönlichkeitsentwicklung Bücher – Die 10 besten für 2026' – Kuratierte deutschsprachige Buchempfehlungsliste für persönliche Weiterentwicklung 2026: Praktische Ratgeber für Mindset, Gewohnheiten, Resilienz und mentale Stärke. Zeigt anhaltend hohe Nachfrage nach strukturierten, praxisorientierten Persönlichkeitsentwicklungs-Ressourcen im DACH-Raum – direktes Marktumfeld für mindtools.ch als ergänzende digitale Plattform mit PDF-Selbsthilfe-Werkzeugen und mentalen Tools.",
+        source: "headletic.de",
+        url: "https://headletic.de/persoenlichkeitsentwicklung-buchempfehlungen/",
+        date: "2026",
+        category: "Buchmarkt & Publishing",
+        addedAt: "2026-04-13",
+      },
+      {
+        summary: "kreative-chaoten.com: 'Bücher-Empfehlungen Persönlichkeitsentwicklung – Update 2026' – Persönliche Buchempfehlungen mit Schwerpunkt auf praxisorientierter Selbstentwicklung: Bücher, die tatsächlich wirken, nicht nur gut klingen. Wachsende deutschsprachige Community rund um Persönlichkeitsentwicklung belegt stabile Nachfrage nach Inhalten, die wirklich messbare persönliche Veränderung ermöglichen – positives Signal für mindtools.ch als Anbieter praxisnaher Selbsthilfe-Werkzeuge.",
+        source: "kreative-chaoten.com",
+        url: "https://kreative-chaoten.com/buchempfehlungen-persoenlichkeitsentwicklung/",
+        date: "2026",
+        category: "Buchmarkt & Publishing",
+        addedAt: "2026-04-13",
+      },
       {
         summary: "bildung-schweiz.ch: 'Persönlichkeitsentwicklung – Marktüberblick Schweiz 2026' – Die Nachfrage nach Persönlichkeitsentwicklung in der Schweiz wächst stetig: Seminare, Kurse und digitale Tools zur Selbstentwicklung verzeichnen anhaltend hohe Nutzerzahlen. Neben klassischen Präsenzangeboten gewinnen skalierbare, digitale Selbsthilfe-Formate stark an Bedeutung. Nutzer suchen gezielt praxisorientierte Werkzeuge für eigenverantwortliche Persönlichkeitsentwicklung. Direktes Marktargument für mindtools.ch als digitale Plattform für mentale Werkzeuge und PDF-Selbsthilfe-Buchprogramme.",
         source: "bildung-schweiz.ch",
@@ -4012,6 +4044,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 13.04.2026
       {
+        summary: "hypnose.de: 'Hypnose bei Prüfungsangst' – Überblicksartikel der deutschen Hypnose-Fachplattform erklärt: Prüfungs- und Auftrittsangst entstehen durch konditionierte Angstreaktionen im Unterbewusstsein; Hypnose kann diese Muster direkt auflösen und neue, ressourcenorientierte Verhaltensmuster verankern. Selbsthypnose-Übungen helfen als ergänzende Selbsthilfemethode. Fachplattform mit hoher Reichweite bestätigt gesellschaftliche Akzeptanz hypnosebasierter Ansätze – direktes Marktumfeld für lampenfieber-besiegen.de als Audio-Selbsthilfeangebot.",
+        source: "hypnose.de",
+        url: "https://hypnose.de/artikel/hypnose-bei-pruefungsangst/",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-13",
+      },
+      {
+        summary: "preetz-hypnose.de: 'Prüfungsangst überwinden mit Hypnose' – Hypnosetherapie-Praxis erklärt: Prüfungsangst und Lampenfieber haben oft dieselbe Wurzel – konditionierte Angstreaktion auf Leistungssituationen. Hypnosetherapie löst das Muster durch direkten Zugang zum Unbewussten auf; Selbsthypnose-Übungen sind wirksame Ergänzung. Breites deutschsprachiges Angebot an spezialisierten Hypnose-Diensten für Leistungsangst bestätigt Marktakzeptanz – stärkt das Segment für skalierbare Audio-Selbsthilfe-Alternativen wie lampenfieber-besiegen.de.",
+        source: "preetz-hypnose.de",
+        url: "https://www.preetz-hypnose.de/pruefungsangst/",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-13",
+      },
+      {
         summary: "noack-hypnose.de: 'Redeangst ist kein Lampenfieber: Aufklärung, Tipps, Hilfe' – Berliner Hypnotherapie-Praxis klärt auf: Redeangst und Lampenfieber sind unterschiedliche Phänomene mit unterschiedlichem Behandlungsbedarf. Hypnotherapie setzt direkt im Unterbewusstsein an und löst konditionierte Angstmuster auf – häufig in wenigen Sitzungen. Präsenz-Seminare für 2026 in mehreren deutschen Städten bereits ausgebucht – zeigt wachsende Nachfrage nach spezialisierten Redeangst-Angeboten. Bestätigt Marktpotenzial für skalierbare Audio-Selbsthilfe-Alternativen wie lampenfieber-besiegen.de.",
         source: "noack-hypnose.de",
         url: "https://www.noack-hypnose.de/redeangst/",
@@ -4416,6 +4464,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "learnfluencer": {
     news: [
       // Neu: 13.04.2026
+      {
+        summary: "Robert Walters: 'Daten, KI und Kommunikation prägen 2026 die Arbeitswelt der Schweiz' – Schweizer HR-Beratungsunternehmen analysiert: Die drei dominierenden Kompetenzanforderungen am Schweizer Arbeitsmarkt 2026 sind Datenanalyse, KI-Anwendungswissen und Kommunikationsstärke. Lernkompetenz und die Fähigkeit, sich kontinuierlich weiterzuentwickeln, werden zur Basisanforderung. Zeigt die strategische Relevanz von KI-Lernkompetenz-Plattformen wie learnfluencer.ch als praxisnaher Orientierungsressource für Arbeitnehmer und Unternehmen.",
+        source: "Robert Walters",
+        url: "https://www.robertwalters.ch/insights/recruiting-tipps/blog/Daten-KI-und-Kommunikation-pragen-2026-die-Arbeitswelt-der-Schweiz.html",
+        date: "2026",
+        category: "Weiterbildung Schweiz",
+        addedAt: "2026-04-13",
+      },
+      {
+        summary: "Blick.ch / Ringier: 'Digital Shapers 2026 – Die Köpfe, die die Schweiz digital prägen' – Zum achten Mal küren BILANZ, Handelszeitung und digitalswitzerland 100 Persönlichkeiten, die die digitale Transformation der Schweiz vorantreiben. KI, Lernkompetenz und digitale Bildung sind dominierende Themen. Wachsende gesellschaftliche Sichtbarkeit von Lernkompetenz und digitaler Transformation – direkte Themen von learnfluencer.ch als Thought-Leadership-Plattform.",
+        source: "Blick.ch / Ringier",
+        url: "https://www.ringier.com/de/digital-shapers-2026/",
+        date: "2026",
+        category: "Content & Thought Leadership",
+        addedAt: "2026-04-13",
+      },
       {
         summary: "Swiss Learning Hub (Presseportal.ch): 'Swiss Learning Hub gewinnt eLearning AWARD 2026 für SwissPOD Training' – Swiss Learning Hub gewinnt den prestigeträchtigen eLearning AWARD 2026 in der Kategorie 'eLearning Innovation – Fokus auf Wissensstandardisierung'. Das bilingual-modulare SwissPOD-E-Learning-Programm führt über 160 Medizinprofis schweizweit in standardisierter Datendokumentation ein – mit interaktiven Screen-Recordings, Flip Cards und Avatar-gesteuerter Lernsteuerung. Schweizer EdTech-Excellence bestätigt: Hochwertige E-Learning-Produktion und Wissensstandardisierung sind 2026 zentrale Wachstumssegmente – relevantes Thought-Leadership-Umfeld für learnfluencer.ch.",
         source: "Presseportal.ch / Swiss Learning Hub",
