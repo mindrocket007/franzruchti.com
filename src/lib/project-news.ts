@@ -26,6 +26,39 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 13.04.2026 (Recherche-Runde 2)
+      {
+        summary: "SIZ AG Newsflash April 2026: Lancierung der neuen mySIZ-Plattform (my.siz.ch) per 9. April 2026 – umfassende Modernisierung der Prüfungsverwaltung: Teilnehmende werden neu durch Bildungsinstitutionen registriert (keine Selbstregistrierung mehr), Prüfungsbezeichnungen nach Erscheinungsjahr, passwortfreier Direktstart von Test- und Lernzielkontrollprüfungen, Resultate in Echtzeit im mySIZ-Account sichtbar. Zentraler Infrastrukturschritt für SIZ AG als staatlich anerkannte ICT-Prüfungsorganisation der Schweiz.",
+        source: "SIZ AG",
+        url: "https://siz.ch/newsflash-april-2026/",
+        date: "2026-04",
+        category: "SIZ AG direkt",
+        addedAt: "2026-04-13",
+      },
+      {
+        summary: "SIZ AG Newsflash März 2026: Präzisierung der Prüfungsreglemente zum Umgang mit KI und Office-Add-ins per 30. März 2026 – Neue KI-basierte Funktionen und Office-Add-ins ermöglichen automatische Erledigung von Prüfungsaufgaben ohne tatsächlich vorhandene Kompetenz, was dem Zweck der SIZ-Zertifizierungen widerspricht. SIZ AG reagiert mit klar definierten technischen Anforderungen und Regelungen. Zeigt die hohe Qualitätsorientierung und Anpassungsfähigkeit von SIZ AG als verlässliche Schweizer ICT-Zertifizierungsinstanz.",
+        source: "SIZ AG",
+        url: "https://siz.ch/newsflash-maerz-2026/",
+        date: "2026-03-30",
+        category: "SIZ AG direkt",
+        addedAt: "2026-04-13",
+      },
+      {
+        summary: "nume.ch: 'AI Business Specialist – neues eidgenössisches Diplom Schweiz 2026' – Erste staatliche Prüfungen für den neuen AI Business Specialist finden Herbst 2026 statt; Bund übernimmt bis zu 50% der Vorbereitungskosten. Ziel: Spezialisten, die KI nicht nur theoretisch verstehen, sondern strategisch integrieren, praktisch umsetzen und nachhaltig betreuen können. Neues anerkanntes KI-Diplom ergänzt die bestehende ICT-Qualifizierungslandschaft der Schweiz – stärkt das gesamte Umfeld anerkannter ICT-Prüfungsorganisationen wie SIZ AG.",
+        source: "nume.ch / ICT-Berufsbildung Schweiz",
+        url: "https://www.nume.ch/ai-business-specialist-neues-eidg-diplom-schweiz-2026/",
+        date: "2026",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-13",
+      },
+      {
+        summary: "ICT-Berufsbildung Schweiz: ICT-Regiomeisterschaften 2026 – Regionale Wettbewerbe für ICT-Nachwuchstalente demonstrieren die Begeisterung junger Menschen für ICT-Berufe in der Schweiz. Wettbewerbe fördern die Sichtbarkeit von ICT-Ausbildungswegen und stärken die gesellschaftliche Wertschätzung für qualifizierte ICT-Fachkräfte. Direktes positives Umfeld für SIZ AG als anerkannte Prüfungsorganisation im wachsenden Schweizer ICT-Bildungsökosystem.",
+        source: "ICT-Berufsbildung Schweiz",
+        url: "https://www.ict-berufsbildung.ch/ict-regiomeisterschaften-2026",
+        date: "2026",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-13",
+      },
       // Neu: 13.04.2026
       {
         summary: "Netzwoche: 'digitalswitzerland lanciert KI-Leitfaden für Führungskräfte' (10. März 2026) – digitalswitzerland präsentiert am KI-Flagship-Event einen umfassenden KI-Praxisleitfaden für Schweizer Führungskräfte und KMU: konkrete Anwendungsfälle, Implementierungsstrategien und Orientierungshilfen im Umgang mit KI im Unternehmensalltag. Stärkt die gesamte Schweizer ICT-Qualifizierungslandschaft und damit die Relevanz staatlich anerkannter ICT-Zertifizierungsträger wie SIZ AG als verlässliche Qualitätsinstanz im sich rasch digitalisierenden Schweizer Unternehmensumfeld.",
@@ -1029,6 +1062,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 13.04.2026 (Recherche-Runde 2)
+      {
+        summary: "CatInAtheBroker: 'Apex Trader Funding Rule Changes in 2026' – Apex Trader Funding (führende Futures Prop Trading Firm) implementiert per März 2026 fundamentale Regeländerungen: neues One-Time-Payment (OTP) Modell ohne monatliche Gebühren, strenges 30-Tage-Evaluierungsfenster, End-of-Day (EOD) Drawdown-Konten für mehr Intraday-Flexibilität, Edelmetall-Futures (Gold, Silber, Kupfer, Platin) dauerhaft eingestellt. Direkter Einfluss auf das Umfeld prop-finanzierter algorithmischer ES-Futures-Trader wie bei Mind Rocket Trading.",
+        source: "CatInAtheBroker",
+        url: "https://www.catinathebroker.com/blog/apextraderfunding2026",
+        date: "2026-03",
+        category: "Futures & Trading",
+        addedAt: "2026-04-13",
+      },
+      {
+        summary: "NinjaTrader EU: NinjaTrader ist seit Januar 2026 in Europa über das CySEC-regulierte Payward Europe (Kraken) verfügbar – Europäische Trader erhalten damit regulierten Zugang zur führenden Futures-Handelsplattform für algorithmischen Handel. Zeigt die globale Expansion von NinjaTrader und wachsende regulatorische Akzeptanz von Futures-Trading in Europa – direktes positives Signal für das Marktumfeld von Mind Rocket Trading als NinjaTrader-basierter Algo-Trading-Strategie-Anbieter.",
+        source: "NinjaTrader",
+        url: "https://ninjatrader.com/eu/en-de/",
+        date: "2026-01",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-13",
+      },
       // Neu: 13.04.2026
       {
         summary: "The Motley Fool: 'S&P 500 Update This Week: 4 Signals to Watch After Delta's Earnings' (12. April 2026) – Wochenrückblick KW 15: S&P 500 bei 5'672 (+0.1% am Freitag), Q1-Earnings-Saison startet positiv (47 Berichte, im Schnitt +4.2% über EPS-Erwartungen vs. hist. +3%). Risikofaktoren: neue US-Zölle (25%) auf Elektronik und Autoteile ab 10. April, 20% des S&P-500-Marktkapitals mit China-Exposure. Für algorithmische ES-Futures-Strategien wie bei Mind Rocket Trading: Earnings-Surprises und Zoll-Eskalationen sind klassische Intraday-Volatilitätskatalysatoren.",
@@ -1963,6 +2013,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 13.04.2026 (Recherche-Runde 2)
+      {
+        summary: "ad-hoc-news.de: 'Buchmarkt 2026: KI und Persönlichkeit dominieren Business-Bestseller' – Führungskräfte suchen 2026 Strategien, die KI mit menschlicher Intuition verbinden und persönliches Wohlbefinden mit beruflichem Erfolg vereinen. Kleinen Verlagen und Selfpublishern eröffnen sich neue Nischenmöglichkeiten; Audio-Formate und interaktive E-Books gewinnen weiter an Bedeutung. Zeigt: Der Markt für Persönlichkeitsentwicklung und mentale Werkzeuge wächst – direktes Wachstumsumfeld für mindtools.ch als digitale Plattform für mentale Werkzeuge und PDF-Selbsthilfe-Tools.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/buchmarkt-2026-ki-und-persoenlichkeit-dominieren-business-bestseller/69076676",
+        date: "2026",
+        category: "Buchmarkt & Publishing",
+        addedAt: "2026-04-13",
+      },
       // Neu: 13.04.2026
       {
         summary: "Mindtools.com: 'Product Update February 2026' – Marktführer MindTools (mindtools.com, 27 Mio. Nutzer/Jahr) lanciert fünf neue Bite-Sized-Masterclasses für Manager direkt von führenden Denkern des Fachgebiets. Neue Kineo-Kurse zu ethischer Führung und Infektionsprävention am Arbeitsplatz ergänzen die Plattform. Der globale Wettbewerber auf dem grossen mindtools.com stärkt seinen Markenvorsprung gegenüber dem kleineren mindtools.ch und verdeutlicht die Notwendigkeit einer klaren Nischenpositionierung für das Schweizer Angebot.",
@@ -2383,6 +2442,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 13.04.2026 (Recherche-Runde 2)
+      {
+        summary: "AXA Schweiz: 'Burnout-Prävention am Arbeitsplatz' – Schweizer Versicherungsriese AXA positioniert betriebliches Gesundheitsmanagement (BGM) und Burnout-Prävention als Kernleistung für Unternehmenskunden. Angebote umfassen Sensibilisierungs-Workshops, Individual-Coaching und Präventionsprogramme. Zeigt: Grosse Arbeitgeber und Versicherer investieren aktiv in präventive BGM-Massnahmen – direktes Marktumfeld für skalierbare, digitale Audio-Präventionsangebote wie hypnovital® als kosteneffiziente Ergänzung zu klassischen BGM-Massnahmenpaketen.",
+        source: "AXA Schweiz",
+        url: "https://www.axa.ch/de/unternehmenskunden/angebote/gesundheit-unfall/bgm-wecare/gesundheitspraevention/burnout-praevention.html",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-13",
+      },
       // Neu: 13.04.2026
       {
         summary: "ad-hoc-news.de: 'Burnout-Gefahr 2026: Psychische Belastungen am Arbeitsplatz steigen' – Aktuelle Analyse zeigt: Psychische Belastungen am Schweizer und deutschen Arbeitsplatz steigen 2026 weiter an. Hauptursachen sind steigendes Arbeitstempo, Digitalisierungsdruck und anhaltende Unsicherheit. Betriebliches Gesundheitsmanagement (BGM) und präventive Massnahmen gewinnen stark an Bedeutung. Steigende gesellschaftliche Sensibilisierung und wachsender Präventionsdruck in Unternehmen – direktes strukturelles Marktargument für hypnovital® als niedrigschwelliges, skalierbares Audio-Präventionsangebot für BGM.",
@@ -3194,6 +3262,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 13.04.2026 (Recherche-Runde 2)
+      {
+        summary: "12week-breakthrough.com: 'The Complete 12-Week Year Implementation Guide for 2026' – Umfassender Implementierungsleitfaden 2026 für die 12-Week-Year-Methode: Mit 4.3 Zwölf-Wochen-Perioden in 2026 lassen sich 4 grosse Initiativen mit eingebautem Dringlichkeitsgefühl und Fokus umsetzen. KI-Tools können Leading-Indicators automatisch tracken und wöchentliche Fortschrittsberichte generieren. Bestätigt wachsende Nachfrage nach digitalisierten 12WY-Tools – direktes Marktumfeld für den 12wy-planner als spezialisiertes SaaS-Tool.",
+        source: "12week-breakthrough.com",
+        url: "https://12week-breakthrough.com/implementation-guide-2026-12-week-year/",
+        date: "2026",
+        category: "12 Week Year Methode",
+        addedAt: "2026-04-13",
+      },
+      {
+        summary: "Notion Marketplace: '2026 Goals 12 Week Year Planner Template' – Wachsendes Ökosystem an 12-Week-Year-Planungsvorlagen auf Notion Marketplace zeigt: Die Methode von Brian Moran ist 2026 breiter Mainstream in der Produktivitätscommunity. Nutzer suchen digitale, strukturierte Planungstools – direkter Nachfragebeleg für spezialisierte 12WY-SaaS-Tools wie den 12wy-planner als fokussiertere Alternative zu generischen Notion-Templates.",
+        source: "Notion Marketplace",
+        url: "https://www.notion.com/templates/2026-goals-12-week-year-planner",
+        date: "2026",
+        category: "SaaS & Tools",
+        addedAt: "2026-04-13",
+      },
       // Neu: 13.04.2026
       {
         summary: "blog.mean.ceo: 'B2B SaaS Trends | April 2026 (Startup Edition)' – KI-Tools entwickeln sich von Assistenten zu autonomen Entscheidungsträgern; agentic AI übernimmt End-to-End-Workflows ohne kontinuierliche menschliche Eingabe. AI-native SaaS-Startups verzeichnen 75% mehr Investitionen YoY. Bis zur Hälfte aller Unternehmen investieren 2026 über 50% ihres Digitalisierungsbudgets in KI-Automation. Zeigt das rasante Wachstum des Produktivitäts-SaaS-Markts – strategisches Umfeld für den 12wy-planner als fokussiertes, AI-integrierbares Kurzzyklus-Planungstool.",
@@ -3655,6 +3740,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 13.04.2026 (Recherche-Runde 2)
+      {
+        summary: "ZAVA (zavamed.com): 'Vorzeitiger Samenerguss – Alle Infos auf einen Blick' – Europas führende Online-Arztplattform bietet umfassende Informationen zu Ejaculatio praecox: Ursachen (psychologisch/kognitiv), Behandlungsoptionen (Dapoxetin, Lidocain-Spray, Verhaltenstechniken, Sexualtherapie) und niedrigschwellige digitale Konsultation. Wachsende Akzeptanz für Online-Gesundheitsplattformen bei Männergesundheitsthemen – bestätigt Marktrelevanz von orgasmus-hinauszoegern.de als digitales, nicht-medikamentöses Komplementärangebot.",
+        source: "ZAVA",
+        url: "https://www.zavamed.com/de/vorzeitiger-samenerguss.html",
+        date: "2026",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-13",
+      },
       // Neu: 13.04.2026
       {
         summary: "GoSpring.de: 'Vorzeitigen Samenerguss erfolgreich behandeln' – Umfassender deutschsprachiger Ratgeber zu allen Behandlungsmethoden: medikamentös (Dapoxetin, Fortacin Spray), lokal (Lidocain, GoLonger Kondom), verhaltensbasiert (Start-Stopp, Squeeze-Methode) und Beckenbodentraining. Wachsende Akzeptanz für niedrigschwellige digitale Informationsangebote und Selbsthilfe-Produkte für Männergesundheit – bestätigt die Marktrelevanz von orgasmus-hinauszoegern.de als komplementäres, nicht-medikamentöses Hypnose-Audioprogramm.",
@@ -4066,6 +4160,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 13.04.2026 (Recherche-Runde 2)
+      {
+        summary: "Kim Fleckenstein (kimfleckenstein.com): 'Hypnose-MP3 Lampenfieber überwinden' – Etablierter deutschsprachiger Hypnose-Anbieter mit 36-minütigem Hypnoseprogramm gegen Lampenfieber und Redeangst bei Erwachsenen. Nutzt das Unterbewusstsein zur gezielten Angstauflösung. Wachsendes Angebot an Audio-Hypnoseprogrammen gegen Auftrittsangst bestätigt Marktakzeptanz digitaler Selbsthilfe-Audioformate im DACH-Raum – direktes Wettbewerbsumfeld für lampenfieber-besiegen.de als fokussiertes Audio-Hypnoseprogramm.",
+        source: "Kim Fleckenstein",
+        url: "https://www.kimfleckenstein.com/shop/hypnose-mp3/lampenfieber-ueberwinden/",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-13",
+      },
+      {
+        summary: "Wagner Empowerment: 'Online-Seminar Redeangst überwinden' – Präsenz-Seminare 'Schluss mit Lampenfieber' 2026 in mehreren deutschen Städten (Frankfurt, Hamburg, München, Augsburg, Leipzig) mit individueller Betreuung, Bühnenpraxis und Stress-Regulation. Wachsendes Seminarangebot zeigt: Redeangst und Lampenfieber bleiben ein massenmarktfähiges Thema mit hoher Zahlungsbereitschaft. Bestätigt die breite Nachfrage nach gezielten Lösungen für Auftrittsangst – Marktumfeld für lampenfieber-besiegen.de als digitale, skalierbare Audio-Alternative.",
+        source: "Wagner Empowerment",
+        url: "https://www.wagner-empowerment.de/online-seminar-redeangst-%C3%BCberwinden/",
+        date: "2026",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-04-13",
+      },
       // Neu: 13.04.2026
       {
         summary: "hypnose.de: 'Hypnose bei Prüfungsangst' – Überblicksartikel der deutschen Hypnose-Fachplattform erklärt: Prüfungs- und Auftrittsangst entstehen durch konditionierte Angstreaktionen im Unterbewusstsein; Hypnose kann diese Muster direkt auflösen und neue, ressourcenorientierte Verhaltensmuster verankern. Selbsthypnose-Übungen helfen als ergänzende Selbsthilfemethode. Fachplattform mit hoher Reichweite bestätigt gesellschaftliche Akzeptanz hypnosebasierter Ansätze – direktes Marktumfeld für lampenfieber-besiegen.de als Audio-Selbsthilfeangebot.",
@@ -4487,6 +4598,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 13.04.2026 (Recherche-Runde 2)
+      {
+        summary: "swissnova.swiss: 'Weiterbildung für Unternehmen in der Schweiz: 10 Trends für 2026' – Zehn massgebliche Trends für Unternehmensweiterbildung in der Schweiz 2026: KI-gestützte Personalisierung, Microlearning, hybride Lernformate, Kompetenzorientierung und kontinuierliches Lernen als neue Standards. Lernkompetenz wird zur Kernkompetenz am Schweizer Arbeitsmarkt – direktes Themenumfeld für learnfluencer.ch als Thought-Leadership-Plattform für Lernkompetenz in der digitalen Transformation.",
+        source: "swissnova.swiss",
+        url: "https://unternehmen.swissnova.swiss/weiterbildung-unternehmen-schweiz-trends-2026/",
+        date: "2026",
+        category: "Weiterbildung Schweiz",
+        addedAt: "2026-04-13",
+      },
+      {
+        summary: "Swiss AI Experts: '2026 mit KI starten: Chancen und Potenziale' – 48% der Schweizer Unternehmen nutzen 2026 bereits KI in ersten Prozessen (ca. +10% gegenüber 2023). Stark personalisierte Lernpfade durch KI als neuer Standard in der Weiterbildung. Rasante KI-Durchdringung in Schweizer Unternehmen erhöht die Nachfrage nach praxisnaher KI-Lernkompetenz-Vermittlung – direktes strategisches Wachstumsfeld für learnfluencer.ch.",
+        source: "Swiss AI Experts",
+        url: "https://www.swiss-ai-experts.ch/noch-liegen-9479-des-jahres-2026-vor-uns-was-machen-wir-daraus/",
+        date: "2026",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-13",
+      },
       // Neu: 13.04.2026
       {
         summary: "Robert Walters: 'Daten, KI und Kommunikation prägen 2026 die Arbeitswelt der Schweiz' – Schweizer HR-Beratungsunternehmen analysiert: Die drei dominierenden Kompetenzanforderungen am Schweizer Arbeitsmarkt 2026 sind Datenanalyse, KI-Anwendungswissen und Kommunikationsstärke. Lernkompetenz und die Fähigkeit, sich kontinuierlich weiterzuentwickeln, werden zur Basisanforderung. Zeigt die strategische Relevanz von KI-Lernkompetenz-Plattformen wie learnfluencer.ch als praxisnaher Orientierungsressource für Arbeitnehmer und Unternehmen.",
@@ -5169,6 +5297,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 13.04.2026 (Recherche-Runde 2)
+      {
+        summary: "bexolutions.ch: 'Marketing-Automation für Schweizer KMU 2026: Tools & ROI' – Marketing-Automation ist 2026 kein Nice-to-have mehr, sondern entscheidender Wettbewerbsvorteil für Schweizer KMU. Empfehlung: monatliches Online-Marketing-Budget CHF 1'500–5'000 nach 70-20-10-Regel (70% bewährte Kanäle, 20% Wachstumskanäle, 10% Experimente). Wachsende Nachfrage nach integrierten Marketingplanungstools mit ROI-Tracking – direktes Marktumfeld für das interaktive Marketingkonzept-Framework auf learnfluencer.ch.",
+        source: "bexolutions.ch",
+        url: "https://bexolutions.ch/marketing-automation-fur-schweizer-kmu-2026-tools-roi/",
+        date: "2026",
+        category: "Marketing-Tools & Software",
+        addedAt: "2026-04-13",
+      },
+      {
+        summary: "KMU Performer AG: 'Unsere KMU Marketing-Trends 2026' – Wichtigste Marketingtrends für Schweizer KMU 2026: KI-gestützte Personalisierung, Customer Experience als zentraler Differenzierungsfaktor, integrierte digitale Sichtbarkeit. Wachsende Komplexität im KMU-Marketing treibt Nachfrage nach strukturierten, ganzheitlichen Planungstools – bestätigt das Marktpotenzial für interaktive All-in-One-Marketingkonzept-Tools wie auf learnfluencer.ch.",
+        source: "KMU Performer AG",
+        url: "https://kmu-performer.ch/trends-2026/",
+        date: "2026",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-13",
+      },
       // Neu: 13.04.2026
       {
         summary: "bexolutions.ch: 'KI-Marketing für Schweizer KMU 2026 – Praxisleitfaden' – Umfassender Praxisleitfaden zeigt: 2026 ist ein Wendejahr für KMU-Marketing. KI, Automatisierung und neue Kanäle verändern digitale Sichtbarkeit, Kundengewinnung und Kommunikation grundlegend. PESTEL, SWOT und strategische Analyseframeworks bleiben Grundlage, werden aber durch KI-gestützte Tools effizienter. Praxisorientierter Strategierahmen für Schweizer KMU – direktes Marktargument für interaktive All-in-One-Marketingkonzept-Tools wie das Framework auf learnfluencer.ch.",
@@ -5594,6 +5739,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 13.04.2026 (Recherche-Runde 2)
+      {
+        summary: "Age-Stiftung Schweiz: 'Letzte Reise – Interaktiver Bestattungsplaner für Gemeinden' – Die Schweizer Age-Stiftung fördert das Projekt letztereise.ch: Interaktiver Online-Bestattungsplaner als Orientierungshilfe für Gemeinden und Bürger bei der Planung ihrer letzten Ruhe. Beta-Version wird bis 2026 zur Marktreife weiterentwickelt. Zeigt: Öffentliche und non-profit Institutionen in der Schweiz erkennen den gesellschaftlichen Bedarf für digitale Bestattungsplanung – bestätigt die Marktrelevanz digitaler Planungsportale wie bestattungsplaner.ch.",
+        source: "Age-Stiftung Schweiz",
+        url: "https://www.age-stiftung.ch/foerderung/letzte-reise-interaktiver-bestattungsplaner-fuer-gemeinden",
+        date: "2026",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-04-13",
+      },
       // Neu: 13.04.2026
       {
         summary: "ekz-crosstour.ch (8. April 2026): 'Der Markt für Bestattungs- und Friedhofsdienstleistungen wird bis 2033 rasant wachsen' – Global Market Vision Marktbericht prognostiziert starkes Wachstum des globalen Bestattungsmarkts bis 2033. Treiber: alternde Gesellschaft, steigende Lebenserwartung, wachsende Nachfrage nach individualisierten und digitalisierten Bestattungsdienstleistungen. Digitale Plattformen gewinnen als erste Anlaufstelle für Bestattungsplanung und Lead-Generierung an Bedeutung – direktes strukturelles Marktargument für bestattungsplaner.ch als digitales Lead-Vermittlungsportal in der Schweiz.",
