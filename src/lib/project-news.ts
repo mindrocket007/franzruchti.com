@@ -826,6 +826,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
+      // Neu: 13.04.2026
+      {
+        summary: "coachingausbildungen.ch: 'Coaching-Markt Schweiz – Trends 2025/2026 Analyse' – Umfassende Marktanalyse zeigt: Der Schweizer Coaching-Markt wächst weiter und differenziert sich zunehmend. Wichtigste Trends: KI-gestützte Coaching-Tools, hybride Formate (Online + Präsenz), steigende Nachfrage nach Resilienz-Coaching und psychischer Gesundheitsförderung. Schweizer Markt zeichnet sich durch hohe Qualitätsansprüche und Bereitschaft, in nachhaltige, evidenzbasierte Programme zu investieren, aus. Direktes positives Marktumfeld für Mind Rocket GmbH als Anbieter methodisch fundierter digitaler Coaching- und Persönlichkeitsentwicklungs-Programme.",
+        source: "coachingausbildungen.ch",
+        url: "https://www.coachingausbildungen.ch/coaching-markt-schweiz-trends-2025-2026-analyse/",
+        date: "2026",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-04-13",
+      },
       // Neu: 12.04.2026
       {
         summary: "IPC Akademie: 'Swiss Coaching Day 2026 – Der Top-Event für Coaches in Bern' – Jährliche Fachtagung für Coaches und Trainer in der Schweiz mit Fokus auf aktuelle Coaching-Methoden, KI-gestützte Tools und Markttrends 2026. Zentraler Branchentreffpunkt zeigt wachsende Professionalisierung und steigende Qualitätsansprüche im Schweizer Coaching-Markt. Wer nur Motivation anbietet, wird 2026 ersetzbar – wer echte Orientierung und nachhaltige Entwicklung ermöglicht, wird gesucht. Bestätigt strukturellen Rückenwind für methodisch fundierte Coaching- und Persönlichkeitsentwicklungs-Programme wie jene der Mind Rocket GmbH.",
@@ -1930,6 +1939,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 13.04.2026
+      {
+        summary: "bildung-schweiz.ch: 'Persönlichkeitsentwicklung – Marktüberblick Schweiz 2026' – Die Nachfrage nach Persönlichkeitsentwicklung in der Schweiz wächst stetig: Seminare, Kurse und digitale Tools zur Selbstentwicklung verzeichnen anhaltend hohe Nutzerzahlen. Neben klassischen Präsenzangeboten gewinnen skalierbare, digitale Selbsthilfe-Formate stark an Bedeutung. Nutzer suchen gezielt praxisorientierte Werkzeuge für eigenverantwortliche Persönlichkeitsentwicklung. Direktes Marktargument für mindtools.ch als digitale Plattform für mentale Werkzeuge und PDF-Selbsthilfe-Buchprogramme.",
+        source: "bildung-schweiz.ch",
+        url: "https://www.bildung-schweiz.ch/topics/persoenlichkeitsentwicklung",
+        date: "2026",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-04-13",
+      },
       // Neu: 12.04.2026
       {
         summary: "buchinsider.net: 'Globaler Buchmarkt im Fokus: Trends und Entwicklungen 2026' – Analyse zeigt einen neuen Megatrend: Deep Reading. Leser suchen 2026 bewusst längere, immersive Lektüre als Gegenpol zu Social-Media-Schnellkonsum. Bücher, die echte Reflexion und Vertiefung ermöglichen, wachsen überdurchschnittlich. KI wird in Buchproduktion, Marketing und Content-Discovery verstärkt eingesetzt. Persönlichkeitsentwicklung und mentale Gesundheit bleiben verlässliche Wachstumssegmente. Direktes positives Marktumfeld für mindtools.ch mit qualitätsvollen PDF-Selbsthilfe-Werkzeugen, die auf nachhaltiges Arbeiten mit sich selbst ausgerichtet sind.",
@@ -2317,6 +2335,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 13.04.2026
+      {
+        summary: "ad-hoc-news.de: 'Burnout-Gefahr 2026: Psychische Belastungen am Arbeitsplatz steigen' – Aktuelle Analyse zeigt: Psychische Belastungen am Schweizer und deutschen Arbeitsplatz steigen 2026 weiter an. Hauptursachen sind steigendes Arbeitstempo, Digitalisierungsdruck und anhaltende Unsicherheit. Betriebliches Gesundheitsmanagement (BGM) und präventive Massnahmen gewinnen stark an Bedeutung. Steigende gesellschaftliche Sensibilisierung und wachsender Präventionsdruck in Unternehmen – direktes strukturelles Marktargument für hypnovital® als niedrigschwelliges, skalierbares Audio-Präventionsangebot für BGM.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/burnout-gefahr-2026-psychische-belastungen-am-arbeitsplatz-steigen/68532499",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-13",
+      },
+      {
+        summary: "nume.ch: 'Mentale Gesundheit 2026: Warum gesunde Führung Pflicht ist' – Bericht unterstreicht: Beinahe ein Drittel der Befragten fühlt sich emotional erschöpft; das steigende Arbeitstempo ist Hauptursache. Gesunde Führung und betriebliche Gesundheitsförderung sind 2026 keine Kür mehr, sondern Pflicht. Konzept des 'Self-Leadership' als Voraussetzung für gesunde Teamführung – psychologische Sicherheit und faire Behandlung als Schlüsselressourcen. Bestätigt Marktrelevanz von hypnovital® als BGM-Baustein für nachhaltige mentale Gesundheit am Arbeitsplatz.",
+        source: "nume.ch",
+        url: "https://www.nume.ch/mentale-gesundheit-2026-warum-gesunde-fuehrung-pflicht-ist/",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-13",
+      },
       // Neu: 12.04.2026 (Recherche-Runde 2)
       {
         summary: "firmenevents-schweiz.ch: 'Anti-Burnout-Workshop: Erhöhen Sie Ihr Wohlbefinden und Ihre Produktivität' – Strukturierter Anti-Burnout-Workshop für Schweizer Unternehmen: Identifikation individueller Stressmuster, Erlernen von Resilienz-Techniken, Aufbau nachhaltiger Work-Life-Balance-Strategien. Wachsendes B2B-Angebot an präventiven BGM-Workshops zeigt steigenden Bedarf – bestätigt hypnovital® als skalierbares, digitales Komplementärangebot für mental gesunde Unternehmenskultur.",
@@ -3095,6 +3130,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 13.04.2026
+      {
+        summary: "okrstool.com: '25 Best OKR Software for 2026 (100% Tested)' – Kuratierter Vergleich der besten OKR-Software-Tools 2026: AI-gestützte Zielsetzungshilfen, automatisches Tracking und einfache Team-Alignierung als neue Standards. Tools wie Tability, Weekdone und Range dominieren durch KI-Ziel-Editor, Fortschrittsanalyse und asynchrone Check-Ins. Wachsender SaaS-Markt für strukturierte Zielplanung und Produktivitäts-Tracking – direktes Wettbewerbs- und Marktumfeld für den spezialisierten 12wy-planner als fokussiertes 12-Week-Year-Tool.",
+        source: "okrstool.com",
+        url: "https://www.okrstool.com/blog/best-okr-software",
+        date: "2026",
+        category: "SaaS & Tools",
+        addedAt: "2026-04-13",
+      },
+      {
+        summary: "creately.com: 'How to Set OKRs in 2026' – Praxisleitfaden zur OKR-Methodik 2026: OKRs haben sich als transformative Zielsetzungsmethodik fest in der strategischen Unternehmensplanung etabliert. 2026 verändert KI die OKR-Implementierung: automatisiertes Tracking, KI-generierte Schlüsselergebnisse und Echtzeit-Progress-Monitoring. Wachsendes Bewusstsein für strukturierte Kurzzyklus-Planung – bestätigt steigende Nachfrage nach fokussierten Planungstools wie dem 12wy-planner für die 12-Week-Year-Methodik.",
+        source: "creately.com",
+        url: "https://creately.com/guides/how-to-create-okrs/",
+        date: "2026",
+        category: "Zielsetzung & OKR",
+        addedAt: "2026-04-13",
+      },
       // Neu: 12.04.2026 (Recherche-Runde 2)
       {
         summary: "annakoschinski.de: 'Warum ich nicht weiter als 12 Wochen plane' – Praxisreflexion einer Unternehmerin: 12-Wochen-Planung schafft überschaubaren Fokus, verhindert Prokrastination durch Jahres-Endspurt und erzwingt regelmässige Strategie-Überprüfung. Organische Community rund um die 12-Week-Year-Methode von Brian Moran wächst – bestätigt steigende Nachfrage nach spezialisierten Planungs-Tools wie 12wy-planner.vercel.app.",
@@ -3531,6 +3583,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 13.04.2026
+      {
+        summary: "hypnose-empfehlung.ch: 'Hypnose gegen vorzeitigen Samenerguss' – Schweizerisches Hypnose-Empfehlungsportal erklärt: Hypnose kann die unbewussten Verhaltensmuster, die zu vorzeitigem Samenerguss führen, direkt adressieren. Selbsthypnose-Audiodateien gelten als wirksame, diskrete Alternative für Männer, die keine persönliche Therapiesitzung wünschen. Wachsende Akzeptanz digitaler Audio-Selbsthilfe-Angebote im DACH-Raum bestätigt Marktrelevanz von orgasmus-hinauszoegern.de als niedrigschwellige Online-Lösung.",
+        source: "hypnose-empfehlung.ch",
+        url: "https://hypnose-empfehlung.ch/hypnose-gegen-vorzeitigen-samenerguss/",
+        date: "2026",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-13",
+      },
       // Neu: 12.04.2026
       {
         summary: "Deutsches Ärzteblatt: 'Sexualstörung: Wenig Sport und sozialer Druck können vorzeitigen Samenerguss fördern' – TU-München-Studie zeigt: Männer mit ejaculatio praecox leiden deutlich häufiger an erektiler Dysfunktion, benignem Prostatasyndrom und Libidostörungen; berichten öfter über Versagensangst und sozialen Druck. Mangelnde körperliche Aktivität als modifizierbarer Risikofaktor identifiziert. Führendes deutschsprachiges Ärzteportal bestätigt biopsychosozialen Charakter der EP – stärkt Marktpositionierung für psychologisch-basierte, mind-body-orientierte Interventionen wie das Hypnose-Audioprogramm orgasmus-hinauszoegern.de.",
@@ -3925,6 +3986,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 13.04.2026
+      {
+        summary: "noack-hypnose.de: 'Redeangst ist kein Lampenfieber: Aufklärung, Tipps, Hilfe' – Berliner Hypnotherapie-Praxis klärt auf: Redeangst und Lampenfieber sind unterschiedliche Phänomene mit unterschiedlichem Behandlungsbedarf. Hypnotherapie setzt direkt im Unterbewusstsein an und löst konditionierte Angstmuster auf – häufig in wenigen Sitzungen. Präsenz-Seminare für 2026 in mehreren deutschen Städten bereits ausgebucht – zeigt wachsende Nachfrage nach spezialisierten Redeangst-Angeboten. Bestätigt Marktpotenzial für skalierbare Audio-Selbsthilfe-Alternativen wie lampenfieber-besiegen.de.",
+        source: "noack-hypnose.de",
+        url: "https://www.noack-hypnose.de/redeangst/",
+        date: "2026",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-04-13",
+      },
       // Neu: 12.04.2026
       {
         summary: "joweissco.de: 'Hypnose bei Redeangst – Endlich frei vor anderen sprechen' – Erklärt den Mechanismus hypnosebasierter Redeangst-Therapie: Angst entsteht durch unbewusste Konditionierung; Hypnose arbeitet direkt im Unterbewusstsein und löst diese Muster auf. Fallbeispiele zeigen nachhaltige Besserung bereits nach wenigen Sitzungen. Wachsendes deutschsprachiges Angebot professioneller Hypnose-Dienstleister im Segment Redeangst belegt Marktakzeptanz und Kaufbereitschaft für skalierbare Audio-Selbsthilfealternativen wie lampenfieber-besiegen.de.",
@@ -4321,6 +4391,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 13.04.2026
+      {
+        summary: "Swiss Learning Hub (Presseportal.ch): 'Swiss Learning Hub gewinnt eLearning AWARD 2026 für SwissPOD Training' – Swiss Learning Hub gewinnt den prestigeträchtigen eLearning AWARD 2026 in der Kategorie 'eLearning Innovation – Fokus auf Wissensstandardisierung'. Das bilingual-modulare SwissPOD-E-Learning-Programm führt über 160 Medizinprofis schweizweit in standardisierter Datendokumentation ein – mit interaktiven Screen-Recordings, Flip Cards und Avatar-gesteuerter Lernsteuerung. Schweizer EdTech-Excellence bestätigt: Hochwertige E-Learning-Produktion und Wissensstandardisierung sind 2026 zentrale Wachstumssegmente – relevantes Thought-Leadership-Umfeld für learnfluencer.ch.",
+        source: "Presseportal.ch / Swiss Learning Hub",
+        url: "https://www.presseportal.ch/de/pm/100088136/100938025",
+        date: "2026",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-13",
+      },
+      {
+        summary: "keelearning.de: 'E-Learning Trends 2026: So lernen Unternehmen morgen' – Die 5 wichtigsten E-Learning-Trends 2026: KI als aktiver Lernbegleiter (nicht nur Wissensdatenbank), Microlearning für höhere Relevanz und Motivation, soziales und kollaboratives Lernen, Human Skills als Kernkompetenz und hyper-personalisierte Lernpfade in Echtzeit. KI-Adoption in der Schweiz bei 48% der Unternehmen – deutlich beschleunigt. Zeigt dynamisches Marktumfeld für praxisnahe Lernkompetenz-Plattformen wie learnfluencer.ch als Thought-Leadership-Hub.",
+        source: "keelearning.de",
+        url: "https://www.keelearning.de/blog/e-learning-trends-2026/",
+        date: "2026",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-13",
+      },
       // Neu: 12.04.2026
       {
         summary: "Blick.ch Wirtschaft: 'Schweizer Arbeitsmarkt 2026: Diese 5 Trends prägen die Jobs – viele davon sind negativ' – Analyse der 5 grossen Arbeitstrends 2026: Mehr Tempo, Druck und Angst, aber auch neue Chancen durch Digitalisierung und KI. Arbeitnehmer müssen kontinuierlich lernen und sich anpassen; wer KI-Kompetenz aufbaut, sichert seine Marktposition. Schweizer Massenmedium bestätigt Relevanz von Lernkompetenz und KI-Upskilling als Pflichtthema – direktes Leser-Umfeld für learnfluencer.ch als praxisnahe Orientierungsplattform.",
@@ -4946,6 +5033,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 13.04.2026
+      {
+        summary: "bexolutions.ch: 'KI-Marketing für Schweizer KMU 2026 – Praxisleitfaden' – Umfassender Praxisleitfaden zeigt: 2026 ist ein Wendejahr für KMU-Marketing. KI, Automatisierung und neue Kanäle verändern digitale Sichtbarkeit, Kundengewinnung und Kommunikation grundlegend. PESTEL, SWOT und strategische Analyseframeworks bleiben Grundlage, werden aber durch KI-gestützte Tools effizienter. Praxisorientierter Strategierahmen für Schweizer KMU – direktes Marktargument für interaktive All-in-One-Marketingkonzept-Tools wie das Framework auf learnfluencer.ch.",
+        source: "bexolutions.ch",
+        url: "https://bexolutions.ch/ki-marketing-fur-schweizer-kmu-2026-praxisleitfaden/",
+        date: "2026",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-13",
+      },
+      {
+        summary: "researchly.at: 'Strategische Unternehmensanalyse: Methoden & Software (2026)' – Vergleich strategischer Analyse-Tools 2026: SWOT, PESTEL, Porter's Five Forces, BCG-Matrix – mit Softwareempfehlungen und Implementierungsguidance. Wachsende Nachfrage nach All-in-One-Strategietools, die Analyse in Handlung überführen. Schweizer und österreichische KMU suchen praxisnahe, digitale Strategie-Software – direktes Marktumfeld für das integrierte Marketingkonzept-Framework (PESTEL, 5 Forces, SWOT, BCG, 7P, Budget, KPIs) auf learnfluencer.ch.",
+        source: "researchly.at",
+        url: "https://www.researchly.at/post/strategische-unternehmensanalyse-tools",
+        date: "2026",
+        category: "Strategie & Analyse",
+        addedAt: "2026-04-13",
+      },
       // Neu: 12.04.2026
       {
         summary: "KMU Magazin Schweiz: 'SWOT-Mapping: Von der SWOT-Analyse zum Change Management' – Die SWOT-Analyse wird häufig nur punktuell eingesetzt und verliert dadurch ihre strategische Schlagkraft. SWOT-Mapping schlägt in drei Schritten vor, wie Stärken, Schwächen, Chancen und Risiken in konkrete, umsetzbare strategische Massnahmen übersetzt werden. Für KMU essenzielles Framework, das den Brückenschlag von Analyse zur Handlung ermöglicht – bestätigt die Nachfrage nach strukturierten, praxisorientierten Strategie-Tools wie dem interaktiven Marketingkonzept-Framework auf learnfluencer.ch.",
@@ -5354,6 +5458,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 13.04.2026
+      {
+        summary: "ekz-crosstour.ch (8. April 2026): 'Der Markt für Bestattungs- und Friedhofsdienstleistungen wird bis 2033 rasant wachsen' – Global Market Vision Marktbericht prognostiziert starkes Wachstum des globalen Bestattungsmarkts bis 2033. Treiber: alternde Gesellschaft, steigende Lebenserwartung, wachsende Nachfrage nach individualisierten und digitalisierten Bestattungsdienstleistungen. Digitale Plattformen gewinnen als erste Anlaufstelle für Bestattungsplanung und Lead-Generierung an Bedeutung – direktes strukturelles Marktargument für bestattungsplaner.ch als digitales Lead-Vermittlungsportal in der Schweiz.",
+        source: "ekz-crosstour.ch",
+        url: "https://ekz-crosstour.ch/2026/04/08/der-markt-fur-bestattungs-und-friedhofsdienstleistungen-wird-bis-2847-voraussichtlich-rasant-wachsen/",
+        date: "2026-04-08",
+        category: "Markt & Trends",
+        addedAt: "2026-04-13",
+      },
       // Neu: 12.04.2026 (Recherche-Runde 2)
       {
         summary: "Der Gartenbau (Fachmagazin für Grün- und Bestattungsberufe): 'ABSCHIED'26 – Neue Schweizer Fachmesse für Vorsorge, Pflege und Trauer' – Berichterstattung im Schweizer Fachmagazin für Grün- und Bestattungsberufe zur ersten nationalen Branchenmesse (29./30. Oktober 2026, Luzern) bestätigt wachsenden Professionalisierungsdruck und Digitalisierungsbereitschaft im Bestattungsgewerbe. Aussteller aus Vorsorge, Pflege, Bestattung und Trauer – direktes strukturelles Marktumfeld für bestattungsplaner.ch als digitale Lead-Plattform.",
