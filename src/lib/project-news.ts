@@ -1156,6 +1156,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 14.04.2026 (Recherche-Runde 4)
+      {
+        summary: "runvigil.app: 'Prop Firms in Switzerland (CH) 2026: Availability & Rules' – Übersichtsguide listet 19 Prop-Trading-Firmen, die Schweizer Trader akzeptieren. Wichtigste steuerliche Besonderheit: Private Kapitalgewinne in der Schweiz sind grundsätzlich steuerfrei; häufiges Trading kann jedoch als gewerbsmässiger Wertschriftenhandel eingestuft und als Einkommensteuer besteuert werden. Klarheit über steuerliche Implikationen und Plattformzugänglichkeit für Schweizer Prop-Trader – relevantes Marktumfeld für Mind Rocket Tradings Schweizer Zielgruppe.",
+        source: "runvigil.app",
+        url: "https://runvigil.app/countries/switzerland",
+        date: "2026",
+        category: "Regulierung",
+        addedAt: "2026-04-14",
+      },
+      {
+        summary: "getleveraged.com: 'The Complete Guide to Prop Trading in 2026' – Umfassender Leitfaden für Prop-Trading 2026: Erklärung des Two-Step-Evaluation-Modells, Übersicht der führenden Prop-Firmen (Apex, FTMO, TopStep, MyFundedFutures), Vergleich von Regelwerken, Payoutstrukturen und Drawdown-Typen. Prop-Trading entwickelt sich zum Mainstream-Einstiegsmodell für ambitionierte Retail-Trader ohne grosses Eigenkapital – wachsendes Nachfrageumfeld für strukturierte Prop-Trading-Ausbildungsangebote wie bei Mind Rocket Trading.",
+        source: "getleveraged.com",
+        url: "https://getleveraged.com/traders-library/the-complete-guide-to-prop-trading-in-2026/",
+        date: "2026",
+        category: "Futures & Trading",
+        addedAt: "2026-04-14",
+      },
       // Neu: 14.04.2026 (Recherche-Runde 3)
       {
         summary: "catinathebroker.com: 'Apex Trader Funding Rule Changes in 2026: What you Need to Know' – März 2026: Apex Trader Funding implementiert Major Update 4.0: Einmalige Evaluierungsgebühr ohne monatliche Abonnements, festes Profitziel von 6% des Startkapitals, keine Mindest-Handelstage, 50%-Konsistenz-Regel, wöchentliche Auszahlungen mit 6-stufigem Ladder-System. Zwei neue Drawdown-Modelle: EOD (End-of-Day) und Intraday-Trailing. Direktes Update-Umfeld für Mind Rocket Tradings Prop-Trading-Ansatz über Apex.",
@@ -6217,6 +6234,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 14.04.2026 (Recherche-Runde 5)
+      {
+        summary: "werde-erde.ch: Verein 'Werde Erde' – Medienseite zur Kompostbestattung (Terramation) in der Schweiz – Der Schweizer Verein 'Werde Erde' (gegr. 2022) sammelt Medienberichte zur Terramation: Körper wird innerhalb von 30–40 Tagen durch Mikroorganismen zu Humus umgewandelt. Stadt Zürich finanziert Pilotprojekt; Kantonsrat Zürich hat Kompostbestattung grundsätzlich zugelassen. Neuartige, nachhaltige Bestattungsformen wachsen in der gesellschaftlichen Akzeptanz – erweitertes Marktumfeld für bestattungsplaner.ch.",
+        source: "werde-erde.ch",
+        url: "https://werde-erde.ch/medien",
+        date: "2026",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-14",
+      },
+      {
+        summary: "kath.ch: 'Neue Bestattungsform Terramation' – Medienspiegel der Schweizer Katholischen Kirche zeigt: Kompostbestattung als gesellschaftliches Diskursthema hat kirchliche Kreise erreicht. Breite öffentliche Debatte über Terramation und alternative Bestattungsformen in der Schweiz signalisiert gesellschaftliche Öffnung – wachsendes Informations- und Planungsbedürfnis als direktes Nachfrageumfeld für bestattungsplaner.ch.",
+        source: "kath.ch",
+        url: "https://www.kath.ch/medienspiegel/neue-bestattungsform-terramation/",
+        date: "2026",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-14",
+      },
+      {
+        summary: "SRF News: 'Natürliche Bestattung – Verstorbene kompostieren: Schweizer Forscher mit Pilotprojekt' – Westschweizer Forscher führt Pilotstudie zur Terramation durch: CO₂-Einsparungen, optimales Kapseldesign, Rahmenbedingungen für geregelte Einführung in der Schweiz. Wissenschaftliche Legitimierung alternativer Bestattungsformen erhöht Diskussionsintensität und Informationsbedürfnis rund um Bestattungsplanung – Nachfrageumfeld für bestattungsplaner.ch.",
+        source: "SRF News",
+        url: "https://www.srf.ch/news/dialog/natuerliche-bestattung-verstorbene-kompostieren-schweizer-forscher-mit-pilotprojekt",
+        date: "2026",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-14",
+      },
       // Neu: 14.04.2026 (Recherche-Runde 4)
       {
         summary: "cureta.de: 'Bestattung Schweiz: Recht, Kosten, Planung' – Umfassender Ratgeber zu Schweizer Bestattungsrecht: Kantonale Unterschiede bei Bestattungsvorschriften, Kostenspanne CHF 8'000–10'000+, gesetzliche Pflichten der Erben (Art. 603 ZGB). Wachsendes Online-Informationsbedürfnis rund um Bestattungsrecht und Vorsorge in der Schweiz – direktes Nachfrageumfeld für bestattungsplaner.ch als digitale Planungs- und Vermittlungsplattform.",
