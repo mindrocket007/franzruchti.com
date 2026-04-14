@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CEO SIZ AG – Challenge Chatbot</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --bg: #0f1117; --surface: #1a1d27; --surface2: #242836; --border: #2e3348;
+    --text: #e8eaed; --text2: #9aa0b4; --accent: #6366f1; --accent-light: #818cf8;
+    --green: #22c55e; --yellow: #eab308; --red: #ef4444; --orange: #f97316;
+    --blue: #3b82f6; --purple: #a855f7; --cyan: #06b6d4;
+  }
+  body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+  .app { max-width: 900px; margin: 0 auto; padding: 20px; display: flex; flex-direction: column; min-height: 100vh; }
+
+  .header { text-align: center; padding: 30px 0 20px; border-bottom: 1px solid var(--border); margin-bottom: 20px; }
+  .header h1 { font-size: 1.8em; font-weight: 800; background: linear-gradient(135deg, var(--accent-light), var(--cyan)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .header p { color: var(--text2); font-size: 0.95em; margin-top: 6px; }
+
+  .mode-bar { display: flex; gap: 6px; justify-content: center; margin-bottom: 20px; flex-wrap: wrap; }
+  .mode-btn { padding: 8px 16px; border: 1px solid var(--border); background: var(--surface); color: var(--text2); border-radius: 8px; cursor: pointer; font-size: 0.85em; font-weight: 500; transition: all 0.2s; font-family: inherit; }
+  .mode-btn:hover { border-color: var(--accent); color: var(--text); }
+  .mode-btn.active { background: var(--accent); color: white; border-color: var(--accent); }
+
+  .chat-area { flex: 1; overflow-y: auto; padding: 10px 0; display: flex; flex-direction: column; gap: 14px; }
+
+  .msg { max-width: 85%; padding: 14px 18px; border-radius: 14px; font-size: 0.94em; line-height: 1.6; animation: fadeIn 0.3s ease; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+  .msg.ceo { background: var(--surface); border: 1px solid var(--border); align-self: flex-start; border-left: 3px solid var(--accent); }
+  .msg.ceo .sender { font-size: 0.78em; font-weight: 600; color: var(--accent-light); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
+
+  .msg.user { background: var(--accent); color: white; align-self: flex-end; border-radius: 14px 14px 4px 14px; }
+
+  .msg.system { background: rgba(99,102,241,0.08); border: 1px solid rgba(99,102,241,0.2); align-self: center; text-align: center; font-size: 0.88em; color: var(--text2); max-width: 90%; }
+
+  .options-grid { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  .option-btn { padding: 8px 14px; background: var(--surface2); border: 1px solid var(--border); color: var(--text); border-radius: 8px; cursor: pointer; font-size: 0.85em; font-family: inherit; transition: all 0.15s; text-align: left; }
+  .option-btn:hover { border-color: var(--accent); background: rgba(99,102,241,0.1); }
+
+  .input-area { display: flex; gap: 10px; padding: 16px 0 10px; border-top: 1px solid var(--border); margin-top: auto; }
+  .input-area input { flex: 1; padding: 12px 16px; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; color: var(--text); font-family: inherit; font-size: 0.94em; outline: none; }
+  .input-area input:focus { border-color: var(--accent); }
+  .input-area input::placeholder { color: var(--text2); }
+  .send-btn { padding: 12px 20px; background: var(--accent); color: white; border: none; border-radius: 10px; cursor: pointer; font-family: inherit; font-weight: 600; font-size: 0.9em; transition: background 0.15s; }
+  .send-btn:hover { background: var(--accent-light); }
+
+  .score-bar { display: flex; gap: 16px; justify-content: center; padding: 12px; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; margin-bottom: 16px; }
+  .score-item { text-align: center; }
+  .score-item .score-val { font-size: 1.4em; font-weight: 700; }
+  .score-item .score-label { font-size: 0.75em; color: var(--text2); }
+  .score-item.green .score-val { color: var(--green); }
+  .score-item.yellow .score-val { color: var(--yellow); }
+  .score-item.blue .score-val { color: var(--blue); }
+  .score-item.purple .score-val { color: var(--purple); }
+
+  .difficulty { display: flex; gap: 6px; align-items: center; margin-top: 8px; }
+  .diff-dot { width: 8px; height: 8px; border-radius: 50%; }
+  .diff-label { font-size: 0.78em; color: var(--text2); }
+</style>
+</head>
+<body>
+<div class="app" id="app"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.9/babel.min.js"></script>
+
+<script type="text/babel">
+const { useState, useRef, useEffect, useCallback } = React;
+
+// ============================================================
+// CHALLENGE DATABASE
+// ============================================================
+
+const CHALLENGES = {
+  strategie: {
+    label: 'Strategie',
+    color: 'var(--purple)',
+    questions: [
+      {
+        q: 'Du hast 200k CHF extra Budget für dieses Jahr. Wo investierst du es und warum? Nenne genau 3 Massnahmen mit Beträgen.',
+        hints: ['Denke an ROI', 'Welche Massnahme hat den grössten Hebel?', 'Kurzfristig vs. langfristig?'],
+        ideal: 'Ein starker CEO würde investieren in: 1) Digitalisierung der Prüfungsplattform (~80k) – skaliert das Kerngeschäft. 2) Firmenkunden-Pilotprogramm (~70k) – erschliesst neues Segment. 3) KI-Zertifikat-Entwicklung (~50k) – First-Mover-Advantage. Begründung: Plattform sichert die Basis, Firmenkunden diversifizieren Revenue, KI-Zertifikat positioniert für die Zukunft.',
+        difficulty: 3
+      },
+      {
+        q: 'Der VR fragt dich: "Warum soll es die SIZ in 10 Jahren noch geben?" Du hast 60 Sekunden. Was sagst du?',
+        hints: ['Elevator Pitch', 'Was ist der einzigartige Wert?', 'Warum kann das niemand anderes?'],
+        ideal: 'Kernargument: "Die SIZ ist die einzige neutrale, schweizerische Organisation, die ICT-Kompetenzen standardisiert prüft und zertifiziert – unabhängig von Tech-Konzernen. In einer Welt, in der digitale Kompetenz über Beschäftigungsfähigkeit entscheidet, braucht die Schweiz eine vertrauenswürdige, lokale Instanz. Wir werden vom reinen Prüfer zum Kompetenz-Ökosystem – inklusive KI-Zertifikaten, Firmen-Assessments und lebenslangem Kompetenznachweis."',
+        difficulty: 2
+      },
+      {
+        q: 'ECDL/ICDL lanciert ein aggressives Preisdumping: 30% günstiger als SIZ. Gleichzeitig bietet Microsoft kostenlose Zertifizierungen an. Was ist deine Strategie für die nächsten 12 Monate?',
+        hints: ['Nicht über Preis kämpfen', 'Was ist unser Differenziator?', 'Wo sind wir nicht ersetzbar?'],
+        ideal: 'Nie über den Preis kämpfen – das ist ein Krieg, den wir verlieren. Stattdessen: 1) Wert erhöhen: Schweizer Qualitätssiegel betonen, Anerkennung im Bildungssystem ausspielen. 2) Differenzieren: KI-Module und Schweiz-spezifische Inhalte, die Microsoft nicht bietet. 3) Partnerbindung: Exklusive Services für Schulen (Analytics, Support, Co-Branding). 4) Neues Segment: Firmenkunden, wo Preis weniger relevant ist als Qualität und Neutralität.',
+        difficulty: 3
+      },
+      {
+        q: 'Du darfst nur EINE strategische Initiative für das nächste Jahr wählen. Alles andere wird gestoppt. Welche wählst du?',
+        hints: ['Was hat den grössten Impact?', 'Was ist am dringendsten?', 'Was passiert wenn wir es NICHT tun?'],
+        ideal: 'Die Antwort zeigt Priorisierungsfähigkeit. Ein CEO muss sich entscheiden können. Starke Antworten: "KI-Zertifikat lancieren" (First Mover, Zukunftssicherung) oder "Firmenkunden-Pilotprogramm" (Revenue-Diversifikation). Schwache Antworten: "Alles ein bisschen" oder "Kosten senken". Die Begründung ist wichtiger als die Wahl.',
+        difficulty: 2
+      },
+      {
+        q: 'Stell dir vor, du könntest die SIZ von Grund auf neu aufbauen – mit dem Wissen von heute. Was würdest du anders machen?',
+        hints: ['Blank Slate Thinking', 'Welche Altlasten würdest du vermeiden?', 'Was würdest du beibehalten?'],
+        ideal: 'Diese Frage zeigt, ob du zwischen Kernwert und historischem Ballast unterscheiden kannst. Beibehalten: Neutralität, Schweizer Verankerung, Partnerschul-Netzwerk. Anders: Voll digital von Tag 1, modularer aufgebaut, API-first Plattform, stärkere Brand, Firmenkunden von Anfang an mitdenken, KI-adaptive Prüfungen.',
+        difficulty: 3
+      },
+    ]
+  },
+  finanzen: {
+    label: 'Finanzen & KPIs',
+    color: 'var(--green)',
+    questions: [
+      {
+        q: 'Der CFO zeigt dir: Revenue pro Partnerschule sinkt seit 3 Jahren. Gesamtrevenue ist stabil weil wir mehr Partner haben. Was machst du?',
+        hints: ['Ist Wachstum durch neue Partner nachhaltig?', 'Was treibt den Rückgang pro Partner?', 'Qualität vs. Quantität'],
+        ideal: 'Das ist ein Warnsignal. Stabiler Gesamtrevenue maskiert ein strukturelles Problem. Massnahmen: 1) Root-Cause-Analyse: Sinkt das Volumen pro Schule oder der Preis? 2) Top-Partner-Gespräche: Was hat sich verändert? 3) Churn-Prognose: Wenn kleine Partner wenig bringen und grosse schrumpfen, haben wir ein Problem. 4) Upselling-Strategie: Wie können wir den Revenue pro Partner steigern (neue Module, Premium-Services)?',
+        difficulty: 2
+      },
+      {
+        q: 'Quick-Fire: Nenne die 5 wichtigsten KPIs für den Bereich Markt & Partner. Für jeden KPI: Was ist die Zielgrösse und warum?',
+        hints: ['Finanziell + operativ + strategisch', 'Was würde ein Investor fragen?', 'Leading vs. Lagging Indicators'],
+        ideal: '1) Revenue pro Partnerschule (Ziel: CHF X, steigend) – zeigt Partnerwert. 2) NPS Partnerschulen (Ziel: >50) – Frühindikator für Churn. 3) Prüfungsvolumen-Trend (Ziel: +5% YoY) – Kernmetrik. 4) Partner-Churn-Rate (Ziel: <5%) – Bestandssicherung. 5) Pipeline neue Segmente (Ziel: 5+ qualifizierte Leads/Monat) – Zukunftssicherung.',
+        difficulty: 2
+      },
+      {
+        q: 'Du bekommst diese Zahl: 70% des Revenues kommen von den Top-10 Partnerschulen. Was bedeutet das und was tust du?',
+        hints: ['Klumpenrisiko', 'Pareto-Prinzip', 'Diversifikation vs. Fokus'],
+        ideal: 'Das ist ein klassisches Klumpenrisiko. Wenn 2-3 Top-Partner abspringen, verlieren wir 20-30% Revenue. Massnahmen: 1) VIP-Programm für Top-10: Persönliche Betreuung, exklusive Vorteile, langfristige Verträge. 2) Diversifikation: Mehr mittlere Partner aufbauen, Firmenkunden als zweites Standbein. 3) Risiko-Dashboard: Monatliches Health-Check pro Top-Partner. 4) Kein Grund zur Panik: 70/10 ist nicht ungewöhnlich, aber wir müssen es aktiv managen.',
+        difficulty: 2
+      },
+    ]
+  },
+  krisen: {
+    label: 'Krisensimulation',
+    color: 'var(--red)',
+    questions: [
+      {
+        q: 'ALARM: Deine grösste Partnerschule (15% des Volumens) teilt dir mit, dass sie ab nächstem Semester auf Microsoft-Zertifizierungen umstellt. Du hast 48 Stunden. Was tust du?',
+        hints: ['Erst verstehen, dann handeln', 'Wer muss informiert werden?', 'Schadensbegrenzung + Gegenangebot'],
+        ideal: 'Stunde 1-4: CEO ruft den Rektor/Schulleiter persönlich an. Nicht E-Mail, nicht delegieren. Zuhören: Warum? Was hat Microsoft geboten? Ist die Entscheidung final? Stunde 4-12: Notfall-GL-Sitzung. Gegenangebot erarbeiten: Preis, exklusive Module, Co-Branding, Support. Stunde 12-24: VR informieren (keine Überraschungen). Andere Top-Partner präventiv kontaktieren. Stunde 24-48: Gegenangebot präsentieren. Parallel: Plan B wenn der Partner trotzdem geht (Revenue-Lücke quantifizieren, Sparmassnahmen skizzieren).',
+        difficulty: 3
+      },
+      {
+        q: 'Die Prüfungsplattform ist ausgefallen – mitten in der Prüfungswoche. 2000 Lernende können ihre Prüfung nicht ablegen. Schulen rufen wütend an. Was machst du?',
+        hints: ['Krisenkommunikation', 'Sofortmassnahmen vs. Root Cause', 'Vertrauen wiederherstellen'],
+        ideal: 'Sofort (Stunde 1): War Room einrichten. IT-Team: Was ist passiert, wann ist es behoben? Kommunikation: Proaktiv ALLE betroffenen Schulen informieren (nicht warten bis sie anrufen). Ehrlich sein: "Wir haben ein Problem, wir arbeiten daran, hier ist der Zeitplan." Stunde 2-8: Ausweichplan: Prüfungen verschieben, alternative Termine anbieten. CEO ruft die 5 grössten betroffenen Schulen persönlich an. Nach Behebung: Transparenter Incident Report. Root-Cause-Analyse. Investition in Redundanz. Goodwill-Geste an betroffene Schulen.',
+        difficulty: 3
+      },
+      {
+        q: 'Ein Artikel in der NZZ behauptet: "SIZ-Zertifikate sind veraltet und am Arbeitsmarkt irrelevant." Der Artikel wird auf LinkedIn viral geteilt. Deine Reaktion?',
+        hints: ['Nicht impulsiv reagieren', 'Fakten sammeln', 'Narrative kontrollieren'],
+        ideal: 'NICHT sofort wütend auf LinkedIn antworten. Schritt 1: Artikel analysieren – was stimmt, was nicht? Schritt 2: Fakten sammeln (Arbeitgeberbefragung, Einstellungsdaten, Erfolgsgeschichten). Schritt 3: Professionelle Stellungnahme mit Daten. Schritt 4: Testimonials von Arbeitgebern und Absolventen sammeln und teilen. Schritt 5: CEO schreibt einen eigenen, konstruktiven LinkedIn-Post: "Die Kritik nehmen wir ernst. Hier ist, was wir tun..." Langfristig: Studie zur Arbeitsmarktrelevanz in Auftrag geben.',
+        difficulty: 2
+      },
+    ]
+  },
+  markt: {
+    label: 'Markt & Partner',
+    color: 'var(--cyan)',
+    questions: [
+      {
+        q: 'Du hast ein Meeting mit dem HR-Chef eines Schweizer Versicherungskonzerns (5000 Mitarbeitende). Er hat 30 Minuten. Wie verkaufst du SIZ-Assessments für seine Mitarbeitenden?',
+        hints: ['Sein Problem lösen, nicht dein Produkt pitchen', 'Was sind seine Schmerzpunkte?', 'ROI ist König'],
+        ideal: 'Nicht mit SIZ anfangen, sondern mit seinem Problem: "Wie stellen Sie sicher, dass Ihre 5000 Mitarbeitenden die digitalen Skills haben, die Sie in 3 Jahren brauchen?" Dann: Neutraler Assessment → Skill-Gaps identifizieren → Gezielt investieren statt Giesskanne. ROI-Argument: "Statt 500k in allgemeine Schulungen investieren, zeigen wir Ihnen in 4 Wochen, wo die grössten Gaps sind. Das spart Ihnen mindestens 30% Schulungsbudget." Abschluss: Pilot mit 200 Mitarbeitenden vorschlagen, kostenreduziert, Ergebnisse in 6 Wochen.',
+        difficulty: 2
+      },
+      {
+        q: 'Drei Partnerschulen in der Romandie wollen mit SIZ zusammenarbeiten. Aber: Alle Prüfungen sind nur auf Deutsch. Wie gehst du vor?',
+        hints: ['Kosten-Nutzen', 'Schrittweiser Aufbau', 'Welche Module zuerst?'],
+        ideal: 'Erst validieren: Wie gross ist das Potenzial der Romandie? (Anzahl Berufsschulen, Lernende, Marktgrösse). Dann schrittweise: Phase 1: Die 3 meistgefragten Module auf Französisch übersetzen lassen (nicht alles auf einmal). Phase 2: Pilot mit den 3 Schulen über 2 Semester. Phase 3: Bei Erfolg ausbauen. Finanzierung: Co-Finanzierung mit den Schulen oder Unterstützung über Swico. Wichtig: Lokalen Ansprechpartner/Botschafter in der Romandie finden.',
+        difficulty: 2
+      },
+      {
+        q: 'Eine EdTech-Startup aus Berlin bietet dir eine Partnerschaft an: Sie haben eine KI-basierte Lernplattform mit 50'000 Nutzern in der DACH-Region. Was fragst du und wie entscheidest du?',
+        hints: ['Due Diligence', 'Win-Win oder einseitig?', 'Strategischer Fit'],
+        ideal: 'Fragen: 1) Wie viele Nutzer sind in der Schweiz? 2) Wie monetarisieren sie? 3) Was genau wollen sie von uns? (Brand, Zertifizierung, Content?) 4) Wer sind ihre Investoren, wie ist der Runway? Bewertung: Passt es strategisch? (Zugang zu neuen Nutzern = ja). Risiken? (Abhängigkeit, Brand-Verwässerung, Qualitätskontrolle). Entscheid-Framework: Pilot mit klaren KPIs über 6 Monate. Keine Exklusivität. SIZ-Brand bleibt unter unserer Kontrolle. Exit-Klausel wenn KPIs nicht erreicht.',
+        difficulty: 3
+      },
+    ]
+  },
+  selbstfuehrung: {
+    label: 'Selbstführung',
+    color: 'var(--yellow)',
+    questions: [
+      {
+        q: 'Du merkst: 80% deiner Woche besteht aus Meetings und E-Mails. Strategiearbeit kommt zu kurz. Du bist reaktiv statt proaktiv. Wie änderst du das ab Montag?',
+        hints: ['Kalender-Audit', 'Nein sagen lernen', 'Deep Work Blöcke'],
+        ideal: 'Sofortmassnahmen: 1) Kalender-Audit: Jedes Meeting bewerten – muss ICH dabei sein? 30% streichen oder delegieren. 2) Deep-Work-Blöcke: Montag und Mittwoch 8-11 Uhr = keine Meetings, kein E-Mail. Im Kalender blockiert als "Strategiezeit CEO". 3) E-Mail-Rhythmus: Nur 3x täglich checken (9:00, 13:00, 16:00). 4) Delegation: Für jedes Meeting definieren – wer kann statt mir gehen? 5) Freitagnachmittag = Reflexion und Wochenplanung.',
+        difficulty: 1
+      },
+      {
+        q: 'Dein bester Mitarbeiter kommt zu dir und sagt: "Ich habe ein Angebot von Microsoft. 30% mehr Gehalt." Was tust du?',
+        hints: ['Nicht panisch reagieren', 'Es geht selten nur ums Geld', 'Langfristig denken'],
+        ideal: 'Schritt 1: Ruhig bleiben. "Danke, dass du offen bist. Lass uns reden." Schritt 2: Verstehen – Was reizt dich? (Geld? Aufgabe? Entwicklung? Kultur?) Schritt 3: Ehrlich sein – "Du bist wichtig für uns. Ich möchte, dass du bleibst. Was bräuchtest du?" Schritt 4: Realistisches Gegenangebot – nicht nur Geld, sondern: Rolle, Verantwortung, Titel, Weiterbildung, Flexibilität. Schritt 5: Deadline setzen – "Ich mache dir bis Freitag einen Vorschlag." Langfristig: Warum haben wir das nicht vorher gemerkt? Retention-Programm aufbauen.',
+        difficulty: 2
+      },
+      {
+        q: 'Du hast einen strategischen Fehler gemacht: Ein neues Modul, das du lanciert hast, ist gefloppt. 80k CHF investiert, kaum Anmeldungen. Der VR fragt nach. Was sagst du?',
+        hints: ['Ownership übernehmen', 'Learnings extrahieren', 'Nicht verteidigen – analysieren'],
+        ideal: 'NICHT: Ausreden, Schuldzuweisungen, oder "der Markt war nicht bereit." STATTDESSEN: "Ich habe die Entscheidung getroffen, ich übernehme die Verantwortung. Hier ist meine Analyse: Wir haben X falsch eingeschätzt. Die Marktvalidierung war ungenügend. Die Learnings sind: 1) ... 2) ... 3) ... Mein Vorschlag: Wir stoppen das Modul, retten was geht, und wenden die Learnings auf zukünftige Launches an. Hier ist der angepasste Prozess." Ein CEO der Fehler eingesteht und daraus lernt, gewinnt mehr Vertrauen als einer der alles schönredet.',
+        difficulty: 2
+      },
+    ]
+  },
+};
+
+const WELCOME_MSG = `Willkommen, Franz. Ich bin dein CEO-Sparringpartner.
+
+Ich stelle dir die Fragen, die ein CEO der SIZ AG sich stellt – und erwarte von dir Antworten auf GL-Niveau. Keine Ausreden, keine vagen Ideen. Konkret, strategisch, umsetzbar.
+
+Wähle oben eine Kategorie oder tippe "Los" – dann wähle ich für dich.
+
+Bereit?`;
+
+// ============================================================
+// APP
+// ============================================================
+
+function App() {
+  const [mode, setMode] = useState(null);
+  const [messages, setMessages] = useState([{ type: 'ceo', text: WELCOME_MSG }]);
+  const [input, setInput] = useState('');
+  const [currentQ, setCurrentQ] = useState(null);
+  const [hintIdx, setHintIdx] = useState(0);
+  const [showIdeal, setShowIdeal] = useState(false);
+  const [stats, setStats] = useState({ answered: 0, categories: 0, streak: 0, best: 0 });
+  const [usedQuestions, setUsedQuestions] = useState({});
+  const chatRef = useRef(null);
+
+  useEffect(() => {
+    if (chatRef.current) chatRef.current.scrollTop = chatRef.current.scrollHeight;
+  }, [messages]);
+
+  const addMsg = (type, text) => setMessages(prev => [...prev, { type, text }]);
+
+  const getRandomQ = (cat) => {
+    const qs = CHALLENGES[cat].questions;
+    const used = usedQuestions[cat] || [];
+    const available = qs.filter((_, i) => !used.includes(i));
+    if (available.length === 0) {
+      setUsedQuestions(prev => ({ ...prev, [cat]: [] }));
+      return qs[Math.floor(Math.random() * qs.length)];
+    }
+    const chosen = available[Math.floor(Math.random() * available.length)];
+    const idx = qs.indexOf(chosen);
+    setUsedQuestions(prev => ({ ...prev, [cat]: [...(prev[cat] || []), idx] }));
+    return chosen;
+  };
+
+  const startChallenge = (cat) => {
+    const q = getRandomQ(cat);
+    setCurrentQ({ ...q, cat });
+    setHintIdx(0);
+    setShowIdeal(false);
+    setMode(cat);
+    const diffText = ['', 'Einstieg', 'Fortgeschritten', 'CEO-Level'][q.difficulty];
+    const diffDots = Array(3).fill(null).map((_, i) =>
+      `<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${i < q.difficulty ? CHALLENGES[cat].color : 'var(--border)'};margin-right:3px"></span>`
+    ).join('');
+    addMsg('ceo', `<div class="sender">CEO Challenge – ${CHALLENGES[cat].label}</div>${q.q}<div style="margin-top:10px;font-size:0.82em;color:var(--text2)">${diffDots} ${diffText}</div>`);
+  };
+
+  const handleSend = () => {
+    if (!input.trim()) return;
+    const text = input.trim();
+    setInput('');
+    addMsg('user', text);
+
+    if (!currentQ) {
+      if (text.toLowerCase().includes('los') || text.toLowerCase().includes('start') || text.toLowerCase().includes('random')) {
+        const cats = Object.keys(CHALLENGES);
+        const cat = cats[Math.floor(Math.random() * cats.length)];
+        setTimeout(() => startChallenge(cat), 500);
+      } else {
+        setTimeout(() => addMsg('ceo', '<div class="sender">CEO</div>Wähle eine Kategorie oben – oder tippe "Los" für eine zufällige Challenge.'), 400);
+      }
+      return;
+    }
+
+    // User answered a challenge
+    setStats(prev => ({
+      answered: prev.answered + 1,
+      categories: new Set([...Array(prev.categories)].concat([currentQ.cat])).size || prev.categories + (prev.answered === 0 ? 1 : 0),
+      streak: prev.streak + 1,
+      best: Math.max(prev.best, prev.streak + 1)
+    }));
+
+    setTimeout(() => {
+      addMsg('ceo', `<div class="sender">CEO Feedback</div>Danke für deine Antwort. Lass mich dir zeigen, wie ich als CEO darüber denke:\n\n<div style="background:rgba(99,102,241,0.08);border:1px solid rgba(99,102,241,0.15);border-radius:8px;padding:14px;margin-top:10px;font-size:0.92em;line-height:1.6"><strong style="color:var(--accent-light)">CEO-Perspektive:</strong><br/>${currentQ.ideal}</div>\n\n<div style="margin-top:12px;font-size:0.88em;color:var(--text2)">Vergleiche deine Antwort mit meiner. Wo denkst du anders? Was hast du vergessen? Was hast du besser gemacht?</div>`);
+
+      setTimeout(() => {
+        setCurrentQ(null);
+        addMsg('system', 'Bereit für die nächste Challenge? Wähle eine Kategorie oder tippe "Los".');
+      }, 500);
+    }, 800);
+  };
+
+  const showHint = () => {
+    if (currentQ && hintIdx < currentQ.hints.length) {
+      addMsg('ceo', `<div class="sender">Hinweis ${hintIdx + 1}/${currentQ.hints.length}</div>💡 ${currentQ.hints[hintIdx]}`);
+      setHintIdx(prev => prev + 1);
+    }
+  };
+
+  const handleKey = (e) => { if (e.key === 'Enter') handleSend(); };
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', maxWidth: 900, margin: '0 auto', padding: 20 }}>
+      <div className="header">
+        <h1>CEO Challenge Bot</h1>
+        <p>Dein CEO stellt dir die harten Fragen – werde GL-ready</p>
+      </div>
+
+      <div className="score-bar">
+        <div className="score-item green"><div className="score-val">{stats.answered}</div><div className="score-label">Beantwortet</div></div>
+        <div className="score-item blue"><div className="score-val">{stats.streak}</div><div className="score-label">Streak</div></div>
+        <div className="score-item purple"><div className="score-val">{stats.best}</div><div className="score-label">Best Streak</div></div>
+      </div>
+
+      <div className="mode-bar">
+        {Object.entries(CHALLENGES).map(([key, val]) => (
+          <button key={key} className={`mode-btn ${mode === key ? 'active' : ''}`} onClick={() => startChallenge(key)}>
+            {val.label}
+          </button>
+        ))}
+        {currentQ && (
+          <button className="mode-btn" onClick={showHint} style={{ borderColor: 'var(--yellow)', color: 'var(--yellow)' }}>
+            💡 Hinweis {hintIdx < (currentQ?.hints?.length || 0) ? `(${currentQ.hints.length - hintIdx} übrig)` : '(alle gezeigt)'}
+          </button>
+        )}
+      </div>
+
+      <div className="chat-area" ref={chatRef}>
+        {messages.map((m, i) => (
+          <div key={i} className={`msg ${m.type}`} dangerouslySetInnerHTML={{ __html: m.text.replace(/\n/g, '<br/>') }} />
+        ))}
+      </div>
+
+      <div className="input-area">
+        <input
+          value={input}
+          onChange={e => setInput(e.target.value)}
+          onKeyDown={handleKey}
+          placeholder={currentQ ? 'Deine Antwort als CEO...' : 'Tippe "Los" oder wähle eine Kategorie...'}
+        />
+        <button className="send-btn" onClick={handleSend}>Senden</button>
+      </div>
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('app')).render(<App />);
+</script>
+</body>
+</html>

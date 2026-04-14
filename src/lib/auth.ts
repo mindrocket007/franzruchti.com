@@ -1,5 +1,7 @@
-import { NextRequest, NextResponse } from "next/server";
+import { cookies } from "next/headers";
+import { prisma } from "./prisma";
 
+// Verify HMAC token (same logic as middleware.ts)
 async function verifyToken(cookieValue: string, secret: string): Promise<boolean> {
   try {
     const parts = cookieValue.split(".");
@@ -25,19 +27,17 @@ async function verifyToken(cookieValue: string, secret: string): Promise<boolean
   }
 }
 
-export async function middleware(req: NextRequest) {
-  const cookie = req.cookies.get("auth")?.value;
+export async function getUser() {
+  const cookieStore = await cookies();
+  const cookie = cookieStore.get("auth")?.value;
   const secret = process.env.AUTH_SECRET || "fallback";
 
-  if (!cookie || !(await verifyToken(cookie, secret))) {
-    return NextResponse.redirect(new URL("/login", req.url));
-  }
+  if (!cookie || !(await verifyToken(cookie, secret))) return null;
 
-  const response = NextResponse.next();
-  response.headers.set("X-Robots-Tag", "noindex, nofollow");
-  return response;
+  // Single-user: return first user from DB
+  const user = await prisma.user.findFirst({
+    select: { id: true, email: true, name: true },
+  });
+
+  return user;
 }
-
-export const config = {
-  matcher: ["/dashboard/:path*", "/project/:path*", "/fitness/:path*"],
-};

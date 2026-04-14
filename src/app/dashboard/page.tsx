@@ -1,10 +1,48 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { projects } from "@/lib/projects";
 
+const NOTES_KEY = "dashboard-notes";
+
 export default function DashboardPage() {
   const router = useRouter();
+  const [notes, setNotes] = useState("");
+  const [savedAt, setSavedAt] = useState<string | null>(null);
+
+  useEffect(() => {
+    const stored = localStorage.getItem(NOTES_KEY);
+    if (stored) setNotes(stored);
+  }, []);
+
+  function handleSaveNotes() {
+    localStorage.setItem(NOTES_KEY, notes);
+    setSavedAt(new Date().toLocaleTimeString("de-CH", { hour: "2-digit", minute: "2-digit" }));
+  }
+
+  const [importStatus, setImportStatus] = useState<string | null>(null);
+
+  async function handleImportAccesses() {
+    setImportStatus("Lade …");
+    try {
+      const res = await fetch("/api/accesses");
+      if (!res.ok) throw new Error("Fehler beim Laden");
+      const { data } = await res.json();
+      let count = 0;
+      for (const [slug, entries] of Object.entries(data as Record<string, unknown[]>)) {
+        const withIds = (entries as Array<Record<string, string>>).map((e) => ({
+          id: Math.random().toString(36).slice(2, 9),
+          ...e,
+        }));
+        localStorage.setItem(`accesses-${slug}`, JSON.stringify(withIds));
+        count += withIds.length;
+      }
+      setImportStatus(`${count} Zugänge in ${Object.keys(data).length} Projekten gespeichert`);
+    } catch (e) {
+      setImportStatus("Fehler: " + (e instanceof Error ? e.message : "unbekannt"));
+    }
+  }
 
   async function handleLogout() {
     await fetch("/api/logout", { method: "POST" });
@@ -13,7 +51,7 @@ export default function DashboardPage() {
 
   return (
     <main className="min-h-screen bg-black px-6 py-12 md:px-16 lg:px-24">
-      <div className="flex items-center justify-between mb-12">
+      <div className="flex items-center justify-between mb-8">
         <h1 className="text-white text-2xl md:text-3xl font-bold">Meine Projekte</h1>
         <button
           onClick={handleLogout}
@@ -23,7 +61,50 @@ export default function DashboardPage() {
         </button>
       </div>
 
+      <div className="mb-6 border border-neutral-800 rounded-xl p-5 bg-neutral-950">
+        <div className="flex items-center justify-between mb-3">
+          <h2 className="text-white text-sm font-semibold uppercase tracking-wide">Notizen</h2>
+          <div className="flex items-center gap-3">
+            {savedAt && (
+              <span className="text-neutral-500 text-xs">Gespeichert um {savedAt}</span>
+            )}
+            <button
+              onClick={handleSaveNotes}
+              className="text-xs bg-white text-black px-3 py-1 rounded hover:bg-neutral-200 transition-colors"
+            >
+              Speichern
+            </button>
+          </div>
+        </div>
+        <textarea
+          value={notes}
+          onChange={(e) => setNotes(e.target.value)}
+          placeholder="Gedanken, Ideen, offene Punkte …"
+          className="w-full min-h-[120px] bg-black border border-neutral-800 rounded-lg p-3 text-neutral-200 text-sm placeholder-neutral-600 focus:outline-none focus:border-neutral-600 resize-y"
+        />
+      </div>
+
+      <div className="mb-12 flex items-center gap-3">
+        <button
+          onClick={handleImportAccesses}
+          className="text-xs border border-neutral-800 text-neutral-400 hover:border-neutral-600 hover:text-white px-3 py-2 rounded transition-colors"
+        >
+          Zugänge aus Server importieren
+        </button>
+        {importStatus && <span className="text-neutral-500 text-xs">{importStatus}</span>}
+      </div>
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <a
+          href="/fitness"
+          className="group border border-blue-800 bg-blue-950/30 rounded-xl p-6 hover:border-blue-600 transition-colors"
+        >
+          <h2 className="text-white text-xl font-semibold mb-2 group-hover:text-blue-300">
+            Fitness Dashboard
+          </h2>
+          <p className="text-neutral-400 text-sm">Ernaehrung, Gewicht, Training, Recovery – Yazio & Garmin</p>
+          <p className="text-blue-600 text-xs mt-4">Live-Daten</p>
+        </a>
         {projects.map((project) => (
           <a
             key={project.slug}

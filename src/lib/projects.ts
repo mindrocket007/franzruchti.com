@@ -217,4 +217,17 @@ export const projects: Project[] = [
       },
     ],
   },
+  {
+    slug: "monsieur-claude",
+    title: "Monsieur Claude",
+    description: "Schweizer Steuer- und Buchhaltungs-SaaS mit KI-Buchungsassistent, echter doppelter Buchhaltung nach OR 957 und integriertem Steuerdossier (Privat + Einzelunternehmen + GmbH/AG) – monsieur-claude.ch",
+    pages: [
+      {
+        slug: "homepage",
+        title: "monsieur-claude.ch",
+        file: "https://monsieur-claude.ch",
+        external: true,
+      },
+    ],
+  },
 ];

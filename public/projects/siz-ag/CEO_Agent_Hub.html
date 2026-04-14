@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CEO SIZ AG – Agentensystem</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --bg: #0a0c10; --surface: #12151e; --surface2: #1a1e2e; --surface3: #232840;
+    --border: #2a3050; --border-light: #3a4060;
+    --text: #e8eaef; --text2: #8890aa; --text3: #5a6080;
+    --accent: #6366f1; --accent-light: #818cf8; --accent-dim: rgba(99,102,241,0.12);
+    --green: #22c55e; --green-dim: rgba(34,197,94,0.12);
+    --yellow: #eab308; --yellow-dim: rgba(234,179,8,0.12);
+    --red: #ef4444; --red-dim: rgba(239,68,68,0.12);
+    --orange: #f97316; --orange-dim: rgba(249,115,22,0.12);
+    --blue: #3b82f6; --blue-dim: rgba(59,130,246,0.12);
+    --purple: #a855f7; --purple-dim: rgba(168,85,247,0.12);
+    --cyan: #06b6d4; --cyan-dim: rgba(6,182,212,0.12);
+  }
+  body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+  .app { max-width: 1200px; margin: 0 auto; padding: 20px; }
+
+  /* Header */
+  .header {
+    text-align: center; padding: 40px 20px 30px;
+    background: linear-gradient(180deg, rgba(99,102,241,0.06) 0%, transparent 100%);
+    border-bottom: 1px solid var(--border); margin-bottom: 30px;
+    position: relative;
+  }
+  .header::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+    background: linear-gradient(90deg, var(--accent), var(--cyan), var(--purple));
+  }
+  .header-badge {
+    display: inline-block; background: var(--accent-dim); color: var(--accent-light);
+    font-size: 0.72rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase;
+    padding: 5px 14px; border-radius: 20px; border: 1px solid rgba(99,102,241,0.25); margin-bottom: 14px;
+  }
+  .header h1 {
+    font-size: 2.4em; font-weight: 900;
+    background: linear-gradient(135deg, #fff 0%, var(--accent-light) 50%, var(--cyan) 100%);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 8px;
+  }
+  .header p { color: var(--text2); font-size: 1.05em; max-width: 600px; margin: 0 auto; }
+  .header .date { color: var(--text3); font-size: 0.85em; margin-top: 8px; }
+
+  /* Nav */
+  .nav { display: flex; gap: 6px; flex-wrap: wrap; justify-content: center; margin-bottom: 30px; }
+  .nav-btn {
+    padding: 10px 18px; border: 1px solid var(--border); background: var(--surface);
+    color: var(--text2); border-radius: 10px; cursor: pointer; font-size: 0.85em;
+    font-weight: 500; transition: all 0.2s; font-family: inherit; display: flex; align-items: center; gap: 6px;
+  }
+  .nav-btn:hover { border-color: var(--accent); color: var(--text); background: var(--surface2); }
+  .nav-btn.active { background: var(--accent); color: white; border-color: var(--accent); }
+  .nav-btn .nav-icon { font-size: 1.1em; }
+
+  /* Cards */
+  .card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 16px;
+    padding: 28px; margin-bottom: 20px; transition: border-color 0.2s;
+  }
+  .card:hover { border-color: var(--border-light); }
+  .card h2 { font-size: 1.3em; margin-bottom: 6px; display: flex; align-items: center; gap: 10px; }
+  .card h3 { font-size: 1em; color: var(--accent-light); margin: 20px 0 10px; }
+  .card-sub { color: var(--text2); font-size: 0.9em; margin-bottom: 18px; line-height: 1.5; }
+
+  /* Grid layouts */
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  @media (max-width: 900px) { .grid-2, .grid-3 { grid-template-columns: 1fr; } .grid-4 { grid-template-columns: 1fr 1fr; } }
+
+  /* Module tiles */
+  .module-tile {
+    background: var(--surface2); border: 1px solid var(--border); border-radius: 14px;
+    padding: 24px; cursor: pointer; transition: all 0.2s; position: relative; overflow: hidden;
+  }
+  .module-tile:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,0,0,0.3); }
+  .module-tile .tile-icon { font-size: 2em; margin-bottom: 12px; }
+  .module-tile h3 { font-size: 1.05em; font-weight: 700; margin-bottom: 6px; color: var(--text); }
+  .module-tile p { font-size: 0.85em; color: var(--text2); line-height: 1.5; }
+  .module-tile .tile-tag {
+    display: inline-block; font-size: 0.7em; font-weight: 600; padding: 3px 10px;
+    border-radius: 12px; margin-top: 12px; text-transform: uppercase; letter-spacing: 0.5px;
+  }
+
+  /* KPI cards */
+  .kpi-card {
+    background: var(--surface2); border: 1px solid var(--border); border-radius: 12px;
+    padding: 20px; text-align: center;
+  }
+  .kpi-card .kpi-icon { font-size: 1.5em; margin-bottom: 8px; }
+  .kpi-card .kpi-value { font-size: 1.8em; font-weight: 800; margin-bottom: 2px; }
+  .kpi-card .kpi-label { font-size: 0.78em; color: var(--text2); text-transform: uppercase; letter-spacing: 0.5px; }
+  .kpi-card .kpi-trend { font-size: 0.8em; margin-top: 6px; font-weight: 600; }
+  .kpi-trend.up { color: var(--green); }
+  .kpi-trend.down { color: var(--red); }
+  .kpi-trend.neutral { color: var(--yellow); }
+
+  /* Task list */
+  .task-item {
+    display: flex; align-items: flex-start; gap: 12px; padding: 12px 14px;
+    border-radius: 10px; margin-bottom: 4px; cursor: pointer; transition: background 0.15s;
+  }
+  .task-item:hover { background: var(--surface2); }
+  .task-check {
+    width: 22px; height: 22px; min-width: 22px; border: 2px solid var(--border);
+    border-radius: 6px; display: flex; align-items: center; justify-content: center;
+    margin-top: 1px; transition: all 0.2s; font-size: 12px;
+  }
+  .task-check.done { background: var(--green); border-color: var(--green); color: white; }
+  .task-text { flex: 1; font-size: 0.92em; line-height: 1.5; }
+  .task-text.done { text-decoration: line-through; color: var(--text2); }
+  .task-priority {
+    font-size: 0.7em; font-weight: 600; padding: 2px 8px; border-radius: 10px;
+    text-transform: uppercase; white-space: nowrap;
+  }
+  .priority-high { background: var(--red-dim); color: var(--red); }
+  .priority-medium { background: var(--yellow-dim); color: var(--yellow); }
+  .priority-low { background: var(--green-dim); color: var(--green); }
+
+  /* Timeline */
+  .timeline-item {
+    position: relative; padding-left: 30px; margin-bottom: 20px;
+  }
+  .timeline-item::before {
+    content: ''; position: absolute; left: 8px; top: 30px; bottom: -20px;
+    width: 2px; background: var(--border);
+  }
+  .timeline-item:last-child::before { display: none; }
+  .timeline-dot {
+    position: absolute; left: 0; top: 6px; width: 18px; height: 18px;
+    border-radius: 50%; border: 3px solid var(--bg);
+  }
+  .timeline-content {
+    background: var(--surface2); border-radius: 10px; padding: 16px 20px;
+    border: 1px solid var(--border);
+  }
+  .timeline-time { font-size: 0.8em; font-weight: 600; margin-bottom: 4px; }
+  .timeline-title { font-weight: 600; margin-bottom: 4px; }
+  .timeline-desc { font-size: 0.88em; color: var(--text2); }
+
+  /* Meeting card */
+  .meeting-card {
+    background: var(--surface2); border: 1px solid var(--border); border-radius: 12px;
+    padding: 20px; margin-bottom: 12px; border-left: 3px solid var(--accent);
+  }
+  .meeting-card .meeting-time { font-size: 0.8em; font-weight: 700; color: var(--accent-light); margin-bottom: 4px; }
+  .meeting-card .meeting-title { font-weight: 700; margin-bottom: 6px; }
+  .meeting-card .meeting-prep { font-size: 0.88em; color: var(--text2); line-height: 1.5; }
+  .meeting-card .meeting-questions { margin-top: 10px; list-style: none; }
+  .meeting-card .meeting-questions li {
+    padding: 6px 0; font-size: 0.88em; color: var(--text2);
+    border-bottom: 1px solid rgba(42,48,80,0.5); display: flex; gap: 8px;
+  }
+  .meeting-card .meeting-questions li:last-child { border: none; }
+  .meeting-card .meeting-questions li::before { content: '?'; color: var(--accent-light); font-weight: 700; }
+  .meeting-goal {
+    margin-top: 10px; padding: 10px 14px; background: var(--accent-dim);
+    border-radius: 8px; font-size: 0.85em; color: var(--accent-light);
+  }
+
+  /* Chat interface */
+  .chat-container { display: flex; flex-direction: column; height: 500px; }
+  .chat-messages { flex: 1; overflow-y: auto; padding: 10px 0; display: flex; flex-direction: column; gap: 12px; }
+  .chat-msg {
+    max-width: 85%; padding: 14px 18px; border-radius: 14px; font-size: 0.92em; line-height: 1.6;
+    animation: msgIn 0.3s ease;
+  }
+  @keyframes msgIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+  .chat-msg.ceo {
+    background: var(--surface2); border: 1px solid var(--border); align-self: flex-start;
+    border-left: 3px solid var(--accent);
+  }
+  .chat-msg.ceo .sender { font-size: 0.75em; font-weight: 700; color: var(--accent-light); margin-bottom: 5px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .chat-msg.user { background: var(--accent); color: white; align-self: flex-end; border-radius: 14px 14px 4px 14px; }
+  .chat-msg.system {
+    background: var(--accent-dim); border: 1px solid rgba(99,102,241,0.2);
+    align-self: center; text-align: center; font-size: 0.85em; color: var(--text2); max-width: 90%;
+  }
+  .chat-input-row { display: flex; gap: 10px; padding-top: 14px; border-top: 1px solid var(--border); }
+  .chat-input {
+    flex: 1; padding: 12px 16px; background: var(--surface2); border: 1px solid var(--border);
+    border-radius: 10px; color: var(--text); font-family: inherit; font-size: 0.92em; outline: none;
+  }
+  .chat-input:focus { border-color: var(--accent); }
+  .chat-input::placeholder { color: var(--text3); }
+  .chat-send {
+    padding: 12px 22px; background: var(--accent); color: white; border: none;
+    border-radius: 10px; cursor: pointer; font-family: inherit; font-weight: 600; font-size: 0.9em; transition: background 0.15s;
+  }
+  .chat-send:hover { background: var(--accent-light); }
+
+  /* Quick actions */
+  .quick-actions { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+  .quick-btn {
+    padding: 7px 14px; background: var(--surface2); border: 1px solid var(--border);
+    color: var(--text2); border-radius: 8px; cursor: pointer; font-size: 0.82em;
+    font-family: inherit; transition: all 0.15s;
+  }
+  .quick-btn:hover { border-color: var(--accent); color: var(--text); background: var(--accent-dim); }
+
+  /* Planner */
+  .week-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+  @media (max-width: 900px) { .week-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 500px) { .week-grid { grid-template-columns: 1fr; } }
+  .day-col {
+    background: var(--surface2); border-radius: 12px; padding: 16px; border-top: 3px solid var(--border);
+  }
+  .day-col.today { border-top-color: var(--accent); }
+  .day-name { font-weight: 700; font-size: 0.85em; color: var(--accent-light); margin-bottom: 12px; }
+  .day-slot {
+    font-size: 0.82em; padding: 6px 0; border-bottom: 1px solid rgba(42,48,80,0.3);
+    color: var(--text2);
+  }
+  .day-slot:last-child { border: none; }
+  .day-slot .slot-time { color: var(--text); font-weight: 500; }
+
+  /* Textarea */
+  .text-area {
+    width: 100%; min-height: 100px; background: var(--surface2); border: 1px solid var(--border);
+    border-radius: 10px; padding: 14px; color: var(--text); font-family: inherit;
+    font-size: 0.9em; resize: vertical; outline: none;
+  }
+  .text-area:focus { border-color: var(--accent); }
+  .text-area::placeholder { color: var(--text3); }
+
+  /* Button */
+  .btn {
+    padding: 10px 20px; border: none; border-radius: 10px; cursor: pointer;
+    font-family: inherit; font-weight: 600; font-size: 0.88em; transition: all 0.15s;
+  }
+  .btn-primary { background: var(--accent); color: white; }
+  .btn-primary:hover { background: var(--accent-light); }
+  .btn-outline { background: transparent; color: var(--text2); border: 1px solid var(--border); }
+  .btn-outline:hover { border-color: var(--accent); color: var(--text); }
+
+  /* Alert */
+  .alert {
+    padding: 16px 20px; border-radius: 12px; margin-bottom: 16px;
+    display: flex; align-items: flex-start; gap: 12px; font-size: 0.9em;
+  }
+  .alert-red { background: var(--red-dim); border: 1px solid rgba(239,68,68,0.25); }
+  .alert-yellow { background: var(--yellow-dim); border: 1px solid rgba(234,179,8,0.25); }
+  .alert-green { background: var(--green-dim); border: 1px solid rgba(34,197,94,0.25); }
+  .alert-blue { background: var(--blue-dim); border: 1px solid rgba(59,130,246,0.25); }
+  .alert-icon { font-size: 1.3em; }
+
+  /* Stakeholder */
+  .sh-card {
+    background: var(--surface2); border: 1px solid var(--border); border-radius: 12px; padding: 18px;
+  }
+  .sh-card .sh-name { font-weight: 700; margin-bottom: 2px; }
+  .sh-card .sh-role { font-size: 0.82em; color: var(--text2); margin-bottom: 8px; }
+  .sh-card .sh-topics { font-size: 0.85em; color: var(--text2); line-height: 1.5; }
+
+  /* Tabs */
+  .subtabs { display: flex; gap: 4px; margin-bottom: 18px; flex-wrap: wrap; }
+  .subtab {
+    padding: 7px 14px; border: none; background: none; color: var(--text2);
+    cursor: pointer; font-size: 0.85em; font-weight: 500; border-radius: 8px;
+    transition: all 0.15s; font-family: inherit;
+  }
+  .subtab:hover { color: var(--text); background: var(--surface2); }
+  .subtab.active { color: var(--accent-light); background: var(--accent-dim); }
+
+  /* File upload area */
+  .upload-area {
+    border: 2px dashed var(--border); border-radius: 14px; padding: 40px; text-align: center;
+    cursor: pointer; transition: all 0.2s; background: var(--surface2);
+  }
+  .upload-area:hover { border-color: var(--accent); background: var(--accent-dim); }
+  .upload-area .upload-icon { font-size: 2.5em; margin-bottom: 10px; }
+  .upload-area p { color: var(--text2); font-size: 0.9em; }
+
+  /* Data table */
+  .data-table { width: 100%; border-collapse: collapse; font-size: 0.88em; }
+  .data-table th {
+    text-align: left; padding: 10px 14px; background: var(--surface2);
+    color: var(--text2); font-weight: 600; font-size: 0.8em; text-transform: uppercase;
+    letter-spacing: 0.5px; border-bottom: 1px solid var(--border);
+  }
+  .data-table td {
+    padding: 10px 14px; border-bottom: 1px solid rgba(42,48,80,0.3);
+  }
+  .data-table tr:hover td { background: var(--surface2); }
+
+  /* Progress */
+  .progress { background: var(--surface2); height: 8px; border-radius: 4px; overflow: hidden; margin: 10px 0; }
+  .progress-fill { height: 100%; border-radius: 4px; transition: width 0.4s; }
+
+  /* Eskalation badges */
+  .esk-badge {
+    display: inline-flex; align-items: center; gap: 5px; padding: 4px 12px;
+    border-radius: 20px; font-size: 0.75em; font-weight: 600;
+  }
+  .esk-sofort { background: var(--red-dim); color: var(--red); }
+  .esk-woche { background: var(--yellow-dim); color: var(--yellow); }
+  .esk-naechste { background: var(--green-dim); color: var(--green); }
+
+  /* Iframe container */
+  .iframe-wrap {
+    border-radius: 14px; overflow: hidden; border: 1px solid var(--border);
+    background: var(--bg);
+  }
+  .iframe-wrap iframe { width: 100%; height: 700px; border: none; }
+
+  /* Scroll */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+</style>
+</head>
+<body>
+<div class="app" id="app"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.9/babel.min.js"></script>
+
+<script type="text/babel">
+const { useState, useRef, useEffect, useCallback } = React;
+
+// ============================================================
+// DATE HELPERS
+// ============================================================
+const TODAY = new Date();
+const DAY_NAMES = ['Sonntag','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag'];
+const MONTH_NAMES = ['Januar','Februar','März','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember'];
+const formatDate = (d) => `${d.getDate()}. ${MONTH_NAMES[d.getMonth()]} ${d.getFullYear()}`;
+const dayName = (d) => DAY_NAMES[d.getDay()];
+const getWeekDates = () => {
+  const d = new Date(TODAY);
+  const day = d.getDay();
+  const diff = d.getDate() - day + (day === 0 ? -6 : 1);
+  return Array.from({length: 5}, (_, i) => {
+    const date = new Date(d);
+    date.setDate(diff + i);
+    return date;
+  });
+};
+
+// ============================================================
+// STORAGE HELPERS
+// ============================================================
+const STORE_KEY = 'ceo-siz-agent-data';
+const loadData = () => {
+  try { return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; } catch { return {}; }
+};
+const saveData = (data) => {
+  localStorage.setItem(STORE_KEY, JSON.stringify(data));
+};
+
+// ============================================================
+// CEO BRIEFING DATA (Template - dynamisch erweiterbar)
+// ============================================================
+const BRIEFING = {
+  greeting: `Guten Morgen Franz. Heute ist ${dayName(TODAY)}, der ${formatDate(TODAY)}.`,
+  focus: 'Strategische Partnerpflege und KPI-Analyse',
+  alerts: [
+    { type: 'yellow', icon: '⚡', text: 'Prüfungsvolumen KW14 liegt 8% unter Vorjahr – Analyse nötig' },
+    { type: 'blue', icon: '📋', text: 'GL-Sitzung am Donnerstag – Vorbereitung starten' },
+  ],
+  taskOfDay: 'Erstelle eine Übersicht der 5 Partnerschulen mit dem grössten Rückgang im Prüfungsvolumen (letztes Quartal vs. Vorjahr). Für jede Schule: Volumen, Trend, mögliche Ursache, Massnahmenvorschlag.',
+  questionOfDay: 'Was passiert mit unserem Geschäftsmodell, wenn KI-Tools wie Copilot ICT-Grundkenntnisse überflüssig machen? Welche Prüfungen werden dann WERTVOLLER statt wertloser?',
+  kpiWatch: 'Prüfungsvolumen pro Partnerschule (Wochenvergleich)',
+  schedule: [
+    { time: '08:00–09:30', title: 'Deep Work: Partneranalyse', type: 'Strategie' },
+    { time: '10:00–11:00', title: 'Call KV Zürich Business School', type: 'Partner' },
+    { time: '11:30–12:00', title: 'E-Mails & Quick Responses', type: 'Admin' },
+    { time: '13:30–14:30', title: 'Firmenkundenpilot: Offerte finalisieren', type: 'Akquise' },
+    { time: '15:00–15:30', title: 'KPI-Check im Dashboard', type: 'Kontrolle' },
+    { time: '16:00–16:30', title: 'Tagesreflexion & Vorbereitung morgen', type: 'Reflexion' },
+  ],
+};
+
+// ============================================================
+// KPI DATA
+// ============================================================
+const KPIS = [
+  { icon: '📊', label: 'Prüfungen/Monat', value: '~8\'300', trend: '-5%', trendDir: 'down', target: '9\'000' },
+  { icon: '🏫', label: 'Aktive Partner', value: '104', trend: '-2', trendDir: 'down', target: '110' },
+  { icon: '💰', label: 'Revenue/Monat', value: '~280k', trend: '+2%', trendDir: 'up', target: '300k' },
+  { icon: '📈', label: 'Rev/Partner', value: '~2\'700', trend: 'stabil', trendDir: 'neutral', target: '3\'000' },
+  { icon: '😊', label: 'NPS Schulen', value: '42', trend: '+3', trendDir: 'up', target: '50' },
+  { icon: '🔄', label: 'Churn Rate', value: '4.2%', trend: '-0.5%', trendDir: 'up', target: '<3%' },
+  { icon: '🏢', label: 'Firmenkunden', value: '3', trend: '+2', trendDir: 'up', target: '10' },
+  { icon: '🆕', label: 'Neue Partner YTD', value: '6', trend: 'on track', trendDir: 'neutral', target: '12' },
+];
+
+// ============================================================
+// WEEKLY TASKS FROM CEO
+// ============================================================
+const WEEKLY_TASKS = [
+  { text: 'Partneranalyse: Top-5 Schulen mit grösstem Volumenrückgang identifizieren und Massnahmenplan erstellen', priority: 'high', done: false },
+  { text: 'GL-Sitzung vorbereiten: Quartalszahlen aufbereiten, 3 Entscheidungsvorlagen vorbereiten', priority: 'high', done: false },
+  { text: 'Firmenkunden-Pilot: Offerte für Swisscom HR finalisieren und versenden', priority: 'medium', done: false },
+  { text: 'KI-Zertifikat-Konzept: Erste Modulbeschreibung für "AI Literacy" skizzieren', priority: 'medium', done: false },
+  { text: 'Wettbewerbsanalyse: ECDL/ICDL Preise und neue Angebote recherchieren', priority: 'medium', done: false },
+  { text: 'Stakeholder-Kontakt: Telefonat mit Swico-Vertreter vereinbaren (Strategie-Update)', priority: 'low', done: false },
+  { text: 'Reflexion: 30min CEO-Challenge im Chatbot (Thema: Pricing-Strategie)', priority: 'low', done: false },
+];
+
+// ============================================================
+// MEETING PREP DATA
+// ============================================================
+const MEETINGS = [
+  {
+    time: 'Di 10:00', title: 'KV Zürich Business School',
+    type: 'Partnerschule', borderColor: 'var(--blue)',
+    context: 'Grösster Partner (~8000 Prüfungen/Jahr). Volumen seit 2 Quartalen rückläufig (-12%). Neue Schulleitung seit August 2025.',
+    questions: [
+      'Was hat sich bei euch verändert, dass weniger Lernende die SIZ-Prüfung machen?',
+      'Wie nehmen eure Lernenden die SIZ-Prüfung wahr – als wertvoll oder als Pflicht?',
+      'Gibt es Module, die ihr gerne hättet, die wir nicht anbieten?',
+      'Wie können wir euch bei der Vermarktung gegenüber den Lernenden unterstützen?',
+      'Wo seht ihr SIZ in 3 Jahren – und wo wünscht ihr uns hin?',
+    ],
+    goal: 'Konkreter Massnahmenplan in 2 Wochen, Follow-up Termin vereinbart, Ursache für Volumenrückgang verstanden.',
+  },
+  {
+    time: 'Do 14:00', title: 'GL-Sitzung',
+    type: 'Intern', borderColor: 'var(--purple)',
+    context: 'Monatliche Geschäftsleitungssitzung. Quartalszahlen Q1 liegen vor. Budget-Review und Strategieprojekte auf der Agenda.',
+    questions: [
+      'Sind wir on track mit den Jahreszielen? Wo müssen wir nachsteuern?',
+      'Wie ist der Stand beim Firmenkunden-Pilot? Blockiert uns etwas?',
+      'Prüfungsplattform: Gibt es technische Risiken für die Sommerprüfungen?',
+      'Team: Wie ist die Belastungssituation? Brauchen wir Verstärkung?',
+      'Was sind die Top-3-Risiken für Q2?',
+    ],
+    goal: 'Entscheide getroffen zu Budget-Reallokation und Firmenkunden-Pilot. Klare Prioritäten für Q2.',
+  },
+  {
+    time: 'Fr 09:00', title: 'Swisscom HR – Firmenkunden-Pilot',
+    type: 'Akquise', borderColor: 'var(--green)',
+    context: 'Erster Firmenkunde im neuen Segment. HR-Abteilung will ICT-Kompetenz von 200 Mitarbeitenden testen. Pilot für 50 Personen geplant.',
+    questions: [
+      'Was ist euer grösstes Problem mit der digitalen Kompetenz eurer Mitarbeitenden?',
+      'Wie messt ihr heute den Erfolg von Weiterbildungsmassnahmen?',
+      'Welche Entscheider müssen überzeugt werden für eine Skalierung nach dem Pilot?',
+      'Bis wann braucht ihr Ergebnisse?',
+      'Budget: Ist die Investition bereits genehmigt oder Teil eines Pilotantrags?',
+    ],
+    goal: 'Pilot für 50 MA vereinbart, Timeline fixiert, Ansprechpartner für Skalierung identifiziert.',
+  },
+];
+
+// ============================================================
+// STAKEHOLDERS
+// ============================================================
+const STAKEHOLDERS = [
+  { name: 'Swico (Träger)', role: 'ICT-Verband, Hauptträger der SIZ AG', priority: 'high', freq: 'Monatlich', topics: 'Strategische Ausrichtung, Marktentwicklung ICT-Branche, Budget' },
+  { name: 'Kaufm. Verband Schweiz', role: 'Zweiter Träger der SIZ AG', priority: 'high', freq: 'Monatlich', topics: 'Bildungspolitik, Verankerung in KV-Ausbildung, Neue Berufsbilder' },
+  { name: 'KV Zürich Business School', role: 'Grösste Partnerschule', priority: 'high', freq: '6-wöchentlich', topics: 'Prüfungsvolumen, Module, Lernenden-Feedback, Kooperation' },
+  { name: 'SBFI', role: 'Staatssekretariat für Bildung', priority: 'medium', freq: 'Quartalsweise', topics: 'Anerkennung, Regulierung, Berufsbildungsreform' },
+  { name: 'Swisscom HR', role: 'Firmenkunden-Pilot', priority: 'medium', freq: 'Bi-weekly', topics: 'Pilot-Status, Skalierungsplan, Ergebnisse' },
+  { name: 'GL-Team (intern)', role: 'Geschäftsleitung SIZ AG', priority: 'high', freq: 'Wöchentlich', topics: 'KPIs, Projekte, Ressourcen, Entscheide' },
+];
+
+// ============================================================
+// CHALLENGE DATA
+// ============================================================
+const CHALLENGES = [
+  {
+    cat: 'Strategie', color: 'var(--purple)',
+    q: 'Du hast 200k CHF extra Budget. Wo investierst du es? Nenne genau 3 Massnahmen mit Beträgen.',
+    hints: ['Denke an ROI', 'Welche Massnahme hat den grössten Hebel?', 'Kurzfristig vs. langfristig?'],
+  },
+  {
+    cat: 'Krise', color: 'var(--red)',
+    q: 'Dein grösster Partner (KV Zürich, 8000 Prüfungen/Jahr) kündigt per sofort. Was machst du in den nächsten 48 Stunden?',
+    hints: ['Sofort-Kommunikation', 'Interne Krisensitzung', 'Alternative Partner?', 'Schadensbegrenzung'],
+  },
+  {
+    cat: 'Perspektive', color: 'var(--cyan)',
+    q: 'Argumentiere aus Sicht des CFO GEGEN dein Firmenkunden-Pilotprojekt. Was würde der CFO sagen?',
+    hints: ['ROI-Timeline', 'Opportunitätskosten', 'Ressourcenbindung', 'Risiko'],
+  },
+  {
+    cat: 'Quick-Fire', color: 'var(--orange)',
+    q: 'Wie hoch ist unser Revenue pro Partnerschule? Wie hoch sollte er sein? Was müssten wir tun, um ihn um 30% zu steigern?',
+    hints: ['Upselling', 'Neue Module', 'Preisanpassung'],
+  },
+  {
+    cat: 'Innovation', color: 'var(--green)',
+    q: 'ECDL lanciert ein "KI-Kompetenz-Zertifikat". Du hast 3 Monate Vorsprung. Wie sieht dein SIZ-KI-Zertifikat aus?',
+    hints: ['Zielgruppe?', 'Module?', 'Prüfungsformat?', 'Pricing?'],
+  },
+  {
+    cat: 'Führung', color: 'var(--yellow)',
+    q: 'Dein bester Mitarbeiter droht zu kündigen wegen eines besseren Angebots (+20% Lohn). Budget für eine Gehaltserhöhung hast du nicht. Was tust du?',
+    hints: ['Was motiviert den Mitarbeiter wirklich?', 'Nicht-monetäre Benefits', 'Langfristige Perspektive'],
+  },
+  {
+    cat: 'Markt', color: 'var(--blue)',
+    q: 'Die Romandie macht nur 8% unseres Umsatzes aus, hat aber 25% der CH-Bevölkerung. Wie eroberst du diesen Markt in 12 Monaten?',
+    hints: ['Sprache', 'Lokale Partner', 'Kulturelle Unterschiede', 'Ressourcen'],
+  },
+];
+
+// ============================================================
+// MONTHLY GOALS
+// ============================================================
+const MONTHLY_GOALS = [
+  { goal: 'Firmenkunden-Pilot mit Swisscom starten (50 Teilnehmende)', status: 70, deadline: '15. April' },
+  { goal: 'Top-10-Partner persönlich besuchen oder sprechen', status: 30, deadline: '30. April' },
+  { goal: 'KI-Zertifikat: Grobkonzept dem VR vorstellen', status: 15, deadline: '30. April' },
+];
+
+// ============================================================
+// YEARLY OKRs
+// ============================================================
+const YEARLY_OKRS = [
+  {
+    objective: 'Prüfungsvolumen stabilisieren und um 5% steigern',
+    results: [
+      { kr: 'Churn Rate unter 3% senken', progress: 40 },
+      { kr: '10 neue Partnerschulen gewinnen', progress: 50 },
+      { kr: 'Prüfungsvolumen auf 110\'000/Jahr steigern', progress: 25 },
+    ]
+  },
+  {
+    objective: 'Firmenkunden als neues Segment etablieren',
+    results: [
+      { kr: '3 Firmenkunden-Piloten abschliessen', progress: 33 },
+      { kr: 'Revenue aus Firmenkunden: 50k CHF', progress: 10 },
+      { kr: 'Standardisiertes Firmenangebot entwickeln', progress: 60 },
+    ]
+  },
+  {
+    objective: 'Produktinnovation: KI-Zertifikat lancieren',
+    results: [
+      { kr: 'Modulkonzept bis Q2 fertig', progress: 15 },
+      { kr: 'Pilotprüfung mit 100 Teilnehmenden in Q3', progress: 0 },
+      { kr: 'Mindestens 2 Schulen als Early Adopter', progress: 10 },
+    ]
+  },
+];
+
+// ============================================================
+// TOP CUSTOMERS (Demo-Daten)
+// ============================================================
+const TOP_CUSTOMERS = [
+  { rank: 1, name: 'KV Zürich Business School', volume: 8200, trend: -12, segment: 'KV', region: 'ZH' },
+  { rank: 2, name: 'Wirtschaftsschule KV Winterthur', volume: 5400, trend: -3, segment: 'KV', region: 'ZH' },
+  { rank: 3, name: 'KV Luzern', volume: 4800, trend: +5, segment: 'KV', region: 'ZS' },
+  { rank: 4, name: 'Handelsschule KV Basel', volume: 4200, trend: -8, segment: 'KV', region: 'NW' },
+  { rank: 5, name: 'WKS KV Bildung Bern', volume: 3900, trend: +2, segment: 'KV', region: 'BE' },
+  { rank: 6, name: 'BBZ Schaffhausen', volume: 3100, trend: -1, segment: 'BFS', region: 'OS' },
+  { rank: 7, name: 'GIBZ Zug', volume: 2800, trend: +8, segment: 'BFS', region: 'ZS' },
+  { rank: 8, name: 'BWZ Rapperswil', volume: 2500, trend: -5, segment: 'BFS', region: 'OS' },
+  { rank: 9, name: 'WISS Zürich', volume: 2200, trend: +15, segment: 'HF', region: 'ZH' },
+  { rank: 10, name: 'HSO Wirtschaftsschule', volume: 2000, trend: +3, segment: 'HF', region: 'ZH' },
+];
+
+// ============================================================
+// SECTIONS
+// ============================================================
+const SECTIONS = [
+  { id: 'dashboard', label: 'Dashboard', icon: '🎯' },
+  { id: 'briefing', label: 'Tagesbriefing', icon: '☀️' },
+  { id: 'tasks', label: 'Aufgaben', icon: '✅' },
+  { id: 'meetings', label: 'Meetings', icon: '🤝' },
+  { id: 'planning', label: 'Planung', icon: '📅' },
+  { id: 'kpis', label: 'KPIs', icon: '📊' },
+  { id: 'customers', label: 'Kunden', icon: '🏫' },
+  { id: 'challenge', label: 'Challenge', icon: '🧠' },
+  { id: 'tools', label: 'Tools', icon: '🛠️' },
+];
+
+// ============================================================
+// MAIN APP
+// ============================================================
+function App() {
+  const [section, setSection] = useState('dashboard');
+  const [data, setData] = useState(() => loadData());
+  const [tasks, setTasks] = useState(() => {
+    const saved = loadData().tasks;
+    return saved || WEEKLY_TASKS.map((t, i) => ({...t, id: i}));
+  });
+  const [chatMessages, setChatMessages] = useState([
+    { type: 'system', text: 'CEO Agent Session gestartet. Wähle ein Thema oder stelle eine Frage.' },
+    { type: 'ceo', text: BRIEFING.greeting + ' Lass uns loslegen. Was steht auf deiner Agenda?' },
+  ]);
+  const [chatInput, setChatInput] = useState('');
+  const [challengeIdx, setChallengeIdx] = useState(0);
+  const [challengeAnswer, setChallengeAnswer] = useState('');
+  const [showHints, setShowHints] = useState(false);
+  const [planTab, setPlanTab] = useState('woche');
+  const [notes, setNotes] = useState(() => loadData().notes || '');
+  const chatEndRef = useRef(null);
+
+  // Persist
+  useEffect(() => {
+    saveData({ ...data, tasks, notes });
+  }, [tasks, notes]);
+
+  // Chat scroll
+  useEffect(() => {
+    chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+  }, [chatMessages]);
+
+  const toggleTask = (id) => {
+    setTasks(prev => prev.map(t => t.id === id ? {...t, done: !t.done} : t));
+  };
+
+  const sendChat = (text) => {
+    if (!text.trim()) return;
+    const msg = text.trim();
+    setChatMessages(prev => [...prev, { type: 'user', text: msg }]);
+    setChatInput('');
+
+    // Simple CEO responses
+    setTimeout(() => {
+      let response = '';
+      const lower = msg.toLowerCase();
+      if (lower.includes('morgen') || lower.includes('briefing')) {
+        response = `${BRIEFING.greeting}\n\n📋 Deine Aufgabe heute: ${BRIEFING.taskOfDay}\n\n🤔 Denkfrage: ${BRIEFING.questionOfDay}\n\n📊 KPI-Watch: ${BRIEFING.kpiWatch}`;
+      } else if (lower.includes('meeting') || lower.includes('vorbereitung')) {
+        const m = MEETINGS[0];
+        response = `Meeting-Vorbereitung: ${m.title} (${m.time})\n\nKontext: ${m.context}\n\nDeine 5 Schlüsselfragen:\n${m.questions.map((q,i) => `${i+1}. ${q}`).join('\n')}\n\n🎯 Ziel: ${m.goal}`;
+      } else if (lower.includes('challenge') || lower.includes('fordere') || lower.includes('heraus')) {
+        const c = CHALLENGES[Math.floor(Math.random() * CHALLENGES.length)];
+        response = `🧠 CEO-Challenge [${c.cat}]:\n\n${c.q}\n\nNimm dir 5 Minuten und denke strategisch.`;
+      } else if (lower.includes('kpi') || lower.includes('zahlen') || lower.includes('kennzahl')) {
+        response = `📊 KPI-Übersicht aktuell:\n\n${KPIS.map(k => `${k.icon} ${k.label}: ${k.value} (${k.trend}) | Ziel: ${k.target}`).join('\n')}\n\n⚠️ Fokus: Prüfungsvolumen und Churn Rate sind unter Ziel.`;
+      } else if (lower.includes('woche') || lower.includes('plan')) {
+        response = `📅 Wochenplanung:\n\nTop 3 Prioritäten:\n1. Partneranalyse abschliessen (Top-5 Rückgänge)\n2. GL-Sitzung vorbereiten\n3. Firmenkunden-Pilot vorantreiben\n\nAufgaben: ${tasks.filter(t => !t.done).length} offen, ${tasks.filter(t => t.done).length} erledigt.`;
+      } else if (lower.includes('kunde') || lower.includes('partner')) {
+        response = `🏫 Top-Partner Übersicht:\n\n${TOP_CUSTOMERS.slice(0,5).map(c => `${c.rank}. ${c.name}: ${c.volume.toLocaleString()} Prüfungen (${c.trend > 0 ? '+' : ''}${c.trend}%)`).join('\n')}\n\n⚠️ Achtung: KV Zürich (-12%) und KV Basel (-8%) mit signifikantem Rückgang.`;
+      } else if (lower.includes('vergessen') || lower.includes('check')) {
+        response = `🔍 CEO-Check – hast du an alles gedacht?\n\n${tasks.filter(t => !t.done).length > 0 ? '⚠️ ' + tasks.filter(t => !t.done).length + ' offene Aufgaben' : '✅ Alle Aufgaben erledigt'}\n📅 ${MEETINGS.length} Meetings diese Woche\n📊 KPI-Alert: Prüfungsvolumen unter Ziel\n🤝 Stakeholder-Kontakt: Swico-Telefonat noch offen\n💡 Tipp: Nimm dir 30min für eine CEO-Challenge.`;
+      } else {
+        response = `Gute Frage, Franz. Lass mich das aus CEO-Perspektive beantworten:\n\nAls CEO der SIZ AG würde ich bei "${msg}" folgende Aspekte betrachten:\n\n1. Strategische Relevanz: Wie passt das zu unseren Jahreszielen?\n2. Ressourcen: Was brauchen wir dafür? Wer macht es?\n3. Timeline: Bis wann muss es erledigt sein?\n4. Impact: Was bringt es uns konkret?\n\nMöchtest du tiefer in einen dieser Punkte einsteigen?`;
+      }
+      setChatMessages(prev => [...prev, { type: 'ceo', text: response }]);
+    }, 800);
+  };
+
+  const quickChat = (text) => sendChat(text);
+
+  const completedTasks = tasks.filter(t => t.done).length;
+  const totalTasks = tasks.length;
+  const taskProgress = Math.round((completedTasks / totalTasks) * 100);
+
+  // ============================================================
+  // RENDER SECTIONS
+  // ============================================================
+
+  const renderDashboard = () => (
+    <div>
+      {/* Alerts */}
+      {BRIEFING.alerts.map((a, i) => (
+        <div key={i} className={`alert alert-${a.type}`}>
+          <span className="alert-icon">{a.icon}</span>
+          <span>{a.text}</span>
+        </div>
+      ))}
+
+      {/* Quick KPIs */}
+      <div className="grid-4" style={{marginBottom: 20}}>
+        {KPIS.slice(0, 4).map((k, i) => (
+          <div key={i} className="kpi-card">
+            <div className="kpi-icon">{k.icon}</div>
+            <div className="kpi-value">{k.value}</div>
+            <div className="kpi-label">{k.label}</div>
+            <div className={`kpi-trend ${k.trendDir}`}>{k.trend}</div>
+          </div>
+        ))}
+      </div>
+
+      {/* Module Tiles */}
+      <h2 style={{marginBottom: 16, fontSize: '1.1em', color: 'var(--text2)'}}>CEO-Module</h2>
+      <div className="grid-3">
+        <div className="module-tile" onClick={() => setSection('briefing')}>
+          <div className="tile-icon">☀️</div>
+          <h3>Tagesbriefing</h3>
+          <p>Dein tägliches CEO-Briefing mit Aufgaben, Denkfragen und Tagesplanung</p>
+          <span className="tile-tag" style={{background: 'var(--blue-dim)', color: 'var(--blue)'}}>Täglich</span>
+        </div>
+        <div className="module-tile" onClick={() => setSection('tasks')}>
+          <div className="tile-icon">✅</div>
+          <h3>Aufgaben vom CEO</h3>
+          <p>{completedTasks}/{totalTasks} erledigt – deine Wochenaufgaben</p>
+          <div className="progress"><div className="progress-fill" style={{width: taskProgress + '%', background: 'linear-gradient(90deg, var(--accent), var(--green))'}} /></div>
+        </div>
+        <div className="module-tile" onClick={() => setSection('meetings')}>
+          <div className="tile-icon">🤝</div>
+          <h3>Meeting-Vorbereitung</h3>
+          <p>{MEETINGS.length} Meetings diese Woche mit CEO-Perspektive vorbereitet</p>
+          <span className="tile-tag" style={{background: 'var(--purple-dim)', color: 'var(--purple)'}}>Diese Woche</span>
+        </div>
+        <div className="module-tile" onClick={() => setSection('planning')}>
+          <div className="tile-icon">📅</div>
+          <h3>Planung</h3>
+          <p>Wochen-, Monats- und Jahresplanung mit OKRs und Meilensteinen</p>
+          <span className="tile-tag" style={{background: 'var(--cyan-dim)', color: 'var(--cyan)'}}>Strategisch</span>
+        </div>
+        <div className="module-tile" onClick={() => setSection('kpis')}>
+          <div className="tile-icon">📊</div>
+          <h3>KPI-Dashboard</h3>
+          <p>Alle Kennzahlen auf einen Blick – mit Trends und Zielen</p>
+          <span className="tile-tag" style={{background: 'var(--green-dim)', color: 'var(--green)'}}>Live</span>
+        </div>
+        <div className="module-tile" onClick={() => setSection('customers')}>
+          <div className="tile-icon">🏫</div>
+          <h3>Kundenanalyse</h3>
+          <p>Top-Partner, Ranglisten, Trends und Betreuungspläne</p>
+          <span className="tile-tag" style={{background: 'var(--orange-dim)', color: 'var(--orange)'}}>Daten</span>
+        </div>
+        <div className="module-tile" onClick={() => setSection('challenge')}>
+          <div className="tile-icon">🧠</div>
+          <h3>CEO-Challenge</h3>
+          <p>Strategische Denkaufgaben, Krisensimulationen und Perspektivenwechsel</p>
+          <span className="tile-tag" style={{background: 'var(--red-dim)', color: 'var(--red)'}}>Sparring</span>
+        </div>
+        <div className="module-tile" onClick={() => setSection('tools')}>
+          <div className="tile-icon">🛠️</div>
+          <h3>100-Tage-Plan & Tools</h3>
+          <p>Onboarding-Checkliste, Stakeholder-Map, Strategiearbeit</p>
+          <span className="tile-tag" style={{background: 'var(--yellow-dim)', color: 'var(--yellow)'}}>Roadmap</span>
+        </div>
+        <div className="module-tile" style={{background: 'var(--accent-dim)', borderColor: 'rgba(99,102,241,0.3)'}}>
+          <div className="tile-icon">💬</div>
+          <h3>CEO Chatbot</h3>
+          <p>Frage den CEO-Agenten – Strategie-Sparring, Rat und Challenges</p>
+          <span className="tile-tag" style={{background: 'rgba(255,255,255,0.1)', color: 'white'}}>Interaktiv</span>
+        </div>
+      </div>
+
+      {/* Embedded Chat */}
+      <div className="card" style={{marginTop: 20}}>
+        <h2>💬 CEO-Agent Chat</h2>
+        <p className="card-sub">Frag mich was – Strategie, KPIs, Meetings, oder sag "Challenge mich"</p>
+        <div className="chat-container">
+          <div className="chat-messages">
+            {chatMessages.map((m, i) => (
+              <div key={i} className={`chat-msg ${m.type}`}>
+                {m.type === 'ceo' && <div className="sender">CEO Agent</div>}
+                <div style={{whiteSpace: 'pre-wrap'}}>{m.text}</div>
+              </div>
+            ))}
+            <div ref={chatEndRef} />
+          </div>
+          <div className="quick-actions">
+            <button className="quick-btn" onClick={() => quickChat('Guten Morgen')}>☀️ Briefing</button>
+            <button className="quick-btn" onClick={() => quickChat('Bereite mich auf das Meeting vor')}>🤝 Meeting</button>
+            <button className="quick-btn" onClick={() => quickChat('Challenge mich')}>🧠 Challenge</button>
+            <button className="quick-btn" onClick={() => quickChat('KPI-Update')}>📊 KPIs</button>
+            <button className="quick-btn" onClick={() => quickChat('Was steht diese Woche an?')}>📅 Woche</button>
+            <button className="quick-btn" onClick={() => quickChat('Was habe ich vergessen?')}>🔍 Check</button>
+            <button className="quick-btn" onClick={() => quickChat('Wie stehen unsere Partner?')}>🏫 Partner</button>
+          </div>
+          <div className="chat-input-row">
+            <input
+              className="chat-input"
+              value={chatInput}
+              onChange={e => setChatInput(e.target.value)}
+              onKeyDown={e => e.key === 'Enter' && sendChat(chatInput)}
+              placeholder="Frag den CEO-Agenten..."
+            />
+            <button className="chat-send" onClick={() => sendChat(chatInput)}>Senden</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
+  const renderBriefing = () => (
+    <div>
+      <div className="card" style={{borderTop: '3px solid var(--accent)'}}>
+        <h2>☀️ Tagesbriefing – {formatDate(TODAY)}</h2>
+        <p className="card-sub">{BRIEFING.greeting}</p>
+
+        <div className="alert alert-blue">
+          <span className="alert-icon">🎯</span>
+          <div><strong>Tagesfokus:</strong> {BRIEFING.focus}</div>
+        </div>
+
+        {BRIEFING.alerts.map((a, i) => (
+          <div key={i} className={`alert alert-${a.type}`}>
+            <span className="alert-icon">{a.icon}</span>
+            <span>{a.text}</span>
+          </div>
+        ))}
+
+        <h3>📋 CEO-Aufgabe des Tages</h3>
+        <div style={{background: 'var(--surface2)', padding: 16, borderRadius: 10, marginBottom: 16, borderLeft: '3px solid var(--accent)'}}>
+          <p style={{fontSize: '0.92em', lineHeight: 1.6}}>{BRIEFING.taskOfDay}</p>
+        </div>
+
+        <h3>🤔 CEO-Denkfrage des Tages</h3>
+        <div style={{background: 'var(--surface2)', padding: 16, borderRadius: 10, marginBottom: 16, borderLeft: '3px solid var(--yellow)'}}>
+          <p style={{fontSize: '0.92em', lineHeight: 1.6, fontStyle: 'italic'}}>{BRIEFING.questionOfDay}</p>
+        </div>
+
+        <h3>📊 KPI-Watch</h3>
+        <div style={{background: 'var(--surface2)', padding: 16, borderRadius: 10, marginBottom: 16, borderLeft: '3px solid var(--green)'}}>
+          <p style={{fontSize: '0.92em'}}>{BRIEFING.kpiWatch}</p>
+        </div>
+
+        <h3>📅 Tagesablauf</h3>
+        {BRIEFING.schedule.map((s, i) => (
+          <div key={i} className="timeline-item">
+            <div className="timeline-dot" style={{background: i === 0 ? 'var(--accent)' : i < 3 ? 'var(--blue)' : 'var(--text3)'}} />
+            <div className="timeline-content">
+              <div className="timeline-time" style={{color: 'var(--accent-light)'}}>{s.time}</div>
+              <div className="timeline-title">{s.title}</div>
+              <div className="timeline-desc">{s.type}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div className="card">
+        <h2>📝 Meine Notizen zum Briefing</h2>
+        <textarea
+          className="text-area"
+          value={notes}
+          onChange={e => setNotes(e.target.value)}
+          placeholder="Gedanken, Antworten auf die Denkfrage, To-dos..."
+        />
+      </div>
+    </div>
+  );
+
+  const renderTasks = () => (
+    <div>
+      <div className="card">
+        <h2>✅ Aufgaben vom CEO – Diese Woche</h2>
+        <p className="card-sub">
+          {completedTasks}/{totalTasks} erledigt ({taskProgress}%)
+        </p>
+        <div className="progress" style={{marginBottom: 20}}>
+          <div className="progress-fill" style={{width: taskProgress + '%', background: 'linear-gradient(90deg, var(--accent), var(--green))'}} />
+        </div>
+
+        {tasks.map(task => (
+          <div key={task.id} className="task-item" onClick={() => toggleTask(task.id)}>
+            <div className={`task-check ${task.done ? 'done' : ''}`}>
+              {task.done && '✓'}
+            </div>
+            <span className={`task-text ${task.done ? 'done' : ''}`}>{task.text}</span>
+            <span className={`task-priority priority-${task.priority}`}>{task.priority}</span>
+          </div>
+        ))}
+      </div>
+
+      <div className="card">
+        <h2>📨 CEO-Nachricht</h2>
+        <div style={{background: 'var(--surface2)', padding: 18, borderRadius: 10, borderLeft: '3px solid var(--accent)'}}>
+          <div style={{fontSize: '0.78em', fontWeight: 700, color: 'var(--accent-light)', marginBottom: 6, textTransform: 'uppercase', letterSpacing: '0.5px'}}>CEO Agent</div>
+          <p style={{fontSize: '0.92em', lineHeight: 1.6}}>
+            Franz, diese Woche zählt. Die GL-Sitzung am Donnerstag ist deine Bühne – zeig mit Zahlen, wo wir stehen und wo wir hin müssen.
+            Die Partneranalyse ist die Basis für alles. Ohne Daten keine Entscheide.
+            Und vergiss den Firmenkunden-Pilot nicht – das ist unser Zukunftssegment.
+            <br /><br />
+            Ich erwarte Ergebnisse, keine Ausreden. Du schaffst das. 💪
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+
+  const renderMeetings = () => (
+    <div>
+      <div className="card">
+        <h2>🤝 Meeting-Vorbereitungen</h2>
+        <p className="card-sub">Jedes Meeting hat ein klares Ziel. Geh vorbereitet rein, komm mit Ergebnissen raus.</p>
+      </div>
+
+      {MEETINGS.map((m, i) => (
+        <div key={i} className="meeting-card" style={{borderLeftColor: m.borderColor}}>
+          <div className="meeting-time">{m.time} | {m.type}</div>
+          <div className="meeting-title">{m.title}</div>
+          <div className="meeting-prep">{m.context}</div>
+          <h4 style={{marginTop: 14, fontSize: '0.88em', color: 'var(--text2)'}}>5 Schlüsselfragen als CEO:</h4>
+          <ul className="meeting-questions">
+            {m.questions.map((q, j) => <li key={j}>{q}</li>)}
+          </ul>
+          <div className="meeting-goal">🎯 Gewünschtes Ergebnis: {m.goal}</div>
+        </div>
+      ))}
+
+      <div className="card">
+        <h2>📝 Meeting-Notizen</h2>
+        <textarea
+          className="text-area"
+          placeholder="Notizen aus den Meetings..."
+          style={{minHeight: 150}}
+        />
+      </div>
+    </div>
+  );
+
+  const renderPlanning = () => (
+    <div>
+      <div className="card">
+        <h2>📅 Planung</h2>
+        <div className="subtabs">
+          <button className={`subtab ${planTab === 'woche' ? 'active' : ''}`} onClick={() => setPlanTab('woche')}>Wochenplan</button>
+          <button className={`subtab ${planTab === 'monat' ? 'active' : ''}`} onClick={() => setPlanTab('monat')}>Monatsplan</button>
+          <button className={`subtab ${planTab === 'jahr' ? 'active' : ''}`} onClick={() => setPlanTab('jahr')}>Jahresziele (OKR)</button>
+        </div>
+
+        {planTab === 'woche' && (
+          <div>
+            <h3>Top 3 Prioritäten der Woche</h3>
+            <div style={{marginBottom: 20}}>
+              {['Partneranalyse: Top-5 Rückgänge mit Massnahmenplan', 'GL-Sitzung: Quartalszahlen und 3 Entscheidungsvorlagen', 'Firmenkunden-Pilot: Swisscom-Offerte finalisieren'].map((p, i) => (
+                <div key={i} style={{display: 'flex', gap: 10, alignItems: 'center', padding: '8px 0', borderBottom: '1px solid var(--border)'}}>
+                  <span style={{background: 'var(--accent)', color: 'white', borderRadius: '50%', width: 24, height: 24, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.8em', fontWeight: 700, minWidth: 24}}>{i+1}</span>
+                  <span style={{fontSize: '0.92em'}}>{p}</span>
+                </div>
+              ))}
+            </div>
+
+            <h3>Wochenrhythmus</h3>
+            <div className="week-grid">
+              {[
+                { name: 'Montag', items: [{t: '08:00', d: 'Wochenplanung'}, {t: '09:30', d: 'Deep Work: Analysen'}, {t: '14:00', d: 'Partner-Calls'}] },
+                { name: 'Dienstag', items: [{t: '08:00', d: 'Deep Work'}, {t: '10:00', d: 'KV Zürich Call'}, {t: '14:00', d: 'Projekte'}] },
+                { name: 'Mittwoch', items: [{t: '08:00', d: 'Strategie-Block'}, {t: '10:00', d: 'Team 1:1s'}, {t: '14:00', d: 'Firmenkundenarbeit'}] },
+                { name: 'Donnerstag', items: [{t: '08:00', d: 'GL-Vorbereitung'}, {t: '14:00', d: 'GL-Sitzung'}, {t: '16:00', d: 'Follow-ups'}] },
+                { name: 'Freitag', items: [{t: '09:00', d: 'Swisscom Call'}, {t: '11:00', d: 'Wochenreview'}, {t: '14:00', d: 'CEO-Challenge'}] },
+              ].map((day, i) => (
+                <div key={i} className={`day-col ${i === TODAY.getDay() - 1 ? 'today' : ''}`}>
+                  <div className="day-name">{day.name}</div>
+                  {day.items.map((item, j) => (
+                    <div key={j} className="day-slot">
+                      <span className="slot-time">{item.t}</span> {item.d}
+                    </div>
+                  ))}
+                </div>
+              ))}
+            </div>
+
+            <h3 style={{marginTop: 20}}>Reflexionsfrage der Woche</h3>
+            <div style={{background: 'var(--surface2)', padding: 16, borderRadius: 10, borderLeft: '3px solid var(--yellow)', fontStyle: 'italic', fontSize: '0.92em', color: 'var(--text2)'}}>
+              "Welche 3 Partnerschulen bringen am meisten Wert – und warum? Wert = nicht nur Volumen, sondern strategische Bedeutung, Multiplikator-Effekt und Zukunftspotenzial."
+            </div>
+          </div>
+        )}
+
+        {planTab === 'monat' && (
+          <div>
+            <h3>Monatsziele – April 2026</h3>
+            {MONTHLY_GOALS.map((g, i) => (
+              <div key={i} style={{background: 'var(--surface2)', padding: 16, borderRadius: 10, marginBottom: 12}}>
+                <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 8}}>
+                  <span style={{fontWeight: 600, fontSize: '0.92em'}}>{g.goal}</span>
+                  <span style={{fontSize: '0.8em', color: 'var(--text2)'}}>bis {g.deadline}</span>
+                </div>
+                <div className="progress">
+                  <div className="progress-fill" style={{width: g.status + '%', background: g.status > 60 ? 'var(--green)' : g.status > 30 ? 'var(--yellow)' : 'var(--accent)'}} />
+                </div>
+                <div style={{fontSize: '0.8em', color: 'var(--text2)', marginTop: 4}}>{g.status}% abgeschlossen</div>
+              </div>
+            ))}
+
+            <h3>Strategischer Fokus</h3>
+            <div style={{background: 'var(--accent-dim)', padding: 18, borderRadius: 10, fontSize: '0.92em', lineHeight: 1.6}}>
+              <strong>Firmenkunden-Segment aufbauen:</strong> Diesen Monat entscheidet sich, ob der Swisscom-Pilot zustande kommt. Das ist der Proof of Concept für das gesamte neue Segment. Alles andere ist sekundär.
+            </div>
+
+            <h3>Partner-Pipeline</h3>
+            <div style={{fontSize: '0.92em', color: 'var(--text2)', lineHeight: 1.6}}>
+              <p>• <strong>Pflegen:</strong> KV Zürich (Krisengespräch), KV Basel (Trend stoppen), WKS Bern (Beziehung stärken)</p>
+              <p>• <strong>Neu ansprechen:</strong> ZHAW (Hochschulsegment), Migros Klubschule (Erwachsenenbildung), BFB Biel (Romandie-Brücke)</p>
+            </div>
+
+            <h3>VR-Reporting</h3>
+            <div style={{fontSize: '0.92em', color: 'var(--text2)', lineHeight: 1.6}}>
+              <p>Bis Ende Monat an VR liefern: Q1-Zahlen, Firmenkunden-Status, Strategiefortschritt, Risiken.</p>
+            </div>
+          </div>
+        )}
+
+        {planTab === 'jahr' && (
+          <div>
+            <h3>OKRs 2026</h3>
+            {YEARLY_OKRS.map((okr, i) => (
+              <div key={i} className="card" style={{marginBottom: 16, borderLeft: `3px solid ${['var(--accent)', 'var(--green)', 'var(--purple)'][i]}`}}>
+                <h3 style={{color: 'var(--text)', fontSize: '1em'}}>Objective {i+1}: {okr.objective}</h3>
+                {okr.results.map((kr, j) => (
+                  <div key={j} style={{marginBottom: 10}}>
+                    <div style={{display: 'flex', justifyContent: 'space-between', fontSize: '0.88em', marginBottom: 4}}>
+                      <span>{kr.kr}</span>
+                      <span style={{color: 'var(--text2)'}}>{kr.progress}%</span>
+                    </div>
+                    <div className="progress">
+                      <div className="progress-fill" style={{width: kr.progress + '%', background: kr.progress > 50 ? 'var(--green)' : kr.progress > 25 ? 'var(--yellow)' : 'var(--accent)'}} />
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ))}
+
+            <h3>Quartals-Meilensteine</h3>
+            {[
+              { q: 'Q1 (Jan–Mär)', items: 'Bestandsaufnahme, SWOT, Quick Wins', status: '✅ Abgeschlossen' },
+              { q: 'Q2 (Apr–Jun)', items: 'Firmenkunden-Pilot, KI-Zertifikat-Konzept, Partner-Offensive', status: '🔄 Laufend' },
+              { q: 'Q3 (Jul–Sep)', items: 'Skalierung Firmenkunden, Pilot KI-Prüfung, Romandie-Start', status: '⏳ Geplant' },
+              { q: 'Q4 (Okt–Dez)', items: 'Jahresabschluss, Budget 2027, Strategie-Review VR', status: '⏳ Geplant' },
+            ].map((m, i) => (
+              <div key={i} style={{display: 'flex', gap: 16, padding: 14, background: i === 1 ? 'var(--accent-dim)' : 'var(--surface2)', borderRadius: 10, marginBottom: 8, alignItems: 'center'}}>
+                <span style={{fontWeight: 700, fontSize: '0.85em', minWidth: 100, color: i === 1 ? 'var(--accent-light)' : 'var(--text2)'}}>{m.q}</span>
+                <span style={{flex: 1, fontSize: '0.88em', color: 'var(--text2)'}}>{m.items}</span>
+                <span style={{fontSize: '0.82em', whiteSpace: 'nowrap'}}>{m.status}</span>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+
+  const renderKPIs = () => (
+    <div>
+      <div className="card">
+        <h2>📊 KPI-Dashboard</h2>
+        <p className="card-sub">Alle Kennzahlen auf einen Blick. Ziel: Datengetrieben entscheiden.</p>
+
+        <div className="grid-4" style={{marginBottom: 24}}>
+          {KPIS.map((k, i) => (
+            <div key={i} className="kpi-card">
+              <div className="kpi-icon">{k.icon}</div>
+              <div className="kpi-value">{k.value}</div>
+              <div className="kpi-label">{k.label}</div>
+              <div className={`kpi-trend ${k.trendDir}`}>
+                {k.trendDir === 'up' ? '↑' : k.trendDir === 'down' ? '↓' : '→'} {k.trend}
+              </div>
+              <div style={{fontSize: '0.75em', color: 'var(--text3)', marginTop: 4}}>Ziel: {k.target}</div>
+            </div>
+          ))}
+        </div>
+
+        <h3>Eskalations-Status</h3>
+        <div style={{display: 'flex', gap: 12, flexWrap: 'wrap', marginBottom: 16}}>
+          <span className="esk-badge esk-sofort">🔴 SOFORT: Prüfungsvolumen unter Ziel</span>
+          <span className="esk-badge esk-woche">🟡 WOCHE: Churn Rate beobachten</span>
+          <span className="esk-badge esk-naechste">🟢 NÄCHSTE: NPS verbessern</span>
+        </div>
+
+        <h3>KPI-Prüfrhythmus</h3>
+        <div className="grid-2">
+          <div style={{background: 'var(--surface2)', padding: 16, borderRadius: 10}}>
+            <h4 style={{fontSize: '0.88em', color: 'var(--accent-light)', marginBottom: 8}}>Wöchentlich</h4>
+            <ul style={{fontSize: '0.85em', color: 'var(--text2)', lineHeight: 2, listStyle: 'none'}}>
+              <li>• Prüfungsvolumen (Woche vs. Vorjahr)</li>
+              <li>• Offene Partner-Anfragen</li>
+              <li>• Kundenbeschwerden / Eskalationen</li>
+            </ul>
+          </div>
+          <div style={{background: 'var(--surface2)', padding: 16, borderRadius: 10}}>
+            <h4 style={{fontSize: '0.88em', color: 'var(--green)', marginBottom: 8}}>Monatlich</h4>
+            <ul style={{fontSize: '0.85em', color: 'var(--text2)', lineHeight: 2, listStyle: 'none'}}>
+              <li>• Revenue und EBITDA vs. Budget</li>
+              <li>• NPS Partnerschulen</li>
+              <li>• Churn Rate / neue Partner</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
+  const renderCustomers = () => (
+    <div>
+      <div className="card">
+        <h2>🏫 Kundenanalyse – Top Partner</h2>
+        <p className="card-sub">Rangliste nach Prüfungsvolumen. Rote Trends erfordern sofortige Aufmerksamkeit.</p>
+
+        <div style={{overflowX: 'auto'}}>
+          <table className="data-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Partnerschule</th>
+                <th>Prüfungen/Jahr</th>
+                <th>Trend</th>
+                <th>Segment</th>
+                <th>Region</th>
+                <th>Aktion</th>
+              </tr>
+            </thead>
+            <tbody>
+              {TOP_CUSTOMERS.map(c => (
+                <tr key={c.rank}>
+                  <td style={{fontWeight: 700}}>{c.rank}</td>
+                  <td>{c.name}</td>
+                  <td>{c.volume.toLocaleString()}</td>
+                  <td style={{color: c.trend > 0 ? 'var(--green)' : c.trend < -5 ? 'var(--red)' : c.trend < 0 ? 'var(--yellow)' : 'var(--text2)', fontWeight: 600}}>
+                    {c.trend > 0 ? '+' : ''}{c.trend}%
+                  </td>
+                  <td><span style={{fontSize: '0.8em', padding: '2px 8px', background: 'var(--surface2)', borderRadius: 6}}>{c.segment}</span></td>
+                  <td style={{color: 'var(--text2)'}}>{c.region}</td>
+                  <td>
+                    {c.trend < -5 ? <span className="esk-badge esk-sofort" style={{fontSize: '0.7em'}}>Gespräch nötig</span> :
+                     c.trend < 0 ? <span className="esk-badge esk-woche" style={{fontSize: '0.7em'}}>Beobachten</span> :
+                     <span className="esk-badge esk-naechste" style={{fontSize: '0.7em'}}>Pflegen</span>}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Analyse-Insights</h3>
+        <div className="grid-2" style={{marginTop: 10}}>
+          <div className="alert alert-red">
+            <span className="alert-icon">⚠️</span>
+            <div><strong>Klumpenrisiko:</strong> Top-3-Partner machen 38% des Volumens aus. Diversifikation nötig.</div>
+          </div>
+          <div className="alert alert-yellow">
+            <span className="alert-icon">📉</span>
+            <div><strong>Negative Trends:</strong> 4 von 10 Top-Partnern mit Volumenrückgang. Ursachenanalyse läuft.</div>
+          </div>
+          <div className="alert alert-green">
+            <span className="alert-icon">📈</span>
+            <div><strong>Wachstum:</strong> WISS Zürich (+15%) und GIBZ Zug (+8%) als Best Practices analysieren.</div>
+          </div>
+          <div className="alert alert-blue">
+            <span className="alert-icon">🏢</span>
+            <div><strong>Firmenkunden:</strong> Neues Segment mit 3 aktiven Leads. Potenzial: 10-15% zusätzliches Revenue.</div>
+          </div>
+        </div>
+      </div>
+
+      <div className="card">
+        <h2>📂 Kundendaten hochladen</h2>
+        <p className="card-sub">Lade eine Excel/CSV-Datei mit Kundendaten hoch für eine detaillierte Analyse.</p>
+        <div className="upload-area">
+          <div className="upload-icon">📄</div>
+          <p><strong>Excel oder CSV hierher ziehen</strong></p>
+          <p style={{fontSize: '0.82em', marginTop: 6}}>Unterstützt: .xlsx, .csv, .xls</p>
+        </div>
+        <p style={{fontSize: '0.82em', color: 'var(--text3)', marginTop: 10}}>
+          Tipp: Lade Kundenlisten direkt in den Ordner "CEO Agenten" oder hier hoch. Der Agent analysiert automatisch: Ranking, Trends, Segmentierung und erstellt einen Betreuungsplan.
+        </p>
+      </div>
+
+      <div className="card">
+        <h2>🗓️ Stakeholder-Map</h2>
+        <p className="card-sub">Wichtige Kontakte und Beziehungen pflegen.</p>
+        <div className="grid-2">
+          {STAKEHOLDERS.map((sh, i) => (
+            <div key={i} className="sh-card">
+              <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+                <span className="sh-name">{sh.name}</span>
+                <span className={`task-priority priority-${sh.priority}`}>{sh.priority}</span>
+              </div>
+              <div className="sh-role">{sh.role} | {sh.freq}</div>
+              <div className="sh-topics">{sh.topics}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+
+  const renderChallenge = () => {
+    const ch = CHALLENGES[challengeIdx];
+    return (
+      <div>
+        <div className="card">
+          <h2>🧠 CEO-Challenge</h2>
+          <p className="card-sub">Strategische Denkaufgaben, Krisensimulationen und Perspektivenwechsel. Trainiere dein CEO-Mindset.</p>
+
+          <div className="subtabs">
+            {CHALLENGES.map((c, i) => (
+              <button key={i} className={`subtab ${i === challengeIdx ? 'active' : ''}`} onClick={() => { setChallengeIdx(i); setChallengeAnswer(''); setShowHints(false); }}>
+                {c.cat}
+              </button>
+            ))}
+          </div>
+
+          <div style={{background: 'var(--surface2)', padding: 24, borderRadius: 12, borderTop: `3px solid ${ch.color}`, marginBottom: 16}}>
+            <div style={{fontSize: '0.78em', fontWeight: 700, color: ch.color, textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: 8}}>
+              Challenge: {ch.cat}
+            </div>
+            <p style={{fontSize: '1.05em', lineHeight: 1.6, fontWeight: 500}}>{ch.q}</p>
+
+            {showHints && (
+              <div style={{marginTop: 14, padding: 12, background: 'var(--accent-dim)', borderRadius: 8}}>
+                <div style={{fontSize: '0.8em', fontWeight: 600, color: 'var(--accent-light)', marginBottom: 6}}>Denkanstösse:</div>
+                {ch.hints.map((h, i) => (
+                  <div key={i} style={{fontSize: '0.85em', color: 'var(--text2)', padding: '2px 0'}}>💡 {h}</div>
+                ))}
+              </div>
+            )}
+          </div>
+
+          <div style={{display: 'flex', gap: 8, marginBottom: 16}}>
+            <button className="btn btn-outline" onClick={() => setShowHints(!showHints)}>
+              {showHints ? 'Hints ausblenden' : '💡 Hints anzeigen'}
+            </button>
+            <button className="btn btn-outline" onClick={() => { setChallengeIdx((challengeIdx + 1) % CHALLENGES.length); setChallengeAnswer(''); setShowHints(false); }}>
+              ➡️ Nächste Challenge
+            </button>
+            <button className="btn btn-outline" onClick={() => { setChallengeIdx(Math.floor(Math.random() * CHALLENGES.length)); setChallengeAnswer(''); setShowHints(false); }}>
+              🎲 Zufällige Challenge
+            </button>
+          </div>
+
+          <h3>Deine Antwort</h3>
+          <textarea
+            className="text-area"
+            value={challengeAnswer}
+            onChange={e => setChallengeAnswer(e.target.value)}
+            placeholder="Schreibe deine Antwort hier... Denke wie ein CEO: strukturiert, datenbasiert, mit konkreten Massnahmen."
+            style={{minHeight: 150}}
+          />
+        </div>
+
+        <div className="card" style={{background: 'var(--accent-dim)', borderColor: 'rgba(99,102,241,0.3)'}}>
+          <h2>🎯 Vollständiger Challenge-Chatbot</h2>
+          <p className="card-sub">Für das interaktive Sparring mit Score-Tracking und CEO-Feedback.</p>
+          <button className="btn btn-primary" onClick={() => setSection('tools')}>
+            Zum Challenge-Chatbot →
+          </button>
+        </div>
+      </div>
+    );
+  };
+
+  const renderTools = () => (
+    <div>
+      <div className="card">
+        <h2>🛠️ CEO-Agent Tools</h2>
+        <p className="card-sub">Integrierte Tools für den vollen CEO-Workflow.</p>
+      </div>
+
+      <div className="grid-2">
+        <div className="module-tile">
+          <div className="tile-icon">📋</div>
+          <h3>100-Tage-Plan</h3>
+          <p>Onboarding als CEO: Checklisten, Phasen, Stakeholder, Strategie</p>
+        </div>
+        <div className="module-tile">
+          <div className="tile-icon">🧠</div>
+          <h3>Challenge Chatbot</h3>
+          <p>Interaktives Sparring mit Scoring und CEO-Feedback</p>
+        </div>
+        <div className="module-tile">
+          <div className="tile-icon">☀️</div>
+          <h3>Tagesbriefing (Extended)</h3>
+          <p>Vollständiges Briefing mit allen Details und Analysen</p>
+        </div>
+      </div>
+
+      <div className="card" style={{marginTop: 20}}>
+        <h3>📋 100-Tage-Plan – CEO Onboarding</h3>
+        <div className="iframe-wrap">
+          <iframe src="CEO_Agent_100Tage.html" title="100-Tage-Plan" />
+        </div>
+      </div>
+
+      <div className="card">
+        <h3>🧠 CEO Challenge Chatbot</h3>
+        <div className="iframe-wrap">
+          <iframe src="CEO_Challenge_Chatbot.html" title="Challenge Chatbot" />
+        </div>
+      </div>
+
+      <div className="card">
+        <h3>☀️ CEO Briefing (Detailansicht)</h3>
+        <div className="iframe-wrap">
+          <iframe src="CEO_Briefing.html" title="CEO Briefing" />
+        </div>
+      </div>
+    </div>
+  );
+
+  // ============================================================
+  // MAIN RENDER
+  // ============================================================
+  return (
+    <div className="app">
+      <div className="header">
+        <span className="header-badge">CEO Agentensystem</span>
+        <h1>CEO SIZ AG</h1>
+        <p>Dein virtueller CEO – führt, fordert, plant und bereitet vor</p>
+        <div className="date">{dayName(TODAY)}, {formatDate(TODAY)}</div>
+      </div>
+
+      <nav className="nav">
+        {SECTIONS.map(s => (
+          <button
+            key={s.id}
+            className={`nav-btn ${section === s.id ? 'active' : ''}`}
+            onClick={() => setSection(s.id)}
+          >
+            <span className="nav-icon">{s.icon}</span>
+            {s.label}
+          </button>
+        ))}
+      </nav>
+
+      {section === 'dashboard' && renderDashboard()}
+      {section === 'briefing' && renderBriefing()}
+      {section === 'tasks' && renderTasks()}
+      {section === 'meetings' && renderMeetings()}
+      {section === 'planning' && renderPlanning()}
+      {section === 'kpis' && renderKPIs()}
+      {section === 'customers' && renderCustomers()}
+      {section === 'challenge' && renderChallenge()}
+      {section === 'tools' && renderTools()}
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('app')).render(<App />);
+</script>
+</body>
+</html>

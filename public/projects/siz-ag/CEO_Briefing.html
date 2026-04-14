@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CEO Briefing – 6. April 2026</title>
+  <style>
+    :root {
+      --bg:        #0d0f14;
+      --surface:   #151820;
+      --card:      #1c2030;
+      --border:    #252a3a;
+      --accent:    #3b82f6;
+      --accent2:   #8b5cf6;
+      --accent3:   #10b981;
+      --warn:      #f59e0b;
+      --danger:    #ef4444;
+      --text:      #e2e8f0;
+      --muted:     #94a3b8;
+      --tag-bg:    #1e2a40;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .wrapper { max-width: 860px; margin: 0 auto; }
+
+    /* HEADER */
+    .header {
+      background: linear-gradient(135deg, #1a1f35 0%, #0f1420 100%);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2rem 2.5rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .header::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent), var(--accent2), var(--accent3));
+    }
+    .header-tag {
+      display: inline-block;
+      background: var(--tag-bg);
+      color: var(--accent);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      border: 1px solid var(--accent);
+      margin-bottom: 1rem;
+    }
+    .header h1 {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.3rem;
+    }
+    .header .subtitle {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .header .subtitle span {
+      color: var(--accent3);
+      font-weight: 600;
+    }
+
+    /* ALERT BOX */
+    .alert {
+      background: #1f1510;
+      border: 1px solid var(--warn);
+      border-left: 4px solid var(--warn);
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.88rem;
+      color: #fcd34d;
+    }
+    .alert strong { color: var(--warn); }
+
+    /* SECTION */
+    .section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.75rem 2rem;
+      margin-bottom: 1.25rem;
+    }
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.9rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .section-icon {
+      width: 36px; height: 36px;
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+    .icon-blue  { background: #1e3a5f; }
+    .icon-purple{ background: #2d1f4a; }
+    .icon-green { background: #0f2e22; }
+    .icon-gold  { background: #2e2006; }
+    .icon-teal  { background: #0a2a28; }
+    .icon-red   { background: #2e0e0e; }
+    .icon-indigo{ background: #1a1f40; }
+
+    .section-title {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+    }
+    .section-name {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    /* CALENDAR */
+    .cal-item {
+      display: flex;
+      gap: 1.25rem;
+      align-items: flex-start;
+      padding: 1rem 1.25rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      margin-bottom: 0.75rem;
+    }
+    .cal-time {
+      min-width: 80px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--accent);
+      font-variant-numeric: tabular-nums;
+      padding-top: 0.1rem;
+    }
+    .cal-content {}
+    .cal-title { font-weight: 700; color: #fff; margin-bottom: 0.2rem; }
+    .cal-detail { font-size: 0.85rem; color: var(--muted); }
+    .cal-habit { border-left: 3px solid #2d3a4a; }
+    .cal-work  { border-left: 3px solid var(--accent3); }
+    .cal-review{ border-left: 3px solid var(--accent2); }
+
+    .free-day-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: #0f2e22;
+      border: 1px solid var(--accent3);
+      color: var(--accent3);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 0.4rem 1rem;
+      border-radius: 20px;
+      margin-bottom: 1rem;
+    }
+
+    /* TASK BOX */
+    .task-box {
+      background: linear-gradient(135deg, #0f1f35, #0f1f20);
+      border: 1px solid var(--accent);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+    .task-box .task-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+    .task-box .task-text {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.75rem;
+    }
+    .task-box .task-why {
+      font-size: 0.88rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      padding-top: 0.75rem;
+      margin-top: 0.5rem;
+    }
+    .task-box .deliverable {
+      display: inline-block;
+      background: var(--tag-bg);
+      color: var(--accent3);
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 0.2rem 0.65rem;
+      border-radius: 6px;
+      margin-top: 0.6rem;
+    }
+
+    /* THINK QUESTION */
+    .think-box {
+      background: linear-gradient(135deg, #1a0f35, #10101a);
+      border: 1px solid var(--accent2);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+    .think-box .perspective {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent2);
+      margin-bottom: 0.5rem;
+    }
+    .think-box .question {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.4;
+      margin-bottom: 0.75rem;
+    }
+    .think-box .hint {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    /* KPI */
+    .kpi-box {
+      background: linear-gradient(135deg, #0f2e10, #0a1a10);
+      border: 1px solid var(--accent3);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+    .kpi-name {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent3);
+      margin-bottom: 0.4rem;
+    }
+    .kpi-value {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.4rem;
+    }
+    .kpi-value span { font-size: 1rem; font-weight: 500; color: var(--muted); }
+    .kpi-why {
+      font-size: 0.87rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      padding-top: 0.75rem;
+      margin-top: 0.5rem;
+    }
+
+    /* STAKEHOLDER */
+    .stakeholder-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+    }
+    .stakeholder-box .sh-name {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.15rem;
+    }
+    .stakeholder-box .sh-role {
+      font-size: 0.82rem;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+    .stakeholder-box .sh-why {
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+    .sh-hook {
+      background: #1e2a1a;
+      border-left: 3px solid var(--accent3);
+      border-radius: 0 8px 8px 0;
+      padding: 0.75rem 1rem;
+      font-size: 0.87rem;
+      color: #a7f3d0;
+      font-style: italic;
+    }
+
+    /* WEEK */
+    .week-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+    @media(max-width:600px){ .week-grid { grid-template-columns: 1fr; } }
+    .week-prio {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
+    }
+    .week-prio .prio-num {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--border);
+      line-height: 1;
+      margin-bottom: 0.4rem;
+    }
+    .week-prio:nth-child(1) .prio-num { color: var(--accent); }
+    .week-prio:nth-child(2) .prio-num { color: var(--accent2); }
+    .week-prio:nth-child(3) .prio-num { color: var(--accent3); }
+    .week-prio .prio-title { font-size: 0.9rem; font-weight: 700; color: #fff; margin-bottom: 0.3rem; }
+    .week-prio .prio-desc  { font-size: 0.82rem; color: var(--muted); }
+
+    .task-list { list-style: none; }
+    .task-list li {
+      display: flex;
+      gap: 0.75rem;
+      align-items: flex-start;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.88rem;
+      color: var(--text);
+    }
+    .task-list li:last-child { border-bottom: none; }
+    .task-list .check {
+      width: 20px; height: 20px;
+      border: 2px solid var(--border);
+      border-radius: 5px;
+      flex-shrink: 0;
+      margin-top: 0.15rem;
+    }
+
+    .reflex-box {
+      background: #1a1530;
+      border: 1px solid var(--accent2);
+      border-radius: 10px;
+      padding: 1.25rem;
+      font-size: 0.95rem;
+      font-style: italic;
+      color: #c4b5fd;
+    }
+    .reflex-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent2);
+      font-style: normal;
+      margin-bottom: 0.5rem;
+    }
+
+    /* FOOTER */
+    .footer {
+      text-align: center;
+      color: var(--border);
+      font-size: 0.78rem;
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+    }
+    .footer span { color: var(--muted); }
+
+    /* EMAIL ITEMS */
+    .email-item {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      padding: 0.85rem 1rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      margin-bottom: 0.6rem;
+    }
+    .email-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      margin-top: 0.5rem;
+      flex-shrink: 0;
+    }
+    .dot-yellow { background: var(--warn); }
+    .dot-gray   { background: #4b5563; }
+    .email-subject { font-weight: 600; font-size: 0.88rem; color: #fff; }
+    .email-from    { font-size: 0.8rem; color: var(--muted); margin-top: 0.15rem; }
+    .email-note    { font-size: 0.8rem; color: #fcd34d; margin-top: 0.3rem; }
+
+    b { color: #fff; }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-tag">SIZ AG · CEO Briefing</div>
+    <h1>Guten Morgen, Franz 👋</h1>
+    <p class="subtitle">
+      Montag, 6. April 2026 &nbsp;·&nbsp;
+      <span>Wochenbeginn – Zeit die Richtung zu setzen</span>
+    </p>
+  </div>
+
+  <!-- TECH ALERT -->
+  <div class="alert">
+    <strong>⚠️ Tech-Hinweis:</strong>&nbsp; Dein KI-Assistent «ki-assistentin» (Render.com) ist heute Nacht wegen Speicherüberlastung abgestürzt und wurde automatisch neugestartet. Prüfe kurz, ob der Dienst wieder stabil läuft – dieser könnte für deine SIZ-Arbeit relevant sein.
+  </div>
+
+  <!-- 1. TAGESPLAN -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon icon-blue">📅</div>
+      <div>
+        <div class="section-title">Abschnitt 1</div>
+        <div class="section-name">Dein Tag heute</div>
+      </div>
+    </div>
+
+    <div class="free-day-badge">
+      ✅ Keine externen Meetings heute – Fokus-Tag für Tiefarbeit
+    </div>
+
+    <div class="cal-item cal-habit">
+      <div class="cal-time">05:00–06:00</div>
+      <div class="cal-content">
+        <div class="cal-title">Ausdauer-Training</div>
+        <div class="cal-detail">Körper in Höchstform – Mentale Klarheit für den Tag schaffen.</div>
+      </div>
+    </div>
+
+    <div class="cal-item cal-habit">
+      <div class="cal-time">Ganztägig</div>
+      <div class="cal-content">
+        <div class="cal-title">Atemübung · Fragenritual · EFT</div>
+        <div class="cal-detail">Deine drei täglichen Habits. Nicht verhandelbar – Energie und Fokus sind die Grundlage für alles andere.</div>
+      </div>
+    </div>
+
+    <div class="cal-item cal-work">
+      <div class="cal-time">07:00–18:00</div>
+      <div class="cal-content">
+        <div class="cal-title">🎯 Freier Arbeitstag – Strategische Tiefarbeit</div>
+        <div class="cal-detail">Keine Meetings, keine Ablenkung. Das ist eine Chance. Nutze den Fokusblock für die heutige CEO-Aufgabe (siehe Abschnitt 2).</div>
+      </div>
+    </div>
+
+    <div class="cal-item cal-habit">
+      <div class="cal-time">21:00–22:00</div>
+      <div class="cal-content">
+        <div class="cal-title">Fitness-Kraft</div>
+        <div class="cal-detail">Abendeinheit – Abschalten und regenerieren.</div>
+      </div>
+    </div>
+
+    <div class="cal-item cal-review">
+      <div class="cal-time">23:00–00:00</div>
+      <div class="cal-content">
+        <div class="cal-title">Tagesreview & Planung</div>
+        <div class="cal-detail">Was habe ich heute geliefert? Was bleibt offen? Was nehme ich morgen mit? Halte das Resultat der CEO-Aufgabe schriftlich fest.</div>
+      </div>
+    </div>
+
+    <div style="margin-top:1.25rem; padding-top:1rem; border-top:1px solid var(--border);">
+      <div style="font-size:0.8rem; color:var(--muted); margin-bottom:0.75rem; text-transform:uppercase; letter-spacing:0.08em; font-weight:700;">E-Mails der letzten 24h – Relevantes im Überblick</div>
+
+      <div class="email-item">
+        <div class="email-dot dot-yellow"></div>
+        <div>
+          <div class="email-subject">⚠ Web Service «ki-assistentin» exceeded memory limit</div>
+          <div class="email-from">Render.com · 05. April 2026, 06:00 Uhr</div>
+          <div class="email-note">Automatischer Neustart erfolgt. Prüfe Stabilität – könnte deinen SIZ-Agenten betreffen.</div>
+        </div>
+      </div>
+
+      <div class="email-item">
+        <div class="email-dot dot-yellow"></div>
+        <div>
+          <div class="email-subject">Domain Transfer franzruchti.com eingeleitet</div>
+          <div class="email-from">domains.ch via franzruchti@me.com · 05. April 2026</div>
+          <div class="email-note">Persönlich, aber relevant: Falls du eine persönliche Expertise-Plattform aufbaust – gut zu wissen.</div>
+        </div>
+      </div>
+
+      <div class="email-item">
+        <div class="email-dot dot-gray"></div>
+        <div>
+          <div class="email-subject">Google Job Alerts: «Head of Sales», «Schulung»</div>
+          <div class="email-from">Google Alerts · Automatisch</div>
+          <div class="email-note">Gut: Du hast Marktintelligenz-Alerts für «Schulung» und «Head of Sales». Nutze diese auch als Frühwarnsystem für Wettbewerber und Partnerschul-Bewegungen.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. AUFGABE -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon icon-green">🎯</div>
+      <div>
+        <div class="section-title">Abschnitt 2</div>
+        <div class="section-name">Deine Aufgabe heute</div>
+      </div>
+    </div>
+
+    <div class="task-box">
+      <div class="task-label">CEO-Aufgabe · Montag, 6. April 2026</div>
+      <div class="task-text">
+        Erstelle die «Partner-Pipeline Map 2026»: Welche 10 Partnerschulen haben das grösste Wachstumspotenzial – und welche 5 zeigen Absprungrisiko?
+      </div>
+      <div class="task-why">
+        Wir haben 100+ Partnerschulen – aber nicht alle sind gleich wertvoll. Als Leiter Markt & Partner musst du jederzeit sagen können: «Hier wachsen wir, hier verlieren wir, und hier investieren wir.» Eine klare Priorisierung ist die Grundlage jeder Markt-Strategie.
+        <br><br>
+        <b>Methode:</b> Benutze verfügbare Daten (Prüfungsvolumen, Volumen-Trend, Kontaktfrequenz, letzte Kommunikation). Erstelle eine einfache 2×2-Matrix: Wachstumspotenzial (hoch/tief) vs. aktuelles Engagement (stark/schwach). Vier Quadranten ergeben klare Prioritäten.
+        <br><br>
+        <b>Zeitbedarf:</b> 2–3 Stunden konzentrierte Arbeit.
+      </div>
+      <div class="deliverable">📊 Deliverable: Excel-Tabelle oder 1-seitige Übersicht, heute Abend im Tagesreview durchgehen</div>
+    </div>
+  </div>
+
+  <!-- 3. DENKFRAGE -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon icon-purple">🧠</div>
+      <div>
+        <div class="section-title">Abschnitt 3</div>
+        <div class="section-name">CEO-Denkfrage des Tages</div>
+      </div>
+    </div>
+
+    <div class="think-box">
+      <div class="perspective">Perspektive: Wettbewerb &amp; Innovation</div>
+      <div class="question">
+        «Microsoft, Google und ECDL investieren massiv in KI-Zertifizierungen – was ist unser unkopierbares Alleinstellungsmerkmal in 3 Jahren, wenn alle grossen Player KI-Kurse mit Zertifikat für unter CHF 50 anbieten?»
+      </div>
+      <div class="hint">
+        Denke nicht nur an Produkte. Denke an Vertrauen, Neutralität, Schweizer Bildungslandschaft, Trägerschaft, Sprachen, Regulatorik. Was hat SIZ, was Microsoft nie haben wird?
+        <br><br>
+        Notiere dir <b>3 Punkte</b> während deines Morgentrainings – die besten Ideen kommen in Bewegung.
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. KPI -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon icon-teal">📈</div>
+      <div>
+        <div class="section-title">Abschnitt 4</div>
+        <div class="section-name">KPI-Fokus heute</div>
+      </div>
+    </div>
+
+    <div class="kpi-box">
+      <div class="kpi-name">Partner-Aktivierungsrate</div>
+      <div class="kpi-value">? <span>% aktive Partner (Ziel: &gt;80%)</span></div>
+      <div class="kpi-why">
+        <b>Warum heute?</b> Es ist Wochenbeginn und du erstellst die Partner-Pipeline Map. Bevor du Wachstumspotenziale definierst, musst du wissen: Wie viele unserer 100+ Partner haben in den letzten 90 Tagen überhaupt Prüfungen abgenommen?
+        <br><br>
+        Ein Partner auf dem Papier ist kein aktiver Partner. Die Aktivierungsrate zeigt dir, wie «lebendig» dein Netzwerk wirklich ist. Wenn diese Zahl unter 70% liegt, ist das ein strategisches Problem – nicht ein administratives.
+        <br><br>
+        <b>Deine Aufgabe:</b> Berechne diese Zahl heute als ersten Schritt deiner Partner-Pipeline Map.
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. STAKEHOLDER -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon icon-gold">🤝</div>
+      <div>
+        <div class="section-title">Abschnitt 5</div>
+        <div class="section-name">Stakeholder-Impuls</div>
+      </div>
+    </div>
+
+    <div class="stakeholder-box">
+      <div class="sh-name">Schulleitung einer mittelgrossen ICT-Partnerschule</div>
+      <div class="sh-role">Segmentfokus: Partnerschulen mit mittlerem Prüfungsvolumen (200–800 Prüfungen/Jahr)</div>
+      <div class="sh-why">
+        Diese Schulen sind oft die «stillen Verlustrisiken»: gross genug um schmerzhaft zu sein wenn sie abspringen, klein genug um nicht automatisch auf deinem Radar zu sein. Ein proaktiver Anruf «wie läuft es bei euch ins 2. Quartal?» zeigt Interesse – und bringt oft Marktintelligenz, die du sonst nicht kriegst.
+      </div>
+      <div class="sh-hook">
+        Gesprächsanlass: «Wir planen für 2026 eine neue Partner-Entwicklungsinitiative und wollen sicherstellen, dass wir eure Herausforderungen verstehen. Ich würde gerne 15 Minuten mit Ihnen sprechen – was brauchen Sie von SIZ, das wir heute noch nicht liefern?»
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. WOCHENKONTEXT (Montag) -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon icon-indigo">📋</div>
+      <div>
+        <div class="section-title">Abschnitt 6 · Nur montags</div>
+        <div class="section-name">Wochenkontext – KW 15</div>
+      </div>
+    </div>
+
+    <!-- Top 3 Priorities -->
+    <div style="margin-bottom:1.25rem;">
+      <div style="font-size:0.8rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.08em; font-weight:700; margin-bottom:0.75rem;">Top 3 Prioritäten dieser Woche</div>
+      <div class="week-grid">
+        <div class="week-prio">
+          <div class="prio-num">01</div>
+          <div class="prio-title">Partner-Portfolio bereinigen</div>
+          <div class="prio-desc">Klare Segmentierung: Wachstum, Pflege, Risiko. Basis für alle Markt-Entscheidungen Q2.</div>
+        </div>
+        <div class="week-prio">
+          <div class="prio-num">02</div>
+          <div class="prio-title">Firmenkunden-Pipeline aufbauen</div>
+          <div class="prio-desc">Mindestens 3 konkrete Firmen-Targets definieren und erste Ansprache planen.</div>
+        </div>
+        <div class="week-prio">
+          <div class="prio-num">03</div>
+          <div class="prio-title">Q2-Marktplanung abschliessen</div>
+          <div class="prio-desc">Aktivitäten, Budgets und Verantwortlichkeiten für April–Juni festlegen.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Weekly Task List -->
+    <div style="margin-bottom:1.25rem;">
+      <div style="font-size:0.8rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.08em; font-weight:700; margin-bottom:0.75rem;">Aufgabenliste KW 15</div>
+      <ul class="task-list">
+        <li>
+          <div class="check"></div>
+          <div><b>Mo:</b> Partner-Pipeline Map erstellen (Wachstum vs. Risiko, 2×2-Matrix, 100+ Partner segmentiert)</div>
+        </li>
+        <li>
+          <div class="check"></div>
+          <div><b>Di:</b> 3 Firmen-Targets für Direktakquise definieren – mit Ansprechperson, Gesprächsanlass und Erstkontakt-Template</div>
+        </li>
+        <li>
+          <div class="check"></div>
+          <div><b>Mi:</b> Mindestens 1 Partner-Schule proaktiv kontaktieren – Feedback zu Q1 einholen, Bedürfnisse für Q2 erfragen</div>
+        </li>
+        <li>
+          <div class="check"></div>
+          <div><b>Do:</b> Entwurf Q2-Marktplan: Aktivitäten, Budgetrahmen, KPIs – bereit für internes Review</div>
+        </li>
+        <li>
+          <div class="check"></div>
+          <div><b>Fr:</b> Wochenreflexion: Was haben wir diese Woche im Markt gelernt? Was ändert sich an unserer Strategie?</div>
+        </li>
+        <li>
+          <div class="check"></div>
+          <div><b>Laufend:</b> Google Job-Alerts auf «Schulung» und «Head of Sales» – wöchentlich auf Wettbewerber-Bewegungen checken</div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Reflexionsfrage -->
+    <div class="reflex-box">
+      <div class="reflex-label">Reflexionsfrage der Woche</div>
+      «Wenn ich in 12 Monaten auf diese Woche zurückschaue und sage: ‹Das war der Wendepunkt für unsere Markt-Stärke› – was müsste ich diese Woche entschieden oder angestossen haben?»
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    Generiert automatisch · <span>CEO Agent SIZ AG</span> · Montag, 6. April 2026<br>
+    <span>SIZ AG · Führende ICT-Prüfungsorganisation der Schweiz · ~100'000 Prüfungen/Jahr</span>
+  </div>
+
+</div>
+</body>
+</html>

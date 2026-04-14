@@ -16,6 +16,15 @@ interface Task {
   done: boolean;
 }
 
+interface Access {
+  id: string;
+  label: string;
+  url: string;
+  username: string;
+  password: string;
+  note: string;
+}
+
 function generateId() {
   return Math.random().toString(36).slice(2, 9);
 }
@@ -26,6 +35,10 @@ function createGoals(count: number): Goal[] {
 
 function createTasks(count: number): Task[] {
   return Array.from({ length: count }, () => ({ id: generateId(), text: "", done: false }));
+}
+
+function createAccess(): Access {
+  return { id: generateId(), label: "", url: "", username: "", password: "", note: "" };
 }
 
 export default function ProjectPage() {
@@ -57,6 +70,10 @@ export default function ProjectPage() {
   // Tasks
   const [tasks, setTasks] = useState<Task[]>(() => createTasks(5));
 
+  // Accesses / Zugänge
+  const [accesses, setAccesses] = useState<Access[]>([]);
+  const [visiblePasswords, setVisiblePasswords] = useState<Record<string, boolean>>({});
+
   // Save indicator
   const [saved, setSaved] = useState(false);
 
@@ -77,15 +94,23 @@ export default function ProjectPage() {
         setTasks(JSON.parse(storedTasks));
       } catch {}
     }
+
+    const storedAccesses = localStorage.getItem(`accesses-${slug}`);
+    if (storedAccesses) {
+      try {
+        setAccesses(JSON.parse(storedAccesses));
+      } catch {}
+    }
   }, [slug]);
 
   const saveAll = useCallback(() => {
     localStorage.setItem(`notes-${slug}`, notes);
     localStorage.setItem(`goals-${slug}`, JSON.stringify(goals));
     localStorage.setItem(`tasks-${slug}`, JSON.stringify(tasks));
+    localStorage.setItem(`accesses-${slug}`, JSON.stringify(accesses));
     setSaved(true);
     setTimeout(() => setSaved(false), 2000);
-  }, [slug, notes, goals, tasks]);
+  }, [slug, notes, goals, tasks, accesses]);
 
   // Goal handlers
   function updateGoal(id: string, text: string) {
@@ -115,6 +140,30 @@ export default function ProjectPage() {
 
   function addTask() {
     setTasks((prev) => [...prev, { id: generateId(), text: "", done: false }]);
+  }
+
+  // Access handlers
+  function updateAccess(id: string, field: keyof Access, value: string) {
+    setAccesses((prev) => prev.map((a) => (a.id === id ? { ...a, [field]: value } : a)));
+  }
+
+  function removeAccess(id: string) {
+    setAccesses((prev) => prev.filter((a) => a.id !== id));
+  }
+
+  function addAccess() {
+    setAccesses((prev) => [...prev, createAccess()]);
+  }
+
+  function togglePasswordVisibility(id: string) {
+    setVisiblePasswords((prev) => ({ ...prev, [id]: !prev[id] }));
+  }
+
+  async function copyToClipboard(value: string) {
+    if (!value) return;
+    try {
+      await navigator.clipboard.writeText(value);
+    } catch {}
   }
 
   // Auto-resize textarea
@@ -211,6 +260,120 @@ export default function ProjectPage() {
           </div>
         </section>
       )}
+
+      {/* Zugänge */}
+      <section className="mb-12">
+        <h2 className="text-neutral-400 text-sm font-semibold uppercase tracking-wider mb-4">
+          Zugänge
+        </h2>
+        {accesses.length === 0 && (
+          <p className="text-neutral-600 text-sm mb-3">
+            Noch keine Zugänge hinterlegt.
+          </p>
+        )}
+        <div className="space-y-3">
+          {accesses.map((access) => (
+            <div
+              key={access.id}
+              className="relative border border-neutral-800 rounded-lg p-4 bg-neutral-950 group"
+            >
+              <button
+                onClick={() => removeAccess(access.id)}
+                className="absolute top-2 right-2 text-neutral-700 hover:text-red-500 transition-colors text-lg px-1 opacity-0 group-hover:opacity-100"
+                title="Entfernen"
+              >
+                &times;
+              </button>
+
+              <input
+                type="text"
+                value={access.label}
+                onChange={(e) => updateAccess(access.id, "label", e.target.value)}
+                placeholder="Bereich (z.B. Admin Dashboard, Kunden-Login, Stripe …)"
+                className="w-full bg-transparent text-white font-semibold text-sm mb-3 focus:outline-none placeholder:text-neutral-600"
+              />
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                <div className="flex items-center gap-1">
+                  <input
+                    type="text"
+                    value={access.url}
+                    onChange={(e) => updateAccess(access.id, "url", e.target.value)}
+                    placeholder="URL"
+                    className="flex-1 bg-neutral-900 border border-neutral-800 text-white px-3 py-2 rounded text-xs focus:outline-none focus:border-neutral-600 placeholder:text-neutral-700"
+                  />
+                  {access.url && (
+                    <a
+                      href={access.url.startsWith("http") ? access.url : `https://${access.url}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-neutral-600 hover:text-white text-xs px-2 py-2 border border-neutral-800 rounded transition-colors"
+                      title="Öffnen"
+                    >
+                      ↗
+                    </a>
+                  )}
+                </div>
+
+                <div className="flex items-center gap-1">
+                  <input
+                    type="text"
+                    value={access.username}
+                    onChange={(e) => updateAccess(access.id, "username", e.target.value)}
+                    placeholder="Benutzer / E-Mail"
+                    className="flex-1 bg-neutral-900 border border-neutral-800 text-white px-3 py-2 rounded text-xs focus:outline-none focus:border-neutral-600 placeholder:text-neutral-700"
+                  />
+                  <button
+                    onClick={() => copyToClipboard(access.username)}
+                    className="text-neutral-600 hover:text-white text-xs px-2 py-2 border border-neutral-800 rounded transition-colors"
+                    title="Kopieren"
+                  >
+                    ⎘
+                  </button>
+                </div>
+
+                <div className="flex items-center gap-1">
+                  <input
+                    type={visiblePasswords[access.id] ? "text" : "password"}
+                    value={access.password}
+                    onChange={(e) => updateAccess(access.id, "password", e.target.value)}
+                    placeholder="Passwort"
+                    className="flex-1 bg-neutral-900 border border-neutral-800 text-white px-3 py-2 rounded text-xs focus:outline-none focus:border-neutral-600 placeholder:text-neutral-700"
+                  />
+                  <button
+                    onClick={() => togglePasswordVisibility(access.id)}
+                    className="text-neutral-600 hover:text-white text-xs px-2 py-2 border border-neutral-800 rounded transition-colors"
+                    title={visiblePasswords[access.id] ? "Verbergen" : "Anzeigen"}
+                  >
+                    {visiblePasswords[access.id] ? "🙈" : "👁"}
+                  </button>
+                  <button
+                    onClick={() => copyToClipboard(access.password)}
+                    className="text-neutral-600 hover:text-white text-xs px-2 py-2 border border-neutral-800 rounded transition-colors"
+                    title="Kopieren"
+                  >
+                    ⎘
+                  </button>
+                </div>
+
+                <input
+                  type="text"
+                  value={access.note}
+                  onChange={(e) => updateAccess(access.id, "note", e.target.value)}
+                  placeholder="Bemerkung (optional)"
+                  className="bg-neutral-900 border border-neutral-800 text-neutral-400 px-3 py-2 rounded text-xs focus:outline-none focus:border-neutral-600 placeholder:text-neutral-700"
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+        <button
+          onClick={addAccess}
+          className="mt-3 text-neutral-600 hover:text-neutral-400 text-sm transition-colors"
+        >
+          + Zugang hinzufügen
+        </button>
+      </section>
 
       {/* Aufgaben */}
       <section className="mb-12">

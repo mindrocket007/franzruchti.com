@@ -1,0 +1,230 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+// ─── Auth ───────────────────────────────────────────────
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  password  String
+  name      String?
+  createdAt DateTime @default(now())
+
+  nutritionDays NutritionDay[]
+  weightEntries WeightEntry[]
+  sleepEntries  SleepEntry[]
+  garminDailies GarminDaily[]
+  activities    GarminActivity[]
+  trainingPlans TrainingPlan[]
+  workoutLogs   WorkoutLog[]
+}
+
+// ─── Ernaehrung (FatSecret) ─────────────────────────────
+
+model NutritionDay {
+  id       String @id @default(cuid())
+  userId   String
+  user     User   @relation(fields: [userId], references: [id])
+  date     String // YYYY-MM-DD
+  calories Float
+  fat      Float
+  carbs    Float
+  protein  Float
+  fiber    Float  @default(0)
+  sugar    Float  @default(0)
+
+  meals Meal[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([userId, date])
+  @@index([userId])
+}
+
+model Meal {
+  id             String       @id @default(cuid())
+  nutritionDayId String
+  nutritionDay   NutritionDay @relation(fields: [nutritionDayId], references: [id], onDelete: Cascade)
+  mealType       String       // breakfast, lunch, dinner, snack
+  foodName       String
+  calories       Float
+  fat            Float
+  carbs          Float
+  protein        Float
+  servingSize    String?
+  fatsecretId    String?
+
+  createdAt DateTime @default(now())
+
+  @@index([nutritionDayId])
+}
+
+// ─── Koerper ────────────────────────────────────────────
+
+model WeightEntry {
+  id       String @id @default(cuid())
+  userId   String
+  user     User   @relation(fields: [userId], references: [id])
+  date     String // YYYY-MM-DD
+  weightKg Float
+  fatPct   Float?
+  source   String // garmin, fatsecret, manual
+
+  createdAt DateTime @default(now())
+
+  @@unique([userId, date, source])
+  @@index([userId])
+}
+
+// ─── Garmin ─────────────────────────────────────────────
+
+model GarminActivity {
+  id               String  @id @default(cuid())
+  userId           String
+  user             User    @relation(fields: [userId], references: [id])
+  garminActivityId String  @unique
+  activityType     String
+  activityName     String?
+  startTime        String
+  durationSec      Int
+  distanceM        Float?
+  avgHr            Int?
+  maxHr            Int?
+  caloriesBurned   Float?
+  trainingEffect   Float?
+  vo2max           Float?
+  rawJson          String?
+
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+  @@index([startTime])
+}
+
+model GarminDaily {
+  id              String @id @default(cuid())
+  userId          String
+  user            User   @relation(fields: [userId], references: [id])
+  date            String @unique // YYYY-MM-DD
+  steps           Int?
+  bodyBatteryHigh Int?
+  bodyBatteryLow  Int?
+  avgStress       Int?
+  hrvStatus       Float?
+  hrvBaseline     Float?
+  restingHr       Int?
+  activeCalories  Float?
+  totalCalories   Float?
+
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+}
+
+model SleepEntry {
+  id          String @id @default(cuid())
+  userId      String
+  user        User   @relation(fields: [userId], references: [id])
+  date        String // YYYY-MM-DD
+  sleepScore  Int?
+  durationMin Int
+  deepMin     Int?
+  lightMin    Int?
+  remMin      Int?
+  awakeMin    Int?
+
+  createdAt DateTime @default(now())
+
+  @@unique([userId, date])
+  @@index([userId])
+}
+
+// ─── Trainingsplan ──────────────────────────────────────
+
+model TrainingPlan {
+  id          String  @id @default(cuid())
+  userId      String
+  user        User    @relation(fields: [userId], references: [id])
+  name        String
+  description String?
+  isActive    Boolean @default(true)
+
+  routines Routine[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([userId])
+}
+
+model Routine {
+  id             String       @id @default(cuid())
+  trainingPlanId String
+  trainingPlan   TrainingPlan @relation(fields: [trainingPlanId], references: [id], onDelete: Cascade)
+  name           String
+  dayOfWeek      Int?
+  sortOrder      Int          @default(0)
+
+  exercises   RoutineExercise[]
+  workoutLogs WorkoutLog[]
+
+  createdAt DateTime @default(now())
+
+  @@index([trainingPlanId])
+}
+
+model RoutineExercise {
+  id           String  @id @default(cuid())
+  routineId    String
+  routine      Routine @relation(fields: [routineId], references: [id], onDelete: Cascade)
+  exerciseName String
+  sets         Int
+  repsMin      Int
+  repsMax      Int?
+  weightKg     Float?
+  restSec      Int?
+  notes        String?
+  sortOrder    Int     @default(0)
+
+  @@index([routineId])
+}
+
+// ─── Workout-Logs ───────────────────────────────────────
+
+model WorkoutLog {
+  id          String   @id @default(cuid())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id])
+  routineId   String?
+  routine     Routine? @relation(fields: [routineId], references: [id], onDelete: SetNull)
+  date        String
+  durationMin Int?
+  notes       String?
+
+  sets WorkoutSet[]
+
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+  @@index([date])
+}
+
+model WorkoutSet {
+  id           String     @id @default(cuid())
+  workoutLogId String
+  workoutLog   WorkoutLog @relation(fields: [workoutLogId], references: [id], onDelete: Cascade)
+  exerciseName String
+  setNumber    Int
+  reps         Int
+  weightKg     Float?
+  rpe          Float?
+
+  @@index([workoutLogId])
+}

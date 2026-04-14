@@ -26,7 +26,12 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
+.env
 .env*.local
+
+# logs
+debug.log
+scripts/last-run.log
 
 # vercel
 .vercel
@@ -39,3 +44,7 @@ next-env.d.ts
 cookies.txt
 ~$*
 *.docx
+
+/src/generated/prisma
+
+.vercel
