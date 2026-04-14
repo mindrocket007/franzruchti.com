@@ -26,6 +26,15 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 14.04.2026 (Recherche-Runde 5)
+      {
+        summary: "ICT-Berufsbildung Schweiz: 'AI Business Specialists machen KI-Potenzial nutzbar' – Der neue eidgenössische Fachausweis AI Business Specialist (erste Prüfung Herbst 2026) positioniert Brücken-Builder zwischen Technologie und Unternehmen. ICT-Berufsbildung Schweiz entwickelte das Programm mit Wirtschaft und Bildung: KI-Potenzial systematisch erschliessen, Strategien entwickeln und Mitarbeitende befähigen. Unterstreicht die wachsende staatliche Anerkennung von KI-Kompetenzen im Schweizer ICT-Bildungsökosystem – relevantes Marktumfeld für SIZ AG als etablierte ICT-Prüfungsorganisation.",
+        source: "ICT-Berufsbildung Schweiz",
+        url: "https://www.ict-berufsbildung.ch/ai-business-specialists-machen-ki-potenzial-nutzbar",
+        date: "2026",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-14",
+      },
       // Neu: 14.04.2026 (Recherche-Runde 4)
       {
         summary: "inside-it.ch: 'Diese Schweizer Informatiktalente messen sich an den WorldSkills 2026' – Fünf junge ICT-Spezialisten vertreten die Schweiz an den WorldSkills Shanghai 2026 (22.–27. September 2026) in den Disziplinen Software Application Development, Web Technologies, Cloud Computing und Cyber Security. Qualifikation durch ICT-Regiomeisterschaften und Schweizermeisterschaft. Starke Nachwuchsförderung und hohe gesellschaftliche Sichtbarkeit der ICT-Berufsbildung – direktes positives Marktumfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation.",
@@ -2706,6 +2715,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 14.04.2026 (Recherche-Runde 4)
+      {
+        summary: "ad-hoc-news.de: 'Intersana 2026: Drei Trends revolutionieren mentale Gesundheit' – Die Intersana-Gesundheitsmesse Augsburg (30. Jan – 1. Feb 2026) zeigt klaren Paradigmenwechsel: (1) Prävention und Resilienz als Organisationsstrategie – weg von reaktiven Burnout-Massnahmen hin zu proaktivem Teamaufbau; (2) Destigmatisierung psychischer Gesundheit – emotionale Kompetenz als Grundkompetenz; (3) Digitale Begleitung via Wearables und Health-Apps. Wachsendes Marktumfeld für hypnovital® als digitales Hypnose-Präventionsprogramm.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/intersana-2026-drei-trends-revolutionieren-mentale-gesundheit/68539614",
+        date: "2026-02",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-14",
+      },
+      {
+        summary: "ad-hoc-news.de: 'Resilienz-Sprints: Unternehmen setzen 2026 auf mentale Widerstandskraft' – Dem agilen Management entlehnt: Unternehmen trainieren Resilienz in intensiven 4-Wochen-Zyklen. R+V Resilienz-Report 2026: Knapp 30% der Führungskräfte besorgt über Team-Widerstandskraft. Statt reaktiv auf Burnout zu reagieren, bauen Firmen 2026 proaktiv mentale Stärke auf – Produktivitäts- und Innovationsgewinn. Wachsende Nachfrage nach strukturierten Resilienz-Programmen – direktes Positionierungsumfeld für hypnovital® als Hypnose-gestütztes BGM-Präventionsangebot.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/resilienz-sprints-unternehmen-setzen-2026-auf-mentale-widerstandskraft/68496376",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-14",
+      },
+      {
+        summary: "Haufe Arbeitsschutz: 'Resilienz-Sprints stärken Teams' – Praxisbericht: Zeitlich begrenzte, intensive Resilienz-Trainings in 4-Wochen-Zyklen zeigen messbare Wirkung auf Teamzusammenhalt und psychische Widerstandsfähigkeit. Kombination aus Akzeptanz-Training, Selbstfürsorge, lösungsorientierter Planung und sozialem Netzwerkaufbau. Bestätigt Wirksamkeit kurzintensiver Präventionsprogramme – Positionierungspotenzial für hypnovital® als kompaktes Audio-Hypnose-Präventionsprogramm für Unternehmen.",
+        source: "Haufe",
+        url: "https://www.haufe.de/arbeitsschutz/gesundheit-umwelt/resilienz-sprints-staerken-teams_94_670952.html",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-14",
+      },
       // Neu: 14.04.2026 (Recherche-Runde 3)
       {
         summary: "bernerbaer.ch / Bundesgesundheitsministerium 2026: 'Warum psychische Gesundheit am Arbeitsplatz jetzt Priorität hat' – Psychische Erkrankungen sind die häufigste Ursache für Arbeitsunfähigkeit und Frühberentung. CHF 6,5 Mrd. wirtschaftlicher Schaden durch Stress in der Schweiz jährlich. 34% aller Schweizer Erwerbstätigen fühlen sich häufig bis sehr häufig gestresst – 30% mehr als vor zehn Jahren. Generation Z stellt offenere Erwartungen an Arbeitgeber-Unterstützung. Stark wachsendes Marktpotenzial für hypnovitals BGM-Programme und Burnout-Präventionsangebote.",
