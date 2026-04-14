@@ -4047,6 +4047,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 14.04.2026 (Recherche-Runde 4)
+      {
+        summary: "apo-versand.de: 'Vorzeitiger Samenerguss – was wirklich hilft: diskret und wissenschaftlich erklärt' – Apotheken-Portal erklärt alle evidenzbasierten Behandlungsoptionen: SSRI (Dapoxetin), Lidocain-Spray, Kondome, Start-Stopp- und Squeeze-Technik sowie psychologische Ansätze. Deutliche Nachfrage nach diskret zugänglichen, nicht-verschreibungspflichtigen Lösungen bestätigt das Marktpotenzial – direktes Nachfrageumfeld für orgasmus-hinauszoegern.de als nicht-medikamentöses Hypnose-Selbsthilfeprogramm.",
+        source: "apo-versand.de",
+        url: "https://apo-versand.de/blog/vorzeitiger-samenerguss-was-wirklich-hilft-diskret-und-wissenschaftlich-erklaert",
+        date: "2026",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-14",
+      },
+      {
+        summary: "BPH Canada / Longshot: 'Steigern Sie Ihr Selbstvertrauen mit der neuen Behandlung gegen vorzeitige Ejakulation' – Klinische Studie zur Hyaluronsäure-Injektion zeigt: Penisinjektionen erhöhen die intravaginale Latenzzeit dauerhaft um das 4–5-fache, Wirkung hält 1–5 Jahre. Neue invasive Behandlungsalternative im Forschungsstadium belegt weiterhin aktive Suche nach dauerhaften Lösungen – zeigt Marktlücke für schonende Selbsthilfe-Alternativen wie das Hypnose-Audioprogramm orgasmus-hinauszoegern.de.",
+        source: "bphcanada.com",
+        url: "https://bphcanada.com/de/treatments/longshot/",
+        date: "2026",
+        category: "Digital Health",
+        addedAt: "2026-04-14",
+      },
       // Neu: 14.04.2026 (Recherche-Runde 2)
       {
         summary: "sofortarzt.com: 'Vorzeitiger Samenerguss: Umfassender Leitfaden zu Ursachen, Behandlung und Unterstützung' – Digitale Gesundheitsplattform bietet niedrigschwelligen Zugang zu Fachinformationen über Ejaculatio praecox: Prävalenz (5–15% der Männer), psychologische und physiologische Ursachen, Behandlungsoptionen inkl. Selbsthilfe-Techniken. Wachsendes Angebot digitaler Gesundheitsangebote für Männergesundheitsthemen bestätigt die gesellschaftliche Akzeptanz – direktes Marktumfeld für orgasmus-hinauszoegern.de als nicht-medikamentöses Hypnose-Audioprogramm.",
@@ -6200,6 +6217,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 14.04.2026 (Recherche-Runde 4)
+      {
+        summary: "cureta.de: 'Bestattung Schweiz: Recht, Kosten, Planung' – Umfassender Ratgeber zu Schweizer Bestattungsrecht: Kantonale Unterschiede bei Bestattungsvorschriften, Kostenspanne CHF 8'000–10'000+, gesetzliche Pflichten der Erben (Art. 603 ZGB). Wachsendes Online-Informationsbedürfnis rund um Bestattungsrecht und Vorsorge in der Schweiz – direktes Nachfrageumfeld für bestattungsplaner.ch als digitale Planungs- und Vermittlungsplattform.",
+        source: "cureta.de",
+        url: "https://www.cureta.de/blog/bestattung-nach-schweizer-recht",
+        date: "2026",
+        category: "Recht & Regelungen",
+        addedAt: "2026-04-14",
+      },
+      {
+        summary: "Swiss Life: 'Was sich 2026 in der Schweiz ändert' – Swiss Life informiert über Gesetzesänderungen 2026 im Bereich Vorsorge, Nachlassplanung und Finanzen. Jährliche Änderungen im Vorsorge- und Erbrecht sensibilisieren die Schweizer Bevölkerung für die Notwendigkeit rechtzeitiger Bestattungsvorsorge – direktes Sensibilisierungsumfeld für bestattungsplaner.ch als niedrigschwellige Vorsorge- und Planungsplattform.",
+        source: "Swiss Life",
+        url: "https://www.swisslife.ch/en/individuals/future-provisions-assets/guide/changes-2026.html",
+        date: "2026",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-04-14",
+      },
       // Neu: 14.04.2026 (Recherche-Runde 2)
       {
         summary: "erbrecht.ch / Häusermann + Partner: 'Wer bezahlt die Bestattungskosten?' – Schweizer Erbrechts-Anwälte klären: Laut Art. 603 ZGB haften Erben solidarisch für Bestattungskosten. Bundesgericht entschied: Nächste Angehörige müssen Kosten für eine einfache, würdige Bestattung tragen, auch ohne Erbschaftsannahme. Durchschnittliche Bestattungskosten Schweiz: CHF 3'800–8'100 (bis über CHF 10'000). Rechtliche Klarheit und Kostenbelastung motivieren Vorsorge – direktes Argument für digitale Bestattungsplanungsportale wie bestattungsplaner.ch.",
