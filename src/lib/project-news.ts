@@ -3535,6 +3535,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 14.04.2026 (Recherche-Runde 4)
+      {
+        summary: "medhacloud.com: 'SaaS Statistics 2026: Market Size, Spending & AI Agent Trends' – SaaS-Markt erreicht 2026 ca. USD 374–375 Mrd. IT-Führungskräfte weisen KI-aktivierten SaaS-Tools 25% höhere Budgets zu als traditionellen Tools. 59% der Softwareunternehmen sehen nutzungsbasierte Preismodelle auf dem Vormarsch. Wachsender, KI-affiner SaaS-Markt stärkt das Marktumfeld für spezialisierte Produktivitätstools wie den 12wy-planner.",
+        source: "medhacloud.com",
+        url: "https://medhacloud.com/blog/saas-statistics-2026",
+        date: "2026",
+        category: "SaaS & Tools",
+        addedAt: "2026-04-14",
+      },
+      {
+        summary: "Atlassian: 'Ein Leitfaden zur Quartalsplanung: wichtige Komponenten, Tipps und Vorlagen' – Atlassian definiert Quartalsplanung als iterative Methode mit Zieldefinition, Meilensteinplanung, wöchentlichen Check-ins und Retrospektiven – strukturell deckungsgleich mit der 12-Week-Year-Methode. Mainstream-Adoption von Quartalsplanung durch Enterprise-Software-Anbieter bestätigt die gesellschaftliche Relevanz des 12wy-planners als spezialisiertes Werkzeug.",
+        source: "Atlassian",
+        url: "https://www.atlassian.com/de/work-management/strategic-planning/quarterly-planning",
+        date: "2026",
+        category: "Produktivität & Planung",
+        addedAt: "2026-04-14",
+      },
       // Neu: 14.04.2026 (Recherche-Runde 3)
       {
         summary: "northlyapp.com: 'OKR Methode: Der komplette Leitfaden 2026' – Umfassender Praxisleitfaden zur OKR-Methode in Kombination mit Quartalsplanung: Geführter Workflow von Unternehmens-OKRs zu Team-OKRs, wöchentliche Check-ins mit automatischen Erinnerungen, Scoring und Retrospektiven. Konvergenz von OKR und 12-Week-Year-Methodik im SaaS-Markt bestätigt die Nachfrage nach strukturierten, zyklusbasierten Planungstools – direktes Wachstumsumfeld für den 12wy-planner.",
@@ -4999,6 +5016,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 14.04.2026 (Recherche-Runde 4)
+      {
+        summary: "rosica.com: 'LinkedIn Thought Leadership Tips for 2026' – Erfolgreiche Thought-Leadership-Strategie auf LinkedIn 2026 erfordert 3–5 klar definierte Content-Säulen (z. B. Leadership, KI im Mittelstand, Zukunft der Arbeit), authentische persönliche Perspektiven und regelmässige Interaktion. KI unterstützt beim Brainstorming, aber Kernbotschaften müssen echt und erfahrungsbasiert sein. Direktes Methoden-Validierungsumfeld für learnfluencer.ch als Thought-Leadership-Plattform für Lernkompetenz und KI.",
+        source: "rosica.com",
+        url: "https://www.rosica.com/2026/02/23/linkedin-thought-leadership-tips-for-2026",
+        date: "2026-02",
+        category: "Content & Thought Leadership",
+        addedAt: "2026-04-14",
+      },
+      {
+        summary: "ICT-Berufsbildung Schweiz: Eidgenössischer Fachausweis 'Multimedia Content Creator' – Erster eidg. Abschluss speziell für digitale Content-Berufe: Content Creation, Social Media, KI-gestützte Produktion. Erste Prüfungen 2026. Wachsende staatliche Anerkennung von Content-Creator-Kompetenzen bestätigt den gesellschaftlichen Stellenwert digitaler Kommunikation – direktes Validierungsumfeld für learnfluencer.ch als Thought-Leadership-Plattform.",
+        source: "ICT-Berufsbildung Schweiz",
+        url: "https://www.ict-berufsbildung.ch/weiterbildung/fachausweis/multimedia-content-creator",
+        date: "2026",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-14",
+      },
+      {
+        summary: "content-creator-akademie.ch: 'Content Creation Kurse, Coaching & Angebote 2026 & 2027' – Wachsende spezialisierte Bildungslandschaft für Content Creator in der Schweiz: Kurse zu Video, Podcast, Social Media und KI-gestütztem Content. Zunehmende Professionalisierung der Content-Creator-Branche stärkt die Nachfrage nach Thought-Leadership-Inhalten über Lernen und KI – wachsendes Publikum für learnfluencer.ch.",
+        source: "content-creator-akademie.ch",
+        url: "https://content-creator-akademie.ch/content-creation/",
+        date: "2026",
+        category: "Content & Thought Leadership",
+        addedAt: "2026-04-14",
+      },
       // Neu: 14.04.2026 (Recherche-Runde 3)
       {
         summary: "cegos-integrata.de: 'Die wichtigsten E-Learning-Trends 2026' – KI als aktiver Lernbegleiter (nicht nur Datenbank), hochpersonalisierte adaptive Lernpfade, Microlearning und VR/AR als Standardkomponenten. 87% der L&D-Teams setzen KI täglich ein. Datenschutz und Ethik bei KI-Lernanalysen als Schlüsselherausforderung 2026. Explosive Transformation des E-Learning-Markts – direktes Wachstumsumfeld für learnfluencer.ch als Thought-Leadership-Plattform für zukunftsorientiertes Lernen und KI.",
@@ -5758,6 +5800,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 14.04.2026 (Recherche-Runde 3)
+      {
+        summary: "mymap.ai: 'KI-gestützter SWOT-Analyse-Generator' – KI erstellt sofort strukturiertes SWOT-Raster aus einfacher Beschreibung von Unternehmen, Produkt oder Projekt. Keine Anmeldung oder Kreditkarte nötig. Rasante Verbreitung von KI-gestützten Strategie-Tools zeigt Trend zur Demokratisierung strategischer Analysen – direktes Markt- und Wettbewerbsumfeld für das interaktive Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "mymap.ai",
+        url: "https://www.mymap.ai/de/swot-analysis-generator",
+        date: "2026",
+        category: "Marketing-Tools & Software",
+        addedAt: "2026-04-14",
+      },
+      {
+        summary: "strategy.app: 'SWOT-Analyse verdichten mit KI' – KI-gestützte Verdichtung und Priorisierung von SWOT-Erkenntnissen: Aus umfangreichen Stärken-Schwächen-Analysen werden direkt priorisierte Strategieoptionen abgeleitet. Wachsendes KI-Angebot im Strategie-Tool-Markt bestätigt den Trend zu interaktiven, integrierten Analyse-Workflows – Wettbewerbs- und Validierungsumfeld für das Marketingkonzept-Tool.",
+        source: "strategy.app",
+        url: "https://www.strategy.app/swot-analyse-verdichten-mit-ki",
+        date: "2026",
+        category: "Strategie & Analyse",
+        addedAt: "2026-04-14",
+      },
+      {
+        summary: "edrawsoft.com: 'Die 10 besten KI SWOT Analyse Tools für strategische Einblicke' – Marktübersicht zeigt explodierende Zahl an KI-gestützten SWOT-Tools 2026: Von kostenlosen Generatoren bis zu Enterprise-Lösungen mit automatischer Berichterstellung. Wachsende Akzeptanz digitaler Strategietools bei KMU – bestätigt die Nachfrage nach integrierten, interaktiven Marketing- und Strategieplanungs-Tools.",
+        source: "edrawsoft.com",
+        url: "https://www.edrawsoft.com/de/ai-tools-tips/ai-swot-analysis-tools.html",
+        date: "2026",
+        category: "MarTech & Trends",
+        addedAt: "2026-04-14",
+      },
       // Neu: 14.04.2026 (Recherche-Runde 2)
       {
         summary: "researchly.at: 'Strategische Unternehmensanalyse: Methoden & Software (2026)' – Praxisübersicht zu strategischen Analyse-Tools 2026: SWOT als Startpunkt, ergänzt durch PESTEL, Porter's Five Forces und Ansoff-Matrix. Spezialisierte Analyse-Softwarelösungen unterstützen KMU bei datengestützten Strategieentscheidungen. Wachsender Bedarf nach strukturierten, integrierten Analyse-Frameworks zeigt Marktpotenzial für interaktive Marketingkonzept-Tools – direktes Nachfrageumfeld für das Marketingplan-Software-Angebot.",
@@ -6234,6 +6301,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 14.04.2026 (Recherche-Runde 6)
+      {
+        summary: "aurora-bestattungen.ch: 'Bestattungskosten Schweiz – Was kostet eine Bestattung?' – Detaillierter Kostenüberblick eines etablierten Schweizer Bestattungsunternehmens: Erdbestattung CHF 4'000–12'000+, Kremation mit Urnenbeisetzung ab CHF 2'500–6'000, signifikante regionale Preisunterschiede. Preistransparenz wird im Schweizer Bestattungsmarkt 2026 zur Standarderwartung – stärkt die Nachfrage nach unabhängigen Vergleichs- und Planungsplattformen wie bestattungsplaner.ch.",
+        source: "aurora-bestattungen.ch",
+        url: "https://www.aurora-bestattungen.ch/bestattungskosten",
+        date: "2026",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-14",
+      },
+      {
+        summary: "mementomori.ch: 'Bestattungskosten Schweiz' – Schweizer Bestattungsunternehmen Memento Mori veröffentlicht transparente Preisübersicht: Abholung, Kremation, Urnenbeisetzung, Seebestattung ab CHF 1'450. Zeigt wachsenden Trend zur Preistransparenz in der Schweizer Bestattungsbranche und die Notwendigkeit unabhängiger Vergleichsmöglichkeiten – direktes Nachfrageumfeld für bestattungsplaner.ch als Lead-Vermittlungsplattform.",
+        source: "mementomori.ch",
+        url: "https://www.mementomori.ch/kosten",
+        date: "2026",
+        category: "Markt & Trends",
+        addedAt: "2026-04-14",
+      },
       // Neu: 14.04.2026 (Recherche-Runde 5)
       {
         summary: "werde-erde.ch: Verein 'Werde Erde' – Medienseite zur Kompostbestattung (Terramation) in der Schweiz – Der Schweizer Verein 'Werde Erde' (gegr. 2022) sammelt Medienberichte zur Terramation: Körper wird innerhalb von 30–40 Tagen durch Mikroorganismen zu Humus umgewandelt. Stadt Zürich finanziert Pilotprojekt; Kantonsrat Zürich hat Kompostbestattung grundsätzlich zugelassen. Neuartige, nachhaltige Bestattungsformen wachsen in der gesellschaftlichen Akzeptanz – erweitertes Marktumfeld für bestattungsplaner.ch.",
