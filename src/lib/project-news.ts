@@ -892,6 +892,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
+      // Neu: 14.04.2026
+      {
+        summary: "Precedence Research: 'Personal Development Market Size to Attain USD 86.54 Billion by 2034' – Der globale Markt für Persönlichkeitsentwicklung wird 2026 auf USD 53.73 Mrd. geschätzt (2025: USD 50.88 Mrd.) und wächst bis 2031 auf USD 70.55 Mrd. (CAGR 5.6%). Online-Kurse und E-Learning halten ~37.5% Marktanteil, mobile Apps wachsen mit 19.6% CAGR bis 2030. Wachsende Unternehmensinteressen in Mitarbeiterentwicklung treiben das Wachstum zusätzlich an – direktes strukturelles Wachstumsumfeld für Mind Rocket GmbH als Anbieter digitaler Persönlichkeitsentwicklungs- und Coaching-Programme.",
+        source: "Precedence Research",
+        url: "https://www.precedenceresearch.com/personal-development-market",
+        date: "2026",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-04-14",
+      },
+      {
+        summary: "Gitnux: 'Self Help Industry Statistics: Market Data Report 2026' – Globaler Selbsthilfemarkt 2026 auf USD 13.2 Mrd. geschätzt, prognostiziert auf USD 22.4 Mrd. bis 2031 (CAGR ~11%). Online-Kurse und digitale Tools überholen traditionelle Buchformate im Wachstumstempo. 80% der Selfhelp-Käufer sind Wiederholungskäufer – deutlicher Hinweis auf langfristige Kundenbindung in diesem Segment. Stark wachsendes Marktumfeld für skalierbare digitale Coaching- und Persönlichkeitsentwicklungs-Programme wie jene von Mind Rocket GmbH.",
+        source: "Gitnux",
+        url: "https://gitnux.org/self-help-industry-statistics/",
+        date: "2026",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-04-14",
+      },
       // Neu: 13.04.2026
       {
         summary: "coachingausbildungen.ch: 'Coaching-Markt Schweiz – Trends 2025/2026 Analyse' – Umfassende Marktanalyse zeigt: Der Schweizer Coaching-Markt wächst weiter und differenziert sich zunehmend. Wichtigste Trends: KI-gestützte Coaching-Tools, hybride Formate (Online + Präsenz), steigende Nachfrage nach Resilienz-Coaching und psychischer Gesundheitsförderung. Schweizer Markt zeichnet sich durch hohe Qualitätsansprüche und Bereitschaft, in nachhaltige, evidenzbasierte Programme zu investieren, aus. Direktes positives Marktumfeld für Mind Rocket GmbH als Anbieter methodisch fundierter digitaler Coaching- und Persönlichkeitsentwicklungs-Programme.",
