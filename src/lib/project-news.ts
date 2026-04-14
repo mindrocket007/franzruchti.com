@@ -26,6 +26,23 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 14.04.2026 (Recherche-Runde 4)
+      {
+        summary: "inside-it.ch: 'Diese Schweizer Informatiktalente messen sich an den WorldSkills 2026' – Fünf junge ICT-Spezialisten vertreten die Schweiz an den WorldSkills Shanghai 2026 (22.–27. September 2026) in den Disziplinen Software Application Development, Web Technologies, Cloud Computing und Cyber Security. Qualifikation durch ICT-Regiomeisterschaften und Schweizermeisterschaft. Starke Nachwuchsförderung und hohe gesellschaftliche Sichtbarkeit der ICT-Berufsbildung – direktes positives Marktumfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation.",
+        source: "inside-it.ch",
+        url: "https://www.inside-it.ch/diese-schweizer-informatiktalente-messen-sich-an-den-worldskills-2026-20251112",
+        date: "2025-11",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-14",
+      },
+      {
+        summary: "Netzwoche: 'Fünf Informatiktalente vertreten die Schweiz an den WorldSkills 2026' – Louana Berger (Software Application Development), William Wigginton (Web Technologies), Linus Moser (Cloud Computing), Gian Klug und Luc Fisch (Cyber Security) selektioniert. WorldSkills Shanghai 2026: grösste Berufsmeisterschaft der Welt unterstreicht den globalen Stellenwert der ICT-Berufsbildung. Positives Positionierungsumfeld für SIZ AG als anerkannte Schweizer ICT-Zertifizierungsinstanz.",
+        source: "Netzwoche",
+        url: "https://www.netzwoche.ch/news/2025-11-17/fuenf-informatiktalente-vertreten-die-schweiz-an-den-worldskills-2026",
+        date: "2025-11-17",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-14",
+      },
       // Neu: 14.04.2026 (Recherche-Runde 3)
       {
         summary: "ICT-Berufsbildung Schweiz: ICT-Regiomeisterschaften 2026 – Ranglisten der Regionalmeisterschaften werden im April 2026 veröffentlicht. Rund 250 Nachwuchstalente treten schweizweit in den Skills Web Technologies, Software Application Development, Cloud Computing, Mediamatics und Cyber Security an. Aktive Nachwuchsförderung in der Schweizer ICT-Landschaft bestätigt die wachsende gesellschaftliche Wertschätzung für qualifizierte ICT-Fachkräfte – direktes positives Marktumfeld für SIZ AG als anerkannte Prüfungsorganisation im Schweizer ICT-Bildungsökosystem.",
@@ -3552,6 +3569,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 14.04.2026 (Recherche-Runde 5)
+      {
+        summary: "Gartner Peer Insights: 'Best OKR Software Reviews 2026' – Gartner-Bewertungsplattform dokumentiert den wachsenden OKR-Softwaremarkt: Integration von KI für automatisches Progress-Tracking, Outcome-Visualisierung und Zielausrichtung über Teams hinweg als neuer Standard. Markt für strukturierte Quartalsplanungs-Frameworks (OKR, 12-Week-Year-Methode) wächst deutlich. Direktes Marktumfeld für den 12 Week Year Planner SaaS als fokussiertes Planungstool mit klarem Methodenbezug.",
+        source: "Gartner Peer Insights",
+        url: "https://www.gartner.com/reviews/market/okr-software",
+        date: "2026",
+        category: "SaaS & Tools",
+        addedAt: "2026-04-14",
+      },
       // Neu: 14.04.2026 (Recherche-Runde 4)
       {
         summary: "medhacloud.com: 'SaaS Statistics 2026: Market Size, Spending & AI Agent Trends' – SaaS-Markt erreicht 2026 ca. USD 374–375 Mrd. IT-Führungskräfte weisen KI-aktivierten SaaS-Tools 25% höhere Budgets zu als traditionellen Tools. 59% der Softwareunternehmen sehen nutzungsbasierte Preismodelle auf dem Vormarsch. Wachsender, KI-affiner SaaS-Markt stärkt das Marktumfeld für spezialisierte Produktivitätstools wie den 12wy-planner.",
@@ -4098,6 +4124,39 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 14.04.2026 (Recherche-Runde 5)
+      {
+        summary: "DEXIMED (Deutsche Experteninformation Medizin): 'Vorzeitiger Samenerguss (Ejaculatio praecox)' – Medizinisches Expertenfachportal für Ärzte und Fachpersonal beschreibt aktuelle Diagnosekriterien, Prävalenz (bis 30% der Männer) und Behandlungsoptionen: Dapoxetin, SSRI off-label, Lokalanästhetika und psychotherapeutische Ansätze. Zunehmende medizinische Professionalisierung des Themas normalisiert öffentliche Diskussion und stärkt die Nachfrage nach nicht-medikamentösen Alternativen wie orgasmus-hinauszoegern.de.",
+        source: "DEXIMED",
+        url: "https://deximed.de/home/klinische-themen/maennergesundheit/patienteninformationen/sexual-und-fortpflanzungsstoerungen/vorzeitiger-samenerguss-ejaculatio-praecox",
+        date: "2026",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-14",
+      },
+      {
+        summary: "HealthExpress.de: 'Vorzeitige Ejakulation – Hilfe online verfügbar' – Online-Apotheken-Portal mit ärztlicher Beratung bietet diskrete Behandlungsoptionen: Rezeptpflichtige Medikamente (Dapoxetin, EMLA-Creme) via Telemedizin. Wachsendes Segment der Online-Gesundheitsversorgung für Tabuthemen belegt die hohe Nachfrage nach diskreten, digitalen Lösungsangeboten – direktes Marktumfeld für orgasmus-hinauszoegern.de als nicht-medikamentöse Alternative.",
+        source: "HealthExpress.de",
+        url: "https://www.healthexpress.de/vorzeitige-ejakulation",
+        date: "2026",
+        category: "Digital Health",
+        addedAt: "2026-04-14",
+      },
+      {
+        summary: "DoctorBox: 'Ejaculatio praecox – vorzeitiger Samenerguss beim Mann' – Digitale Gesundheitsplattform erklärt Ursachen (psychologische Faktoren, Überempfindlichkeit), Häufigkeit und Behandlungsoptionen inkl. Verhaltenstherapie und Medikamente. Wachsende Digitalisierung der Gesundheitsaufklärung für sexuelle Dysfunktionen stärkt die Marktakzeptanz für digitale Selbsthilfeangebote. Direktes Konkurrenz- und Nachfrageumfeld für orgasmus-hinauszoegern.de.",
+        source: "DoctorBox",
+        url: "https://www.doctorbox.de/meine-gesundheit/ejaculatio-praecox",
+        date: "2026",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-14",
+      },
+      {
+        summary: "Dr. Kühhas (Urologie Wien): 'Vorzeitiger Samenerguss – Behandlung' – Urologischer Spezialist beschreibt Ursachen, Diagnose und multimodales Behandlungskonzept: Kombination aus Verhaltenstherapie, Topika und Medikamenten. Tendenz zur individualisierten Behandlung stärkt das Bewusstsein für nicht-medikamentöse Selbsthilfemethoden als Ergänzung – positives Umfeld für Hypnose-basierte Ansätze wie orgasmus-hinauszoegern.de.",
+        source: "Dr. Kühhas Urologie",
+        url: "https://www.dr-kuehhas.at/behandlungen/mens-health/vorzeitiger-samenerguss/",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-14",
+      },
       // Neu: 14.04.2026 (Recherche-Runde 4)
       {
         summary: "apo-versand.de: 'Vorzeitiger Samenerguss – was wirklich hilft: diskret und wissenschaftlich erklärt' – Apotheken-Portal erklärt alle evidenzbasierten Behandlungsoptionen: SSRI (Dapoxetin), Lidocain-Spray, Kondome, Start-Stopp- und Squeeze-Technik sowie psychologische Ansätze. Deutliche Nachfrage nach diskret zugänglichen, nicht-verschreibungspflichtigen Lösungen bestätigt das Marktpotenzial – direktes Nachfrageumfeld für orgasmus-hinauszoegern.de als nicht-medikamentöses Hypnose-Selbsthilfeprogramm.",
