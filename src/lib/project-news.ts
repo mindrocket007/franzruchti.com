@@ -1156,6 +1156,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 14.04.2026 (Recherche-Runde 5)
+      {
+        summary: "proptradingvibes.com: 'Apex Trader Funding Rules Overview 2026: Everything After 4.0' – Detaillierter Überblick über das Apex-Regelwerk nach dem Major Update 4.0 (März 2026): Einmalige Gebühr statt Abo, 6%-Profitziel, keine Mindest-Handelstage, zwei Drawdown-Modelle (EOD und Intraday), 50%-Konsistenz-Regel und wöchentliches Auszahlungssystem. Update positioniert Apex als benutzerfreundlichste Prop-Firm für Futures-Trader – direktes Tooling-Umfeld für Mind Rocket Tradings Apex-basierte Prop-Trading-Strategie.",
+        source: "proptradingvibes.com",
+        url: "https://proptradingvibes.com/blog/apex-trader-funding-rules-overview",
+        date: "2026-03",
+        category: "Futures & Trading",
+        addedAt: "2026-04-14",
+      },
+      {
+        summary: "tradetanto.com: 'Apex Trader Funding Rules 2026: Payouts, Drawdowns & More' – Aktuelle Regelübersicht für Apex Trader Funding nach 4.0-Update: Legacy-Konten (vor 1. März 2026) laufen unter alten Regeln, neue Konten ausschliesslich nach 4.0-Regelwerk. Kernpunkte: EOD-Trailing-Drawdown, tägliches Verlustschwellen-System, 50%-Konsistenz-Anforderung, 6-stufiges Payout-Ladder-System. Klarheit für Trader, die sich nach dem Systemwechsel neu orientieren – relevante Orientierungshilfe im Prop-Trading-Ökosystem von Mind Rocket Trading.",
+        source: "tradetanto.com",
+        url: "https://tradetanto.com/learn/apex-trader-funding-rules-what-you-need-to-know",
+        date: "2026-03",
+        category: "Futures & Trading",
+        addedAt: "2026-04-14",
+      },
       // Neu: 14.04.2026 (Recherche-Runde 4)
       {
         summary: "runvigil.app: 'Prop Firms in Switzerland (CH) 2026: Availability & Rules' – Übersichtsguide listet 19 Prop-Trading-Firmen, die Schweizer Trader akzeptieren. Wichtigste steuerliche Besonderheit: Private Kapitalgewinne in der Schweiz sind grundsätzlich steuerfrei; häufiges Trading kann jedoch als gewerbsmässiger Wertschriftenhandel eingestuft und als Einkommensteuer besteuert werden. Klarheit über steuerliche Implikationen und Plattformzugänglichkeit für Schweizer Prop-Trader – relevantes Marktumfeld für Mind Rocket Tradings Schweizer Zielgruppe.",
@@ -5016,6 +5033,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 14.04.2026 (Recherche-Runde 5)
+      {
+        summary: "itmagazine.ch: 'FFHS mit neuem Studiengang CAS Future Leadership und KI' – Die Fernfachhochschule Schweiz (FFHS) lanciert per August 2026 den neuen CAS 'Future Leadership und KI' für erfahrene Führungskräfte: Blended Learning, CHF 5.700 Kursgebühr, Anmeldeschluss 31. Mai 2026. Fundiertes KI-Verständnis und menschenzentrierte Führungskompetenz im KI-Zeitalter im Mittelpunkt. Wachsendes Schweizer Hochschulangebot für KI-Führungskompetenzen bestätigt steigende Nachfrage nach praxisorientiertem KI-Wissen – direktes Wachstumsumfeld für learnfluencer.ch als Thought-Leadership-Plattform für Lernen und KI.",
+        source: "itmagazine.ch",
+        url: "https://www.itmagazine.ch/artikel/86921/FFHS_mit_neuem_Studiengang_CAS_Future_Leadership_und_KI.html",
+        date: "2026-04-08",
+        category: "Weiterbildung Schweiz",
+        addedAt: "2026-04-14",
+      },
+      {
+        summary: "it-markt.ch: 'FFHS lanciert KI-Weiterbildung für Führungskräfte' – Schweizer Fachinformationsportal it-markt.ch berichtet über den neuen FFHS-CAS 'Future Leadership und KI': Start August 2026, Zielgruppe erfahrene Führungskräfte mit KI-Ambitionen, Blended-Learning-Format. Wachsende Medienpräsenz für KI-Weiterbildungsangebote in der Schweiz belegt hohe gesellschaftliche Relevanz – direktes Validierungsumfeld für learnfluencer.ch als Thought-Leader im Bereich Lernen und KI.",
+        source: "it-markt.ch",
+        url: "https://www.it-markt.ch/news/2026-04-08/ffhs-lanciert-ki-weiterbildung-fuer-fuehrungskraefte",
+        date: "2026-04-08",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-14",
+      },
+      {
+        summary: "ictk.ch: 'FFHS lanciert neues CAS Future Leadership und KI' – ICT-Kaderschule Schweiz meldet neues FFHS-Weiterbildungsangebot für Führungskräfte: CAS-Programm verbindet solides KI-Technologieverständnis mit menschenzentrierter Führungsstrategie, Starttermin August 2026. Breite Berichterstattung in der Schweizer ICT-Bildungslandschaft belegt die hohe Nachfrage nach KI-Führungskompetenzen – direktes Wachstumsumfeld für learnfluencer.ch.",
+        source: "ictk.ch",
+        url: "https://ictk.ch/inhalt/ffhs-lanciert-neues-cas-future-leadership-und-ki",
+        date: "2026-04-08",
+        category: "Weiterbildung Schweiz",
+        addedAt: "2026-04-14",
+      },
       // Neu: 14.04.2026 (Recherche-Runde 4)
       {
         summary: "rosica.com: 'LinkedIn Thought Leadership Tips for 2026' – Erfolgreiche Thought-Leadership-Strategie auf LinkedIn 2026 erfordert 3–5 klar definierte Content-Säulen (z. B. Leadership, KI im Mittelstand, Zukunft der Arbeit), authentische persönliche Perspektiven und regelmässige Interaktion. KI unterstützt beim Brainstorming, aber Kernbotschaften müssen echt und erfahrungsbasiert sein. Direktes Methoden-Validierungsumfeld für learnfluencer.ch als Thought-Leadership-Plattform für Lernkompetenz und KI.",
@@ -5800,6 +5842,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 14.04.2026 (Recherche-Runde 4)
+      {
+        summary: "zweiblog.com: 'Digital Marketing Trends 2026 für die Schweiz' – Schweizer Agentur-Blog analysiert die wichtigsten Digital-Marketing-Trends 2026 für den Schweizer Markt: KI-gestützte Personalisierung, datenbasiertes Marketing, Omnichannel-Strategien und strukturierte Marketingplanung als Erfolgsfaktoren für KMU. Wachsende Bedeutung strukturierter Marketing-Frameworks bestätigt steigende Nachfrage nach interaktiven Planungstools – direktes Marktumfeld für das Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "zweiblog.com",
+        url: "https://www.zweiblog.com/de/digital-marketing-trends-2026-fuer-die-schweiz/",
+        date: "2026",
+        category: "MarTech & Trends",
+        addedAt: "2026-04-14",
+      },
       // Neu: 14.04.2026 (Recherche-Runde 3)
       {
         summary: "mymap.ai: 'KI-gestützter SWOT-Analyse-Generator' – KI erstellt sofort strukturiertes SWOT-Raster aus einfacher Beschreibung von Unternehmen, Produkt oder Projekt. Keine Anmeldung oder Kreditkarte nötig. Rasante Verbreitung von KI-gestützten Strategie-Tools zeigt Trend zur Demokratisierung strategischer Analysen – direktes Markt- und Wettbewerbsumfeld für das interaktive Marketingkonzept-Tool auf learnfluencer.ch.",
