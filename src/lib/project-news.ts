@@ -26,6 +26,15 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 14.04.2026 (Recherche-Runde 2)
+      {
+        summary: "SIW Schweizerisches Institut für Weiterbildung: 'Digital Collaboration Specialist mit eidg. Fachausweis' – Neuer eidgenössischer Fachausweis für digitale Zusammenarbeit: Fundierte Kenntnisse in digitalen Kollaborationstools, agiler Projektmethodik und virtueller Teamführung. Ergänzt die wachsende Landschaft staatlich anerkannter ICT-Qualifikationen der Schweiz – stärkt das gesamte Qualifizierungsumfeld, in dem SIZ AG als ICT-Prüfungsorganisation positioniert ist.",
+        source: "SIW",
+        url: "https://siw.swiss/digital-collaboration-specialist-siw/",
+        date: "2026",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-14",
+      },
       // Neu: 14.04.2026
       {
         summary: "ICT-Berufsbildung Schweiz: ICT-Diplomfeier 2026 – Die höhere Berufsbildung bleibt wichtig für den Schweizer Arbeitsmarkt. Jährliche Diplomfeier ehrt Absolventinnen und Absolventen von ICT-Berufsprüfungen und höheren Fachprüfungen. Unterstreicht die gesellschaftliche Anerkennung und den volkswirtschaftlichen Stellenwert zertifizierter ICT-Qualifikationen – direktes Positionierungsumfeld für SIZ AG als staatlich anerkannte ICT-Prüfungsorganisation.",
@@ -892,6 +901,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
+      // Neu: 14.04.2026 (Recherche-Runde 2)
+      {
+        summary: "Sabine Satzmacher: 'Was Kunden 2026 wirklich wollen – die 5 wichtigsten Themen-Trends für Coaches & Dienstleisterinnen' – KI-Kompetenz, Führung in Unsicherheit, mentale Stärke, Work-Life-Integration und sinnstiftende Arbeit als Topthemen im Coaching-Markt 2026. Kunden suchen nicht mehr nur Motivation, sondern nachhaltige Orientierung und Handlungsfähigkeit. Direktes Nachfrageumfeld für Mind Rocket GmbH als Anbieter persönlichkeitsentwickelnder Programme.",
+        source: "sabinesatzmacher.de",
+        url: "https://www.sabinesatzmacher.de/was-kunden-2026-wirklich-wollen-die-5-wichtigsten-themen-trends-fuer-coaches-dienstleisterinnen/",
+        date: "2026",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-04-14",
+      },
+      {
+        summary: "resilienz-bedeutung.ch: 'Mindset Coaching Schweiz – Mentale Stärke & Resilienz entwickeln' – Schweizer Marktübersicht zu Mindset-Coaching-Angeboten: Fokus auf Selbstwahrnehmung, innere Blockaden lösen und neue Denkmuster entwickeln. Nachfrage nach Resilienz- und Mindset-Coaching in der Schweiz wächst stetig – bestätigt die Marktrelevanz von Mind Rocket GmbH als Anbieter hochwertiger Persönlichkeitsentwicklungs-Programme.",
+        source: "resilienz-bedeutung.ch",
+        url: "https://resilienz-bedeutung.ch/mindset-coaching-schweiz/",
+        date: "2026",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-04-14",
+      },
       // Neu: 14.04.2026
       {
         summary: "Precedence Research: 'Personal Development Market Size to Attain USD 86.54 Billion by 2034' – Der globale Markt für Persönlichkeitsentwicklung wird 2026 auf USD 53.73 Mrd. geschätzt (2025: USD 50.88 Mrd.) und wächst bis 2031 auf USD 70.55 Mrd. (CAGR 5.6%). Online-Kurse und E-Learning halten ~37.5% Marktanteil, mobile Apps wachsen mit 19.6% CAGR bis 2030. Wachsende Unternehmensinteressen in Mitarbeiterentwicklung treiben das Wachstum zusätzlich an – direktes strukturelles Wachstumsumfeld für Mind Rocket GmbH als Anbieter digitaler Persönlichkeitsentwicklungs- und Coaching-Programme.",
@@ -1096,6 +1122,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 14.04.2026 (Recherche-Runde 2)
+      {
+        summary: "NinjaTrader: 'NinjaTrader Expands Into Europe to Support the Next Generation of Retail Futures Traders' – Januar 2026: NinjaTrader startet Futures-Handel in Europa via Payward Europe (CySEC-reguliert), zunächst in den Niederlanden und Deutschland, später Frankreich und Italien geplant. Europäische Retail-Trader erhalten Zugang zu US-Futures (ES, NQ, CL etc.), Charting- und Order-Flow-Tools sowie Simulations-Sandbox. Direktes Expansionssignal für das globale Wachstum des algorithmischen Retail-Futures-Handels – relevantes Marktumfeld für Mind Rocket Tradings ES-Futures-Ansatz.",
+        source: "NinjaTrader",
+        url: "https://ninjatrader.com/news/ninjatrader-expands-into-europe-to-support-the-next-generation-of-retail-futures-traders/",
+        date: "2026-01",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-14",
+      },
       // Neu: 14.04.2026
       {
         summary: "PropFirmApp: 'NinjaTrader Review 2026: Is the Trading Tool Worth It?' – Umfassende unabhängige Bewertung der NinjaTrader-Plattform: über 1,9 Millionen Nutzer, stärkste Retail-Futures-Plattform weltweit. Aktives Prop-Firm-Ökosystem mit Apex Trader Funding, My Funded Futures u.a. Kompetitive Tageshandelsmargen: $50 für Micros (MES), $500 für Standard-Minis (ES). Direktes Wettbewerbs- und Marktumfeld für Mind Rocket Tradings algorithmischen ES-Futures-Ansatz.",
@@ -2552,6 +2587,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 14.04.2026 (Recherche-Runde 2)
+      {
+        summary: "Wellhub (wellhub.com): 'Betriebliches Gesundheitsmanagement (BGM) 2026: Der Praxisleitfaden' – Umfassender Überblick: BGM 2026 setzt auf mentale Gesundheit, KI-gestützte Analyse und personalisierte Programme. Steigende psychische Belastungen, hybride Arbeit und Fachkräftemangel machen Gesundheitsmanagement zum strategischen Unternehmensthema. ROI für strategisches BGM: 1:2,7 bis 1:5. Direktes Marktwachstumsumfeld für hypnovitals digitale BGM- und Burnout-Präventionsprogramme.",
+        source: "Wellhub",
+        url: "https://wellhub.com/de-de/blog/benefits-und-wellbeing-programme/bgm/",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-14",
+      },
       // Neu: 14.04.2026
       {
         summary: "Ad-hoc-news.de / Fachmedien: 'Burnout-Gefahr 2026: Psychische Belastungen am Arbeitsplatz steigen' – Ein Viertel aller Erwerbstätigen fühlt sich durch die Arbeit burnout-gefährdet. Beinahe ein Drittel der befragten Schweizer Erwerbstätigen berichtet von emotionaler Erschöpfung. Unternehmen 2026 mehr denn je in der Pflicht, mentale Gesundheit zu schützen. Stark wachsendes Marktpotenzial für hypnovitals BGM-Angebote und Burnout-Präventionsprogramme.",
@@ -3389,6 +3433,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 14.04.2026 (Recherche-Runde 2)
+      {
+        summary: "Kalendar2026.de: 'Zeitmanagement und Jahresplanung – Effektiv durch 2026' – Praxisartikel zur Kombination von Jahresüberblick und Quartalsplanung: Wer grosse Jahresziele in 12-Wochen-Einheiten zerlegt, schafft messbare Meilensteine und vermeidet das typische Jahres-Endspurt-Phänomen. Wachsende Popularität von Quartalsplanungs-Methoden bei Selbständigen und Teams – starkes Nachfrageumfeld für den 12wy-planner als strukturiertes digitales Planungstool.",
+        source: "Kalendar2026.de",
+        url: "https://www.kalendar2026.de/blog/zeitmanagement-jahresplanung.html",
+        date: "2026",
+        category: "Produktivität & Planung",
+        addedAt: "2026-04-14",
+      },
+      {
+        summary: "selbst-management.biz: 'Das 12 Wochen Jahr: Wie du in 12 Wochen mehr schaffst als andere in 12 Monaten' – Ausführliche Praxisanleitung zur 12-Week-Year-Methode von Brian Moran: Warum Jahresplanung scheitert und wie 12-Wochen-Zyklen Dringlichkeit, Fokus und messbare Ergebnisse erzwingen. Breite organische Nachfrage nach praxistauglichen Anleitungen zur Methode – bestätigt den Marktbedarf für spezialisierte SaaS-Tools wie den 12wy-planner.",
+        source: "selbst-management.biz",
+        url: "https://selbst-management.biz/das-12-wochen-jahr-wie-du-in-12-wochen-mehr-schaffst-als-andere-in-12-monaten/",
+        date: "2026",
+        category: "12 Week Year Methode",
+        addedAt: "2026-04-14",
+      },
       // Neu: 14.04.2026
       {
         summary: "Asian Efficiency: 'The 12 Week Year: The Ultimate Strategy For Getting Things Done' – Detaillierte Analyse und praktische Anleitung zur 12-Week-Year-Methode von Brian Moran: Jahresziele sind zu abstrakt für tägliches Handeln, 12-Wochen-Denken erzeugt Dringlichkeit und Fokus. AI-Tools 2026 können automatisch Fortschritts-Indikatoren verfolgen und wöchentliche Reports generieren. Wachsendes internationales Interesse an der Methode – direktes Nachfrageumfeld für den 12wy-planner als spezialisiertes SaaS-Tool.",
@@ -4768,6 +4829,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 14.04.2026 (Recherche-Runde 2)
+      {
+        summary: "EDUdays 2026 (ZLI / PH Wien): 'Medienkompetenz und KI als zentrale Themen' – Bildungskongress 2026 fokussiert auf kritische KI-Kompetenz, Medienmündigkeit und neue Lernformate im digitalen Zeitalter. Lehrpersonen und Bildungsverantwortliche diskutieren, wie KI sinnvoll in Lernprozesse integriert wird ohne Denk- und Urteilsfähigkeit zu ersetzen. Wachsende gesellschaftliche Debatte um KI-Lernkompetenz – direktes Themenumfeld für learnfluencer.ch als Plattform für Lernen, KI und Weiterbildung.",
+        source: "ZLI / PH Wien – EDUdays 2026",
+        url: "https://zli.phwien.ac.at/edudays-2026-medienkompetenz-und-ki-als-zentrale-themen/",
+        date: "2026",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-14",
+      },
       // Neu: 14.04.2026
       {
         summary: "SwissNova / unternehmen.swissnova.swiss: 'Weiterbildung für Unternehmen in der Schweiz: 10 Trends für 2026' – KI-Lernpfade, Führungskompetenzen, Soft Skills und personalisiertes Lernen als Megatrends. KI-Tools ermöglichen erstmals individuelle Lernprogramme ohne Programmierkenntnisse. Stark wachsender Markt für Learnfluencer als Treiber von Lernkultur in Organisationen – direktes Nachfrageumfeld für learnfluencer.ch als Thought-Leadership-Plattform für Lernen und KI.",
