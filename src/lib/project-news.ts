@@ -1210,6 +1210,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 16.04.2026
       {
+        summary: "PR Newswire: 'Swiss Firmup Launches as a Prop Firm Focused on Transparent Futures Trading' – Swiss Firmup lancierte im Februar 2026 als neue Schweizer Prop-Trading-Firma mit Fokus auf regulierte Futures-Kontrakte (CME, EUREX, COMEX, CBOT, NYMEX). Gegründet in Zusammenarbeit mit Swiss GTrade, einem Schweizer Trainingszentrum für unabhängige Trader. Das Unternehmen bietet volltransparente Konditionen (Drawdown-Limits, Profit-Sharing, Gebühren) und richtet sich explizit an Day Trader, die professionellen Kapitalzugang suchen – neuer direkter Wettbewerber im europäischen Prop-Trading-Markt für Mind Rocket Trading.",
+        source: "PR Newswire",
+        url: "https://www.prnewswire.com/news-releases/swiss-firmup-launches-as-a-prop-firm-focused-on-transparent-futures-trading-302688627.html",
+        date: "2026-02-16",
+        category: "Prop Trading Apex",
+        addedAt: "2026-04-16",
+      },
+      {
         summary: "propfirmplus.com: 'Algo Trading Futures Prop Firms 2026: What's Allowed and What's Not' – Umfassende Analyse der Regeln bei Futures-Prop-Firmen 2026: Fast alle grossen Prop-Firmen erlauben Semi-Automatisierung (z.B. NinjaTrader ATM-Strategien), aber nahezu keine erlauben Vollautomatisierung auf gefundeten Accounts. Klare Regulierungsgrenze: Human Oversight ist Pflicht für funded Accounts. Zeigt das aktuelle Regulierungsumfeld für regelbasierte, halbautomatisierte ES-Futures-Strategien – direktes relevantes Marktumfeld für Mind Rocket Tradings Ansatz.",
         source: "propfirmplus.com",
         url: "https://propfirmplus.com/algo-trading-on-futures-prop-firms-whats-actually-allowed-in-2026/",
@@ -2335,6 +2343,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 16.04.2026
+      {
+        summary: "Statista: 'Digital Mental Health Schweiz 2026' – Der Schweizer Markt für digitale Gesundheitsanwendungen im Bereich mentale Gesundheit zeigt laut Statista-Prognosen für 2026 kontinuierliches Wachstum. Steigende gesellschaftliche Akzeptanz von Selbsthilfe-Apps und digitalen Mental-Health-Tools, getrieben durch wachsenden Arbeitsdruck und erhöhtes Bewusstsein für psychisches Wohlbefinden. Der digitale Self-Help-Markt in der Schweiz gewinnt weiter an Volumen – positives Marktumfeld für mindtools.ch als Anbieter mentaler Werkzeuge und PDF-Buchprodukte.",
+        source: "Statista",
+        url: "https://de.statista.com/outlook/hmo/mentale-gesundheit/schweiz",
+        date: "2026-04",
+        category: "Mental Health",
+        addedAt: "2026-04-16",
+      },
       // Neu: 14.04.2026 (Recherche-Runde 2)
       {
         summary: "keelearning.de: 'E-Learning Trends 2026: So lernen Unternehmen morgen' – KI-personalisierte Lernpfade, Microlearning (5–15 Min. Einheiten, 60% der Unternehmen im Einsatz) und verhaltensbasierte Erfolgsmessung prägen Corporate Learning 2026. 87% der L&D-Teams setzen KI bereits täglich ein. Stark wachsendes Bewusstsein für mentale Werkzeuge und Soft Skills in der Personalentwicklung – direktes Wachstumsumfeld für mindtools.ch als digitale Plattform für mentale Selbsthilfe-Tools.",
