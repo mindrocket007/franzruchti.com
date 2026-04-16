@@ -5353,6 +5353,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 16.04.2026
       {
+        summary: "hrm.de: 'Team Learning und Learnfluencer: Eine positive Lernkultur' – HR-Fachportal beleuchtet die Verbindung von Team Learning und Learnfluencer im modernen Corporate Learning: Teams erwerben Inhalte gemeinsam mit einem gemeinsamen Lernziel; Learnfluencer stärken die intrinsische Lernmotivation der Mitarbeitenden, verknüpfen individuelles und kollektives Lernen und etablieren eine eigenverantwortliche Lernkultur. Wachsende HR-Fachdiskussion über Learnfluencer als organisationale Rolle bestätigt die Relevanz des Begriffs – direktes Positionierungsumfeld für learnfluencer.ch als Thought-Leadership-Plattform.",
+        source: "hrm.de",
+        url: "https://www.hrm.de/team-learning-und-learnfluencer/",
+        date: "2026",
+        category: "Content & Thought Leadership",
+        addedAt: "2026-04-16",
+      },
+      {
+        summary: "personal-manager.at: 'Team Learning und Learnfluencer' – Österreichisches HR-Fachmagazin greift die Verbindung von Team Learning und Learnfluencer auf: Gemeinsames Lernen in Teams mit einheitlichem Lernziel als Abgrenzung zu klassischem Peer-Learning; Learnfluencer als interne Change Agents für eine lernfreundliche Unternehmenskultur. Breite DACH-Rezeption des Learnfluencer-Konzepts in HR-Fachmedien unterstreicht die wachsende Relevanz – strategisches Thought-Leadership-Umfeld für learnfluencer.ch.",
+        source: "personal-manager.at",
+        url: "https://personal-manager.at/team-learning/",
+        date: "2026",
+        category: "Content & Thought Leadership",
+        addedAt: "2026-04-16",
+      },
+      {
         summary: "cegos-integrata.de: 'Die wichtigsten E-Learning-Trends 2026' – KI übernimmt 2026 eine aktivere Rolle im Corporate Learning und agiert nicht mehr nur als Wissensdatenbank, sondern als lernbegleitender Coach mit hochgradig personalisierten Lernpfaden in Echtzeit. Hybride Formate, die Präsenz-, Online- und Mikro-Learning kombinieren, dominieren den Markt. Angesichts der Automatisierung rücken menschliche Kompetenzen wie emotionale Intelligenz, Resilienz und Anpassungsfähigkeit gleichwertig neben technische Fähigkeiten – direktes Wachstumsumfeld für learnfluencer.ch als Thought-Leadership-Plattform für Lernkompetenz und KI.",
         source: "cegos-integrata.de",
         url: "https://www.cegos-integrata.de/blog/learning-development/digital-learning/die-wichtigsten-e-learning-trends-2026",
@@ -6746,6 +6762,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "bestattungsplaner": {
     news: [
       // Neu: 16.04.2026
+      {
+        summary: "GlobeNewswire / ResearchAndMarkets: 'Funeral Services Market Outlook, 2026–2032: Cremation and Green Funerals Pave the Way for Sustainability' (16. Januar 2026) – Globale Marktanalyse des Bestattungsservicemarkts: Kremation und umweltfreundliche Bestattungsformen (Green Funerals, Aquamation) treiben nachhaltiges Marktwachstum. Digitale Plattformen für Bestattungsplanung und Online-Gedenkseiten werden zunehmend zur Branchennorm. Steigende gesellschaftliche Akzeptanz für digitale Bestattungslösungen und wachsendes Segment alternativer Bestattungsformen – direktes Marktvalidierungsumfeld für bestattungsplaner.ch als digitale Lead-Vermittlungsplattform in der Schweiz.",
+        source: "GlobeNewswire",
+        url: "https://www.globenewswire.com/news-release/2026/01/16/3220420/28124/en/Funeral-Services-Market-Outlook-2026-2032-Cremation-and-Green-Funerals-Pave-the-Way-for-Sustainability.html",
+        date: "2026-01-16",
+        category: "Markt & Trends",
+        addedAt: "2026-04-16",
+      },
       {
         summary: "trauerportal.ch: 'Bestattung Schweiz – Ablauf inkl. Checkliste und Kosten' – Das führende Schweizer Trauerportal bietet eine umfassende Übersicht zum Bestattungsablauf: Behördengänge, Auswahl des Bestattungsunternehmens, Sargwahl, Todesanzeige, Trauerfeier und Bestattungsarten. Praktische Checkliste und Kostenübersicht erleichtern die Planung in einer emotional belastenden Situation. Zentrales Informationsportal für Bestattungsplanung in der Schweiz – direktes Nutzerumfeld für bestattungsplaner.ch als Lead-Vermittlungsplattform an Partner-Bestattungsunternehmen.",
         source: "trauerportal.ch",
