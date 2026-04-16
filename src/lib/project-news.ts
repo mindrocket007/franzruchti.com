@@ -2807,6 +2807,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 16.04.2026 (Recherche-Runde 2)
+      {
+        summary: "wellhub.com: 'Betriebliches Gesundheitsmanagement (BGM) 2026: Der Praxisleitfaden' – Digitales BGM gewinnt 2026 enorm an Bedeutung: Hybrid-Arbeit und Homeoffice machen ortsunabhängige Gesundheitslösungen zur Pflicht. Digitale BGM-Angebote umfassen Fitness-/Trainingsprogramme, mentale Gesundheitsangebote (Meditation, Coaching), Ernährungspläne und Gesundheits-Apps – genau das digitale Angebotsformat, das hypnovital® als Audio-Hypnose-BGM-Programm bedient. Wachsender Markt für digitale BGM-Angebote bestätigt die strategische Positionierung.",
+        source: "wellhub.com",
+        url: "https://wellhub.com/de-de/blog/benefits-und-wellbeing-programme/bgm/",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-16",
+      },
+      {
+        summary: "AXA Schweiz: 'Burnout-Prävention am Arbeitsplatz' – AXA integriert Burnout-Prävention in ihr BGM-Angebot wecare: Früherkennung von Stresssymptomen, Ressourcenstärkung und strukturelle Massnahmen. Laut AXA verursachen psychische Erkrankungen rund 45% aller Krankschreibungskosten in Schweizer Unternehmen. Wachsendes institutionelles BGM-Angebot grosser Schweizer Versicherer unterstreicht den gesellschaftlichen Stellenwert von Burnout-Prävention – direktes Marktvalidierungsumfeld für hypnovital® als digitales Burnout-Präventionsprogramm.",
+        source: "AXA Schweiz",
+        url: "https://www.axa.ch/de/unternehmenskunden/angebote/gesundheit-unfall/bgm-wecare/gesundheitspraevention/burnout-praevention.html",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-16",
+      },
+      {
+        summary: "Swiss Life: 'Impuls-Referat Burnout-Prävention' – Swiss Life bietet im Rahmen ihres BGM-Programms Online-Seminare zur Burnout-Prävention: 'Personal Resource Management', 'GO offline – mehr Zeit für das Wesentliche' und 'Mentale Gesundheit am Arbeitsplatz' als praxisorientierte Referate für Unternehmen. Grossflächige Institutionalisierung von Burnout-Prävention durch Schweizer Versicherer bestätigt gesellschaftlichen Bedarf – positives Marktumfeld für hypnovital® als digitales Audio-BGM-Präventionsprogramm.",
+        source: "Swiss Life",
+        url: "https://www.swisslife.ch/de/unternehmen/unsere-loesungen/betriebliches-gesundheitsmanagement/kurse/online-seminare/burnout-praevention.html",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-16",
+      },
       // Neu: 16.04.2026
       {
         summary: "Forum BGM Aargau (bgm-ag.ch): 'Burnout und Erschöpfung – Fachbeiträge und Artikel' – Regionales BGM-Netzwerk bündelt aktuelle Fachbeiträge zu Burnout-Erkennung, Prävention und Behandlung am Arbeitsplatz: Früherkennung von Erschöpfungssymptomen, strukturelle vs. individuelle Präventionsmassnahmen und Fallbeispiele aus Schweizer Unternehmen. Wachsendes institutionelles BGM-Netzwerk in der Schweiz bestätigt die Nachfrage nach professionellen Burnout-Präventionsprogrammen – direktes Marktumfeld für hypnovital® als digitales BGM-Angebot.",
@@ -5235,6 +5260,39 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 16.04.2026
+      {
+        summary: "cegos-integrata.de: 'Die wichtigsten E-Learning-Trends 2026' – KI übernimmt 2026 eine aktivere Rolle im Corporate Learning und agiert nicht mehr nur als Wissensdatenbank, sondern als lernbegleitender Coach mit hochgradig personalisierten Lernpfaden in Echtzeit. Hybride Formate, die Präsenz-, Online- und Mikro-Learning kombinieren, dominieren den Markt. Angesichts der Automatisierung rücken menschliche Kompetenzen wie emotionale Intelligenz, Resilienz und Anpassungsfähigkeit gleichwertig neben technische Fähigkeiten – direktes Wachstumsumfeld für learnfluencer.ch als Thought-Leadership-Plattform für Lernkompetenz und KI.",
+        source: "cegos-integrata.de",
+        url: "https://www.cegos-integrata.de/blog/learning-development/digital-learning/die-wichtigsten-e-learning-trends-2026",
+        date: "2026",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-16",
+      },
+      {
+        summary: "Swiss Learning Hub: 'We won the eLearning AWARD 2026!' – Der Swiss Learning Hub gewinnt den eLearning AWARD 2026 für herausragende digitale Lernlösungen in der Schweiz. Der Preis bestätigt die wachsende Exzellenz der Schweizer E-Learning-Branche und die gesellschaftliche Anerkennung digitaler Bildungsformate – direktes positives Marktumfeld für learnfluencer.ch als Schweizer Thought-Leadership-Plattform für Lernen und KI.",
+        source: "Swiss Learning Hub",
+        url: "https://www.swisslearninghub.com/en/news/we-won-the-elearning-award-2026/",
+        date: "2026",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-16",
+      },
+      {
+        summary: "eLearning Journal: 'Siegerprojekte 2026' – Das eLearning Journal präsentiert die Siegerprojekte des eLearning AWARD 2026: Innovative digitale Lernlösungen aus D-A-CH in den Kategorien Gamification, KI-gestütztes Lernen, Mobile Learning und Virtual Reality. Wachsende Qualität und Vielfalt digitaler Lernformate bestätigen den Megatrend E-Learning – direktes Wachstumsumfeld für learnfluencer.ch als Plattform für Lernkompetenz und KI-Weiterbildung.",
+        source: "eLearning Journal",
+        url: "https://www.elearning-journal.com/siegerprojekte-2026/",
+        date: "2026",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-16",
+      },
+      {
+        summary: "swissnova.swiss: 'Weiterbildung für Unternehmen in der Schweiz: 10 Trends für 2026' – Die 10 wichtigsten Weiterbildungstrends für Schweizer Unternehmen 2026: KI-Integration in Lernprozesse, Kompetenzorientierung statt Wissensvermittlung, Micro-Learning, Learning Experience Platforms (LXP) und datengetriebene Lernanalytics. Steigende Investitionen in betriebliche Weiterbildung in der Schweiz – direktes Wachstumsumfeld für learnfluencer.ch als Thought-Leadership-Plattform.",
+        source: "swissnova.swiss",
+        url: "https://unternehmen.swissnova.swiss/weiterbildung-unternehmen-schweiz-trends-2026/",
+        date: "2026",
+        category: "Weiterbildung Schweiz",
+        addedAt: "2026-04-16",
+      },
       // Neu: 14.04.2026 (Recherche-Runde 5)
       {
         summary: "itmagazine.ch: 'FFHS mit neuem Studiengang CAS Future Leadership und KI' – Die Fernfachhochschule Schweiz (FFHS) lanciert per August 2026 den neuen CAS 'Future Leadership und KI' für erfahrene Führungskräfte: Blended Learning, CHF 5.700 Kursgebühr, Anmeldeschluss 31. Mai 2026. Fundiertes KI-Verständnis und menschenzentrierte Führungskompetenz im KI-Zeitalter im Mittelpunkt. Wachsendes Schweizer Hochschulangebot für KI-Führungskompetenzen bestätigt steigende Nachfrage nach praxisorientiertem KI-Wissen – direktes Wachstumsumfeld für learnfluencer.ch als Thought-Leadership-Plattform für Lernen und KI.",
@@ -6044,6 +6102,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 16.04.2026 (Recherche-Runde 2)
+      {
+        summary: "bexolutions.ch: 'Marketing-Automation für Schweizer KMU 2026: Tools & ROI' – Schweizer KMU stehen 2026 vor der Herausforderung, mit begrenzten Ressourcen im digitalen Wettbewerb zu bestehen. Marketing-Automation als Lösungsansatz: HubSpot (All-in-One CRM, E-Mail & Automation), Mailchimp (ideal für Einsteiger) und spezialisierte Schweizer Lösungen. Klare ROI-Orientierung und strukturierte Umsetzungsschritte als Erfolgsformel für KMU – bestätigt den Marktbedarf für das Marketingkonzept-Tool auf learnfluencer.ch als strukturiertes Planungs-Framework.",
+        source: "bexolutions.ch",
+        url: "https://bexolutions.ch/marketing-automation-fur-schweizer-kmu-2026-tools-roi/",
+        date: "2026",
+        category: "Marketing-Tools & Software",
+        addedAt: "2026-04-16",
+      },
+      {
+        summary: "bexolutions.ch: 'KI-Marketing für Schweizer KMU 2026 – Praxisleitfaden' – KI-Marketing ist 2026 keine Luxusleistung mehr, sondern eine Notwendigkeit für wettbewerbsfähige Schweizer KMU. Praxisleitfaden mit konkreten Einstiegspunkten: KI für Content-Erstellung, Zielgruppen-Segmentierung, Kampagnenoptimierung und Kundenkommunikation. Wachsende KI-Durchdringung im Schweizer KMU-Marketing treibt Nachfrage nach strukturierten Frameworks – bestätigt das Marktpotenzial des Marketingkonzept-Tools auf learnfluencer.ch.",
+        source: "bexolutions.ch",
+        url: "https://bexolutions.ch/ki-marketing-fur-schweizer-kmu-2026-praxisleitfaden/",
+        date: "2026",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-16",
+      },
+      {
+        summary: "Swiss Marketing Academy: 'Marketing-Analyse-Tools: Die Top 5 für Profis 2026' – Ranking der besten Marketing-Analyse-Tools für Profis 2026: Google Analytics 4, SEMrush, Brandwatch, Hotjar und Tableau. Wachsende Tool-Landschaft und steigender Analysebedarf im Schweizer Marketing belegen den Trend zu datengestützter Marketingplanung – direktes Wachstumsumfeld für das interaktive Marketingkonzept-Tool auf learnfluencer.ch/tools/marketingkonzept.",
+        source: "Swiss Marketing Academy",
+        url: "https://www.swissmarketingacademy.ch/magazin/marketing-analyse-tools-profis-2026/",
+        date: "2026",
+        category: "Strategie & Analyse",
+        addedAt: "2026-04-16",
+      },
       // Neu: 16.04.2026
       {
         summary: "swissmarketways.ch: 'Digitalisierung mit Weitsicht – Wie Schweizer KMU den Wandel schaffen' – Strukturierte Analyse der digitalen Transformation für Schweizer KMU: Situationsanalyse, klare Strategieformulierung und schrittweise Umsetzung als Erfolgsfaktoren. GEO (Generative Engine Optimization), KI-gestützte CRM-Systeme und WhatsApp Business (98% Öffnungsrate) als neue Schlüsselkanäle 2026. Unterstreicht die wachsende Bedeutung strukturierter Marketing- und Digitalplanung für Schweizer KMU – direktes Marktumfeld für das Marketingkonzept-Tool auf learnfluencer.ch.",
