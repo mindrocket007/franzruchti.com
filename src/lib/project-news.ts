@@ -1226,6 +1226,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 16.04.2026
       {
+        summary: "NinjaTrader: 'Christopher Tripp als General Manager International ernannt' (17. Februar 2026) – NinjaTrader Group ernennt Christopher Tripp (ex-IG Group UK Commercial Director, ex-tastytrade International) als GM International. Tripp leitet die globale Expansionsstrategie von London aus und treibt den Markteinstieg in den Niederlanden, Deutschland sowie weiteren EU-Märkten voran. Direktes Signal für wachsenden institutionellen Rückhalt von NinjaTrader als Primärplattform für ES-Futures-Strategien wie bei Mind Rocket Trading.",
+        source: "NinjaTrader",
+        url: "https://ninjatrader.com/news/christopher-tripp-general-manager-international/",
+        date: "2026-02-17",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-16",
+      },
+      {
+        summary: "Financial Magnates: 'NinjaTrader Taps Ex-IG Exec Christopher Tripp as General Manager, International' – Branchenmedium Financial Magnates beleuchtet Tripps Hintergrund: 15 Jahre Erfahrung in Retail-/International-Trading, Schlüsselrolle bei tastytrade-Expansion und anschliessender IG-Integration. NinjaTrader positioniert sich als erste US-Futures-Plattform mit dediziertem EU-Expansionsteam. Stärkt die langfristige Plattformstabilität und regulatorische Compliance für Mind Rocket Trading-Nutzer.",
+        source: "Financial Magnates",
+        url: "https://www.financemagnates.com/executives/ninjatrader-taps-ex-ig-and-tastytrade-exec-christopher-tripp-as-general-manager-international/",
+        date: "2026-02-17",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-16",
+      },
+      {
         summary: "PR Newswire: 'Swiss Firmup Launches as a Prop Firm Focused on Transparent Futures Trading' – Swiss Firmup lancierte im Februar 2026 als neue Schweizer Prop-Trading-Firma mit Fokus auf regulierte Futures-Kontrakte (CME, EUREX, COMEX, CBOT, NYMEX). Gegründet in Zusammenarbeit mit Swiss GTrade, einem Schweizer Trainingszentrum für unabhängige Trader. Das Unternehmen bietet volltransparente Konditionen (Drawdown-Limits, Profit-Sharing, Gebühren) und richtet sich explizit an Day Trader, die professionellen Kapitalzugang suchen – neuer direkter Wettbewerber im europäischen Prop-Trading-Markt für Mind Rocket Trading.",
         source: "PR Newswire",
         url: "https://www.prnewswire.com/news-releases/swiss-firmup-launches-as-a-prop-firm-focused-on-transparent-futures-trading-302688627.html",
