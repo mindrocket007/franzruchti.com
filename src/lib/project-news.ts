@@ -43,6 +43,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
         category: "Digitale Bildung",
         addedAt: "2026-04-16",
       },
+      {
+        summary: "ICT-Berufsbildung Schweiz: 'Bis 2033 müssen 54'400 zusätzliche ICT-Fachkräfte ausgebildet werden' – Offizielle Meldung der ICT-Berufsbildung Schweiz zur Fachkräftestudie 2025: Bruttobedarf bis 2033 beträgt rund 128'600 zusätzliche ICT-Spezialisten; 54'400 müssen durch gezielte Bildungsmassnahmen extra ausgebildet werden. 81% aller ICT-Fachleute wurden über die Berufsbildung qualifiziert. Wachsender struktureller Fachkräftemangel unterstreicht die strategische Bedeutung anerkannter Qualifikationsnachweise wie jener der SIZ AG als staatlich anerkannte ICT-Prüfungsorganisation.",
+        source: "ICT-Berufsbildung Schweiz",
+        url: "https://www.ict-berufsbildung.ch/bis-2033-muessen-54400-zusaetzliche-ict-fachkraefte-ausgebildet-werden",
+        date: "2026",
+        category: "Arbeitsmarkt & IT",
+        addedAt: "2026-04-16",
+      },
+      {
+        summary: "itmagazine.ch: 'Schweiz muss bis 2033 54'400 zusätzliche ICT-Kräfte ausbilden' – IT Magazine analysiert die neue ICT-Fachkräftestudie der ICT-Berufsbildung Schweiz: Lehrstellenquote muss von 5,9% auf 8,1% steigen, um den prognostizierten Bedarf zu decken. Empfehlung: Unternehmen mit 9+ ICT-Mitarbeitenden sollen mindestens einen Lernenden ausbilden. Starker medialer Druck zur Stärkung der ICT-Ausbildungskapazitäten – direktes Positionierungsumfeld für SIZ AG als staatlich anerkannte ICT-Prüfungsorganisation.",
+        source: "itmagazine.ch",
+        url: "https://www.itmagazine.ch/artikel/85556/Schweiz_muss_bis_2033_54400_zusaetzliche_ICT-Kraefte_ausbilden.html",
+        date: "2025-09",
+        category: "Arbeitsmarkt & IT",
+        addedAt: "2026-04-16",
+      },
       // Neu: 14.04.2026 (Recherche-Runde 5)
       {
         summary: "ICT-Berufsbildung Schweiz: 'AI Business Specialists machen KI-Potenzial nutzbar' – Der neue eidgenössische Fachausweis AI Business Specialist (erste Prüfung Herbst 2026) positioniert Brücken-Builder zwischen Technologie und Unternehmen. ICT-Berufsbildung Schweiz entwickelte das Programm mit Wirtschaft und Bildung: KI-Potenzial systematisch erschliessen, Strategien entwickeln und Mitarbeitende befähigen. Unterstreicht die wachsende staatliche Anerkennung von KI-Kompetenzen im Schweizer ICT-Bildungsökosystem – relevantes Marktumfeld für SIZ AG als etablierte ICT-Prüfungsorganisation.",
@@ -1261,6 +1277,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         summary: "traderssecondbrain.com: 'Apex Payout Rules 2026: 50% Rule, PA Ladder, Hidden Costs' – Detaillierte Analyse der neuen Apex-Auszahlungsregeln 2026: Die 50%-Konsistenzregel verhindert, dass ein einzelner Handelstag mehr als die Hälfte des Gesamtgewinns ausmacht. Das 6-stufige Payout-Ladder-System steigert Auszahlungslimits schrittweise bis zur vollständigen Aufhebung. Vor erster Auszahlung: mind. 8 Handelstage und 5 qualifizierende Tage (Nettogewinn $100–$300 je nach Kontogrösse). Versteckte Kosten: Aktivierungsgebühr $79–$99 beim Bestehen. Praxisguide für Apex-Futures-Trader.",
         source: "traderssecondbrain.com",
         url: "https://traderssecondbrain.com/guides/apex-payout-rules-explained",
+        date: "2026-03",
+        category: "Prop Trading Apex",
+        addedAt: "2026-04-16",
+      },
+      {
+        summary: "Apex Trader Funding: 'Navigating Apex Trader Funding's New Stop Loss and Take Profit Rules: A Guide for Day Traders' – Offizieller Praxisguide von Apex Trader Funding zu den 2026-Regeländerungen für Stop-Loss- und Take-Profit-Orders: Klare Grenzen für maximalen täglichen Verlust (DLL), erweiterte Drawdown-Wahlmöglichkeiten (EOD vs. Intraday) und präzisierte Regeln für automatisierte Strategie-Orders. Direkte operative Orientierungshilfe für Mind Rocket Tradings NinjaTrader-basierte ES-Futures-Strategien auf Apex-Accounts.",
+        source: "Apex Trader Funding",
+        url: "https://apextraderfunding.com/resources/trading-education-resources/navigating-apex-trader-fundings-new-stop-loss-and-take-profit-rules-a-guide-for-day-traders/",
         date: "2026-03",
         category: "Prop Trading Apex",
         addedAt: "2026-04-16",
@@ -3737,6 +3761,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 16.04.2026
+      {
+        summary: "toolify.ai: 'Die 12-Wochen-Jahr-Methode: Mehr Produktivität und Fokus' – Methodenartikel erläutert die Kernprinzipien der 12-Week-Year-Methode: Aufteilung des Jahres in vier 12-Wochen-Zyklen mit intensivierten Planungs-, Umsetzungs- und Überprüfungsphasen. Höhere Handlungsfrequenz und psychologische Dringlichkeit als entscheidende Wirkprinzipien. Wachsende Online-Präsenz und gesellschaftliche Verbreitung der 12-Week-Year-Methode bestätigen das Marktpotenzial des 12wy-planners als spezialisiertes SaaS-Tool für diese Methode.",
+        source: "toolify.ai",
+        url: "https://www.toolify.ai/de/ai-news-de/die-12wochenjahrmethode-mehr-produktivitt-und-fokus-3468035",
+        date: "2026",
+        category: "12 Week Year Methode",
+        addedAt: "2026-04-16",
+      },
+      {
+        summary: "hostinger.com: 'SaaS-Statistiken 2026: Wachstum, Akzeptanz und Markttrends' – Umfassende Marktanalyse des globalen SaaS-Markts 2026: Nordamerika erreicht USD 211,7 Mrd., 59% der Softwareunternehmen setzen auf nutzungsbasierte Preismodelle, KI-aktivierte SaaS-Tools erhalten 25% höhere IT-Budgets. Wachstumsstarkes SaaS-Ökosystem und steigende Bereitschaft für spezialisierte Produktivitätstools – direktes positives Marktumfeld für den 12 Week Year Planner als Nischen-SaaS für strukturierte Zielplanung.",
+        source: "hostinger.com",
+        url: "https://www.hostinger.com/de/tutorials/saas-statistiken",
+        date: "2026",
+        category: "SaaS & Tools",
+        addedAt: "2026-04-16",
+      },
       // Neu: 14.04.2026 (Recherche-Runde 5)
       {
         summary: "Gartner Peer Insights: 'Best OKR Software Reviews 2026' – Gartner-Bewertungsplattform dokumentiert den wachsenden OKR-Softwaremarkt: Integration von KI für automatisches Progress-Tracking, Outcome-Visualisierung und Zielausrichtung über Teams hinweg als neuer Standard. Markt für strukturierte Quartalsplanungs-Frameworks (OKR, 12-Week-Year-Methode) wächst deutlich. Direktes Marktumfeld für den 12 Week Year Planner SaaS als fokussiertes Planungstool mit klarem Methodenbezug.",
