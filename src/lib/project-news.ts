@@ -4333,6 +4333,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 16.04.2026
+      {
+        summary: "psychotherapie-salzburg.at: 'Vorzeitiger Samenerguss (Ejaculatio praecox)' – Österreichische Psychotherapiepraxis erklärt psychotherapeutische und hypnotherapeutische Behandlungsansätze bei EP: Psychotherapie adressiert Leistungsangst, Beziehungsdynamiken und unbewusste Konditionierungen; Hypnose kann eingefahrene Verhaltensmuster auf Unterbewusstseinsebene lösen. Wachsende Professionalisierung des psychotherapeutischen Angebots für EP im DACH-Raum stärkt die gesellschaftliche Akzeptanz für nicht-medikamentöse, mental-fokussierte Interventionen – direktes Validierungsumfeld für orgasmus-hinauszoegern.de als Hypnose-Audioprogramm.",
+        source: "Psychotherapie Salzburg",
+        url: "https://www.psychotherapie-salzburg.de/vorzeitiger-samenerguss",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-16",
+      },
+      {
+        summary: "Nils Sturies Sexualcoach (hypnose-therapie.biz): 'Vorzeitiger Samenerguss verhindern / behandeln' – Spezialisierter Sexualcoach und Hypnosetherapeut bietet Einzel-Coaching für vorzeitigen Samenerguss an: Kombination aus systemischer Sexualtherapie, Paartherapie und Hypnose. Fokus auf psychodynamische Ursachen (Versagensangst, traumatische Erlebnisse, erlernte Muster) und deren Auflösung durch hypnotische Techniken. Wachsendes deutschsprachiges Angebot an spezialisierten Sexualcoaches und Hypnotherapeuten für EP bestätigt die Marktgrösse – direktes Wettbewerbs- und Validierungsumfeld für orgasmus-hinauszoegern.de als zugängliches Audio-Selbsthilfeprogramm.",
+        source: "Nils Sturies Sexualcoach",
+        url: "https://hypnose-therapie.biz/hypnose-hameln/hypnose-sexualtherapie-paartherapie-hypnose-psychotherapie-coaching-hameln/vorzeitiger-samenerguss-vehindern-behandeln-ejaculatio-praecox/",
+        date: "2026",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-16",
+      },
       // Neu: 14.04.2026 (Recherche-Runde 5)
       {
         summary: "DEXIMED (Deutsche Experteninformation Medizin): 'Vorzeitiger Samenerguss (Ejaculatio praecox)' – Medizinisches Expertenfachportal für Ärzte und Fachpersonal beschreibt aktuelle Diagnosekriterien, Prävalenz (bis 30% der Männer) und Behandlungsoptionen: Dapoxetin, SSRI off-label, Lokalanästhetika und psychotherapeutische Ansätze. Zunehmende medizinische Professionalisierung des Themas normalisiert öffentliche Diskussion und stärkt die Nachfrage nach nicht-medikamentösen Alternativen wie orgasmus-hinauszoegern.de.",
@@ -4829,6 +4846,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 16.04.2026
+      {
+        summary: "NOACK Hypnotherapie Berlin: 'Lampenfieber: Aufklärung, Tipps, Hilfe' – Separate Aufklärungsseite zu Lampenfieber (als normalem Phänomen) vs. behandlungsbedürftiger Auftrittsangst: Unterschiedliche Schweregrade und Behandlungsindikationen, 2–3 Hypnose-Sitzungen oft ausreichend für signifikante Verbesserung. Schweizer Marktkontakt mit Anfragen via Online-Formular. Wachsendes professionelles Online-Angebot von Hypnosespezialisten für Lampenfieber im DACH-Raum bestätigt Marktakzeptanz – direktes Validierungsumfeld für lampenfieber-besiegen.de als niedrigschwelliges Audio-Selbsthilfeangebot ohne Buchungs-Hürde.",
+        source: "NOACK Hypnotherapie",
+        url: "https://www.noack-hypnose.de/lampenfieber/",
+        date: "2026",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-04-16",
+      },
+      {
+        summary: "thomas-interbieten.de: 'Lampenfieber – Redeangst – Vortragsangst' – Psychotherapeut erklärt den Unterschied zwischen normalem Lampenfieber und behandlungsbedürftiger Redeangst/Vortragsangst. Psychotherapeutische Behandlung (Verhaltenstherapie, Hypnotherapie) erzielt in 5–10 Sitzungen nachhaltige Ergebnisse. Wachsende professionelle Behandlungslandschaft für Auftrittsangst unterstreicht die gesellschaftliche Relevanz – bestätigt den breiten Zielmarkt für lampenfieber-besiegen.de als einstiegsfreundliche Audio-Alternative.",
+        source: "Psychotherapie thomas-interbieten.de",
+        url: "https://thomas-interbieten.de/lampenfieber-redeangst-vortragsangst/",
+        date: "2026",
+        category: "Psychologie & Forschung",
+        addedAt: "2026-04-16",
+      },
       // Neu: 14.04.2026 (Recherche-Runde 2)
       {
         summary: "noack-hypnose.de: 'Redeangst ist kein Lampenfieber: Aufklärung, Tipps, Hilfe' – NOACK Hypnotherapie Berlin differenziert zwischen Lampenfieber (normal, leistungsfördernd) und Redeangst (pathologisch, behandlungsbedürftig). Bei ausgeprägter Redeangst ist systematische therapeutische Arbeit erforderlich; Hypnose, NLP, EFT-Klopftechnik und Mentaltraining beseitigen Ängste oft in 1–5 Einzelcoachings. Wachsendes Online-Angebot an Hypnose-Spezialisten für Redeangst bestätigt Marktakzeptanz – direktes Wettbewerbs- und Validierungsumfeld für lampenfieber-besiegen.de.",
@@ -6695,6 +6729,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 16.04.2026
+      {
+        summary: "trauerportal.ch: 'Bestattung Schweiz – Ablauf inkl. Checkliste und Kosten' – Das führende Schweizer Trauerportal bietet eine umfassende Übersicht zum Bestattungsablauf: Behördengänge, Auswahl des Bestattungsunternehmens, Sargwahl, Todesanzeige, Trauerfeier und Bestattungsarten. Praktische Checkliste und Kostenübersicht erleichtern die Planung in einer emotional belastenden Situation. Zentrales Informationsportal für Bestattungsplanung in der Schweiz – direktes Nutzerumfeld für bestattungsplaner.ch als Lead-Vermittlungsplattform an Partner-Bestattungsunternehmen.",
+        source: "trauerportal.ch",
+        url: "https://www.trauerportal.ch/de/bestattung",
+        date: "2026",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-16",
+      },
+      {
+        summary: "Schweizer Verband der Bestattungsunternehmen (bestatter.ch): 'Bestattungskosten Schweiz – Individuelle Beratung für transparente Kostenkalkulation' – Verbandsseite des Schweizerischen Verbands der Bestatter: Betonung von Preistransparenz, individuelle Beratungsangebote, Qualitätsstandards für Verbandsmitglieder. Kosten hängen stark von Kanton, Bestattungsart und Anbieterwahl ab. Institutionelle Betonung von Transparenz und Vergleichbarkeit im Bestattungsmarkt treibt die Nachfrage nach unabhängigen Planungs- und Vergleichsplattformen wie bestattungsplaner.ch.",
+        source: "Schweizer Verband der Bestatter",
+        url: "https://bestatter.ch/en/funeral-costs-in-switzerland-individual-consultation-for-clear-costing/",
+        date: "2026",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-16",
+      },
       // Neu: 14.04.2026 (Recherche-Runde 6)
       {
         summary: "aurora-bestattungen.ch: 'Bestattungskosten Schweiz – Was kostet eine Bestattung?' – Detaillierter Kostenüberblick eines etablierten Schweizer Bestattungsunternehmens: Erdbestattung CHF 4'000–12'000+, Kremation mit Urnenbeisetzung ab CHF 2'500–6'000, signifikante regionale Preisunterschiede. Preistransparenz wird im Schweizer Bestattungsmarkt 2026 zur Standarderwartung – stärkt die Nachfrage nach unabhängigen Vergleichs- und Planungsplattformen wie bestattungsplaner.ch.",
