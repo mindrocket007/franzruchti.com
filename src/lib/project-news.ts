@@ -2847,6 +2847,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 16.04.2026 (Recherche-Runde 3)
+      {
+        summary: "ad-hoc-news.de: 'Betriebliches Gesundheitsmanagement wird zum strategischen Imperativ' – BGM entwickelt sich 2026 von einer freiwilligen Zusatzleistung zur strategischen Kernaufgabe von Unternehmen. Neue gesetzliche Anforderungen, akuter Fachkräftemangel und steigender Druck auf Arbeitgebermarken treiben die Professionalisierung. Psychische Gesundheit rückt ins Zentrum: Gen Z stellt offenere Erwartungen an Arbeitgeber bezüglich mentaler Gesundheitsunterstützung. ROI von 1:2,7 dokumentiert (jeder in BGM investierte Euro bringt 2,70 zurück). Wachsender gesellschaftlicher und ökonomischer Druck auf BGM-Implementierung stärkt das Marktpotenzial von hypnovital® als digitales BGM-Präventionsprogramm.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/betriebliches-gesundheitsmanagement-wird-zum-strategischen-imperativ/69002177",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-16",
+      },
+      {
+        summary: "ad-hoc-news.de: 'Betriebliches Gesundheitsmanagement setzt 2026 auf Strategie und Psyche' – BGM-Landschaft 2026: KI-gestützte Analysen, Wearables und digitale Screenings ermöglichen datenbasierte, personalisierte Steuerung von Gesundheitsangeboten. Psychische Gesundheit als Schwerpunkt: Entstigmatisierung psychischer Erkrankungen schreitet voran, Unternehmen investieren verstärkt in mentale Gesundheitsangebote. Hybride Arbeit macht ortsunabhängige, digitale BGM-Lösungen zur Notwendigkeit. Digitalisierungstrend im BGM bestätigt die strategische Positionierung von hypnovital® als ortsunabhängiges Audio-Hypnose-BGM-Programm.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/betriebliches-gesundheitsmanagement-setzt-2026-auf-strategie-und-psyche/68972135",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-16",
+      },
       // Neu: 16.04.2026 (Recherche-Runde 2)
       {
         summary: "wellhub.com: 'Betriebliches Gesundheitsmanagement (BGM) 2026: Der Praxisleitfaden' – Digitales BGM gewinnt 2026 enorm an Bedeutung: Hybrid-Arbeit und Homeoffice machen ortsunabhängige Gesundheitslösungen zur Pflicht. Digitale BGM-Angebote umfassen Fitness-/Trainingsprogramme, mentale Gesundheitsangebote (Meditation, Coaching), Ernährungspläne und Gesundheits-Apps – genau das digitale Angebotsformat, das hypnovital® als Audio-Hypnose-BGM-Programm bedient. Wachsender Markt für digitale BGM-Angebote bestätigt die strategische Positionierung.",
@@ -4862,6 +4879,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 16.04.2026 (Recherche-Runde 2)
+      {
+        summary: "innermotion.de: 'Therapie von Redeangst und Lampenfieber 2026' – Praxisportal analysiert aktuelle Therapieoptionen für Redeangst und Lampenfieber 2026: Verhaltenstherapie, Hypnotherapie, NLP und Exposition als bewährte Ansätze; 2–5 Sitzungen oft ausreichend für signifikante Verbesserung. Psychologisches Verständnis: Redeangst ist primär Angst vor negativer Bewertung durch das Publikum, nicht vor dem Sprechen selbst. Wachsendes professionelles Behandlungsangebot im DACH-Raum bestätigt die gesellschaftliche Relevanz – Marktvalidierung für lampenfieber-besiegen.de als niedrigschwelliges Audio-Selbsthilfeangebot.",
+        source: "innermotion.de",
+        url: "https://innermotion.de/therapie-von-redeangste-und-lampenfieber/",
+        date: "2026",
+        category: "Psychologie & Forschung",
+        addedAt: "2026-04-16",
+      },
+      {
+        summary: "Hypnosepraxis Meier (Schweiz): 'Hypnose-Therapie gegen Auftrittsangst und Lampenfieber' – Schweizer Hypnosepraxis bietet professionelle Hypnose-Therapie gegen Auftrittsangst und Lampenfieber: Hypno-Analyse zur Aufdeckung unbewusster Angstquellen, mentales Proben erfolgreicher Auftritte, und nachhaltige Konditionierung positiver Reaktionsmuster. Typische Therapiedauer: 2–5 Sitzungen. Etabliertes Schweizer Fachmarkt-Angebot für Hypnose gegen Lampenfieber bestätigt die Marktakzeptanz – direktes Wettbewerbsumfeld für lampenfieber-besiegen.de als günstige, sofort verfügbare Audio-Alternative ohne Terminbuchung.",
+        source: "Hypnosepraxis Meier",
+        url: "https://www.hypnosepraxismeier.ch/auftrittsangst-lampenfieber/",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-16",
+      },
       // Neu: 16.04.2026
       {
         summary: "NOACK Hypnotherapie Berlin: 'Lampenfieber: Aufklärung, Tipps, Hilfe' – Separate Aufklärungsseite zu Lampenfieber (als normalem Phänomen) vs. behandlungsbedürftiger Auftrittsangst: Unterschiedliche Schweregrade und Behandlungsindikationen, 2–3 Hypnose-Sitzungen oft ausreichend für signifikante Verbesserung. Schweizer Marktkontakt mit Anfragen via Online-Formular. Wachsendes professionelles Online-Angebot von Hypnosespezialisten für Lampenfieber im DACH-Raum bestätigt Marktakzeptanz – direktes Validierungsumfeld für lampenfieber-besiegen.de als niedrigschwelliges Audio-Selbsthilfeangebot ohne Buchungs-Hürde.",
@@ -5351,6 +5385,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 16.04.2026 (Recherche-Runde 2)
+      {
+        summary: "Netzwoche / IT-Markt: 'FFHS lanciert KI-Weiterbildung für Führungskräfte' (8. April 2026) – Die Fernfachhochschule Schweiz (FFHS) lanciert den neuen CAS 'Future Leadership und KI' (Start August 2026, Herbstsemester, CHF 5'700). Das Programm richtet sich an erfahrene Führungskräfte, die ihren Führungsstil ans KI-Zeitalter anpassen wollen: fundiertes Verständnis von KI-Technologien, kritische Bewertung ihres Einsatzes, und praktische Führungskompetenzen in KI-transformierten Organisationen. Blended Learning. Breite institutionelle Anerkennung von KI-Führungskompetenzen – direktes Marktvalidierungsumfeld für learnfluencer.ch als Thought-Leadership-Plattform für KI-Lernkompetenz.",
+        source: "Netzwoche",
+        url: "https://www.netzwoche.ch/news/2026-04-08/ffhs-lanciert-ki-weiterbildung-fuer-fuehrungskraefte",
+        date: "2026-04-08",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-16",
+      },
+      {
+        summary: "HR Today Schweiz: 'Learnfluencer werden?' – Schweizer HR-Fachzeitschrift beleuchtet den Begriff 'Learnfluencer' als wachsendes Konzept in der betrieblichen Weiterbildung: Learnfluencer stärken die intrinsische Lernmotivation der Mitarbeitenden, verknüpfen individuelles und kollektives Lernen und etablieren eine eigenverantwortliche Lernkultur. Zielgruppe: Führungskräfte, interne Trainer, externe Coaches und Facilitators. Learnfluencer kommunizieren regelmässig über das Thema Lernen, ermutigen Wissensaustausch und bilden Lerngemeinschaften. Deutliche Verankerung des Learnfluencer-Konzepts in der Schweizer HR-Fachdiskussion – direktes Thought-Leadership-Feld für learnfluencer.ch.",
+        source: "HR Today Schweiz",
+        url: "https://www.hrtoday.ch/de/article/learnfluencer-werden",
+        date: "2026",
+        category: "Content & Thought Leadership",
+        addedAt: "2026-04-16",
+      },
       // Neu: 16.04.2026
       {
         summary: "watson.ch: 'WEF 2026: KI könnte Schweizer BIP laut Studie um bis zu 11% steigern' – Eine Studie von Implement Consulting Group im Auftrag von Google und digitalswitzerland, präsentiert am WEF in Davos Januar 2026: Generative KI könnte das Schweizer BIP in den nächsten zehn Jahren um bis zu 11 Prozent steigern, entspricht einem zusätzlichen jährlichen Wertschöpfungspotenzial von rund 80–85 Milliarden Franken. KI im F&E-Bereich könnte Innovationsprozesse um 10–20% effizienter machen. Massive volkswirtschaftliche Relevanz von KI-Kompetenz – direktes Argument für learnfluencer.ch als Plattform für KI-Lernkompetenz.",
@@ -6217,6 +6268,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 16.04.2026 (Recherche-Runde 2)
+      {
+        summary: "Aivie: 'Marketing-Automation mit kmu.digital 2026: Jetzt Förderung nutzen' – Schweizer Marketing-Automation-Anbieter Aivie erklärt, wie KMU 2026 staatliche Förderung via kmu.digital für Marketing-Automation-Projekte nutzen können: Bis zu 80% Förderung via zertifizierte Beratung, konkrete Projektplanung für Lead-Magnets, Einführungsangebote und automatisierte Customer Journeys. Wachsende staatliche Unterstützung für KMU-Digitalisierung und Marketing-Automation treibt die Nachfrage nach strukturierten Marketing-Frameworks wie dem Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "Aivie (aivie.ch)",
+        url: "https://aivie.ch/marketing-automation-kmu-digital-forderung/",
+        date: "2026",
+        category: "Marketing-Tools & Software",
+        addedAt: "2026-04-16",
+      },
+      {
+        summary: "Lorien Group: 'Online-Marketing-Strategie für KMU Schweiz 2026' – Schweizer Digitalberatung analysiert, wie KMU 2026 eine wirksame Online-Marketing-Strategie aufbauen: Zieldefinition, Zielgruppenanalyse, Kanalwahl (SEO, Social Media, E-Mail-Marketing), Content-Strategie und Budgetplanung. Empfehlung: strukturierter Planungsprozess statt kurzfristiger taktischer Massnahmen. Wachsende Erkenntnis, dass strategische Marketingplanung für KMU entscheidend ist – bestätigt den Marktbedarf für das Marketingkonzept-Tool auf learnfluencer.ch als strukturiertes Planungs-Framework.",
+        source: "Lorien Group",
+        url: "https://www.lorien.group/blog/online-marketing-strategie-kmu",
+        date: "2026",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-16",
+      },
       // Neu: 16.04.2026
       {
         summary: "kmu-performer.ch: 'Unsere KMU Marketing-Trends 2026' – KMU Performer AG analysiert die wichtigsten Marketingtrends für Schweizer KMU 2026: KI-gestützte Content-Erstellung und Kampagnenoptimierung werden Standard, GEO (Generative Engine Optimization) ergänzt klassisches SEO, WhatsApp Business mit 98% Öffnungsrate als neuer Schlüsselkanal, und datengetriebene Marketingplanung (CRM, Analytics) als Grundvoraussetzung. Wachsende Komplexität der Marketingplanung treibt Nachfrage nach strukturierten Frameworks wie dem Marketingkonzept-Tool auf learnfluencer.ch.",
@@ -6778,6 +6846,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 16.04.2026 (Recherche-Runde 2)
+      {
+        summary: "ekz-crosstour.ch: 'Der Markt für Bestattungs- und Friedhofsdienstleistungen wird bis 2847 voraussichtlich rasant wachsen' (8. April 2026) – Marktanalyse zeigt: Bestattungsbranche wächst weltweit durch demografischen Wandel, Kremation als dominante Bestattungsform (Schweiz: bereits ca. 90% aller Verstorbenen), alternative Bestattungsformen und wachsende Online-Nachfrage. Digitale Plattformen für Bestattungsplanung gewinnen an Relevanz. Bestätigt das strukturelle Marktwachstum und die Nachfrage nach digitalen Bestattungsplanungslösungen wie bestattungsplaner.ch.",
+        source: "ekz-crosstour.ch",
+        url: "https://ekz-crosstour.ch/2026/04/08/der-markt-fur-bestattungs-und-friedhofsdienstleistungen-wird-bis-2847-voraussichtlich-rasant-wachsen/",
+        date: "2026-04-08",
+        category: "Markt & Trends",
+        addedAt: "2026-04-16",
+      },
+      {
+        summary: "SRF Wissen: 'Terramation: Hat die Schweiz bald eine neue Bestattungsform?' – SRF beleuchtet Terramation (organische Reduktion, auch 'Human Composting') als aufkommende Bestattungsalternative: In den USA bereits in mehreren Bundesstaaten legal, in Europa bisher kaum reguliert. Experten erwarten, dass Terramation in der Schweiz mittelfristig diskutiert und möglicherweise legalisiert wird. Wachsende Vielfalt der Bestattungsformen unterstreicht den Bedarf an unabhängiger, umfassender Beratungsplattform – direktes Positionierungsfeld für bestattungsplaner.ch als neutrale Informations- und Lead-Plattform.",
+        source: "SRF Wissen",
+        url: "https://www.srf.ch/wissen/mensch/zu-erde-werden-terramation-gibts-in-der-schweiz-bald-eine-neue-bestattungsform",
+        date: "2026",
+        category: "Markt & Trends",
+        addedAt: "2026-04-16",
+      },
       // Neu: 16.04.2026
       {
         summary: "GlobeNewswire / ResearchAndMarkets: 'Funeral Services Market Outlook, 2026–2032: Cremation and Green Funerals Pave the Way for Sustainability' (16. Januar 2026) – Globale Marktanalyse des Bestattungsservicemarkts: Kremation und umweltfreundliche Bestattungsformen (Green Funerals, Aquamation) treiben nachhaltiges Marktwachstum. Digitale Plattformen für Bestattungsplanung und Online-Gedenkseiten werden zunehmend zur Branchennorm. Steigende gesellschaftliche Akzeptanz für digitale Bestattungslösungen und wachsendes Segment alternativer Bestattungsformen – direktes Marktvalidierungsumfeld für bestattungsplaner.ch als digitale Lead-Vermittlungsplattform in der Schweiz.",
