@@ -1201,6 +1201,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 16.04.2026
       {
+        summary: "futuresproptrader.com: 'Apex Trader Funding Review 2026 – The 4.0 OTP Model Analyzed' – Detaillierte unabhängige Analyse des neuen Apex 4.0 OTP-Modells: Einmalige Zahlung ersetzt monatliche Abo-Gebühren, 6%-Profitziel, EOD- oder Intraday-Drawdown-Wahl, keine Mindest-Handelstage, bis zu 20 gleichzeitige Accounts, 100% Payout-Split. Bestätigt Apex als führende Futures-Prop-Firm 2026 – direktes Informationsumfeld für Mind Rocket Tradings Apex-basierte Prop-Trading-Strategie.",
+        source: "futuresproptrader.com",
+        url: "https://futuresproptrader.com/",
+        date: "2026-04",
+        category: "Prop Trading Apex",
+        addedAt: "2026-04-16",
+      },
+      {
+        summary: "futurespropcenter.com: 'Apex Trader Funding Reviews 2026: Legit or Scam?' – Unabhängige Community-Bewertung von Apex Trader Funding 2026: 4.4-Sterne auf Trustpilot (18'000+ Reviews), über $743 Mio. an Trader ausgezahlt seit 2022. Das neue 4.0 OTP-Modell wird als klare Verbesserung gewertet. Bestätigt Apex' Marktführerschaft unter Futures-Prop-Firms – relevant als Referenzpunkt für Mind Rocket Trading und dessen Prop-Trading-Positionierung.",
+        source: "futurespropcenter.com",
+        url: "https://futurespropcenter.com/",
+        date: "2026-04",
+        category: "Prop Trading Apex",
+        addedAt: "2026-04-16",
+      },
+      {
+        summary: "NinjaTrader Ecosystem: 'Day Trading With The iNewton Automated Trading System 2026' – Praxisartikel über ein NinjaScript-basiertes automatisiertes Handelssystem im NinjaTrader Ecosystem. Zeigt die aktive Nutzung von NinjaTrader für Algo-Trading im ES/NQ-Futuresmarkt 2026: vollautomatisierte Ein- und Ausstiegssignale, Backtesting-Ergebnisse, Live-Performance. Direktes Praxisumfeld für Mind Rocket Tradings algorithmische NinjaTrader-Strategieentwicklung.",
+        source: "NinjaTrader Ecosystem",
+        url: "https://ninjatraderecosystem.com/article/day-trading-with-the-inewton-automated-trading-system-2026/",
+        date: "2026",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-16",
+      },
+      {
         summary: "dealpropfirm.com: 'Apex March 2026: No Payout Denials' – Apex Trader Funding eliminiert ab März 2026 alle Payout-Ablehnungen. Mit dem neuen OTP-Modell (Apex 4.0) und automatisierten Deel-Auszahlungen (24–48h) entfallen frühere Ablehnungsgründe. Neue Kerndaten: 50%-Konsistenzregel, 6%-Profitziel, wöchentliche Payouts mit 6-Stufen-Ladder, keine Mindest-Handelstage. Grösste Verbesserung aus Trader-Sicht: volle Transparenz und Vorhersehbarkeit der Auszahlungen. Direkt relevant für Mind Rocket Tradings Apex-basierte Prop-Trading-Strategie.",
         source: "dealpropfirm.com",
         url: "https://dealpropfirm.com/articles/apex-trader-funding-march-2026-new-rules",
@@ -2749,6 +2773,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 16.04.2026
+      {
+        summary: "light-home.ch: 'Burnout-Prävention am Arbeitsplatz' – Schweizer Gesundheitsportal zeigt strukturelle Massnahmen als wirksamer als individuelle Lösungen: Arbeitslastanpassung, Mitarbeiterbeteiligung und Zeitflexibilisierung reduzieren Erschöpfung nachhaltig. Ca. 18–25% der Schweizer Erwerbstätigen leiden unter Burnout-Symptomen, 4% in klinisch relevantem Ausmass. Wachsende Nachfrage nach präventiven BGM-Programmen – direktes Marktumfeld für hypnovital® als digitales Hypnose-gestütztes Burnout-Präventionsprogramm.",
+        source: "light-home.ch",
+        url: "https://www.light-home.ch/post/burnout-pravention-am-arbeitsplatz",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-16",
+      },
       // Neu: 14.04.2026 (Recherche-Runde 4)
       {
         summary: "ad-hoc-news.de: 'Intersana 2026: Drei Trends revolutionieren mentale Gesundheit' – Die Intersana-Gesundheitsmesse Augsburg (30. Jan – 1. Feb 2026) zeigt klaren Paradigmenwechsel: (1) Prävention und Resilienz als Organisationsstrategie – weg von reaktiven Burnout-Massnahmen hin zu proaktivem Teamaufbau; (2) Destigmatisierung psychischer Gesundheit – emotionale Kompetenz als Grundkompetenz; (3) Digitale Begleitung via Wearables und Health-Apps. Wachsendes Marktumfeld für hypnovital® als digitales Hypnose-Präventionsprogramm.",
