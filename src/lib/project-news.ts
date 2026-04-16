@@ -5353,6 +5353,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 16.04.2026
       {
+        summary: "watson.ch: 'WEF 2026: KI könnte Schweizer BIP laut Studie um bis zu 11% steigern' – Eine Studie von Implement Consulting Group im Auftrag von Google und digitalswitzerland, präsentiert am WEF in Davos Januar 2026: Generative KI könnte das Schweizer BIP in den nächsten zehn Jahren um bis zu 11 Prozent steigern, entspricht einem zusätzlichen jährlichen Wertschöpfungspotenzial von rund 80–85 Milliarden Franken. KI im F&E-Bereich könnte Innovationsprozesse um 10–20% effizienter machen. Massive volkswirtschaftliche Relevanz von KI-Kompetenz – direktes Argument für learnfluencer.ch als Plattform für KI-Lernkompetenz.",
+        source: "watson.ch",
+        url: "https://www.watson.ch/schweiz/wirtschaft/740664137-wef-2026-ki-koennte-schweizer-bip-laut-studie-um-bis-zu-11-steigern",
+        date: "2026-01",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-16",
+      },
+      {
         summary: "hrm.de: 'Team Learning und Learnfluencer: Eine positive Lernkultur' – HR-Fachportal beleuchtet die Verbindung von Team Learning und Learnfluencer im modernen Corporate Learning: Teams erwerben Inhalte gemeinsam mit einem gemeinsamen Lernziel; Learnfluencer stärken die intrinsische Lernmotivation der Mitarbeitenden, verknüpfen individuelles und kollektives Lernen und etablieren eine eigenverantwortliche Lernkultur. Wachsende HR-Fachdiskussion über Learnfluencer als organisationale Rolle bestätigt die Relevanz des Begriffs – direktes Positionierungsumfeld für learnfluencer.ch als Thought-Leadership-Plattform.",
         source: "hrm.de",
         url: "https://www.hrm.de/team-learning-und-learnfluencer/",
@@ -6209,6 +6217,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 16.04.2026
+      {
+        summary: "kmu-performer.ch: 'Unsere KMU Marketing-Trends 2026' – KMU Performer AG analysiert die wichtigsten Marketingtrends für Schweizer KMU 2026: KI-gestützte Content-Erstellung und Kampagnenoptimierung werden Standard, GEO (Generative Engine Optimization) ergänzt klassisches SEO, WhatsApp Business mit 98% Öffnungsrate als neuer Schlüsselkanal, und datengetriebene Marketingplanung (CRM, Analytics) als Grundvoraussetzung. Wachsende Komplexität der Marketingplanung treibt Nachfrage nach strukturierten Frameworks wie dem Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "kmu-performer.ch",
+        url: "https://kmu-performer.ch/trends-2026/",
+        date: "2026",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-16",
+      },
       // Neu: 16.04.2026 (Recherche-Runde 2)
       {
         summary: "bexolutions.ch: 'Marketing-Automation für Schweizer KMU 2026: Tools & ROI' – Schweizer KMU stehen 2026 vor der Herausforderung, mit begrenzten Ressourcen im digitalen Wettbewerb zu bestehen. Marketing-Automation als Lösungsansatz: HubSpot (All-in-One CRM, E-Mail & Automation), Mailchimp (ideal für Einsteiger) und spezialisierte Schweizer Lösungen. Klare ROI-Orientierung und strukturierte Umsetzungsschritte als Erfolgsformel für KMU – bestätigt den Marktbedarf für das Marketingkonzept-Tool auf learnfluencer.ch als strukturiertes Planungs-Framework.",
