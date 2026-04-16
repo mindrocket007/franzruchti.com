@@ -26,6 +26,23 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 16.04.2026
+      {
+        summary: "swissICT x ZLI: Workshop 'ICT-Ausbildung Schweiz: Chancen, Lücken, Lösungen' (9. April 2026) – swissICT und der Zürcher Lehrbetriebsverband ICT (ZLI) diskutieren interaktiv die Schweizer ICT-Ausbildungslandschaft: Lern- und Lebenswelten von Gen Z und Gen Alpha, die strategische Bedeutung von Fachbeauftragten für Lernende, und die drohende Lücke von 40'000 IT-Spezialisten bis 2030. Keynote von Marc Zuppiger (Bühler Group, Digital Economy Award 2025). Direktes Kontext-Umfeld für SIZ AG als anerkannte Prüfungsorganisation im Schweizer ICT-Ausbildungsökosystem.",
+        source: "swissICT",
+        url: "https://www.swissict.ch/ict-ausbildung-schweiz-workshop-event-zli/",
+        date: "2026-04-09",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-16",
+      },
+      {
+        summary: "20 Minuten: '2026 kommt das erste eidgenössische KI-Diplom' – ICT-Berufsbildung Schweiz und Huawei entwickeln gemeinsam einen neuen eidgenössischen Fachausweis im Bereich KI (AI Business Specialist). Zielgruppe: Fachleute, die KI-Lösungen in Unternehmen strategisch einsetzen. Erste Prüfung Herbst 2026. Das Programm kombiniert Methoden-, Technik- und KI-Management-Kompetenzen. Stärkt das gesamte Qualifizierungsumfeld der Schweizer ICT-Bildung – direktes positives Marktumfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation.",
+        source: "20 Minuten",
+        url: "https://www.20min.ch/story/mit-huawei-2026-kommt-das-erste-eidgenoessische-ki-diplom-103176340",
+        date: "2024-08",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-16",
+      },
       // Neu: 14.04.2026 (Recherche-Runde 5)
       {
         summary: "ICT-Berufsbildung Schweiz: 'AI Business Specialists machen KI-Potenzial nutzbar' – Der neue eidgenössische Fachausweis AI Business Specialist (erste Prüfung Herbst 2026) positioniert Brücken-Builder zwischen Technologie und Unternehmen. ICT-Berufsbildung Schweiz entwickelte das Programm mit Wirtschaft und Bildung: KI-Potenzial systematisch erschliessen, Strategien entwickeln und Mitarbeitende befähigen. Unterstreicht die wachsende staatliche Anerkennung von KI-Kompetenzen im Schweizer ICT-Bildungsökosystem – relevantes Marktumfeld für SIZ AG als etablierte ICT-Prüfungsorganisation.",
@@ -1182,6 +1199,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 16.04.2026
+      {
+        summary: "dealpropfirm.com: 'Apex March 2026: No Payout Denials' – Apex Trader Funding eliminiert ab März 2026 alle Payout-Ablehnungen. Mit dem neuen OTP-Modell (Apex 4.0) und automatisierten Deel-Auszahlungen (24–48h) entfallen frühere Ablehnungsgründe. Neue Kerndaten: 50%-Konsistenzregel, 6%-Profitziel, wöchentliche Payouts mit 6-Stufen-Ladder, keine Mindest-Handelstage. Grösste Verbesserung aus Trader-Sicht: volle Transparenz und Vorhersehbarkeit der Auszahlungen. Direkt relevant für Mind Rocket Tradings Apex-basierte Prop-Trading-Strategie.",
+        source: "dealpropfirm.com",
+        url: "https://dealpropfirm.com/articles/apex-trader-funding-march-2026-new-rules",
+        date: "2026-03",
+        category: "Prop Trading Apex",
+        addedAt: "2026-04-16",
+      },
+      {
+        summary: "traderssecondbrain.com: 'Apex Payout Rules 2026: 50% Rule, PA Ladder, Hidden Costs' – Detaillierte Analyse der neuen Apex-Auszahlungsregeln 2026: Die 50%-Konsistenzregel verhindert, dass ein einzelner Handelstag mehr als die Hälfte des Gesamtgewinns ausmacht. Das 6-stufige Payout-Ladder-System steigert Auszahlungslimits schrittweise bis zur vollständigen Aufhebung. Vor erster Auszahlung: mind. 8 Handelstage und 5 qualifizierende Tage (Nettogewinn $100–$300 je nach Kontogrösse). Versteckte Kosten: Aktivierungsgebühr $79–$99 beim Bestehen. Praxisguide für Apex-Futures-Trader.",
+        source: "traderssecondbrain.com",
+        url: "https://traderssecondbrain.com/guides/apex-payout-rules-explained",
+        date: "2026-03",
+        category: "Prop Trading Apex",
+        addedAt: "2026-04-16",
+      },
       // Neu: 14.04.2026 (Recherche-Runde 5)
       {
         summary: "proptradingvibes.com: 'Apex Trader Funding Rules Overview 2026: Everything After 4.0' – Detaillierter Überblick über das Apex-Regelwerk nach dem Major Update 4.0 (März 2026): Einmalige Gebühr statt Abo, 6%-Profitziel, keine Mindest-Handelstage, zwei Drawdown-Modelle (EOD und Intraday), 50%-Konsistenz-Regel und wöchentliches Auszahlungssystem. Update positioniert Apex als benutzerfreundlichste Prop-Firm für Futures-Trader – direktes Tooling-Umfeld für Mind Rocket Tradings Apex-basierte Prop-Trading-Strategie.",
@@ -5935,6 +5969,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 16.04.2026
+      {
+        summary: "swissmarketways.ch: 'Digitalisierung mit Weitsicht – Wie Schweizer KMU den Wandel schaffen' – Strukturierte Analyse der digitalen Transformation für Schweizer KMU: Situationsanalyse, klare Strategieformulierung und schrittweise Umsetzung als Erfolgsfaktoren. GEO (Generative Engine Optimization), KI-gestützte CRM-Systeme und WhatsApp Business (98% Öffnungsrate) als neue Schlüsselkanäle 2026. Unterstreicht die wachsende Bedeutung strukturierter Marketing- und Digitalplanung für Schweizer KMU – direktes Marktumfeld für das Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "swissmarketways.ch",
+        url: "https://swissmarketways.ch/digitalisierung-mit-weitsicht-wie-schweizer-kmu-den-wandel-schaffen/",
+        date: "2026",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-16",
+      },
+      {
+        summary: "digitalhochx.de: 'Digitale Trends 2026 für KMU: Dein Wegweiser in die Zukunft' – GEO (Generative Engine Optimization) löst klassisches SEO ab: Inhalte müssen direkt in KI-Suchantworten zitiert werden. KI-CRM-Systeme vereinen Marketing, Vertrieb und Service in intelligenten Plattformen. Microsoft Advertising erlebt Comeback durch KI-Integration und LinkedIn-Datenkopplung. Wachsende Komplexität der digitalen Marketinglandschaft treibt Nachfrage nach strukturierten Planungs-Frameworks – bestätigt den Marktbedarf für das Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "digitalhochx.de",
+        url: "https://www.digitalhochx.de/magazin/digitale-trends-2026-fur-kmu-dein-wegweiser-in-die-zukunft",
+        date: "2026",
+        category: "MarTech & Trends",
+        addedAt: "2026-04-16",
+      },
       // Neu: 14.04.2026 (Recherche-Runde 4)
       {
         summary: "zweiblog.com: 'Digital Marketing Trends 2026 für die Schweiz' – Schweizer Agentur-Blog analysiert die wichtigsten Digital-Marketing-Trends 2026 für den Schweizer Markt: KI-gestützte Personalisierung, datenbasiertes Marketing, Omnichannel-Strategien und strukturierte Marketingplanung als Erfolgsfaktoren für KMU. Wachsende Bedeutung strukturierter Marketing-Frameworks bestätigt steigende Nachfrage nach interaktiven Planungstools – direktes Marktumfeld für das Marketingkonzept-Tool auf learnfluencer.ch.",
