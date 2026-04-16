@@ -961,6 +961,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
+      // Neu: 16.04.2026
+      {
+        summary: "kmutipp.ch: 'Der Swiss Coaching Day geht in die nächste Runde!' – Swiss Coaching Day 2026 am 23. April 2026 in der Champions Lounge Stadion Wankdorf Bern. Organisiert von der Swiss Coaching Association (SCA) mit Partnerinstitutionen. Programm: Expertenpräsentationen, Workshops und Networking für Coaches, Berater, Trainer und HR-Spezialisten. Zeigt wachsendes Schweizer Ökosystem rund um professionelles Coaching und Persönlichkeitsentwicklung – direktes positives Marktumfeld für Mind Rocket GmbH.",
+        source: "kmutipp.ch",
+        url: "https://kmutipp.ch/der-swiss-coaching-day-geht-in-die-naechste-runde/",
+        date: "2026-04",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-04-16",
+      },
       // Neu: 14.04.2026 (Recherche-Runde 3)
       {
         summary: "V-P-T Verband für Anbieter professioneller Persönlichkeitstrainings: Schweizer Branchenverband für Persönlichkeitsentwicklung – Etablierte Verbandsstruktur mit anerkannten Qualitätsstandards für Persönlichkeitstrainer in der Schweiz. Professionalisierung des Coaching- und Trainingsmarkts stärkt das Qualitätsbewusstsein der Nachfrager – direktes Marktumfeld für Mind Rocket GmbH als Anbieter hochwertiger, strukturierter Persönlichkeitsentwicklungs-Programme.",
@@ -1200,6 +1209,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "mindrocket-trading": {
     news: [
       // Neu: 16.04.2026
+      {
+        summary: "propfirmplus.com: 'Algo Trading Futures Prop Firms 2026: What's Allowed and What's Not' – Umfassende Analyse der Regeln bei Futures-Prop-Firmen 2026: Fast alle grossen Prop-Firmen erlauben Semi-Automatisierung (z.B. NinjaTrader ATM-Strategien), aber nahezu keine erlauben Vollautomatisierung auf gefundeten Accounts. Klare Regulierungsgrenze: Human Oversight ist Pflicht für funded Accounts. Zeigt das aktuelle Regulierungsumfeld für regelbasierte, halbautomatisierte ES-Futures-Strategien – direktes relevantes Marktumfeld für Mind Rocket Tradings Ansatz.",
+        source: "propfirmplus.com",
+        url: "https://propfirmplus.com/algo-trading-on-futures-prop-firms-whats-actually-allowed-in-2026/",
+        date: "2026",
+        category: "Futures & Trading",
+        addedAt: "2026-04-16",
+      },
       {
         summary: "futuresproptrader.com: 'Apex Trader Funding Review 2026 – The 4.0 OTP Model Analyzed' – Detaillierte unabhängige Analyse des neuen Apex 4.0 OTP-Modells: Einmalige Zahlung ersetzt monatliche Abo-Gebühren, 6%-Profitziel, EOD- oder Intraday-Drawdown-Wahl, keine Mindest-Handelstage, bis zu 20 gleichzeitige Accounts, 100% Payout-Split. Bestätigt Apex als führende Futures-Prop-Firm 2026 – direktes Informationsumfeld für Mind Rocket Tradings Apex-basierte Prop-Trading-Strategie.",
         source: "futuresproptrader.com",
@@ -2774,6 +2791,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "hypnovital": {
     news: [
       // Neu: 16.04.2026
+      {
+        summary: "Forum BGM Aargau (bgm-ag.ch): 'Burnout und Erschöpfung – Fachbeiträge und Artikel' – Regionales BGM-Netzwerk bündelt aktuelle Fachbeiträge zu Burnout-Erkennung, Prävention und Behandlung am Arbeitsplatz: Früherkennung von Erschöpfungssymptomen, strukturelle vs. individuelle Präventionsmassnahmen und Fallbeispiele aus Schweizer Unternehmen. Wachsendes institutionelles BGM-Netzwerk in der Schweiz bestätigt die Nachfrage nach professionellen Burnout-Präventionsprogrammen – direktes Marktumfeld für hypnovital® als digitales BGM-Angebot.",
+        source: "Forum BGM Aargau",
+        url: "https://www.bgm-ag.ch/wissen/burnout/fachbeitraege-und-artikel.html",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-16",
+      },
       {
         summary: "light-home.ch: 'Burnout-Prävention am Arbeitsplatz' – Schweizer Gesundheitsportal zeigt strukturelle Massnahmen als wirksamer als individuelle Lösungen: Arbeitslastanpassung, Mitarbeiterbeteiligung und Zeitflexibilisierung reduzieren Erschöpfung nachhaltig. Ca. 18–25% der Schweizer Erwerbstätigen leiden unter Burnout-Symptomen, 4% in klinisch relevantem Ausmass. Wachsende Nachfrage nach präventiven BGM-Programmen – direktes Marktumfeld für hypnovital® als digitales Hypnose-gestütztes Burnout-Präventionsprogramm.",
         source: "light-home.ch",
