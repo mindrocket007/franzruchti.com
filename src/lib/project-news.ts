@@ -26,6 +26,15 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 17.04.2026
+      {
+        summary: "itmagazine.ch: 'So viel verdienen ICT-Fachkräfte in der Schweiz' (2026) – Aktuelle Gehaltsübersicht für Schweizer ICT-Fachkräfte: Starke Nachfrage bei gleichzeitigem Fachkräftemangel treibt Löhne in der Branche weiterhin nach oben. ICT-Berufsfelder verzeichnen überdurchschnittliches Lohnwachstum verglichen mit anderen Branchen. Hohe Entlöhnung und Jobsicherheit stärken die Attraktivität von ICT-Zertifizierungen – direktes positives Marktumfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation.",
+        source: "itmagazine.ch",
+        url: "https://www.itmagazine.ch/artikel/86916/So_viel_verdienen_ICT-Fachkraefte_in_der_Schweiz.html",
+        date: "2026",
+        category: "Arbeitsmarkt & IT",
+        addedAt: "2026-04-17",
+      },
       // Neu: 16.04.2026
       {
         summary: "swissICT x ZLI: Workshop 'ICT-Ausbildung Schweiz: Chancen, Lücken, Lösungen' (9. April 2026) – swissICT und der Zürcher Lehrbetriebsverband ICT (ZLI) diskutieren interaktiv die Schweizer ICT-Ausbildungslandschaft: Lern- und Lebenswelten von Gen Z und Gen Alpha, die strategische Bedeutung von Fachbeauftragten für Lernende, und die drohende Lücke von 40'000 IT-Spezialisten bis 2030. Keynote von Marc Zuppiger (Bühler Group, Digital Economy Award 2025). Direktes Kontext-Umfeld für SIZ AG als anerkannte Prüfungsorganisation im Schweizer ICT-Ausbildungsökosystem.",
@@ -977,6 +986,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
+      // Neu: 17.04.2026
+      {
+        summary: "ad-hoc-news.de: 'Walk & Talk: 2026 startet mit Outdoor-Coaching-Boom' – Outdoor-Coaching verzeichnet zu Jahresbeginn 2026 einen spürbaren Boom: Walk & Talk Coaching verbindet körperliche Bewegung mit professioneller Begleitung und trifft den Zeitgeist zunehmend holistic-orientierter Personalentwicklung. Unternehmen integrieren Outdoor-Coaching in ihre BGM-Konzepte; individuelle Klientinnen und Klienten schätzen die natürliche Atmosphäre für Reflexion und Veränderung. Zeigt wachsende Diversifizierung und Akzeptanz neuerer Coaching-Formate in der DACH-Region – positives Marktumfeld für Mind Rocket GmbH als innovativer Coaching- und Entwicklungsanbieter.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/walk-and-talk-2026-startet-mit-outdoor-coaching-boom/68456644",
+        date: "2026-01",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-04-17",
+      },
       // Neu: 16.04.2026
       {
         summary: "kmutipp.ch: 'Der Swiss Coaching Day geht in die nächste Runde!' – Swiss Coaching Day 2026 am 23. April 2026 in der Champions Lounge Stadion Wankdorf Bern. Organisiert von der Swiss Coaching Association (SCA) mit Partnerinstitutionen. Programm: Expertenpräsentationen, Workshops und Networking für Coaches, Berater, Trainer und HR-Spezialisten. Zeigt wachsendes Schweizer Ökosystem rund um professionelles Coaching und Persönlichkeitsentwicklung – direktes positives Marktumfeld für Mind Rocket GmbH.",
@@ -1224,6 +1242,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 17.04.2026
+      {
+        summary: "CNBC: 'Stocks stage a big comeback Monday with the S&P 500 wiping out Iran war losses' (12. April 2026) – Der S&P 500 stieg am 12. April 2026 um über 3%, womit der Index die Iran-Kriegsverluste vollständig wettmachte. Nasdaq-100 ebenfalls stark erholt. Hintergrund: Fortschritte bei US-Iran-Waffenstillstandsgesprächen, überraschend starke Q1-Earnings (JPMorgan, Wells Fargo) und nachlassende Zoll-Risikoprämie. Die dramatischen Preisschwankungen des ES-Futures im April 2026 (ATH 7043 → Kriegstief ~6300 → Erholung >6800) zeigen exemplarisch, wie politisch getriebene Volatilität präzise regelbasierte Handelssysteme fordert – und belohnt.",
+        source: "CNBC",
+        url: "https://www.cnbc.com/2026/04/12/stock-market-today-live-updates.html",
+        date: "2026-04-12",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-17",
+      },
       // Neu: 16.04.2026
       {
         summary: "NinjaTrader: 'Christopher Tripp als General Manager International ernannt' (17. Februar 2026) – NinjaTrader Group ernennt Christopher Tripp (ex-IG Group UK Commercial Director, ex-tastytrade International) als GM International. Tripp leitet die globale Expansionsstrategie von London aus und treibt den Markteinstieg in den Niederlanden, Deutschland sowie weiteren EU-Märkten voran. Direktes Signal für wachsenden institutionellen Rückhalt von NinjaTrader als Primärplattform für ES-Futures-Strategien wie bei Mind Rocket Trading.",
@@ -2383,6 +2410,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 17.04.2026
+      {
+        summary: "pharmiweb.com: 'Digital Behavioral/Mental Health Market 2026: Report, Growth, Opportunities' (Januar 2026) – Der globale Markt für digitale mentale Gesundheit erreicht 2026 eine neue Wachstumsstufe: Steigende Smartphone-Nutzung, gesellschaftliche Entstigmatisierung psychischer Erkrankungen und wachsende Nachfrage nach niedrigschwelligen Selbsthilfe-Angeboten treiben die Marktexpansion. Global wächst der Markt 2025–2030 mit CAGR 16,4%, Deutschland allein wird bis 2035 USD 19,25 Mrd. erreichen. Direktes strukturelles Wachstumsumfeld für mindtools.ch als digitaler Anbieter von Mental-Health-Tools und Persönlichkeitsentwicklungs-PDFs.",
+        source: "pharmiweb.com",
+        url: "https://www.pharmiweb.com/press-release/2026-01-28/digital-behavioral-mental-health-market-2026-report-growth-opportunities-sales-trends-service-applications-and-forecast-to-2030",
+        date: "2026-01-28",
+        category: "Mental Health",
+        addedAt: "2026-04-17",
+      },
       // Neu: 16.04.2026
       {
         summary: "Statista: 'Digital Mental Health Schweiz 2026' – Der Schweizer Markt für digitale Gesundheitsanwendungen im Bereich mentale Gesundheit zeigt laut Statista-Prognosen für 2026 kontinuierliches Wachstum. Steigende gesellschaftliche Akzeptanz von Selbsthilfe-Apps und digitalen Mental-Health-Tools, getrieben durch wachsenden Arbeitsdruck und erhöhtes Bewusstsein für psychisches Wohlbefinden. Der digitale Self-Help-Markt in der Schweiz gewinnt weiter an Volumen – positives Marktumfeld für mindtools.ch als Anbieter mentaler Werkzeuge und PDF-Buchprodukte.",
@@ -2862,6 +2898,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
         url: "https://hypnosistrainingacademy.com/5-hypnotherapy-niches-growing-fastest-2026/",
         date: "2026",
         category: "Hypnose & Coaching",
+        addedAt: "2026-04-17",
+      },
+      {
+        summary: "kmu-magazin.ch: Nationale BGM-Tagung 2026 'Gesunde Teams – Wie Zusammenarbeit gelingt' – Zentrale Schweizer Fachveranstaltung für betriebliches Gesundheitsmanagement am 15. September 2026, Kursaal Bern. Organisiert von Gesundheitsförderung Schweiz, Suva und SECO für rund 1'000 Fachleute. Programm: Keynotes, interaktive Workshops und Subplena zu hybrider Arbeit, Pensionierungswellen und KI-Integration im BGM. Zentrales BGM-Branchenevent unterstreicht strategische Bedeutung von BGM in Schweizer Unternehmen – direktes positives Marktumfeld für hypnovital® als Schweizer BGM-Lösung.",
+        source: "kmu-magazin.ch",
+        url: "https://www.kmu-magazin.ch/veranstaltungen/detail/nationale-bgm-tagung-2026-gesunde-teams-wie-zusammenarbeit-gelingt",
+        date: "2026-09-15",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-17",
+      },
+      {
+        summary: "ad-hoc-news.de: 'Mentale Engpässe werden 2026 zur zentralen Produktivitätsbremse' – Kognitive Überlastung entwickelt sich 2026 zur grössten Herausforderung für Belegschaften: Unternehmen, die weiterhin auf reaktive Burnout-Massnahmen setzen, zahlen mit Innovationsverlusten. Wissensarbeiter berichten von zunehmender Entscheidungserschöpfung und mentaler Fragmentierung durch digitale Hyper-Konnektivität. Klarer struktureller Trend: Präventive, digitale BGM-Lösungen sind gefragt – Marktvalidierungssignal für hypnovital® als ortsunabhängiges Audio-Hypnose-Präventionsprogramm.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/mentale-engpaesse-werden-2026-zur-zentralen-produktivitaetsbremse/68589099",
+        date: "2026",
+        category: "BGM & Gesundheit",
         addedAt: "2026-04-17",
       },
       // Neu: 16.04.2026 (Recherche-Runde 3)
@@ -3811,6 +3863,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 17.04.2026
+      {
+        summary: "Hostinger: 'Die profitabelsten Ideen für Micro-SaaS-Unternehmen 2026' – Umfassende Analyse profitabler Micro-SaaS-Nischen 2026: Goal-Tracking-Tools (persönliche Ziele mit Fortschrittsdiagrammen und täglichen Erinnerungen) und Habit-Tracker werden als eigenständige, profitable Nische hervorgehoben. KI-Funktionen für personalisierte Nudges und KI-generierte Fortschrittsberichte als Differenzierungsmerkmal. Bestätigt: Spezialisierte Produktivitäts- und Zielplanungs-Tools haben eine klare Käufergruppe – direktes Marktvalidierungssignal für den 12wy-planner als spezialisiertes Micro-SaaS für die 12-Week-Year-Methode.",
+        source: "Hostinger",
+        url: "https://www.hostinger.com/de/tutorials/micro-saas-ideen",
+        date: "2026",
+        category: "SaaS & Tools",
+        addedAt: "2026-04-17",
+      },
       // Neu: 16.04.2026
       {
         summary: "toolify.ai: 'Die 12-Wochen-Jahr-Methode: Mehr Produktivität und Fokus' – Methodenartikel erläutert die Kernprinzipien der 12-Week-Year-Methode: Aufteilung des Jahres in vier 12-Wochen-Zyklen mit intensivierten Planungs-, Umsetzungs- und Überprüfungsphasen. Höhere Handlungsfrequenz und psychologische Dringlichkeit als entscheidende Wirkprinzipien. Wachsende Online-Präsenz und gesellschaftliche Verbreitung der 12-Week-Year-Methode bestätigen das Marktpotenzial des 12wy-planners als spezialisiertes SaaS-Tool für diese Methode.",
@@ -4383,6 +4444,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 17.04.2026
+      {
+        summary: "DocMedicus Gesundheitslexikon: 'Vorzeitiger Samenerguss (Ejaculatio praecox) – Prävention' – Medizinisches Lexikon dokumentiert präventive und therapeutische Massnahmen bei EP: Beckenbodentraining erhöhte die Kontrollzeit im Durchschnitt von 0,5 auf 2 Minuten (Evidenzbasis); Entspannungstechniken und Verhaltensänderungen als ergänzende Optionen. Gesellschaftliches Bewusstsein für nicht-medikamentöse, selbstgesteuerte Ansätze wächst. Wachsende Online-Informationsverfügbarkeit zu EP-Prävention und Selbsthilfe validiert den Markt für Angebote wie orgasmus-hinauszoegern.de als niedrigschwelliges Audio-Programm.",
+        source: "DocMedicus Gesundheitslexikon",
+        url: "https://www.gesundheits-lexikon.com/Sexualitaet-Partnerschaft/Vorzeitiger-Samenerguss-Ejaculatio-praecox/Praevention",
+        date: "2026",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-17",
+      },
       // Neu: 16.04.2026
       {
         summary: "psychotherapie-salzburg.at: 'Vorzeitiger Samenerguss (Ejaculatio praecox)' – Österreichische Psychotherapiepraxis erklärt psychotherapeutische und hypnotherapeutische Behandlungsansätze bei EP: Psychotherapie adressiert Leistungsangst, Beziehungsdynamiken und unbewusste Konditionierungen; Hypnose kann eingefahrene Verhaltensmuster auf Unterbewusstseinsebene lösen. Wachsende Professionalisierung des psychotherapeutischen Angebots für EP im DACH-Raum stärkt die gesellschaftliche Akzeptanz für nicht-medikamentöse, mental-fokussierte Interventionen – direktes Validierungsumfeld für orgasmus-hinauszoegern.de als Hypnose-Audioprogramm.",
@@ -4896,6 +4966,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 17.04.2026
+      {
+        summary: "ottonova.de: 'Lampenfieber: Was du gegen Redeangst tun kannst' – Gesundheitsportal erklärt: ca. 40% aller Menschen leiden an Redeangst. Unterschied Lampenfieber vs. Redeangst: Lampenfieber ist natürliche Körperreaktion (mobilisiert Energie), Redeangst ist spezifische Phobie (blockiert Leistung). Behandlungsmöglichkeiten: kognitive Umstrukturierung, Expositionstherapie, Entspannungstechniken, Hypnotherapie. Weit verbreitete gesellschaftliche Relevanz des Themas bestätigt den Marktbedarf für niedrigschwellige Audio-Selbsthilfeprogramme wie lampenfieber-besiegen.de.",
+        source: "ottonova.de",
+        url: "https://www.ottonova.de/gesund-leben/mentales-training/lampenfieber-behandeln",
+        date: "2026",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-04-17",
+      },
       // Neu: 16.04.2026 (Recherche-Runde 2)
       {
         summary: "innermotion.de: 'Therapie von Redeangst und Lampenfieber 2026' – Praxisportal analysiert aktuelle Therapieoptionen für Redeangst und Lampenfieber 2026: Verhaltenstherapie, Hypnotherapie, NLP und Exposition als bewährte Ansätze; 2–5 Sitzungen oft ausreichend für signifikante Verbesserung. Psychologisches Verständnis: Redeangst ist primär Angst vor negativer Bewertung durch das Publikum, nicht vor dem Sprechen selbst. Wachsendes professionelles Behandlungsangebot im DACH-Raum bestätigt die gesellschaftliche Relevanz – Marktvalidierung für lampenfieber-besiegen.de als niedrigschwelliges Audio-Selbsthilfeangebot.",
@@ -5402,6 +5481,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 17.04.2026
+      {
+        summary: "influenceflow.io: 'Personal Brand Building on LinkedIn: 2026 Complete Guide' – LinkedIn ist 2026 die wichtigste Plattform für B2B Thought Leadership: Laut Sprout Social (2025) vertrauen 72% der B2B-Entscheider Fachleuten mit aktiver Thought-Leadership-Präsenz mehr als reiner Unternehmenskommunikation. Algorithmus bevorzugt Relevanz, Expertennachweise und Verweildauer. Persönliche Profile erzielen 2,75x mehr Impressionen als Unternehmensseiten; B2B-Entscheider sind 75% mehr beim Founder-Video-Content engagiert. Wachsende strategische Bedeutung von persönlichem Thought Leadership validiert learnfluencer.ch als Plattform für Ruchtis Expertise in Lernkompetenz und KI.",
+        source: "influenceflow.io",
+        url: "https://influenceflow.io/resources/personal-brand-building-on-linkedin-the-complete-2026-guide/",
+        date: "2026",
+        category: "Content & Thought Leadership",
+        addedAt: "2026-04-17",
+      },
       // Neu: 16.04.2026 (Recherche-Runde 2)
       {
         summary: "Netzwoche / IT-Markt: 'FFHS lanciert KI-Weiterbildung für Führungskräfte' (8. April 2026) – Die Fernfachhochschule Schweiz (FFHS) lanciert den neuen CAS 'Future Leadership und KI' (Start August 2026, Herbstsemester, CHF 5'700). Das Programm richtet sich an erfahrene Führungskräfte, die ihren Führungsstil ans KI-Zeitalter anpassen wollen: fundiertes Verständnis von KI-Technologien, kritische Bewertung ihres Einsatzes, und praktische Führungskompetenzen in KI-transformierten Organisationen. Blended Learning. Breite institutionelle Anerkennung von KI-Führungskompetenzen – direktes Marktvalidierungsumfeld für learnfluencer.ch als Thought-Leadership-Plattform für KI-Lernkompetenz.",
@@ -6285,6 +6373,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 17.04.2026
+      {
+        summary: "researchly.at: 'PESTEL-Analyse erstellen: Anleitung mit Vorlage (2026)' – KI-gestütztes PESTEL-Analyse-Tool erstellt vollständige Umweltanalyse in 60 Sekunden: politische, wirtschaftliche, soziale, technologische, ökologische und rechtliche Faktoren strukturiert und faktenbasiert automatisiert. Wachsende Nachfrage nach KI-unterstützten Strategieanalyse-Tools zeigt: Unternehmer und Marketing-Fachleute suchen effiziente digitale Lösungen für klassische Frameworks. Direktes Marktvalidierungsumfeld für das interaktive Marketingkonzept-Tool auf learnfluencer.ch mit PESTEL, SWOT, 5 Forces und weiteren integrierten Analysemodulen.",
+        source: "researchly.at",
+        url: "https://www.researchly.at/post/pestel-analyse-erstellen-anleitung-vorlage",
+        date: "2026",
+        category: "Strategie & Analyse",
+        addedAt: "2026-04-17",
+      },
       // Neu: 16.04.2026 (Recherche-Runde 2)
       {
         summary: "Aivie: 'Marketing-Automation mit kmu.digital 2026: Jetzt Förderung nutzen' – Schweizer Marketing-Automation-Anbieter Aivie erklärt, wie KMU 2026 staatliche Förderung via kmu.digital für Marketing-Automation-Projekte nutzen können: Bis zu 80% Förderung via zertifizierte Beratung, konkrete Projektplanung für Lead-Magnets, Einführungsangebote und automatisierte Customer Journeys. Wachsende staatliche Unterstützung für KMU-Digitalisierung und Marketing-Automation treibt die Nachfrage nach strukturierten Marketing-Frameworks wie dem Marketingkonzept-Tool auf learnfluencer.ch.",
@@ -6863,6 +6960,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 17.04.2026
+      {
+        summary: "linker.ch: 'Statistik Todesfälle Schweiz 2010–2026 im Jahresvergleich' – Detaillierte Statistik zeigt: In der Schweiz sterben jährlich rund 72'000 Menschen (ca. 7,9 Todesfälle pro 1'000 Einwohner, 2024). Über ein Viertel aller Todesfälle durch Herzkreislauf-Erkrankungen, gefolgt von Krebs. Demographischer Wandel (alternde Bevölkerung) lässt Todesfallzahlen langfristig steigen. Jeder Todesfall löst einen Bestattungsbedarf aus (CHF 4'000–10'000 Kosten) – strukturelles Marktpotenzial für bestattungsplaner.ch als digitale Lead-Plattform für Schweizer Bestattungsunternehmen.",
+        source: "linker.ch",
+        url: "https://www.linker.ch/tod/todstat_ch_k0.html",
+        date: "2026",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-17",
+      },
       // Neu: 16.04.2026 (Recherche-Runde 2)
       {
         summary: "ekz-crosstour.ch: 'Der Markt für Bestattungs- und Friedhofsdienstleistungen wird bis 2847 voraussichtlich rasant wachsen' (8. April 2026) – Marktanalyse zeigt: Bestattungsbranche wächst weltweit durch demografischen Wandel, Kremation als dominante Bestattungsform (Schweiz: bereits ca. 90% aller Verstorbenen), alternative Bestattungsformen und wachsende Online-Nachfrage. Digitale Plattformen für Bestattungsplanung gewinnen an Relevanz. Bestätigt das strukturelle Marktwachstum und die Nachfrage nach digitalen Bestattungsplanungslösungen wie bestattungsplaner.ch.",
