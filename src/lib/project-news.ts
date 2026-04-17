@@ -1268,6 +1268,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 17.04.2026
       {
+        summary: "Benzinga: 'Webull, Robinhood Stocks Pop As SEC Ends PDT Rule' (15. April 2026) – Robinhood-Aktien stiegen um 7,61% und Webull um über 9%, nachdem die SEC die Pattern-Day-Trader-Regel eliminierte. Benzinga analysiert die Marktauswirkungen für Retail-Broker: Der durchschnittliche Webull-Kunde hat nur ca. $5'000 auf dem Konto – weit unter der bisherigen $25'000-Grenze. Die Regelabschaffung eröffnet ES-Futures-Tradern ohne grosses Startkapital neue Zugangsmöglichkeiten – direktes positives Regulierungsumfeld für algorithmusbasierte Handelssysteme wie bei Mind Rocket Trading.",
+        source: "Benzinga",
+        url: "https://www.benzinga.com/trading-ideas/movers/26/04/51833607/webull-robinhood-stocks-pop-sec-ends-pdt-rule-prediction-market-hopes-soar",
+        date: "2026-04-15",
+        category: "Regulierung",
+        addedAt: "2026-04-17",
+      },
+      {
+        summary: "Intellectia AI: 'SEC Eliminates Pattern Day Trader Rule: $25,000 Requirement Removed 2026' (16. April 2026) – Detaillierte Analyse der SEC-Entscheidung: Das neue Intraday-Margin-Level-System (IML) ersetzt die bisherige Trade-Counting-Methodik durch ein risikoadjustiertes Echtzeit-Modell. Brokerages wie Robinhood und Webull planen PDT-freie Konten bis Mai 2026; vollständiger Rollout aller Plattformen bis Anfang 2028. Dramatische Senkung der Eintrittsbarriere für aktives Day-Trading – direkter Wachstumstreiber für den Retail-Futures-Markt, in dem Mind Rocket Trading positioniert ist.",
+        source: "Intellectia AI",
+        url: "https://intellectia.ai/blog/sec-eliminates-pattern-day-trader-rule-2026",
+        date: "2026-04-16",
+        category: "Regulierung",
+        addedAt: "2026-04-17",
+      },
+      {
+        summary: "Coin Alert News: 'SEC Eliminates Pattern Day Trader Rule' (15. April 2026) – Die US-amerikanische Securities and Exchange Commission (SEC) hat am 14. April 2026 die jahrzehntealte Pattern-Day-Trader-Regel (PDT) abgeschafft und damit die $25'000-Mindestkapitalanforderung für aktives Day-Trading eliminiert. Statt fixer Kontogrenzen gilt neu ein echtzeitbasiertes Margin-Modell auf Basis des tatsächlichen Intraday-Risikos. Analysten erwarten einen Anstieg des täglichen Handelsvolumens um bis zu 40% – massiver struktureller Rückenwind für den Futures-Retail-Markt und Plattformen wie Mind Rocket Trading.",
+        source: "Coin Alert News",
+        url: "https://coinalertnews.com/news/2026/04/15/sec-eliminates-pattern-day-trader-rule",
+        date: "2026-04-15",
+        category: "Regulierung",
+        addedAt: "2026-04-17",
+      },
+      {
         summary: "Yahoo Finance: 'US Stock Market Today – S&P 500 Futures Edge Higher As Bond Yields Ease' (17. April 2026) – S&P 500 und Nasdaq setzen ihre Rekordserie fort: Bond-Renditen sinken, Technologie- und Wachstumswerte profitieren überproportional. Wochenbilanz April 2026: ES-Futures +14% seit Iran-Kriegstief. Sinkende Anleiherenditen verstärken klassische 'Risk-On'-Rotationen in Aktien-Futures – direktes technisches Handelssignal für ES-Futures-Trendfolge-Systeme wie bei Mind Rocket Trading.",
         source: "Yahoo Finance",
         url: "https://finance.yahoo.com/markets/stocks/articles/us-stock-market-today-p-100514961.html",
@@ -2932,6 +2956,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "hypnovital": {
     news: [
       // Neu: 17.04.2026
+      {
+        summary: "Hypnosekongress Zürich 2026: Internationaler Hypnosekongress am 20.–21. Juni 2026 in der AXA Arena Winterthur – Das Programm umfasst Keynotes zu mentaler Gesundheit bei Kindern, Hirnforschung, Schlaf & Performance, Trauma und Hypnose sowie Live-Demonstrationen, Workshops und eine Networking-Sommernacht. Weekend-Pass: CHF/EUR 375. Die wachsende Professionalisierung und institutionelle Verankerung der Hypnose-Community in der Deutschschweiz bestätigt Hypnose als ernstzunehmende Methode im BGM – starkes Branchenumfeld für hypnovital® als Audio-Hypnose-Lösung.",
+        source: "Hypnosekongress.net",
+        url: "https://hypnosekongress.net/",
+        date: "2026-06",
+        category: "Hypnose & Coaching",
+        addedAt: "2026-04-17",
+      },
       {
         summary: "Schweizer Illustrierte: 'Von Burnout bis Depression: Wann Hypnotherapie helfen kann' – Schweizer Mainstream-Medium beleuchtet die wachsende Rolle der Hypnotherapie bei psychischen Erkrankungen: Über 10'000 ausgebildete Ärzte und Psychologen bieten Hypnotherapie in der Schweiz an. Mehr als ein Viertel der Schweizer Arbeitnehmer leidet unter problematischem Stress (Job Stress Index). Seit 2012 stiegen Arbeitsausfälle in der Schweiz um rund 50%. Hypnotherapie gilt als effektive Methode bei Burnout, Stress und Depressionen – kombiniert mit systemischer Therapie oder Verhaltenstherapie. Breite gesellschaftliche Rezeption von Hypnotherapie in führenden Schweizer Medien validiert hypnovital® als Audio-Hypnose-BGM-Präventionsprogramm für Burnout und mentale Gesundheit am Arbeitsplatz.",
         source: "Schweizer Illustrierte",
