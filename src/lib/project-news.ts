@@ -2847,6 +2847,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 17.04.2026
+      {
+        summary: "businessresearchinsights.com: Globaler Hypnotherapie-Markt wächst von USD 20,35 Mrd. (2025) auf USD 26,46 Mrd. (2026), CAGR 30,04% bis 2035 – Wachsende psychische Gesundheitsprobleme, Nachfrage nach medikamentenfreien Alternativen und KI-gestützte Personalisierung treiben den globalen Markt. Online-Segment wächst am schnellsten – digitale Hypnose-Angebote profitieren direkt. Starkes strukturelles Marktwachstum validiert hypnovital® als skalierbare digitale BGM-Lösung für Burnout-Prävention und mentale Gesundheit am Arbeitsplatz.",
+        source: "businessresearchinsights.com",
+        url: "https://www.businessresearchinsights.com/market-reports/hypnotherapy-market-117623",
+        date: "2026",
+        category: "Hypnose & Coaching",
+        addedAt: "2026-04-17",
+      },
+      {
+        summary: "Hypnosis Training Academy: 'Die 5 am schnellsten wachsenden Hypnotherapie-Nischen 2026' – Analyse zeigt: Globaler Markt wächst von ca. USD 12 Mrd. (2023) auf über USD 80 Mrd. (2030). Wachstum konzentriert sich auf Nischen mit starker Evidenzbasis: Performance Anxiety (Hypnose reduziert Wettkampfangst nachweislich, Frontiers in Psychology), IBS/Reizdarm (gut-directed hypnotherapy gleichwertig mit Low-FODMAP-Diät, Monash University 2016), Schlaf, Burnout und Schmerz. Spezialisierung in klar abgrenzbaren Nischen ist Erfolgsstrategie – direktes Marktvalidierungsumfeld für hypnovital® mit Schwerpunkt BGM und Burnout-Prävention.",
+        source: "Hypnosis Training Academy",
+        url: "https://hypnosistrainingacademy.com/5-hypnotherapy-niches-growing-fastest-2026/",
+        date: "2026",
+        category: "Hypnose & Coaching",
+        addedAt: "2026-04-17",
+      },
       // Neu: 16.04.2026 (Recherche-Runde 3)
       {
         summary: "ad-hoc-news.de: 'Betriebliches Gesundheitsmanagement wird zum strategischen Imperativ' – BGM entwickelt sich 2026 von einer freiwilligen Zusatzleistung zur strategischen Kernaufgabe von Unternehmen. Neue gesetzliche Anforderungen, akuter Fachkräftemangel und steigender Druck auf Arbeitgebermarken treiben die Professionalisierung. Psychische Gesundheit rückt ins Zentrum: Gen Z stellt offenere Erwartungen an Arbeitgeber bezüglich mentaler Gesundheitsunterstützung. ROI von 1:2,7 dokumentiert (jeder in BGM investierte Euro bringt 2,70 zurück). Wachsender gesellschaftlicher und ökonomischer Druck auf BGM-Implementierung stärkt das Marktpotenzial von hypnovital® als digitales BGM-Präventionsprogramm.",
