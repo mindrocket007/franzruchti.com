@@ -1268,6 +1268,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 17.04.2026
       {
+        summary: "Yahoo Finance: 'US Stock Market Today – S&P 500 Futures Edge Higher As Bond Yields Ease' (17. April 2026) – S&P 500 und Nasdaq setzen ihre Rekordserie fort: Bond-Renditen sinken, Technologie- und Wachstumswerte profitieren überproportional. Wochenbilanz April 2026: ES-Futures +14% seit Iran-Kriegstief. Sinkende Anleiherenditen verstärken klassische 'Risk-On'-Rotationen in Aktien-Futures – direktes technisches Handelssignal für ES-Futures-Trendfolge-Systeme wie bei Mind Rocket Trading.",
+        source: "Yahoo Finance",
+        url: "https://finance.yahoo.com/markets/stocks/articles/us-stock-market-today-p-100514961.html",
+        date: "2026-04-17",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-17",
+      },
+      {
+        summary: "Bloomberg: 'S&P 500, Nasdaq 100 Hit Records as Ceasefire Hopes Fuel Rally' (15. April 2026) – Bloomberg analysiert die technischen und fundamentalen Treiber des historischen S&P-500-Durchbruchs über 7'000: Ceasefire-Rally verstärkt durch starke Q1-Earnings-Season. ES-Futures erreichen nach dem Iran-Kriegstiefpunkt (~6'300) wieder ATH-Niveau (~7'043) – eine Erholungsbewegung von fast +12% innerhalb weniger Tage. Extreme Richtungsimpulse und Volatilität in ES-Futures zeigen die Stärke regelbasierter, adaptiver Handelssysteme – zentrales Marktumfeld für Mind Rocket Tradings ES-Futures-Strategien.",
+        source: "Bloomberg",
+        url: "https://www.bloomberg.com/news/articles/2026-04-15/s-p-500-on-pace-for-record-close-as-ceasefire-rally-continues",
+        date: "2026-04-15",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-17",
+      },
+      {
+        summary: "CNBC: 'S&P 500 posts new record close, Nasdaq notches longest win streak since 2009' (15. April 2026) – S&P 500 schliesst erstmals in der Geschichte über 7'000 Punkte (7'041.28). Nasdaq verzeichnet 12. aufeinanderfolgende positive Handelssession – längste Gewinnserie seit 2009. Treiber: Waffenstillstandsfortschritte USA-Iran, starke Q1-Earnings (JPMorgan, Goldman Sachs) und sinkende Jobless Claims (207'000 vs. Konsensus 215'000). ATH-Durchbrüche über psychologische Schlüsselmarken generieren klassische Trendfolgesignale und CTA-Kaufkaskaden – direktes ES-Futures-Marktumfeld für Mind Rocket Tradings regelbasierte Strategien.",
+        source: "CNBC",
+        url: "https://www.cnbc.com/2026/04/15/stock-market-today-live-updates.html",
+        date: "2026-04-15",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-17",
+      },
+      {
         summary: "CNBC: 'Stocks stage a big comeback Monday with the S&P 500 wiping out Iran war losses' (12. April 2026) – Der S&P 500 stieg am 12. April 2026 um über 3%, womit der Index die Iran-Kriegsverluste vollständig wettmachte. Nasdaq-100 ebenfalls stark erholt. Hintergrund: Fortschritte bei US-Iran-Waffenstillstandsgesprächen, überraschend starke Q1-Earnings (JPMorgan, Wells Fargo) und nachlassende Zoll-Risikoprämie. Die dramatischen Preisschwankungen des ES-Futures im April 2026 (ATH 7043 → Kriegstief ~6300 → Erholung >6800) zeigen exemplarisch, wie politisch getriebene Volatilität präzise regelbasierte Handelssysteme fordert – und belohnt.",
         source: "CNBC",
         url: "https://www.cnbc.com/2026/04/12/stock-market-today-live-updates.html",
@@ -5523,6 +5547,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 17.04.2026
       {
+        summary: "Swiss Learning Hub: 'We won the eLearning AWARD 2026!' – Schweizer E-Learning-Anbieter Swiss Learning Hub gewinnt den eLearning AWARD 2026 in der Kategorie 'eLearning Innovation – Focus on Knowledge Standardisation' für das SwissPOD Training, ein digitales Lernprogramm zur Standardisierung medizinischer Datenerhebung für Organ- und Gewebespenden in Schweizer Spitälern (in Zusammenarbeit mit Swisstransplant). Bilinguale Modulstruktur (DE/FR) mit interaktiven Flip-Cards, Avatar-Videos und Screen Recordings. Schweizer E-Learning-Innovation auf internationalem Award-Niveau bestätigt: Die Schweiz setzt Massstäbe in Digital Learning – direktes positives Wachstumsumfeld für learnfluencer.ch als Thought-Leadership-Plattform für Lernen und KI in der Schweiz.",
+        source: "Swiss Learning Hub",
+        url: "https://www.swisslearninghub.com/en/news/we-won-the-elearning-award-2026/",
+        date: "2026",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-17",
+      },
+      {
         summary: "influenceflow.io: 'Personal Brand Building on LinkedIn: 2026 Complete Guide' – LinkedIn ist 2026 die wichtigste Plattform für B2B Thought Leadership: Laut Sprout Social (2025) vertrauen 72% der B2B-Entscheider Fachleuten mit aktiver Thought-Leadership-Präsenz mehr als reiner Unternehmenskommunikation. Algorithmus bevorzugt Relevanz, Expertennachweise und Verweildauer. Persönliche Profile erzielen 2,75x mehr Impressionen als Unternehmensseiten; B2B-Entscheider sind 75% mehr beim Founder-Video-Content engagiert. Wachsende strategische Bedeutung von persönlichem Thought Leadership validiert learnfluencer.ch als Plattform für Ruchtis Expertise in Lernkompetenz und KI.",
         source: "influenceflow.io",
         url: "https://influenceflow.io/resources/personal-brand-building-on-linkedin-the-complete-2026-guide/",
@@ -7001,6 +7033,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "bestattungsplaner": {
     news: [
       // Neu: 17.04.2026
+      {
+        summary: "ABSCHIED'26 – Erste Schweizer Fachmesse für Vorsorge, Palliative und Trauer (29.–30. Oktober 2026, Messe Luzern): Neue nationale Branchenmesse vereint erstmals Fachleute aus Vorsorge, Pflege, Palliativmedizin, Recht, Seelsorge, Bestattung und Trauerkultur unter einem Dach. Exponenten aus Bestattungsdiensten, Friedhofsgartenbau und Erinnerungskultur präsent. Grosses Interesse bereits ein Jahr vor Durchführung bestätigt: Die Schweizer Bestattungsbranche professionalisiert und vernetzt sich aktiv – direktes Branchenwachstumssignal für bestattungsplaner.ch als digitale Lead-Vermittlungsplattform für Schweizer Bestattungsunternehmen.",
+        source: "ABSCHIED'26 / abschied.swiss",
+        url: "https://www.abschied.swiss/",
+        date: "2026-10",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-17",
+      },
       {
         summary: "linker.ch: 'Statistik Todesfälle Schweiz 2010–2026 im Jahresvergleich' – Detaillierte Statistik zeigt: In der Schweiz sterben jährlich rund 72'000 Menschen (ca. 7,9 Todesfälle pro 1'000 Einwohner, 2024). Über ein Viertel aller Todesfälle durch Herzkreislauf-Erkrankungen, gefolgt von Krebs. Demographischer Wandel (alternde Bevölkerung) lässt Todesfallzahlen langfristig steigen. Jeder Todesfall löst einen Bestattungsbedarf aus (CHF 4'000–10'000 Kosten) – strukturelles Marktpotenzial für bestattungsplaner.ch als digitale Lead-Plattform für Schweizer Bestattungsunternehmen.",
         source: "linker.ch",
