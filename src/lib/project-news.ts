@@ -2981,6 +2981,46 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 17.04.2026
       {
+        summary: "ad-hoc-news.de: 'Selbstmanagement 2026: Vom Burnout-Risiko zur strategischen Kompetenz' – Die Fähigkeit zur Selbstfürsorge wird 2026 zur zentralen Kompetenz für nachhaltige Produktivität. Burnout betrifft bis zu zwei Drittel aller Mitarbeitenden; klassische Wellness-Angebote greifen zu kurz. Gefordert sind tiefgreifende Verhaltens- und Denkänderungen auf Bewusstseinsebene – direktes Marktargument für hypnovital® als Hypnose-Audio-Programm, das genau auf dieser Ebene ansetzt.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/selbstmanagement-2026-vom-burnout-risiko-zur-strategischen-kompetenz/68545644",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-17",
+      },
+      {
+        summary: "ad-hoc-news.de: 'Strategische Selbstführung: Die Antwort auf die Burnout-Krise' – Strategische Selbstführung entwickelt sich 2026 vom „Nice-to-have" zur Grundanforderung in Unternehmen: Präsenzkultur wird durch ergebnisorientierte, menschenzentrierte Arbeitsmodelle abgelöst. Resilienz als strukturelle Unternehmenspflicht schafft wachsende Nachfrage nach wirksamen, skalierbaren Präventionsmethoden – Positionierungschance für hypnovital® als tiefenwirksames Audio-Coaching-Instrument.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/strategische-selbstfuehrung-die-antwort-auf-die-burnout-krise/68559804",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-17",
+      },
+      {
+        summary: "ad-hoc-news.de: 'Burnout wird 2026 zum Massenphänomen' – Zwei Drittel der Beschäftigten zeigen 2026 Burnout-Symptome. Klassische Wellness-Programme (Obstkorb, Yoga-Kurs) adressieren strukturelle Belastungsursachen nicht – gefordert werden tiefgreifende systemische Präventionsansätze auf Verhaltens- und Kognitionsebene. Belegt die wachsende Marktlücke für wirksame digitale Burnout-Präventionsmethoden wie hypnovital®.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/burnout-wird-2026-zum-massenphaenomen/69054674",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-17",
+      },
+      {
+        summary: "ad-hoc-news.de: 'Burnout erreicht 2026 neuen Höhepunkt' – Psychische Erkrankungsraten am Arbeitsplatz erreichen 2026 historische Höchststände. Fachkräftemangel, Digitalisierungsdruck und permanente Erreichbarkeit als Haupttreiber. Steigender politischer und unternehmerischer Druck, präventive BGM-Massnahmen einzuführen – direktes Wachstumsumfeld für hypnovital® als skalierbares digitales BGM-Präventionsprogramm.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/burnout-erreicht-2026-neuen-hoehepunkt/69000457",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-17",
+      },
+      {
+        summary: "ad-hoc-news.de: 'Emotionale Intelligenz wird 2026 zum Burnout-Schutz' – Hoher emotionaler Quotient (EQ) wirkt als zentraler Schutzfaktor gegen Burnout: Empathie, Selbstregulation und soziale Kompetenz reduzieren nachweislich die Burnout-Anfälligkeit. Unternehmen investieren 2026 verstärkt in EQ-Trainings als präventive BGM-Massnahme – direktes Marktumfeld für hypnovital® als hypnosebasiertes Instrument zur Stärkung von Selbstregulation und mentaler Resilienz.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/emotionale-intelligenz-wird-2026-zum-burnout-schutz/68973264",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-17",
+      },
+      {
         summary: "Hypnosekongress Zürich 2026: Internationaler Hypnosekongress am 20.–21. Juni 2026 in der AXA Arena Winterthur – Das Programm umfasst Keynotes zu mentaler Gesundheit bei Kindern, Hirnforschung, Schlaf & Performance, Trauma und Hypnose sowie Live-Demonstrationen, Workshops und eine Networking-Sommernacht. Weekend-Pass: CHF/EUR 375. Die wachsende Professionalisierung und institutionelle Verankerung der Hypnose-Community in der Deutschschweiz bestätigt Hypnose als ernstzunehmende Methode im BGM – starkes Branchenumfeld für hypnovital® als Audio-Hypnose-Lösung.",
         source: "Hypnosekongress.net",
         url: "https://hypnosekongress.net/",
@@ -7177,6 +7217,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "bestattungsplaner": {
     news: [
       // Neu: 17.04.2026
+      {
+        summary: "everlife.ch: 'Panorama der Todesfälle in der Schweiz und Trends' – Everlife.ch dokumentiert: In der Schweiz sterben jährlich ca. 74'000 Menschen (2023); 90% wählen Kremation (1984 noch 50%). Demografischer Wandel (Babyboomer-Generation) lässt Todesfallzahlen langfristig weiter steigen. Nur 10% der Todesfälle sind aktuell durch Bestattungsvorsorgevertrag gedeckt – enormes Marktpotenzial für digitale Vorsorge-Plattformen wie bestattungsplaner.ch als Lead-Vermittler für Schweizer Bestattungsunternehmen.",
+        source: "everlife.ch",
+        url: "https://everlife.ch/de/veroffentlichung/panorama-der-todesfalle-in-der-schweiz-und-trends/",
+        date: "2026",
+        category: "Markt & Trends",
+        addedAt: "2026-04-17",
+      },
+      {
+        summary: "trauerredeschreiben.de: '27+ Statistiken zu Beerdigungen 2026' – Umfangreiche Statistikübersicht zur Bestattungsbranche im DACH-Raum: 40% aller Trauernden suchen Bestatter online, bei unter 40-Jährigen über 60%. Durchschnittliche Bestattungskosten Schweiz: CHF 4'000–10'000. Kremationsquote Schweiz bei 90%. Steigende Online-Recherche-Quote bei Bestattungssuche belegt wachsendes Marktpotenzial für digitale Lead-Plattformen wie bestattungsplaner.ch.",
+        source: "trauerredeschreiben.de",
+        url: "https://trauerredeschreiben.de/blog/beerdigungen-statistiken/",
+        date: "2026",
+        category: "Markt & Trends",
+        addedAt: "2026-04-17",
+      },
       {
         summary: "ABSCHIED'26 – Erste Schweizer Fachmesse für Vorsorge, Palliative und Trauer (29.–30. Oktober 2026, Messe Luzern): Neue nationale Branchenmesse vereint erstmals Fachleute aus Vorsorge, Pflege, Palliativmedizin, Recht, Seelsorge, Bestattung und Trauerkultur unter einem Dach. Exponenten aus Bestattungsdiensten, Friedhofsgartenbau und Erinnerungskultur präsent. Grosses Interesse bereits ein Jahr vor Durchführung bestätigt: Die Schweizer Bestattungsbranche professionalisiert und vernetzt sich aktiv – direktes Branchenwachstumssignal für bestattungsplaner.ch als digitale Lead-Vermittlungsplattform für Schweizer Bestattungsunternehmen.",
         source: "ABSCHIED'26 / abschied.swiss",
