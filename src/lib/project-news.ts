@@ -28,6 +28,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 17.04.2026
       {
+        summary: "SRF: '«Professional Bachelor»: In der Schweiz kommen neue Bildungstitel' – SRF beleuchtet die Einführung der neuen Titelzusätze 'Professional Bachelor' und 'Professional Master' für die höhere Berufsbildung Schweiz. Die Referendumsfrist zum revidierten Berufsbildungsgesetz läuft am 17. April 2026 ab. Bei erfolgreichem Ablauf ohne Referendum tritt das Gesetz frühestens am 1. Juli 2026 in Kraft: Fachausweis-Absolvierende erhalten 'Professional Bachelor', HFP-Absolvierende 'Professional Master'. Direktes Signal für steigende internationale Sichtbarkeit und Attraktivität beruflicher Abschlüsse – stärkt das gesamte Qualifizierungsumfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation.",
+        source: "SRF",
+        url: "https://www.srf.ch/news/schweiz/attraktivere-berufsbildung-professional-bachelor-in-der-schweiz-kommen-neue-bildungstitel",
+        date: "2026-04-17",
+        category: "Bildungspolitik",
+        addedAt: "2026-04-17",
+      },
+      {
+        summary: "Moneycab / SGV: 'Durchbruch für Titel der höheren Berufsbildung – Gewerbe verbucht Erfolg' – Der Schweizerische Gewerbeverband begrüsst die Einführung der Titelzusätze 'Professional Bachelor' und 'Professional Master' als grossen Durchbruch für die Aufwertung der höheren Berufsbildung. Stärkere internationale Vergleichbarkeit und gesellschaftliche Anerkennung beruflicher Abschlüsse stärkt die Attraktivität zertifizierter ICT-Qualifikationen – positives Marktumfeld für SIZ AG als staatlich anerkannte ICT-Prüfungsorganisation.",
+        source: "Moneycab / SGV",
+        url: "https://www.moneycab.com/schweiz/sgv-durchbruch-fuer-titel-der-hoeheren-berufsbildung-gewerbe-verbucht-erfolg/",
+        date: "2026",
+        category: "Bildungspolitik",
+        addedAt: "2026-04-17",
+      },
+      {
+        summary: "inside-it.ch: '145 neue ICT-Diplomierte' (31. März 2026) – inside-it.ch berichtet über die Frühlings-Diplomfeier der ICT-Berufsbildung Schweiz in Olten: 145 von 235 Kandidierenden diplomiert – 77 Cyber Security Specialists, 52 Platform Development Specialists und 16 Information Security Manager. Bestes Resultat: Fabian Moor (Cyber Security, Note 6.0). Jährliche Diplomierungszyklen der Schweizer ICT-Bildungslandschaft unterstreichen die wachsende Nachfrage nach anerkannten ICT-Qualifikationen – direktes Marktumfeld für SIZ AG als etablierte ICT-Prüfungsorganisation.",
+        source: "inside-it.ch",
+        url: "https://www.inside-it.ch/145-neue-ict-diplomierte-20260331",
+        date: "2026-03-31",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-17",
+      },
+      {
         summary: "itmagazine.ch: 'So viel verdienen ICT-Fachkräfte in der Schweiz' (2026) – Aktuelle Gehaltsübersicht für Schweizer ICT-Fachkräfte: Starke Nachfrage bei gleichzeitigem Fachkräftemangel treibt Löhne in der Branche weiterhin nach oben. ICT-Berufsfelder verzeichnen überdurchschnittliches Lohnwachstum verglichen mit anderen Branchen. Hohe Entlöhnung und Jobsicherheit stärken die Attraktivität von ICT-Zertifizierungen – direktes positives Marktumfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation.",
         source: "itmagazine.ch",
         url: "https://www.itmagazine.ch/artikel/86916/So_viel_verdienen_ICT-Fachkraefte_in_der_Schweiz.html",
@@ -2884,6 +2908,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "hypnovital": {
     news: [
       // Neu: 17.04.2026
+      {
+        summary: "Schweizer Illustrierte: 'Von Burnout bis Depression: Wann Hypnotherapie helfen kann' – Schweizer Mainstream-Medium beleuchtet die wachsende Rolle der Hypnotherapie bei psychischen Erkrankungen: Über 10'000 ausgebildete Ärzte und Psychologen bieten Hypnotherapie in der Schweiz an. Mehr als ein Viertel der Schweizer Arbeitnehmer leidet unter problematischem Stress (Job Stress Index). Seit 2012 stiegen Arbeitsausfälle in der Schweiz um rund 50%. Hypnotherapie gilt als effektive Methode bei Burnout, Stress und Depressionen – kombiniert mit systemischer Therapie oder Verhaltenstherapie. Breite gesellschaftliche Rezeption von Hypnotherapie in führenden Schweizer Medien validiert hypnovital® als Audio-Hypnose-BGM-Präventionsprogramm für Burnout und mentale Gesundheit am Arbeitsplatz.",
+        source: "Schweizer Illustrierte",
+        url: "https://www.schweizer-illustrierte.ch/body-health/mind/von-depression-bis-burnout-wann-hypnotherapie-helfen-kann-633337",
+        date: "2026",
+        category: "Hypnose & Coaching",
+        addedAt: "2026-04-17",
+      },
+      {
+        summary: "rückenstark | Gesundheitsförderung: 'Betriebliches Gesundheitsmanagement in der Praxis – nachhaltige Entwicklung bei Sanacorp' (15. April 2026) – Praxis-Fallstudie zur nachhaltigen BGM-Implementierung beim Pharmadistributor Sanacorp: Strukturierte Gesundheitsprogramme steigern Mitarbeiterzufriedenheit und reduzieren Fehlzeiten langfristig. BGM-Erfolg basiert auf strukturierten Präventionsprogrammen, Führungskräftebefähigung und messbaren Outcomes. Frische Praxis-Evidenz belegt den ROI von BGM-Programmen – direktes Marktvalidierungsumfeld für hypnovital® als skalierbare, ortsunabhängige Audio-Hypnose-BGM-Lösung.",
+        source: "rückenstark | Gesundheitsförderung",
+        url: "https://www.rueckenstark-hannover.de/2026/04/15/betriebliches-gesundheitsmanagement-in-der-praxis-nachhaltige-entwicklung-bei-sanacorp/",
+        date: "2026-04-15",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-17",
+      },
       {
         summary: "businessresearchinsights.com: Globaler Hypnotherapie-Markt wächst von USD 20,35 Mrd. (2025) auf USD 26,46 Mrd. (2026), CAGR 30,04% bis 2035 – Wachsende psychische Gesundheitsprobleme, Nachfrage nach medikamentenfreien Alternativen und KI-gestützte Personalisierung treiben den globalen Markt. Online-Segment wächst am schnellsten – digitale Hypnose-Angebote profitieren direkt. Starkes strukturelles Marktwachstum validiert hypnovital® als skalierbare digitale BGM-Lösung für Burnout-Prävention und mentale Gesundheit am Arbeitsplatz.",
         source: "businessresearchinsights.com",
