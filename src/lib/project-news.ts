@@ -28,6 +28,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 18.04.2026
       {
+        summary: "ICT-Berufsbildung Schweiz: 'AI Business Specialist – Fachausweis-Informationsseite 2026' – Offizielle Informationsseite der ICT-Berufsbildung Schweiz zum neuen eidgenössischen Fachausweis AI Business Specialist (NQR-Niveau 5): Erste Berufsprüfungen finden Herbst 2026 statt, Bund erstattet bis zu 50% der Kurskosten. Trägerorganisation ist ICT-Berufsbildung Schweiz, zahlreiche Schweizer Bildungspartner bieten Vorbereitungskurse an. Stärkung des staatlich anerkannten KI-Zertifizierungsangebots schafft direktes Wachstumsumfeld für SIZ AG als etablierte Schweizer ICT-Prüfungsorganisation.",
+        source: "ICT-Berufsbildung Schweiz",
+        url: "https://www.ict-berufsbildung.ch/weiterbildung/fachausweis/ai-business-specialist",
+        date: "2026",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-18",
+      },
+      {
         summary: "Netzwoche: 'Fachausweis AI Business Specialist – erste Prüfung Herbst 2026' – ICT-Berufsbildung Schweiz startet 2026 mit dem neuen eidgenössischen Fachausweis AI Business Specialist die erste offizielle Berufsprüfung. Das SBFI hat das Qualifikationsprofil genehmigt und die Prüfungsordnung erlassen. Der Abschluss positioniert sich auf NQR-Niveau 5, Bund erstattet bis zu 50% der Kurskosten (max. CHF 9'500). Starker staatlicher Ausbau anerkannter KI-Abschlüsse unterstreicht die wachsende Bedeutung zertifizierter ICT-Qualifikationen – direktes Wachstumsumfeld für SIZ AG als etablierte Schweizer ICT-Prüfungsorganisation.",
         source: "Netzwoche",
         url: "https://www.netzwoche.ch/news/2025-10-14/fachausweis-ai-business-specialist-startet-2026",
@@ -1309,6 +1317,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 18.04.2026
       {
+        summary: "Benzinga: 'Best Trading Platforms for E-Mini Futures April 2026' – Aktuelle Bewertung der führenden Plattformen für E-Mini Futures-Trader. NinjaTrader zählt zu den Top-Optionen für algorithmische ES-Trader dank NinjaScript-Automatisierung, fortgeschrittenem Charting und günstigen Kommissionen (ab $1.29/Kontrakt für ES). Direkter Referenzrahmen für Plattformwahl und technologische Positionierung im Bereich algorithmischer Futures-Handel – relevant für Mind Rocket Trading.",
+        source: "Benzinga",
+        url: "https://www.benzinga.com/money/best-trading-platforms-for-e-mini-futures",
+        date: "2026-04",
+        category: "Futures & Trading",
+        addedAt: "2026-04-18",
+      },
+      {
+        summary: "Apex Trader Funding: 'Is Apex Trader Funding Legit? – Regeländerungen März 2026' – Per 1. März 2026 führte Apex Trader Funding wesentliche Regeländerungen für Funded Accounts ein: Wahl zwischen Intraday Trailing Drawdown und End-of-Day Drawdown, 6%-Gewinnziel, 50%-Konsistenzregel, automatisiertes Payout-System. Aufhebung des Metallterminhandels, 84 gesperrte Länder. Legitimitätsnachweis und aktuelle Rahmenbedingungen für Prop-Trading-Aktivitäten – direktes operatives Umfeld für Mind Rocket Trading.",
+        source: "Apex Trader Funding",
+        url: "https://apextraderfunding.com/resources/prop-trading/is-apex-trader-funding-legit/",
+        date: "2026-03",
+        category: "Regulierung",
+        addedAt: "2026-04-18",
+      },
+      {
         summary: "fxtrustscore.com: 'Europe Signals Tighter Oversight for Prop Firms' (18. Februar 2026) – Europäische Aufsichtsbehörden prüfen unter MiFID-II-Rahmen, ob Prop-Trading-Strukturen unter Investmentfirmen-Regeln fallen. Schwerpunkte: Compliance Standards, Marketing Disclosures und Governance Controls. Für Retail-Trader bedeutet dies potenziell klarere Bedingungen, transparentere Gewinnbeteiligung und strengere Governance. 2026 könnte Wendepunkt für die Prop-Trading-Branche werden – relevantes Regulierungsumfeld für Mind Rocket Trading.",
         source: "FXTrustScore",
         url: "https://www.fxtrustscore.com/europe-prop-firm-regulation-2026/",
@@ -2556,6 +2580,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 18.04.2026
+      {
+        summary: "OG Analysis: 'Global Digital Mental Health Market 2024–2025' – Der weltweite Markt für digitale Mental-Health-Tools wuchs von USD 20.8 Mrd. (2024) auf USD 24.4 Mrd. (2025) mit einem CAGR von 18.83%. KI-Chatbots, Therapie-Apps und mobile Selbsthilfe-Lösungen dominieren das Wachstum. Die Schweiz gilt als fortgeschrittener Adoptionsmarkt. Starkes strukturelles Wachstumsumfeld für mindtools.ch als digitalen Anbieter von Mental-Health-Tools und Persönlichkeitsentwicklungs-PDFs.",
+        source: "OG Analysis / Research and Markets",
+        url: "https://www.oganalysis.com/industry-reports/digital-mental-health-market",
+        date: "2025",
+        category: "Mental Health",
+        addedAt: "2026-04-18",
+      },
+      {
+        summary: "PMC/NIH: 'Advancing Mental Health Care: A Comprehensive Review of Digital Tools' (2025/2026) – Peer-reviewed Systematische Übersicht (National Institutes of Health) über digitale Tools für Diagnose, Behandlung und Wellbeing in der mentalen Gesundheit. Dokumentiert Wirksamkeit von App-basierten Selbsthilfe-Interventionen, KI-gestützten Therapieansätzen und digitalen Präventionstools. Wissenschaftlicher Marktbeleg für die wachsende Akzeptanz digitaler Self-Help-Produkte – direktes Umfeld für mindtools.ch.",
+        source: "PMC / National Institutes of Health",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12185383/",
+        date: "2025",
+        category: "Mental Health",
+        addedAt: "2026-04-18",
+      },
       // Neu: 17.04.2026
       {
         summary: "pharmiweb.com: 'Digital Behavioral/Mental Health Market 2026: Report, Growth, Opportunities' (Januar 2026) – Der globale Markt für digitale mentale Gesundheit erreicht 2026 eine neue Wachstumsstufe: Steigende Smartphone-Nutzung, gesellschaftliche Entstigmatisierung psychischer Erkrankungen und wachsende Nachfrage nach niedrigschwelligen Selbsthilfe-Angeboten treiben die Marktexpansion. Global wächst der Markt 2025–2030 mit CAGR 16,4%, Deutschland allein wird bis 2035 USD 19,25 Mrd. erreichen. Direktes strukturelles Wachstumsumfeld für mindtools.ch als digitaler Anbieter von Mental-Health-Tools und Persönlichkeitsentwicklungs-PDFs.",
@@ -4728,6 +4769,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 18.04.2026
+      {
+        summary: "DRKS / Universität Marburg: 'CLIMACS-Studie – App MELONGA für Ejaculatio praecox' – Klinische Studie (DRKS00032774, Start Oktober 2023, laufend) der Universität Marburg: CE-zertifizierte App MELONGA nutzt kognitiv-verhaltenstherapeutische Techniken zur Selbstbehandlung von Ejaculatio praecox – nicht-pharmakologisch, anonym zuhause nutzbar. Direkter akademischer Nachweis für wachsende Akzeptanz digitaler Selbsthilfe-Interventionen bei EP – validiert den Markt für Angebote wie orgasmus-hinauszoegern.de als niedrigschwelliges Audio-Programm.",
+        source: "DRKS / Universität Marburg",
+        url: "https://drks.de/search/de/trial/DRKS00032774",
+        date: "2023",
+        category: "Digital Health",
+        addedAt: "2026-04-18",
+      },
       // Neu: 17.04.2026
       {
         summary: "DocMedicus Gesundheitslexikon: 'Vorzeitiger Samenerguss (Ejaculatio praecox) – Prävention' – Medizinisches Lexikon dokumentiert präventive und therapeutische Massnahmen bei EP: Beckenbodentraining erhöhte die Kontrollzeit im Durchschnitt von 0,5 auf 2 Minuten (Evidenzbasis); Entspannungstechniken und Verhaltensänderungen als ergänzende Optionen. Gesellschaftliches Bewusstsein für nicht-medikamentöse, selbstgesteuerte Ansätze wächst. Wachsende Online-Informationsverfügbarkeit zu EP-Prävention und Selbsthilfe validiert den Markt für Angebote wie orgasmus-hinauszoegern.de als niedrigschwelliges Audio-Programm.",
@@ -5251,6 +5301,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "lampenfieber": {
     news: [
       // Neu: 18.04.2026
+      {
+        summary: "Universität Paderborn: 'Studie Hypnose-Coaching gegen Prüfungsangst WS 2025/26' – Laufende wissenschaftliche Studie (Department Sport & Gesundheit): Kann Hypnose-Coaching Prüfungsangst bei Studierenden signifikant reduzieren? Richtet sich an Studierende mit ausgeprägter Prüfungsangst. Aktuelle Forschungsarbeit bestätigt wissenschaftliches Interesse an Hypnose als Interventionsmethode gegen Auftritts- und Prüfungsangst – direkter Wirksamkeitsbeleg für das Angebot von lampenfieber-besiegen.de.",
+        source: "Universität Paderborn",
+        url: "https://sug.uni-paderborn.de/nachrichten/details/default-5a658e1d5b41cda36dae5c80cfc9ba6b",
+        date: "2025",
+        category: "Psychologie & Forschung",
+        addedAt: "2026-04-18",
+      },
+      {
+        summary: "openpr.de: 'Warum der Chef schon beim ersten Satz abschaltet – Lampenfieber im Job' – K&A BrandResearch-Studie: 22% der Deutschen nennen Redeangst als grösste Angst – gleichauf mit Todesangst. 40–80% der Bevölkerung geben Unbehagen in Redesituationen an. Lampenfieber und Redeangst sind im Berufskontext allgegenwärtig und beeinflussen Karriereverläufe stark. Starker Marktbeleg für den anhaltend hohen Bedarf an Selbsthilfe-Produkten gegen Auftrittsangst – direktes Zielgruppenumfeld für lampenfieber-besiegen.de.",
+        source: "openpr.de / K&A BrandResearch",
+        url: "https://www.openpr.de/news/1299633/Warum-der-Chef-schon-beim-ersten-Satz-abschaltet-Lampenfieber-im-Job.html",
+        date: "2024",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-04-18",
+      },
       {
         summary: "rampenpfau.de: 'In drei Schritten weg vom Lampenfieber' (9. Januar 2026) – Coach Dr. Thomas Coucoulis präsentiert strukturierte 3-Schritte-Methode: Glaubenssätze erkennen und hinterfragen, Fokus auf inhaltliche und Performance-Sicherheit, mentales Training durch Visualisierung erfolgreicher Auftritte. Die Technik stammt aus dem Spitzensport: Das Unterbewusstsein unterscheidet nicht zwischen Vorstellung und Realität. Aktuelle Fachpublications zu Lampenfieber belegen anhaltend hohe gesellschaftliche Nachfrage für niederschwellige Selbsthilfe-Angebote.",
         source: "rampenpfau.de",
@@ -5807,6 +5873,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "learnfluencer": {
     news: [
       // Neu: 18.04.2026
+      {
+        summary: "Wissensmanagement-Magazin: 'Learnfluencer – Lernkultur in der digitalen Transformation' (1/2025) – Fachbeitrag beschreibt Learnfluencer als strategische Reaktion auf die veränderte Lernkultur in Unternehmen durch digitale Transformation: Personen, die Lernmotivation stärken, individuelle und kollektive Lernprozesse verknüpfen und eine selbstverantwortliche Lernkultur aufbauen. Erschienen in Ausgabe 1/2025 – direkter akademisch-publizistischer Nachweis für die Relevanz des Learnfluencer-Konzepts als Thought-Leadership-Thema.",
+        source: "Wissensmanagement-Magazin / barbara-liebermeister.com",
+        url: "https://barbara-liebermeister.com/wp-content/uploads/2025/03/learnfluencer-lernkultur-digitalen-transformation.pdf",
+        date: "2025-01",
+        category: "learnfluencer direkt",
+        addedAt: "2026-04-18",
+      },
       {
         summary: "OECD: 'Digital Education Outlook 2026' – Neue OECD-Publikation untersucht den Einsatz generativer KI im Bildungswesen: Lernende nutzen KI zur Aneignung von Fachwissen, Lehrende zum Unterrichtssupport. Zentrale Erkenntnisse: Teacher Training und Student Literacy als beste Risikosteuerung. KI-gestütztes Lernen wird systemweit integriert – wachsender Bedarf an Lernkompetenz-Weiterbildung positioniert learnfluencer.ch als relevante Schweizer Plattform für Lernen und KI.",
         source: "OECD",
@@ -6757,6 +6831,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 18.04.2026
       {
+        summary: "GlobeNewswire: 'Digital Marketing Software Competitive Analysis Report 2025' (9. März 2026) – Marktanalyse-Report zum weltweiten Markt für digitale Marketing-Software: Wettbewerbslandschaft, Produktentwicklungen, M&A-Aktivitäten und Revenue-Forecasts bis 2033. Dokumentiert starkes Wachstum des MarTech-Sektors mit KMU als wachsendem Zielsegment. Direktes strukturelles Marktumfeld für interaktive Marketingkonzept-Tools wie das Tool auf learnfluencer.ch.",
+        source: "GlobeNewswire",
+        url: "https://www.globenewswire.com/news-release/2026/03/09/3251714/0/en/Digital-Marketing-Software-Competitive-Analysis-Report-2025-Key-Players-Company-Profiles-Product-Developments-Mergers-Strategic-Collaborations-and-Revenue-Forecast-Insights-to-2033.html",
+        date: "2026-03-09",
+        category: "MarTech & Trends",
+        addedAt: "2026-04-18",
+      },
+      {
+        summary: "firma-finden.ch: 'Top 5 europäische Marketing-Tools für Schweizer KMU 2026' – Übersicht europäischer Marketing-Tools speziell für Schweizer KMU: Bewertung nach DSGVO-Konformität, Mehrsprachigkeit, Preistransparenz und Schweizer Marktanforderungen. Wachsende Nachfrage nach datenschutzkonformen, lokal relevantem Marketing-Software-Angebot – direktes Wettbewerbsumfeld und Marktpotenzial für das Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "firma-finden.ch",
+        url: "https://www.firma-finden.ch/kmu-ratgeber/marketing-und-sales/top-5-europ%C3%A4ische-marketing-tools-f%C3%BCr-schweizer-kmu-2026",
+        date: "2026",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-18",
+      },
+      {
         summary: "bexolutions.ch: 'KI-Marketing für Schweizer KMU 2026 – Praxisleitfaden' – Schweizer Digitalberatung zeigt: 2026 verändert KI das Marketing von KMU grundlegend durch digitale Sichtbarkeit, KI-gestützte Kundenkommunikation und neue Kanäle. Was heute als 'nice to have' gilt, wird bald Standard. KI-gestützte SWOT-Analysen und Marketingkonzepte automatisieren strategische Planungsprozesse – direktes Marktumfeld für das interaktive Marketingkonzept-Tool auf learnfluencer.ch.",
         source: "bexolutions.ch",
         url: "https://bexolutions.ch/ki-marketing-fur-schweizer-kmu-2026-praxisleitfaden/",
@@ -7392,6 +7482,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "bestattungsplaner": {
     news: [
       // Neu: 18.04.2026
+      {
+        summary: "Investorszene: 'Digitalisierung im Bestattungswesen: Chancen für Startups und etablierte Bestatter' (21. Mai 2025) – Detaillierte Analyse der Digitalisierungswelle in der Bestattungsbranche: Vergleichsportale, Online-Planungstools, KI-Chatbots und digitale Nachlassdienste verändern die Branche. Diskutiert Chancen für Startups und etablierte Bestatter sowie Herausforderungen bei Datenschutz und Empathie. Direkter Marktrahmen für bestattungsplaner.ch als digitales Lead-Vermittlungsportal in der Schweizer Bestattungsbranche.",
+        source: "investorszene.de",
+        url: "https://www.investorszene.de/2025/05/21/digitalisierung-im-bestattungswesen-chancen-fuer-startups-und-etablierte-bestatter/",
+        date: "2025-05-21",
+        category: "Markt & Trends",
+        addedAt: "2026-04-18",
+      },
       {
         summary: "trauerportal.ch: 'Was kostet eine Bestattung in der Schweiz?' – Bestattungskosten in der Schweiz variieren stark regional: Schlichte Bestattung ab CHF 2'000, traditionelle Zeremonie CHF 10'000+. In Städten wie Zürich, Basel und St. Gallen sind Grundleistungen (Einsargen, Transport, Kremation, Sarg) für Einwohner oft kostenlos. In ländlichen Kantonen übernehmen Angehörige mehr Kosten. Regionale Kostentransparenz ist Schlüsselbedürfnis – direktes Marktargument für digitale Preisvergleichs- und Vorsorge-Plattformen wie bestattungsplaner.ch.",
         source: "trauerportal.ch",
