@@ -26,6 +26,31 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 18.04.2026
+      {
+        summary: "Netzwoche: 'Fachausweis AI Business Specialist – erste Prüfung Herbst 2026' – ICT-Berufsbildung Schweiz startet 2026 mit dem neuen eidgenössischen Fachausweis AI Business Specialist die erste offizielle Berufsprüfung. Das SBFI hat das Qualifikationsprofil genehmigt und die Prüfungsordnung erlassen. Der Abschluss positioniert sich auf NQR-Niveau 5, Bund erstattet bis zu 50% der Kurskosten (max. CHF 9'500). Starker staatlicher Ausbau anerkannter KI-Abschlüsse unterstreicht die wachsende Bedeutung zertifizierter ICT-Qualifikationen – direktes Wachstumsumfeld für SIZ AG als etablierte Schweizer ICT-Prüfungsorganisation.",
+        source: "Netzwoche",
+        url: "https://www.netzwoche.ch/news/2025-10-14/fachausweis-ai-business-specialist-startet-2026",
+        date: "2025-10-14",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-18",
+      },
+      {
+        summary: "ICT-Berufsbildung Schweiz: 'Neuer eidgenössischer KI-Abschluss stärkt Wirtschaft' – ICT-Berufsbildung Schweiz lanciert mit Huawei ein Bildungsprojekt für einen neuen eidgenössischen Abschluss im Bereich KI. Berufsfeldanalyse zeigt grosse Nachfrage nach einem 'unabhängig geprüften, eidgenössischen Abschluss'. Das Profil ist nicht technisch ausgerichtet, sondern praktisch orientiert an der Schnittstelle von Business und KI-Produktmanagement. Erster Zertifizierungsdurchgang Herbst 2026 – stärkt das Qualifizierungsumfeld anerkannter ICT-Prüfungsorganisationen wie SIZ AG.",
+        source: "ICT-Berufsbildung Schweiz",
+        url: "https://www.ict-berufsbildung.ch/neuer-eidgenoessischer-ki-abschluss-staerkt-wirtschaft",
+        date: "2024-08-28",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-18",
+      },
+      {
+        summary: "Bildung-Schweiz.ch: 'Weiterbildung für Unternehmen in der Schweiz: 10 Trends für 2026' – KI-gestützte Personalisierung, hybride Lernformate und Soft-Skills-Fokus prägen die betriebliche Weiterbildungslandschaft. KI verändert Lernen mit hochgradig personalisierten Lernpfaden. Zahlreiche Schweizer Anbieter wie Digicomp und Benedict erweitern KI-Kompetenzprogramme. Wachsende Nachfrage nach flexiblen, digital zertifizierten ICT-Weiterbildungen – positives Marktumfeld für SIZ AG als anerkannte Schweizer ICT-Prüfungsorganisation.",
+        source: "SwissNova / Bildung-Schweiz.ch",
+        url: "https://unternehmen.swissnova.swiss/weiterbildung-unternehmen-schweiz-trends-2026/",
+        date: "2026-03-15",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-18",
+      },
       // Neu: 17.04.2026
       {
         summary: "SRF: '«Professional Bachelor»: In der Schweiz kommen neue Bildungstitel' – SRF beleuchtet die Einführung der neuen Titelzusätze 'Professional Bachelor' und 'Professional Master' für die höhere Berufsbildung Schweiz. Die Referendumsfrist zum revidierten Berufsbildungsgesetz läuft am 17. April 2026 ab. Bei erfolgreichem Ablauf ohne Referendum tritt das Gesetz frühestens am 1. Juli 2026 in Kraft: Fachausweis-Absolvierende erhalten 'Professional Bachelor', HFP-Absolvierende 'Professional Master'. Direktes Signal für steigende internationale Sichtbarkeit und Attraktivität beruflicher Abschlüsse – stärkt das gesamte Qualifizierungsumfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation.",
@@ -1282,6 +1307,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 18.04.2026
+      {
+        summary: "fxtrustscore.com: 'Europe Signals Tighter Oversight for Prop Firms' (18. Februar 2026) – Europäische Aufsichtsbehörden prüfen unter MiFID-II-Rahmen, ob Prop-Trading-Strukturen unter Investmentfirmen-Regeln fallen. Schwerpunkte: Compliance Standards, Marketing Disclosures und Governance Controls. Für Retail-Trader bedeutet dies potenziell klarere Bedingungen, transparentere Gewinnbeteiligung und strengere Governance. 2026 könnte Wendepunkt für die Prop-Trading-Branche werden – relevantes Regulierungsumfeld für Mind Rocket Trading.",
+        source: "FXTrustScore",
+        url: "https://www.fxtrustscore.com/europe-prop-firm-regulation-2026/",
+        date: "2026-02-18",
+        category: "Futures & Trading",
+        addedAt: "2026-04-18",
+      },
+      {
+        summary: "propfirmplus.com: 'Algo Trading on Futures Prop Firms: What's Actually Allowed in 2026' – Semi-automatisiertes Trading (mit menschlicher Überwachung) ist bei den meisten Futures-Prop-Firms erlaubt; vollautomatisierte 'Set-and-Forget'-Systeme auf finanzierten Konten generell verboten. Erlaubt: TradingView-Webhooks und NinjaTrader-Strategien mit aktivem Trader. Verboten: HFT mit Latenz-Ausbeutung und identische Algorithmen über mehrere Konten. Klare Regulierungsgrundlage für NinjaTrader-basierte Handelsstrategien wie bei Mind Rocket Trading.",
+        source: "PropFirmPlus",
+        url: "https://propfirmplus.com/algo-trading-on-futures-prop-firms-whats-actually-allowed-in-2026/",
+        date: "2026",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-18",
+      },
+      {
+        summary: "ad-hoc-news.de: 'S&P 500 stabilisiert sich nach Volatilität: Leichter Anstieg durch mildere Inflationsdaten' – S&P 500 Futures erholen sich nach jüngster Marktvolatilität: Inflationsdaten fallen unter Ökonomen-Prognosen, Bedenken über restriktivere Fed-Politik nehmen ab. Aktuelle Marktvolatilität und Erholungsbewegungen in ES-Futures bieten klassische Handelschancen für regelbasierte Trendfolge-Systeme – direktes Marktumfeld für Mind Rocket Tradings ES-Futures-Strategien.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/s-and-p-500-stabilisiert-sich-nach-volatilitaet-leichter-anstieg-durch/69172837",
+        date: "2026-04",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-18",
+      },
       // Neu: 17.04.2026
       {
         summary: "Benzinga: 'Webull, Robinhood Stocks Pop As SEC Ends PDT Rule' (15. April 2026) – Robinhood-Aktien stiegen um 7,61% und Webull um über 9%, nachdem die SEC die Pattern-Day-Trader-Regel eliminierte. Benzinga analysiert die Marktauswirkungen für Retail-Broker: Der durchschnittliche Webull-Kunde hat nur ca. $5'000 auf dem Konto – weit unter der bisherigen $25'000-Grenze. Die Regelabschaffung eröffnet ES-Futures-Tradern ohne grosses Startkapital neue Zugangsmöglichkeiten – direktes positives Regulierungsumfeld für algorithmusbasierte Handelssysteme wie bei Mind Rocket Trading.",
@@ -2979,6 +3029,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 18.04.2026
+      {
+        summary: "ad-hoc-news.de: 'Betriebliches Gesundheitsmanagement wird zum strategischen Imperativ' (27. März 2026) – BGM entwickelt sich von einem optionalen Angebot zu einem geschäftskritischen Erfolgsfaktor angesichts von Fachkräftemangel und psychischen Belastungen. Nur ca. ein Viertel der Unternehmen implementiert BGM umfassend. Der ROI von BGM-Massnahmen liegt bei 1:5 bis 1:8. Psychische Erkrankungen sind häufigste Fehlzeitengründe – digitale und skalierbare Präventionsmethoden wie Hypnose-Audio-Programme sind als niederschwelliges Angebot gefragt.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/betriebliches-gesundheitsmanagement-wird-zum-strategischen-imperativ/69002177",
+        date: "2026-03-27",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-18",
+      },
+      {
+        summary: "it-boltwise.de: 'Burnout-Welle 2026: Psychische Gesundheit als strategische Kennzahl' (6. April 2026) – Psychische Erkrankungen verursachen 16,7% aller Arbeitsunfähigkeitstage; geschätzte Kosten: 56 Mrd. Euro jährlich. 'Quiet Cracking'-Phänomen: Ein Drittel der Erwerbstätigen funktioniert nach aussen, ist innerlich erschöpft. Experten fordern strukturelle Veränderungen, mehr Flexibilität und gezielte Führungskräfteschulung. Wachsender Bewusstseinswandel für tiefgreifende Interventionen – direktes Marktargument für hypnovital® als Hypnose-Audio-Programm, das auf Bewusstseinsebene ansetzt.",
+        source: "it-boltwise.de",
+        url: "https://www.it-boltwise.de/burnout-welle-2026-psychische-gesundheit-als-strategische-kennzahl.html",
+        date: "2026-04-06",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-18",
+      },
+      {
+        summary: "ad-hoc-news.de: 'Psychische Belastung erreicht 2026 neuen Höchststand' (5. April 2026) – Rund 60% der Arbeitnehmer gelten als burnout-gefährdet; psychische Störungen verursachen 3,81 Fehltage pro Person. Neue gesetzliche Anforderungen: Behörden müssen mindestens 5% aller Betriebe kontrollieren, Bussgelder bis 30'000 Euro für fehlende Gefährdungsbeurteilung. Systemischer Lösungsdruck auf Unternehmen steigt – wachsende Nachfrage nach skalierbaren, digitalen Präventionsangeboten wie Hypnose-Audio-Programmen.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/psychische-belastung-erreicht-2026-neuen-hoechststand/69075732",
+        date: "2026-04-05",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-18",
+      },
       // Neu: 17.04.2026
       {
         summary: "ad-hoc-news.de: 'Selbstmanagement 2026: Vom Burnout-Risiko zur strategischen Kompetenz' – Die Fähigkeit zur Selbstfürsorge wird 2026 zur zentralen Kompetenz für nachhaltige Produktivität. Burnout betrifft bis zu zwei Drittel aller Mitarbeitenden; klassische Wellness-Angebote greifen zu kurz. Gefordert sind tiefgreifende Verhaltens- und Denkänderungen auf Bewusstseinsebene – direktes Marktargument für hypnovital® als Hypnose-Audio-Programm, das genau auf dieser Ebene ansetzt.",
@@ -2989,7 +3064,7 @@ export const projectIntel: Record<string, ProjectIntel> = {
         addedAt: "2026-04-17",
       },
       {
-        summary: "ad-hoc-news.de: 'Strategische Selbstführung: Die Antwort auf die Burnout-Krise' – Strategische Selbstführung entwickelt sich 2026 vom „Nice-to-have" zur Grundanforderung in Unternehmen: Präsenzkultur wird durch ergebnisorientierte, menschenzentrierte Arbeitsmodelle abgelöst. Resilienz als strukturelle Unternehmenspflicht schafft wachsende Nachfrage nach wirksamen, skalierbaren Präventionsmethoden – Positionierungschance für hypnovital® als tiefenwirksames Audio-Coaching-Instrument.",
+        summary: "ad-hoc-news.de: 'Strategische Selbstführung: Die Antwort auf die Burnout-Krise' – Strategische Selbstführung entwickelt sich 2026 vom „Nice-to-have\" zur Grundanforderung in Unternehmen: Präsenzkultur wird durch ergebnisorientierte, menschenzentrierte Arbeitsmodelle abgelöst. Resilienz als strukturelle Unternehmenspflicht schafft wachsende Nachfrage nach wirksamen, skalierbaren Präventionsmethoden – Positionierungschance für hypnovital® als tiefenwirksames Audio-Coaching-Instrument.",
         source: "ad-hoc-news.de",
         url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/strategische-selbstfuehrung-die-antwort-auf-die-burnout-krise/68559804",
         date: "2026",
@@ -4039,6 +4114,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 18.04.2026
+      {
+        summary: "12weekyear.com: 'The 12 Week Year – Goal Execution System' – Die offizielle 12-Week-Year-Website zeigt: Das System wird von Top-Performern, Führungskräften und Teams weltweit zur Zielerreichung durch fokussierte 12-Wochen-Zyklen eingesetzt. Vier 'Jahre' Leistung innerhalb eines Kalenders durch Kondensation des Ausführungsfensters. Die wachsende internationale Verbreitung des Brian-Moran-Systems validiert den Marktbedarf für spezialisierte digitale Planungs-Tools als SaaS-Produkte.",
+        source: "12weekyear.com",
+        url: "https://www.12weekyear.com/",
+        date: "2026",
+        category: "12 Week Year Methode",
+        addedAt: "2026-04-18",
+      },
+      {
+        summary: "monday.com: '11 Best OKR Software Platforms to Try in 2026' – Umfassender Marktüberblick zeigt: OKR- und Zielplanungs-Software ist 2026 ein etablierter SaaS-Markt mit zahlreichen Anbietern (Profit.co, Lattice, Asana, Oboard). Spezialisierte Tools kombinieren Goal-Tracking mit Wochen-Scorecards und Progress-Dashboards. Marktvalidierung für Nischen-Produktivitäts-SaaS bestätigt Geschäftspotenzial des 12wy-planners als spezialisierte Lösung für die 12-Week-Year-Methode.",
+        source: "monday.com",
+        url: "https://monday.com/blog/project-management/okr-software/",
+        date: "2026",
+        category: "SaaS & Tools",
+        addedAt: "2026-04-18",
+      },
+      {
+        summary: "12week-breakthrough.com: 'The Complete 12-Week Year Implementation Guide for 2026' – KI-Tools ermöglichen 2026 automatisches Tracking von Führungsindikatoren, wöchentliche Fortschrittsberichte und Zielverfolgung. Die Methode kondensiert Jahresplanung in vier intensive 12-Wochen-Zyklen für messbar höhere Produktivität. Wachsende englischsprachige Community und KI-Integration validieren den Mainstream-Durchbruch – direktes Marktumfeld für den 12wy-planner als digitales Spezialtool.",
+        source: "12week-breakthrough.com",
+        url: "https://12week-breakthrough.com/implementation-guide-2026-12-week-year/",
+        date: "2026",
+        category: "Produktivität & Planung",
+        addedAt: "2026-04-18",
+      },
       // Neu: 17.04.2026
       {
         summary: "Hostinger: 'Die profitabelsten Ideen für Micro-SaaS-Unternehmen 2026' – Umfassende Analyse profitabler Micro-SaaS-Nischen 2026: Goal-Tracking-Tools (persönliche Ziele mit Fortschrittsdiagrammen und täglichen Erinnerungen) und Habit-Tracker werden als eigenständige, profitable Nische hervorgehoben. KI-Funktionen für personalisierte Nudges und KI-generierte Fortschrittsberichte als Differenzierungsmerkmal. Bestätigt: Spezialisierte Produktivitäts- und Zielplanungs-Tools haben eine klare Käufergruppe – direktes Marktvalidierungssignal für den 12wy-planner als spezialisiertes Micro-SaaS für die 12-Week-Year-Methode.",
@@ -5150,6 +5250,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 18.04.2026
+      {
+        summary: "rampenpfau.de: 'In drei Schritten weg vom Lampenfieber' (9. Januar 2026) – Coach Dr. Thomas Coucoulis präsentiert strukturierte 3-Schritte-Methode: Glaubenssätze erkennen und hinterfragen, Fokus auf inhaltliche und Performance-Sicherheit, mentales Training durch Visualisierung erfolgreicher Auftritte. Die Technik stammt aus dem Spitzensport: Das Unterbewusstsein unterscheidet nicht zwischen Vorstellung und Realität. Aktuelle Fachpublications zu Lampenfieber belegen anhaltend hohe gesellschaftliche Nachfrage für niederschwellige Selbsthilfe-Angebote.",
+        source: "rampenpfau.de",
+        url: "https://rampenpfau.de/2026/01/09/in-drei-schritten-weg-vom-lampenfieber/",
+        date: "2026-01-09",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-04-18",
+      },
+      {
+        summary: "hypnose.de: 'Hypnose bei Prüfungsangst' – Hypnose-Fachportal erklärt die Wirksamkeit von Hypnotherapie bei Prüfungsangst: Wirksamkeitsstudien der Universität Tübingen belegen nachhaltige Reduktion von Angsterleben. Aktuelle Studie Uni Paderborn (WS 2025/26) untersucht Hypnose-Coaching bei Prüfungsangst mit zwei kostenlosen Sitzungen für Studierende. Wachsende wissenschaftliche Evidenz für Hypnose als Methode gegen Auftritts- und Prüfungsangst stärkt das Marktumfeld für lampenfieber-besiegen.de.",
+        source: "hypnose.de",
+        url: "https://hypnose.de/artikel/hypnose-bei-pruefungsangst/",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-18",
+      },
+      {
+        summary: "Weiterbildung Basel: 'Lampenfieber und Redeangst überwinden!' – Offizielles Weiterbildungsangebot des Kantons Basel zeigt: Lampenfieber und Redeangst sind weit verbreitete Phänomene, die durch gezieltes Training und Coaching überwunden werden können. Öffentliche Kursangebote zu Lampenfieber bestätigen den gesellschaftlich anerkannten Weiterbildungsbedarf – direktes Validierungssignal für lampenfieber-besiegen.de als digitale, sofort verfügbare Alternative.",
+        source: "Weiterbildung Basel",
+        url: "https://weiterbildung.bs.ch/kursubersicht/lampenfieber-und-redeangst-ueberwinden/",
+        date: "2026",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-04-18",
+      },
       // Neu: 17.04.2026
       {
         summary: "ottonova.de: 'Lampenfieber: Was du gegen Redeangst tun kannst' – Gesundheitsportal erklärt: ca. 40% aller Menschen leiden an Redeangst. Unterschied Lampenfieber vs. Redeangst: Lampenfieber ist natürliche Körperreaktion (mobilisiert Energie), Redeangst ist spezifische Phobie (blockiert Leistung). Behandlungsmöglichkeiten: kognitive Umstrukturierung, Expositionstherapie, Entspannungstechniken, Hypnotherapie. Weit verbreitete gesellschaftliche Relevanz des Themas bestätigt den Marktbedarf für niedrigschwellige Audio-Selbsthilfeprogramme wie lampenfieber-besiegen.de.",
@@ -5681,6 +5806,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 18.04.2026
+      {
+        summary: "OECD: 'Digital Education Outlook 2026' – Neue OECD-Publikation untersucht den Einsatz generativer KI im Bildungswesen: Lernende nutzen KI zur Aneignung von Fachwissen, Lehrende zum Unterrichtssupport. Zentrale Erkenntnisse: Teacher Training und Student Literacy als beste Risikosteuerung. KI-gestütztes Lernen wird systemweit integriert – wachsender Bedarf an Lernkompetenz-Weiterbildung positioniert learnfluencer.ch als relevante Schweizer Plattform für Lernen und KI.",
+        source: "OECD",
+        url: "https://www.oecd.org/en/publications/oecd-digital-education-outlook-2026_062a7394-en.html",
+        date: "2026",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-18",
+      },
+      {
+        summary: "Swiss School of Business and Management Geneva: 'Top Trends in Online Education for 2026: AI, AR, and Beyond' – Online-Bildung hat sich zu adaptiven Lernökosystemen entwickelt: KI-gestützte personalisierte Lernpfade, AR/VR-Lernumgebungen, Microlearning und Blockchain-Credentials. Lehrkräfte wandeln sich von Wissensvermittlern zu Coaches und Mentoren. Schweizer Bildungsinstitutionen treiben digitale Transformation aktiv voran – direktes Wachstumsumfeld für learnfluencer.ch als Lernkompetenz-Plattform.",
+        source: "SSBM Geneva",
+        url: "https://www.ssbm.ch/top-trends-in-online-education-for-2026-ai-ar-and-beyond/",
+        date: "2026",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-18",
+      },
+      {
+        summary: "SwissNova: 'Weiterbildung für Unternehmen in der Schweiz: 10 Trends für 2026' (15. März 2026) – KI-gestützte Personalisierung, hybride Lernformate und Fokus auf Soft Skills und Emotionale Intelligenz als zentrale Weiterbildungstrends. Zahlreiche Schweizer Anbieter erweitern KI-Kompetenzkurse. Der Wandel hin zu personalisierten, messbaren Lernpfaden stärkt die Relevanz von Lernkompetenz-Plattformen wie learnfluencer.ch für Lernende und Unternehmen.",
+        source: "SwissNova",
+        url: "https://unternehmen.swissnova.swiss/weiterbildung-unternehmen-schweiz-trends-2026/",
+        date: "2026-03-15",
+        category: "Weiterbildung Schweiz",
+        addedAt: "2026-04-18",
+      },
       // Neu: 17.04.2026
       {
         summary: "Swiss Learning Hub: 'We won the eLearning AWARD 2026!' – Schweizer E-Learning-Anbieter Swiss Learning Hub gewinnt den eLearning AWARD 2026 in der Kategorie 'eLearning Innovation – Focus on Knowledge Standardisation' für das SwissPOD Training, ein digitales Lernprogramm zur Standardisierung medizinischer Datenerhebung für Organ- und Gewebespenden in Schweizer Spitälern (in Zusammenarbeit mit Swisstransplant). Bilinguale Modulstruktur (DE/FR) mit interaktiven Flip-Cards, Avatar-Videos und Screen Recordings. Schweizer E-Learning-Innovation auf internationalem Award-Niveau bestätigt: Die Schweiz setzt Massstäbe in Digital Learning – direktes positives Wachstumsumfeld für learnfluencer.ch als Thought-Leadership-Plattform für Lernen und KI in der Schweiz.",
@@ -6605,6 +6755,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 18.04.2026
+      {
+        summary: "bexolutions.ch: 'KI-Marketing für Schweizer KMU 2026 – Praxisleitfaden' – Schweizer Digitalberatung zeigt: 2026 verändert KI das Marketing von KMU grundlegend durch digitale Sichtbarkeit, KI-gestützte Kundenkommunikation und neue Kanäle. Was heute als 'nice to have' gilt, wird bald Standard. KI-gestützte SWOT-Analysen und Marketingkonzepte automatisieren strategische Planungsprozesse – direktes Marktumfeld für das interaktive Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "bexolutions.ch",
+        url: "https://bexolutions.ch/ki-marketing-fur-schweizer-kmu-2026-praxisleitfaden/",
+        date: "2026",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-18",
+      },
+      {
+        summary: "researchly.at: 'SWOT-Analyse im Marketing: Anleitung & Beispiele für 2026' – SWOT-Analyse im Marketing bewertet interne Stärken/Schwächen und externe Chancen/Risiken der Marketingstrategie – Fundament für datengestützte Entscheidungen von Kampagnenplanung bis Marktpositionierung. KI-Tools beschleunigen SWOT-Erstellung durch automatische Marktdaten- und Wettbewerbsanalyse. Wachsende Nachfrage nach KI-gestützten Strategieanalyse-Tools validiert das interaktive Marketingkonzept-Tool mit integrierter SWOT-Funktion.",
+        source: "researchly.at",
+        url: "https://www.researchly.at/post/swot-analyse-marketing",
+        date: "2026",
+        category: "Marketing-Tools & Software",
+        addedAt: "2026-04-18",
+      },
+      {
+        summary: "KMU Performer AG: 'Unsere KMU Marketing-Trends 2026' (11. Dezember 2025) – Fünf zentrale Trends für KMU: Generative Engine Optimization (GEO) für KI-Suchmaschinen wie ChatGPT und Gemini, KI-gestützte Marketing-Automatisierung, Microsoft Advertising via Bing/LinkedIn im B2B, intelligente CRM-Systeme, ChatBots und WhatsApp Business. Wer diese Entwicklungen früh nutzt, sichert sich Reichweite und Effizienz – wachsender Bedarf an strukturierten Marketing-Frameworks und Tools für Schweizer KMU.",
+        source: "KMU Performer AG",
+        url: "https://kmu-performer.ch/trends-2026/",
+        date: "2025-12-11",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-18",
+      },
       // Neu: 17.04.2026
       {
         summary: "researchly.at: 'PESTEL-Analyse erstellen: Anleitung mit Vorlage (2026)' – KI-gestütztes PESTEL-Analyse-Tool erstellt vollständige Umweltanalyse in 60 Sekunden: politische, wirtschaftliche, soziale, technologische, ökologische und rechtliche Faktoren strukturiert und faktenbasiert automatisiert. Wachsende Nachfrage nach KI-unterstützten Strategieanalyse-Tools zeigt: Unternehmer und Marketing-Fachleute suchen effiziente digitale Lösungen für klassische Frameworks. Direktes Marktvalidierungsumfeld für das interaktive Marketingkonzept-Tool auf learnfluencer.ch mit PESTEL, SWOT, 5 Forces und weiteren integrierten Analysemodulen.",
@@ -7216,6 +7391,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 18.04.2026
+      {
+        summary: "trauerportal.ch: 'Was kostet eine Bestattung in der Schweiz?' – Bestattungskosten in der Schweiz variieren stark regional: Schlichte Bestattung ab CHF 2'000, traditionelle Zeremonie CHF 10'000+. In Städten wie Zürich, Basel und St. Gallen sind Grundleistungen (Einsargen, Transport, Kremation, Sarg) für Einwohner oft kostenlos. In ländlichen Kantonen übernehmen Angehörige mehr Kosten. Regionale Kostentransparenz ist Schlüsselbedürfnis – direktes Marktargument für digitale Preisvergleichs- und Vorsorge-Plattformen wie bestattungsplaner.ch.",
+        source: "trauerportal.ch",
+        url: "https://www.trauerportal.ch/de/blog/was-kostet-eine-bestattung-in-der-schweiz",
+        date: "2026",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-18",
+      },
+      {
+        summary: "everlife.ch: 'Was kostet eine Kremation in der Schweiz?' – Kremation kostet in der Schweiz zwischen CHF 500 und 1'000. Kremation ist die mit Abstand häufigste Bestattungsform (Anteil: über 90% in 2026). Günstigste und zunehmend verbreitete Alternative zur Erdbestattung. Einfache Urnen ab CHF 50, Designer-Urnen bis CHF 1'000+. Steigende Kremationsquote treibt Nachfrage nach digitaler Planung und Vorsorge – Wachstumsmarkt für bestattungsplaner.ch als Online-Vorsorge-Plattform.",
+        source: "everlife.ch",
+        url: "https://everlife.ch/de/veroffentlichung/was-kostet-eine-kremation-in-der-schweiz/",
+        date: "2026",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-18",
+      },
+      {
+        summary: "bestatter.ch (SVB): 'Bestattungsvorsorge / Bestattungsanordnung' – Der Schweizerische Verband der Bestattungsdienste (SVB) empfiehlt allen Personen, Bestattungswünsche frühzeitig schriftlich festzuhalten. Vorsorge entlastet Angehörige in einer schwierigen Zeit und stellt sicher, dass eigene Wünsche umgesetzt werden. Mangelnde Vorsorgedurchdringung (nur ca. 10% der Todesfälle durch Vertrag gedeckt) zeigt enormes Marktpotenzial für digitale Vorsorge-Plattformen.",
+        source: "Schweizerischer Verband der Bestattungsdienste",
+        url: "https://bestatter.ch/en/funeral-preplanning-foresight-care-with-svb/",
+        date: "2026",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-04-18",
+      },
       // Neu: 17.04.2026
       {
         summary: "everlife.ch: 'Panorama der Todesfälle in der Schweiz und Trends' – Everlife.ch dokumentiert: In der Schweiz sterben jährlich ca. 74'000 Menschen (2023); 90% wählen Kremation (1984 noch 50%). Demografischer Wandel (Babyboomer-Generation) lässt Todesfallzahlen langfristig weiter steigen. Nur 10% der Todesfälle sind aktuell durch Bestattungsvorsorgevertrag gedeckt – enormes Marktpotenzial für digitale Vorsorge-Plattformen wie bestattungsplaner.ch als Lead-Vermittler für Schweizer Bestattungsunternehmen.",
