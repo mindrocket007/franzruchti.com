@@ -28,6 +28,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 18.04.2026
       {
+        summary: "SIZ.ch: 'Newsflash März 2026 – KI verändert Prüfungsbedingungen' – SIZ AG reagiert per März 2026 auf neue KI-basierte Funktionen und Office-Add-ins, die eine automatisierte Ausführung von Prüfungsaufgaben ohne Nachweis der geforderten Kompetenzen ermöglichen – was dem Zertifizierungszweck widerspricht. SIZ klärt Prüfungsbedingungen und führt technische Massnahmen zur Integritätssicherung ein. Direkte operative Mitteilung der SIZ AG über Qualitätssicherung ihrer Zertifizierungen im KI-Zeitalter.",
+        source: "SIZ AG",
+        url: "https://siz.ch/newsflash-maerz-2026/",
+        date: "2026-03",
+        category: "SIZ AG direkt",
+        addedAt: "2026-04-18",
+      },
+      {
         summary: "ICT-Berufsbildung Schweiz: 'AI Business Specialist – Fachausweis-Informationsseite 2026' – Offizielle Informationsseite der ICT-Berufsbildung Schweiz zum neuen eidgenössischen Fachausweis AI Business Specialist (NQR-Niveau 5): Erste Berufsprüfungen finden Herbst 2026 statt, Bund erstattet bis zu 50% der Kurskosten. Trägerorganisation ist ICT-Berufsbildung Schweiz, zahlreiche Schweizer Bildungspartner bieten Vorbereitungskurse an. Stärkung des staatlich anerkannten KI-Zertifizierungsangebots schafft direktes Wachstumsumfeld für SIZ AG als etablierte Schweizer ICT-Prüfungsorganisation.",
         source: "ICT-Berufsbildung Schweiz",
         url: "https://www.ict-berufsbildung.ch/weiterbildung/fachausweis/ai-business-specialist",
@@ -1316,6 +1324,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "mindrocket-trading": {
     news: [
       // Neu: 18.04.2026
+      {
+        summary: "StockBrokers.com: 'NinjaTrader Review 2026' – NinjaTrader öffnete im Januar 2026 den europäischen Markt über einen CySEC-regulierten Broker. Die Plattform verwaltet über 2 Mio. Accounts und wurde 2025 von Kraken für $1.5 Mrd. übernommen. C#-basierte NinjaScript-Automatisierung, Tick-Level-Backtesting und Kommissionen ab $0.09/Kontrakt für Micro-Futures. Day-Trading-Margins: $50 (MES/MNQ), $500 (ES). Direkter strategischer Rahmen für die NinjaTrader-basierte Handelsinfrastruktur von Mind Rocket Trading.",
+        source: "StockBrokers.com",
+        url: "https://www.stockbrokers.com/futures/review/ninjatrader",
+        date: "2026",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-18",
+      },
       {
         summary: "Benzinga: 'Best Trading Platforms for E-Mini Futures April 2026' – Aktuelle Bewertung der führenden Plattformen für E-Mini Futures-Trader. NinjaTrader zählt zu den Top-Optionen für algorithmische ES-Trader dank NinjaScript-Automatisierung, fortgeschrittenem Charting und günstigen Kommissionen (ab $1.29/Kontrakt für ES). Direkter Referenzrahmen für Plattformwahl und technologische Positionierung im Bereich algorithmischer Futures-Handel – relevant für Mind Rocket Trading.",
         source: "Benzinga",
@@ -3072,6 +3088,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 18.04.2026
       {
+        summary: "Wellhub: 'Betriebliches Gesundheitsmanagement (BGM) 2026: Der Praxisleitfaden' – Umfassender Leitfaden zum BGM 2026: Digitale BGM-Lösungen gewinnen durch Homeoffice und hybride Arbeit an Bedeutung. Gesundheitsangebote umfassen Fitness, mentale Gesundheit (Meditation, Coaching) und Ernährung. BGM als strategisches Instrument zur Mitarbeiterbindung und Produktivitätssteigerung. Wachsende Unternehmens-Nachfrage nach skalierbaren, digitalen Präventionsformaten bestätigt den Marktbedarf für hypnovital® als digitales BGM-Programm.",
+        source: "Wellhub",
+        url: "https://wellhub.com/de-de/blog/benefits-und-wellbeing-programme/bgm/",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-18",
+      },
+      {
         summary: "ad-hoc-news.de: 'Betriebliches Gesundheitsmanagement wird zum strategischen Imperativ' (27. März 2026) – BGM entwickelt sich von einem optionalen Angebot zu einem geschäftskritischen Erfolgsfaktor angesichts von Fachkräftemangel und psychischen Belastungen. Nur ca. ein Viertel der Unternehmen implementiert BGM umfassend. Der ROI von BGM-Massnahmen liegt bei 1:5 bis 1:8. Psychische Erkrankungen sind häufigste Fehlzeitengründe – digitale und skalierbare Präventionsmethoden wie Hypnose-Audio-Programme sind als niederschwelliges Angebot gefragt.",
         source: "ad-hoc-news.de",
         url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/betriebliches-gesundheitsmanagement-wird-zum-strategischen-imperativ/69002177",
@@ -4156,6 +4180,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "12wy-planner": {
     news: [
       // Neu: 18.04.2026
+      {
+        summary: "12week-breakthrough.com: 'The Complete 12-Week Year Implementation Guide for 2026' – Umfassender Implementierungsleitfaden für die 12-Week-Year-Methode: Schrittweise Anleitung für Zielformulierung, Weekly Plans, Scorecards und Reviews nach Brian Moran. Wachsende Online-Community von 12-Week-Year-Anwendern belegt anhaltende Popularität der Methode. Direktes Marktvalidierungssignal für spezialisierte digitale Planungs-Tools wie den 12wy-planner.",
+        source: "12week-breakthrough.com",
+        url: "https://12week-breakthrough.com/implementation-guide-2026-12-week-year/",
+        date: "2026",
+        category: "12 Week Year Methode",
+        addedAt: "2026-04-18",
+      },
       {
         summary: "12weekyear.com: 'The 12 Week Year – Goal Execution System' – Die offizielle 12-Week-Year-Website zeigt: Das System wird von Top-Performern, Führungskräften und Teams weltweit zur Zielerreichung durch fokussierte 12-Wochen-Zyklen eingesetzt. Vier 'Jahre' Leistung innerhalb eines Kalenders durch Kondensation des Ausführungsfensters. Die wachsende internationale Verbreitung des Brian-Moran-Systems validiert den Marktbedarf für spezialisierte digitale Planungs-Tools als SaaS-Produkte.",
         source: "12weekyear.com",
@@ -5874,6 +5906,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 18.04.2026
       {
+        summary: "Nume.ch: 'KI-Nutzung Schweiz 2026: 76% nutzen Künstliche Intelligenz' – Studie: 76% der erwachsenen Schweizer Bevölkerung integrieren KI-Tools regelmässig in ihren Alltag – ein Wendepunkt von der technologischen Nische zur unverzichtbaren Basiskompetenz. KI-Literacy und Lernkompetenz im Umgang mit KI werden zur gesellschaftlichen Kernkompetenz. Direktes Marktumfeld für learnfluencer.ch als Schweizer Thought-Leadership-Plattform für Lernen und KI-Kompetenz.",
+        source: "Nume.ch",
+        url: "https://www.nume.ch/ki-nutzung-schweiz-2026-76-nutzen-kuenstliche-intelligenz/",
+        date: "2026",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-18",
+      },
+      {
         summary: "Wissensmanagement-Magazin: 'Learnfluencer – Lernkultur in der digitalen Transformation' (1/2025) – Fachbeitrag beschreibt Learnfluencer als strategische Reaktion auf die veränderte Lernkultur in Unternehmen durch digitale Transformation: Personen, die Lernmotivation stärken, individuelle und kollektive Lernprozesse verknüpfen und eine selbstverantwortliche Lernkultur aufbauen. Erschienen in Ausgabe 1/2025 – direkter akademisch-publizistischer Nachweis für die Relevanz des Learnfluencer-Konzepts als Thought-Leadership-Thema.",
         source: "Wissensmanagement-Magazin / barbara-liebermeister.com",
         url: "https://barbara-liebermeister.com/wp-content/uploads/2025/03/learnfluencer-lernkultur-digitalen-transformation.pdf",
@@ -6831,6 +6871,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 18.04.2026
       {
+        summary: "Swiss Marketing Academy: 'Marketing-Analyse-Tools: Die Top 5 für Profis 2026' – Schweizer Marketingakademie bewertet führende Analyse-Tools für Profis nach Funktionsumfang, Usability und Preis-Leistung. Professionelle Marketingplanung mit strukturierten Analyse-Frameworks (SWOT, PESTEL etc.) wird 2026 als Kernkompetenz für Marketingprofis hervorgehoben. Direktes Wettbewerbsumfeld und Marktvalidierung für das Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "Swiss Marketing Academy",
+        url: "https://www.swissmarketingacademy.ch/magazin/marketing-analyse-tools-profis-2026/",
+        date: "2026",
+        category: "Marketing-Tools & Software",
+        addedAt: "2026-04-18",
+      },
+      {
         summary: "GlobeNewswire: 'Digital Marketing Software Competitive Analysis Report 2025' (9. März 2026) – Marktanalyse-Report zum weltweiten Markt für digitale Marketing-Software: Wettbewerbslandschaft, Produktentwicklungen, M&A-Aktivitäten und Revenue-Forecasts bis 2033. Dokumentiert starkes Wachstum des MarTech-Sektors mit KMU als wachsendem Zielsegment. Direktes strukturelles Marktumfeld für interaktive Marketingkonzept-Tools wie das Tool auf learnfluencer.ch.",
         source: "GlobeNewswire",
         url: "https://www.globenewswire.com/news-release/2026/03/09/3251714/0/en/Digital-Marketing-Software-Competitive-Analysis-Report-2025-Key-Players-Company-Profiles-Product-Developments-Mergers-Strategic-Collaborations-and-Revenue-Forecast-Insights-to-2033.html",
@@ -7482,6 +7530,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "bestattungsplaner": {
     news: [
       // Neu: 18.04.2026
+      {
+        summary: "Luzerner Zeitung: 'Horw: Die digitalen Bestatter' – Luzerner Zeitung porträtiert bestattungsplaner.ch: Betrieben von Johannes Ruchti (hauptberuflich Bestatter bei Hager Imbach in Kriens), vermittelt das Portal Bestattungsaufträge an lokale Bestatter für eine fixe Entschädigung. Aktuell in der Zentralschweiz verfügbar, Ausbau auf die ganze Schweiz geplant. Direkter Medienbericht über das Geschäftsmodell von bestattungsplaner.ch und seine digitale Lead-Vermittlungsstrategie.",
+        source: "Luzerner Zeitung",
+        url: "https://www.luzernerzeitung.ch/wirtschaft/horw-die-digitalen-bestatter-ld.85302",
+        date: "2023",
+        category: "Bestattungsplaner direkt",
+        addedAt: "2026-04-18",
+      },
       {
         summary: "Investorszene: 'Digitalisierung im Bestattungswesen: Chancen für Startups und etablierte Bestatter' (21. Mai 2025) – Detaillierte Analyse der Digitalisierungswelle in der Bestattungsbranche: Vergleichsportale, Online-Planungstools, KI-Chatbots und digitale Nachlassdienste verändern die Branche. Diskutiert Chancen für Startups und etablierte Bestatter sowie Herausforderungen bei Datenschutz und Empathie. Direkter Marktrahmen für bestattungsplaner.ch als digitales Lead-Vermittlungsportal in der Schweizer Bestattungsbranche.",
         source: "investorszene.de",
