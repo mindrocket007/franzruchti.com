@@ -5,11 +5,20 @@ export interface ProjectPage {
   external?: boolean;
 }
 
+export interface ProjectAccess {
+  label: string;
+  url: string;
+  username: string;
+  password: string;
+  note?: string;
+}
+
 export interface Project {
   slug: string;
   title: string;
   description: string;
   pages: ProjectPage[];
+  defaultAccesses?: ProjectAccess[];
 }
 
 export const projects: Project[] = [
@@ -18,6 +27,11 @@ export const projects: Project[] = [
     title: "SIZ AG",
     description: "Schweizerisches Informatik-Zertifikat – Leiter Markt & Partner",
     pages: [
+      {
+        slug: "meeting-wolfram",
+        title: "Meeting Wolfram · Mo 20.04.2026",
+        file: "/projects/siz-ag/Meeting_Wolfram_Montag.html",
+      },
       {
         slug: "argumentarium",
         title: "Argumentarium",
@@ -42,6 +56,11 @@ export const projects: Project[] = [
         slug: "diplome",
         title: "Diplome-Übersicht",
         file: "/projects/siz-ag/SIZ_Diplome_Uebersicht.html",
+      },
+      {
+        slug: "pruefungsarten",
+        title: "Prüfungsarten-Übersicht",
+        file: "/projects/siz-ag/SIZ_Pruefungsarten.html",
       },
       {
         slug: "12wy-planner",
@@ -227,6 +246,53 @@ export const projects: Project[] = [
         title: "monsieur-claude.ch",
         file: "https://monsieur-claude.ch",
         external: true,
+      },
+    ],
+  },
+  {
+    slug: "madame-claude",
+    title: "Madame Claude",
+    description: "KI-Versicherungs- und Vorsorgeportal für die Schweiz. Policen hochladen → Claude extrahiert → Lücken/Doppeldeckungen/Aktionsplan. Pendant zu Monsieur Claude mit gemeinsamer Datenbasis via Review-Token – madame-claude.ch",
+    pages: [
+      {
+        slug: "homepage",
+        title: "madame-claude.ch",
+        file: "https://madame-claude.ch",
+        external: true,
+      },
+      {
+        slug: "dashboard",
+        title: "User-Dashboard",
+        file: "https://madame-claude.ch/dashboard",
+        external: true,
+      },
+      {
+        slug: "admin",
+        title: "Admin-Panel",
+        file: "https://madame-claude.ch/admin",
+        external: true,
+      },
+      {
+        slug: "github",
+        title: "GitHub Repo",
+        file: "https://github.com/mindrocket007/madame-claude",
+        external: true,
+      },
+    ],
+    defaultAccesses: [
+      {
+        label: "Madame Claude – User (Franz)",
+        url: "https://madame-claude.ch/login",
+        username: "franzruchti@me.com",
+        password: "MadameClaude2026!",
+        note: "Normaler Kunden-Account. Analyse-ID: 3afcb9ed-927e-41ba-8ae9-1036e24ee5f5 (Unternehmer-Tier, 16 Policen, bereits analysiert).",
+      },
+      {
+        label: "Madame Claude – Admin",
+        url: "https://madame-claude.ch/admin",
+        username: "franzruchti@me.com",
+        password: "MadameClaude2026!",
+        note: "Gleicher Account wie User — Admin-Zugriff über ADMIN_EMAIL=franzruchti@me.com auto-erkannt.",
       },
     ],
   },

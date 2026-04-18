@@ -100,8 +100,20 @@ export default function ProjectPage() {
       try {
         setAccesses(JSON.parse(storedAccesses));
       } catch {}
+    } else if (project?.defaultAccesses && project.defaultAccesses.length > 0) {
+      // Seed from project defaults on first visit
+      setAccesses(
+        project.defaultAccesses.map((a) => ({
+          id: generateId(),
+          label: a.label,
+          url: a.url,
+          username: a.username,
+          password: a.password,
+          note: a.note ?? "",
+        })),
+      );
     }
-  }, [slug]);
+  }, [slug, project]);
 
   const saveAll = useCallback(() => {
     localStorage.setItem(`notes-${slug}`, notes);

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Meeting Wolfram Schmidt – Montag 20.04.2026</title>
+<style>
+  :root {
+    --bg: #0a0e1a;
+    --bg-card: #121826;
+    --bg-card-hover: #1a2238;
+    --border: #1e2940;
+    --text: #e6ebf5;
+    --text-dim: #8a94a8;
+    --accent: #6ea8ff;
+    --accent-warm: #ffb86e;
+    --accent-green: #5fd68c;
+    --accent-red: #ff6e8a;
+    --shadow: 0 10px 40px rgba(0,0,0,.45);
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+    line-height: 1.55;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 40px 24px 96px; }
+  header.hero {
+    background: linear-gradient(135deg, #1a2238 0%, #0f1624 100%);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 36px 36px 32px;
+    box-shadow: var(--shadow);
+    margin-bottom: 32px;
+    position: relative;
+    overflow: hidden;
+  }
+  header.hero::before {
+    content: "";
+    position: absolute; inset: 0;
+    background: radial-gradient(800px 400px at 90% -20%, rgba(110,168,255,.18), transparent 60%);
+    pointer-events: none;
+  }
+  .tag {
+    display: inline-block;
+    font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase;
+    color: var(--accent);
+    background: rgba(110,168,255,.08);
+    border: 1px solid rgba(110,168,255,.25);
+    padding: 4px 10px; border-radius: 999px;
+    margin-bottom: 14px;
+  }
+  h1 { font-size: 32px; margin: 0 0 8px; letter-spacing: -0.5px; }
+  .sub { color: var(--text-dim); font-size: 15px; margin-bottom: 24px; }
+  .opener {
+    background: rgba(255,184,110,.06);
+    border-left: 4px solid var(--accent-warm);
+    padding: 18px 20px;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 1.65;
+    font-style: italic;
+  }
+  .opener-label {
+    font-style: normal;
+    display: block;
+    font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+    color: var(--accent-warm);
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  h2 {
+    font-size: 22px;
+    margin: 40px 0 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+    letter-spacing: -0.3px;
+  }
+  h3 { font-size: 16px; margin: 18px 0 10px; color: var(--text); }
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px 24px;
+    margin-bottom: 16px;
+    transition: background .2s;
+  }
+  .card:hover { background: var(--bg-card-hover); }
+  .card .head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 12px; }
+  .card .head h3 { margin: 0; font-size: 17px; }
+  .badge-time {
+    font-size: 12px;
+    color: var(--accent);
+    background: rgba(110,168,255,.08);
+    padding: 3px 10px; border-radius: 999px;
+    border: 1px solid rgba(110,168,255,.22);
+    font-weight: 600;
+  }
+  ul { padding-left: 20px; margin: 8px 0; }
+  li { margin: 6px 0; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 720px) { .two-col { grid-template-columns: 1fr; } }
+  .do, .dont {
+    padding: 16px 18px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+  }
+  .do   { background: rgba(95,214,140,.05); border-color: rgba(95,214,140,.22); }
+  .dont { background: rgba(255,110,138,.05); border-color: rgba(255,110,138,.22); }
+  .do h3   { color: var(--accent-green); margin-top: 0; }
+  .dont h3 { color: var(--accent-red);   margin-top: 0; }
+  .qa-item {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    display: flex; gap: 14px; align-items: flex-start;
+  }
+  .qa-num {
+    flex: 0 0 28px; height: 28px;
+    background: var(--accent); color: #0a0e1a;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 13px;
+  }
+  .hyp {
+    background: var(--bg-card);
+    border-left: 3px solid var(--accent);
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    border-radius: 0 8px 8px 0;
+  }
+  .hyp .label { font-size: 11px; letter-spacing: 1.2px; color: var(--accent); text-transform: uppercase; font-weight: 700; }
+  .quickwin {
+    background: linear-gradient(135deg, rgba(95,214,140,.08), rgba(95,214,140,.02));
+    border: 1px solid rgba(95,214,140,.22);
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin-bottom: 12px;
+  }
+  .quickwin .qw-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+  .quickwin .qw-title { font-weight: 600; color: var(--accent-green); }
+  .quickwin .qw-kpi { font-size: 12px; color: var(--text-dim); }
+  .print-btn {
+    position: fixed; bottom: 24px; right: 24px;
+    background: var(--accent); color: #0a0e1a;
+    border: none; padding: 14px 20px; border-radius: 999px;
+    font-weight: 600; cursor: pointer; font-size: 14px;
+    box-shadow: 0 10px 30px rgba(110,168,255,.35);
+    z-index: 100;
+  }
+  .print-btn:hover { transform: translateY(-2px); transition: transform .15s; }
+  .phase-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 10px; }
+  @media (max-width: 720px) { .phase-grid { grid-template-columns: 1fr; } }
+  .phase {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px;
+  }
+  .phase .p-head { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent); margin-bottom: 4px; font-weight: 700; }
+  .phase h4 { margin: 0 0 10px; font-size: 15px; }
+  .meta-row { display: flex; gap: 18px; flex-wrap: wrap; color: var(--text-dim); font-size: 13px; margin-bottom: 20px; }
+  .meta-row strong { color: var(--text); }
+  hr.soft { border: 0; border-top: 1px dashed var(--border); margin: 32px 0; }
+  .handout-only { display: none; }
+
+  /* ---- PRINT: 1-Seiten-Handout ---- */
+  @media print {
+    @page { size: A4; margin: 14mm; }
+    body { background: #fff; color: #111; font-size: 10.5pt; }
+    .wrap { max-width: 100%; padding: 0; }
+    header.hero, .card, .quickwin, .phase, .hyp, .qa-item, .do, .dont, .opener {
+      box-shadow: none !important;
+      page-break-inside: avoid;
+    }
+    .no-print { display: none !important; }
+    .handout-only { display: block; }
+
+    /* Handout-Reset: nur der Handout-Block wird gedruckt */
+    body > *:not(.handout-page) { display: none !important; }
+    .handout-page { display: block !important; }
+    .handout-page h1 { font-size: 18pt; margin: 0 0 2mm; color: #111; }
+    .handout-page h2 { font-size: 12pt; margin: 4mm 0 1.5mm; border-bottom: 1px solid #888; padding-bottom: 1mm; }
+    .handout-page .mini { font-size: 9pt; color: #444; }
+    .handout-page ul { margin: 1mm 0 2mm; padding-left: 4mm; }
+    .handout-page li { margin: 0.5mm 0; }
+    .handout-page .opener-box {
+      border-left: 3px solid #c06a00;
+      background: #fff6e8;
+      padding: 2mm 3mm; margin: 2mm 0 3mm;
+      font-style: italic;
+      font-size: 10pt;
+    }
+    .handout-page .two-col-print { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; }
+    .handout-page .box { border: 1px solid #aaa; border-radius: 2mm; padding: 2mm 3mm; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap no-print">
+
+  <header class="hero">
+    <span class="tag">CEO-Meeting • Vorbereitung</span>
+    <h1>Meeting Wolfram Schmidt</h1>
+    <div class="sub">Montag, 20. April 2026 · SIZ AG · nach 18 Tagen im Amt als Leiter Markt &amp; Partner</div>
+
+    <div class="opener">
+      <span class="opener-label">Eröffnungssatz</span>
+      „Wolfram, ich könnte dir heute drei Marketingkonzepte auf den Tisch legen – aber die wären akademisch.
+      Nach 18 Tagen habe ich Hypothesen, keine Wahrheiten. Was ich dir heute liefern kann, ist mein Vorgehen
+      für die nächsten 90 Tage, drei Quick Wins, die ich ab morgen anpacke, und fünf Fragen, die ich von dir brauche.“
+    </div>
+  </header>
+
+  <div class="meta-row">
+    <div><strong>Dauer:</strong> ca. 45 Min</div>
+    <div><strong>Format:</strong> 1-Seiten-Handout + mündlich</div>
+    <div><strong>Ziel:</strong> Go für 90-Tage-Fahrplan &amp; Antworten auf 5 Fragen</div>
+  </div>
+
+  <!-- Kern-Umdeutung -->
+  <section class="card">
+    <h3 style="margin-top:0">Die Kern-Umdeutung</h3>
+    <p>Wolfram fragt: <em>„Was hast du für Ideen?“</em></p>
+    <p>Die meisten hören: <em>„Liefer mir eine Strategie.“</em></p>
+    <p style="color:var(--accent-warm)"><strong>Richtig gelesen:</strong> <em>„Beweis mir, dass du strukturiert denkst und dass ich mit dir eine rechte Hand habe – keinen Theoretiker.“</em></p>
+    <p>Er hat 8 Leute entlassen und mich geholt. Er hat <strong>nicht</strong> eine Vollzeit-Strategieabteilung eingestellt – sondern einen Umsetzer mit Diplom-Know-how. Heute den Umsetzer zeigen, untermauert mit Methode.</p>
+  </section>
+
+  <!-- Struktur -->
+  <h2>Meeting-Struktur (45 Min)</h2>
+
+  <div class="card">
+    <div class="head"><h3>1 · Beobachtungen – was ich in 18 Tagen gesehen habe</h3><span class="badge-time">5–8 Min</span></div>
+    <p style="color:var(--text-dim)">Keine Wertungen. Fakten. Max 5 Punkte. Zeigt: Augen offen, nicht nur Schreibtisch.</p>
+    <ul>
+      <li>77 Partnerschulen, aber massiver Long-Tail an Karteileichen (0-Prüfer)</li>
+      <li>Trend dreht – das ist dein Erfolg, Wolfram, bevor ich da war</li>
+      <li>Digicomp / ECDL dominieren generische Keywords, Branded Search SIZ stark</li>
+      <li>KI-Welle schafft akuten Legitimationsbedarf für ICT-Zertifizierung</li>
+      <li>4 Subdomains offline, LinkedIn 183 Follower – ungenutzte Assets</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="head"><h3>2 · Meine 3 Arbeits-Hypothesen</h3><span class="badge-time">5 Min</span></div>
+    <p style="color:var(--text-dim)">Explizit als Hypothesen markieren – nicht als Wahrheit verkaufen.</p>
+    <div class="hyp">
+      <span class="label">Hypothese 1</span>
+      <div>Der 60%-Einbruch ist primär ein <strong>Vertriebs- und Beziehungsproblem</strong>, kein Produktproblem. Partnerschulen wurden nicht betreut.</div>
+    </div>
+    <div class="hyp">
+      <span class="label">Hypothese 2</span>
+      <div>Der aktuelle Aufwärtstrend kommt aus <strong>Marktdurchdringung</strong> (bestehende Schulen wieder aktiv), nicht aus neuen Segmenten.</div>
+    </div>
+    <div class="hyp">
+      <span class="label">Hypothese 3</span>
+      <div>Das grösste Wachstumspotenzial der nächsten 12 Monate liegt <strong>NICHT</strong> in neuen Zielgruppen, sondern in den 20–30 Karteileichen-Schulen und Cross-Selling bei Aktiven. CEO-Dashboard zeigt: +500 bis +1'390 Prüfungen möglich.</div>
+    </div>
+    <p style="margin-top:14px; color:var(--accent-warm)"><strong>Strategische Haltung:</strong> Marktentwicklungs-Ideen (RAV, Gesundheit, Romandie) bewusst hinten anstellen. Erst den Brunnen ausschöpfen, den man hat. Das ist der reifere Zug.</p>
+  </div>
+
+  <div class="card">
+    <div class="head"><h3>3 · 90-Tage-Fahrplan</h3><span class="badge-time">10 Min</span></div>
+    <div class="phase-grid">
+      <div class="phase">
+        <div class="p-head">Tag 1–30</div>
+        <h4>Diagnose</h4>
+        <ul style="margin:0; padding-left:18px">
+          <li>15 Telefon-Interviews Top-/Flop-Partnerschulen</li>
+          <li>3–5 Schulbesuche vor Ort</li>
+          <li>Analyse der 0-Prüfer-Schulen</li>
+          <li>Lehrpersonen-Feedback einholen</li>
+          <li>Kernfrage: <em>Warum prüft ihr (nicht mehr)?</em></li>
+        </ul>
+      </div>
+      <div class="phase">
+        <div class="p-head">Tag 31–60</div>
+        <h4>Hypothesen-Test &amp; Quick Wins live</h4>
+        <ul style="margin:0; padding-left:18px">
+          <li>Drei Quick Wins laufen messbar</li>
+          <li>Interview-Daten konsolidieren</li>
+          <li>Erste Reaktivierungs-Zahlen</li>
+          <li>LinkedIn-Reichweite tracken</li>
+        </ul>
+      </div>
+      <div class="phase">
+        <div class="p-head">Tag 61–90</div>
+        <h4>Strategie-Entwurf</h4>
+        <ul style="margin:0; padding-left:18px">
+          <li>Ansoff-Entscheidung datenbasiert</li>
+          <li>Marketing- &amp; Vertriebsplan 2026/27</li>
+          <li>KPI-Ziele und Budget-Antrag</li>
+          <li>Homepage ja/nein mit Business Case</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="head"><h3>4 · Drei Quick Wins ab morgen</h3><span class="badge-time">5 Min</span></div>
+    <p style="color:var(--text-dim)">Beruhigt Wolfram: Franz denkt nicht nur, Franz liefert. Alle drei zahlen auf Marktdurchdringung ein, brauchen kein Budget, sind in 90 Tagen messbar.</p>
+
+    <div class="quickwin">
+      <div class="qw-head">
+        <span class="qw-title">QW1 · Reaktivierungs-Offensive</span>
+        <span class="qw-kpi">Ziel: 3 reaktiviert in 60 Tagen</span>
+      </div>
+      <div>Top 10 Karteileichen-Schulen anrufen (Liste im CEO-Dashboard vorhanden). Persönlicher Kontakt, Angebot, Zeitplan.</div>
+    </div>
+    <div class="quickwin">
+      <div class="qw-head">
+        <span class="qw-title">QW2 · Cross-Selling LZC-Heavy</span>
+        <span class="qw-kpi">Ziel: +200 Prüfungen in 90 Tagen</span>
+      </div>
+      <div>Schulen, die viel lernen aber wenig prüfen: gezieltes Gespräch, Anreiz-Modell, Prüfungs-Commitment.</div>
+    </div>
+    <div class="quickwin">
+      <div class="qw-head">
+        <span class="qw-title">QW3 · LinkedIn-Präsenz</span>
+        <span class="qw-kpi">Kosten: 0 · 2 Posts/Woche</span>
+      </div>
+      <div>Argumentarium-Inhalte recyceln, Lehrpersonen-Netzwerk aufbauen, Reichweite systematisch messen.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="head"><h3>5 · Meine 5 Fragen an Wolfram</h3><span class="badge-time">10 Min · wichtigster Block</span></div>
+    <p style="color:var(--text-dim)">Hier Wolfram einbinden und Gold abholen. Respekt vor seinem Wissen zeigen. Schriftlich mitschreiben.</p>
+    <div class="qa-item"><div class="qa-num">1</div><div><strong>Was hast du in den letzten 18 Monaten schon probiert, was nicht funktioniert hat?</strong><br /><span style="color:var(--text-dim); font-size:13px">Keine alten Fehler wiederholen.</span></div></div>
+    <div class="qa-item"><div class="qa-num">2</div><div><strong>Wo sind die politischen No-Gos?</strong><br /><span style="color:var(--text-dim); font-size:13px">kfmv/Swico-Beziehungen, Personen, Themen.</span></div></div>
+    <div class="qa-item"><div class="qa-num">3</div><div><strong>Wie viel Budget steht realistisch für Marketing &amp; Vertrieb 2026?</strong><br /><span style="color:var(--text-dim); font-size:13px">Realistische Grössenordnung, nicht Wunsch-Zahl.</span></div></div>
+    <div class="qa-item"><div class="qa-num">4</div><div><strong>Welche Partnerschulen sind für dich persönlich heilig – wo ich nicht telefoniere, bevor ich dich frage?</strong><br /><span style="color:var(--text-dim); font-size:13px">Kein Porzellan zerschlagen.</span></div></div>
+    <div class="qa-item"><div class="qa-num">5</div><div><strong>Wie definierst du Erfolg meiner Rolle nach 12 Monaten?</strong><br /><span style="color:var(--text-dim); font-size:13px">Seine Erwartung schriftlich – das ist mein Vertrag im Vertrag.</span></div></div>
+  </div>
+
+  <div class="card">
+    <div class="head"><h3>6 · Abschluss</h3><span class="badge-time">2 Min</span></div>
+    <div class="opener" style="margin-top:4px">
+      „Wolfram, nach 90 Tagen stehe ich wieder hier mit drei Dingen: validierten Hypothesen, ersten Ergebnissen
+      aus den Quick Wins, und einem Strategie-Vorschlag, den wir gemeinsam verabschieden. Heute bitte ich um
+      dein Go für den Fahrplan und um die Antworten auf meine fünf Fragen.“
+    </div>
+  </div>
+
+  <h2>Taktik: Umgang mit Wolfram</h2>
+  <div class="two-col">
+    <div class="do">
+      <h3>Tun</h3>
+      <ul>
+        <li>Sein Trend-Umschwung gehört ihm – explizit erwähnen („das ist dein Erfolg“)</li>
+        <li>1-Seiten-Handout als Unterlage, Rest mündlich am Flipchart</li>
+        <li>Fragen stellen, mitschreiben, bei eigenen Ideen von ihm sagen: „baue ich in den Fahrplan ein“</li>
+        <li>Quick Wins konkret machen: Namen, Zahlen, Daten</li>
+        <li>Wenn er drängelt („90 Tage zu lang“): „Quick Wins liefern ab Tag 1 – erste Ergebnisse in 30 Tagen.“</li>
+      </ul>
+    </div>
+    <div class="dont">
+      <h3>Nicht tun</h3>
+      <ul>
+        <li>Homepage-Thema heute NICHT aufmachen – Munition für Tag 60, dann mit Business Case</li>
+        <li>Keine 40-Folien-Präsentation – er mag Effizienz (hat 8 Leute entlassen)</li>
+        <li>Nicht gegen seine Meinungen anrennen ohne Daten</li>
+        <li>Nicht „wir müssen unbedingt…“ – zu forsch für Tag 18</li>
+        <li>Website-Analyse nicht voll auspacken – zu viel Kritik auf einmal</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Einordnung: strategisch vs. operativ</h2>
+  <div class="card">
+    <p style="margin-top:0">Wenn Wolfram unterbricht und fragt „warum redest du noch nicht über konkrete Massnahmen?", hier die Antwort im Kopf – und falls nötig auch mündlich:</p>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:14px 0;">
+      <div style="background:rgba(255,184,110,.06); border:1px solid rgba(255,184,110,.3); border-radius:10px; padding:14px 16px;">
+        <div style="font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:var(--accent-warm); font-weight:700; margin-bottom:8px;">Strategisch · WAS &amp; WARUM</div>
+        <ul style="margin:0; padding-left:18px">
+          <li>Horizont 3–5+ Jahre</li>
+          <li>Ebene: Geschäftsleitung / Marketingleiter</li>
+          <li>Output: Richtungs-Entscheide, Positionierung, Zielgruppen</li>
+          <li>Tools: PESTEL, SWOT, Ansoff, Porter, STP, VPC</li>
+          <li>Fehlerfolge: falscher Markt, falsche Position</li>
+        </ul>
+      </div>
+      <div style="background:rgba(95,214,140,.06); border:1px solid rgba(95,214,140,.3); border-radius:10px; padding:14px 16px;">
+        <div style="font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:var(--accent-green); font-weight:700; margin-bottom:8px;">Operativ · WIE &amp; WANN</div>
+        <ul style="margin:0; padding-left:18px">
+          <li>Horizont 1 Tag bis 12 Monate</li>
+          <li>Ebene: Marketing-Team / Agentur / PM</li>
+          <li>Output: Kampagnen, Massnahmen, Budget, KPIs</li>
+          <li>Tools: 7P, Mediaplan, Redaktionsplan, KPI-Dashboard</li>
+          <li>Fehlerfolge: Kampagne floppt, Budget verbrannt</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 style="margin-top:16px">Wo liegen unsere Meeting-Themen?</h3>
+    <div style="overflow-x:auto">
+      <table style="width:100%; border-collapse:collapse; font-size:14px;">
+        <thead>
+          <tr style="background:rgba(110,168,255,.08);">
+            <th style="text-align:left; padding:10px 12px; border-bottom:1px solid var(--border);">Thema</th>
+            <th style="text-align:left; padding:10px 12px; border-bottom:1px solid var(--border);">Ebene</th>
+            <th style="text-align:left; padding:10px 12px; border-bottom:1px solid var(--border);">Warum</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td style="padding:8px 12px; border-bottom:1px solid var(--border);">Beobachtungen + 3 Hypothesen</td><td style="padding:8px 12px; border-bottom:1px solid var(--border); color:var(--accent-warm)">Strategisch</td><td style="padding:8px 12px; border-bottom:1px solid var(--border);">Diagnose-Ebene, bevor Richtung entschieden wird</td></tr>
+          <tr><td style="padding:8px 12px; border-bottom:1px solid var(--border);">Ansoff-Entscheidung (Durchdringung vs. Entwicklung)</td><td style="padding:8px 12px; border-bottom:1px solid var(--border); color:var(--accent-warm)">Strategisch</td><td style="padding:8px 12px; border-bottom:1px solid var(--border);">Wachstumsrichtung der nächsten 12–24 Monate</td></tr>
+          <tr><td style="padding:8px 12px; border-bottom:1px solid var(--border);">Positionierung gegenüber Digicomp/ECDL</td><td style="padding:8px 12px; border-bottom:1px solid var(--border); color:var(--accent-warm)">Strategisch</td><td style="padding:8px 12px; border-bottom:1px solid var(--border);">Prägt Wahrnehmung und Preishoheit</td></tr>
+          <tr><td style="padding:8px 12px; border-bottom:1px solid var(--border);">Zielgruppen-Priorisierung (Partnerschulen / HR / Endkunden)</td><td style="padding:8px 12px; border-bottom:1px solid var(--border); color:var(--accent-warm)">Strategisch</td><td style="padding:8px 12px; border-bottom:1px solid var(--border);">Entscheidet, wo Ressourcen hinfliessen</td></tr>
+          <tr><td style="padding:8px 12px; border-bottom:1px solid var(--border);">90-Tage-Fahrplan</td><td style="padding:8px 12px; border-bottom:1px solid var(--border); color:var(--accent)">Meta-Ebene</td><td style="padding:8px 12px; border-bottom:1px solid var(--border);">Vorgehen, um Strategie zu entwickeln</td></tr>
+          <tr><td style="padding:8px 12px; border-bottom:1px solid var(--border);">QW1 Reaktivierung Top 10 Karteileichen</td><td style="padding:8px 12px; border-bottom:1px solid var(--border); color:var(--accent-green)">Operativ (Sales)</td><td style="padding:8px 12px; border-bottom:1px solid var(--border);">Konkreter Vertriebs-Massnahmenplan</td></tr>
+          <tr><td style="padding:8px 12px; border-bottom:1px solid var(--border);">QW2 Cross-Sell LZC-Heavy</td><td style="padding:8px 12px; border-bottom:1px solid var(--border); color:var(--accent-green)">Operativ (Sales)</td><td style="padding:8px 12px; border-bottom:1px solid var(--border);">Gezielte Aktion mit messbarem KPI</td></tr>
+          <tr><td style="padding:8px 12px; border-bottom:1px solid var(--border);">QW3 LinkedIn-Präsenz</td><td style="padding:8px 12px; border-bottom:1px solid var(--border); color:var(--accent-green)">Operativ (Kommunikation)</td><td style="padding:8px 12px; border-bottom:1px solid var(--border);">Kanal-Massnahme, schnell anpassbar</td></tr>
+          <tr><td style="padding:8px 12px; border-bottom:1px solid var(--border);">Homepage-Relaunch (später)</td><td style="padding:8px 12px; border-bottom:1px solid var(--border); color:var(--accent-warm)">Strategisch</td><td style="padding:8px 12px; border-bottom:1px solid var(--border);">&rarr; operativ <em>ausführbar</em>, aber erst nach Zielgruppen- &amp; Positionierungs-Entscheid</td></tr>
+          <tr><td style="padding:8px 12px;">5 Fragen an Wolfram</td><td style="padding:8px 12px; color:var(--accent-warm)">Strategisch</td><td style="padding:8px 12px;">Rahmenbedingungen, Politik, Erwartungshaltung</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="background:rgba(255,184,110,.06); border-left:4px solid var(--accent-warm); padding:14px 16px; border-radius:6px; margin-top:16px;">
+      <strong>Die Linie für Wolfram:</strong> „Sechs von sieben Themen, über die wir heute sprechen, sind strategisch – sie bestimmen die Richtung. Die drei Quick Wins sind operativ und laufen ab Tag 1. Alle grösseren operativen Massnahmen (Homepage, Kampagnen, Zielgruppen-Erschliessung) brauchen die strategische Entscheidung zuerst – sonst verbrennen wir Budget."
+    </div>
+    <p style="margin-top:14px; font-size:13px; color:var(--text-dim)">Vollständige Infografik mit allen Leitfragen, Tools und den 4 Kern-Dimensionen (Strategische Relevanz, Ressourcen, Timeline, Impact) im Marketing-Tool: <code style="color:var(--accent)">/project/siz-ag/marketing</code> &rarr; <em>Strategisch vs. Operativ</em></p>
+  </div>
+
+  <h2>Warum das funktioniert</h2>
+  <div class="card">
+    <p>Nichts, was nach 18 Tagen unseriös wäre – aber alle vier Dinge, die ein Diplom-Marketingleiter + Verkaufsleiter + rechte Hand zeigen muss:</p>
+    <ul>
+      <li><strong>Diagnosefähigkeit</strong> – Beobachtungen + Hypothesen strukturiert</li>
+      <li><strong>Methode</strong> – klarer 90-Tage-Fahrplan, nicht Bauchgefühl</li>
+      <li><strong>Hands-on-Umsetzung</strong> – Quick Wins ab morgen, kein Budget-Antrag</li>
+      <li><strong>Führungsanspruch gegenüber dem CEO</strong> – fünf Fragen zurück, klare Erwartung an Go</li>
+    </ul>
+  </div>
+
+  <hr class="soft" />
+
+  <div style="text-align:center; color:var(--text-dim); font-size:13px">
+    Druckbare 1-Seiten-Version via Button unten rechts. · Intern · franzruchti.com / project / siz-ag
+  </div>
+
+</div>
+
+<button class="print-btn no-print" onclick="window.print()">🖨️ Handout drucken</button>
+
+<!-- 1-Seiten-Handout für Druck -->
+<div class="handout-page handout-only">
+  <h1>Meeting Wolfram Schmidt · Mo 20.04.2026</h1>
+  <div class="mini">Leiter Markt &amp; Partner · Tag 18 · Ziel: Go für 90-Tage-Fahrplan</div>
+
+  <div class="opener-box">
+    „Wolfram, ich könnte dir heute drei Marketingkonzepte auflegen – aber die wären akademisch. Nach 18 Tagen
+    habe ich Hypothesen, keine Wahrheiten. Ich liefere mein Vorgehen für 90 Tage, drei Quick Wins ab morgen,
+    und fünf Fragen, die ich von dir brauche.“
+  </div>
+
+  <div class="two-col-print">
+    <div class="box">
+      <h2>Beobachtungen (18 Tage)</h2>
+      <ul>
+        <li>77 Schulen, Long-Tail 0-Prüfer</li>
+        <li>Trend dreht – dein Verdienst</li>
+        <li>Digicomp/ECDL dominieren generisch</li>
+        <li>KI-Welle = Legitimationsbedarf</li>
+        <li>4 Subdomains offline, LinkedIn 183</li>
+      </ul>
+
+      <h2>Hypothesen</h2>
+      <ul>
+        <li>H1: Vertriebs-/Beziehungsproblem, kein Produktproblem</li>
+        <li>H2: Aufschwung = Marktdurchdringung</li>
+        <li>H3: 12-Mt-Hebel = Karteileichen + Cross-Sell</li>
+      </ul>
+
+      <h2>90-Tage-Fahrplan</h2>
+      <ul>
+        <li>1–30: Diagnose (15 Interviews, 3–5 Besuche)</li>
+        <li>31–60: Quick Wins live, Hypothesen testen</li>
+        <li>61–90: Strategie + Budget + Homepage-Case</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <h2>3 Quick Wins (ab morgen)</h2>
+      <ul>
+        <li><strong>QW1</strong> Reaktivierung Top 10 Karteileichen · Ziel: 3 in 60 T.</li>
+        <li><strong>QW2</strong> Cross-Sell LZC-Heavy · Ziel: +200 Prüfungen / 90 T.</li>
+        <li><strong>QW3</strong> LinkedIn 2×/Woche · Kosten: 0</li>
+      </ul>
+
+      <h2>5 Fragen an dich</h2>
+      <ul>
+        <li>Was wurde probiert und hat nicht funktioniert?</li>
+        <li>Politische No-Gos (kfmv/Swico, Personen)?</li>
+        <li>Realistisches Budget Marketing/Vertrieb 2026?</li>
+        <li>Welche Schulen sind heilig?</li>
+        <li>Wie misst du meinen Erfolg nach 12 Monaten?</li>
+      </ul>
+
+      <h2>Abschluss</h2>
+      <div class="mini">
+        Go für Fahrplan · Antworten auf 5 Fragen · nächstes Review in 30 Tagen mit ersten Zahlen.
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

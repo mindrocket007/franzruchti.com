@@ -28,6 +28,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 18.04.2026
       {
+        summary: "WBF/Bund: 'Lehrstellen 2026 – Stabilität und Perspektiven' (15. April 2026) – Per Ende März 2026 wurden knapp 42'000 Lehrverträge abgeschlossen, leicht mehr als im Vorjahr. Rund 20'000 Lehrstellen waren noch ausgeschrieben, ein stabiles Signal für den Ausbildungsmarkt. Die Woche der Berufsbildung findet vom 4.–8. Mai 2026 statt. Ein stabiler Lehrstellenmarkt sichert den Zufluss von Berufseinsteigern, die anerkannte ICT-Zertifizierungen wie jene der SIZ AG nachfragen.",
+        source: "WBF / Bund",
+        url: "https://www.wbf.admin.ch/de/newnsb/OVkVyzcAcyws7JijZucf7",
+        date: "2026-04-15",
+        category: "Bildungspolitik",
+        addedAt: "2026-04-18",
+      },
+      {
+        summary: "Bundesrat: EHB-Geschäftsbericht 2025 genehmigt – Fokus Nachhaltigkeit & Digitalisierung (15. April 2026) – Der Bundesrat genehmigte am 15. April 2026 den Geschäftsbericht 2025 der Eidgenössischen Hochschule für Berufsbildung. Nachhaltigkeit und Digitalisierung standen im Zentrum von Forschung und Berufsentwicklung. Die EHB stärkt als nationale Kompetenzstelle die Qualität der Berufsbildung – direktes Umfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation.",
+        source: "SBFI / EHB",
+        url: "https://www.sbfi.admin.ch/de/newnsb/PAISyjf-MIDIRfHd_YePJ",
+        date: "2026-04-15",
+        category: "Bildungspolitik",
+        addedAt: "2026-04-18",
+      },
+      {
+        summary: "Netzwoche: 'ICT-Berufsbildung Schweiz erhält neue Co-Vizepräsidentin' (27. März 2026) – Carmen Burkhart (Sunrise) wurde als neue Co-Vizepräsidentin des Vorstands der ICT-Berufsbildung Schweiz gewählt. Der personelle Ausbau zeigt die wachsende Bedeutung der Organisation als zentraler Akteur der Schweizer ICT-Bildungslandschaft. Starke Governance der ICT-Berufsbildung Schweiz stärkt das Qualifizierungsumfeld, in dem SIZ AG als anerkannte ICT-Prüfungsorganisation positioniert ist.",
+        source: "Netzwoche",
+        url: "https://www.netzwoche.ch/news/2026-03-27/ict-berufsbildung-schweiz-erhaelt-neue-co-vizepraesidentin",
+        date: "2026-03-27",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-18",
+      },
+      {
         summary: "SIZ.ch: 'Newsflash März 2026 – KI verändert Prüfungsbedingungen' – SIZ AG reagiert per März 2026 auf neue KI-basierte Funktionen und Office-Add-ins, die eine automatisierte Ausführung von Prüfungsaufgaben ohne Nachweis der geforderten Kompetenzen ermöglichen – was dem Zertifizierungszweck widerspricht. SIZ klärt Prüfungsbedingungen und führt technische Massnahmen zur Integritätssicherung ein. Direkte operative Mitteilung der SIZ AG über Qualitätssicherung ihrer Zertifizierungen im KI-Zeitalter.",
         source: "SIZ AG",
         url: "https://siz.ch/newsflash-maerz-2026/",
@@ -1067,6 +1091,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
+      // Neu: 18.04.2026
+      {
+        summary: "coachingausbildungen.ch: 'Coaching-Marktanalyse 2025/2026 – Welche Trends prägen die deutschsprachige Region?' – KI-gestützte Personalisierung, hybride Formate und Spezialisierung prägen den Coaching-Markt. Nachfrage nach Online-Coaching wächst v.a. bei jüngeren Generationen. Organisationsbezogene Settings (Change, Talentförderung, Führungskräfteentwicklung) gewinnen an Bedeutung. Detaillierte Marktanalyse zeigt wachsendes Gesamtvolumen und höhere Zahlungsbereitschaft – direktes Wachstumsumfeld für Mind Rocket GmbH als Anbieter strukturierter Persönlichkeitsentwicklungs-Programme.",
+        source: "coachingausbildungen.ch",
+        url: "https://www.coachingausbildungen.ch/coaching-markt-schweiz-trends-2025-2026-analyse/",
+        date: "2026",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-04-18",
+      },
+      {
+        summary: "keelearning.de: 'E-Learning Trends 2026: So lernen Unternehmen morgen' – KI als Lernbegleiter, Microlearning integriert in den Arbeitsalltag, Wissensmanagement und Community Learning als strategische Erfolgsfaktoren. Personalisierte Lernpfade, die sich in Echtzeit an Lernende anpassen, setzen sich durch. Steigende Investitionen in digitale Weiterbildungsformate bestätigen das Wachstumspotenzial für E-Learning-Coaching-Anbieter wie Mind Rocket GmbH.",
+        source: "keelearning.de",
+        url: "https://www.keelearning.de/blog/e-learning-trends-2026/",
+        date: "2026",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-04-18",
+      },
+      {
+        summary: "ipc-akademie.com: 'Swiss Coaching Day 2026 – Top-Event für Coaches in Bern' (23. April 2026) – Der Swiss Coaching Day 2026 findet am 23. April 2026 in Bern statt. Programm: Expertenpräsentationen, Workshops und Networking für Coaches, Berater, Trainer und HR-Spezialisten. Themen: Persönlichkeitsentwicklung, AI im Coaching, resiliente Führung. Zeigt das wachsende, professionelle Schweizer Coaching-Ökosystem – direktes Vernetzungs- und Positionierungsumfeld für Mind Rocket GmbH.",
+        source: "ipc-akademie.com",
+        url: "https://ipc-akademie.com/weiterbildungen/swiss-coaching-day/",
+        date: "2026-04-23",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-04-18",
+      },
       // Neu: 17.04.2026
       {
         summary: "ad-hoc-news.de: 'Walk & Talk: 2026 startet mit Outdoor-Coaching-Boom' – Outdoor-Coaching verzeichnet zu Jahresbeginn 2026 einen spürbaren Boom: Walk & Talk Coaching verbindet körperliche Bewegung mit professioneller Begleitung und trifft den Zeitgeist zunehmend holistic-orientierter Personalentwicklung. Unternehmen integrieren Outdoor-Coaching in ihre BGM-Konzepte; individuelle Klientinnen und Klienten schätzen die natürliche Atmosphäre für Reflexion und Veränderung. Zeigt wachsende Diversifizierung und Akzeptanz neuerer Coaching-Formate in der DACH-Region – positives Marktumfeld für Mind Rocket GmbH als innovativer Coaching- und Entwicklungsanbieter.",
@@ -3116,6 +3165,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
         source: "ad-hoc-news.de",
         url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/psychische-belastung-erreicht-2026-neuen-hoechststand/69075732",
         date: "2026-04-05",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-18",
+      },
+      {
+        summary: "ad-hoc-news.de: 'BGM-Tagung 2026 setzt auf gesunde Teamarbeit' – Die Nationale Tagung für betriebliches Gesundheitsmanagement 2026 findet am 15. September 2026 im Kursaal Bern statt, organisiert von Gesundheitsförderung Schweiz, Suva und SECO. Schwerpunkt: gesunde Teamdynamik, Führungsverantwortung und psychologische Sicherheit. Als jährlicher Branchentreffpunkt setzt die BGM-Tagung die Agenda für betriebliche Gesundheitsmassnahmen – direktes Positionierungsumfeld für hypnovital® als digitales BGM-Programm.",
+        source: "ad-hoc-news.de / Gesundheitsförderung Schweiz",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/bgm-tagung-2026-setzt-auf-gesunde-teamarbeit/68660567",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-18",
+      },
+      {
+        summary: "nume.ch: 'Mentale Gesundheit 2026 – Warum gesunde Führung Pflicht ist' – Psychologische Sicherheit und gesundes Führen werden 2026 zur Pflicht: Generation Z stellt offene Erwartungen an Arbeitgeber-Unterstützung. 'Self-Leadership' als Voraussetzung für inklusive Führung. Enttabuisierung psychischer Erkrankungen schreitet voran. Wachsender gesellschaftlicher Druck auf Unternehmen, in mentale Gesundheit zu investieren – bestätigt den Marktbedarf für skalierbare, niederschwellige Angebote wie hypnovital®.",
+        source: "nume.ch",
+        url: "https://www.nume.ch/mentale-gesundheit-2026-warum-gesunde-fuehrung-pflicht-ist/",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-18",
+      },
+      {
+        summary: "medicongress.ch: 'FutureFit 2026 – Kongress für Gesundheit & Performance am Arbeitsplatz' – FutureFit 2026 bringt Experten aus BGM, Arbeitspsychologie und Coaching zusammen. Themen: Prävention, mentale Fitness, digitale Gesundheitslösungen. Schweizer Branchenkongress unterstreicht die wachsende strategische Bedeutung von betrieblicher Gesundheitsförderung – direktes Positionierungsumfeld für hypnovital® als Hypnose-Audio-BGM-Programm.",
+        source: "medicongress.ch",
+        url: "https://medicongress.ch/kongress/futurefit2026/",
+        date: "2026",
         category: "BGM & Gesundheit",
         addedAt: "2026-04-18",
       },

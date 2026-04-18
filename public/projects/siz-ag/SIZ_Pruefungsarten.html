@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Die drei SIZ-Prüfungsarten im Überblick | Lernfluencer</title>
+<meta name="description" content="Exam-Modulprüfungen, Testprüfungen und Lernziel-Checks: Was die drei SIZ-Prüfungsarten unterscheidet und wie Bildungsinstitute sie didaktisch optimal einsetzen.">
+<style>
+  :root {
+    --color-primary: #2c5282;
+    --color-primary-dark: #1a365d;
+    --color-accent: #3182ce;
+    --color-bg: #f7fafc;
+    --color-card: #ffffff;
+    --color-text: #1a202c;
+    --color-text-muted: #4a5568;
+    --color-border: #e2e8f0;
+    --color-exam: #2c5282;
+    --color-test: #38a169;
+    --color-lzc: #d69e2e;
+    --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+    --shadow-md: 0 4px 6px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.06);
+    --shadow-lg: 0 10px 15px rgba(0,0,0,0.08), 0 4px 6px rgba(0,0,0,0.05);
+    --radius: 12px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--color-text);
+    background: var(--color-bg);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* Header */
+  header {
+    background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+    color: white;
+    padding: 64px 0 80px;
+  }
+
+  header h1 {
+    font-size: clamp(1.875rem, 4vw, 2.75rem);
+    font-weight: 700;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+  }
+
+  header .subtitle {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    opacity: 0.92;
+    max-width: 720px;
+    line-height: 1.5;
+  }
+
+  /* Intro */
+  .intro {
+    background: var(--color-card);
+    margin: -40px auto 48px;
+    max-width: 1152px;
+    padding: 32px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
+    border-left: 4px solid var(--color-accent);
+  }
+
+  .intro p {
+    font-size: 1.0625rem;
+    color: var(--color-text-muted);
+  }
+
+  .intro strong { color: var(--color-text); }
+
+  /* Cards Grid */
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+    margin-bottom: 64px;
+  }
+
+  .card {
+    background: var(--color-card);
+    border-radius: var(--radius);
+    padding: 32px;
+    box-shadow: var(--shadow-sm);
+    border-top: 5px solid;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .card-exam { border-top-color: var(--color-exam); }
+  .card-test { border-top-color: var(--color-test); }
+  .card-lzc  { border-top-color: var(--color-lzc); }
+
+  .card-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 16px;
+  }
+
+  .card-exam .card-badge { background: rgba(44, 82, 130, 0.1); color: var(--color-exam); }
+  .card-test .card-badge { background: rgba(56, 161, 105, 0.1); color: var(--color-test); }
+  .card-lzc  .card-badge { background: rgba(214, 158, 46, 0.1); color: var(--color-lzc); }
+
+  .card h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--color-text);
+  }
+
+  .card-duration {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+
+  .card-description {
+    color: var(--color-text-muted);
+    margin-bottom: 24px;
+    font-size: 0.9375rem;
+  }
+
+  .benefits-title {
+    font-size: 0.8125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text);
+    margin-bottom: 12px;
+  }
+
+  .benefits {
+    list-style: none;
+    margin-bottom: 24px;
+  }
+
+  .benefits li {
+    padding: 8px 0 8px 28px;
+    position: relative;
+    font-size: 0.9375rem;
+    color: var(--color-text-muted);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .benefits li:last-child { border-bottom: none; }
+
+  .benefits li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 16px;
+    height: 16px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%2338a169'%3E%3Cpath fill-rule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clip-rule='evenodd'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+  }
+
+  .card-meta {
+    margin-top: auto;
+    padding-top: 16px;
+    border-top: 2px dashed var(--color-border);
+  }
+
+  .meta-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    font-size: 0.875rem;
+  }
+
+  .meta-label { color: var(--color-text-muted); }
+  .meta-value { font-weight: 600; color: var(--color-text); }
+
+  /* Comparison Table */
+  .section-title {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--color-text);
+    letter-spacing: -0.02em;
+  }
+
+  .section-subtitle {
+    color: var(--color-text-muted);
+    margin-bottom: 32px;
+    font-size: 1.0625rem;
+  }
+
+  .table-wrapper {
+    background: var(--color-card);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    overflow-x: auto;
+    margin-bottom: 64px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+  }
+
+  th, td {
+    padding: 16px 20px;
+    text-align: left;
+    border-bottom: 1px solid var(--color-border);
+    font-size: 0.9375rem;
+  }
+
+  th {
+    background: #f7fafc;
+    font-weight: 700;
+    color: var(--color-text);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  th:first-child { border-top-left-radius: var(--radius); }
+  th:last-child { border-top-right-radius: var(--radius); }
+
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: #f7fafc; }
+
+  td:first-child { font-weight: 600; color: var(--color-text); }
+
+  .col-exam { color: var(--color-exam); }
+  .col-test { color: var(--color-test); }
+  .col-lzc  { color: var(--color-lzc); }
+
+  /* Workflow */
+  .workflow {
+    background: linear-gradient(135deg, #ebf4ff 0%, #f0fff4 100%);
+    border-radius: var(--radius);
+    padding: 40px 32px;
+    margin-bottom: 64px;
+  }
+
+  .workflow-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    margin-top: 32px;
+    align-items: start;
+  }
+
+  .step {
+    background: white;
+    padding: 24px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    position: relative;
+  }
+
+  .step-number {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin-bottom: 12px;
+    font-size: 0.875rem;
+  }
+
+  .step h3 {
+    font-size: 1.125rem;
+    margin-bottom: 8px;
+    color: var(--color-text);
+  }
+
+  .step p {
+    font-size: 0.9375rem;
+    color: var(--color-text-muted);
+  }
+
+  /* CTA */
+  .cta {
+    background: var(--color-primary-dark);
+    color: white;
+    padding: 48px 32px;
+    border-radius: var(--radius);
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .cta h2 {
+    font-size: clamp(1.5rem, 3vw, 1.875rem);
+    margin-bottom: 12px;
+    font-weight: 700;
+  }
+
+  .cta p {
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto 24px;
+    font-size: 1.0625rem;
+  }
+
+  .cta-button {
+    display: inline-block;
+    background: white;
+    color: var(--color-primary-dark);
+    padding: 14px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 32px 0;
+    color: var(--color-text-muted);
+    font-size: 0.875rem;
+    border-top: 1px solid var(--color-border);
+  }
+
+  footer a { color: var(--color-accent); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    header { padding: 48px 0 64px; }
+    .intro { margin: -32px 16px 32px; padding: 24px; }
+    .container { padding: 0 16px; }
+    .card { padding: 24px; }
+    .workflow { padding: 32px 20px; }
+    .cta { padding: 32px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>Die drei SIZ-Prüfungsarten im Überblick</h1>
+    <p class="subtitle">Exam-Modulprüfungen, Testprüfungen und Lernziel-Checks – wie Bildungsinstitute das vollständige SIZ-Ökosystem didaktisch optimal nutzen.</p>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="intro">
+    <p>Das SIZ AG bietet ein <strong>durchgängiges didaktisches Ökosystem</strong> – vom kleinsten Lernschritt bis zum anerkannten Schweizer Diplom. Drei aufeinander abgestimmte Prüfungsformate ermöglichen es Lehrpersonen, das Wissen ihrer Lernenden gezielt aufzubauen, zu festigen und schliesslich offiziell zu zertifizieren. Diese Übersicht zeigt, welches Format sich wann eignet und welche Vorteile jedes einzelne bietet.</p>
+  </section>
+
+  <section class="cards-grid">
+
+    <!-- Card 1: Exam-Modulprüfung -->
+    <article class="card card-exam">
+      <span class="card-badge">Stufe 3 · Zertifizierung</span>
+      <h2>Exam-Modulprüfung</h2>
+      <p class="card-duration">Scharfe Prüfung · ca. 60 Minuten · Fixtermin</p>
+      <p class="card-description">Die offizielle, bewertete Abschlussprüfung, die zum anerkannten SIZ-Zertifikat bzw. Diplom führt (z.B. ICT Smart-User SIZ, ICT Advanced-User SIZ).</p>
+
+      <div class="benefits-title">Vorteile</div>
+      <ul class="benefits">
+        <li>Schweizweit anerkanntes Zertifikat mit hohem Marktwert</li>
+        <li>Türöffner am Arbeitsmarkt für KV-Lernende, Maturanden, Quereinsteiger</li>
+        <li>Externer, unabhängiger Kompetenznachweis</li>
+        <li>Qualitätsgesicherte Bewertung durch SIZ AG</li>
+        <li>Sammelanmeldung für ganze Lehrgänge möglich</li>
+      </ul>
+
+      <div class="card-meta">
+        <div class="meta-row"><span class="meta-label">Umfang</span><span class="meta-value">Ganzes Modul</span></div>
+        <div class="meta-row"><span class="meta-label">Wiederholung</span><span class="meta-value">Kostenpflichtig</span></div>
+        <div class="meta-row"><span class="meta-label">Resultat</span><span class="meta-value">~14 Tage nach Termin</span></div>
+      </div>
+    </article>
+
+    <!-- Card 2: Testprüfung -->
+    <article class="card card-test">
+      <span class="card-badge">Stufe 2 · Generalprobe</span>
+      <h2>Testprüfung</h2>
+      <p class="card-duration">1:1 Simulation · ca. 60 Minuten · ~30 Fragen</p>
+      <p class="card-description">Vollwertige Probeprüfungen, die strukturell und inhaltlich den scharfen Modulprüfungen entsprechen. Viele waren früher echte Exam-Modulprüfungen und wurden nach Ablösung ins Trainingsangebot übernommen.</p>
+
+      <div class="benefits-title">Vorteile</div>
+      <ul class="benefits">
+        <li>Realitätsnahe Generalprobe unter echten Prüfungsbedingungen</li>
+        <li>Reduziert Prüfungsangst und erhöht Bestehensquote</li>
+        <li>Optional mit Feedback (Lösungshinweise einsehbar)</li>
+        <li>Flexibel einsetzbar als Standortbestimmung oder Zwischenprüfung</li>
+        <li>Verfügbar für alle Diplom-Stufen (Smart-User, Advanced-User, Power-User)</li>
+      </ul>
+
+      <div class="card-meta">
+        <div class="meta-row"><span class="meta-label">Umfang</span><span class="meta-value">Ganzes Modul</span></div>
+        <div class="meta-row"><span class="meta-label">Verfügbarkeit</span><span class="meta-value">Bis zu 30 Tage</span></div>
+        <div class="meta-row"><span class="meta-label">Resultat</span><span class="meta-value">Sofort</span></div>
+      </div>
+    </article>
+
+    <!-- Card 3: Lernziel-Check -->
+    <article class="card card-lzc">
+      <span class="card-badge">Stufe 1 · Themen-Check</span>
+      <h2>Lernziel-Check (LZC)</h2>
+      <p class="card-duration">Miniprüfung · 10 / 15 / 20 Minuten</p>
+      <p class="card-description">Thematisch fokussierte Kurzprüfungen zu einzelnen Lernzielen – nicht zum ganzen Modul. Orientiert am IKA-Lehrplan der kaufmännischen Berufsfachschulen und damit ideal für die Unterrichtsintegration.</p>
+
+      <div class="benefits-title">Vorteile</div>
+      <ul class="benefits">
+        <li>Perfekt integrierbar in den Unterrichtsablauf (45-Min-Lektion)</li>
+        <li>Spiralförmiges Lernen mit ansteigendem Schwierigkeitsgrad</li>
+        <li>Gezielte Abfrage nach einzelnen Themenblöcken</li>
+        <li>Selbstgesteuertes Lernen mit spürbaren Fortschritten</li>
+        <li>Ermöglicht formatives Lernen statt nur summative Bewertung</li>
+      </ul>
+
+      <div class="card-meta">
+        <div class="meta-row"><span class="meta-label">Umfang</span><span class="meta-value">Einzelnes Lernziel</span></div>
+        <div class="meta-row"><span class="meta-label">Verfügbarkeit</span><span class="meta-value">Bis zu 30 Tage</span></div>
+        <div class="meta-row"><span class="meta-label">Resultat</span><span class="meta-value">Sofort</span></div>
+      </div>
+    </article>
+
+  </section>
+
+  <section>
+    <h2 class="section-title">Direkter Vergleich</h2>
+    <p class="section-subtitle">Die wichtigsten Merkmale der drei Prüfungsarten auf einen Blick.</p>
+
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Merkmal</th>
+            <th class="col-exam">Exam-Modulprüfung</th>
+            <th class="col-test">Testprüfung</th>
+            <th class="col-lzc">Lernziel-Check</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Zweck</td>
+            <td>Zertifikat / Diplom</td>
+            <td>Generalprobe</td>
+            <td>Themen-Check</td>
+          </tr>
+          <tr>
+            <td>Dauer</td>
+            <td>~60 Minuten</td>
+            <td>~60 Minuten</td>
+            <td>10 / 15 / 20 Minuten</td>
+          </tr>
+          <tr>
+            <td>Umfang</td>
+            <td>Ganzes Modul</td>
+            <td>Ganzes Modul</td>
+            <td>Einzelnes Lernziel</td>
+          </tr>
+          <tr>
+            <td>Bewertung</td>
+            <td>Offiziell, nach QS</td>
+            <td>Sofortiges Feedback</td>
+            <td>Sofortiges Feedback</td>
+          </tr>
+          <tr>
+            <td>Termin</td>
+            <td>Fixtermin</td>
+            <td>Flexibel (30 Tage)</td>
+            <td>Flexibel (30 Tage)</td>
+          </tr>
+          <tr>
+            <td>Wiederholung</td>
+            <td>Kostenpflichtig</td>
+            <td>Einmalig pro Termin</td>
+            <td>Einmalig pro Termin</td>
+          </tr>
+          <tr>
+            <td>Hauptnutzen</td>
+            <td>Marktwert / Abschluss</td>
+            <td>Prüfungssimulation</td>
+            <td>Unterrichtsintegration</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="workflow">
+    <h2 class="section-title">Die didaktische Logik: Vom Lernziel zum Diplom</h2>
+    <p class="section-subtitle">Die drei Prüfungsformate bilden zusammen einen aufeinander aufbauenden Lern-Trichter.</p>
+
+    <div class="workflow-steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Wissen aufbauen</h3>
+        <p>Lernziel-Checks während des Unterrichts – thematisch fokussiert, kurz und direkt im Lehrplan integriert.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>Prüfungskompetenz trainieren</h3>
+        <p>Testprüfungen vor der scharfen Prüfung – realitätsnahe Simulation mit echtem Zeitdruck und Aufbau.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>Diplom erwerben</h3>
+        <p>Exam-Modulprüfung als offizieller Abschluss – Türöffner für den Arbeitsmarkt und die nächste Karrierestufe.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Sie sind Bildungsinstitut oder planen den Einsatz von SIZ?</h2>
+    <p>Erfahren Sie, wie Sie das vollständige SIZ-Ökosystem für Ihre Lernenden optimal nutzen und welche Prüfungsformate sich für Ihre Zielgruppe eignen.</p>
+    <a href="https://siz.ch" class="cta-button" target="_blank" rel="noopener">Mehr auf siz.ch erfahren</a>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p>Quelle: <a href="https://siz.ch" target="_blank" rel="noopener">siz.ch</a> · Stand: April 2026 · Zusammenstellung: <a href="https://learnfluencer.ch" target="_blank" rel="noopener">learnfluencer.ch</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

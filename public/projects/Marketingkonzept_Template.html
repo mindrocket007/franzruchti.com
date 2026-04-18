@@ -164,6 +164,7 @@
         <nav>
             <span class="nav-section">Grundlagen</span>
             <a href="#" class="active" onclick="showPage('unternehmen')">Unternehmensprofil</a>
+            <a href="#" onclick="showPage('strategie-vs-operativ')">Strategisch vs. Operativ</a>
             <a href="#" onclick="showPage('marktdefinition')">Marktdefinition</a>
 
             <span class="nav-section" style="color:#EF5350;">1. Analysephase</span>
@@ -194,6 +195,7 @@
             <a href="#" onclick="showPage('people')">People (Personal)</a>
             <a href="#" onclick="showPage('process')">Process (Prozesse)</a>
             <a href="#" onclick="showPage('physical')">Physical Evidence</a>
+            <a href="#" onclick="showPage('crm')">CRM &amp; Key Accounts</a>
 
             <span class="nav-section" style="color:#66BB6A;">4. Kommunikation</span>
             <a href="#" onclick="showPage('komm')">Kommunikationskonzept</a>
@@ -237,6 +239,347 @@
                     </div>
                     <div class="field"><label>Kernprodukte / Dienstleistungen</label><textarea data-key="u-produkte"></textarea></div>
                     <div class="field"><label>Trägerschaft / Aktionäre</label><textarea data-key="u-traeger"></textarea></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================== -->
+        <!-- STRATEGISCH VS. OPERATIV (Infografik) -->
+        <!-- ============================== -->
+        <div id="strategie-vs-operativ" class="page">
+            <h1 class="page-title">Strategisches vs. Operatives Marketing</h1>
+            <p class="page-subtitle">Die zwei Ebenen des Marketings – welche Fragen wo beantwortet werden, welche Tools und welche Entscheidungen.</p>
+
+            <!-- MERKSATZ -->
+            <div class="card" style="background:linear-gradient(135deg,#1a1a2e,#3a3a5e);color:white;">
+                <div class="card-body" style="text-align:center;padding:22px 20px;">
+                    <div style="font-size:1.1em;font-style:italic;opacity:0.95;">„Strategie malt das Bild – Operatives bringt die Farbe auf die Leinwand."</div>
+                    <div style="font-size:0.85em;opacity:0.65;margin-top:8px;">Strategisch = <strong>WAS</strong> und <strong>WARUM</strong> · Operativ = <strong>WIE</strong> und <strong>WANN</strong></div>
+                </div>
+            </div>
+
+            <!-- DEFINITION ZWEISPALTIG -->
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;">
+                <div class="card" style="border-top:4px solid #E65100;">
+                    <div class="card-header bg-orange"><h3>Strategisches Marketing</h3></div>
+                    <div class="card-body">
+                        <p><strong>Horizont:</strong> 3–5+ Jahre</p>
+                        <p><strong>Ebene:</strong> Geschäftsleitung / Marketingleiter</p>
+                        <p><strong>Fokus:</strong> Richtung, Positionierung, Wettbewerbsvorteil, Wachstum</p>
+                        <p><strong>Reversibilität:</strong> schwer rückgängig, hohe Hebelwirkung</p>
+                        <p><strong>Output:</strong> schriftlicher Strategieplan (Märkte, Zielgruppen, Positionierung, Ziele)</p>
+                    </div>
+                </div>
+                <div class="card" style="border-top:4px solid #2E7D32;">
+                    <div class="card-header bg-green"><h3>Operatives Marketing</h3></div>
+                    <div class="card-body">
+                        <p><strong>Horizont:</strong> 1 Tag bis 12 Monate</p>
+                        <p><strong>Ebene:</strong> Marketing-Team / Produktmanager / Agentur</p>
+                        <p><strong>Fokus:</strong> Umsetzung, Effizienz, Reichweite, Conversion</p>
+                        <p><strong>Reversibilität:</strong> relativ leicht anpassbar, schnelles Feedback</p>
+                        <p><strong>Output:</strong> Jahres-Marketingplan (Massnahmen, Budget, KPIs)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LEITFRAGEN ZWEISPALTIG -->
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;">
+                <div class="card">
+                    <div class="card-header bg-orange"><h3>Leitfragen strategisch</h3></div>
+                    <div class="card-body" style="font-size:0.92em;">
+                        <p style="font-weight:700;color:#E65100;margin-top:0;">Markt &amp; Umfeld</p>
+                        <ul style="margin:0 0 10px 20px;">
+                            <li>In welchen Märkten sind wir – welche verlassen wir, welche erschliessen wir?</li>
+                            <li>Wie entwickeln sich Markt, Umfeld, Branche in 3–5 Jahren?</li>
+                            <li>Wer sind unsere Kunden von morgen?</li>
+                        </ul>
+                        <p style="font-weight:700;color:#E65100;">Positionierung &amp; Wettbewerb</p>
+                        <ul style="margin:0 0 10px 20px;">
+                            <li>Wofür stehen wir im Kopf der Zielgruppe? (Positionierung)</li>
+                            <li>Was ist unsere USP / unser Daseinszweck?</li>
+                            <li>Wie differenzieren wir uns? (Kostenführer / Differenzierer / Nische)</li>
+                        </ul>
+                        <p style="font-weight:700;color:#E65100;">Wachstum &amp; Richtung</p>
+                        <ul style="margin:0 0 10px 20px;">
+                            <li>Ansoff: bestehende oder neue Produkte / Märkte?</li>
+                            <li>Portfolio: Stars, Cash Cows, Question Marks, Poor Dogs?</li>
+                            <li>Wo investieren – wo desinvestieren?</li>
+                        </ul>
+                        <p style="font-weight:700;color:#E65100;">Kunde &amp; Segmentierung</p>
+                        <ul style="margin:0 0 10px 20px;">
+                            <li>Welche Segmente prioritär?</li>
+                            <li>Welche Jobs-to-be-Done lösen wir? (VPC)</li>
+                            <li>Push, Pull oder beides?</li>
+                        </ul>
+                        <p style="font-weight:700;color:#E65100;">Ziele</p>
+                        <ul style="margin:0 0 0 20px;">
+                            <li>Welche langfristigen Ziele (Marktanteil, Bekanntheit, Image, Loyalität)?</li>
+                            <li>Welche strategischen KPIs steuern die Richtung?</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header bg-green"><h3>Leitfragen operativ</h3></div>
+                    <div class="card-body" style="font-size:0.92em;">
+                        <p style="font-weight:700;color:#2E7D32;margin-top:0;">Marketing-Mix (7P)</p>
+                        <ul style="margin:0 0 10px 20px;">
+                            <li><strong>Product:</strong> Sortiment, Features, Qualität, Service?</li>
+                            <li><strong>Price:</strong> Preismodell, Rabatte, Konditionen?</li>
+                            <li><strong>Place:</strong> Kanäle, Regionen, Partner?</li>
+                            <li><strong>Promotion:</strong> Kampagnen, Botschaften, Medien?</li>
+                            <li><strong>People:</strong> Wer betreut / verkauft / serviced?</li>
+                            <li><strong>Process:</strong> Kundenkontakt, Lead-Prozess, Aftersales?</li>
+                            <li><strong>Physical Evidence:</strong> Website, Räume, Unterlagen?</li>
+                        </ul>
+                        <p style="font-weight:700;color:#2E7D32;">Kommunikation</p>
+                        <ul style="margin:0 0 10px 20px;">
+                            <li>Welche Massnahmen pro Zielgruppe und Kanal?</li>
+                            <li>Welche Botschaft – kognitiv / affektiv / konativ?</li>
+                            <li>Mediaplan, Timing, Frequenz?</li>
+                        </ul>
+                        <p style="font-weight:700;color:#2E7D32;">Budget &amp; Ressourcen</p>
+                        <ul style="margin:0 0 10px 20px;">
+                            <li>Wie viel Geld, wofür, wann? (5W: Was, Wie viel, Wem, Wann, Wo)</li>
+                            <li>Interne Kapazität oder Agentur?</li>
+                            <li>Deadlines &amp; Verantwortliche?</li>
+                        </ul>
+                        <p style="font-weight:700;color:#2E7D32;">Steuerung &amp; Kontrolle</p>
+                        <ul style="margin:0 0 0 20px;">
+                            <li>Operative KPIs: CPL, CAC, CTR, Conversion, ROAS, Umsatz/Kanal?</li>
+                            <li>Berichtsrhythmus (Woche, Monat, Quartal)?</li>
+                            <li>Wann wird verstärkt, abgebrochen, angepasst?</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TOOLS & THEMEN -->
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;">
+                <div class="card">
+                    <div class="card-header bg-orange"><h3>Tools &amp; Themen strategisch</h3></div>
+                    <div class="card-body" style="padding:0;">
+                        <table style="width:100%;border-collapse:collapse;font-size:0.88em;">
+                            <thead><tr style="background:#FFF3E0;"><th style="text-align:left;padding:8px 12px;border-bottom:1px solid #eee;">Bereich</th><th style="text-align:left;padding:8px 12px;border-bottom:1px solid #eee;">Werkzeuge</th></tr></thead>
+                            <tbody>
+                                <tr><td style="padding:6px 12px;border-bottom:1px solid #f4f4f4;">Umfeld</td><td style="padding:6px 12px;border-bottom:1px solid #f4f4f4;">PESTEL, Trendradar</td></tr>
+                                <tr><td style="padding:6px 12px;border-bottom:1px solid #f4f4f4;">Branche</td><td style="padding:6px 12px;border-bottom:1px solid #f4f4f4;">Porter 5 Forces, Lebenszyklus</td></tr>
+                                <tr><td style="padding:6px 12px;border-bottom:1px solid #f4f4f4;">Kunde</td><td style="padding:6px 12px;border-bottom:1px solid #f4f4f4;">Segmentierung, Personas, RFM, NPS, ABC</td></tr>
+                                <tr><td style="padding:6px 12px;border-bottom:1px solid #f4f4f4;">Konkurrenz</td><td style="padding:6px 12px;border-bottom:1px solid #f4f4f4;">Benchmark, Stärke/Schwäche</td></tr>
+                                <tr><td style="padding:6px 12px;border-bottom:1px solid #f4f4f4;">Intern</td><td style="padding:6px 12px;border-bottom:1px solid #f4f4f4;">Ressourcen, Wertschöpfungskette</td></tr>
+                                <tr><td style="padding:6px 12px;border-bottom:1px solid #f4f4f4;">Synthese</td><td style="padding:6px 12px;border-bottom:1px solid #f4f4f4;">SWOT, TOWS</td></tr>
+                                <tr><td style="padding:6px 12px;border-bottom:1px solid #f4f4f4;">Strategiewahl</td><td style="padding:6px 12px;border-bottom:1px solid #f4f4f4;">Ansoff, BCG, GE/McKinsey, Porters Generische</td></tr>
+                                <tr><td style="padding:6px 12px;border-bottom:1px solid #f4f4f4;">Zielgruppen</td><td style="padding:6px 12px;border-bottom:1px solid #f4f4f4;">STP (Segmentation, Targeting, Positioning)</td></tr>
+                                <tr><td style="padding:6px 12px;border-bottom:1px solid #f4f4f4;">Positionierung</td><td style="padding:6px 12px;border-bottom:1px solid #f4f4f4;">Perceptual Map, VPC</td></tr>
+                                <tr><td style="padding:6px 12px;">Marke</td><td style="padding:6px 12px;">Markenarchitektur, Brand Essence, CI</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header bg-green"><h3>Tools &amp; Themen operativ</h3></div>
+                    <div class="card-body" style="padding:0;">
+                        <table style="width:100%;border-collapse:collapse;font-size:0.88em;">
+                            <thead><tr style="background:#E8F5E9;"><th style="text-align:left;padding:8px 12px;border-bottom:1px solid #eee;">Bereich</th><th style="text-align:left;padding:8px 12px;border-bottom:1px solid #eee;">Werkzeuge</th></tr></thead>
+                            <tbody>
+                                <tr><td style="padding:6px 12px;border-bottom:1px solid #f4f4f4;">Planung</td><td style="padding:6px 12px;border-bottom:1px solid #f4f4f4;">Marketingplan, Massnahmenplan, Redaktionsplan</td></tr>
+                                <tr><td style="padding:6px 12px;border-bottom:1px solid #f4f4f4;">Product</td><td style="padding:6px 12px;border-bottom:1px solid #f4f4f4;">Produktroadmap, Sortiment, Launch</td></tr>
+                                <tr><td style="padding:6px 12px;border-bottom:1px solid #f4f4f4;">Pricing</td><td style="padding:6px 12px;border-bottom:1px solid #f4f4f4;">Preisliste, Rabattmatrix, Bundles</td></tr>
+                                <tr><td style="padding:6px 12px;border-bottom:1px solid #f4f4f4;">Distribution</td><td style="padding:6px 12px;border-bottom:1px solid #f4f4f4;">Kanalkonzept, Partnerplan, Gebietsplanung</td></tr>
+                                <tr><td style="padding:6px 12px;border-bottom:1px solid #f4f4f4;">Kommunikation</td><td style="padding:6px 12px;border-bottom:1px solid #f4f4f4;">Copy Strategy, Mediaplan, Content-Kalender</td></tr>
+                                <tr><td style="padding:6px 12px;border-bottom:1px solid #f4f4f4;">Kanäle</td><td style="padding:6px 12px;border-bottom:1px solid #f4f4f4;">SEO, SEA, Social, E-Mail, Events, PR, Messen</td></tr>
+                                <tr><td style="padding:6px 12px;border-bottom:1px solid #f4f4f4;">Sales-Enablement</td><td style="padding:6px 12px;border-bottom:1px solid #f4f4f4;">Argumentarium, Sales Decks, Battle Cards</td></tr>
+                                <tr><td style="padding:6px 12px;border-bottom:1px solid #f4f4f4;">Controlling</td><td style="padding:6px 12px;border-bottom:1px solid #f4f4f4;">KPI-Dashboard, Budgetreport, Post-Mortem</td></tr>
+                                <tr><td style="padding:6px 12px;">Kreation</td><td style="padding:6px 12px;">Briefings, Creatives, Landingpages</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VERGLEICHSTABELLE -->
+            <div class="card">
+                <div class="card-header bg-dark"><h3>Die Abgrenzung auf einen Blick</h3></div>
+                <div class="card-body" style="padding:0;overflow-x:auto;">
+                    <table style="width:100%;border-collapse:collapse;font-size:0.9em;">
+                        <thead>
+                            <tr style="background:#1a1a2e;color:white;">
+                                <th style="text-align:left;padding:10px 14px;">Dimension</th>
+                                <th style="text-align:left;padding:10px 14px;background:#E65100;">Strategisch</th>
+                                <th style="text-align:left;padding:10px 14px;background:#2E7D32;">Operativ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td style="padding:8px 14px;border-bottom:1px solid #eee;font-weight:600;">Leitfrage</td><td style="padding:8px 14px;border-bottom:1px solid #eee;"><em>Was und warum?</em></td><td style="padding:8px 14px;border-bottom:1px solid #eee;"><em>Wie und wann?</em></td></tr>
+                            <tr><td style="padding:8px 14px;border-bottom:1px solid #eee;font-weight:600;">Horizont</td><td style="padding:8px 14px;border-bottom:1px solid #eee;">3–5+ Jahre</td><td style="padding:8px 14px;border-bottom:1px solid #eee;">1 Tag – 12 Monate</td></tr>
+                            <tr><td style="padding:8px 14px;border-bottom:1px solid #eee;font-weight:600;">Ebene</td><td style="padding:8px 14px;border-bottom:1px solid #eee;">GL, Marketingleiter</td><td style="padding:8px 14px;border-bottom:1px solid #eee;">Marketing-Team, PM, Agentur</td></tr>
+                            <tr><td style="padding:8px 14px;border-bottom:1px solid #eee;font-weight:600;">Fokus</td><td style="padding:8px 14px;border-bottom:1px solid #eee;">Richtung, Position, Wachstum</td><td style="padding:8px 14px;border-bottom:1px solid #eee;">Umsetzung, Effizienz, Reichweite</td></tr>
+                            <tr><td style="padding:8px 14px;border-bottom:1px solid #eee;font-weight:600;">Reversibilität</td><td style="padding:8px 14px;border-bottom:1px solid #eee;">Schwer rückgängig</td><td style="padding:8px 14px;border-bottom:1px solid #eee;">Leicht anpassbar</td></tr>
+                            <tr><td style="padding:8px 14px;border-bottom:1px solid #eee;font-weight:600;">Typische Tools</td><td style="padding:8px 14px;border-bottom:1px solid #eee;">PESTEL, SWOT, Ansoff, Porter, STP, VPC</td><td style="padding:8px 14px;border-bottom:1px solid #eee;">7P, Mediaplan, Budget, Redaktionsplan</td></tr>
+                            <tr><td style="padding:8px 14px;border-bottom:1px solid #eee;font-weight:600;">Output</td><td style="padding:8px 14px;border-bottom:1px solid #eee;">Strategiepapier</td><td style="padding:8px 14px;border-bottom:1px solid #eee;">Massnahmenplan</td></tr>
+                            <tr><td style="padding:8px 14px;border-bottom:1px solid #eee;font-weight:600;">Ressourcen</td><td style="padding:8px 14px;border-bottom:1px solid #eee;">Köpfe, Analyse, Daten</td><td style="padding:8px 14px;border-bottom:1px solid #eee;">Geld, Zeit, Kanäle</td></tr>
+                            <tr><td style="padding:8px 14px;border-bottom:1px solid #eee;font-weight:600;">Erfolgsmessung</td><td style="padding:8px 14px;border-bottom:1px solid #eee;">Marktanteil, Markenstärke, NPS</td><td style="padding:8px 14px;border-bottom:1px solid #eee;">CPL, Conversion, ROAS, Umsatz</td></tr>
+                            <tr><td style="padding:8px 14px;font-weight:600;">Fehlerfolge</td><td style="padding:8px 14px;">Falscher Markt, falsche Position</td><td style="padding:8px 14px;">Kampagne floppt, Budget verbrannt</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 4 KERN-DIMENSIONEN IM DETAIL -->
+            <div class="card">
+                <div class="card-header bg-dark"><h3>Die 4 Kern-Dimensionen im Detail</h3></div>
+                <div class="card-body">
+                    <p style="color:#666;font-size:0.9em;margin-top:0;">Entlang dieser vier Dimensionen unterscheidet sich strategisches vom operativen Marketing am deutlichsten. Beim Anpacken einer Aufgabe immer zuerst prüfen: <em>Welcher Ebene gehört sie an?</em></p>
+
+                    <!-- Dim 1: Strategische Relevanz -->
+                    <div style="border:1px solid #eee;border-radius:10px;margin-bottom:12px;overflow:hidden;">
+                        <div style="background:#1a1a2e;color:white;padding:10px 16px;font-weight:700;display:flex;align-items:center;gap:10px;">
+                            <span style="background:#6A1B9A;border-radius:50%;width:28px;height:28px;display:inline-flex;align-items:center;justify-content:center;font-size:0.9em;">1</span>
+                            Strategische Relevanz
+                        </div>
+                        <div style="display:grid;grid-template-columns:1fr 1fr;">
+                            <div style="padding:14px 16px;background:#FFF3E0;border-right:1px solid #eee;">
+                                <div style="font-weight:700;color:#E65100;font-size:0.85em;margin-bottom:6px;">STRATEGISCH</div>
+                                <p style="margin:0 0 6px;font-weight:600;">Entscheidungen mit Langzeitwirkung &amp; hoher Hebelwirkung.</p>
+                                <ul style="margin:0 0 0 18px;font-size:0.9em;">
+                                    <li>Prägen Geschäftsmodell &amp; Wettbewerbsposition</li>
+                                    <li>Verändern, wie das Unternehmen wahrgenommen wird</li>
+                                    <li>Entscheidungsträger: Geschäftsleitung</li>
+                                    <li>Typische Fragen: „Sind wir im richtigen Markt?"</li>
+                                </ul>
+                            </div>
+                            <div style="padding:14px 16px;background:#E8F5E9;">
+                                <div style="font-weight:700;color:#2E7D32;font-size:0.85em;margin-bottom:6px;">OPERATIV</div>
+                                <p style="margin:0 0 6px;font-weight:600;">Ausführungsentscheide, abgeleitet aus der Strategie.</p>
+                                <ul style="margin:0 0 0 18px;font-size:0.9em;">
+                                    <li>Übersetzen Strategie in konkrete Massnahmen</li>
+                                    <li>Einfluss begrenzt auf Kampagne / Quartal</li>
+                                    <li>Entscheidungsträger: Marketing-Team, Agentur</li>
+                                    <li>Typische Fragen: „Welcher Kanal bringt Conversion?"</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dim 2: Ressourcen -->
+                    <div style="border:1px solid #eee;border-radius:10px;margin-bottom:12px;overflow:hidden;">
+                        <div style="background:#1a1a2e;color:white;padding:10px 16px;font-weight:700;display:flex;align-items:center;gap:10px;">
+                            <span style="background:#1565C0;border-radius:50%;width:28px;height:28px;display:inline-flex;align-items:center;justify-content:center;font-size:0.9em;">2</span>
+                            Ressourcen
+                        </div>
+                        <div style="display:grid;grid-template-columns:1fr 1fr;">
+                            <div style="padding:14px 16px;background:#FFF3E0;border-right:1px solid #eee;">
+                                <div style="font-weight:700;color:#E65100;font-size:0.85em;margin-bottom:6px;">STRATEGISCH</div>
+                                <p style="margin:0 0 6px;font-weight:600;">Köpfe, Zeit zum Denken, Daten.</p>
+                                <ul style="margin:0 0 0 18px;font-size:0.9em;">
+                                    <li>Marketingleitung, externe Berater, Workshops</li>
+                                    <li>Marktforschung, Kundeninterviews, Analysedaten</li>
+                                    <li>Zeit für Analyse &amp; Reflexion (kein Tagesgeschäft)</li>
+                                    <li>Budget: gering bis mittel (Daten, Workshops)</li>
+                                </ul>
+                            </div>
+                            <div style="padding:14px 16px;background:#E8F5E9;">
+                                <div style="font-weight:700;color:#2E7D32;font-size:0.85em;margin-bottom:6px;">OPERATIV</div>
+                                <p style="margin:0 0 6px;font-weight:600;">Geld, Medienbudget, Produktionskapazität.</p>
+                                <ul style="margin:0 0 0 18px;font-size:0.9em;">
+                                    <li>Mediabudget (SEA, Social, Print, Events)</li>
+                                    <li>Content-Produktion, Creatives, Übersetzungen</li>
+                                    <li>Agentur-Retainer, Tools (CRM, Marketing-Automation)</li>
+                                    <li>Budget: hoch (Hauptteil des Marketing-Budgets)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dim 3: Timeline -->
+                    <div style="border:1px solid #eee;border-radius:10px;margin-bottom:12px;overflow:hidden;">
+                        <div style="background:#1a1a2e;color:white;padding:10px 16px;font-weight:700;display:flex;align-items:center;gap:10px;">
+                            <span style="background:#FFA726;border-radius:50%;width:28px;height:28px;display:inline-flex;align-items:center;justify-content:center;font-size:0.9em;">3</span>
+                            Timeline
+                        </div>
+                        <div style="display:grid;grid-template-columns:1fr 1fr;">
+                            <div style="padding:14px 16px;background:#FFF3E0;border-right:1px solid #eee;">
+                                <div style="font-weight:700;color:#E65100;font-size:0.85em;margin-bottom:6px;">STRATEGISCH</div>
+                                <p style="margin:0 0 6px;font-weight:600;">3–5+ Jahre, in Rollen-Wellen.</p>
+                                <ul style="margin:0 0 0 18px;font-size:0.9em;">
+                                    <li>Mehrjahresplan, alle 12 Monate Review</li>
+                                    <li>Grundsatz-Entscheide im Quartalsrhythmus</li>
+                                    <li>Wirkung sichtbar nach 6–18 Monaten</li>
+                                    <li>Mit Strategie-Workshops jährlich verankert</li>
+                                </ul>
+                            </div>
+                            <div style="padding:14px 16px;background:#E8F5E9;">
+                                <div style="font-weight:700;color:#2E7D32;font-size:0.85em;margin-bottom:6px;">OPERATIV</div>
+                                <p style="margin:0 0 6px;font-weight:600;">Tag bis 12 Monate, rollend.</p>
+                                <ul style="margin:0 0 0 18px;font-size:0.9em;">
+                                    <li>Jahresplan, Quartalsplan, Kampagnenplan</li>
+                                    <li>Wochen- oder Tages-Sprints</li>
+                                    <li>Wirkung messbar nach Tagen bis Wochen</li>
+                                    <li>Kontinuierliches A/B-Testing &amp; Optimierung</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dim 4: Impact / Output -->
+                    <div style="border:1px solid #eee;border-radius:10px;margin-bottom:4px;overflow:hidden;">
+                        <div style="background:#1a1a2e;color:white;padding:10px 16px;font-weight:700;display:flex;align-items:center;gap:10px;">
+                            <span style="background:#2E7D32;border-radius:50%;width:28px;height:28px;display:inline-flex;align-items:center;justify-content:center;font-size:0.9em;">4</span>
+                            Impact &amp; Output
+                        </div>
+                        <div style="display:grid;grid-template-columns:1fr 1fr;">
+                            <div style="padding:14px 16px;background:#FFF3E0;border-right:1px solid #eee;">
+                                <div style="font-weight:700;color:#E65100;font-size:0.85em;margin-bottom:6px;">STRATEGISCH</div>
+                                <p style="margin:0 0 6px;font-weight:600;">Richtungsgebende Artefakte, Wirkung auf Marktposition.</p>
+                                <ul style="margin:0 0 0 18px;font-size:0.9em;">
+                                    <li><strong>Output:</strong> Strategiepapier, Positionierung, Zielgruppen-Chart, Markenversprechen, Jahresziele</li>
+                                    <li><strong>Impact (KPIs):</strong> Marktanteil, Markenbekanntheit, NPS, Kundenloyalität, Preispremium</li>
+                                    <li><strong>Messung:</strong> jährlich / halbjährlich</li>
+                                    <li><strong>Fehlerfolge:</strong> im falschen Markt, falsche Positionierung (Jahre verloren)</li>
+                                </ul>
+                            </div>
+                            <div style="padding:14px 16px;background:#E8F5E9;">
+                                <div style="font-weight:700;color:#2E7D32;font-size:0.85em;margin-bottom:6px;">OPERATIV</div>
+                                <p style="margin:0 0 6px;font-weight:600;">Konkrete Deliverables, Wirkung auf Zahlen.</p>
+                                <ul style="margin:0 0 0 18px;font-size:0.9em;">
+                                    <li><strong>Output:</strong> Kampagnen, Landingpages, Ads, Newsletter, Events, Sales-Unterlagen</li>
+                                    <li><strong>Impact (KPIs):</strong> Leads, CPL, CTR, Conversion-Rate, ROAS, Umsatz, Kanal-Performance</li>
+                                    <li><strong>Messung:</strong> täglich / wöchentlich / monatlich</li>
+                                    <li><strong>Fehlerfolge:</strong> Kampagne floppt, Budget verbrannt (kurzfristiger Verlust)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FLUSS: VON STRATEGIE ZU UMSETZUNG -->
+            <div class="card">
+                <div class="card-header bg-dark"><h3>Der Fluss: von Strategie zu Umsetzung</h3></div>
+                <div class="card-body">
+                    <div style="display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;margin:10px 0;">
+                        <div style="background:#C62828;color:white;border-radius:10px;padding:12px 16px;text-align:center;font-size:0.85em;font-weight:700;min-width:130px;">1. Analyse<br><span style="font-size:0.78em;font-weight:400;opacity:0.85;">Markt, Kunde, Umfeld</span></div>
+                        <div style="font-size:1.6em;color:#999;">&#10132;</div>
+                        <div style="background:#E65100;color:white;border-radius:10px;padding:12px 16px;text-align:center;font-size:0.85em;font-weight:700;min-width:130px;">2. Planung<br><span style="font-size:0.78em;font-weight:400;opacity:0.85;">Strategie &amp; Ziele</span></div>
+                        <div style="font-size:1.6em;color:#999;">&#10132;</div>
+                        <div style="background:#2E7D32;color:white;border-radius:10px;padding:12px 16px;text-align:center;font-size:0.85em;font-weight:700;min-width:130px;">3. Umsetzung<br><span style="font-size:0.78em;font-weight:400;opacity:0.85;">7P &amp; Kampagnen</span></div>
+                        <div style="font-size:1.6em;color:#999;">&#10132;</div>
+                        <div style="background:#1565C0;color:white;border-radius:10px;padding:12px 16px;text-align:center;font-size:0.85em;font-weight:700;min-width:130px;">4. Kontrolle<br><span style="font-size:0.78em;font-weight:400;opacity:0.85;">KPIs &amp; Learnings</span></div>
+                    </div>
+                    <div style="display:flex;justify-content:space-between;margin-top:10px;padding:0 10px;">
+                        <div style="flex:1;text-align:center;color:#E65100;font-size:0.82em;font-weight:700;border-top:3px solid #E65100;padding-top:6px;">&#8592; STRATEGISCH &#8594;</div>
+                        <div style="flex:1;text-align:center;color:#2E7D32;font-size:0.82em;font-weight:700;border-top:3px solid #2E7D32;padding-top:6px;">&#8592; OPERATIV &#8594;</div>
+                    </div>
+                    <p style="margin-top:14px;font-size:0.88em;color:#666;text-align:center;">Phase 1 und 2 sind strategisch (Was/Warum). Phase 3 und 4 sind operativ (Wie/Wann). Die Kontrolle liefert Erkenntnisse, die in die nächste Strategie-Runde zurückfliessen.</p>
+                </div>
+            </div>
+
+            <!-- GOLDENE REGEL -->
+            <div class="card" style="background:#FFF8E1;border-left:5px solid #FFA726;">
+                <div class="card-body">
+                    <h3 style="margin-top:0;color:#E65100;">&#9888; Die goldene Regel</h3>
+                    <p style="margin-bottom:0;"><strong>Kein operatives Marketing ohne Strategie.</strong> Wer die strategischen Fragen (Markt, Zielgruppe, Positionierung) nicht geklärt hat, verbrennt im operativen Bereich Budget in Kampagnen, die nie aufeinander aufbauen. Umgekehrt: <strong>keine Strategie ohne operative Umsetzung</strong> – sonst bleibt sie PowerPoint-Theater.</p>
                 </div>
             </div>
         </div>
@@ -1879,6 +2222,174 @@
                 <div class="field"><label>Bewertungen / Social Proof</label><textarea data-key="p-phys-bewertungen"></textarea></div>
                 <div class="field"><label>Corporate Identity</label><textarea data-key="p-phys-ci"></textarea></div>
             </div></div>
+        </div>
+
+        <!-- ============================== -->
+        <!-- CRM & KEY ACCOUNTS -->
+        <!-- ============================== -->
+        <div id="crm" class="page">
+            <h1 class="page-title">CRM &amp; Key Accounts</h1>
+            <p class="page-subtitle"><span style="background:#66BB6A;color:white;padding:2px 10px;border-radius:6px;font-size:0.78em;font-weight:700;">UMSETZUNGSPHASE</span> Strategisches Beziehungsmanagement mit Kunden &amp; Distributoren.</p>
+
+            <!-- HOOK -->
+            <div class="card" style="background:linear-gradient(135deg,#1a1a2e,#3a3a5e);color:white;">
+                <div class="card-body">
+                    <h3 style="margin-top:0;color:white;">&#127919; Warum CRM strategisch ist</h3>
+                    <p style="margin-bottom:8px;opacity:0.95;">Ein CRM ist kein Admin-Werkzeug, sondern das Gedächtnis der Kundenbeziehung. Ohne CRM verliert das Unternehmen Wissen über Kunden, Distributoren und Prospects bei jedem Personalwechsel. Mit CRM werden Beziehungen zum Unternehmens-Asset.</p>
+                </div>
+            </div>
+
+            <!-- STATUS & TOOLWAHL -->
+            <div class="card">
+                <div class="card-header bg-indigo"><h3>Status &amp; Toolwahl</h3></div>
+                <div class="card-body">
+                    <div class="field-row">
+                        <div class="field"><label>Gewähltes CRM-Tool</label><input type="text" data-key="crm-tool" value=""></div>
+                        <div class="field"><label>Phase</label><input type="text" data-key="crm-phase" value=""></div>
+                    </div>
+                    <div class="field-row">
+                        <div class="field"><label>Aktive Kunden / Partner in CRM</label><input type="text" data-key="crm-aktive" value=""></div>
+                        <div class="field"><label>Prospects / Potenzielle Kunden</label><input type="text" data-key="crm-prospects" value=""></div>
+                    </div>
+                    <div class="field"><label>Begründung der Toolwahl</label><textarea data-key="crm-begruendung"></textarea></div>
+                    <div class="field"><label>Datenquellen</label><textarea data-key="crm-quellen"></textarea></div>
+                </div>
+            </div>
+
+            <!-- CRM-ZIELE -->
+            <div class="card">
+                <div class="card-header bg-blue"><h3>CRM-Ziele (SMART)</h3></div>
+                <div class="card-body">
+                    <div class="p-card" style="border-left-color:#1565C0;"><h4>Ziel 1 – Datenbasis</h4><div class="field"><textarea data-key="crm-ziel-1"></textarea></div></div>
+                    <div class="p-card" style="border-left-color:#2E7D32;"><h4>Ziel 2 – Reaktivierung</h4><div class="field"><textarea data-key="crm-ziel-2"></textarea></div></div>
+                    <div class="p-card" style="border-left-color:#E65100;"><h4>Ziel 3 – Neukunden</h4><div class="field"><textarea data-key="crm-ziel-3"></textarea></div></div>
+                    <div class="p-card" style="border-left-color:#6A1B9A;"><h4>Ziel 4 – Cross-Selling</h4><div class="field"><textarea data-key="crm-ziel-4"></textarea></div></div>
+                    <div class="p-card" style="border-left-color:#C62828;"><h4>Ziel 5 – Aktivitätsrhythmus</h4><div class="field"><textarea data-key="crm-ziel-5"></textarea></div></div>
+                </div>
+            </div>
+
+            <!-- PIPELINE -->
+            <div class="card">
+                <div class="card-header bg-orange"><h3>Sales-Pipeline / Customer-Journey-Stages</h3></div>
+                <div class="card-body">
+                    <div style="display:flex;align-items:center;justify-content:center;gap:6px;flex-wrap:wrap;margin:10px 0 18px;">
+                        <div style="background:#E3F2FD;border:2px solid #1565C0;border-radius:10px;padding:10px 14px;text-align:center;font-size:0.82em;font-weight:600;color:#1565C0;min-width:130px;">1. Lead<br><span style="font-weight:400;font-size:0.88em;">Kontakt recherchiert</span></div>
+                        <div style="font-size:1.3em;color:#999;">&#10132;</div>
+                        <div style="background:#FFF3E0;border:2px solid #E65100;border-radius:10px;padding:10px 14px;text-align:center;font-size:0.82em;font-weight:600;color:#E65100;min-width:130px;">2. MQL<br><span style="font-weight:400;font-size:0.88em;">Interesse bekundet</span></div>
+                        <div style="font-size:1.3em;color:#999;">&#10132;</div>
+                        <div style="background:#F3E5F5;border:2px solid #6A1B9A;border-radius:10px;padding:10px 14px;text-align:center;font-size:0.82em;font-weight:600;color:#6A1B9A;min-width:130px;">3. SQL<br><span style="font-weight:400;font-size:0.88em;">Termin vereinbart</span></div>
+                        <div style="font-size:1.3em;color:#999;">&#10132;</div>
+                        <div style="background:#FFF8E1;border:2px solid #FFA726;border-radius:10px;padding:10px 14px;text-align:center;font-size:0.82em;font-weight:600;color:#E65100;min-width:130px;">4. Angebot<br><span style="font-weight:400;font-size:0.88em;">Vertrag versandt</span></div>
+                        <div style="font-size:1.3em;color:#999;">&#10132;</div>
+                        <div style="background:#E8F5E9;border:2px solid #2E7D32;border-radius:10px;padding:10px 14px;text-align:center;font-size:0.82em;font-weight:600;color:#2E7D32;min-width:130px;">5. Aktiv<br><span style="font-weight:400;font-size:0.88em;">Kunde aktiv</span></div>
+                        <div style="font-size:1.3em;color:#999;">&#10132;</div>
+                        <div style="background:#FFEBEE;border:2px solid #C62828;border-radius:10px;padding:10px 14px;text-align:center;font-size:0.82em;font-weight:600;color:#C62828;min-width:130px;">6. Inaktiv<br><span style="font-weight:400;font-size:0.88em;">Reaktivierungsbedarf</span></div>
+                    </div>
+                    <div class="field"><label>Definition der Stage-Übergänge (wann rückt ein Kunde weiter?)</label><textarea data-key="crm-stages"></textarea></div>
+                </div>
+            </div>
+
+            <!-- A/B/C -->
+            <div class="card">
+                <div class="card-header bg-teal"><h3>Key-Account-Klassifikation (ABC-Analyse)</h3></div>
+                <div class="card-body">
+                    <p style="color:#666;font-size:0.9em;margin-top:0;">Nicht jeder Kunde verdient den gleichen Betreuungsaufwand. Klassifikation nach Umsatz / Volumen &amp; strategischem Potenzial.</p>
+                    <div style="overflow-x:auto;">
+                    <table class="dyn-table">
+                        <thead><tr><th>Klasse</th><th>Kriterium</th><th>Betreuung</th><th>Anzahl</th></tr></thead>
+                        <tbody>
+                            <tr><td><strong style="color:#C62828;">A – Key Account</strong></td><td></td><td></td><td><input data-key="crm-a-anzahl" value=""></td></tr>
+                            <tr><td><strong style="color:#E65100;">B – Standard</strong></td><td></td><td></td><td><input data-key="crm-b-anzahl" value=""></td></tr>
+                            <tr><td><strong style="color:#1565C0;">C – Klein / stabil</strong></td><td></td><td></td><td><input data-key="crm-c-anzahl" value=""></td></tr>
+                            <tr><td><strong style="color:#999;">D – Inaktiv</strong></td><td></td><td></td><td><input data-key="crm-d-anzahl" value=""></td></tr>
+                        </tbody>
+                    </table>
+                    </div>
+                    <div class="field" style="margin-top:14px;"><label>Top 5 A-Accounts (namentlich)</label><textarea data-key="crm-top5"></textarea></div>
+                </div>
+            </div>
+
+            <!-- PROSPECT-POOL -->
+            <div class="card">
+                <div class="card-header bg-purple"><h3>Prospect-Pool</h3></div>
+                <div class="card-body">
+                    <div class="field-row">
+                        <div class="field"><label>Anzahl recherchierte Prospects</label><input data-key="crm-ks-anzahl" value=""></div>
+                        <div class="field"><label>Kontaktpersonen hinterlegt?</label><input data-key="crm-ks-kontakte" value=""></div>
+                    </div>
+                    <div class="field"><label>Marktpotenzial (grobe Schätzung)</label><textarea data-key="crm-ks-potenzial"></textarea></div>
+                    <div class="field"><label>Akquise-Strategie</label><textarea data-key="crm-ks-strategie"></textarea></div>
+                    <div class="field"><label>Kernbotschaft an Prospects</label><textarea data-key="crm-ks-botschaft"></textarea></div>
+                </div>
+            </div>
+
+            <!-- DATENMODELL -->
+            <div class="card">
+                <div class="card-header bg-dark"><h3>CRM-Datenmodell (Company, Contact, Deal)</h3></div>
+                <div class="card-body">
+                    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;">
+                        <div class="p-card" style="border-left-color:#1565C0;"><h4>Company (Firma)</h4><ul style="font-size:0.88em;margin:4px 0 0 18px;"><li>Firmenname, Kürzel</li><li>Adresse, Region</li><li>Kundentyp / Branche</li><li>Partnerstatus</li><li>ABC-Klasse</li><li>Umsatz / Volumen, Trend</li><li>Letzter Kontakt, nächster geplanter Kontakt</li></ul></div>
+                        <div class="p-card" style="border-left-color:#2E7D32;"><h4>Contact (Person)</h4><ul style="font-size:0.88em;margin:4px 0 0 18px;"><li>Name, Funktion</li><li>Rolle</li><li>Entscheider-Flag</li><li>E-Mail, Telefon, LinkedIn</li><li>Sprache</li><li>Letzter Touchpoint</li><li>Newsletter-Opt-in</li></ul></div>
+                        <div class="p-card" style="border-left-color:#E65100;"><h4>Deal (Vorgang)</h4><ul style="font-size:0.88em;margin:4px 0 0 18px;"><li>Titel</li><li>Pipeline-Stage (1–6)</li><li>Produkt / Modul</li><li>Erwartetes Volumen / Jahr</li><li>Abschlusswahrscheinlichkeit</li><li>Nächste Aktion, Fälligkeit</li><li>Owner</li></ul></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WORKFLOWS -->
+            <div class="card">
+                <div class="card-header bg-teal"><h3>Workflows &amp; Automatisierungen (geplant)</h3></div>
+                <div class="card-body">
+                    <div class="p-card" style="border-left-color:#2E7D32;"><h4>Welcome-Sequenz (neue Kunden)</h4><p style="font-size:0.9em;">Auto-E-Mail mit Starter-Kit, 1 Woche später Check-in, 1 Monat später Feedback-Call.</p></div>
+                    <div class="p-card" style="border-left-color:#C62828;"><h4>Reaktivierungs-Sequenz (Karteileichen)</h4><p style="font-size:0.9em;">Nach X Monaten ohne Aktivität automatisch Alert. Mehrteilige Sequenz: E-Mail, Angebot, Telefon-Follow-up.</p></div>
+                    <div class="p-card" style="border-left-color:#1565C0;"><h4>Quartals-Touchpoint A-Accounts</h4><p style="font-size:0.9em;">Auto-Reminder für 1× pro Quartal Kontakt zu haben.</p></div>
+                    <div class="p-card" style="border-left-color:#6A1B9A;"><h4>Newsletter-Segmentierung</h4><p style="font-size:0.9em;">Unterschiedliche Inhalte für verschiedene Rollen / Segmente.</p></div>
+                </div>
+            </div>
+
+            <!-- KPIs -->
+            <div class="card">
+                <div class="card-header bg-red"><h3>CRM-KPIs (Monats-Cockpit)</h3></div>
+                <div class="card-body" style="overflow-x:auto;">
+                    <table class="dyn-table">
+                        <thead><tr><th>KPI</th><th>Definition</th><th>Ziel</th><th>Rhythmus</th></tr></thead>
+                        <tbody>
+                            <tr><td>Datenqualitäts-Score</td><td>% Companies mit vollständigen Pflichtfeldern</td><td></td><td>Monatlich</td></tr>
+                            <tr><td>Touchpoint-Rate A-Accounts</td><td>% A-Accounts mit Kontakt im letzten Quartal</td><td></td><td>Monatlich</td></tr>
+                            <tr><td>Pipeline-Wert</td><td>Summe erwartetes Volumen offener Deals</td><td></td><td>Monatlich</td></tr>
+                            <tr><td>Win-Rate</td><td>Abschlüsse / Angebote</td><td></td><td>Quartalsweise</td></tr>
+                            <tr><td>Sales-Cycle-Länge</td><td>Ø Tage Lead → Aktiv</td><td></td><td>Quartalsweise</td></tr>
+                            <tr><td>Reaktivierungs-Quote</td><td>Karteileichen, die wieder aktiv werden</td><td></td><td>Halbjährlich</td></tr>
+                            <tr><td>Neue Kunden</td><td>Unterzeichnete Verträge im Zeitraum</td><td></td><td>Jährlich</td></tr>
+                            <tr><td>NPS</td><td>Net Promoter Score bestehende Kunden</td><td></td><td>Jährlich</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- VERKNÜPFUNG -->
+            <div class="card" style="background:#E8F5E9;border-left:5px solid #2E7D32;">
+                <div class="card-body">
+                    <h3 style="margin-top:0;color:#2E7D32;">&#128279; Wie CRM mit dem Marketing-Mix verknüpft ist</h3>
+                    <ul style="margin:8px 0 0 20px;">
+                        <li><strong>Place (Distribution):</strong> Kunden / Distributoren werden im CRM gesteuert. Distributionsgrad (numerisch + gewichtet) misst die Netzwerk-Leistung.</li>
+                        <li><strong>People:</strong> Ansprechpersonen im CRM = Beziehungs-Asset des Unternehmens.</li>
+                        <li><strong>Process:</strong> CRM definiert den Verkaufsprozess von Lead bis Aktiv.</li>
+                        <li><strong>Promotion:</strong> Kommunikationsmassnahmen werden über CRM segmentiert.</li>
+                        <li><strong>Kontrolle:</strong> CRM liefert die operativen KPIs (Pipeline, Win-Rate).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- NÄCHSTE SCHRITTE -->
+            <div class="card">
+                <div class="card-header bg-blue"><h3>Nächste Schritte (Roadmap)</h3></div>
+                <div class="card-body">
+                    <div class="p-card"><h4>Q1 – Setup &amp; Migration</h4><div class="field"><textarea data-key="crm-rm-q1"></textarea></div></div>
+                    <div class="p-card"><h4>Q2 – Aktivierung</h4><div class="field"><textarea data-key="crm-rm-q2"></textarea></div></div>
+                    <div class="p-card"><h4>Q3 – Skalierung</h4><div class="field"><textarea data-key="crm-rm-q3"></textarea></div></div>
+                    <div class="p-card"><h4>Q4 – Jahres-Review</h4><div class="field"><textarea data-key="crm-rm-q4"></textarea></div></div>
+                </div>
+            </div>
         </div>
 
         <!-- ============================== -->
