@@ -1134,6 +1134,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 19.04.2026
       {
+        summary: "Praxis Seminare: Eintägige Persönlichkeitsentwicklungs-Seminare im April 2026 in Zürich illustrieren den aktiven Schweizer Markt für Persönlichkeitstraining. Hybride und digitale Lernformate gewinnen neben Präsenzseminaren zunehmend an Bedeutung. Für Mind Rocket GmbH als Anbieter digitaler Entwicklungsprogramme signalisiert dies ein weiterhin aktives und nachfragestärkes Marktumfeld.",
+        source: "Praxis Seminare",
+        url: "https://www.praxisseminare.ch/seminare/fuehrung/persoenlichkeitsentwicklung/",
+        date: "2026-04-14",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-04-19",
+      },
+      {
         summary: "NZZ am Sonntag: 'Für alles gibt es heute Coaches – doch was gut tönt, kann sogar gefährlich sein' – Die NZZ beleuchtet das boomende und kaum regulierte Coaching-Geschäft in der Schweiz: Schätzungsweise 550 Mitglieder im Schweizer Coaching-Verzeichnis, tatsächlich aber tausende unkontrollierter Anbieter. Nachfrage nach persönlicher Begleitung und Persönlichkeitsentwicklung boomt, gleichzeitig wächst der Wunsch nach nachweisbarer Qualität. Wachsender und qualitätsbewusster werdender Coaching-Markt schafft Potenzial für strukturierte, skalierbare Programme wie jene von Mind Rocket GmbH.",
         source: "NZZ am Sonntag",
         url: "https://www.nzz.ch/nzz-am-sonntag/report-und-debatte/zuhoeren-war-gestern-heute-troestet-der-coach-ld.1895763",
@@ -1431,6 +1439,38 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "mindrocket-trading": {
     news: [
       // Neu: 19.04.2026
+      {
+        summary: "ad-hoc-news.de: 'S&P 500 im Montagshandel volatil – Hormuz-Blockade drückt Futures' – Die US-Seeblockade gegen Iran führte zu einem Ölpreisanstieg auf über 102 USD/Barrel; ES-Futures notierten vorbörslich bis zu 0,6% im Minus bei ~6.778 Punkten. Geopolitische Spannungen belasten das Marktumfeld und erhöhen Schwankungsbreiten für ES-Futures-Trader. Für Mind Rocket Trading bedeutet dies anspruchsvolleres Risikomanagement und erhöhte Volatilität.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/s-and-p-500-im-montagshandel-volatil-hormus-blockade-drueckt-futures/69163402",
+        date: "2026-04-14",
+        category: "Futures & Trading",
+        addedAt: "2026-04-19",
+      },
+      {
+        summary: "NinjaTrader Blog: Neues Account-Dashboard als zentrales Hub – NinjaTrader hat sein Account-Dashboard grundlegend überarbeitet: Es dient nun als zentrales Hub für Kontoverwaltung, Performance-Tracking, Steuerdokumente, Funding, Education und Community in einer Oberfläche. Diese Konsolidierung vereinfacht den täglichen Workflow für algorithmische Trader. Für Mind-Rocket-Kunden mit NinjaTrader-Strategien bedeutet dies weniger Plattformwechsel im Handelsalltag.",
+        source: "NinjaTrader Blog",
+        url: "https://ninjatrader.com/futures/blogs/ninjatrader-new-dashboard/",
+        date: "2026-03-01",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-19",
+      },
+      {
+        summary: "CME Group / StockTitan: SEC und CFTC genehmigen Cross-Margining für US-Treasury-Futures – CME Group und DTCC haben Ende April 2026 Genehmigungen zur Ausweitung von Cross-Margining für US-Treasury-Futures auf Client-Konten erhalten. Bestehende FICC-gecleared-Positionen in US-Staatsanleihen können gegen CME-Zinsderivate gegengerechnet werden, was durchschnittlich 1 Milliarde USD täglich an Risiko-Offsets freisetzt. Dies verbessert die Kapitaleffizienz für professionelle Futures-Trader erheblich.",
+        source: "CME Group / StockTitan",
+        url: "https://www.stocktitan.net/news/CME/dtcc-and-cme-group-receive-regulatory-approvals-to-launch-expanded-u-da0tz3t2mp85.html",
+        date: "2026-04-30",
+        category: "Regulierung",
+        addedAt: "2026-04-19",
+      },
+      {
+        summary: "trading.ch: Day Trading in der Schweiz 2026 – vollständig legal, keine gesetzlichen Hebelgrenzen für Retail-Trader, keine spezielle Lizenz erforderlich. Im Gegensatz zur EU gelten in der Schweiz keine ESMA-Beschränkungen, was Swiss-basierte Trader gegenüber EU-Kunden bevorzugt. FINMA-regulierte Broker müssen jedoch Transparenz- und Anlegerschutzpflichten erfüllen.",
+        source: "trading.ch",
+        url: "https://trading.ch/daytrading/",
+        date: "2026-04-01",
+        category: "Regulierung",
+        addedAt: "2026-04-19",
+      },
       {
         summary: "FX News Group: 'Kraken closes acquisition of NinjaTrader' (Mai 2025) – Kraken hat die Akquisition von NinjaTrader für 1,5 Milliarden USD abgeschlossen – die bisher grösste TradFi/Crypto-Transaktion. Kraken führt NinjaTrader als eigenständige Plattform weiter und plant, Crypto-Futures für NinjaTrader-Nutzer und traditionelle Derivate für Kraken-Nutzer zugänglich zu machen. Direkte strategische Implikation: NinjaTrader wächst durch Kraken-Kapital, was Platform-Stabilität und Feature-Roadmap für NinjaScript-basierte Strategien wie Mind Rocket Trading beeinflusst.",
         source: "FX News Group",
@@ -2745,6 +2785,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "mindtools": {
     news: [
       // Neu: 19.04.2026
+      {
+        summary: "healthfullness.ch: Schweizer Digital-Health-Startups lancieren 2026 App-basierte Mental-Health-Angebote – Oviva mit Psychotherapie, Pathmate Technologies für Schlafstörungen und Earkick mit KI-gestütztem Mental-Health-Ansatz zeigen das Wachstum des Segments. Einzelne Schweizer Krankenkassen übernehmen bereits Kosten für zertifizierte Mental-Health-Apps. Diese Entwicklung validiert den Markt für digitale mentale Werkzeuge und schafft Kooperationsfelder für mindtools.ch.",
+        source: "healthfullness.ch",
+        url: "https://healthfullness.ch/die-besten-mental-health-apps-fuer-psychische-gesundheit/",
+        date: "2026-03-10",
+        category: "Mental Health",
+        addedAt: "2026-04-19",
+      },
+      {
+        summary: "ZHAW: Weiterbildungskurs 'Selbsterfahrung und Persönlichkeitsentwicklung zur Stärkung der Coachingkompetenz' im Oktober 2026 – Die ZHAW Angewandte Psychologie bietet einen praxisorientierten Kurs zur Persönlichkeitsentwicklung als Coaching-Kompetenzbasis an. Der anhaltend starke Nachfragemarkt für Selbsthilfe-Inhalte im DACH-Raum ist für PDF-Buchverkauf auf mindtools.ch positiv.",
+        source: "ZHAW",
+        url: "https://www.zhaw.ch/de/psychologie/weiterbildung/detail/kurs/wbk-selbsterfahrung-und-persoenlichkeitsentwicklung-zur-staerkung-der-coachingkompetenz",
+        date: "2026-04-01",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-04-19",
+      },
       {
         summary: "ad-hoc-news.de: 'Mentale Selbstführung wird 2026 zum Business-Muss' – 2026 wird zum Jahr der Mentalen Fitness: Der Fokus verschiebt sich vom blossen Wissen hin zum proaktiven Tun. Das Modell der 'Continuous Care' setzt sich durch – Integration mentaler Selbstführung in den täglichen Workflow. Mentale Werkzeuge werden 2026 zum kompetitiven Vorteil im Berufsalltag. Wachsende Nachfrage nach konkreten, anwendbaren mentalen Tools stärkt das Marktpotenzial von mindtools.ch als Anbieter digitaler Persönlichkeitsentwicklungs-Werkzeuge.",
         source: "ad-hoc-news.de",
@@ -4426,6 +4482,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "12wy-planner": {
     news: [
       // Neu: 19.04.2026
+      {
+        summary: "Fazm Blog: Notion April 2026 Release 'Workers for Agents' und Views API – Notion integriert KI direkt in das Kerndatenmodell statt als Chat-Addon. Parallel bietet Notion im Marketplace aktiv 12-Week-Year-Planner-Templates für 2026 an. Diese Entwicklung zeigt, dass KI-gestützte Planung im SaaS-Segment stark an Bedeutung gewinnt – ein direktes Wettbewerbsumfeld für den 12wy-planner.",
+        source: "Fazm Blog",
+        url: "https://fazm.ai/blog/productivity-app-updates-april-2026-notion-update",
+        date: "2026-04-10",
+        category: "SaaS & Tools",
+        addedAt: "2026-04-19",
+      },
+      {
+        summary: "Notion Marketplace: '12-Week Planner 2026' Template – Aktiv nachgefragtes 12-Wochen-Planungs-Template im Notion Marketplace bestätigt die Community-Nachfrage nach strukturierten 12-Wochen-Planungs-Tools. Das zeigt, dass Nutzer aktiv nach Umsetzungshilfen für die 12-Week-Year-Methode suchen – ein Argument für den eigenständigen SaaS-Ansatz des 12wy-planners gegenüber generischen Templates.",
+        source: "Notion Marketplace",
+        url: "https://www.notion.com/templates/12-2026",
+        date: "2026-01-01",
+        category: "SaaS & Tools",
+        addedAt: "2026-04-19",
+      },
       {
         summary: "lovable.dev: 'Micro-SaaS Ideas for Solopreneurs 2026' – Lovable listet Produktivitäts- und Planungstools als besonders lukratives Micro-SaaS-Segment für Solopreneure. Nischen-Planungstools mit spezifischen Methoden (wie 12 Week Year) werden als ideale Basis für nachhaltige SaaS-Einnahmen hervorgehoben. Bestätigendes Marktsignal für den 12WY-Planner als spezialisierten Planungs-SaaS.",
         source: "lovable.dev",
