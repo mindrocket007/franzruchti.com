@@ -1091,6 +1091,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
+      // Neu: 19.04.2026
+      {
+        summary: "NZZ am Sonntag: 'Für alles gibt es heute Coaches – doch was gut tönt, kann sogar gefährlich sein' – Die NZZ beleuchtet das boomende und kaum regulierte Coaching-Geschäft in der Schweiz: Schätzungsweise 550 Mitglieder im Schweizer Coaching-Verzeichnis, tatsächlich aber tausende unkontrollierter Anbieter. Nachfrage nach persönlicher Begleitung und Persönlichkeitsentwicklung boomt, gleichzeitig wächst der Wunsch nach nachweisbarer Qualität. Wachsender und qualitätsbewusster werdender Coaching-Markt schafft Potenzial für strukturierte, skalierbare Programme wie jene von Mind Rocket GmbH.",
+        source: "NZZ am Sonntag",
+        url: "https://www.nzz.ch/nzz-am-sonntag/report-und-debatte/zuhoeren-war-gestern-heute-troestet-der-coach-ld.1895763",
+        date: "2026",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-04-19",
+      },
       // Neu: 18.04.2026
       {
         summary: "coachingausbildungen.ch: 'Coaching-Marktanalyse 2025/2026 – Welche Trends prägen die deutschsprachige Region?' – KI-gestützte Personalisierung, hybride Formate und Spezialisierung prägen den Coaching-Markt. Nachfrage nach Online-Coaching wächst v.a. bei jüngeren Generationen. Organisationsbezogene Settings (Change, Talentförderung, Führungskräfteentwicklung) gewinnen an Bedeutung. Detaillierte Marktanalyse zeigt wachsendes Gesamtvolumen und höhere Zahlungsbereitschaft – direktes Wachstumsumfeld für Mind Rocket GmbH als Anbieter strukturierter Persönlichkeitsentwicklungs-Programme.",
@@ -2662,6 +2671,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 19.04.2026
+      {
+        summary: "ad-hoc-news.de: 'Mentale Selbstführung wird 2026 zum Business-Muss' – 2026 wird zum Jahr der Mentalen Fitness: Der Fokus verschiebt sich vom blossen Wissen hin zum proaktiven Tun. Das Modell der 'Continuous Care' setzt sich durch – Integration mentaler Selbstführung in den täglichen Workflow. Mentale Werkzeuge werden 2026 zum kompetitiven Vorteil im Berufsalltag. Wachsende Nachfrage nach konkreten, anwendbaren mentalen Tools stärkt das Marktpotenzial von mindtools.ch als Anbieter digitaler Persönlichkeitsentwicklungs-Werkzeuge.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/mentale-selbstfuehrung-wird-2026-zum-business-muss/68451311",
+        date: "2025-12-01",
+        category: "Mental Health",
+        addedAt: "2026-04-19",
+      },
       // Neu: 18.04.2026
       {
         summary: "OG Analysis: 'Global Digital Mental Health Market 2024–2025' – Der weltweite Markt für digitale Mental-Health-Tools wuchs von USD 20.8 Mrd. (2024) auf USD 24.4 Mrd. (2025) mit einem CAGR von 18.83%. KI-Chatbots, Therapie-Apps und mobile Selbsthilfe-Lösungen dominieren das Wachstum. Die Schweiz gilt als fortgeschrittener Adoptionsmarkt. Starkes strukturelles Wachstumsumfeld für mindtools.ch als digitalen Anbieter von Mental-Health-Tools und Persönlichkeitsentwicklungs-PDFs.",
@@ -3152,6 +3170,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 19.04.2026
+      {
+        summary: "ad-hoc-news.de: 'Kognitive Verzerrungen treiben Burnout-Zahlen 2026' – Aktuelle Erhebungen zeigen, dass subjektiv empfundener Stress massgeblich durch kognitive Denkmuster verstärkt wird. Selbst kurze tägliche Interventionen – z.B. ein fünfminütiges 'Gedankenprotokoll' – können Cortisol-Werte signifikant senken. Unterstreicht den Wert von Entspannungs- und mentalen Bewältigungsansätzen wie hypnobasierter Audio-Programme als praxistaugliche, niedrigschwellige BGM-Prävention – direktes Positionierungsumfeld für hypnovital®.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/kognitive-verzerrungen-treiben-burnout-zahlen-2026/68488485",
+        date: "2026-01-01",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-19",
+      },
+      {
+        summary: "psychotherapie-reus.de: 'Burnout-Prävention: Die WHO empfiehlt 2026 diese 5 Massnahmen für den Arbeitsplatz' – Die WHO-Empfehlungen 2026 zur betrieblichen Burnout-Prävention umfassen strukturierte Entspannungstechniken, mentale Regeneration, Stressbewältigung und präventive Gesundheitsförderung am Arbeitsplatz. Hypnobasierte Entspannungs- und Audio-Programme wie hypnovital® sind direkt in diesem Präventionsrahmen positioniert und entsprechen den Empfehlungen zur niedrigschwelligen mentalen Selbstfürsorge.",
+        source: "psychotherapie-reus.de",
+        url: "https://psychotherapie-reus.de/burnout-praevention-die-who-empfiehlt-2026-diese-5-massnahmen-fuer-den-arbeitsplatz/",
+        date: "2026-01-01",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-19",
+      },
       // Neu: 18.04.2026
       {
         summary: "Wellhub: 'Betriebliches Gesundheitsmanagement (BGM) 2026: Der Praxisleitfaden' – Umfassender Leitfaden zum BGM 2026: Digitale BGM-Lösungen gewinnen durch Homeoffice und hybride Arbeit an Bedeutung. Gesundheitsangebote umfassen Fitness, mentale Gesundheit (Meditation, Coaching) und Ernährung. BGM als strategisches Instrument zur Mitarbeiterbindung und Produktivitätssteigerung. Wachsende Unternehmens-Nachfrage nach skalierbaren, digitalen Präventionsformaten bestätigt den Marktbedarf für hypnovital® als digitales BGM-Programm.",
@@ -4900,6 +4935,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 19.04.2026
+      {
+        summary: "fernarzt.com: 'Vorzeitiger Samenerguss behandeln – Übungen und weitere Hilfe' – Telemedizin-Plattform fernarzt.com erklärt Selbsthilfe-Techniken (Start-Stopp-, Squeeze-Technik) und psychotherapeutische Behandlungsoptionen bei Ejaculatio praecox. Wachsende Verbreitung niedrigschwelliger Online-Ressourcen für männliche sexuelle Gesundheit zeigt steigendes öffentliches Bewusstsein und die Bereitschaft zur diskreten digitalen Selbsthilfe – indirekter Marktbeleg für das Audio-Programm von orgasmus-hinauszoegern.de.",
+        source: "fernarzt.com",
+        url: "https://www.fernarzt.com/krankheiten/vorzeitiger-samenerguss/behandlung/",
+        date: "2026",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-19",
+      },
       // Neu: 18.04.2026
       {
         summary: "DRKS / Universität Marburg: 'CLIMACS-Studie – App MELONGA für Ejaculatio praecox' – Klinische Studie (DRKS00032774, Start Oktober 2023, laufend) der Universität Marburg: CE-zertifizierte App MELONGA nutzt kognitiv-verhaltenstherapeutische Techniken zur Selbstbehandlung von Ejaculatio praecox – nicht-pharmakologisch, anonym zuhause nutzbar. Direkter akademischer Nachweis für wachsende Akzeptanz digitaler Selbsthilfe-Interventionen bei EP – validiert den Markt für Angebote wie orgasmus-hinauszoegern.de als niedrigschwelliges Audio-Programm.",
@@ -5431,6 +5475,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 19.04.2026
+      {
+        summary: "therapie.de: 'Hypnose bei Angststörungen – Angststörungen sind gut mit Hypnotherapie behandelbar' – therapie.de dokumentiert die breite wissenschaftliche Anerkennung der Hypnotherapie bei Angststörungen jeder Art, darunter Auftritts- und Redeangst. Seit 2006 ist Hypnose in 11 von 12 Anwendungsbereichen wissenschaftlich anerkannt; neue Studien 2026 bestätigen langfristige Stabilität der Behandlungsergebnisse. Stärkt die wissenschaftliche Glaubwürdigkeit des Audio-Hypnose-Ansatzes von lampenfieber-besiegen.de.",
+        source: "therapie.de",
+        url: "https://www.therapie.de/psyche/info/therapie/hypnose-hypnotherapie/hypnose-und-angst/",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-19",
+      },
+      {
+        summary: "psychic.de: 'Redeangst & Sprechangst – Ursachen, Behandlung & Symptome' – Psychologisches Informationsportal erklärt Ursachen, Symptome und Behandlungsmöglichkeiten von Redeangst und Sprechangst, inkl. Verhaltenstherapie und Hypnose als evidenzbasierte Optionen. Wachsende Online-Präsenz fachlicher Informationsquellen steigert das gesellschaftliche Bewusstsein für das Thema und die Nachfrage nach niedrigschwelligen Selbsthilfe-Lösungen – direktes Marktumfeld für lampenfieber-besiegen.de als Hypnose-Audio-Programm.",
+        source: "psychic.de",
+        url: "https://www.psychic.de/redeangst.php",
+        date: "2026",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-04-19",
+      },
       // Neu: 18.04.2026
       {
         summary: "Universität Paderborn: 'Studie Hypnose-Coaching gegen Prüfungsangst WS 2025/26' – Laufende wissenschaftliche Studie (Department Sport & Gesundheit): Kann Hypnose-Coaching Prüfungsangst bei Studierenden signifikant reduzieren? Richtet sich an Studierende mit ausgeprägter Prüfungsangst. Aktuelle Forschungsarbeit bestätigt wissenschaftliches Interesse an Hypnose als Interventionsmethode gegen Auftritts- und Prüfungsangst – direkter Wirksamkeitsbeleg für das Angebot von lampenfieber-besiegen.de.",
@@ -6003,6 +6064,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 19.04.2026
+      {
+        summary: "masterplan.com: 'Lern-Content Trends 2026: Zwischen Genie und Wahnsinn' – Führende E-Learning-Plattform analysiert die Lern-Content-Trends 2026: KI-Personalisierung, Microlearning, arbeitsintegriertes Lernen und datengestützter Nachweis des Lernerfolgs setzen sich als Standard durch. Wissensvermittlung und Lernkompetenz werden zur strategischen Unternehmensressource. Direktes Trendumfeld für learnfluencer.ch als Thought-Leadership-Plattform für Lernkompetenz und KI-Weiterbildung in der Schweiz.",
+        source: "masterplan.com",
+        url: "https://masterplan.com/blog/lern-content-trends-2026-l-and-deepdive",
+        date: "2026-01-01",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-19",
+      },
+      {
+        summary: "EdTech Magazine: '25 Higher Ed Influencers to Follow in 2026' (Januar 2026) – EdTech Magazine identifiziert jährlich die 25 einflussreichsten Bildungsbotschafter im Hochschul-EdTech-Bereich für 2026. Der Trend zu Thought Leadership, Content Creation und Wissensvermittlung über Social Media im Bildungsbereich wächst stark. Bestätigt die strategische Positionierung von learnfluencer.ch als Thought-Leadership-Plattform für Lernkompetenz und KI-Weiterbildung im DACH-Raum.",
+        source: "EdTech Magazine",
+        url: "https://edtechmagazine.com/higher/article/2026/01/25-higher-ed-influencers-follow-2026",
+        date: "2026-01-01",
+        category: "Content & Thought Leadership",
+        addedAt: "2026-04-19",
+      },
       // Neu: 18.04.2026
       {
         summary: "Nume.ch: 'KI-Nutzung Schweiz 2026: 76% nutzen Künstliche Intelligenz' – Studie: 76% der erwachsenen Schweizer Bevölkerung integrieren KI-Tools regelmässig in ihren Alltag – ein Wendepunkt von der technologischen Nische zur unverzichtbaren Basiskompetenz. KI-Literacy und Lernkompetenz im Umgang mit KI werden zur gesellschaftlichen Kernkompetenz. Direktes Marktumfeld für learnfluencer.ch als Schweizer Thought-Leadership-Plattform für Lernen und KI-Kompetenz.",
