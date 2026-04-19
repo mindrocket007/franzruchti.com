@@ -1398,6 +1398,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         category: "Regulierung",
         addedAt: "2026-04-19",
       },
+      {
+        summary: "Sullivan & Cromwell / CFTC: 'CFTC Updates Enforcement Priorities – April 2026' – Die CFTC hat im April 2026 fünf neue Enforcement-Prioritäten bekannt gegeben: Insider-Trading (inkl. Prediction Markets), Marktmanipulation (besonders Energiemärkte), disruptives Trading, Retailbetrug und AML/KYC-Verstösse. Die Kooperationsrichtlinie wurde ebenfalls überarbeitet. Für algorithmische ES-Futures-Trader direkt relevant: die Prioritäten 'Market Manipulation' und 'Disruptive Trading' betreffen regelbasierte Systeme und setzen Complianceanforderungen – wichtiges regulatorisches Umfeld für Mind Rocket Trading.",
+        source: "Sullivan & Cromwell / CFTC",
+        url: "https://www.sullcrom.com/insights/memo/2026/April/CFTC-Updates-Enforcement-Priorities-Cooperation-Policy-Prediction-Markets-Insider-Trading",
+        date: "2026-04",
+        category: "Regulierung",
+        addedAt: "2026-04-19",
+      },
       // Neu: 18.04.2026
       {
         summary: "StockBrokers.com: 'NinjaTrader Review 2026' – NinjaTrader öffnete im Januar 2026 den europäischen Markt über einen CySEC-regulierten Broker. Die Plattform verwaltet über 2 Mio. Accounts und wurde 2025 von Kraken für $1.5 Mrd. übernommen. C#-basierte NinjaScript-Automatisierung, Tick-Level-Backtesting und Kommissionen ab $0.09/Kontrakt für Micro-Futures. Day-Trading-Margins: $50 (MES/MNQ), $500 (ES). Direkter strategischer Rahmen für die NinjaTrader-basierte Handelsinfrastruktur von Mind Rocket Trading.",
@@ -2680,6 +2688,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         category: "Mental Health",
         addedAt: "2026-04-19",
       },
+      {
+        summary: "coachingausbildungen.ch: 'Coaching-Markt Schweiz – Trends 2025/2026 Analyse' – Der Schweizer Coaching-Markt entwickelt sich 2026 zu einem interdisziplinären Feld: Systemische und ganzheitliche Denkmodelle gewinnen an Bedeutung, Coaching wird zunehmend in Change-Prozessen, Talentförderung und Führungskräfteentwicklung eingesetzt. Wachsende Professionalisierung und Ausdifferenzierung des Coaching-Marktes Schweiz stärkt die Zielgruppe, die nach digitalen Selbst-Tools und mentalen Werkzeugen sucht – direktes Marktumfeld für mindtools.ch.",
+        source: "coachingausbildungen.ch",
+        url: "https://www.coachingausbildungen.ch/coaching-markt-schweiz-trends-2025-2026-analyse/",
+        date: "2026",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-04-19",
+      },
       // Neu: 18.04.2026
       {
         summary: "OG Analysis: 'Global Digital Mental Health Market 2024–2025' – Der weltweite Markt für digitale Mental-Health-Tools wuchs von USD 20.8 Mrd. (2024) auf USD 24.4 Mrd. (2025) mit einem CAGR von 18.83%. KI-Chatbots, Therapie-Apps und mobile Selbsthilfe-Lösungen dominieren das Wachstum. Die Schweiz gilt als fortgeschrittener Adoptionsmarkt. Starkes strukturelles Wachstumsumfeld für mindtools.ch als digitalen Anbieter von Mental-Health-Tools und Persönlichkeitsentwicklungs-PDFs.",
@@ -3184,6 +3200,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
         source: "psychotherapie-reus.de",
         url: "https://psychotherapie-reus.de/burnout-praevention-die-who-empfiehlt-2026-diese-5-massnahmen-fuer-den-arbeitsplatz/",
         date: "2026-01-01",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-19",
+      },
+      {
+        summary: "Schlaunews.de: 'Webinar BGM-Refresher – Aktuelle Entwicklungen im Betrieblichen Gesundheitsmanagement' (31. März 2026) – Die BSA-Akademie und die Deutsche Hochschule für Prävention und Gesundheitsmanagement (DHfPG) bieten am 6. Mai 2026 ein Online-Refresher-Webinar zu BGM an: aktuelle Zahlen, Trends, rechtliche Anforderungen und Best Practices im betrieblichen Gesundheitsmanagement. Zeigt wachsende Professionalisierung des BGM-Feldes und steigende Nachfrage nach strukturierten BGM-Wissensangeboten – relevantes Marktumfeld für hypnovital® als praxisorientiertes BGM-Präventionsprogramm.",
+        source: "Schlaunews.de / BSA-Akademie",
+        url: "https://schlaunews.de/2026/03/31/webinar-bgm-refresher-aktuelle-entwicklungen-im-betrieblichen-gesundheitsmanagement/",
+        date: "2026-03-31",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-19",
+      },
+      {
+        summary: "ad-hoc-news.de: 'Burnout-Prävention 2026: Achtsamkeit und Digitalhilfen im Fokus' (22. Januar 2026) – Forsa-Umfrage: 62% der Befragten wünschen mehr Zeit für Familie und bessere Stressbewältigung. TK-Stressreport 2025: Zwei Drittel der Erwerbstätigen gestresst. Achtsamkeitsbasierte Methoden (MBSR) und digitale Gesundheitsanwendungen (DiGA) als Lösungsansätze empfohlen. Klarer Markttrend: Digitale, niederschwellige Stressbewältigungs-Tools wie hypnovital® entsprechen dem wachsenden gesellschaftlichen Bedarf nach skalierbarer BGM-Prävention.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/burnout-praevention-2026-achtsamkeit-und-digitalhilfen-im-fokus/68508549",
+        date: "2026-01-22",
         category: "BGM & Gesundheit",
         addedAt: "2026-04-19",
       },
@@ -4944,6 +4976,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         category: "Sexuelle Gesundheit",
         addedAt: "2026-04-19",
       },
+      {
+        summary: "Richestsoft: 'Sexual Wellness Trends 2026 – Digitale Selbsthilfe wird Mainstream' – Internationale Marktanalyse zeigt: Sexuelle Gesundheit ist 2026 kein Tabuthema mehr. Apps, virtuelles Coaching und digitale Selbsthilfe-Produkte für sexuelles Wohlbefinden wachsen stark. Virtuelle Therapie und Coaching werden zugänglicher, neue Zielgruppen werden erreicht. Positives gesellschaftliches Umfeld für diskrete digitale Selbsthilfe-Produkte wie das Hypnose-Audio-Programm auf orgasmus-hinauszoegern.de.",
+        source: "Richestsoft",
+        url: "https://richestsoft.com/de/blog/sexual-wellness-trends/",
+        date: "2026",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-19",
+      },
       // Neu: 18.04.2026
       {
         summary: "DRKS / Universität Marburg: 'CLIMACS-Studie – App MELONGA für Ejaculatio praecox' – Klinische Studie (DRKS00032774, Start Oktober 2023, laufend) der Universität Marburg: CE-zertifizierte App MELONGA nutzt kognitiv-verhaltenstherapeutische Techniken zur Selbstbehandlung von Ejaculatio praecox – nicht-pharmakologisch, anonym zuhause nutzbar. Direkter akademischer Nachweis für wachsende Akzeptanz digitaler Selbsthilfe-Interventionen bei EP – validiert den Markt für Angebote wie orgasmus-hinauszoegern.de als niedrigschwelliges Audio-Programm.",
@@ -5490,6 +5530,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
         url: "https://www.psychic.de/redeangst.php",
         date: "2026",
         category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-04-19",
+      },
+      {
+        summary: "IU Internationale Hochschule: 'Studie Prüfungsangst – 86,8% der Menschen in Deutschland betroffen' – IU-Studie zeigt: 86,8% der Menschen in Deutschland kennen Prüfungsangst, besonders in Schul-, Studien- und Bewerbungssituationen. Neuere Forschung belegt: Das schlechtere Abschneiden beginnt bereits bei der Vorbereitung, nicht erst in der Prüfungssituation selbst. Die enorme Verbreitung von Prüfungs- und Auftrittsangst belegt die Breite der Zielgruppe für Selbsthilfeprodukte – direktes Marktargument für lampenfieber-besiegen.de.",
+        source: "IU Internationale Hochschule",
+        url: "https://www.iu.de/forschung/studien/pruefungsangst/",
+        date: "2026",
+        category: "Psychologie & Forschung",
+        addedAt: "2026-04-19",
+      },
+      {
+        summary: "Hogrefe / Zeitschrift für Pädagogische Psychologie: 'Fünf Prüfungsangst-Profile – Querschnittsstudie' – Querschnittsstudie mit 696 Schülerinnen und Schülern (10–18 Jahre) identifiziert fünf distinkte Prüfungsangst-Profile. Die Forschung zeigt: Angst beginnt schon in der Vorbereitungsphase, nicht erst beim Auftritt oder in der Prüfung selbst. Wissenschaftliches Argument für frühzeitige Prävention durch Selbsthilfe-Tools wie das Hypnose-Audio-Programm von lampenfieber-besiegen.de.",
+        source: "Zeitschrift für Pädagogische Psychologie / Hogrefe",
+        url: "https://econtent.hogrefe.com/doi/10.1024/1010-0652/a000289",
+        date: "2026",
+        category: "Psychologie & Forschung",
         addedAt: "2026-04-19",
       },
       // Neu: 18.04.2026
@@ -6079,6 +6135,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         url: "https://edtechmagazine.com/higher/article/2026/01/25-higher-ed-influencers-follow-2026",
         date: "2026-01-01",
         category: "Content & Thought Leadership",
+        addedAt: "2026-04-19",
+      },
+      {
+        summary: "Swissnova: 'Weiterbildung Unternehmen Schweiz – Trends 2026' – Swissnova publiziert einen Überblick über 10 Weiterbildungstrends für Unternehmen in der Schweiz 2026: KI-gestützte personalisierte Lernpfade, Hybrid-Lernformate, Microlearning-Ansätze und die wachsende Bedeutung von Soft Skills neben technischen KI-Kompetenzen. Schweizer Unternehmenskontext und konkrete Praxisbeispiele machen diesen Artikel zur Grundlage für Thought-Leadership-Content auf learnfluencer.ch.",
+        source: "Swissnova",
+        url: "https://unternehmen.swissnova.swiss/weiterbildung-unternehmen-schweiz-trends-2026/",
+        date: "2026",
+        category: "Weiterbildung Schweiz",
         addedAt: "2026-04-19",
       },
       // Neu: 18.04.2026
@@ -7055,6 +7119,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
         category: "Marketing-Tools & Software",
         addedAt: "2026-04-19",
       },
+      {
+        summary: "Bexolutions: 'KI-Marketing für Schweizer KMU 2026 – Praxisleitfaden' – Bexolutions erklärt, warum KI-Marketing 2026 keine Luxus, sondern Notwendigkeit für wettbewerbsfähige Schweizer KMU ist. Der Artikel beschreibt konkrete Einstiegspunkte und Tools. Für das Marketingkonzept-Tool auf learnfluencer.ch relevant: zeigt den wachsenden Bedarf an strukturierten, einfach zugänglichen Marketingplanungs-Tools für KMU im DACH-Raum.",
+        source: "Bexolutions",
+        url: "https://bexolutions.ch/ki-marketing-fur-schweizer-kmu-2026-praxisleitfaden/",
+        date: "2026",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-19",
+      },
+      {
+        summary: "MarTech.org: '4 Trends Marketers Must Watch in 2026' – MarTech.org listet 4 Trends, die Marketer 2026 beobachten müssen: AI Agents für Content und Research, First-Party-Data-Strategie, Real-Time Decisioning und die Konsolidierung des MarTech-Stacks. Der Markt bewegt sich hin zu integrierten, KI-gestützten Planungstools – stärkt die Positionierung eines interaktiven Marketingkonzept-Tools mit Framework-Strukturierung (PESTEL, SWOT, 7P) als zeitgemässes KMU-Tool.",
+        source: "MarTech.org",
+        url: "https://martech.org/4-trends-marketers-must-watch-in-2026/",
+        date: "2026",
+        category: "MarTech & Trends",
+        addedAt: "2026-04-19",
+      },
       // Neu: 18.04.2026
       {
         summary: "Swiss Marketing Academy: 'Marketing-Analyse-Tools: Die Top 5 für Profis 2026' – Schweizer Marketingakademie bewertet führende Analyse-Tools für Profis nach Funktionsumfang, Usability und Preis-Leistung. Professionelle Marketingplanung mit strukturierten Analyse-Frameworks (SWOT, PESTEL etc.) wird 2026 als Kernkompetenz für Marketingprofis hervorgehoben. Direktes Wettbewerbsumfeld und Marktvalidierung für das Marketingkonzept-Tool auf learnfluencer.ch.",
@@ -7722,6 +7802,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
         url: "https://www.bielertagblatt.ch/nachrichten/fokus/digital/kampf-um-digitale-beisetzung",
         date: "2026-04-01",
         category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-19",
+      },
+      {
+        summary: "Age-Stiftung: 'Letzte Reise – Interaktiver Bestattungsplaner für Schweizer Gemeinden' – Die Age-Stiftung fördert ein Projekt, das Angehörigen und Betroffenen ohne professionellen Bestatter praktische digitale Hilfe bei der Bestattungsplanung bietet. Zeigt, dass auch die öffentliche Hand in der Schweiz digitale Bestattungsplanung aktiv unterstützt und fördert. Gesellschaftliche Bestätigung des Bedarfs an niedrigschwelligen digitalen Vorsorge-Tools – direktes Marktumfeld für bestattungsplaner.ch.",
+        source: "Age-Stiftung",
+        url: "https://www.age-stiftung.ch/foerderung/letzte-reise-interaktiver-bestattungsplaner-fuer-gemeinden",
+        date: "2026",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-04-19",
+      },
+      {
+        summary: "Everlife: 'Preise für Bestattungen in der Schweiz' – Everlife.ch publiziert aktuelle Kostenangaben: Kremation kostet CHF 4'500–15'000 (inkl. aller Leistungen); fast 90% der Schweizer bevorzugen Kremation. Transparenz bei Bestattungskosten ist ein zentrales Nutzerversprechen digitaler Plattformen. Direkter Wettbewerber-Einblick und Marktdaten zur Preissituation in der Schweizer Bestattungsbranche – relevant für Positionierung und Nutzeransprache von bestattungsplaner.ch.",
+        source: "Everlife",
+        url: "https://everlife.ch/de/preise-fur-bestattungen/",
+        date: "2026",
+        category: "Markt & Trends",
         addedAt: "2026-04-19",
       },
       // Neu: 18.04.2026
