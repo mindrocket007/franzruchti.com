@@ -1372,6 +1372,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 19.04.2026
+      {
+        summary: "FX News Group: 'Kraken closes acquisition of NinjaTrader' (Mai 2025) – Kraken hat die Akquisition von NinjaTrader für 1,5 Milliarden USD abgeschlossen – die bisher grösste TradFi/Crypto-Transaktion. Kraken führt NinjaTrader als eigenständige Plattform weiter und plant, Crypto-Futures für NinjaTrader-Nutzer und traditionelle Derivate für Kraken-Nutzer zugänglich zu machen. Direkte strategische Implikation: NinjaTrader wächst durch Kraken-Kapital, was Platform-Stabilität und Feature-Roadmap für NinjaScript-basierte Strategien wie Mind Rocket Trading beeinflusst.",
+        source: "FX News Group",
+        url: "https://fxnewsgroup.com/forex-news/retail-forex/kraken-closes-acquisition-of-ninjatrader/",
+        date: "2025-05-01",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-19",
+      },
+      {
+        summary: "trading.de: 'Prop Trading 2026 – Regulierung und Marktüberblick' – Prop Trading bleibt 2026 in einer regulatorischen Grauzone: In Deutschland, Österreich und der Schweiz ist das Modell legal, da Konten als Demo-Konten geführt werden. Eine spezifische nationale Regulierung fehlt weiterhin, was internationale Anbieter wie Apex attraktiv macht. Direkt relevant für Mind Rocket Trading als Prop-Trading-Anbieter.",
+        source: "trading.de",
+        url: "https://trading.de/prop-trading/",
+        date: "2026-04-01",
+        category: "Regulierung",
+        addedAt: "2026-04-19",
+      },
       // Neu: 18.04.2026
       {
         summary: "StockBrokers.com: 'NinjaTrader Review 2026' – NinjaTrader öffnete im Januar 2026 den europäischen Markt über einen CySEC-regulierten Broker. Die Plattform verwaltet über 2 Mio. Accounts und wurde 2025 von Kraken für $1.5 Mrd. übernommen. C#-basierte NinjaScript-Automatisierung, Tick-Level-Backtesting und Kommissionen ab $0.09/Kontrakt für Micro-Futures. Day-Trading-Margins: $50 (MES/MNQ), $500 (ES). Direkter strategischer Rahmen für die NinjaTrader-basierte Handelsinfrastruktur von Mind Rocket Trading.",
@@ -4252,6 +4269,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 19.04.2026
+      {
+        summary: "lovable.dev: 'Micro-SaaS Ideas for Solopreneurs 2026' – Lovable listet Produktivitäts- und Planungstools als besonders lukratives Micro-SaaS-Segment für Solopreneure. Nischen-Planungstools mit spezifischen Methoden (wie 12 Week Year) werden als ideale Basis für nachhaltige SaaS-Einnahmen hervorgehoben. Bestätigendes Marktsignal für den 12WY-Planner als spezialisierten Planungs-SaaS.",
+        source: "lovable.dev",
+        url: "https://lovable.dev/guides/micro-saas-ideas-for-solopreneurs-2026",
+        date: "2026-04-01",
+        category: "SaaS & Tools",
+        addedAt: "2026-04-19",
+      },
       // Neu: 18.04.2026
       {
         summary: "12week-breakthrough.com: 'The Complete 12-Week Year Implementation Guide for 2026' – Umfassender Implementierungsleitfaden für die 12-Week-Year-Methode: Schrittweise Anleitung für Zielformulierung, Weekly Plans, Scorecards und Reviews nach Brian Moran. Wachsende Online-Community von 12-Week-Year-Anwendern belegt anhaltende Popularität der Methode. Direktes Marktvalidierungssignal für spezialisierte digitale Planungs-Tools wie den 12wy-planner.",
@@ -6942,6 +6968,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 19.04.2026
+      {
+        summary: "marketingautomation.tech: 'Die 20 besten Marketing Automation Tools 2026' – Vergleichsartikel für Schweizer KMU listet führende Marketing-Automation-Tools 2026 und betont revDSG-Konformität als entscheidendes Auswahlkriterium. Lokaler Fokus und Datenschutz-Compliance werden als Positionierungsvorteile für Schweizer Tools hervorgehoben – relevantes Wettbewerbsumfeld für das Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "marketingautomation.tech",
+        url: "https://www.marketingautomation.tech/beste-20-marketing-automation-tools/",
+        date: "2026-04-01",
+        category: "Marketing-Tools & Software",
+        addedAt: "2026-04-19",
+      },
       // Neu: 18.04.2026
       {
         summary: "Swiss Marketing Academy: 'Marketing-Analyse-Tools: Die Top 5 für Profis 2026' – Schweizer Marketingakademie bewertet führende Analyse-Tools für Profis nach Funktionsumfang, Usability und Preis-Leistung. Professionelle Marketingplanung mit strukturierten Analyse-Frameworks (SWOT, PESTEL etc.) wird 2026 als Kernkompetenz für Marketingprofis hervorgehoben. Direktes Wettbewerbsumfeld und Marktvalidierung für das Marketingkonzept-Tool auf learnfluencer.ch.",
@@ -7602,6 +7637,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 19.04.2026
+      {
+        summary: "Bieler Tagblatt: 'Kampf um digitale Beisetzung' – Das Bieler Tagblatt beleuchtet, wie Online-Plattformen und digitale Dienstleistungen die traditionelle Bestattungsbranche herausfordern. Vergleichsportale und Planungstools verändern das Kundenverhalten grundlegend. Direkter medialer Rückenwind für bestattungsplaner.ch als digitales Vorsorge- und Lead-Vermittlungsportal in der Schweiz.",
+        source: "Bieler Tagblatt",
+        url: "https://www.bielertagblatt.ch/nachrichten/fokus/digital/kampf-um-digitale-beisetzung",
+        date: "2026-04-01",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-19",
+      },
       // Neu: 18.04.2026
       {
         summary: "Luzerner Zeitung: 'Horw: Die digitalen Bestatter' – Luzerner Zeitung porträtiert bestattungsplaner.ch: Betrieben von Johannes Ruchti (hauptberuflich Bestatter bei Hager Imbach in Kriens), vermittelt das Portal Bestattungsaufträge an lokale Bestatter für eine fixe Entschädigung. Aktuell in der Zentralschweiz verfügbar, Ausbau auf die ganze Schweiz geplant. Direkter Medienbericht über das Geschäftsmodell von bestattungsplaner.ch und seine digitale Lead-Vermittlungsstrategie.",
