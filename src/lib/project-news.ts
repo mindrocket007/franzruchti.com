@@ -26,6 +26,31 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 19.04.2026
+      {
+        summary: "SGV Schweizerischer Gewerbeverband: 'Durchbruch für Titel der höheren Berufsbildung: Gewerbe verbucht Erfolg' – Der Bundesrat und das Parlament haben die Einführung der Titelzusätze 'Professional Bachelor' und 'Professional Master' für die höhere Berufsbildung verabschiedet. Der SGV begrüsst dies als klares Signal gegen den Fachkräftemangel und für die Attraktivität der Berufsbildung. Die Referendumsfrist lief am 17. April 2026 ab. Bei erfolgreichem Ablauf tritt das Gesetz ab 1. Juli 2026 in Kraft – stärkt die internationale Sichtbarkeit anerkannter ICT-Berufsabschlüsse und das Qualifizierungsumfeld der SIZ AG.",
+        source: "Schweizerischer Gewerbeverband sgv",
+        url: "https://www.sgv-usam.ch/news-medien/medienmitteilungen/durchbruch-fuer-titel-der-hoeheren-berufsbildung-gewerbe-verbucht-erfolg/",
+        date: "2025-12-19",
+        category: "Bildungspolitik",
+        addedAt: "2026-04-19",
+      },
+      {
+        summary: "Swiss Marketing Academy: 'Professional Bachelor Schweiz 2026: Fachausweis sichtbar' – Analyse der Auswirkungen des neuen Titels 'Professional Bachelor' für Fachausweis-Absolvierende in der Schweiz. Der neue Titel stärkt die internationale Vergleichbarkeit und Sichtbarkeit eidgenössischer Fachausweise auf NQR-Niveau 5. Fachausweise wie jene der SIZ AG werden durch den neuen Titel international attraktiver – direktes Positionierungsumfeld für ICT-Prüfungsabschlüsse.",
+        source: "Swiss Marketing Academy",
+        url: "https://www.swissmarketingacademy.ch/magazin/professional-bachelor-fachausweis-schweiz-2026/",
+        date: "2026",
+        category: "Bildungspolitik",
+        addedAt: "2026-04-19",
+      },
+      {
+        summary: "HSO Wirtschaftsschule Schweiz: 'Professional Bachelor Schweiz: Ab wann? Reform 2026' – Detaillierte Analyse zum Inkrafttreten und zur Rückwirkung des Professional Bachelor für Abschlüsse der höheren Berufsbildung. Berufsleute mit eidgenössischem Fachausweis erhalten ab 1. Juli 2026 den Titelzusatz 'Professional Bachelor'. Neue ICT-Abschlüsse und anerkannte Zertifizierungen wie jene der SIZ AG profitieren von erhöhter nationaler und internationaler Sichtbarkeit.",
+        source: "HSO Wirtschaftsschule Schweiz",
+        url: "https://www.hso.ch/digital-blog/professional-bachelor-schweiz-reform-2026/",
+        date: "2026",
+        category: "Bildungspolitik",
+        addedAt: "2026-04-19",
+      },
       // Neu: 18.04.2026
       {
         summary: "WBF/Bund: 'Lehrstellen 2026 – Stabilität und Perspektiven' (15. April 2026) – Per Ende März 2026 wurden knapp 42'000 Lehrverträge abgeschlossen, leicht mehr als im Vorjahr. Rund 20'000 Lehrstellen waren noch ausgeschrieben, ein stabiles Signal für den Ausbildungsmarkt. Die Woche der Berufsbildung findet vom 4.–8. Mai 2026 statt. Ein stabiler Lehrstellenmarkt sichert den Zufluss von Berufseinsteigern, die anerkannte ICT-Zertifizierungen wie jene der SIZ AG nachfragen.",
