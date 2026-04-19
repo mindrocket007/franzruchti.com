@@ -5066,6 +5066,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 19.04.2026
       {
+        summary: "EAU26 / EurekAlert: 'Smartphone app can help men last longer in bed' – Am 14. März 2026 wurden auf dem EAU-Kongress in London die CLIMACS-Studiendaten zur Melonga-App vorgestellt, der weltweit ersten digitalen Therapie gegen vorzeitigen Samenerguss. Nach 12 Wochen verdoppelte sich die Ejaculationslatenzzeit (61 → 125 Sekunden), und 22 % der Nutzer erfüllten die Diagnosekriterien für PE nicht mehr. Der Trend zu digitalen Selbsthilfe-Angeboten als wissenschaftlich validierte Alternative zu Medikamenten ist ein klares Argument für Audio-basierte Selbsthilfe-Programme wie orgasmus-hinauszoegern.de.",
+        source: "EurekAlert / EAU26",
+        url: "https://www.eurekalert.org/news-releases/1119592",
+        date: "2026-03-14",
+        category: "Digital Health",
+        addedAt: "2026-04-19",
+      },
+      {
+        summary: "Medscape: 'Smartphone App May Help Men With Premature Ejaculation Last Longer' – Medscape berichtet über die EAU-2026-Studie zur Melonga-App und unterstreicht, dass verhaltenstherapeutische und achtsamkeitsbasierte Techniken per Smartphone statistisch signifikante Verbesserungen bei Ejaculationskontrolle und sexueller Lebensqualität erzielen. Nicht-medikamentöse, digital gestützte Ansätze etablieren sich als wachsendes Segment in Sexual Health – stärkt die Glaubwürdigkeit psychologisch-basierter Produkte wie Hypnose-Audios.",
+        source: "Medscape",
+        url: "https://www.medscape.com/viewarticle/smartphone-app-may-help-men-premature-ejaculation-last-2026a100085e",
+        date: "2026-03-14",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-19",
+      },
+      {
+        summary: "ecancer: 'EAU 2026: Smartphone app can help men last longer in bed, finds research' – ecancer berichtet direkt vom EAU26-Kongress: Digitale Heimtherapie ohne Medikamente ist bei PE wirksam. Die App kombiniert Mindfulness, kognitive Verhaltenstherapie und körperliche Übungen – ähnliche Wirkmechanismen wie Hypnose-Audios. Diese Berichterstattung in einem Fachmedium erhöht die Suchmaschinenrelevanz für 'PE Selbsthilfe digital' und das gesellschaftliche Bewusstsein für nicht-pharmakologische Optionen.",
+        source: "ecancer",
+        url: "https://ecancer.org/en/news/27903-eau-2026-smartphone-app-can-help-men-last-longer-in-bed-finds-research",
+        date: "2026-03-14",
+        category: "Produkt direkt",
+        addedAt: "2026-04-19",
+      },
+      {
         summary: "fernarzt.com: 'Vorzeitiger Samenerguss behandeln – Übungen und weitere Hilfe' – Telemedizin-Plattform fernarzt.com erklärt Selbsthilfe-Techniken (Start-Stopp-, Squeeze-Technik) und psychotherapeutische Behandlungsoptionen bei Ejaculatio praecox. Wachsende Verbreitung niedrigschwelliger Online-Ressourcen für männliche sexuelle Gesundheit zeigt steigendes öffentliches Bewusstsein und die Bereitschaft zur diskreten digitalen Selbsthilfe – indirekter Marktbeleg für das Audio-Programm von orgasmus-hinauszoegern.de.",
         source: "fernarzt.com",
         url: "https://www.fernarzt.com/krankheiten/vorzeitiger-samenerguss/behandlung/",
@@ -5621,6 +5645,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "lampenfieber": {
     news: [
       // Neu: 19.04.2026
+      {
+        summary: "Gedankenportal: 'Hypnose gegen Ängste 2026: Alles, was du wissen musst' – Das Gedankenportal bestätigt 2026, dass neue Studien die langfristige Stabilität von Hypnose-Ergebnissen bei Angststörungen belegen und die Methode heute von fast 90 % der Betroffenen gezielt nachgefragt wird. Hypnose wird explizit bei Auftrittsangst, Sozialphobie und Prüfungsangst eingesetzt. Dies ist ein starkes Marktargument für lampenfieber-besiegen.de als Audio-Produkt in einem wachsenden, wissenschaftlich anerkannten Segment.",
+        source: "Gedankenportal",
+        url: "https://gedankenportal.de/hypnose-gegen-aengste/",
+        date: "2026-01-01",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-19",
+      },
+      {
+        summary: "jobs.ch Job Coach: 'Arbeitstrends 2026: KI, Soft Skills und mehr Menschlichkeit' – jobs.ch analysiert die Arbeitstrends 2026 in der Schweiz und stellt fest, dass öffentliche Auftritte, Präsentationsfähigkeit und Soft Skills wie emotionale Intelligenz und Resilienz zu den meistgesuchten Kompetenzen im Arbeitsmarkt zählen. Der wachsende Leistungsdruck in Präsentationssituationen erhöht die Nachfrage nach Lösungen gegen Lampenfieber – starkes SEO- und Content-Argument für lampenfieber-besiegen.de.",
+        source: "jobs.ch Job Coach",
+        url: "https://www.jobs.ch/de/job-coach/arbeitstrends/",
+        date: "2026-01-01",
+        category: "Psychologie & Forschung",
+        addedAt: "2026-04-19",
+      },
+      {
+        summary: "Hypnotherapy Directory: 'Can hypnosis help with performance anxiety?' – Die Hypnotherapy Directory erklärt, wie Hypnose bei Performance-Angst wirkt, und verweist auf die Schlussfolgerung der British Medical Association, dass Hypnotherapie bei Angst- und Stressstörungen die 'Behandlung der Wahl' sein kann. Kombinierte Ansätze aus Hypnose und Erfolgs-Imagination zeigen Resultate in 3–6 Sitzungen. Für Audio-basierte Produkte wie lampenfieber-besiegen.de liefert dies eine starke wissenschaftliche Rückendeckung.",
+        source: "Hypnotherapy Directory",
+        url: "https://www.hypnotherapy-directory.org.uk/articles/hypnosis-help-performance-anxiety",
+        date: "2026-01-01",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-04-19",
+      },
       {
         summary: "therapie.de: 'Hypnose bei Angststörungen – Angststörungen sind gut mit Hypnotherapie behandelbar' – therapie.de dokumentiert die breite wissenschaftliche Anerkennung der Hypnotherapie bei Angststörungen jeder Art, darunter Auftritts- und Redeangst. Seit 2006 ist Hypnose in 11 von 12 Anwendungsbereichen wissenschaftlich anerkannt; neue Studien 2026 bestätigen langfristige Stabilität der Behandlungsergebnisse. Stärkt die wissenschaftliche Glaubwürdigkeit des Audio-Hypnose-Ansatzes von lampenfieber-besiegen.de.",
         source: "therapie.de",
@@ -6234,6 +6282,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "learnfluencer": {
     news: [
       // Neu: 19.04.2026
+      {
+        summary: "jobs.ch Job Coach: 'Arbeitstrends 2026: KI, Soft Skills und mehr Menschlichkeit' – jobs.ch beschreibt für 2026 einen grundlegenden Wandel: KI übernimmt repetitive Aufgaben, was Lernkompetenz und Soft Skills ins Zentrum rückt. Der Skills-First-Ansatz gewinnt an Gewicht, Abschlüsse verlieren an Bedeutung gegenüber nachweisbaren Kompetenzen. Für learnfluencer.ch bietet dieser Trend direkten Anlass für Thought-Leadership-Content zu Lernkompetenz im KI-Zeitalter.",
+        source: "jobs.ch Job Coach",
+        url: "https://www.jobs.ch/de/job-coach/arbeitstrends/",
+        date: "2026-01-01",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-19",
+      },
+      {
+        summary: "Swissnova: 'Weiterbildung für Unternehmen in der Schweiz: 10 Trends für 2026' – Swissnova listet 10 Weiterbildungstrends für Unternehmen in der Schweiz 2026, darunter KI-gestütztes Lernen, personalisierte Lernpfade, Microlearning und messbare Kompetenzentwicklung. 80 % der Schweizer Unternehmen nutzen bereits hybride Lernmodelle. Für learnfluencer.ch ist dies ein direktes Trendumfeld für Positioning und Content zur Schweizer Weiterbildungslandschaft.",
+        source: "Swissnova",
+        url: "https://unternehmen.swissnova.swiss/weiterbildung-unternehmen-schweiz-trends-2026/",
+        date: "2026-01-01",
+        category: "Weiterbildung Schweiz",
+        addedAt: "2026-04-19",
+      },
+      {
+        summary: "Digital Learning Base PHBern: 'Fundstücke im Netz – März 2026' – Die PHBern dokumentiert aktuelle Entwicklungen zu digitalem Lernen in Schweizer Bildungseinrichtungen, darunter KI-gestützte Lernumgebungen und neue EdTech-Anwendungen. Ergänzt wird dies durch einen April-2026-Artikel auf digitaljournal.ch über neue Lernwelten in Schweizer Schulen. Für learnfluencer.ch relevantes Material für EdTech-Content und Thought Leadership im DACH-Raum.",
+        source: "Digital Learning Base PHBern",
+        url: "https://digileb.phbern.ch/digital-learning-base-fundstuecke-im-netz-maerz-2026/",
+        date: "2026-03-01",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-19",
+      },
       {
         summary: "masterplan.com: 'Lern-Content Trends 2026: Zwischen Genie und Wahnsinn' – Führende E-Learning-Plattform analysiert die Lern-Content-Trends 2026: KI-Personalisierung, Microlearning, arbeitsintegriertes Lernen und datengestützter Nachweis des Lernerfolgs setzen sich als Standard durch. Wissensvermittlung und Lernkompetenz werden zur strategischen Unternehmensressource. Direktes Trendumfeld für learnfluencer.ch als Thought-Leadership-Plattform für Lernkompetenz und KI-Weiterbildung in der Schweiz.",
         source: "masterplan.com",
@@ -7233,6 +7305,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 19.04.2026
       {
+        summary: "Bexolutions: 'KI-Marketing für Schweizer KMU 2026 – Praxisleitfaden' (Februar 2026) – Bexolutions publizierte einen Praxisleitfaden zu KI-Marketing für Schweizer KMU, der konkrete Tools, Einstiegsstrategien und Schweizer Spezifika (DSG, TWINT, Mehrsprachigkeit) abdeckt. Generative Engine Optimization (GEO) und Real-Time-Personalisierung werden als Schlüsseltrends 2026 genannt. Für das Marketingkonzept-Tool auf learnfluencer.ch ergibt sich daraus ein direkter SEO- und Content-Anlass zur Zielgruppe KMU Schweiz.",
+        source: "Bexolutions",
+        url: "https://bexolutions.ch/ki-marketing-fur-schweizer-kmu-2026-praxisleitfaden/",
+        date: "2026-02-01",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-19",
+      },
+      {
+        summary: "Bexolutions: 'Marketing-Automation für Schweizer KMU 2026: Tools & ROI' – Bexolutions analysiert Marketing-Automation für Schweizer KMU mit Fokus auf ROI und Tool-Vergleich. KI-Marketing wird als 'entscheidender Wettbewerbsvorteil' positioniert, Einstiegskosten liegen bei CHF 100–500/Monat. Dies stützt die Positionierung des interaktiven Marketingkonzept-Tools als zeitgemässes, erschwingliches KMU-Tool auf learnfluencer.ch.",
+        source: "Bexolutions",
+        url: "https://bexolutions.ch/marketing-automation-fur-schweizer-kmu-2026-tools-roi/",
+        date: "2026-01-01",
+        category: "Marketing-Tools & Software",
+        addedAt: "2026-04-19",
+      },
+      {
+        summary: "kmu.admin.ch: 'KI und Marketing Automation: eine Chance für KMU' – Das offizielle Schweizer KMU-Portal bestätigt, dass KI im Marketing für Schweizer KMU zunehmend eingesetzt wird und Automatisierung einen systematischen Kundenaufbau ermöglicht. Die steigende Nachfrage nach strukturierten Planungstools wird hervorgehoben. Dies stützt direkt die Positionierung des Marketingkonzept-Generators auf learnfluencer.ch als offiziell anerkanntes Bedarfsfeld.",
+        source: "KMU Portal Schweiz (admin.ch)",
+        url: "https://www.kmu.admin.ch/kmu/en/home/concrete-know-how/sme-management/marketing/marketing-tools/ai-automation-marketing.html",
+        date: "2026-01-01",
+        category: "Strategie & Analyse",
+        addedAt: "2026-04-19",
+      },
+      {
         summary: "marketingautomation.tech: 'Die 20 besten Marketing Automation Tools 2026' – Vergleichsartikel für Schweizer KMU listet führende Marketing-Automation-Tools 2026 und betont revDSG-Konformität als entscheidendes Auswahlkriterium. Lokaler Fokus und Datenschutz-Compliance werden als Positionierungsvorteile für Schweizer Tools hervorgehoben – relevantes Wettbewerbsumfeld für das Marketingkonzept-Tool auf learnfluencer.ch.",
         source: "marketingautomation.tech",
         url: "https://www.marketingautomation.tech/beste-20-marketing-automation-tools/",
@@ -7933,6 +8029,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "bestattungsplaner": {
     news: [
       // Neu: 19.04.2026
+      {
+        summary: "Everlife.ch: 'Bestattungsvorsorge digital – Die Nr. 1 Plattform in der Schweiz' – Everlife.ch positioniert sich 2026 als führende digitale Bestattungsvorsorge-Plattform in der Schweiz mit einer Komplettlösung, die Angehörigen bis zu 50 Stunden Formalitätenarbeit erspart. Ein Todesfall kostet in der Schweiz durchschnittlich CHF 8.000–10.000, zahlbar innerhalb von 30 Tagen. Dies zeigt, dass der Markt für digitale Vorsorgeportale klar wächst und professionell besetzt wird – direktes Wettbewerbs- und Validierungsumfeld für bestattungsplaner.ch.",
+        source: "Everlife.ch",
+        url: "https://everlife.ch/de/bestattungsvorsorge/",
+        date: "2026-01-01",
+        category: "Bestattungsplaner direkt",
+        addedAt: "2026-04-19",
+      },
+      {
+        summary: "Investorszene.de: 'Digitalisierung im Bestattungswesen: Chancen für Startups und etablierte Bestatter' – Investorszene.de beschreibt die Digitalisierung im Bestattungswesen als unausweichlichen Trend. Startups und etablierte Bestatter gewinnen durch Online-Buchung, digitale Nachlässe und transparente Kostenvergleiche neue Marktanteile. Die Branche operiert noch oft mit 'Fax statt E-Mail' – ein Validierungsargument für das Geschäftsmodell von bestattungsplaner.ch als digitales Vorsorgeportal.",
+        source: "Investorszene.de",
+        url: "https://www.investorszene.de/2025/05/21/digitalisierung-im-bestattungswesen-chancen-fuer-startups-und-etablierte-bestatter/",
+        date: "2025-05-21",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-19",
+      },
+      {
+        summary: "Everlife.ch: 'Was kostet eine Kremation in der Schweiz?' – Everlife.ch führt aus, dass Kremation in der Schweiz mit knapp 90 % Marktanteil die häufigste Bestattungsform ist, mit Grundkosten zwischen CHF 350 und CHF 700. Dieser Trend zur kostengünstigeren und flexibleren Kremation stärkt die Nachfrage nach transparenten Online-Vergleichsportalen. Für bestattungsplaner.ch ist dies ein zentrales SEO- und Content-Thema zur Marktpositionierung.",
+        source: "Everlife.ch",
+        url: "https://everlife.ch/de/veroffentlichung/was-kostet-eine-kremation-in-der-schweiz/",
+        date: "2026-01-01",
+        category: "Markt & Trends",
+        addedAt: "2026-04-19",
+      },
       {
         summary: "Bieler Tagblatt: 'Kampf um digitale Beisetzung' – Das Bieler Tagblatt beleuchtet, wie Online-Plattformen und digitale Dienstleistungen die traditionelle Bestattungsbranche herausfordern. Vergleichsportale und Planungstools verändern das Kundenverhalten grundlegend. Direkter medialer Rückenwind für bestattungsplaner.ch als digitales Vorsorge- und Lead-Vermittlungsportal in der Schweiz.",
         source: "Bieler Tagblatt",
