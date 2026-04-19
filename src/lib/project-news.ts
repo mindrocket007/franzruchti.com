@@ -51,6 +51,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
         category: "Bildungspolitik",
         addedAt: "2026-04-19",
       },
+      {
+        summary: "ICT-Berufsbildung Schweiz: 'ICT-Diplomfeier 2026 – Die höhere Berufsbildung bleibt wichtig für den Schweizer Arbeitsmarkt' – Am 27. März 2026 wurden 145 ICT-Fachkräfte der höheren Berufsbildung diplomiert: Cyber Security Specialists, ICT-Platform Development Specialists und Information Security Manager. CEO Marc Marthaler betonte, die höhere Berufsbildung sei ein entscheidender Pfeiler für hochqualifizierte Fachkräfte. Direktes Marktumfeld für die SIZ AG als Prüfungsorganisation im Schweizer ICT-Bildungssystem.",
+        source: "ICT-Berufsbildung Schweiz",
+        url: "https://www.ict-berufsbildung.ch/ict-diplomfeier-2026-die-hoehere-berufsbildung-bleibt-wichtig-fuer-den-schweizer-arbeitsmarkt",
+        date: "2026-03-27",
+        category: "SIZ AG direkt",
+        addedAt: "2026-04-19",
+      },
+      {
+        summary: "TheStreet: 'Stock Market Today (Apr. 15, 2026): S&P 500 closes at new record of 7,022.95' – Der S&P 500 schloss am 15. April 2026 erstmals in der Geschichte über 7'000 Punkte. Der Nasdaq verzeichnete seine längste Gewinnserie seit 2009. Das starke Börsenumfeld und die hohe Nachfrage nach ICT-Fachkräften für KI-Projekte treibt Unternehmen zur Investition in ICT-Weiterbildung – indirekter Beleg für die anhaltende Nachfrage nach ICT-Zertifizierungen der SIZ AG.",
+        source: "TheStreet",
+        url: "https://www.thestreet.com/latest-news/stock-market-today-apr-15-2026-futures-flat-sp-500-close-to-all-time-high",
+        date: "2026-04-15",
+        category: "Wirtschaft & Digitalisierung",
+        addedAt: "2026-04-19",
+      },
       // Neu: 18.04.2026
       {
         summary: "WBF/Bund: 'Lehrstellen 2026 – Stabilität und Perspektiven' (15. April 2026) – Per Ende März 2026 wurden knapp 42'000 Lehrverträge abgeschlossen, leicht mehr als im Vorjahr. Rund 20'000 Lehrstellen waren noch ausgeschrieben, ein stabiles Signal für den Ausbildungsmarkt. Die Woche der Berufsbildung findet vom 4.–8. Mai 2026 statt. Ein stabiler Lehrstellenmarkt sichert den Zufluss von Berufseinsteigern, die anerkannte ICT-Zertifizierungen wie jene der SIZ AG nachfragen.",
@@ -1125,6 +1141,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         category: "Coaching & E-Learning",
         addedAt: "2026-04-19",
       },
+      {
+        summary: "Thinkers360: 'Top 50 Global Thought Leaders and Influencers on Leadership 2026' – Thinkers360 kürt jährlich die 50 einflussreichsten Thought Leaders im Bereich Leadership und Persönlichkeitsentwicklung weltweit. Der Bericht zeigt: Thought Leadership in Coaching, Persönlichkeitsentwicklung und Führung ist 2026 ein globales Wachstumsfeld mit wachsendem Publikum auf digitalen Plattformen. Strategisches Marktumfeld für Mind Rocket GmbH als Anbieter strukturierter Persönlichkeitsentwicklungs-Programme mit eigenem Thought-Leadership-Profil.",
+        source: "Thinkers360",
+        url: "https://www.thinkers360.com/top-50-global-thought-leaders-and-influencers-on-leadership-2026/",
+        date: "2026",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-04-19",
+      },
       // Neu: 18.04.2026
       {
         summary: "coachingausbildungen.ch: 'Coaching-Marktanalyse 2025/2026 – Welche Trends prägen die deutschsprachige Region?' – KI-gestützte Personalisierung, hybride Formate und Spezialisierung prägen den Coaching-Markt. Nachfrage nach Online-Coaching wächst v.a. bei jüngeren Generationen. Organisationsbezogene Settings (Change, Talentförderung, Führungskräfteentwicklung) gewinnen an Bedeutung. Detaillierte Marktanalyse zeigt wachsendes Gesamtvolumen und höhere Zahlungsbereitschaft – direktes Wachstumsumfeld für Mind Rocket GmbH als Anbieter strukturierter Persönlichkeitsentwicklungs-Programme.",
@@ -1429,6 +1453,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
         url: "https://www.sullcrom.com/insights/memo/2026/April/CFTC-Updates-Enforcement-Priorities-Cooperation-Policy-Prediction-Markets-Insider-Trading",
         date: "2026-04",
         category: "Regulierung",
+        addedAt: "2026-04-19",
+      },
+      {
+        summary: "NinjaTrader: 'NinjaTrader expands into Europe to support the next generation of retail futures traders' – NinjaTrader expandierte im Januar 2026 in Europa via Payward Europe Digital Solutions (CySEC-reguliert), zunächst in den Niederlanden und Deutschland, mit geplanter Ausweitung auf Frankreich und Italien. EU-Klienten erhalten Zugang zu fortschrittlichem Charting, Order Flow Visualisierung und dem vollständigen Futures-Trading-Simulator. Direkte strategische Relevanz: Europäische Expansion von NinjaTrader schafft neue Nutzerbasis und stärkt die Plattform-Reichweite für NinjaScript-basierte Strategien von Mind Rocket Trading.",
+        source: "NinjaTrader",
+        url: "https://ninjatrader.com/news/ninjatrader-expands-into-europe-to-support-the-next-generation-of-retail-futures-traders/",
+        date: "2026-01",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-19",
+      },
+      {
+        summary: "CNBC: 'S&P 500 posts new record close at 7,022.95, Nasdaq notches longest win streak since 2009' (15. April 2026) – Der S&P 500 schloss am 15. April 2026 erstmals über 7'000 Punkte; der Nasdaq verzeichnete seine längste Gewinnserie seit 2009 (12 Handelstage). ES Futures notierten bei 7'158 USD. Die Rallye über 679 Punkte in 11 Sitzungen zählt zu den stärksten jemals gemessenen Bewegungen. Historisch relevantes Markt-Milestone für ES-Futures-Trader – direktes Kontext-Ereignis für die algorithmischen Handelsstrategien von Mind Rocket Trading.",
+        source: "CNBC",
+        url: "https://www.cnbc.com/2026/04/15/stock-market-today-live-updates.html",
+        date: "2026-04-15",
+        category: "Markt & Wirtschaft",
         addedAt: "2026-04-19",
       },
       // Neu: 18.04.2026
@@ -2721,6 +2761,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         category: "Persönlichkeitsentwicklung",
         addedAt: "2026-04-19",
       },
+      {
+        summary: "SNFA: 'Persönlichkeitsentwicklung für Unternehmer 2025 & 2026' – SNFA analysiert, welche Persönlichkeitsentwicklungs-Kompetenzen 2026 für Unternehmer entscheidend sind: Resilienz, Stressbewältigung, emotionale Intelligenz und Selbstführung. Digitale Tools und strukturierte Selbsthilfe-Programme gewinnen gegenüber traditionellen Coaching-Formaten an Bedeutung. Direktes Marktumfeld für mindtools.ch als Schweizer Anbieter digitaler Persönlichkeitsentwicklungs-Werkzeuge und PDF-Buchtools.",
+        source: "SNFA",
+        url: "https://snfa.ch/persoenlichkeitsentwicklung/persoenlichkeitsentwicklung-fuer-unternehmer/",
+        date: "2026",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-04-19",
+      },
       // Neu: 18.04.2026
       {
         summary: "OG Analysis: 'Global Digital Mental Health Market 2024–2025' – Der weltweite Markt für digitale Mental-Health-Tools wuchs von USD 20.8 Mrd. (2024) auf USD 24.4 Mrd. (2025) mit einem CAGR von 18.83%. KI-Chatbots, Therapie-Apps und mobile Selbsthilfe-Lösungen dominieren das Wachstum. Die Schweiz gilt als fortgeschrittener Adoptionsmarkt. Starkes strukturelles Wachstumsumfeld für mindtools.ch als digitalen Anbieter von Mental-Health-Tools und Persönlichkeitsentwicklungs-PDFs.",
@@ -3241,6 +3289,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
         source: "ad-hoc-news.de",
         url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/burnout-praevention-2026-achtsamkeit-und-digitalhilfen-im-fokus/68508549",
         date: "2026-01-22",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-19",
+      },
+      {
+        summary: "ad-hoc-news.de: 'Burnout 2026: Warum Wellness-Programme nicht mehr reichen' – Analysten zeigen: Zwei Drittel der Beschäftigten zeigen 2026 Burnout-Anzeichen, während herkömmliche individuelle Wellness-Angebote die Erschöpfungswelle kaum bremsen können. Experten fordern einen Systemwandel hin zu strukturellen Lösungen und ganzheitlichen Präventionskonzepten. Direkte Implikation: Der Markt sucht nachhaltig wirksame, niederschwellige Burnout-Präventionslösungen – Positionierungsraum für hypnovital® als digitales, skalierbar einsetzbares BGM-Programm.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/burnout-2026-warum-wellness-programme-nicht-mehr-reichen/69084377",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-19",
+      },
+      {
+        summary: "ad-hoc-news.de: 'Betriebliches Gesundheitsmanagement setzt 2026 auf Strategie und Psyche' – BGM entwickelt sich von freiwilligem Zusatzangebot zur strategischen Kernaufgabe. Schwerpunkte 2026: mentale Gesundheit, KI-gestützte personalisierte Gesundheitsprogramme und hybride Angebote. Studien belegen ROI von 1:2,7 pro investiertem Euro in BGM. Wachsende strategische Bedeutung und nachgewiesener ROI von BGM-Massnahmen stärkt den Markt für digitale Präventionsprogramme wie hypnovital® als skalierbare BGM-Komponente.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/betriebliches-gesundheitsmanagement-setzt-2026-auf-strategie-und-psyche/68972135",
+        date: "2026",
         category: "BGM & Gesundheit",
         addedAt: "2026-04-19",
       },
@@ -4370,6 +4434,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         category: "SaaS & Tools",
         addedAt: "2026-04-19",
       },
+      {
+        summary: "PeopleManagingPeople: '40 Best OKR Software of 2026: Reviewed & Compared' – Umfassender Vergleich der 40 besten OKR-Softwarelösungen 2026 zeigt: Der Markt für Zielplanungs-Tools ist stark gewachsen und ausdifferenziert. Für Einzelpersonen und kleine Teams werden spezialisierte, fokussierte Tools ohne Enterprise-Ballast bevorzugt. Direktes Marktumfeld: Wachsende Nachfrage nach Nischen-Planungstools mit klarer Methodik wie der 12-Week-Year-Methode – validiert den Ansatz des 12wy-planners.",
+        source: "PeopleManagingPeople",
+        url: "https://peoplemanagingpeople.com/tools/okr-software/",
+        date: "2026",
+        category: "Zielsetzung & OKR",
+        addedAt: "2026-04-19",
+      },
       // Neu: 18.04.2026
       {
         summary: "12week-breakthrough.com: 'The Complete 12-Week Year Implementation Guide for 2026' – Umfassender Implementierungsleitfaden für die 12-Week-Year-Methode: Schrittweise Anleitung für Zielformulierung, Weekly Plans, Scorecards und Reviews nach Brian Moran. Wachsende Online-Community von 12-Week-Year-Anwendern belegt anhaltende Popularität der Methode. Direktes Marktvalidierungssignal für spezialisierte digitale Planungs-Tools wie den 12wy-planner.",
@@ -5009,6 +5081,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         category: "Sexuelle Gesundheit",
         addedAt: "2026-04-19",
       },
+      {
+        summary: "Fitbook.de: 'Vorzeitigen Samenerguss verhindern – Training nach aktueller Forschung' – Aktuelle Forschung belegt: Regelmässiges Beckenbodentraining, Yoga und Ausdauertraining können die Zeit bis zur Ejakulation signifikant verlängern. Yoga führte in Studien zu statistisch signifikanter Verbesserung der intravaginalen Latenzzeit. Wissenschaftliche Evidenz für nicht-pharmakologische, verhaltensbasierte Interventionen – bestätigt den Marktwert von Selbsthilfe-Ansätzen wie dem Hypnose-Audio-Programm auf orgasmus-hinauszoegern.de.",
+        source: "Fitbook.de",
+        url: "https://www.fitbook.de/mind-body/vorzeitigen-samenerguss-verhindern-training-forschung",
+        date: "2026",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-19",
+      },
       // Neu: 18.04.2026
       {
         summary: "DRKS / Universität Marburg: 'CLIMACS-Studie – App MELONGA für Ejaculatio praecox' – Klinische Studie (DRKS00032774, Start Oktober 2023, laufend) der Universität Marburg: CE-zertifizierte App MELONGA nutzt kognitiv-verhaltenstherapeutische Techniken zur Selbstbehandlung von Ejaculatio praecox – nicht-pharmakologisch, anonym zuhause nutzbar. Direkter akademischer Nachweis für wachsende Akzeptanz digitaler Selbsthilfe-Interventionen bei EP – validiert den Markt für Angebote wie orgasmus-hinauszoegern.de als niedrigschwelliges Audio-Programm.",
@@ -5571,6 +5651,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         url: "https://econtent.hogrefe.com/doi/10.1024/1010-0652/a000289",
         date: "2026",
         category: "Psychologie & Forschung",
+        addedAt: "2026-04-19",
+      },
+      {
+        summary: "Haufe Akademie: 'Bye-bye Lampenfieber: Überwinden Sie Ihre Redeangst!' – Die Haufe Akademie beschreibt bewährte Techniken zur Überwindung von Redeangst und Lampenfieber im Berufsumfeld: Atemübungen, kognitive Umstrukturierung und strukturierte Vorbereitung. Nachfrage nach Weiterbildungsangeboten zu Auftrittsangst und Redeangst ist im Berufskontext 2026 weiterhin hoch. Wachsende professionelle Nachfrage nach Lampenfieber-Lösungen bestätigt das Marktpotenzial für das Hypnose-Audio-Programm von lampenfieber-besiegen.de.",
+        source: "Haufe Akademie",
+        url: "https://www.haufe-akademie.de/blog/themen/persoenliche-kompetenz/bye-bye-lampenfieber-ueberwinden-sie-ihre-redeangst/",
+        date: "2026",
+        category: "Lampenfieber & Auftrittsangst",
         addedAt: "2026-04-19",
       },
       // Neu: 18.04.2026
@@ -6168,6 +6256,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         url: "https://unternehmen.swissnova.swiss/weiterbildung-unternehmen-schweiz-trends-2026/",
         date: "2026",
         category: "Weiterbildung Schweiz",
+        addedAt: "2026-04-19",
+      },
+      {
+        summary: "ETIH EdTech Innovation Hub: 'Spotlight on EdTech Thought Leader of the Year Global at the 2026 Innovation Awards' – Die ETIH Innovation Awards 2026 werden am 27. April 2026 verliehen, darunter der Award 'EdTech Thought Leader of the Year Global'. Der internationale Fokus auf Thought Leadership im EdTech-Bereich zeigt, dass wissensbasiertes Content-Marketing im Bildungskontext zum strategischen Differenzierungsmerkmal wird. Bestätigt die strategische Ausrichtung von learnfluencer.ch als Thought-Leadership-Plattform für Lernkompetenz und KI-Bildung.",
+        source: "ETIH EdTech Innovation Hub",
+        url: "https://www.edtechinnovationhub.com/news/etih-innovation-awards-2026-spotlight-on-edtech-thought-leader-of-the-year",
+        date: "2026-04-27",
+        category: "Content & Thought Leadership",
         addedAt: "2026-04-19",
       },
       // Neu: 18.04.2026
@@ -7160,6 +7256,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
         category: "MarTech & Trends",
         addedAt: "2026-04-19",
       },
+      {
+        summary: "Researchly: 'Strategische Unternehmensanalyse: Methoden & Software (2026)' – Researchly stellt die 15 wichtigsten Frameworks der strategischen Unternehmensanalyse vor: SWOT, PESTEL, VRIO, Value Chain, BCG-Matrix und Business Model Canvas. Besonders relevant: PESTEL liefert externe Inputs, die direkt als Chancen und Risiken in die SWOT fliessen – dies entspricht exakt dem Framework-Aufbau des Marketingkonzept-Tools auf learnfluencer.ch. KI-gestützte Automatisierung der Analyseschritte als Markttrend 2026.",
+        source: "Researchly",
+        url: "https://www.researchly.at/post/strategische-unternehmensanalyse-tools",
+        date: "2026",
+        category: "Strategie & Analyse",
+        addedAt: "2026-04-19",
+      },
+      {
+        summary: "Lorien Group: 'Online-Marketing-Strategie für KMU Schweiz 2026' – Lorien Group erklärt, warum Schweizer KMU 2026 ihre Online-Marketing-Strategie grundlegend überdenken müssen: weg von saisonalen Einzelaktionen, hin zu kontinuierlichem, konsistentem Marketingplan. Generative Engine Optimization (GEO) und KI-Marketing als neue Pflichtkompetenzen. Wachsender Bedarf an strukturierten Marketingplanungs-Tools für Schweizer KMU – direktes Marktumfeld für das Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "Lorien Group",
+        url: "https://www.lorien.group/blog/online-marketing-strategie-kmu",
+        date: "2026",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-19",
+      },
       // Neu: 18.04.2026
       {
         summary: "Swiss Marketing Academy: 'Marketing-Analyse-Tools: Die Top 5 für Profis 2026' – Schweizer Marketingakademie bewertet führende Analyse-Tools für Profis nach Funktionsumfang, Usability und Preis-Leistung. Professionelle Marketingplanung mit strukturierten Analyse-Frameworks (SWOT, PESTEL etc.) wird 2026 als Kernkompetenz für Marketingprofis hervorgehoben. Direktes Wettbewerbsumfeld und Marktvalidierung für das Marketingkonzept-Tool auf learnfluencer.ch.",
@@ -7841,6 +7953,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         summary: "Everlife: 'Preise für Bestattungen in der Schweiz' – Everlife.ch publiziert aktuelle Kostenangaben: Kremation kostet CHF 4'500–15'000 (inkl. aller Leistungen); fast 90% der Schweizer bevorzugen Kremation. Transparenz bei Bestattungskosten ist ein zentrales Nutzerversprechen digitaler Plattformen. Direkter Wettbewerber-Einblick und Marktdaten zur Preissituation in der Schweizer Bestattungsbranche – relevant für Positionierung und Nutzeransprache von bestattungsplaner.ch.",
         source: "Everlife",
         url: "https://everlife.ch/de/preise-fur-bestattungen/",
+        date: "2026",
+        category: "Markt & Trends",
+        addedAt: "2026-04-19",
+      },
+      {
+        summary: "Livenet.ch: 'Deutliche Zunahme von Kremation und alternativen Bestattungen in der Schweiz' – Livenet dokumentiert: 93% aller Schweizer Verstorbenen werden kremiert (vs. 50% in 1984), Tendenz weiter steigend. Städtische Regionen wie Lausanne (95%) und Neuenburg (97%) führen den Trend an. Wachsende Nachfrage nach alternativen Formen (Seebestattung, Urnenbestattung) schafft Informationsbedarf – bestattungsplaner.ch kann als neutrale Plattform für Kostenvergleiche und Anbietersuche profitieren.",
+        source: "Livenet.ch",
+        url: "https://www.livenet.ch/themen/gesellschaft/ethik/ethik/354033-deutliche_zunahme_von_kremation_und_alternativen_bestattungen.html",
         date: "2026",
         category: "Markt & Trends",
         addedAt: "2026-04-19",
