@@ -1482,6 +1482,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 20.04.2026
       {
+        summary: "tradersunion.com: 'Ninjatrader Review 2026 – Pros and Cons' – Internationale Review-Plattform bewertet NinjaTrader 2026 umfassend: Nach Übernahme durch Kraken (1,5 Mrd. USD) zählt NinjaTrader über 800.000 Trader-Konten. Algorithmisches Trading via NinjaScript (C#), Tick-Level-Backtesting und Commissions ab $0.09/Seite (Micro Contracts). Verfügbar in Europa via CySEC-regulierter Payward Europe (Kraken) ab Januar 2026 – relevantes Marktumfeld für NinjaTrader-basierte Strategien bei Mind Rocket Trading.",
+        source: "tradersunion.com",
+        url: "https://tradersunion.com/brokers/fond/view/ninjatrader/",
+        date: "2026",
+        category: "Futures & Trading",
+        addedAt: "2026-04-20",
+      },
+      {
+        summary: "BrokerChooser: 'NinjaTrader Review 2026 – Pros & Cons' – BrokerChooser zeichnet NinjaTrader 2026 erneut als 'Best Futures Broker' aus – fünfter Award in Folge. Besonders hervorgehoben: NinjaScript-Algorithmen, Order Flow+, professionelles Chart-Analyse-Paket und über 2 Millionen Accounts. Europäische Expansion via Kraken/Payward Europe macht NinjaTrader für Schweizer Trader 2026 noch zugänglicher – positives Reputationssignal für NinjaTrader-basierte Trading-Strategien.",
+        source: "BrokerChooser",
+        url: "https://brokerchooser.com/broker-reviews/ninjatrader-review",
+        date: "2026",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-20",
+      },
+      {
         summary: "NinjaTrader hat am 30. Januar 2026 den offiziellen Launch in Europa bekanntgegeben – zunächst in den Niederlanden und Deutschland, mit Plänen für Frankreich und Italien. EU-Kunden erhalten Zugang zu NinjaTraders integrierter Futures-Trading-Umgebung inkl. Advanced Charting, Order Flow Visualization und einem Futures-Simulator. Der Schritt folgt auf die Übernahme durch Kraken für 1,5 Milliarden USD und macht NinjaTrader für Schweizer Trader nun näher und regulatorisch relevanter.",
         source: "PR Newswire / NinjaTrader",
         url: "https://www.prnewswire.com/news-releases/ninjatrader-expands-into-europe-to-support-the-next-generation-of-retail-futures-traders-302674573.html",
@@ -3418,6 +3434,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 20.04.2026
       {
+        summary: "BGM-Tagung 2026: Nationale Konferenz für betriebliches Gesundheitsmanagement findet am 15. September 2026 statt – Thema 'Gesunde Teams: Wie Zusammenarbeit gelingt'. Anmeldeschluss 13. September 2026. Führende Schweizer BGM-Plattform mit Fokus auf mentale Gesundheit, Teamdynamik und nachhaltige Arbeitsplatzgestaltung. Direktes Marktumfeld für hypnovital® als skalierbare Audio-BGM-Lösung.",
+        source: "BGM-Tagung.ch",
+        url: "https://www.bgm-tagung.ch/de/infos/",
+        date: "2026-09-15",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-20",
+      },
+      {
         summary: "Neue Trenddaten zeigen einen Paradigmenwechsel im Stressmanagement: Statt Symptome zu bekämpfen, regulieren immer mehr Menschen und Unternehmen direkt das Nervensystem über Hypnose. Experten prognostizieren für 2026 die Verschmelzung von Technologie und Hypnose – KI-gestützte, personalisierte Audio-Hypnose-Sitzungen basierend auf biometrischen Daten stehen in den Startlöchern. Für hypnovital® als Anbieter von Hypnose-Audio-Programmen ist dies ein direkter Rückenwind.",
         source: "ad-hoc-news.de",
         url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/hypnose-wird-2026-zum-mainstream-tool-gegen-stress/68477939",
@@ -4608,6 +4632,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "12wy-planner": {
     news: [
       // Neu: 20.04.2026
+      {
+        summary: "minschtl.de: 'Wie funktioniert die Jahresplanung mit dem 12-Wochen-Jahr?' – Praxisbericht zur Jahresplanung mit der 12-Week-Year-Methode: Quartalsblöcke statt Jahresplanung, wöchentliche Reviews und klarer Fokus auf Lead-Measures. Wachsende organische Content-Produktion rund um die 12-Wochen-Jahr-Methode im deutschsprachigen Raum belegt anhaltende Popularität – direkter Rückenwind für den 12 Week Year Planner als spezialisiertes SaaS-Tool.",
+        source: "minschtl.de",
+        url: "https://minschtl.de/blog-wortgefluester/jahresplanung-mit-dem-12-wochen-jahr/",
+        date: "2026",
+        category: "12 Week Year Methode",
+        addedAt: "2026-04-20",
+      },
       {
         summary: "hartware.de: 'Aufgaben fundierter managen: Digitale Lösungen für den Alltag' (17. April 2026) – Hartware.de beleuchtet, wie digitale Task-Management-Tools den Alltag strukturieren und Produktivität steigern. Klar strukturierte Planung und Ziel-Tracking-Systeme setzen sich in der Breite durch. Für den 12 Week Year Planner als spezialisiertes SaaS-Tool für die 12-Week-Year-Methode ist das ein positives Marktsignal: Der Bedarf nach digitalisierten Planungslösungen nimmt weiter zu.",
         source: "Hartware.de",
