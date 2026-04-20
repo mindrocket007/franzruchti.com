@@ -1482,6 +1482,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 20.04.2026
       {
+        summary: "coindesk.com: 'Kraken acquires derivatives exchange Bitnomial for $550M' – Krakens Muttergesellschaft Payward übernimmt Bitnomial, die erste krypto-native Plattform mit allen drei CFTC-Lizenzen (Börse, Clearing, Brokerage). Da Kraken NinjaTrader besitzt, stärkt diese Übernahme die regulierte Derivate-Infrastruktur massiv und ermöglicht nun vollständiges US-Derivate-Geschäft unter einem Dach. Direktes regulatorisches Marktumfeld für institutionelle ES-Futures-Trader und NinjaTrader-Nutzer wie Mind Rocket Trading.",
+        source: "CoinDesk",
+        url: "https://www.coindesk.com/business/2026/04/17/kraken-s-parent-company-payward-to-acquire-derivatives-exchange-bitnomial-for-usd550-million-in-cash-and-stock",
+        date: "2026-04-17",
+        category: "Regulierung",
+        addedAt: "2026-04-20",
+      },
+      {
         summary: "tradersunion.com: 'Ninjatrader Review 2026 – Pros and Cons' – Internationale Review-Plattform bewertet NinjaTrader 2026 umfassend: Nach Übernahme durch Kraken (1,5 Mrd. USD) zählt NinjaTrader über 800.000 Trader-Konten. Algorithmisches Trading via NinjaScript (C#), Tick-Level-Backtesting und Commissions ab $0.09/Seite (Micro Contracts). Verfügbar in Europa via CySEC-regulierter Payward Europe (Kraken) ab Januar 2026 – relevantes Marktumfeld für NinjaTrader-basierte Strategien bei Mind Rocket Trading.",
         source: "tradersunion.com",
         url: "https://tradersunion.com/brokers/fond/view/ninjatrader/",
@@ -4633,6 +4641,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 20.04.2026
       {
+        summary: "griply.app: 'Productivity Frameworks: GTD, OKRs & 12 Week Year in Griply' – Griply ist ein neues Produktivitäts-SaaS-Tool, das GTD, OKR-Tracking und das 12-Week-Year-Framework in einer App vereint. Nutzer können ihren eigenen Planungsablauf kombinieren und Ziele mit konkreten Wochen-Actions verknüpfen – direkter Konkurrent zu Weekdone und Week Plan. Wachsender SaaS-Markt für 12-Week-Year-basierte Planungstools bestätigt die Produktnachfrage für den 12wy-planner.",
+        source: "Griply",
+        url: "https://griply.app/help/workflows-and-frameworks",
+        date: "2026",
+        category: "SaaS & Tools",
+        addedAt: "2026-04-20",
+      },
+      {
         summary: "minschtl.de: 'Wie funktioniert die Jahresplanung mit dem 12-Wochen-Jahr?' – Praxisbericht zur Jahresplanung mit der 12-Week-Year-Methode: Quartalsblöcke statt Jahresplanung, wöchentliche Reviews und klarer Fokus auf Lead-Measures. Wachsende organische Content-Produktion rund um die 12-Wochen-Jahr-Methode im deutschsprachigen Raum belegt anhaltende Popularität – direkter Rückenwind für den 12 Week Year Planner als spezialisiertes SaaS-Tool.",
         source: "minschtl.de",
         url: "https://minschtl.de/blog-wortgefluester/jahresplanung-mit-dem-12-wochen-jahr/",
@@ -5338,6 +5354,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 20.04.2026
       {
+        summary: "uroweb.org (European Association of Urology): 'Smartphone app can help men last longer in bed' (EAU26 Press Release) – Die CLIMACS-Studie, präsentiert auf dem EAU-Jahreskongress 2026 in London, zeigt: Eine Smartphone-App kombiniert aus Achtsamkeit, KVT und körperlichen Übungen verdoppelte bei Männern mit Ejaculatio praecox die Zeit bis zur Ejakulation innerhalb von 12 Wochen (von 61 auf 125 Sekunden). 22% der Nutzer berichteten danach gar keine vorzeitige Ejakulation mehr – erste Studie zu einem rein digitalen Behandlungsansatz für einen Zustand, der bis zu 30% der Männer betrifft. Direkte Marktvalidierung für digitale Selbsthilfe-Produkte wie orgasmus-hinauszoegern.de.",
+        source: "European Association of Urology (EAU)",
+        url: "https://uroweb.org/news/press-release-smartphone-app-can-help-men-last-longer-in-bed-finds-research",
+        date: "2026-03-14",
+        category: "Digital Health",
+        addedAt: "2026-04-20",
+      },
+      {
         summary: "mentaltraining-hypnose.de: 'Hypnosetherapie bei Sexualstörungen beim Mann' – Sexualtherapie mit Hypnose wird 2026 von deutschen und Schweizer Therapeuten zunehmend auch online angeboten. Hypnose wirkt im tiefenentspannten Zustand des Unterbewusstseins an den tieferliegenden Ursachen von Ejakulationsstörungen und ermöglicht das Auflösen alter Blockaden. Für orgasmus-hinauszoegern.de ist das eine direkte Legitimierung: Das Audio-Produkt bedient exakt diesen evidenzbasierten Ansatz zu einem Bruchteil der Therapiekosten.",
         source: "mentaltraining-hypnose.de",
         url: "https://www.mentaltraining-hypnose.de/hypnose-therapie/hypnosetherapie-sexualstoerungen/hypnosetherapie-sexualstoerung-mann.html",
@@ -5942,6 +5966,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "lampenfieber": {
     news: [
       // Neu: 20.04.2026
+      {
+        summary: "news.uzh.ch (Universität Zürich): 'Tief entspannt und gleichzeitig fokussiert – Neurobiologische Hypnose-Forschung' – Forschende der Uni Zürich haben in drei Studien (fMRI, EEG, MRS) nachgewiesen, dass Hypnose messbare Veränderungen im Gehirn erzeugt: veränderte Aktivität in Aufmerksamkeits- und Körperwahrnehmungsnetzwerken sowie erhöhte Theta-Wellen als Zeichen tiefer Entspannung bei gleichzeitiger kognitiver Fokussierung. Die Befunde belegen, dass Hypnose ein echter veränderter Bewusstseinszustand ist und keine Einbildung – wissenschaftliche Grundlage für therapeutischen Einsatz bei Auftrittsangst und Lampenfieber.",
+        source: "Universität Zürich (news.uzh.ch)",
+        url: "https://www.news.uzh.ch/de/articles/news/2025/hypnose.html",
+        date: "2025-02-11",
+        category: "Psychologie & Forschung",
+        addedAt: "2026-04-20",
+      },
       {
         summary: "gedankenportal.de: 'Hypnose gegen Ängste 2026: Alles, was du wissen musst' – Neue Studien belegen 2026 die langfristige Stabilität von Hypnose-Ergebnissen bei Angststörungen, darunter Auftrittsangst und Lampenfieber. Die Methode wird von fast 90% der Betroffenen gezielt nachgefragt und in der Fachwelt als evidenzbasiert anerkannt. Für lampenfieber-besiegen.de ist das ein direktes Marktargument: Das Audio-Produkt bedient ein wissenschaftlich etabliertes Behandlungskonzept in einem stark wachsenden Selbsthilfe-Segment.",
         source: "gedankenportal.de",
