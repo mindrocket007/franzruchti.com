@@ -1141,6 +1141,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
         category: "Coaching & E-Learning",
         addedAt: "2026-04-20",
       },
+      {
+        summary: "Swiss Coaching Association: Swiss Coaching Day 2026 in Bern (23. April 2026) – Die SCA bringt Coaches, HR-Fachleute und Führungskräfte am Stadion Wankdorf Bern zusammen. Workshops zu Persönlichkeitstraining und professioneller Selbstführung stehen im Fokus. Das Kernmarktumfeld von Mind Rocket GmbH (Coaching & Persönlichkeitsentwicklung) zeigt aktives Branchenleben und wachsende Nachfrage nach digitalem und hybridem Coaching.",
+        source: "Swiss Coaching Association (SCA)",
+        url: "https://s-c-a.ch/swiss_coaching_day/view/event/26154?elid=295706",
+        date: "2026-04-23",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-04-20",
+      },
+      {
+        summary: "V-P-T: 'Swiss Coaching Day 2026 – Workshop für Fokus, Resilienz und Selbstführung' (23. April 2026) – Der Verband für Anbieter professioneller Persönlichkeitstrainings präsentiert einen praxisorientierten Workshop zu Resilienz und Selbstführung im Business-Kontext mit Logosynthesis®. Der wachsende Bedarf an strukturierter Persönlichkeitsentwicklung in Unternehmen bestätigt das Marktumfeld von Mind Rocket GmbH als Anbieter digitaler Persönlichkeitsentwicklungsprogramme.",
+        source: "V-P-T (Verband für Persönlichkeitstrainings)",
+        url: "https://v-p-t.ch/swiss-coaching-day-2026-workshop-fuer-fokus-resilienz-und-selbstfuehrung/",
+        date: "2026-04-23",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-04-20",
+      },
       // Neu: 19.04.2026
       {
         summary: "Praxis Seminare: Eintägige Persönlichkeitsentwicklungs-Seminare im April 2026 in Zürich illustrieren den aktiven Schweizer Markt für Persönlichkeitstraining. Hybride und digitale Lernformate gewinnen neben Präsenzseminaren zunehmend an Bedeutung. Für Mind Rocket GmbH als Anbieter digitaler Entwicklungsprogramme signalisiert dies ein weiterhin aktives und nachfragestärkes Marktumfeld.",
@@ -2793,6 +2809,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 20.04.2026
+      {
+        summary: "myflourish.ai: 'Top AI Mental Health Apps in 2026' – KI-gestützte Mental-Health-Apps dominieren 2026 den digitalen Self-Help-Markt im deutschsprachigen Raum: Wysa, Woebot und HelloBetter bieten klinisch validierte Online-Unterstützung ohne Wartezeiten. Das wachsende Angebot digitaler mentaler Werkzeuge schärft das Wettbewerbsumfeld und bestätigt gleichzeitig die starke Marktnachfrage für praxisorientierte Self-Help-Produkte wie mindtools.ch.",
+        source: "myflourish.ai",
+        url: "https://www.myflourish.ai/post/top-ai-mental-health-apps-2026",
+        date: "2026",
+        category: "Mental Health",
+        addedAt: "2026-04-20",
+      },
       // Neu: 19.04.2026
       {
         summary: "healthfullness.ch: Schweizer Digital-Health-Startups lancieren 2026 App-basierte Mental-Health-Angebote – Oviva mit Psychotherapie, Pathmate Technologies für Schlafstörungen und Earkick mit KI-gestütztem Mental-Health-Ansatz zeigen das Wachstum des Segments. Einzelne Schweizer Krankenkassen übernehmen bereits Kosten für zertifizierte Mental-Health-Apps. Diese Entwicklung validiert den Markt für digitale mentale Werkzeuge und schafft Kooperationsfelder für mindtools.ch.",
@@ -5734,6 +5759,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 20.04.2026
+      {
+        summary: "innermotion.de: 'Video zum Thema Prüfungsangst 2026' – Online-Coaching-Programme für Prüfungsangst und Auftrittsangst sind 2026 stark gefragt, von klassischer KVT bis Wingwave und Hypnose. Einige Online-Programme gegen Prüfungsangst sind inzwischen sogar auf Rezept erhältlich (z.B. via Selfapy). Das wachsende Segment digitaler Angstbehandlung bestätigt das Marktpotenzial für Audio-Hypnose-Downloads wie lampenfieber-besiegen.de.",
+        source: "innermotion.de",
+        url: "https://innermotion.de/video-zum-thema-pruefungsangst/",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-20",
+      },
       // Neu: 19.04.2026
       {
         summary: "Gedankenportal: 'Hypnose gegen Ängste 2026: Alles, was du wissen musst' – Das Gedankenportal bestätigt 2026, dass neue Studien die langfristige Stabilität von Hypnose-Ergebnissen bei Angststörungen belegen und die Methode heute von fast 90 % der Betroffenen gezielt nachgefragt wird. Hypnose wird explizit bei Auftrittsangst, Sozialphobie und Prüfungsangst eingesetzt. Dies ist ein starkes Marktargument für lampenfieber-besiegen.de als Audio-Produkt in einem wachsenden, wissenschaftlich anerkannten Segment.",
@@ -6371,6 +6405,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 20.04.2026
+      {
+        summary: "DIZH/PH Zürich: 'Digitale Transformation konkret – Lerntechnologien in Berufs- und Erwachsenenbildung' (12. März 2026) – Die SGAB veranstaltete gemeinsam mit der PH Zürich und ICT-Berufsbildung Schweiz eine Fachtagung zu KI-gestützten Lerntechnologien in der Erwachsenenbildung. Der institutionelle Diskurs über neue Lernkompetenzen und die Veränderung von Berufsbildern durch KI gibt learnfluencer.ch akademische Rückendeckung für Thought-Leadership-Content rund um KI-Kompetenz und Weiterbildung.",
+        source: "DIZH / PH Zürich",
+        url: "https://www.dizh.uzh.ch/event/digitale-transformation-konkret-lerntechnologien-in-berufs-und-erwachsenenbildung/",
+        date: "2026-03-12",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-20",
+      },
       // Neu: 19.04.2026
       {
         summary: "jobs.ch Job Coach: 'Arbeitstrends 2026: KI, Soft Skills und mehr Menschlichkeit' – jobs.ch beschreibt für 2026 einen grundlegenden Wandel: KI übernimmt repetitive Aufgaben, was Lernkompetenz und Soft Skills ins Zentrum rückt. Der Skills-First-Ansatz gewinnt an Gewicht, Abschlüsse verlieren an Bedeutung gegenüber nachweisbaren Kompetenzen. Für learnfluencer.ch bietet dieser Trend direkten Anlass für Thought-Leadership-Content zu Lernkompetenz im KI-Zeitalter.",
