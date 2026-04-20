@@ -297,14 +297,7 @@ export const projects: Project[] = [
     title: "Fotobuch",
     description:
       "Automatisiertes Familien-Foto-Archiv: 128'000+ Fotos und Videos aus iCloud, Google Photos und Backups vollständig indexiert, dedupliziert (SHA256), von Screenshots bereinigt, nach 45 Themen klassifiziert (OpenAI CLIP) und pro Familienmitglied sortiert (InsightFace Gesichtserkennung mit ArcFace-Embeddings). Virtuelle Alben nach Jahr, Thema und Person – komplett lokal im Heimnetz, Fotos verlassen den eigenen Rechner nie. Geplant als Phase 2: 3-5 physische Fotobücher der schönsten Erinnerungen via Print-API.",
-    pages: [
-      {
-        slug: "ki-bootcamp-eintrag",
-        title: "Projekt auf learnfluencer.ch",
-        file: "https://learnfluencer.ch/ki-bootcamp#projekte",
-        external: true,
-      },
-    ],
+    pages: [],
     defaultAccesses: [
       {
         label: "Foto-Archiv Webapp (Heimnetz)",
