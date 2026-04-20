@@ -2811,6 +2811,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 20.04.2026
       {
+        summary: "Rowohlt Verlag: 'Top 10 Achtsamkeit-Bestseller 2026' – Rowohlt listet für 2026 die meistgekauften Achtsamkeits-Bücher und zeigt: Leser suchen nicht mehr nur kurzfristige Stressreduktion, sondern nachhaltige Strategien – Trends wie 'Emotional Fitness', präventive Mentalhygiene und alltagsintegriertes Journaling dominieren. Der Buchmarkt setzt auf wissenschaftlich fundierte Selbsthilfe. Für mindtools.ch bietet das eine klare Positionierungschance: PDFs mit konkreten mentalen Werkzeugen bedienen exakt diese Nachfrage.",
+        source: "Rowohlt Verlag",
+        url: "https://www.rowohlt.de/magazin/empfehlungen/top-10-achtsamkeit-bestseller",
+        date: "2026",
+        category: "Buchmarkt & Publishing",
+        addedAt: "2026-04-20",
+      },
+      {
+        summary: "metatechinsights.com: 'Europa Mental Health Apps Marktgrösse 2025–2035' – Der europäische Markt für Mental Health Apps war 2024 USD 2,18 Milliarden wert und wächst auf USD 2,52 Milliarden in 2025. Der Trend zu personalisierten, KI-gestützten Selbsthilfe-Angeboten belegt die steigende Nachfrage nach digitalen Selbsthilfe-Tools im gesamten DACH-Raum. Für mindtools.ch stellt das eine direkte Marktvalidierung dar: Kostengünstige Selbsthilfe-PDFs und digitale mentale Werkzeuge sind ein attraktives Einstiegsangebot in diesem Wachstumsmarkt.",
+        source: "MetaTech Insights",
+        url: "https://www.metatechinsights.com/de/industry-insights/europe-mental-health-apps-market-2944",
+        date: "2026",
+        category: "Mental Health",
+        addedAt: "2026-04-20",
+      },
+      {
+        summary: "Coaching-Markt Schweiz 2026 (coachingausbildungen.ch): Analyse zeigt, dass 2026 eine Konsolidierungsphase einsetzt – der Markt sortiert sich, und Nachfrager suchen Tiefe und echte Transformation statt Quick-Fixes. Spirituelle und holistische Ansätze, Journaling-Apps und hybride Formate wachsen. Für mindtools.ch ist das ein Positionierungsargument: Praxisnahe, konkrete mentale Werkzeuge differenzieren sich von oberflächlichen Trend-Produkten.",
+        source: "coachingausbildungen.ch",
+        url: "https://www.coachingausbildungen.ch/coaching-markt-schweiz-trends-2025-2026-analyse/",
+        date: "2026",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-04-20",
+      },
+      // Vortag
+      {
         summary: "myflourish.ai: 'Top AI Mental Health Apps in 2026' – KI-gestützte Mental-Health-Apps dominieren 2026 den digitalen Self-Help-Markt im deutschsprachigen Raum: Wysa, Woebot und HelloBetter bieten klinisch validierte Online-Unterstützung ohne Wartezeiten. Das wachsende Angebot digitaler mentaler Werkzeuge schärft das Wettbewerbsumfeld und bestätigt gleichzeitig die starke Marktnachfrage für praxisorientierte Self-Help-Produkte wie mindtools.ch.",
         source: "myflourish.ai",
         url: "https://www.myflourish.ai/post/top-ai-mental-health-apps-2026",
@@ -4517,6 +4542,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 20.04.2026
       {
+        summary: "peoplemanagingpeople.com: '40 Best OKR Software of 2026' – Der OKR-Software-Markt wächst 2026 rasant: Über 40 Plattformen buhlen um Unternehmen und Einzelnutzer, die strukturiertere Quartalsplanung suchen. KI-gestützte Goal-Suggestion-Features, bei denen die KI basierend auf Rolle und Feedback-Daten OKRs vorschlägt, werden zum neuen Standard. Der 12 Week Year Planner differenziert sich durch strikte Methodentreue zu Brian Morans System – ein klarer Vorteil gegenüber generischen Zielsetzungs-Tools.",
+        source: "People Managing People",
+        url: "https://peoplemanagingpeople.com/tools/okr-software/",
+        date: "2026",
+        category: "SaaS & Tools",
+        addedAt: "2026-04-20",
+      },
+      {
+        summary: "betterbusinessacademy.de: 'Jahresplanung 2026 für Unternehmen erstellen: 7 Steps + Vorlage' – Die 12-Week-Year-Methode wird 2026 zunehmend in der Unternehmensplanung für KMU und Teams eingesetzt, nicht nur für Einzelpersonen. Guides für Business-Jahresplanung greifen die Methode explizit auf und empfehlen sie als strukturierten Rahmen. Für den 12 Week Year Planner ergibt sich daraus ein B2B-Potenzial: Team-Features und Business-Templates könnten das adressierbare Marktvolumen erheblich vergrössern.",
+        source: "Better Business Academy",
+        url: "https://betterbusinessacademy.de/jahresplanung-unternehmen-erstellen-7-schritte-vorlage/",
+        date: "2026",
+        category: "Produktivität & Planung",
+        addedAt: "2026-04-20",
+      },
+      {
+        summary: "12weekyear.com: '12 Week Year Goal Execution System 2026' – Die offizielle 12weekyear.com-Plattform von Brian Moran bietet 2026 die Achieve-App an, die das 12-Week-Year-System automatisiert und Nutzern hilft, Ablenkungen zu überwinden und Wesentliches zu erreichen. Parallel erschien ein AI-gestützter '12-Week Year Pilot 2026'-Planner auf Vercel – ein Zeichen, dass der Markt für spezialisierte Tools dieser Methode wächst und noch nicht konsolidiert ist. Für 12wy-planner.vercel.app gilt: Differenzierung über UX, sprachliche Lokalisierung (Deutsch) und Integrations wird entscheidend.",
+        source: "12weekyear.com",
+        url: "https://www.12weekyear.com/",
+        date: "2026",
+        category: "12 Week Year Methode",
+        addedAt: "2026-04-20",
+      },
+      // Vortag
+      {
         summary: "Newstrail: 'Productivity Management Software Market 2025–2033' – Der Markt für Produktivitäts-Management-Software wurde 2025 auf 77,11 Mrd. USD geschätzt und wächst mit 14,14% CAGR bis 2033 auf über 222 Mrd. USD. Cloud-basierte SaaS-Lösungen dominieren, getrieben durch Remote Work und KI-Integration. Für den 12 Week Year Planner ist das ein starkes Rückenwind-Signal: Quartalsplanung und zyklische Zieltracking-Tools wie 12wy-planner.vercel.app sind genau das, was dieser Markt verlangt.",
         source: "Newstrail",
         url: "https://www.newstrail.com/productivity-management-software-market/",
@@ -5179,7 +5229,32 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
-      // Neu: 19.04.2026
+      // Neu: 20.04.2026
+      {
+        summary: "mentaltraining-hypnose.de: 'Hypnosetherapie bei Sexualstörungen beim Mann' – Sexualtherapie mit Hypnose wird 2026 von deutschen und Schweizer Therapeuten zunehmend auch online angeboten. Hypnose wirkt im tiefenentspannten Zustand des Unterbewusstseins an den tieferliegenden Ursachen von Ejakulationsstörungen und ermöglicht das Auflösen alter Blockaden. Für orgasmus-hinauszoegern.de ist das eine direkte Legitimierung: Das Audio-Produkt bedient exakt diesen evidenzbasierten Ansatz zu einem Bruchteil der Therapiekosten.",
+        source: "mentaltraining-hypnose.de",
+        url: "https://www.mentaltraining-hypnose.de/hypnose-therapie/hypnosetherapie-sexualstoerungen/hypnosetherapie-sexualstoerung-mann.html",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-20",
+      },
+      {
+        summary: "DEXIMED: 'Vorzeitiger Samenerguss (Ejaculatio praecox)' – Ejaculatio praecox betrifft laut DEXIMED 20–30% aller Männer unter 60 Jahren und ist damit die häufigste männliche Sexualstörung. Online-Kliniken und digitale Selbsthilfe-Angebote werden 2026 als legitime Alternative zum Arztbesuch anerkannt. Das belegt das enorme Marktpotenzial für orgasmus-hinauszoegern.de: Eine niedrigschwellige, diskrete und günstige digitale Lösung trifft eine riesige, chronisch unterversorgte Zielgruppe.",
+        source: "DEXIMED",
+        url: "https://deximed.de/home/klinische-themen/maennergesundheit/patienteninformationen/sexual-und-fortpflanzungsstoerungen/vorzeitiger-samenerguss-ejaculatio-praecox",
+        date: "2026",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-20",
+      },
+      {
+        summary: "noack-hypnose.de: 'Ejaculatio Praecox – Hypnotherapie Berlin & online' – Die Noack Hypnotherapie Berlin bietet 2026 explizit Hypnose bei Ejaculatio praecox – sowohl in Präsenz als auch online – an und beschreibt das Unterbewusstsein als zentralen Hebel für nachhaltige Veränderung. Das zeigt, dass professionelle Therapeuten die Wirksamkeit von Hypnose bei diesem Problem bestätigen und Onlineformate akzeptiert werden. Für das Audio-Produkt ist das ein wichtiges Vertrauenssignal: Das Wirkprinzip ist etabliert, das Produkt macht es zugänglich und erschwinglich.",
+        source: "Noack Hypnotherapie",
+        url: "https://www.noack-hypnose.de/ejaculatio-praecox-bzw-vorzeitiger-samenerguss/",
+        date: "2026",
+        category: "Produkt direkt",
+        addedAt: "2026-04-20",
+      },
+      // Vortag
       {
         summary: "EAU26 / EurekAlert: 'Smartphone app can help men last longer in bed' – Am 14. März 2026 wurden auf dem EAU-Kongress in London die CLIMACS-Studiendaten zur Melonga-App vorgestellt, der weltweit ersten digitalen Therapie gegen vorzeitigen Samenerguss. Nach 12 Wochen verdoppelte sich die Ejaculationslatenzzeit (61 → 125 Sekunden), und 22 % der Nutzer erfüllten die Diagnosekriterien für PE nicht mehr. Der Trend zu digitalen Selbsthilfe-Angeboten als wissenschaftlich validierte Alternative zu Medikamenten ist ein klares Argument für Audio-basierte Selbsthilfe-Programme wie orgasmus-hinauszoegern.de.",
         source: "EurekAlert / EAU26",
@@ -5760,6 +5835,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "lampenfieber": {
     news: [
       // Neu: 20.04.2026
+      {
+        summary: "gedankenportal.de: 'Hypnose gegen Ängste 2026: Alles, was du wissen musst' – Neue Studien belegen 2026 die langfristige Stabilität von Hypnose-Ergebnissen bei Angststörungen, darunter Auftrittsangst und Lampenfieber. Die Methode wird von fast 90% der Betroffenen gezielt nachgefragt und in der Fachwelt als evidenzbasiert anerkannt. Für lampenfieber-besiegen.de ist das ein direktes Marktargument: Das Audio-Produkt bedient ein wissenschaftlich etabliertes Behandlungskonzept in einem stark wachsenden Selbsthilfe-Segment.",
+        source: "gedankenportal.de",
+        url: "https://gedankenportal.de/hypnose-gegen-aengste/",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-20",
+      },
+      {
+        summary: "Haufe Akademie: 'Seminar Lampenfieber und Redehemmung ade! 2026' – Die Haufe Akademie bietet 2026 ein Präsenzseminar gegen Lampenfieber und Redehemmung an – Preisklasse mehrere Hundert Euro. Das zeigt die breite institutionelle Nachfrage: Von Unternehmensseminaren bis zu Audio-Selbsthilfe suchen Menschen aktiv Lösungen gegen Auftrittsangst. Das €29.90-Produkt auf lampenfieber-besiegen.de ist der günstigste und niederschwelligste Einstiegspunkt in diesem Markt.",
+        source: "Haufe Akademie",
+        url: "https://www.haufe-akademie.de/2852",
+        date: "2026",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-04-20",
+      },
+      {
+        summary: "wagner-empowerment.de: 'Online-Seminar Redeangst überwinden 2026' – Wagner Empowerment kombiniert 2026 Coaching, Mentaltraining und Hypnose gegen Redeangst in einem hybriden Online-/Präsenzformat (Bad Homburg/Frankfurt, deutschlandweit). Das zeigt den Trend zu digitalisierten Therapieformaten bei Auftrittsangst mit klar höheren Preispunkten. Für lampenfieber-besiegen.de ergibt sich daraus eine starke Wettbewerbsposition: Das Audio-Produkt ist sofort verfügbar, anonym nutzbar und ein Zehntel des Preises.",
+        source: "wagner-empowerment.de",
+        url: "https://www.wagner-empowerment.de/online-seminar-redeangst-%C3%BCberwinden/",
+        date: "2026",
+        category: "Psychologie & Forschung",
+        addedAt: "2026-04-20",
+      },
+      // Vortag
       {
         summary: "innermotion.de: 'Video zum Thema Prüfungsangst 2026' – Online-Coaching-Programme für Prüfungsangst und Auftrittsangst sind 2026 stark gefragt, von klassischer KVT bis Wingwave und Hypnose. Einige Online-Programme gegen Prüfungsangst sind inzwischen sogar auf Rezept erhältlich (z.B. via Selfapy). Das wachsende Segment digitaler Angstbehandlung bestätigt das Marktpotenzial für Audio-Hypnose-Downloads wie lampenfieber-besiegen.de.",
         source: "innermotion.de",
@@ -6406,6 +6506,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "learnfluencer": {
     news: [
       // Neu: 20.04.2026
+      {
+        summary: "schulewirtschaft-bw.de: 'LEARNTEC 2026: Digitale Transformation in der Bildung' (5.–7. Mai 2026, Karlsruhe) – Europas führende Messe für digitale Bildung bringt über 350 Ausstellende zusammen; zentrales Thema ist Künstliche Intelligenz in Lern- und Wissensmanagement-Systemen. Der Event setzt die Agenda für den gesamten DACH-Bildungsmarkt. Für learnfluencer.ch bietet das optimalen Stoff für Thought-Leadership-Content: Analyse, Einordnung und Praxis-Empfehlungen aus Schweizer Perspektive zur LEARNTEC-Agenda.",
+        source: "Schule & Wirtschaft BW",
+        url: "https://www.schulewirtschaft-bw.de/aktuelles/termine/einzelansicht/learntec-2026-digitale-transformation-in-der-bildung",
+        date: "2026-04",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-20",
+      },
+      {
+        summary: "ict-berufsbildung.ch: 'Neuer KI-Abschluss 2026' – ICT-Berufsbildung Schweiz entwickelt in Zusammenarbeit mit der Wirtschaft (u.a. Huawei) einen neuen eidgenössischen Abschluss im Bereich KI mit dem Ziel, erste Absolvierende noch 2026 auf den Arbeitsmarkt zu bringen. Das belegt: Der Bedarf an KI-Kompetenz in der Schweiz ist institutionell verankert und drängend. Für learnfluencer.ch ist das ein direktes Thought-Leadership-Thema: Die Plattform kann diese Entwicklung kommentieren und einordnen.",
+        source: "ICT-Berufsbildung Schweiz",
+        url: "https://www.ict-berufsbildung.ch/projekte/weiterbildung/neuer-ki-abschluss",
+        date: "2026",
+        category: "Weiterbildung Schweiz",
+        addedAt: "2026-04-20",
+      },
+      {
+        summary: "alice.ch (SVEB): 'KI in der Weiterbildung – Chancen und Herausforderungen' – Der SVEB hält fest: Die Weiterbildungsbranche muss gleichzeitig KI in eigene Prozesse integrieren und KI-Kompetenzen in der Bevölkerung aufbauen – eine doppelte Herausforderung. Wer KI-Kompetenzen verständlich vermitteln kann, wird zum gefragten Orientierungspunkt. Für learnfluencer.ch ist das ein starkes Narrativ: Franz Ruchti kann sich als Brückenbauer zwischen technologischem Wandel und praktischer Lernkompetenz positionieren.",
+        source: "SVEB / alice.ch",
+        url: "https://alice.ch/de/themen/digitalisierung-in-der-weiterbildung/ki-in-der-weiterbildung/",
+        date: "2026",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-20",
+      },
+      // Vortag
       {
         summary: "DIZH/PH Zürich: 'Digitale Transformation konkret – Lerntechnologien in Berufs- und Erwachsenenbildung' (12. März 2026) – Die SGAB veranstaltete gemeinsam mit der PH Zürich und ICT-Berufsbildung Schweiz eine Fachtagung zu KI-gestützten Lerntechnologien in der Erwachsenenbildung. Der institutionelle Diskurs über neue Lernkompetenzen und die Veränderung von Berufsbildern durch KI gibt learnfluencer.ch akademische Rückendeckung für Thought-Leadership-Content rund um KI-Kompetenz und Weiterbildung.",
         source: "DIZH / PH Zürich",
@@ -7436,7 +7561,32 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
-      // Neu: 19.04.2026
+      // Neu: 20.04.2026
+      {
+        summary: "lorien.group: 'Online-Marketing-Strategie für KMU Schweiz 2026' – Die Lorien Group hebt hervor, dass strukturierte Konzeptarbeit mit PESTEL, SWOT und Zielgruppen-Analyse der wichtigste Erfolgsfaktor für Schweizer KMU ist – jedoch fehlt vielen das nötige Tool-Know-how und das Budget für Agenturen. Das ist exakt die Lücke, die das interaktive Marketingkonzept-Tool auf learnfluencer.ch schliesst: geführte Analyse ohne Agentur oder teures Softwareabo.",
+        source: "Lorien Group",
+        url: "https://www.lorien.group/blog/online-marketing-strategie-kmu",
+        date: "2026",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-20",
+      },
+      {
+        summary: "technologychecker.io: 'Marketing Technology Statistics: 30 Key MarTech Trends 2026' – Laut TechnologyChecker.io wird der globale MarTech-Markt bis 2027 auf über USD 215 Milliarden anwachsen; bereits 2026 nutzen mehr als 80% der Unternehmen Generative-AI-Anwendungen in ihrem Marketing-Stack. KI-gestützte Strategieassistenten und automatisierte SWOT-Analysen werden zum neuen Erwartungsstandard. Für das Marketingkonzept-Tool bietet das eine klare Weiterentwicklungsrichtung: KI-Integration als nächstes Differenzierungsmerkmal.",
+        source: "TechnologyChecker.io",
+        url: "https://technologychecker.io/blog/marketing-technology-statistics-martech",
+        date: "2026",
+        category: "MarTech & Trends",
+        addedAt: "2026-04-20",
+      },
+      {
+        summary: "kmu-digitalisierung.agency: 'Marketingkonzept für KMU – Die Basis erfolgreicher Kundengewinnung' – Eine aktuelle Agentur-Analyse zeigt, dass Schweizer KMU trotz Digitalisierung noch häufig ohne strukturiertes Marketingkonzept arbeiten. Situationsanalyse (SWOT, Marktanalyse, Buyer Personas) wird als erster und wichtigster Schritt betont. Das validiert das Wertangebot des interaktiven Marketingkonzept-Tools auf learnfluencer.ch als geführter, strukturierter Einstieg für KMU ohne interne Marketingabteilung.",
+        source: "kmu-digitalisierung.agency",
+        url: "https://kmu-digitalisierung.agency/marketingkonzept/",
+        date: "2026",
+        category: "Strategie & Analyse",
+        addedAt: "2026-04-20",
+      },
+      // Vortag
       {
         summary: "Bexolutions: 'KI-Marketing für Schweizer KMU 2026 – Praxisleitfaden' (Februar 2026) – Bexolutions publizierte einen Praxisleitfaden zu KI-Marketing für Schweizer KMU, der konkrete Tools, Einstiegsstrategien und Schweizer Spezifika (DSG, TWINT, Mehrsprachigkeit) abdeckt. Generative Engine Optimization (GEO) und Real-Time-Personalisierung werden als Schlüsseltrends 2026 genannt. Für das Marketingkonzept-Tool auf learnfluencer.ch ergibt sich daraus ein direkter SEO- und Content-Anlass zur Zielgruppe KMU Schweiz.",
         source: "Bexolutions",
@@ -8161,7 +8311,32 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
-      // Neu: 19.04.2026
+      // Neu: 20.04.2026
+      {
+        summary: "Luzerner Zeitung: 'HORW: Die digitalen Bestatter' – Die Luzerner Zeitung berichtet über die digitalen Bestatter aus Horw – darunter bestattungsplaner.ch. Betreiber Johannes Ruchti (hauptberuflich Bestatter bei Hager Imbach in Kriens) vermittelt Aufträge an lokale Bestatter gegen eine fixe Entschädigung. Sowohl Ruchti als auch sein Mitbewerber Gehrig sind überzeugt, dass Bestattungen künftig vermehrt übers Internet gebucht werden. Das bestätigt die Pionierstellung und Medienpräsenz von bestattungsplaner.ch.",
+        source: "Luzerner Zeitung",
+        url: "https://www.luzernerzeitung.ch/wirtschaft/horw-die-digitalen-bestatter-ld.85302",
+        date: "2026",
+        category: "Bestattungsplaner direkt",
+        addedAt: "2026-04-20",
+      },
+      {
+        summary: "ssbv.swiss: 'Vorsorgevertrag nach Ihren Wünschen – Stiftung Schweizerische Bestattungsvorsorge' – Die SSBV verzeichnet wachsendes Interesse an digitaler Bestattungsvorsorge: Ab CHF 12.90/Monat lassen sich Bestattungen online vorausplanen und alle organisatorischen und finanziellen Fragen regeln. Dieser Markt hat direkten Berührungspunkt mit bestattungsplaner.ch: Vorsorgewillige, die online planen, sind die natürliche Zielgruppe für einen strukturierten Bestattungsvergleich und Lead-Vermittlungs-Service.",
+        source: "SSBV",
+        url: "https://www.ssbv.swiss/",
+        date: "2026",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-04-20",
+      },
+      {
+        summary: "die-bestatter.ch: 'Bestattungskosten Schweiz – Kremation dominiert' – Laut die-bestatter.ch machen Erdbestattungen in der Schweiz aktuell nur noch 10–15% aller Beerdigungen aus – der Trend geht stark in Richtung Kremation und alternative Bestattungsformen (See-, Wald-, Urnenbestattung). Günstigere Kremationspreise erhöhen den Kostendruck auf traditionelle Bestatter und stärken Online-Vergleichsportale. Für bestattungsplaner.ch ist das eine Marktchance: Wer günstige Kremations-Pakete transparent vergleichbar und buchbar macht, trifft den Zahn der Zeit.",
+        source: "die-bestatter.ch",
+        url: "https://die-bestatter.ch/todesfall/bestattungskosten/",
+        date: "2026",
+        category: "Markt & Trends",
+        addedAt: "2026-04-20",
+      },
+      // Vortag
       {
         summary: "Everlife.ch: 'Bestattungsvorsorge digital – Die Nr. 1 Plattform in der Schweiz' – Everlife.ch positioniert sich 2026 als führende digitale Bestattungsvorsorge-Plattform in der Schweiz mit einer Komplettlösung, die Angehörigen bis zu 50 Stunden Formalitätenarbeit erspart. Ein Todesfall kostet in der Schweiz durchschnittlich CHF 8.000–10.000, zahlbar innerhalb von 30 Tagen. Dies zeigt, dass der Markt für digitale Vorsorgeportale klar wächst und professionell besetzt wird – direktes Wettbewerbs- und Validierungsumfeld für bestattungsplaner.ch.",
         source: "Everlife.ch",
