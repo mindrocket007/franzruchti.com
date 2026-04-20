@@ -26,6 +26,23 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 20.04.2026
+      {
+        summary: "SIZ AG hat am 9. April 2026 die vollständig erneuerte Plattform mySIZ unter my.siz.ch lanciert. Wichtige Neuerungen sind vereinfachte Prüfungsanmeldung über Import-Funktionen, flexiblere Prüfungsdaten-Einrichtung und eine klarere Kursübersicht. Für alle Nutzer ohne Microsoft-Login ist einmalig ein Passwort-Reset nötig – relevante operative Plattform-Erneuerung für Partner und Bildungsinstitute.",
+        source: "SIZ AG",
+        url: "https://siz.ch/newsflash-april-2026/",
+        date: "2026-04-09",
+        category: "SIZ AG direkt",
+        addedAt: "2026-04-20",
+      },
+      {
+        summary: "ICT-Berufsbildung Schweiz lanciert 2026 den neuen eidgenössischen Fachausweis 'AI Business Specialist' – die erste Berufsprüfung findet im Herbst 2026 statt. Das SBFI hat die Prüfungsordnung genehmigt und der Bund übernimmt bis zu 50% der Vorbereitungskosten. Neue Zertifizierungsfelder im KI-Bereich entstehen im direkten Umfeld der SIZ AG als anerkannte ICT-Prüfungsorganisation.",
+        source: "ICT-Berufsbildung Schweiz",
+        url: "https://www.ict-berufsbildung.ch/projekte/weiterbildung/neuer-ki-abschluss",
+        date: "2026-04",
+        category: "Bildungspolitik",
+        addedAt: "2026-04-20",
+      },
       // Neu: 19.04.2026
       {
         summary: "SGV Schweizerischer Gewerbeverband: 'Durchbruch für Titel der höheren Berufsbildung: Gewerbe verbucht Erfolg' – Der Bundesrat und das Parlament haben die Einführung der Titelzusätze 'Professional Bachelor' und 'Professional Master' für die höhere Berufsbildung verabschiedet. Der SGV begrüsst dies als klares Signal gegen den Fachkräftemangel und für die Attraktivität der Berufsbildung. Die Referendumsfrist lief am 17. April 2026 ab. Bei erfolgreichem Ablauf tritt das Gesetz ab 1. Juli 2026 in Kraft – stärkt die internationale Sichtbarkeit anerkannter ICT-Berufsabschlüsse und das Qualifizierungsumfeld der SIZ AG.",
@@ -1463,6 +1480,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 20.04.2026
+      {
+        summary: "NinjaTrader hat am 30. Januar 2026 den offiziellen Launch in Europa bekanntgegeben – zunächst in den Niederlanden und Deutschland, mit Plänen für Frankreich und Italien. EU-Kunden erhalten Zugang zu NinjaTraders integrierter Futures-Trading-Umgebung inkl. Advanced Charting, Order Flow Visualization und einem Futures-Simulator. Der Schritt folgt auf die Übernahme durch Kraken für 1,5 Milliarden USD und macht NinjaTrader für Schweizer Trader nun näher und regulatorisch relevanter.",
+        source: "PR Newswire / NinjaTrader",
+        url: "https://www.prnewswire.com/news-releases/ninjatrader-expands-into-europe-to-support-the-next-generation-of-retail-futures-traders-302674573.html",
+        date: "2026-01-30",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-20",
+      },
+      {
+        summary: "Apex Trader Funding hat per 1. März 2026 fundamentale Regeländerungen eingeführt: Hard-Stop Enforcement via Rithmic und Tradovate, verpflichtende Bracket-Order-Anforderung sowie Abschaffung der monatlichen Abo-Gebühren zugunsten einer einmaligen Evaluierungsgebühr. Die 50%-Consistency-Rule gilt weiterhin in der Funded-Phase, nicht aber in der Evaluation. Für Mind Rocket Trading sind diese Änderungen direkt relevant für Kundenstrategien mit Apex-Konten.",
+        source: "Apex Trader Funding",
+        url: "https://apextraderfunding.com/resources/trading-market-analysis/mastering-day-trading-rules-with-apex-trader-funding-a-comprehensive-guide/",
+        date: "2026-03-01",
+        category: "Futures & Trading",
+        addedAt: "2026-04-20",
+      },
+      {
+        summary: "NinjaTrader hat Anfang 2026 NinjaTrader Connect gelauncht – einen B2B-Infrastruktur-Service, der anderen Finanzfirmen ermöglicht, auf NinjaTraders Plattform aufzubauen. Dies öffnet neue Kooperationsmöglichkeiten für Trading-Coaching-Anbieter und Prop-Firm-Netzwerke. Für Mind Rocket Trading interessant als potenzieller Technologiepartner oder Distributionskanal für algorithmische Handelsstrategien.",
+        source: "PR Newswire",
+        url: "https://www.prnewswire.com/news-releases/ninjatrader-group-unveils-ninjatrader-connect-redefining-brokerage-infrastructure-for-futures-and-prediction-markets-firms-302701464.html",
+        date: "2026-03",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-20",
+      },
       // Neu: 19.04.2026
       {
         summary: "ad-hoc-news.de: 'S&P 500 im Montagshandel volatil – Hormuz-Blockade drückt Futures' – Die US-Seeblockade gegen Iran führte zu einem Ölpreisanstieg auf über 102 USD/Barrel; ES-Futures notierten vorbörslich bis zu 0,6% im Minus bei ~6.778 Punkten. Geopolitische Spannungen belasten das Marktumfeld und erhöhen Schwankungsbreiten für ES-Futures-Trader. Für Mind Rocket Trading bedeutet dies anspruchsvolleres Risikomanagement und erhöhte Volatilität.",
@@ -3374,6 +3416,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 20.04.2026
+      {
+        summary: "Neue Trenddaten zeigen einen Paradigmenwechsel im Stressmanagement: Statt Symptome zu bekämpfen, regulieren immer mehr Menschen und Unternehmen direkt das Nervensystem über Hypnose. Experten prognostizieren für 2026 die Verschmelzung von Technologie und Hypnose – KI-gestützte, personalisierte Audio-Hypnose-Sitzungen basierend auf biometrischen Daten stehen in den Startlöchern. Für hypnovital® als Anbieter von Hypnose-Audio-Programmen ist dies ein direkter Rückenwind.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/hypnose-wird-2026-zum-mainstream-tool-gegen-stress/68477939",
+        date: "2026",
+        category: "Hypnose & Coaching",
+        addedAt: "2026-04-20",
+      },
+      {
+        summary: "Betriebliches Gesundheitsmanagement setzt 2026 stark auf mentale Gesundheit: Über 90% der Organisationen sehen Führungskräfte als zentrale Treiber des BGM. Digitale Tools, kombiniert mit persönlichen Angeboten, werden 2026 zum Standard – und die Messung der Wirksamkeit rückt in den Vordergrund. Für hypnovital® bedeutet dies: Audio-Programme für den Arbeitsalltag sind genau das, was Unternehmen für skalierbar umsetzbares BGM suchen.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/betriebliches-gesundheitsmanagement-setzt-2026-auf-strategie-und-psyche/68972135",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-20",
+      },
+      {
+        summary: "Die Nationale BGM-Tagung 2026 in Bern thematisiert die gesundheitlichen Herausforderungen moderner Teamarbeit in hybriden und agilen Strukturen. Nur jedes vierte Unternehmen in der Schweiz verfügt über ein ganzheitliches BGM – ein klares Zeichen, dass der Markt für skalierbare BGM-Lösungen stark unterversorgt ist. Hypnovital® könnte mit seiner Audio-Programm-Lösung gezielt in diesem Segment positioniert werden.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/bgm-tagung-2026-setzt-auf-gesunde-teamarbeit/68660567",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-20",
+      },
       // Neu: 19.04.2026
       {
         summary: "ad-hoc-news.de: 'Kognitive Verzerrungen treiben Burnout-Zahlen 2026' – Aktuelle Erhebungen zeigen, dass subjektiv empfundener Stress massgeblich durch kognitive Denkmuster verstärkt wird. Selbst kurze tägliche Interventionen – z.B. ein fünfminütiges 'Gedankenprotokoll' – können Cortisol-Werte signifikant senken. Unterstreicht den Wert von Entspannungs- und mentalen Bewältigungsansätzen wie hypnobasierter Audio-Programme als praxistaugliche, niedrigschwellige BGM-Prävention – direktes Positionierungsumfeld für hypnovital®.",
