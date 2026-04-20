@@ -38,29 +38,9 @@ export const projects: Project[] = [
         file: "/projects/siz-ag/SIZ_Argumentarium.html",
       },
       {
-        slug: "einsatzgebiete",
-        title: "Einsatzgebiete",
-        file: "/projects/siz-ag/SIZ_Einsatzgebiete.html",
-      },
-      {
-        slug: "website-analyse",
-        title: "Website-Analyse",
-        file: "/projects/siz-ag/SIZ_Website_Analyse.html",
-      },
-      {
         slug: "marketing",
         title: "Marketing-Software",
         file: "/projects/siz-ag/SIZ_Marketing.html",
-      },
-      {
-        slug: "diplome",
-        title: "Diplome-Übersicht",
-        file: "/projects/siz-ag/SIZ_Diplome_Uebersicht.html",
-      },
-      {
-        slug: "pruefungsarten",
-        title: "Prüfungsarten-Übersicht",
-        file: "/projects/siz-ag/SIZ_Pruefungsarten.html",
       },
       {
         slug: "12wy-planner",
