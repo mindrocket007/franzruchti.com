@@ -113,6 +113,22 @@ export const projects: Project[] = [
         external: true,
       },
     ],
+    defaultAccesses: [
+      {
+        label: "Trading-Tagebuch (Dashboard)",
+        url: "https://mindrocket-trading.com/login",
+        username: "franz@mindrocket.ch",
+        password: "Hausfranz007",
+        note: "Zugang zu /dashboard (Trades), /live (interne Signal-Übersicht, noindex) und /trades. Session-Cookie 7 Tage.",
+      },
+      {
+        label: "Live-Signals – interner Bereich",
+        url: "https://mindrocket-trading.com/live",
+        username: "franz@mindrocket.ch",
+        password: "Hausfranz007",
+        note: "NinjaTrader-Indikator MindRocketSignals feedet Bar-Daten + Claude-Analyse. Nur mit Login erreichbar, noindex/nofollow.",
+      },
+    ],
   },
   {
     slug: "mindtools",
