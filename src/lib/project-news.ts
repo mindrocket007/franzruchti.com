@@ -28,6 +28,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 20.04.2026
       {
+        summary: "e2-news.ch: 'Stärkung der höheren Berufsbildung – Parlament beschliesst Reformpaket' – Das Schweizer Parlament hat das Reformpaket zur Stärkung der höheren Berufsbildung verabschiedet, das neue Titelzusätze 'Professional Bachelor' und 'Professional Master' einführt. Die Referendumsfrist lief am 17. April 2026 ab. Bei ausbleibendem Referendum tritt das Gesetz am 1. Juli 2026 in Kraft und stärkt die internationale Anerkennung eidgenössischer Fachausweise – direktes Positionierungsumfeld für SIZ AG als ICT-Prüfungsorganisation.",
+        source: "e2-news.ch",
+        url: "https://e2-news.ch/de/news/staerkung-der-hoeheren-berufsbildung-parlament-beschliesst-reformpaket",
+        date: "2026-04",
+        category: "Bildungspolitik",
+        addedAt: "2026-04-20",
+      },
+      {
+        summary: "JobCloud: 'Schweizer Arbeitsmarkt im 1. Quartal 2026 – Vorsichtige Stabilisierung in unsicherem Umfeld' – Analyse des Schweizer Arbeitsmarkts zeigt: Trotz globaler Unsicherheiten stabilisiert sich die Nachfrage nach ICT-Fachkräften. Gezielte Rekrutierung in KI, Cybersecurity und Datenanalyse prägen das Q1 2026. Struktureller ICT-Fachkräftemangel bleibt bestehen – anhaltende Nachfrage nach ICT-Zertifizierungen der SIZ AG.",
+        source: "JobCloud",
+        url: "https://www.jobcloud.ch/c/de-ch/blog/schweizer-arbeitsmarkt-im-1-quartal-2026-vorsichtige-stabilisierung-in-unsicherem-umfeld",
+        date: "2026-04",
+        category: "Arbeitsmarkt & IT",
+        addedAt: "2026-04-20",
+      },
+      {
         summary: "SIZ AG hat am 9. April 2026 die vollständig erneuerte Plattform mySIZ unter my.siz.ch lanciert. Wichtige Neuerungen sind vereinfachte Prüfungsanmeldung über Import-Funktionen, flexiblere Prüfungsdaten-Einrichtung und eine klarere Kursübersicht. Für alle Nutzer ohne Microsoft-Login ist einmalig ein Passwort-Reset nötig – relevante operative Plattform-Erneuerung für Partner und Bildungsinstitute.",
         source: "SIZ AG",
         url: "https://siz.ch/newsflash-april-2026/",
@@ -1482,6 +1498,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 20.04.2026
       {
+        summary: "ts2.tech: 'US Stock Market Before Open: S&P 500 Futures Hold Near Records' (18. April 2026) – Am 18. April 2026 hielt der June E-mini S&P 500 (ESM26) nahe Allzeithöchst nach Gewinnen der Vorwoche. Hintergrund: US-Iran-Waffenstillstandsgespräche, fallende Ölpreise (-11%), 10-Jahres-Rendite bei 4,24%. ES-Futures-Markt zeigt weiter starke institutionelle und retail-Beteiligung – direktes Trading-Umfeld für ES-Futures-Strategien.",
+        source: "ts2.tech",
+        url: "https://ts2.tech/en/us-stock-market-before-open-today-sp-500-futures-hold-near-records-as-oil-falls-and-netflix-slumps/",
+        date: "2026-04-18",
+        category: "Futures & Trading",
+        addedAt: "2026-04-20",
+      },
+      {
+        summary: "Fortune Business Insights: 'Algorithmischer Handelsmarkt 2026 – Globales Wachstum auf 2,72 Mrd. USD' – Der globale Markt für algorithmischen Handel erreicht 2026 ein Volumen von 2,72 Mrd. USD mit Wachstumsprognose auf 4,33 Mrd. USD bis 2034 (CAGR 5,9%). Grosse Unternehmen dominieren mit 68% Marktanteil. KI-gestützte Handelsstrategien und automatisierter Futures-Handel sind die wichtigsten Wachstumstreiber – bestätigt den Markttrend für algorithmische ES-Futures-Systeme.",
+        source: "Fortune Business Insights",
+        url: "https://www.fortunebusinessinsights.com/algorithmic-trading-market-107174",
+        date: "2026",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-20",
+      },
+      {
         summary: "coindesk.com: 'Kraken acquires derivatives exchange Bitnomial for $550M' – Krakens Muttergesellschaft Payward übernimmt Bitnomial, die erste krypto-native Plattform mit allen drei CFTC-Lizenzen (Börse, Clearing, Brokerage). Da Kraken NinjaTrader besitzt, stärkt diese Übernahme die regulierte Derivate-Infrastruktur massiv und ermöglicht nun vollständiges US-Derivate-Geschäft unter einem Dach. Direktes regulatorisches Marktumfeld für institutionelle ES-Futures-Trader und NinjaTrader-Nutzer wie Mind Rocket Trading.",
         source: "CoinDesk",
         url: "https://www.coindesk.com/business/2026/04/17/kraken-s-parent-company-payward-to-acquire-derivatives-exchange-bitnomial-for-usd550-million-in-cash-and-stock",
@@ -2877,6 +2909,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 20.04.2026
       {
+        summary: "Börsenblatt: 'Deutschschweizer Buchmarkt legt 2025 leicht zu' – Der deutschsprachige Schweizer Buchmarkt erzielte 2025 einen Gesamtumsatz von CHF 581,8 Mio. (+1,1% gegenüber 2024). Sachbücher Selbsthilfe/Ratgeber verloren Marktanteile, während Belletristik und Kinder-/Jugendbuch gewannen. Für mindtools.ch bedeutet das: Digitale Alternativen und PDF-Produkte als günstigere Selbsthilfe-Formate gewinnen gegenüber klassischen Buchkäufen an Bedeutung.",
+        source: "Börsenblatt",
+        url: "https://www.boersenblatt.net/news/buchhandel-news/deutschschweizer-buchmarkt-legt-2025-leicht-zu-404441",
+        date: "2026-03",
+        category: "Buchmarkt & Publishing",
+        addedAt: "2026-04-20",
+      },
+      {
         summary: "Rowohlt Verlag: 'Top 10 Achtsamkeit-Bestseller 2026' – Rowohlt listet für 2026 die meistgekauften Achtsamkeits-Bücher und zeigt: Leser suchen nicht mehr nur kurzfristige Stressreduktion, sondern nachhaltige Strategien – Trends wie 'Emotional Fitness', präventive Mentalhygiene und alltagsintegriertes Journaling dominieren. Der Buchmarkt setzt auf wissenschaftlich fundierte Selbsthilfe. Für mindtools.ch bietet das eine klare Positionierungschance: PDFs mit konkreten mentalen Werkzeugen bedienen exakt diese Nachfrage.",
         source: "Rowohlt Verlag",
         url: "https://www.rowohlt.de/magazin/empfehlungen/top-10-achtsamkeit-bestseller",
@@ -3441,6 +3481,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "hypnovital": {
     news: [
       // Neu: 20.04.2026
+      {
+        summary: "BGM Zentralschweiz: 'National BGM Conference 2026: Healthy Teams – How Collaboration Succeeds' – Offizielle Ankündigung der nationalen BGM-Konferenz 2026 (15. September, Kursaal Bern). Fokus auf Teamgesundheit, digitale Tools und KI in der betrieblichen Gesundheitsförderung. Veranstalter: Gesundheitsförderung Schweiz, Suva, SECO. Direktes Positionierungsumfeld für hypnovital® als skalierbares BGM-Audio-Programm für Unternehmen.",
+        source: "BGM Zentralschweiz",
+        url: "https://www.bgm-zentralschweiz.ch/en/post/national-bgm-conference-2026-healthy-teams-how-collaboration-succeeds",
+        date: "2026-09-15",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-20",
+      },
+      {
+        summary: "BORN TO BE FREE: 'Hypno-Meditation April 2026 – Veränderung braucht inneren Halt' – Monatliche Hypno-Meditation für April 2026 als Teil einer 10-teiligen Jahresreihe. Thema: innere Stabilität inmitten von Veränderung und Unsicherheit. Wachsendes Angebot an Audio-Hypnose-Programmen im DACH-Raum bestätigt Marktakzeptanz für digitale Selbsthilfe-Hypnose – direktes Marktumfeld für hypnovital® Audio-Programme.",
+        source: "BORN TO BE FREE",
+        url: "https://www.btbf.ch/hypno-meditationen-2026-themen/",
+        date: "2026-04",
+        category: "Hypnose & Coaching",
+        addedAt: "2026-04-20",
+      },
+      {
+        summary: "Indian Counselling Services: 'Clinical Hypnotherapy 2026: Debunking Myths' – Wissenschaftlicher Artikel über den aktuellen Stand der klinischen Hypnotherapie in 2026: Verbreitung von Forschungsergebnissen, Wirksamkeitsnachweise und Entkräftung von Mythen. Klinische Hypnotherapie wird zunehmend in evidenzbasierte Therapiekonzepte integriert – stärkt die wissenschaftliche Grundlage von Hypnose-Coaching-Angeboten wie hypnovital®.",
+        source: "Indian Counselling Services",
+        url: "https://www.indiancounsellingservices.com/blog/clinical-hypnotherapy-2026/",
+        date: "2026",
+        category: "Hypnose & Coaching",
+        addedAt: "2026-04-20",
+      },
       {
         summary: "BGM-Tagung 2026: Nationale Konferenz für betriebliches Gesundheitsmanagement findet am 15. September 2026 statt – Thema 'Gesunde Teams: Wie Zusammenarbeit gelingt'. Anmeldeschluss 13. September 2026. Führende Schweizer BGM-Plattform mit Fokus auf mentale Gesundheit, Teamdynamik und nachhaltige Arbeitsplatzgestaltung. Direktes Marktumfeld für hypnovital® als skalierbare Audio-BGM-Lösung.",
         source: "BGM-Tagung.ch",
@@ -4641,6 +4705,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 20.04.2026
       {
+        summary: "ad-hoc-news.de: '90-Tage-Proof-Zyklen verdrängen den klassischen Jahresplan' – Starker Trendreport 2026: Unternehmen und High-Performer setzen massiv auf 90-Tage-Proof-Zyklen statt klassischer Jahresplanung. Daten zeigen: Methode verdoppelt Erfolgsquoten. Der klassische Jahresplan gilt als 'faktisch überholt'. Direkter Positionierungsbeleg für die 12-Week-Year-Methode als zeitgemässes Planungsframework.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/90-tage-proof-zyklen-verdraengen-den-klassischen-jahresplan/68455023",
+        date: "2026",
+        category: "Produktivität & Planung",
+        addedAt: "2026-04-20",
+      },
+      {
+        summary: "it-boltwise.de: '90-Tage-Proof-Zyklen: Der neue Standard in der Unternehmensplanung' – KI-Beschleunigung macht 12-Monats-Pläne zum 'unkalkulierbaren Risiko'. Organisationen mit kurzen Proof Cycles erzielen bis zu doppelt so hohes Umsatzwachstum und +40% Kosteneffizienz. Strategische Unternehmensplanung verlagert sich hin zu Quartalszyklen – direktes Marktmomentum für 12-Week-Year-basierte Planungstools.",
+        source: "it-boltwise.de",
+        url: "https://www.it-boltwise.de/90-tage-proof-zyklen-der-neue-standard-in-der-unternehmensplanung.html",
+        date: "2026",
+        category: "Produktivität & Planung",
+        addedAt: "2026-04-20",
+      },
+      {
+        summary: "integri.de: 'Jahresplanung 2026: 7-Schritte-Anleitung für klare Ziele' – Praxisratgeber verweist auf die 12-Wochen-Jahr-Methode als eine der führenden Planungsmethoden für 2026. Klar strukturierte Zielplanung mit kurzen Review-Zyklen wird als entscheidender Erfolgsfaktor hervorgehoben. Wachsende organische Sichtbarkeit der 12-Week-Year-Methodik im deutschsprachigen Raum.",
+        source: "integri.de",
+        url: "https://integri.de/jahresplanung-erstellen-anleitung/",
+        date: "2026",
+        category: "12 Week Year Methode",
+        addedAt: "2026-04-20",
+      },
+      {
         summary: "griply.app: 'Productivity Frameworks: GTD, OKRs & 12 Week Year in Griply' – Griply ist ein neues Produktivitäts-SaaS-Tool, das GTD, OKR-Tracking und das 12-Week-Year-Framework in einer App vereint. Nutzer können ihren eigenen Planungsablauf kombinieren und Ziele mit konkreten Wochen-Actions verknüpfen – direkter Konkurrent zu Weekdone und Week Plan. Wachsender SaaS-Markt für 12-Week-Year-basierte Planungstools bestätigt die Produktnachfrage für den 12wy-planner.",
         source: "Griply",
         url: "https://griply.app/help/workflows-and-frameworks",
@@ -5354,6 +5442,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 20.04.2026
       {
+        summary: "DoktorABC: 'Vorzeitiger Samenerguss – Behandlungsoptionen 2026' – Übersicht medikamentöser (Dapoxetin als einziger zugelassener SSRI in Deutschland) und nicht-medikamentöser Behandlungen (Stopp-Start-Technik, Squeeze-Methode, Lokalanästhetika, Psychotherapie und Hypnose). Wachsendes Angebot an digitalen Selbsthilfe-Ressourcen bestätigt den Marktbedarf für niedrigschwellige Lösungen wie orgasmus-hinauszoegern.de.",
+        source: "DoktorABC",
+        url: "https://www.doktorabc.com/de/maennergesundheit/vorzeitiger-samenerguss/behandlungen",
+        date: "2026",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-20",
+      },
+      {
         summary: "uroweb.org (European Association of Urology): 'Smartphone app can help men last longer in bed' (EAU26 Press Release) – Die CLIMACS-Studie, präsentiert auf dem EAU-Jahreskongress 2026 in London, zeigt: Eine Smartphone-App kombiniert aus Achtsamkeit, KVT und körperlichen Übungen verdoppelte bei Männern mit Ejaculatio praecox die Zeit bis zur Ejakulation innerhalb von 12 Wochen (von 61 auf 125 Sekunden). 22% der Nutzer berichteten danach gar keine vorzeitige Ejakulation mehr – erste Studie zu einem rein digitalen Behandlungsansatz für einen Zustand, der bis zu 30% der Männer betrifft. Direkte Marktvalidierung für digitale Selbsthilfe-Produkte wie orgasmus-hinauszoegern.de.",
         source: "European Association of Urology (EAU)",
         url: "https://uroweb.org/news/press-release-smartphone-app-can-help-men-last-longer-in-bed-finds-research",
@@ -5966,6 +6062,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "lampenfieber": {
     news: [
       // Neu: 20.04.2026
+      {
+        summary: "SRF Wissen: 'Hypnosetherapie – Wie Hypnose gegen Ängste helfen kann' – Hochwertiger Medienbeitrag von SRF zum wissenschaftlichen Stand der Hypnosetherapie bei Angststörungen inkl. Auftrittsangst und Lampenfieber. Belegt Wirksamkeit durch klinische Studien und stärkt das öffentliche Vertrauen in Hypnose als anerkannte Therapiemethode – starker redaktioneller Rückenwind für Hypnose-Audio-Produkte wie lampenfieber-besiegen.de.",
+        source: "SRF Wissen",
+        url: "https://www.srf.ch/wissen/mensch/hypnosetherapie-wie-hypnose-gegen-aengste-helfen-kann",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-20",
+      },
+      {
+        summary: "rampenpfau.de: 'Vortrag absagen wegen Lampenfieber?' (Januar 2026) – Aktueller Artikel über die Entscheidungssituation: Wenn Lampenfieber so stark wird, dass Vortragsabsagen in Betracht gezogen werden. Illustriert den hohen Leidensdruck und Handlungsbedarf – direktes Argument für niedrigschwellige Selbsthilfe-Lösungen wie lampenfieber-besiegen.de.",
+        source: "rampenpfau.de",
+        url: "https://rampenpfau.de/2026/01/27/vortrag-absagen-wegen-lampenfieber/",
+        date: "2026-01-27",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-04-20",
+      },
+      {
+        summary: "Deutsches Ärzteblatt: 'Hypnotherapie: Bei Ängsten und Schmerzen hocheffizient' – Hochreputierter medizinischer Beleg für die Wirksamkeit von Hypnosetherapie bei Angststörungen. Klinische Studien zeigen signifikante Überlegenheit gegenüber Kontrollgruppen. Als Veröffentlichung im Deutschen Ärzteblatt stärkt dieser Beitrag die wissenschaftliche Glaubwürdigkeit von Hypnose-Audioprogrammen gegen Lampenfieber.",
+        source: "Deutsches Ärzteblatt",
+        url: "https://www.aerzteblatt.de/archiv/hypnotherapie-bei-aengsten-und-schmerzen-hocheffizient-c41fb755-04c6-4c01-91f3-41afd823d107",
+        date: "2026",
+        category: "Psychologie & Forschung",
+        addedAt: "2026-04-20",
+      },
       {
         summary: "news.uzh.ch (Universität Zürich): 'Tief entspannt und gleichzeitig fokussiert – Neurobiologische Hypnose-Forschung' – Forschende der Uni Zürich haben in drei Studien (fMRI, EEG, MRS) nachgewiesen, dass Hypnose messbare Veränderungen im Gehirn erzeugt: veränderte Aktivität in Aufmerksamkeits- und Körperwahrnehmungsnetzwerken sowie erhöhte Theta-Wellen als Zeichen tiefer Entspannung bei gleichzeitiger kognitiver Fokussierung. Die Befunde belegen, dass Hypnose ein echter veränderter Bewusstseinszustand ist und keine Einbildung – wissenschaftliche Grundlage für therapeutischen Einsatz bei Auftrittsangst und Lampenfieber.",
         source: "Universität Zürich (news.uzh.ch)",
@@ -7701,6 +7821,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "marketingplan-software": {
     news: [
       // Neu: 20.04.2026
+      {
+        summary: "BFB Bildung Formation Biel-Bienne: 'Content-Strategien für KMU: Welche Plattformen sich eignen und welche Wirkung realistisch ist' (17. April 2026) – Frischer Artikel: Für Schweizer KMU ist LinkedIn der effizienteste B2B-Kanal, Newsletter wirken algorithmunabhängig, Fokus auf 1-2 Plattformen ist besser als 3 mittelmässig bespielte. Praxisnahe Empfehlungen für Plattformwahl und realistische Wirkungserwartungen – direktes Beratungsumfeld für strukturierte Marketingplanung mit interaktiven Tools.",
+        source: "BFB Bildung Formation Biel-Bienne",
+        url: "https://www.bfb-bielbienne.ch/2026/04/17/content-strategien-kmu/",
+        date: "2026-04-17",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-20",
+      },
+      {
+        summary: "berger.team: 'Marketing-Trends 2026 für KMU: Was jetzt Priorität hat' – KI muss 2026 strategisch und messbar eingesetzt werden. GEO (Generative Engine Optimization) für KI-Suchmaschinen wie ChatGPT/Gemini als neue SEO-Disziplin entsteht. WhatsApp Business mit 98% Öffnungsrate als wichtigster Kommunikationskanal. Zeigt den steigenden Bedarf an strukturierten, ganzheitlichen Marketingkonzepten für Schweizer KMU.",
+        source: "berger.team",
+        url: "https://www.berger.team/marketing/marketing-trends-2026-fuer-kmu-was-jetzt-prioritaet-hat/",
+        date: "2026",
+        category: "MarTech & Trends",
+        addedAt: "2026-04-20",
+      },
       {
         summary: "lorien.group: 'Online-Marketing-Strategie für KMU Schweiz 2026' – Die Lorien Group hebt hervor, dass strukturierte Konzeptarbeit mit PESTEL, SWOT und Zielgruppen-Analyse der wichtigste Erfolgsfaktor für Schweizer KMU ist – jedoch fehlt vielen das nötige Tool-Know-how und das Budget für Agenturen. Das ist exakt die Lücke, die das interaktive Marketingkonzept-Tool auf learnfluencer.ch schliesst: geführte Analyse ohne Agentur oder teures Softwareabo.",
         source: "Lorien Group",
