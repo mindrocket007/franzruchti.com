@@ -1132,6 +1132,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
+      // Neu: 20.04.2026
+      {
+        summary: "Seelenkunstwerk: 'Hypno-Coaching – Hypnose und Coaching verbinden' – 2026 ist Hypnose keine Randerscheinung mehr, sondern eine wissenschaftlich anerkannte Intervention, die verstärkt im Coaching-Kontext eingesetzt wird. Anbieter im DACH-Raum berichten von gestiegener Nachfrage nach Online-Hypnose-Coaching für persönliche Transformation und Entwicklung. Dieser Trend eröffnet für integrative Coaching-Anbieter wie Mind Rocket GmbH neue Möglichkeiten zur Methodenerweiterung und Zielgruppenansprache.",
+        source: "Seelenkunstwerk",
+        url: "https://seelenkunstwerk.com/hypno-coaching-hypnose/",
+        date: "2026",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-04-20",
+      },
       // Neu: 19.04.2026
       {
         summary: "Praxis Seminare: Eintägige Persönlichkeitsentwicklungs-Seminare im April 2026 in Zürich illustrieren den aktiven Schweizer Markt für Persönlichkeitstraining. Hybride und digitale Lernformate gewinnen neben Präsenzseminaren zunehmend an Bedeutung. Für Mind Rocket GmbH als Anbieter digitaler Entwicklungsprogramme signalisiert dies ein weiterhin aktives und nachfragestärkes Marktumfeld.",
@@ -4481,6 +4490,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 20.04.2026
+      {
+        summary: "Newstrail: 'Productivity Management Software Market 2025–2033' – Der Markt für Produktivitäts-Management-Software wurde 2025 auf 77,11 Mrd. USD geschätzt und wächst mit 14,14% CAGR bis 2033 auf über 222 Mrd. USD. Cloud-basierte SaaS-Lösungen dominieren, getrieben durch Remote Work und KI-Integration. Für den 12 Week Year Planner ist das ein starkes Rückenwind-Signal: Quartalsplanung und zyklische Zieltracking-Tools wie 12wy-planner.vercel.app sind genau das, was dieser Markt verlangt.",
+        source: "Newstrail",
+        url: "https://www.newstrail.com/productivity-management-software-market/",
+        date: "2026-01-09",
+        category: "SaaS & Tools",
+        addedAt: "2026-04-20",
+      },
       // Neu: 19.04.2026
       {
         summary: "Fazm Blog: Notion April 2026 Release 'Workers for Agents' und Views API – Notion integriert KI direkt in das Kerndatenmodell statt als Chat-Addon. Parallel bietet Notion im Marketplace aktiv 12-Week-Year-Planner-Templates für 2026 an. Diese Entwicklung zeigt, dass KI-gestützte Planung im SaaS-Segment stark an Bedeutung gewinnt – ein direktes Wettbewerbsumfeld für den 12wy-planner.",
