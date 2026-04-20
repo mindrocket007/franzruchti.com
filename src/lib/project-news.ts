@@ -4609,6 +4609,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 20.04.2026
       {
+        summary: "hartware.de: 'Aufgaben fundierter managen: Digitale Lösungen für den Alltag' (17. April 2026) – Hartware.de beleuchtet, wie digitale Task-Management-Tools den Alltag strukturieren und Produktivität steigern. Klar strukturierte Planung und Ziel-Tracking-Systeme setzen sich in der Breite durch. Für den 12 Week Year Planner als spezialisiertes SaaS-Tool für die 12-Week-Year-Methode ist das ein positives Marktsignal: Der Bedarf nach digitalisierten Planungslösungen nimmt weiter zu.",
+        source: "Hartware.de",
+        url: "https://www.hartware.de/2026/04/17/aufgaben-fundierter-managen-digitale-loesungen-fuer-den-alltag/",
+        date: "2026-04-17",
+        category: "Produktivität & Planung",
+        addedAt: "2026-04-20",
+      },
+      {
         summary: "peoplemanagingpeople.com: '40 Best OKR Software of 2026' – Der OKR-Software-Markt wächst 2026 rasant: Über 40 Plattformen buhlen um Unternehmen und Einzelnutzer, die strukturiertere Quartalsplanung suchen. KI-gestützte Goal-Suggestion-Features, bei denen die KI basierend auf Rolle und Feedback-Daten OKRs vorschlägt, werden zum neuen Standard. Der 12 Week Year Planner differenziert sich durch strikte Methodentreue zu Brian Morans System – ein klarer Vorteil gegenüber generischen Zielsetzungs-Tools.",
         source: "People Managing People",
         url: "https://peoplemanagingpeople.com/tools/okr-software/",
