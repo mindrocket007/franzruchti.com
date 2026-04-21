@@ -1540,6 +1540,39 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 21.04.2026 (6)
+      {
+        summary: "beinoptions.com: 'NinjaTrader Erfahrungen & Test 2026 – Futures-Broker Bewertung' – Deutschsprachige Vollanalyse der NinjaTrader-Plattform 2026: Stärken bei Algo-Trading, C#-basierter Strategieentwicklung und niedrigen Futures-Kommissionen. Europäischer Markteinstieg seit Januar 2026 via CySEC-reguliertem Broker. Über 2 Mio. Konten weltweit bestätigen Plattform-Reife. Relevante Marktwahrnehmung für Schweizer Trader mit algorithmischen ES-Futures-Strategien.",
+        source: "beinoptions.com",
+        url: "https://www.beinoptions.com/de/brokers/ninjatrader",
+        date: "2026-04",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-21",
+      },
+      {
+        summary: "newtrading.io: 'NinjaTrader Review 2026: Features, Pricing, and Honest Verdict' – Unabhängiger englischer Testbericht: NinjaTrader überzeugt 2026 mit unschlagbarem Preis-Leistungs-Verhältnis für aktive Futures-Daytrader. Besonderheiten: vollständig anpassbare Charts, NinjaScript-Strategieautomatisierung, Paper-Trading und breite Broker-Kompatibilität. Direkte Plattform-Relevanz für algorithmische Handelsstrategien auf ES-Futures.",
+        source: "newtrading.io",
+        url: "https://www.newtrading.io/ninjatrader-review/",
+        date: "2026-04",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-21",
+      },
+      {
+        summary: "canadianfuturestrader.ca: 'Apex Trader Funding 2026 Changes' – Detaillierte Aufschlüsselung der grössten Regeländerungen bei Apex für 2026: Einführung von EOD/Intraday-Trailing-Drawdown-Konten, obligatorische Stop-Loss-Orders auf allen aktiven Trades, Verbot von Dollar-Cost-Averaging, 50%-Consistency-Regel und vollautomatisches Payout-System via Deel. Direkter Praxisüberblick für Prop-Trader auf Apex mit ES-Futures-Strategien.",
+        source: "canadianfuturestrader.ca",
+        url: "https://canadianfuturestrader.ca/apex-trader-funding-2026-changes/",
+        date: "2026-04",
+        category: "Prop Trading Apex",
+        addedAt: "2026-04-21",
+      },
+      {
+        summary: "damnpropfirms.com: 'Apex Trader Funding Restricted Countries 2026' – Aktuelle Liste der von Apex gesperrten Länder (Iran, Nordkorea sowie einige weitere Jurisdiktionen). Schweizer und Liechtensteiner Trader sind nicht betroffen – direkter Zugang zu Apex-Prop-Konten für ES-Futures bleibt möglich. Wichtige Compliance-Information für international operierende algorithmische Trader.",
+        source: "damnpropfirms.com",
+        url: "https://damnpropfirms.com/prop-firms/apex-trader-funding-restricted-countries-2026/",
+        date: "2026-04",
+        category: "Regulierung",
+        addedAt: "2026-04-21",
+      },
       // Neu: 21.04.2026 (2)
       {
         summary: "Apex Trader Funding 4.0 Update (März 2026): Grösstes Regelwerk-Update in der Geschichte der Plattform. Sechs Regeln komplett gestrichen (u.a. MAE-Regel, 5:1 RR-Beschränkung, 7-Tage-Minimum), Consistency-Regel von 30% auf 50% gelockert, monatliches Abo durch Einmalzahlung ersetzt. Pflicht-Bracket-Orders auf Rithmic/Tradovate-Ebene eingeführt. Direkt relevant für Prop-Trading-Strategien auf Apex mit ES-Futures.",
@@ -3584,6 +3617,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 21.04.2026 (4)
+      {
+        summary: "bgm-zentralschweiz.ch: 'BGM Frühstückstreffen 2026' – Regelmässiges Networking-Event für BGM-Fachleute in der Zentralschweiz: Austausch zu praxiserprobten BGM-Massnahmen, mentaler Gesundheit am Arbeitsplatz und innovativen Ansätzen wie Achtsamkeit und Stressreduktion. Lebendiges BGM-Ökosystem in der Innerschweiz bestätigt anhaltende Nachfrage nach betrieblichen Gesundheitsprogrammen – direktes Positionierungsumfeld für hypnovital®-Unternehmensangebote.",
+        source: "bgm-zentralschweiz.ch",
+        url: "https://www.bgm-zentralschweiz.ch/event-details/bgm-fruhstuckstreffen-2026",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-21",
+      },
+      {
+        summary: "mentalhealth-gmbh.ch: 'Kurse für psychische Gesundheit – Mental Health GmbH' – Schweizer Anbieter für betriebliche Mental-Health-Kurse: Stressmanagement, Burnout-Prävention und Resilienz-Training für Unternehmen. Wachsendes institutionelles Kursangebot in der Schweiz bestätigt steigende Nachfrage nach strukturierten BGM-Massnahmen – direktes Marktumfeld für hypnovital®-Unternehmensangebote im digitalen betrieblichen Gesundheitsmanagement.",
+        source: "mentalhealth-gmbh.ch",
+        url: "https://mentalhealth-gmbh.ch/",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-21",
+      },
       // Neu: 21.04.2026 (2)
       {
         summary: "Nationale BGM-Tagung 2026 'Gesunde Teams – Wie Zusammenarbeit gelingt' am 15. September 2026, Kursaal Bern. Rund 1.000 HR- und BGM-Fachleute diskutieren gesunde Teamarbeit in hybriden und agilen Settings, Rolle von KI und digitalen Tools für gesündere Teams sowie psychologische Sicherheit als Führungsaufgabe. Direktes Positionierungsumfeld für hypnovital®-BGM-Programme in Schweizer Unternehmen.",
@@ -6243,6 +6293,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 21.04.2026 (5)
+      {
+        summary: "marleneholly.at: 'Prüfungsangst überwinden: mit Hypnose entspannt durch stressige Situationen' – Hypnose-Coach erklärt, wie Hypnose die innere Reaktion auf Leistungssituationen umprogrammiert, Stressreaktionen auflöst und Ressourcen wie Ruhe, Fokus und Selbstvertrauen verankert. Wachsende Content-Produktion rund um Hypnose gegen Angst im DACH-Raum bestätigt Marktakzeptanz für digitale Hypnose-Audioprodukte wie lampenfieber-besiegen.de.",
+        source: "marleneholly.at",
+        url: "https://marleneholly.at/blog/pruefungsangst-mit-hypnose",
+        date: "2026-04",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-21",
+      },
+      {
+        summary: "hypnause.de: 'Hypnose bei Prüfungsangst – Hypnosetherapie in Frankfurt' – Detaillierter Erfahrungsbericht über den Einsatz von Hypnose bei Prüfungs- und Auftrittsangst: Unbewusste Blockaden lösen, Selbstvertrauen stärken, neue Verhaltensmuster für Leistungssituationen verankern. Ergänzt das Marktbild für Hypnose als Selbsthilfe-Format gegen Auftrittsangst – relevantes Wettbewerbsumfeld für lampenfieber-besiegen.de als digitales Hypnose-Audioformat.",
+        source: "hypnause.de",
+        url: "https://hypnause.de/hypnose-therapie-frankfurt/aengste-phobien/hypnose-bei-pruefungsangst/",
+        date: "2026-04",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-21",
+      },
+      {
+        summary: "hypnosetherapie.pro: 'Hypnose bei Lernschwierigkeiten, Konzentrationsschwächen und Prüfungsangst' – Fachbeitrag zeigt, wie Hypnose unbewusste Lernblockaden, Konzentrationsprobleme und Prüfungsangst löst. Kinder und Jugendliche sprechen besonders gut an, oft sichtbare Verbesserungen nach wenigen Sitzungen. Wachsende Professionalisierung des Hypnose-Markts stärkt gesellschaftliche Akzeptanz – direktes Marktumfeld für lampenfieber-besiegen.de.",
+        source: "hypnosetherapie.pro",
+        url: "https://hypnosetherapie.pro/hypnose/themen/lernschwierigkeiten-konzentrationsstoerungen-lernen-schule/",
+        date: "2026-04",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-21",
+      },
       // Neu: 21.04.2026 (2)
       {
         summary: "noack-hypnose.de: 'Redeangst ist kein Lampenfieber: Aufklärung, Tipps, Hilfe' – Wichtige Differenzierung: Lampenfieber ist normal und funktional, Redeangst/Sprechangst ist eine übersteigerte, irrationale Angst die professionelle Intervention erfordert. Hypnotherapie im Unterbewusstsein verankert neue Verhaltensmuster für souveräne Auftrittssituationen. Aktuelle Inhaltslage unterstützt SEO-Positionierung von lampenfieber-besiegen.de.",
@@ -8878,6 +8953,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 21.04.2026 (4)
+      {
+        summary: "comparis.ch: 'Friedhofsgebühren: Preise für Bestattungen, Gräber und Urnennischen' – Schweizweiter Vergleich der Friedhofsgebühren nach Kanton und Gemeinde: Grosse Preisunterschiede zwischen städtischen (oft niedriger) und ländlichen Regionen. Preistransparenz ist der wichtigste Faktor bei Bestattungsentscheidungen – bestätigt Marktlücke für unabhängige Vergleichs- und Lead-Plattformen wie bestattungsplaner.ch als Schweizer Preiskompass für Bestattungsleistungen.",
+        source: "comparis.ch",
+        url: "https://www.comparis.ch/steuern/steuervergleich/gebuehren/friedhofsgebuehren",
+        date: "2026-04",
+        category: "Markt & Trends",
+        addedAt: "2026-04-21",
+      },
+      {
+        summary: "bestattungsinstitut.ch: 'Bestattungskosten Schweiz: Was Sie im Kanton Aargau wirklich zahlen' – Praxisnahe Kostenaufschlüsselung für Bestattungen im Kanton Aargau: Grundkosten, Friedhofsgebühren, Grabkosten und optionale Leistungen. Bestattungskosten variieren stark zwischen Gemeinden – Preistransparenz als zentraler USP von bestattungsplaner.ch als unabhängiger Online-Vergleichs- und Planungsplattform für die ganze Schweiz.",
+        source: "bestattungsinstitut.ch",
+        url: "https://www.bestattungsinstitut.ch/post/bestattungskosten-schweiz-was-sie-im-kanton-aargau-wirklich-zahlen",
+        date: "2026-04",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-21",
+      },
       // Neu: 21.04.2026 (2)
       {
         summary: "everlife.ch: 'Was kostet eine Kremation in der Schweiz?' – Kremation kostet in der Schweiz CHF 350–1.000; fast 90% der Schweizer bevorzugen Kremation gegenüber Erdbestattung. Gesamtbestattungskosten liegen typischerweise bei CHF 4.000–8.000. Während in den Niederlanden 85% der Bestattungen durch Vorsorge gedeckt sind, hat die Schweiz hier noch erhebliches Wachstumspotenzial – direktes Marktumfeld für bestattungsplaner.ch.",
