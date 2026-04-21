@@ -1540,7 +1540,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
-      // Neu: 21.04.2026 (7)
+      // Neu: 21.04.2026 (8)
+      {
+        summary: "prop.ninjatrader.com: 'NinjaTrader Prop – Offizielle Prop-Trading-Plattform' – NinjaTrader betreibt seit Oktober 2025 eine eigene Prop-Trading-Plattform unter prop.ninjatrader.com mit integriertem Dashboard für Account-Management, Performance-Tracking, Payout-Management und Community. TradingView-Integration ermöglicht direktes Trading von Charts aus. Partner-Prop-Firmen: Apex Trader Funding, Take Profit Trader, MyFunded Futures u.a. Direkter strategischer Eintritt von NinjaTrader ins Prop-Firm-Ökosystem – relevanter Infrastrukturkontext für algorithmische ES-Futures-Strategien auf mindrocket-trading.com.",
+        source: "NinjaTrader",
+        url: "https://prop.ninjatrader.com/",
+        date: "2026-03",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-21",
+      },
       {
         summary: "Morningstar / PR Newswire (30.01.2026): 'NinjaTrader Expands Into Europe to Support the Next Generation of Retail Futures Traders' – Offizielle Berichterstattung zum Europa-Markteinstieg: NinjaTrader startet via CySEC-reguliertem Broker (Payward Europe) zuerst in den Niederlanden und Deutschland; Frankreich und Italien folgen 2026. Prop-Evaluierungen bis $200k simulated capital verfügbar. Bestätigt NinjaTraders führende Rolle als Infrastruktur für Retail-Futures- und Algo-Trader in Europa – strategisch relevante Marktentwicklung für mindrocket-trading.com.",
         source: "Morningstar / PR Newswire",
@@ -3625,7 +3633,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
-      // Neu: 21.04.2026 (5)
+      // Neu: 21.04.2026 (6)
+      {
+        summary: "Gesundheitsförderung Schweiz: 'Nationale BGM-Tagung 2026' – Die jährliche Fachtagung für betriebliches Gesundheitsmanagement findet am 15. September 2026 statt und bringt HR-Fachleute, Führungskräfte und BGM-Experten aus der ganzen Schweiz zusammen. Schwerpunkte: mentale Gesundheit, Burnout-Prävention und Resilienz am Arbeitsplatz. Die wachsende Institutionalisierung von BGM in der Schweiz stärkt das Marktumfeld für Audio-Programme wie hypnovital® als niedrigschwellige Gesundheitslösung für Unternehmen und Einzelpersonen.",
+        source: "Gesundheitsförderung Schweiz",
+        url: "https://gesundheitsfoerderung.ch/veranstaltungen/betriebliches-gesundheitsmanagement-bgm",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-21",
+      },
       {
         summary: "natlawreview.com: 'Mental Health Trends for 2026: Experts See Shift Toward Faster, Self-Directed Solutions Like Hypnosis' – US-Fachleute beobachten 2026 einen starken Trend zu kürzerer, ergebnisorientierter Therapie, Selbstregulation als Kernkompetenz und abnehmender Stigmatisierung von Hypnose. Hypnose wird als evidenzbasierter, kollaborativer Prozess neu positioniert, der Zugang zu unbewussten Verhaltensmustern ermöglicht. Direkte internationale Bestätigung der Relevanz von Audio-Hypnoseprogrammen wie hypnovital® für selbstgesteuertes mentales Gesundheitsmanagement.",
         source: "natlawreview.com",
@@ -5686,7 +5702,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
-      // Neu: 21.04.2026 (3)
+      // Neu: 21.04.2026 (4)
+      {
+        summary: "mentalwings.ch: 'Hypnose bei sexuellen Störungen – Schweizer Hypnosetherapie' – Schweizer Hypnoseplattform beschreibt, wie Hypnosetherapie psychisch bedingte sexuelle Funktionsstörungen effektiv behandelt. Im hypnotischen Zustand ist das Unterbewusstsein besonders empfänglich für neue Verhaltensmuster; tief verwurzelte Ängste und Überzeugungen bei vorzeitigem Samenerguss können direkt und nachhaltig adressiert werden. Bestätigt wachsendes Angebot an Hypnosetherapie für sexuelle Gesundheit in der Schweiz – direktes Marktumfeld für das Audio-Hypnoseprogramm orgasmus-hinauszoegern.de.",
+        source: "mentalwings.ch",
+        url: "https://www.mentalwings.ch/therapie/sexuelle-stoerungen/",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-21",
+      },
       {
         summary: "unibee.de: 'Strategien zur Kontrolle des vorzeitigen Samenergusses' – Übersicht verhaltensorientierter und psychologischer Strategien für mehr Kontrolle: Atemübungen, Achtsamkeitstechniken, kognitive Umstrukturierung und Hypnose als Selbsthilfemethoden im Vergleich. Wachsendes Online-Informationsangebot rund um vorzeitigen Samenerguss bestätigt hohe Suchintensität und Nachfrage nach diskreten, niedrigschwelligen Selbsthilfelösungen – direktes Marktumfeld für das Audio-Hypnoseprogramm orgasmus-hinauszoegern.de.",
         source: "unibee.de",
@@ -8993,7 +9017,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
-      // Neu: 21.04.2026 (5)
+      // Neu: 21.04.2026 (6)
+      {
+        summary: "bestattungsportal.com: 'Digitale Bestattung 2026 – Trends und Möglichkeiten' – Das Portal analysiert das wachsende Segment digitaler Bestattungsplanung in der Schweiz und im DACH-Raum: Online-Traueranzeigen, digitale Kondolenzbücher, virtuelle Trauerfeiern und KI-gestützte Planung sind 2026 etablierte Angebote. Die Kremationsrate steigt weiter (ca. 80-90% in der Schweiz), während Erdbestattungen abnehmen. Wachsende gesellschaftliche Akzeptanz digitaler Bestattungsdienste bestätigt das strategische Potenzial für bestattungsplaner.ch als transparenten digitalen Lead-Vermittler für Schweizer Bestattungsunternehmen.",
+        source: "bestattungsportal.com",
+        url: "https://bestattungsportal.com/produkte/digitale-bestattung",
+        date: "2026",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-04-21",
+      },
       {
         summary: "SNV Schweizerische Normen-Vereinigung: 'Bestattung – Normierungsarbeit in der Bestattungsbranche' – Die SNV aktualisiert aktiv Branchenstandards für die Schweizer Bestattungsbranche, wobei Digitalisierung als wachsendes Normierungsfeld gilt. Steigende Institutionalisierung und Standardisierung der Bestattungsbranche stärkt das Marktumfeld für strukturierte, digitale Angebote wie bestattungsplaner.ch als transparenter Lead-Vermittler für Schweizer Bestattungsunternehmen.",
         source: "SNV Schweizerische Normen-Vereinigung",
