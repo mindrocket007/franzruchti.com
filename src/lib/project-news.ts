@@ -3617,7 +3617,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
-      // Neu: 21.04.2026 (4)
+      // Neu: 21.04.2026 (5)
+      {
+        summary: "natlawreview.com: 'Mental Health Trends for 2026: Experts See Shift Toward Faster, Self-Directed Solutions Like Hypnosis' – US-Fachleute beobachten 2026 einen starken Trend zu kürzerer, ergebnisorientierter Therapie, Selbstregulation als Kernkompetenz und abnehmender Stigmatisierung von Hypnose. Hypnose wird als evidenzbasierter, kollaborativer Prozess neu positioniert, der Zugang zu unbewussten Verhaltensmustern ermöglicht. Direkte internationale Bestätigung der Relevanz von Audio-Hypnoseprogrammen wie hypnovital® für selbstgesteuertes mentales Gesundheitsmanagement.",
+        source: "natlawreview.com",
+        url: "https://natlawreview.com/press-releases/mental-health-trends-2026-experts-see-shift-toward-faster-self-directed",
+        date: "2026-01",
+        category: "Hypnose & Coaching",
+        addedAt: "2026-04-21",
+      },
       {
         summary: "bgm-zentralschweiz.ch: 'BGM Frühstückstreffen 2026' – Regelmässiges Networking-Event für BGM-Fachleute in der Zentralschweiz: Austausch zu praxiserprobten BGM-Massnahmen, mentaler Gesundheit am Arbeitsplatz und innovativen Ansätzen wie Achtsamkeit und Stressreduktion. Lebendiges BGM-Ökosystem in der Innerschweiz bestätigt anhaltende Nachfrage nach betrieblichen Gesundheitsprogrammen – direktes Positionierungsumfeld für hypnovital®-Unternehmensangebote.",
         source: "bgm-zentralschweiz.ch",
