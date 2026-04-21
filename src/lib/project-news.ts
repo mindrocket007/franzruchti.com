@@ -1540,7 +1540,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
-      // Neu: 21.04.2026 (6)
+      // Neu: 21.04.2026 (7)
+      {
+        summary: "Morningstar / PR Newswire (30.01.2026): 'NinjaTrader Expands Into Europe to Support the Next Generation of Retail Futures Traders' – Offizielle Berichterstattung zum Europa-Markteinstieg: NinjaTrader startet via CySEC-reguliertem Broker (Payward Europe) zuerst in den Niederlanden und Deutschland; Frankreich und Italien folgen 2026. Prop-Evaluierungen bis $200k simulated capital verfügbar. Bestätigt NinjaTraders führende Rolle als Infrastruktur für Retail-Futures- und Algo-Trader in Europa – strategisch relevante Marktentwicklung für mindrocket-trading.com.",
+        source: "Morningstar / PR Newswire",
+        url: "https://www.morningstar.com/news/pr-newswire/20260130ny74844/ninjatrader-expands-into-europe-to-support-the-next-generation-of-retail-futures-traders",
+        date: "2026-01-30",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-21",
+      },
       {
         summary: "beinoptions.com: 'NinjaTrader Erfahrungen & Test 2026 – Futures-Broker Bewertung' – Deutschsprachige Vollanalyse der NinjaTrader-Plattform 2026: Stärken bei Algo-Trading, C#-basierter Strategieentwicklung und niedrigen Futures-Kommissionen. Europäischer Markteinstieg seit Januar 2026 via CySEC-reguliertem Broker. Über 2 Mio. Konten weltweit bestätigen Plattform-Reife. Relevante Marktwahrnehmung für Schweizer Trader mit algorithmischen ES-Futures-Strategien.",
         source: "beinoptions.com",
@@ -4899,7 +4907,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
-      // Neu: 21.04.2026 (2)
+      // Neu: 21.04.2026 (4)
+      {
+        summary: "she-preneur.de: 'Quartalsplanung [Anleitung] – So geht's ganz einfach in 5 Schritten' – Praxisleitfaden zur Quartalsplanung für Selbstständige und Unternehmerinnen: 90-Tage-Ziele strukturieren, Meilensteine setzen, regelmässige Reviews etablieren. Wachsendes deutschsprachiges Community-Interesse an strukturierten Kurzzeitplanungsmethoden bestätigt steigende Nachfrage nach spezialisierten Planungstools wie dem 12wy-planner als digitalem Umsetzungsbegleiter.",
+        source: "she-preneur.de",
+        url: "https://she-preneur.de/blog/quartalsplanung/",
+        date: "2026",
+        category: "Produktivität & Planung",
+        addedAt: "2026-04-21",
+      },
+      {
+        summary: "efficiencycrafter.de: 'The 12 Week Year – Buchrezension' – Detaillierte Besprechung des Grundlagenwerks von Brian Moran und Michael Lennington: 12-Wochen-Denken löst Aufschiebeverhalten, schafft klare Prioritäten und erhöht die Ausführungsrate im Vergleich zur Jahresplanung erheblich. Wachsende Buchrezensionskultur rund um die 12-Week-Year-Methode im DACH-Raum zeigt breite Methodenakzeptanz – bestätigt Nachfrage nach spezialisierten digitalen Umsetzungstools wie dem 12wy-planner.",
+        source: "efficiencycrafter.de",
+        url: "https://www.efficiencycrafter.de/buchrezension-the-12-week-year/",
+        date: "2026",
+        category: "12 Week Year Methode",
+        addedAt: "2026-04-21",
+      },
       {
         summary: "beyondtime.ai: 'The 12 Week Year: Why Quarterly Planning Beats Annual Goals' – Detaillierter Artikel zur 12-Week-Year-Methode von Brian Moran: Jahresziele in 12-Wochen-Zyklen aufteilen erzeugt Dringlichkeit und Fokus, die Jahrespläne typischerweise fehlt. Aktuelle Publikation stärkt die methodische Basis für den 12wy-planner als digitales Umsetzungstool.",
         source: "beyondtime.ai",
@@ -5662,7 +5686,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
-      // Neu: 21.04.2026 (2)
+      // Neu: 21.04.2026 (3)
+      {
+        summary: "unibee.de: 'Strategien zur Kontrolle des vorzeitigen Samenergusses' – Übersicht verhaltensorientierter und psychologischer Strategien für mehr Kontrolle: Atemübungen, Achtsamkeitstechniken, kognitive Umstrukturierung und Hypnose als Selbsthilfemethoden im Vergleich. Wachsendes Online-Informationsangebot rund um vorzeitigen Samenerguss bestätigt hohe Suchintensität und Nachfrage nach diskreten, niedrigschwelligen Selbsthilfelösungen – direktes Marktumfeld für das Audio-Hypnoseprogramm orgasmus-hinauszoegern.de.",
+        source: "unibee.de",
+        url: "https://unibee.de/strategien-zur-kontrolle-des-vorzeitigen-samenergusses/",
+        date: "2026",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-21",
+      },
       {
         summary: "DocMedicus Gesundheitslexikon: 'Vorzeitiger Samenerguss – Weitere Therapieoptionen' – Umfassende Übersicht nicht-medikamentöser Therapiemethoden: Verhaltenstechniken (Stopp-Start, Squeeze-Technik), Sexualtherapie, Paartherapie und psychologische Ansätze. Leistungsangst und Leistungsdruck sind die Hauptursache bei 20–30% der Männer von 18–59 Jahren. Bekräftigt den Markt für verhaltensorientierte und nicht-medikamentöse Selbsthilfelösungen.",
         source: "DocMedicus Gesundheitslexikon",
@@ -8961,7 +8993,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
-      // Neu: 21.04.2026 (4)
+      // Neu: 21.04.2026 (5)
+      {
+        summary: "SNV Schweizerische Normen-Vereinigung: 'Bestattung – Normierungsarbeit in der Bestattungsbranche' – Die SNV aktualisiert aktiv Branchenstandards für die Schweizer Bestattungsbranche, wobei Digitalisierung als wachsendes Normierungsfeld gilt. Steigende Institutionalisierung und Standardisierung der Bestattungsbranche stärkt das Marktumfeld für strukturierte, digitale Angebote wie bestattungsplaner.ch als transparenter Lead-Vermittler für Schweizer Bestattungsunternehmen.",
+        source: "SNV Schweizerische Normen-Vereinigung",
+        url: "https://www.snv.ch/de/news/news-details/bestattung.html",
+        date: "2026",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-21",
+      },
       {
         summary: "comparis.ch: 'Friedhofsgebühren: Preise für Bestattungen, Gräber und Urnennischen' – Schweizweiter Vergleich der Friedhofsgebühren nach Kanton und Gemeinde: Grosse Preisunterschiede zwischen städtischen (oft niedriger) und ländlichen Regionen. Preistransparenz ist der wichtigste Faktor bei Bestattungsentscheidungen – bestätigt Marktlücke für unabhängige Vergleichs- und Lead-Plattformen wie bestattungsplaner.ch als Schweizer Preiskompass für Bestattungsleistungen.",
         source: "comparis.ch",
