@@ -6357,7 +6357,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
-      // Neu: 21.04.2026 (5)
+      // Neu: 21.04.2026 (7)
+      {
+        summary: "ad-hoc-news.de: 'KI und VR besiegen die Angst vor dem Reden' – Neue digitale Technologien wie KI-gestützte Sprachcoaches und VR-Simulationen ermöglichen 2026 risikofreies Präsentationstraining in realistischen Umgebungen. Die Kombination aus bewährten Techniken (Hypnose, Atemübungen) und digitaler Innovation öffnet neue Märkte für niedrigschwellige Selbsthilfe-Produkte gegen Redeangst – direktes Marktumfeld für lampenfieber-besiegen.de.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/ki-und-vr-besiegen-die-angst-vor-dem-reden/68500034",
+        date: "2026-04",
+        category: "Psychologie & Forschung",
+        addedAt: "2026-04-21",
+      },
+      {
+        summary: "vr-coach.at: 'Hohe Wirksamkeit von VR-Expositionstherapie gegen soziale Angst vor öffentlichem Sprechen' – Cambridge-Studie belegt: 80% der Teilnehmer berichten nach VR-Expositionstherapie signifikante Reduktion ihrer Redeangst; Effekte vergleichbar mit klassischer kognitiver Verhaltenstherapie bei deutlich niedrigerer Hemmschwelle. Wissenschaftlicher Wirksamkeitsnachweis für digitale Interventionen bei Auftrittsangst stärkt die Marktpositionierung von lampenfieber-besiegen.de als kostengünstiges digitales Selbsthilfe-Format.",
+        source: "vr-coach.at",
+        url: "https://www.vr-coach.at/hohe-wirksamkeit-von-vr-expositionstherapie-gegen-soziale-angst-vor-oeffentlichem-sprechen/",
+        date: "2026-04",
+        category: "Psychologie & Forschung",
+        addedAt: "2026-04-21",
+      },
       {
         summary: "marleneholly.at: 'Prüfungsangst überwinden: mit Hypnose entspannt durch stressige Situationen' – Hypnose-Coach erklärt, wie Hypnose die innere Reaktion auf Leistungssituationen umprogrammiert, Stressreaktionen auflöst und Ressourcen wie Ruhe, Fokus und Selbstvertrauen verankert. Wachsende Content-Produktion rund um Hypnose gegen Angst im DACH-Raum bestätigt Marktakzeptanz für digitale Hypnose-Audioprodukte wie lampenfieber-besiegen.de.",
         source: "marleneholly.at",
@@ -7119,7 +7135,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
-      // Neu: 21.04.2026 (2)
+      // Neu: 21.04.2026 (3)
+      {
+        summary: "emerline.com: 'EdTech Trends 2026: The Tipping Point for AI & LXP' – 2026 gilt als Wendepunkt für KI im E-Learning: Adaptive Lernpfade, Micro-Credentials und messbare Lernoutcomes werden zum Standard. Learning Experience Platforms (LXPs) integrieren KI-Coaching, automatisierte Skills-Assessments und datengetriebene Empfehlungen. learnfluencer.ch kann als kuratierte Schweizer Stimme in diesem globalen Diskurs über Lernkompetenz und KI-Weiterbildung Sichtbarkeit und Thought-Leadership-Position aufbauen.",
+        source: "emerline.com",
+        url: "https://emerline.com/blog/edtech-trends",
+        date: "2026-02",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-21",
+      },
       {
         summary: "cegos-integrata.de: 'Die wichtigsten E-Learning-Trends 2026' – 82,5% der Unternehmen sehen in KI und adaptiven Lernsystemen den grössten Hebel für Personalentwicklung; 80,3% nutzen bereits hybride Lernmodelle. Microlearning (3–5 Min. Einheiten), AR/VR-Training und Learning in the flow of work (via Teams/Slack) prägen 2026. Direktes Trendumfeld für learnfluencer.ch als Thought-Leadership-Plattform für modernes Lernen.",
         source: "cegos-integrata.de",
