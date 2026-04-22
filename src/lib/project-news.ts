@@ -26,6 +26,23 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 22.04.2026 (2)
+      {
+        summary: "netzwoche.ch: 'Das sind die Löhne der ICT-Branche 2026' – Einstiegssaläre für ICT-Fachkräfte bleiben 2026 auf hohem Niveau: EFZ-Absolventen ca. CHF 5.000/Mt., Bachelor-Absolventen CHF 6.300/Mt., Master-Absolventen CHF 6.900/Mt. In Nischenbereichen wie Cybersecurity und AI-Engineering herrscht ein Bieterkrieg um qualifizierte Fachkräfte; klassische Softwareentwicklung stabilisiert sich auf hohem Niveau. Strukturell hohe Saläre verdeutlichen die anhaltende Nachfrage nach ICT-Qualifikationen – direktes Wachstumsumfeld für Zertifizierungsangebote der SIZ AG.",
+        source: "netzwoche.ch",
+        url: "https://www.netzwoche.ch/news/2026-04-07/das-sind-die-loehne-der-ict-branche-2026",
+        date: "2026-04-07",
+        category: "Arbeitsmarkt & IT",
+        addedAt: "2026-04-22",
+      },
+      {
+        summary: "insidenews.ch: 'Was der SWICO ICT INDEX Q2 2026 aufzeigt' – Der Swico ICT Index sinkt im Q2 2026 um 7,7 auf 106,2 Punkte; die Schweizer ICT-Branche bleibt im Wachstumsbereich, verliert aber an Dynamik. Software-Segment führt weiterhin; IT-Technology-Segment fällt unter die Wachstumsschwelle. KI wird strategischer Faktor, doch mangelnde Skills für konkrete Anwendungsfälle bremsen die Implementierung – direkter Qualifizierungsbedarf für ICT-Bildungspartner und Prüfungsorganisationen wie die SIZ AG.",
+        source: "insidenews.ch",
+        url: "https://www.insidenews.ch/was-der-swico-ict-index-q2-2026-aufzeigt/",
+        date: "2026-04",
+        category: "Wirtschaft & Digitalisierung",
+        addedAt: "2026-04-22",
+      },
       // Neu: 21.04.2026 (2)
       {
         summary: "SIZ AG: Newsflash März 2026 – KI-Regelungen für Prüfungen ab 30.03.2026. Das Hoch- und Runterladen von Prüfungsdateien in KI-Tools ist generell untersagt; neue KI-basierte Office-Add-Ins gelten als unerlaubte Hilfsmittel. Die Kenntnisnahme der neuen KI-Bestimmungen wird neu vor jeder Exam-Modulprüfung verbindlich bestätigt. SIZ AG stärkt damit die Integrität ihrer handlungsorientierten Prüfungen im KI-Zeitalter.",
@@ -3034,6 +3051,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 22.04.2026 (1)
+      {
+        summary: "industryresearch.biz: 'Personal Development Market Size Forecast – CAGR 6,93%' – Der globale Persönlichkeitsentwicklungsmarkt erreicht 2026 ein Volumen von USD 66,99 Mrd. und soll bis 2035 auf USD 122,4 Mrd. wachsen. Steigende Nachfrage nach Skill-Entwicklung, Leadership-Coaching und Mental-Wellness-Lösungen treibt das Wachstum; über 70% der Trainings-Sessions werden bis 2030 über digitale Plattformen erwartet. Bestätigt das globale Marktpotenzial für praxisnahe digitale Selbsthilfe-Formate wie mindtools.ch.",
+        source: "industryresearch.biz",
+        url: "https://www.industryresearch.biz/market-reports/personal-development-market-104717",
+        date: "2026",
+        category: "Buchmarkt & Publishing",
+        addedAt: "2026-04-22",
+      },
       // Neu: 21.04.2026 (2)
       {
         summary: "coachingausbildungen.ch: 'Coaching-Markt Schweiz – Trends 2025/2026' – Der Schweizer Coaching-Markt 2026 konsolidiert sich: Angebote werden selektiver, Qualitätsansprüche steigen. Hybride Formate (Präsenz + Online) wachsen; organisationale Entwicklung gewinnt gegenüber rein individuellen Angeboten an Gewicht. Marktreifung schafft Raum für klar positionierte digitale Selbsthilfe-Formate wie mindtools.ch.",
@@ -7135,6 +7161,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 22.04.2026 (2)
+      {
+        summary: "netzwoche.ch: 'Das sind die Löhne der ICT-Branche 2026' – ICT-Gehälter in der Schweiz steigen 2026 tendenziell; Bieterkrieg um KI- und Cybersecurity-Spezialisten. EFZ-Einsteiger verdienen ca. CHF 5.000/Mt., Bachelor-Absolventen CHF 6.300/Mt. Hohe Lohnprämien für KI-Kompetenzen bestätigen den Weiterbildungsbedarf und unterstreichen die Relevanz von learnfluencer.ch als Plattform für Lernkompetenz und KI-Weiterbildung in der Schweiz.",
+        source: "netzwoche.ch",
+        url: "https://www.netzwoche.ch/news/2026-04-07/das-sind-die-loehne-der-ict-branche-2026",
+        date: "2026-04-07",
+        category: "Weiterbildung Schweiz",
+        addedAt: "2026-04-22",
+      },
+      {
+        summary: "moneycab.com: 'Swico ICT Index Q2 2026 – Der Optimismus lässt etwas nach' – Index sinkt um 7,7 auf 106,2 Punkte; Schweizer ICT-Branche bleibt im Wachstumsbereich, KI avanciert zum strategischen Treiber, doch fehlende Skills bremsen Umsetzung. Direkte Bestätigung des wachsenden Weiterbildungsbedarfs im KI-Bereich – Kernthema für learnfluencer.ch als Thought-Leadership-Plattform für Lernkompetenz und KI-Weiterbildung Schweiz.",
+        source: "moneycab.com",
+        url: "https://www.moneycab.com/it/swico-ict-index-q2-2026-der-optimismus-laesst-etwas-nach/",
+        date: "2026-04",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-22",
+      },
       // Neu: 21.04.2026 (3)
       {
         summary: "emerline.com: 'EdTech Trends 2026: The Tipping Point for AI & LXP' – 2026 gilt als Wendepunkt für KI im E-Learning: Adaptive Lernpfade, Micro-Credentials und messbare Lernoutcomes werden zum Standard. Learning Experience Platforms (LXPs) integrieren KI-Coaching, automatisierte Skills-Assessments und datengetriebene Empfehlungen. learnfluencer.ch kann als kuratierte Schweizer Stimme in diesem globalen Diskurs über Lernkompetenz und KI-Weiterbildung Sichtbarkeit und Thought-Leadership-Position aufbauen.",
