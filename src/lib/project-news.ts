@@ -3117,7 +3117,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
-      // Neu: 22.04.2026 (7)
+      // Neu: 22.04.2026 (10)
+      {
+        summary: "favormentalhealthservices.com (7. Januar 2026): 'Mental Health Trends 2026: What's Changing Faster Than Our Coping Skills' – Sieben zentrale Mental-Health-Trends für 2026: Präventive Selbstfürsorge statt Krisenreaktion, digitale Hygiene als klinische Notwendigkeit, somatische Methoden (EMDR, Atemwork), Hybrid-Versorgungsmodelle und 'Micro-Boundaries' als praktische Self-Help-Werkzeuge. Der Trend zu konkreten, alltagsintegrierten mentalen Werkzeugen bestätigt die Positionierung von mindtools.ch als praxisorientierte Werkzeugkiste.",
+        source: "favormentalhealthservices.com",
+        url: "https://www.favormentalhealthservices.com/post/mental-health-trends-2026-what-s-changing-faster-than-our-coping-skills",
+        date: "2026-01-07",
+        category: "Mental Health",
+        addedAt: "2026-04-22",
+      },
+      {
+        summary: "meetglimpse.com (Januar 2026): 'Top 12 Mental Health Trends of 2026' – Datengetriebene Trendanalyse zeigt: Online-Therapie wächst stark (Lifestance: +22%, Talkiatry: +23%), Mental-Health-Apps für spezifische Zielgruppen boomen (ADHD-Apps: +6%, Ahead App: +27%), und Peer-Support-Programme am Arbeitsplatz steigen um +40%. Der wachsende digitale Mental-Health-Markt schafft ein günstiges Umfeld für fokussierte Self-Help-Produkte wie mindtools.ch.",
+        source: "meetglimpse.com",
+        url: "https://meetglimpse.com/trends/mental-health-trends/",
+        date: "2026-01",
+        category: "Mental Health",
+        addedAt: "2026-04-22",
+      },
+      {
+        summary: "discovergermany.com (Oktober 2025): 'Wellness Trends of 2026 – Navigating a New Era of Health' – Mental Fitness als alltägliche Priorität: Meditationsstudios, Neurofeedback-Lounges und Brain Gyms entstehen weltweit; Biofeedback-Wearables ermöglichen Echtzeit-Stressüberwachung; KI-gestützte Apps ersetzen elitäres Schlaf-Coaching. Der Megatrend 'Mental Fitness as everyday priority' bestätigt die wachsende Nachfrage nach zugänglichen, praxisorientierten mentalen Werkzeugen – Kernpositionierung von mindtools.ch.",
+        source: "discovergermany.com",
+        url: "https://www.discovergermany.com/wellness-trends-of-2026-navigating-a-new-era-of-health/",
+        date: "2025-10",
+        category: "Mental Health",
+        addedAt: "2026-04-22",
+      },
       {
         summary: "prevention.ch (19. Februar 2026): Vernetzungsevent in Bern mit rund 100 Fachpersonen zur Rolle der Digitalisierung in der Prävention und Förderung psychischer Gesundheit. Dabei wurden über 20 Projekte, Apps und Kampagnen für digitale Selbsthilfe-Tools für verschiedene Zielgruppen vorgestellt. Der Schweizer Markt für mentale Werkzeuge und digitale Persönlichkeitsentwicklung wird aktiv durch staatliche Initiativen gepusht – genau das Segment, in dem mindtools.ch positioniert ist.",
         source: "prevention.ch",
@@ -5956,7 +5980,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
-      // Neu: 22.04.2026 (7)
+      // Neu: 22.04.2026 (9)
+      {
+        summary: "EurekAlert / EAU26 (14. März 2026): Die CLIMACS-Studie, präsentiert am Kongress der Europäischen Urologengesellschaft (EAU26) in London, ist die erste klinische Studie zu einer digitalen Heimtherapie gegen vorzeitigen Samenerguss. Die Melonga-App half 22% der Teilnehmer, den vorzeitigen Samenerguss nach 12 Wochen vollständig zu überwinden; die durchschnittliche Verzögerungszeit verdoppelte sich von 61 auf 125 Sekunden. Die Studie validiert App-basierte, nicht-pharmakologische Ansätze – exakt das Marktumfeld, in dem sich orgasmus-hinauszoegern.de mit seinem Hypnose-Audio positioniert.",
+        source: "eurekalert.org",
+        url: "https://www.eurekalert.org/news-releases/1119592",
+        date: "2026-03-14",
+        category: "Digital Health",
+        addedAt: "2026-04-22",
+      },
+      {
+        summary: "Springer Nature / Gynäkologische Endokrinologie (2025/2026): Wissenschaftlicher Review-Artikel zu digitalen Gesundheitsanwendungen (DiGAs) bei sexuellen Funktionsstörungen. Der Artikel analysiert therapeutische Potenziale digitaler Selbsthilfeangebote und zeigt, dass kognitive Verhaltenstherapie und Achtsamkeitsübungen in digitalem Format klinisch wirksam sind. Die wissenschaftliche Anerkennung digitaler Sexualtherapie stärkt die Glaubwürdigkeit und Marktakzeptanz von Audio-basierten Selbsthilfeprodukten wie dem Hypnose-Audio auf orgasmus-hinauszoegern.de.",
+        source: "link.springer.com",
+        url: "https://link.springer.com/article/10.1007/s10304-025-00645-x",
+        date: "2026-04",
+        category: "Digital Health",
+        addedAt: "2026-04-22",
+      },
       {
         summary: "looklive.at (April 2026): Artikel über die 8 Sex-Trends 2026 – interaktive Audio-Formate gewinnen stark an Bedeutung: 'personalisierte Soundscapes, wählbare Story-Verläufe, Stimmen, die auf Atem oder Tempo reagieren'. Online-Therapie für sexuelle Gesundheit und Intimacy Coaching werden als Mainstream-Trends genannt. Der bewusste, achtsamkeitsbasierte Umgang mit Sexualität wird zum gesellschaftlichen Trend. Für orgasmus-hinauszoegern.de: Der Markt bewegt sich exakt in Richtung Audio-basierter, selbstgestützter Sexualgesundheitslösungen.",
         source: "looklive.at",
@@ -6668,7 +6708,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
-      // Neu: 22.04.2026 (6)
+      // Neu: 22.04.2026 (8)
+      {
+        summary: "noack-hypnose.de (2026): Ausführliche Erklärung des Unterschieds zwischen Lampenfieber und Redeangst mit Fokus auf therapeutische Ansätze. Der Artikel betont, dass Redeangst (im Gegensatz zu normalem Lampenfieber) eine behandlungsbedürftige Angststörung ist, die mit Hypnotherapie gezielt adressiert werden kann – oft bereits nach wenigen Sitzungen. Die klinische Einordnung von Redeangst als behandlungsbedürftige Störung stärkt die Nachfrage nach professionellen Hypnose-basierten Lösungen wie dem Audio-Programm auf lampenfieber-besiegen.de.",
+        source: "noack-hypnose.de",
+        url: "https://www.noack-hypnose.de/redeangst/",
+        date: "2026-04",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-22",
+      },
+      {
+        summary: "ottonova.de (2026): Ratgeber zu Lampenfieber-Behandlung in der Privatarztpraxis. Laut Artikel leiden bis zu 80% aller Menschen unter Lampenfieber; für einen Teil entwickelt sich daraus eine behandlungsbedürftige Redeangst. Als bewährte Methoden werden Hypnose, kognitive Verhaltenstherapie und Entspannungstechniken genannt – verfügbar sowohl in Präsenz als auch als digitale Selbsthilfe. Die breite gesellschaftliche Prävalenz von Lampenfieber (80%) und die wachsende Akzeptanz digitaler Selbsthilfeangebote bilden den Wachstumsmarkt für lampenfieber-besiegen.de.",
+        source: "ottonova.de",
+        url: "https://www.ottonova.de/gesund-leben/mentales-training/lampenfieber-behandeln",
+        date: "2026-04",
+        category: "Psychologie & Forschung",
+        addedAt: "2026-04-22",
+      },
       {
         summary: "gedankenportal.de (18. April 2026): Umfassender Ratgeber zu Hypnose gegen Ängste, der explizit Lampenfieber, Prüfungsangst und Auftrittsangst behandelt. Der Artikel betont, dass Hypnotherapie seit 2006 vom Wissenschaftlichen Beirat für Psychotherapie in 11 von 12 Anwendungsgebieten anerkannt ist und typischerweise nach 3–4 Sitzungen zu deutlichen Verbesserungen führt. Der Artikel bestätigt die wissenschaftliche Basis von Hypnose-Angeboten gegen Bühnenangst und erhöht die Nachfrage nach Selbsthypnose-Audioangeboten wie jenem zu €29.90.",
         source: "gedankenportal.de",
@@ -8666,7 +8722,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
-      // Neu: 22.04.2026 (6)
+      // Neu: 22.04.2026 (8)
+      {
+        summary: "technologychecker.io (2026): Umfassende MarTech-Statistiken 2026: Der globale MarTech-Markt überschreitet erstmals die Billion-Dollar-Grenze (USD 1.03 Billion). 15.384 MarTech-Lösungen sind aktuell verfügbar (2011: 150). KI-Agenten und autonome Workflows sind der #1-Trend (27% der Marketer). Dieser explosive Markt schafft ein Orientierungsproblem für KMU – interaktive Planungs-Tools wie der Marketingkonzept-Generator auf learnfluencer.ch werden zum unverzichtbaren Einstiegspunkt in strukturierte Marketingstrategie.",
+        source: "technologychecker.io",
+        url: "https://technologychecker.io/blog/marketing-technology-statistics-martech",
+        date: "2026-04",
+        category: "MarTech & Trends",
+        addedAt: "2026-04-22",
+      },
+      {
+        summary: "aivie.ch (2026): Schweizer Marketing-Automation-Anbieter Aivie analysiert die kmu.digital-Förderung 2026 und zeigt: Selbst mit Förderangeboten scheitern viele KMU an der strategischen Vorarbeit – ein strukturiertes Marketingkonzept ist Voraussetzung für erfolgreiche Automation. Der Förderbedarf und die strategische Lücke bei KMU im DACH-Raum unterstreichen den Bedarf an zugänglichen Marketingkonzept-Tools wie dem auf learnfluencer.ch.",
+        source: "aivie.ch",
+        url: "https://aivie.ch/marketing-automation-kmu-digital-forderung/",
+        date: "2026-04",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-22",
+      },
       {
         summary: "berger.team (19. April 2026): Die wichtigsten Marketing-Trends 2026 für KMU – klare Systeme sind wichtiger als trendige Kanäle. Kernthemen: eigene Website als zentrales Asset, veränderte Suchgewohnheiten durch KI-Overviews (fast 60% der Suchen enden ohne Klick), lokale Sichtbarkeit und messbare Ergebnisse. Dies unterstreicht die Relevanz eines strukturierten Marketingkonzepts – genau das, was learnfluencer.ch/tools/marketingkonzept bietet.",
         source: "berger.team",
@@ -9515,7 +9587,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
-      // Neu: 22.04.2026 (7)
+      // Neu: 22.04.2026 (9)
+      {
+        summary: "everlife.ch (2026): In der Schweiz sind aktuell nur ca. 10% der Sterbefälle durch einen Vorsorgevertrag abgedeckt – verglichen mit 85% in den Niederlanden und 25% in Frankreich. Everlife.ch beleuchtet dieses enorme Wachstumspotenzial im Schweizer Markt für digitale Bestattungsvorsorge und bietet flexible Online-Ratenzahlung über bis zu 25 Jahre. Das tiefe Vorsorgepenetrationsrate in der Schweiz zeigt das grosse Marktpotenzial für Online-Portale wie bestattungsplaner.ch, die als erster digitaler Kontaktpunkt für Vorsorgeinteressierte dienen.",
+        source: "everlife.ch",
+        url: "https://everlife.ch/de/finanzierung-ihrer-bestattungsvorsorge/",
+        date: "2026-04",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-04-22",
+      },
+      {
+        summary: "wolky.ch (2026): Analyse zu Tod und Recht in der Schweiz – Bestattungsrecht ist kantonal geregelt, was zu erheblichen regionalen Unterschieden bei Vorschriften, Kosten und Bestattungsformen führt. Der Artikel zeigt auf, dass viele Schweizer die rechtlichen Rahmenbedingungen nicht kennen und sich deshalb frühzeitig informieren sollten. Die Unübersichtlichkeit des kantonalen Bestattungsrechts verstärkt den Bedarf nach neutralen Informations- und Planungsportalen wie bestattungsplaner.ch.",
+        source: "wolky.ch",
+        url: "https://www.wolky.ch/de/blog/tod-und-recht-wie-gesetze-unser-verhaltnis-zum-lebensende-pragen",
+        date: "2026-04",
+        category: "Recht & Regelungen",
+        addedAt: "2026-04-22",
+      },
       {
         summary: "ekz-crosstour.ch (8. April 2026): Globale Marktforschungsdaten zum Bestattungs- und Friedhofsdienstleistungsmarkt bis 2033. Der Markt wächst durch steigende Nachfrage, demografischen Wandel und zunehmende Digitalisierung. Analysiert werden Segmente wie Kremation und Friedhofsbetrieb sowie private vs. öffentliche Anbieter in Europa, Nordamerika und Asien-Pazifik. Das Wachstum des Marktes bietet Online-Plattformen wie bestattungsplaner.ch ein ideales Umfeld für die digitale Lead-Vermittlung.",
         source: "ekz-crosstour.ch",
