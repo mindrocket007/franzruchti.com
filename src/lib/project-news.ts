@@ -5152,7 +5152,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
-      // Neu: 22.04.2026 (6)
+      // Neu: 22.04.2026 (8)
+      {
+        summary: "blog.logrocket.com: 'The 12 Week Year Approach to Productivity and Planning' – Detaillierter Produktmanagement-Artikel erklärt, wie die 12-Week-Year-Methode mit Lead- und Lag-Indikatoren, Weekly-Accountability-Meetings und Strategic Blocks konkret in SaaS-Teams eingesetzt wird. 65% der Teams tracken ihre OKRs noch immer in Excel/Google Sheets – eine direkte Marktlücke für dedizierte Tools wie den 12wy-planner, der diesen Prozess digital strukturiert.",
+        source: "blog.logrocket.com",
+        url: "https://blog.logrocket.com/product-management/12-week-year-approach/",
+        date: "2026",
+        category: "SaaS & Tools",
+        addedAt: "2026-04-22",
+      },
+      {
+        summary: "okrstool.com: '25 Best OKR Software for 2026' – Umfassender Test von 25 OKR-Plattformen zeigt: 65% der Früh-Teams tracken Ziele noch in Excel/Sheets; führende Tools kosten $49+/Monat. Kein getestetes Tool ist explizit auf die 12-Week-Year-Methode zugeschnitten – die Nische des 12wy-planners als dediziertes, methodenspezifisches Werkzeug bleibt unbesetzt und klar abgrenzbar vom generischen OKR-Markt.",
+        source: "okrstool.com",
+        url: "https://www.okrstool.com/blog/best-okr-software",
+        date: "2026",
+        category: "Zielsetzung & OKR",
+        addedAt: "2026-04-22",
+      },
       {
         summary: "Fortune Business Insights (6. April 2026): Der globale Markt für Produktivitäts-Apps wurde für 2026 auf USD 14,46 Milliarden bewertet, mit einem CAGR von 9,94% bis 2034 (Ziel: USD 30,85 Mrd.). Haupttreiber: Remote Work, KI-Integration in Planungstools und mobile-first-Nutzung. Die schnellstwachsende Kategorie ist 'Business & Office', getrieben durch den Bedarf an digitalen Kollaborations- und Zielsetzungs-Tools. Für den 12wy-planner: Der TAM für Quarterly-Planning-SaaS wächst strukturell und bietet erhebliches Skalierungspotenzial.",
         source: "fortunebusinessinsights.com",
@@ -7551,7 +7567,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
-      // Neu: 22.04.2026 (8)
+      // Neu: 22.04.2026 (10)
+      {
+        summary: "jobs.ch (2. Januar 2026): 'Arbeitstrends 2026: KI, Soft Skills und mehr Menschlichkeit' – AI Literacy wird zur Grundvoraussetzung für alle Schweizer Arbeitnehmenden: verstehen und reflektiert anwenden (Prompts formulieren, KI-Outputs bewerten, Datenschutz). Laut OECD verändern sich bis 2026 rund 40% aller Jobs; 90% der Unternehmen planen fundamentale Neuaufstellung ihrer Lernkultur. Direkte Nachfragebestätigung für learnfluencer.ch als Thought-Leadership-Plattform zu KI-Kompetenz und Lernkultur in der Schweiz.",
+        source: "jobs.ch",
+        url: "https://www.jobs.ch/de/job-coach/arbeitstrends/",
+        date: "2026-01-02",
+        category: "Weiterbildung Schweiz",
+        addedAt: "2026-04-22",
+      },
+      {
+        summary: "ad-hoc-news.de (13. Februar 2026): 'KI und Soft Skills revolutionieren Weiterbildung 2026' – KI agiert als persönlicher Lern-Coach mit individualisierten Lernpfaden; Soft Skills wie Empathie und authentische Kommunikation gewinnen in hybriden Teams an Bedeutung; Microlearning-Integration in den Arbeitsalltag steigt; Unternehmen messen Weiterbildungserfolg an messbaren Leistungsverbesserungen statt Teilnahmequoten. Inhaltlich präzise Bestätigung der Themenfelder von learnfluencer.ch.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/ki-und-soft-skills-revolutionieren-weiterbildung-2026/68577441",
+        date: "2026-02-13",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-22",
+      },
       {
         summary: "spoton.ch (6. Februar 2026): Franz Ruchti trat als Sprecher beim SPOT ON Webinar 'Mitarbeiterentwicklung im Facility Management' auf, gemeinsam mit Ricarda Will (Head of Education & Development, Vebego AG). Das Webinar zeigte, wie die Vebego AG mit 6.000 Mitarbeitenden digitales Lernen und strukturierte Lernpfade einsetzt. Ruchti positionierte sich dabei explizit als 'Learnfluencer' und Sales Manager bei easylearn schweiz ag – ein direkter öffentlicher Auftritt, der die Thought-Leadership-Marke learnfluencer.ch stärkt.",
         source: "spoton.ch",
