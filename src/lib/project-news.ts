@@ -1208,6 +1208,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
+      // Neu: 22.04.2026 (2)
+      {
+        summary: "keelearning.de: 'E-Learning Trends 2026: So lernen Unternehmen morgen' – KI-gestützte Personalisierung, hybride Lernformate und messbare Lernoutcomes prägen 2026 das Corporate Learning. 82,5% der Unternehmen sehen KI als grössten Hebel für Personalentwicklung; 80,3% nutzen hybride Modelle. Wachsende Komplexität und Individualisierung von Lernangeboten stärkt die Nachfrage nach Online-Coaching-Programmen für persönliche Entwicklung – direktes Marktumfeld für Mind Rocket GmbH.",
+        source: "keelearning.de",
+        url: "https://www.keelearning.de/blog/e-learning-trends-2026/",
+        date: "2026",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-04-22",
+      },
+      {
+        summary: "checkpoint-elearning.de: '2026: Was Lernen im Unternehmen jetzt prägt' – Skills werden zur strategischen Währung der Personalentwicklung; Micro Credentials, KI-Coaching und Learning in the flow of work prägen 2026. Erfolgsmessung richtet sich an tatsächlichen Verhaltensänderungen statt Abschlussquoten. Steigende Bedeutung messbarer persönlicher Entwicklung unterstreicht das Marktpotenzial für praxisorientierte Coaching-Programme wie jene von Mind Rocket GmbH.",
+        source: "checkpoint-elearning.de",
+        url: "https://www.checkpoint-elearning.de/corporate-elearning/2026-was-lernen-im-unternehmen-jetzt-praegt",
+        date: "2026",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-04-22",
+      },
       // Neu: 21.04.2026 (2)
       {
         summary: "BFH Wirtschaft: 'CAS Persönlichkeitsentwicklung' – Die Berner Fachhochschule bietet einen CAS-Lehrgang zu Persönlichkeitsentwicklung an, der Selbstmanagement, Selbstreflexion und persönliche Kompetenzerweiterung vereint. Das wachsende institutionelle Weiterbildungsangebot im Bereich Persönlichkeitsentwicklung in der Schweiz spiegelt anhaltend hohe Nachfrage wider – direktes Marktumfeld für Online-Programme von Mind Rocket GmbH.",
@@ -4983,6 +5000,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 22.04.2026 (2)
+      {
+        summary: "12week-breakthrough.com: 'The Complete 12-Week Year Implementation Guide for 2026' – Umfassende Implementierungsanleitung für die 12-Week-Year-Methode 2026: Jahrziele in 12-Wochen-Zyklen unterteilen, Weekly Scorecard und Weekly Accountability Meetings einführen, Burnout durch übermässige Selbstdisziplin vermeiden. Wachsende methodische Aufbereitung der 12-Week-Year-Methode bestätigt anhaltend starkes Interesse an Kurzzeitplanungstools – direktes Wachstumsumfeld für den 12wy-planner als digitales Umsetzungstool.",
+        source: "12week-breakthrough.com",
+        url: "https://12week-breakthrough.com/implementation-guide-2026-12-week-year/",
+        date: "2026",
+        category: "12 Week Year Methode",
+        addedAt: "2026-04-22",
+      },
+      {
+        summary: "northlyapp.com: 'OKR-Methode: Der komplette Leitfaden 2026' – Detaillierter Überblick zur OKR-Methode 2026: Objectives setzen, Key Results definieren, quartalsweises Tracking und Check-ins etablieren. Verbindung von OKR und 12-Wochen-Planung als komplementäre Ansätze für Fokus und Ausführungsqualität gewinnt in Produktivitätscommunities an Bedeutung – bestätigt Markt für spezialisierte Planungstools wie den 12wy-planner.",
+        source: "northlyapp.com",
+        url: "https://northlyapp.com/de/blog/okr-methode-komplett-leitfaden/",
+        date: "2026",
+        category: "Zielsetzung & OKR",
+        addedAt: "2026-04-22",
+      },
       // Neu: 21.04.2026 (4)
       {
         summary: "she-preneur.de: 'Quartalsplanung [Anleitung] – So geht's ganz einfach in 5 Schritten' – Praxisleitfaden zur Quartalsplanung für Selbstständige und Unternehmerinnen: 90-Tage-Ziele strukturieren, Meilensteine setzen, regelmässige Reviews etablieren. Wachsendes deutschsprachiges Community-Interesse an strukturierten Kurzzeitplanungsmethoden bestätigt steigende Nachfrage nach spezialisierten Planungstools wie dem 12wy-planner als digitalem Umsetzungsbegleiter.",
@@ -5762,6 +5796,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 22.04.2026 (2)
+      {
+        summary: "gesundheit.gv.at: 'Vorzeitiger Samenerguss – Ejaculatio praecox | Gesundheitsportal' – Österreichisches Gesundheitsportal (2026) fasst aktuelle Behandlungsoptionen bei Ejaculatio praecox zusammen: Verhaltenstechniken, Psychotherapie, Sexualtherapie und medikamentöse Therapie. 5–15% aller Männer sind betroffen; diskrete, niedrigschwellige Selbsthilfe-Formate haben hohe Nachfrage. Stärkt den Markt für nicht-medikamentöse Alternativen wie das Audio-Hypnoseprogramm orgasmus-hinauszoegern.de.",
+        source: "gesundheit.gv.at",
+        url: "https://www.gesundheit.gv.at/krankheiten/sexualorgane/sexuelle-funktionsstoerungen/vorzeitiger-samenerguss.html",
+        date: "2026",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-22",
+      },
+      {
+        summary: "DEXIMED – Deutsche Experteninformation Medizin: 'Vorzeitiger Samenerguss (Ejaculatio praecox)' – Medizinische Fachquelle fasst evidenzbasierte Behandlungsoptionen zusammen: Verhaltenstraining (Stopp-Start, Squeeze), Psychotherapie und kombinierte Therapieansätze als erste Wahl vor Pharmakotherapie. Wachsende Verfügbarkeit seriöser, nicht-medikamentöser Informationen zu Ejaculatio praecox senkt den Leidensdruck und erhöht die Kaufbereitschaft für diskrete Selbsthilfeprodukte wie orgasmus-hinauszoegern.de.",
+        source: "DEXIMED",
+        url: "https://deximed.de/home/klinische-themen/maennergesundheit/patienteninformationen/sexual-und-fortpflanzungsstoerungen/vorzeitiger-samenerguss-ejaculatio-praecox",
+        date: "2026",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-22",
+      },
       // Neu: 21.04.2026 (4)
       {
         summary: "mentalwings.ch: 'Hypnose bei sexuellen Störungen – Schweizer Hypnosetherapie' – Schweizer Hypnoseplattform beschreibt, wie Hypnosetherapie psychisch bedingte sexuelle Funktionsstörungen effektiv behandelt. Im hypnotischen Zustand ist das Unterbewusstsein besonders empfänglich für neue Verhaltensmuster; tief verwurzelte Ängste und Überzeugungen bei vorzeitigem Samenerguss können direkt und nachhaltig adressiert werden. Bestätigt wachsendes Angebot an Hypnosetherapie für sexuelle Gesundheit in der Schweiz – direktes Marktumfeld für das Audio-Hypnoseprogramm orgasmus-hinauszoegern.de.",
@@ -6417,6 +6468,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 22.04.2026 (2)
+      {
+        summary: "findyourway.ch: 'Hypnose bei Auftrittsangst und Lampenfieber' – Schweizer Hypnose-Coaching-Plattform erklärt, wie Hypnose Auftrittsangst und Lampenfieber effektiv behandelt: Negative Glaubenssätze auflösen, Ressourcen verankern, innere Sicherheit für Auftrittssituationen stärken. Wachsendes Schweizer Angebot an Hypnose-Coaching für Auftrittsangst bestätigt steigende Marktakzeptanz – direktes Wettbewerbsumfeld und Marktbestätigung für lampenfieber-besiegen.de als digitales Hypnose-Audioformat.",
+        source: "findyourway.ch",
+        url: "https://findyourway.ch/hypnose-bei-auftrittsangst-lampenfieber/",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-22",
+      },
+      {
+        summary: "wagner-empowerment.de: 'Online-Seminar Redeangst überwinden – Coaching & Mentaltraining' – Deutschsprachiges Präsenz- und Online-Seminar 'Schluss mit Lampenfieber' mit Terminen 2026 in Frankfurt, Hamburg, München, Augsburg und Leipzig; Kombination aus Mentaltraining, Bühnenpraxis und Emotions- und Stressregulation. Aktives Seminarangebot gegen Redeangst im DACH-Raum bestätigt anhaltend hohe Nachfrage – positives Marktumfeld für niedrigschwellige digitale Selbsthilfe-Formate wie lampenfieber-besiegen.de.",
+        source: "wagner-empowerment.de",
+        url: "https://www.wagner-empowerment.de/online-seminar-redeangst-%C3%BCberwinden/",
+        date: "2026",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-04-22",
+      },
       // Neu: 21.04.2026 (7)
       {
         summary: "ad-hoc-news.de: 'KI und VR besiegen die Angst vor dem Reden' – Neue digitale Technologien wie KI-gestützte Sprachcoaches und VR-Simulationen ermöglichen 2026 risikofreies Präsentationstraining in realistischen Umgebungen. Die Kombination aus bewährten Techniken (Hypnose, Atemübungen) und digitaler Innovation öffnet neue Märkte für niedrigschwellige Selbsthilfe-Produkte gegen Redeangst – direktes Marktumfeld für lampenfieber-besiegen.de.",
@@ -8318,6 +8386,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 22.04.2026 (2)
+      {
+        summary: "bexolutions.ch: 'Marketing-Automation für Schweizer KMU 2026: Tools & ROI' – Schweizer KMU stehen vor der Herausforderung, mit begrenzten Ressourcen im digitalen Wettbewerb zu bestehen. HubSpot, Mailchimp und ActiveCampaign sind führende Automation-Tools; ROI messbar durch Lead-Tracking und Conversion-Rates. Steigende Marketing-Komplexität für KMU erhöht den Bedarf an strukturierten Planungstools wie dem interaktiven Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "bexolutions.ch",
+        url: "https://bexolutions.ch/marketing-automation-fur-schweizer-kmu-2026-tools-roi/",
+        date: "2026",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-22",
+      },
+      {
+        summary: "researchly.at: 'SWOT-Analyse im Marketing: Anleitung & Beispiele für 2026' – Praxisanleitung zur SWOT-Analyse im Marketing für 2026: Stärken und Schwächen intern, Chancen und Risiken extern identifizieren, strategische Handlungsoptionen ableiten. SWOT ist das Fundament für datengestützte Marketingentscheidungen. Das wachsende Angebot an Online-SWOT-Ressourcen bestätigt die Nachfrage nach integrierten Analyse-Werkzeugen – direktes Positionierungsumfeld für das Marketingkonzept-Tool mit integrierter SWOT-Analyse auf learnfluencer.ch.",
+        source: "researchly.at",
+        url: "https://www.researchly.at/post/swot-analyse-marketing",
+        date: "2026",
+        category: "Strategie & Analyse",
+        addedAt: "2026-04-22",
+      },
       // Neu: 21.04.2026 (2)
       {
         summary: "berger.team: 'Marketing-Trends 2026: Prioritäten für KMU' – 2026 wird für KMU-Marketing entscheidend: KI, Automatisierung und neue Kanäle verändern digitale Sichtbarkeit und Kundengewinnung grundlegend. Prioritäten: Website-Optimierung, verändertes Suchverhalten (KI-Suche), lokale Sichtbarkeit und saubere Messbarkeit. Steigende Komplexität erhöht Bedarf an strukturierten Planungstools wie dem interaktiven Marketingkonzept-Tool.",
@@ -9118,6 +9203,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 22.04.2026 (1)
+      {
+        summary: "lv1871.de: 'Bestattung digital planen' – Münchener Lebensversicherer beleuchtet den Trend zur digitalen Bestattungsplanung: Online-Recherche und Preisvergleich sind heute Standard; viele Familien planen Bestattungen erstmals vollständig digital. Datenschutz und Vertrauen bleiben zentrale Erfolgsfaktoren. Wachsende gesellschaftliche Akzeptanz digitaler Vorsorge stärkt das Marktpotenzial von bestattungsplaner.ch als transparente digitale Planungs- und Lead-Plattform für Schweizer Bestattungsunternehmen.",
+        source: "lv1871.de",
+        url: "https://www.lv1871.de/magazin/sterben-erben/bestattung-digital-planen/",
+        date: "2026",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-04-22",
+      },
       // Neu: 21.04.2026 (6)
       {
         summary: "bestattungsportal.com: 'Digitale Bestattung 2026 – Trends und Möglichkeiten' – Das Portal analysiert das wachsende Segment digitaler Bestattungsplanung in der Schweiz und im DACH-Raum: Online-Traueranzeigen, digitale Kondolenzbücher, virtuelle Trauerfeiern und KI-gestützte Planung sind 2026 etablierte Angebote. Die Kremationsrate steigt weiter (ca. 80-90% in der Schweiz), während Erdbestattungen abnehmen. Wachsende gesellschaftliche Akzeptanz digitaler Bestattungsdienste bestätigt das strategische Potenzial für bestattungsplaner.ch als transparenten digitalen Lead-Vermittler für Schweizer Bestattungsunternehmen.",
