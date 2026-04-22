@@ -1574,7 +1574,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
-      // Neu: 22.04.2026 (1)
+      // Neu: 22.04.2026 (3)
+      {
+        summary: "news.bitcoin.com (21.04.2026): 'Polymarket Unveils Perpetual Futures Trading for US Markets in 2026' – Polymarket startete am 21. April 2026 Perpetual Futures auf Krypto und Aktien in den USA nach CFTC-Genehmigung als Designated Contract Market (DCM). Dieser Schritt markiert die Konvergenz von Prediction Markets und traditionellen Futures-Märkten: Polymarket als DCM-regulierter Anbieter konkurriert nun direkt mit CME und klassischen Futures-Brokern. Für ES-Futures- und NinjaTrader-Trader bedeutet dies: Wettbewerb um Retail-Liquidität wächst, neue regulierte Kontrakt-Typen entstehen – relevante Marktentwicklung für algorithmische Futures-Trader wie Mind Rocket Trading.",
+        source: "news.bitcoin.com",
+        url: "https://news.bitcoin.com/polymarket-unveils-perpetual-futures-trading-for-us-markets-in-2026/",
+        date: "2026-04-21",
+        category: "Regulierung",
+        addedAt: "2026-04-22",
+      },
+      {
+        summary: "Sidley Austin (Feb 2026): 'U.S. CFTC Signals Imminent Rulemaking on Prediction Markets' – Die CFTC signalisiert umgehende Regulierung von Prediction Markets: Neue Regeln zu Event Contracts sollen den wachsenden Markt strukturieren, dabei aber Innovation nicht bremsen. Für klassische Futures-Trader und Prop-Firm-Nutzer bedeutet dies: CFTC schärft ihren regulatorischen Fokus auf den gesamten Derivate-Sektor – relevantes regulatorisches Hintergrundrauschen für NinjaScript-basierte Algo-Trader und Prop-Firm-Nutzer wie Mind Rocket Trading.",
+        source: "Sidley Austin",
+        url: "https://www.sidley.com/en/insights/newsupdates/2026/02/us-cftc-signals-imminent-rulemaking-on-prediction-markets",
+        date: "2026-02",
+        category: "Regulierung",
+        addedAt: "2026-04-22",
+      },
       {
         summary: "proptradingvibes.com: 'Apex Trader Funding Review 2026: The 4.0 Overhaul Changes Everything' – Apex Trader Funding führte am 1. März 2026 das Apex 4.0-Update ein: Abschaffung der monatlichen Abo-Gebühr zugunsten einmaliger Zahlung, Einführung von EOD- und Intraday-Trailing-Drawdown-Modellen, Entfernung der MAE-Regel und 5:1-RR-Anforderung sowie Automated Payout via Deel. Apex hat seit 2022 über $743 Mio. an Trader ausgezahlt (18.000+ Trustpilot-Bewertungen, 4,4 Sterne). Als führende Prop-Firma für NinjaTrader-Algo-Trading und ES-Futures-Strategien ist das 4.0-Update ein direkter Infrastruktur-Faktor für mindrocket-trading.com.",
         source: "proptradingvibes.com",
