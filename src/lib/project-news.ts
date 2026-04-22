@@ -1557,6 +1557,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 22.04.2026 (1)
+      {
+        summary: "proptradingvibes.com: 'Apex Trader Funding Review 2026: The 4.0 Overhaul Changes Everything' – Apex Trader Funding führte am 1. März 2026 das Apex 4.0-Update ein: Abschaffung der monatlichen Abo-Gebühr zugunsten einmaliger Zahlung, Einführung von EOD- und Intraday-Trailing-Drawdown-Modellen, Entfernung der MAE-Regel und 5:1-RR-Anforderung sowie Automated Payout via Deel. Apex hat seit 2022 über $743 Mio. an Trader ausgezahlt (18.000+ Trustpilot-Bewertungen, 4,4 Sterne). Als führende Prop-Firma für NinjaTrader-Algo-Trading und ES-Futures-Strategien ist das 4.0-Update ein direkter Infrastruktur-Faktor für mindrocket-trading.com.",
+        source: "proptradingvibes.com",
+        url: "https://proptradingvibes.com/prop-firms/apex-trader-funding",
+        date: "2026-03",
+        category: "Futures & Trading",
+        addedAt: "2026-04-22",
+      },
       // Neu: 21.04.2026 (8)
       {
         summary: "prop.ninjatrader.com: 'NinjaTrader Prop – Offizielle Prop-Trading-Plattform' – NinjaTrader betreibt seit Oktober 2025 eine eigene Prop-Trading-Plattform unter prop.ninjatrader.com mit integriertem Dashboard für Account-Management, Performance-Tracking, Payout-Management und Community. TradingView-Integration ermöglicht direktes Trading von Charts aus. Partner-Prop-Firmen: Apex Trader Funding, Take Profit Trader, MyFunded Futures u.a. Direkter strategischer Eintritt von NinjaTrader ins Prop-Firm-Ökosystem – relevanter Infrastrukturkontext für algorithmische ES-Futures-Strategien auf mindrocket-trading.com.",
@@ -3051,7 +3060,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
-      // Neu: 22.04.2026 (1)
+      // Neu: 22.04.2026 (3)
+      {
+        summary: "mindtools.com: 'Mindtools Product Update – März 2026' – Mindtools (mindtools.com) veröffentlicht umfangreiche Inhalts-Updates für März 2026: neue und aktualisierte Ressourcen zu Leadership, Resilienz und Entscheidungsfindung. Mindtools wird erneut von Training Industry als Top-20-Unternehmen für Custom Content Development 2026 ausgezeichnet. Obwohl mindtools.com ≠ mindtools.ch, illustriert die globale Plattformkonkurrenz das Wachstum des Markts für digitale Persönlichkeitsentwicklungs-Tools und unterstreicht die Notwendigkeit klarer Nischenpositionierung für mindtools.ch.",
+        source: "mindtools.com",
+        url: "https://www.mindtools.com/blog/mindtools-product-update-march-2026/",
+        date: "2026-03",
+        category: "Buchmarkt & Publishing",
+        addedAt: "2026-04-22",
+      },
+      {
+        summary: "ad-hoc-news.de: 'Psychologie 2026: Krise blockiert persönliche Entwicklung' – Globale Krisen und Dauerstress versetzen Menschen in einen lähmenden Alarmzustand – einer der grössten Barrieren für private Ziele und berufliche Weiterentwicklung. 29% der Befragten geben an, psychologische Unterstützung zu benötigen – neuer Höchststand. Stagnierende persönliche Entwicklung durch externe Krisen erhöht die Nachfrage nach niedrigschwelligen, praxisorientierten Selbsthilfe-Tools wie mindtools.ch für konkrete mentale Werkzeuge.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/psychologie-2026-krise-blockiert-persoenliche-entwicklung/69038026",
+        date: "2026-04",
+        category: "Mental Health",
+        addedAt: "2026-04-22",
+      },
       {
         summary: "industryresearch.biz: 'Personal Development Market Size Forecast – CAGR 6,93%' – Der globale Persönlichkeitsentwicklungsmarkt erreicht 2026 ein Volumen von USD 66,99 Mrd. und soll bis 2035 auf USD 122,4 Mrd. wachsen. Steigende Nachfrage nach Skill-Entwicklung, Leadership-Coaching und Mental-Wellness-Lösungen treibt das Wachstum; über 70% der Trainings-Sessions werden bis 2030 über digitale Plattformen erwartet. Bestätigt das globale Marktpotenzial für praxisnahe digitale Selbsthilfe-Formate wie mindtools.ch.",
         source: "industryresearch.biz",
@@ -3659,6 +3684,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 22.04.2026 (1)
+      {
+        summary: "ad-hoc-news.de: 'Krankenstand erreicht 2026 neuen Höchststand' – Der Krankenstand in Deutschland und der Schweiz erreicht 2026 einen neuen Rekordwert; psychische Erkrankungen sind erstmals die häufigste Ursache für Langzeitausfälle. Unternehmen stehen unter massivem Druck, wirksame BGM-Massnahmen zu implementieren. Der steigende Krankenstand unterstreicht den dringenden Bedarf an präventiven Lösungen – direktes Marktumfeld für hypnovital® als niedrigschwelliges Audio-Coaching-Tool für mentale Gesundheit am Arbeitsplatz.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/krankenstand-erreicht-2026-neuen-hoechststand/68646277",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-22",
+      },
       // Neu: 21.04.2026 (6)
       {
         summary: "Gesundheitsförderung Schweiz: 'Nationale BGM-Tagung 2026' – Die jährliche Fachtagung für betriebliches Gesundheitsmanagement findet am 15. September 2026 statt und bringt HR-Fachleute, Führungskräfte und BGM-Experten aus der ganzen Schweiz zusammen. Schwerpunkte: mentale Gesundheit, Burnout-Prävention und Resilienz am Arbeitsplatz. Die wachsende Institutionalisierung von BGM in der Schweiz stärkt das Marktumfeld für Audio-Programme wie hypnovital® als niedrigschwellige Gesundheitslösung für Unternehmen und Einzelpersonen.",
