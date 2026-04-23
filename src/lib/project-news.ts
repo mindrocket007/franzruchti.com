@@ -1624,6 +1624,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 23.04.2026 (1 weitere)
+      {
+        summary: "Yahoo Finance (22. April 2026): 'S&P 500 and Nasdaq hit fresh records as market rally resumes, Tesla reports earnings' – S&P 500 und Nasdaq schlossen erneut auf Rekordniveau; Markt-Rally treiber: anhaltende Iran-Waffenstillstand-Hoffnungen und starke Q1-Earnings von Tesla (+3% nach Handelsschluss, Beat bei Revenue und EPS). Die konsistente Marktstruktur mit klar definierten Ausbruchsniveaus validiert regelbasierte, charttechnische ES-Futures-Strategien wie bei Mind Rocket Trading.",
+        source: "finance.yahoo.com",
+        url: "https://finance.yahoo.com/markets/stocks/live/stock-market-today-wednesday-april-22-dow-sp-500-nasdaq-trump-us-iran-ceasefire-230429476.html",
+        date: "2026-04-22",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-23",
+      },
       // Neu: 23.04.2026 (6)
       {
         summary: "CNBC (22. April 2026): 'S&P 500, Nasdaq close at records after U.S. extends Iran ceasefire' – S&P 500 schliesst bei 7.137,90 Punkten (+1,05%) und Nasdaq bei 24.657,57 (+1,64%) auf neuem Allzeithoch. Treiber: Trump verlängerte den US-Iran-Waffenstillstand auf unbestimmte Zeit; starke Q1-Earnings von GE Vernova, Boeing und Masco. Der neue Rekordlevel oberhalb von 7.100 bestätigt charttechnisch den Ausbruch – klare Support-/Widerstandsniveaus für regelbasierte ES-Futures-Strategien wie bei Mind Rocket Trading.",
@@ -3913,6 +3922,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 23.04.2026 (3 weitere)
+      {
+        summary: "ad-hoc-news.de (2026): 'Hochfunktionaler Burnout wird 2026 zur stillen Krise' – Betriebspsychologen identifizieren hochfunktionalen Burnout ('Quiet Burnout') als die dominierende Gesundheitskrise des modernen Arbeitsplatzes 2026: Betroffene funktionieren nach aussen normal, sind innerlich aber vollständig erschöpft. Besonders gefährdet: die engagiertesten High Performer, die keine Grenzen setzen können. Die wachsende Sichtbarkeit dieser stillen Burnout-Form unterstreicht den Bedarf nach diskreten, niederschwelligen BGM-Präventionslösungen wie hypnovital®-Audio-Programmen.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/hochfunktionaler-burnout-wird-2026-zur-stillen-krise/68472301",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-23",
+      },
+      {
+        summary: "imticker.ch (22. April 2025): 'Ein Volk im Stress – Burnout-Zahlen in der Schweiz explodieren' – 37% der Schweizer Erwerbstätigen stehen laut JobCloud-Umfrage regelmässig kurz vor dem Zusammenbruch; mehr als die Hälfte fühlt sich unwohl, am Arbeitsplatz über mentale Gesundheit zu sprechen. Schweigen über Burnout ist systemisch verankert – verstärkt den Bedarf nach anonymen, diskreten Präventionsangeboten wie hypnovital®-Audio-Programmen.",
+        source: "imticker.ch",
+        url: "https://imticker.ch/2025/04/22/ein-volk-im-stress-burnout-zahlen-in-der-schweiz-explodieren/31719/",
+        date: "2025-04-22",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-23",
+      },
+      {
+        summary: "srf.ch: 'Stress am Arbeitsplatz – Hunderttausende in der Schweiz sind Burnout-gefährdet' – SRF berichtet: 37% der Schweizer Erwerbstätigen fühlen sich regelmässig kurz vor der Erschöpfung; psychische Erkrankungen verursachen jährlich volkswirtschaftliche Kosten von über CHF 7 Mrd. Burnout-Prävention avanciert zur gesellschaftlichen Pflichtaufgabe für Unternehmen – struktureller Wachstumsrückenwind für skalierbare BGM-Lösungen wie hypnovital®-Audio-Programme.",
+        source: "srf.ch",
+        url: "https://www.srf.ch/news/wirtschaft/stress-am-arbeitsplatz-hunderttausende-in-der-schweiz-sind-burnout-gefaehrdet",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-23",
+      },
       // Neu: 23.04.2026 (6)
       {
         summary: "mentalport.health: 'AI Brain Fry: Burnout-Prävention durch KI-gestütztes BGM und Biofeedback' – Mentale Erschöpfung durch ständige KI-Nutzung ('AI Brain Fry') wird als neues BGM-Thema identifiziert. KI-gestützte BGM-Systeme mit Biofeedback-Integration ermöglichen datenbasierte, personalisierte Prävention. Digitale BGM-Tools ergänzen niederschwellige Audio-Interventionen – direktes Marktumfeld für hypnovital® als audiobasierte Lösung gegen mentale Erschöpfung im Arbeitsalltag.",
@@ -5317,6 +5351,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 23.04.2026 (1 weitere)
+      {
+        summary: "wiseowlmarketing.com (2026): 'How to Use the 12 Week Year Method for Coaches' Big Goals' – Praxisguide für Coaches: Die 12-Week-Year-Methode hilft, grosse Jahresziele in fokussierte 12-Wochen-Zyklen aufzuteilen, wöchentliche Fortschritts-Scorecards (Ziel: 85% Erfüllung) zu führen und Accountability-Systeme aufzubauen. Die spezifische Anwendung der Methode im Coaching-Kontext erschliesst ein wachsendes Nischensegment – direktes Zielgruppenpotenzial für methodenspezifische SaaS-Tools wie den 12wy-planner.",
+        source: "wiseowlmarketing.com",
+        url: "https://wiseowlmarketing.com/the-12-week-year-method/",
+        date: "2026",
+        category: "12 Week Year Methode",
+        addedAt: "2026-04-23",
+      },
       // Neu: 23.04.2026 (2)
       {
         summary: "annakoschinski.de (2026): 'Warum ich nicht weiter als 12 Wochen plane' – Praxisbericht über den Einsatz der 12-Wochen-Planung: Kurze Planungszyklen steigern Fokus, reduzieren Prokrastination und ermöglichen schnelle Kursanpassungen. 12 Wochen sind die optimale Länge für Vorhaben, die weder in einem Tag erledigt noch auf ein Jahr verschoben werden sollten. Der persönliche Erfahrungsbericht validiert die wachsende Verbreitung der Methode und den Bedarf nach spezialisierten Planungstools wie dem 12wy-planner.",
@@ -9949,6 +9992,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 23.04.2026 (2 weitere)
+      {
+        summary: "rapid-data.de (2026): 'Digitale Trends in der Trauerkultur' – Branchenanalyse für Bestattungsunternehmen: Onlinebuchungen werden zur Norm, digitale Gedenkseiten ersetzen klassische Todesanzeigen, und Trauerkommunikation verlagert sich in soziale Netzwerke. Bestattungsunternehmen, die früh in digitale Infrastruktur investieren, sichern sich nachhaltige Wettbewerbsvorteile. Die fortschreitende Digitalisierung der Trauerbranche bestätigt die strategische Positionierung von bestattungsplaner.ch als digitaler Erstanlaufpunkt für Hinterbliebene.",
+        source: "rapid-data.de",
+        url: "https://www.rapid-data.de/ueber-rapid/blog/artikel/digitale-trends-in-der-trauerkultur.html",
+        date: "2026",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-23",
+      },
+      {
+        summary: "ref.ch (2026): 'Warum Zeitungen in die digitale Trauer investieren' – Reformierte Kirchen Schweiz analysieren: Traditionelle Printmedien investieren verstärkt in digitale Trauerportale, da der erste Kontakt mit Trauerfamilien zunehmend online stattfindet. Digitale Todesanzeigen und Gedenkseiten wachsen stark; der Ort der Trauer hat sich ins Internet verlagert. Die Verlagerung des Erstkontakts zu Bestattungsangeboten in digitale Kanäle bestätigt das Geschäftsmodell von bestattungsplaner.ch als digitaler Einstiegspunkt für Bestattungsplanung.",
+        source: "ref.ch",
+        url: "https://www.ref.ch/news/warum-zeitungen-in-die-digitale-trauer-investieren/",
+        date: "2026",
+        category: "Markt & Trends",
+        addedAt: "2026-04-23",
+      },
       // Neu: 23.04.2026 (4)
       {
         summary: "nume.ch (2026): 'Schweiz Demografie 2026: Mehr Senioren als Junge' – Die Schweiz erlebt 2026 einen demografischen Wendepunkt: Die Gruppe der über 65-Jährigen wächst in den nächsten 10 Jahren um 26%, in 20 Jahren um 41%. Die schnellstwachsende Gruppe sind über 80-Jährige, was die Nachfrage nach Vorsorge-, Pflege- und Bestattungsangeboten exponentiell steigert. Der demografische Wandel ist der stärkste strukturelle Wachstumstreiber für digitale Bestattungsplanungsportale wie bestattungsplaner.ch.",
