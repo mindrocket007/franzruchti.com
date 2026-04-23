@@ -26,7 +26,23 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
-      // Neu: 23.04.2026 (2)
+      // Neu: 23.04.2026 (4)
+      {
+        summary: "blick.ch (2026): 'Jetzt kommt der neue Beruf AI Business Specialist' – Die ICT-Berufsbildung Schweiz führt 2026 den eidgenössischen Fachausweis 'AI Business Specialist' ein: erste Berufsprüfung im Herbst 2026, Bundesbeiträge bis 50% der Vorbereitungskosten. Voraussetzungen: EFZ + 2–3 Jahre Berufspraxis. AI Business Specialists agieren als Brücke zwischen Technologie und Geschäft – komplementäres Qualifikationsumfeld zur bestehenden ICT-Zertifizierungslandschaft der SIZ AG.",
+        source: "blick.ch",
+        url: "https://www.blick.ch/digital/zukunft-der-arbeit-jetzt-kommt-der-neue-beruf-ai-business-specialist-id21323238.html",
+        date: "2026-04",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-23",
+      },
+      {
+        summary: "ict-berufsbildung.ch (2026): 'AI Business Specialists machen KI-Potenzial nutzbar' – Detaillierte Beschreibung der neuen Berufsrolle: AI Business Specialists analysieren KI-Einsatzmöglichkeiten, entwickeln Lösungsansätze und steuern deren Umsetzung über alle Branchen hinweg. Der neue Fachausweis ergänzt das bestehende ICT-Bildungsportfolio und schafft einen strukturierten Karrierepfad für KI-Anwendungskompetenz – direktes Wachstumsumfeld für ICT-Prüfungsorganisationen wie die SIZ AG.",
+        source: "ict-berufsbildung.ch",
+        url: "https://www.ict-berufsbildung.ch/ai-business-specialists-machen-ki-potenzial-nutzbar",
+        date: "2026-04",
+        category: "Arbeitsmarkt & IT",
+        addedAt: "2026-04-23",
+      },
       {
         summary: "netzwoche.ch (31. März 2026): 'ICT-Berufsbildung Schweiz diplomiert 145 ICT-Fachkräfte' – Von 235 Kandidaten bestanden 145 die Berufsprüfungen: 77 Cyber Security Specialists (57,1%), 52 ICT-Platform Development Specialists (68,4%) und 16 Information Security Managers (69,6%). Laut ICT-Berufsbildung-CEO Marc Marthaler ist die höhere Berufsbildung ein entscheidender Pfeiler der Schweizer ICT-Bildungslandschaft; federal certificates sind international einem Bachelor, Diplome einem Master gleichgestellt – direktes Wachstumsumfeld für SIZ AG als führende ICT-Prüfungsorganisation.",
         source: "netzwoche.ch",
@@ -1225,7 +1241,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
-      // Neu: 23.04.2026 (1)
+      // Neu: 23.04.2026 (2)
+      {
+        summary: "personalleiter.today (2026): 'KI-gestütztes personalisiertes Lernen legt um 146 Prozent zu' – KI-gestützte dialogbasierte Lernlösungen sind im Jahresvergleich um 146% gewachsen; 87% der L&D-Teams nutzen täglich KI; Mitarbeitende bauen Kompetenzen direkt im Arbeitsalltag auf ('Learning in the Flow of Work'). Die explosionsartige Verbreitung von KI-Coaching unterstreicht das Marktwachstum für digitale Weiterbildungs- und Coaching-Angebote – direktes Wachstumsumfeld für Mind Rocket GmbH.",
+        source: "personalleiter.today",
+        url: "https://www.personalleiter.today/ki-gestuetztes-personalisiertes-lernen-legt-um-146-prozent-zu-mitarbeitende-bauen-kompetenzen-direkt-im-arbeitsalltag-auf",
+        date: "2026-04",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-04-23",
+      },
       {
         summary: "swissnova.swiss (2026): 'Weiterbildung für Unternehmen in der Schweiz: 10 Trends für 2026' – KI-gestützte personalisierte Lernpfade, hybride Lernformate und messbare Verhaltensänderungen statt Abschlussquoten prägen das Corporate Learning 2026. Skills werden zur strategischen Währung; Unternehmen investieren gezielt in Lernkulturen und externe Coaching-Angebote. Wachsende Nachfrage nach praxisorientierten, messbar wirksamen Coaching-Programmen – direktes Marktumfeld für die persönlichkeitsorientierten Programme von Mind Rocket GmbH.",
         source: "swissnova.swiss",
@@ -1600,7 +1624,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
-      // Neu: 23.04.2026 (1)
+      // Neu: 23.04.2026 (2)
+      {
+        summary: "NinjaTrader (30. Januar 2026): 'NinjaTrader Expands Into Europe to Support the Next Generation of Retail Futures Traders' – NinjaTrader eröffnet europäischen Broker via CySEC-regulierter Payward Europe Digital Solutions (MiFID-Lizenz). Start in den Niederlanden und Deutschland, Frankreich und Italien folgen 2026. EU-Trader erhalten Zugang zu US- und europäischen Futures-Kontrakten mit vollständigem Feature-Set: erweiterte Charts, Order Flow, Simulator. Direkter Markt-Expansionstrend für Mind Rocket Trading als NinjaTrader-basierte Strategie-Plattform mit wachsender europäischer Nutzerbasis.",
+        source: "ninjatrader.com",
+        url: "https://ninjatrader.com/news/ninjatrader-expands-into-europe-to-support-the-next-generation-of-retail-futures-traders/",
+        date: "2026-01-30",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-23",
+      },
       {
         summary: "CNBC (21. April 2026): S&P 500 schliesst bei 7.064 Punkten (-0,63 %), VIX steigt wieder auf 21,58 – erhöhte Marktvolatilität durch geopolitische Risiken (Iran, Naher Osten). Regelbasierte ES-Futures-Strategien wie bei Mind Rocket Trading profitieren in solchen Phasen von klar definierten Einstiegs- und Ausstiegssignalen.",
         source: "cnbc.com",
@@ -3152,7 +3184,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
-      // Neu: 23.04.2026 (1)
+      // Neu: 23.04.2026 (2)
+      {
+        summary: "coachingausbildungen.ch (2026): 'Coaching-Markt Schweiz 2025/2026 – Trends & Analyse' – Der Schweizer Coaching-Markt zeigt tiefgreifende strukturelle Veränderungen: wachsende Integration systemischer und ganzheitlicher Denkmodelle, Digitalisierung erweitert die Reichweite von Angeboten erheblich, und zunehmend organisationsbezogene Settings (Change-Management, Talentförderung). Der strukturell wachsende Markt für persönlichkeitsorientierte Angebote validiert die Nachfrage nach zugänglichen mentalen Werkzeugen wie jenen auf mindtools.ch.",
+        source: "coachingausbildungen.ch",
+        url: "https://www.coachingausbildungen.ch/coaching-markt-schweiz-trends-2025-2026-analyse/",
+        date: "2026-04",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-04-23",
+      },
       {
         summary: "mentalhealthcompany.ch (2026): 'Wir machen mentale Gesundheit sichtbar' – Schweizer Plattform für mentale Gesundheit am Arbeitsplatz. Laut aktuellen Studien ist jede dritte berufstätige Person in der Schweiz von stressbedingter emotionaler Erschöpfung betroffen. Die wachsende Zahl spezialisierter Mental-Health-Plattformen in der Schweiz signalisiert einen reifen, wachsenden Markt für fokussierte Self-Help-Werkzeuge und bestätigt die Positionierung von mindtools.ch als praxisorientierte mentale Werkzeugkiste.",
         source: "mentalhealthcompany.ch",
@@ -3841,7 +3881,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
-      // Neu: 23.04.2026 (4)
+      // Neu: 23.04.2026 (5)
+      {
+        summary: "nume.ch (2026): 'Mentale Gesundheit 2026: Warum gesunde Führung Pflicht ist' – Der wirtschaftliche Erfolg eines Unternehmens hängt 2026 direkt von der 'Mental Fitness' seiner Belegschaft ab; Investitionen in BGM amortisieren sich schnell durch sinkende Lohnfortzahlungskosten und höhere Mitarbeiterbindung. Konkrete Instrumente wie 'Job-Stress-Analysis' ermöglichen Stressfaktorenidentifikation auf Team- und Abteilungsebene. Wachsende Unternehmensverantwortung für mentale Gesundheit stärkt die Nachfrage nach skalierbaren BGM-Präventionslösungen wie hypnovital®-Audio-Programmen.",
+        source: "nume.ch",
+        url: "https://www.nume.ch/mentale-gesundheit-2026-warum-gesunde-fuehrung-pflicht-ist/",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-23",
+      },
       {
         summary: "ad-hoc-news.de (April 2026): 'Burnout erreicht im April 2026 neuen Höchststand' – Zwei von drei Arbeitnehmenden fühlen sich dauerhaft ausgebrannt oder stehen kurz vor dem Zusammenbruch; emotionale Erschöpfung hat historischen Rekordstand erreicht. Sechs von zehn Beschäftigten gelten laut der Studie 'Arbeiten 2025/2026' von Pronova BKK als Burnout-gefährdet. Alarmierendes Marktsignal für skalierbare, niederschwellige BGM-Präventionslösungen wie hypnovital®-Audio-Programme.",
         source: "ad-hoc-news.de",
@@ -5229,7 +5277,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
-      // Neu: 23.04.2026 (1)
+      // Neu: 23.04.2026 (2)
+      {
+        summary: "annakoschinski.de (2026): 'Warum ich nicht weiter als 12 Wochen plane' – Praxisbericht über den Einsatz der 12-Wochen-Planung: Kurze Planungszyklen steigern Fokus, reduzieren Prokrastination und ermöglichen schnelle Kursanpassungen. 12 Wochen sind die optimale Länge für Vorhaben, die weder in einem Tag erledigt noch auf ein Jahr verschoben werden sollten. Der persönliche Erfahrungsbericht validiert die wachsende Verbreitung der Methode und den Bedarf nach spezialisierten Planungstools wie dem 12wy-planner.",
+        source: "annakoschinski.de",
+        url: "https://annakoschinski.de/projekte-planen/",
+        date: "2026-04",
+        category: "12 Week Year Methode",
+        addedAt: "2026-04-23",
+      },
       {
         summary: "12week-breakthrough.com (2026): 'The Complete 12-Week Year Implementation Guide for 2026' – Praxisleitfaden zur Methode mit KI-Integration: KI-Tools können automatisch Fortschrittsindikatoren tracken, wöchentliche Berichte generieren und bei Ziellücken alarmieren. Methodik: Top-3-Ziele pro Quartal, tägliche Lead-Massnahmen, wöchentliche Accountability-Checks. Steigender Einsatz digitaler Planungsmethoden und KI-gestütztem Tracking validiert den Bedarf an methodenspezifischen SaaS-Tools wie dem 12wy-planner.",
         source: "12week-breakthrough.com",
@@ -6082,7 +6138,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
-      // Neu: 23.04.2026 (1)
+      // Neu: 23.04.2026 (2)
+      {
+        summary: "zavamed.com (2026): 'Vorzeitiger Samenerguss: Alle Infos auf einen Blick' – Umfassender medizinischer Leitfaden zu Ejaculatio praecox: Ursachen (neurobiologisch, psychologisch), Behandlungsmethoden (SSRI, Topika, Sexualtherapie, Beckenbodentraining) und Selbsthilfeoptionen. Vorzeitiger Samenerguss betrifft schätzungsweise 20–30% aller Männer; Aufklärungsbedarf und Nachfrage nach diskreten, digitalen Selbsthilfelösungen bleiben hoch – direktes Marktumfeld für das Hypnose-Audio auf orgasmus-hinauszoegern.de.",
+        source: "zavamed.com",
+        url: "https://www.zavamed.com/de/vorzeitiger-samenerguss.html",
+        date: "2026-04",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-23",
+      },
       {
         summary: "berlin-hypnosis.com: 'Hypnotherapie bei Ejaculatio praecox (vorzeitiger Samenerguss)' – Online-Hypnosetherapie als effektive Methode bei PE, typischerweise 3–5 Sitzungen, auch digital verfügbar. Zeigt das wachsende Angebot digitaler Hypnose-Therapien für sexuelle Gesundheit – direktes Marktumfeld für das Hypnose-Audio auf orgasmus-hinauszoegern.de.",
         source: "berlin-hypnosis.com",
@@ -6819,7 +6883,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
-      // Neu: 23.04.2026 (1)
+      // Neu: 23.04.2026 (2)
+      {
+        summary: "dr-rabe.de (2026): 'Prüfungsangst + Redeangst mit Hypnosetherapie behandeln' – Spezialisierte Hypnotherapiepraxis erklärt Hypnose als evidenzbasierte Methode bei Prüfungs- und Redeangst: Hypnosetherapie adressiert die unbewussten Wurzeln der Angst und schafft neue positive Reaktionsmuster; deutlich weniger Sitzungen als klassische Verhaltenstherapie nötig. Wachsende therapeutische Anerkennung von Hypnose bei Bühnenangst stärkt die Nachfrage nach ergänzenden Audio-Selbsthilfeprodukten wie dem Programm auf lampenfieber-besiegen.de.",
+        source: "dr-rabe.de",
+        url: "https://www.dr-rabe.de/behandlungsschwerpunkte/pruefungsangst-redeangst.php",
+        date: "2026-04",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-23",
+      },
       {
         summary: "topgunspeaking.com (2026): '20 Mal Gelassenheit finden – Lampenfieber und Redeangst überwinden' – Praxisratgeber zu Techniken gegen Redeangst und Lampenfieber: Atemübungen, mentale Vorbereitung, Körpersprache und Selbsthypnose werden als komplementäre Methoden empfohlen. Der Artikel bestätigt die breite gesellschaftliche Prävalenz von Redeangst und die wachsende Akzeptanz audio-basierter Selbsthilfe-Lösungen als ergänzende Methode – direktes Marktumfeld für das Hypnose-Audio von lampenfieber-besiegen.de.",
         source: "topgunspeaking.com",
@@ -7671,7 +7743,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
-      // Neu: 23.04.2026 (5)
+      // Neu: 23.04.2026 (6)
+      {
+        summary: "nume.ch (2026): 'KI-Nutzung Schweiz 2026: 76% nutzen Künstliche Intelligenz' – In der Schweiz nutzen bereits 76% der Bevölkerung KI-Tools aktiv; die Nachfrage nach KI-Kompetenz und Lernfähigkeit nimmt dramatisch zu. Unternehmen suchen gezielt nach Fachkräften, die KI strategisch einsetzen können – und nach Plattformen, die diese Kompetenz vermitteln. Die breite KI-Durchdringung der Schweizer Arbeitswelt unterstreicht den Bedarf an Thought-Leadership-Plattformen wie learnfluencer.ch.",
+        source: "nume.ch",
+        url: "https://www.nume.ch/ki-nutzung-schweiz-2026-76-nutzen-kuenstliche-intelligenz/",
+        date: "2026-04",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-23",
+      },
       {
         summary: "Harvard Business Review (April 2026): 'What AI Can't Do: The New Job of Leadership' – Prof. Arthur C. Brooks (Harvard): KI löst komplizierte Probleme, aber Führung ist ein komplexes Problem. Die Zukunft der Führung liegt nicht im Problemlösen, sondern darin, Bedeutung zu schaffen und Teams durch das zu navigieren, was Maschinen nicht können. Hochrelevante Grundsatzdebatte für learnfluencer.ch: Menschliche Lernkompetenz und Sinnstiftung bleiben der Kern des KI-Zeitalters.",
         source: "Harvard Business Review",
@@ -8899,7 +8979,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
-      // Neu: 23.04.2026 (1)
+      // Neu: 23.04.2026 (2)
+      {
+        summary: "bexolutions.ch (2026): 'Marketing-Automation für Schweizer KMU 2026: Tools & ROI' – Praxisratgeber für Schweizer KMU zu Marketing-Automation mit ROI-Analyse. Wesentliche Erkenntnis: Ohne fundiertes Marketingkonzept bleibt Automation wirkungslos; strukturierte Planung (Zielgruppenanalyse, Kanal-Mix, KPI-Definition) ist Voraussetzung für erfolgreiche Umsetzung. Die Lücke zwischen Tool-Verfügbarkeit und strategischer Planungskompetenz stärkt den Bedarf nach strukturierten Konzept-Tools wie dem Marketingkonzept-Generator auf learnfluencer.ch.",
+        source: "bexolutions.ch",
+        url: "https://bexolutions.ch/marketing-automation-fur-schweizer-kmu-2026-tools-roi/",
+        date: "2026-04",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-23",
+      },
       {
         summary: "kimarketing.ch: 'Die besten KI-Marketing-Tools 2026 für KMU' – Überblick führender KI-Marketing-Tools für Schweizer KMU mit Fokus auf Strategie, Automatisierung und DSGVO-Konformität. Wachsende Tool-Komplexität im KMU-Marketing erhöht den Bedarf nach strukturierten Planungsrahmen wie dem interaktiven Marketingkonzept-Tool auf learnfluencer.ch.",
         source: "kimarketing.ch",
@@ -9773,7 +9861,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
-      // Neu: 23.04.2026 (2)
+      // Neu: 23.04.2026 (3)
+      {
+        summary: "startupvalley.news: 'Wie verändert Digitalisierung die Bestattungsbranche – Sind traditionelle Ansätze noch zeitgemäß?' – Analyse am Beispiel mymoria.de: Bestattungen werden zunehmend online initiiert; der erste Kontakt findet digital statt, persönlicher Kontakt folgt für die Durchführung. Kremationsrate in der Schweiz über 90%. Die Verlagerung des ersten Kundenkontakts in digitale Kanäle validiert das Lead-Vermittlungsmodell und die Online-Präsenz von bestattungsplaner.ch als digitalen Einstiegspunkt.",
+        source: "startupvalley.news",
+        url: "https://startupvalley.news/de/mymoria/",
+        date: "2026-04",
+        category: "Markt & Trends",
+        addedAt: "2026-04-23",
+      },
       {
         summary: "trauerportal.ch (2026): 'Was kostet eine Bestattung in der Schweiz?' – Detaillierte Kostenübersicht: Bestattungen kosten in der Schweiz durchschnittlich CHF 4'000–8'000, je nach Region bis über CHF 10'000. Grosse kantonale Unterschiede: Zürich übernimmt viele Grundleistungen für Einwohner kostenlos (ZüriSarg), ländliche Kantone dagegen häufig nicht. Die Kostentransparenz-Lücke und die regionalen Unterschiede schaffen hohen Informationsbedarf – direkter Nutzen für neutrale Planungsportale wie bestattungsplaner.ch.",
         source: "trauerportal.ch",
