@@ -1624,7 +1624,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
-      // Neu: 23.04.2026 (4)
+      // Neu: 23.04.2026 (5)
+      {
+        summary: "financemagnates.com: 'Following NinjaTrader Acquisition, Kraken Opens Access to CME-Listed Crypto Futures' – Nach der abgeschlossenen NinjaTrader-Übernahme für USD 1,5 Mrd. eröffnet Kraken US-Kunden direkten Zugang zu CME-gelisteten Krypto-Futures über Kraken Pro – Spot- und Futures-Positionen in einer einzigen Oberfläche verwaltbar. Langfristig plant Kraken, über die FCM-Lizenz von NinjaTrader weitere traditionelle Asset-Klassen (Index-, Rohstoff- und Contract-Futures) einzuführen. Die strategische Erweiterung des NinjaTrader-Ökosystems stärkt das technische Fundament für algorithmische ES-Futures-Strategien wie bei Mind Rocket Trading.",
+        source: "financemagnates.com",
+        url: "https://www.financemagnates.com/cryptocurrency/following-ninjatrader-acquisition-kraken-has-opened-access-to-cme-listed-crypto-futures/",
+        date: "2026-04",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-23",
+      },
       {
         summary: "oneuptrader.com: 'S&P 500 (ES) Technical Analysis – 22 April 2026' – ES-Futures haben die frühere Allzeit-Hochzone um 7.100 nach oben durchbrochen und halten oberhalb dieser Marke. Die Zone 7.080–7.130 (ehemals Widerstand) fungiert jetzt als Support: Solange ES darüber notiert, bleibt der Ausbruch intakt. Nach geopolitischer Beruhigung (Iran-Waffenstillstand) erholen sich Märkte schneller als erwartet. Für algorithmische ES-Strategien bei Mind Rocket Trading: Markt in charttechnisch günstigerem Territorium mit klaren Support-/Widerstandsniveaus.",
         source: "oneuptrader.com",
@@ -7767,7 +7775,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
-      // Neu: 23.04.2026 (9)
+      // Neu: 23.04.2026 (10)
+      {
+        summary: "managementcircle.de (2026): 'Neueste KI-Entwicklungen: KI-Trends 2026' – Umfassende Analyse der aktuellen KI-Entwicklungen: Autonome KI-Agenten, multimodale Modelle, KI-gestützte Personalentwicklung und die Notwendigkeit ständiger KI-Lernkompetenz prägen 2026. KI-Wissen und die Fähigkeit, neue Entwicklungen schnell zu verstehen und einzuordnen, wird zum zentralen Differenzierungsmerkmal in der Arbeitswelt – direktes Positionierungsfeld für learnfluencer.ch als Thought-Leadership-Plattform für KI-Lernkompetenz.",
+        source: "managementcircle.de",
+        url: "https://www.managementcircle.de/blog/neueste-ki-entwicklungen.html",
+        date: "2026-04",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-23",
+      },
       {
         summary: "venturebean.com (2026): 'The New Rules of Influence: Thought Leadership in 2026' – Thought Leadership verändert sich fundamental: Im Zeitalter KI-generierten Contents zählen persönliche Perspektive, gelebte Erfahrung und Authentizität mehr denn je. Publikum sucht Stimmen, die menschlich, ehrlich und nachvollziehbar wirken – weniger generische Expertise, mehr originale Einsichten aus echter Praxis. Direktes Differenzierungsargument für learnfluencer.ch als authentische Thought-Leadership-Stimme von Franz Ruchti.",
         source: "venturebean.com",
@@ -9909,7 +9925,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
-      // Neu: 23.04.2026 (3)
+      // Neu: 23.04.2026 (4)
+      {
+        summary: "nume.ch (2026): 'Schweiz Demografie 2026: Mehr Senioren als Junge' – Die Schweiz erlebt 2026 einen demografischen Wendepunkt: Die Gruppe der über 65-Jährigen wächst in den nächsten 10 Jahren um 26%, in 20 Jahren um 41%. Die schnellstwachsende Gruppe sind über 80-Jährige, was die Nachfrage nach Vorsorge-, Pflege- und Bestattungsangeboten exponentiell steigert. Der demografische Wandel ist der stärkste strukturelle Wachstumstreiber für digitale Bestattungsplanungsportale wie bestattungsplaner.ch.",
+        source: "nume.ch",
+        url: "https://www.nume.ch/schweiz-demografie-2026-mehr-senioren-als-junge/",
+        date: "2026-04",
+        category: "Markt & Trends",
+        addedAt: "2026-04-23",
+      },
       {
         summary: "startupvalley.news: 'Wie verändert Digitalisierung die Bestattungsbranche – Sind traditionelle Ansätze noch zeitgemäß?' – Analyse am Beispiel mymoria.de: Bestattungen werden zunehmend online initiiert; der erste Kontakt findet digital statt, persönlicher Kontakt folgt für die Durchführung. Kremationsrate in der Schweiz über 90%. Die Verlagerung des ersten Kundenkontakts in digitale Kanäle validiert das Lead-Vermittlungsmodell und die Online-Präsenz von bestattungsplaner.ch als digitalen Einstiegspunkt.",
         source: "startupvalley.news",
