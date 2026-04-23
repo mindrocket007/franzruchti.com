@@ -1624,7 +1624,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
-      // Neu: 23.04.2026 (2)
+      // Neu: 23.04.2026 (4)
+      {
+        summary: "oneuptrader.com: 'S&P 500 (ES) Technical Analysis – 22 April 2026' – ES-Futures haben die frühere Allzeit-Hochzone um 7.100 nach oben durchbrochen und halten oberhalb dieser Marke. Die Zone 7.080–7.130 (ehemals Widerstand) fungiert jetzt als Support: Solange ES darüber notiert, bleibt der Ausbruch intakt. Nach geopolitischer Beruhigung (Iran-Waffenstillstand) erholen sich Märkte schneller als erwartet. Für algorithmische ES-Strategien bei Mind Rocket Trading: Markt in charttechnisch günstigerem Territorium mit klaren Support-/Widerstandsniveaus.",
+        source: "oneuptrader.com",
+        url: "https://blog.oneuptrader.com/analysis/technical-analysis/sp-500-es-technical-analysis-22-april-2026/",
+        date: "2026-04-22",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-23",
+      },
+      {
+        summary: "24/7 Wall St. (21. April 2026): 'Stock Market Live: S&P 500 is Back in the Green on Cease Fire Hopes' – S&P 500 erholt sich deutlich auf Hoffnungen eines US-Iran-Waffenstillstands; VIX fällt von Hochs zurück. Geopolitisch getriebene Marktvolatilität mit schnellen Richtungswechseln: klassisches Umfeld für regelbasierte, algorithmische ES-Futures-Strategien wie bei Mind Rocket Trading, die mit definierten Signalen auf Volatilitätsspikes und anschliessende Normalisierung reagieren.",
+        source: "247wallst.com",
+        url: "https://247wallst.com/investing/2026/04/21/stock-market-live-april-21-2026-sp-500-spy-is-back-in-the-green-on-cease-fire-hopes-again/",
+        date: "2026-04-21",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-23",
+      },
       {
         summary: "NinjaTrader (30. Januar 2026): 'NinjaTrader Expands Into Europe to Support the Next Generation of Retail Futures Traders' – NinjaTrader eröffnet europäischen Broker via CySEC-regulierter Payward Europe Digital Solutions (MiFID-Lizenz). Start in den Niederlanden und Deutschland, Frankreich und Italien folgen 2026. EU-Trader erhalten Zugang zu US- und europäischen Futures-Kontrakten mit vollständigem Feature-Set: erweiterte Charts, Order Flow, Simulator. Direkter Markt-Expansionstrend für Mind Rocket Trading als NinjaTrader-basierte Strategie-Plattform mit wachsender europäischer Nutzerbasis.",
         source: "ninjatrader.com",
@@ -3881,7 +3897,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
-      // Neu: 23.04.2026 (5)
+      // Neu: 23.04.2026 (6)
+      {
+        summary: "mentalport.health: 'AI Brain Fry: Burnout-Prävention durch KI-gestütztes BGM und Biofeedback' – Mentale Erschöpfung durch ständige KI-Nutzung ('AI Brain Fry') wird als neues BGM-Thema identifiziert. KI-gestützte BGM-Systeme mit Biofeedback-Integration ermöglichen datenbasierte, personalisierte Prävention. Digitale BGM-Tools ergänzen niederschwellige Audio-Interventionen – direktes Marktumfeld für hypnovital® als audiobasierte Lösung gegen mentale Erschöpfung im Arbeitsalltag.",
+        source: "mentalport.health",
+        url: "https://www.mentalport.health/us/blog/ai-brain-fry-ki-bgm-biofeedback-praevention",
+        date: "2026-04",
+        category: "Digitale Gesundheit",
+        addedAt: "2026-04-23",
+      },
       {
         summary: "nume.ch (2026): 'Mentale Gesundheit 2026: Warum gesunde Führung Pflicht ist' – Der wirtschaftliche Erfolg eines Unternehmens hängt 2026 direkt von der 'Mental Fitness' seiner Belegschaft ab; Investitionen in BGM amortisieren sich schnell durch sinkende Lohnfortzahlungskosten und höhere Mitarbeiterbindung. Konkrete Instrumente wie 'Job-Stress-Analysis' ermöglichen Stressfaktorenidentifikation auf Team- und Abteilungsebene. Wachsende Unternehmensverantwortung für mentale Gesundheit stärkt die Nachfrage nach skalierbaren BGM-Präventionslösungen wie hypnovital®-Audio-Programmen.",
         source: "nume.ch",
@@ -7743,7 +7767,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
-      // Neu: 23.04.2026 (6)
+      // Neu: 23.04.2026 (9)
+      {
+        summary: "venturebean.com (2026): 'The New Rules of Influence: Thought Leadership in 2026' – Thought Leadership verändert sich fundamental: Im Zeitalter KI-generierten Contents zählen persönliche Perspektive, gelebte Erfahrung und Authentizität mehr denn je. Publikum sucht Stimmen, die menschlich, ehrlich und nachvollziehbar wirken – weniger generische Expertise, mehr originale Einsichten aus echter Praxis. Direktes Differenzierungsargument für learnfluencer.ch als authentische Thought-Leadership-Stimme von Franz Ruchti.",
+        source: "venturebean.com",
+        url: "https://venturebean.com/the-new-rules-of-influence-thought-leadership-in-2026/",
+        date: "2026-04",
+        category: "Content & Thought Leadership",
+        addedAt: "2026-04-23",
+      },
+      {
+        summary: "ifidz.de (Barbara Liebermeister): 'Ein Learnfluencer werden: Tipps nicht nur für Führungskräfte' – Das Institut für Führungskultur im digitalen Zeitalter beschreibt konkrete Schritte zum Learnfluencer: eigenes Lernen öffentlich kommunizieren, Lernerkenntnisse mit dem Team teilen, andere zu eigenverantwortlichem Lernen einladen und eine Lernkultur aktiv vorleben statt nur einzufordern. Praxisnahe Handlungsanleitung, die die Positionierung von learnfluencer.ch als Thought-Leadership-Plattform bestätigt.",
+        source: "ifidz.de",
+        url: "https://ifidz.de/en/blog/become-a-learnfluencer-tips-not-just-for-everyone",
+        date: "2026-04",
+        category: "Content & Thought Leadership",
+        addedAt: "2026-04-23",
+      },
+      {
+        summary: "hrperformance-online.de: 'Learnfluencer sein' – Authentische Lernvorbilder in Unternehmen und Netzwerken teilen ihr Lernen offen, inspirieren andere zur Weiterentwicklung und fördern Lernkulturen mit Eigenverantwortung. Formale Bildungsangebote allein reichen nicht aus – authentische Learning-Influencer sind der entscheidende Katalysator für lebendige Lernkulturen. Direktes Positionierungsfeld für learnfluencer.ch und Franz Ruchti als öffentlicher Learnfluencer.",
+        source: "hrperformance-online.de",
+        url: "https://www.hrperformance-online.de/news/learning/learnfluencer-sein/",
+        date: "2026-04",
+        category: "Content & Thought Leadership",
+        addedAt: "2026-04-23",
+      },
       {
         summary: "nume.ch (2026): 'KI-Nutzung Schweiz 2026: 76% nutzen Künstliche Intelligenz' – In der Schweiz nutzen bereits 76% der Bevölkerung KI-Tools aktiv; die Nachfrage nach KI-Kompetenz und Lernfähigkeit nimmt dramatisch zu. Unternehmen suchen gezielt nach Fachkräften, die KI strategisch einsetzen können – und nach Plattformen, die diese Kompetenz vermitteln. Die breite KI-Durchdringung der Schweizer Arbeitswelt unterstreicht den Bedarf an Thought-Leadership-Plattformen wie learnfluencer.ch.",
         source: "nume.ch",
