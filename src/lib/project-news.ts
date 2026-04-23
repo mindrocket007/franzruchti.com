@@ -1574,6 +1574,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 23.04.2026 (1)
+      {
+        summary: "CNBC (21. April 2026): S&P 500 schliesst bei 7.064 Punkten (-0,63 %), VIX steigt wieder auf 21,58 – erhöhte Marktvolatilität durch geopolitische Risiken (Iran, Naher Osten). Regelbasierte ES-Futures-Strategien wie bei Mind Rocket Trading profitieren in solchen Phasen von klar definierten Einstiegs- und Ausstiegssignalen.",
+        source: "cnbc.com",
+        url: "https://www.cnbc.com/2026/04/20/stock-market-today-live-updates.html",
+        date: "2026-04-21",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-23",
+      },
       // Neu: 22.04.2026 (6)
       {
         summary: "NinjaTrader wurde von BrokerChooser zum zweiten Mal in Folge als 'Best Futures Broker 2026' ausgezeichnet sowie als 'Best Broker for Trading Micro Gold Futures 2026'. BrokerChooser evaluierte über 100 Broker anhand von Plattformqualität, Nutzererfahrung und Gebührenstruktur. Stärken: anpassbare Charting-Tools, schnelle Order-Ausführung, tägliche Livestreams und umfangreiche Lernressourcen. NinjaTrader ist die Kernplattform für algorithmischen Handel und ES-Futures-Strategien – direkt relevant für Mind Rocket Trading als NinjaTrader-Nutzer.",
@@ -3797,6 +3806,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 23.04.2026 (1)
+      {
+        summary: "srf.ch/wissen: 'Hypnosetherapie – Ängste loswerden: Ist Hypnose der Schlüssel dazu?' – SRF Wissen erläutert aktuelle Forschung zu Hypnosetherapie bei Angststörungen; eine Studie der Universitätsklinik Jena bestätigt langfristige Wirksamkeit positiver Suggestionen. Wissenschaftliche Validierung stärkt das Vertrauen in Hypnose-basierte Angebote wie die Audio-Programme von hypnovital.",
+        source: "srf.ch",
+        url: "https://www.srf.ch/wissen/mensch/hypnosetherapie-aengste-loswerden-ist-hypnose-der-schluessel-dazu",
+        date: "2026-04",
+        category: "Hypnose & Coaching",
+        addedAt: "2026-04-23",
+      },
       // Neu: 22.04.2026 (8)
       {
         summary: "nume.ch: 'Mentale Gesundheit 2026 – warum gesunde Führung Pflicht ist' – Gesunde Führung und mentale Widerstandskraft werden 2026 zur strategischen Kernaufgabe von Unternehmen. Permanente digitale Erreichbarkeit, KI-Wandel und globale Krisen belasten besonders Mitarbeitende unter 35 Jahren. Konkrete Massnahmen wie anonymes Coaching, digitale Grenzen und das Schweizer 'Friendly Work Space'-Label bieten ROI von ca. 3–5 CHF pro investiertem Franken. Audio-Hypnose und Hypnose-Coaching von hypnovital positionieren sich exakt in diesem Bedarf nach niederschwelligen, digitalen BGM-Präventionsangeboten.",
@@ -5996,6 +6014,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 23.04.2026 (1)
+      {
+        summary: "berlin-hypnosis.com: 'Hypnotherapie bei Ejaculatio praecox (vorzeitiger Samenerguss)' – Online-Hypnosetherapie als effektive Methode bei PE, typischerweise 3–5 Sitzungen, auch digital verfügbar. Zeigt das wachsende Angebot digitaler Hypnose-Therapien für sexuelle Gesundheit – direktes Marktumfeld für das Hypnose-Audio auf orgasmus-hinauszoegern.de.",
+        source: "berlin-hypnosis.com",
+        url: "https://www.berlin-hypnosis.com/premature-ejaculation/",
+        date: "2026-04",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-23",
+      },
       // Neu: 22.04.2026 (9)
       {
         summary: "EurekAlert / EAU26 (14. März 2026): Die CLIMACS-Studie, präsentiert am Kongress der Europäischen Urologengesellschaft (EAU26) in London, ist die erste klinische Studie zu einer digitalen Heimtherapie gegen vorzeitigen Samenerguss. Die Melonga-App half 22% der Teilnehmer, den vorzeitigen Samenerguss nach 12 Wochen vollständig zu überwinden; die durchschnittliche Verzögerungszeit verdoppelte sich von 61 auf 125 Sekunden. Die Studie validiert App-basierte, nicht-pharmakologische Ansätze – exakt das Marktumfeld, in dem sich orgasmus-hinauszoegern.de mit seinem Hypnose-Audio positioniert.",
@@ -7567,6 +7594,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 23.04.2026 (1)
+      {
+        summary: "tcs.com: 'EdTech Trends 2026 – Intelligence Redefining Learning Systems' – KI-Personalisierung steigert Lernengagement um bis zu 60 %; adaptive Systeme verbessern Abschlussraten um 25–40 %; KI-Agenten übernehmen 2026 bis zu 80 % der Routine-Lehraufgaben. Hochrelevanter Trendkontext für learnfluencer.ch als Thought-Leadership-Plattform für Lernkompetenz und KI-Weiterbildung.",
+        source: "tcs.com",
+        url: "https://www.tcs.com/what-we-do/industries/education/article/edtech-trends-2026-intelligence-redefining-learning-systems",
+        date: "2026-04",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-23",
+      },
       // Neu: 22.04.2026 (10)
       {
         summary: "jobs.ch (2. Januar 2026): 'Arbeitstrends 2026: KI, Soft Skills und mehr Menschlichkeit' – AI Literacy wird zur Grundvoraussetzung für alle Schweizer Arbeitnehmenden: verstehen und reflektiert anwenden (Prompts formulieren, KI-Outputs bewerten, Datenschutz). Laut OECD verändern sich bis 2026 rund 40% aller Jobs; 90% der Unternehmen planen fundamentale Neuaufstellung ihrer Lernkultur. Direkte Nachfragebestätigung für learnfluencer.ch als Thought-Leadership-Plattform zu KI-Kompetenz und Lernkultur in der Schweiz.",
@@ -8754,6 +8790,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 23.04.2026 (1)
+      {
+        summary: "kimarketing.ch: 'Die besten KI-Marketing-Tools 2026 für KMU' – Überblick führender KI-Marketing-Tools für Schweizer KMU mit Fokus auf Strategie, Automatisierung und DSGVO-Konformität. Wachsende Tool-Komplexität im KMU-Marketing erhöht den Bedarf nach strukturierten Planungsrahmen wie dem interaktiven Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "kimarketing.ch",
+        url: "https://www.kimarketing.ch/beste-ki-marketing-tools-2026-kmu/",
+        date: "2026-04",
+        category: "Marketing-Tools & Software",
+        addedAt: "2026-04-23",
+      },
       // Neu: 22.04.2026 (8)
       {
         summary: "technologychecker.io (2026): Umfassende MarTech-Statistiken 2026: Der globale MarTech-Markt überschreitet erstmals die Billion-Dollar-Grenze (USD 1.03 Billion). 15.384 MarTech-Lösungen sind aktuell verfügbar (2011: 150). KI-Agenten und autonome Workflows sind der #1-Trend (27% der Marketer). Dieser explosive Markt schafft ein Orientierungsproblem für KMU – interaktive Planungs-Tools wie der Marketingkonzept-Generator auf learnfluencer.ch werden zum unverzichtbaren Einstiegspunkt in strukturierte Marketingstrategie.",
