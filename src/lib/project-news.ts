@@ -1624,7 +1624,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
-      // Neu: 23.04.2026 (5)
+      // Neu: 23.04.2026 (6)
+      {
+        summary: "CNBC (22. April 2026): 'S&P 500, Nasdaq close at records after U.S. extends Iran ceasefire' – S&P 500 schliesst bei 7.137,90 Punkten (+1,05%) und Nasdaq bei 24.657,57 (+1,64%) auf neuem Allzeithoch. Treiber: Trump verlängerte den US-Iran-Waffenstillstand auf unbestimmte Zeit; starke Q1-Earnings von GE Vernova, Boeing und Masco. Der neue Rekordlevel oberhalb von 7.100 bestätigt charttechnisch den Ausbruch – klare Support-/Widerstandsniveaus für regelbasierte ES-Futures-Strategien wie bei Mind Rocket Trading.",
+        source: "cnbc.com",
+        url: "https://www.cnbc.com/2026/04/21/stock-market-today-live-updates.html",
+        date: "2026-04-22",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-23",
+      },
       {
         summary: "financemagnates.com: 'Following NinjaTrader Acquisition, Kraken Opens Access to CME-Listed Crypto Futures' – Nach der abgeschlossenen NinjaTrader-Übernahme für USD 1,5 Mrd. eröffnet Kraken US-Kunden direkten Zugang zu CME-gelisteten Krypto-Futures über Kraken Pro – Spot- und Futures-Positionen in einer einzigen Oberfläche verwaltbar. Langfristig plant Kraken, über die FCM-Lizenz von NinjaTrader weitere traditionelle Asset-Klassen (Index-, Rohstoff- und Contract-Futures) einzuführen. Die strategische Erweiterung des NinjaTrader-Ökosystems stärkt das technische Fundament für algorithmische ES-Futures-Strategien wie bei Mind Rocket Trading.",
         source: "financemagnates.com",
@@ -7775,7 +7783,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
-      // Neu: 23.04.2026 (10)
+      // Neu: 23.04.2026 (12)
+      {
+        summary: "CNBC (21. April 2026): 'Amazon to invest up to another $25 billion in Anthropic' – Amazon investiert bis zu USD 25 Mrd. zusätzlich in Anthropic (Vorherige Investition: USD 8 Mrd., Gesamtpotenzial: USD 33 Mrd.); Bewertung: USD 380 Mrd. Als Gegenleistung verpflichtet sich Anthropic zu über USD 100 Mrd. in AWS-Technologien über 10 Jahre inkl. 5 GW Compute-Kapazität. AWS-Kunden erhalten direkten Claude-Zugang ohne separate Verträge. Grösste KI-Einzelinvestition 2026 unterstreicht die strategische Bedeutung von KI-Kompetenz und Lernfähigkeit – direkter Rückenwind für Thought-Leadership-Plattformen wie learnfluencer.ch.",
+        source: "cnbc.com",
+        url: "https://www.cnbc.com/2026/04/20/amazon-invest-up-to-25-billion-in-anthropic-part-of-ai-infrastructure.html",
+        date: "2026-04-21",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-23",
+      },
+      {
+        summary: "Google / TechBriefly (22. April 2026): 'Google launches Deep Research Max – the most powerful autonomous research agent' – Google lanciert Deep Research und Deep Research Max als autonome Recherche-Agenten auf Basis Gemini 3.1 Pro: Verknüpft Open-Web-Daten mit proprietären Enterprise-Daten via MCP, generiert Analyseberichte mit integrierten Visualisierungen, verfügbar via Gemini API in Public Preview. Deep Research Max nutzt erweiterte Test-Time-Compute für höchste Synthesequalität. Autonome KI-Recherche verändert fundamental, wie Wissensarbeiter lernen und forschen – Kernthema für die Thought-Leadership-Positionierung von learnfluencer.ch.",
+        source: "techbriefly.com / Google",
+        url: "https://techbriefly.com/2026/04/22/google-launches-deep-research-and-deep-research-max-agents/",
+        date: "2026-04-22",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-23",
+      },
       {
         summary: "managementcircle.de (2026): 'Neueste KI-Entwicklungen: KI-Trends 2026' – Umfassende Analyse der aktuellen KI-Entwicklungen: Autonome KI-Agenten, multimodale Modelle, KI-gestützte Personalentwicklung und die Notwendigkeit ständiger KI-Lernkompetenz prägen 2026. KI-Wissen und die Fähigkeit, neue Entwicklungen schnell zu verstehen und einzuordnen, wird zum zentralen Differenzierungsmerkmal in der Arbeitswelt – direktes Positionierungsfeld für learnfluencer.ch als Thought-Leadership-Plattform für KI-Lernkompetenz.",
         source: "managementcircle.de",
