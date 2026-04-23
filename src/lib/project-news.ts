@@ -26,6 +26,23 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 23.04.2026 (2)
+      {
+        summary: "netzwoche.ch (31. März 2026): 'ICT-Berufsbildung Schweiz diplomiert 145 ICT-Fachkräfte' – Von 235 Kandidaten bestanden 145 die Berufsprüfungen: 77 Cyber Security Specialists (57,1%), 52 ICT-Platform Development Specialists (68,4%) und 16 Information Security Managers (69,6%). Laut ICT-Berufsbildung-CEO Marc Marthaler ist die höhere Berufsbildung ein entscheidender Pfeiler der Schweizer ICT-Bildungslandschaft; federal certificates sind international einem Bachelor, Diplome einem Master gleichgestellt – direktes Wachstumsumfeld für SIZ AG als führende ICT-Prüfungsorganisation.",
+        source: "netzwoche.ch",
+        url: "https://www.netzwoche.ch/news/2026-03-31/ict-berufsbildung-schweiz-diplomiert-145-ict-fachkraefte",
+        date: "2026-03-31",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-23",
+      },
+      {
+        summary: "siw.swiss (2026): 'Die Schweiz verschläft ihren digitalen Nachwuchs – und riskiert 54'400 offene ICT-Stellen' – Um die ICT-Fachkräftelücke bis 2033 zu schliessen, müsste jede elfte Lernende einen ICT-Beruf wählen – aktuell ist es nur jede achtzehnte. 79% aller ICT-Abschlüsse haben ihren Ursprung in der Berufsbildung. Der strukturelle Fachkräftemangel unterstreicht die strategische Bedeutung von ICT-Zertifizierungen und Prüfungsorganisationen wie der SIZ AG für die Schweizer Bildungslandschaft.",
+        source: "siw.swiss",
+        url: "https://siw.swiss/ict-nachwuchs/",
+        date: "2026-04",
+        category: "Arbeitsmarkt & IT",
+        addedAt: "2026-04-23",
+      },
       // Neu: 22.04.2026 (2)
       {
         summary: "netzwoche.ch: 'Das sind die Löhne der ICT-Branche 2026' – Einstiegssaläre für ICT-Fachkräfte bleiben 2026 auf hohem Niveau: EFZ-Absolventen ca. CHF 5.000/Mt., Bachelor-Absolventen CHF 6.300/Mt., Master-Absolventen CHF 6.900/Mt. In Nischenbereichen wie Cybersecurity und AI-Engineering herrscht ein Bieterkrieg um qualifizierte Fachkräfte; klassische Softwareentwicklung stabilisiert sich auf hohem Niveau. Strukturell hohe Saläre verdeutlichen die anhaltende Nachfrage nach ICT-Qualifikationen – direktes Wachstumsumfeld für Zertifizierungsangebote der SIZ AG.",
@@ -1208,6 +1225,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
+      // Neu: 23.04.2026 (1)
+      {
+        summary: "swissnova.swiss (2026): 'Weiterbildung für Unternehmen in der Schweiz: 10 Trends für 2026' – KI-gestützte personalisierte Lernpfade, hybride Lernformate und messbare Verhaltensänderungen statt Abschlussquoten prägen das Corporate Learning 2026. Skills werden zur strategischen Währung; Unternehmen investieren gezielt in Lernkulturen und externe Coaching-Angebote. Wachsende Nachfrage nach praxisorientierten, messbar wirksamen Coaching-Programmen – direktes Marktumfeld für die persönlichkeitsorientierten Programme von Mind Rocket GmbH.",
+        source: "swissnova.swiss",
+        url: "https://unternehmen.swissnova.swiss/weiterbildung-unternehmen-schweiz-trends-2026/",
+        date: "2026-04",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-04-23",
+      },
       // Neu: 22.04.2026 (2)
       {
         summary: "keelearning.de: 'E-Learning Trends 2026: So lernen Unternehmen morgen' – KI-gestützte Personalisierung, hybride Lernformate und messbare Lernoutcomes prägen 2026 das Corporate Learning. 82,5% der Unternehmen sehen KI als grössten Hebel für Personalentwicklung; 80,3% nutzen hybride Modelle. Wachsende Komplexität und Individualisierung von Lernangeboten stärkt die Nachfrage nach Online-Coaching-Programmen für persönliche Entwicklung – direktes Marktumfeld für Mind Rocket GmbH.",
@@ -3126,6 +3152,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 23.04.2026 (1)
+      {
+        summary: "mentalhealthcompany.ch (2026): 'Wir machen mentale Gesundheit sichtbar' – Schweizer Plattform für mentale Gesundheit am Arbeitsplatz. Laut aktuellen Studien ist jede dritte berufstätige Person in der Schweiz von stressbedingter emotionaler Erschöpfung betroffen. Die wachsende Zahl spezialisierter Mental-Health-Plattformen in der Schweiz signalisiert einen reifen, wachsenden Markt für fokussierte Self-Help-Werkzeuge und bestätigt die Positionierung von mindtools.ch als praxisorientierte mentale Werkzeugkiste.",
+        source: "mentalhealthcompany.ch",
+        url: "https://mentalhealthcompany.ch/",
+        date: "2026-04",
+        category: "Mental Health",
+        addedAt: "2026-04-23",
+      },
       // Neu: 22.04.2026 (10)
       {
         summary: "favormentalhealthservices.com (7. Januar 2026): 'Mental Health Trends 2026: What's Changing Faster Than Our Coping Skills' – Sieben zentrale Mental-Health-Trends für 2026: Präventive Selbstfürsorge statt Krisenreaktion, digitale Hygiene als klinische Notwendigkeit, somatische Methoden (EMDR, Atemwork), Hybrid-Versorgungsmodelle und 'Micro-Boundaries' als praktische Self-Help-Werkzeuge. Der Trend zu konkreten, alltagsintegrierten mentalen Werkzeugen bestätigt die Positionierung von mindtools.ch als praxisorientierte Werkzeugkiste.",
@@ -5194,6 +5229,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 23.04.2026 (1)
+      {
+        summary: "12week-breakthrough.com (2026): 'The Complete 12-Week Year Implementation Guide for 2026' – Praxisleitfaden zur Methode mit KI-Integration: KI-Tools können automatisch Fortschrittsindikatoren tracken, wöchentliche Berichte generieren und bei Ziellücken alarmieren. Methodik: Top-3-Ziele pro Quartal, tägliche Lead-Massnahmen, wöchentliche Accountability-Checks. Steigender Einsatz digitaler Planungsmethoden und KI-gestütztem Tracking validiert den Bedarf an methodenspezifischen SaaS-Tools wie dem 12wy-planner.",
+        source: "12week-breakthrough.com",
+        url: "https://12week-breakthrough.com/implementation-guide-2026-12-week-year/",
+        date: "2026-04",
+        category: "12 Week Year Methode",
+        addedAt: "2026-04-23",
+      },
       // Neu: 22.04.2026 (8)
       {
         summary: "blog.logrocket.com: 'The 12 Week Year Approach to Productivity and Planning' – Detaillierter Produktmanagement-Artikel erklärt, wie die 12-Week-Year-Methode mit Lead- und Lag-Indikatoren, Weekly-Accountability-Meetings und Strategic Blocks konkret in SaaS-Teams eingesetzt wird. 65% der Teams tracken ihre OKRs noch immer in Excel/Google Sheets – eine direkte Marktlücke für dedizierte Tools wie den 12wy-planner, der diesen Prozess digital strukturiert.",
@@ -6775,6 +6819,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 23.04.2026 (1)
+      {
+        summary: "topgunspeaking.com (2026): '20 Mal Gelassenheit finden – Lampenfieber und Redeangst überwinden' – Praxisratgeber zu Techniken gegen Redeangst und Lampenfieber: Atemübungen, mentale Vorbereitung, Körpersprache und Selbsthypnose werden als komplementäre Methoden empfohlen. Der Artikel bestätigt die breite gesellschaftliche Prävalenz von Redeangst und die wachsende Akzeptanz audio-basierter Selbsthilfe-Lösungen als ergänzende Methode – direktes Marktumfeld für das Hypnose-Audio von lampenfieber-besiegen.de.",
+        source: "topgunspeaking.com",
+        url: "https://topgunspeaking.com/redeangst-ueberwinden-lampenfieber/redeangst/",
+        date: "2026-04",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-04-23",
+      },
       // Neu: 22.04.2026 (8)
       {
         summary: "noack-hypnose.de (2026): Ausführliche Erklärung des Unterschieds zwischen Lampenfieber und Redeangst mit Fokus auf therapeutische Ansätze. Der Artikel betont, dass Redeangst (im Gegensatz zu normalem Lampenfieber) eine behandlungsbedürftige Angststörung ist, die mit Hypnotherapie gezielt adressiert werden kann – oft bereits nach wenigen Sitzungen. Die klinische Einordnung von Redeangst als behandlungsbedürftige Störung stärkt die Nachfrage nach professionellen Hypnose-basierten Lösungen wie dem Audio-Programm auf lampenfieber-besiegen.de.",
@@ -9720,6 +9773,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 23.04.2026 (2)
+      {
+        summary: "trauerportal.ch (2026): 'Was kostet eine Bestattung in der Schweiz?' – Detaillierte Kostenübersicht: Bestattungen kosten in der Schweiz durchschnittlich CHF 4'000–8'000, je nach Region bis über CHF 10'000. Grosse kantonale Unterschiede: Zürich übernimmt viele Grundleistungen für Einwohner kostenlos (ZüriSarg), ländliche Kantone dagegen häufig nicht. Die Kostentransparenz-Lücke und die regionalen Unterschiede schaffen hohen Informationsbedarf – direkter Nutzen für neutrale Planungsportale wie bestattungsplaner.ch.",
+        source: "trauerportal.ch",
+        url: "https://www.trauerportal.ch/de/blog/was-kostet-eine-bestattung-in-der-schweiz",
+        date: "2026-04",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-23",
+      },
+      {
+        summary: "cureta.de (2026): 'Bestattung nach Schweizer Recht: Recht, Kosten, Planung' – Das Bestattungsrecht ist in der Schweiz kantonal geregelt, was zu erheblichen Unterschieden bei Vorschriften, Kosten und erlaubten Bestattungsformen führt. Viele Schweizer kennen die rechtlichen Rahmenbedingungen ihres Kantons nicht. Die Unübersichtlichkeit des föderalen Systems unterstreicht den Bedarf nach kantonübergreifenden, neutralen Informations- und Planungsportalen wie bestattungsplaner.ch.",
+        source: "cureta.de",
+        url: "https://www.cureta.de/blog/bestattung-nach-schweizer-recht",
+        date: "2026-04",
+        category: "Recht & Regelungen",
+        addedAt: "2026-04-23",
+      },
       // Neu: 22.04.2026 (9)
       {
         summary: "everlife.ch (2026): In der Schweiz sind aktuell nur ca. 10% der Sterbefälle durch einen Vorsorgevertrag abgedeckt – verglichen mit 85% in den Niederlanden und 25% in Frankreich. Everlife.ch beleuchtet dieses enorme Wachstumspotenzial im Schweizer Markt für digitale Bestattungsvorsorge und bietet flexible Online-Ratenzahlung über bis zu 25 Jahre. Das tiefe Vorsorgepenetrationsrate in der Schweiz zeigt das grosse Marktpotenzial für Online-Portale wie bestattungsplaner.ch, die als erster digitaler Kontaktpunkt für Vorsorgeinteressierte dienen.",
