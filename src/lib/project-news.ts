@@ -3806,7 +3806,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
-      // Neu: 23.04.2026 (1)
+      // Neu: 23.04.2026 (4)
+      {
+        summary: "ad-hoc-news.de (April 2026): 'Burnout erreicht im April 2026 neuen Höchststand' – Zwei von drei Arbeitnehmenden fühlen sich dauerhaft ausgebrannt oder stehen kurz vor dem Zusammenbruch; emotionale Erschöpfung hat historischen Rekordstand erreicht. Sechs von zehn Beschäftigten gelten laut der Studie 'Arbeiten 2025/2026' von Pronova BKK als Burnout-gefährdet. Alarmierendes Marktsignal für skalierbare, niederschwellige BGM-Präventionslösungen wie hypnovital®-Audio-Programme.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/burnout-erreicht-im-april-2026-neuen-hoechststand/69083055",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-23",
+      },
+      {
+        summary: "ad-hoc-news.de: 'Burnout-Welle erreicht alarmierende Ausmaße' – Arbeitsbedingte psychische Erkrankungen kosten die Volkswirtschaft Milliarden; Burnout-bedingte Fehltage nehmen weiter zu. Unternehmen werden zunehmend unter Druck gesetzt, effektive und skalierbare Präventionskonzepte einzuführen. Direktes Marktumfeld für hypnovital®-BGM-Programme als audiobasierte Burnout-Prävention für Unternehmen.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/burnout-welle-erreicht-alarmierende-ausmasse/69054724",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-23",
+      },
+      {
+        summary: "ad-hoc-news.de: 'Burnout wird 2026 zum Systemfehler erklärt' – Experten fordern systemische Veränderungen statt punktueller Wellness-Massnahmen: herkömmliche Programme bleiben zunehmend wirkungslos. Hohe Remote-Work-Raten korrelieren mit erhöhten Burnout-Raten; Übergang von punktueller Prävention zu systemischer BGM-Integration. Stärkt Positionierung von hypnovital® als wissenschaftlich fundierte, skalierbare BGM-Lösung für Schweizer Unternehmen.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/burnout-wird-2026-zum-systemfehler-erklaert/69061375",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-23",
+      },
       {
         summary: "srf.ch/wissen: 'Hypnosetherapie – Ängste loswerden: Ist Hypnose der Schlüssel dazu?' – SRF Wissen erläutert aktuelle Forschung zu Hypnosetherapie bei Angststörungen; eine Studie der Universitätsklinik Jena bestätigt langfristige Wirksamkeit positiver Suggestionen. Wissenschaftliche Validierung stärkt das Vertrauen in Hypnose-basierte Angebote wie die Audio-Programme von hypnovital.",
         source: "srf.ch",
@@ -7594,7 +7618,39 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
-      // Neu: 23.04.2026 (1)
+      // Neu: 23.04.2026 (5)
+      {
+        summary: "Harvard Business Review (April 2026): 'What AI Can't Do: The New Job of Leadership' – Prof. Arthur C. Brooks (Harvard): KI löst komplizierte Probleme, aber Führung ist ein komplexes Problem. Die Zukunft der Führung liegt nicht im Problemlösen, sondern darin, Bedeutung zu schaffen und Teams durch das zu navigieren, was Maschinen nicht können. Hochrelevante Grundsatzdebatte für learnfluencer.ch: Menschliche Lernkompetenz und Sinnstiftung bleiben der Kern des KI-Zeitalters.",
+        source: "Harvard Business Review",
+        url: "https://hbr.org/2026/04/what-ai-cant-do-the-new-job-of-leadership",
+        date: "2026-04-08",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-23",
+      },
+      {
+        summary: "Harvard Business Review (April 2026): 'Don't Let AI Destroy the Skills That Make Your Company Competitive' – KI sollte die organisationale Intelligenz verstärken, nicht menschliche Fähigkeiten ersetzen, auf die langfristige Wettbewerbsfähigkeit beruht. Führungskräfte müssen aktiv sicherstellen, dass KI als Verstärker von Lernkompetenz wirkt – nicht als Ersatz dafür. Direkter Rückenwind für learnfluencer.ch: Menschliche Lernfähigkeit als strategisches Asset, das Unternehmen schützen müssen.",
+        source: "Harvard Business Review",
+        url: "https://hbr.org/2026/04/dont-let-ai-destroy-the-skills-that-make-your-company-competitive",
+        date: "2026-04",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-23",
+      },
+      {
+        summary: "Harvard Business Review (April 2026): 'The AI Leadership Imperative' – Führungskräfte müssen 2026 KI-Transformation aktiv gestalten: Klare Lernkultur, kritisches Denken und adaptive Lernkompetenz sind Kernanforderungen. Der Übergang von wissensbasierter zu kompetenzbasierter Führung beschleunigt sich. Stärkt die Positionierung von learnfluencer.ch als Thought-Leadership-Plattform für Lernkompetenz im KI-Zeitalter.",
+        source: "Harvard Business Review",
+        url: "https://hbr.org/2026/04/the-ai-leadership-imperative",
+        date: "2026-04",
+        category: "Content & Thought Leadership",
+        addedAt: "2026-04-23",
+      },
+      {
+        summary: "Harvard Business Review (6. April 2026): 'To Succeed with AI, You've Got to Nail the Basics' – KI auf ineffiziente Prozesse aufzusatteln vergrössert Probleme statt sie zu lösen; zuerst die Grundlagen stärken: Datenkompetenz, klare Prozesse, kritisches Denken. Wer die Basics meistert, kann KI strategisch einsetzen. Kernaussage: Lernkompetenz und kritisches Denken sind Voraussetzungen für erfolgreiche KI-Nutzung – zentrales Thema für learnfluencer.ch.",
+        source: "Harvard Business Review",
+        url: "https://hbr.org/2026/04/to-succeed-with-ai-youve-got-to-nail-the-basics",
+        date: "2026-04-06",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-23",
+      },
       {
         summary: "tcs.com: 'EdTech Trends 2026 – Intelligence Redefining Learning Systems' – KI-Personalisierung steigert Lernengagement um bis zu 60 %; adaptive Systeme verbessern Abschlussraten um 25–40 %; KI-Agenten übernehmen 2026 bis zu 80 % der Routine-Lehraufgaben. Hochrelevanter Trendkontext für learnfluencer.ch als Thought-Leadership-Plattform für Lernkompetenz und KI-Weiterbildung.",
         source: "tcs.com",
