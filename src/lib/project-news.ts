@@ -26,6 +26,15 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 23.04.2026 (1 weitere)
+      {
+        summary: "ICT-Berufsbildung Schweiz (2026): 'So wirkt Künstliche Intelligenz (KI) in der Berufsbildung' – Das Kompetenzzentrum der ICT-Berufsbildung Schweiz fungiert als nationaler Hub für KI-Wissen, Kompetenz und Innovation in der Berufsbildung: Beratung für Bildungsanbieter bei digitalen Prüfungen, KI-Kompetenzen und technologiegestützten Lernformaten sowie Unterstützung bei der KI-Integration in Prüfungsprozesse. Die systematische KI-Integration in die Schweizer Berufsbildung schafft neue Anforderungen an Prüfungsorganisationen – direktes strategisches Umfeld für SIZ AG bei der Weiterentwicklung KI-kompatibler Zertifizierungsangebote.",
+        source: "ICT-Berufsbildung Schweiz",
+        url: "https://www.ict-berufsbildung.ch/so-wirkt-kuenstliche-intelligenz-ki-in-der-berufsbildung",
+        date: "2026-04",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-23",
+      },
       // Neu: 23.04.2026 (4)
       {
         summary: "blick.ch (2026): 'Jetzt kommt der neue Beruf AI Business Specialist' – Die ICT-Berufsbildung Schweiz führt 2026 den eidgenössischen Fachausweis 'AI Business Specialist' ein: erste Berufsprüfung im Herbst 2026, Bundesbeiträge bis 50% der Vorbereitungskosten. Voraussetzungen: EFZ + 2–3 Jahre Berufspraxis. AI Business Specialists agieren als Brücke zwischen Technologie und Geschäft – komplementäres Qualifikationsumfeld zur bestehenden ICT-Zertifizierungslandschaft der SIZ AG.",
@@ -1624,6 +1633,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 23.04.2026 (2 weitere)
+      {
+        summary: "Yahoo Finance (23. April 2026): 'Stock market today: Dow slips, S&P 500 and Nasdaq retreat from records with Middle East peace talks at risk' – Nach den Allzeithochs vom 22. April zogen sich S&P 500 (-0,3%) und Nasdaq am 23. April 2026 von den Rekordständen zurück; Unsicherheit über den Fortschritt der Nahostfriedensgespräche drückt auf die Stimmung. Klassisches 'Retest-Szenario': Die Zone 7.080–7.130 fungiert jetzt als kritischer Support – präzise definierte Einstiegs- und Ausstiegspunkte für regelbasierte ES-Futures-Strategien wie bei Mind Rocket Trading.",
+        source: "finance.yahoo.com",
+        url: "https://finance.yahoo.com/markets/stocks/live/stock-market-today-p-500-230354361.html",
+        date: "2026-04-23",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-23",
+      },
+      {
+        summary: "equityclock.com (22. April 2026): 'Stock Market Outlook for April 23, 2026: Meme stock frenzy showing initial signs of fatigue' – Technische Analyse für den 23. April 2026 zeigt erste Erschöpfungszeichen der Meme-Aktien-Rally nach mehrwöchigem Momentum; überkaufte Kursniveaus und nachlassende Volumenunterstützung signalisieren mögliche Konsolidierung. Technische Überhitzungssignale in Momentum-Titeln gelten historisch als Leading Indicator für breitere Marktpullbacks – relevantes Frühwarnsignal für timing-basierte ES-Futures-Strategien wie bei Mind Rocket Trading.",
+        source: "equityclock.com",
+        url: "https://equityclock.com/2026/04/22/stock-market-outlook-for-april-23-2026/",
+        date: "2026-04-23",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-23",
+      },
       // Neu: 23.04.2026 (1 weitere)
       {
         summary: "Yahoo Finance (22. April 2026): 'S&P 500 and Nasdaq hit fresh records as market rally resumes, Tesla reports earnings' – S&P 500 und Nasdaq schlossen erneut auf Rekordniveau; Markt-Rally treiber: anhaltende Iran-Waffenstillstand-Hoffnungen und starke Q1-Earnings von Tesla (+3% nach Handelsschluss, Beat bei Revenue und EPS). Die konsistente Marktstruktur mit klar definierten Ausbruchsniveaus validiert regelbasierte, charttechnische ES-Futures-Strategien wie bei Mind Rocket Trading.",
@@ -7826,6 +7852,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 23.04.2026 (2 weitere)
+      {
+        summary: "Apple Newsroom (20. April 2026): 'Tim Cook to become Apple Executive Chairman, John Ternus to become Apple CEO' – Tim Cook tritt ab 1. September 2026 als Apple-CEO zurück und wird Executive Chairman; John Ternus (SVP Hardware Engineering, 25 Jahre bei Apple) übernimmt die CEO-Rolle. Wechsel von einem operativen zu einem Technologie-fokussierten CEO signalisiert Apples strategische Neuausrichtung Richtung Hardware-Innovation und KI-Integration. Die grösste Tech-Leadership-Transition seit Steve Jobs illustriert paradigmatisch, wie Organisationen Nachfolge planen, Wissen transferieren und Leadership-Kompetenzen entwickeln müssen – Kernthemen für Thought-Leadership-Plattformen wie learnfluencer.ch.",
+        source: "apple.com/newsroom",
+        url: "https://www.apple.com/newsroom/2026/04/tim-cook-to-become-apple-executive-chairman-john-ternus-to-become-apple-ceo/",
+        date: "2026-04-20",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-23",
+      },
+      {
+        summary: "9to5Mac (April 2026): 'Tim Cook stepping down this year, John Ternus confirmed as next Apple CEO' – Detaillierte Analyse des Apple-Führungswechsels: Während Cook als Meister von Supply Chain und Operationseffizienz galt, steht Ternus als Hardware-Ingenieur für Produktinnovation und technischen Tiefgang. Wie vermittelt man 25 Jahre institutionelles CEO-Wissen? Welche Kompetenzen braucht eine neue Führungskraft, um in ein Iconic Brand zu führen? Der Wechsel ist ein Lehrbeispiel für Organisationslernen, Wissensweitergabe und bewusste Leadership-Entwicklung – ideales Thought-Leadership-Material für learnfluencer.ch.",
+        source: "9to5mac.com",
+        url: "https://9to5mac.com/2026/04/20/apple-ceo-tim-cook-stepping-down-john-ternus-confirmed-as-new-apple-ceo/",
+        date: "2026-04-20",
+        category: "Content & Thought Leadership",
+        addedAt: "2026-04-23",
+      },
       // Neu: 23.04.2026 (12)
       {
         summary: "CNBC (21. April 2026): 'Amazon to invest up to another $25 billion in Anthropic' – Amazon investiert bis zu USD 25 Mrd. zusätzlich in Anthropic (Vorherige Investition: USD 8 Mrd., Gesamtpotenzial: USD 33 Mrd.); Bewertung: USD 380 Mrd. Als Gegenleistung verpflichtet sich Anthropic zu über USD 100 Mrd. in AWS-Technologien über 10 Jahre inkl. 5 GW Compute-Kapazität. AWS-Kunden erhalten direkten Claude-Zugang ohne separate Verträge. Grösste KI-Einzelinvestition 2026 unterstreicht die strategische Bedeutung von KI-Kompetenz und Lernfähigkeit – direkter Rückenwind für Thought-Leadership-Plattformen wie learnfluencer.ch.",
