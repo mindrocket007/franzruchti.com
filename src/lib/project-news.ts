@@ -1710,6 +1710,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 24.04.2026 (1 weitere)
+      {
+        summary: "emini-watch.com: 'What Are Emini Futures? Complete Guide (2026)' – Umfassender Leitfaden zu E-mini S&P 500 Futures (ES): Margins (Interactive Brokers: $17.000/Kontrakt Intraday, $25.000 Overnight per Jan. 2026), Handelszeiten (23,5h täglich, 5 Tage/Woche), Kontrakt-Symbole und Rollover-Termine (März/Juni/September/Dezember). ES-Futures handeln auf CME/Globex; Ressource für Trader, die ES-Futures-Strategien wie bei Mind Rocket Trading anwenden.",
+        source: "emini-watch.com",
+        url: "https://emini-watch.com/emini-trading/emini-futures/",
+        date: "2026-01",
+        category: "Futures & Trading",
+        addedAt: "2026-04-24",
+      },
       // Neu: 24.04.2026 (4 weitere)
       {
         summary: "Bloomberg (21. April 2026): 'S&P 500 Futures Rally as Traders Await Updates on Iran, Warsh' – S&P 500 Futures eröffneten die Handelswoche im Plus, während Märkte auf weitere Entwicklungen im Iran-Krieg und auf Neuigkeiten zu Kevin Warsh (gehandelter Fed-Vorsitzenden-Kandidat) warteten. Die Kombination aus Geopolitik und Notenbankerwartungen erzeugt kurzfristig erhöhte Volatilität bei ES Futures – klassisches Setup für regelbasierte, diskretionsarme Einstiegsstrategien wie jene von Mind Rocket Trading.",
@@ -4117,6 +4126,47 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 24.04.2026 (5 Resilienz-Artikel)
+      {
+        summary: "ad-hoc-news.de: 'Deutsche Unternehmen setzen 2026 auf strategische Resilienz' – Unternehmen priorisieren psychologische Sicherheit und nachhaltiges Arbeitstempo gegen Burnout; Fachkräftemangel beschleunigt Wandel. 'Chief Well-being Officer'-Rollen entstehen; datengetriebene Frühwarnsysteme für Überlastung gewinnen an Bedeutung. Anti-Fragilität als neues Paradigma – Systeme, die unter Stress nicht nur überleben, sondern sich verbessern. Strategisches BGM-Marktpotenzial für hypnovital® als präventives Coaching-Tool.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/deutsche-unternehmen-setzen-2026-auf-strategische-resilienz/68557154",
+        date: "2026-02-06",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-24",
+      },
+      {
+        summary: "ad-hoc-news.de: 'Psychische Gesundheit: Deutschland setzt 2026 auf Prävention und Resilienz' – Burnout-bedingte Absenzen stiegen in 5 Jahren um 33%; Bundesregierung startet Initiative 'Mentale Gesundheit für Junge Menschen'. Politik und Unternehmen setzen auf Prävention und mentale Resilienzstärkung. Wachsender staatlicher und unternehmerischer Fokus auf psychische Präventionsangebote positioniert hypnovital®-BGM-Programme als strategisch relevante Lösung.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/psychische-gesundheit-deutschland-setzt-2026-auf-praevention-und/68511084",
+        date: "2026-01-23",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-24",
+      },
+      {
+        summary: "ad-hoc-news.de: 'Resilienz-Training wird zum Alltags- und Job-Tool' – Psychische Widerstandskraft als trainierbare Schlüsselfähigkeit 2026; sieben Säulen: Optimismus, Akzeptanz, Lösungsorientierung, Verantwortung, Netzwerkorientierung und Zukunftsplanung. Resiliente Mitarbeiter fallen seltener aus, sind produktiver und anpassungsfähiger – Stressbewältigungsprogramme Teil nachhaltiger Unternehmensstrategie. Direktes Marktpotenzial für hypnovital® als Audio-Coaching-Tool.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/resilienz-training-wird-zum-alltags-und-job-tool/68508538",
+        date: "2026-01",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-24",
+      },
+      {
+        summary: "ad-hoc-news.de: 'Resilienz-Sprints: So stärken Sie Ihre mentale Widerstandskraft' – Resilienz-Sprints trainieren psychische Widerstandskraft in 4-Wochen-Zyklen; agile Methoden kombiniert mit Habit-Anchoring für nachhaltige mentale Gesundheit. Praktische Tools: Akzeptanz von Veränderungen, bewusste Selbstfürsorge, lösungsorientierte Zukunftsplanung, stabile Sozialnetzwerke. Relevanter Kontext für hypnovivals Audio-basierte Resilienz-Programme im BGM.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/resilienz-sprints-so-staerken-sie-ihre-mentale-widerstandskraft/68492266",
+        date: "2026-01-16",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-24",
+      },
+      {
+        summary: "ad-hoc-news.de: 'Resilienz wird 2026 zum harten Wirtschaftsfaktor' – Psychische Belastbarkeit von Führungskräften beeinflusst direkt die EBIT-Marge; Unternehmen fordern messbare Evidenz für Investitionen in mentale Gesundheit. Britische Unternehmen verlieren 56 Mrd. Pfund jährlich durch psychische Erkrankungen. ESG-Nachfolgethema 'Social Sustainability' tritt auf Hauptversammlungen in den Vordergrund. Steigende Relevanz von präventiven BGM-Lösungen wie hypnovital® als evidenzbasiertem Programm zur Stärkung psychischer Resilienz.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/resilienz-wird-2026-zum-harten-wirtschaftsfaktor/68449903",
+        date: "2026-01",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-24",
+      },
       // Neu: 24.04.2026 (2 weitere)
       {
         summary: "bgm-tagung.ch (2026): Nationale BGM-Tagung 2026 – 'Gesunde Teams: Wie Zusammenarbeit gelingt' – Die Nationale BGM-Tagung (15. September, Kursaal Bern, ~1.000 Fachleute) fokussiert auf hybride Teams, KI im BGM und psychologische Sicherheit. Unterstreicht den wachsenden Markt für BGM-Angebote wie hypnovivals betriebliches Gesundheitsprogramm.",
