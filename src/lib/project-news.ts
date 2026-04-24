@@ -26,6 +26,23 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 24.04.2026 (2)
+      {
+        summary: "ict-berufsbildung.ch: 'ICT-Berufsbildung Schweiz treibt Digitalisierung in der Berufsbildung voran' – Das Kompetenzzentrum der ICT-Berufsbildung Schweiz entwickelt und testet innovative Ansätze, um Prüfungen effizienter, praxisnäher und digital unterstützt durchzuführen. Ab 2026 gilt für Lehrbeginner/innen des Berufs ICT-Fachfrau/-mann EFZ eine neue Bildungsverordnung und ein neuer Bildungsplan. Strategische Digitalisierung der Schweizer Berufsbildungsinfrastruktur schafft neue Anforderungen an Prüfungsorganisationen – direktes Wachstumsumfeld für die SIZ AG.",
+        source: "ict-berufsbildung.ch",
+        url: "https://www.ict-berufsbildung.ch/ict-berufsbildung-schweiz-treibt-digitalisierung-in-der-berufsbildung-voran",
+        date: "2026-04",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-24",
+      },
+      {
+        summary: "itbusiness.ch: 'ICT Berufsbildung Schweiz und OST kooperieren' – Die OST Ostschweizer Fachhochschule wird Hochschulpartnerin von ICT-Berufsbildung Schweiz; Ziel: bessere Verzahnung von Bildungsangeboten und -wegen im Bereich ICT. Vorherige Zusammenarbeit beim eidg. Fachausweis Cyber Security Specialist wird durch formelle Hochschulpartnerschaft ausgebaut. Engere Verzahnung von Berufsbildung und Hochschulbereich stärkt das gesamte ICT-Bildungsökosystem – positives strategisches Umfeld für Zertifizierungsangebote der SIZ AG.",
+        source: "itbusiness.ch",
+        url: "https://www.itbusiness.ch/news/bildung/neue-hochschulpartnerin-fuer-ict-berufsbildung-schweiz",
+        date: "2026-04",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-24",
+      },
       // Neu: 23.04.2026 (1 weitere)
       {
         summary: "ICT-Berufsbildung Schweiz (2026): 'So wirkt Künstliche Intelligenz (KI) in der Berufsbildung' – Das Kompetenzzentrum der ICT-Berufsbildung Schweiz fungiert als nationaler Hub für KI-Wissen, Kompetenz und Innovation in der Berufsbildung: Beratung für Bildungsanbieter bei digitalen Prüfungen, KI-Kompetenzen und technologiegestützten Lernformaten sowie Unterstützung bei der KI-Integration in Prüfungsprozesse. Die systematische KI-Integration in die Schweizer Berufsbildung schafft neue Anforderungen an Prüfungsorganisationen – direktes strategisches Umfeld für SIZ AG bei der Weiterentwicklung KI-kompatibler Zertifizierungsangebote.",
@@ -7852,6 +7869,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 24.04.2026 (2)
+      {
+        summary: "av-views.com (April 2026): 'LEARNTEC 2026 – Der Kompass für die digitale Transformation an Schulen' – LEARNTEC 2026 als internationale Leitveranstaltung für digitale Bildung: Fokus auf KI-gestütztes Lernen, digitale Kompetenzentwicklung und EdTech-Innovationen für Schulen und Bildungseinrichtungen. Wachsender Diskurs über KI und digitale Transformation im Bildungsbereich schafft direktes Thought-Leadership-Potenzial für Weiterbildungsplattformen wie learnfluencer.ch.",
+        source: "av-views.com",
+        url: "https://www.av-views.com/2026/04/learntec-2026-der-kompass-fuer-die-digitale-transformation/",
+        date: "2026-04",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-24",
+      },
+      {
+        summary: "shk-bodenseekreis.de (13. April 2026): 'KI als Game-Changer: Wer gewinnt das Rennen in der beruflichen Bildung?' – Analyse der KI-Disruption in der beruflichen Bildung: Bildungsanbieter, die KI frühzeitig integrieren, gewinnen Wettbewerbsvorteile durch personalisierte Lernpfade und effizientere Kompetenzdiagnose. Die Frage, wer das Rennen um KI-Kompetenz in der Berufsbildung gewinnt, ist genau das Thought-Leadership-Terrain von learnfluencer.ch als Plattform für Lernkompetenz und digitale Transformation.",
+        source: "shk-bodenseekreis.de",
+        url: "https://www.shk-bodenseekreis.de/2026/04/13/ki-als-game-changer-wer-gewinnt-das-rennen-in-der-beruflichen-bildung/",
+        date: "2026-04-13",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-24",
+      },
       // Neu: 23.04.2026 (2 weitere)
       {
         summary: "Apple Newsroom (20. April 2026): 'Tim Cook to become Apple Executive Chairman, John Ternus to become Apple CEO' – Tim Cook tritt ab 1. September 2026 als Apple-CEO zurück und wird Executive Chairman; John Ternus (SVP Hardware Engineering, 25 Jahre bei Apple) übernimmt die CEO-Rolle. Wechsel von einem operativen zu einem Technologie-fokussierten CEO signalisiert Apples strategische Neuausrichtung Richtung Hardware-Innovation und KI-Integration. Die grösste Tech-Leadership-Transition seit Steve Jobs illustriert paradigmatisch, wie Organisationen Nachfolge planen, Wissen transferieren und Leadership-Kompetenzen entwickeln müssen – Kernthemen für Thought-Leadership-Plattformen wie learnfluencer.ch.",
