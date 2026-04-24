@@ -4150,6 +4150,71 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 24.04.2026 (8 BGM Leadership)
+      {
+        summary: "it-boltwise.de (2026): 'Selbstmanagement als Schlüsselkompetenz für 2026' – Selbstfürsorge und Selbstmanagement werden zur zentralen Kompetenz für nachhaltige Produktivität; die WHO hat die Bedeutung psychischer Gesundheit am Arbeitsplatz hervorgehoben. Selbstmanagement entwickelt sich 2026 von einer Nice-to-have- zur Grundanforderung in der Arbeitswelt – direktes Marktargument für hypnovital® als skalierbare digitale Selbstfürsorge- und Stressreduktionslösung.",
+        source: "it-boltwise.de",
+        url: "https://www.it-boltwise.de/selbstmanagement-als-schluesselkompetenz-fuer-2026.html",
+        date: "2026-01",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-24",
+      },
+      {
+        summary: "digital-chiefs.de (2026): 'CEO-Burnout: Warum die mentale Gesundheit der Führungsebene zum Unternehmensrisiko wird' – 56% der C-Suite-Manager sind burnout-gefährdet; USD 322 Mrd. jährlicher Schaden; mentale Erschöpfung, kognitive Überlastung und Entscheidungsfraktion übersteigen erstmals reine Arbeitsbelastung als Burnout-Hauptauslöser (Deloitte 2025). Unternehmen müssen Executive-Mental-Health systematisch adressieren. Positioniert hypnovital® als systemisches BGM-Tool auf Führungsebene.",
+        source: "digital-chiefs.de",
+        url: "https://www.digital-chiefs.de/ceo-burnout-mentale-gesundheit-fuehrung-unternehmensrisiko-2026/",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-24",
+      },
+      {
+        summary: "pflumm.de (2026): 'Mentale Krisen 2026 – Wenn Führungskräfte an ihre Grenzen kommen' – Führungskräfte sind 2026 einer beispiellosen Belastungsdichte ausgesetzt: KI-Transformation, Fachkräftemangel, globale Instabilität und Dauerkonnektivität erzeugen kumulierten Stress. Mentale Prävention auf Führungsebene wird zur strategischen Unternehmensaufgabe. Direktes BGM-Potenzial für hypnovital® als Coaching- und Präventionsinstrument für Führungspersonen.",
+        source: "pflumm.de",
+        url: "https://www.pflumm.de/mentale-krisen-2026-wenn-fuehrungskraefte-an-ihre-grenzen-kommen",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-24",
+      },
+      {
+        summary: "ad-hoc-news.de (2026): 'Resilienz wird 2026 zum System-Problem' – Resilienz ist keine individuelle Aufgabe mehr, sondern strukturelle Pflicht der Organisation: Systeme müssen so gestaltet sein, dass Mitarbeitende resilient bleiben können. 'Anti-Fragilität' als neues Paradigma treibt Investitionen in systemische Präventionslösungen – direktes Marktpotenzial für hypnovital® als skalierbares digitales BGM-Instrument.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/resilienz-wird-2026-zum-system-problem/69034399",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-24",
+      },
+      {
+        summary: "ad-hoc-news.de (2026): 'Psychische Gesundheit wird 2026 zum Überlebensfaktor für Unternehmen' – Neue Daten und gesetzliche Anforderungen zwingen Führungsetagen zum Umdenken: Psychische Gesundheit der Belegschaft ist ein entscheidender Wirtschaftsfaktor. Ernst genommene BGM-Programme sichern Produktivität, Talentbindung und Wettbewerbsfähigkeit. Direktes Argument für hypnovital® als präventives, skalierbares BGM-Tool mit messbarem ROI.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/psychische-gesundheit-wird-2026-zum-ueberlebensfaktor-fuer-unternehmen/68540570",
+        date: "2026-03",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-24",
+      },
+      {
+        summary: "ad-hoc-news.de (2026): 'Betriebe setzen 2026 auf strategische Erholung als Erfolgsfaktor' – Unternehmen investieren 2026 zunehmend in strukturierte Erholungsprogramme als direkte Antwort auf steigende Burnout-Raten und Produktivitätsverluste. Strategische Erholung und Präventionskompetenz werden zum Wettbewerbsvorteil im Kampf um Talente. Unterstreicht das BGM-Marktpotenzial für hypnovital® als Audio-Coaching-Lösung zur systematischen Stressreduktion.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/betriebe-setzen-2026-auf-strategische-erholung-als-erfolgsfaktor/68499217",
+        date: "2026-02",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-24",
+      },
+      {
+        summary: "business-on.de (2026): 'Burnout-Prävention für Führungskräfte – die strategische Bedeutung von Erholung' – Erholung ist keine Schwäche, sondern strategische Führungskompetenz: Führungskräfte mit aktiven Erholungsstrategien treffen bessere Entscheidungen und haben weniger Ausfälle. Schlafoptimierung, mentale Techniken und Achtsamkeitsroutinen sind zentrale Werkzeuge. Passgenaues Positionierungsumfeld für hypnovital® als mentales Audio-Coaching für Führungskräfte.",
+        source: "business-on.de",
+        url: "https://www.business-on.de/burnout-praevention-fuehrungskraefte-erholung-strategie.html",
+        date: "2026-03",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-24",
+      },
+      {
+        summary: "Haufe (2026): 'Burn Bright, Not Out: Wenn Sinn zur Dauerbelastung wird' – Neue Burnout-Form 'Purpose Fatigue': Mitarbeitende verbrennen nicht an zu viel Arbeit, sondern an zu viel Sinn ohne ausreichend Erholung. Dies verlangt nach neuen Präventionsstrategien – Achtsamkeit, mentale Resilienz und Selbstregulierung statt klassischer Work-Life-Balance. Direktes Themenumfeld für hypnovital® als Audio-Coaching für mentale Erholung und Prävention.",
+        source: "Haufe",
+        url: "https://www.haufe.de/sustainability/soziales/burn-bright-not-out-wenn-sinn-zur-dauerbelastung-wird_575770_674028.html",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-24",
+      },
       // Neu: 24.04.2026 (7 Resilienz-Artikel)
       {
         summary: "aktuellenews.ch (April 2026): 'BGM-Handlungsbedarf in Schweizer Unternehmen' – 51% der befragten Schweizer Firmen sehen Investitionsbedarf im Bereich Stress und psychische Gesundheit (Tendenz steigend seit 2016). Der ROI von systematischem BGM liegt bei 3–5 CHF pro investiertem Franken. Dieses klare Marktargument unterstützt hypnovital als präventives BGM-Angebot mit messbarem Mehrwert.",
@@ -10519,6 +10584,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 24.04.2026 (2 Kompostbestattung)
+      {
+        summary: "SWI swissinfo.ch (2026): 'Die Stadt Zürich will mit der Kompostbestattung neue Wege gehen' – Zürich unterstützt den Verein «Werde Erde» mit Fachwissen und Anschubfinanzierung; der Kantonsrat prüft bereits die Legalisierung. Die Schweiz hat eine Kremationsrate von ~90% und gehört zu den Vorreitern bei umweltfreundlichen Bestattungsformen. Neue Bestattungsformen erhöhen das Informationsbedürfnis der Bevölkerung – wachsendes Potenzial für bestattungsplaner.ch als umfassendes Informations- und Vermittlungsportal.",
+        source: "SWI swissinfo.ch",
+        url: "https://www.swissinfo.ch/ger/die-stadt-z%C3%BCrich-will-mit-der-kompostbestattung-neue-wege-gehen/89752525",
+        date: "2026-04",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-24",
+      },
+      {
+        summary: "20 Minuten (2026): 'Umweltfreundlich über den Tod hinaus – Kompostbestattung als neue Option' – 20 Minuten berichtet über die wachsende Bewegung für naturnahe Bestattungsformen in der Schweiz: Kompostbestattung, Reerdigung, Baumbestattungen – ergänzend zur bereits dominierenden Kremation (~90%). Wachsendes öffentliches Interesse an alternativen Bestattungsformen stärkt die Bedeutung informativer Online-Portale wie bestattungsplaner.ch.",
+        source: "20 Minuten",
+        url: "https://www.20min.ch/story/umweltfreundlich-ueber-den-tod-hinaus-966174530540",
+        date: "2026-04",
+        category: "Markt & Trends",
+        addedAt: "2026-04-24",
+      },
       // Neu: 24.04.2026 (3 weitere)
       {
         summary: "ref.ch (Nov. 2025): 'Kompostbestattung: Kantonsrat Zürich votiert für Terramation' – Der Zürcher Kantonsrat hat mit 101 Stimmen dafür votiert, die Kompostbestattung (Terramation/Reerdigung) als zusätzliche Bestattungsform neben Erd- und Feuerbestattung zuzulassen. Neue Bestattungsformen erweitern das Informationsbedürfnis und die Lead-Potenziale für bestattungsplaner.ch.",
