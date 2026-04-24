@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GL-Dossier: Hauswart/-in mit eidg. Fachausweis — SIZ AG</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#185FA5;--blue-dark:#0d3d6e;--blue-light:#E6F1FB;--blue-mid:#378ADD;--green:#1D9E75;--green-light:#E1F5EE;--green-deep:#0F6E56;--teal:#0F6E56;--amber:#BA7517;--amber-light:#FAEEDA;--red:#A32D2D;--red-light:#FCEBEB;--purple:#534AB7;--purple-light:#EEEDFE;--gray:#333330;--gray-light:#F4F3EF;--gray-mid:#777770;--border:#D8D6CF;--bg:#F7F6F2;--white:#FFFFFF;--siz-blue:#185FA5;--siz-navy:#0d3d6e;--hw-accent:#2D7A44;--hw-accent-light:#E6F2E9;--hw-earth:#8B6F47}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:'IBM Plex Sans',sans-serif;background:var(--bg);color:var(--gray);font-size:14px;line-height:1.6}
+.topnav{position:sticky;top:0;z-index:100;background:var(--siz-navy);display:flex;align-items:center;gap:0;box-shadow:0 2px 12px rgba(0,0,0,.25)}
+.topnav-brand{padding:.75rem 1.5rem;color:#fff;font-weight:700;font-size:14px;border-right:1px solid rgba(255,255,255,.1);white-space:nowrap}
+.topnav-brand span{color:#7DB9E8;font-weight:400}
+.topnav-links{display:flex;gap:0;flex:1;overflow-x:auto}
+.topnav-links a{color:rgba(255,255,255,.75);text-decoration:none;padding:.75rem 1rem;font-size:12px;white-space:nowrap;transition:all .2s;border-right:1px solid rgba(255,255,255,.08)}
+.topnav-links a:hover,.topnav-links a.active{color:#fff;background:rgba(255,255,255,.1)}
+.topnav-meta{padding:.75rem 1.5rem;color:rgba(255,255,255,.45);font-size:11px;font-family:'IBM Plex Mono',monospace;white-space:nowrap;border-left:1px solid rgba(255,255,255,.1)}
+.section{padding:3rem 2rem;max-width:1280px;margin:0 auto}
+.section-hero{background:linear-gradient(135deg,var(--siz-navy) 0%,#1a5439 55%,#2D7A44 100%);color:#fff;padding:4rem 2rem 3rem;position:relative;overflow:hidden}
+.section-hero::before{content:'';position:absolute;top:-50%;right:-10%;width:600px;height:600px;background:radial-gradient(circle,rgba(255,255,255,.06) 0%,transparent 70%);border-radius:50%}
+.hero-inner{max-width:1280px;margin:0 auto;position:relative;z-index:1}
+.hero-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);border-radius:20px;padding:4px 14px;font-size:11px;font-family:'IBM Plex Mono',monospace;margin-bottom:1.25rem;color:rgba(255,255,255,.9)}
+.hero-title{font-size:clamp(24px,4vw,40px);font-weight:700;line-height:1.2;margin-bottom:.5rem}
+.hero-subtitle{font-size:16px;font-weight:300;color:rgba(255,255,255,.8);margin-bottom:2rem}
+.hero-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem;margin-top:2.5rem}
+.kpi-card{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:1.25rem 1rem;text-align:center;backdrop-filter:blur(4px);transition:transform .2s,background .2s}
+.kpi-card:hover{transform:translateY(-2px);background:rgba(255,255,255,.18)}
+.kpi-num{font-size:2rem;font-weight:700;line-height:1;color:#fff}
+.kpi-label{font-size:11px;color:rgba(255,255,255,.75);margin-top:4px;line-height:1.4}
+.kpi-icon{font-size:20px;margin-bottom:6px}
+.alert-banner{background:#FFF3CD;border:1px solid #FFC107;border-radius:10px;padding:1rem 1.25rem;margin-bottom:1.5rem;display:flex;gap:12px;align-items:flex-start}
+.alert-banner-icon{font-size:20px;flex-shrink:0}
+.alert-banner-body{font-size:12px;line-height:1.6;color:#664d03}
+.alert-banner-body strong{color:#512900;display:block;margin-bottom:4px;font-size:13px}
+.insight-banner{background:var(--hw-accent-light);border:1px solid var(--hw-accent);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1.5rem;display:flex;gap:12px;align-items:flex-start}
+.insight-banner-icon{font-size:20px;flex-shrink:0}
+.insight-banner-body{font-size:12px;line-height:1.6;color:var(--green-deep)}
+.insight-banner-body strong{display:block;margin-bottom:4px;font-size:13px}
+.sec-label{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:1.5rem;display:flex;align-items:center;gap:12px}
+.sec-label::after{content:'';flex:1;height:1px;background:var(--border)}
+.ebenen-grid{display:flex;flex-direction:column;gap:6px}
+.ebene{border:1px solid var(--border);border-radius:10px;overflow:hidden;cursor:pointer;transition:box-shadow .2s,border-color .2s}
+.ebene:hover{box-shadow:0 4px 16px rgba(0,0,0,.08)}
+.ebene-header{display:flex;align-items:center;min-height:64px}
+.ebene-num{width:56px;min-height:64px;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:18px;font-weight:700;color:#fff;flex-shrink:0}
+.ebene-info{flex:1;background:var(--white);padding:.875rem 1.25rem;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.ebene-title{font-size:14px;font-weight:600;min-width:200px;flex-shrink:0}
+.ebene-desc{font-size:12px;color:#555;flex:1;min-width:180px}
+.ebene-tags{display:flex;gap:5px;flex-wrap:wrap;flex-shrink:0;margin-left:auto}
+.ebene-siz{background:var(--white);border-top:1px solid var(--border);padding:1rem 1.25rem 1rem 72px;display:none}
+.ebene-siz.open{display:block}
+.ebene-siz-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:.875rem;margin-top:.75rem}
+.siz-item{background:var(--gray-light);border-radius:8px;padding:.875rem 1rem}
+.siz-item strong{display:block;font-size:12px;font-weight:600;color:#222;margin-bottom:4px}
+.siz-item p{font-size:11px;color:#444;line-height:1.6}
+.siz-item a{color:var(--blue);text-decoration:none;font-size:11px}
+.siz-item a:hover{text-decoration:underline}
+.siz-highlight{border-left:3px solid var(--hw-accent);background:var(--hw-accent-light)}
+.siz-highlight strong{color:var(--green-deep)}
+.siz-warn{border-left:3px solid var(--amber);background:var(--amber-light)}
+.siz-warn strong{color:#633806}
+.siz-gap{border-left:3px solid #ccc;background:#F9F9F7}
+.siz-gap strong{color:var(--gray-mid)}
+.e1 .ebene-num{background:#1a1a18}.e2 .ebene-num{background:var(--hw-accent)}.e3 .ebene-num{background:var(--teal)}.e4 .ebene-num{background:var(--blue-mid)}.e5 .ebene-num{background:var(--green)}.e6 .ebene-num{background:var(--amber)}.e7 .ebene-num{background:var(--purple)}.e8 .ebene-num{background:var(--red)}.e9 .ebene-num{background:#333}
+.tag{display:inline-block;font-size:10px;padding:2px 9px;border-radius:10px;font-weight:500;white-space:nowrap}
+.tag-blue{background:var(--blue-light);color:var(--blue-dark)}.tag-green{background:var(--hw-accent-light);color:var(--green-deep)}.tag-amber{background:var(--amber-light);color:#633806}.tag-purple{background:var(--purple-light);color:var(--purple)}.tag-gray{background:var(--gray-light);color:var(--gray)}.tag-red{background:var(--red-light);color:var(--red)}.tag-siz{background:#E1F5EE;color:#0F6E56;font-weight:600}
+.swot-grid{display:grid;grid-template-columns:1fr 1fr;gap:3px;border-radius:12px;overflow:hidden;border:1px solid var(--border)}
+.swot-cell{padding:1.5rem;background:var(--white)}
+.swot-cell:nth-child(1){border-bottom:3px solid var(--green);border-right:3px solid var(--border)}.swot-cell:nth-child(2){border-bottom:3px solid var(--red);border-left:3px solid var(--border)}.swot-cell:nth-child(3){border-top:3px solid var(--border);border-right:3px solid var(--border)}.swot-cell:nth-child(4){border-top:3px solid var(--border);border-left:3px solid var(--border)}
+.swot-head{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.875rem;display:flex;align-items:center;gap:8px}
+.swot-cell:nth-child(1) .swot-head{color:var(--teal)}.swot-cell:nth-child(2) .swot-head{color:var(--red)}.swot-cell:nth-child(3) .swot-head{color:var(--blue)}.swot-cell:nth-child(4) .swot-head{color:var(--amber)}
+.swot-items{list-style:none}
+.swot-items li{font-size:12px;color:#333;padding:4px 0;border-bottom:1px solid var(--border);display:flex;gap:8px;align-items:flex-start}
+.swot-items li:last-child{border-bottom:none}
+.swot-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0;margin-top:6px}
+.swot-cell:nth-child(1) .swot-dot{background:var(--green)}.swot-cell:nth-child(2) .swot-dot{background:var(--red)}.swot-cell:nth-child(3) .swot-dot{background:var(--blue)}.swot-cell:nth-child(4) .swot-dot{background:var(--amber)}
+.markt-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.markt-box{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:1.5rem;overflow:hidden}
+.markt-title{font-size:12px;font-weight:600;color:var(--gray-mid);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1.25rem}
+.bar-chart{display:flex;flex-direction:column;gap:10px}
+.bar-row{display:flex;align-items:center;gap:10px}
+.bar-label{font-size:11px;color:#555;width:200px;flex-shrink:0;line-height:1.3}
+.bar-track{flex:1;background:var(--gray-light);border-radius:4px;height:24px;overflow:hidden;position:relative}
+.bar-fill{height:100%;border-radius:4px;display:flex;align-items:center;padding-left:8px;font-size:11px;font-weight:600;color:#fff;transition:width 1s ease;white-space:nowrap}
+.bar-val{font-size:11px;color:#555;width:80px;flex-shrink:0;text-align:right}
+.siz-treppe{display:flex;gap:6px;margin-top:.5rem}
+.treppe-step{flex:1;border-radius:10px;padding:1.25rem 1rem;text-align:center;border:2px solid transparent;transition:transform .2s}
+.treppe-step:hover{transform:translateY(-3px)}
+.treppe-smart{background:#E1F5EE;border-color:var(--hw-accent)}.treppe-advanced{background:var(--gray-light);border-color:var(--border);opacity:.55}.treppe-power{background:var(--gray-light);border-color:var(--border);opacity:.45}
+.treppe-icon{font-size:28px;margin-bottom:8px}
+.treppe-title{font-size:13px;font-weight:700;margin-bottom:4px}
+.treppe-smart .treppe-title{color:var(--green-deep)}.treppe-advanced .treppe-title{color:var(--gray-mid)}.treppe-power .treppe-title{color:var(--gray-mid)}
+.treppe-desc{font-size:11px;line-height:1.5;color:#555}
+.treppe-badge{display:inline-block;margin-top:8px;font-size:10px;font-weight:600;padding:3px 10px;border-radius:10px}
+.treppe-smart .treppe-badge{background:var(--hw-accent);color:#fff}.treppe-advanced .treppe-badge{background:var(--gray-light);color:var(--gray-mid)}.treppe-power .treppe-badge{background:var(--gray-light);color:var(--gray-mid)}
+.steps{display:flex;flex-direction:column;gap:0}
+.step{display:flex;gap:0;position:relative}
+.step-connector{display:flex;flex-direction:column;align-items:center;width:48px;flex-shrink:0}
+.step-dot{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#fff;flex-shrink:0;z-index:1}
+.step-line{flex:1;width:2px;background:var(--border);min-height:20px}
+.step:last-child .step-line{display:none}
+.step-content{flex:1;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:10px}
+.step-meta{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--gray-mid);margin-bottom:4px}
+.step-title{font-size:14px;font-weight:600;color:var(--gray);margin-bottom:4px}
+.step-body{font-size:12px;color:#555;line-height:1.6}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.three-col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem}
+.card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:1.5rem}
+.card-title{font-size:13px;font-weight:600;color:var(--gray);margin-bottom:1rem;display:flex;align-items:center;gap:8px}
+.schulen-table-wrap{overflow-x:auto}
+table.schulen{width:100%;border-collapse:collapse;font-size:12px}
+table.schulen th{background:var(--siz-navy);color:#fff;padding:.625rem .875rem;text-align:left;font-weight:600;font-size:11px;white-space:nowrap}
+table.schulen td{padding:.625rem .875rem;border-bottom:1px solid var(--border);vertical-align:top}
+table.schulen tr:last-child td{border-bottom:none}
+table.schulen tr:nth-child(even) td{background:#FAFAF8}
+table.schulen tr:hover td{background:var(--hw-accent-light)}
+.prio-high{color:var(--green-deep);font-weight:600}
+.badge-konkurrenz{background:var(--red-light);color:var(--red);padding:1px 7px;border-radius:8px;font-size:10px;font-weight:600}
+.badge-referenz{background:var(--green-light);color:var(--teal);padding:1px 7px;border-radius:8px;font-size:10px;font-weight:600}
+.badge-bestand{background:var(--blue-light);color:var(--blue-dark);padding:1px 7px;border-radius:8px;font-size:10px;font-weight:600}
+.badge-offen{background:var(--amber-light);color:#633806;padding:1px 7px;border-radius:8px;font-size:10px;font-weight:600}
+.download-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.download-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:1.5rem;display:flex;flex-direction:column;gap:.75rem;transition:box-shadow .2s,transform .2s}
+.download-card:hover{box-shadow:0 4px 20px rgba(0,0,0,.1);transform:translateY(-2px)}
+.dl-icon{font-size:32px}.dl-name{font-size:14px;font-weight:600;color:var(--gray)}.dl-desc{font-size:12px;color:var(--gray-mid);line-height:1.5}
+.dl-btn{display:inline-flex;align-items:center;gap:6px;background:var(--hw-accent);color:#fff;padding:.5rem 1rem;border-radius:8px;font-size:12px;font-weight:600;text-decoration:none;margin-top:auto;transition:background .2s}
+.dl-btn:hover{background:var(--green-deep)}
+.section-divider{border:none;border-top:1px solid var(--border);margin:0}
+.fade-in{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+.fade-in.visible{opacity:1;transform:translateY(0)}
+.funnel{display:flex;flex-direction:column;gap:3px}
+.funnel-step{padding:.875rem 1.25rem;border-radius:8px;display:flex;align-items:center;gap:12px;font-size:12px}
+.funnel-icon{font-size:18px;flex-shrink:0;width:28px;text-align:center}
+.funnel-label{font-weight:600;width:200px;flex-shrink:0}
+.funnel-desc{flex:1;color:#555}
+.funnel-tag{margin-left:auto;flex-shrink:0}
+.f-primary{background:var(--hw-accent-light);border-left:4px solid var(--hw-accent)}
+.f-secondary{background:var(--blue-light);border-left:4px solid var(--blue)}
+.f-tertiary{background:var(--amber-light);border-left:4px solid var(--amber)}
+.f-long{background:var(--gray-light);border-left:4px solid #ccc}
+.hkb-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:.75rem;margin-top:1rem}
+.hkb-card{background:var(--white);border:1px solid var(--border);border-radius:8px;padding:1rem 1.25rem;border-left:4px solid var(--hw-accent)}
+.hkb-letter{display:inline-block;background:var(--hw-accent);color:#fff;width:22px;height:22px;border-radius:50%;text-align:center;font-weight:700;font-size:11px;margin-right:8px;line-height:22px}
+.hkb-title{font-size:13px;font-weight:600;margin-bottom:4px}
+.hkb-desc{font-size:11px;color:#555;line-height:1.5}
+.hkb-siz{display:inline-block;margin-top:6px;font-size:10px;background:var(--hw-accent-light);color:var(--green-deep);padding:2px 8px;border-radius:10px;font-weight:600}
+@media print{.topnav{display:none}.ebene-siz{display:block!important}.section{padding:1rem}.markt-grid,.two-col,.three-col{display:block}.markt-box,.card{margin-bottom:1rem}body{font-size:12px}}
+@media(max-width:900px){.markt-grid,.two-col{grid-template-columns:1fr}.three-col{grid-template-columns:1fr 1fr}.swot-grid{grid-template-columns:1fr}.hero-kpis{grid-template-columns:repeat(2,1fr)}.siz-treppe{flex-direction:column}}
+@media(max-width:600px){.three-col{grid-template-columns:1fr}.topnav-meta{display:none}.ebene-tags{display:none}}
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="topnav-brand">SIZ AG <span>GL-Dossier</span></div>
+  <div class="topnav-links">
+    <a href="#onepager" class="active">One-Pager</a>
+    <a href="#strategischer-befund">Strategischer Befund</a>
+    <a href="#businesscase">Business Case</a>
+    <a href="#swot">SWOT</a>
+    <a href="#nextSteps">Nächste Schritte</a>
+    <a href="#detail">Detailanalyse E1–E9</a>
+    <a href="#hkb">Kompetenzen A–I</a>
+    <a href="#schulen">Schulen</a>
+    <a href="#anhaenge">Anhänge</a>
+  </div>
+  <div class="topnav-meta">Hauswart/-in FA · April 2026</div>
+</nav>
+
+<!-- HERO -->
+<div class="section-hero" id="onepager">
+  <div class="hero-inner">
+    <div class="hero-badge">🏠 GL-Dossier · SIZ AG · Eidg. Berufsprüfung Hauswart/-in (PO 01.01.2016, Wegleitung 2018)</div>
+    <div class="hero-title">Hauswart / Hauswartin<br>mit eidg. Fachausweis</div>
+    <div class="hero-subtitle">Marktanalyse &amp; SIZ-Strategiebewertung — Berufsbildung Schweiz, April 2026</div>
+    <div class="hero-kpis">
+      <div class="kpi-card fade-in">
+        <div class="kpi-icon">👥</div>
+        <div class="kpi-num">~250</div>
+        <div class="kpi-label">Kandidaten/Jahr<br>&gt;1'200 Abschlüsse seit 1990</div>
+      </div>
+      <div class="kpi-card fade-in">
+        <div class="kpi-icon">🏫</div>
+        <div class="kpi-num">15+</div>
+        <div class="kpi-label">Ausbildungsstätten CH<br>Deutschschweiz + Romandie</div>
+      </div>
+      <div class="kpi-card fade-in">
+        <div class="kpi-icon">✅</div>
+        <div class="kpi-num">SIZ I</div>
+        <div class="kpi-label"><strong>bereits in PO anerkannt</strong><br>als gleichwertig zu ECDL Base</div>
+      </div>
+      <div class="kpi-card fade-in">
+        <div class="kpi-icon">📋</div>
+        <div class="kpi-num">6</div>
+        <div class="kpi-label">Prüfungsteile<br>Praktisch + theoretisch</div>
+      </div>
+      <div class="kpi-card fade-in">
+        <div class="kpi-icon">💰</div>
+        <div class="kpi-num">CHF 270</div>
+        <div class="kpi-label">Prüfungsgebühren/TN<br>Smart-User SIZ (3 Module × 90)</div>
+      </div>
+      <div class="kpi-card fade-in">
+        <div class="kpi-icon">🏢</div>
+        <div class="kpi-num">SFH</div>
+        <div class="kpi-label">Schweiz. Fachverband Hauswarte<br>= Trägerverband</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- STRATEGISCHER BEFUND -->
+<div class="section" id="strategischer-befund">
+  <div class="sec-label">⚡ Strategischer Befund — Ausgangslage &amp; SIZ-Ansatz</div>
+
+  <div class="insight-banner fade-in">
+    <div class="insight-banner-icon">✅</div>
+    <div class="insight-banner-body">
+      <strong>Der Gold-Anker: SIZ I ist bereits offiziell in der Hauswart-PO als gleichwertig zu ECDL Base anerkannt!</strong>
+      Laut Wegleitung 2018, Ziffer 3.1.2 "European Computer Driving Licence Base (ECDL)" wird das Zertifikat als Zulassungsvoraussetzung verlangt. Alternativ akzeptiert: <em>«SIZ I oder gleichwertiges Zertifikat (vom SIZ bestätigt) und nicht älter als 5 Jahre»</em>. SIZ I entspricht dem heutigen <strong>ICT Smart-User SIZ</strong>. Das heisst: SIZ hat hier <strong>keinen Akquisitions-Bedarf, sondern Verteidigungs-Bedarf</strong>.
+    </div>
+  </div>
+
+  <div class="alert-banner fade-in">
+    <div class="alert-banner-icon">⚠️</div>
+    <div class="alert-banner-body">
+      <strong>Doch: Im Markt dominiert ECDL/ICDL in den Köpfen — SIZ ist unsichtbar</strong>
+      Obwohl SIZ I/Smart-User rechtlich gleichwertig ist, bewerben die meisten Ausbildungsstätten ausschliesslich ECDL Base. SIZ muss aktiv Sichtbarkeit schaffen: (a) bei Schulen, (b) bei Kandidierenden, (c) bei Prüfungskommission verhindern, dass SIZ bei nächster PO-Revision aus der Zulassungsliste fliegt.
+    </div>
+  </div>
+
+  <div class="three-col fade-in" style="margin-top:1.5rem">
+    <div class="card">
+      <div class="card-title">🟢 Hebel, die hier funktionieren</div>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:8px">
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--green);font-weight:700">✓</span> SIZ ist rechtlich gleichwertig anerkannt — Argumentations-Basis</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--green);font-weight:700">✓</span> Schulen-Awareness: "SIZ Smart-User = ECDL-Alternative"</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--green);font-weight:700">✓</span> Kandidaten-Marketing: Schweizer Standard statt internationales Label</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--green);font-weight:700">✓</span> SFH-Partnerschaft: als Branchen-Verband direkt ansprechen</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--green);font-weight:700">✓</span> PK-Dialog: Jakob Hauri (PK-Präsident) kennt SIZ bereits</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">🔴 Hürden im Segment</div>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:8px">
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--red);font-weight:700">✗</span> ECDL/ICDL dominiert Kurswerbung — SIZ bleibt unerwähnt</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--red);font-weight:700">✗</span> Kandidaten sind oft ältere Quereinsteiger mit geringer IT-Erfahrung</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--red);font-weight:700">✗</span> Nur ein Prüfungsstandort/Jahr (Campus Sursee) — niedrige Frequenz</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--red);font-weight:700">✗</span> Risiko PO-Revision: SIZ könnte rausfliegen, wenn kein Lobbying</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--red);font-weight:700">✗</span> ICDL-Trägerschaft (neu SI+SAQ ab 1.1.2025) lobbyiert aktiv</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">🎯 SIZ-Produkt-Empfehlung</div>
+      <p style="font-size:12px;color:#555;margin-bottom:.75rem">Hauswart braucht Grundlagen-IT (E-Mail, Textverarbeitung, Datenerfassung, Online-Recherche). Primärprodukt klar: Smart-User.</p>
+      <div style="display:flex;flex-direction:column;gap:6px">
+        <div style="background:var(--hw-accent-light);border-radius:6px;padding:.5rem .75rem;font-size:12px"><strong style="color:var(--green-deep)">🥇 Primär:</strong> <span style="color:#333">ICT Smart-User SIZ (= SIZ I)</span><br><span style="font-size:11px;color:#555">3 Module × CHF 90 = <strong>CHF 270/TN</strong> · Direkt in PO verankert</span></div>
+        <div style="background:var(--gray-light);border-radius:6px;padding:.5rem .75rem;font-size:12px"><strong style="color:var(--gray-mid)">🥈 Sekundär:</strong> <span style="color:#333">ICT Advanced-User SIZ</span><br><span style="font-size:11px;color:#555">Über Anforderungsniveau — nur für IT-affine Hauswarte</span></div>
+        <div style="background:var(--gray-light);border-radius:6px;padding:.5rem .75rem;font-size:12px"><strong style="color:var(--gray-mid)">💎 Nicht relevant:</strong> <span style="color:#333">Power-User / Professional</span><br><span style="font-size:11px;color:#555">IT-Admin-Level — für Hauswart-Profil unpassend</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- EBENEN E1-E9 -->
+<div class="section" id="detail">
+  <div class="sec-label">Systemübersicht — Ebenen E1 bis E9 (klicken für Details)</div>
+  <div class="ebenen-grid">
+
+    <!-- E1 -->
+    <div class="ebene e1 fade-in" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E1</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Gesetzliche Grundlage / SBFI</div>
+          <div class="ebene-desc">BBG SR 412.10 · Prüfungsordnung 01.01.2016 mit Änderung 03.01.2018 · Trägerschaft: SFH + Verbände</div>
+          <div class="ebene-tags"><span class="tag tag-gray">Bundesebene</span><span class="tag tag-gray">PO 2016</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="ebene-siz-grid">
+          <div class="siz-item"><strong>Berufsbezeichnung</strong><p>DE: Hauswart / Hauswartin mit eidgenössischem Fachausweis<br>FR: Concierge avec brevet fédéral<br>IT: Custode con attestato professionale federale</p></div>
+          <div class="siz-item"><strong>Gesetzliche Grundlage</strong><p>Art. 28 Abs. 2 BBG (SR 412.10) · Prüfungsordnung genehmigt durch SBFI<br>PO vom 01.01.2016 mit Änderung 03.01.2018<br>Wegleitung vom 15.11.2017 (Erstanwendung Prüfung 2018)</p></div>
+          <div class="siz-item"><strong>SBFI-Subvention</strong><p>50 % Bundesbeitrag (bis CHF 9'500) für Vorbereitungskurse bei eidg. Berufsprüfungen · SIZ-Modul kann als subventionsberechtigt gelten, wenn im Kurs inkludiert</p></div>
+          <div class="siz-item siz-highlight"><strong>🔗 Quellen</strong><p><a href="https://www.becc.admin.ch/becc/public/bvz/beruf/showAllActive" target="_blank">SBFI Berufsverzeichnis</a><br><a href="https://www.pruefung-hauswart.ch" target="_blank">pruefung-hauswart.ch</a></p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- E2 -->
+    <div class="ebene e2 fade-in" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E2</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Trägerschaft / OdA</div>
+          <div class="ebene-desc">Schweiz. Fachverband Hauswarte (SFH, sfh.ch) als Hauptträger · Trägerverein BP HW · Sekretariat Luzern</div>
+          <div class="ebene-tags"><span class="tag tag-green">SFH = Kernhebel</span><span class="tag tag-siz">Brancheneinfluss</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="ebene-siz-grid">
+          <div class="siz-item siz-highlight"><strong>SFH – Schweiz. Fachverband Hauswarte</strong><p>Gegründet 1949 · ~2'950 Mitglieder · 10 Regionalverbände<br>Sitz: Hirschmattstrasse 36, 6003 Luzern<br><a href="https://www.sfh.ch" target="_blank">www.sfh.ch</a><br>Präsident: Michi Raich · Vizepräsident: Willi Suhner<br>Vorstand: Benjamin Roffler u.a.</p></div>
+          <div class="siz-item"><strong>Weitere Trägerorganisationen</strong><p>Trägerverein Berufsprüfung Hauswart · Hauseigentümerverband Schweiz (HEV) · SVIT · bauenschweiz · Weitere Verbände des Gebäudeunterhalts</p></div>
+          <div class="siz-item"><strong>Prüfungssekretariat</strong><p>Eidg. Berufsprüfung für Hauswartinnen und Hauswarte<br>Postfach 3065 · 6002 Luzern<br>T 041 368 58 21 · F 041 368 58 59<br><a href="mailto:info@pruefung-hauswart.ch">info@pruefung-hauswart.ch</a><br><a href="https://www.pruefung-hauswart.ch" target="_blank">pruefung-hauswart.ch</a></p></div>
+          <div class="siz-item siz-highlight"><strong>⭐ SIZ-Strategie E2</strong><p>SFH ist der zentrale Branchenverband. Direkter Draht zu Präsident Raich aufbauen. SFH hat Einfluss auf alle Prüfungs-Wegleitungs-Revisionen. Gemeinsame Kommunikation "SIZ Smart-User für den Hauswart" an alle SFH-Mitglieder = potenzieller Nachfrageschub.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- E3 -->
+    <div class="ebene e3 fade-in" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E3</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Prüfungsordnung</div>
+          <div class="ebene-desc"><strong>ECDL Base ODER SIZ I = Zulassungspflicht (Ziffer 3.1.2)</strong> · Plus 24 Monate Berufspraxis · weitere Nachweise</div>
+          <div class="ebene-tags"><span class="tag tag-green">SIZ formal anerkannt!</span><span class="tag tag-amber">Gold-Anker!</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="ebene-siz-grid">
+          <div class="siz-item siz-highlight"><strong>✅ IT-Zulassungsnachweis (aus Wegleitung 2018, Ziffer 3.1.2)</strong><p><strong>Wörtlich in der Wegleitung:</strong><br>«Bei der Anmeldung müssen die Kandidierenden nachweisen, dass sie über das geforderte Zertifikat <em>ECDL Base</em> verfügen. Möglichkeiten:<br>• ECDL Base Zertifikat<br>• Gleichwertiges Zertifikat + ECDL-Bestätigung<br>• <strong>SIZ I oder gleichwertiges Zertifikat (vom SIZ bestätigt) und nicht älter als 5 Jahre»</strong></p></div>
+          <div class="siz-item"><strong>Weitere Zulassungsbedingungen (Ziff. 3.2)</strong><p>• Mind. 80 % Anstellung als Hauswart für mind. 24 Monate<br>• Fachbewilligung Pflanzenschutzmittel (VFB-SB)<br>• Kursausweis Berufsbildner/in (40-Stunden-Kurs)<br>• Nothilfeausweis (für Führerscheinerwerbende)<br>• BLS-AED-SRC Komplett (Gütesiegel Swiss Resuscitation Council)</p></div>
+          <div class="siz-item"><strong>Prüfungsformat</strong><p>6 Prüfungsteile · Mix schriftlich/praktisch/mündlich · Dauer total ~11 Stunden<br>Prüfung zentral einmal pro Jahr für alle Sprachen<br>Prüfungsort: Campus Sursee</p></div>
+          <div class="siz-item siz-warn"><strong>⚠️ Risiko nächste PO-Revision</strong><p>Bei Revision besteht Risiko, dass SIZ aus der Zulassungsliste gestrichen wird, wenn ICDL-Lobby stärker auftritt. <strong>Präventiv-Aktion nötig:</strong> SIZ-Position bei SFH und PK aktiv pflegen.</p></div>
+          <div class="siz-item siz-highlight"><strong>🔗 Wegleitung &amp; PO</strong><p>PDF lokal: <code>G:\Meine Ablage\SIZ\SIZ AG\Akquisition\Hauswart\a24f83_83b0375c842346aca512c6de7a214e2c.pdf</code><br><a href="https://www.pruefung-hauswart.ch" target="_blank">Aktuelle PO auf pruefung-hauswart.ch</a></p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- E4 -->
+    <div class="ebene e4 fade-in" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E4</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Prüfungskommission</div>
+          <div class="ebene-desc">Präsident: <strong>Jakob Hauri</strong> · Unterzeichner Wegleitung 15.11.2017 · Mitglieder aus SFH, Arbeitsmarkt, Experten</div>
+          <div class="ebene-tags"><span class="tag tag-blue">Direkter Kontakt</span><span class="tag tag-siz">Jakob Hauri</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="ebene-siz-grid">
+          <div class="siz-item siz-highlight"><strong>Jakob Hauri — Präsident PK</strong><p>Hat die Wegleitung 2018 am 15.11.2017 in Luzern unterzeichnet. Ansprechpartner via Prüfungssekretariat (info@pruefung-hauswart.ch). <strong>Zentrale Person für SIZ-Positions-Pflege.</strong></p></div>
+          <div class="siz-item"><strong>Zusammensetzung PK</strong><p>Mitglieder werden aus Trägerschaft, Expertinnen/Experten oder Arbeitsmarkt rekrutiert. Verfügen über fundiertes Fachwissen und langjährige Erfahrung. Weitere Namen nicht öffentlich publiziert.</p></div>
+          <div class="siz-item"><strong>Aufgaben PK</strong><p>• Erarbeitung der Prüfungsaufgaben<br>• Fachliche Weiterbildung der Expertinnen/Experten<br>• Einsatzplanung<br>• Notensitzung (mit SBFI-Vertretung)<br>• Entscheid über PO-Änderungen</p></div>
+          <div class="siz-item siz-highlight"><strong>⭐ SIZ-Strategie E4</strong><p>Persönliche Einladung an Jakob Hauri zu SIZ-Informationsveranstaltung. Argument: "SIZ ist bereits gleichwertig anerkannt — lasst uns gemeinsam die Sichtbarkeit gegenüber Kandidaten verbessern." Vor nächster PO-Revision: Memorandum, warum SIZ als Alternative bleiben muss.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- E5 -->
+    <div class="ebene e5 fade-in" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E5</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Wegleitung 2018</div>
+          <div class="ebene-desc">Wegleitung 15.11.2017, Erstanwendung 2018 · 16 Seiten · 6 Prüfungsteile detailliert beschrieben</div>
+          <div class="ebene-tags"><span class="tag tag-green">Operative Basis</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="ebene-siz-grid">
+          <div class="siz-item"><strong>Inhalt Wegleitung</strong><p>1. Einleitung (Berufsbild, Tätigkeiten)<br>2. Prüfungskommission, -leitung, Sekretariat<br>3. Prüfungsorganisation (Ausschreibung, Anmeldung, Zulassung)<br>4. Struktur und Ablauf<br>5. Beschreibung der Prüfungsteile<br>6. Notengebung und Ausweise<br>7-8. Inkrafttreten und Änderungen</p></div>
+          <div class="siz-item"><strong>Anhänge Wegleitung</strong><p>1) Tätigkeitsprofil<br>2) Qualifikationsprofil (15 Seiten, 9 Handlungskompetenzbereiche A–I)<br>3) Pflanzenliste (gültig ab Prüfung 2023, ~116 Pflanzen)</p></div>
+          <div class="siz-item siz-highlight"><strong>⭐ SIZ-Ankerpunkt in Wegleitung</strong><p>Kapitel 3.1.2 (ECDL) und 3.2.2 verankern SIZ I formal. Das ist der <strong>Text, den es zu verteidigen gilt</strong>. Bei Revision: argumentieren, dass der Passus unverändert bleiben soll.</p></div>
+          <div class="siz-item siz-warn"><strong>⚠️ Wegleitung "ECDL Base"</strong><p>Prüfungskommission prüft keine Zertifikate auf Gleichwertigkeit. Empfehlung an Kandidierende: rechtzeitig SIZ-Bestätigung einholen. SIZ sollte Schnell-Bestätigungsservice für Hauswart-Kandidaten anbieten.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- E6 -->
+    <div class="ebene e6 fade-in" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E6</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Lernzielkatalog / Qualifikationsprofil</div>
+          <div class="ebene-desc">9 Handlungskompetenzbereiche A–I (Ökologie, Mitarbeiter, Admin, Sicherheit, Gebäude, Haustechnik, Umgebung, Reinigung, Planung)</div>
+          <div class="ebene-tags"><span class="tag tag-amber">Admin = IT-Teil</span><span class="tag tag-siz">HKB C = SIZ-relevant</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="ebene-siz-grid">
+          <div class="siz-item"><strong>Die 9 Handlungskompetenzbereiche</strong><p>A Ökologische Aspekte · B Mitarbeiter führen · <strong>C Administrative Arbeiten</strong> · D Sicherheit · E Gebäude unterhalten · F Haustechnische Anlagen · G Umgebung unterhalten · H Reinigungsarbeiten · I Planen von Projekten/Finanzen/Personal<br><em>Siehe separate Sektion "Kompetenzen A–I" auf dieser Seite</em></p></div>
+          <div class="siz-item siz-highlight"><strong>⭐ HKB C = direkter IT-Bezug</strong><p><strong>C-01 Korrespondenz und Telefone</strong> (Word, E-Mail)<br><strong>C-02 Anlagendokumentation erstellen</strong> (Word, evtl. Excel)<br><strong>C-03 Listen, Pläne, Rapporte erstellen</strong> (Excel, Word)<br><strong>C-07 Energiestatistik führen</strong> (Excel)<br><strong>C-08 Grundlagen zur Budgeterstellung</strong> (Excel)<br><strong>C-12 Daten doppelte Buchhaltung interpretieren</strong> (Excel-Verständnis)</p></div>
+          <div class="siz-item"><strong>SIZ-Modul-Matching</strong><p>SIZ Smart-User 3 Module decken diese HKB C vollständig ab:<br>• Modul 1: Computer-Grundlagen + Online-Grundlagen<br>• Modul 2: Textverarbeitung (Word) — für C-01, C-02<br>• Modul 3: Tabellenkalkulation (Excel) — für C-03, C-07, C-08</p></div>
+          <div class="siz-item"><strong>Weitere IT-berührte HKBs</strong><p><strong>D-07 Grundrisspläne verstehen</strong> (Plan-Lesen, teilweise digital)<br><strong>F-01 Gebäudeleitsysteme bedienen</strong> (Bussysteme)<br><strong>F-06 Schliess-/Zutrittssysteme programmieren</strong><br>SIZ-Bezug: Smart-User Grundlagen reichen aus</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- E7 -->
+    <div class="ebene e7 fade-in" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E7</div>
+        <div class="ebene-info">
+          <div class="ebene-title">SIZ-Produkt-Positionierung</div>
+          <div class="ebene-desc">ICT Smart-User SIZ (=SIZ I) = Primärprodukt · Einstiegsniveau · CHF 270/TN · passt exakt zum Kandidatenprofil</div>
+          <div class="ebene-tags"><span class="tag tag-green">Smart-User</span><span class="tag tag-siz">CHF 270/TN</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div style="margin-top:.75rem">
+          <div class="siz-treppe">
+            <div class="treppe-step treppe-smart">
+              <div class="treppe-icon">💡</div>
+              <div class="treppe-title">ICT Smart-User SIZ (=SIZ I)</div>
+              <div class="treppe-desc">Windows, Word, Excel Basis, Internet, E-Mail · Exakt was Hauswart im Alltag braucht · IN PO VERANKERT</div>
+              <div class="treppe-badge">✅ Primär-Empfehlung</div>
+            </div>
+            <div class="treppe-step treppe-advanced">
+              <div class="treppe-icon">🔧</div>
+              <div class="treppe-title">ICT Advanced-User SIZ</div>
+              <div class="treppe-desc">Advanced Office · Über Anforderungsniveau · nur für IT-affine Quereinsteiger sinnvoll</div>
+              <div class="treppe-badge">Nicht relevant</div>
+            </div>
+            <div class="treppe-step treppe-power">
+              <div class="treppe-icon">⚙️</div>
+              <div class="treppe-title">SIZ Power-User / Professional</div>
+              <div class="treppe-desc">IT-Admin, System &amp; Network · Passt nicht zum Hauswart-Profil</div>
+              <div class="treppe-badge">Nicht relevant</div>
+            </div>
+          </div>
+          <div class="siz-item siz-highlight" style="margin-top:1rem"><strong>⭐ Umsatz-Kalkulation (SIZ-Preismodell)</strong><p><strong>ICT Smart-User SIZ:</strong> 3 Module × CHF 90 = <strong>CHF 270/TN</strong> Prüfungsgebühren an SIZ<br>Bei 250 Kandidaten/Jahr × 30 % Marktanteil = <strong>~CHF 20'250/Jahr</strong> direkter Umsatz bei Hauswart-FA.<br>Bei 50 % Marktanteil (realistisch, wenn SIZ aktiv vermarktet) = <strong>~CHF 33'750/Jahr</strong>.<br>Bei 70 % Marktanteil (Maximum) = <strong>~CHF 47'250/Jahr</strong>.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- E8 -->
+    <div class="ebene e8 fade-in" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E8</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Bildungsanbieter / Schulen</div>
+          <div class="ebene-desc">15+ Ausbildungsstätten · Teils regionale Berufs-/Weiterbildungszentren · BZBS, WBZ Lenzburg, ABZ-Suisse u.a.</div>
+          <div class="ebene-tags"><span class="tag tag-red">Marktkanal</span><span class="tag tag-gray">~15 Schulen</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="ebene-siz-grid">
+          <div class="siz-item siz-highlight"><strong>Top 1: BZBS Buchs-Sargans</strong><p><a href="https://www.bzbs.ch" target="_blank">bzbs.ch</a> · Bietet Hauswart FA explizit mit SIZ/ECDL-Klausel in Ausschreibung<br>Standort: Buchs SG · Kanton: SG</p></div>
+          <div class="siz-item siz-highlight"><strong>Top 2: WBZ Lenzburg</strong><p><a href="https://www.wbzlenzburg.ch" target="_blank">wbzlenzburg.ch</a> · Weiterbildungszentrum · Hauswart-Lehrgang mit SIZ-Klausel dokumentiert<br>Standort: Lenzburg AG</p></div>
+          <div class="siz-item siz-highlight"><strong>Top 3: ABZ-Suisse</strong><p><a href="https://abz-suisse.ch" target="_blank">abz-suisse.ch</a> · Hauswart FA Vorbereitungslehrgang · SIZ-Klausel verankert<br>Mehrere Standorte CH</p></div>
+          <div class="siz-item"><strong>HFS Weiterbildung</strong><p>Hauswart FA-Vorbereitung<br>Nachweis SIZ/ECDL vor Prüfungsanmeldung nötig</p></div>
+          <div class="siz-item"><strong>Regionale Berufsbildungszentren</strong><p>BBZ BL · BBZ Solothurn · BBZ Thun · BZSL Schaffhausen · diverse Kantone bieten Hauswart-FA an</p></div>
+          <div class="siz-item"><strong>Ergänzungskurs-Anbieter</strong><p><a href="https://www.sanu.ch" target="_blank">sanu future learning</a> (Pflanzenschutz)<br>jardinsuisse (Pflanzenschutz)</p></div>
+          <div class="siz-item"><strong>Campus Sursee</strong><p>Prüfungsort (nicht Ausbildungsstätte). Einmal/Jahr werden alle Kandidaten aus DE/FR/IT dort geprüft.</p></div>
+          <div class="siz-item siz-warn"><strong>⚠️ Vollständige Liste</strong><p>Offizielle Liste der zugelassenen Kursanbieter: auf <a href="https://www.pruefung-hauswart.ch" target="_blank">pruefung-hauswart.ch</a> unter "Kursanbieter". SIZ sollte intern CSV erstellen und mit eigenen Partnerschulen abgleichen.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- E9 -->
+    <div class="ebene e9 fade-in" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E9</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Kandidatenprofil / IT-Niveau</div>
+          <div class="ebene-desc">Typisch: 35–55 J. · Quereinsteiger aus Handwerk · geringe IT-Grundkenntnisse · 24+ Mt. Berufspraxis als Hauswart</div>
+          <div class="ebene-tags"><span class="tag tag-gray">Einstiegsniveau IT</span><span class="tag tag-siz">Smart-User = ideal</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="ebene-siz-grid">
+          <div class="siz-item"><strong>Typisches Kandidatenprofil</strong><p>Alter: 35–55 Jahre · Quereinsteiger aus Handwerk (Maler, Schreiner, Gärtner, Elektriker) · mind. 24 Monate Anstellung als Hauswart mit 80 %+ · oft abendliche Vorbereitungskurse 12–24 Monate</p></div>
+          <div class="siz-item"><strong>IT-Kenntnisse (typisch)</strong><p>Tendenziell <strong>niedrig bis mittel</strong> · E-Mail alltäglich · Word/Excel nur oberflächlich · Umgang mit Kundenlisten, Materialbestellungen, Rapporten · Hausverwaltungen mit digitalen Tools zwingen zu mehr Digital-Kompetenz</p></div>
+          <div class="siz-item siz-highlight"><strong>⭐ Richtige SIZ-Positionierung</strong><p>ICT Smart-User SIZ ist <strong>genau das richtige Niveau</strong>. Kandidaten brauchen Einstieg, keine Advanced-Office-Themen. Smart-User bedeutet: sicherer Umgang im Alltag, nicht Exzellenz.</p></div>
+          <div class="siz-item"><strong>Motivation für IT-Zertifikat</strong><p><strong>Pflicht:</strong> Ohne ECDL/SIZ keine Zulassung zur FA-Prüfung. <strong>Nutzen:</strong> 5 Jahre gültig, dann wieder fit für Verwaltungsdigitalisierung. Schweizer Zertifikat ist oft näher an realem Job-Alltag als internationales ICDL.</p></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- HKB A-I -->
+<div class="section" id="hkb">
+  <div class="sec-label">Handlungskompetenzbereiche A–I — Qualifikationsprofil Hauswart/-in (SIZ-Relevanz-Markierung)</div>
+  <p style="font-size:13px;color:#555;margin-bottom:1rem">Die 9 Handlungskompetenzbereiche des Qualifikationsprofils (Quelle: Anhang 2 Wegleitung). Markiert ist, wo <strong>SIZ Smart-User</strong> die benötigten IT-Kompetenzen abdeckt.</p>
+  <div class="hkb-grid">
+    <div class="hkb-card">
+      <span class="hkb-letter">A</span><span class="hkb-title">Ökologische Aspekte umsetzen</span>
+      <div class="hkb-desc">Abfallbewirtschaftung, ökologische Geräte/Produkte, alternative Energieerzeugung, Mieter in ökolog. Aspekten begleiten, Energie sinnvoll nutzen</div>
+    </div>
+    <div class="hkb-card">
+      <span class="hkb-letter">B</span><span class="hkb-title">Mitarbeiter führen und anleiten</span>
+      <div class="hkb-desc">Pflichtenhefte erstellen, Mitarbeitergespräche, fördern, Mitarbeiterauswahl, Lernende ausbilden</div>
+    </div>
+    <div class="hkb-card" style="border-left-color:var(--amber);background:var(--amber-light)">
+      <span class="hkb-letter" style="background:var(--amber)">C</span><span class="hkb-title">Administrative Arbeiten ausführen</span>
+      <div class="hkb-desc">Korrespondenz, Anlagendokumentation, Listen/Pläne/Rapporte, Lager, Bestellungen, Rechnungen, Energiestatistik, Budget, Offerten, Nebenkosten, Buchhaltung, Wartungsverträge</div>
+      <span class="hkb-siz">🎯 SIZ Smart-User Zielbereich</span>
+    </div>
+    <div class="hkb-card">
+      <span class="hkb-letter">D</span><span class="hkb-title">Sicherheit gewährleisten</span>
+      <div class="hkb-desc">Arbeitssicherheit, PSA, Sicherheits- &amp; Betriebseinrichtungen, Gefahrenkommunikation, Chemikalien, Notfallkonzept, Hygiene, Grundrisspläne</div>
+    </div>
+    <div class="hkb-card">
+      <span class="hkb-letter">E</span><span class="hkb-title">Gebäude unterhalten (warten)</span>
+      <div class="hkb-desc">Sichtkontrolle Hülle/Bauteile, Reparaturen, Verbrauchsmaterial, Abwasser, Mobiliar, Werkzeuge/Maschinen, Grundriss-Detail-Pläne</div>
+    </div>
+    <div class="hkb-card">
+      <span class="hkb-letter">F</span><span class="hkb-title">Haustechnische Anlagen unterhalten</span>
+      <div class="hkb-desc">Gebäudeleitsysteme, Sanitär, HLKK-Anlagen, Elektrik, Transportanlagen (Lift), Schliess-/Zutrittssysteme, technische Schemata</div>
+    </div>
+    <div class="hkb-card">
+      <span class="hkb-letter">G</span><span class="hkb-title">Umgebung unterhalten (warten)</span>
+      <div class="hkb-desc">Rasen, Schnitt, Pflanzen, Beikraut, Wege/Plätze (inkl. Winterdienst), Gartenmobiliar, Einfriedungen, Werkzeuge, Biotope, Hydrokulturen</div>
+    </div>
+    <div class="hkb-card">
+      <span class="hkb-letter">H</span><span class="hkb-title">Reinigungsarbeiten ausführen</span>
+      <div class="hkb-desc">Unterhalts-/Zwischen-/Grundreinigung, Schutzbehandlung, Spezialreinigung, Schwimm-/Wellnessanlagen, Reinigungsmaschinen, Schädlinge</div>
+    </div>
+    <div class="hkb-card" style="border-left-color:var(--amber)">
+      <span class="hkb-letter" style="background:var(--amber)">I</span><span class="hkb-title">Planen von Projekten/Finanzen/Personal</span>
+      <div class="hkb-desc">Arbeitspläne, Personaleinsatz, bauliche Massnahmen, Belegungsplan, Evaluation haustechn. Anlagen, Veranstaltungen/Projekte</div>
+      <span class="hkb-siz">🎯 Digital-Nebeneffekt: Excel-Pläne</span>
+    </div>
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- BUSINESS CASE -->
+<div class="section" id="businesscase">
+  <div class="sec-label">Business Case — Marktpotenzial für die SIZ AG</div>
+  <div class="markt-grid fade-in">
+    <div class="markt-box">
+      <div class="markt-title">📊 Marktpotenzial ICT Smart-User SIZ (CHF/Jahr Prüfungsgebühren)</div>
+      <div class="bar-chart">
+        <div class="bar-row">
+          <div class="bar-label">Gesamtmarkt (~250 Kand. × CHF 270)</div>
+          <div class="bar-track"><div class="bar-fill" style="width:100%;background:var(--hw-accent)">CHF 67'500</div></div>
+          <div class="bar-val">max.</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Maximum (70 % Marktanteil)</div>
+          <div class="bar-track"><div class="bar-fill" style="width:70%;background:var(--green)">CHF 47'250</div></div>
+          <div class="bar-val">ambitiös</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Realistisch (50 %)</div>
+          <div class="bar-track"><div class="bar-fill" style="width:50%;background:var(--blue)">CHF 33'750</div></div>
+          <div class="bar-val">realistisch</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Konservativ (30 %)</div>
+          <div class="bar-track"><div class="bar-fill" style="width:30%;background:var(--amber)">CHF 20'250</div></div>
+          <div class="bar-val">aktueller Stand</div>
+        </div>
+      </div>
+      <p style="font-size:11px;color:var(--gray-mid);margin-top:.75rem"><strong>Basis:</strong> Smart-User = 3 Module × CHF 90 = CHF 270/TN · Kandidatenzahl via pruefung-hauswart.ch zu verifizieren</p>
+    </div>
+    <div class="markt-box">
+      <div class="markt-title">🎯 Hebel-Wirkung durch SFH-Partnerschaft</div>
+      <div class="bar-chart">
+        <div class="bar-row">
+          <div class="bar-label">Aktuell: ~30 % via Schul-Zufall</div>
+          <div class="bar-track"><div class="bar-fill" style="width:30%;background:var(--amber)">CHF 20'250</div></div>
+          <div class="bar-val">Status Quo</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Aktive Schul-Kampagne</div>
+          <div class="bar-track"><div class="bar-fill" style="width:50%;background:var(--blue)">CHF 33'750</div></div>
+          <div class="bar-val">+13'500</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">+ SFH-Empfehlung</div>
+          <div class="bar-track"><div class="bar-fill" style="width:70%;background:var(--hw-accent)">CHF 47'250</div></div>
+          <div class="bar-val">+13'500</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">+ Kandidaten-Marketing</div>
+          <div class="bar-track"><div class="bar-fill" style="width:75%;background:var(--green-deep)">CHF 50'625</div></div>
+          <div class="bar-val">+3'375</div>
+        </div>
+      </div>
+      <p style="font-size:11px;color:var(--gray-mid);margin-top:.75rem"><strong>Interpretation:</strong> Mit aktiver SFH-Partnerschaft + Schul-Kampagne realistisch <strong>Verdoppelung</strong> des SIZ-Umsatzes bei Hauswart möglich — ohne neue Produkte.</p>
+    </div>
+  </div>
+
+  <div class="two-col fade-in" style="margin-top:1.5rem">
+    <div class="card">
+      <div class="card-title">💡 Strategische Ausgangslage</div>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:8px">
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--green);font-weight:700">✓</span><strong>SIZ I ist formal in der PO verankert</strong> (Wegleitung Ziffer 3.1.2)</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--green);font-weight:700">✓</span> Smart-User deckt HKB C (Admin) exakt ab — fachlich passend</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--green);font-weight:700">✓</span> Trägerverband SFH = einziger Ansprechpartner für Branchenkampagne</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--green);font-weight:700">✓</span> Jakob Hauri (PK-Präs.) ist in Luzern erreichbar über Sekretariat</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--amber);font-weight:700">!</span> ICDL/ECDL ist in Köpfen dominant — Sichtbarkeits-Gap</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--amber);font-weight:700">!</span> Neue ICDL-Trägerschaft (SI+SAQ ab 2025) lobbyiert aktiv</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--red);font-weight:700">✗</span> Risiko Revision: SIZ könnte rausfliegen ohne aktive Pflege</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">🚀 Ausblick: Weitere OdAs mit ECDL/SIZ-Pflicht</div>
+      <p style="font-size:12px;color:#555;margin-bottom:.75rem">Der Hauswart-Case ist der <strong>Blueprint für weitere Berufsprüfungen mit IT-Zulassungspflicht</strong>. Eigene Analyse pro Beruf nötig, aber der Ansatz bleibt: SIZ-Status in PO prüfen, bei Bedarf Gleichwertigkeits-Antrag, Sichtbarkeit bei Schulen verbessern:</p>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:6px">
+        <li style="display:flex;gap:8px;font-size:12px;align-items:center"><span class="tag tag-blue">Facility Manager FA</span> Analog Hauswart</li>
+        <li style="display:flex;gap:8px;font-size:12px;align-items:center"><span class="tag tag-blue">Immobilien-Bewirtschafter FA</span> PO prüfen</li>
+        <li style="display:flex;gap:8px;font-size:12px;align-items:center"><span class="tag tag-blue">Tech. Kaufmann FA</span> IT-Pflicht oft verankert</li>
+        <li style="display:flex;gap:8px;font-size:12px;align-items:center"><span class="tag tag-blue">Sozialvers.-Fachmann FA</span> PO prüfen</li>
+        <li style="display:flex;gap:8px;font-size:12px;align-items:center"><span class="tag tag-green">Hinweis</span> Audit Q2 2026: Alle PO-IT-Klauseln scannen</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- SWOT -->
+<div class="section" id="swot">
+  <div class="sec-label">SWOT-Analyse — SIZ AG im Hauswart-FA-Segment</div>
+  <div class="swot-grid fade-in">
+    <div class="swot-cell">
+      <div class="swot-head">💪 Stärken (Strengths)</div>
+      <ul class="swot-items">
+        <li><div class="swot-dot"></div><div><strong>SIZ I ist bereits in PO formal als gleichwertig anerkannt</strong> — kein Neuantrag nötig</div></li>
+        <li><div class="swot-dot"></div><div>Schweizer Zertifikat für Schweizer Beruf — Authentizität &amp; Praxisnähe</div></li>
+        <li><div class="swot-dot"></div><div>Smart-User-Preis (CHF 270) ist wettbewerbsfähig zu ECDL-Paket</div></li>
+        <li><div class="swot-dot"></div><div>SIZ hat Track Record seit 1991 — Glaubwürdigkeit</div></li>
+        <li><div class="swot-dot"></div><div>3-Modul-Struktur deckt HKB C (Admin) genau ab</div></li>
+        <li><div class="swot-dot"></div><div>SIZ kann Bestätigung "SIZ I gleichwertig" für Kandidaten schnell ausstellen</div></li>
+      </ul>
+    </div>
+    <div class="swot-cell">
+      <div class="swot-head">⚠️ Schwächen (Weaknesses)</div>
+      <ul class="swot-items">
+        <li><div class="swot-dot"></div><div>ICDL/ECDL dominiert Kurswerbung der Ausbildungsstätten</div></li>
+        <li><div class="swot-dot"></div><div>SIZ ist bei SFH-Mitgliedern/Kandidaten kaum sichtbar</div></li>
+        <li><div class="swot-dot"></div><div>Keine direkten Partner unter den Ausbildungsstätten dokumentiert</div></li>
+        <li><div class="swot-dot"></div><div>"SIZ I" = altes Label, heute Smart-User — Verwirrung bei Kandidaten</div></li>
+        <li><div class="swot-dot"></div><div>Keine Hauswart-spezifische SIZ-Marketingmaterialien verfügbar</div></li>
+      </ul>
+    </div>
+    <div class="swot-cell">
+      <div class="swot-head">🎯 Chancen (Opportunities)</div>
+      <ul class="swot-items">
+        <li><div class="swot-dot"></div><div>SFH-Partnerschaft: 2'950 Hauswart-Mitglieder als Multiplikator</div></li>
+        <li><div class="swot-dot"></div><div>Jakob Hauri persönlich ansprechen — 1 Gespräch = PK-Alignment</div></li>
+        <li><div class="swot-dot"></div><div>Schul-Kampagne: BZBS, WBZ Lenzburg, ABZ-Suisse direkt ansprechen</div></li>
+        <li><div class="swot-dot"></div><div>ICDL-Trägerwechsel (SI+SAQ 1.1.2025) = Window für SIZ-Sichtbarkeit</div></li>
+        <li><div class="swot-dot"></div><div>Hauswart als Referenz-Case für Lobbying bei weiteren OdAs</div></li>
+        <li><div class="swot-dot"></div><div>Digitalisierung der Gebäudebewirtschaftung treibt IT-Bedarf</div></li>
+      </ul>
+    </div>
+    <div class="swot-cell">
+      <div class="swot-head">🔴 Risiken (Threats)</div>
+      <ul class="swot-items">
+        <li><div class="swot-dot"></div><div><strong>Nächste PO-Revision streicht SIZ aus Zulassungsliste</strong> (bei ICDL-Lobbying-Übermacht)</div></li>
+        <li><div class="swot-dot"></div><div>ICDL Switzerland unter SI+SAQ mit wissenschaftlicher Aura, zieht Schulen an</div></li>
+        <li><div class="swot-dot"></div><div>Kursanbieter migrieren bei Lizenz-Deals zu ICDL (günstiger Paket-Preis)</div></li>
+        <li><div class="swot-dot"></div><div>"5-Jahre-Gültigkeit" des SIZ-Zertifikats wird bei Kandidaten nicht beworben</div></li>
+        <li><div class="swot-dot"></div><div>Neue IT-Zertifikate (Google Digital Garage) könnten in Revision eingefügt werden</div></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- NÄCHSTE SCHRITTE -->
+<div class="section" id="nextSteps">
+  <div class="sec-label">Empfohlene Massnahmen — Priorisierte Roadmap</div>
+
+  <!-- STRATEGY FUNNEL -->
+  <div class="funnel fade-in" style="margin-bottom:2rem">
+    <div class="funnel-step f-primary">
+      <div class="funnel-icon">🔑</div>
+      <div class="funnel-label">Schlüsselhebel</div>
+      <div class="funnel-desc">SFH + Jakob Hauri direkt ansprechen. 2'950 SFH-Mitglieder als Multiplikatoren. SIZ-Visibility bei Branche erhöhen.</div>
+      <div class="funnel-tag"><span class="tag tag-green">Q2 2026</span></div>
+    </div>
+    <div class="funnel-step f-secondary">
+      <div class="funnel-icon">🏫</div>
+      <div class="funnel-label">Schul-Kampagne</div>
+      <div class="funnel-desc">BZBS, WBZ Lenzburg, ABZ-Suisse, HFS Weiterbildung ansprechen. Gemeinsames Bewerbungs-Paket schnüren.</div>
+      <div class="funnel-tag"><span class="tag tag-blue">Q2–Q3 2026</span></div>
+    </div>
+    <div class="funnel-step f-tertiary">
+      <div class="funnel-icon">📋</div>
+      <div class="funnel-label">Kandidaten-Marketing</div>
+      <div class="funnel-desc">Landing Page "SIZ Smart-User für den Hauswart FA" mit Vorteils-Argumentation und 5-Jahre-Garantie</div>
+      <div class="funnel-tag"><span class="tag tag-amber">Q3 2026</span></div>
+    </div>
+    <div class="funnel-step f-long">
+      <div class="funnel-icon">⚙️</div>
+      <div class="funnel-label">PO-Revisions-Vorbereitung</div>
+      <div class="funnel-desc">Memorandum für nächste PO-Revision vorbereiten: SIZ als Alternative muss bleiben + ggf. Smart-User statt SIZ I als Bezeichnung</div>
+      <div class="funnel-tag"><span class="tag tag-gray">2027+</span></div>
+    </div>
+  </div>
+
+  <div class="steps">
+
+    <div class="step fade-in">
+      <div class="step-connector">
+        <div class="step-dot" style="background:var(--hw-accent)">1</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <div class="step-meta">Q2 2026 · Sofort · Höchste Priorität</div>
+        <div class="step-title">SFH / Jakob Hauri persönlich ansprechen</div>
+        <div class="step-body">Schweiz. Fachverband Hauswarte (SFH, info@sfh.ch) und Prüfungskommission-Präsident Jakob Hauri via Prüfungssekretariat (info@pruefung-hauswart.ch, 041 368 58 21) kontaktieren. Ziel: (a) Statusgespräch, (b) Informationsmaterial zu SIZ Smart-User/SIZ I an alle SFH-Mitglieder, (c) Zusicherung, dass SIZ in nächster Revision bleibt. Argument: SIZ ist Schweizer Standard seit 1991, 250'000+ Absolventen.</div>
+      </div>
+    </div>
+
+    <div class="step fade-in">
+      <div class="step-connector">
+        <div class="step-dot" style="background:var(--blue)">2</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <div class="step-meta">Q2 2026 · Parallel · Hohe Priorität</div>
+        <div class="step-title">Top-5 Hauswart-Kursanbieter direkt ansprechen</div>
+        <div class="step-body">BZBS Buchs-Sargans, WBZ Lenzburg, ABZ-Suisse, HFS Weiterbildung, BBZ BL direkt ansprechen. Angebot: "Ihr könnt euren Kandidaten SIZ Smart-User als Alternative zu ECDL Base anbieten — die PO lässt das zu. Wir liefern euch das Marketing-Material, Kandidaten erhalten das Zertifikat bei euch vor Ort." Gruppenpreis-Modell diskutieren.</div>
+      </div>
+    </div>
+
+    <div class="step fade-in">
+      <div class="step-connector">
+        <div class="step-dot" style="background:var(--purple)">3</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <div class="step-meta">Q2–Q3 2026 · Aktiv</div>
+        <div class="step-title">Landing Page / Kandidaten-Marketing "SIZ für Hauswart"</div>
+        <div class="step-body">siz.ch-Unterseite erstellen: "ICT Smart-User SIZ — der Schweizer Weg zum Hauswart-Fachausweis". Inhalt: (a) Gleichwertigkeit ECDL = SIZ, (b) 5 Jahre gültig, (c) 3 Module à CHF 90, (d) Prüfungsstandorte, (e) Kursanbieter mit SIZ-Option. SEO: "Hauswart Fachausweis IT Zertifikat". Google Ads für Suche "Hauswart FA ECDL Alternative".</div>
+      </div>
+    </div>
+
+    <div class="step fade-in">
+      <div class="step-connector">
+        <div class="step-dot" style="background:var(--teal)">4</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <div class="step-meta">Q3 2026 · Strategisch</div>
+        <div class="step-title">Bestätigungsservice "SIZ I gleichwertig" digitalisieren</div>
+        <div class="step-body">Wegleitung verlangt: "SIZ I oder gleichwertiges Zertifikat (vom SIZ bestätigt) und nicht älter als 5 Jahre". SIZ muss einen schlanken Online-Service bereitstellen, wo Kandidaten ihr Smart-User-Zertifikat in eine "gleichwertig zu ECDL Base"-Bestätigung konvertieren können. Bearbeitung 2 Arbeitstage. Kosten: frei oder CHF 20.</div>
+      </div>
+    </div>
+
+    <div class="step fade-in">
+      <div class="step-connector">
+        <div class="step-dot" style="background:var(--amber)">5</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <div class="step-meta">2026–2027 · Präventiv</div>
+        <div class="step-title">PO-Revisions-Memorandum vorbereiten</div>
+        <div class="step-body">Argument-Dossier für nächste Revision: Warum SIZ als Alternative bleiben soll. Bausteine: (a) 250'000+ Absolventen seit 1991, (b) 100+ Schweizer Partnerschulen, (c) neutraler Anbieter (kfmv + Swico), (d) jährlich aktualisierte Inhalte. Einsatz bei Revisions-Ankündigung. Bezeichnung aktualisieren: "SIZ Smart-User (ehemals SIZ I)" in neue PO.</div>
+      </div>
+    </div>
+
+    <div class="step fade-in">
+      <div class="step-connector">
+        <div class="step-dot" style="background:var(--gray)">6</div>
+      </div>
+      <div class="step-content">
+        <div class="step-meta">Kontinuierlich · Audit</div>
+        <div class="step-title">Audit: Weitere OdAs mit ECDL/SIZ-Klausel scannen</div>
+        <div class="step-body">Hauswart ist der Blueprint. Systematisch alle ~280 eidg. BP/HFP auf ECDL/SIZ-Klauseln scannen. Wo SIZ bereits drin steht: analog Hauswart-Prozess = Visibility-Kampagne. Wo nur ECDL: Gleichwertigkeits-Antrag. Pipeline: Facility Manager, Immobilien-Bewirtschafter, Tech. Kaufmann, Sozialvers.-Fachmann, andere Betriebsunterhalt-Berufe.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- SCHULEN -->
+<div class="section" id="schulen">
+  <div class="sec-label">Ausbildungsstätten — Schweiz (15+ aktive Anbieter, Auswahl aus öffentlichen Quellen)</div>
+  <div class="schulen-table-wrap fade-in">
+    <table class="schulen">
+      <thead>
+        <tr>
+          <th>Institut</th>
+          <th>Standort</th>
+          <th>Kontakt</th>
+          <th>TN/Jahr</th>
+          <th>SIZ-Klausel publiziert</th>
+          <th>SIZ-Priorität</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="prio-high">BZBS Buchs-Sargans</td>
+          <td>Buchs SG</td>
+          <td><a href="https://www.bzbs.ch">bzbs.ch</a></td>
+          <td>20–40</td>
+          <td>✅ Ja</td>
+          <td>🔴 Höchste</td>
+          <td><span class="badge-offen">SIZ-Klausel verankert</span></td>
+        </tr>
+        <tr>
+          <td class="prio-high">WBZ Lenzburg</td>
+          <td>Lenzburg AG</td>
+          <td><a href="https://www.wbzlenzburg.ch">wbzlenzburg.ch</a></td>
+          <td>15–30</td>
+          <td>✅ Ja</td>
+          <td>🔴 Höchste</td>
+          <td><span class="badge-offen">SIZ-Klausel verankert</span></td>
+        </tr>
+        <tr>
+          <td class="prio-high">ABZ-Suisse</td>
+          <td>Mehrere Std.</td>
+          <td><a href="https://abz-suisse.ch">abz-suisse.ch</a></td>
+          <td>20–40</td>
+          <td>✅ Ja</td>
+          <td>🔴 Höchste</td>
+          <td><span class="badge-offen">SIZ-Klausel verankert</span></td>
+        </tr>
+        <tr>
+          <td>HFS Weiterbildung</td>
+          <td>CH-weit</td>
+          <td>zu recherchieren</td>
+          <td>15–25</td>
+          <td>Teilweise</td>
+          <td>🟠 Hoch</td>
+          <td><span class="badge-offen">Offen</span></td>
+        </tr>
+        <tr>
+          <td>BBZ BL Liestal</td>
+          <td>Liestal BL</td>
+          <td>zu recherchieren</td>
+          <td>10–20</td>
+          <td>Zu klären</td>
+          <td>🟠 Hoch</td>
+          <td><span class="badge-offen">Offen</span></td>
+        </tr>
+        <tr>
+          <td>BZ Solothurn</td>
+          <td>Solothurn</td>
+          <td>zu recherchieren</td>
+          <td>10–15</td>
+          <td>Zu klären</td>
+          <td>🟡 Mittel</td>
+          <td><span class="badge-offen">Offen</span></td>
+        </tr>
+        <tr>
+          <td>BBZ Thun</td>
+          <td>Thun BE</td>
+          <td>zu recherchieren</td>
+          <td>10–15</td>
+          <td>Zu klären</td>
+          <td>🟡 Mittel</td>
+          <td><span class="badge-offen">Offen</span></td>
+        </tr>
+        <tr>
+          <td>BZSL Schaffhausen</td>
+          <td>Schaffhausen</td>
+          <td>zu recherchieren</td>
+          <td>5–10</td>
+          <td>Zu klären</td>
+          <td>🟡 Mittel</td>
+          <td><span class="badge-offen">Offen</span></td>
+        </tr>
+        <tr>
+          <td>sanu future learning</td>
+          <td>Biel BE</td>
+          <td><a href="https://www.sanu.ch">sanu.ch</a></td>
+          <td>—</td>
+          <td>N/A</td>
+          <td>⚪ Ergänzung</td>
+          <td><span class="badge-bestand">Pflanzenschutz-Kurse</span></td>
+        </tr>
+        <tr>
+          <td>jardinsuisse</td>
+          <td>CH-weit</td>
+          <td>zu recherchieren</td>
+          <td>—</td>
+          <td>N/A</td>
+          <td>⚪ Ergänzung</td>
+          <td><span class="badge-bestand">Pflanzenschutz-Kurse</span></td>
+        </tr>
+        <tr>
+          <td>Écoles Romandie</td>
+          <td>Lausanne / Genf</td>
+          <td>zu recherchieren</td>
+          <td>10–20</td>
+          <td>Zu klären</td>
+          <td>🟡 Mittel (ROM)</td>
+          <td><span class="badge-offen">Romandie</span></td>
+        </tr>
+        <tr>
+          <td>Weitere Anbieter</td>
+          <td>CH-weit</td>
+          <td>via pruefung-hauswart.ch offizielle Liste</td>
+          <td>—</td>
+          <td>Zu klären</td>
+          <td>⚪ Zu klären</td>
+          <td><span class="badge-offen">Vollständige Liste einholen</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:11px;color:var(--gray-mid);margin-top:.75rem">⚠️ Die offizielle Liste der zugelassenen Kursanbieter wird auf <a href="https://www.pruefung-hauswart.ch" target="_blank">pruefung-hauswart.ch</a> geführt. Empfehlung: vollständiges CSV erstellen mit allen Ausbildungsstätten + ihrer IT-Zertifikats-Kommunikation.</p>
+</div>
+
+<hr class="section-divider">
+
+<!-- ANHÄNGE -->
+<div class="section" id="anhaenge">
+  <div class="sec-label">Anhänge &amp; Downloads</div>
+  <div class="download-grid">
+    <div class="download-card fade-in">
+      <div class="dl-icon">📄</div>
+      <div class="dl-name">Wegleitung &amp; PO Hauswart FA (PDF)</div>
+      <div class="dl-desc">Original-Wegleitung 2018 der Prüfungskommission Hauswart FA. 16 Seiten + Anhänge (Tätigkeitsprofil, Qualifikationsprofil, Pflanzenliste).</div>
+      <a class="dl-btn" href="Hauswart-Wegleitung-2018.pdf" download>⬇ Wegleitung 2018</a>
+    </div>
+    <div class="download-card fade-in">
+      <div class="dl-icon">💰</div>
+      <div class="dl-name">SIZ-Preismodell</div>
+      <div class="dl-desc">ICT Smart-User SIZ: 3 Module × CHF 90 = CHF 270/TN · Prüfungsgebühren an SIZ · In Hauswart-PO verankert (Ziff. 3.1.2 als "SIZ I")</div>
+      <div style="background:var(--hw-accent-light);border-radius:6px;padding:.5rem;font-size:11px;color:var(--green-deep);margin-top:auto">🎯 Primärprodukt Hauswart FA</div>
+    </div>
+    <div class="download-card fade-in">
+      <div class="dl-icon">🔗</div>
+      <div class="dl-name">pruefung-hauswart.ch</div>
+      <div class="dl-desc">Offizielle Prüfungsseite. Trägerschaft, aktuelle PO, Kursanbieterliste, Termine, Statistiken.</div>
+      <a class="dl-btn" href="https://www.pruefung-hauswart.ch" target="_blank">→ pruefung-hauswart.ch</a>
+    </div>
+  </div>
+
+  <div class="card fade-in" style="margin-top:1.5rem">
+    <div class="card-title">🔗 Wichtige externe Links &amp; offene Recherche-Aufgaben</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:.75rem">
+      <div style="font-size:12px"><strong>SFH (Trägerverband)</strong><br><a href="https://www.sfh.ch" target="_blank" style="color:var(--blue)">www.sfh.ch</a><br>Präs. Michi Raich</div>
+      <div style="font-size:12px"><strong>Prüfungssekretariat</strong><br><a href="mailto:info@pruefung-hauswart.ch">info@pruefung-hauswart.ch</a><br>041 368 58 21</div>
+      <div style="font-size:12px"><strong>PK-Präsident</strong><br>Jakob Hauri · via Sekretariat kontaktieren</div>
+      <div style="font-size:12px"><strong>SBFI Berufsverzeichnis</strong><br><a href="https://www.becc.admin.ch/becc/public/bvz/beruf/showAllActive" target="_blank" style="color:var(--blue)">becc.admin.ch → Hauswart</a></div>
+      <div style="font-size:12px"><strong>SIZ ICT Smart-User</strong><br><a href="https://siz.ch/angebot/ict-smart-user-siz/" target="_blank" style="color:var(--blue)">siz.ch → Smart-User</a></div>
+      <div style="font-size:12px"><strong>ECDL Switzerland</strong><br><a href="https://www.ecdl.ch" target="_blank" style="color:var(--blue)">ecdl.ch / icdlswitzerland.ch</a></div>
+      <div style="font-size:12px;background:var(--amber-light);padding:.5rem;border-radius:6px"><strong style="color:#633806">⚠️ Offene Aufgabe 1</strong><br><span style="color:#7A5C00">Vollständige Kursanbieter-Liste von pruefung-hauswart.ch abgleichen</span></div>
+      <div style="font-size:12px;background:var(--amber-light);padding:.5rem;border-radius:6px"><strong style="color:#633806">⚠️ Offene Aufgabe 2</strong><br><span style="color:#7A5C00">Exakte Kandidaten-Statistik seit 2018 einholen (über PK oder SBFI)</span></div>
+      <div style="font-size:12px;background:var(--amber-light);padding:.5rem;border-radius:6px"><strong style="color:#633806">⚠️ Offene Aufgabe 3</strong><br><span style="color:#7A5C00">Aktuelle PO-Version prüfen — evtl. wurde nach 2018 revidiert</span></div>
+      <div style="font-size:12px;background:var(--amber-light);padding:.5rem;border-radius:6px"><strong style="color:#633806">⚠️ Offene Aufgabe 4</strong><br><span style="color:#7A5C00">Bestätigungsservice "SIZ = ECDL Base" als Produkt designen</span></div>
+    </div>
+  </div>
+</div>
+
+<div style="background:var(--siz-navy);color:rgba(255,255,255,.5);text-align:center;padding:1.5rem;font-size:11px;font-family:'IBM Plex Mono',monospace">
+  SIZ AG · GL-Dossier Hauswart/Hauswartin mit eidg. Fachausweis · Erstellt April 2026 · Vertraulich<br>
+  <span style="font-size:10px;opacity:.7">Quelle: Wegleitung 2018 (Unterzeichnet Jakob Hauri, 15.11.2017, Luzern) · Qualifikationsprofil vom 18.12.2016 · SIZ-Analyse April 2026</span>
+</div>
+
+<script>
+function toggleEbene(el){const siz=el.querySelector('.ebene-siz');if(!siz)return;const open=siz.classList.contains('open');document.querySelectorAll('.ebene-siz.open').forEach(s=>s.classList.remove('open'));if(!open)siz.classList.add('open')}
+const observer=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}})},{threshold:.1});
+document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
+const sections=document.querySelectorAll('[id]');
+const navLinks=document.querySelectorAll('.topnav-links a');
+window.addEventListener('scroll',()=>{let cur='';sections.forEach(s=>{if(window.scrollY>=s.offsetTop-80)cur=s.id});navLinks.forEach(l=>{l.classList.remove('active');if(l.getAttribute('href')==='#'+cur)l.classList.add('active')})});
+window.addEventListener('load',()=>{document.querySelectorAll('.bar-fill').forEach(b=>{const w=b.style.width;b.style.width='0';setTimeout(()=>{b.style.width=w},300)})});
+</script>
+</body>
+</html>

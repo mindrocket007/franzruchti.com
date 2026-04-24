@@ -28,6 +28,26 @@ export const projects: Project[] = [
     description: "Schweizerisches Informatik-Zertifikat – Leiter Markt & Partner",
     pages: [
       {
+        slug: "oekosystem",
+        title: "Ökosystem-Analyse (VR-Präsentation)",
+        file: "/projects/siz-ag/SIZ_Oekosystem_Analyse.html",
+      },
+      {
+        slug: "dossier-hauswart",
+        title: "GL-Dossier Hauswart FA",
+        file: "/projects/siz-ag/GL-Dossier-Hauswart.html",
+      },
+      {
+        slug: "dossier-direktionsassistentin",
+        title: "GL-Dossier Direktionsassistent/in FA",
+        file: "/projects/siz-ag/GL-Dossier-DirektionsAssistentin.html",
+      },
+      {
+        slug: "ch-berufsbildung",
+        title: "CH-Berufsbildungssystem Übersicht",
+        file: "/projects/siz-ag/CH_Berufsbildungssystem_Systemuebersicht.html",
+      },
+      {
         slug: "meeting-wolfram",
         title: "Meeting Wolfram · Mo 20.04.2026",
         file: "/projects/siz-ag/Meeting_Wolfram_Montag.html",

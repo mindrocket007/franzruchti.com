@@ -1,0 +1,2916 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIZ AG – Ökosystem-Analyse für den Verwaltungsrat</title>
+<style>
+  :root {
+    --siz-primary: #c8102e;
+    --siz-dark: #7a0a1c;
+    --kfmv: #1e6091;
+    --kfmv-light: #e8f1f8;
+    --swico: #2e7d32;
+    --swico-light: #e8f5e9;
+    --edupool: #6a1b9a;
+    --edupool-light: #f3e5f5;
+    --bg: #f4f6f8;
+    --card: #ffffff;
+    --text: #1a1a1a;
+    --muted: #5a6571;
+    --border: #dce1e6;
+    --warn: #e65100;
+    --warn-bg: #fff3e0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  header {
+    background: linear-gradient(135deg, var(--siz-primary) 0%, var(--siz-dark) 100%);
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  }
+  header h1 {
+    margin: 0 0 0.5rem 0;
+    font-size: 2.4rem;
+    letter-spacing: -0.5px;
+  }
+  header .subtitle {
+    font-size: 1.1rem;
+    opacity: 0.92;
+    margin: 0 auto;
+    max-width: 900px;
+  }
+  header .meta {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+  .container { max-width: 1280px; margin: 0 auto; padding: 2rem 1.5rem; }
+  nav {
+    background: white;
+    position: sticky; top: 0; z-index: 100;
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  nav ul {
+    display: flex; flex-wrap: wrap;
+    list-style: none; margin: 0;
+    padding: 0.75rem 1.5rem; gap: 1.25rem;
+    max-width: 1280px; margin: 0 auto;
+  }
+  nav a {
+    text-decoration: none;
+    color: var(--text); font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.3rem 0.5rem;
+    border-bottom: 2px solid transparent;
+  }
+  nav a:hover { color: var(--siz-primary); border-bottom-color: var(--siz-primary); }
+  section { margin: 2.5rem 0; }
+  h2 {
+    font-size: 1.8rem;
+    margin: 0 0 1rem 0;
+    padding-bottom: 0.6rem;
+    border-bottom: 3px solid var(--siz-primary);
+    display: flex; align-items: center; gap: 0.6rem;
+  }
+  h2 .badge-count {
+    font-size: 0.8rem; background: var(--siz-primary); color: white;
+    padding: 0.15rem 0.6rem; border-radius: 10px;
+    font-weight: 500;
+  }
+  h3 { font-size: 1.25rem; margin: 1.5rem 0 0.5rem 0; }
+  .summary-box {
+    background: linear-gradient(135deg, #fff 0%, #fafbfc 100%);
+    border-left: 5px solid var(--siz-primary);
+    padding: 1.25rem 1.5rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    margin: 1rem 0 2rem 0;
+  }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 1.25rem; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    overflow: hidden;
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.08); }
+  .card-header {
+    padding: 1rem 1.25rem;
+    font-weight: 600;
+    font-size: 1.05rem;
+    border-bottom: 1px solid var(--border);
+    display: flex; justify-content: space-between; align-items: center;
+    gap: 0.5rem;
+  }
+  .card-header .role {
+    font-size: 0.75rem;
+    background: #f0f2f5; color: var(--muted);
+    padding: 0.2rem 0.6rem; border-radius: 10px;
+    font-weight: 500; white-space: nowrap;
+  }
+  .card-body { padding: 1rem 1.25rem; font-size: 0.92rem; }
+  .card.kfmv .card-header { background: var(--kfmv-light); }
+  .card.swico .card-header { background: var(--swico-light); }
+  .card.edupool .card-header { background: var(--edupool-light); }
+  .card.siz .card-header { background: #fde8ec; }
+
+  details {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+    overflow: hidden;
+  }
+  details[open] { box-shadow: 0 4px 14px rgba(0,0,0,0.06); }
+  summary {
+    padding: 1rem 1.25rem;
+    cursor: pointer;
+    font-weight: 600;
+    list-style: none;
+    display: flex; justify-content: space-between; align-items: center;
+    gap: 0.5rem;
+    transition: background 0.15s;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after {
+    content: "▸"; font-size: 1.1rem; color: var(--muted);
+    transition: transform 0.2s;
+  }
+  details[open] summary::after { transform: rotate(90deg); }
+  summary:hover { background: #fafbfc; }
+  .details-body { padding: 0 1.25rem 1.25rem; border-top: 1px solid var(--border); padding-top: 1rem; }
+
+  .fact-list { list-style: none; padding: 0; margin: 0.5rem 0; }
+  .fact-list li { padding: 0.3rem 0; border-bottom: 1px dashed #eee; font-size: 0.92rem; }
+  .fact-list li:last-child { border: none; }
+  .fact-label { color: var(--muted); font-weight: 600; min-width: 130px; display: inline-block; }
+
+  .tag { display: inline-block; padding: 0.18rem 0.55rem; border-radius: 12px; font-size: 0.75rem; margin: 0.1rem 0.2rem 0.1rem 0; font-weight: 600; }
+  .tag.kfmv { background: var(--kfmv-light); color: var(--kfmv); }
+  .tag.swico { background: var(--swico-light); color: var(--swico); }
+  .tag.edupool { background: var(--edupool-light); color: var(--edupool); }
+  .tag.siz { background: #fde8ec; color: var(--siz-primary); }
+  .tag.warn { background: var(--warn-bg); color: var(--warn); }
+  .tag.neutral { background: #eef0f3; color: var(--muted); }
+
+  .fazit-box {
+    margin-top: 1rem; padding: 0.9rem 1.1rem;
+    border-radius: 6px; font-size: 0.9rem;
+  }
+  .fazit-box.syn { background: #e8f5e9; border-left: 4px solid #2e7d32; }
+  .fazit-box.konkurrenz { background: #ffebee; border-left: 4px solid #c62828; }
+  .fazit-box.neutral { background: #f3e5f5; border-left: 4px solid #6a1b9a; }
+  .fazit-box.misch { background: #fff8e1; border-left: 4px solid #f9a825; }
+  .fazit-box strong { display: block; margin-bottom: 0.2rem; }
+
+  .warn-note {
+    background: var(--warn-bg); border-left: 4px solid var(--warn);
+    padding: 0.7rem 1rem; margin: 0.75rem 0; font-size: 0.88rem;
+    border-radius: 4px;
+  }
+
+  table.matrix { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+  table.matrix th { background: #f0f2f5; padding: 0.7rem 0.8rem; text-align: left; font-weight: 600; border-bottom: 2px solid var(--border); }
+  table.matrix td { padding: 0.6rem 0.8rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+  table.matrix tr:last-child td { border-bottom: none; }
+  table.matrix tr:hover { background: #fafbfc; }
+
+  .source { font-size: 0.8rem; color: var(--muted); margin-top: 0.75rem; padding-top: 0.6rem; border-top: 1px dashed #eee; }
+  .source a { color: var(--kfmv); text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+
+  .ecosystem-svg-wrap {
+    background: white; border-radius: 12px;
+    padding: 1.5rem; margin: 1.5rem 0;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    overflow-x: auto;
+  }
+  .ecosystem-svg-wrap svg { display: block; margin: 0 auto; max-width: 100%; height: auto; }
+
+  .controls { margin: 1rem 0; display: flex; gap: 0.6rem; flex-wrap: wrap; }
+  .btn {
+    padding: 0.5rem 1rem; border: 1px solid var(--border);
+    background: white; border-radius: 6px; cursor: pointer;
+    font-family: inherit; font-size: 0.88rem; font-weight: 600;
+    color: var(--text); transition: all 0.15s;
+  }
+  .btn:hover { background: var(--siz-primary); color: white; border-color: var(--siz-primary); }
+
+  .kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 0.75rem; margin: 1.25rem 0; }
+  .kpi {
+    background: white; padding: 1rem 1.25rem; border-radius: 8px;
+    border-left: 4px solid var(--siz-primary); box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  }
+  .kpi .value { font-size: 1.6rem; font-weight: 700; color: var(--siz-primary); }
+  .kpi .label { font-size: 0.82rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.3px; }
+
+  .recommendation {
+    background: linear-gradient(135deg, #fff8e1 0%, #fff 100%);
+    border: 1px solid #f9a825;
+    border-radius: 8px; padding: 1rem 1.25rem; margin: 0.75rem 0;
+  }
+  .recommendation strong { color: #e65100; }
+
+  footer {
+    background: #263238; color: white; padding: 2rem 1rem;
+    text-align: center; margin-top: 3rem; font-size: 0.9rem;
+  }
+  footer a { color: #80cbc4; }
+
+  /* Zitat-Hero */
+  .quote-hero {
+    position: relative;
+    background:
+      radial-gradient(ellipse at top left, rgba(200,16,46,0.18), transparent 60%),
+      radial-gradient(ellipse at bottom right, rgba(30,96,145,0.22), transparent 60%),
+      linear-gradient(135deg, #1a1d24 0%, #2b2f3a 55%, #1a1d24 100%);
+    color: #f5f5f5;
+    padding: 4rem 2rem 4.5rem;
+    overflow: hidden;
+    border-bottom: 4px solid var(--siz-primary);
+  }
+  .quote-hero::before {
+    content: "";
+    position: absolute;
+    top: -60px; left: 50%; transform: translateX(-50%);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 340px;
+    line-height: 1;
+    color: rgba(200,16,46,0.08);
+    pointer-events: none;
+    user-select: none;
+  }
+  .quote-hero::before { content: "\201C"; }
+  .quote-inner {
+    max-width: 1000px; margin: 0 auto;
+    position: relative; z-index: 1;
+    text-align: center;
+  }
+  .quote-text {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400; font-style: italic;
+    font-size: clamp(1.6rem, 3.5vw, 2.8rem);
+    line-height: 1.25;
+    margin: 0 auto 1.25rem;
+    max-width: 900px;
+    letter-spacing: -0.01em;
+    color: #fff;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.35);
+  }
+  .quote-text strong {
+    background: linear-gradient(90deg, #c8102e 0%, #ff5b6b 100%);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent; color: transparent;
+    font-style: normal;
+  }
+  .quote-author {
+    font-size: 0.9rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.65);
+    margin-bottom: 2rem;
+  }
+  .quote-bridge {
+    font-family: "Segoe UI", -apple-system, sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.88);
+    max-width: 760px; margin: 0 auto;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255,255,255,0.15);
+  }
+  .quote-bridge strong { color: #ffb3bd; }
+
+  @media print {
+    nav { display: none; }
+    details { break-inside: avoid; }
+    details[open] summary::after { display: none; }
+    summary { page-break-after: avoid; }
+    .card { break-inside: avoid; }
+    header { break-after: avoid; }
+    .quote-hero { background: #fff !important; color: #000 !important; border-bottom: 3px solid #c8102e; }
+    .quote-hero::before { display: none; }
+    .quote-text { color: #000 !important; text-shadow: none; }
+    .quote-text strong { -webkit-text-fill-color: #c8102e; color: #c8102e; }
+    .quote-author { color: #555 !important; }
+    .quote-bridge { color: #222 !important; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>SIZ AG – Ökosystem-Analyse</h1>
+  <div class="subtitle">Trägerverbände, Schwesterorganisationen und Personen-Netzwerk rund um die SIZ AG – Grundlage für den Verwaltungsrat</div>
+  <div class="meta">Stand April 2026 · Adressat: SIZ-VR · aufklappbar je Organisation und Person</div>
+</header>
+
+<section class="quote-hero">
+  <div class="quote-inner">
+    <blockquote class="quote-text">
+      Operative Hektik ersetzt <strong>geistige Windstille</strong>.
+    </blockquote>
+    <div class="quote-author">— Reinhard K. Sprenger</div>
+    <div class="quote-bridge">
+      Diese Analyse ist das bewusste Gegengewicht zur Tages-Akquise: eine <strong>strategische Landkarte</strong> des SIZ-Ökosystems – damit wir dort investieren, wo der Hebel am grössten ist, und nicht dort, wo der Aufwand am lautesten ist.
+    </div>
+  </div>
+</section>
+
+<nav>
+  <ul>
+    <li><a href="#summary">Zusammenfassung</a></li>
+    <li><a href="#grafik">Ökosystem-Grafik</a></li>
+    <li><a href="#siz">SIZ AG (Zentrum)</a></li>
+    <li><a href="#kfmv">Kfmv-Ast</a></li>
+    <li><a href="#swico">Swico-Ast</a></li>
+    <li><a href="#edupool">kv edupool</a></li>
+    <li><a href="#matrix">Überschneidungs-Matrix</a></li>
+    <li style="border-left:2px solid #c8102e;padding-left:1rem;margin-left:0.3rem;"><a href="#marktmodell"><strong>5-Ebenen-Modell</strong></a></li>
+    <li><a href="#push-pull">Push vs. Pull</a></li>
+    <li><a href="#holdings">Holdings</a></li>
+    <li><a href="#labelgeber">Label-Geber</a></li>
+    <li style="border-left:2px solid #c8102e;padding-left:0.7rem;"><a href="#vsh-schulen"><strong>VSH-Schulen + Wege A/B</strong></a></li>
+    <li style="border-left:2px solid #2e7d32;padding-left:0.7rem;"><a href="#dossiers"><strong>Berufs-Dossiers</strong></a></li>
+    <li><a href="#dachverbaende">Dachverbände</a></li>
+    <li><a href="#arbeitgeber">Arbeitgeber &amp; HR</a></li>
+    <li><a href="#handlungsfelder">Handlungsfelder</a></li>
+    <li><a href="#tueroeffner">Türöffner</a></li>
+    <li><a href="#fazit">Fazit &amp; Empfehlungen</a></li>
+    <li><a href="#quellen">Quellen</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+
+<section id="summary">
+  <h2>Zusammenfassung</h2>
+  <div class="summary-box">
+    <p><strong>Die SIZ AG bewegt sich in einem dichten Verbandsnetzwerk</strong>, das von zwei paritätischen Trägerverbänden strukturell getragen wird: dem <strong>Kaufmännischen Verband Schweiz (Kfmv)</strong> und dem Wirtschaftsverband <strong>Swico</strong>. Beide Trägerverbände entsenden je zwei Personen in den SIZ-Verwaltungsrat – diese vier Personen haben gleichzeitig Spitzenämter in ihren Trägerverbänden, weshalb der SIZ-VR faktisch ein <strong>Träger-Lenkungsorgan</strong> ist.</p>
+    <p>Über die Trägerverbände ist SIZ eng vernetzt mit einer ganzen Reihe von Schwester- und Partnerorganisationen – allen voran <strong>kv edupool AG</strong> (ehemals Verein edupool.ch, per Mai 2024 in AG überführt), <strong>ICT-Berufsbildung Schweiz</strong>, <strong>digitalswitzerland</strong>, <strong>SwissICT</strong>, <strong>HWZ</strong> und den grossen <strong>KV-Weiterbildungsschulen</strong> (WKS Bern, KV Business School Zürich, KV Luzern, BZR Rorschach-Rheintal u.a.). Diese Schulen sind gleichzeitig SIZ-Partnerschulen und damit Absatzkanal und Anbieter-Stakeholder.</p>
+    <p><strong>Zentraler Netzwerkknoten ist Dr. Alain Gut</strong> – SIZ-VR-Präsident, Swico-Vorstand, Präsident ICT-Berufsbildung Schweiz, Leiter Bildungskommission digitalswitzerland, Mitglied Bildungs-/Forschungskommission economiesuisse und Director Public Affairs IBM Schweiz. Er ist zugleich die grösste strategische Chance (Brückenfigur) und die grösste strukturelle Herausforderung (Interessenkonflikt zwischen konkurrierenden ICT-Zertifizierungs-Schienen).</p>
+  </div>
+
+  <div class="kpi-row">
+    <div class="kpi"><div class="value">2</div><div class="label">Trägerverbände</div></div>
+    <div class="kpi"><div class="value">4</div><div class="label">SIZ-VR (2 Kfmv / 2 Swico)</div></div>
+    <div class="kpi"><div class="value">~100+</div><div class="label">SIZ-Partnerschulen</div></div>
+    <div class="kpi"><div class="value">~50</div><div class="label">kv edupool Partnerschulen</div></div>
+    <div class="kpi"><div class="value">~70–80 %</div><div class="label">Schul-Überlappung edupool ↔ SIZ</div></div>
+    <div class="kpi"><div class="value">250 000+</div><div class="label">SIZ-Diplom-Absolvent:innen</div></div>
+  </div>
+</section>
+
+<section id="grafik">
+  <h2>Ökosystem auf einen Blick</h2>
+  <p>Die Grafik zeigt SIZ AG im Zentrum mit den beiden Trägerverbänden als Hauptäste. Jeder Ast hat seine wichtigsten Schwester-/Partnerorganisationen. Die gestrichelten Linien sind <em>Personal-Unionen</em> – dieselbe Person sitzt in beiden Gremien.</p>
+
+  <div class="controls">
+    <button class="btn" onclick="toggleAll(true)">Alle aufklappen</button>
+    <button class="btn" onclick="toggleAll(false)">Alle zuklappen</button>
+    <button class="btn" onclick="window.print()">Drucken / PDF</button>
+  </div>
+
+  <div class="ecosystem-svg-wrap">
+    <svg viewBox="0 0 1200 820" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="SIZ Ökosystem-Grafik">
+      <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+          <path d="M0,0 L10,5 L0,10 Z" fill="#999"/>
+        </marker>
+        <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+          <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.2"/>
+        </filter>
+      </defs>
+
+      <!-- Titel -->
+      <text x="600" y="30" text-anchor="middle" font-size="18" font-weight="700" fill="#263238">Ökosystem der SIZ AG – Trägerschaften + Personen-Netzwerk</text>
+
+      <!-- Legende -->
+      <g transform="translate(30,60)">
+        <rect width="18" height="12" fill="#c8102e"/>
+        <text x="24" y="10" font-size="11" fill="#333">SIZ AG</text>
+        <rect x="90" width="18" height="12" fill="#1e6091"/>
+        <text x="114" y="10" font-size="11" fill="#333">Kfmv-Ast</text>
+        <rect x="180" width="18" height="12" fill="#2e7d32"/>
+        <text x="204" y="10" font-size="11" fill="#333">Swico-Ast</text>
+        <rect x="275" width="18" height="12" fill="#6a1b9a"/>
+        <text x="299" y="10" font-size="11" fill="#333">Schwester-Org.</text>
+        <rect x="395" width="18" height="12" fill="#546e7a"/>
+        <text x="419" y="10" font-size="11" fill="#333">Partner-/Mitgliedschulen</text>
+        <line x1="560" y1="6" x2="600" y2="6" stroke="#c62828" stroke-width="2" stroke-dasharray="6,3"/>
+        <text x="606" y="10" font-size="11" fill="#333">Personal-Union</text>
+      </g>
+
+      <!-- Zentrum: SIZ AG -->
+      <g filter="url(#shadow)">
+        <circle cx="600" cy="410" r="80" fill="#c8102e"/>
+        <text x="600" y="400" text-anchor="middle" font-size="22" font-weight="700" fill="white">SIZ AG</text>
+        <text x="600" y="422" text-anchor="middle" font-size="11" fill="white">ICT-Zertifikate CH</text>
+        <text x="600" y="437" text-anchor="middle" font-size="10" fill="white" opacity="0.85">Reitergasse 9, Zürich</text>
+      </g>
+
+      <!-- Kfmv-Block (links) -->
+      <g filter="url(#shadow)">
+        <rect x="60" y="340" width="180" height="140" rx="12" fill="#1e6091"/>
+        <text x="150" y="370" text-anchor="middle" font-size="16" font-weight="700" fill="white">Kfmv</text>
+        <text x="150" y="390" text-anchor="middle" font-size="10" fill="white">Kaufmännischer Verband CH</text>
+        <text x="150" y="412" text-anchor="middle" font-size="9.5" fill="#cfd8dc">Präs.: Daniel Jositsch</text>
+        <text x="150" y="425" text-anchor="middle" font-size="9.5" fill="#cfd8dc">CEO: Sascha Burkhalter</text>
+        <text x="150" y="448" text-anchor="middle" font-size="9" fill="white" opacity="0.85">~38 500 Mitglieder</text>
+        <text x="150" y="461" text-anchor="middle" font-size="9" fill="white" opacity="0.85">20 nationale GAV</text>
+      </g>
+      <line x1="240" y1="410" x2="520" y2="410" stroke="#1e6091" stroke-width="3"/>
+      <text x="380" y="400" text-anchor="middle" font-size="10" fill="#1e6091" font-weight="600">50 % Träger</text>
+
+      <!-- Swico-Block (rechts) -->
+      <g filter="url(#shadow)">
+        <rect x="960" y="340" width="180" height="140" rx="12" fill="#2e7d32"/>
+        <text x="1050" y="370" text-anchor="middle" font-size="16" font-weight="700" fill="white">Swico</text>
+        <text x="1050" y="390" text-anchor="middle" font-size="10" fill="white">ICT-Wirtschaftsverband</text>
+        <text x="1050" y="412" text-anchor="middle" font-size="9.5" fill="#c8e6c9">Präs.: Adrian Müller</text>
+        <text x="1050" y="425" text-anchor="middle" font-size="9.5" fill="#c8e6c9">CEO: Jon Fanzun</text>
+        <text x="1050" y="448" text-anchor="middle" font-size="9" fill="white" opacity="0.85">~700 Mitgliedsfirmen</text>
+        <text x="1050" y="461" text-anchor="middle" font-size="9" fill="white" opacity="0.85">CHF 40 Mrd. Umsatz</text>
+      </g>
+      <line x1="960" y1="410" x2="680" y2="410" stroke="#2e7d32" stroke-width="3"/>
+      <text x="820" y="400" text-anchor="middle" font-size="10" fill="#2e7d32" font-weight="600">50 % Träger</text>
+
+      <!-- kv edupool (unter Kfmv) -->
+      <g filter="url(#shadow)">
+        <rect x="60" y="560" width="180" height="110" rx="10" fill="#6a1b9a"/>
+        <text x="150" y="585" text-anchor="middle" font-size="14" font-weight="700" fill="white">kv edupool AG</text>
+        <text x="150" y="602" text-anchor="middle" font-size="9" fill="#e1bee7">(ehem. edupool.ch, Fusion 2024)</text>
+        <text x="150" y="622" text-anchor="middle" font-size="9" fill="white">GF: Judith Wespi</text>
+        <text x="150" y="636" text-anchor="middle" font-size="9" fill="white">VRP: Thomas Kölliker</text>
+        <text x="150" y="655" text-anchor="middle" font-size="9" fill="#e1bee7">kaufm. Prüfungen / HWD / SB</text>
+      </g>
+      <line x1="150" y1="480" x2="150" y2="560" stroke="#6a1b9a" stroke-width="2.5"/>
+      <text x="158" y="525" font-size="9" fill="#6a1b9a" font-weight="600">trägt</text>
+      <!-- edupool -> SIZ (Schwester) -->
+      <line x1="240" y1="600" x2="540" y2="460" stroke="#6a1b9a" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+      <text x="380" y="540" font-size="9" fill="#6a1b9a" transform="rotate(-16 380 540)">SIZ in Handelsschule gebündelt</text>
+
+      <!-- ICT-Berufsbildung (unter Swico) -->
+      <g filter="url(#shadow)">
+        <rect x="960" y="560" width="180" height="110" rx="10" fill="#6a1b9a"/>
+        <text x="1050" y="585" text-anchor="middle" font-size="14" font-weight="700" fill="white">ICT-Berufsbildung CH</text>
+        <text x="1050" y="602" text-anchor="middle" font-size="9" fill="#e1bee7">OdA ICT / EFZ + Fachausweise</text>
+        <text x="1050" y="622" text-anchor="middle" font-size="9" fill="white">Präs.: Alain Gut (seit 12/2025)</text>
+        <text x="1050" y="642" text-anchor="middle" font-size="9" fill="#e1bee7">Cyber Security / AI Specialist</text>
+      </g>
+      <line x1="1050" y1="480" x2="1050" y2="560" stroke="#6a1b9a" stroke-width="2.5"/>
+      <text x="1058" y="525" font-size="9" fill="#6a1b9a" font-weight="600">mitträgt</text>
+      <!-- ICT-BB personal union zu SIZ (Alain Gut) -->
+      <line x1="960" y1="600" x2="660" y2="460" stroke="#c62828" stroke-width="1.5" stroke-dasharray="6,3"/>
+      <text x="820" y="555" font-size="9" fill="#c62828" font-weight="600" transform="rotate(15 820 555)">Alain Gut: Präs. beider</text>
+
+      <!-- digitalswitzerland (unten rechts) -->
+      <g filter="url(#shadow)">
+        <rect x="760" y="700" width="180" height="80" rx="10" fill="#546e7a"/>
+        <text x="850" y="725" text-anchor="middle" font-size="13" font-weight="700" fill="white">digitalswitzerland</text>
+        <text x="850" y="742" text-anchor="middle" font-size="9" fill="#cfd8dc">Dachverband (ab 2021)</text>
+        <text x="850" y="760" text-anchor="middle" font-size="9" fill="#cfd8dc">Gut leitet Bildungskomm.</text>
+      </g>
+      <line x1="960" y1="670" x2="890" y2="700" stroke="#546e7a" stroke-width="1.5"/>
+
+      <!-- SwissICT / asut -->
+      <g filter="url(#shadow)">
+        <rect x="970" y="210" width="170" height="70" rx="10" fill="#546e7a"/>
+        <text x="1055" y="235" text-anchor="middle" font-size="12" font-weight="700" fill="white">SwissICT</text>
+        <text x="1055" y="252" text-anchor="middle" font-size="9" fill="#cfd8dc">~2500 Mitglieder, "Berufe der ICT"</text>
+        <text x="1055" y="268" text-anchor="middle" font-size="9" fill="#cfd8dc">Salärstudie ICT</text>
+      </g>
+      <line x1="1055" y1="280" x2="1055" y2="340" stroke="#546e7a" stroke-width="1" stroke-dasharray="3,3"/>
+      <text x="1065" y="315" font-size="9" fill="#546e7a">Nachbar</text>
+
+      <g filter="url(#shadow)">
+        <rect x="770" y="210" width="170" height="70" rx="10" fill="#546e7a"/>
+        <text x="855" y="235" text-anchor="middle" font-size="12" font-weight="700" fill="white">asut</text>
+        <text x="855" y="252" text-anchor="middle" font-size="9" fill="#cfd8dc">Telekom-Verband CH</text>
+        <text x="855" y="268" text-anchor="middle" font-size="9" fill="#cfd8dc">Präs.: Judith Bellaiche (ex-Swico)</text>
+      </g>
+
+      <!-- HWZ + KV Schulen unter Kfmv -->
+      <g filter="url(#shadow)">
+        <rect x="260" y="700" width="160" height="80" rx="10" fill="#546e7a"/>
+        <text x="340" y="725" text-anchor="middle" font-size="12" font-weight="700" fill="white">HWZ</text>
+        <text x="340" y="742" text-anchor="middle" font-size="9" fill="#cfd8dc">Hochschule Wirtschaft ZH</text>
+        <text x="340" y="760" text-anchor="middle" font-size="9" fill="#cfd8dc">Burkhalter im VR (Kfmv-CEO)</text>
+      </g>
+      <line x1="340" y1="700" x2="240" y2="470" stroke="#546e7a" stroke-width="1" stroke-dasharray="3,3"/>
+
+      <!-- Kfmv Schulen unten links -->
+      <g filter="url(#shadow)">
+        <rect x="60" y="700" width="170" height="80" rx="10" fill="#546e7a"/>
+        <text x="145" y="725" text-anchor="middle" font-size="12" font-weight="700" fill="white">KV-Schulen</text>
+        <text x="145" y="742" text-anchor="middle" font-size="9" fill="#cfd8dc">WKS Bern, KV BS Zürich</text>
+        <text x="145" y="758" text-anchor="middle" font-size="9" fill="#cfd8dc">KV Luzern, HKV Aarau…</text>
+      </g>
+      <line x1="150" y1="670" x2="150" y2="700" stroke="#546e7a" stroke-width="1" stroke-dasharray="3,3"/>
+
+      <!-- Swico-Vorstand Firmen oben rechts -->
+      <g filter="url(#shadow)">
+        <rect x="570" y="210" width="170" height="70" rx="10" fill="#546e7a"/>
+        <text x="655" y="235" text-anchor="middle" font-size="12" font-weight="700" fill="white">Swico-Mitgliedsfirmen</text>
+        <text x="655" y="252" text-anchor="middle" font-size="9" fill="#cfd8dc">IBM (Gut), HP (Müller ex),</text>
+        <text x="655" y="266" text-anchor="middle" font-size="9" fill="#cfd8dc">Canon, Liip, 5to9, Swisscom</text>
+      </g>
+      <line x1="740" y1="280" x2="960" y2="360" stroke="#546e7a" stroke-width="1" stroke-dasharray="3,3"/>
+
+      <!-- Kfmv-Politik -->
+      <g filter="url(#shadow)">
+        <rect x="60" y="210" width="170" height="70" rx="10" fill="#546e7a"/>
+        <text x="145" y="235" text-anchor="middle" font-size="12" font-weight="700" fill="white">"die plattform"</text>
+        <text x="145" y="252" text-anchor="middle" font-size="9" fill="#cfd8dc">Angestellte Schweiz,</text>
+        <text x="145" y="268" text-anchor="middle" font-size="9" fill="#cfd8dc">Swiss Leaders, veb, …</text>
+      </g>
+      <line x1="145" y1="280" x2="145" y2="340" stroke="#546e7a" stroke-width="1" stroke-dasharray="3,3"/>
+
+      <!-- Ständerat / Politik Bubble -->
+      <g>
+        <rect x="260" y="210" width="170" height="70" rx="10" fill="none" stroke="#1e6091" stroke-dasharray="4,3"/>
+        <text x="345" y="235" text-anchor="middle" font-size="12" font-weight="700" fill="#1e6091">Ständerat / Bund</text>
+        <text x="345" y="252" text-anchor="middle" font-size="9" fill="#1e6091">Jositsch SP-Ständerat ZH</text>
+        <text x="345" y="268" text-anchor="middle" font-size="9" fill="#1e6091">SBFI, Berufsbildung 2030</text>
+      </g>
+      <line x1="345" y1="280" x2="155" y2="340" stroke="#1e6091" stroke-width="1" stroke-dasharray="4,3"/>
+
+      <!-- Personal-Union SIZ-VR Knoten -->
+      <g>
+        <circle cx="450" cy="320" r="35" fill="#fff" stroke="#c8102e" stroke-width="2"/>
+        <text x="450" y="315" text-anchor="middle" font-size="10" font-weight="700" fill="#c8102e">VR</text>
+        <text x="450" y="330" text-anchor="middle" font-size="9" fill="#c8102e">Jositsch</text>
+        <text x="450" y="342" text-anchor="middle" font-size="9" fill="#c8102e">Burkhalter</text>
+      </g>
+      <g>
+        <circle cx="750" cy="320" r="35" fill="#fff" stroke="#c8102e" stroke-width="2"/>
+        <text x="750" y="315" text-anchor="middle" font-size="10" font-weight="700" fill="#c8102e">VR</text>
+        <text x="750" y="330" text-anchor="middle" font-size="9" fill="#c8102e">Gut · Müller</text>
+      </g>
+      <line x1="450" y1="355" x2="560" y2="405" stroke="#c8102e" stroke-width="1.5" stroke-dasharray="4,3"/>
+      <line x1="750" y1="355" x2="640" y2="405" stroke="#c8102e" stroke-width="1.5" stroke-dasharray="4,3"/>
+      <line x1="450" y1="320" x2="240" y2="410" stroke="#c8102e" stroke-width="1" stroke-dasharray="4,3"/>
+      <line x1="750" y1="320" x2="960" y2="410" stroke="#c8102e" stroke-width="1" stroke-dasharray="4,3"/>
+
+    </svg>
+  </div>
+
+  <div class="warn-note">
+    <strong>Lese-Hinweis zur Grafik:</strong> Durchgezogene Linien = Trägerschaft / Struktur. Gestrichelte rote Linien = Personal-Unionen (dieselbe Person sitzt in mehreren Gremien). Gestrichelte graue Linien = indirekte Vernetzung (Mitgliedschaft, Markt-Nähe).
+  </div>
+</section>
+
+<section id="siz">
+  <h2>SIZ AG <span class="badge-count">Zentrum</span></h2>
+
+  <div class="summary-box">
+    <strong>Schweizerisches Informatik-Zertifikat – SIZ AG</strong><br>
+    Gegründet 1991, Sitz Reitergasse 9, 8004 Zürich (Sitzwechsel von Kloten nach Zürich am 26.09.2025). UID CHE-111.961.803. Aktionariat 50/50 Kfmv + Swico. 250 000+ Diplom-Absolvent:innen, ~8 000 Prüfungen/Jahr, 100+ Partnerschulen, 60 Fachexperten.
+  </div>
+
+  <h3>Verwaltungsrat</h3>
+
+  <details>
+    <summary><span>Dr. Alain Gut – VR-Präsident</span> <span class="tag swico">Swico-Seite</span></summary>
+    <div class="details-body">
+      <ul class="fact-list">
+        <li><span class="fact-label">Hauptberuf:</span> Director Public Affairs, IBM Schweiz AG (laut ict-berufsbildung.ch "bis Ende 2025" bei IBM – April 2026 ggf. verifizieren)</li>
+        <li><span class="fact-label">Ausbildung:</span> Wirtschaftsinformatik + Doktorat Universität Zürich</li>
+        <li><span class="fact-label">Trägerverband:</span> Swico-Vertreter (aktives Vorstandsmitglied Swico)</li>
+      </ul>
+      <h4 style="margin-top:1rem">Weitere Mandate – der grösste Knoten im Ökosystem</h4>
+      <ul>
+        <li><strong>Präsident ICT-Berufsbildung Schweiz</strong> seit 04.12.2025 (Vorstand seit 2010, Co-Vizepräsident seit Dez 2024)</li>
+        <li><strong>Vorstandsmitglied Swico</strong></li>
+        <li>Leiter Bildungskommission "Education, Skilled Workforce and Diversity" bei <strong>digitalswitzerland</strong></li>
+        <li>Mitglied Bildungs- und Forschungskommission <strong>economiesuisse</strong></li>
+        <li>Steering Committee Swiss Cyber Experts</li>
+        <li>Autor "Schweizer Monat"</li>
+      </ul>
+      <div class="fazit-box misch">
+        <strong>Synergien / Interessenkonflikte</strong>
+        <strong style="font-weight:normal; display:inline;">Synergie (stark):</strong> Gut ist <em>der</em> schweizerische ICT-Bildungslobbyist mit Zugang zu allen relevanten Gremien. Für SIZ ist seine Figur Rückenwind in Bundesbern und bei economiesuisse.
+        <br><br>
+        <strong style="font-weight:normal; display:inline;">Interessenkonflikt (strukturell):</strong> Gut präsidiert gleichzeitig <strong>SIZ</strong> (modulare Anwender-/Weiterbildungs-Zertifikate) und <strong>ICT-Berufsbildung Schweiz</strong> (EFZ + höhere Fachausweise wie "AI Business Specialist", "Cyber Security Specialist"). Diese beiden Schienen konkurrieren zunehmend im Weiterbildungssegment. Gut kann brücken oder kanalisieren – der SIZ-VR muss das beobachten.
+      </div>
+      <div class="source">
+        <a href="https://siz.ch/ueber-uns/verwaltungsrat/">siz.ch/verwaltungsrat</a> ·
+        <a href="https://www.ict-berufsbildung.ch/dr-alain-gut-wird-praesident-von-ict-berufsbildung-schweiz">ICT-Berufsbildung Präsidiums-Meldung</a> ·
+        <a href="https://www.swico.ch/de/verband/ueber-uns/vorstand/">Swico-Vorstand</a> ·
+        <a href="https://ch.linkedin.com/in/alaingut">LinkedIn</a>
+      </div>
+    </div>
+  </details>
+
+  <details>
+    <summary><span>Prof. Dr. Daniel Jositsch – Mitglied VR</span> <span class="tag kfmv">Kfmv-Seite</span></summary>
+    <div class="details-body">
+      <ul class="fact-list">
+        <li><span class="fact-label">Hauptberuf:</span> Ordinarius für Strafrecht und Strafprozessrecht, Universität Zürich (habilitiert 2004)</li>
+        <li><span class="fact-label">Politik:</span> Ständerat Kanton Zürich (SP) seit 2015 (2023 wiedergewählt); vorher Nationalrat 2007–2015</li>
+        <li><span class="fact-label">Trägerverband:</span> Kfmv – und zwar als <strong>Präsident Kaufmännischer Verband Schweiz</strong> (seit 2011, Zentralvorstand seit 2009)</li>
+      </ul>
+      <h4 style="margin-top:1rem">Weitere Mandate – laut Lobbywatch 22 offengelegte Mandate</h4>
+      <ul>
+        <li>13 davon <em>ex officio</em> als Kfmv-Präsident (SIZ AG, HWZ, SIB, KV-Bildungsstiftungen, Pensionskasse u.a.)</li>
+        <li>3 karitativ / gemeinnützig</li>
+        <li>3 hochschul-/strafrechtsbezogen</li>
+        <li>Tätigkeit in Rechtsanwaltskanzlei selbständig seit 2000</li>
+      </ul>
+      <div class="fazit-box misch">
+        <strong>Synergien / Interessenkonflikte</strong>
+        <strong style="font-weight:normal; display:inline;">Synergie (sehr stark):</strong> Politische Sichtbarkeit auf Bundesebene, Zugang zu Berufsbildungspolitik via Ständerat + Kfmv.<br><br>
+        <strong style="font-weight:normal; display:inline;">Interessenkonflikt-Dichte:</strong> Jositsch sitzt parallel in VR/Stiftungsräten mehrerer SIZ-Abnehmer-Institutionen (HWZ, SIB, KV-Schulen). In Preis-/Angebotsdiskussionen ist er nicht frei.<br><br>
+        <strong style="font-weight:normal; display:inline;">Kapazitätsrisiko:</strong> 22 Mandate + Uni-Ordinariat + Ständerat → Aufmerksamkeit pro SIZ-Sitzung begrenzt.
+      </div>
+      <div class="source">
+        <a href="https://siz.ch/ueber-uns/verwaltungsrat/">siz.ch</a> ·
+        <a href="https://lobbywatch.ch/de/daten/parlamentarier/125/Daniel%20Jositsch">Lobbywatch</a> ·
+        <a href="https://www.parlament.ch/de/biografie/daniel-jositsch/3891">parlament.ch</a> ·
+        <a href="https://www.kfmv.ch/ueber-uns/kaufmaennischer-verband-schweiz/organisation">kfmv.ch</a>
+      </div>
+    </div>
+  </details>
+
+  <details>
+    <summary><span>Sascha M. Burkhalter – Mitglied VR</span> <span class="tag kfmv">Kfmv-Seite</span></summary>
+    <div class="details-body">
+      <ul class="fact-list">
+        <li><span class="fact-label">Hauptberuf:</span> CEO Kaufmännischer Verband Schweiz (seit 01.01.2024; Nachfolger Christian Zünd)</li>
+        <li><span class="fact-label">Ausbildung:</span> Eidg. dipl. Treuhandexperte; Executive MBA HWZ</li>
+        <li><span class="fact-label">Trägerverband:</span> Kfmv – operative Ebene</li>
+      </ul>
+      <h4 style="margin-top:1rem">Weitere Mandate (dichtes Bildungs-/Immo-Portfolio)</h4>
+      <ul>
+        <li><strong>Verwaltungsrat HWZ</strong> (Hochschule für Wirtschaft Zürich, seit Januar 2024)</li>
+        <li>Präsident Stiftungsrat SwissREI (Swiss Real Estate Institute)</li>
+        <li>Partner und VR Schweizerische Treuhandgesellschaft (Zürich) AG (seit 2019)</li>
+        <li>Zentralvorstand Sektion Ostschweiz Kfmv seit 2012</li>
+        <li>Diverse Kfmv-Tochtergesellschaften (Bildung, Prüfungs-/Finanzkommissionen, Pensionskasse)</li>
+      </ul>
+      <div class="fazit-box misch">
+        <strong>Synergien / Interessenkonflikte</strong>
+        <strong style="font-weight:normal; display:inline;">Synergie (sehr stark):</strong> Direkter operativer Kfmv-Draht, tiefes Verständnis der KV-Schulökonomie.<br><br>
+        <strong style="font-weight:normal; display:inline;">Interessenkonflikt:</strong> HWZ-VR ist kritisch – HWZ entscheidet selbst über Einbindung von SIZ in Curricula. Burkhalter stimmt auf beiden Seiten ab.
+      </div>
+      <div class="source">
+        <a href="https://www.kfmv.ch/news-detail/sascha-m-burkhalter-ist-der-neue-ceo-des-kaufmaennischen-verbands-schweiz">kfmv.ch CEO-Meldung</a> ·
+        <a href="https://fh-hwz.ch/news/sascha-m-burkhalter-neu-im-verwaltungsrat-der-hwz">HWZ-VR-Meldung</a> ·
+        <a href="https://www.swissrei.ch/stiftungsrat/">SwissREI</a> ·
+        <a href="https://ch.linkedin.com/in/burkhalter-sascha-m-323ba1a9">LinkedIn</a>
+      </div>
+    </div>
+  </details>
+
+  <details>
+    <summary><span>Adrian Müller – Mitglied VR</span> <span class="tag swico">Swico-Seite</span></summary>
+    <div class="details-body">
+      <ul class="fact-list">
+        <li><span class="fact-label">Hauptberuf:</span> bis 2015 Managing Director HP Schweiz; davor 20 Jahre Telion AG (Schlieren, erweiterte GL); vorher Sony, Ascom. Aktueller Status April 2026 <em>nicht eindeutig öffentlich auffindbar – intern verifizieren</em></li>
+        <li><span class="fact-label">Trägerverband:</span> Swico – und zwar als <strong>Präsident Swico</strong> (GV 2023; vorher Vizepräsident ab 2020; Vorstand ab 2013)</li>
+        <li><span class="fact-label">Swico-intern:</span> Leiter IG Imaging/Printing/Finishing</li>
+      </ul>
+      <div class="fazit-box misch">
+        <strong>Synergien / Interessenkonflikte</strong>
+        <strong style="font-weight:normal; display:inline;">Synergie:</strong> Anbindung an ICT-Arbeitgeberverband – wichtig für Markt-Akzeptanz von SIZ-Diplomen.<br><br>
+        <strong style="font-weight:normal; display:inline;">Interessenkonflikt (gering-moderat):</strong> Swico-Mitgliedsfirmen pflegen eigene Herstellerzertifikate (Microsoft, Cisco, HP, AWS), die im Teil-Wettbewerb zu herstellerneutralen SIZ-Diplomen stehen.
+      </div>
+      <div class="source">
+        <a href="https://www.swico.ch/de/verband/ueber-uns/vorstand/">Swico-Vorstand</a> ·
+        <a href="https://www.swico.ch/de/news/detail/adrian-muller-kandidiert-als-neuer-swico-prasident">Präsidiums-Meldung</a>
+      </div>
+    </div>
+  </details>
+
+  <h3>Geschäftsleitung / Geschäftsstelle</h3>
+
+  <details>
+    <summary><span>Wolfram Schmidt – Geschäftsführer</span> <span class="tag siz">GL</span></summary>
+    <div class="details-body">
+      <ul class="fact-list">
+        <li><span class="fact-label">Im Amt seit:</span> September 2024 (volle Übernahme 01.01.2025 von Erich Schneider i. R.)</li>
+        <li><span class="fact-label">Profil:</span> 25+ Jahre CEO/Executive-Erfahrung in Digitalisierung/Transformation; Wirtschaftsinformatik + Wirtschaftsingenieurwesen; Stationen u.a. Betty TV Holding (CEO), ABB New Ventures (Non-Exec Chairman für 6 Start-ups), Impact Hub Zürich</li>
+        <li><span class="fact-label">Mandat vom VR:</span> "Modernisierung von SIZ"</li>
+        <li><span class="fact-label">Externe Mandate:</span> keine öffentlich erkennbaren Parallelrollen bei Kfmv-/Swico-nahen Organisationen</li>
+      </ul>
+      <div class="fazit-box syn">
+        <strong>Fazit</strong>
+        Neutrales, transformations-starkes Profil. Keine strukturellen Interessenkonflikte. Peer-Gegenüber zu Judith Wespi (kv edupool, seit Sommer 2023) – hohe Chance für strategisches Alignment zwischen Schwester-Organisationen in einem kurzen Zeitfenster.
+      </div>
+      <div class="source">
+        <a href="https://www.linkedin.com/in/wolfram-schmidt-zh/">LinkedIn</a> ·
+        <a href="https://siz.ch/ueber-uns/team/">siz.ch/team</a>
+      </div>
+    </div>
+  </details>
+
+  <details>
+    <summary><span>Yvonne Berger – Leitung Prüfungsorganisation &amp; Kundenbetreuung</span> <span class="tag siz">Geschäftsstelle</span></summary>
+    <div class="details-body">
+      <p>Zeichnungsberechtigt laut Handelsregister. Hauptkontakt-Punkt zu allen Partnerschulen – hoher informeller Einfluss auf Schulbeziehungen. Keine öffentlichen Zusatzmandate auffindbar.</p>
+    </div>
+  </details>
+  <details>
+    <summary><span>Daniel Sutter – Leitung Technik &amp; Entwicklung</span> <span class="tag siz">Geschäftsstelle</span></summary>
+    <div class="details-body">
+      <p>Zeichnungsberechtigt laut Handelsregister. Verantwortlich für Prüfungssystem, Online-Prüfungen, IT-Infrastruktur, Softwareentwicklung. Schlüsselperson für IT-Modernisierungs-Roadmap. Keine öffentlichen Zusatzmandate auffindbar.</p>
+    </div>
+  </details>
+  <details>
+    <summary><span>Alessia Lo Presti – Sachbearbeitung Prüfungsorganisation</span> <span class="tag siz">Geschäftsstelle</span></summary>
+    <div class="details-body">
+      <p>Operativ. Keine externen Mandate öffentlich auffindbar.</p>
+    </div>
+  </details>
+
+  <h3>Prüfungskommissionen (externe Fachleute)</h3>
+  <details>
+    <summary><span>Olaf Schmelter – Präsident PK ICT Advanced-User SIZ</span> <span class="tag siz">PK</span></summary>
+    <div class="details-body">
+      <p>Lehrperson IKA/HKB-E Wirtschaftsgymnasium Basel; selbständiger IT-Trainer. Synergie: Praxisverankerung in KV-Schule (grösster AU-Absatzkanal). Möglicher Konflikt: Prüfungskonzept-Einfluss bei gleichzeitigem Unterrichten.</p>
+      <div class="source"><a href="https://www.linkedin.com/in/olaf-schmelter/">LinkedIn</a></div>
+    </div>
+  </details>
+  <details>
+    <summary><span>Andrea Waldesbühl – Präsidentin PK ICT Smart-User SIZ</span> <span class="tag siz">PK</span></summary>
+    <div class="details-body">
+      <p>Hauptarbeitgeber <em>nicht öffentlich auffindbar</em> in verfügbaren Quellen.</p>
+    </div>
+  </details>
+  <details>
+    <summary><span>Beatrice Seiterle – Präsidentin PK ICT Power-User Systems &amp; Network</span> <span class="tag siz">PK</span></summary>
+    <div class="details-body">
+      <p>Hauptarbeitgeber <em>nicht eindeutig öffentlich auffindbar</em> (LinkedIn von siz.ch verlinkt, aber kein Wieder-Auffinden).</p>
+    </div>
+  </details>
+  <details>
+    <summary><span>Thomas Reuteler – Präsident PK ICT Power-User Data &amp; Technology</span> <span class="tag siz">PK</span></summary>
+    <div class="details-body">
+      <p>Dipl. Experte Rechnungslegung &amp; Controlling, Aeberli Treuhand AG. Dozent KV Business School Zürich, Dozent Controller Akademie AG, frühere SIZ-Anstellung.</p>
+      <div class="fazit-box misch"><strong>Interessenkonflikt:</strong> Dozent KV Business School Zürich (SIZ-Absatzkanal) UND PK-Präsident → klassisches Rollenpaar.</div>
+      <div class="source"><a href="https://www.linkedin.com/in/thomas-reuteler-87714a85/">LinkedIn</a></div>
+    </div>
+  </details>
+
+  <div class="warn-note">
+    <strong>Gesamtbefund SIZ-Governance:</strong> Alle 4 SIZ-VR sind zugleich Spitzenämter ihrer Trägerverbände → VR ist de facto Träger-Lenkungsorgan, kein klassisch unabhängiger Aufsichtsrat. Unabhängige Expert:innen und Vertreter:innen der <strong>Absatzseite (Schulen)</strong> sind im VR nicht präsent.
+  </div>
+</section>
+
+<section id="kfmv">
+  <h2>Kfmv-Ast <span class="badge-count">Trägerverband 1</span></h2>
+
+  <details open>
+    <summary><span>Kaufmännischer Verband Schweiz (Kfmv)</span> <span class="tag kfmv">Trägerverband</span></summary>
+    <div class="details-body">
+      <ul class="fact-list">
+        <li><span class="fact-label">Rechtsform:</span> Verein (ZGB 60 ff.), konfessionell neutral, parteipolitisch ungebunden, föderalistisch</li>
+        <li><span class="fact-label">Gründung:</span> 14. April 1873 in Luzern – ältester noch aktiver Angestellten-Verband CH</li>
+        <li><span class="fact-label">Hauptsitz:</span> Hans-Huber-Strasse 4, Zürich</li>
+        <li><span class="fact-label">Mitglieder:</span> ca. 38 500 (andere Quellen 46–48 000 je nach Zählweise)</li>
+        <li><span class="fact-label">Präsident:</span> Prof. Dr. Daniel Jositsch (seit 2011)</li>
+        <li><span class="fact-label">CEO:</span> Sascha M. Burkhalter (seit 01.01.2024)</li>
+        <li><span class="fact-label">Struktur:</span> 23–24 Sektionen in 7 Regionen (seit 1.1.2019)</li>
+      </ul>
+      <h4>Kerngeschäfte</h4>
+      <ul>
+        <li>Berufsbildung kaufmännisch – Mitträger KV-Grundbildung "Kaufleute 2023" (Reform seit Aug 2023)</li>
+        <li>Höhere Berufsbildung – HWD via kv edupool, HFW-Kooperationen, Fachausweise</li>
+        <li>Sozialpartnerschaft – 20 nationale + 18 regionale GAV (u.a. Coop seit 1975)</li>
+        <li>Laufbahn-/Rechts-/Salärberatung, Politik, Stellenportal kv-stelle.ch</li>
+      </ul>
+      <h4>Strategische Prioritäten 2023–2030</h4>
+      <ul>
+        <li>Berufsbildung 2030 (Bund)</li>
+        <li>Reform "Kaufleute 2023" – 5 Handlungskompetenzbereiche A–E; <strong>Kompetenzbereich E "Digitale Arbeitswelt" ist SIZ-Territorium</strong></li>
+        <li>Skills Management, "die plattform" (seit 2025 als Verein, ~88 000 Angestellte)</li>
+      </ul>
+      <div class="fazit-box misch">
+        <strong>Fazit für SIZ</strong>
+        <strong style="display:inline;font-weight:normal">Zentralstakeholder.</strong> Mit-Aktionär, VR-Steller, CEO-seitig eng mit SIZ verbunden. Kfmv-Schulen (WKS Bern, KV BS Zürich, KV Luzern, HKV Aarau…) sind die grössten SIZ-Absatzkanäle. Risiken: Mitgliederschwund-Druck auf Wirtschaftlichkeit; KV-Reform 2023 öffnet Fenster für SIZ als Standard-Nachweis im Kompetenzbereich E.
+      </div>
+      <div class="source">
+        <a href="https://www.kfmv.ch/ueber-uns/kaufmaennischer-verband-schweiz/organisation">kfmv.ch</a> ·
+        <a href="https://de.wikipedia.org/wiki/Kaufm%C3%A4nnischer_Verband_Schweiz">Wikipedia</a> ·
+        <a href="https://www.sozialpartner.ch/de/die-vertragsparteien-des-gav/kaufmaennischer-verband-schweiz.html">Sozialpartner.ch</a>
+      </div>
+    </div>
+  </details>
+
+  <h3>Partner- und Tochter-Organisationen im Kfmv-Ast</h3>
+
+  <div class="cards">
+    <div class="card kfmv">
+      <div class="card-header">WKS KV Bildung Bern <span class="role">Schule</span></div>
+      <div class="card-body">
+        Drei-Entitäten-Konstrukt (Verein WKS KV Bern + WKS KV Bildung AG + WKS Stiftung KV Bern). Trägerschaft: Kfmv Bern + Stiftung. <strong>SIZ-Partnerschule.</strong> Thomas Kölliker (Vizedirektor, Leiter Weiterbildung) ist gleichzeitig VRP kv edupool.
+        <div class="fazit-box syn"><strong>Zu SIZ:</strong> Ergänzung – Schlüssel-Absatzkanal.</div>
+      </div>
+    </div>
+    <div class="card kfmv">
+      <div class="card-header">KV Business School Zürich AG <span class="role">Schule</span></div>
+      <div class="card-body">
+        Konzern-Tochter Kfmv-Sektion Zürich. Grösster kaufmännischer Weiterbildungsanbieter CH. <strong>SIZ-Partnerschule.</strong> Daniel Camenzind (CFO) sitzt im VR kv edupool. Aktueller KV-BS-VR: Andrea Kuhn-Senn (Präs.), Michèle Rosenheck, Stephan Vollenweider.
+        <div class="fazit-box syn"><strong>Zu SIZ:</strong> Ergänzung – Grosskunde.</div>
+      </div>
+    </div>
+    <div class="card kfmv">
+      <div class="card-header">Wirtschaftsschule KV Zürich <span class="role">Schule</span></div>
+      <div class="card-body">
+        Direkte Tochter Kfmv-Sektion Zürich (Grundbildung). SIZ-Partnerschule.
+        <div class="fazit-box syn"><strong>Zu SIZ:</strong> Ergänzung.</div>
+      </div>
+    </div>
+    <div class="card kfmv">
+      <div class="card-header">KV Luzern (kvlu.ch) <span class="role">Schule</span></div>
+      <div class="card-body">
+        Getragen von Kfmv-Sektion Luzern. SIZ-Partnerschule.
+        <div class="fazit-box syn"><strong>Zu SIZ:</strong> Ergänzung.</div>
+      </div>
+    </div>
+    <div class="card kfmv">
+      <div class="card-header">HKV Aarau <span class="role">Schule</span></div>
+      <div class="card-body">
+        HKV Aarau AG, verbunden mit Kfmv Aarau-Mittelland. SIZ-Partnerschule.
+        <div class="fazit-box syn"><strong>Zu SIZ:</strong> Ergänzung.</div>
+      </div>
+    </div>
+    <div class="card kfmv">
+      <div class="card-header">HWZ – Hochschule für Wirtschaft Zürich <span class="role">FH</span></div>
+      <div class="card-body">
+        Fachhochschule, im Kfmv-Umfeld verankert. Sascha Burkhalter (SIZ-VR + Kfmv-CEO) sitzt seit 1/2024 im HWZ-VR.
+        <div class="fazit-box misch"><strong>Zu SIZ:</strong> Ergänzung mit Interessenkonflikt-Doppelung über Burkhalter.</div>
+      </div>
+    </div>
+    <div class="card kfmv">
+      <div class="card-header">SIB – Schweizerisches Institut für Betriebsökonomie <span class="role">Weiterbildung</span></div>
+      <div class="card-body">
+        Eines der Kfmv-Mandate von Jositsch ex officio. Weiterbildungsanbieter im Wirtschaftsbereich.
+        <div class="fazit-box neutral"><strong>Zu SIZ:</strong> Neutral bis Ergänzung.</div>
+      </div>
+    </div>
+    <div class="card kfmv">
+      <div class="card-header">"die plattform" (Allianzverband) <span class="role">Polit-Verein</span></div>
+      <div class="card-body">
+        Seit 2025 Verein. Kfmv + Angestellte Schweiz + Swiss Leaders + SwissAccounting (veb) + ZGP + Sales Swiss + KVöV + Swiss Engineering. Repräsentiert ~88 000 Angestellte.
+        <div class="fazit-box neutral"><strong>Zu SIZ:</strong> Neutral – politisches Sprachrohr für Berufsbildungsgesetz.</div>
+      </div>
+    </div>
+    <div class="card kfmv">
+      <div class="card-header">veb.ch / SwissAccounting <span class="role">Fachverband</span></div>
+      <div class="card-body">
+        Grösster CH-Verband für Rechnungslegung/Controlling. Ko-Träger bei edupool für Rechnungswesen-Diplome.
+        <div class="fazit-box neutral"><strong>Zu SIZ:</strong> Neutral.</div>
+      </div>
+    </div>
+    <div class="card kfmv">
+      <div class="card-header">SVF-ASFC <span class="role">Fachverband</span></div>
+      <div class="card-body">
+        Schweizerische Vereinigung für Führungsausbildung. Trägerverband eidg. BP "Führungsfachleute". Keine direkte Kfmv-Trägerschaft, aber starke Kooperation über KV-Schulen.
+        <div class="fazit-box neutral"><strong>Zu SIZ:</strong> Neutral / Ergänzung – keine ICT-Überschneidung, gemeinsamer Schul-Kanal.</div>
+      </div>
+    </div>
+    <div class="card kfmv">
+      <div class="card-header">procure.ch <span class="role">Fachverband</span></div>
+      <div class="card-body">
+        Einkaufsverband, eigene Fachausweise Einkauf/Supply Chain. Keine Kfmv-Trägerschaft.
+        <div class="fazit-box neutral"><strong>Zu SIZ:</strong> Neutral.</div>
+      </div>
+    </div>
+    <div class="card kfmv">
+      <div class="card-header">Angestellte Schweiz <span class="role">Nachbar-Verband</span></div>
+      <div class="card-body">
+        ~12 000 Mitglieder, Industrie/MEM-Angestellte. Nachbar-/Plattform-Partner.
+        <div class="fazit-box neutral"><strong>Zu SIZ:</strong> Neutral.</div>
+      </div>
+    </div>
+    <div class="card kfmv">
+      <div class="card-header">Swiss Leaders <span class="role">Kaderverband</span></div>
+      <div class="card-body">
+        &gt;10 000 Mitglieder. Plattform-Partner.
+        <div class="fazit-box neutral"><strong>Zu SIZ:</strong> Neutral – potenzieller Multiplikator für Führungs-IT-Kompetenz.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="source" style="margin-top:1rem">
+    <a href="https://www.kfmv.ch/ueber-uns/kaufmaennischer-verband-schweiz/plattform">"die plattform"</a> ·
+    <a href="https://www.kv-business-school.ch/organisation">KV Business School Zürich</a> ·
+    <a href="https://www.wksbern.ch/de/die-wks/unternehmen">WKS Bern</a> ·
+    <a href="https://www.kvlu.ch/">KV Luzern</a> ·
+    <a href="https://www.svf-asfc.ch/ueber-uns">SVF-ASFC</a>
+  </div>
+</section>
+
+<section id="swico">
+  <h2>Swico-Ast <span class="badge-count">Trägerverband 2</span></h2>
+
+  <details open>
+    <summary><span>Swico – Wirtschaftsverband für die digitale Schweiz</span> <span class="tag swico">Trägerverband</span></summary>
+    <div class="details-body">
+      <ul class="fact-list">
+        <li><span class="fact-label">Rechtsform:</span> Verein nach Schweizer Recht</li>
+        <li><span class="fact-label">Hauptsitz:</span> Lagerstrasse 33, 8004 Zürich</li>
+        <li><span class="fact-label">Mitglieder:</span> ca. 700 ICT-/Internet-Firmen, ~56 000 MA, ~CHF 40 Mrd. Umsatz (Stand 2022)</li>
+        <li><span class="fact-label">Präsident:</span> Adrian Müller (seit 2022; Vorstand seit 2013)</li>
+        <li><span class="fact-label">CEO:</span> Dr. Jon Fanzun (seit August 2024) – Ex-Cyber-Diplomat des Bundes, Ex-FDP-Generalsekretär</li>
+        <li><span class="fact-label">Vizepräsident:</span> Ruedi Wipf</li>
+        <li><span class="fact-label">Vorgängerin CEO:</span> Judith Bellaiche (2019–2024, heute Präsidentin asut)</li>
+      </ul>
+      <h4>Vorstand (9 Sitze)</h4>
+      <ul>
+        <li>Adrian Müller (Präs.), Ruedi Wipf (VP)</li>
+        <li><strong>Dr. Alain Gut</strong> (IBM, SIZ-VR-Präs., Präs. ICT-Berufsbildung)</li>
+        <li>Barbara Josef (5to9 AG), Rafael Perez Süess, Nadja Perroulaz (Liip), Jean-Jacques Suter, Andrej Vckovski, Arno Zindel (Canon)</li>
+      </ul>
+      <h4>Kerngeschäfte</h4>
+      <ul>
+        <li><strong>Swico Recycling</strong> – Branchenlösung Elektroschrott (40 Kilotonnen/Jahr; ~1 Mio t in 30 Jahren)</li>
+        <li><strong>Public Affairs / Lobbying</strong> – Fanzun-Signaturthemen: E-ID, KI-Regulierung, Cybersecurity, öffentliche Beschaffung</li>
+        <li>Arbeitssicherheit / Branchenlösung EKAS</li>
+        <li>Bildung – Mitträger SIZ, Web Project Manager, Lehrbetriebsverbünde</li>
+      </ul>
+      <h4>Strategische Prioritäten 2026</h4>
+      <ul>
+        <li>KI als strategische Realität – Fachkräftestudie 2026: "Das Problem ist nicht die Zahl der Bewerbenden, sondern fehlende/falsche Kompetenzen"</li>
+        <li>Cybersecurity (41 % der offenen Kompetenzen betreffen KI-Security, 36 % Cloud-Security)</li>
+        <li>E-ID, Regulierung, Datenschutz</li>
+        <li>Swico ICT Index Q1 2026: 113.9 – stärkster Anstieg seit Mitte 2021</li>
+      </ul>
+      <div class="fazit-box misch">
+        <strong>Fazit für SIZ</strong>
+        SIZ ist für Swico <em>kein Kerngeschäft</em> – Swico-Finanzlast liegt auf Recycling, Strategielast auf Public Affairs. SIZ taucht auf swico.ch/bildung als ein Angebot unter mehreren auf. Vorteil: Kein Reform-Druck. Nachteil: SIZ profitiert wenig von Swicos Lobbying-Kraft.
+      </div>
+      <div class="source">
+        <a href="https://www.swico.ch/de/verband/ueber-uns/vorstand/">Swico-Vorstand</a> ·
+        <a href="https://www.swico.ch/de/verband/mitgliedschaft/swico-kurzportraet/">Kurzportrait</a> ·
+        <a href="https://www.swico.ch/de/news/detail/swico-ict-index-q1-2026-ict-branche-blickt-optimistisch-ins-neue-jahr">ICT Index Q1 2026</a>
+      </div>
+    </div>
+  </details>
+
+  <h3>Partner- und Tochter-Organisationen im Swico-Ast</h3>
+
+  <div class="cards">
+    <div class="card swico">
+      <div class="card-header">Swico Recycling <span class="role">Geschäftsbereich</span></div>
+      <div class="card-body">
+        Nationales Rücknahmesystem Elektronik, finanziell das grösste Swico-Standbein, 700+ Konventions-Unterzeichner.
+        <div class="fazit-box neutral"><strong>Zu SIZ:</strong> Operativ keine Berührung, aber <em>indirekte Finanzierung der Swico-Dachorganisation und damit SIZ-Mitträgerschaft</em>.</div>
+      </div>
+    </div>
+    <div class="card swico">
+      <div class="card-header">ICT-Berufsbildung Schweiz <span class="role">OdA ICT</span></div>
+      <div class="card-body">
+        Nationale OdA ICT. Mitträger Swico + Kfmv + Kantone. <strong>Präsident seit 12/2025: Dr. Alain Gut</strong> (identisch mit SIZ-VRP). Zuständig: Informatiker:in EFZ, ICT-Fachmann/-frau EFZ, Mediamatiker:in, Gebäudeinformatiker:in, Fachausweise Cyber Security Specialist, AI Business Specialist.
+        <div class="fazit-box misch"><strong>Zu SIZ – heikel:</strong> Klassische Arbeitsteilung (EFZ-/Lehrlingsschiene vs. SIZ-Modul/Quereinstieg) wird durch neue Fachausweise aufgeweicht. Doppelrolle Gut = Brücke oder Kanalisierung. Strategisch zentral für SIZ-VR.</div>
+      </div>
+    </div>
+    <div class="card swico">
+      <div class="card-header">digitalswitzerland <span class="role">Dachverband</span></div>
+      <div class="card-body">
+        Seit 1.1.2021 (Fusion mit ICTswitzerland). Mitglieder: Wirtschaft, öffentl. Hand, NGOs, Forschung. Adrian Müller im digitalswitzerland-Vorstand. Alain Gut leitet Bildungskomitee.
+        <div class="fazit-box syn"><strong>Zu SIZ:</strong> Politische Ergänzung, kein Wettbewerb. Bühne für ICT-Lobbying – SIZ kann über Gut Sichtbarkeit gewinnen.</div>
+      </div>
+    </div>
+    <div class="card swico">
+      <div class="card-header">SwissICT <span class="role">Parallelverband</span></div>
+      <div class="card-body">
+        Gegründet 1955 (älter als Swico). ~2 500 Mitglieder. Kernprodukte: Salärstudie ICT, "Berufe der ICT"/rollen-der-ict.ch, Digital Economy Award, 20 Fachgruppen.
+        <div class="fazit-box misch"><strong>Zu SIZ:</strong> Ergänzung mit latentem Wettbewerb. "Berufe der ICT" definiert Rollenprofile → könnte Deutungshoheit über SIZ-Kompetenzlandkarte gewinnen. Abstimmung empfohlen.</div>
+      </div>
+    </div>
+    <div class="card swico">
+      <div class="card-header">asut <span class="role">Nachbar-Verband</span></div>
+      <div class="card-body">
+        Schweizerischer Verband der Telekommunikation. 400+ Mitgliedsorganisationen. Präsidentin: Judith Bellaiche (Ex-Swico-CEO) – direkte Brücke zu Swico.
+        <div class="fazit-box neutral"><strong>Zu SIZ:</strong> Operativ keine Berührung, politisch relevante Bellaiche-Brücke in Bundesbern.</div>
+      </div>
+    </div>
+    <div class="card swico">
+      <div class="card-header">Swico-Mitgliedsfirmen (Relevanz für SIZ) <span class="role">Arbeitgeber</span></div>
+      <div class="card-body">
+        IBM (Alain Gut), HP (historisch Müller), Canon (Zindel), Swisscom, Microsoft CH, SAP CH, bexio, Google CH, Liip (Perroulaz), 5to9 (Josef). Potenzielle Grosskunden für Corporate-Weiterbildung auf SIZ-Basis (Upskilling, Quereinstieg).
+        <div class="fazit-box syn"><strong>Zu SIZ:</strong> Potenziale für Corporate-Partnerschaften. Türöffner Alain Gut.</div>
+      </div>
+    </div>
+    <div class="card swico">
+      <div class="card-header">economiesuisse (via Gut/Fanzun) <span class="role">Dachverband Wirtschaft</span></div>
+      <div class="card-body">
+        Kein direkter Swico-Bezug, aber Gut sitzt in B&amp;F-Kommission, Fanzun ist via politisches Netzwerk verankert.
+        <div class="fazit-box neutral"><strong>Zu SIZ:</strong> Neutral, Indirekt-Hebel via Gut.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="edupool">
+  <h2>kv edupool AG (Schwester-Organisation) <span class="badge-count">Wichtigste Schwester</span></h2>
+
+  <div class="warn-note">
+    <strong>Wichtig zur Bezeichnung:</strong> Der Verein <em>edupool.ch</em> existiert rechtlich nicht mehr als operative Einheit. Am <strong>13. Mai 2024</strong> wurde die <strong>kv edupool AG</strong> (Zug, CHE-364.040.400) gegründet, die per Fusionsvertrag 17.06.2024 die "KV Bildungsgruppe Schweiz AG" absorbierte. Der alte Verein edupool.ch ist in Liquidation; die Website wurde von edupool.ch auf kv-edupool.ch migriert. Alle aktuellen Personen-Angaben beziehen sich auf die <strong>kv edupool AG</strong>.
+  </div>
+
+  <details open>
+    <summary><span>kv edupool AG – Unternehmen</span> <span class="tag edupool">Schwester</span></summary>
+    <div class="details-body">
+      <ul class="fact-list">
+        <li><span class="fact-label">Rechtsform:</span> AG seit 13.05.2024 (Sitz Zug)</li>
+        <li><span class="fact-label">UID:</span> CHE-364.040.400</li>
+        <li><span class="fact-label">Hauptsitz:</span> Baarerstrasse 77, 6300 Zug</li>
+        <li><span class="fact-label">Trägerschaft:</span> <strong>Kfmv + Swico</strong> – identisch mit SIZ</li>
+        <li><span class="fact-label">Geschäftsleiterin:</span> Judith Wespi-Krummenacher</li>
+        <li><span class="fact-label">Prüfungsvolumen:</span> ~4 000+ Teilnehmende/Jahr</li>
+        <li><span class="fact-label">Partnerschulen:</span> ~50 akkreditierte kaufmännische Weiterbildungszentren</li>
+      </ul>
+      <h4>Produkte / Angebote</h4>
+      <ul>
+        <li>Expertenwissen: Payroll Expert:in</li>
+        <li>Sachbearbeiter:in (SB): Rechnungswesen, Marketing &amp; Verkauf, Personal, Sozialversicherungen, Immobilien, Treuhand</li>
+        <li>Allgemeinbildung: Handelsschule kv edupool, HWD (Höheres Wirtschaftsdiplom)</li>
+        <li>Basiswissen: Payroll Manager:in</li>
+        <li>Medien: Lehrmittel, eShop, digitale Lernplattform</li>
+      </ul>
+      <div class="fazit-box syn">
+        <strong>Kernaussage</strong>
+        kv edupool und SIZ haben <strong>identische Trägerverbände</strong> (Kfmv + Swico) und teilen ~70–80 % der Partnerschulen. SIZ ist bereits heute <strong>obligatorischer Bundle-Bestandteil der Handelsschule kv edupool</strong> (CHF 6 900 inkl. SIZ-Zertifikat) – das ist eine faktische Schwesterbeziehung mit laufendem operativem Geschäft.
+      </div>
+      <div class="source">
+        <a href="https://www.kv-edupool.ch/de/kv-edupool/ueber-uns/">kv-edupool.ch</a> ·
+        <a href="https://www.kv-edupool.ch/de/kv-edupool/partner/traegerschaft/">Trägerschaft</a> ·
+        <a href="https://www.moneyhouse.ch/en/company/kv-edupool-ag-11134341051">Moneyhouse</a>
+      </div>
+    </div>
+  </details>
+
+  <h3>Verwaltungsrat kv edupool AG (5 Personen)</h3>
+
+  <details>
+    <summary><span>Thomas Kölliker – VR-Präsident</span> <span class="tag edupool">VRP edupool</span> <span class="tag kfmv">WKS Bern</span></summary>
+    <div class="details-body">
+      <ul class="fact-list">
+        <li><span class="fact-label">Hauptberuf:</span> WKS KV Bildung AG, Bern – Leiter Weiterbildung / Vizedirektor (seit Juli 2015)</li>
+        <li><span class="fact-label">Vorher:</span> CYP (GL-Mitglied), KV-Lehre in einer Bank, HF/Uni Bildungsmanagement</li>
+        <li><span class="fact-label">Wohnort:</span> Ittigen (BE)</li>
+        <li><span class="fact-label">Weitere Mandate:</span> VR-Präsident kv edupool AG</li>
+      </ul>
+      <div class="fazit-box misch">
+        <strong>SIZ-Relevanz</strong>
+        WKS KV Bildung ist SIZ-Partnerschule. Kölliker sitzt gleichzeitig auf Kundenseite (WKS) und Schwester-Anbieterseite (kv edupool VRP). <strong>Der einflussreichste Bildungs-Power-User im Kfmv-Ökosystem.</strong> SIZ-GF Schmidt sollte ihn als informellen Sparringspartner pflegen.
+      </div>
+      <div class="source">
+        <a href="https://www.kv-edupool.ch/de/kv-edupool/verwaltungsrat/">kv-edupool.ch/verwaltungsrat</a> ·
+        <a href="https://www.linkedin.com/in/thomas-k%C3%B6lliker/">LinkedIn</a>
+      </div>
+    </div>
+  </details>
+
+  <details>
+    <summary><span>Daniel Armando Camenzind – VR</span> <span class="tag edupool">VR edupool</span> <span class="tag kfmv">KV BS Zürich</span></summary>
+    <div class="details-body">
+      <ul class="fact-list">
+        <li><span class="fact-label">Hauptberuf:</span> CFO / Mitglied GL, <strong>KV Business School Zürich AG</strong> (NICHT GL-Vorsitz; aktueller VR KV-BS besteht aus Andrea Kuhn-Senn als Präs., Michèle Rosenheck, Stephan Vollenweider)</li>
+        <li><span class="fact-label">Wohnort:</span> Gersau (SZ), berufl. Cham (ZG)</li>
+        <li><span class="fact-label">Weitere Mandate:</span> VR kv edupool AG</li>
+      </ul>
+      <div class="fazit-box syn">
+        <strong>SIZ-Relevanz</strong>
+        KV BS Zürich ist einer der grössten kaufmännischen Weiterbildungsanbieter CH und SIZ-Partnerschule. Als CFO hat Camenzind die Bildungs-Ökonomie einer Schule im Kopf – weiss, wie profitabel eine Prüfungsmarke an der Schule ist.
+      </div>
+      <div class="source">
+        <a href="https://www.kv-business-school.ch/organisation">KV BS Zürich Organisation</a>
+      </div>
+    </div>
+  </details>
+
+  <details>
+    <summary><span>Michael Meier – VR</span> <span class="tag edupool">VR edupool</span> <span class="tag kfmv">BZR Rorschach</span></summary>
+    <div class="details-body">
+      <ul class="fact-list">
+        <li><span class="fact-label">Hauptberuf:</span> BZR – Berufs- und Weiterbildungszentrum Rorschach-Rheintal (bzr.ch) – Leiter Weiterbildungszentrum und Stv. Rektor</li>
+        <li><span class="fact-label">Hinweis:</span> korrekter Schulname ist <strong>BZR</strong> (nicht BWZ)</li>
+        <li><span class="fact-label">Ausbildung:</span> ZHAW</li>
+        <li><span class="fact-label">Wohnort:</span> Reiden (LU), berufl. St. Gallen</li>
+        <li><span class="fact-label">Weitere Mandate:</span> VR kv edupool AG</li>
+      </ul>
+      <div class="fazit-box syn">
+        <strong>SIZ-Relevanz</strong>
+        BZR ist in der Ostschweiz fest verankerter Weiterbildungsanbieter und – mit hoher Wahrscheinlichkeit – SIZ-Partnerschule (vor Veröffentlichung auf school.siz.ch/SchoolList prüfen).
+      </div>
+      <div class="source">
+        <a href="https://www.bzr.ch/ueber-uns/kontaktpersonen.html">BZR Kontakt</a> ·
+        <a href="https://www.linkedin.com/in/michael-meier-689a21205/">LinkedIn</a>
+      </div>
+    </div>
+  </details>
+
+  <details>
+    <summary><span>Caroline Beatrice Köthe-Zölly – VR und Mitglied GL</span> <span class="tag edupool">VR + GL edupool</span></summary>
+    <div class="details-body">
+      <ul class="fact-list">
+        <li><span class="fact-label">Rolle:</span> Mitglied GL / stv. Geschäftsführerin kv edupool AG – zugleich im VR</li>
+        <li><span class="fact-label">Vorher:</span> KV Bildungsgruppe Schweiz AG (fusioniert in kv edupool), Baker McKenzie CH, Credit Suisse, Seedamm Plaza AG</li>
+        <li><span class="fact-label">Wohnort:</span> Kanton Zug</li>
+      </ul>
+      <div class="fazit-box neutral"><strong>Zu SIZ:</strong> Intern/operativ; juristisch-unternehmerisches Profil. Kein direkter Konfliktpunkt.</div>
+    </div>
+  </details>
+
+  <details>
+    <summary><span>Judith Wespi-Krummenacher – VR und Geschäftsleiterin (CEO)</span> <span class="tag edupool">CEO edupool</span></summary>
+    <div class="details-body">
+      <ul class="fact-list">
+        <li><span class="fact-label">Rolle:</span> Geschäftsleiterin kv edupool AG, zugleich VR-Mitglied</li>
+        <li><span class="fact-label">Im Amt seit:</span> 2023 (zuvor Vizepräsidentin Vorstand Verein edupool.ch)</li>
+        <li><span class="fact-label">Werdegang:</span> 10+ Jahre HR bei V-ZUG → Lernwerkstatt Olten → edupool.ch/kv edupool</li>
+        <li><span class="fact-label">Wohnort:</span> Rain (LU)</li>
+      </ul>
+      <div class="fazit-box syn">
+        <strong>SIZ-Relevanz</strong>
+        Primäre Peer-Gesprächspartnerin zu SIZ-GF Wolfram Schmidt. Beide sind seit 2023/2024 neu im Amt → enges Zeitfenster für strategisches Alignment. <strong>Empfehlung: Quartalsweises GF-Frühstück institutionalisieren.</strong>
+      </div>
+      <div class="source">
+        <a href="https://www.linkedin.com/in/judith-wespi-0b408a112/">LinkedIn</a>
+      </div>
+    </div>
+  </details>
+
+  <h3>Team kv edupool AG (Mitarbeitende)</h3>
+
+  <div class="cards">
+    <div class="card edupool">
+      <div class="card-header">Sabine Schmidt <span class="role">Leiterin Prüfungen</span></div>
+      <div class="card-body">
+        Bei kv edupool seit ca. Mitte 2022 (Quereinstieg); vorher SILATEC GmbH. <strong>Operativer Counterpart</strong> zu SIZ-Prüfungsorga (Yvonne Berger) für Kooperationen, Prüfungstage, Anerkennung.
+        <div class="source"><a href="https://www.linkedin.com/in/sabine-schmidt-80b917a7/">LinkedIn</a></div>
+      </div>
+    </div>
+    <div class="card edupool">
+      <div class="card-header">Yannick Timell <span class="role">IT &amp; Digitalisierung</span></div>
+      <div class="card-body">
+        Im Amt seit Oktober 2023. Auch Prüfungsverantwortlicher.
+        <div class="source"><a href="https://www.linkedin.com/in/yannick-timell/">LinkedIn</a></div>
+      </div>
+    </div>
+    <div class="card edupool">
+      <div class="card-header">Sabine Aschenbrenner <span class="role">Prüfungen &amp; Projekte / Buchhaltung</span></div>
+      <div class="card-body">
+        <div class="source"><a href="https://www.linkedin.com/in/sabine-aschenbrenner/">LinkedIn</a></div>
+      </div>
+    </div>
+    <div class="card edupool">
+      <div class="card-header">Astrid Baumann <span class="role">Lehrmittel &amp; Lernplattform</span></div>
+      <div class="card-body">Keine eindeutige öffentliche Zuordnung auffindbar.</div>
+    </div>
+    <div class="card edupool">
+      <div class="card-header">Michèle Pfrunder <span class="role">Bildungsdesign &amp; Projekte</span></div>
+      <div class="card-body">E-Mail michele.pfrunder@kv-edupool.ch; keine öffentlichen Zusatzmandate auffindbar.</div>
+    </div>
+    <div class="card edupool">
+      <div class="card-header">Manuela Aus der Au <span class="role">PV SB Sozialvers./Treuhand</span></div>
+      <div class="card-body">Keine öffentlichen Zusatzmandate.</div>
+    </div>
+    <div class="card edupool">
+      <div class="card-header">Anika Bühler <span class="role">PV SB Rechnungswesen</span></div>
+      <div class="card-body">Keine öffentlichen Zusatzmandate.</div>
+    </div>
+    <div class="card edupool">
+      <div class="card-header">Nadine Federli <span class="role">PV Handelsschule</span></div>
+      <div class="card-body">Keine öffentlichen Zusatzmandate.</div>
+    </div>
+    <div class="card edupool">
+      <div class="card-header">Michelle Felder <span class="role">PV HWD</span></div>
+      <div class="card-body">Keine öffentlichen Zusatzmandate.</div>
+    </div>
+    <div class="card edupool">
+      <div class="card-header">Livia Fried <span class="role">PV SB Immobilien-Bewirtschaftung</span></div>
+      <div class="card-body">Keine öffentlichen Zusatzmandate.</div>
+    </div>
+    <div class="card edupool">
+      <div class="card-header">Anna Schürmann <span class="role">PV SB Marketing/Personal/FA MFL</span></div>
+      <div class="card-body">Keine öffentlichen Zusatzmandate.</div>
+    </div>
+    <div class="card edupool">
+      <div class="card-header">Sina Schneiter <span class="role">Projekt-/Produktkoordination</span></div>
+      <div class="card-body">FA DA/HR/TK. Keine öffentlichen Zusatzmandate.</div>
+    </div>
+    <div class="card edupool">
+      <div class="card-header">Rena Wälchli <span class="role">PV Payroll</span></div>
+      <div class="card-body">Keine öffentlichen Zusatzmandate.</div>
+    </div>
+    <div class="card edupool">
+      <div class="card-header">Andrea Bertschi <span class="role">Kundenmanagement</span></div>
+      <div class="card-body">Keine öffentlichen Zusatzmandate.</div>
+    </div>
+    <div class="card edupool">
+      <div class="card-header">Annemarie Betschart <span class="role">Lehrmittel</span></div>
+      <div class="card-body">Keine öffentlichen Zusatzmandate.</div>
+    </div>
+  </div>
+
+  <h3>Schul-Überlappung kv edupool ↔ SIZ</h3>
+  <table class="matrix">
+    <thead>
+      <tr>
+        <th>Schule</th>
+        <th>Kanton</th>
+        <th>edupool-Partner</th>
+        <th>SIZ-Partner</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>WKS KV Bildung Bern</td><td>BE</td><td>✓</td><td>✓</td><td><span class="tag syn" style="background:#e8f5e9;color:#2e7d32;">Beide</span></td></tr>
+      <tr><td>KV Business School Zürich</td><td>ZH</td><td>✓</td><td>✓</td><td><span class="tag syn" style="background:#e8f5e9;color:#2e7d32;">Beide</span></td></tr>
+      <tr><td>KV Luzern (kvlu)</td><td>LU</td><td>✓</td><td>✓</td><td><span class="tag syn" style="background:#e8f5e9;color:#2e7d32;">Beide</span></td></tr>
+      <tr><td>HKV Aarau</td><td>AG</td><td>✓</td><td>✓</td><td><span class="tag syn" style="background:#e8f5e9;color:#2e7d32;">Beide</span></td></tr>
+      <tr><td>Wirtschaftsschule KV Wetzikon</td><td>ZH</td><td>✓</td><td>✓</td><td><span class="tag syn" style="background:#e8f5e9;color:#2e7d32;">Beide</span></td></tr>
+      <tr><td>HKV Schaffhausen</td><td>SH</td><td>✓</td><td>wahrsch.</td><td><span class="tag syn" style="background:#e8f5e9;color:#2e7d32;">Beide</span></td></tr>
+      <tr><td>Akademie St. Gallen</td><td>SG</td><td>✓</td><td>wahrsch.</td><td><span class="tag syn" style="background:#e8f5e9;color:#2e7d32;">Beide</span></td></tr>
+      <tr><td>Zentrum Bildung Baden/Brugg</td><td>AG</td><td>✓</td><td>wahrsch.</td><td><span class="tag syn" style="background:#e8f5e9;color:#2e7d32;">Beide</span></td></tr>
+      <tr><td>BZR Rorschach-Rheintal</td><td>SG</td><td>✓</td><td>wahrsch.</td><td><span class="tag syn" style="background:#e8f5e9;color:#2e7d32;">Beide</span></td></tr>
+      <tr><td>BFB Biel-Bienne</td><td>BE</td><td>✓</td><td>?</td><td><span class="tag">Verifizieren</span></td></tr>
+      <tr><td>kv pro Basel</td><td>BS</td><td>✓</td><td>wahrsch.</td><td><span class="tag syn" style="background:#e8f5e9;color:#2e7d32;">Beide</span></td></tr>
+      <tr><td>Société suisse des employés de commerce Fribourg</td><td>FR</td><td>✓</td><td>?</td><td><span class="tag warn">Akquise-Chance</span></td></tr>
+      <tr><td>Kantonsschulen / Gymnasien (Heerbrugg u.a.)</td><td>div.</td><td>—</td><td>✓</td><td><span class="tag">SIZ only</span></td></tr>
+      <tr><td>Private IT-Schulen (Benedict, IFA)</td><td>div.</td><td>—</td><td>✓</td><td><span class="tag">SIZ only</span></td></tr>
+    </tbody>
+  </table>
+
+  <div class="fazit-box syn">
+    <strong>Überlappungs-Schätzung:</strong> ~70–80 % der ~50 kv-edupool-Schulen sind auch SIZ-Partner. SIZ hat deutlich breitere Öko-Deckung (zusätzlich Gymnasien, Gewerbeschulen, private IT-Schulen, Betriebsschulungs-Anbieter) als kv edupool.
+  </div>
+</section>
+
+<section id="matrix">
+  <h2>Überschneidungs-Matrix auf einen Blick</h2>
+  <table class="matrix">
+    <thead>
+      <tr>
+        <th>Organisation</th>
+        <th>Träger-Nähe zu SIZ</th>
+        <th>Markt zu SIZ</th>
+        <th>Bewertung</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Kaufmännischer Verband Schweiz</strong></td>
+        <td>50 % Aktionär</td>
+        <td>Bildungspolitik, KV-Schulnetzwerk</td>
+        <td><span class="tag kfmv">Zentralstakeholder</span></td>
+      </tr>
+      <tr>
+        <td><strong>Swico</strong></td>
+        <td>50 % Aktionär</td>
+        <td>ICT-Branche, Arbeitgeber-Akzeptanz</td>
+        <td><span class="tag swico">Zentralstakeholder</span></td>
+      </tr>
+      <tr>
+        <td><strong>kv edupool AG</strong></td>
+        <td>Gleiche Trägerverbände</td>
+        <td>kaufm. Prüfungen; Handelsschule enthält SIZ-Bundle</td>
+        <td><span class="tag edupool">Schwester – Ergänzung mit latentem Risiko</span></td>
+      </tr>
+      <tr>
+        <td><strong>ICT-Berufsbildung Schweiz</strong></td>
+        <td>Swico + Kfmv Mitträger</td>
+        <td>EFZ + Fachausweise Cyber/AI</td>
+        <td><span class="tag warn">Teilkonkurrenz – strategisch heikel</span></td>
+      </tr>
+      <tr>
+        <td><strong>digitalswitzerland</strong></td>
+        <td>Swico + Alain Gut</td>
+        <td>Dachverband, keine Zertifikate</td>
+        <td><span class="tag neutral">Politische Ergänzung</span></td>
+      </tr>
+      <tr>
+        <td><strong>SwissICT</strong></td>
+        <td>unabhängig</td>
+        <td>"Berufe der ICT"-Rollenprofile</td>
+        <td><span class="tag neutral">Ergänzung, latenter Wettbewerb</span></td>
+      </tr>
+      <tr>
+        <td><strong>asut</strong></td>
+        <td>unabhängig (Bellaiche-Brücke)</td>
+        <td>Telekom, keine Zertifikate</td>
+        <td><span class="tag neutral">Neutral</span></td>
+      </tr>
+      <tr>
+        <td><strong>HWZ</strong></td>
+        <td>Kfmv-nahe (Burkhalter VR)</td>
+        <td>FH Wirtschaft, Curricula-Abnehmer</td>
+        <td><span class="tag kfmv">Ergänzung mit IK-Doppelung</span></td>
+      </tr>
+      <tr>
+        <td><strong>WKS Bern / KV BS Zürich / KV Luzern / HKV Aarau</strong></td>
+        <td>Kfmv-Sektions-Töchter</td>
+        <td>SIZ-Partnerschulen, grosse Absatzkanäle</td>
+        <td><span class="tag kfmv">Zentrale Ergänzung</span></td>
+      </tr>
+      <tr>
+        <td><strong>"die plattform"</strong></td>
+        <td>Kfmv + Angestellte CH u.a.</td>
+        <td>Angestelltenpolitik Bund</td>
+        <td><span class="tag neutral">Neutral</span></td>
+      </tr>
+      <tr>
+        <td><strong>SVF-ASFC</strong></td>
+        <td>Kfmv-nahes Kooperationsnetz</td>
+        <td>Führungsausbildung</td>
+        <td><span class="tag neutral">Neutral / Ergänzung</span></td>
+      </tr>
+      <tr>
+        <td><strong>veb.ch / SwissAccounting</strong></td>
+        <td>Ko-Träger edupool (Rechnungsw.)</td>
+        <td>Rechnungslegung/Controlling</td>
+        <td><span class="tag neutral">Neutral</span></td>
+      </tr>
+      <tr>
+        <td><strong>Swico-Mitgliedsfirmen (IBM, HP, Swisscom, MS, SAP, Canon…)</strong></td>
+        <td>Swico-Trägerbasis</td>
+        <td>Corporate Weiterbildung, Herstellerzertifikate</td>
+        <td><span class="tag swico">Zielmarkt + Teilkonkurrenz</span></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ============================================================= -->
+<!-- TEIL 2 – ERWEITERTER MARKTKONTEXT & HANDLUNGSFELDER            -->
+<!-- ============================================================= -->
+
+<section id="marktmodell" style="border-top:4px solid var(--siz-primary);padding-top:2rem;margin-top:3rem;">
+  <h2 style="border-bottom-color:var(--siz-primary);">TEIL 2 – Markt &amp; Handlungsfelder <span class="badge-count">Pull-Nachfrage</span></h2>
+
+  <div class="summary-box">
+    <p><strong>Warum Teil 2?</strong> Teil 1 zeigt, in welchem Trägerverbands-Netzwerk SIZ sich bewegt. Teil 2 beantwortet die strategische Frage, die der Leiter Markt &amp; Partner beim VR platzieren will: <strong>Wie generiert SIZ Pull-Nachfrage?</strong> Die Antwort liegt in einem 5-Ebenen-Modell des Schweizer Bildungsmarkts. Wer nur auf Ebene 3 (einzelne Schulen) agiert, hat das Geschäft nicht verstanden – die Entscheidung über das IT-Zertifikat fällt auf Ebenen 2 (Label-Geber), 4 (Holdings) und 5 (Arbeitgeber/Verbände/Politik).</p>
+  </div>
+
+  <h3>Das 5-Ebenen-Modell des Schweizer Bildungsmarkts</h3>
+
+  <div class="ecosystem-svg-wrap">
+    <svg viewBox="0 0 1200 780" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="5-Ebenen-Modell">
+      <defs>
+        <filter id="shadow2" x="-10%" y="-10%" width="120%" height="120%">
+          <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.2"/>
+        </filter>
+      </defs>
+
+      <text x="600" y="30" text-anchor="middle" font-size="18" font-weight="700" fill="#263238">5 Ebenen – wer entscheidet, was geprüft wird?</text>
+
+      <!-- Ebene 1: Bund (oben) -->
+      <g filter="url(#shadow2)">
+        <rect x="100" y="60" width="1000" height="80" rx="10" fill="#1565c0"/>
+        <text x="120" y="90" font-size="11" font-weight="700" fill="white">EBENE 1 — BUND (Regulator)</text>
+        <text x="130" y="115" font-size="14" font-weight="700" fill="white">SBFI</text>
+        <text x="250" y="115" font-size="11" fill="#cfe0f3">Staatssekretariat für Bildung, Forschung und Innovation</text>
+        <text x="130" y="130" font-size="10" fill="#cfe0f3">titelschutz · 50 % subvention · bildungsverordnungen · OdA-anerkennung</text>
+        <text x="900" y="92" font-size="10" fill="#cfe0f3">Martina Hirayama (Staatssekretärin)</text>
+        <text x="900" y="105" font-size="10" fill="#cfe0f3">Rémy Hübschi (Leiter Abt. B+W)</text>
+      </g>
+
+      <!-- Ebene 2: Label-Geber -->
+      <g filter="url(#shadow2)">
+        <rect x="100" y="170" width="1000" height="100" rx="10" fill="#c8102e"/>
+        <text x="120" y="195" font-size="11" font-weight="700" fill="white">EBENE 2 — LABEL-GEBER (Prüfung &amp; Zertifikat)</text>
+        <text x="130" y="225" font-size="13" font-weight="700" fill="white">SIZ AG</text>
+        <text x="130" y="242" font-size="10" fill="#fde8ec">ICT, neutral CH</text>
+        <text x="270" y="225" font-size="13" font-weight="700" fill="white">kv edupool AG</text>
+        <text x="270" y="242" font-size="10" fill="#fde8ec">kaufm. weiterbild.</text>
+        <text x="430" y="225" font-size="13" font-weight="700" fill="white">VSH (neu)</text>
+        <text x="430" y="242" font-size="10" fill="#fde8ec">privat. handelsschulen</text>
+        <text x="590" y="225" font-size="13" font-weight="700" fill="white">ICDL / SI+SAQ</text>
+        <text x="590" y="242" font-size="10" fill="#fde8ec">seit 1.1.2025 neu</text>
+        <text x="750" y="225" font-size="13" font-weight="700" fill="white">Microsoft (MOS)</text>
+        <text x="750" y="242" font-size="10" fill="#fde8ec">hersteller-zert.</text>
+        <text x="920" y="225" font-size="13" font-weight="700" fill="white">Cisco/CompTIA/AWS</text>
+        <text x="920" y="242" font-size="10" fill="#fde8ec">tech-spez.</text>
+        <text x="130" y="260" font-size="9" fill="#fde8ec" font-style="italic">← SIZ steht hier — Konkurrenz, Kooperation oder Ablösung entscheidet sich links &amp; rechts</text>
+      </g>
+
+      <!-- Ebene 3: Schulen -->
+      <g filter="url(#shadow2)">
+        <rect x="100" y="300" width="1000" height="100" rx="10" fill="#2e7d32"/>
+        <text x="120" y="325" font-size="11" font-weight="700" fill="white">EBENE 3 — SCHULEN (operativ, Lehrer-Vertrag, SIZ-Vertragspartner)</text>
+        <text x="130" y="352" font-size="11" fill="white">KV Business School ZH · WKS Bern · KV Luzern · HKV Aarau · BZR Rorschach-Rheintal · …</text>
+        <text x="130" y="370" font-size="11" fill="white">HSO · AKAD · Minerva · Benedict · Feusi · Juventus · ipso/IBZ/NSH · Klubschule Migros · WISS …</text>
+        <text x="130" y="388" font-size="11" fill="white">Kantonsschulen/Gymnasien · Berufsfachschulen · Gewerbeschulen · Digicomp · Microwin · Controller Akademie</text>
+      </g>
+
+      <!-- Ebene 4: Holdings -->
+      <g filter="url(#shadow2)">
+        <rect x="100" y="430" width="1000" height="100" rx="10" fill="#6a1b9a"/>
+        <text x="120" y="455" font-size="11" font-weight="700" fill="white">EBENE 4 — HOLDINGS / INHABER (Strategie, Kapital, Portfolio-Entscheid)</text>
+        <text x="130" y="482" font-size="11" fill="white">Vantage (CH-Investoren) · Kalaidos (Klett DE) · Miduca (Migros) · ipso! · Juventus (Stiftung)</text>
+        <text x="130" y="500" font-size="11" fill="white">Benedict (Meister) · Feusi (von May-Granelli) · SEG (Summer Capital HK) · Sommet (Eurazeo FR) · Academia</text>
+        <text x="130" y="518" font-size="11" fill="white">Kfmv-Sektionen (KV-Schulen) · SBB AG (login) · MGB (Klubschule/IBAW)</text>
+      </g>
+
+      <!-- Ebene 5: Verbände/Arbeitgeber -->
+      <g filter="url(#shadow2)">
+        <rect x="100" y="560" width="1000" height="120" rx="10" fill="#e65100"/>
+        <text x="120" y="585" font-size="11" font-weight="700" fill="white">EBENE 5 — VERBÄNDE · ARBEITGEBER · POLITIK (Pull-Nachfrage)</text>
+        <text x="130" y="610" font-size="11" fill="white"><tspan font-weight="700">Bildungs-Dachverb.:</tspan> SVEB · PBS · VSP · BCH · EDK · SBBK · ICT-Berufsbildung</text>
+        <text x="130" y="628" font-size="11" fill="white"><tspan font-weight="700">OdAs mit IT-Pflicht:</tspan> Hauswart (SFH) · veb.ch (FA F+R = SIZ PU41) · Treuhand · SVIT · OdASanté</text>
+        <text x="130" y="646" font-size="11" fill="white"><tspan font-weight="700">Arbeitgeber:</tspan> SAV · economiesuisse · sgv · Swissmem · Swiss Retail · swissstaffing · SBVg · SVV · SBV</text>
+        <text x="130" y="664" font-size="11" fill="white"><tspan font-weight="700">HR:</tspan> HR Swiss · ZGP · Swiss Leaders · HRSE (→ Stelleninserate, HR-Policies = Pull)</text>
+      </g>
+
+      <!-- Pfeile Top-down -->
+      <path d="M 60 100 L 60 620" stroke="#c8102e" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+      <text x="28" y="360" font-size="11" font-weight="700" fill="#c8102e" transform="rotate(-90 28 360)">regulatorischer Sog ↓</text>
+
+      <path d="M 1140 620 L 1140 100" stroke="#e65100" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+      <text x="1170" y="360" font-size="11" font-weight="700" fill="#e65100" transform="rotate(90 1170 360)">Pull-Nachfrage ↑</text>
+
+      <!-- Gold-Nugget Markierung -->
+      <text x="600" y="725" text-anchor="middle" font-size="12" font-weight="700" fill="#2e7d32">▲ Hauswart FA: ICDL im Reglement verankert (Ziffer 3.31) — SIZ muss Gleichwertigkeit offensiv einfordern</text>
+      <text x="600" y="745" text-anchor="middle" font-size="12" font-weight="700" fill="#2e7d32">▲ FA Finanz- und Rechnungswesen: SIZ PU41 ist bereits Pflicht-Modul (Gold-Anker — verteidigen!)</text>
+    </svg>
+  </div>
+
+  <div class="warn-note">
+    <strong>Strategisches Kernbild:</strong> SIZ sitzt auf Ebene 2 und kann Nachfrage nur dann selbst generieren, wenn es (a) oben bei Ebene 1 regulatorisch verankert wird (Prüfungsordnungen), (b) unten bei Ebene 5 als "erwartete Qualifikation" in Stelleninseraten und HR-Policies auftaucht. Ebenen 3 und 4 sind nur ausführend – wer nur hier agiert, folgt, statt zu führen.
+  </div>
+
+  <h3>Das Zusammenwirken am Beispiel "Handelsdiplom VSH"</h3>
+  <div class="summary-box" style="border-left-color:var(--swico);">
+    <p><strong>Ein Schüler besucht die HSO</strong> (Schule, Ebene 3), <strong>die zur Vantage Education gehört</strong> (Holding, Ebene 4). Er absolviert den Lehrgang, der <strong>nach den Rahmenvorgaben des VSH</strong> konzipiert ist (Label, Ebene 2). Das IT-Modul wird je nach Schule mit <strong>ICDL, SIZ Smart-User oder Eigenprüfung</strong> abgeschlossen (Label, Ebene 2). Die HSO ist <strong>Mitglied im VSH</strong> (Verband, Ebene 5). Die Dozenten müssen ein <strong>SVEB-Zertifikat</strong> haben, um unterrichten zu dürfen (Verband, Ebene 5). Gelten soll das Diplom vor dem <strong>Schweizerischen Gewerbeverband und dem Arbeitsmarkt</strong> (Ebene 5). Das SBFI hat die Rahmen anerkannt und zahlt bei eidg. Abschlüssen 50 % der Kurskosten zurück (Ebene 1).</p>
+    <p><strong>Franz' strategische Schlussfolgerung:</strong> SIZ entscheidet in diesem Gefüge nichts allein. SIZ muss an vier Stellen gleichzeitig arbeiten: bei VSH (Rahmen), bei Vantage (Portfolio-Entscheid), bei SBFI (regulatorische Anerkennung) und beim Arbeitsmarkt (Pull). Das ist der Handlungsfeld-Fächer weiter unten.</p>
+  </div>
+</section>
+
+<section id="push-pull">
+  <h2>Push &amp; Pull – die strategische Rahmung <span class="badge-count">Logik</span></h2>
+
+  <div class="summary-box">
+    <p>Push und Pull sind die zwei fundamentalen Wege, wie SIZ Nachfrage erzeugt. Sie entsprechen direkt den Ebenen im Marktmodell: <strong>Push wirkt auf Ebenen 3 und 4</strong> (wir tragen unser Zertifikat aktiv zu Schulen und Holdings), <strong>Pull wirkt auf Ebenen 1 und 5</strong> (Regulator, Arbeitgeber, Verbände verlangen unser Zertifikat — Schüler und Schulen kommen nachgelagert zu uns). Ebene 2 (Label-Geber-Kooperation wie mit VSH) ist die strategische Brücke zwischen beiden.</p>
+  </div>
+
+  <h3>Definitionen im SIZ-Kontext</h3>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;">
+    <div class="card" style="border-top:4px solid #1565c0;">
+      <div class="card-header" style="background:#e3f2fd;">
+        PUSH <span class="role">wir stossen ins System</span>
+      </div>
+      <div class="card-body">
+        <strong>Wir gehen aktiv zu Schulen, Holdings, Curricula-Entscheidern und verkaufen SIZ als Lösung.</strong>
+        <br><br>
+        <em>Konkret:</em> Besuche bei HSO, AKAD, Benedict, Feusi, Juventus, ipso!, Kalaidos-Konzernleitung. Offerten für Holding-Rahmenverträge. Vertrieb auf Messen. Direktmailings an Schulleitungen. Account-Management-Gespräche mit Bildungsleitungen.
+        <br><br>
+        <strong>Kanäle:</strong> Sales-Calls · Besuchsrapporte · Messe (PK-Messe, edufair) · LinkedIn Sales Navigator · Schul-Roadshow · Holding-CEO-Peer-Gespräche.
+      </div>
+    </div>
+    <div class="card" style="border-top:4px solid #2e7d32;">
+      <div class="card-header" style="background:#e8f5e9;">
+        PULL <span class="role">Markt fragt uns nach</span>
+      </div>
+      <div class="card-body">
+        <strong>Regulator, Arbeitgeber, Branchenverbände und HR verlangen SIZ — Nachfrage entsteht nachgelagert bei Kandidat:innen und Schulen.</strong>
+        <br><br>
+        <em>Konkret:</em> SIZ ist in einer eidg. Prüfungsordnung verankert (Hauswart, FA Finanz+RW) · Arbeitgeber schreiben SIZ in Stelleninserate · HR Swiss empfiehlt SIZ in ihrem Leitfaden · Google-Suche "Informatik-Zertifikat Schweiz" landet bei siz.ch · Absolvent:innen teilen ihr SIZ-Diplom als Verifiable Credential auf LinkedIn.
+        <br><br>
+        <strong>Kanäle:</strong> OdA-Prüfungsordnungen · SBFI-Anerkennung · Arbeitgeberverbände · HR-Leitfäden · SEO/Content · Verifiable Credentials · PR und Branchenmedien (Schweizer Monat, HR Today).
+      </div>
+    </div>
+  </div>
+
+  <h3>Ziele – was erreichen wir womit?</h3>
+  <table class="matrix">
+    <thead><tr><th>Ziel</th><th>Push</th><th>Pull</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Kurzfristiger Umsatz (1–12 Mt.)</strong></td><td>✓✓✓ primärer Weg – Schul-Deals, Bundles, Produktintegrationen</td><td>✓ nur wo Pull bereits existiert (Bestandsanker halten)</td></tr>
+      <tr><td><strong>Volumen an einzelnen Schulen</strong></td><td>✓✓✓ gezielt über Account-Management</td><td>✓ nachgelagert, langsam</td></tr>
+      <tr><td><strong>Breite Marktdurchdringung (Anzahl Schulen)</strong></td><td>✓✓ pro Schule ein Vertrag</td><td>✓✓✓ 1 PO-Anerkennung → alle Schulen gleichzeitig</td></tr>
+      <tr><td><strong>Nachhaltige strukturelle Nachfrage</strong></td><td>✓ solange wir aktiv pushen</td><td>✓✓✓ strukturell verankert, wirkt jahrelang</td></tr>
+      <tr><td><strong>Brand-Aufbau / Wahrnehmung als Standard</strong></td><td>✓ begrenzt (wir sind Verkäufer)</td><td>✓✓✓ Standardisierung durch Verband/Regulator</td></tr>
+      <tr><td><strong>Preisverteidigung</strong></td><td>✗ in Verhandlung erpressbar</td><td>✓✓✓ wenn SIZ in PO verankert = nicht ersetzbar</td></tr>
+      <tr><td><strong>Neukundenschulen (Akquise)</strong></td><td>✓✓✓ operativ beste Wahl</td><td>✓ nur bei Pflichtverankerung</td></tr>
+      <tr><td><strong>Abwehr von ICDL/Google/MS-Konkurrenz</strong></td><td>✓ taktisch pro Schule</td><td>✓✓✓ strukturell in den Reglementen</td></tr>
+      <tr><td><strong>Corporate-/Arbeitgeber-Geschäft</strong></td><td>✓✓ über Firmenkunden-Sales</td><td>✓✓ via Arbeitgeberverbände &amp; HR Swiss</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Vor- und Nachteile</h3>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;">
+    <div class="card">
+      <div class="card-header" style="background:#e3f2fd;">PUSH – Vorteile &amp; Nachteile</div>
+      <div class="card-body">
+        <strong style="color:#2e7d32;">Vorteile</strong>
+        <ul>
+          <li>Schnell wirksam (Wochen bis Monate)</li>
+          <li>Kontrollierbar – SIZ bestimmt Timing und Zielschulen</li>
+          <li>Direktes Feedback aus dem Markt</li>
+          <li>Zahlen kurzfristig messbar (Abschlüsse, Umsatz)</li>
+          <li>Eigene Account-Teams skalieren linear</li>
+        </ul>
+        <strong style="color:#c62828;">Nachteile</strong>
+        <ul>
+          <li>Hoher operativer Aufwand pro Abschluss</li>
+          <li>Jede Vertragsverlängerung muss verhandelt werden</li>
+          <li>Schulen sind preis-sensitiv, ICDL kann unterbieten</li>
+          <li>Abhängigkeit von Einzelpersonen (Schulleitung, Holding-CEO)</li>
+          <li>Kein Schutz bei Wechsel zu ICDL/Inhouse-Lösungen</li>
+          <li>Wenn Sales-Energie sinkt, sinkt der Umsatz</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" style="background:#e8f5e9;">PULL – Vorteile &amp; Nachteile</div>
+      <div class="card-body">
+        <strong style="color:#2e7d32;">Vorteile</strong>
+        <ul>
+          <li>Nachhaltig (5–10 Jahre stabil, solange PO gilt)</li>
+          <li>Strukturell schwer angreifbar</li>
+          <li>Skaliert automatisch – keine zusätzlichen Sales-Kosten</li>
+          <li>SIZ wird zur "erwarteten Qualifikation" (Brand-Effekt)</li>
+          <li>Schulen kommen <em>zu uns</em> (Position der Stärke)</li>
+          <li>Preispremium möglich</li>
+        </ul>
+        <strong style="color:#c62828;">Nachteile</strong>
+        <ul>
+          <li>Lange Durchlaufzeit (1–3 Jahre bis Wirkung)</li>
+          <li>Politisch, nicht operativ steuerbar</li>
+          <li>Braucht Lobbying-Expertise, Gremien-Präsenz</li>
+          <li>Kurzfristig schwer messbar (Attribution schwierig)</li>
+          <li>Bei verpasstem Revisionszyklus: 5–7 Jahre Wartezeit</li>
+          <li>Abhängig von politischer Grosswetterlage (EDK, SBFI)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <h3>Die SIZ-Empfehlung: 40/60 mit klarer Phasen-Logik</h3>
+  <div class="summary-box" style="border-left-color:#c8102e;background:linear-gradient(135deg,#fff8e1 0%,#fff 100%);">
+    <p><strong>Weder reines Push noch reines Pull funktioniert für SIZ.</strong> Reines Push wäre das, was SIZ 10 Jahre gemacht hat — Nachfrage stagniert, ICDL gewinnt Territorium. Reines Pull wäre unbezahlbar (kein Umsatz für 2 Jahre). Empfehlung für den VR:</p>
+    <p style="font-size:1.15rem;"><strong style="color:#c8102e;">40 % Push · 60 % Pull</strong> — mit klarer Rollen-Trennung im Team und schrittweiser Gewichtsverschiebung.</p>
+    <ul>
+      <li><strong>Push (40 %):</strong> Sichert den kurzfristigen Cash-Flow und die Bestandspflege. Account-Management der Top-Schulen und Top-Holdings. <em>Operativ: Leiter Markt &amp; Partner + 1–2 Key-Account-Manager.</em></li>
+      <li><strong>Pull (60 %):</strong> Baut die strukturelle Nachfrage für die nächsten 5–10 Jahre. Gleichwertigkeits-Anträge, OdA-Lobbying, HR-Verbands-Kooperationen, Verifiable Credentials. <em>Operativ: Leiter Markt &amp; Partner + Public Affairs + Content-/PR-Ressource.</em></li>
+    </ul>
+    <p><strong>Warum genau diese Aufteilung?</strong> Pull hat die höhere Hebelwirkung pro investiertem Franken (1 OdA-Anerkennung wirkt auf 20+ Schulen), aber längere Inkubation. Push muss den Zahlungsfluss halten, während Pull wächst. Nach 24 Monaten kann die Verteilung auf 30/70 kippen, weil Pull dann trägt.</p>
+  </div>
+
+  <h3>Die konkreten Schritte</h3>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;">
+    <div class="card" style="border-top:4px solid #1565c0;">
+      <div class="card-header" style="background:#e3f2fd;">PUSH-Schritte (Weg B im Ökosystem)</div>
+      <div class="card-body">
+        <ol style="padding-left:1.2rem;">
+          <li><strong>Top-7-Holding-Target-List fixieren</strong> (Kalaidos · Miduca · Vantage · Benedict · Feusi · Juventus · IFA/IPSO). Je 1 Account-Manager zuweisen.</li>
+          <li><strong>Portfolio-Offerte je Holding</strong> entwickeln: "SIZ Smart-User/AU als Alternative zu ICDL im BFD/HD-Pfad, inkl. Schweizer Hosting + Preis-Vorteil 15–20 %."</li>
+          <li><strong>CEO-Peer-Gespräche</strong> Schmidt ↔ Holding-CEO (quartalsweise, 1 pro Quartal).</li>
+          <li><strong>Messe-Präsenz</strong> auf edufair, PK-Messe, Swiss Skills mit Holding-Fokus.</li>
+          <li><strong>LinkedIn Sales Navigator-Programm</strong>: 20 Schulleitungen pro Monat gezielt ansprechen.</li>
+          <li><strong>Bundle-Entwicklung</strong>: SIZ + MOS, SIZ + HR-Assistent/in-Abschluss, SIZ + Payroll Manager.</li>
+          <li><strong>Monatsreporting</strong>: Pipeline, Abschlussquote, Umsatz pro Holding.</li>
+        </ol>
+        <em>Kurzfristige KPIs (6–12 Mt.): 2 Holding-Rahmenverträge · +15 % Prüfungsvolumen · 3 Bundle-Produkte live.</em>
+      </div>
+    </div>
+    <div class="card" style="border-top:4px solid #2e7d32;">
+      <div class="card-header" style="background:#e8f5e9;">PULL-Schritte (Weg A im Ökosystem)</div>
+      <div class="card-body">
+        <ol style="padding-left:1.2rem;">
+          <li><strong>Gold-Anker verteidigen</strong>: SIZ PU41 in FA Finanz+RW-PO halten (Kontakt mit veb.ch/SwissAccounting).</li>
+          <li><strong>VSH-Gleichwertigkeits-Antrag §2.4 HD</strong> einreichen (Lorenz Lüthi/PQSK). Vor KI-HWD 2027.</li>
+          <li><strong>Hauswart-Gleichwertigkeit</strong>: SIZ = ICDL Base in PO Ziffer 3.31 (Rémy Hübschi SBFI + SFH).</li>
+          <li><strong>Treuhand-PO-Revision mitgestalten</strong> (Frist 31.12.2026, neue PO ab 1.1.2027).</li>
+          <li><strong>HR-Swiss-Kooperation</strong>: Gemeinsame Publikation "SIZ als erwartete IT-Qualifikation" (Jessica Silberman Dunant).</li>
+          <li><strong>Arbeitgeberverbände bearbeiten</strong>: Swissmem (FUTUREMEM, Thomas Schumacher), SBVg (Roman Studer), SVV (Urs Arbter), SBV (Moritz Lüscher).</li>
+          <li><strong>Verifiable Credentials</strong>: SIZ-Diplome als VC/Open Badge bis Ende 2026 ausstellbar machen (LinkedIn-Sichtbarkeit).</li>
+          <li><strong>PR-/Content-Strategie</strong>: 1 Artikel pro Monat in HR Today, Schweizer Monat, Panorama; SEO-Optimierung siz.ch auf Arbeitgeber-Keywords.</li>
+          <li><strong>Stellen-Inseraten-Monitoring</strong>: Quartalsweise jobs.ch-Stichprobe "SIZ vs. ICDL vs. MS Office" als KPI für Pull-Wirkung.</li>
+        </ol>
+        <em>Mittelfristige KPIs (12–24 Mt.): SIZ in 3 neuen POs verankert · 1 HR-Swiss-Publikation · VC live · +30 % "SIZ"-Nennungen in Stelleninseraten.</em>
+      </div>
+    </div>
+  </div>
+
+  <h3>Phasen-Roadmap</h3>
+  <table class="matrix">
+    <thead><tr><th>Phase</th><th>Zeitraum</th><th>Push-Fokus</th><th>Pull-Fokus</th><th>Meilenstein</th></tr></thead>
+    <tbody>
+      <tr><td><strong>1 – Stabilisieren</strong></td><td>Q2–Q3 2026 (0–6 Mt.)</td><td>Bestandskunden-Retention, Top-7-Holdings kontaktieren</td><td>Gold-Anker veb.ch verteidigen, VSH-Antrag einreichen, Hauswart-Dossier bei SBFI</td><td>Umsatz stabilisiert, 3 PO-Anträge eingereicht</td></tr>
+      <tr><td><strong>2 – Beschleunigen</strong></td><td>Q4 2026 – Q2 2027 (6–15 Mt.)</td><td>2 Holding-Rahmenverträge, Bundle-Produkte live</td><td>HR-Swiss-Kooperation, Arbeitgeberverbands-Gespräche, VC-Rollout</td><td>+15 % Volumen, erste PO-Anerkennung</td></tr>
+      <tr><td><strong>3 – Konsolidieren</strong></td><td>Q3 2027 – Q2 2028 (15–27 Mt.)</td><td>Account-Management-System, Sales-Automation</td><td>SIZ in 2–3 neuen POs verankert, Brand als CH-Standard positioniert</td><td>Strukturelle Nachfrage aus Pull übertrifft aktiven Push-Aufwand</td></tr>
+      <tr><td><strong>4 – Skalieren</strong></td><td>ab 2028</td><td>30 % Push</td><td>70 % Pull</td><td>SIZ als De-facto-Standard in CH-Berufsbildung etabliert</td></tr>
+    </tbody>
+  </table>
+
+  <div class="warn-note">
+    <strong>Ressourcen-Implikation für den VR:</strong> Ein reines Push-Modell braucht 3–4 Sales-FTE. Ein 40/60-Modell braucht 2 Sales-FTE + 1 Public-Affairs-FTE + 0.5 Content/PR. Das ist kein Kostenaufwuchs, sondern eine Umverteilung der vorhandenen Kapazitäten mit höherer Hebelwirkung.
+  </div>
+</section>
+
+<section id="holdings">
+  <h2>Holdings &amp; Inhaber <span class="badge-count">Ebene 4</span></h2>
+
+  <p>Die Entscheidung, welches IT-Zertifikat ins Standard-Curriculum kommt, fällt zunehmend auf Holding-Ebene. SIZ muss die Eigentümer kennen, nicht nur die Schulleitungen.</p>
+
+  <table class="matrix">
+    <thead>
+      <tr>
+        <th>Holding</th>
+        <th>Eigentümer</th>
+        <th>CEO / VRP</th>
+        <th>Portfolio (wichtigste Marken)</th>
+        <th>IT-Zert. heute</th>
+        <th>SIZ-Hebel</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Vantage Education AG</strong> (ZH)</td>
+        <td>Schweizer Investorengruppe seit Mai 2020 (Exit Invision)</td>
+        <td>CEO Heinz Sommer · Beat Nägelin VR</td>
+        <td>HSO (10 Std.) · IST · BVS SG · SMA · MBSZ · NBW · Prävensana · Bodyfeet · Apamed · Bio-Medica · Kinesport · IREM · Nova</td>
+        <td>HSO: SIZ PU41 <em>und</em> ICDL parallel</td>
+        <td><span class="tag" style="background:#ffebee;color:#c62828;">HOCH</span> — Gruppen-Standard-Entscheid kann 15+ Standorte bewegen</td>
+      </tr>
+      <tr>
+        <td><strong>Kalaidos Bildungsgruppe AG</strong> (ZH)</td>
+        <td>100 % Klett Gruppe Stuttgart (seit 1.1.2019)</td>
+        <td>CEO Dr. Stefan Leuenberger (seit 5/2024)</td>
+        <td>AKAD · Kalaidos FH · WISS · Minerva (6–7 Std.) · Kalaidos Musik-HS</td>
+        <td>AKAD: SIZ PU41 (Partner) · Minerva: Handelsdipl. VSH</td>
+        <td><span class="tag" style="background:#ffebee;color:#c62828;">SEHR HOCH</span> — grösster Anbieter CH; Klett-Konzernentscheid kritisch</td>
+      </tr>
+      <tr>
+        <td><strong>Miduca AG</strong> (Migros)</td>
+        <td>100 % Migros-Genossenschafts-Bund (seit 1/2022)</td>
+        <td>CEO Reto Schnellmann (seit 9/2024) · VRP Andrea Krapf</td>
+        <td>Klubschule Migros (20+ Std.) · IBAW · Tanzwerk101</td>
+        <td>Klubschule/ISS: SIZ Smart-User + Advanced-User (Partner) · Klubschule Pro: ICDL</td>
+        <td><span class="tag" style="background:#ffebee;color:#c62828;">SEHR HOCH</span> — bestehender Partner, Volumen-Retention kritisch</td>
+      </tr>
+      <tr>
+        <td><strong>Benedict-Schulen Schweiz</strong></td>
+        <td>100 % Heinrich Meister (privat, eigentümergeführt)</td>
+        <td>CEO Heinrich Meister</td>
+        <td>Benedict (ZH/BE/LU/SG) · BHMS · BBS</td>
+        <td>Beides: ICT Professional SIZ (Systems &amp; Network) + ICDL Base/Std/Adv/Expert</td>
+        <td><span class="tag" style="background:#fff3e0;color:#e65100;">HOCH</span> — kurze Entscheidungswege, Cross-Sell in ICDL-Basis</td>
+      </tr>
+      <tr>
+        <td><strong>Feusi Bildungszentrum AG</strong> (BE)</td>
+        <td>Mehrheit Sandra von May-Granelli (seit 2002)</td>
+        <td>CEO+Eigentümerin Sandra von May-Granelli</td>
+        <td>Volksschule · Gymnasium · BM · HF Wirtschaft/Informatik/Sport</td>
+        <td>SIZ-Trainingspartner bestätigt</td>
+        <td><span class="tag" style="background:#fff3e0;color:#e65100;">MITTEL-HOCH</span> — Volumen-Ausbau</td>
+      </tr>
+      <tr>
+        <td><strong>Stiftung Juventus Schulen</strong> (ZH)</td>
+        <td>Selbständige Stiftung</td>
+        <td>Rektorin Dr. Claudia Sidler-Brand (seit 10/2023) · StR-Präs. Dr. Roland Jost</td>
+        <td>Maturitätsschule · Technikerschule HF · Wirtschaftsschule · Schule für Medizin · wittlin stauffer</td>
+        <td>Klar ICDL-präferent (Handelsdiplom VSH)</td>
+        <td><span class="tag neutral">MITTEL</span> — Konversionsziel langfristig</td>
+      </tr>
+      <tr>
+        <td><strong>ipso! Bildung AG</strong> (BS)</td>
+        <td>Privat / Familie Weibel</td>
+        <td>CEO Christoph Büchli-Sen · VRP Matthias Michel (ex-RR ZG)</td>
+        <td>IBZ · NSH · ipso! Business School</td>
+        <td>Dominant ICDL (Base/Std/Adv im Handelsdiplom)</td>
+        <td><span class="tag neutral">MITTEL</span> — 11 Std. NW-CH, aber ICDL-verankert</td>
+      </tr>
+      <tr>
+        <td><strong>Academia Group</strong> (ZH)</td>
+        <td>Eigentümergeführt (Petrin + Földényi)</td>
+        <td>Co-CEO Andreas Földényi, Dr. Peter Petrin</td>
+        <td>Academia Schools · Matura · Languages · Integration</td>
+        <td>Kein primärer ICT-Fokus</td>
+        <td><span class="tag neutral">NIEDRIG</span> — orthogonales Geschäft</td>
+      </tr>
+      <tr>
+        <td><strong>Swiss Education Group</strong></td>
+        <td>Summer Capital Ltd. (Hongkong, seit 2018)</td>
+        <td>CEO Leo Wang (ca. 2022, April 2026 ggf. Nachfolge)</td>
+        <td>SHMS · César Ritz · Culinary Arts · HIM</td>
+        <td>Hospitality, keine Passung</td>
+        <td><span class="tag neutral">NIEDRIG</span></td>
+      </tr>
+      <tr>
+        <td><strong>Sommet Education</strong></td>
+        <td>Eurazeo (PE, Paris, seit 2016)</td>
+        <td>CEO Spencer Coles (seit 16.2.2026)</td>
+        <td>Glion · Les Roches</td>
+        <td>Hospitality</td>
+        <td><span class="tag neutral">NIEDRIG</span></td>
+      </tr>
+      <tr>
+        <td><strong>SBB / login Berufsbildung</strong></td>
+        <td>SBB AG / Bund</td>
+        <td>login-GF</td>
+        <td>&gt;2 100 Lernende/Jahr für SBB+BLS+RhB+VöV</td>
+        <td>Eigenes Curriculum, SIZ nicht explizit</td>
+        <td><span class="tag neutral">NIEDRIG-MITTEL</span> — B2B-Grosskunde potenziell</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Besondere Aufmerksamkeit: Weiterbildungs-Spezialisten</h3>
+  <div id="weiterbildungsspezialisten" class="cards">
+    <div class="card">
+      <div class="card-header">Digicomp Academy AG <span class="role">Corporate IT-Training</span></div>
+      <div class="card-body">
+        Limmatstrasse 50, 8005 Zürich (gegründet 1978, AG 2003). <strong>Inhabergeführt Familie Kupper</strong> (kein Klett-Bezug). Co-CEO: <strong>Peter V. Kupper</strong> (Owner) + <strong>Christoph Höinghaus</strong> (ex-Trivadis-CEO, seit 10/2020). ~186 MA, ~250–300 Trainer:innen, &gt;450 000 Absolvent:innen kumuliert.
+        <br><br>Standorte Zürich, Bern, Basel, Lausanne, Genf + Livestream. Portfolio: Microsoft (Gold Learning Partner, übernahm Global Knowledge Schweiz), Cisco, AWS, GCP, CompTIA, ITIL/PeopleCert, ISACA, (ISC)², Scrum.org, SAFe, PRINCE2 — &gt;1 000 Kurse, &gt;70 Zertifizierungen.
+        <br><br><strong>SIZ: nicht im Angebot.</strong> <strong>ICDL: ebenfalls nicht.</strong> Digicomp meidet Entry-Level-Zertifikate bewusst.
+        <div class="fazit-box misch"><strong>Zu SIZ:</strong> Kein direkter Konkurrent im SIZ-Kern, sondern eine Stufe höher. <strong>Lücke:</strong> "Digitale Grundkompetenzen mit CH-Zertifikat". Strategische Option: Digicomp als B2B-Reseller für SIZ ansprechen oder SIZ als Upstream-Feeder positionieren ("wer SIZ PU hat, bucht bei Digicomp weiter"). Inhabergeführt = kurze Wege.</div>
+        <div class="source"><a href="https://www.moneyhouse.ch/en/company/digicomp-academy-ag-11410232261">Moneyhouse</a> · <a href="https://www.linkedin.com/in/peter-kupper-666b4710/">Kupper LinkedIn</a></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">Microwin AG <span class="role">IT-Umschulung</span></div>
+      <div class="card-body">
+        Richtistrasse 5, 8304 Wallisellen. Gegründet 1992 ("erster Microsoft-zertifizierter Trainingspartner CH"). <strong>CEO: Annette Fehr</strong>. eduQua-zertifiziert. Testcenter Pearson VUE, Certiport, PeopleCert, EXIN.
+        <br><br>Portfolio: Microsoft (M365, Azure, Server), ITIL, Adobe, Web, Linux, Publishing, <strong>SIZ (explizit!)</strong>, Umschulungs-Lehrgang "ICT Wirtschaftsinformatiker" (ICTW).
+        <div class="fazit-box syn"><strong>Zu SIZ:</strong> Hybrid-Akteur, historisch SIZ-affin, heute Microsoft-zentriert. Einer der wenigen SIZ-Kanäle im <strong>Erwachsenen-Reskilling-Markt</strong>. Empfehlung: Annette Fehr direkt kontaktieren, SIZ im ICTW-Lehrgang als Pflichtbaustein verankern (analog Controller-Akademie-Logik).</div>
+        <div class="source"><a href="https://www.bildung-schweiz.ch/anbieter/d2nnn2-microwin-ag/">Microwin SIZ-Angebot</a> · <a href="https://ch.linkedin.com/in/annette-fehr-736641a4">Fehr LinkedIn</a></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">Controller Akademie AG <span class="role">Finanz/Controlling</span></div>
+      <div class="card-body">
+        Zürich, gegründet 2000 als <strong>Joint Venture von veb.ch / SwissAccounting und Kaufmännischem Verband Zürich</strong>. <strong>VRP: Andrea Kuhn-Senn</strong> (Dübendorf) — <strong>zugleich VRP der KV Business School Zürich AG!</strong> <strong>CEO: Monika Lehmann</strong> (zugleich Dozentin + Prüfungsexpertin HFP).
+        <br><br>Portfolio: "Fachleute Finanz- und Rechnungswesen" (eidg. FA), "Experte Rechnungslegung und Controlling" (eidg. Diplom), Power-BI/Datenmanagement, Exam-Prep.
+        <br><br><strong>SIZ PU41 = Pflichtmodul</strong> für Zulassung zur eidg. BP Finanz+RW. Controller Akademie ist der strukturelle PU41-Kanal. <strong>Thomas Reuteler</strong> (SIZ-PK-Präs. Data &amp; Technology) ist Dozent und Autor der PU41-Registrierungsanleitung vom 10.11.2025 auf kv-business-school.ch.
+        <div class="fazit-box syn"><strong>Zu SIZ:</strong> <strong>Premium-Kanal mit struktureller Nachfrage.</strong> Solange die BP-Wegleitung PU41 enthält, ist die Nachfrage dort gesichert. Reuteler-Rolle aktiv als Brücke nutzen (nicht nur passiv). Risiko-Monitoring: Entkopplung durch SwissAccounting = PU41-Pflicht verliert Status.</div>
+        <div class="source"><a href="https://www.controller-akademie.ch/ueber-uns/">Controller Akademie</a> · <a href="https://swissaccounting.org/beteiligungen">SwissAccounting Beteiligungen</a> · <a href="https://www.kv-business-school.ch/sites/default/files/2025-11/Anleitung%20Registrierung%20SIZ%20und%20Durchf%C3%BChrung%20Eignungstest%20PU41.pdf">PU41-Anleitung Reuteler 10.11.2025</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fazit-box syn" style="margin-top:1.5rem;">
+    <strong>Schlüssel-Entdeckung Kuhn-Senn:</strong> <strong>Andrea Kuhn-Senn</strong> ist VR-Präsidentin <em>gleichzeitig</em> der KV Business School Zürich AG und der Controller Akademie AG. Damit ist sie die zentrale Brücke zwischen den beiden grössten kfmv-Zürich-Bildungsträgern — und dort, wo SIZ PU41 als Pflicht-Modul läuft. <strong>Türöffnerin Nr. 1 auf operativer KV-Zürich-Ebene.</strong>
+  </div>
+</section>
+
+<section id="labelgeber">
+  <h2>Label-Geber-Landschaft <span class="badge-count">Ebene 2</span></h2>
+
+  <p>Hier konkurriert SIZ direkt. Die wichtigste Erkenntnis: <strong>ICDL hat seit 1.1.2025 eine neue Trägerschaft</strong> (Swiss Informatics Society + SAQ, vorher Digital Literacy AG Basel). Konsolidierungsphase = Gesprächsfenster für SIZ.</p>
+
+  <div class="cards">
+    <div class="card">
+      <div class="card-header">SIZ AG <span class="role">ICH SELBST</span></div>
+      <div class="card-body">
+        Kfmv + Swico. 250 000+ Absolventen. Smart-User → Advanced → Power → Professional. Schweizer Original seit 1991, neutral, deutsch/französisch.
+      </div>
+    </div>
+    <div class="card edupool">
+      <div class="card-header">kv edupool AG <span class="role">Schwester</span></div>
+      <div class="card-body">
+        Kfmv + Swico. Kaufmännische Weiterbildung (SB, HWD, Handelsschule). SIZ ist bereits Teil der Handelsschule kv edupool (Bundle-Preis CHF 6 900 inkl. SIZ). ~4 000 Teilnehmende/Jahr. Judith Wespi (GF), Thomas Kölliker (VRP).
+        <div class="fazit-box syn"><strong>Zu SIZ:</strong> Schwester-Kooperation. Ausbauen zu weiteren SB-Richtungen.</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">VSH — Schweizer Bildungsverband (neu seit 2025) <span class="role">Verband + Label</span></div>
+      <div class="card-body">
+        <strong>Fusion VSH + VSK + SVMB 2025</strong> → drei Bereiche <em>Business · Management · Health</em>. <strong>32 Mitgliedsschulen</strong> (vollständige Liste → Sektion VSH-Schulen). Prüfungsplattform <strong>edoniq</strong>. Sitz Belpstrasse 41, 3007 Bern. <strong>GF Lorenz Lüthi.</strong>
+        <br><br>
+        <strong>Vorstand:</strong> Fabienne Gross (Juventus, Präsidium) · Matthias Fritschi (IFA/IPSO, VP) · Armin Riebli (FREI'S, VP) · Lukas Kmoch · Michael Segrada · ein weiterer VP (Minerva/Kalaidos).
+        <br><br>
+        <strong>Reglement-Befund (kritisch für SIZ!):</strong> Die VSH-Reglemente BFD 2025, HD 2025 und HWD 2026 nennen <strong>ECDL/ICDL NICHT</strong>. Sie definieren nur Kompetenz-Leistungsziele (Bloom K2–K3). <strong>Die oft zitierte "ECDL-Pflicht" ist eine schul-interne Vorkurs-Regel einzelner Mitglieder, nicht Verbandsvorgabe.</strong>
+        <br><br>
+        <strong>§2.4 HD-Reglement:</strong> "Dispensationen sind nur aufgrund von Gleichwertigkeiten erlaubt. Gleichwertigkeiten regelt der Verband." → SIZ kann über einen Gleichwertigkeits-Antrag SIZ Smart-User offiziell als Dispens-Grundlage eintragen lassen.
+        <div class="fazit-box syn"><strong>Zu SIZ – Strategisch Nr. 1:</strong> Gleichwertigkeits-Antrag bei PQSK VSH Business einreichen (nicht bloss "empfohlenes Modul"). Zeitfenster: 18–24 Monate bis KI-HWD-Reglement 2027 zementiert wird. Siehe Details in Sektion "VSH-Schulen + Wege A/B".</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">ICDL Switzerland <span class="role">Konkurrenz</span></div>
+      <div class="card-body">
+        <strong>Trägerwechsel 1.1.2025:</strong> bisher <em>ECDL/Digital Literacy AG, Basel</em> → neu <strong>Swiss Informatics Society (SI) + SAQ</strong>. SI = wissenschaftliche Informatik-Fachgesellschaft CH. SAQ = Qualitätsmanagement-Verband.
+        <br><br>
+        Produkte: ICDL Workforce Base/Standard/Advanced · ICDL Insights (KI/Data/Cyber für Management) · ICDL Digital Student. ~300 Testcenter CH. Kernbotschaft "weltweit in 100+ Ländern".
+        <br><br>
+        <strong>Regulatorisch verankert in:</strong> eidg. Prüfungsordnung Hauswart (Ziffer 3.31) – SIZ ist dort nicht aufgeführt.
+        <div class="fazit-box konkurrenz"><strong>Zu SIZ:</strong> direkte Konkurrenz auf User-Ebene. <strong>Trägerwechsel = Zeitfenster</strong> für SIZ-Positionierung. Hauswart-Klausel ist das wichtigste anzugehende Thema.</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">Microsoft (MOS · MS-900) <span class="role">Hersteller-Zert.</span></div>
+      <div class="card-body">
+        MOS (Microsoft Office Specialist) Word/Excel/PowerPoint, MS-900 M365 Fundamentals, MS-102 M365 Admin. Dominant in Konzern-Weiterbildung. Digicomp, act-Academy als grosse Anbieter.
+        <div class="fazit-box misch"><strong>Zu SIZ:</strong> <strong>Bundle-Chance:</strong> "SIZ Smart-User + MOS Word/Excel" als Kombi. Swico-Netzwerk (Microsoft CH ist Swico-Mitglied) nutzen.</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">CompTIA A+/Network+/Security+ <span class="role">Hersteller-neutr.</span></div>
+      <div class="card-body">
+        CompTIA (USA, NGO). Einstieg ICT-Support, Netzwerk, Cyber. Teilüberlappung mit SIZ Power-User Systems &amp; Network (PU11/12/13).
+        <div class="fazit-box neutral"><strong>Zu SIZ:</strong> tiefere technische Schiene, kein direkter Office-Wettbewerb.</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">Cisco CCNA <span class="role">Hersteller-Zert.</span></div>
+      <div class="card-body">
+        Cisco Networking Academy an FH/Berufsschulen. Netzwerktechnik, hohes Niveau.
+        <div class="fazit-box neutral"><strong>Zu SIZ:</strong> Überlappung nur mit Power-User PU11; CCNA ist spezialisierter.</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">AWS / Azure / GCP <span class="role">Cloud</span></div>
+      <div class="card-body">
+        Cloud-Practitioner, AZ-900, GCP Associate. Markt wächst massiv.
+        <div class="fazit-box misch"><strong>Zu SIZ:</strong> <strong>Gap</strong> – SIZ hat kein Cloud-Produkt. Eigenständiges Cloud-Modul oder Kooperation notwendig.</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">Google Career Certificates <span class="role">Online/Coursera</span></div>
+      <div class="card-body">
+        7 Career Certs (IT Support, Data Analytics, Cybersecurity etc., 3–6 Mt. via Coursera). Kanton Zürich promotet via RAV.
+        <div class="fazit-box konkurrenz"><strong>Zu SIZ:</strong> <strong>Mittelfristige Konkurrenz im RAV-/AMM-Markt.</strong> Wenn RAV Google-Certs anerkennt, verliert SIZ Stellensuchende.</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">Verifiable Credentials / Open Badges <span class="role">Format</span></div>
+      <div class="card-body">
+        BFH + ti&amp;m haben 2025 PoC für Verifiable Credentials (VC) umgesetzt. Mit CH-E-ID entsteht VC-Trust-Infrastruktur. swissuniversities-Programm "Open Education" 2025–2028.
+        <div class="fazit-box misch"><strong>Zu SIZ:</strong> <strong>Infrastruktur-Pflicht bis Ende 2026.</strong> SIZ-Diplome müssen als VC/Open Badge ausstellbar werden — sonst wird SIZ "analog".</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="vsh-schulen" style="border-top:3px dashed var(--siz-primary);padding-top:2rem;">
+  <h2>VSH-Schulen + Akquisitions-Wege A/B <span class="badge-count">Operativer Spielplan</span></h2>
+
+  <div class="summary-box" style="border-left-color:#2e7d32;background:linear-gradient(135deg,#e8f5e9 0%,#fff 100%);">
+    <h3 style="margin-top:0;">🔑 Strategischer Kernfund: ICDL ist NICHT im VSH-Reglement verankert!</h3>
+    <p>Die VSH-Reglemente <strong>BFD 2025, HD 2025 und HWD 2026</strong> (gültig ab 1.1.2026) nennen ECDL/ICDL <strong>an keiner Stelle</strong>. Die Reglemente definieren ausschliesslich <strong>kompetenzorientierte Leistungsziele</strong> (Bloom K2–K3). Die auf vsh.swiss/pruefung zitierte FAQ-Aussage <em>"Befreiung vom ECDL-Kurs nicht möglich"</em> ist eine <strong>schul-interne Vorkurs-Regel einzelner Mitglieder</strong>, nicht eine Verbandsvorgabe.</p>
+    <p><strong>§2.4 HD-Reglement:</strong> <em>"Dispensationen sind nur aufgrund von Gleichwertigkeiten erlaubt. Gleichwertigkeiten regelt der Verband."</em></p>
+    <p><strong>Konsequenz für SIZ:</strong> SIZ hat einen klaren, präzisen Hebel — <strong>Gleichwertigkeits-Antrag von SIZ Smart-User für den Qualifikationsbereich "Grundlagen IKT" (BFD, 18 % Gewicht) und "IT Skills" (HD)</strong>. Damit wird SIZ formal als Dispens-Grundlage im Verband verankert — und die schul-internen ICDL-Vorkurs-Regeln werden obsolet. <strong>Zeitfenster: 18–24 Monate</strong>, bevor das KI-erweiterte HWD 2027 die nächste Reglements-Revision zementiert.</p>
+  </div>
+
+  <h3>VSH-Vorstand &amp; Geschäftsstelle – Schlüsselpersonen</h3>
+  <table class="matrix">
+    <thead><tr><th>Rolle</th><th>Name</th><th>Schul-/Holding-Zuordnung</th><th>Hebel für SIZ</th></tr></thead>
+    <tbody>
+      <tr><td>Präsidium</td><td><strong>Fabienne Gross</strong></td><td>Stiftung Juventus Schulen</td><td><span class="tag" style="background:#ffebee;color:#c62828;">direktkontakt</span> Präsidium + Schulträgerin</td></tr>
+      <tr><td>Präsidium</td><td>Lukas Kmoch</td><td>(neutral/Geschäftsstelle-nah)</td><td>mittel</td></tr>
+      <tr><td>Präsidium</td><td>Michael Segrada</td><td>(keine Schul-Zuordnung publiziert)</td><td>mittel</td></tr>
+      <tr><td>Vizepräsident</td><td><strong>Matthias Fritschi</strong></td><td>IFA + IPSO Bildung</td><td><span class="tag" style="background:#ffebee;color:#c62828;">direkt</span> VSH-VP + Holding-Entscheider 10+ Std.</td></tr>
+      <tr><td>Vizepräsident</td><td><strong>Armin Riebli</strong></td><td>FREI'S Schulen AG</td><td><span class="tag" style="background:#ffebee;color:#c62828;">direkt</span> VSH-VP + Schulträger</td></tr>
+      <tr><td>Vizepräsident</td><td>(5. VP)</td><td>Minerva / Kalaidos Bildungsgruppe</td><td>hoch – Kalaidos-Verbindung</td></tr>
+      <tr><td>Geschäftsführer</td><td><strong>Lorenz Lüthi</strong></td><td>VSH Geschäftsstelle, Belpstrasse 41, Bern</td><td><span class="tag" style="background:#ffebee;color:#c62828;">Erstkontakt!</span> operative PQSK-Schnittstelle</td></tr>
+      <tr><td>Prüfungsorganisation</td><td>Alexandra Hostettler</td><td>VSH Geschäftsstelle</td><td>mittel – Operativ</td></tr>
+      <tr><td>Administration/Inkasso</td><td>Viviana Brigandi</td><td>VSH Geschäftsstelle</td><td>niedrig</td></tr>
+      <tr><td>Sekretariat</td><td>Sabine Zahnd</td><td>VSH Geschäftsstelle</td><td>niedrig</td></tr>
+    </tbody>
+  </table>
+  <div class="warn-note"><strong>Wichtig:</strong> 4 von 6 VSH-Vorständen sind direkte Schulträger (Juventus, IFA/IPSO, FREI'S, Minerva/Kalaidos). Das ist Chance (Weg B direkt) und Risiko (Holding-Interessen bei Reglements-Revision). Die Namen der <strong>PQSK-Mitglieder (Prüfungs- und Qualitätssicherungskommission)</strong> pro Angebotsbereich sind öffentlich NICHT publiziert — Anfrage bei Lorenz Lüthi nötig.</div>
+
+  <h3>Die 32 VSH-Mitgliedsschulen (vollständig)</h3>
+  <table class="matrix">
+    <thead><tr><th>#</th><th>Schule</th><th>Standorte</th><th>Website</th><th>Holding/Träger</th><th>Angebotsbereich</th><th>Empfohlener Weg</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><strong>AKAD Business AG</strong></td><td>ZH, BE, BS, GE, LS (Fernstudium)</td><td>akad.ch</td><td><strong>Kalaidos</strong></td><td>BFD, HD, Management</td><td><span class="tag" style="background:#e3f2fd;color:#1565c0;">Weg B</span></td></tr>
+      <tr style="background:#fff8e1;"><td>2</td><td><strong>Benedict-Schule</strong></td><td>ZH, BE, LU, BS, GR, BE, SO, ZG, SG, TI – 10 Standorte</td><td>benedict.ch</td><td>eigenständig (Meister)</td><td>BFD, HD, HWD, VSH Health</td><td><span class="tag" style="background:#e3f2fd;color:#1565c0;">Weg B (Pilot!)</span></td></tr>
+      <tr><td>3</td><td>sfb Bildungszentrum</td><td>Dietikon</td><td>sfb.ch</td><td>Stiftung</td><td>HWD, Management</td><td><span class="tag" style="background:#fff3e0;color:#e65100;">A+B-light</span></td></tr>
+      <tr><td>4</td><td>be-med</td><td>Basel</td><td>be-med.ch</td><td>eigenständig</td><td>VSH Health</td><td><span class="tag" style="background:#fff3e0;color:#e65100;">Weg A (Gesundheits-POs)</span></td></tr>
+      <tr><td>5</td><td>BERIT-EXBIT-Schulen AG</td><td>SG, ZH, Chur</td><td>berit.ch</td><td>eigenständig</td><td>BFD, HD</td><td>A+B-light</td></tr>
+      <tr><td>6</td><td>BVS Bern</td><td>Bern</td><td>bvs.ch</td><td>eigenständig</td><td>BFD, HD, Management</td><td>A+B-light</td></tr>
+      <tr><td>7</td><td>Didac</td><td>BE, Langenthal, Zofingen, Olten</td><td>didac.ch</td><td>eigenständig</td><td>BFD, HD, Management</td><td>A+B-light</td></tr>
+      <tr><td>8</td><td>Dr. Raebers Höhere Handelsschule</td><td>LU, ZH</td><td>raeber-schule.ch</td><td>eigenständig</td><td>HD, HWD</td><td>A+B-light</td></tr>
+      <tr><td>9</td><td>Ecole Medica</td><td>Lausanne (VD)</td><td>ecolemedica.ch</td><td>eigenständig</td><td>VSH Health</td><td>Weg A (Romandie-Gesundheit)</td></tr>
+      <tr style="background:#fff8e1;"><td>10</td><td><strong>Feusi Bildungszentrum</strong></td><td>BE, SO, Biel, Münchenbuchsee, Gstaad</td><td>feusi.ch</td><td>eigenständig (von May-Granelli)</td><td>BFD, HD, HWD, SB, HR, Digital Marketing, Health</td><td><span class="tag" style="background:#e3f2fd;color:#1565c0;">Weg B (SIZ-Reaktivierung)</span></td></tr>
+      <tr style="background:#fff8e1;"><td>11</td><td><strong>FREI'S Schulen AG</strong></td><td>LU, Sursee, Baar</td><td>freisschulen.ch</td><td>eigenständig (Riebli)</td><td>BFD, HD, HWD</td><td><span class="tag" style="background:#e3f2fd;color:#1565c0;">Weg B (via VSH-VP Riebli)</span></td></tr>
+      <tr><td>12</td><td>fswi Fachschule Wirtschaft+Informatik</td><td>WI, ZH</td><td>fswi.ch</td><td>eigenständig</td><td>HD, HWD, SB</td><td>A+B-light (historisch ICDL!)</td></tr>
+      <tr style="background:#fff8e1;"><td>13</td><td><strong>HSO Wirtschaftsschule Schweiz</strong></td><td>ZH, BE, BS, LU, SG + weitere, 10 Std.</td><td>hso.ch</td><td><strong>Kalaidos</strong></td><td>BFD, HD, HWD, Management</td><td><span class="tag" style="background:#e3f2fd;color:#1565c0;">Weg B (via Kalaidos)</span></td></tr>
+      <tr><td>14</td><td>HWS Huber Widemann Schule</td><td>Zürich</td><td>hws.ch</td><td>eigenständig</td><td>BFD, HD</td><td>A+B-light</td></tr>
+      <tr style="background:#fff8e1;"><td>15</td><td><strong>IFA</strong></td><td>ZH-Oerlikon, WI, Schlieren, Wetzikon</td><td>ifa.ch</td><td><strong>IFA/IPSO-Gruppe</strong> (Fritschi, VSH-VP)</td><td>BFD, HD, Management</td><td><span class="tag" style="background:#e3f2fd;color:#1565c0;">Weg B (via VSH-VP!)</span></td></tr>
+      <tr style="background:#fff8e1;"><td>16</td><td><strong>ipso Bildung AG</strong></td><td>BS, Olten, Baden, AG, ZH</td><td>ipso.ch</td><td><strong>IFA/IPSO-Gruppe</strong> (Fritschi)</td><td>BFD, HD, HWD, Management, Health</td><td><span class="tag" style="background:#e3f2fd;color:#1565c0;">Weg B</span></td></tr>
+      <tr><td>17</td><td>Istituto Sant'Anna</td><td>Lugano (ital.)</td><td>santanna.ch</td><td>eigenständig</td><td>BFD, HD</td><td>A+B-light (Tessin)</td></tr>
+      <tr style="background:#fff8e1;"><td>18</td><td><strong>Juventus Schulen</strong></td><td>Zürich</td><td>juventus.ch</td><td>Stiftung Juventus (Gross, VSH-Präs.)</td><td>BFD, HD, HWD, Management, Health</td><td><span class="tag" style="background:#e3f2fd;color:#1565c0;">Weg B (via Präsidium!)</span></td></tr>
+      <tr><td>19</td><td>kaz. Aarau AG</td><td>Aarau</td><td>kaz.ch</td><td>eigenständig</td><td>BFD, HD</td><td>A+B-light</td></tr>
+      <tr style="background:#fff8e1;"><td>20</td><td><strong>Klubschule Pro</strong></td><td>schweizweit</td><td>klubschule.ch</td><td><strong>Miduca/Migros</strong></td><td>BFD, HD, SB</td><td><span class="tag" style="background:#e3f2fd;color:#1565c0;">Weg B (via Miduca)</span></td></tr>
+      <tr style="background:#fff8e1;"><td>21</td><td><strong>Minerva</strong></td><td>ZH, BE, BS, LU, SG</td><td>minervaschulen.ch</td><td><strong>Kalaidos</strong></td><td>BFD, HD, HWD, Management</td><td><span class="tag" style="background:#e3f2fd;color:#1565c0;">Weg B (via Kalaidos)</span></td></tr>
+      <tr><td>22</td><td>MKS Kompetenzzentrum</td><td>Zürich</td><td>mks.ch</td><td>eigenständig</td><td>BFD, HD</td><td>A+B-light</td></tr>
+      <tr><td>23</td><td>MPA Berufs-/Handelsschule</td><td>Rapperswil</td><td>mpa-rapperswil.ch</td><td>eigenständig</td><td>BFD, HD, Health (MPA)</td><td>A+B-light</td></tr>
+      <tr><td>24</td><td>NBW Betriebswirtschaftl. WB AG</td><td>Zürich</td><td>nbw.ch</td><td>eigenständig</td><td>HWD, Management</td><td>A+B-light</td></tr>
+      <tr><td>25</td><td>NSH Basel</td><td>Basel</td><td>nsh.ch</td><td>nahe IFA/IPSO-Gruppe</td><td>BFD, HD, HWD</td><td>Weg B (über IFA/IPSO)</td></tr>
+      <tr><td>26</td><td>Noss Schulzentrum</td><td>Thun, Spiez</td><td>noss.ch</td><td>eigenständig</td><td>BFD, HD</td><td>A+B-light</td></tr>
+      <tr><td>27</td><td>SSTH (Tourismus/Hotellerie)</td><td>Passugg (GR)</td><td>ssth.ch</td><td>EHL-Gruppe</td><td>BFD, HD Tourismus</td><td>Weg B (via EHL)</td></tr>
+      <tr><td>28</td><td>SWS Winterthur</td><td>Winterthur</td><td>sws-winterthur.ch</td><td>eigenständig</td><td>BFD, HD</td><td>A+B-light</td></tr>
+      <tr><td>29</td><td>TEKO</td><td>BS, BE, LU, Olten, SG, ZH</td><td>teko.ch</td><td>TEKO-Gruppe</td><td>BFD, HD, HWD, SB</td><td>A+B-light</td></tr>
+      <tr><td>30</td><td>WIOS Bildungszentrum</td><td>Olten</td><td>wios.ch</td><td>eigenständig</td><td>BFD, HD</td><td>A+B-light</td></tr>
+      <tr><td>31</td><td>MBSZ</td><td>Sursee</td><td>mbsz.ch</td><td>eigenständig</td><td>BFD, HD</td><td>A+B-light</td></tr>
+      <tr><td>32</td><td>WSF Wirtschaftsschule Five</td><td>Chur, Sargans, Buchs</td><td>wsf.ch</td><td>eigenständig</td><td>BFD, HD, HWD</td><td>A+B-light</td></tr>
+    </tbody>
+  </table>
+
+  <div class="kpi-row">
+    <div class="kpi"><div class="value">32</div><div class="label">VSH-Mitgliedsschulen</div></div>
+    <div class="kpi"><div class="value">~21</div><div class="label">Städte abgedeckt</div></div>
+    <div class="kpi"><div class="value">7</div><div class="label">Holding-/Verbundschulen (Weg B)</div></div>
+    <div class="kpi"><div class="value">~25</div><div class="label">Regionalschulen (A+B-light)</div></div>
+    <div class="kpi"><div class="value">4 von 6</div><div class="label">VSH-Vorstände = Schulträger</div></div>
+  </div>
+
+  <h3>Die zwei operativen Akquisitions-Wege</h3>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:1rem;">
+    <div class="card" style="border-top:4px solid #1565c0;">
+      <div class="card-header" style="background:#e3f2fd;">
+        Weg A — Prüfungsordnungs-getrieben <span class="role">Ausbildung → Schulen</span>
+      </div>
+      <div class="card-body">
+        <strong>Logik:</strong> SIZ identifiziert Berufsprüfungen mit formal verankerter IT-Modul-Pflicht (Hauswart, Direktionsassistent/in, Treuhänder/in, Immo-Bewirtschafter/in, KMU-Führung…). Prüft Prüfungswegleitung auf ICDL/SIZ-Klausel. Identifiziert alle Schulen, die die Ausbildung anbieten. Geht sie direkt an. Parallel: OdA-Lobbying für PO-Aufnahme SIZ.
+        <br><br>
+        <strong>Beispiel-Cases mit bestehenden Dossiers</strong> (siehe Sektion <a href="#dossiers" style="color:#2e7d32;font-weight:700;">Berufs-Dossiers</a>):
+        <ul>
+          <li>🏠 <a href="/projects/siz-ag/Hauswart-Wegleitung-2018.pdf" target="_blank"><strong>Hauswart FA</strong> (PDF öffnen)</a> – ECDL in PO formal verankert, SIZ nicht → offener Handlungsbedarf</li>
+          <li>💼 <a href="/projects/siz-ag/GL-Dossier-DirektionsAssistentin.html" target="_blank"><strong>Direktionsassistent/in FA</strong> (HTML-Dossier öffnen)</a> – Kfmv + KVZ + fvO als Trägerschaft, 16 Schulen identifiziert</li>
+        </ul>
+        <table class="matrix" style="font-size:0.82rem;margin-top:1rem;">
+          <tr><td><strong>Stärken</strong></td><td>Formale OdA-Verträge (schwer umgehbar) · 1 PO-Anerkennung → alle Schulen · klare Zielgruppe · SIZ-Infrastruktur passt</td></tr>
+          <tr><td><strong>Schwächen</strong></td><td>Lange Durchlaufzeit (OdA-Revisionen alle 5–7 J.) · politisches Lobbying · pro Ausbildung anderes Gremium</td></tr>
+          <tr><td><strong>Dauer</strong></td><td>12–36 Mt. bis erste PO-Anerkennung · 6–12 Mt. bis erster Schul-Vertrag nach PO-Anerkennung</td></tr>
+          <tr><td><strong>Intern bei SIZ</strong></td><td>PO-Scanning-Team · Didaktik-Mapping Smart-User ↔ Kompetenzraster · OdA-Lobbying-Dossier · Verkaufsunterlagen pro Lehrgang · Account-Manager pro Top-Ausbildung</td></tr>
+          <tr><td><strong>Extern</strong></td><td>OdA-Geschäftsstellen (PO-Revision) · Lehrgangs-Koordinator:innen (operativ) · SBFI (eidg. Anerkennung)</td></tr>
+          <tr><td><strong>Reife Kandidaten</strong></td><td>Alle Schulen mit Hauswart-Lehrgang · Direktionsassistent/in · Sachbearbeiter/in HR &amp; Rechnungswesen · VSH Health (MPA/MPK/MTL)</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="card" style="border-top:4px solid #2e7d32;">
+      <div class="card-header" style="background:#e8f5e9;">
+        Weg B — Holding-/Schul-getrieben <span class="role">Portfolio-Evaluierung</span>
+      </div>
+      <div class="card-body">
+        <strong>Logik:</strong> SIZ geht zu Holding-CEO oder eigenständiger grosser Schule. Evaluiert gemeinsam das <em>gesamte Portfolio</em>. Identifiziert Lehrgänge mit SIZ-Mehrwert für Kandidat:innen. Co-Design eines SIZ-Moduls als Zusatz-/Alternativbaustein. Roll-out über alle Standorte.
+        <br><br>
+        <strong>Top-7-Targets:</strong>
+        <ol>
+          <li><strong>Juventus</strong> (via Fabienne Gross, VSH-Präs.)</li>
+          <li><strong>ipso!/IFA</strong> (via Matthias Fritschi, VSH-VP) – 10+ Standorte</li>
+          <li><strong>FREI'S Schulen</strong> (via Armin Riebli, VSH-VP)</li>
+          <li><strong>Kalaidos</strong> (AKAD+HSO+Minerva, via CEO Leuenberger) – ~15 Standorte</li>
+          <li><strong>Benedict</strong> (via Heinrich Meister, eigentümergeführt) – 10 Std.</li>
+          <li><strong>Feusi</strong> (via Sandra von May-Granelli, SIZ-Reaktivierung)</li>
+          <li><strong>Klubschule Pro</strong> (via Miduca CEO Reto Schnellmann)</li>
+        </ol>
+        <table class="matrix" style="font-size:0.82rem;margin-top:1rem;">
+          <tr><td><strong>Stärken</strong></td><td>Schnelle Durchlaufzeit · Skaleneffekt (1 Entscheid → 10+ Std.) · hohe Margen · Schulen besitzen Kundenzugang</td></tr>
+          <tr><td><strong>Schwächen</strong></td><td>Verhandlungsmacht bei Schule · starker ICDL-Wettbewerb · Gefahr Inhouse-Lösung · Vertrag pro Holding</td></tr>
+          <tr><td><strong>Dauer</strong></td><td>3–9 Mt. bis Pilot-Vertrag · 12–18 Mt. bis Roll-out alle Standorte</td></tr>
+          <tr><td><strong>Intern bei SIZ</strong></td><td>Holding-Key-Account-Manager (1 FTE pro Top-5) · paketierte Modul-Angebote · Didaktik-Mapping VSH-Kompetenzraster · Preismodell pro Studierenden · Roll-out-Team</td></tr>
+          <tr><td><strong>Extern</strong></td><td>CEO/CFO der Holdings · Bildungs-/Schulleitungen · bei VSH-Vorständen: direkte Peer-Ansprache</td></tr>
+          <tr><td><strong>Reife Kandidaten</strong></td><td>7 Top-Holdings/Grosschulen (siehe oben) · Kalaidos-Rahmenvertrag = grösster möglicher Sprung</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <h3>Empfohlener Schul-Kategorien-Plan</h3>
+  <table class="matrix">
+    <thead><tr><th>Kategorie</th><th>Primär-Weg</th><th>Hebel / Geschwindigkeit</th><th>Beispiele</th></tr></thead>
+    <tbody>
+      <tr><td>Grosse Holding mit VSH-Vorstand-Vertretung</td><td><span class="tag" style="background:#e3f2fd;color:#1565c0;">Weg B</span></td><td>SIZ-VR-Direktkontakt via Peer-Ebene</td><td>Juventus (Gross) · IFA/IPSO (Fritschi) · FREI'S (Riebli) · Minerva/Kalaidos (5. VP)</td></tr>
+      <tr><td>Grosse eigenständige Privatschule</td><td><span class="tag" style="background:#e3f2fd;color:#1565c0;">Weg B</span></td><td>Schulleitungs-Direktkontakt, 6–9 Mt.</td><td>Benedict · Feusi</td></tr>
+      <tr><td>Kalaidos (Holding-Rahmenvertrag)</td><td><span class="tag" style="background:#e3f2fd;color:#1565c0;">Weg B</span></td><td>CEO Leuenberger, grösster möglicher Sprung (AKAD+HSO+Minerva)</td><td>Kalaidos</td></tr>
+      <tr><td>Miduca/Klubschule</td><td><span class="tag" style="background:#e3f2fd;color:#1565c0;">Weg B</span></td><td>Miduca-CEO Schnellmann, Multi-Produkt-Deal</td><td>Klubschule Pro</td></tr>
+      <tr><td>Regionalschulen (25 von 32)</td><td><span class="tag" style="background:#fff3e0;color:#e65100;">Weg A + B-light</span></td><td>PO-Anerkennung (Weg A) + Standardverträge</td><td>BERIT, didac, dr. raeber, kaz, MKS, MPA, NBW, SWS, WSF, …</td></tr>
+      <tr><td>Tessin / Romandie</td><td>Weg A</td><td>Sprachregionale OdA-Zugänge</td><td>Istituto Sant'Anna · Ecole Medica</td></tr>
+    </tbody>
+  </table>
+
+  <h3>100-Tage-Plan (konkret für Franz als Leiter Markt &amp; Partner)</h3>
+  <div class="recommendation"><strong>Tage 1–14 — Interne Grundlage</strong><br>
+  PO-Analyse starten (Hauswart + Direktionsassistent/in als Pilot, Dossiers liegen vor). Smart-User ↔ VSH-HD-IT-Skills-Kompetenzmatrix erstellen (Mapping LZ e1.bs1a, e2.bs1a etc.). Dispens-Antrag-Template für VSH-Gleichwertigkeit (§2.4 HD-Reglement) designen.</div>
+  <div class="recommendation"><strong>Tage 15–45 — Türöffner-Gespräche</strong><br>
+  (1) <strong>Lorenz Lüthi</strong> (VSH-GF) – Informationsgespräch zur PQSK-Zusammensetzung und Gleichwertigkeits-Verfahren. (2) <strong>Fabienne Gross</strong> (Juventus + VSH-Präs.) – strategisches Gespräch Weg B. (3) Intern mit <strong>Alain Gut</strong> (SIZ-VR) abstimmen, ob Weg B durch Kfmv-Sektion-Hebel beschleunigbar.</div>
+  <div class="recommendation"><strong>Tage 46–100 — Parallele Initiativen</strong><br>
+  Weg A: Hauswart-Dossier an OdA Hauswart einreichen (Gleichstellung ICDL ↔ SIZ). Weg B-Pilot: konkrete Offerten an Juventus + ipso! + Benedict ("SIZ Smart-User als Alternative zu ICDL im BFD/HD-Pfad, 20 % Preis-Vorteil + Schweizer Hosting als USP"). Reglements-Lobbying: PQSK VSH Business Gleichwertigkeits-Antrag für Smart-User einreichen.</div>
+
+  <div class="warn-note">
+    <strong>Kritisches Zeitfenster:</strong> Die nächste Reglements-Revision HWD ist mit den KI-Leistungszielen ab 1.1.2027 fällig. SIZ hat <strong>18–24 Monate</strong>, um als anerkannte Alternative verankert zu sein. Danach zementiert sich das System wieder für 5–7 Jahre.
+  </div>
+
+  <div class="source" style="margin-top:1rem;">
+    <strong>Quellen:</strong>
+    <a href="https://www.vsh.swiss/ausbildung/schulen?Location=0">VSH-Schulliste</a> ·
+    <a href="https://www.vsh.swiss/verband/organisation">VSH Vorstand/GS</a> ·
+    <a href="https://www.vsh.swiss/pruefung">VSH Prüfung/FAQ</a> ·
+    <a href="https://www.vsh.swiss/assets/Downloads/Reglemente/VSH-Business/VSH-Reglement-HD-kZu-Kauffrau-Kaufmann-2025_rev_Brand_V1.pdf">HD-Reglement 2025 (§2.4)</a> ·
+    <a href="https://www.vsh.swiss/assets/Downloads/Reglemente/VSH-Business/VSH-Reglement-BFD_-kaufm_Grundbildung-2025_rev_Brand_V1.pdf">BFD-Reglement 2025</a> ·
+    <a href="https://www.vsh.swiss/assets/Downloads/Reglemente/VSH-Management/VSH-Managment-HWD-Reglement+Wegleitung-2026.pdf">HWD-Reglement 2026</a>
+  </div>
+</section>
+
+<section id="dossiers" style="border-top:3px dashed #2e7d32;padding-top:2rem;">
+  <h2 style="border-bottom-color:#2e7d32;">Berufs-Dossiers (Weg A) <span class="badge-count" style="background:#2e7d32;">Bestehend</span></h2>
+
+  <div class="summary-box" style="border-left-color:#2e7d32;">
+    <p><strong>Zweck:</strong> Für jeden Zielberuf erstellen wir ein eigenes GL-Dossier mit der kompletten Kette <em>Bund → OdA → Prüfungsordnung → Prüfungskommission → Wegleitung → Lernziele → SIZ-Produkt-Mapping → Bildungsanbieter → Kandidatenprofil</em>. Das ist die strukturelle Grundlage für <strong>Weg A</strong> (Prüfungsordnungs-getrieben). Zwei Dossiers liegen vor, weitere in Planung.</p>
+    <p><strong>Hinweis zu den Links:</strong> Sie öffnen lokal auf Franz' Rechner Dateien unter <code>G:\Meine Ablage\SIZ\SIZ AG\Akquisition\</code>. In der VR-Präsentation kann der HTML-Inhalt per Beamer gezeigt werden.</p>
+  </div>
+
+  <div class="cards">
+    <div class="card" style="border-top:4px solid #2D7A44;">
+      <div class="card-header" style="background:#E6F2E9;">
+        🏠 Hauswart FA <span class="role">Weg A · Gold-Anker!</span>
+      </div>
+      <div class="card-body">
+        <strong>📋 Interaktives GL-Dossier:</strong>
+        <p style="margin:0.5rem 0;"><a href="/projects/siz-ag/GL-Dossier-Hauswart.html" target="_blank" style="display:inline-block;background:#2D7A44;color:white;padding:0.5rem 1rem;border-radius:6px;text-decoration:none;font-weight:600;">🌐 GL-Dossier Hauswart FA öffnen (HTML, interaktiv)</a></p>
+        <strong>Kern-Erkenntnis (Korrektur):</strong> <strong style="color:#2D7A44;">SIZ I (= Smart-User) ist BEREITS offiziell in der Hauswart-PO als gleichwertig zu ECDL Base anerkannt</strong> (Wegleitung 2018, Ziffer 3.1.2, Zitat: <em>"SIZ I oder gleichwertiges Zertifikat (vom SIZ bestätigt) und nicht älter als 5 Jahre"</em>). Handlungsbedarf ist also <strong>nicht</strong> Gleichwertigkeits-Antrag, sondern <strong>Sichtbarkeits-Kampagne + Positions-Verteidigung</strong> vor nächster PO-Revision.
+        <br><br>
+        <strong>Schlüsselpersonen:</strong> Jakob Hauri (PK-Präsident, unterzeichnet Wegleitung 2018), Michi Raich (SFH-Präsident), Prüfungssekretariat Luzern (info@pruefung-hauswart.ch). ~250 Kandidaten/Jahr, &gt;1 200 Abschlüsse seit 1990.
+        <br><br>
+        <strong>📂 Weitere Dateien:</strong>
+        <ul style="margin:0.5rem 0;">
+          <li>📄 <a href="/projects/siz-ag/Hauswart-Wegleitung-2018.pdf" target="_blank">Original Wegleitung 2018 (PDF, 488 KB)</a></li>
+          <li>🔗 <a href="https://www.pruefung-hauswart.ch/" target="_blank">pruefung-hauswart.ch</a> · <a href="https://www.sfh.ch/" target="_blank">sfh.ch</a></li>
+        </ul>
+        <div class="fazit-box syn"><strong>Status:</strong> SIZ rechtlich bereits anerkannt — aber im Markt unsichtbar. H2 im Handlungsfeld-Fächer ist daher Sichtbarkeits-Kampagne, nicht Neuantrag. Umsatz-Potenzial: CHF 47–67k/Jahr bei 70 % Marktanteil.</div>
+      </div>
+    </div>
+
+    <div class="card" style="border-top:4px solid #c8102e;">
+      <div class="card-header" style="background:#fde8ec;">
+        💼 Direktionsassistent/in FA <span class="role">Weg A · Dossier vollständig</span>
+      </div>
+      <div class="card-body">
+        <strong>Stand:</strong> GL-Dossier als interaktive HTML-Seite (66 KB, 9-Ebenen-Struktur Bund → Kandidat) + 2 CSV-Datenblätter.
+        <br><br>
+        <strong>Strategische Relevanz:</strong> Trägerschaft ist der <strong>Kaufmännische Verband Schweiz (kfmv)</strong> mit KV Zürich (KVZ) + Fachverband Organisatoren (fvO) als Mitträger. Also: SIZ-Träger ist gleichzeitig Träger der Berufsprüfung → <strong>kurze Wege, direkter Hebel via Bangerter/Burkhalter</strong>. 16 Schul-Anbieter identifiziert (KV Business School Zürich als grösster).
+        <br><br>
+        <strong>Schlüsselpersonen:</strong> Kfmv-Prüfungssekretariat, Andrea Kuhn-Senn (KVZ + Controller Akademie VRP), Melinda Bangerter (Kfmv-Bildung).
+        <br><br>
+        <strong>📋 Interaktives GL-Dossier:</strong>
+        <p style="margin:0.5rem 0;"><a href="/projects/siz-ag/GL-Dossier-DirektionsAssistentin.html" target="_blank" style="display:inline-block;background:#185FA5;color:white;padding:0.5rem 1rem;border-radius:6px;text-decoration:none;font-weight:600;">🌐 GL-Dossier Direktionsassistent/in öffnen (HTML, interaktiv)</a></p>
+        <strong>📂 Weitere Dateien:</strong>
+        <ul style="margin:0.5rem 0;">
+          <li>📊 <a href="/projects/siz-ag/direktionsassistentin-schulen.csv" target="_blank">Schulen-Anbieter-Liste (CSV, 16 Schulen)</a></li>
+          <li>📊 <a href="/projects/siz-ag/direktionsassistentin-pruefungskommission.csv" target="_blank">Prüfungskommission &amp; Trägerschaft (CSV)</a></li>
+          <li>🔗 <a href="https://www.kfmv.ch/" target="_blank">Kfmv Schweiz (Trägerschaft)</a></li>
+        </ul>
+        <div class="fazit-box syn"><strong>Status:</strong> Dossier vollständig inkl. 9-Ebenen-Modell (SBFI → OdA → PO → PK → Wegleitung → LZK → SIZ-Produkt → Schulen → Kandidat). Pilot-Kandidat für VR-Demo Weg A.</div>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="margin-top:2rem;">Referenz: CH-Berufsbildungssystem Systemübersicht</h3>
+  <div class="cards">
+    <div class="card" style="border-top:4px solid #e65100;">
+      <div class="card-header" style="background:#fff3e0;">
+        📚 CH-Berufsbildungssystem <span class="role">Gesamtübersicht</span></div>
+      <div class="card-body">
+        <strong>Zweck:</strong> Übersicht über das komplette Schweizer Berufsbildungssystem — wie die Berufsprüfungen (BP), Höheren Fachprüfungen (HFP), EFZ, HF, FH und Unis zusammenspielen und wo SIZ in diesem Gefüge positioniert ist.
+        <br><br>
+        <p><a href="/projects/siz-ag/CH_Berufsbildungssystem_Systemuebersicht.html" target="_blank" style="display:inline-block;background:#e65100;color:white;padding:0.5rem 1rem;border-radius:6px;text-decoration:none;font-weight:600;">📚 CH-Berufsbildungssystem öffnen (HTML)</a></p>
+        <div class="fazit-box misch"><strong>Nutzen:</strong> Grundlagen-Dokument für alle Gespräche mit Schulen, OdAs, Verbänden. Zeigt Einordnung von SIZ-Zertifikaten in die formale Bildungspyramide.</div>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="margin-top:2rem;">Vorlage: 9-Ebenen-Struktur eines Berufs-Dossiers</h3>
+  <p>Franz' etablierte Struktur pro Dossier (anwendbar auf jeden weiteren Zielberuf):</p>
+  <table class="matrix">
+    <thead><tr><th>#</th><th>Ebene</th><th>Inhalt</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Gesetzliche Grundlage / SBFI</td><td>BBG-Artikel, eidg. Anerkennung, 50 %-Subventionsstatus</td></tr>
+      <tr><td>2</td><td>Trägerschaft / OdA</td><td>Wer organisiert die Prüfung (Verband, Mitträger)</td></tr>
+      <tr><td>3</td><td>Prüfungsordnung</td><td>Zulassungsvoraussetzungen inkl. IT-Modul-Klausel (SIZ vs. ICDL)</td></tr>
+      <tr><td>4</td><td>Prüfungskommission</td><td>Personen, Kontakt</td></tr>
+      <tr><td>5</td><td>Wegleitung</td><td>Prüfungsstruktur, Gewichtungen, Formate</td></tr>
+      <tr><td>6</td><td>Lernzielkatalog / Qualifikationsprofil</td><td>Handlungskompetenzen A–X</td></tr>
+      <tr><td>7</td><td>SIZ-Produkt-Positionierung</td><td>Welches SIZ-Modul deckt welche Kompetenzen (Smart-User, AU, PU41)</td></tr>
+      <tr><td>8</td><td>Bildungsanbieter / Schulen</td><td>Wer bietet den Lehrgang an (CSV-Export)</td></tr>
+      <tr><td>9</td><td>Kandidatenprofil / IT-Niveau</td><td>Erwartbare Vorkenntnisse der Prüflinge</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Weitere Berufe mit Dossier-Potenzial (Pipeline)</h3>
+  <table class="matrix">
+    <thead><tr><th>Beruf</th><th>OdA / Trägerschaft</th><th>IT-Modul in PO?</th><th>Priorität</th></tr></thead>
+    <tbody>
+      <tr><td>Treuhänder/in FA → ab 1.1.2027 "Fachfrau/-mann in Treuhand und Beratung"</td><td>TREUHAND|SUISSE + EXPERTsuisse</td><td>Revision läuft – noch offen</td><td><span class="tag" style="background:#ffebee;color:#c62828;">Sofort (Fenster bis 31.12.2026)</span></td></tr>
+      <tr><td>FA Finanz- und Rechnungswesen</td><td>veb.ch / SwissAccounting + kfmv</td><td><strong>SIZ PU41 bereits Pflicht!</strong></td><td><span class="tag" style="background:#fff3e0;color:#e65100;">Gold-Anker verteidigen</span></td></tr>
+      <tr><td>Immobilien-Bewirtschafter/in FA</td><td>SVIT Schweiz</td><td>zu prüfen</td><td>Mittel</td></tr>
+      <tr><td>HR-Fachfrau/-mann FA</td><td>HRSE + HR Swiss</td><td>zu prüfen</td><td>Mittel–Hoch (via HR Swiss / Silberman Dunant)</td></tr>
+      <tr><td>Führungsfachfrau/-mann FA</td><td>SVF-ASFC</td><td>zu prüfen</td><td>Mittel</td></tr>
+      <tr><td>Sachbearbeiter/in Rechnungswesen, HR, Marketing, Immobilien</td><td>kv edupool (Schwester!)</td><td>teilweise integriert (Handelsschule)</td><td>Hoch via Schwester-Kooperation</td></tr>
+      <tr><td>Fachfrau/-mann Unternehmensführung KMU</td><td>KMU-Association</td><td>zu prüfen</td><td>Mittel</td></tr>
+      <tr><td>MPA / MPK / MTL</td><td>H+ / OdASanté</td><td>zu prüfen (VSH Health)</td><td>Mittel (Pflege-Digital-Skills)</td></tr>
+    </tbody>
+  </table>
+
+  <div class="recommendation">
+    <strong>Empfehlung VR:</strong> Pro Quartal ein neues Berufs-Dossier nach dem 9-Ebenen-Modell erstellen. Ziel 2026: 6–8 Dossiers als Grundlage für strukturierte Weg-A-Akquisition. Aufwand pro Dossier: 2–4 Tage Recherche + 1 Tag Design.
+  </div>
+</section>
+
+<section id="dachverbaende">
+  <h2>Dachverbände &amp; Politik <span class="badge-count">Ebene 1 + 5</span></h2>
+
+  <p>Dachverbände setzen Standards, OdAs verankern Zertifikate in eidg. Prüfungsordnungen. Personen-Fokus:</p>
+
+  <details open>
+    <summary><span>SBFI – Staatssekretariat für Bildung, Forschung, Innovation (Ebene 1)</span> <span class="tag">Regulator</span></summary>
+    <div class="details-body">
+      <ul class="fact-list">
+        <li><span class="fact-label">Staatssekretärin:</span> <strong>Martina Hirayama</strong> (seit 1.1.2019, 2026 weiterhin im Amt), Chemikerin, ex-Direktorin ZHAW School of Engineering</li>
+        <li><span class="fact-label">Stv. Direktor / Abt. Berufs- und Weiterbildung:</span> <strong>Rémy Hübschi</strong> (seit 2018) — <em>operativer Schlüssel</em></li>
+      </ul>
+      <p><strong>SIZ-Status bei SBFI:</strong> SIZ ist kein eidg. Abschluss, sondern privates Zertifikat. Kann aber als Zulassungs- oder Pflichtmodul in eidg. Prüfungsordnungen verankert werden (Hauswart-Modell – derzeit leider nur ICDL dort verankert).</p>
+      <p><strong>50 %-Subvention</strong> greift nur bei eidg. Abschlüssen. SIZ ist subventionierbar, wenn es als Baustein eines eidg. Abschlusses vorgeschrieben ist.</p>
+      <div class="fazit-box misch"><strong>Hebel:</strong> Hübschi ist der wichtigste Ansprechpartner für regulatorische Anerkennungs-Anträge.</div>
+      <div class="source"><a href="https://www.sbfi.admin.ch/de/staatssekretaerin">SBFI Staatssekretärin</a> · <a href="https://www.sbfi.admin.ch/de/faq-bundesbeitraege-eidgenoessische-pruefungen-absolventinnen-und-absolventen">Bundesbeiträge</a></div>
+    </div>
+  </details>
+
+  <details>
+    <summary><span>SVEB – Schweizerischer Verband für Weiterbildung (alice.ch)</span> <span class="tag">~750 Mitgl.</span></summary>
+    <div class="details-body">
+      <ul class="fact-list">
+        <li><span class="fact-label">Präsidentin:</span> <strong>Tiana Angelina Moser</strong> (Ständerätin ZH, GLP) – Nachfolgerin von Matthias Aebischer</li>
+        <li><span class="fact-label">Direktor:</span> <strong>Bernhard Grämiger</strong> (seit 2018) – operativ mächtigster Mann der WB-Szene</li>
+        <li><span class="fact-label">Vorstand (Auswahl):</span> Giuliana Tedesco (VP, ECAP), <strong>Melinda Bangerter</strong> (Leiterin Bildung Kfmv!), Sandra Bissig</li>
+      </ul>
+      <p><strong>Kern-Produkt:</strong> SVEB-Zertifikat Ausbilder/in – de-facto-Pflicht für alle Dozierenden an WB-Anbietern.</p>
+      <div class="fazit-box syn"><strong>Hebel:</strong> <strong>Melinda Bangerter ist Super-Multiplikator</strong> (Kfmv-Bildung + SVEB-Vorstand + ICT-Berufsbildung gleichzeitig).</div>
+      <div class="source"><a href="https://alice.ch/de/sveb/ueber-den-sveb/organe/">SVEB Organe</a></div>
+    </div>
+  </details>
+
+  <details>
+    <summary><span>PBS – Private Bildung Schweiz (privatebildungschweiz.ch)</span> <span class="tag">~430 Mitgl.</span></summary>
+    <div class="details-body">
+      <ul class="fact-list">
+        <li><span class="fact-label">Präsident &amp; GF:</span> Daniel Hering (GS Rudolf Steiner Schulen CH; CEO Anthrosocial seit 1.6.2025)</li>
+        <li><span class="fact-label">Vizepräsident:</span> Patrizio Foletti (Katholische Schulen Schweiz)</li>
+        <li><span class="fact-label">Kassierin:</span> Birgit Purainer (Verband Zürcher Privatschulen)</li>
+      </ul>
+      <p>Primär ideell/konfessionell geprägt. <strong>Grosse kommerzielle Anbieter (Kalaidos, ipso!, Vantage, Feusi) sitzen mehrheitlich im VSP, nicht im PBS-Vorstand.</strong></p>
+      <div class="fazit-box neutral"><strong>Hebel:</strong> eher niedrig für SIZ.</div>
+      <div class="source"><a href="https://www.privatebildungschweiz.ch/index.php/de/wer-sind-wir/vorstand">PBS Vorstand</a></div>
+    </div>
+  </details>
+
+  <details>
+    <summary><span>VSP – Verband Schweizerischer Privatschulen (swiss-schools.ch)</span> <span class="tag">~240 Schulen · 100 000 SuS</span></summary>
+    <div class="details-body">
+      <ul class="fact-list">
+        <li><span class="fact-label">Präsident:</span> <strong>Gerhard Pfister</strong> (Nationalrat ZG, Die Mitte-Präs.) — bildungspolitisches Schwergewicht</li>
+        <li><span class="fact-label">Vorstand:</span> <strong>Antje Oeschger</strong> (ipso! Bildung AG), <strong>Sandra von May-Granelli</strong> (Feusi), Margaret De Lorenzi (CCT), Marc-Frédéric Ott (Leysin American School)</li>
+      </ul>
+      <p>Der Vorstand VSP enthält die <em>gewerblich relevantesten</em> Privatschul-Player der Deutschschweiz. Adresse Hotelgasse 1 Bern (geteilt mit PBS).</p>
+      <div class="fazit-box syn"><strong>Hebel sehr hoch:</strong> Pfister politisch, Oeschger/von May-Granelli direkte SIZ-Grosskunden.</div>
+      <div class="source"><a href="https://www.swiss-schools.ch/en/fsps/organisation/">VSP Organisation</a></div>
+    </div>
+  </details>
+
+  <details>
+    <summary><span>BCH-FPS – Berufsbildung Schweiz (Lehrpersonen Berufsfachschulen)</span> <span class="tag">Lehrerverband</span></summary>
+    <div class="details-body">
+      <ul class="fact-list">
+        <li><span class="fact-label">Co-Präsidentin:</span> Patricia Biner (Brig)</li>
+        <li><span class="fact-label">Co-Präsident:</span> Bruno Juhasz (Ziegelbrücke GL)</li>
+        <li><span class="fact-label">Geschäftsstelle:</span> Matthias Kunz (Buchs SG)</li>
+      </ul>
+      <div class="fazit-box misch"><strong>Hebel:</strong> Lehrpersonen prägen Zertifikats-Empfehlungen im Schulalltag. BCH-Artikel oder Workshop = schleichender Pull.</div>
+      <div class="source"><a href="https://www.bch-fps.ch/portrat/zentralvorstand/">BCH Vorstand</a></div>
+    </div>
+  </details>
+
+  <details>
+    <summary><span>EDK + SBBK (Kantonale Bildungsdirektoren)</span> <span class="tag">Kantons-Ebene</span></summary>
+    <div class="details-body">
+      <ul class="fact-list">
+        <li><span class="fact-label">EDK-Präsident:</span> <strong>Christophe Darbellay</strong> (Staatsrat VS, Die Mitte, seit 1.1.2025)</li>
+        <li><span class="fact-label">EDK-Generalsekretärin:</span> Klára Sokol (seit 1.3.2026)</li>
+        <li><span class="fact-label">SBBK-Präsident:</span> <strong>Christophe Nydegger</strong> – Fachkonferenz der kantonalen Berufsbildungsämter</li>
+      </ul>
+      <div class="fazit-box misch"><strong>Hebel:</strong> Nydegger entscheidet kantonale Subventionierungs-Logik – hoher Hebel bei Kurs-Finanzierung.</div>
+    </div>
+  </details>
+
+  <details>
+    <summary><span>ICT-Berufsbildung Schweiz — Vorstand 2026</span> <span class="tag">Swico+Kfmv Mitträger</span></summary>
+    <div class="details-body">
+      <ul class="fact-list">
+        <li><span class="fact-label">Präsident:</span> <strong>Dr. Alain Gut</strong> (IBM; zgl. SIZ-VR-Präs.) – seit 4.12.2025</li>
+        <li><span class="fact-label">Co-Vizepräsidentin:</span> <strong>Eliska Vogt</strong> (UBS Talent Partnerin) – seit 13.3.2026</li>
+        <li><span class="fact-label">Co-Vizepräsident:</span> Carlo Pirola (ICT-BB Aargau)</li>
+        <li><span class="fact-label">Geschäftsführer:</span> Marc Marthaler</li>
+        <li><span class="fact-label">Weitere Vorstände 2026:</span> Melinda Bangerter (Kfmv), Michel Haueter (Swisscom), Doris Matyassy (SBB), Patrick Müller (UBS), Christian Matter (EIT.swiss), Thomas Fahrni, Daniel Jäggli, Thomas Riesen, Werner Scherrer, Tamara Sitter, Lee Roy Job Maffo (Médiamatique Romande, neu 2026), Matthieu Joerin (GRI, neu 2026)</li>
+      </ul>
+      <div class="fazit-box misch"><strong>Hebel:</strong> Alain Gut = Präs. SIZ <em>und</em> ICT-BB. Abgrenzung modular vs. EFZ aktiv bewirtschaften.</div>
+      <div class="source"><a href="https://www.ict-berufsbildung.ch/verband/organisation/vorstand">ICT-BB Vorstand</a></div>
+    </div>
+  </details>
+
+  <h3>OdAs mit IT-Pflicht-Zertifikat</h3>
+  <div class="cards">
+    <div class="card">
+      <div class="card-header">SFH – Schweiz. Fachverband der Hauswarte <span class="role">Hauswart FA</span></div>
+      <div class="card-body">
+        Sitz Luzern, 2 950 Mitgl., 10 Regionalverbände. Prüfung bei pruefung-hauswart.ch; ~250 Kandidaten/Jahr. <strong>Präsident PK:</strong> Jakob Hauri. <strong>PO Ziffer 3.31:</strong> ICDL Base als Zulassungsvoraussetzung – SIZ nicht aufgeführt.
+        <div class="fazit-box konkurrenz"><strong>Muss-Projekt 2026/27:</strong> Gleichwertigkeits-Antrag SIZ Smart-User = ICDL Base einreichen.</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">veb.ch / EXPERTsuisse <span class="role">FA Finanz &amp; RW</span></div>
+      <div class="card-body">
+        <strong>SIZ PU41 ist bereits Pflicht-Modul</strong> für eidg. FA Finanz- und Rechnungswesen (alternativ Microsoft MO-201). <strong>Gold-Anker — verteidigen!</strong>
+        <div class="fazit-box syn"><strong>Blueprint:</strong> Diese Klausel als Referenz für alle weiteren OdA-Gespräche nutzen.</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">TREUHAND|SUISSE <span class="role">Revision läuft</span></div>
+      <div class="card-body">
+        PO-Revision bis 31.12.2026. Ab 1.1.2027: "Fachfrau/Fachmann in Treuhand und Beratung". Zulassungsprüfung entfällt. Kein SIZ in aktueller PO.
+        <div class="fazit-box misch"><strong>Zeitkritisch:</strong> Jetzt SIZ PU41 als anerkannte IT-Qualifikation verankern.</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">SVIT Schweiz <span class="role">Immobilien</span></div>
+      <div class="card-body">
+        Präsident <strong>Michel Molinari</strong> (seit 26.6.2025, CEO BLKB Fund Management). SVIT ZH: ab 4/2027 Ramon J. Kälin. POs Immobilien-Bewirtschafter FA / Bewertungsexperte HFP.
+        <div class="fazit-box neutral"><strong>Hebel mittel:</strong> Molinari neu im Amt, Profilierungs-Fenster.</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">OdASanté <span class="role">Pflege</span></div>
+      <div class="card-body">
+        Präsidentin Anne-Geneviève Bütikofer · GF Alexandra Heilbronner. RLP Pflege HF tritt 1.5.2026 in Kraft. Digital-Skills (eHealth, eMedikation) grosses Thema.
+        <div class="fazit-box misch"><strong>Mittlere Priorität:</strong> ~25 000 Pflege-Lernende/Jahr — SIZ Smart-User andockbar.</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">BDS – Bildung Detailhandel Schweiz <span class="role">Detailhandel</span></div>
+      <div class="card-body">
+        Bildungsverordnungen DHF/DHA EFZ/EBA (Reform 2022). Keine explizite SIZ/ICDL-Pflicht. Nächster Revisionszyklus = SIZ-Chance.
+        <div class="fazit-box misch"><strong>Langfristig:</strong> &gt;10 000 Lernende/Jahr — grösster ungehobener Pool.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="arbeitgeber">
+  <h2>Arbeitgeber &amp; HR <span class="badge-count">Pull-Hebel</span></h2>
+
+  <p>Wenn Arbeitgeber und HR-Verbände SIZ als erwartete Qualifikation in Stelleninseraten und Policies listen, entsteht echter Pull. Hier die Landkarte.</p>
+
+  <h3>Arbeitgeberverbände (generell)</h3>
+  <div class="cards">
+    <div class="card swico">
+      <div class="card-header">Schweiz. Arbeitgeberverband (SAV) <span class="role">arbeitgeber.ch</span></div>
+      <div class="card-body">
+        Präsident <strong>Severin Moser</strong> (ex-CEO Allianz Suisse, seit 6/2023) · Direktor <strong>Dr. Roland A. Müller</strong>. Dachverband Branchen- und Regionalverbände.
+        <div class="fazit-box misch"><strong>Hebel mittel:</strong> bei BBG-Revisionen am Tisch, aber selten einzelne Zertifikate.</div>
+      </div>
+    </div>
+    <div class="card swico">
+      <div class="card-header">economiesuisse <span class="role">Wirtschaftsdachverband</span></div>
+      <div class="card-body">
+        Präsident bis Ende 2026: <strong>Christoph Mäder</strong> (ex-Syngenta). <strong>Neuer Präsident:</strong> Silvan Wildhaber (gewählt, Amtsantritt 2026/27). Direktorin/CEO: <strong>Monika Rühl</strong>. Bildung verantwortet <strong>Prof. Rudolf Minsch</strong> (Chefökonom). Vizepräsident: <strong>Martin Hirzel</strong> (zugleich Swissmem-Präs.).
+        <br><br><strong>Alain Gut ist bereits in economiesuisse-Bildungs-/Forschungskommission aktiv</strong> – Doppelmandat SIZ-VRP + economiesuisse.
+        <div class="fazit-box syn"><strong>Hebel Nr. 1:</strong> Präsidiumswechsel 2026 = Positionierungsfenster. Gut pflegen.</div>
+      </div>
+    </div>
+    <div class="card swico">
+      <div class="card-header">Schweiz. Gewerbeverband (sgv) <span class="role">~600 000 KMU</span></div>
+      <div class="card-body">
+        Präsident <strong>Fabio Regazzi</strong> (NR TI, Mitte; 2022–2026; Wechsel 2027 wahrscheinlich) · Direktor <strong>Urs Furrer</strong>.
+        <br><strong>Wichtig:</strong> sgv trägt das Handelsdiplom VSH und ist bei allen BBG-Revisionen am Tisch.
+        <div class="fazit-box syn"><strong>Hebel hoch:</strong> Urs Furrer operativer Kontaktpunkt. KMU-Kanal fürs IT-Zusatz-Zertifikat.</div>
+      </div>
+    </div>
+  </div>
+
+  <h3>Branchen-Arbeitgeberverbände</h3>
+  <div class="cards">
+    <div class="card swico">
+      <div class="card-header">Swissmem <span class="role">MEM · ~8 200 Lernende</span></div>
+      <div class="card-body">
+        Präsident <strong>Martin Hirzel</strong> (ab 1.5.2026 zusätzlich SNB-Bankrat) · Direktor <strong>Stefan Brupbacher</strong>. Vorstand u.a. Patrick Hess (Schindler), Robert Itschner (ABB), Stefan Scheiber (Bühler), Peter Spuhler (Stadler), Nora Teuwsen (ABB).
+        <br><strong>Leiter Berufsbildung:</strong> <strong>Thomas Schumacher</strong> · Revisionsprojekt <strong>FUTUREMEM</strong> läuft.
+        <div class="fazit-box syn"><strong>Hebel sehr hoch:</strong> FUTUREMEM als Türöffner für ICT-Grundkompetenzen. Schumacher operativer, Hirzel strategischer Gatekeeper.</div>
+      </div>
+    </div>
+    <div class="card swico">
+      <div class="card-header">Swiss Retail Federation <span class="role">Detailhandel</span></div>
+      <div class="card-body">
+        Präsidentin <strong>Daniela Schneeberger</strong> (ex-FDP-NR). Direktorin bis 28.2.2026: <strong>Dagmar Jenni</strong>. <strong>Ab 1.3.2026 neuer Direktor: Patrick Erny</strong> (38, bisher stv. Direktor).
+        <div class="fazit-box syn"><strong>Hebel hoch:</strong> Erny hat Profilierungs-Interesse (Muss-Gespräch Q3 2026). Detailhandel = riesiger KV-Lernenden-Pool.</div>
+      </div>
+    </div>
+    <div class="card swico">
+      <div class="card-header">swissstaffing <span class="role">Personalverleih · 400+</span></div>
+      <div class="card-body">
+        Präsident <strong>Andreas Eichenberger</strong> (seit 27.6.2024, Gründer House of Flexwork) · VP Marcel Keller.
+        <div class="fazit-box syn"><strong>Hebel sehr hoch:</strong> Adecco/Manpower &amp; Co. verwenden Qualifikations-Raster. SIZ in diesem Raster = sofortige Pull-Wirkung in jedem Temporär-Inserat.</div>
+      </div>
+    </div>
+    <div class="card swico">
+      <div class="card-header">SBVg – Swiss Banking <span class="role">Banken</span></div>
+      <div class="card-body">
+        Präsident <strong>Marcel Rohner</strong> (seit 9/2021) · CEO <strong>Roman Studer</strong> (seit 8/2023, ex-Avenir Suisse).
+        <br>UBS ~380 KV+IT-Lernende/Jahr · Raiffeisen ~650 · ZKB eigenes IT-Programm (SANTIS).
+        <div class="fazit-box syn"><strong>Hebel hoch:</strong> Studer jung, reformfreudig. SBVg-Paper zu IT-Grundkompetenzen würde Branchenstandard setzen.</div>
+      </div>
+    </div>
+    <div class="card swico">
+      <div class="card-header">SVV – Schweiz. Versicherungsverband <span class="role">Versicherungen</span></div>
+      <div class="card-body">
+        Präsident <strong>Stefan Mäder</strong> (VRP Mobiliar) · Direktor <strong>Urs Arbter</strong>. Mitglieder Swiss Life, Zurich, Helvetia, AXA (wieder seit 2024), Mobiliar, Generali, Baloise, Vaudoise.
+        <div class="fazit-box syn"><strong>Hebel hoch:</strong> Grosse KV-Lehrkohorten. Analog SBVg-Logik.</div>
+      </div>
+    </div>
+    <div class="card swico">
+      <div class="card-header">Schweiz. Baumeisterverband (SBV) <span class="role">Bau</span></div>
+      <div class="card-body">
+        Zentralpräsident <strong>Gian-Luca Lardi</strong> (seit 2015) · Direktor <strong>Bernhard Salzmann</strong>.
+        <br><strong>Leiter Digitalisierung:</strong> <strong>Moritz Lüscher</strong>. Masterplan Berufsbildung 2030. Revisionen Baupolier 2030, Bauvorarbeiter 2030 enthalten Digital-Kompetenzen.
+        <div class="fazit-box syn"><strong>Hebel hoch:</strong> Lüscher als Fachkontakt. Baubranche ICT-schwach = reale Nachfrage.</div>
+      </div>
+    </div>
+    <div class="card swico">
+      <div class="card-header">scienceindustries <span class="role">Chemie/Pharma</span></div>
+      <div class="card-body">
+        Direktor <strong>Dr. Stephan Mumenthaler</strong>. &gt;250 Mitglieder (Roche, Novartis, Syngenta, Lonza …).
+        <div class="fazit-box neutral"><strong>Hebel mittel:</strong> Pharma rekrutiert hochqualifiziert, wenig Grundausbildungs-Ebene.</div>
+      </div>
+    </div>
+    <div class="card swico">
+      <div class="card-header">HotellerieSuisse / GastroSuisse <span class="role">Gastgewerbe</span></div>
+      <div class="card-body">
+        HotellerieSuisse: Präs. <strong>Martin von Moos</strong>. GastroSuisse: Präs. <strong>Beat Imhof</strong> (seit 6/2024) · Direktorin <strong>Kareen Vaisbrot</strong>.
+        <div class="fazit-box neutral"><strong>Hebel niedrig-mittel:</strong> moderate IT-Anforderungen.</div>
+      </div>
+    </div>
+  </div>
+
+  <h3>HR-Verbände (Stelleninserate-Hebel)</h3>
+  <div class="cards">
+    <div class="card">
+      <div class="card-header">HR Swiss (hr-swiss.ch) <span class="role">~4 500 Mitgl.</span></div>
+      <div class="card-body">
+        Präsidentin <strong>Jessica Silberman Dunant</strong> (ex-CHRO Genève Aéroport, Prüfungsexpertin HRSE, seit 2022). Vorstand: Ludovic Bruchez (HR Valais), Serge Claus (HR Vaud) u.a.
+        <div class="fazit-box syn"><strong>KRITISCH HOCH:</strong> 4 500 Leute, die Stelleninserate schreiben. HR-Swiss-Handreichung "SIZ als erwartete IT-Qualifikation für kaufm. Funktionen" = sofortiger Pull. <em>Persönlicher Termin anstreben.</em></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">ZGP – Zürcher Gesellschaft für Personal-Management <span class="role">~2 000 Mitgl.</span></div>
+      <div class="card-body">
+        GF <strong>Sara López García</strong> (seit 1.1.2025). Vorstand: Marco Beutler, Dr. Barbara Aeschlimann, Angelo Ciaramella, Pascale Lenz, Dr. Léonie Mollet, Andreas Scherrer, Anna Sender.
+        <div class="fazit-box syn"><strong>Hebel hoch:</strong> Zürich-dominant (SIZ-Hauptstandort). Multi-Kanal via "die plattform".</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">Swiss Leaders (ehem. SKO) <span class="role">Kaderverband</span></div>
+      <div class="card-body">
+        Präsidium 2026 — Quellen inkonsistent, direkt verifizieren. Historisch Dominique de Buman (Mitte, NR FR).
+        <div class="fazit-box neutral"><strong>Hebel mittel:</strong> Kader entscheiden über Stellenausschreibungs-Anforderungen.</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">HRSE – Human Resources Swiss Exams <span class="role">eidg. HR-Prüfungen</span></div>
+      <div class="card-body">
+        Träger eidg. HR-Prüfungen (HR-Fachfrau/-mann FA, Leiter HR HFP). <strong>Silberman Dunant dort Prüfungsexpertin</strong> — Doppelbrücke HR Swiss ↔ HRSE.
+        <div class="fazit-box misch"><strong>Hebel:</strong> SIZ-Niveau als Voraussetzung in HR-POs verankern.</div>
+      </div>
+    </div>
+  </div>
+
+  <h3>Grosse Einzel-Arbeitgeber (Benchmark)</h3>
+  <table class="matrix">
+    <thead><tr><th>Arbeitgeber</th><th>Berufsbildungs-Träger</th><th>SIZ heute</th><th>Hebel</th></tr></thead>
+    <tbody>
+      <tr><td>SBB</td><td>login Berufsbildung AG, Olten (&gt;2 100 L./Jahr, 35+ Berufe)</td><td>nicht explizit</td><td>KV-IT-Modul andockbar</td></tr>
+      <tr><td>Migros (MGB)</td><td>Eigener Verbund + Klubschule Migros (bereits SIZ-Partner!)</td><td>teilweise</td><td>Klubschulen-Direktion</td></tr>
+      <tr><td>Coop</td><td>Eigene KV/Detailhandel</td><td>nicht bekannt</td><td>Benchmark Migros</td></tr>
+      <tr><td>UBS</td><td>~380 KV+IT-Lernende/Jahr</td><td>nicht formal</td><td>Bank-Standard via SBVg</td></tr>
+      <tr><td>Raiffeisen</td><td>~650 KV-Bank-Lernende/Jahr</td><td>nicht bekannt</td><td>via SBVg</td></tr>
+      <tr><td>ZKB</td><td>SANTIS IT-Programm + BZZ/TBZ</td><td>nicht verlinkt</td><td>SANTIS als Partnerschul-Kandidat</td></tr>
+      <tr><td>Swiss Life/Zurich/Helvetia/AXA/Mobiliar</td><td>KV-Vers. via SVV-Rahmen</td><td>via SVV</td><td>Arbter (SVV-Direktor)</td></tr>
+      <tr><td>Bundesverwaltung</td><td>EPA · BIT</td><td>nicht dokumentiert</td><td>BIT als Tech-Partner</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="handlungsfelder">
+  <h2>Handlungsfelder-Fächer <span class="badge-count">Strategie für den VR</span></h2>
+
+  <p>Aus allen Erkenntnissen destilliert: <strong>10 Handlungsfelder</strong> nach Zeithorizont (kurz/mittel/lang) und Ebene (operativ/strategisch/politisch). Jedes mit verantwortlichem Türöffner und Erfolgs-Hürde.</p>
+
+  <table class="matrix">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Handlungsfeld</th>
+        <th>Ebene</th>
+        <th>Zeithorizont</th>
+        <th>Haupt-Türöffner</th>
+        <th>Erfolgs-KPI</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>H1</td>
+        <td><strong>Gold-Anker veb.ch verteidigen</strong> — SIZ PU41 als Pflicht-Modul für FA Finanz+Rechnungswesen offensiv halten; als Blueprint in allen weiteren OdA-Gesprächen zitieren</td>
+        <td>regulatorisch / operativ</td>
+        <td><span class="tag" style="background:#ffebee;color:#c62828;">sofort</span></td>
+        <td>veb.ch-Geschäftsleitung + Melinda Bangerter (Kfmv)</td>
+        <td>SIZ PU41 in nächster PO-Revision unverändert</td>
+      </tr>
+      <tr>
+        <td>H2</td>
+        <td><strong>Hauswart-Gleichwertigkeit SIZ = ICDL</strong> — Antrag bei SFH + Prüfungskommission + SBFI (Hübschi), SIZ Smart-User als anerkannte Alternative zu ICDL Base in PO Ziffer 3.31 verankern</td>
+        <td>regulatorisch</td>
+        <td><span class="tag" style="background:#fff3e0;color:#e65100;">6–18 Mt.</span></td>
+        <td>Jakob Hauri (PK) · SFH-Präsidium · Hübschi (SBFI)</td>
+        <td>nächste PO-Revision: SIZ gleichwertig genannt</td>
+      </tr>
+      <tr style="background:#fff8e1;">
+        <td>H3</td>
+        <td><strong>VSH-Gleichwertigkeits-Antrag §2.4 HD</strong> — SIZ Smart-User formal als Dispens-Grundlage für Qualifikationsbereich "Grundlagen IKT" (BFD, 18 %) und "IT Skills" (HD) beim Verband eintragen lassen. <em>Reglemente-Befund: ICDL ist NICHT im VSH-Reglement – nur schul-interne Vorkurs-Regeln</em>. Zusätzlich: Roll-out über Top-7-Holdings (Weg B) für Schul-Integration</td>
+        <td>Label-Ebene + Verband</td>
+        <td><span class="tag" style="background:#ffebee;color:#c62828;">sofort / 6–18 Mt.</span></td>
+        <td>Lorenz Lüthi (VSH-GF) · Fabienne Gross (VSH-Präs./Juventus) · Fritschi (IFA/IPSO) · Riebli (FREI'S) · Bangerter (Kfmv)</td>
+        <td>SIZ Smart-User als verbandlich anerkannte Gleichwertigkeit eingetragen; erste Schul-Integrationen bei Weg-B-Targets</td>
+      </tr>
+      <tr>
+        <td>H4</td>
+        <td><strong>Holding-Account-Programm</strong> Top-4: Kalaidos (Klett DE), Miduca (Migros), Vantage (CH-Investoren), Benedict. Je ein jährliches CEO-Gespräch Schmidt ↔ CEO; Quartalsreview Account-Entwicklung</td>
+        <td>strategisch</td>
+        <td><span class="tag" style="background:#fff3e0;color:#e65100;">6–24 Mt.</span></td>
+        <td>SIZ-GF Schmidt · VR (Gut)</td>
+        <td>Holding-weite SIZ-Standards in 2 von 4 Top-Holdings</td>
+      </tr>
+      <tr>
+        <td>H5</td>
+        <td><strong>HR-Swiss-Handreichung</strong> — Kooperation mit Jessica Silberman Dunant: "SIZ als erwartete IT-Qualifikation für kaufm. Funktionen" in HR-Leitfaden, Publikation in HR Today</td>
+        <td>operativ / Pull</td>
+        <td><span class="tag" style="background:#fff3e0;color:#e65100;">6–12 Mt.</span></td>
+        <td>Silberman Dunant (HR Swiss) · López García (ZGP)</td>
+        <td>HR-Swiss-Publikation mit SIZ-Nennung</td>
+      </tr>
+      <tr>
+        <td>H6</td>
+        <td><strong>Swissmem FUTUREMEM-Integration</strong> — SIZ als ICT-Grundkompetenz-Nachweis in revidierten MEM-Bildungsverordnungen positionieren</td>
+        <td>regulatorisch / Branche</td>
+        <td><span class="tag" style="background:#e3f2fd;color:#1565c0;">12–36 Mt.</span></td>
+        <td>Thomas Schumacher (Swissmem BB) · Martin Hirzel</td>
+        <td>SIZ in FUTUREMEM-Rahmenwerk</td>
+      </tr>
+      <tr>
+        <td>H7</td>
+        <td><strong>Treuhand-PO-Revision reiten</strong> — neuer Titel "Fachfrau/-mann in Treuhand und Beratung" ab 1.1.2027; SIZ PU41 als anerkannte IT-Qualifikation einreichen während Revisionsfrist bis 31.12.2026</td>
+        <td>regulatorisch</td>
+        <td><span class="tag" style="background:#ffebee;color:#c62828;">sofort</span></td>
+        <td>TREUHAND|SUISSE · EXPERTsuisse · Hübschi</td>
+        <td>SIZ PU41 in neuer PO genannt</td>
+      </tr>
+      <tr>
+        <td>H8</td>
+        <td><strong>Baubranche andocken</strong> — SIZ als digitaler Grundkompetenz-Nachweis in Revisionen Baupolier 2030 / Bauvorarbeiter 2030</td>
+        <td>regulatorisch / Branche</td>
+        <td><span class="tag" style="background:#e3f2fd;color:#1565c0;">12–36 Mt.</span></td>
+        <td>Moritz Lüscher (SBV Digitalisierung) · Salzmann</td>
+        <td>SIZ in einer SBV-PO-Revision</td>
+      </tr>
+      <tr>
+        <td>H9</td>
+        <td><strong>SIZ+MOS-Bundle</strong> — Pilot mit 3–5 VSH-Schulen: "SIZ Smart-User + MOS Word/Excel Associate" als Kombi-Abschluss; adressiert Konzern-Weiterbildung</td>
+        <td>strategisch / Produkt</td>
+        <td><span class="tag" style="background:#fff3e0;color:#e65100;">12–18 Mt.</span></td>
+        <td>SIZ-GF Schmidt · Microsoft CH (via Swico)</td>
+        <td>Bundle in Portfolio + erste Kandidaten</td>
+      </tr>
+      <tr>
+        <td>H10</td>
+        <td><strong>Verifiable Credentials / Open Badges</strong> — SIZ-Diplome als VC/Open Badge ausstellbar machen (BFH-PoC als Vorlage); E-ID-Infrastruktur nutzen; Sichtbarkeit auf LinkedIn automatisch</td>
+        <td>strategisch / Infrastruktur</td>
+        <td><span class="tag" style="background:#fff3e0;color:#e65100;">bis Ende 2026</span></td>
+        <td>Daniel Sutter (SIZ Tech) · BFH-Pilotpartner</td>
+        <td>erste SIZ-Diplome als VC ausgestellt</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="recommendation" style="margin-top:1.5rem;">
+    <strong>Stossrichtung Summary für den VR:</strong><br>
+    <strong>Kurzfristig (0–12 Mt.):</strong> H1 Gold-Anker veb.ch verteidigen · H2 Hauswart · <strong>H3 VSH-Gleichwertigkeit §2.4 (18-Mt-Fenster vor KI-HWD 2027)</strong> · H5 HR Swiss · H7 Treuhand · H10 VC/Open Badges.<br>
+    <strong>Mittelfristig (12–24 Mt.):</strong> H4 Holding-Accounts (Weg B: Kalaidos/Miduca/Vantage/Benedict) · H9 MOS-Bundle.<br>
+    <strong>Langfristig (24–36 Mt.):</strong> H6 FUTUREMEM · H8 SBV Bau · Detailhandel (BDS nächster Revisionszyklus).
+    <br><br>
+    <strong>Parallelstrategie:</strong> <span style="color:#1565c0;font-weight:700;">Weg A</span> (PO-getrieben) für die ~25 kleineren VSH-Regional­schulen + Hauswart/Direktionsassistent/in-OdA-Lobbying · <span style="color:#2e7d32;font-weight:700;">Weg B</span> (Holding-getrieben) für die Top-7 (Juventus · IFA/IPSO · FREI'S · Kalaidos · Benedict · Feusi · Miduca/Klubschule).
+  </div>
+
+  <div class="warn-note">
+    <strong>Logik hinter der Priorisierung:</strong> Die kurzfristigen Handlungsfelder sind entweder <em>Verteidigung von Bestehendem</em> (H1) oder <em>Zeitfenster, die jetzt offen stehen</em> (H2, H3, H7). Mittelfristige Felder sind <em>Beziehungsaufbau</em>, die keine externe Deadline haben. Langfristige Felder sind <em>strukturelle Revisionen</em>, bei denen SIZ als bekannter Partner im richtigen Moment am richtigen Tisch sitzen muss.
+  </div>
+</section>
+
+<section id="tueroeffner">
+  <h2>Top-15 Türöffner-Personen <span class="badge-count">Account-Plan</span></h2>
+
+  <p>Konsolidiert aus allen Recherchen (Kfmv/Swico-intern ausgeklammert). Reihung nach strategischem Pull-Hebel für zusätzliche SIZ-Nachfrage.</p>
+
+  <table class="matrix">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Person</th>
+        <th>Organisation / Rolle</th>
+        <th>Warum relevant</th>
+        <th>Prio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td><strong>Melinda Bangerter</strong></td>
+        <td>Kfmv (Leitung Bildung) + SVEB-Vorstand + ICT-BB-Vorstand</td>
+        <td>Triple-Mandat – operativer Super-Knoten im SIZ-Umfeld</td>
+        <td><span class="tag" style="background:#ffebee;color:#c62828;">sofort</span></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td><strong>Jessica Silberman Dunant</strong></td>
+        <td>Präsidentin HR Swiss + Prüfungsexpertin HRSE</td>
+        <td>4 500 HR-Mitglieder schreiben Stelleninserate → direkter Pull-Kanal</td>
+        <td><span class="tag" style="background:#ffebee;color:#c62828;">sofort</span></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td><strong>Rémy Hübschi</strong></td>
+        <td>SBFI, stv. Direktor, Leiter Abt. Berufs+Weiterbildung</td>
+        <td>Gatekeeper für Verankerung in eidg. Prüfungsordnungen</td>
+        <td><span class="tag" style="background:#ffebee;color:#c62828;">sofort</span></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td><strong>Bernhard Grämiger</strong></td>
+        <td>Direktor SVEB</td>
+        <td>Dachverband 750 WB-Anbieter, Meinungsbildner</td>
+        <td>hoch</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td><strong>Thomas Schumacher</strong></td>
+        <td>Leiter Swissmem Berufsbildung</td>
+        <td>FUTUREMEM-Revision = ICT-Integration offen</td>
+        <td>hoch</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td><strong>Gerhard Pfister</strong></td>
+        <td>Präsident VSP + Nationalrat Die Mitte</td>
+        <td>Politisches Gewicht + Zugang kommerzielle Privatschulen</td>
+        <td>hoch</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td><strong>Dr. Stefan Leuenberger</strong></td>
+        <td>CEO Kalaidos Bildungsgruppe</td>
+        <td>Grösster Anbieter CH, AKAD bereits SIZ-Partner, Klett-Konzernentscheid strategisch</td>
+        <td>hoch</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td><strong>Reto Schnellmann</strong></td>
+        <td>CEO Miduca (Migros)</td>
+        <td>Klubschule bereits SIZ-Partner, Retention kritisch in 1. Amtsjahr</td>
+        <td>hoch</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td><strong>Heinz Sommer</strong></td>
+        <td>CEO Vantage Education</td>
+        <td>HSO 10 Standorte, Gruppen-Entscheid 15+ Standorte</td>
+        <td>hoch</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td><strong>Roman Studer</strong></td>
+        <td>CEO SBVg (Swiss Banking)</td>
+        <td>Banken-Sektor, SBVg-Paper = Branchenstandard</td>
+        <td>hoch</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td><strong>Urs Furrer</strong></td>
+        <td>Direktor sgv</td>
+        <td>Bei allen BBG-Revisionen am Tisch, KMU-Kanal</td>
+        <td>hoch</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td><strong>Christophe Nydegger</strong></td>
+        <td>Präsident SBBK</td>
+        <td>Kantonale Subventionspolitik, WB-Finanzierung</td>
+        <td>hoch</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td><strong>Jakob Hauri + SFH-Präsidium</strong></td>
+        <td>Prüfungskommission Hauswart FA · SFH</td>
+        <td>ICDL-Monopol in PO 3.31 öffnen</td>
+        <td>mittel-hoch</td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td><strong>Moritz Lüscher</strong></td>
+        <td>Leiter Digitalisierung SBV</td>
+        <td>Revisionen Baupolier 2030 / Bauvorarbeiter 2030</td>
+        <td>mittel-hoch</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td><strong>Patrick Erny</strong></td>
+        <td>Direktor Swiss Retail Federation (ab 1.3.2026)</td>
+        <td>Neuer Direktor mit Profilierungs-Interesse, Detailhandel-KV-Pool</td>
+        <td>mittel-hoch</td>
+      </tr>
+      <tr>
+        <td>+</td>
+        <td><strong>Andreas Eichenberger</strong></td>
+        <td>Präsident swissstaffing</td>
+        <td>Temporär-Markt-Raster – sofortiger Pull in Inseraten</td>
+        <td>mittel</td>
+      </tr>
+      <tr style="background:#fff8e1;">
+        <td>★</td>
+        <td><strong>Andrea Kuhn-Senn</strong></td>
+        <td>VRP KV Business School Zürich AG <em>und</em> VRP Controller Akademie AG</td>
+        <td><strong>Doppelrolle in zwei SIZ-Pflicht-Kanälen</strong> (PU41 läuft dort strukturell). Türöffnerin Nr. 1 auf operativer KV-Zürich-Ebene</td>
+        <td><span class="tag" style="background:#ffebee;color:#c62828;">sofort</span></td>
+      </tr>
+      <tr style="background:#fff8e1;">
+        <td>★</td>
+        <td><strong>Lorenz Lüthi</strong></td>
+        <td>Geschäftsführer VSH, Belpstrasse 41, Bern</td>
+        <td><strong>Erstkontakt für VSH-Gleichwertigkeits-Antrag §2.4 HD</strong>. Operative PQSK-Schnittstelle – er entscheidet, welche Anträge in welchen PQSK-Ausschuss gehen</td>
+        <td><span class="tag" style="background:#ffebee;color:#c62828;">sofort</span></td>
+      </tr>
+      <tr style="background:#fff8e1;">
+        <td>★</td>
+        <td><strong>Fabienne Gross</strong></td>
+        <td>VSH-Präsidium <em>und</em> Stiftung Juventus Schulen</td>
+        <td>Doppelrolle Verband + Schulträgerin. Peer-Gespräch SIZ-GF Schmidt ↔ Gross möglich. <strong>Weg B Pilot-Kandidatin</strong></td>
+        <td><span class="tag" style="background:#ffebee;color:#c62828;">sofort</span></td>
+      </tr>
+      <tr style="background:#fff8e1;">
+        <td>★</td>
+        <td><strong>Matthias Fritschi</strong></td>
+        <td>VSH-Vizepräsident <em>und</em> IFA + IPSO Bildung (10+ Standorte)</td>
+        <td>Doppelrolle Verband + Holding-Entscheider. Weg B für zwei Marken mit einem Entscheider</td>
+        <td>hoch</td>
+      </tr>
+      <tr style="background:#fff8e1;">
+        <td>★</td>
+        <td><strong>Armin Riebli</strong></td>
+        <td>VSH-Vizepräsident <em>und</em> FREI'S Schulen AG (Zentralschweiz)</td>
+        <td>Doppelrolle Verband + Schulträger. Weg B mit schneller Entscheidung</td>
+        <td>hoch</td>
+      </tr>
+      <tr>
+        <td>+</td>
+        <td><strong>Monika Lehmann</strong></td>
+        <td>CEO Controller Akademie AG + Dozentin + Prüfungsexpertin HFP</td>
+        <td>Operativ für SIZ PU41-Kanal im Controller-Segment</td>
+        <td>mittel-hoch</td>
+      </tr>
+      <tr>
+        <td>+</td>
+        <td><strong>Annette Fehr</strong></td>
+        <td>CEO Microwin AG</td>
+        <td>SIZ im Erwachsenen-Reskilling-Kanal (ICTW-Lehrgang) ausbauen</td>
+        <td>mittel</td>
+      </tr>
+      <tr>
+        <td>+</td>
+        <td><strong>Peter V. Kupper + Christoph Höinghaus</strong></td>
+        <td>Co-CEOs Digicomp Academy AG</td>
+        <td>Kein SIZ-Partner heute — Option: B2B-Reseller-Deal oder Upstream-Feeder-Partnerschaft</td>
+        <td>mittel</td>
+      </tr>
+      <tr>
+        <td>+</td>
+        <td><strong>Heinrich Meister</strong></td>
+        <td>CEO+Eigentümer Benedict-Schulen</td>
+        <td>Eigentümergeführt, kurze Entscheidungswege, bereits SIZ-Partner</td>
+        <td>mittel</td>
+      </tr>
+      <tr>
+        <td>+</td>
+        <td><strong>Sandra von May-Granelli</strong></td>
+        <td>CEO+Eigentümerin Feusi + VSP-Vorstand</td>
+        <td>Doppelrolle Schule+Verband</td>
+        <td>mittel</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="recommendation" style="margin-top:1.5rem;">
+    <strong>Empfehlung Account-Plan:</strong> Top-3 (Bangerter, Silberman Dunant, Hübschi) persönlich durch SIZ-GF Schmidt + Leiter Markt &amp; Partner im Q2 2026 kontaktieren. Rang 4–12 sukzessive über 12 Monate. Rang 13+ anlassbezogen bei regulatorischen Fenstern.
+  </div>
+</section>
+
+<section id="fazit">
+  <h2>Fazit &amp; Empfehlungen für den SIZ-VR</h2>
+
+  <div class="summary-box" style="border-left-color:var(--siz-primary);background:linear-gradient(135deg,#fff8e1 0%,#fff 100%);">
+    <h3 style="margin-top:0">Die drei strategischen Kernbotschaften (Teil 2)</h3>
+    <ol>
+      <li><strong>Der Pull für SIZ entsteht nicht auf Schul-Ebene.</strong> Wer nur mit KV Luzern, WKS Bern oder HSO arbeitet, hat das Marktbild nicht verstanden. Entscheidungen fallen oben (SBFI, OdA-Prüfungsordnungen), unten (Arbeitgeber, HR-Verbände, Stelleninserate) und seitlich (Holdings: Kalaidos, Vantage, Miduca — Portfolio-Entscheid über mehrere Standorte).</li>
+      <li><strong>SIZ hat schon heute zwei Gold-Anker und muss sie offensiv nutzen:</strong> (a) SIZ PU41 als Pflicht-Modul für FA Finanz+Rechnungswesen (veb.ch/SwissAccounting), (b) SIZ Smart-User als Doppeldiplom für Handelsdiplom VSH Business (faktisch, aber nicht formalisiert). Beide Anker sind <em>Blueprints</em> für weitere OdA-Verankerungen (Hauswart → Treuhand → Baubranche → Pflege → Detailhandel).</li>
+      <li><strong>VSH-Befund ist ein Game-Changer:</strong> ICDL ist <em>NICHT</em> im VSH-Reglement verankert (nur schul-interne Vorkurs-Regeln). §2.4 HD erlaubt <strong>Gleichwertigkeiten durch den Verband</strong>. Das ist der präziseste Hebel, den SIZ im Privatbildungsmarkt hat. Zeitfenster: 18 Monate bis KI-HWD 2027.</li>
+    </ol>
+    <p style="margin-top:1rem;"><strong>Fünf Sofort-Massnahmen für Q2 2026:</strong> (1) Termin mit <strong>Melinda Bangerter</strong> (Kfmv-Bildung, Super-Multiplikator). (2) Termin mit <strong>Jessica Silberman Dunant</strong> (HR Swiss – Stellen-Inseraten-Hebel). (3) Gleichwertigkeits-Antrag SIZ = ICDL in Hauswart-PO bei <strong>Rémy Hübschi</strong> (SBFI) einreichen. (4) <strong>Lorenz Lüthi</strong> (VSH-GF) kontaktieren für Gleichwertigkeits-Antrag §2.4. (5) Peer-Gespräch Schmidt ↔ <strong>Fabienne Gross</strong> (Juventus + VSH-Präs.) für Weg-B-Pilot.</p>
+  </div>
+
+  <div class="summary-box">
+    <h3 style="margin-top:0">Drei Kernbefunde (Teil 1 – Trägerschaft)</h3>
+    <ol>
+      <li><strong>Die SIZ-Governance ist ein Träger-Lenkungsorgan, kein klassischer Aufsichtsrat.</strong> Alle vier VR-Mitglieder halten Top-Ämter in ihren Trägerverbänden. Vorteil: direkte Legitimation und Anbindung. Nachteil: keine unabhängige Aussensicht, keine Vertretung der Absatzseite (Schulen, Kunden).</li>
+      <li><strong>Alain Gut ist der dominante Knoten.</strong> SIZ-VRP + Swico-Vorstand + Präs. ICT-Berufsbildung + digitalswitzerland-Bildungschef + economiesuisse-B&amp;F + IBM. Gleichzeitige Rolle bei SIZ und bei dem Verband, dessen Zertifikate (AI Business, Cyber Security Specialist) zunehmend in SIZ-Terrain expandieren. Sowohl grösster Hebel als auch grösstes strukturelles Governance-Thema.</li>
+      <li><strong>Die echte Schwesterbeziehung ist kv edupool.</strong> Gleiche Trägerschaft, ~70–80 % gleiche Schulen, SIZ bereits ins Handelsschul-Bundle integriert. Neue GL auf beiden Seiten (Wespi 2023, Schmidt 2024) bietet ein offenes Zeitfenster für Neuaufladung der Beziehung. ~4 000 zusätzliche SIZ-Prüfungen/Jahr theoretisch möglich, wenn Sachbearbeiter-Programme analog zur Handelsschule mit SIZ-Modul gebündelt würden.</li>
+    </ol>
+  </div>
+
+  <h3>Konkrete Empfehlungen</h3>
+
+  <div class="recommendation"><strong>1. Gut-Governance-Klärung.</strong> Der SIZ-VR sollte intern dokumentieren, wie mit der Doppelrolle Gut (SIZ + ICT-Berufsbildung) umgegangen wird. Empfehlung: Ausstand bei Themen, die direkt die Abgrenzung "modulare ICT-Zertifikate vs. Fachausweise" betreffen; Rollen-Brief als Vereinbarung mit Gut.</div>
+
+  <div class="recommendation"><strong>2. Peer-Dialog Schmidt ↔ Wespi institutionalisieren.</strong> Quartalsweises GF-Frühstück SIZ/kv edupool. Zwei gemeinsame Produkt-Workshops pro Jahr. Gemeinsamer Auftritt vor den Trägerverbänden als "Kfmv/Swico-Bildungsachse kaufmännisch + digital".</div>
+
+  <div class="recommendation"><strong>3. SB-Bundling-Offensive.</strong> Wie die Handelsschule kv edupool das SIZ-Zertifikat bereits obligatorisch einbettet, könnten auch die SB-Programme (Rechnungswesen, Marketing, HR, Immobilien, Treuhand) ein SIZ-Smart-/Advanced-User-Modul enthalten. Pilot mit einer SB-Richtung, Rollout über 2 Jahre.</div>
+
+  <div class="recommendation"><strong>4. KI-Zertifikate entwickeln – bevor ICT-Berufsbildung das Feld besetzt.</strong> Der Fachausweis "AI Business Specialist" ist bereits in der Roadmap von ICT-Berufsbildung. Ein SIZ-Produkt "AI Practitioner" oder "AI für Anwender" würde die modular/kurz/quereinsteigend-Flanke halten.</div>
+
+  <div class="recommendation">
+    <strong>5. Politisches Fenster "Kaufleute 2023" Kompetenzbereich E nutzen – SIZ als Standard-Nachweis in der KV-Lehre (Sek II) positionieren.</strong>
+    <br><br>
+    <strong>Was ist Sek II?</strong> Das Schweizer Bildungssystem gliedert sich in Sek I (obligatorische Schule bis 9. Klasse), <strong>Sek II = alles nach der Volksschule: Berufslehre (EFZ/EBA), Berufsmatura, Gymnasium, Fachmittelschule</strong> (15–19 Jahre), Tertiär A (FH/Uni) und Tertiär B (HF, eidg. Fachausweise/Diplome). <strong>Die KV-Lehre (Kaufleute EFZ) ist die grösste Sek-II-Ausbildung der Schweiz mit ~12 000–15 000 Lernenden pro Jahr</strong> – ein riesiger Pool, in dem SIZ heute nur punktuell präsent ist.
+    <br><br>
+    <strong>Die Reform "Kaufleute 2023"</strong> (seit August 2023 in Kraft, Kfmv ist Mitträger) hat die KV-Lehre auf 5 Handlungskompetenzbereiche umgestellt:
+    <ul style="margin:0.5rem 0;">
+      <li>A – Handeln in agilen Arbeits- und Organisationsformen</li>
+      <li>B – Interagieren in einem vernetzten Arbeitsumfeld</li>
+      <li>C – Koordinieren von unternehmerischen Arbeitsprozessen</li>
+      <li>D – Gestalten von Beziehungen und Zusammenarbeit</li>
+      <li><strong>E – Einsetzen von Technologien der digitalen Arbeitswelt ← genau SIZ-Territorium</strong></li>
+    </ul>
+    <strong>Konsequenz:</strong> Kompetenzbereich E muss an jeder KV-Berufsfachschule (~100+) geprüft werden. Heute arbeitet jede Schule mit eigenem Raster — es gibt keinen standardisierten Nachweis. Wenn SIZ Smart-User offiziell als <em>empfohlener/anerkannter Nachweis für Kompetenzbereich E</em> in den KV-Qualifikationsverfahren aufgenommen wird, entsteht ein struktureller Volumen-Sprung bei 12–15 000 Lernenden/Jahr.
+    <br><br>
+    <strong>Warum Jositsch + Burkhalter der Hebel sind:</strong> Der Kfmv ist Sozialpartner und Mitträger der KV-Lehre (via BIKAS – Bildung Kaufleute Schweiz und NLQK – Nationale Leitung Qualifikationsverfahren Kaufleute). Daniel Jositsch als Kfmv-Präsident und Sascha Burkhalter als Kfmv-CEO sitzen <strong>gleichzeitig im SIZ-VR und in den Kfmv-Bildungsgremien</strong>. Sie können SIZ auf der KV-Lehr-Ebene einbringen, ohne dass SIZ selbst extern lobbyieren muss.
+    <br><br>
+    <strong>Geschäftspotenzial:</strong> Bereits die Anerkennung in 1 von 5 Kompetenzbereichen würde ~12 000 KV-Lernende/Jahr als strukturelle Basis-Nachfrage bringen – zusätzlich zur bisherigen Weiterbildungsschiene. Wirkungsdauer: 5–7 Jahre bis zur nächsten KV-Reform = stabilste Pull-Quelle überhaupt. Die KV-Berufsschulen werden automatisch zu SIZ-Partnerschulen (sind es teilweise schon, aber nicht flächendeckend).
+  </div>
+
+  <div class="recommendation"><strong>6. Absatzseite in Governance spiegeln.</strong> Die KV-Schulen sind Zahler, nicht repräsentiert. Prüfen: Beirat "Partnerschulen" formell einsetzen (6 Personen, jährlich rotierend), um nicht-VR-Stimme einzubauen – ohne die Aktionärsstruktur zu ändern.</div>
+
+  <div class="recommendation"><strong>7. Romandie-/Tessin-Akquise gemeinsam mit kv edupool.</strong> Beide unterrepräsentiert. Société suisse des employés de commerce Fribourg als Co-Akquise-Case für "kaufmännisch + digital"-Bundle.</div>
+
+  <div class="recommendation"><strong>8. Offene Verifikationen vor externer Nutzung klären</strong>: (a) Aktueller Arbeitgeber von Alain Gut nach IBM-Ende 2025; (b) aktueller Hauptarbeitgeber Adrian Müller (HP vs. Telion); (c) vollständiger Kfmv-Zentralvorstand (Vize, Finanzdelegierte); (d) exakter SIZ-Partnerschul-Abgleich (CSV-Export school.siz.ch).</div>
+</section>
+
+<section id="quellen">
+  <h2>Quellen (Auswahl)</h2>
+  <div class="cards">
+    <div class="card">
+      <div class="card-header">SIZ AG</div>
+      <div class="card-body source">
+        <a href="https://siz.ch/ueber-uns/verwaltungsrat/">siz.ch/verwaltungsrat</a><br>
+        <a href="https://siz.ch/ueber-uns/team/">siz.ch/team</a><br>
+        <a href="https://siz.ch/ueber-uns/pruefungskommission/">siz.ch/pk</a><br>
+        <a href="https://www.moneyhouse.ch/en/company/siz-ag-20937093521">Moneyhouse SIZ AG</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">Kfmv + Umfeld</div>
+      <div class="card-body source">
+        <a href="https://www.kfmv.ch/ueber-uns/kaufmaennischer-verband-schweiz/organisation">kfmv.ch/organisation</a><br>
+        <a href="https://www.kfmv.ch/fileadmin/documents/Geschaeftsberichte/2023_Geschaeftsbericht_kfmv.ch_DE.pdf">Geschäftsbericht 2023</a><br>
+        <a href="https://de.wikipedia.org/wiki/Kaufm%C3%A4nnischer_Verband_Schweiz">Wikipedia Kfmv</a><br>
+        <a href="https://lobbywatch.ch/de/daten/parlamentarier/125/Daniel%20Jositsch">Lobbywatch Jositsch</a><br>
+        <a href="https://fh-hwz.ch/news/sascha-m-burkhalter-neu-im-verwaltungsrat-der-hwz">HWZ Burkhalter</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">Swico + Umfeld</div>
+      <div class="card-body source">
+        <a href="https://www.swico.ch/de/verband/ueber-uns/vorstand/">Swico-Vorstand</a><br>
+        <a href="https://www.swico.ch/de/bildung/schweizerisches-informatik-zertifikat-siz/">Swico zu SIZ</a><br>
+        <a href="https://www.ict-berufsbildung.ch/">ICT-Berufsbildung Schweiz</a><br>
+        <a href="https://www.ict-berufsbildung.ch/dr-alain-gut-wird-praesident-von-ict-berufsbildung-schweiz">Gut Präsidium</a><br>
+        <a href="https://www.swissict.ch/">SwissICT</a> ·
+        <a href="https://www.asut.ch/">asut</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">kv edupool AG</div>
+      <div class="card-body source">
+        <a href="https://www.kv-edupool.ch/de/kv-edupool/ueber-uns/">kv-edupool.ch/über-uns</a><br>
+        <a href="https://www.kv-edupool.ch/de/kv-edupool/verwaltungsrat/">Verwaltungsrat</a><br>
+        <a href="https://www.kv-edupool.ch/de/kv-edupool/team/">Team</a><br>
+        <a href="https://www.kv-edupool.ch/de/kv-edupool/partner/traegerschaft/">Trägerschaft</a><br>
+        <a href="https://www.kv-edupool.ch/de/kv-edupool/partner/angeschlossene-partnerschulen/">Partnerschulen</a><br>
+        <a href="https://www.moneyhouse.ch/en/company/kv-edupool-ag-11134341051">Moneyhouse kv edupool</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">Teil 2 – Holdings</div>
+      <div class="card-body source">
+        <a href="https://www.vantage.ch/en/">Vantage Education</a> ·
+        <a href="https://www.kalaidos.ch/en-GB/Ueber-uns/Unternehmen">Kalaidos</a> ·
+        <a href="https://www.miduca.ch/">Miduca</a> ·
+        <a href="https://academia-group.ch/">Academia</a><br>
+        <a href="https://ipso.ch/ueber-uns">ipso!</a> ·
+        <a href="https://www.swisseducation.com/">SEG</a> ·
+        <a href="https://www.sommet-education.com/">Sommet</a> ·
+        <a href="https://www.juventus.ch/">Juventus</a><br>
+        <a href="https://www.benedict.ch/">Benedict</a> ·
+        <a href="https://www.feusi.ch/">Feusi</a> ·
+        <a href="https://digicomp.ch/">Digicomp</a> ·
+        <a href="https://www.microwin.com/">Microwin</a> ·
+        <a href="https://www.controller-akademie.ch/">Controller Akademie</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">Teil 2 – Label-Geber</div>
+      <div class="card-body source">
+        <a href="https://www.vsh.swiss/">VSH (neu)</a> ·
+        <a href="https://vsh-asec.ch/">VSH alt</a> ·
+        <a href="https://edoniq.ch/">edoniq</a><br>
+        <a href="https://icdlswitzerland.ch/">ICDL CH</a> ·
+        <a href="https://swissinformatics.org/">SI</a> ·
+        <a href="https://www.ecdl.ch/">ECDL</a><br>
+        <a href="https://www.berufsberatung.ch/dyn/show/2886?id=25043">SIZ PU41 Pflicht FA F+RW</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">Teil 2 – Dachverbände / Politik</div>
+      <div class="card-body source">
+        <a href="https://www.sbfi.admin.ch/de/staatssekretaerin">SBFI</a> ·
+        <a href="https://alice.ch/de/sveb/ueber-den-sveb/organe/">SVEB</a> ·
+        <a href="https://www.privatebildungschweiz.ch/">PBS</a><br>
+        <a href="https://www.swiss-schools.ch/">VSP</a> ·
+        <a href="https://www.bch-fps.ch/">BCH-FPS</a> ·
+        <a href="https://www.edk.ch/">EDK</a> ·
+        <a href="https://www.edk.ch/de/sbbk/">SBBK</a><br>
+        <a href="https://www.pruefung-hauswart.ch/">Hauswart BP</a> ·
+        <a href="https://www.sfh.ch/">SFH</a> ·
+        <a href="https://www.veb.ch/">veb.ch</a> ·
+        <a href="https://www.svit.ch/">SVIT</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">Teil 2 – Arbeitgeber / HR</div>
+      <div class="card-body source">
+        <a href="https://www.arbeitgeber.ch/">SAV</a> ·
+        <a href="https://www.economiesuisse.ch/">economiesuisse</a> ·
+        <a href="https://www.sgv-usam.ch/">sgv</a> ·
+        <a href="https://www.swissmem.ch/">Swissmem</a><br>
+        <a href="https://www.swiss-retail.ch/">Swiss Retail</a> ·
+        <a href="https://www.swissstaffing.ch/">swissstaffing</a> ·
+        <a href="https://www.swissbanking.ch/">SBVg</a> ·
+        <a href="https://baumeister.swiss/">SBV</a><br>
+        <a href="https://hr-swiss.ch/">HR Swiss</a> ·
+        <a href="https://zgp.ch/">ZGP</a> ·
+        <a href="https://swissleaders.ch/">Swiss Leaders</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<footer>
+  SIZ AG Ökosystem-Analyse · erstellt April 2026 · Adressat: SIZ-Verwaltungsrat<br>
+  <a href="mailto:f.ruchti@siz.ch">f.ruchti@siz.ch</a> · alle Angaben nach bestem Wissen aus öffentlichen Quellen – strategische Entscheide nur nach interner Verifikation
+</footer>
+
+<script>
+  function toggleAll(open) {
+    document.querySelectorAll('details').forEach(d => { d.open = open; });
+  }
+</script>
+
+</body>
+</html>

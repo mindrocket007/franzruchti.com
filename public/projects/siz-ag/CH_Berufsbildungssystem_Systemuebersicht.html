@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Schweizer Berufsbildungssystem — Systemübersicht</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+:root {
+  --blue:       #185FA5;
+  --blue-light: #E6F1FB;
+  --blue-mid:   #378ADD;
+  --green:      #1D9E75;
+  --green-light:#E1F5EE;
+  --teal:       #0F6E56;
+  --amber:      #BA7517;
+  --amber-light:#FAEEDA;
+  --red:        #A32D2D;
+  --red-light:  #FCEBEB;
+  --purple:     #534AB7;
+  --purple-light:#EEEDFE;
+  --gray:       #444441;
+  --gray-light: #F1EFE8;
+  --gray-mid:   #888780;
+  --border:     #d8d6d0;
+  --bg:         #f7f6f3;
+  --white:      #ffffff;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  background: var(--bg);
+  color: var(--gray);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* TOP BAR */
+.topbar {
+  background: #1a1a18;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.topbar-left { }
+.topbar-title { color: #fff; font-size: 15px; font-weight: 600; }
+.topbar-sub { color: #888; font-size: 11px; margin-top: 2px; font-family: 'IBM Plex Mono', monospace; }
+.topbar-badge {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  color: #888;
+  white-space: nowrap;
+}
+
+/* PAGE */
+.page { max-width: 1360px; margin: 0 auto; padding: 1.5rem 2rem 3rem; }
+
+/* SECTION LABEL */
+.sec-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--gray-mid);
+  margin: 2rem 0 .75rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sec-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+/* PYRAMID — Ebenen-Darstellung */
+.pyramid {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-bottom: 2rem;
+}
+.level {
+  display: flex;
+  align-items: stretch;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: box-shadow .15s;
+}
+.level:hover { box-shadow: 0 2px 10px rgba(0,0,0,.1); }
+.level.active { border-color: currentColor; }
+
+.level-num {
+  width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  flex-shrink: 0;
+  letter-spacing: -.02em;
+}
+.level-main {
+  flex: 1;
+  background: var(--white);
+  padding: .75rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  min-height: 56px;
+}
+.level-title {
+  font-size: 13px;
+  font-weight: 600;
+  min-width: 220px;
+  flex-shrink: 0;
+}
+.level-sub {
+  font-size: 11px;
+  color: #555;
+  flex: 1;
+  min-width: 200px;
+}
+.level-tags {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+.level-detail {
+  display: none;
+  background: var(--gray-light);
+  border-top: 1px solid var(--border);
+  padding: 1rem 1.25rem;
+  font-size: 12px;
+  color: #333;
+  line-height: 1.7;
+}
+.level-detail.open { display: block; }
+.level-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: .75rem 1.5rem;
+  margin-top: .75rem;
+}
+.detail-item { }
+.detail-item strong { font-weight: 600; display: block; color: #222; margin-bottom: 2px; }
+
+/* COLOR VARIANTS */
+.l-sbfi   .level-num { background: #1a1a18; }
+.l-traeger .level-num { background: var(--blue); }
+.l-pk     .level-num { background: var(--blue-mid); }
+.l-po     .level-num { background: var(--teal); }
+.l-wl     .level-num { background: var(--green); }
+.l-qp     .level-num { background: var(--amber); }
+.l-mid    .level-num { background: var(--purple); }
+.l-kurs   .level-num { background: var(--red); }
+.l-kand   .level-num { background: var(--gray); }
+
+/* TAG */
+.tag {
+  display: inline-block;
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.tag-blue   { background: var(--blue-light);   color: var(--blue); }
+.tag-green  { background: var(--green-light);  color: var(--teal); }
+.tag-amber  { background: var(--amber-light);  color: #633806; }
+.tag-purple { background: var(--purple-light); color: var(--purple); }
+.tag-gray   { background: var(--gray-light);   color: var(--gray); }
+.tag-red    { background: var(--red-light);    color: var(--red); }
+
+/* DOCUMENTS OVERVIEW */
+.docs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 8px;
+  margin-bottom: 2rem;
+}
+.doc {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+  border-top: 3px solid var(--border);
+}
+.doc-icon { font-size: 22px; margin-bottom: 6px; }
+.doc-name { font-size: 12px; font-weight: 600; margin-bottom: 2px; }
+.doc-erstellt { font-size: 10px; color: var(--gray-mid); margin-bottom: 2px; }
+.doc-genehmigt { font-size: 10px; color: var(--gray-mid); margin-bottom: 8px; }
+.doc-desc { font-size: 11px; color: #444; line-height: 1.6; }
+
+/* PROCESS FLOW */
+.process {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--border);
+  margin-bottom: 2rem;
+}
+.proc-step {
+  background: var(--white);
+  padding: .875rem .75rem;
+  text-align: center;
+  position: relative;
+}
+.proc-step::after {
+  content: '→';
+  position: absolute;
+  right: -9px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: var(--gray-mid);
+  z-index: 2;
+  background: var(--white);
+}
+.proc-step:last-child::after { display: none; }
+.proc-n {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--blue);
+  margin-bottom: 3px;
+}
+.proc-name { font-size: 11px; font-weight: 600; color: var(--gray); }
+.proc-who  { font-size: 10px; color: var(--gray-mid); margin-top: 2px; }
+
+/* GREMIEN GRID */
+.gremien-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+.gremium {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.gremium-head {
+  padding: .75rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid var(--border);
+}
+.gremium-icon {
+  width: 30px; height: 30px;
+  border-radius: 6px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+.gremium-title { font-size: 12px; font-weight: 600; }
+.gremium-sub { font-size: 10px; margin-top: 1px; }
+.gremium-body { padding: .875rem 1rem; }
+.gr { display: flex; gap: 7px; margin-bottom: 6px; font-size: 11px; align-items: flex-start; }
+.gr:last-child { margin-bottom: 0; }
+.gr-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; margin-top: 5px; }
+.divider { height: 1px; background: var(--border); margin: .625rem 0; }
+
+.g-dark  .gremium-head { background: #f0ede8; }
+.g-dark  .gremium-icon { background: #1a1a18; color: #fff; }
+.g-dark  .gremium-title { color: #1a1a18; }
+.g-dark  .gremium-sub   { color: #888; }
+
+.g-blue  .gremium-head { background: var(--blue-light); }
+.g-blue  .gremium-icon { background: var(--blue); color: #fff; }
+.g-blue  .gremium-title { color: var(--blue); }
+.g-blue  .gremium-sub   { color: var(--blue-mid); }
+
+.g-teal  .gremium-head { background: var(--green-light); }
+.g-teal  .gremium-icon { background: var(--teal); color: #fff; }
+.g-teal  .gremium-title { color: var(--teal); }
+.g-teal  .gremium-sub   { color: var(--green); }
+
+.g-amber .gremium-head { background: var(--amber-light); }
+.g-amber .gremium-icon { background: var(--amber); color: #fff; }
+.g-amber .gremium-title { color: #633806; }
+.g-amber .gremium-sub   { color: var(--amber); }
+
+.g-purple .gremium-head { background: var(--purple-light); }
+.g-purple .gremium-icon { background: var(--purple); color: #fff; }
+.g-purple .gremium-title { color: var(--purple); }
+.g-purple .gremium-sub   { color: #7F77DD; }
+
+.g-gray  .gremium-head { background: var(--gray-light); }
+.g-gray  .gremium-icon { background: var(--gray); color: #fff; }
+.g-gray  .gremium-title { color: #2C2C2A; }
+.g-gray  .gremium-sub   { color: var(--gray-mid); }
+
+/* TIMELINE */
+.timeline {
+  display: flex;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--border);
+  gap: 1px;
+  margin-bottom: 2rem;
+}
+.tl {
+  flex: 1;
+  background: var(--white);
+  padding: .75rem .875rem;
+}
+.tl-month { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--blue); font-weight: 500; margin-bottom: 3px; }
+.tl-action { font-size: 11px; font-weight: 600; margin-bottom: 2px; }
+.tl-sub { font-size: 10px; color: var(--gray-mid); }
+
+/* INFO BOXES */
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+.info-box {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+}
+.info-box-title {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: .625rem;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.info-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 5px;
+  font-size: 11px;
+  align-items: flex-start;
+}
+.info-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; margin-top: 5px; }
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 10px;
+  color: var(--gray-mid);
+  border-top: 1px solid var(--border);
+  margin-top: 2rem;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+/* RESPONSIVE */
+@media(max-width: 900px) {
+  .process { grid-template-columns: repeat(4,1fr); }
+  .gremien-grid { grid-template-columns: 1fr 1fr; }
+  .info-grid { grid-template-columns: 1fr; }
+  .level-main { flex-direction: column; align-items: flex-start; gap: 6px; }
+}
+@media(max-width: 600px) {
+  .process { grid-template-columns: repeat(2,1fr); }
+  .gremien-grid { grid-template-columns: 1fr; }
+  .docs-grid { grid-template-columns: 1fr 1fr; }
+  .timeline { flex-direction: column; }
+  .tl + .tl { border-top: 1px solid var(--border); }
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-left">
+    <div class="topbar-title">Schweizer Berufsbildungssystem — Vollständige Systemübersicht</div>
+    <div class="topbar-sub">Grundbildung · Höhere Berufsbildung · Dokumente · Gremien · Ebenen · Klick für Details</div>
+  </div>
+  <div class="topbar-badge">BBG SR 412.10 · SBFI · April 2026</div>
+</div>
+
+<div class="page">
+
+<!-- ═══ EBENEN-ÜBERSICHT ═══ -->
+<div class="sec-label">Ebenen des Systems — von oben nach unten (Klick für Details)</div>
+<div class="pyramid">
+
+  <div class="level l-sbfi" onclick="toggle(this)">
+    <div class="level-num">E1</div>
+    <div class="level-main">
+      <div class="level-title">Gesetzliche Grundlage / SBFI</div>
+      <div class="level-sub">Berufsbildungsgesetz (BBG), Berufsbildungsverordnung (BBV) — erlassen durch Bund / Parlament</div>
+      <div class="level-tags">
+        <span class="tag tag-gray">Höchste Stufe</span>
+        <span class="tag tag-gray">SR 412.10</span>
+      </div>
+    </div>
+    <div class="level-detail">
+      <strong>Was steht auf dieser Ebene?</strong>
+      <div class="level-detail-grid">
+        <div class="detail-item"><strong>Berufsbildungsgesetz (BBG)</strong>Rechtsgrundlage für das gesamte Berufsbildungssystem. Regelt Ziele, Zuständigkeiten, Finanzierung, Qualitätssicherung.</div>
+        <div class="detail-item"><strong>Verantwortlich</strong>SBFI — Staatssekretariat für Bildung, Forschung und Innovation. Bundesebene.</div>
+        <div class="detail-item"><strong>Was wird geregelt</strong>Wer welche Prüfungen durchführen darf, welche Titel vergeben werden, wie Subventionen fliessen. Nicht: welches IT-Zertifikat verlangt wird.</div>
+        <div class="detail-item"><strong>Änderung</strong>Nur durch parlamentarischen Prozess / Bundesrat. Sehr träge, sehr selten.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="level l-traeger" onclick="toggle(this)">
+    <div class="level-num">E2</div>
+    <div class="level-main">
+      <div class="level-title">Trägerschaft / OdA (Organisation der Arbeitswelt)</div>
+      <div class="level-sub">Berufsverbände, Branchenorganisationen — erarbeiten die Prüfungsordnung, verantworten den Beruf</div>
+      <div class="level-tags">
+        <span class="tag tag-blue">Strategischer Hebel</span>
+        <span class="tag tag-blue">Schlüsselakteur</span>
+      </div>
+    </div>
+    <div class="level-detail">
+      <strong>Was macht die Trägerschaft?</strong>
+      <div class="level-detail-grid">
+        <div class="detail-item"><strong>Kernaufgabe</strong>Erarbeitet und verantwortet die Prüfungsordnung (PO). Bestimmt, welche Kompetenzen, Zulassungsbedingungen und Zertifikate verlangt werden.</div>
+        <div class="detail-item"><strong>Beispiele</strong>HRSE (Human Resources), GS1 Schweiz (Logistik), examen.ch (Rechnungswesen), GastroSuisse, ICT-Berufsbildung Schweiz, SKKAB (Kaufleute)</div>
+        <div class="detail-item"><strong>Wählt</strong>Mitglieder der Prüfungskommission (alle 3 Jahre)</div>
+        <div class="detail-item"><strong>Genehmigt</strong>Wegleitung und alle Ergänzungsdokumente</div>
+        <div class="detail-item"><strong>Einfluss auf IT-Zertifikat</strong>ENTSCHEIDEND — die Trägerschaft bestimmt, ob ECDL, ICDL, SIZ oder «gleichwertig» in die PO kommt</div>
+        <div class="detail-item"><strong>Revisionsrhythmus</strong>Keine feste Pflicht für höhere Berufsbildung. Grundbildung: min. alle 5 Jahre.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="level l-po" onclick="toggle(this)">
+    <div class="level-num">E3</div>
+    <div class="level-main">
+      <div class="level-title">Prüfungsordnung (PO)</div>
+      <div class="level-sub">Erstellt: Trägerschaft — Genehmigt: SBFI — Publiziert: Bundesblatt</div>
+      <div class="level-tags">
+        <span class="tag tag-green">Rechtlich bindend</span>
+        <span class="tag tag-green">Öffentlich einsehbar</span>
+      </div>
+    </div>
+    <div class="level-detail">
+      <strong>Was steht in der Prüfungsordnung?</strong>
+      <div class="level-detail-grid">
+        <div class="detail-item"><strong>Berufsbild</strong>Definition des Berufs, Tätigkeiten, Anforderungen</div>
+        <div class="detail-item"><strong>Zulassungsbedingungen (formal)</strong>EFZ/Matura, Berufspraxis, Pflicht-Zertifikate (z.B. ICDL, Nothilfe)</div>
+        <div class="detail-item"><strong>Prüfungsaufbau</strong>Anzahl Prüfungsteile, Gewichtung, schriftlich/mündlich/praktisch</div>
+        <div class="detail-item"><strong>Notensystem</strong>Skala, Bestehensregeln, Repetitionsrecht</div>
+        <div class="detail-item"><strong>Titel</strong>Gesetzlich geschützter Titel (z.B. «HR-Fachfrau mit eidg. Fachausweis»)</div>
+        <div class="detail-item"><strong>Änderung</strong>Trägerschaft erarbeitet → SBFI genehmigt → Bundesblatt → in Kraft. Dauert 1–3 Jahre.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="level l-pk" onclick="toggle(this)">
+    <div class="level-num">E4</div>
+    <div class="level-main">
+      <div class="level-title">Prüfungskommission (PK)</div>
+      <div class="level-sub">Operatives Herzstück — erarbeitet Wegleitung, entscheidet Zulassungen und Gleichwertigkeiten</div>
+      <div class="level-tags">
+        <span class="tag tag-blue">Operativer Hebel</span>
+        <span class="tag tag-blue">Gleichwertigkeit Ziff. 2.21k</span>
+      </div>
+    </div>
+    <div class="level-detail">
+      <strong>Aufgaben der Prüfungskommission</strong>
+      <div class="level-detail-grid">
+        <div class="detail-item"><strong>Zusammensetzung</strong>Min. 6 Mitglieder aus Trägerschaft, Expertinnen/Experten, Arbeitsmarkt. Amtsdauer 3 Jahre. Gewählt durch Trägerschaft.</div>
+        <div class="detail-item"><strong>Erarbeitet</strong>Wegleitung, Notenkonzept, Prüfungsaufgaben, Hilfsmittelliste</div>
+        <div class="detail-item"><strong>Entscheidet über</strong>Zulassung zur Prüfung, Gleichwertigkeitsanerkennungen (PO Ziff. 2.21k), definitive Noten, Bestehen</div>
+        <div class="detail-item"><strong>Gleichwertigkeit</strong>Kann auf Antrag andere Zertifikate als gleichwertig anerkennen — ohne PO-Revision. Schnellster Weg für neue Zertifikate.</div>
+        <div class="detail-item"><strong>Prüfungsleitung</strong>Administrativ zugeordnet — organisiert Abläufe, Budget, Korrespondenz</div>
+        <div class="detail-item"><strong>Prüfungssekretariat</strong>Offizielle Kontaktstelle für Kandidierende, verarbeitet Anmeldungen, bestellt Fachausweise</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="level l-wl" onclick="toggle(this)">
+    <div class="level-num">E5</div>
+    <div class="level-main">
+      <div class="level-title">Wegleitung (WL)</div>
+      <div class="level-sub">Erstellt: Prüfungskommission — Genehmigt: Trägerschaft — Hier stehen die konkreten Zertifikate!</div>
+      <div class="level-tags">
+        <span class="tag tag-green">Operative Grundlage</span>
+        <span class="tag tag-green">Jährlich anpassbar</span>
+      </div>
+    </div>
+    <div class="level-detail">
+      <strong>Was steht in der Wegleitung — und was nicht in der PO?</strong>
+      <div class="level-detail-grid">
+        <div class="detail-item"><strong>Konkrete Zulassungsunterlagen</strong>Welches Zertifikat genau (z.B. «ICDL Base» oder «SIZ I oder gleichwertiges Zertifikat»), welche Dokumente, welche Fristen</div>
+        <div class="detail-item"><strong>Prüfungsablauf im Detail</strong>Reihenfolge, Zeiten, Räume, Instruktionen, erlaubte Hilfsmittel</div>
+        <div class="detail-item"><strong>Bewertungsraster</strong>Kriterien und Gewichtungen pro Prüfungsteil</div>
+        <div class="detail-item"><strong>Ergänzende Listen</strong>Pflanzenliste (Hauswart), Methodenliste, Softwareliste etc. je nach Beruf</div>
+        <div class="detail-item"><strong>Vorteil gegenüber PO</strong>Keine SBFI-Genehmigung nötig — Trägerschaft genehmigt allein. Anpassung innerhalb Monate möglich.</div>
+        <div class="detail-item"><strong>Strategie</strong>Neues Zertifikat zuerst in Wegleitung aufnehmen (schnell), dann bei nächster PO-Revision in PO verankern (dauerhaft)</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="level l-qp" onclick="toggle(this)">
+    <div class="level-num">E6</div>
+    <div class="level-main">
+      <div class="level-title">Qualifikationsprofil / Bildungsplan / Lernzielkatalog</div>
+      <div class="level-sub">Erstellt: Trägerschaft / OdA — Anhang zur Wegleitung oder eigenständiges Dokument</div>
+      <div class="level-tags">
+        <span class="tag tag-amber">Handlungskompetenzen</span>
+        <span class="tag tag-amber">Berufsbeschreibung</span>
+      </div>
+    </div>
+    <div class="level-detail">
+      <strong>Was enthält das Qualifikationsprofil?</strong>
+      <div class="level-detail-grid">
+        <div class="detail-item"><strong>Handlungskompetenzbereiche (HKB)</strong>Übergeordnete Themenbereiche (z.B. «Administration», «Gebäudetechnik», «Führung»)</div>
+        <div class="detail-item"><strong>Handlungskompetenzen (HK)</strong>Konkrete Fähigkeiten pro HKB — nummeriert, messbar, prüfbar</div>
+        <div class="detail-item"><strong>Leistungsziele</strong>Was genau die Person können muss — Basis für Prüfungsaufgaben</div>
+        <div class="detail-item"><strong>Taxonomiestufen</strong>K1 (Wissen) bis K6 (Beurteilen/Erschaffen) — Komplexitätsniveau jedes Ziels</div>
+        <div class="detail-item"><strong>Wo relevant</strong>Bestimmt, ob und wo IT-Kompetenzen im Beruf verankert sind — auch ohne Pflicht-Zertifikat</div>
+        <div class="detail-item"><strong>Grundbildung</strong>Heisst hier «Bildungsplan» — regelt alle drei Lernorte (Betrieb, Schule, ÜK)</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="level l-mid" onclick="toggle(this)">
+    <div class="level-num">E7</div>
+    <div class="level-main">
+      <div class="level-title">Modulidentifikation (MID) / Modulbeschreibung</div>
+      <div class="level-sub">Erstellt: Zertifizierungsorganisation / Bildungsanbieter — detaillierte Lernzielbeschreibung pro Modul/Kurs</div>
+      <div class="level-tags">
+        <span class="tag tag-purple">Kursebene</span>
+        <span class="tag tag-purple">Lernziele</span>
+        <span class="tag tag-purple">NEU in diesem Überblick</span>
+      </div>
+    </div>
+    <div class="level-detail">
+      <strong>Was ist eine Modulidentifikation (MID)?</strong>
+      <div class="level-detail-grid">
+        <div class="detail-item"><strong>Definition</strong>Das detaillierteste Dokument im Ausbildungssystem — beschreibt einen einzelnen Kurs oder ein Modul vollständig</div>
+        <div class="detail-item"><strong>Inhaltliche Richtziele</strong>Übergeordnete Lernziele des Moduls (z.B. «KI sicher und effizient im Arbeitsalltag einsetzen»)</div>
+        <div class="detail-item"><strong>Handlungsziele/Lernziele</strong>Nummerierte, hierarchische Lernziele (1, 1.1, 1.1.1) — was genau kann die Person nach dem Kurs</div>
+        <div class="detail-item"><strong>Empfohlene Unterrichtszeit</strong>Richtwert in Lektionen (z.B. 20 Lektionen) — inkl. Prüfungsvorbereitung</div>
+        <div class="detail-item"><strong>Änderungsnachweis</strong>Versionierung mit Datum — zeigt Aktualität des Moduls</div>
+        <div class="detail-item"><strong>Beispiel</strong>«KI Advanced-User — Umgang mit KI im Arbeitsalltag» (V1, 26.02.2026, 20 Lektionen): KI-Grundlagen, Prompting, Output-Kritik, Datenschutz im KI-Kontext</div>
+        <div class="detail-item"><strong>Verantwortlich</strong>Die Zertifizierungsorganisation (z.B. SIZ, ICT-Berufsbildung) oder der Bildungsanbieter — nicht SBFI</div>
+        <div class="detail-item"><strong>Verhältnis zur PO/WL</strong>MID ist unterhalb der Wegleitung — sie setzt die Lernziele aus dem Qualifikationsprofil in konkrete Kursformate um</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="level l-kurs" onclick="toggle(this)">
+    <div class="level-num">E8</div>
+    <div class="level-main">
+      <div class="level-title">Vorbereitungslehrgang / Kursangebot</div>
+      <div class="level-sub">Durchgeführt: Bildungsanbieter (privat/öffentlich) — staatlich nicht reglementiert, freiwillig</div>
+      <div class="level-tags">
+        <span class="tag tag-gray">Freiwillig</span>
+        <span class="tag tag-gray">Kein SBFI-Stempel</span>
+        <span class="tag tag-gray">Schnellster Einstieg</span>
+      </div>
+    </div>
+    <div class="level-detail">
+      <strong>Vorbereitungslehrgänge — was du wissen musst</strong>
+      <div class="level-detail-grid">
+        <div class="detail-item"><strong>Rechtsstatus</strong>Staatlich nicht reglementiert — keine SBFI-Akkreditierung nötig. Freiwillig für Kandidierende.</div>
+        <div class="detail-item"><strong>Kosten</strong>CHF 5'000–12'000 je nach Lehrgang. 50% Bundesrückvergütung nach bestandener Prüfung für Kandidierende.</div>
+        <div class="detail-item"><strong>Gelistet bei</strong>Trägerschaft (Website), meldeliste.ch — inoffizielle Liste, kein Qualitätsstempel</div>
+        <div class="detail-item"><strong>Dauer</strong>Typisch 2–4 Semester, 400–1000 Lektionen berufsbegleitend</div>
+        <div class="detail-item"><strong>Können integrieren</strong>Zusatzmodule (z.B. IT-Zertifikat, Nothilfe, Berufsbildnerkurs) als Kursbestandteil anbieten — ohne jede Regeländerung</div>
+        <div class="detail-item"><strong>Strategisch</strong>Schnellster Weg zur Marktpräsenz — Bildungsanbieter kann neue Module direkt einbauen, bevor sie in WL/PO stehen</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="level l-kand" onclick="toggle(this)">
+    <div class="level-num">E9</div>
+    <div class="level-main">
+      <div class="level-title">Kandidatin / Kandidat</div>
+      <div class="level-sub">Meldet sich zur Prüfung an — muss alle Zulassungsbedingungen bis zur Anmeldefrist erfüllen</div>
+      <div class="level-tags">
+        <span class="tag tag-gray">Endempfänger</span>
+        <span class="tag tag-gray">Fachausweis / Diplom</span>
+      </div>
+    </div>
+    <div class="level-detail">
+      <strong>Was muss die kandidierende Person nachweisen?</strong>
+      <div class="level-detail-grid">
+        <div class="detail-item"><strong>Grundbildung</strong>EFZ oder gleichwertiger Abschluss Sekundarstufe II (Matura, FMS etc.)</div>
+        <div class="detail-item"><strong>Berufspraxis</strong>Typisch 2–4 Jahre im Berufsfeld, mind. 80% Pensum</div>
+        <div class="detail-item"><strong>Vorzertifikate</strong>Gemäss Wegleitung: IT-Zertifikat, Nothilfe, BLS-AED, Berufsbildnerkurs etc. — berufsspezifisch</div>
+        <div class="detail-item"><strong>Zulassung</strong>Prüfungskommission entscheidet — schriftliche Bestätigung. Vorabklärung möglich (kostenpflichtig).</div>
+        <div class="detail-item"><strong>Abschluss</strong>Eidg. Fachausweis (FA) bei BP / Eidg. Diplom (ED) bei HFP — ausgestellt durch SBFI</div>
+        <div class="detail-item"><strong>Finanzierung</strong>Bundesbeitrag bis 50% der Lehrgangskosten nach bestandener Prüfung — direkt beantragt beim Bund</div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /pyramid -->
+
+<!-- ═══ ALLE DOKUMENTE ═══ -->
+<div class="sec-label">Alle Dokumente im System — Wer erstellt was, wer genehmigt?</div>
+<div class="docs-grid">
+
+  <div class="doc" style="border-top-color:var(--blue)">
+    <div class="doc-icon">📘</div>
+    <div class="doc-name">Prüfungsordnung (PO)</div>
+    <div class="doc-erstellt">Erstellt: Trägerschaft / OdA</div>
+    <div class="doc-genehmigt">Genehmigt: SBFI · Publiziert: Bundesblatt</div>
+    <div class="doc-desc">Höchste Ebene. Enthält Berufsbild, Zulassungsbedingungen (formal), Prüfungsaufbau, Notenregeln, gesetzlich geschützten Titel. Änderung dauert 1–3 Jahre.</div>
+  </div>
+
+  <div class="doc" style="border-top-color:var(--green)">
+    <div class="doc-icon">📗</div>
+    <div class="doc-name">Wegleitung (WL)</div>
+    <div class="doc-erstellt">Erstellt: Prüfungskommission</div>
+    <div class="doc-genehmigt">Genehmigt: Trägerschaft (kein SBFI)</div>
+    <div class="doc-desc">Operative Grundlage. Präzisiert die PO. Enthält konkrete Zulassungsunterlagen (welches IT-Zertifikat genau), Prüfungsablauf, Bewertungsraster. Anpassung innerhalb Monate möglich.</div>
+  </div>
+
+  <div class="doc" style="border-top-color:var(--amber)">
+    <div class="doc-icon">📙</div>
+    <div class="doc-name">Qualifikationsprofil</div>
+    <div class="doc-erstellt">Erstellt: Trägerschaft / OdA</div>
+    <div class="doc-genehmigt">Anhang zur Wegleitung oder eigenständig</div>
+    <div class="doc-desc">Beschreibt alle Handlungskompetenzbereiche (HKB) und Handlungskompetenzen. Basis für alle Prüfungsaufgaben. Zeigt, ob IT-Kompetenzen im Beruf verankert sind.</div>
+  </div>
+
+  <div class="doc" style="border-top-color:var(--purple)">
+    <div class="doc-icon">📓</div>
+    <div class="doc-name">Modulidentifikation (MID)</div>
+    <div class="doc-erstellt">Erstellt: Zertifizierungsorg. / Bildungsanbieter</div>
+    <div class="doc-genehmigt">Kein SBFI / Trägerschaft — intern</div>
+    <div class="doc-desc">Detaillierteste Ebene. Pro Modul: Richtziele, nummerierte Handlungs-/Lernziele (1 / 1.1 / 1.1.1), empfohlene Unterrichtszeit, Versionierung. Unterhalb der Wegleitung.</div>
+  </div>
+
+  <div class="doc" style="border-top-color:#555">
+    <div class="doc-icon">📊</div>
+    <div class="doc-name">Notenkonzept</div>
+    <div class="doc-erstellt">Erstellt: Prüfungskommission</div>
+    <div class="doc-genehmigt">Trägerschaft</div>
+    <div class="doc-desc">Gewichtungen der Prüfungsteile, Berechnung Gesamtnote, Bestehensregeln. Basiert auf PO und Wegleitung.</div>
+  </div>
+
+  <div class="doc" style="border-top-color:#555">
+    <div class="doc-icon">📋</div>
+    <div class="doc-name">Ausschreibung</div>
+    <div class="doc-erstellt">Erstellt: Prüfungssekretariat</div>
+    <div class="doc-genehmigt">Prüfungsleitung — jährlich</div>
+    <div class="doc-desc">Prüfungstermine, Anmeldefristen, Kosten, Anmeldemodalitäten. Enthält alle einzureichenden Unterlagen für die jeweilige Prüfung.</div>
+  </div>
+
+  <div class="doc" style="border-top-color:#555">
+    <div class="doc-icon">📊</div>
+    <div class="doc-name">Hilfsmittelliste</div>
+    <div class="doc-erstellt">Erstellt: Prüfungskommission</div>
+    <div class="doc-genehmigt">Versand mit Aufgebot</div>
+    <div class="doc-desc">Erlaubte/verbotene Hilfsmittel (Open Book, kein WLAN, BYOD etc.). Für Kandidierende bindend während der Prüfung.</div>
+  </div>
+
+  <div class="doc" style="border-top-color:#555">
+    <div class="doc-icon">💰</div>
+    <div class="doc-name">Kostenregelung</div>
+    <div class="doc-erstellt">Erstellt: Prüfungskommission</div>
+    <div class="doc-genehmigt">Jährlich angepasst</div>
+    <div class="doc-desc">Prüfungsgebühren, Abmeldekosten, Repetentenvergünstigungen, Rückerstattungsregeln.</div>
+  </div>
+
+  <div class="doc" style="border-top-color:#555">
+    <div class="doc-icon">📑</div>
+    <div class="doc-name">Berufsverzeichnis (BVZ)</div>
+    <div class="doc-erstellt">Erstellt / gepflegt: SBFI</div>
+    <div class="doc-genehmigt">Öffentlich — becc.admin.ch</div>
+    <div class="doc-desc">Listet alle genehmigten Berufe mit PO-Datum. Zeigt, wie alt die aktuelle PO ist und wann eine Revision ansteht. Eingang für Recherche.</div>
+  </div>
+
+  <div class="doc" style="border-top-color:#555">
+    <div class="doc-icon">📰</div>
+    <div class="doc-name">Bundesblatt-Publikation</div>
+    <div class="doc-erstellt">Publiziert: SBFI</div>
+    <div class="doc-genehmigt">Öffentlich — bundesblatt.admin.ch</div>
+    <div class="doc-desc">Jede neue oder revidierte PO wird vor Inkrafttreten im Bundesblatt ausgeschrieben. Einsprachen möglich. Pflichtschritt im Revisionsverfahren.</div>
+  </div>
+
+</div>
+
+<!-- ═══ GREMIEN ═══ -->
+<div class="sec-label">Gremien und Akteure</div>
+<div class="gremien-grid">
+
+  <div class="gremium g-dark">
+    <div class="gremium-head">
+      <div class="gremium-icon">🏛</div>
+      <div>
+        <div class="gremium-title">SBFI</div>
+        <div class="gremium-sub">Staatssekretariat für Bildung, Forschung und Innovation</div>
+      </div>
+    </div>
+    <div class="gremium-body">
+      <div class="gr"><div class="gr-dot" style="background:#555"></div><div>Genehmigt Prüfungsordnungen, publiziert im Bundesblatt</div></div>
+      <div class="gr"><div class="gr-dot" style="background:#555"></div><div>Stellt eidg. Fachausweise und Diplome aus</div></div>
+      <div class="gr"><div class="gr-dot" style="background:#555"></div><div>Überwacht Prüfungsdurchführung, erste Rekursinstanz</div></div>
+      <div class="gr"><div class="gr-dot" style="background:#555"></div><div>Pflegt das Berufsverzeichnis (BVZ)</div></div>
+      <div class="gr"><div class="gr-dot" style="background:#555"></div><div>Zahlt Bundesbeiträge (50%) an Absolvierende</div></div>
+    </div>
+  </div>
+
+  <div class="gremium g-blue">
+    <div class="gremium-head">
+      <div class="gremium-icon">🏢</div>
+      <div>
+        <div class="gremium-title">Trägerschaft / OdA</div>
+        <div class="gremium-sub">Organisation der Arbeitswelt — Berufsverband</div>
+      </div>
+    </div>
+    <div class="gremium-body">
+      <div class="gr"><div class="gr-dot" style="background:var(--blue)"></div><div>Erarbeitet Prüfungsordnung — entscheidet über IT-Zertifikat-Anforderungen</div></div>
+      <div class="gr"><div class="gr-dot" style="background:var(--blue)"></div><div>Wählt Prüfungskommission (alle 3 Jahre)</div></div>
+      <div class="gr"><div class="gr-dot" style="background:var(--blue)"></div><div>Genehmigt Wegleitung und Ergänzungsdokumente</div></div>
+      <div class="gr"><div class="gr-dot" style="background:var(--blue)"></div><div>Verantwortet Qualität und Aktualität des Berufsbildes</div></div>
+      <div class="divider"></div>
+      <span class="tag tag-blue">⭐ Primärer strategischer Kontakt</span>
+    </div>
+  </div>
+
+  <div class="gremium g-teal">
+    <div class="gremium-head">
+      <div class="gremium-icon">⚖️</div>
+      <div>
+        <div class="gremium-title">Prüfungskommission (PK)</div>
+        <div class="gremium-sub">Operatives Herzstück</div>
+      </div>
+    </div>
+    <div class="gremium-body">
+      <div class="gr"><div class="gr-dot" style="background:var(--teal)"></div><div>Erarbeitet Wegleitung, Notenkonzept, Prüfungsaufgaben</div></div>
+      <div class="gr"><div class="gr-dot" style="background:var(--teal)"></div><div>Entscheidet über Zulassung und Gleichwertigkeit (Ziff. 2.21k)</div></div>
+      <div class="gr"><div class="gr-dot" style="background:var(--teal)"></div><div>Min. 6 Mitglieder, Amtsdauer 3 Jahre</div></div>
+      <div class="gr"><div class="gr-dot" style="background:var(--teal)"></div><div>Unabhängig bei Bewertung — kein Weisungsrecht der OdA</div></div>
+      <div class="divider"></div>
+      <span class="tag tag-green">⭐ Kurzfristiger Hebel (Gleichwertigkeit)</span>
+    </div>
+  </div>
+
+  <div class="gremium g-amber">
+    <div class="gremium-head">
+      <div class="gremium-icon">📋</div>
+      <div>
+        <div class="gremium-title">Prüfungsleitung & Sekretariat</div>
+        <div class="gremium-sub">Administration — 1st-Line-Kontakt für Kandidierende</div>
+      </div>
+    </div>
+    <div class="gremium-body">
+      <div class="gr"><div class="gr-dot" style="background:var(--amber)"></div><div>Organisation, Korrespondenz, Prüfungspläne, Budget</div></div>
+      <div class="gr"><div class="gr-dot" style="background:var(--amber)"></div><div>Verarbeitet Anmeldungen, prüft Zulassungsunterlagen</div></div>
+      <div class="gr"><div class="gr-dot" style="background:var(--amber)"></div><div>Erstellt Zulassungsentscheide, Aufgebote, Resultate</div></div>
+      <div class="gr"><div class="gr-dot" style="background:var(--amber)"></div><div>Bestellt Fachausweise beim SBFI</div></div>
+    </div>
+  </div>
+
+  <div class="gremium g-amber">
+    <div class="gremium-head">
+      <div class="gremium-icon">🔍</div>
+      <div>
+        <div class="gremium-title">Prüfungsexpertinnen/-experten (PEX)</div>
+        <div class="gremium-sub">Fachliche Prüfungsdurchführung</div>
+      </div>
+    </div>
+    <div class="gremium-body">
+      <div class="gr"><div class="gr-dot" style="background:var(--amber)"></div><div>Vorgeschlagen und gewählt durch Prüfungskommission</div></div>
+      <div class="gr"><div class="gr-dot" style="background:var(--amber)"></div><div>Min. eidg. Fachausweis im geprüften Bereich</div></div>
+      <div class="gr"><div class="gr-dot" style="background:var(--amber)"></div><div>Min. 2 PEX pro Prüfungsteil — unabhängig bei Bewertung</div></div>
+      <div class="gr"><div class="gr-dot" style="background:var(--amber)"></div><div>Öffentliche Aufgabe: Amtsgeheimnis, Ausstandspflicht</div></div>
+    </div>
+  </div>
+
+  <div class="gremium g-gray">
+    <div class="gremium-head">
+      <div class="gremium-icon">🏫</div>
+      <div>
+        <div class="gremium-title">Bildungsanbieter</div>
+        <div class="gremium-sub">Vorbereitungslehrgänge — staatlich nicht reglementiert</div>
+      </div>
+    </div>
+    <div class="gremium-body">
+      <div class="gr"><div class="gr-dot" style="background:var(--gray)"></div><div>Führen Vorbereitungslehrgänge durch (400–1000 L.)</div></div>
+      <div class="gr"><div class="gr-dot" style="background:var(--gray)"></div><div>Keine SBFI-Akkreditierung — freier Markt</div></div>
+      <div class="gr"><div class="gr-dot" style="background:var(--gray)"></div><div>Können Zusatzmodule (IT, Nothilfe etc.) integrieren</div></div>
+      <div class="gr"><div class="gr-dot" style="background:var(--gray)"></div><div>Gelistet auf Website der Trägerschaft / meldeliste.ch</div></div>
+      <div class="divider"></div>
+      <span class="tag tag-gray">⭐ Schnellster Einstieg ohne Regeländerung</span>
+    </div>
+  </div>
+
+</div>
+
+<!-- ═══ PROZESS PO-REVISION ═══ -->
+<div class="sec-label">Prozess — Neue oder revidierte Prüfungsordnung (14 Schritte)</div>
+<div class="process">
+  <div class="proc-step">
+    <div class="proc-n">1–2</div>
+    <div class="proc-name">SBFI kontaktieren</div>
+    <div class="proc-who">Trägerschaft, zwingend vor Start</div>
+  </div>
+  <div class="proc-step">
+    <div class="proc-n">3–5</div>
+    <div class="proc-name">Qualifikationsprofil erarbeiten</div>
+    <div class="proc-who">Trägerschaft + Experten</div>
+  </div>
+  <div class="proc-step">
+    <div class="proc-n">6</div>
+    <div class="proc-name">PO + WL verfassen</div>
+    <div class="proc-who">Trägerschaft nach SBFI-Leittexten</div>
+  </div>
+  <div class="proc-step">
+    <div class="proc-n">7–9</div>
+    <div class="proc-name">Qualitätssicherung + Übersetzung</div>
+    <div class="proc-who">SBFI + Trägerschaft (D/F/I)</div>
+  </div>
+  <div class="proc-step">
+    <div class="proc-n">10–11</div>
+    <div class="proc-name">Einreichen + Bundesblatt</div>
+    <div class="proc-who">Trägerschaft → SBFI → Bundesblatt</div>
+  </div>
+  <div class="proc-step">
+    <div class="proc-n">12–13</div>
+    <div class="proc-name">Erlass + Genehmigung</div>
+    <div class="proc-who">Trägerschaft erlässt · SBFI genehmigt</div>
+  </div>
+  <div class="proc-step">
+    <div class="proc-n">14</div>
+    <div class="proc-name">Publikation BVZ</div>
+    <div class="proc-who">SBFI · Inkrafttreten</div>
+  </div>
+</div>
+
+<!-- ═══ JAHRESABLAUF ═══ -->
+<div class="sec-label">Typischer Jahresablauf — Von Ausschreibung bis Fachausweis</div>
+<div class="timeline">
+  <div class="tl">
+    <div class="tl-month">JAN</div>
+    <div class="tl-action">Ausschreibung</div>
+    <div class="tl-sub">Anmeldung online, Unterlagen hochladen, schriftlich einsenden</div>
+  </div>
+  <div class="tl">
+    <div class="tl-month">FEB</div>
+    <div class="tl-action">Zulassungsprüfung</div>
+    <div class="tl-sub">PK prüft Unterlagen, verschickt Entscheide (10–20 Arbeitstage)</div>
+  </div>
+  <div class="tl">
+    <div class="tl-month">MRZ–AUG</div>
+    <div class="tl-action">Vorbereitung</div>
+    <div class="tl-sub">Lehrgang, Vorzertifikate erwerben (IT, Nothilfe, Berufsbildner), Dokumentation erstellen</div>
+  </div>
+  <div class="tl">
+    <div class="tl-month">SEP–OKT</div>
+    <div class="tl-action">Prüfung</div>
+    <div class="tl-sub">Schriftlich + praktisch + mündlich, zentraler Ort, min. 2 PEX pro Teil</div>
+  </div>
+  <div class="tl">
+    <div class="tl-month">NOV</div>
+    <div class="tl-action">Notensitzung</div>
+    <div class="tl-sub">PK + SBFI-Vertreter. Definitive Noten. Versand Entscheide und Zeugnisse.</div>
+  </div>
+  <div class="tl">
+    <div class="tl-month">NOV–DEZ</div>
+    <div class="tl-action">Fachausweis</div>
+    <div class="tl-sub">SBFI erstellt FA. Übergabe durch PK-Präsident. Bundesbeitrag danach beantragen.</div>
+  </div>
+</div>
+
+<!-- ═══ INFO BOXEN ═══ -->
+<div class="sec-label">Wichtige Zusatzinformationen</div>
+<div class="info-grid">
+
+  <div class="info-box">
+    <div class="info-box-title" style="color:var(--blue)">🔍 Wo finde ich PO-Revisionen?</div>
+    <div class="info-row"><div class="info-dot" style="background:var(--blue)"></div><div><strong>Berufsverzeichnis (BVZ)</strong> — becc.admin.ch: Jeder Beruf zeigt das PO-Datum. Alte PO = Revision wahrscheinlich.</div></div>
+    <div class="info-row"><div class="info-dot" style="background:var(--blue)"></div><div><strong>Bundesblatt</strong> — bundesblatt.admin.ch: Suche nach «Prüfungsordnung» + Berufsname. Alle laufenden Konsultationen öffentlich.</div></div>
+    <div class="info-row"><div class="info-dot" style="background:var(--blue)"></div><div><strong>SBFI Medienmitteilungen</strong> — jährlich im Februar: Übersicht aller neuen/revidierten Berufe des Vorjahres.</div></div>
+    <div class="info-row"><div class="info-dot" style="background:var(--blue)"></div><div><strong>Website der Trägerschaft</strong> — OdA kommuniziert laufende Revisionsprojekte direkt.</div></div>
+    <div class="info-row"><div class="info-dot" style="background:var(--blue)"></div><div><strong>Faustregel</strong>: Grundbildung min. alle 5 Jahre. Höhere Berufsbildung: kein fixes Intervall — auf Bedarf der Wirtschaft.</div></div>
+  </div>
+
+  <div class="info-box">
+    <div class="info-box-title" style="color:var(--teal)">⚡ Wege zur Verankerung neuer Inhalte — nach Geschwindigkeit</div>
+    <div class="info-row"><div class="info-dot" style="background:var(--gray)"></div><div><strong>Sofort (Tage/Wochen):</strong> Bildungsanbieter integriert Modul in Lehrgang — kein Genehmigungsweg</div></div>
+    <div class="info-row"><div class="info-dot" style="background:var(--amber)"></div><div><strong>Monate:</strong> Prüfungskommission anerkennt Gleichwertigkeit per Beschluss (PO Ziff. 2.21k)</div></div>
+    <div class="info-row"><div class="info-dot" style="background:var(--green)"></div><div><strong>6–18 Monate:</strong> Trägerschaft nimmt neues Zertifikat in Wegleitung auf (nur Trägerschaft genehmigt)</div></div>
+    <div class="info-row"><div class="info-dot" style="background:var(--blue)"></div><div><strong>1–3 Jahre:</strong> PO-Revision mit SBFI-Genehmigung — dauerhaft, rechtlich bindend</div></div>
+    <div class="info-row"><div class="info-dot" style="background:#1a1a18"></div><div><strong>Empfehlung:</strong> Alle Wege parallel verfolgen — nicht auf PO-Revision warten</div></div>
+  </div>
+
+  <div class="info-box">
+    <div class="info-box-title" style="color:var(--purple)">📓 MID vs. Prüfungsordnung — Vergleich</div>
+    <div class="info-row"><div class="info-dot" style="background:var(--blue)"></div><div><strong>PO/WL:</strong> Regelt Zulassung zur Prüfung — welches Zertifikat brauche ich VOR der Prüfung</div></div>
+    <div class="info-row"><div class="info-dot" style="background:var(--purple)"></div><div><strong>MID:</strong> Regelt Inhalt eines Kurses — was lerne ich IM Kurs, um das Zertifikat zu erwerben</div></div>
+    <div class="info-row"><div class="info-dot" style="background:var(--purple)"></div><div><strong>MID-Struktur:</strong> Richtziele → Handlungsziele → nummerierte Lernziele (1 / 1.1 / 1.1.1)</div></div>
+    <div class="info-row"><div class="info-dot" style="background:var(--purple)"></div><div><strong>MID-Pflichtinhalte:</strong> Unterrichtszeit (Lektionen), Taxonomiestufen, Versionierung</div></div>
+    <div class="info-row"><div class="info-dot" style="background:var(--purple)"></div><div><strong>Keine SBFI-Genehmigung</strong> für MID nötig — interne Qualitätssicherung der ausstellenden Organisation</div></div>
+  </div>
+
+  <div class="info-box">
+    <div class="info-box-title" style="color:var(--amber)">💡 Abkürzungsverzeichnis</div>
+    <div class="info-row"><div class="info-dot" style="background:#555"></div><div><strong>BBG</strong> — Berufsbildungsgesetz (SR 412.10)</div></div>
+    <div class="info-row"><div class="info-dot" style="background:#555"></div><div><strong>SBFI</strong> — Staatssekretariat für Bildung, Forschung und Innovation</div></div>
+    <div class="info-row"><div class="info-dot" style="background:#555"></div><div><strong>OdA</strong> — Organisation der Arbeitswelt (= Trägerschaft)</div></div>
+    <div class="info-row"><div class="info-dot" style="background:#555"></div><div><strong>PO</strong> — Prüfungsordnung · <strong>WL</strong> — Wegleitung · <strong>MID</strong> — Modulidentifikation</div></div>
+    <div class="info-row"><div class="info-dot" style="background:#555"></div><div><strong>BP</strong> — Berufsprüfung · <strong>HFP</strong> — Höhere Fachprüfung</div></div>
+    <div class="info-row"><div class="info-dot" style="background:#555"></div><div><strong>FA</strong> — Eidg. Fachausweis · <strong>ED</strong> — Eidg. Diplom · <strong>EFZ</strong> — Eidg. Fähigkeitszeugnis</div></div>
+    <div class="info-row"><div class="info-dot" style="background:#555"></div><div><strong>PK</strong> — Prüfungskommission · <strong>PEX</strong> — Prüfungsexpertin/-experte</div></div>
+    <div class="info-row"><div class="info-dot" style="background:#555"></div><div><strong>HKB</strong> — Handlungskompetenzbereich · <strong>HK</strong> — Handlungskompetenz</div></div>
+    <div class="info-row"><div class="info-dot" style="background:#555"></div><div><strong>BVZ</strong> — Berufsverzeichnis · <strong>NQR</strong> — Nationaler Qualifikationsrahmen</div></div>
+  </div>
+
+</div>
+
+<div class="footer">
+  Schweizer Berufsbildungssystem — Systemübersicht · Rechtsgrundlage: BBG SR 412.10 · Quellen: SBFI, Bundesblatt, becc.admin.ch · April 2026
+</div>
+
+</div><!-- /page -->
+
+<script>
+function toggle(el) {
+  const detail = el.querySelector('.level-detail');
+  if (!detail) return;
+  const isOpen = detail.classList.contains('open');
+  document.querySelectorAll('.level-detail.open').forEach(d => d.classList.remove('open'));
+  if (!isOpen) detail.classList.add('open');
+}
+</script>
+</body>
+</html>

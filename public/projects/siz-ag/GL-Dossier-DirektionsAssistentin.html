@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GL-Dossier: Direktionsassistentin mit eidg. FA — SIZ AG</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#185FA5;--blue-dark:#0d3d6e;--blue-light:#E6F1FB;--blue-mid:#378ADD;--green:#1D9E75;--green-light:#E1F5EE;--teal:#0F6E56;--amber:#BA7517;--amber-light:#FAEEDA;--red:#A32D2D;--red-light:#FCEBEB;--purple:#534AB7;--purple-light:#EEEDFE;--gray:#333330;--gray-light:#F4F3EF;--gray-mid:#777770;--border:#D8D6CF;--bg:#F7F6F2;--white:#FFFFFF;--siz-blue:#185FA5;--siz-navy:#0d3d6e}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:'IBM Plex Sans',sans-serif;background:var(--bg);color:var(--gray);font-size:14px;line-height:1.6}
+.topnav{position:sticky;top:0;z-index:100;background:var(--siz-navy);display:flex;align-items:center;gap:0;box-shadow:0 2px 12px rgba(0,0,0,.25)}
+.topnav-brand{padding:.75rem 1.5rem;color:#fff;font-weight:700;font-size:14px;border-right:1px solid rgba(255,255,255,.1);white-space:nowrap}
+.topnav-brand span{color:#7DB9E8;font-weight:400}
+.topnav-links{display:flex;gap:0;flex:1;overflow-x:auto}
+.topnav-links a{color:rgba(255,255,255,.75);text-decoration:none;padding:.75rem 1rem;font-size:12px;white-space:nowrap;transition:all .2s;border-right:1px solid rgba(255,255,255,.08)}
+.topnav-links a:hover,.topnav-links a.active{color:#fff;background:rgba(255,255,255,.1)}
+.topnav-meta{padding:.75rem 1.5rem;color:rgba(255,255,255,.45);font-size:11px;font-family:'IBM Plex Mono',monospace;white-space:nowrap;border-left:1px solid rgba(255,255,255,.1)}
+.section{padding:3rem 2rem;max-width:1280px;margin:0 auto}
+.section-hero{background:linear-gradient(135deg,var(--siz-navy) 0%,var(--blue) 60%,#2A7FD4 100%);color:#fff;padding:4rem 2rem 3rem;position:relative;overflow:hidden}
+.section-hero::before{content:'';position:absolute;top:-50%;right:-10%;width:600px;height:600px;background:radial-gradient(circle,rgba(255,255,255,.06) 0%,transparent 70%);border-radius:50%}
+.hero-inner{max-width:1280px;margin:0 auto;position:relative;z-index:1}
+.hero-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);border-radius:20px;padding:4px 14px;font-size:11px;font-family:'IBM Plex Mono',monospace;margin-bottom:1.25rem;color:rgba(255,255,255,.9)}
+.hero-title{font-size:clamp(24px,4vw,40px);font-weight:700;line-height:1.2;margin-bottom:.5rem}
+.hero-subtitle{font-size:16px;font-weight:300;color:rgba(255,255,255,.8);margin-bottom:2rem}
+.hero-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem;margin-top:2.5rem}
+.kpi-card{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:1.25rem 1rem;text-align:center;backdrop-filter:blur(4px);transition:transform .2s,background .2s}
+.kpi-card:hover{transform:translateY(-2px);background:rgba(255,255,255,.18)}
+.kpi-num{font-size:2rem;font-weight:700;line-height:1;color:#fff}
+.kpi-label{font-size:11px;color:rgba(255,255,255,.75);margin-top:4px;line-height:1.4}
+.kpi-icon{font-size:20px;margin-bottom:6px}
+/* ALERT BANNER */
+.alert-banner{background:#FFF3CD;border:1px solid #FFC107;border-radius:10px;padding:1rem 1.25rem;margin-bottom:1.5rem;display:flex;gap:12px;align-items:flex-start}
+.alert-banner-icon{font-size:20px;flex-shrink:0}
+.alert-banner-body{font-size:12px;line-height:1.6;color:#664d03}
+.alert-banner-body strong{color:#512900;display:block;margin-bottom:4px;font-size:13px}
+/* INSIGHT BANNER */
+.insight-banner{background:var(--blue-light);border:1px solid var(--blue-mid);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1.5rem;display:flex;gap:12px;align-items:flex-start}
+.insight-banner-icon{font-size:20px;flex-shrink:0}
+.insight-banner-body{font-size:12px;line-height:1.6;color:var(--blue-dark)}
+.insight-banner-body strong{display:block;margin-bottom:4px;font-size:13px}
+.sec-label{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:1.5rem;display:flex;align-items:center;gap:12px}
+.sec-label::after{content:'';flex:1;height:1px;background:var(--border)}
+.ebenen-grid{display:flex;flex-direction:column;gap:6px}
+.ebene{border:1px solid var(--border);border-radius:10px;overflow:hidden;cursor:pointer;transition:box-shadow .2s,border-color .2s}
+.ebene:hover{box-shadow:0 4px 16px rgba(0,0,0,.08)}
+.ebene-header{display:flex;align-items:center;min-height:64px}
+.ebene-num{width:56px;min-height:64px;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:18px;font-weight:700;color:#fff;flex-shrink:0}
+.ebene-info{flex:1;background:var(--white);padding:.875rem 1.25rem;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.ebene-title{font-size:14px;font-weight:600;min-width:200px;flex-shrink:0}
+.ebene-desc{font-size:12px;color:#555;flex:1;min-width:180px}
+.ebene-tags{display:flex;gap:5px;flex-wrap:wrap;flex-shrink:0;margin-left:auto}
+.ebene-siz{background:var(--white);border-top:1px solid var(--border);padding:1rem 1.25rem 1rem 72px;display:none}
+.ebene-siz.open{display:block}
+.ebene-siz-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:.875rem;margin-top:.75rem}
+.siz-item{background:var(--gray-light);border-radius:8px;padding:.875rem 1rem}
+.siz-item strong{display:block;font-size:12px;font-weight:600;color:#222;margin-bottom:4px}
+.siz-item p{font-size:11px;color:#444;line-height:1.6}
+.siz-item a{color:var(--blue);text-decoration:none;font-size:11px}
+.siz-item a:hover{text-decoration:underline}
+.siz-highlight{border-left:3px solid var(--blue);background:var(--blue-light)}
+.siz-highlight strong{color:var(--blue-dark)}
+.siz-warn{border-left:3px solid var(--amber);background:var(--amber-light)}
+.siz-warn strong{color:#633806}
+.siz-gap{border-left:3px solid #ccc;background:#F9F9F7}
+.siz-gap strong{color:var(--gray-mid)}
+.e1 .ebene-num{background:#1a1a18}.e2 .ebene-num{background:var(--blue)}.e3 .ebene-num{background:var(--teal)}.e4 .ebene-num{background:var(--blue-mid)}.e5 .ebene-num{background:var(--green)}.e6 .ebene-num{background:var(--amber)}.e7 .ebene-num{background:var(--purple)}.e8 .ebene-num{background:var(--red)}.e9 .ebene-num{background:#333}
+.tag{display:inline-block;font-size:10px;padding:2px 9px;border-radius:10px;font-weight:500;white-space:nowrap}
+.tag-blue{background:var(--blue-light);color:var(--blue-dark)}.tag-green{background:var(--green-light);color:var(--teal)}.tag-amber{background:var(--amber-light);color:#633806}.tag-purple{background:var(--purple-light);color:var(--purple)}.tag-gray{background:var(--gray-light);color:var(--gray)}.tag-red{background:var(--red-light);color:var(--red)}.tag-siz{background:#E6F1FB;color:#0d3d6e;font-weight:600}
+.swot-grid{display:grid;grid-template-columns:1fr 1fr;gap:3px;border-radius:12px;overflow:hidden;border:1px solid var(--border)}
+.swot-cell{padding:1.5rem;background:var(--white)}
+.swot-cell:nth-child(1){border-bottom:3px solid var(--green);border-right:3px solid var(--border)}.swot-cell:nth-child(2){border-bottom:3px solid var(--red);border-left:3px solid var(--border)}.swot-cell:nth-child(3){border-top:3px solid var(--border);border-right:3px solid var(--border)}.swot-cell:nth-child(4){border-top:3px solid var(--border);border-left:3px solid var(--border)}
+.swot-head{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.875rem;display:flex;align-items:center;gap:8px}
+.swot-cell:nth-child(1) .swot-head{color:var(--teal)}.swot-cell:nth-child(2) .swot-head{color:var(--red)}.swot-cell:nth-child(3) .swot-head{color:var(--blue)}.swot-cell:nth-child(4) .swot-head{color:var(--amber)}
+.swot-items{list-style:none}
+.swot-items li{font-size:12px;color:#333;padding:4px 0;border-bottom:1px solid var(--border);display:flex;gap:8px;align-items:flex-start}
+.swot-items li:last-child{border-bottom:none}
+.swot-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0;margin-top:6px}
+.swot-cell:nth-child(1) .swot-dot{background:var(--green)}.swot-cell:nth-child(2) .swot-dot{background:var(--red)}.swot-cell:nth-child(3) .swot-dot{background:var(--blue)}.swot-cell:nth-child(4) .swot-dot{background:var(--amber)}
+.markt-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.markt-box{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:1.5rem;overflow:hidden}
+.markt-title{font-size:12px;font-weight:600;color:var(--gray-mid);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1.25rem}
+.bar-chart{display:flex;flex-direction:column;gap:10px}
+.bar-row{display:flex;align-items:center;gap:10px}
+.bar-label{font-size:11px;color:#555;width:170px;flex-shrink:0;line-height:1.3}
+.bar-track{flex:1;background:var(--gray-light);border-radius:4px;height:24px;overflow:hidden;position:relative}
+.bar-fill{height:100%;border-radius:4px;display:flex;align-items:center;padding-left:8px;font-size:11px;font-weight:600;color:#fff;transition:width 1s ease;white-space:nowrap}
+.bar-val{font-size:11px;color:#555;width:80px;flex-shrink:0;text-align:right}
+.siz-treppe{display:flex;gap:6px;margin-top:.5rem}
+.treppe-step{flex:1;border-radius:10px;padding:1.25rem 1rem;text-align:center;border:2px solid transparent;transition:transform .2s}
+.treppe-step:hover{transform:translateY(-3px)}
+.treppe-smart{background:#E1F5EE;border-color:var(--green)}.treppe-advanced{background:#E6F1FB;border-color:var(--blue)}.treppe-power{background:var(--gray-light);border-color:var(--border);opacity:.6}
+.treppe-icon{font-size:28px;margin-bottom:8px}
+.treppe-title{font-size:13px;font-weight:700;margin-bottom:4px}
+.treppe-smart .treppe-title{color:var(--teal)}.treppe-advanced .treppe-title{color:var(--blue)}.treppe-power .treppe-title{color:var(--gray-mid)}
+.treppe-desc{font-size:11px;line-height:1.5;color:#555}
+.treppe-badge{display:inline-block;margin-top:8px;font-size:10px;font-weight:600;padding:3px 10px;border-radius:10px}
+.treppe-smart .treppe-badge{background:var(--green);color:#fff}.treppe-advanced .treppe-badge{background:var(--blue);color:#fff}.treppe-power .treppe-badge{background:var(--gray-light);color:var(--gray-mid)}
+.steps{display:flex;flex-direction:column;gap:0}
+.step{display:flex;gap:0;position:relative}
+.step-connector{display:flex;flex-direction:column;align-items:center;width:48px;flex-shrink:0}
+.step-dot{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#fff;flex-shrink:0;z-index:1}
+.step-line{flex:1;width:2px;background:var(--border);min-height:20px}
+.step:last-child .step-line{display:none}
+.step-content{flex:1;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:10px}
+.step-meta{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--gray-mid);margin-bottom:4px}
+.step-title{font-size:14px;font-weight:600;color:var(--gray);margin-bottom:4px}
+.step-body{font-size:12px;color:#555;line-height:1.6}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.three-col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem}
+.card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:1.5rem}
+.card-title{font-size:13px;font-weight:600;color:var(--gray);margin-bottom:1rem;display:flex;align-items:center;gap:8px}
+.schulen-table-wrap{overflow-x:auto}
+table.schulen{width:100%;border-collapse:collapse;font-size:12px}
+table.schulen th{background:var(--siz-navy);color:#fff;padding:.625rem .875rem;text-align:left;font-weight:600;font-size:11px;white-space:nowrap}
+table.schulen td{padding:.625rem .875rem;border-bottom:1px solid var(--border);vertical-align:top}
+table.schulen tr:last-child td{border-bottom:none}
+table.schulen tr:nth-child(even) td{background:#FAFAF8}
+table.schulen tr:hover td{background:var(--blue-light)}
+.prio-high{color:var(--blue-dark);font-weight:600}
+.badge-konkurrenz{background:var(--red-light);color:var(--red);padding:1px 7px;border-radius:8px;font-size:10px;font-weight:600}
+.badge-referenz{background:var(--green-light);color:var(--teal);padding:1px 7px;border-radius:8px;font-size:10px;font-weight:600}
+.badge-bestand{background:var(--blue-light);color:var(--blue-dark);padding:1px 7px;border-radius:8px;font-size:10px;font-weight:600}
+.badge-offen{background:var(--amber-light);color:#633806;padding:1px 7px;border-radius:8px;font-size:10px;font-weight:600}
+.download-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.download-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:1.5rem;display:flex;flex-direction:column;gap:.75rem;transition:box-shadow .2s,transform .2s}
+.download-card:hover{box-shadow:0 4px 20px rgba(0,0,0,.1);transform:translateY(-2px)}
+.dl-icon{font-size:32px}.dl-name{font-size:14px;font-weight:600;color:var(--gray)}.dl-desc{font-size:12px;color:var(--gray-mid);line-height:1.5}
+.dl-btn{display:inline-flex;align-items:center;gap:6px;background:var(--blue);color:#fff;padding:.5rem 1rem;border-radius:8px;font-size:12px;font-weight:600;text-decoration:none;margin-top:auto;transition:background .2s}
+.dl-btn:hover{background:var(--blue-dark)}
+.section-divider{border:none;border-top:1px solid var(--border);margin:0}
+.fade-in{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+.fade-in.visible{opacity:1;transform:translateY(0)}
+/* STRATEGY FUNNEL */
+.funnel{display:flex;flex-direction:column;gap:3px}
+.funnel-step{padding:.875rem 1.25rem;border-radius:8px;display:flex;align-items:center;gap:12px;font-size:12px}
+.funnel-icon{font-size:18px;flex-shrink:0;width:28px;text-align:center}
+.funnel-label{font-weight:600;width:200px;flex-shrink:0}
+.funnel-desc{flex:1;color:#555}
+.funnel-tag{margin-left:auto;flex-shrink:0}
+.f-primary{background:var(--blue-light);border-left:4px solid var(--blue)}
+.f-secondary{background:var(--green-light);border-left:4px solid var(--green)}
+.f-tertiary{background:var(--amber-light);border-left:4px solid var(--amber)}
+.f-long{background:var(--gray-light);border-left:4px solid #ccc}
+@media print{.topnav{display:none}.ebene-siz{display:block!important}.section{padding:1rem}.markt-grid,.two-col,.three-col{display:block}.markt-box,.card{margin-bottom:1rem}body{font-size:12px}}
+@media(max-width:900px){.markt-grid,.two-col{grid-template-columns:1fr}.three-col{grid-template-columns:1fr 1fr}.swot-grid{grid-template-columns:1fr}.hero-kpis{grid-template-columns:repeat(2,1fr)}.siz-treppe{flex-direction:column}}
+@media(max-width:600px){.three-col{grid-template-columns:1fr}.topnav-meta{display:none}.ebene-tags{display:none}}
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="topnav-brand">SIZ AG <span>GL-Dossier</span></div>
+  <div class="topnav-links">
+    <a href="#onepager" class="active">One-Pager</a>
+    <a href="#strategischer-befund">Strategischer Befund</a>
+    <a href="#businesscase">Business Case</a>
+    <a href="#swot">SWOT</a>
+    <a href="#nextSteps">Nächste Schritte</a>
+    <a href="#detail">Detailanalyse E1–E9</a>
+    <a href="#schulen">Schulen</a>
+    <a href="#anhaenge">Anhänge</a>
+  </div>
+  <div class="topnav-meta">Direktionsassistentin FA · April 2026</div>
+</nav>
+
+<!-- HERO -->
+<div class="section-hero" id="onepager">
+  <div class="hero-inner">
+    <div class="hero-badge">📋 GL-Dossier · SIZ AG · Beruf-Nr. 61300 (zu verifizieren)</div>
+    <div class="hero-title">Direktionsassistentin / Direktionsassistent<br>mit eidg. Fachausweis</div>
+    <div class="hero-subtitle">Marktanalyse &amp; SIZ-Strategiebewertung — Berufsbildung Schweiz, April 2026</div>
+    <div class="hero-kpis">
+      <div class="kpi-card fade-in">
+        <div class="kpi-icon">👥</div>
+        <div class="kpi-num">~200</div>
+        <div class="kpi-label">Kandidaten/Jahr (Schätzung)<br>Genaue Zahl via kfmv.ch</div>
+      </div>
+      <div class="kpi-card fade-in">
+        <div class="kpi-icon">🏫</div>
+        <div class="kpi-num">16+</div>
+        <div class="kpi-label">Bildungsanbieter CH<br>Deutschschweiz + Romandie</div>
+      </div>
+      <div class="kpi-card fade-in">
+        <div class="kpi-icon">⚠️</div>
+        <div class="kpi-num">Kein</div>
+        <div class="kpi-label">ECDL/IT-Zertifikat als<br>Zulassungspflicht in PO</div>
+      </div>
+      <div class="kpi-card fade-in">
+        <div class="kpi-icon">🎯</div>
+        <div class="kpi-num">100%</div>
+        <div class="kpi-label">IT-intensiv im Berufsbild<br>Office, Digitalisierung, Mgmt</div>
+      </div>
+      <div class="kpi-card fade-in">
+        <div class="kpi-icon">💡</div>
+        <div class="kpi-num">Neu</div>
+        <div class="kpi-label">SIZ-Strategie: Inhalte<br>statt Zulassung</div>
+      </div>
+      <div class="kpi-card fade-in">
+        <div class="kpi-icon">🤝</div>
+        <div class="kpi-num">kfmv</div>
+        <div class="kpi-label">Kaufmännischer Verband CH<br>= Schlüssel-Trägerschaft</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- STRATEGISCHER BEFUND -->
+<div class="section" id="strategischer-befund">
+  <div class="sec-label">⚡ Strategischer Befund — Ausgangslage &amp; SIZ-Ansatz</div>
+
+  <div class="alert-banner fade-in">
+    <div class="alert-banner-icon">⚠️</div>
+    <div class="alert-banner-body">
+      <strong>Zulassung: Kein IT-Zertifikat als Pflicht-Voraussetzung</strong>
+      Die Zulassung zur Berufsprüfung Direktionsassistentin basiert auf kaufmännischem EFZ/HMS-Maturität + 4–8 Jahre Berufspraxis. Es gibt <strong>kein Pflicht-IT-Zertifikat</strong> in der Prüfungsordnung. SIZ kann daher nicht als Zulassungs-Substitut positioniert werden — die Strategie setzt auf Lehrgangsinhalt, Empfehlung und Schulpartnerschaft.
+    </div>
+  </div>
+
+  <div class="insight-banner fade-in">
+    <div class="insight-banner-icon">💡</div>
+    <div class="insight-banner-body">
+      <strong>Strategieansatz: Lehrgangsinhalt + Empfehlung + Schulpartnerschaft</strong>
+      IT-Kompetenzen sind <strong>tief im Berufsbild verankert</strong> (Office 365, digitale Kommunikation, Datenmanagement, Kollaborationstools). Ansatz: SIZ-Zertifikate als <strong>empfohlene Lehrgangskomponente</strong>, als optionales Zertifikat im Lehrgang und als Vorbereitungsmodul auf die Prüfung. Plus: Direkter B2B-Kanal an Schulen als Ergänzung zu ihren bestehenden Lehrgängen.
+    </div>
+  </div>
+
+  <div class="three-col fade-in" style="margin-top:1.5rem">
+    <div class="card">
+      <div class="card-title">🟢 Hebel, die hier funktionieren</div>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:8px">
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--green);font-weight:700">✓</span> Lehrgangsmodul: SIZ als empfohlene Komponente einbauen</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--green);font-weight:700">✓</span> Schulpartnerschaft: Gruppenanmeldung &amp; Rabatt-Modell</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--green);font-weight:700">✓</span> Wegleitung: SIZ als «empfohlene Vorbereitung» verankern</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--green);font-weight:700">✓</span> kfmv-Partnerschaft: offizielle Bildungs-Empfehlung</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--green);font-weight:700">✓</span> Nachweis-Argument: «formales Zertifikat für Lohn/Bewerbung»</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">🔴 Hürden im Segment</div>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:8px">
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--red);font-weight:700">✗</span> Kein Gleichwertigkeitsantrag möglich (kein IT-Pflicht-Zertifikat)</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--red);font-weight:700">✗</span> Viele KV-Schulen haben Office-Module bereits integriert</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--red);font-weight:700">✗</span> Ohne Pflicht weniger Druck auf Kandidatinnen</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--red);font-weight:700">✗</span> Konkurrenz durch Microsoft MOS und ICDL als Alternativen</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">🎯 SIZ-Produkt-Empfehlung</div>
+      <p style="font-size:12px;color:#555;margin-bottom:.75rem">Kaufmännisch-digitales Berufsprofil, Office-intensiv. Primärprodukt: Advanced-User.</p>
+      <div style="display:flex;flex-direction:column;gap:6px">
+        <div style="background:var(--blue-light);border-radius:6px;padding:.5rem .75rem;font-size:12px"><strong style="color:var(--blue-dark)">🥇 Primär:</strong> <span style="color:#333">ICT Advanced-User SIZ</span><br><span style="font-size:11px;color:#555">3 Module × CHF 110 = <strong>CHF 330/TN</strong> Prüfungsgebühren an SIZ</span></div>
+        <div style="background:var(--green-light);border-radius:6px;padding:.5rem .75rem;font-size:12px"><strong style="color:var(--teal)">🥈 Sekundär:</strong> <span style="color:#333">ICT Smart-User SIZ</span><br><span style="font-size:11px;color:#555">3 Module × CHF 90 = <strong>CHF 270/TN</strong> — für Einsteigerinnen</span></div>
+        <div style="background:var(--gray-light);border-radius:6px;padding:.5rem .75rem;font-size:12px"><strong style="color:var(--gray-mid)">💎 Zusatz:</strong> <span style="color:#333">Einzel-Module kombinierbar</span><br><span style="font-size:11px;color:#555">z.B. nur Excel + PowerPoint Advanced = 2 × CHF 110</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- EBENEN E1-E9 -->
+<div class="section" id="detail">
+  <div class="sec-label">Systemübersicht — Ebenen E1 bis E9 (klicken für Details)</div>
+  <div class="ebenen-grid">
+
+    <!-- E1 -->
+    <div class="ebene e1 fade-in" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E1</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Gesetzliche Grundlage / SBFI</div>
+          <div class="ebene-desc">BBG SR 412.10 · Beruf-Nr. ~61300 · PO genehmigt ~2017 · Träger: kfmv (Kaufm. Verband CH)</div>
+          <div class="ebene-tags"><span class="tag tag-gray">Bundesebene</span><span class="tag tag-gray">SR 412.10</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="ebene-siz-grid">
+          <div class="siz-item"><strong>Berufsbezeichnung (DE)</strong><p>Direktionsassistentin / Direktionsassistent mit eidgenössischem Fachausweis<br>FR: Assistante / Assistant de direction avec brevet fédéral</p></div>
+          <div class="siz-item"><strong>Gesetzliche Grundlage</strong><p>Art. 28 Abs. 2 BBG (SR 412.10) · Genehmigt durch SBFI · Hauptträger: Kaufmännischer Verband Schweiz (kfmv)</p></div>
+          <div class="siz-item"><strong>Berufsnummer SBFI</strong><p>Zu verifizieren auf <a href="https://www.becc.admin.ch/becc/public/bvz/beruf/showAllActive" target="_blank">becc.admin.ch</a> · Suche nach «Direktionsassistent»</p></div>
+          <div class="siz-item siz-warn"><strong>⚠️ Zu recherchieren</strong><p>Exakte Berufsnummer · Genaues Genehmigungsdatum PO · Datum nächste PO-Revision · Zuständiger SBFI-Beamter</p></div>
+          <div class="siz-item siz-highlight"><strong>🔗 Recherche-Links</strong><p><a href="https://www.becc.admin.ch/becc/public/bvz/beruf/showAllActive" target="_blank">SBFI Berufsverzeichnis</a> · <a href="https://www.kfmv.ch" target="_blank">kfmv.ch (Hauptträger)</a></p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- E2 -->
+    <div class="ebene e2 fade-in" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E2</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Trägerschaft / OdA</div>
+          <div class="ebene-desc">Hauptträger: kfmv (Kaufm. Verband Schweiz) · Mitträger KV-Verbände regional · Sekretariat via kfmv</div>
+          <div class="ebene-tags"><span class="tag tag-blue">Strategischer Hebel</span><span class="tag tag-siz">kfmv = Schlüssel</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="ebene-siz-grid">
+          <div class="siz-item siz-highlight"><strong>Kaufmännischer Verband Schweiz (kfmv)</strong><p>Hauptträger · info@kfmv.ch · <a href="https://www.kfmv.ch" target="_blank">www.kfmv.ch</a> · Hauptsitz Zürich<br>Kontaktperson für Bildung: zu recherchieren auf kfmv.ch</p></div>
+          <div class="siz-item"><strong>KV Business School Zürich (ehemals kvz-weiterbildung)</strong><p>Grösste KV-Weiterbildungsschule CH · <a href="https://www.kv-business-school.ch" target="_blank">kv-business-school.ch</a> · info@kv-business-school.ch · +41 44 221 15 15</p></div>
+          <div class="siz-item"><strong>Weitere KV-Verbände regional</strong><p>KV Bern · KV Luzern · KV St.Gallen · KV Basel · KV Winterthur · je nach Region Mitträger</p></div>
+          <div class="siz-item siz-warn"><strong>⚠️ Zu recherchieren</strong><p>Exakte Träger-Komposition aus der Prüfungsordnung (PO-Unterzeichner) · Sekretariats-Adresse · Prüfungs-Website (pruefung-direktionsassistentin.ch oder kfmv.ch/pruefungen)</p></div>
+          <div class="siz-item siz-highlight"><strong>⭐ SIZ-Strategie E2</strong><p>Partnerschaft mit kfmv auf Bundesebene anstreben. kfmv hat Einfluss auf alle 16+ Schulen. Eine kfmv-Empfehlung für SIZ-Zertifikate = Multiplikator-Effekt über alle Anbieter.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- E3 -->
+    <div class="ebene e3 fade-in" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E3</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Prüfungsordnung</div>
+          <div class="ebene-desc">Kein IT-Pflicht-Zertifikat als Zulassung · Zulassung via EFZ kaufm. + Berufspraxis · ~5–6 Prüfungsteile</div>
+          <div class="ebene-tags"><span class="tag tag-green">Rechtlich bindend</span><span class="tag tag-amber">Kein ECDL-Pflicht!</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="ebene-siz-grid">
+          <div class="siz-item"><strong>Zulassungsbedingungen (PO)</strong><p><strong>Weg 1:</strong> EFZ Kaufmann/Kauffrau, HMS-Diplom, Maturität + 4 Jahre Berufspraxis im kaufm. Bereich<br><strong>Weg 2:</strong> EFZ mind. 3-jährig + 5 Jahre Berufspraxis kfm.<br><strong>Weg 3:</strong> 8 Jahre Berufspraxis (davon 5 Jahre kfm.)</p></div>
+          <div class="siz-item siz-warn"><strong>⚠️ Kein ECDL/IT-Pflicht-Zertifikat!</strong><p>Dieser Beruf hat KEIN IT-Zertifikat als Zulassungsvoraussetzung. Damit entfällt der direkte Substitutions-Ansatz wie bei Hauswart. Andere Strategie nötig (siehe Strategischer Befund).</p></div>
+          <div class="siz-item"><strong>Prüfungsformat (Schätzung)</strong><p>5–6 Prüfungsteile · schriftlich + mündlich + Fallstudie · ~CHF 2'500–3'500 Gebühr<br><em>Exakte Zahlen: PO-PDF auf kfmv.ch</em></p></div>
+          <div class="siz-item"><strong>Prüfungsinhalt (aus Berufsbild)</strong><p>Büro- und Informationsmanagement · Korrespondenz &amp; Kommunikation · Projektmanagement · Eventorganisation · Office &amp; Digitalisierung · Führungsunterstützung</p></div>
+          <div class="siz-item siz-highlight"><strong>🔗 PO &amp; Wegleitung</strong><p><a href="https://www.kfmv.ch" target="_blank">kfmv.ch → Berufsprüfungen → Direktionsassistentin</a></p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- E4 -->
+    <div class="ebene e4 fade-in" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E4</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Prüfungskommission</div>
+          <div class="ebene-desc">Via kfmv organisiert · Mitglieder nicht öffentlich gelistet · Kontakt via Prüfungssekretariat kfmv</div>
+          <div class="ebene-tags"><span class="tag tag-blue">Inhaltlicher Hebel</span><span class="tag tag-siz">Kursinhalt statt Zulassung</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="ebene-siz-grid">
+          <div class="siz-item siz-warn"><strong>⚠️ PK-Mitglieder nicht öffentlich</strong><p>Namen der Prüfungskommission sind nicht auf kfmv.ch gelistet. Kontaktaufnahme via Prüfungssekretariat oder kfmv-Bildungsverantwortliche nötig.</p></div>
+          <div class="siz-item"><strong>Kontakt Sekretariat</strong><p>Kaufmännischer Verband Schweiz (kfmv) · <a href="mailto:info@kfmv.ch">info@kfmv.ch</a> · <a href="https://www.kfmv.ch" target="_blank">kfmv.ch</a><br>Bildungsabteilung: zu recherchieren</p></div>
+          <div class="siz-item siz-highlight"><strong>⭐ SIZ-Strategie E4</strong><p>Kein Gleichwertigkeitsantrag möglich (kein IT-Pflicht). Stattdessen: PK ansprechen für <strong>Aufnahme von SIZ-Zertifikat als Kursinhalt-Empfehlung</strong> in Wegleitung/Grundlagen-Dokumente.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- E5 -->
+    <div class="ebene e5 fade-in" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E5</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Wegleitung</div>
+          <div class="ebene-desc">Keine IT-Zertifikatspflicht · Aber: IT-Kompetenzen als Prüfungsinhalt · Empfehlungen möglich</div>
+          <div class="ebene-tags"><span class="tag tag-green">Empfehlungs-Hebel</span><span class="tag tag-siz">Empfehlung statt Pflicht</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="ebene-siz-grid">
+          <div class="siz-item"><strong>Wegleitung Inhalt</strong><p>Prüfungsinhalte IT/Digitalisierung: Office 365, digitale Kommunikation, Präsentationserstellung, Datenmanagement, Kollaborationstools. Keine Zertifikatspflicht, aber starke inhaltliche Präsenz.</p></div>
+          <div class="siz-item siz-highlight"><strong>⭐ SIZ-Strategie E5 (Priorität 1)</strong><p>Aufnahme von «ICT Advanced-User SIZ» oder «SIZ-Zertifikat Office 365» als <strong>empfohlene Vorbereitung</strong> in die Wegleitung. Text z.B.: «Zur Prüfungsvorbereitung empfehlen wir ein anerkanntes IT-Zertifikat wie ICT Advanced-User SIZ.»</p></div>
+          <div class="siz-item"><strong>Zeitrahmen</strong><p>Wegleitungs-Anpassung ohne SBFI möglich · Trägerschaft (kfmv) entscheidet · 6–12 Monate Vorlaufzeit</p></div>
+          <div class="siz-item siz-warn"><strong>⚠️ Zu recherchieren</strong><p>Aktueller Wegleitungstext zu IT · Gibt es schon Empfehlungen? · Wie ist die Formulierung?</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- E6 -->
+    <div class="ebene e6 fade-in" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E6</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Lernzielkatalog / Qualifikationsprofil</div>
+          <div class="ebene-desc">IT sehr stark verankert · Office 365, Digitalisierung, Kommunikation · Kandidatinnen = täglich IT-intensiv</div>
+          <div class="ebene-tags"><span class="tag tag-amber">IT-Kernkompetenz</span><span class="tag tag-siz">Advanced Level</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="ebene-siz-grid">
+          <div class="siz-item"><strong>Handlungskompetenzbereiche (HKB)</strong><p>Büro- &amp; Informationsmanagement · Kommunikation &amp; Korrespondenz (D/F/E) · Projektmanagement · Event- &amp; Sitzungsorganisation · Personaladministration · Controlling/Reporting · Digitalisierung &amp; Transformation</p></div>
+          <div class="siz-item"><strong>IT im Qualifikationsprofil</strong><p>IT-Kompetenzen sind <strong>explizit verankert</strong> — Office 365 Suite (Word/Excel/PowerPoint/Outlook/Teams), SharePoint, digitale Ablage, Videokonferenzen, digitale Workflows</p></div>
+          <div class="siz-item siz-highlight"><strong>⭐ SIZ-Relevanz E6</strong><p>ICT Advanced-User SIZ deckt genau die geforderten IT-HKBs ab. Argumentationsgrundlage: «SIZ-Zertifikat validiert formal die IT-Kompetenzen, die im Qualifikationsprofil gefordert sind.»</p></div>
+          <div class="siz-item"><strong>Besonderheit Digitalisierung</strong><p>Aktuelle Revision-Tendenz: Beruf wird digitaler. SIZ ist gut positioniert als Lernnachweis für digitale Transformation im Office-Bereich.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- E7 -->
+    <div class="ebene e7 fade-in" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E7</div>
+        <div class="ebene-info">
+          <div class="ebene-title">SIZ-Produkt-Positionierung</div>
+          <div class="ebene-desc">ICT Advanced-User SIZ = Primärprodukt · Office 365 Advanced, Projekt, Kommunikation · Höherer Umsatz als Hauswart</div>
+          <div class="ebene-tags"><span class="tag tag-purple">Advanced-Level</span><span class="tag tag-siz">Höherer CHF/TN</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div style="margin-top:.75rem">
+          <div class="siz-treppe">
+            <div class="treppe-step treppe-smart">
+              <div class="treppe-icon">💡</div>
+              <div class="treppe-title">ICT Smart-User SIZ</div>
+              <div class="treppe-desc">Windows, Word, Excel Basis, Internet, E-Mail · Für Kandidatinnen mit Aufholbedarf</div>
+              <div class="treppe-badge">Optional / Einstieg</div>
+            </div>
+            <div class="treppe-step treppe-advanced">
+              <div class="treppe-icon">🔧</div>
+              <div class="treppe-title">ICT Advanced-User SIZ</div>
+              <div class="treppe-desc">Word/Excel/PowerPoint Advanced · Outlook professionell · Office 365 Suite · Präsentation · Kollaboration</div>
+              <div class="treppe-badge">✅ Primär-Empfehlung</div>
+            </div>
+            <div class="treppe-step treppe-power">
+              <div class="treppe-icon">⚙️</div>
+              <div class="treppe-title">SIZ Power-User</div>
+              <div class="treppe-desc">IT-Administration, Systembetreuung — über Stellenprofil Direktionsassistentin</div>
+              <div class="treppe-badge">Nicht relevant</div>
+            </div>
+          </div>
+          <div class="siz-item siz-highlight" style="margin-top:1rem"><strong>⭐ Umsatz-Kalkulation (SIZ-Preismodell)</strong><p><strong>ICT Advanced-User SIZ:</strong> 3 Module × CHF 110 = <strong>CHF 330/TN</strong> Prüfungsgebühren an SIZ<br><strong>ICT Smart-User SIZ:</strong> 3 Module × CHF 90 = <strong>CHF 270/TN</strong><br>Bei 100 Advanced-TN/Jahr = <strong>CHF 33'000</strong> Direktumsatz Prüfungsgebühren. Geschäftsmodell SIZ: Prüfungsgebühren pro abgelegtes Modul.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- E8 -->
+    <div class="ebene e8 fade-in" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E8</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Bildungsanbieter / Schulen</div>
+          <div class="ebene-desc">16+ Anbieter CH · Hauptkanal: KV-Schulen · KV Business School Zürich grösster Anbieter · WBZ Luzern = Bestandskunde!</div>
+          <div class="ebene-tags"><span class="tag tag-red">Marktkanal</span><span class="tag tag-gray">16+ Schulen</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="ebene-siz-grid">
+          <div class="siz-item siz-highlight"><strong>Top 1: KV Business School Zürich (grösster)</strong><p>info@kv-business-school.ch · 044 221 15 15 · Träger: KV-Verband Zürich<br>Grösster Einzelanbieter CH; 50–80 TN/Jahr geschätzt — zentraler Akquisetarget</p></div>
+          <div class="siz-item siz-highlight"><strong>Top 2: WBZ Luzern</strong><p>Patrick Krummenacher · patrick.krummenacher@sluz.ch · 041 590 74 17<br>Bietet Direktionsassistentin-Lehrgang an · 15–25 TN/Jahr · ist bereits SIZ-Bestandskunde (andere Segmente) → Up-Sell</p></div>
+          <div class="siz-item"><strong>Top 3: gibb Bern</strong><p>weiterbildung@gibb.ch · 031 335 94 71<br>Grosser Anbieter Bern; 20–40 TN/Jahr geschätzt</p></div>
+          <div class="siz-item"><strong>Top 4: SIB Zürich</strong><p>info@sib.ch · 044 283 45 45 · Schweizerisches Institut für Betriebsökonomie<br>Breites kaufm. WB-Angebot; Direktionsassistentin fester Bestandteil</p></div>
+          <div class="siz-item"><strong>Weitere 12+ Anbieter</strong><p>KV Bern · KV Luzern · KV St.Gallen · KV Basel · KV Winterthur · KV Zug · KV Aarau · EB Zürich · STFW · Romandie (3+)</p></div>
+          <div class="siz-item siz-warn"><strong>⚠️ Interne IT-Module?</strong><p>Die meisten KV-Schulen haben Office 365 / Digitalisierungs-Module im Lehrgang integriert. SIZ muss prüfen: <strong>Konkurrenz oder Ergänzung?</strong> Ansatz: SIZ als anerkanntes Zertifikat für bereits gelernte Inhalte positionieren.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- E9 -->
+    <div class="ebene e9 fade-in" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E9</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Kandidatenprofil / IT-Niveau</div>
+          <div class="ebene-desc">Kaufmännisch, IT-versiert, Office-täglich · 25–45 Jahre · Sekretariat / Assistenz-Erfahrung · Advanced-Level</div>
+          <div class="ebene-tags"><span class="tag tag-gray">Advanced Level</span><span class="tag tag-siz">Höher als Hauswart</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="ebene-siz-grid">
+          <div class="siz-item"><strong>Typisches Kandidatenprofil</strong><p>Kaufmännische Fachkraft mit EFZ · Assistenz, Sekretariat, Office Management · 25–45 Jahre · 4–8 Jahre Berufspraxis · häufig weiblich (85%+)</p></div>
+          <div class="siz-item"><strong>IT-Kenntnisse (typisch)</strong><p>Office-Suite: gut bis sehr gut · Outlook: täglich · Excel: gut, teilweise Formeln · PowerPoint: regelmässig · Office 365 / Teams: in Einführung · Niveau: klar über Hauswart</p></div>
+          <div class="siz-item siz-highlight"><strong>⭐ Richtige SIZ-Positionierung</strong><p>ICT Advanced-User SIZ ist das richtige Niveau. Kandidatinnen kennen Office-Grundlagen, wollen sich formal qualifizieren und das Niveau beweisen — exakt SIZ-Kernversprechen.</p></div>
+          <div class="siz-item"><strong>Motivation IT-Zertifikat</strong><p>Nicht Pflicht, aber Karriere-Argument: «Ich habe nicht nur das Berufs-FA — ich habe auch das anerkannte IT-Zertifikat.» Besonders relevant bei Bewerbungen und Gehaltsverhandlungen.</p></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- BUSINESS CASE -->
+<div class="section" id="businesscase">
+  <div class="sec-label">Business Case — Marktpotenzial für die SIZ AG</div>
+  <div class="markt-grid fade-in">
+    <div class="markt-box">
+      <div class="markt-title">📊 Marktpotenzial ICT Advanced-User SIZ (CHF/Jahr Prüfungsgebühren)</div>
+      <div class="bar-chart">
+        <div class="bar-row">
+          <div class="bar-label">Gesamtmarkt (~200 Kandidatinnen × CHF 330)</div>
+          <div class="bar-track"><div class="bar-fill" style="width:100%;background:var(--blue)">CHF 66'000</div></div>
+          <div class="bar-val">max.</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Realistisch (50% Marktanteil)</div>
+          <div class="bar-track"><div class="bar-fill" style="width:50%;background:var(--green)">CHF 33'000</div></div>
+          <div class="bar-val">realistisch</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Konservativ (25% Marktanteil)</div>
+          <div class="bar-track"><div class="bar-fill" style="width:25%;background:var(--amber)">CHF 16'500</div></div>
+          <div class="bar-val">min.</div>
+        </div>
+      </div>
+      <p style="font-size:11px;color:var(--gray-mid);margin-top:.75rem"><strong>Basis:</strong> Advanced-User = 3 Module × CHF 110 = CHF 330/TN Prüfungsgebühren an SIZ</p>
+    </div>
+    <div class="markt-box">
+      <div class="markt-title">📊 Marktpotenzial ICT Smart-User SIZ (Alternative / Einsteigerinnen)</div>
+      <div class="bar-chart">
+        <div class="bar-row">
+          <div class="bar-label">Gesamtmarkt (~200 Kandidatinnen × CHF 270)</div>
+          <div class="bar-track"><div class="bar-fill" style="width:100%;background:var(--blue)">CHF 54'000</div></div>
+          <div class="bar-val">max.</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Realistisch (30% — eher Einsteigerinnen)</div>
+          <div class="bar-track"><div class="bar-fill" style="width:30%;background:var(--green)">CHF 16'200</div></div>
+          <div class="bar-val">realistisch</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Kombiniertes Direktpotenzial (50% Adv + 20% Smart)</div>
+          <div class="bar-track"><div class="bar-fill" style="width:70%;background:var(--purple)">CHF 43'800</div></div>
+          <div class="bar-val">Mix</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Kandidatinnen/Jahr (Schätzung)</div>
+          <div class="bar-track"><div class="bar-fill" style="width:60%;background:var(--blue-mid)">~200</div></div>
+          <div class="bar-val">zu verif.</div>
+        </div>
+      </div>
+      <p style="font-size:11px;color:var(--gray-mid);margin-top:.75rem"><strong>Basis:</strong> Smart-User = 3 Module × CHF 90 = CHF 270/TN · Kandidatenzahl via kfmv.ch verifizieren</p>
+    </div>
+  </div>
+
+  <div class="two-col fade-in" style="margin-top:1.5rem">
+    <div class="card">
+      <div class="card-title">💡 Strategische Ausgangslage</div>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:8px">
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--green);font-weight:700">✓</span> IT tief im Berufsbild verankert — inhaltliche Passung klar gegeben</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--green);font-weight:700">✓</span> Advanced-User-Niveau passt — formales Qualifikationsargument</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--green);font-weight:700">✓</span> kfmv = zentraler Träger = 1 Partnerschaft = 16+ Schulen erreichbar</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--green);font-weight:700">✓</span> Swiss-made Zertifikat für Schweizer kaufm. Beruf = Glaubwürdigkeit</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--amber);font-weight:700">!</span> Kein Pflicht-Zertifikat = nur Empfehlung/optional → weniger Druck</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--amber);font-weight:700">!</span> Viele KV-Schulen haben bereits Office-Module intern integriert</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--red);font-weight:700">✗</span> Kein Gleichwertigkeitsantrag möglich (kein IT-Pflicht-Zertifikat)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">🚀 Ausblick: Weiterführende kaufmännische Berufe</div>
+      <p style="font-size:12px;color:#555;margin-bottom:.75rem">Ähnliches kaufmännisches Profil ohne IT-Pflicht bei weiteren eidg. Fachausweisen. Jeder Beruf erfordert eigenständige Analyse — aber der Ansatz «Empfehlung + kfmv-Partnerschaft» ist übertragbar:</p>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:6px">
+        <li style="display:flex;gap:8px;font-size:12px;align-items:center"><span class="tag tag-blue">HR-Fachfrau FA</span> Separate Analyse nötig</li>
+        <li style="display:flex;gap:8px;font-size:12px;align-items:center"><span class="tag tag-blue">Führungsfachfrau FA</span> Separate Analyse nötig</li>
+        <li style="display:flex;gap:8px;font-size:12px;align-items:center"><span class="tag tag-blue">Marketingfachfrau FA</span> Separate Analyse nötig</li>
+        <li style="display:flex;gap:8px;font-size:12px;align-items:center"><span class="tag tag-blue">Technische Kauffrau FA</span> Separate Analyse nötig</li>
+        <li style="display:flex;gap:8px;font-size:12px;align-items:center"><span class="tag tag-green">Hinweis</span> Pro Beruf eigenes Dossier mit E1–E9-Analyse</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- SWOT -->
+<div class="section" id="swot">
+  <div class="sec-label">SWOT-Analyse — SIZ AG im Direktionsassistentin-Segment</div>
+  <div class="swot-grid fade-in">
+    <div class="swot-cell">
+      <div class="swot-head">💪 Stärken (Strengths)</div>
+      <ul class="swot-items">
+        <li><div class="swot-dot"></div><div>WBZ Luzern bereits SIZ-Bestandskunde in anderem Segment — Up-Sell-Potenzial</div></li>
+        <li><div class="swot-dot"></div><div>ICT Advanced-User SIZ passt inhaltlich exakt zum Berufsbild</div></li>
+        <li><div class="swot-dot"></div><div>Swiss-made Zertifikat — Authentizität für kaufmännischen Schweizer Beruf</div></li>
+        <li><div class="swot-dot"></div><div>Klares Preismodell (3 Module × CHF 110) — transparent für Schulen &amp; Kandidatinnen</div></li>
+        <li><div class="swot-dot"></div><div>SIZ = unabhängige Prüfungsorganisation = glaubwürdig gegenüber Schulen</div></li>
+        <li><div class="swot-dot"></div><div>kfmv ist zentraler Träger = 1 Partnerschaft = 16+ Schulen erreichbar</div></li>
+      </ul>
+    </div>
+    <div class="swot-cell">
+      <div class="swot-head">⚠️ Schwächen (Weaknesses)</div>
+      <ul class="swot-items">
+        <li><div class="swot-dot"></div><div>Kein ECDL-Pflicht-Substitut — nur optionale Empfehlung möglich</div></li>
+        <li><div class="swot-dot"></div><div>KV-Schulen haben meist eigene Office-Module im Lehrgang integriert</div></li>
+        <li><div class="swot-dot"></div><div>Kandidatinnen haben bereits hohes IT-Niveau — Mehrwert muss klar kommuniziert werden</div></li>
+        <li><div class="swot-dot"></div><div>Abhängiger von Schulen-Goodwill als bei Hauswart</div></li>
+        <li><div class="swot-dot"></div><div>kfmv-Partnerschaft = zentraler Hebel, aber aufwändig zu etablieren</div></li>
+      </ul>
+    </div>
+    <div class="swot-cell">
+      <div class="swot-head">🎯 Chancen (Opportunities)</div>
+      <ul class="swot-items">
+        <li><div class="swot-dot"></div><div>Digitalisierung des Berufsbilds — SIZ als Nachweis für «Digitalkompetenz» positionieren</div></li>
+        <li><div class="swot-dot"></div><div>PO-Revision: SIZ als Zulassungskriterium oder Empfehlung formal verankern</div></li>
+        <li><div class="swot-dot"></div><div>kfmv-Partnerschaft: 1 Vertrag = 16+ Schulen = Multiplikator-Effekt</div></li>
+        <li><div class="swot-dot"></div><div>Bundesrückerstattung: 50% Beiträge motivieren zu Zusatz-Zertifikaten</div></li>
+        <li><div class="swot-dot"></div><div>Blueprint für alle kaufmännischen Berufe (HR, Marketing, Führung, etc.)</div></li>
+        <li><div class="swot-dot"></div><div>Rabatt-Modell für Lehrgangs-TN: «SIZ-Gruppenpreis für KV-Schulen»</div></li>
+      </ul>
+    </div>
+    <div class="swot-cell">
+      <div class="swot-head">🔴 Risiken (Threats)</div>
+      <ul class="swot-items">
+        <li><div class="swot-dot"></div><div>KV-Schulen sehen SIZ als Konkurrenz zu ihren eigenen Office-Modulen</div></li>
+        <li><div class="swot-dot"></div><div>Microsoft eigene Zertifikate (MOS) als Alternative etabliert</div></li>
+        <li><div class="swot-dot"></div><div>Kandidatinnen sehen keinen zwingenden Mehrwert ohne Pflicht</div></li>
+        <li><div class="swot-dot"></div><div>kfmv zeigt kein Interesse an Partnerschaft</div></li>
+        <li><div class="swot-dot"></div><div>PO-Revision verankert andere IT-Zertifikate (Microsoft, ICDL) explizit</div></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- NÄCHSTE SCHRITTE -->
+<div class="section" id="nextSteps">
+  <div class="sec-label">Empfohlene Massnahmen — Priorisierte Roadmap</div>
+
+  <!-- STRATEGY FUNNEL -->
+  <div class="funnel fade-in" style="margin-bottom:2rem">
+    <div class="funnel-step f-primary">
+      <div class="funnel-icon">🔑</div>
+      <div class="funnel-label">Schlüsselhebel</div>
+      <div class="funnel-desc">kfmv-Partnerschaft = 1 Gespräch, 16+ Schulen. Parallel WBZ Luzern als Pilot nutzen.</div>
+      <div class="funnel-tag"><span class="tag tag-blue">Q2 2026</span></div>
+    </div>
+    <div class="funnel-step f-secondary">
+      <div class="funnel-icon">🏫</div>
+      <div class="funnel-label">Direkter Schulkanal</div>
+      <div class="funnel-desc">Top 5 Schulen direkt ansprechen. Empfehlung + Gruppenrabatt-Modell anbieten.</div>
+      <div class="funnel-tag"><span class="tag tag-green">Q2–Q3 2026</span></div>
+    </div>
+    <div class="funnel-step f-tertiary">
+      <div class="funnel-icon">📋</div>
+      <div class="funnel-label">Wegleitung/Empfehlung</div>
+      <div class="funnel-desc">SIZ als «empfohlene Zertifizierung» in Wegleitung verankern. Via kfmv + PK.</div>
+      <div class="funnel-tag"><span class="tag tag-amber">Q3 2026</span></div>
+    </div>
+    <div class="funnel-step f-long">
+      <div class="funnel-icon">⚙️</div>
+      <div class="funnel-label">PO-Revision</div>
+      <div class="funnel-desc">SIZ als Zulassungsvoraussetzung oder Empfehlung bei nächster PO-Revision verankern.</div>
+      <div class="funnel-tag"><span class="tag tag-gray">2027+</span></div>
+    </div>
+  </div>
+
+  <div class="steps">
+
+    <div class="step fade-in">
+      <div class="step-connector">
+        <div class="step-dot" style="background:var(--green)">1</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <div class="step-meta">Q2 2026 · Sofort · Höchste Priorität</div>
+        <div class="step-title">KV Business School Zürich: Grösster Einzelanbieter direkt ansprechen</div>
+        <div class="step-body">KV Business School Zürich (info@kv-business-school.ch, 044 221 15 15) führt mit ~50–80 TN/Jahr den grössten Direktionsassistentin-Lehrgang der Schweiz. Direkte Ansprache der Studienleitung: «ICT Advanced-User SIZ als offiziell empfohlenes Zertifikat für eure Kandidatinnen — 3 Module à CHF 110 Prüfungsgebühren, transparentes Modell.» Parallel WBZ Luzern (SIZ-Bestandskunde anderer Segmente): Up-Sell auf Direktionsassistentin-Lehrgang bei Patrick Krummenacher (patrick.krummenacher@sluz.ch, 041 590 74 17).</div>
+      </div>
+    </div>
+
+    <div class="step fade-in">
+      <div class="step-connector">
+        <div class="step-dot" style="background:var(--blue)">2</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <div class="step-meta">Q2 2026 · Parallel · Hohe Priorität</div>
+        <div class="step-title">kfmv-Partnerschaftsgespräch — zentraler Hebel</div>
+        <div class="step-body">Kaufmännischer Verband Schweiz (kfmv, info@kfmv.ch) kontaktieren. Bildungsverantwortlichen identifizieren. Ziel: kfmv empfiehlt SIZ-Zertifikat offiziell an alle Mitglieder/Schulen. Argument: «Direktionsassistentinnen brauchen zertifizierte Office 365 Kompetenzen — SIZ ist die Swiss-made Lösung.» Eine kfmv-Empfehlung = Türöffner bei allen 16+ Schulen.</div>
+      </div>
+    </div>
+
+    <div class="step fade-in">
+      <div class="step-connector">
+        <div class="step-dot" style="background:var(--purple)">3</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <div class="step-meta">Q2–Q3 2026 · Aktiv</div>
+        <div class="step-title">Top-5 Schul-Kampagne mit Gruppenrabatt-Modell</div>
+        <div class="step-body">KV Business School Zürich, gibb Bern, SIB Zürich, KV Bern, KV Luzern direkt ansprechen. Angebot: «ICT Advanced-User SIZ als Empfehlung in eurem Lehrgang — Gruppenpreis CHF X für eure Kandidatinnen.» Für Schulen ohne eigenes Office-Zertifikat = einfacher Win. Für Schulen mit internen Modulen = «offizielle Zertifizierung was ihr ohnehin lehrt».</div>
+      </div>
+    </div>
+
+    <div class="step fade-in">
+      <div class="step-connector">
+        <div class="step-dot" style="background:var(--teal)">4</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <div class="step-meta">Q3 2026 · Strategisch</div>
+        <div class="step-title">Wegleitung: SIZ als «empfohlene Vorbereitung» verankern</div>
+        <div class="step-body">Via kfmv + Prüfungskommission: Aufnahme in Wegleitung als «Empfehlung — kein Pflicht». Formulierungsvorschlag: «Zur optimalen Vorbereitung auf die IT-Prüfungsinhalte empfehlen wir ein anerkanntes IT-Zertifikat wie ICT Advanced-User SIZ oder gleichwertiges.» Wegleitung ohne SBFI anpassbar; Zeitrahmen 6–12 Monate.</div>
+      </div>
+    </div>
+
+    <div class="step fade-in">
+      <div class="step-connector">
+        <div class="step-dot" style="background:var(--amber)">5</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <div class="step-meta">2027 · Mittelfristig</div>
+        <div class="step-title">PO-Revision: SIZ als formales Zulassungskriterium einbringen</div>
+        <div class="step-body">Bei nächster PO-Revision (Zyklus ~8–10 Jahre) SIZ als IT-Nachweis formal verankern. Bis dahin: Pilot-Ergebnisse aus Schulen und kfmv-Empfehlung nutzen, um Evidenz für Revision aufzubauen. Dies wäre der nachhaltigste Hebel — analog zum Hauswart-Blueprint.</div>
+      </div>
+    </div>
+
+    <div class="step fade-in">
+      <div class="step-connector">
+        <div class="step-dot" style="background:var(--gray)">6</div>
+      </div>
+      <div class="step-content">
+        <div class="step-meta">2026–2027 · Weitere kaufm. Berufe separat analysieren</div>
+        <div class="step-title">Folge-Analysen weiterer kaufmännischer eidg. Fachausweise</div>
+        <div class="step-body">Ähnliches Profil (kaufmännisch, IT-intensiv, kfmv-Trägerschaft) weist HR-Fachfrau FA, Marketingfachfrau FA, Führungsfachfrau FA, Technische Kauffrau FA auf. <strong>Jeder Beruf erfordert jedoch eine eigenständige E1–E9-Analyse</strong> — eigene PO, eigene Zulassungsbedingungen, eigene Schulen-Landschaft. Empfehlung: pro Beruf ein separates Dossier erstellen.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- SCHULEN -->
+<div class="section" id="schulen">
+  <div class="sec-label">Bildungsanbieter — Schweiz (16+ aktive Anbieter, Schätzung)</div>
+  <div class="schulen-table-wrap fade-in">
+    <table class="schulen">
+      <thead>
+        <tr>
+          <th>Institut</th>
+          <th>Standort</th>
+          <th>Kontakt</th>
+          <th>TN/Jahr</th>
+          <th>IT-Modul</th>
+          <th>SIZ-Priorität</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="prio-high">KV Business School Zürich</td>
+          <td>Zürich</td>
+          <td>info@kv-business-school.ch<br>044 221 15 15</td>
+          <td>50–80</td>
+          <td>Office 365 integriert</td>
+          <td>🔴 Höchste</td>
+          <td><span class="badge-offen">Grösster Anbieter</span></td>
+        </tr>
+        <tr>
+          <td class="prio-high">WBZ Luzern</td>
+          <td>Luzern / Sursee</td>
+          <td>Patrick Krummenacher<br>patrick.krummenacher@sluz.ch<br>041 590 74 17</td>
+          <td>15–25</td>
+          <td>Zu klären</td>
+          <td>🔴 Höchste</td>
+          <td><span class="badge-bestand">SIZ-Bestandskunde (anderes Segment)</span></td>
+        </tr>
+        <tr>
+          <td class="prio-high">gibb Bern</td>
+          <td>Bern</td>
+          <td>weiterbildung@gibb.ch<br>031 335 94 71</td>
+          <td>20–40</td>
+          <td>Zu klären</td>
+          <td>🔴 Hoch</td>
+          <td><span class="badge-offen">Grosser Anbieter BE</span></td>
+        </tr>
+        <tr>
+          <td class="prio-high">SIB Zürich</td>
+          <td>Zürich</td>
+          <td>info@sib.ch<br>044 283 45 45</td>
+          <td>20–40</td>
+          <td>Zu klären</td>
+          <td>🟠 Hoch</td>
+          <td><span class="badge-offen">Offen</span></td>
+        </tr>
+        <tr>
+          <td>KV Bern</td>
+          <td>Bern</td>
+          <td>info@kvbern.ch<br>031 380 60 60</td>
+          <td>15–25</td>
+          <td>Zu klären</td>
+          <td>🟠 Hoch</td>
+          <td><span class="badge-offen">Offen</span></td>
+        </tr>
+        <tr>
+          <td>KV Luzern</td>
+          <td>Luzern</td>
+          <td>info@kvlu.ch<br>041 228 40 00</td>
+          <td>10–20</td>
+          <td>Zu klären</td>
+          <td>🟠 Hoch</td>
+          <td><span class="badge-offen">Offen</span></td>
+        </tr>
+        <tr>
+          <td>EB Zürich</td>
+          <td>Zürich</td>
+          <td>info@eb-zuerich.ch<br>043 259 79 00</td>
+          <td>10–20</td>
+          <td>Zu klären</td>
+          <td>🟡 Mittel</td>
+          <td><span class="badge-offen">Offen</span></td>
+        </tr>
+        <tr>
+          <td>KV Winterthur</td>
+          <td>Winterthur</td>
+          <td>info@kv-winterthur.ch<br>052 267 90 20</td>
+          <td>10–15</td>
+          <td>Zu klären</td>
+          <td>🟡 Mittel</td>
+          <td><span class="badge-offen">Offen</span></td>
+        </tr>
+        <tr>
+          <td>KV St.Gallen</td>
+          <td>St. Gallen</td>
+          <td>info@kvsg.ch<br>071 228 10 28</td>
+          <td>10–15</td>
+          <td>Zu klären</td>
+          <td>🟡 Mittel</td>
+          <td><span class="badge-offen">Offen</span></td>
+        </tr>
+        <tr>
+          <td>KV Basel</td>
+          <td>Basel</td>
+          <td>info@kvbasel.ch<br>061 270 90 00</td>
+          <td>10–20</td>
+          <td>Zu klären</td>
+          <td>🟡 Mittel</td>
+          <td><span class="badge-offen">Offen</span></td>
+        </tr>
+        <tr>
+          <td>KV Aarau</td>
+          <td>Aarau</td>
+          <td>info@kv-aarau.ch<br>062 834 21 00</td>
+          <td>10–15</td>
+          <td>Zu klären</td>
+          <td>🟡 Mittel</td>
+          <td><span class="badge-offen">Offen</span></td>
+        </tr>
+        <tr>
+          <td>KV Zug / ABZ</td>
+          <td>Zug</td>
+          <td>info@abz.ch<br>041 724 60 00</td>
+          <td>10–15</td>
+          <td>Zu klären</td>
+          <td>🟡 Mittel</td>
+          <td><span class="badge-offen">Offen</span></td>
+        </tr>
+        <tr>
+          <td>STFW Winterthur</td>
+          <td>Winterthur</td>
+          <td>info@stfw.ch<br>052 260 28 00</td>
+          <td>10–20</td>
+          <td>Zu klären</td>
+          <td>🟡 Mittel</td>
+          <td><span class="badge-offen">Offen</span></td>
+        </tr>
+        <tr>
+          <td>Forum Bildung Bern</td>
+          <td>Bern</td>
+          <td>info@forumbildung.ch<br>031 311 89 22</td>
+          <td>5–10</td>
+          <td>Zu klären</td>
+          <td>⚪ Tief</td>
+          <td><span class="badge-offen">Offen</span></td>
+        </tr>
+        <tr>
+          <td>Écoles Commerce Romandie</td>
+          <td>Lausanne / Genf</td>
+          <td>variiert je Schule</td>
+          <td>10–20</td>
+          <td>Zu klären</td>
+          <td>🟡 Mittel (ROM)</td>
+          <td><span class="badge-offen">Romandie</span></td>
+        </tr>
+        <tr>
+          <td>Weitere Anbieter (geschätzt)</td>
+          <td>CH-weit</td>
+          <td>via kfmv.ch vollständige Liste</td>
+          <td>–</td>
+          <td>Zu klären</td>
+          <td>⚪ Zu klären</td>
+          <td><span class="badge-offen">Vollst. Liste via kfmv</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:11px;color:var(--gray-mid);margin-top:.75rem">⚠️ Vollständige offizielle Liste aller zugelassenen Anbieter: kfmv.ch → Berufsprüfung Direktionsassistentin → zugelassene Kurse. CSV: <strong>schulen-anbieter.csv</strong> im gleichen Ordner.</p>
+</div>
+
+<hr class="section-divider">
+
+<!-- ANHÄNGE -->
+<div class="section" id="anhaenge">
+  <div class="sec-label">Anhänge &amp; Downloads</div>
+  <div class="download-grid">
+    <div class="download-card fade-in">
+      <div class="dl-icon">📊</div>
+      <div class="dl-name">Schulen &amp; Anbieter</div>
+      <div class="dl-desc">16+ Bildungsanbieter mit Adressen, Kontakten, geschätzten TN-Zahlen und Status. Basis für Sales-Kampagne.</div>
+      <a class="dl-btn" href="direktionsassistentin-schulen.csv" download>⬇ schulen-anbieter.csv</a>
+    </div>
+    <div class="download-card fade-in">
+      <div class="dl-icon">👥</div>
+      <div class="dl-name">Trägerschaft / Kommission</div>
+      <div class="dl-desc">Bekannte Trägerschafts-Kontakte und Prüfungskommission. Basis für Lobbying-Gespräche.</div>
+      <a class="dl-btn" href="direktionsassistentin-pruefungskommission.csv" download>⬇ pruefungskommission.csv</a>
+    </div>
+    <div class="download-card fade-in">
+      <div class="dl-icon">💰</div>
+      <div class="dl-name">SIZ-Preismodell</div>
+      <div class="dl-desc">ICT Smart-User: 3 Module × CHF 90 = CHF 270/TN · ICT Advanced-User: 3 Module × CHF 110 = CHF 330/TN · Prüfungsgebühren an SIZ</div>
+      <div style="background:var(--blue-light);border-radius:6px;padding:.5rem;font-size:11px;color:var(--blue-dark);margin-top:auto">📊 Basis aller Business-Case-Zahlen</div>
+    </div>
+  </div>
+
+  <div class="card fade-in" style="margin-top:1.5rem">
+    <div class="card-title">🔗 Wichtige externe Links &amp; offene Recherche-Aufgaben</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:.75rem">
+      <div style="font-size:12px"><strong>SBFI Berufsverzeichnis</strong><br><a href="https://www.becc.admin.ch/becc/public/bvz/beruf/showAllActive" target="_blank" style="color:var(--blue)">becc.admin.ch → Direktionsassistentin suchen</a></div>
+      <div style="font-size:12px"><strong>Hauptträger kfmv</strong><br><a href="https://www.kfmv.ch" target="_blank" style="color:var(--blue)">www.kfmv.ch → Berufsprüfungen</a></div>
+      <div style="font-size:12px"><strong>Grösster Anbieter</strong><br><a href="https://www.kv-business-school.ch" target="_blank" style="color:var(--blue)">kv-business-school.ch</a></div>
+      <div style="font-size:12px"><strong>SIZ ICT Advanced-User</strong><br><a href="https://www.enter-it.ch/ict-diplome-zertifikate/ict-advanced-user-siz/" target="_blank" style="color:var(--blue)">enter-it.ch → Advanced User</a></div>
+      <div style="font-size:12px;background:var(--amber-light);padding:.5rem;border-radius:6px"><strong style="color:#633806">⚠️ Offene Aufgabe 1</strong><br><span style="color:#7A5C00">SBFI: Exakte Berufsnummer verifizieren</span></div>
+      <div style="font-size:12px;background:var(--amber-light);padding:.5rem;border-radius:6px"><strong style="color:#633806">⚠️ Offene Aufgabe 2</strong><br><span style="color:#7A5C00">kfmv.ch: Prüfungsorganisation, Sekretariat, Kandidatenzahlen via Schlussberichte</span></div>
+      <div style="font-size:12px;background:var(--amber-light);padding:.5rem;border-radius:6px"><strong style="color:#633806">⚠️ Offene Aufgabe 3</strong><br><span style="color:#7A5C00">Wegleitung-PDF herunterladen und IT-Anforderungen prüfen</span></div>
+      <div style="font-size:12px;background:var(--amber-light);padding:.5rem;border-radius:6px"><strong style="color:#633806">⚠️ Offene Aufgabe 4</strong><br><span style="color:#7A5C00">KV Business School Zürich: Haben sie IT-Modul intern integriert?</span></div>
+    </div>
+  </div>
+</div>
+
+<div style="background:var(--siz-navy);color:rgba(255,255,255,.5);text-align:center;padding:1.5rem;font-size:11px;font-family:'IBM Plex Mono',monospace">
+  SIZ AG · GL-Dossier Direktionsassistentin/Direktionsassistent mit eidg. Fachausweis · Erstellt April 2026 · Vertraulich<br>
+  <span style="font-size:10px;opacity:.7">⚠️ Schätzwerte wo gekennzeichnet — Verifizierung via kfmv.ch empfohlen vor GL-Präsentation</span>
+</div>
+
+<script>
+function toggleEbene(el){const siz=el.querySelector('.ebene-siz');if(!siz)return;const open=siz.classList.contains('open');document.querySelectorAll('.ebene-siz.open').forEach(s=>s.classList.remove('open'));if(!open)siz.classList.add('open')}
+const observer=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}})},{threshold:.1});
+document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
+const sections=document.querySelectorAll('[id]');
+const navLinks=document.querySelectorAll('.topnav-links a');
+window.addEventListener('scroll',()=>{let cur='';sections.forEach(s=>{if(window.scrollY>=s.offsetTop-80)cur=s.id});navLinks.forEach(l=>{l.classList.remove('active');if(l.getAttribute('href')==='#'+cur)l.classList.add('active')})});
+window.addEventListener('load',()=>{document.querySelectorAll('.bar-fill').forEach(b=>{const w=b.style.width;b.style.width='0';setTimeout(()=>{b.style.width=w},300)})});
+</script>
+</body>
+</html>
