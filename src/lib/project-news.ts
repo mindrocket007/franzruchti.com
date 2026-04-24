@@ -26,6 +26,23 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 24.04.2026 (5 weitere)
+      {
+        summary: "Netzwoche (21. April 2026): 'Schweizer Bevölkerung nutzt KI deutlich häufiger als der europäische Durchschnitt' – Laut Bundesamt für Statistik nutzen 47% der Schweizer (16–74 Jahre) generative KI – Platz 3 in Europa (hinter Norwegen 56%, Dänemark 48%). Besonders auffällig: 73% setzen KI beruflich ein (höchster Wert Europa); bei der Jugend (16–24 J.) sind es 79% gegenüber 64% im europäischen Schnitt. Die überdurchschnittlich hohe digitale Kompetenz der Schweizer Bevölkerung erhöht die Nachfrage nach formalisierten ICT-Qualifikationen und Kompetenznachweisen – direktes Wachstumsumfeld für SIZ AG als führende ICT-Prüfungsorganisation.",
+        source: "Netzwoche",
+        url: "https://www.netzwoche.ch/news/2026-04-21/schweizer-bevoelkerung-nutzt-ki-deutlich-haeufiger-als-der-europaeische",
+        date: "2026-04-21",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-24",
+      },
+      {
+        summary: "Netzwoche (20. April 2026): 'Die Schweiz führt mit KI-Spezialisten, aber nicht mit KI-Investitionen' – Trotz überdurchschnittlich vieler KI-Fachkräfte hinkt die Schweiz bei den KI-Investitionen anderen Ländern hinterher. Das Paradoxon – viel Kompetenz, wenig Kapital – unterstreicht den strukturellen Weiterbildungsbedarf und die Bedeutung staatlich anerkannter ICT-Qualifikationen als Treiber der Qualifikationsseite – direktes Marktumfeld für SIZ AG.",
+        source: "Netzwoche",
+        url: "https://www.netzwoche.ch/news/2026-04-20/die-schweiz-fuehrt-mit-ki-spezialisten-aber-nicht-mit-ki-investitionen",
+        date: "2026-04-20",
+        category: "Wirtschaft & Digitalisierung",
+        addedAt: "2026-04-24",
+      },
       // Neu: 24.04.2026 (3 weitere)
       {
         summary: "siz.ch (März 2026): 'Newsflash März 2026 – KI-Tools bei SIZ-Prüfungen verboten' – Ab 30. März 2026 hat SIZ AG die Prüfungsordnung angepasst und KI-gestützte Tools (Microsoft 365 Copilot, Office Add-ins mit KI-Funktionen) explizit aus allen SIZ-Modulprüfungen verboten, da neue KI-Funktionen Aufgaben automatisch lösen können ohne reale Kompetenz nachzuweisen. Ein direkt relevantes regulatorisches Update von SIZ AG selbst.",
@@ -1693,6 +1710,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 24.04.2026 (4 weitere)
+      {
+        summary: "Bloomberg (21. April 2026): 'S&P 500 Futures Rally as Traders Await Updates on Iran, Warsh' – S&P 500 Futures eröffneten die Handelswoche im Plus, während Märkte auf weitere Entwicklungen im Iran-Krieg und auf Neuigkeiten zu Kevin Warsh (gehandelter Fed-Vorsitzenden-Kandidat) warteten. Die Kombination aus Geopolitik und Notenbankerwartungen erzeugt kurzfristig erhöhte Volatilität bei ES Futures – klassisches Setup für regelbasierte, diskretionsarme Einstiegsstrategien wie jene von Mind Rocket Trading.",
+        source: "Bloomberg",
+        url: "https://www.bloomberg.com/news/articles/2026-04-21/s-p-500-futures-rally-as-traders-await-updates-on-iran-warsh",
+        date: "2026-04-21",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-24",
+      },
       // Neu: 24.04.2026 (3 weitere)
       {
         summary: "prnewswire.com (30.01.2026): 'NinjaTrader Expands Into Europe' – NinjaTrader hat den Futures-Handel in Europa gestartet (zunächst Deutschland und Niederlande via MiFID-Lizenz), mit geplanter Expansion nach Frankreich und Italien. Dies erweitert den Zugang europäischer und Schweizer Trader zur NinjaTrader-Plattform, die auch bei Mind Rocket Trading genutzt wird.",
@@ -8104,6 +8130,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 24.04.2026 (5 weitere)
+      {
+        summary: "Netzwoche (21. April 2026): 'Schweizer Bevölkerung nutzt KI deutlich häufiger als der europäische Durchschnitt' – 47% der Schweizer (16–74 J.) nutzen generative KI (Platz 3 in Europa); 73% davon beruflich (Höchstwert Europa); bei der Jugend sind es 79%. Hohe KI-Adoption bei gleichzeitig strukturellem Qualifizierungsbedarf schafft eine überdurchschnittlich große, aktive Zielgruppe für Thought-Leadership zu Lernkompetenz und KI-Nutzung – direktes Positionierungsumfeld für learnfluencer.ch.",
+        source: "Netzwoche",
+        url: "https://www.netzwoche.ch/news/2026-04-21/schweizer-bevoelkerung-nutzt-ki-deutlich-haeufiger-als-der-europaeische",
+        date: "2026-04-21",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-24",
+      },
+      {
+        summary: "Netzwoche (20. April 2026): 'Die Schweiz führt mit KI-Spezialisten, aber nicht mit KI-Investitionen' – Die Schweiz hat pro Kopf überdurchschnittlich viele KI-Fachkräfte, investiert aber relativ wenig in KI-Entwicklung. Diese Schere zwischen Kompetenz und strategischer Nutzung ist präzises Thought-Leadership-Terrain für learnfluencer.ch: Wer vorhanden Kompetenz in messbaren Impact verwandelt, braucht Lernkompetenz und strategisches KI-Wissen.",
+        source: "Netzwoche",
+        url: "https://www.netzwoche.ch/news/2026-04-20/die-schweiz-fuehrt-mit-ki-spezialisten-aber-nicht-mit-ki-investitionen",
+        date: "2026-04-20",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-24",
+      },
       // Neu: 24.04.2026 (3 weitere)
       {
         summary: "nexaria.ch (2026): 'Auswirkungen von KI auf den Arbeitsmarkt' – KI-Kompetenz (AI Literacy) wird bis 2026 rund 40% aller Jobs in ihren Anforderungsprofilen verändern; besonders bei Personen mit geringerem Bildungshintergrund fehlt diese Kompetenz am stärksten. Direktes Argument für Franz Ruchtis Thought-Leadership zu Lernkompetenz und KI-Weiterbildung.",
