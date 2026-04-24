@@ -1650,6 +1650,39 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 24.04.2026 (4)
+      {
+        summary: "CNBC (24. April 2026 – Live): 'Stock Market Today: Live updates' – S&P 500 Futures nahezu unverändert, Nasdaq 100 Futures +0,4%, Dow Futures -114 Punkte (-0,23%). Am 23. April schloss S&P 500 auf 7.108,40 (-0,41%) – Rückzug vom ATH. Earnings-Highlights: Intel +15% nach Q1-Beat (EPS $0,29 vs. -$0,01 erwartet, +3.000%), Texas Instruments +18% (beste Performance seit 2000), IBM -8%, ServiceNow -18%. 81% der 87 berichtenden S&P-500-Unternehmen übertrafen EPS-, 76% Revenue-Erwartungen. Volatilität durch Earnings-Saison und Iran-Krieg-Unsicherheit – präzise Einstiegs-/Ausstiegspunkte für regelbasierte ES-Futures-Strategien wie bei Mind Rocket Trading.",
+        source: "cnbc.com",
+        url: "https://www.cnbc.com/2026/04/23/stock-market-today-live-updates.html",
+        date: "2026-04-24",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-24",
+      },
+      {
+        summary: "TheStreet (23. April 2026): 'Stock Market Today: Nasdaq, S&P 500 decline from records amid tech pullback, Iran War impact' – S&P 500 -0,41% (7.108,40), Nasdaq -0,89% (24.438,50), Dow -0,36% (49.310,32). Tech-Pullback und steigende Ölpreise durch Iran-Kriegs-Unsicherheit führten zum Rückzug von den ATHs. Der Rückzug auf die kritische Support-Zone 7.080–7.130 nach dem Allzeithoch bestätigt klassisches Retest-Verhalten – klar definiertes Konsolidierungs-Setup für technische ES-Futures-Strategien wie bei Mind Rocket Trading.",
+        source: "thestreet.com",
+        url: "https://www.thestreet.com/latest-news/stock-market-today-apr-23-2026-updates",
+        date: "2026-04-23",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-24",
+      },
+      {
+        summary: "CNN Business (23. April 2026): 'Stocks are at record highs and shrugging off the war with Iran' – Trotz eskalierendem Iran-Krieg haben S&P 500 und Nasdaq Allzeithochs erreicht; Märkte zeigen bemerkenswerte Resilienz gegen geopolitische Schocks. Die Entkopplung von Marktperformance und Kriegsgeschehen ist ein Zeichen für spätzyklische Bull-Market-Stärke – erhöhte Reversal-Risiken erfordern disziplinierte, regelbasierte ES-Futures-Strategien wie jene von Mind Rocket Trading.",
+        source: "cnn.com",
+        url: "https://www.cnn.com/2026/04/23/investing/stocks-record-high-iran-war",
+        date: "2026-04-23",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-24",
+      },
+      {
+        summary: "CNBC (23. April 2026): 'Intel (INTC) Q1 2026 Earnings Report' – Intel meldet Q1-Zahlen: EPS $0,29 (Erwartung: -$0,01, Beat +3.000%), Revenue +7%; Nettoverlust $4,28 Mrd. Aktie +15–19% nachbörslich nach bereits +50% im April. Google verpflichtet sich zur Nutzung mehrerer Intel-CPU-Generationen für KI-Workloads. Intel-Earnings-Sprung (+19%) und Texas Instruments (+18%, beste Performance seit 2000) zeigen extreme Einzelwert-Volatilität in der Earnings-Saison – präzises Stop-Placement und Positionsgrössen-Management für ES-Futures-Strategien wie bei Mind Rocket Trading entscheidend.",
+        source: "cnbc.com",
+        url: "https://www.cnbc.com/2026/04/23/intel-intc-q1-2026-earnings-report.html",
+        date: "2026-04-23",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-24",
+      },
       // Neu: 23.04.2026 (2 weitere)
       {
         summary: "Yahoo Finance (23. April 2026): 'Stock market today: Dow slips, S&P 500 and Nasdaq retreat from records with Middle East peace talks at risk' – Nach den Allzeithochs vom 22. April zogen sich S&P 500 (-0,3%) und Nasdaq am 23. April 2026 von den Rekordständen zurück; Unsicherheit über den Fortschritt der Nahostfriedensgespräche drückt auf die Stimmung. Klassisches 'Retest-Szenario': Die Zone 7.080–7.130 fungiert jetzt als kritischer Support – präzise definierte Einstiegs- und Ausstiegspunkte für regelbasierte ES-Futures-Strategien wie bei Mind Rocket Trading.",
@@ -7869,7 +7902,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
-      // Neu: 24.04.2026 (2)
+      // Neu: 24.04.2026 (3)
+      {
+        summary: "barbara-liebermeister.com: 'Learnfluencer Frauen: Beruf & Karriere; Business, Führungskraft' – Führende DACH-Rednerin Barbara Liebermeister adaptiert den Begriff 'Learnfluencer' im Kontext von weiblichem Leadership und Karriereentwicklung: Frauen als aktive Lerngestalterinnen in der Geschäftswelt. Die Übernahme des Learnfluencer-Konzepts durch prominente Business-Speaker im DACH-Raum bestätigt die wachsende Verbreitung des Begriffs – Rückenwind für die Thought-Leadership-Positionierung von learnfluencer.ch.",
+        source: "barbara-liebermeister.com",
+        url: "https://barbara-liebermeister.com/learnfluencer-frauen-beruf-karriere-business-fuehrungskraft/",
+        date: "2026-04",
+        category: "Content & Thought Leadership",
+        addedAt: "2026-04-24",
+      },
       {
         summary: "av-views.com (April 2026): 'LEARNTEC 2026 – Der Kompass für die digitale Transformation an Schulen' – LEARNTEC 2026 als internationale Leitveranstaltung für digitale Bildung: Fokus auf KI-gestütztes Lernen, digitale Kompetenzentwicklung und EdTech-Innovationen für Schulen und Bildungseinrichtungen. Wachsender Diskurs über KI und digitale Transformation im Bildungsbereich schafft direktes Thought-Leadership-Potenzial für Weiterbildungsplattformen wie learnfluencer.ch.",
         source: "av-views.com",
@@ -10069,6 +10110,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 24.04.2026 (2)
+      {
+        summary: "november.de: 'Digitalisierung erreicht jetzt Bestattungsbranche' – Deutsches Bestattungsportal analysiert die Digitalisierung der Branche: Online-Abschlüsse werden zur Norm, erste Kontakte mit Bestattungsunternehmen verlagern sich in digitale Kanäle, traditionelle Betriebe müssen digitale Präsenz ausbauen. Die strukturelle Verlagerung des Erstkontakts ins Digitale bestätigt das Geschäftsmodell von bestattungsplaner.ch als digitalem Einstiegspunkt für Bestattungsplanung in der Schweiz.",
+        source: "november.de",
+        url: "https://november.de/presse/digitalisierung-bestattungsbranche/",
+        date: "2026-04",
+        category: "Markt & Trends",
+        addedAt: "2026-04-24",
+      },
+      {
+        summary: "internationalbestattungen.ch: 'Exhumation und Bestattung in der Schweiz: Ein umfassender Leitfaden' – Schweizer Bestattungsfachportal zu rechtlichen Aspekten: Kantonal unterschiedliche Regelungen zu Exhumationen, Überführungen und Bestattungsformen (Erd-, Urnen-, See-, Waldbestattungen). Die föderale Komplexität des Schweizer Bestattungsrechts verstärkt den Bedarf nach kantonübergreifenden, neutralen Informations- und Planungsportalen – direktes Marktumfeld für bestattungsplaner.ch.",
+        source: "internationalbestattungen.ch",
+        url: "https://internationalbestattungen.ch/exhumation-und-bestattung-in-der-schweiz-ein-umfassender-leitfaden/",
+        date: "2026-04",
+        category: "Recht & Regelungen",
+        addedAt: "2026-04-24",
+      },
       // Neu: 23.04.2026 (2 weitere)
       {
         summary: "rapid-data.de (2026): 'Digitale Trends in der Trauerkultur' – Branchenanalyse für Bestattungsunternehmen: Onlinebuchungen werden zur Norm, digitale Gedenkseiten ersetzen klassische Todesanzeigen, und Trauerkommunikation verlagert sich in soziale Netzwerke. Bestattungsunternehmen, die früh in digitale Infrastruktur investieren, sichern sich nachhaltige Wettbewerbsvorteile. Die fortschreitende Digitalisierung der Trauerbranche bestätigt die strategische Positionierung von bestattungsplaner.ch als digitaler Erstanlaufpunkt für Hinterbliebene.",
