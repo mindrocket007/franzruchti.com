@@ -1710,7 +1710,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
-      // Neu: 24.04.2026 (1 weitere)
+      // Neu: 24.04.2026 (3 weitere)
+      {
+        summary: "nortonrosefulbright.com (März 2026): 'ESMA Supervisory Briefing on Algorithmic Trading – MiFID II' – ESMA hat im Februar 2026 ein Supervisory Briefing zu algorithmischem Handel veröffentlicht, mit klaren Anforderungen an Pre-Trade-Controls, Governance und Stresstests unter MiFID II. KI-gestützte Algorithmen stehen unter besonderer Beobachtung. Für Mind Rocket Trading relevant, da NinjaTrader-Strategien unter die MiFID-II-Regulierung fallen könnten.",
+        source: "Norton Rose Fulbright",
+        url: "https://www.nortonrosefulbright.com/en/inside-fintech/blog/2026/03/algorithmic-trading-esma-issues-supervisory-briefing-on-mifid-ii-requirements",
+        date: "2026-03",
+        category: "Regulierung",
+        addedAt: "2026-04-24",
+      },
+      {
+        summary: "dailyforex.com (April 2026): 'Prop Firm Regulations & Rules – Updated 2026' – Die CFTC erwägt, evaluationsbasierte Prop Firms als Commodity Trading Advisors einzustufen (Registrierungspflicht, Kapitalpflichten). Über 80 Prop Firms haben bereits geschlossen; Topstep, Apex und MyFundedFutures haben ihre Regeln grundlegend angepasst. Mind Rocket Trading sollte diese regulatorische Entwicklung aktiv in der Kommunikation mit Nutzern adressieren.",
+        source: "dailyforex.com",
+        url: "https://www.dailyforex.com/forex-articles/prop-firm-regulations/226504",
+        date: "2026-04",
+        category: "Regulierung",
+        addedAt: "2026-04-24",
+      },
       {
         summary: "emini-watch.com: 'What Are Emini Futures? Complete Guide (2026)' – Umfassender Leitfaden zu E-mini S&P 500 Futures (ES): Margins (Interactive Brokers: $17.000/Kontrakt Intraday, $25.000 Overnight per Jan. 2026), Handelszeiten (23,5h täglich, 5 Tage/Woche), Kontrakt-Symbole und Rollover-Termine (März/Juni/September/Dezember). ES-Futures handeln auf CME/Globex; Ressource für Trader, die ES-Futures-Strategien wie bei Mind Rocket Trading anwenden.",
         source: "emini-watch.com",
@@ -3404,7 +3420,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
-      // Neu: 24.04.2026 (3)
+      // Neu: 24.04.2026 (4)
+      {
+        summary: "express-press-release.net (22.04.2026): 'Mental Health Apps Market Trends 2026 Driven by AI Therapy and Digital Care' – Der globale Markt für Mental-Health-Apps überschreitet 2026 die USD 10-Milliarden-Marke (CAGR 17%), getrieben durch KI-gestützte Personalisierung und CBT-Integration. 7,8% der Schweizer Bevölkerung haben unerfüllten Bedarf an psychischer Unterstützung – ein direktes Argument für zugängliche digitale mentale Werkzeuge wie jene von mindtools.ch.",
+        source: "express-press-release.net",
+        url: "https://express-press-release.net/news/2026/04/22/1748638",
+        date: "2026-04-22",
+        category: "Mental Health",
+        addedAt: "2026-04-24",
+      },
       {
         summary: "buchmarkt.de (05.03.2026): 'Deutschschweizer Buchmarkt hat 2025 mit leichtem Umsatzplus abgeschlossen' – Der Deutschschweizer Buchmarkt schloss 2025 mit einem Gesamtumsatz von CHF 581,8 Mio. und einem Plus von 1,1% ab – getrieben durch ein starkes Weihnachtsgeschäft (+10,9% im Dezember). Für Sachbuch- und Ratgeber-PDF-Angebote wie mindtools.ch zeigt dies eine stabile Nachfrage im DACH-Raum.",
         source: "buchmarkt.de",
@@ -4126,7 +4150,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
-      // Neu: 24.04.2026 (5 Resilienz-Artikel)
+      // Neu: 24.04.2026 (7 Resilienz-Artikel)
+      {
+        summary: "aktuellenews.ch (April 2026): 'BGM-Handlungsbedarf in Schweizer Unternehmen' – 51% der befragten Schweizer Firmen sehen Investitionsbedarf im Bereich Stress und psychische Gesundheit (Tendenz steigend seit 2016). Der ROI von systematischem BGM liegt bei 3–5 CHF pro investiertem Franken. Dieses klare Marktargument unterstützt hypnovital als präventives BGM-Angebot mit messbarem Mehrwert.",
+        source: "aktuellenews.ch",
+        url: "https://www.aktuellenews.ch/artikel.cfm?key=1820966",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-24",
+      },
+      {
+        summary: "ad-hoc-news.de (März 2026): 'KI-Apps revolutionieren die Meditation' – Der Markt für Mental-Health-Apps überschreitet weltweit USD 8 Milliarden; KI-gestützte Personalisierung und therapeutische Techniken treiben das Wachstum an. Unternehmen investieren gezielt in digitale Resilienz-Programme. hypnovital kann sich als qualitätsgesichertes, auf Hypnose basierendes Audio-Angebot in diesem wachsenden digitalen Gesundheitsmarkt positionieren.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/ki-apps-revolutionieren-die-meditation/68577431",
+        date: "2026-03",
+        category: "Digitale Gesundheit",
+        addedAt: "2026-04-24",
+      },
       {
         summary: "ad-hoc-news.de: 'Deutsche Unternehmen setzen 2026 auf strategische Resilienz' – Unternehmen priorisieren psychologische Sicherheit und nachhaltiges Arbeitstempo gegen Burnout; Fachkräftemangel beschleunigt Wandel. 'Chief Well-being Officer'-Rollen entstehen; datengetriebene Frühwarnsysteme für Überlastung gewinnen an Bedeutung. Anti-Fragilität als neues Paradigma – Systeme, die unter Stress nicht nur überleben, sondern sich verbessern. Strategisches BGM-Marktpotenzial für hypnovital® als präventives Coaching-Tool.",
         source: "ad-hoc-news.de",
@@ -5630,7 +5670,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
-      // Neu: 24.04.2026 (3)
+      // Neu: 24.04.2026 (4)
+      {
+        summary: "fungies.io (April 2026): 'SaaS Market 2026: Complete Industry Analysis, Data & Trends' – Der globale SaaS-Markt hat 2026 die USD 315-Milliarden-Marke überschritten; KI-integrierte Workflows und agentenbasierte Planungstools sind die wachstumsstärksten Segmente (CAGR 18%). Produktivitäts-SaaS mit KI-Unterstützung verzeichnen die höchsten Wachstumsraten – ein starker Marktkontext für spezialisierte Planungstools wie den 12 Week Year Planner.",
+        source: "fungies.io",
+        url: "https://fungies.io/saas-market-2026-complete-analysis-data-trends-forecasts-2/",
+        date: "2026-04",
+        category: "SaaS & Tools",
+        addedAt: "2026-04-24",
+      },
       {
         summary: "fortunebusinessinsights.com (2026): Globaler Produktivitäts-Apps-Markt wächst auf USD 30,85 Mrd. – Der Markt für Produktivitäts-Apps wird 2026 auf USD 14,46 Mrd. geschätzt und soll bis 2034 auf USD 30,85 Mrd. wachsen (CAGR 9,94%), angetrieben durch Remote Work und KI-Integration. Für SaaS-Tools wie den 12 Week Year Planner ist dies ein starkes Marktwachstumssignal.",
         source: "fortunebusinessinsights.com",
@@ -6525,7 +6573,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
-      // Neu: 24.04.2026 (3)
+      // Neu: 24.04.2026 (4)
+      {
+        summary: "Bode Living (14.03.2026): 'Novel Smartphone App Shows Promise in Treating Premature Ejaculation' – Die CLIMACS-Studie (präsentiert am EAU-Kongress März 2026) zeigt: Eine Smartphone-App auf Basis von Verhaltenstherapie und Achtsamkeit verdoppelt die Zeit bis zur Ejakulation (von 61 auf 125 Sekunden); 22% der Nutzer erfüllten danach nicht mehr die Kriterien für Ejaculatio praecox. Klare Marktvalidierung für digitale Selbsthilfeangebote bei vorzeitigem Samenerguss – komplementär zu orgasmus-hinauszoegern.de.",
+        source: "Bode Living",
+        url: "https://www.bode-living.com/2026/03/14/novel-smartphone-app-shows-promise-in-treating-premature-ejaculation/",
+        date: "2026-03-14",
+        category: "Digital Health",
+        addedAt: "2026-04-24",
+      },
       {
         summary: "richestsoft.com (2026): 'Sexuelle Wellness-Trends 2026' – Sexuelles Wohlbefinden ist 2026 kein Tabuthema mehr, sondern ein zentraler Wellness-Markt: Apps für sexuelle Gesundheit bieten maßgeschneiderte digitale Therapieansätze, und der Markt wächst auf prognostizierte USD 160 Mio. Umsatz – relevanter Marktkontext für digitale Hypnose-Produkte wie orgasmus-hinauszoegern.de.",
         source: "richestsoft.com",
@@ -7295,7 +7351,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
-      // Neu: 24.04.2026 (3)
+      // Neu: 24.04.2026 (4)
+      {
+        summary: "FURIOS – Campusmagazin FU Berlin (22.04.2026): 'Neues Semester, gleiche Angst: Wie wir mit Nervosität und Redeangst im Studium klarkommen' – Studierende berichten von wiederkehrendem Lampenfieber bei mündlichen Prüfungen und Referaten; Experten empfehlen Atemübungen, Expositionstherapie und psychologische Beratung. Aktueller Anlass: Semesterbeginn April 2026 macht Redeangst besonders virulent – direkter Suchbedarf für Lösungen wie lampenfieber-besiegen.de.",
+        source: "FURIOS – Campusmagazin FU Berlin",
+        url: "https://furios-campus.de/2026/04/22/neues-semester-gleiche-angst-wie-wir-mit-nervositaet-und-redeangst-im-studium-klarkommen/",
+        date: "2026-04-22",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-04-24",
+      },
       {
         summary: "megaphon.meg-hypnose.de (März 2026): 'M.E.G.-Jahrestagung 2026: Trauma, Trance und Therapie' – Die Jahrestagung der Milton Erickson Gesellschaft (19.–22. März, Kassel, über 1.000 Teilnehmende) versammelte Experten aus Psychotherapie, Hypnotherapie und Neurobiologie – ein Signal für die wachsende Fachakzeptanz hypnotherapeutischer Methoden bei Angststörungen und Auftrittsangst.",
         source: "megaphon.meg-hypnose.de",
