@@ -26,6 +26,15 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 24.04.2026 (1 weitere)
+      {
+        summary: "ict-berufsbildung.ch: '77 ICT-Fachkräfte mit eidg. Fachausweis oder Diplom ausgezeichnet' – An der ICT-Diplomfeier Frühling 2026 (27. März 2026) erhielten 77 Personen den eidg. Fachausweis als ICT-Platform Development Specialist sowie mehrere das eidg. Diplom als Information Security Manager. Die höhere Berufsbildung sichert den Schweizer ICT-Fachkräftebedarf und schafft direktes Wachstumsumfeld für ICT-Prüfungsorganisationen wie die SIZ AG.",
+        source: "ict-berufsbildung.ch",
+        url: "https://www.ict-berufsbildung.ch/77-ict-fachkraefte-mit-eidg-fachausweis-oder-diplom-ausgezeichnet",
+        date: "2026-03",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-24",
+      },
       // Neu: 24.04.2026 (2)
       {
         summary: "ict-berufsbildung.ch: 'ICT-Berufsbildung Schweiz treibt Digitalisierung in der Berufsbildung voran' – Das Kompetenzzentrum der ICT-Berufsbildung Schweiz entwickelt und testet innovative Ansätze, um Prüfungen effizienter, praxisnäher und digital unterstützt durchzuführen. Ab 2026 gilt für Lehrbeginner/innen des Berufs ICT-Fachfrau/-mann EFZ eine neue Bildungsverordnung und ein neuer Bildungsplan. Strategische Digitalisierung der Schweizer Berufsbildungsinfrastruktur schafft neue Anforderungen an Prüfungsorganisationen – direktes Wachstumsumfeld für die SIZ AG.",
@@ -3998,6 +4007,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 24.04.2026 (2)
+      {
+        summary: "ad-hoc-news.de: 'Betriebliches Gesundheitsmanagement setzt 2026 auf Strategie und Psyche' – BGM entwickelt sich 2026 zum strategischen Imperativ: Psychische Erkrankungen sind häufigste Fehlzeitenursache, ROI für strategisches BGM liegt bei 1:2,7 bis 1:5. Hybride BGM-Ansätze (Apps, virtuelle Coachings, Präsenz) gewinnen an Bedeutung. Wachsende BGM-Professionalisierung und Fokus auf psychische Gesundheit schaffen direktes Marktpotenzial für hypnovital® als Audio-basiertes Programm für betriebliche Gesundheitsförderung.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/betriebliches-gesundheitsmanagement-setzt-2026-auf-strategie-und-psyche/68972135",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-24",
+      },
+      {
+        summary: "ad-hoc-news.de: 'Betriebliches Gesundheitsmanagement wird 2026 zur wirtschaftlichen Pflicht' – BGM ist 2026 kein Wohlfühl-Extra mehr: Demografischer Wandel und Fachkräftemangel machen Gesundheitsförderung zur betriebswirtschaftlichen Notwendigkeit. Unternehmen investieren verstärkt in Mindfulness, Stressmanagement und psychologische Beratung. Bestätigt strategischen Wandel von reaktivem Krankenmanagement zu proaktiver Prävention – Kernpositionierung für hypnovital®-BGM-Programme.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/betriebliches-gesundheitsmanagement-wird-2026-zur-wirtschaftlichen-pflicht/68500400",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-24",
+      },
       // Neu: 23.04.2026 (3 weitere)
       {
         summary: "ad-hoc-news.de (2026): 'Hochfunktionaler Burnout wird 2026 zur stillen Krise' – Betriebspsychologen identifizieren hochfunktionalen Burnout ('Quiet Burnout') als die dominierende Gesundheitskrise des modernen Arbeitsplatzes 2026: Betroffene funktionieren nach aussen normal, sind innerlich aber vollständig erschöpft. Besonders gefährdet: die engagiertesten High Performer, die keine Grenzen setzen können. Die wachsende Sichtbarkeit dieser stillen Burnout-Form unterstreicht den Bedarf nach diskreten, niederschwelligen BGM-Präventionslösungen wie hypnovital®-Audio-Programmen.",
