@@ -1736,7 +1736,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
-      // Neu: 25.04.2026 (2)
+      // Neu: 25.04.2026 (4)
+      {
+        summary: "TheStreet (24. April 2026): 'Stock Market Today: Nasdaq, S&P 500 set new records as semiconductors rise for 18th straight day' – S&P 500 schloss auf neuem Allzeithoch bei 7.165; Halbleiter-Index stieg 18 Handelstage in Folge. Intel +25% nach starkem Q1-Bericht, Nvidia zurück auf 5-Billionen-USD-Marktkapitalisierung. Neue ATH-Phasen und anhaltende Momentumdynamik in Leitindizes bieten günstiges Umfeld für trendfolgende ES-Futures-Strategien wie jene von Mind Rocket Trading.",
+        source: "TheStreet",
+        url: "https://www.thestreet.com/latest-news/stock-market-today-apr-24-2026-updates",
+        date: "2026-04-24",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-25",
+      },
+      {
+        summary: "Yahoo Finance (24. April 2026): 'Stock market today: S&P 500, Nasdaq close at record highs as Nvidia retakes $5 trillion mark, Intel finally tops 2000 peak' – S&P 500 und Nasdaq setzten neue Allzeithochs; Nvidia überschritt erneut die 5-Billionen-USD-Marktkapitalisierungsmarke. US-Aktienmarkt in klarer Risk-On-Phase mit breiter Sektorstärke. Relevantes Marktumfeld für ES-Futures-Trader mit regelbasierten Long-Strategien bei ausgeprägten Trendphasen.",
+        source: "Yahoo Finance",
+        url: "https://finance.yahoo.com/markets/stocks/live/stock-market-today-friday-april-24-224547261.html",
+        date: "2026-04-24",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-25",
+      },
       {
         summary: "OneUpTrader Blog (22. April 2026): 'S&P 500 (ES) Technical Analysis – 22 April 2026' – ES hat den vormaligen Allzeithoch-Bereich bei ~7.100 durchbrochen und hält sich darüber; die Rally von den März-Tiefs dauerte 15 Handelstage mit nur einem roten Tag. Kurzfristige Gewinnmitnahmen im Widerstandsbereich erwartet, Trendstruktur bleibt bullisch. Direktes technisches Marktbild für ES-Futures-Trader wie jene bei Mind Rocket Trading.",
         source: "OneUpTrader Blog",
