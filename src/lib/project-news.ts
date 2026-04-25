@@ -1752,7 +1752,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
-      // Neu: 25.04.2026 (17)
+      // Neu: 25.04.2026 (18)
+      {
+        summary: "The Motley Fool (24. April 2026): 'Stock Market Today, April 24: S&P 500 and Nasdaq Set New Highs on Tech Surge' – S&P 500 (+0,8% auf 7.165) und Nasdaq (+1,63% auf 24.836) schliessen auf neuen Allzeithochs; Intel-Aktie +25% nach Earnings-Beat, Nvidia überschreitet erneut 5-Billionen-USD-Marktkapitalisierung. KI-Aktien-Rallye und starke Tech-Earnings bestätigen robuste Marktbedingungen für algorithmische ES-Futures-Strategien – direktes Marktumfeld für Mind Rocket Trading.",
+        source: "The Motley Fool",
+        url: "https://www.fool.com/coverage/stock-market-today/2026/04/24/stock-market-today-april-24-s-and-p-500-and-nasdaq-set-new-highs-on-tech-surge/",
+        date: "2026-04-24",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-25",
+      },
       {
         summary: "Sidley Austin (April 2026): 'Sidley Discusses CFTC Guidance, Advance Notice of Proposed Rulemaking for Prediction Markets' – Detaillierte Analyse der Sidley-Experten zur CFTC-Guidance für Prediction Markets: Kernfragen zu Core Principles, Verbots-Kategorien und wirtschaftlichen Auswirkungen für Derivate-Plattformen. April 2026 Kommentarfrist läuft; Ergebnis kann die Derivate-Landschaft erheblich prägen – direktes regulatorisches Kontext-Umfeld für Mind Rocket Trading als algorithmischer Futures-Trader.",
         source: "Sidley Austin",
@@ -7663,7 +7671,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
-      // Neu: 25.04.2026 (2)
+      // Neu: 25.04.2026 (4)
+      {
+        summary: "GDCP / Universität Tübingen (Januar 2026): 'Präsentationskompetenz als Future Skill – Call für interdisziplinäre Tagung' – Die Gesellschaft für Didaktik der Chemie und Physik (GDCP) ruft zur Einreichung von Beiträgen für eine interdisziplinäre Tagung zur Präsentationskompetenz als Zukunftskompetenz auf; Fokus auf Forschung zu kommunikativer Kompetenz bei Schülerinnen und Schülern. Wachsende wissenschaftliche Auseinandersetzung mit Präsentationskompetenz als 'Future Skill' unterstreicht die gesellschaftliche Relevanz – direktes Forschungsumfeld für Lösungen gegen Auftrittsangst wie lampenfieber-besiegen.de.",
+        source: "GDCP – Gesellschaft für Didaktik der Chemie und Physik",
+        url: "https://gdcp-ev.de/blog/2026/01/21/call-verlaengerung-praesentationskompetenz-als-future-skill-interdisziplinaere-impulse-fuer-die-erforschung-und-staerkung-der-kommunikativen-kompetenz-von-schuelerinnen-und-schuelern/",
+        date: "2026-01-21",
+        category: "Psychologie & Forschung",
+        addedAt: "2026-04-25",
+      },
+      {
+        summary: "Forschungsstelle Präsentationskompetenz, Universität Tübingen (2026): Interdisziplinäre Forschung zu kommunikativer Kompetenz – Die Forschungsstelle untersucht Kommunikationsprozesse in der Wissensgesellschaft; Tagung vom 25.–27. März 2026 behandelt theoretische und empirische Verbindungslinien zwischen Präsentationskompetenz und Zukunftskompetenzen. Wissenschaftliche Anerkennung von Präsentationskompetenz als trainierbare Kernkompetenz legitimiert evidenzbasierte Audio-Therapieprogramme wie lampenfieber-besiegen.de.",
+        source: "Universität Tübingen – Forschungsstelle Präsentationskompetenz",
+        url: "https://uni-tuebingen.de/forschung/zentren-und-institute/forschungszentrum-fuer-wissenschaftskommunikation/projekte/forschungsstelle-praesentationskompetenz/",
+        date: "2026-03",
+        category: "Psychologie & Forschung",
+        addedAt: "2026-04-25",
+      },
       {
         summary: "sportgesundheitspark.de / Akademie (2026): 'Symposium 2026: Mentale Gesundheit & Arbeit' – Jährliches Symposium zu mentaler Gesundheit am Arbeitsplatz mit Fokus auf Angststörungen, Burnout-Prävention und psychologische Resilienz; Referenten aus Psychologie, Psychiatrie und Unternehmensführung. Wachsende Zahl institutioneller Veranstaltungen zu mentaler Gesundheit unterstreicht die gesellschaftliche Relevanz von Lösungen gegen Bühnenangst und Auftrittsangst – direktes Positionierungsumfeld für lampenfieber-besiegen.de.",
         source: "sportgesundheitspark.de / Akademie",
@@ -10898,7 +10922,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
-      // Neu: 25.04.2026 (5)
+      // Neu: 25.04.2026 (6)
+      {
+        summary: "wnsstamps.ch (2026): 'Lebensplanung, Vorsorge und Bestattung: Selbstbestimmt bis zuletzt' – Ratgeber für selbstbestimmte Vorsorge und Bestattungsplanung; verdrängte Themen wie Patientenverfügung, Bestattungswünsche und Nachlassplanung werden als aktive Gestaltungsaufgabe positioniert. Wachsendes gesellschaftliches Interesse an frühzeitiger Bestattungsvorsorge unterstreicht das Marktpotenzial von bestattungsplaner.ch als digitaler Erst-Anlaufstelle für Vorsorge- und Bestattungsplanung in der Schweiz.",
+        source: "wnsstamps.ch",
+        url: "https://wnsstamps.ch/lebensplanung-vorsorge-und-bestattung-selbstbestimmt-bis-zuletzt/",
+        date: "2026-04",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-04-25",
+      },
       {
         summary: "plattformj.ch (2026): 'Zahlreiche neue Schweizer Gesetze ab 2026' – Übersicht aller wichtigen Gesetzesänderungen in der Schweiz ab 2026: neue Regelungen zu Altersvorsorge (Säule 3a Nachzahlungen), Pensionskassenanpassungen (+2,7%), AHV-Rentenerhöhungen und weitere Rechtsänderungen. Veränderungen im Schweizer Vorsorge- und Rechtssystem erhöhen generell das Informationsbedürfnis zu Vorsorge und Nachlassplanung – indirektes Marktumfeld für bestattungsplaner.ch als digitale Bestattungs- und Vorsorgeplattform.",
         source: "plattformj.ch",
