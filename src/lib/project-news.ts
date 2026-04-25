@@ -26,7 +26,15 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
-      // Neu: 25.04.2026 (2)
+      // Neu: 25.04.2026 (3)
+      {
+        summary: "ICT-Berufsbildung Schweiz (2026): Kompetenzzentrum für Digitalisierung der Berufsbildung – Das Kompetenzzentrum berät Trägerschaften, Organisationen der Arbeitswelt und Bildungsanbieter bei der Digitalisierung von Prüfungen, KI-Integration und digitalem Lernen. Es fungiert als nationales Hub für Digitalisierungsvorhaben in der Schweizer Berufsbildung – direktes strategisches Umfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation, die von Digitalisierungsinitiativen des Kompetenzzentrums profitiert.",
+        source: "ICT-Berufsbildung Schweiz",
+        url: "https://www.ict-berufsbildung.ch/digitalisierung/kompetenzzentrum",
+        date: "2026-04",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-25",
+      },
       {
         summary: "shk-bodenseekreis.de (13. April 2026): 'KI als «Game-Changer»: Wer gewinnt das Rennen in der beruflichen Bildung?' – KI analysiert Texte, erstellt Lernmaterialien und erklärt komplexe Zusammenhänge in Sekunden. Berufliche Bildungsorganisationen, die Prüfungsformate und Inhalte nicht aktiv auf KI-Kompatibilität prüfen, verlieren an Relevanz. Direkter Handlungsbedarf für SIZ AG, Prüfungsdesign und -inhalte kontinuierlich auf KI-Entwicklungen anzupassen.",
         source: "shk-bodenseekreis.de",
@@ -1335,7 +1343,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
-      // Neu: 25.04.2026 (1)
+      // Neu: 25.04.2026 (2)
+      {
+        summary: "Trigon Entwicklungsberatung (2026): 'Diplom-Lehrgang Coaching Zürich 2026' – Trigon bietet in Zürich einen anerkannten Diplom-Lehrgang für systemisches Coaching an; aktive Nachfrage nach professionellem Coaching-Angebot in der Schweiz. Die hohe Dichte an professionellen Coaching-Ausbildungen und -Programmen in Zürich und der Deutschschweiz bestätigt das Wachstum des Coaching-Markts – direktes Marktumfeld für die persönlichkeitsorientierten Coaching-Programme von Mind Rocket GmbH.",
+        source: "Trigon Entwicklungsberatung",
+        url: "https://www.trigon.at/academykurs/trigon-diplom-lehrgang-coaching-zuerich-2026/",
+        date: "2026",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-04-25",
+      },
       {
         summary: "shk-bodenseekreis.de (13. April 2026): 'KI als «Game-Changer»: Wer gewinnt das Rennen in der beruflichen Bildung?' – KI agiert als vollständig aktives Bildungselement: Sie analysiert Lernverhalten, erstellt personalisierte Curricula und coacht adaptiv. Klassische Weiterbildungsanbieter ohne KI-Integration verlieren systematisch Marktanteile. Mind Rocket GmbH kann diesen Strukturwandel als Chance nutzen, digitale Coaching-Formate mit KI-Elementen zu verbinden und die Reichweite persönlichkeitsorientierter Programme erheblich zu skalieren.",
         source: "shk-bodenseekreis.de",
@@ -1736,7 +1752,39 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
-      // Neu: 25.04.2026 (13)
+      // Neu: 25.04.2026 (17)
+      {
+        summary: "Sidley Austin (April 2026): 'Sidley Discusses CFTC Guidance, Advance Notice of Proposed Rulemaking for Prediction Markets' – Detaillierte Analyse der Sidley-Experten zur CFTC-Guidance für Prediction Markets: Kernfragen zu Core Principles, Verbots-Kategorien und wirtschaftlichen Auswirkungen für Derivate-Plattformen. April 2026 Kommentarfrist läuft; Ergebnis kann die Derivate-Landschaft erheblich prägen – direktes regulatorisches Kontext-Umfeld für Mind Rocket Trading als algorithmischer Futures-Trader.",
+        source: "Sidley Austin",
+        url: "https://www.sidley.com/en/insights/publications/2026/04/sidley-discusses-cftc-guidance-advance-notice-of-proposed-rulemaking-for-prediction-markets",
+        date: "2026-04",
+        category: "Regulierung",
+        addedAt: "2026-04-25",
+      },
+      {
+        summary: "Sidley Austin (März 2026): 'U.S. CFTC Issues Guidance, Advance Notice of Proposed Rulemaking Regarding Prediction Markets' – Die CFTC hat einen offiziellen ANPRM-Prozess für Prediction Markets gestartet (12. März 2026): Kommentarfrist bis 30. April 2026; die CFTC sucht Input zu Regulierungsrahmen, Verbots- und Zulassungsfragen für Event Contracts. Regulierung von Prediction Markets könnte das CFTC-regulierte Derivate-Universum erheblich erweitern – mittelfristig relevantes Marktumfeld für NinjaTrader/Kraken als regulierte Derivate-Plattform und für algorithmische Trader wie Mind Rocket Trading.",
+        source: "Sidley Austin",
+        url: "https://www.sidley.com/en/insights/newsupdates/2026/03/us-cftc-issues-guidance-advance-notice-of-proposed-rulemaking",
+        date: "2026-03",
+        category: "Regulierung",
+        addedAt: "2026-04-25",
+      },
+      {
+        summary: "CFTC (März 2026): Pressemitteilung zur Advance Notice of Proposed Rulemaking für Prediction Markets (CFTC Press Release 9194-26) – Die CFTC eröffnet einen formellen Konsultationsprozess zur Regulierung von Prediction Markets; Kommentarfrist bis 30. April 2026. Direktes regulatorisches Signal für das Derivate-Handelssystem, in dem Mind Rocket Trading operiert – klarer Beleg für aktiven CFTC-Regulierungsprozess im Futures-Bereich.",
+        source: "CFTC",
+        url: "https://www.cftc.gov/PressRoom/PressReleases/9194-26",
+        date: "2026-03",
+        category: "Regulierung",
+        addedAt: "2026-04-25",
+      },
+      {
+        summary: "Prokopiev Law (März 2026): 'CFTC Initiates Prediction Markets Rulemaking with Advanced Notice of Proposed Rulemaking in March 2026' – Unabhängige Rechtsanalyse der CFTC-ANPRM-Massnahme: Erstmals formeller CFTC-Regelgebungsprozess für Prediction Markets; bis April 2026 können Marktteilnehmer Kommentare einreichen. Regulatorische Formalisierung von Prediction Markets stärkt die CFTC-Regulierungslandschaft für alle Futures-Derivate-Plattformen – positives Regulierungsumfeld für regelbasiertes ES-Futures-Trading wie bei Mind Rocket Trading.",
+        source: "Prokopiev Law",
+        url: "https://www.prokopievlaw.com/post/cftc-initiates-prediction-markets-rulemaking-with-advanced-notice-of-proposed-rulemaking-in-march-20",
+        date: "2026-03",
+        category: "Regulierung",
+        addedAt: "2026-04-25",
+      },
       {
         summary: "Gibson Dunn (24. April 2026): 'Derivatives, Legislative and Regulatory Weekly Update' – Wöchentliche CFTC-Zusammenfassung zum 25.04.2026: (1) CFTC und SEC schlagen gemeinsam Änderungen an Form PF vor, um Reporting-Aufwand für kleinere Private-Fund-Berater zu reduzieren; (2) CFTC genehmigt CME/FICC-Cross-Margining-Ausnahme für Kunden; (3) CFTC-Vorsitzender Selig testifizierte am 16. April vor dem House Agriculture Committee – Regulierungsabbau, Crypto-Regulation und Prediction Markets als Prioritäten. Regulatorischer Rückenwind für professionalisiertes Retail-Futures-Trading-Umfeld – direkter Kontext für Mind Rocket Trading.",
         source: "Gibson Dunn",
@@ -3551,7 +3599,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
-      // Neu: 25.04.2026 (1)
+      // Neu: 25.04.2026 (2)
+      {
+        summary: "it-boltwise.de (2026): 'Buchmarkt 2026: KI und menschliche Intuition im Fokus' – Der Buchmarkt 2026 zeigt ein Spannungsfeld: Während KI-generierte Inhalte zunehmen, steigt die Nachfrage nach authentischen, menschlich geschriebenen Ratgebern mit tiefer Persönlichkeitsentwicklung und Intuition als Differenzierungsmerkmal. Leser bevorzugen 2026 Sachbücher, die echte Transformation ermöglichen statt schnelle Tipps – direktes Marktumfeld für tiefenwirksame Self-Help-Werkzeuge wie jene auf mindtools.ch.",
+        source: "it-boltwise.de",
+        url: "https://www.it-boltwise.de/buchmarkt-2026-ki-und-menschliche-intuition-im-fokus.html",
+        date: "2026-01",
+        category: "Buchmarkt & Publishing",
+        addedAt: "2026-04-25",
+      },
       {
         summary: "kalendar2026.de (2026): 'Zeitmanagement und Jahresplanung – Effektiv durch 2026' – Strukturiertes Zeitmanagement und systematische Jahresplanung werden 2026 als Erfolgsfaktoren für persönliche und berufliche Ziele angesehen: Klare Ziele, Selbstreflexion und praktische Planungswerkzeuge helfen, den Alltag messbar produktiver zu gestalten. Steigende öffentliche Nachfrage nach praktischen persönlichkeitsorientierten Planungsmethoden stärkt den Markt für digitale Selbsthilfe-Werkzeuge wie jene auf mindtools.ch.",
         source: "kalendar2026.de",
@@ -10842,7 +10898,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
-      // Neu: 25.04.2026 (3)
+      // Neu: 25.04.2026 (5)
+      {
+        summary: "plattformj.ch (2026): 'Zahlreiche neue Schweizer Gesetze ab 2026' – Übersicht aller wichtigen Gesetzesänderungen in der Schweiz ab 2026: neue Regelungen zu Altersvorsorge (Säule 3a Nachzahlungen), Pensionskassenanpassungen (+2,7%), AHV-Rentenerhöhungen und weitere Rechtsänderungen. Veränderungen im Schweizer Vorsorge- und Rechtssystem erhöhen generell das Informationsbedürfnis zu Vorsorge und Nachlassplanung – indirektes Marktumfeld für bestattungsplaner.ch als digitale Bestattungs- und Vorsorgeplattform.",
+        source: "plattformj.ch",
+        url: "https://www.plattformj.ch/artikel/238920/",
+        date: "2026-01",
+        category: "Recht & Regelungen",
+        addedAt: "2026-04-25",
+      },
+      {
+        summary: "funere.com (2026): 'Eine Bestattung in der Schweiz organisieren: Schritte, Fristen und Verantwortlichkeiten' – Praxisratgeber für Angehörige: In der Schweiz muss eine Bestattung innerhalb von 2–5 Tagen (je nach Kanton) erfolgen; Todesbescheinigung, Legalverfügung und Auswahl des Bestattungsunternehmens sind die drei ersten Schritte. Wachsende Nachfrage nach klaren digitalen Anleitungen für den Bestattungsprozess bestätigt das Marktpotenzial für bestattungsplaner.ch als niederschwelliges, informierendes und vermittelndes Online-Portal.",
+        source: "funere.com",
+        url: "https://www.funere.com/ch-de/blog/eine-bestattung-in-der-schweiz-organisieren-schritte-fristen-und-verantwortlichkeiten",
+        date: "2026-04",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-25",
+      },
       {
         summary: "bestattungen-scifo.de (2026): 'Digitalisierung der Bestattungsbranche: Trends aus den USA und ihre Bedeutung für Deutschland' – US-Trends wie KI-gestützte Chatbot-Beratung, virtuelle Trauerfeiern und umfassende digitale Vorausplanung werden zur Blaupause für den deutschsprachigen Markt. Rund 5.000 kleine lokale Bestattungsunternehmen in Deutschland noch auf Fax und Papier – enormes Digitalisierungspotenzial. Wachstum digitaler Bestattungsplattformen in der DACH-Region bestätigt die Marktopportunität für bestattungsplaner.ch als führendes digitales Vermittlungsportal in der Schweiz.",
         source: "bestattungen-scifo.de",
