@@ -1736,7 +1736,47 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
-      // Neu: 25.04.2026 (8)
+      // Neu: 25.04.2026 (13)
+      {
+        summary: "Gibson Dunn (24. April 2026): 'Derivatives, Legislative and Regulatory Weekly Update' – Wöchentliche CFTC-Zusammenfassung zum 25.04.2026: (1) CFTC und SEC schlagen gemeinsam Änderungen an Form PF vor, um Reporting-Aufwand für kleinere Private-Fund-Berater zu reduzieren; (2) CFTC genehmigt CME/FICC-Cross-Margining-Ausnahme für Kunden; (3) CFTC-Vorsitzender Selig testifizierte am 16. April vor dem House Agriculture Committee – Regulierungsabbau, Crypto-Regulation und Prediction Markets als Prioritäten. Regulatorischer Rückenwind für professionalisiertes Retail-Futures-Trading-Umfeld – direkter Kontext für Mind Rocket Trading.",
+        source: "Gibson Dunn",
+        url: "https://www.gibsondunn.com/derivatives-legislative-and-regulatory-weekly-update-april-24-2026/",
+        date: "2026-04-24",
+        category: "Regulierung",
+        addedAt: "2026-04-25",
+      },
+      {
+        summary: "edgeclear.com (2026): 'Futures Regulation 2026: Margin, Crypto & Market Structure' – Umfassende Übersicht der US-Futures-Regulierungslandschaft 2026: Margin-Anforderungen, Crypto-Futures-Expansion, Prediction Markets und neue CFTC-Rahmenbedingungen für algorithmischen Handel. Klarer regulatorischer Rahmen für ES-Futures-Trader im NinjaTrader-Ökosystem – direktes Informationsumfeld für Mind Rocket Trading.",
+        source: "edgeclear.com",
+        url: "https://edgeclear.com/futures-regulation/",
+        date: "2026",
+        category: "Regulierung",
+        addedAt: "2026-04-25",
+      },
+      {
+        summary: "Foley & Lardner (Januar 2026): 'Shifting Enforcement Priorities at the CFTC and the SEC' – Unter der neuen US-Administration verschieben sich CFTC- und SEC-Enforcement-Prioritäten: Weniger Durchsetzung bei Krypto-Handel, mehr Fokus auf Market Manipulation bei traditionellen Futures. Verändertes Enforcement-Klima erleichtert grundsätzlich das Retail-Futures-Trading-Umfeld – positiver Regulierungskontext für ES-Futures-Strategien wie jene von Mind Rocket Trading.",
+        source: "Foley & Lardner",
+        url: "https://www.foley.com/insights/publications/2026/01/shifting-enforcement-priorities-at-the-cftc-and-the-sec/",
+        date: "2026-01",
+        category: "Regulierung",
+        addedAt: "2026-04-25",
+      },
+      {
+        summary: "Cleary Gottlieb (2026): '2026 Digital Assets Regulatory Update – A Landmark 2025, But More Developments on the Horizon' – 2025 war ein Landmark-Jahr für US-Krypto-Regulierung (Marktstrukturgesetz, klare CFTC/SEC-Zuständigkeitsabgrenzung); 2026 folgen weitere Durchführungsvorschriften und internationale Harmonisierung. Klarere Regulierung des Krypto-Derivate-Markts stärkt das NinjaTrader/Kraken-Ökosystem als regulierte Derivate-Plattform – mittelfristig relevant für Mind Rocket Trading.",
+        source: "Cleary Gottlieb",
+        url: "https://www.clearygottlieb.com/news-and-insights/publication-listing/2026-digital-assets-regulatory-update-a-landmark-2025-but-more-developments-on-the-horizon",
+        date: "2026-01",
+        category: "Regulierung",
+        addedAt: "2026-04-25",
+      },
+      {
+        summary: "Norton Rose Fulbright (2026): 'Prediction Markets at a Crossroads: Preemption, Enforcement and Rulemaking' – CFTC hat formellen Regelgebungsprozess für Prediction Markets gestartet; offene Fragen: bundesrechtliche Überlagerung staatlicher Gesetze, Durchsetzungspriorität und Marktstruktur. Aufkommender Prediction-Markets-Sektor erweitert das CFTC-regulierte Handelsuniversum – potentielles Zukunftsfeld für algorithmische Trader im NinjaTrader-Ökosystem wie Mind Rocket Trading.",
+        source: "Norton Rose Fulbright",
+        url: "https://www.nortonrosefulbright.com/en-us/knowledge/publications/ad8a494a/prediction-markets-at-a-crossroads-preemption-enforcement-and-rulemaking",
+        date: "2026",
+        category: "Regulierung",
+        addedAt: "2026-04-25",
+      },
       {
         summary: "bitnomial.com / Payward (17. April 2026): 'Payward to Acquire Bitnomial, Creating a Fully CFTC-Licensed Derivatives Platform' – Kraken-Muttergesellschaft Payward übernimmt Bitnomial für bis zu 550 Mio. USD. Bitnomial ist die erste crypto-native Plattform mit allen drei US-Lizenzen (DCM, DCO, FCM) für ein vollständiges Derivate-Business in den USA. Die Akquisition baut auf der NinjaTrader-Übernahme auf und schafft einen der grössten regulierten US-Derivate-Stacks – direkte Stärkung des NinjaTrader-Ökosystems, in dem Mind Rocket Trading operiert.",
         source: "bitnomial.com",
@@ -8477,7 +8517,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
-      // Neu: 25.04.2026 (2)
+      // Neu: 25.04.2026 (4)
+      {
+        summary: "Deutsche Presseakademie – Corporate Influencer Day CID (14. April 2026, Berlin): Jährliche Fachtagung für Corporate Influencer und Thought-Leadership-Praktiker; Schwerpunkte 2026: KI im Thought-Leadership-Content, authentisches Personal Branding in Zeiten generativer KI und messbarer Einfluss von Expertenpositionierung auf Unternehmenswahrnehmung. Wachsende institutionelle Verankerung von Thought Leadership und Corporate Influencing als Berufsfeld – direktes Positionierungsumfeld für learnfluencer.ch als Thought-Leadership-Plattform von Franz Ruchti.",
+        source: "Deutsche Presseakademie – CID",
+        url: "https://cid.depak.de/",
+        date: "2026-04-14",
+        category: "Content & Thought Leadership",
+        addedAt: "2026-04-25",
+      },
+      {
+        summary: "Thinkers360 (2026): 'Top 50 Global Thought Leaders and Influencers on Innovation 2026' – Globales Ranking der einflussreichsten Thought Leader im Innovationsbereich 2026; Messkriterien: Content-Qualität, Reichweite, thematische Tiefe und Einfluss auf Entscheidungsträger. Wachsende Professionalisierung des Thought-Leadership-Ökosystems mit strukturierten Messkriterien und erhöhter Sichtbarkeit für spezialisierte Plattformen – relevanter Marktkontext für learnfluencer.ch als Thought-Leadership-Plattform für Lernen und KI.",
+        source: "Thinkers360",
+        url: "https://www.thinkers360.com/top-50-global-thought-leaders-and-influencers-on-innovation-2026/",
+        date: "2026-01",
+        category: "Content & Thought Leadership",
+        addedAt: "2026-04-25",
+      },
       {
         summary: "shk-bodenseekreis.de (13. April 2026): 'KI als «Game-Changer»: Wer gewinnt das Rennen in der beruflichen Bildung?' – KI revolutioniert berufliche Bildung: Sie erstellt Lernmaterialien, coacht adaptiv und erklärt Zusammenhänge in Sekunden. Die Frage ist nicht mehr «ob» KI in der Bildung, sondern «wie schnell» Organisationen sich anpassen. Exaktes Thought-Leadership-Terrain für learnfluencer.ch: Wer versteht, wie KI das Lernen transformiert, hat einen strukturellen Vorsprung.",
         source: "shk-bodenseekreis.de",
