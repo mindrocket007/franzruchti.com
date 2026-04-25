@@ -26,7 +26,23 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
-      // Neu: 25.04.2026 (3)
+      // Neu: 25.04.2026 (5)
+      {
+        summary: "ZHAW Zürcher Hochschule für Angewandte Wissenschaften (1. September 2024): 'ZHAW wird Hochschulpartnerin von ICT-Berufsbildung Schweiz' – Die ZHAW School of Management and Law (SML) und ICT-Berufsbildung Schweiz haben per 1. September 2024 eine Hochschulpartnerschaft etabliert: Ziel ist eine bessere Abstimmung von Bildungsangeboten und -wegen im ICT-Bereich; sechs von zehn ICT-Lernenden streben nach der Lehre eine Tertiärausbildung an. Wachsende Hochschulvernetzung im ICT-Bereich stärkt den Stellenwert anerkannter ICT-Qualifikationen als Brücke zwischen Berufsbildung und Hochschule – direktes strategisches Umfeld für SIZ AG.",
+        source: "ZHAW / ICT-Berufsbildung Schweiz",
+        url: "https://www.zhaw.ch/de/ueber-uns/aktuell/news/detailansicht-news/event-news/zhaw-wird-hochschulpartnerin-von-ict-berufsbildung-schweiz",
+        date: "2024-09",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-25",
+      },
+      {
+        summary: "ICT-Berufsbildung Schweiz (1. Juni 2024): 'OST wird Hochschulpartnerin von ICT-Berufsbildung Schweiz' – Die Ostschweizer Fachhochschule OST und ICT-Berufsbildung Schweiz sind eine Hochschulpartnerschaft eingegangen: Ziel ist bessere Abstimmung von ICT-Bildungsangeboten und -wegen; bisherige Zusammenarbeit bei der eidg. Berufsprüfung Cyber Security Specialist wird institutionell vertieft. Wachsendes Netzwerk von Hochschulpartnerschaften rund um ICT-Berufsbildung erhöht die strategische Bedeutung anerkannter ICT-Qualifikationen als Bildungsbrücke – direktes Marktumfeld für SIZ AG.",
+        source: "ICT-Berufsbildung Schweiz",
+        url: "https://www.ict-berufsbildung.ch/ost-wird-hochschulpartnerin-von-ict-berufsbildung-schweiz",
+        date: "2024-06",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-25",
+      },
       {
         summary: "ICT-Berufsbildung Schweiz (2026): Kompetenzzentrum für Digitalisierung der Berufsbildung – Das Kompetenzzentrum berät Trägerschaften, Organisationen der Arbeitswelt und Bildungsanbieter bei der Digitalisierung von Prüfungen, KI-Integration und digitalem Lernen. Es fungiert als nationales Hub für Digitalisierungsvorhaben in der Schweizer Berufsbildung – direktes strategisches Umfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation, die von Digitalisierungsinitiativen des Kompetenzzentrums profitiert.",
         source: "ICT-Berufsbildung Schweiz",
@@ -6934,7 +6950,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
-      // Neu: 25.04.2026 (1)
+      // Neu: 25.04.2026 (2)
+      {
+        summary: "presse-nachrichten.de (22. April 2026): 'Wiener Zielsteuerung: Zentrum für sexuelle Gesundheit Magnus und Digitalisierung von Gesundheitsangeboten' – In Wien entsteht das neue Zentrum für sexuelle Gesundheit Magnus; gleichzeitig werden digitale Gesundheitsanwendungen als Pilotprojekte in der Kinder- und Jugendpsychiatrie ausgebaut, um Versorgungslücken zu schließen. Wachsende Institutionalisierung und Digitalisierung sexueller Gesundheitsangebote in der DACH-Region unterstreicht die Marktrelevanz zugänglicher digitaler Selbsthilfeangebote für sexuelle Gesundheit wie orgasmus-hinauszoegern.de.",
+        source: "presse-nachrichten.de",
+        url: "https://www.presse-nachrichten.de/2026/04/22/wiener-zielsteuerung-zentrum-fuer-sexuelle-gesundheit-magnus-und-digitalisierung-von-gesundheitsangeboten/",
+        date: "2026-04-22",
+        category: "Digital Health",
+        addedAt: "2026-04-25",
+      },
       {
         summary: "DEXIMED – Deutsche Experteninformation Medizin (2026): 'Ejaculatio praecox – vorzeitiger Samenerguss' – Detaillierter medizinischer Leitfaden: Ejaculatio praecox betrifft 20–30% aller Männer; Behandlungsoptionen umfassen SSRI, Topika, Beckenbodentraining und Psychotherapie. Selbsthilfe-Techniken wie die Start-Stop-Methode verlängern nach 12 Wochen Training die Zeit bis zur Ejakulation um mehrere Minuten. Steigende medizinische Sensibilisierung und normalisierte Berichterstattung stärken die Nachfrage nach zugänglichen digitalen Selbsthilfeangeboten wie orgasmus-hinauszoegern.de.",
         source: "DEXIMED",
@@ -10989,7 +11013,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
-      // Neu: 25.04.2026 (3 weitere)
+      // Neu: 25.04.2026 (5 weitere)
+      {
+        summary: "Adelta Finanz Magazin (2026): 'Digitalisierung im Bestattungswesen: Moderne Lösungen für eine traditionelle Branche' – Hinterbliebene können heute die komplette Planung einer Beisetzung online abwickeln; cloudbasierte Bestattersoftware (z.B. memilius, seit Februar 2026 öffentlich verfügbar) und neue digitale Kommunikationswege transformieren die gesamte Branche. Die vollständige Digitalisierung des Bestattungsprozesses bestätigt das Marktmodell von bestattungsplaner.ch als digitale Erstanlaufstelle für Vorsorge und Buchung.",
+        source: "Adelta Finanz Magazin",
+        url: "https://www.adeltafinanz.com/magazin/digitalisierung-im-bestattungswesen",
+        date: "2026-01",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-25",
+      },
+      {
+        summary: "Pacemo.de (2026): 'Digitalisierung der Bestattungsbranche – Teil 7' – Fortlaufende Artikelserie zur Digitalisierung der Bestattungsbranche: Neue Software-Generationen, Online-Buchungsportale und digitale Lead-Generierung verändern das Geschäftsmodell klassischer Bestattungsunternehmen fundamental; Hinterbliebene buchen online, Anbieter konkurrieren über Transparenz und Preis. Wachsendes Digitalisierungsangebot in der Branche stärkt die strukturellen Grundlagen für digitale Vermittlungsplattformen wie bestattungsplaner.ch.",
+        source: "Pacemo.de",
+        url: "https://www.pacemo.de/digitalisierung-der-bestattungsbranche-teil-7/",
+        date: "2026-01",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-04-25",
+      },
       {
         summary: "trauerportal.ch (2026): 'Bestattungsarten in der Schweiz: Wie wir heute bestattet werden' – Detaillierter Überblick zu Bestattungsformen 2026: Erdbestattung, Kremation, Seebestattung, Naturbestattung und Baumbestattung. Trend zur Kremation wächst deutlich; alternative Bestattungsformen gewinnen an gesellschaftlicher Akzeptanz. Die wachsende Vielfalt und der Beratungsbedarf bei der Wahl der Bestattungsform stärkt das Marktpotenzial für digitale Vergleichs- und Informationsplattformen wie bestattungsplaner.ch.",
         source: "trauerportal.ch",
