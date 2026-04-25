@@ -1736,7 +1736,39 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
-      // Neu: 25.04.2026 (4)
+      // Neu: 25.04.2026 (8)
+      {
+        summary: "bitnomial.com / Payward (17. April 2026): 'Payward to Acquire Bitnomial, Creating a Fully CFTC-Licensed Derivatives Platform' – Kraken-Muttergesellschaft Payward übernimmt Bitnomial für bis zu 550 Mio. USD. Bitnomial ist die erste crypto-native Plattform mit allen drei US-Lizenzen (DCM, DCO, FCM) für ein vollständiges Derivate-Business in den USA. Die Akquisition baut auf der NinjaTrader-Übernahme auf und schafft einen der grössten regulierten US-Derivate-Stacks – direkte Stärkung des NinjaTrader-Ökosystems, in dem Mind Rocket Trading operiert.",
+        source: "bitnomial.com",
+        url: "https://bitnomial.com/news/2026-04-17/payward-to-acquire-bitnomial/",
+        date: "2026-04-17",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-25",
+      },
+      {
+        summary: "Kraken Blog (17. April 2026): 'Payward Acquires Bitnomial' – Offizielles Kraken-Blog: Mit Bitnomial erhält Payward DCM-, DCO- und FCM-Lizenzen und baut damit nach der NinjaTrader-Übernahme (2025, $1,5 Mrd.) einen vollintegrierten, CFTC-regulierten US-Derivate-Stack auf. Strategische Konsolidierung der NinjaTrader/Kraken-Plattform stärkt die Infrastruktur für regelbasierte ES-Futures-Strategien wie bei Mind Rocket Trading.",
+        source: "Kraken Blog",
+        url: "https://blog.kraken.com/news/payward-acquires-bitnomial",
+        date: "2026-04-17",
+        category: "Regulierung",
+        addedAt: "2026-04-25",
+      },
+      {
+        summary: "Yahoo Finance (17. April 2026): 'Kraken parent Payward to acquire Bitnomial for up to $550m' – Deal bewertet Bitnomial bei ca. 20 Mrd. USD; Abschluss in H1 2026 erwartet. Vollintegration von NinjaTrader und Bitnomial schafft regulierten One-Stop-Shop für US-Futures-Trader. Ausbau der regulierten Infrastruktur im NinjaTrader-Ökosystem ist direkt relevant für Prop-Trading-Strategien wie jene von Mind Rocket Trading.",
+        source: "Yahoo Finance",
+        url: "https://finance.yahoo.com/markets/crypto/articles/kraken-parent-payward-acquire-bitnomial-062656560.html",
+        date: "2026-04-17",
+        category: "Regulierung",
+        addedAt: "2026-04-25",
+      },
+      {
+        summary: "Yahoo Finance / Kraken (April 2026): 'Kraken Builds Beyond Crypto With Futures, Tokenized Stocks, and Payments' – Kraken expandiert aggressiv ins traditionelle Finance-Segment: NinjaTrader für Retail-Futures, xStocks (100+ tokenisierte US-Aktien, $25 Mrd. Volumen), Bitnomial für CFTC-regulierte Derivate, Stellar-Partnerschaft für Zahlungen. Ausbau des NinjaTrader-Ökosystems zur universalen Trading-Plattform stärkt die Infrastruktur für ES-Futures-Trader wie Mind Rocket Trading.",
+        source: "Yahoo Finance",
+        url: "https://finance.yahoo.com/markets/crypto/articles/kraken-builds-beyond-crypto-futures-145618666.html",
+        date: "2026-04",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-25",
+      },
       {
         summary: "TheStreet (24. April 2026): 'Stock Market Today: Nasdaq, S&P 500 set new records as semiconductors rise for 18th straight day' – S&P 500 schloss auf neuem Allzeithoch bei 7.165; Halbleiter-Index stieg 18 Handelstage in Folge. Intel +25% nach starkem Q1-Bericht, Nvidia zurück auf 5-Billionen-USD-Marktkapitalisierung. Neue ATH-Phasen und anhaltende Momentumdynamik in Leitindizes bieten günstiges Umfeld für trendfolgende ES-Futures-Strategien wie jene von Mind Rocket Trading.",
         source: "TheStreet",
@@ -10754,7 +10786,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
-      // Neu: 25.04.2026 (2)
+      // Neu: 25.04.2026 (3)
+      {
+        summary: "bestattungen-scifo.de (2026): 'Digitalisierung der Bestattungsbranche: Trends aus den USA und ihre Bedeutung für Deutschland' – US-Trends wie KI-gestützte Chatbot-Beratung, virtuelle Trauerfeiern und umfassende digitale Vorausplanung werden zur Blaupause für den deutschsprachigen Markt. Rund 5.000 kleine lokale Bestattungsunternehmen in Deutschland noch auf Fax und Papier – enormes Digitalisierungspotenzial. Wachstum digitaler Bestattungsplattformen in der DACH-Region bestätigt die Marktopportunität für bestattungsplaner.ch als führendes digitales Vermittlungsportal in der Schweiz.",
+        source: "bestattungen-scifo.de",
+        url: "https://www.bestattungen-scifo.de/digitalisierung-der-bestattungsbranche-virtuelle-trauerfeiern-ki-und-digitale-planung/",
+        date: "2026-03",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-25",
+      },
       {
         summary: "tooyoo.ch (ETH Lausanne / Mobiliar, 2026): Digitale Vorsorge-Plattform für den Todesfall in der Schweiz – Tooyoo ist eine von der Mobiliar initiierte, sichere digitale Plattform für alle Vorsorgdokumente: Patientenverfügung, Bestattungswünsche, digitales Erbe, Versicherungsverträge. Jahresabo für CHF 39.–, Lebensabofor CHF 599.–. Wachstum digitaler Vorsorge-Plattformen in der Schweiz validiert den Markt für bestattungsplaner.ch und intensiviert den Wettbewerb im digitalen Vorsorgesegment.",
         source: "tooyoo.ch",
