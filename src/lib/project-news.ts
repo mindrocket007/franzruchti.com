@@ -1752,6 +1752,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 25.04.2026 (3 weitere)
+      {
+        summary: "Charles Schwab Market Update (25. April 2026): 'Intel Surges on Results, Lifting Tech as Oil Falls' – Intel +23% nach Earnings-Beat; AMD +12%; Nasdaq 100 +1,36%; ES June Futures (ESM26) notieren bei ~7.196 (+0,38%). Breitgefächerte Tech-Stärke und KI-Sector-Rally setzen positive Rahmenbedingungen für algorithmisches ES-Futures-Trading – direktes tägliches Marktumfeld für Mind Rocket Trading.",
+        source: "Charles Schwab",
+        url: "https://www.schwab.com/learn/story/stock-market-update-open",
+        date: "2026-04-25",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-25",
+      },
+      {
+        summary: "FactSet (24. April 2026): 'S&P 500 Earnings Season Update: April 24, 2026' – 28% der S&P 500-Unternehmen haben Q1-2026-Ergebnisse gemeldet; 84% übertrafen die EPS-Schätzungen (5-Jahres-Durchschnitt: 78%). Starke Earnings-Season mit besonderem Momentum im Tech-/KI-Bereich stützt ein bullisches ES-Futures-Umfeld – direkte Marktvalidierung für algorithmische Long-Strategien bei Mind Rocket Trading.",
+        source: "FactSet",
+        url: "https://insight.factset.com/sp-500-earnings-season-update-april-24-2026",
+        date: "2026-04-24",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-25",
+      },
+      {
+        summary: "OneUpTrader (22. April 2026): 'S&P 500 (ES) Technical Analysis – 22 April 2026' – Wöchentliche technische ES-Futures-Analyse mit Unterstützungs- und Widerstandsniveaus, Marktstruktur und Handelsszenarien für die folgende Woche. Professionelle technische Analyse der ES-Futures-Kernniveaus ist zentrales Tool für regelbasierte, algorithmische Day-Trading-Strategien wie jene von Mind Rocket Trading.",
+        source: "OneUpTrader",
+        url: "https://blog.oneuptrader.com/analysis/technical-analysis/sp-500-es-technical-analysis-22-april-2026/",
+        date: "2026-04-22",
+        category: "Futures & Trading",
+        addedAt: "2026-04-25",
+      },
       // Neu: 25.04.2026 (18)
       {
         summary: "The Motley Fool (24. April 2026): 'Stock Market Today, April 24: S&P 500 and Nasdaq Set New Highs on Tech Surge' – S&P 500 (+0,8% auf 7.165) und Nasdaq (+1,63% auf 24.836) schliessen auf neuen Allzeithochs; Intel-Aktie +25% nach Earnings-Beat, Nvidia überschreitet erneut 5-Billionen-USD-Marktkapitalisierung. KI-Aktien-Rallye und starke Tech-Earnings bestätigen robuste Marktbedingungen für algorithmische ES-Futures-Strategien – direktes Marktumfeld für Mind Rocket Trading.",
@@ -4354,6 +4379,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 25.04.2026 (3 weitere)
+      {
+        summary: "Digital Wellness Institute / PR.com (April 2026): 'AI & Burnout Are Rising: Digital Wellness Day May 1st 2026 Offers a Path to Balance in a Hyper-Digital World' – Digital Wellness Day am 1. Mai 2026 vernetzt 64+ Länder zur Thematik KI-Burnout und digitalem Overload; 77% der Angestellten berichten von Rekordwerten bei Burnout; 1 Milliarde Menschen nutzen monatlich generative KI. Wachsende globale Aufmerksamkeit für KI-induzierte mentale Erschöpfung schafft direktes Nachfragepotenzial für evidenzbasierte digitale Präventionslösungen wie hypnovital®.",
+        source: "Digital Wellness Institute / PR.com",
+        url: "https://www.pr.com/press-release/965061",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-25",
+      },
+      {
+        summary: "Spring Health (2026): 'Data Reveals a \"Silent Burnout\" Crisis: Mental Health Leaves Surge as Employees Quietly Disengage' – Nahezu zwei Drittel aller Unternehmen berichten über steigende psychische Erkrankungsauszeiten; der sog. 'Silent Burnout' – schleichendes Disengagement ohne sichtbare Zeichen – wird 2026 zum wachsenden Unternehmensrisiko. Präventive, skalierbare digitale Lösungen für mentale Gesundheit am Arbeitsplatz gewinnen strategische Relevanz – direktes Marktargument für hypnovital® als BGM-Tool.",
+        source: "Spring Health / PRNewswire",
+        url: "https://www.prnewswire.com/news-releases/spring-health-data-reveals-a-silent-burnout-crisis-mental-health-leaves-surge-as-employees-quietly-disengage-302737434.html",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-25",
+      },
+      {
+        summary: "Swiss Medical Weekly (2026): 'Point prevalence of burnout in Switzerland: a systematic review and meta-analysis' – Systematischer Review und Meta-Analyse zur Burnout-Prävalenz in der Schweiz: Klinisches Burnout bei ca. 4% der Erwerbstätigen; emotionale Erschöpfung und allgemeines Burnout im Durchschnitt bei 18%. Die wissenschaftlich belegte Burnout-Last in der Schweiz stärkt die Marktbasis für evidenzbasierte BGM-Lösungen wie hypnovital® als Präventionsinstrument.",
+        source: "Swiss Medical Weekly (SMW)",
+        url: "https://smw.ch/index.php/smw/article/view/3250",
+        date: "2026-01",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-25",
+      },
       // Neu: 25.04.2026 (3)
       {
         summary: "ad-hoc-news.de (April 2026): 'Betriebliches Gesundheitsmanagement wird 2026 zum strategischen Imperativ' – BGM wandelt sich 2026 von einer freiwilligen Zusatzleistung zu einem strategischen Kernbereich für Unternehmen: Steigende psychische Belastungen, neue gesetzliche Anforderungen und akuter Fachkräftemangel treiben die Professionalisierung des BGM voran. Evidenzbasierte, skalierbare digitale Präventionslösungen sind gefragt – direktes Marktargument für hypnovital® als digitales BGM-Tool.",
@@ -8597,6 +8647,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 25.04.2026 (2 weitere)
+      {
+        summary: "Swiss AI Experts (2026): 'Noch liegen 94,79% des Jahres 2026 vor uns – Was machen wir daraus?' – KI-Strategie-Einschätzung für Schweizer Unternehmen: 48% der Schweizer Firmen nutzen bereits KI in Kernprozessen; strategische Fokussierung auf messbare Anwendungsfälle und Kompetenzaufbau ist die zentrale Herausforderung 2026. Direktes Thought-Leadership-Terrain für learnfluencer.ch: Wie KI-Kompetenz gezielt entwickelt und eingesetzt wird, ist das zentrale Lernthema des Jahres.",
+        source: "Swiss AI Experts",
+        url: "https://www.swiss-ai-experts.ch/noch-liegen-9479-des-jahres-2026-vor-uns-was-machen-wir-daraus/",
+        date: "2026-01",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-25",
+      },
+      {
+        summary: "SwissAI.ch (2026): 'KI Weiterbildungen, Kurse und Lehrgänge in der Schweiz' – Umfassende Übersicht aller KI-Weiterbildungsangebote in der Schweiz: von Grundlagenkursen bis CAS-Programmen; Angebote von OST, ZHdK, ZHAW und privaten Anbietern boomend. Die Explosion an KI-Weiterbildungsangeboten unterstreicht den Bedarf nach Orientierungsplattformen wie learnfluencer.ch, die Lerntransfer und kritische KI-Kompetenz in den Fokus stellen.",
+        source: "SwissAI.ch",
+        url: "https://swissai.ch/blog/ki-kurse-und-lehrgange-in-der-schweiz",
+        date: "2026-01",
+        category: "Weiterbildung Schweiz",
+        addedAt: "2026-04-25",
+      },
       // Neu: 25.04.2026 (4)
       {
         summary: "Deutsche Presseakademie – Corporate Influencer Day CID (14. April 2026, Berlin): Jährliche Fachtagung für Corporate Influencer und Thought-Leadership-Praktiker; Schwerpunkte 2026: KI im Thought-Leadership-Content, authentisches Personal Branding in Zeiten generativer KI und messbarer Einfluss von Expertenpositionierung auf Unternehmenswahrnehmung. Wachsende institutionelle Verankerung von Thought Leadership und Corporate Influencing als Berufsfeld – direktes Positionierungsumfeld für learnfluencer.ch als Thought-Leadership-Plattform von Franz Ruchti.",
@@ -10922,6 +10989,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 25.04.2026 (3 weitere)
+      {
+        summary: "trauerportal.ch (2026): 'Bestattungsarten in der Schweiz: Wie wir heute bestattet werden' – Detaillierter Überblick zu Bestattungsformen 2026: Erdbestattung, Kremation, Seebestattung, Naturbestattung und Baumbestattung. Trend zur Kremation wächst deutlich; alternative Bestattungsformen gewinnen an gesellschaftlicher Akzeptanz. Die wachsende Vielfalt und der Beratungsbedarf bei der Wahl der Bestattungsform stärkt das Marktpotenzial für digitale Vergleichs- und Informationsplattformen wie bestattungsplaner.ch.",
+        source: "trauerportal.ch",
+        url: "https://www.trauerportal.ch/de/blog/bestattungsarten-in-der-schweiz-wie-wir-heute-bestattet-werden",
+        date: "2026-01",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-25",
+      },
+      {
+        summary: "International Bestattungen (2026): 'Exhumation und Bestattung in der Schweiz: Ein umfassender Leitfaden' – Praxisratgeber für internationale Bestattungen und Exhumationen in der Schweiz: kantonale Vorschriften, behördliche Genehmigungen, Überführungen ins Ausland. Die Komplexität grenzüberschreitender Bestattungslogistik unterstreicht den Bedarf nach spezialisierten digitalen Informationsportalen – indirektes Marktumfeld für bestattungsplaner.ch als Erstanlaufstelle.",
+        source: "internationalbestattungen.ch",
+        url: "https://internationalbestattungen.ch/exhumation-und-bestattung-in-der-schweiz-ein-umfassender-leitfaden/",
+        date: "2026-01",
+        category: "Recht & Regelungen",
+        addedAt: "2026-04-25",
+      },
+      {
+        summary: "SNV – Schweizerische Normen-Vereinigung (2026): Normen für das Bestattungswesen Schweiz – Die SNV hat im Bereich Bestattungswesen einschlägige europäische Qualitäts- und Anforderungsstandards erarbeitet: Mindestausbildungsanforderungen, Qualitätssicherung und Standards für Online-Anbieter von Bestattungsdienstleistungen werden diskutiert. Regulatorische Normierung erhöht den Professionalisierungsdruck in der Branche – indirektes Marktumfeld für digitale Vermittlungsplattformen wie bestattungsplaner.ch.",
+        source: "SNV – Schweizerische Normen-Vereinigung",
+        url: "https://www.snv.ch/de/news/news-details/bestattung.html",
+        date: "2026-01",
+        category: "Recht & Regelungen",
+        addedAt: "2026-04-25",
+      },
       // Neu: 25.04.2026 (6)
       {
         summary: "wnsstamps.ch (2026): 'Lebensplanung, Vorsorge und Bestattung: Selbstbestimmt bis zuletzt' – Ratgeber für selbstbestimmte Vorsorge und Bestattungsplanung; verdrängte Themen wie Patientenverfügung, Bestattungswünsche und Nachlassplanung werden als aktive Gestaltungsaufgabe positioniert. Wachsendes gesellschaftliches Interesse an frühzeitiger Bestattungsvorsorge unterstreicht das Marktpotenzial von bestattungsplaner.ch als digitaler Erst-Anlaufstelle für Vorsorge- und Bestattungsplanung in der Schweiz.",
