@@ -26,6 +26,23 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 25.04.2026 (2)
+      {
+        summary: "shk-bodenseekreis.de (13. April 2026): 'KI als «Game-Changer»: Wer gewinnt das Rennen in der beruflichen Bildung?' – KI analysiert Texte, erstellt Lernmaterialien und erklärt komplexe Zusammenhänge in Sekunden. Berufliche Bildungsorganisationen, die Prüfungsformate und Inhalte nicht aktiv auf KI-Kompatibilität prüfen, verlieren an Relevanz. Direkter Handlungsbedarf für SIZ AG, Prüfungsdesign und -inhalte kontinuierlich auf KI-Entwicklungen anzupassen.",
+        source: "shk-bodenseekreis.de",
+        url: "https://www.shk-bodenseekreis.de/2026/04/13/ki-als-game-changer-wer-gewinnt-das-rennen-in-der-beruflichen-bildung/",
+        date: "2026-04-13",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-25",
+      },
+      {
+        summary: "ICT-Berufsbildung Schweiz (2025/2026): ICT-Lernende-Zufriedenheitsumfrage – 96% der ICT-Lernenden, die 2025 ihre Ausbildung begonnen haben, sind sehr bis eher sehr zufrieden mit ihrer Berufswahl (Umfrage: 743 Lernende, 21% Response Rate). Hohe Berufszufriedenheit im ICT-Bereich signalisiert eine wachsende Attraktivität von ICT-Ausbildungswegen und stärkt die Nachfrage nach anerkannten Qualifikationsnachweisen wie jenen der SIZ AG.",
+        source: "ICT-Berufsbildung Schweiz",
+        url: "https://www.ict-berufsbildung.ch/services/news-stories",
+        date: "2026-04",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-25",
+      },
       // Neu: 24.04.2026 (5 weitere)
       {
         summary: "Netzwoche (21. April 2026): 'Schweizer Bevölkerung nutzt KI deutlich häufiger als der europäische Durchschnitt' – Laut Bundesamt für Statistik nutzen 47% der Schweizer (16–74 Jahre) generative KI – Platz 3 in Europa (hinter Norwegen 56%, Dänemark 48%). Besonders auffällig: 73% setzen KI beruflich ein (höchster Wert Europa); bei der Jugend (16–24 J.) sind es 79% gegenüber 64% im europäischen Schnitt. Die überdurchschnittlich hohe digitale Kompetenz der Schweizer Bevölkerung erhöht die Nachfrage nach formalisierten ICT-Qualifikationen und Kompetenznachweisen – direktes Wachstumsumfeld für SIZ AG als führende ICT-Prüfungsorganisation.",
@@ -1318,6 +1335,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
+      // Neu: 25.04.2026 (1)
+      {
+        summary: "shk-bodenseekreis.de (13. April 2026): 'KI als «Game-Changer»: Wer gewinnt das Rennen in der beruflichen Bildung?' – KI agiert als vollständig aktives Bildungselement: Sie analysiert Lernverhalten, erstellt personalisierte Curricula und coacht adaptiv. Klassische Weiterbildungsanbieter ohne KI-Integration verlieren systematisch Marktanteile. Mind Rocket GmbH kann diesen Strukturwandel als Chance nutzen, digitale Coaching-Formate mit KI-Elementen zu verbinden und die Reichweite persönlichkeitsorientierter Programme erheblich zu skalieren.",
+        source: "shk-bodenseekreis.de",
+        url: "https://www.shk-bodenseekreis.de/2026/04/13/ki-als-game-changer-wer-gewinnt-das-rennen-in-der-beruflichen-bildung/",
+        date: "2026-04-13",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-04-25",
+      },
       // Neu: 24.04.2026 (1)
       {
         summary: "coachingausbildungen.ch (2026): 'Schweizer Coaching-Markt 2026 – Analyse und Trends' – Der Schweizer Coaching-Markt zeigt klare Wachstumstrends: KI-basierte Coaching-Plattformen, hybride Online/Präsenz-Formate und spezialisierte Nischen (z.B. Persönlichkeitsentwicklung) gewinnen stark an Bedeutung. Ein günstiges Marktumfeld für digitale Coaching- und Weiterbildungsangebote wie jene von Mind Rocket GmbH.",
@@ -1710,6 +1736,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 25.04.2026 (2)
+      {
+        summary: "OneUpTrader Blog (22. April 2026): 'S&P 500 (ES) Technical Analysis – 22 April 2026' – ES hat den vormaligen Allzeithoch-Bereich bei ~7.100 durchbrochen und hält sich darüber; die Rally von den März-Tiefs dauerte 15 Handelstage mit nur einem roten Tag. Kurzfristige Gewinnmitnahmen im Widerstandsbereich erwartet, Trendstruktur bleibt bullisch. Direktes technisches Marktbild für ES-Futures-Trader wie jene bei Mind Rocket Trading.",
+        source: "OneUpTrader Blog",
+        url: "https://blog.oneuptrader.com/analysis/technical-analysis/sp-500-es-technical-analysis-22-april-2026/",
+        date: "2026-04-22",
+        category: "Futures & Trading",
+        addedAt: "2026-04-25",
+      },
+      {
+        summary: "prnewswire.com (2026): 'NinjaTrader Group Unveils NinjaTrader Connect' – NinjaTrader Connect ist eine neue End-to-End-Infrastrukturplattform, die Fintechs, Brokerages und Handelsplattformen ermöglicht, regulierten Futures- und Prediction-Market-Handel über eine einzige API anzubieten. Erweitert massiv den Zugang zu Futures-Märkten für neue Player und Partner – strategische Positionierung, die auch NinjaTrader-basierte Prop-Trading-Angebote wie Mind Rocket Trading direkt betrifft.",
+        source: "prnewswire.com",
+        url: "https://www.prnewswire.com/news-releases/ninjatrader-group-unveils-ninjatrader-connect-redefining-brokerage-infrastructure-for-futures-and-prediction-markets-firms-302701464.html",
+        date: "2026-04",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-25",
+      },
       // Neu: 24.04.2026 (3 weitere)
       {
         summary: "nortonrosefulbright.com (März 2026): 'ESMA Supervisory Briefing on Algorithmic Trading – MiFID II' – ESMA hat im Februar 2026 ein Supervisory Briefing zu algorithmischem Handel veröffentlicht, mit klaren Anforderungen an Pre-Trade-Controls, Governance und Stresstests unter MiFID II. KI-gestützte Algorithmen stehen unter besonderer Beobachtung. Für Mind Rocket Trading relevant, da NinjaTrader-Strategien unter die MiFID-II-Regulierung fallen könnten.",
@@ -3420,6 +3463,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 25.04.2026 (1)
+      {
+        summary: "kalendar2026.de (2026): 'Zeitmanagement und Jahresplanung – Effektiv durch 2026' – Strukturiertes Zeitmanagement und systematische Jahresplanung werden 2026 als Erfolgsfaktoren für persönliche und berufliche Ziele angesehen: Klare Ziele, Selbstreflexion und praktische Planungswerkzeuge helfen, den Alltag messbar produktiver zu gestalten. Steigende öffentliche Nachfrage nach praktischen persönlichkeitsorientierten Planungsmethoden stärkt den Markt für digitale Selbsthilfe-Werkzeuge wie jene auf mindtools.ch.",
+        source: "kalendar2026.de",
+        url: "https://www.kalendar2026.de/blog/zeitmanagement-jahresplanung.html",
+        date: "2026-01",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-04-25",
+      },
       // Neu: 24.04.2026 (4)
       {
         summary: "express-press-release.net (22.04.2026): 'Mental Health Apps Market Trends 2026 Driven by AI Therapy and Digital Care' – Der globale Markt für Mental-Health-Apps überschreitet 2026 die USD 10-Milliarden-Marke (CAGR 17%), getrieben durch KI-gestützte Personalisierung und CBT-Integration. 7,8% der Schweizer Bevölkerung haben unerfüllten Bedarf an psychischer Unterstützung – ein direktes Argument für zugängliche digitale mentale Werkzeuge wie jene von mindtools.ch.",
@@ -4150,6 +4202,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 25.04.2026 (3)
+      {
+        summary: "ad-hoc-news.de (April 2026): 'Betriebliches Gesundheitsmanagement wird 2026 zum strategischen Imperativ' – BGM wandelt sich 2026 von einer freiwilligen Zusatzleistung zu einem strategischen Kernbereich für Unternehmen: Steigende psychische Belastungen, neue gesetzliche Anforderungen und akuter Fachkräftemangel treiben die Professionalisierung des BGM voran. Evidenzbasierte, skalierbare digitale Präventionslösungen sind gefragt – direktes Marktargument für hypnovital® als digitales BGM-Tool.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/betriebliches-gesundheitsmanagement-wird-2026-zum-strategischen-imperativ/69075884",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-25",
+      },
+      {
+        summary: "nume.ch (2026): 'Mentale Gesundheit 2026: Warum gesunde Führung Pflicht ist' – Der wirtschaftliche Erfolg eines Unternehmens hängt 2026 direkt von der «Mental Fitness» der Belegschaft ab; BGM-Investitionen amortisieren sich durch sinkende Lohnfortzahlungskosten und höhere Mitarbeiterbindung (ROI: 3–5 Franken pro eingesetztem Franken). Führungskräfte gelten als zentrale Gesundheitsmultiplikatoren (über 90% der Unternehmen). Positioniert hypnovital® als Leadership-BGM-Tool mit messbarem ROI.",
+        source: "nume.ch",
+        url: "https://www.nume.ch/mentale-gesundheit-2026-warum-gesunde-fuehrung-pflicht-ist/",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-25",
+      },
+      {
+        summary: "workplacehealth.at (2026): 'BGM-Trends 2026: Was sind unsere Einschätzungen?' – Hybride BGM-Angebote kombinieren Gesundheits-Apps und virtuelles Coaching mit Präsenzveranstaltungen; KI-Tools korrelieren anonymisierte Daten, um frühzeitig Risikocluster zu identifizieren. Neue EU-Kampagnen und nationale Gesetze machen psychische Gesundheit am Arbeitsplatz zur verbindlichen Managementaufgabe. Direkter regulatorischer Rückenwind für digitale Präventionslösungen wie hypnovital®.",
+        source: "workplacehealth.at",
+        url: "https://www.workplacehealth.at/bgm-trends-2026-was-sind-unsere-einschaetzungen/",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-25",
+      },
       // Neu: 24.04.2026 (8 BGM Leadership)
       {
         summary: "it-boltwise.de (2026): 'Selbstmanagement als Schlüsselkompetenz für 2026' – Selbstfürsorge und Selbstmanagement werden zur zentralen Kompetenz für nachhaltige Produktivität; die WHO hat die Bedeutung psychischer Gesundheit am Arbeitsplatz hervorgehoben. Selbstmanagement entwickelt sich 2026 von einer Nice-to-have- zur Grundanforderung in der Arbeitswelt – direktes Marktargument für hypnovital® als skalierbare digitale Selbstfürsorge- und Stressreduktionslösung.",
@@ -5735,6 +5812,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 25.04.2026 (2)
+      {
+        summary: "northlyapp.com (2026): 'OKR-Methode – der komplette Leitfaden 2026' – OKRs werden in Quartalszyklen definiert; die 12-Week-Year-Methode bietet den persönlichen Ausführungsrhythmus, der OKR-Systeme zum Funktionieren bringt. Die Kombination beider Ansätze sorgt für Ausrichtung, Transparenz und eine angestrebte Erfüllungsquote von 85% wöchentlicher Leadmassnahmen. Direkter strategischer Kontext für den 12wy-planner als Werkzeug, das OKR-Integration als Feature erschliessen kann.",
+        source: "northlyapp.com",
+        url: "https://northlyapp.com/de/blog/okr-methode-komplett-leitfaden/",
+        date: "2026-01",
+        category: "Zielsetzung & OKR",
+        addedAt: "2026-04-25",
+      },
+      {
+        summary: "clickup.com (2026): 'Free 12-Week Year Templates to Crush Your Goals' – ClickUp bietet kostenlose 12-Week-Year-Vorlagen mit sofort nutzbaren Tabellen, Wochen-Scorecards und Zielplanung – ein Beleg für die breite Marktakzeptanz der Methode. Wachsende Template-Konkurrenz unterstreicht die Notwendigkeit spezialisierter SaaS-Tools wie dem 12wy-planner, die über statische Vorlagen hinausgehen und dynamisches Tracking, Accountability und KI-Coaching ermöglichen.",
+        source: "clickup.com",
+        url: "https://clickup.com/blog/12-week-year-templates/",
+        date: "2026-01",
+        category: "SaaS & Tools",
+        addedAt: "2026-04-25",
+      },
       // Neu: 24.04.2026 (4)
       {
         summary: "fungies.io (April 2026): 'SaaS Market 2026: Complete Industry Analysis, Data & Trends' – Der globale SaaS-Markt hat 2026 die USD 315-Milliarden-Marke überschritten; KI-integrierte Workflows und agentenbasierte Planungstools sind die wachstumsstärksten Segmente (CAGR 18%). Produktivitäts-SaaS mit KI-Unterstützung verzeichnen die höchsten Wachstumsraten – ein starker Marktkontext für spezialisierte Planungstools wie den 12 Week Year Planner.",
@@ -6638,6 +6732,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 25.04.2026 (1)
+      {
+        summary: "DEXIMED – Deutsche Experteninformation Medizin (2026): 'Ejaculatio praecox – vorzeitiger Samenerguss' – Detaillierter medizinischer Leitfaden: Ejaculatio praecox betrifft 20–30% aller Männer; Behandlungsoptionen umfassen SSRI, Topika, Beckenbodentraining und Psychotherapie. Selbsthilfe-Techniken wie die Start-Stop-Methode verlängern nach 12 Wochen Training die Zeit bis zur Ejakulation um mehrere Minuten. Steigende medizinische Sensibilisierung und normalisierte Berichterstattung stärken die Nachfrage nach zugänglichen digitalen Selbsthilfeangeboten wie orgasmus-hinauszoegern.de.",
+        source: "DEXIMED",
+        url: "https://deximed.de/home/klinische-themen/maennergesundheit/patienteninformationen/sexual-und-fortpflanzungsstoerungen/vorzeitiger-samenerguss-ejaculatio-praecox",
+        date: "2026-01",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-25",
+      },
       // Neu: 24.04.2026 (4)
       {
         summary: "Bode Living (14.03.2026): 'Novel Smartphone App Shows Promise in Treating Premature Ejaculation' – Die CLIMACS-Studie (präsentiert am EAU-Kongress März 2026) zeigt: Eine Smartphone-App auf Basis von Verhaltenstherapie und Achtsamkeit verdoppelt die Zeit bis zur Ejakulation (von 61 auf 125 Sekunden); 22% der Nutzer erfüllten danach nicht mehr die Kriterien für Ejaculatio praecox. Klare Marktvalidierung für digitale Selbsthilfeangebote bei vorzeitigem Samenerguss – komplementär zu orgasmus-hinauszoegern.de.",
@@ -7416,6 +7519,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 25.04.2026 (2)
+      {
+        summary: "sportgesundheitspark.de / Akademie (2026): 'Symposium 2026: Mentale Gesundheit & Arbeit' – Jährliches Symposium zu mentaler Gesundheit am Arbeitsplatz mit Fokus auf Angststörungen, Burnout-Prävention und psychologische Resilienz; Referenten aus Psychologie, Psychiatrie und Unternehmensführung. Wachsende Zahl institutioneller Veranstaltungen zu mentaler Gesundheit unterstreicht die gesellschaftliche Relevanz von Lösungen gegen Bühnenangst und Auftrittsangst – direktes Positionierungsumfeld für lampenfieber-besiegen.de.",
+        source: "sportgesundheitspark.de / Akademie",
+        url: "https://www.sportgesundheitspark.de/akademie/symposien-in-veranstaltungen/symposium-mentale-gesundheit-2026",
+        date: "2026-04",
+        category: "Psychologie & Forschung",
+        addedAt: "2026-04-25",
+      },
+      {
+        summary: "noack-hypnose.de (2026): 'Redeangst ist kein Lampenfieber – Aufklärung, Tipps, Hilfe' – Noack Hypnotherapie erklärt den Unterschied zwischen normalem Lampenfieber und klinischer Redeangst: Lampenfieber ist auftrittsbegleitend und motivierend; Redeangst ist ein anhaltend vermeidendes Verhaltensmuster. Hypnosetherapie adressiert die unbewussten Auslöser direkt. Wachsende öffentliche Differenzierung zwischen Lampenfieber und Redeangst steigert den Aufklärungsbedarf – direktes Content- und SEO-Potenzial für lampenfieber-besiegen.de.",
+        source: "noack-hypnose.de",
+        url: "https://www.noack-hypnose.de/redeangst/",
+        date: "2026-01",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-04-25",
+      },
       // Neu: 24.04.2026 (4)
       {
         summary: "FURIOS – Campusmagazin FU Berlin (22.04.2026): 'Neues Semester, gleiche Angst: Wie wir mit Nervosität und Redeangst im Studium klarkommen' – Studierende berichten von wiederkehrendem Lampenfieber bei mündlichen Prüfungen und Referaten; Experten empfehlen Atemübungen, Expositionstherapie und psychologische Beratung. Aktueller Anlass: Semesterbeginn April 2026 macht Redeangst besonders virulent – direkter Suchbedarf für Lösungen wie lampenfieber-besiegen.de.",
@@ -8309,6 +8429,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 25.04.2026 (2)
+      {
+        summary: "shk-bodenseekreis.de (13. April 2026): 'KI als «Game-Changer»: Wer gewinnt das Rennen in der beruflichen Bildung?' – KI revolutioniert berufliche Bildung: Sie erstellt Lernmaterialien, coacht adaptiv und erklärt Zusammenhänge in Sekunden. Die Frage ist nicht mehr «ob» KI in der Bildung, sondern «wie schnell» Organisationen sich anpassen. Exaktes Thought-Leadership-Terrain für learnfluencer.ch: Wer versteht, wie KI das Lernen transformiert, hat einen strukturellen Vorsprung.",
+        source: "shk-bodenseekreis.de",
+        url: "https://www.shk-bodenseekreis.de/2026/04/13/ki-als-game-changer-wer-gewinnt-das-rennen-in-der-beruflichen-bildung/",
+        date: "2026-04-13",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-25",
+      },
+      {
+        summary: "ZHdK Zürcher Hochschule der Künste (2026): 'AI Encounter – Kurs Mai–Juni 2026' – Neues KI-Kursformat der ZHdK richtet sich an Fachpersonen ohne Informatikstudium, die KI-Werkzeuge in ihre Praxis integrieren möchten; praxisorientiert, interdisziplinär, Fokus auf kritischer KI-Kompetenz. Wachsende institutionelle Nachfrage nach KI-Literacy auch ausserhalb technischer Berufe ist direktes Content-Thema für learnfluencer.ch als Thought-Leadership-Plattform für Lernen und KI.",
+        source: "ZHdK Zürcher Hochschule der Künste",
+        url: "https://www.zhdk.ch/weiterbildung/ai-encounter",
+        date: "2026-04",
+        category: "Weiterbildung Schweiz",
+        addedAt: "2026-04-25",
+      },
       // Neu: 24.04.2026 (5 weitere)
       {
         summary: "Netzwoche (21. April 2026): 'Schweizer Bevölkerung nutzt KI deutlich häufiger als der europäische Durchschnitt' – 47% der Schweizer (16–74 J.) nutzen generative KI (Platz 3 in Europa); 73% davon beruflich (Höchstwert Europa); bei der Jugend sind es 79%. Hohe KI-Adoption bei gleichzeitig strukturellem Qualifizierungsbedarf schafft eine überdurchschnittlich große, aktive Zielgruppe für Thought-Leadership zu Lernkompetenz und KI-Nutzung – direktes Positionierungsumfeld für learnfluencer.ch.",
@@ -9677,6 +9814,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 25.04.2026 (2)
+      {
+        summary: "lorien.group (2026): 'Online-Marketing-Strategie für KMU Schweiz 2026' – Erfolgreiche Schweizer KMU entwickeln 2026 eine fundierte Online-Marketing-Strategie: klare Zielgruppenanalyse, strukturierter Kanal-Mix und messbare KPIs als Fundament. Ohne strategischen Plan bleibt jedes Tool wirkungslos. Direktes Argument für interaktive Marketingkonzept-Tools mit PESTEL, SWOT und KPI-Planung wie jenes auf learnfluencer.ch.",
+        source: "lorien.group",
+        url: "https://www.lorien.group/blog/online-marketing-strategie-kmu",
+        date: "2026-04",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-25",
+      },
+      {
+        summary: "zweiblog.com (2026): 'Digital Marketing Trends 2026 für die Schweiz' – Die wichtigsten Schweizer Trends: GEO (Generative Engine Optimization), KI-gestützte Personalisierung, Zero-Click-Strategien und authentisches Content-Marketing. Marketingbudgets müssen 2026 strategisch priorisiert werden; fundierte Planung mit Analyse-Rahmen (SWOT, PESTEL, 7P) ist Pflicht vor dem Tool-Einsatz – direktes Positionierungsumfeld für das Marketingkonzept-Tool.",
+        source: "zweiblog.com",
+        url: "https://www.zweiblog.com/de/digital-marketing-trends-2026-fuer-die-schweiz/",
+        date: "2026-04",
+        category: "MarTech & Trends",
+        addedAt: "2026-04-25",
+      },
       // Neu: 24.04.2026 (3)
       {
         summary: "bexolutions.ch (2026): 'Marketing Automation für Schweizer KMU 2026 – Tools & ROI' – Schweizer KMU sparen durch Marketing Automation durchschnittlich 6–9 Stunden pro Woche; automatisierte Lead-Nurturing-Kampagnen erzielen 50% höhere Conversion-Rates bei 33% tieferen Kosten. Belegt den Bedarf an strukturierten Marketing-Tools wie dem Marketingkonzept-Tool.",
@@ -10584,6 +10738,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 25.04.2026 (2)
+      {
+        summary: "tooyoo.ch (ETH Lausanne / Mobiliar, 2026): Digitale Vorsorge-Plattform für den Todesfall in der Schweiz – Tooyoo ist eine von der Mobiliar initiierte, sichere digitale Plattform für alle Vorsorgdokumente: Patientenverfügung, Bestattungswünsche, digitales Erbe, Versicherungsverträge. Jahresabo für CHF 39.–, Lebensabofor CHF 599.–. Wachstum digitaler Vorsorge-Plattformen in der Schweiz validiert den Markt für bestattungsplaner.ch und intensiviert den Wettbewerb im digitalen Vorsorgesegment.",
+        source: "tooyoo.ch",
+        url: "https://tooyoo.ch",
+        date: "2026-04",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-04-25",
+      },
+      {
+        summary: "SSBV Stiftung Schweizerische Bestattungsvorsorge (2026): ssbv.swiss – Offizielle Schweizer Vorsorgestiftung für Bestattungsplanung mit Vorsorgevertrag und Vorsorgekonto. Die SSBV bietet strukturierten Vorsorgeschutz für Bestattungskosten und entlastet Angehörige administrativ und finanziell. Wachsende institutionelle Bestattungsvorsorge in der Schweiz unterstreicht das Informationsbedürfnis der Bevölkerung – bestattungsplaner.ch profitiert als niederschwelliges Informations- und Vermittlungsportal.",
+        source: "SSBV Stiftung Schweizerische Bestattungsvorsorge",
+        url: "https://www.ssbv.swiss/",
+        date: "2026-04",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-25",
+      },
       // Neu: 24.04.2026 (2 Kompostbestattung)
       {
         summary: "SWI swissinfo.ch (2026): 'Die Stadt Zürich will mit der Kompostbestattung neue Wege gehen' – Zürich unterstützt den Verein «Werde Erde» mit Fachwissen und Anschubfinanzierung; der Kantonsrat prüft bereits die Legalisierung. Die Schweiz hat eine Kremationsrate von ~90% und gehört zu den Vorreitern bei umweltfreundlichen Bestattungsformen. Neue Bestattungsformen erhöhen das Informationsbedürfnis der Bevölkerung – wachsendes Potenzial für bestattungsplaner.ch als umfassendes Informations- und Vermittlungsportal.",
