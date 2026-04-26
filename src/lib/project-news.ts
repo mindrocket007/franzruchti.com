@@ -1368,7 +1368,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
-      // Neu: 26.04.2026 (2)
+      // Neu: 26.04.2026 (4)
+      {
+        summary: "EHB – Eidgenössische Hochschule für Berufsbildung (März 2026): Die EHB baut 2026 ihre Weiterbildungen in Berufspädagogik aus und integriert explizit E-Learning, KI und Virtual Reality in ihre Didaktik-Lehrpläne. Diese Institutionalisierung digitaler Lernformate stärkt die Marktposition von Online-Trainingsanbietern wie Mind Rocket GmbH im deutschsprachigen Schweizer Markt.",
+        source: "EHB – Eidgenössische Hochschule für Berufsbildung",
+        url: "https://www.ehb.swiss/weiterbildung/schwerpunkt-berufspaedagogik",
+        date: "2026-03",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-04-26",
+      },
+      {
+        summary: "PRH Schweiz-Österreich-Deutschland (März 2026): PRH bietet 2026 achtsamkeitsbasierte Persönlichkeitsentwicklungs-Kurse an, darunter Einstiegskurse wie 'Wer bin ich?' und aufbauende Module zu Beziehungen und persönlichem Wachstum. Die hohe Nachfrage nach strukturierten, tiefenwirksamen Selbstentwicklungsprogrammen im DACH-Raum bestätigt den Markt, in dem Mind Rocket GmbH mit seinen Programmen positioniert ist.",
+        source: "PRH Schweiz-Österreich-Deutschland",
+        url: "https://www.prh-persoenlichkeitsentwicklung.com/",
+        date: "2026-03",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-04-26",
+      },
       {
         summary: "personalwirtschaft.de (2026): 'Wie verändert KI die Logik des Corporate Learnings?' – Exklusiver Roundtable der Fachzeitschrift Personalwirtschaft: KI transformiert betriebliches Lernen grundlegend – Lernpfade werden automatisiert, Skill-Gaps in Echtzeit erkannt, Wissen wird arbeitsintegriert und kontextbezogen zugänglich gemacht. Strukturwandel im Corporate Learning wird zum strategischen Hebel für Coaching-Anbieter mit KI-Integration – direktes Wachstumsumfeld für digitale Coaching-Programme von Mind Rocket GmbH.",
         source: "personalwirtschaft.de",
@@ -1794,6 +1810,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 26.04.2026 (1)
+      {
+        summary: "NinjaTrader YouTube (März 2026): '2026 Market Outlook mit Larry Williams' – NinjaTrader Live präsentiert den Marktausblick für ES Futures und Trading-Strategien für 2026 mit Keynote-Inputs von Futures-Trading-Legende Larry Williams. Aktueller Bildungsinhalt für algorithmische und diskretionäre ES-Futures-Händler direkt von der führenden Futures-Broker-Plattform.",
+        source: "NinjaTrader YouTube",
+        url: "https://www.youtube.com/watch?v=6UNlIBuDG_Q",
+        date: "2026-03",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-26",
+      },
       // Neu: 25.04.2026 (3 weitere)
       {
         summary: "Charles Schwab Market Update (25. April 2026): 'Intel Surges on Results, Lifting Tech as Oil Falls' – Intel +23% nach Earnings-Beat; AMD +12%; Nasdaq 100 +1,36%; ES June Futures (ESM26) notieren bei ~7.196 (+0,38%). Breitgefächerte Tech-Stärke und KI-Sector-Rally setzen positive Rahmenbedingungen für algorithmisches ES-Futures-Trading – direktes tägliches Marktumfeld für Mind Rocket Trading.",
@@ -3674,7 +3699,39 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
-      // Neu: 26.04.2026 (2)
+      // Neu: 26.04.2026 (6)
+      {
+        summary: "Mindtools Kineo (April 2026): 'Manager Skills Workshops für den modernen Arbeitsplatz' – Mindtools Kineo lanciert 2026 neue Manager-Skills-Workshops in virtuellen, Präsenz- und Blended-Learning-Formaten. Mindtools Kineo wurde erneut unter die Top 20 Custom Content Development Companies von Training Industry gewählt. Wachsendes institutionelles Angebot an strukturierten Führungskräfte-Entwicklungstools bestätigt die Marktdynamik im Selbstentwicklungs-Segment.",
+        source: "Learning News / Mindtools Kineo",
+        url: "https://learningnews.com/news/mindtools/2026/mindtools-kineo-launches-manager-skills-workshops-for-the-modern-workplace",
+        date: "2026-04",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-04-26",
+      },
+      {
+        summary: "Mindtools (April 2026): Neuer Flagship-Report 'Building Better Managers 2026' – Zeigt, wie Unternehmen systematisch bessere Führungskräfte entwickeln können. Wachsende Nachfrage nach strukturierten, digitalen Führungskräfte-Entwicklungstools – direktes Marktumfeld für mindtools.ch als kompaktes Tool für persönliche und berufliche Entwicklung.",
+        source: "Mindtools Blog",
+        url: "https://www.mindtools.com/blog/new-flagship-report-building-better-managers/",
+        date: "2026-04",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-04-26",
+      },
+      {
+        summary: "Selbsthilfe Schweiz (März 2026): Ab 1. Mai 2026 wird das neue Modell 'Selbsthilfe-Freundlichkeit' definitiv eingeführt – Institutionen können sich zertifizieren lassen. ChatGPT-Integration in Schweizer Selbsthilfegruppen wird diskutiert. Wachsendes digitales Selbsthilfeangebot in der Schweiz als Marktchance für mindtools.ch als Plattform mit praxisnahen mentalen Werkzeugen.",
+        source: "Selbsthilfe Schweiz",
+        url: "https://www.selbsthilfeschweiz.ch/shch/de.html",
+        date: "2026-03",
+        category: "Mental Health",
+        addedAt: "2026-04-26",
+      },
+      {
+        summary: "International Journal of Psychiatry in Clinical Practice (März 2026): 'Mental health care services in Switzerland – the post-pandemic state' – Aktuelle Analyse des Schweizer Mental-Health-Versorgungssystems nach der Pandemie zeigt strukturelle Veränderungen und wachsende Nachfrage nach digitalen Selbsthilfe-Tools. Direkte Relevanz für mindtools.ch als digitales Ergänzungsangebot im wachsenden Schweizer Mental-Health-Markt.",
+        source: "International Journal of Psychiatry in Clinical Practice",
+        url: "https://www.tandfonline.com/doi/full/10.1080/09540261.2025.2479596",
+        date: "2026-03",
+        category: "Mental Health",
+        addedAt: "2026-04-26",
+      },
       {
         summary: "persolog.ch (2026): Persolog Schweiz bietet Persönlichkeitsanalysen und Entwicklungsinstrumente für Beruf und Privatleben an. Das persolog-Profil (D-I-S-G-Modell) ist eines der meistgenutzten Persönlichkeitsdiagnostik-Systeme im deutschsprachigen Raum – mit breitem Einsatz in Coaching, HR und Personalentwicklung. Wachsendes Schweizer Angebot an strukturierten Persönlichkeitsentwicklungs-Tools bestätigt die stabile Nachfrage – direktes Marktumfeld für mindtools.ch als digitale Ergänzungsplattform mit PDF-Werkzeugen und mentalen Entwicklungshilfen.",
         source: "persolog.ch",
@@ -6082,7 +6139,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
-      // Neu: 26.04.2026 (1)
+      // Neu: 26.04.2026 (2)
+      {
+        summary: "OKRs Tool (März 2026): Q1 2026 Produkt-Roadmap veröffentlicht – Führende OKR-Software-Anbieter wie Weekdone, Mooncamp und Perdoo erweitern ihre Features. 65% der Früh-Teams tracken Ziele noch in Excel/Sheets; kein getestetes OKR-Tool ist explizit auf die 12-Week-Year-Methode zugeschnitten – die Nische des 12wy-planners als dediziertes, methodenspezifisches Werkzeug bleibt unbesetzt.",
+        source: "OKRs Tool",
+        url: "https://www.okrstool.com/blog/product-roadmap",
+        date: "2026-03",
+        category: "Zielsetzung & OKR",
+        addedAt: "2026-04-26",
+      },
       {
         summary: "ad-hoc-news.de (2026): 'Karriere 2026: SMART-Ziele müssen jetzt schärfer werden' – Karriere-Coaches empfehlen 2026 eine Neuausrichtung: Das terminierte Element der SMART-Formel soll auf Quartals-Sprints (90 Tage) verkürzt werden. Statt langwieriger Zertifikate sind überprüfbare Ergebnisse alle 90 Tage gefragt; die 12-Week-Year-Methode gilt als führendes Framework für diese Zielsetzungsstrategie. Wachsende Mainstream-Akzeptanz von Quartalssprint-Methoden bestätigt den strategischen Nutzen des 12wy-planners als spezialisiertes SaaS-Tool für präzise, kurzzyklige Zielplanung.",
         source: "ad-hoc-news.de",
@@ -7011,7 +7076,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
-      // Neu: 26.04.2026 (2)
+      // Neu: 26.04.2026 (4)
+      {
+        summary: "Urologielehrbuch.de (April 2026): 'Vorzeitige Ejakulation – aktuelle Behandlungsoptionen' – 2026 kombiniert die Behandlung Dapoxetin/SSRIs, Lokalanästhetika (Lidocain/Prilocain), Sexualtherapie und bei therapieresistenten Fällen chirurgische Eingriffe (selektive laterale Neurektomie). Vorteile der Sexualtherapie: keine Nebenwirkungen, bessere Paarkommunikation. Wachsende Informationsnachfrage stärkt den Markt für diskrete Selbsthilfeformate.",
+        source: "Urologielehrbuch.de",
+        url: "https://www.urologielehrbuch.de/vorzeitige-ejakulation.html",
+        date: "2026-04",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-26",
+      },
+      {
+        summary: "Seelenpraxis Marx (April 2026): 'Hypnose bei sexuellen Störungen – ganzheitliche Unterstützung für ein erfülltes Liebesleben' – Hypnosetherapie wird 2026 erfolgreich bei vorzeitigem Samenerguss eingesetzt: Hypnose findet unbewusste Auslöser (Traumata, Ängste, alte Erfahrungen) und löst diese gezielt auf. Gilt als vergleichsweise schnelle Methode ohne Nebenwirkungen – direktes Validierungsumfeld für das Audio-Selbsthilfe-Format von orgasmus-hinauszoegern.de.",
+        source: "Seelenpraxis Marx",
+        url: "https://www.seelenpraxis-marx.de/hypnose-bei-sexualproblemen/",
+        date: "2026-04",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-26",
+      },
       {
         summary: "netdoktor.ch (2026): 'Vorzeitiger Samenerguss: Ursachen' – Schweizer Gesundheitsportal NetDoktor klärt über vorzeitigen Samenerguss auf: Psychische Faktoren wie Stress, Leistungsdruck und Beziehungsprobleme sind häufigste Ursachen; Verhaltenstechniken und Sexualtherapie wirksame Behandlungsmethoden. Normalisierung und öffentliche Aufklärung durch seriöse Schweizer Gesundheitsmedien erhöht die Nachfrage nach diskreten, niedrigschwelligen Selbsthilfe-Formaten – direktes Marktumfeld für orgasmus-hinauszoegern.de.",
         source: "netdoktor.ch",
@@ -7823,7 +7904,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
-      // Neu: 26.04.2026 (2)
+      // Neu: 26.04.2026 (4)
+      {
+        summary: "ad-hoc-news.de (März 2026): 'Akupressur – die neue Selbstbehauptung für Jugendliche' – Wissenschaftliche Studien stützen die Wirksamkeit von Akupressur bei Stresssymptomen wie Prüfungsangst. Ergänzend bewährt: 4-7-8-Atemtechnik, progressive Muskelentspannung, kognitive Verhaltenstherapie und strukturierte Lernplanung. Wachsendes Interesse an nichtmedikamentösen Methoden stärkt das Marktumfeld für Audio-Hypnose-Formate wie lampenfieber-besiegen.de.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/akupressur-die-neue-selbstbehauptung-fuer-jugendliche/68458249",
+        date: "2026-03",
+        category: "Psychologie & Forschung",
+        addedAt: "2026-04-26",
+      },
+      {
+        summary: "Deutsche Psychologen Akademie (April 2026): Online-Seminare 'Frei sprechen' zu Redeangst und Lampenfieber – Techniken aus Verhaltenstherapie, Atemtechnik und rhetorischer Selbsterfahrung für erfolgreiche Auftritte. Institutionelles Kursangebot zu Lampenfieber/Redeangst 2026 bestätigt hohe Nachfrage nach strukturierten Überwindungsstrategien – direktes Marktumfeld für lampenfieber-besiegen.de.",
+        source: "Deutsche Psychologen Akademie",
+        url: "https://www.psychologenakademie.de/seminar/frei-sprechen-4/",
+        date: "2026-04",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-04-26",
+      },
       {
         summary: "angstfreier-leben.de (2026): 'Lampenfieber überwinden – Hypnosetherapie' – Spezialisierter Anbieter im DACH-Raum beschreibt, wie Hypnose Lampenfieber und Auftrittsangst auf Unterbewusstseinsebene auflöst: Neue Handlungsmuster für Auftrittssituationen werden verankert, das Nervensystem lernt entspannte Reaktionen auf Auslöser. Wachsendes Online-Angebot an Hypnosetherapie speziell für Lampenfieber bestätigt die hohe Marktakzeptanz des Ansatzes – direktes Validierungsumfeld für lampenfieber-besiegen.de als sofort verfügbares Audio-Selbsthilfe-Format.",
         source: "angstfreier-leben.de",
@@ -10217,7 +10314,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
-      // Neu: 26.04.2026 (1)
+      // Neu: 26.04.2026 (3)
+      {
+        summary: "Pearl Lemon Consulting (April 2026): 'Best 20 SWOT Analysis Software for 2026' – Über 50 SWOT-Tools verfügbar in 2026. Top-Lösungen: Lucidchart, Miro, Creately, Canva. Neu: KI-gestützte Tools wie SWOTPal generieren in Sekunden datenbasierte SWOT-Analysen aus Jahresberichten und Marktdaten. Wachsender Markt für Strategie-Analysetools stärkt die Nachfrage nach integrierten Lösungen wie dem Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "Pearl Lemon Consulting",
+        url: "https://pearllemonconsulting.com/best-swot-analysis-software/",
+        date: "2026-04",
+        category: "Marketing-Tools & Software",
+        addedAt: "2026-04-26",
+      },
+      {
+        summary: "ad-hoc-news.de (April 2026): 'Marketing-Prozesse: So strukturieren KMU und Gründer 2026' – Strukturierte Marketingprozesse helfen KMU, mit begrenzten Ressourcen mehr zu erreichen. Klare Prozesse für Content-Erstellung, Lead-Generierung und Kundenbindung werden 2026 zum Standard in erfolgreichen KMU. Die zunehmende Strukturierung des KMU-Marketings erhöht die Nachfrage nach interaktiven Planungstools wie dem Marketingkonzept-Generator auf learnfluencer.ch.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/marketing-prozesse-so-strukturieren-kmu-und-gruender-2026/68542591",
+        date: "2026-04",
+        category: "Strategie & Analyse",
+        addedAt: "2026-04-26",
+      },
       {
         summary: "marketingautomation.tech (2026): 'Neukundengewinnung Schweiz 2026: Mit KI & Automation zu Neukunden' – Schweizer KMU können mit KI-gestützter Marketing-Automation 2026 Neukundengewinnung signifikant skalieren; der ROI liegt laut Deloitte bei CHF 3.70 pro investiertem Franken. Grundvoraussetzung: Ein klares, strukturiertes Marketingkonzept als Fundament. Die Erkenntnis, dass Automation ohne strategischen Plan scheitert, stärkt direkt die Nachfrage nach Tools wie dem Marketingkonzept-Generator auf learnfluencer.ch.",
         source: "marketingautomation.tech",
@@ -11150,7 +11263,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
-      // Neu: 26.04.2026 (1)
+      // Neu: 26.04.2026 (3)
+      {
+        summary: "Bestatter.ch (April 2026): 'Bestattungskosten in der Schweiz 2026 – individuelle Beratung für klare Kalkulation' – Bestattungskosten reichen von ca. CHF 2.000 bis über CHF 10.000. In Zürich, Basel und St. Gallen sind Einsargung, Transport und Kremation für Einwohner kostenlos. Einäscherung allein kostet CHF 500–1.000. Die Kostentransparenz ist für Angehörige ein zentrales Bedürfnis – direktes Argument für bestattungsplaner.ch als neutrale Vergleichs- und Buchungsplattform.",
+        source: "bestatter.ch",
+        url: "https://bestatter.ch/bestattungskosten-in-der-schweiz-individuelle-beratung-fuer-klare-kalkulation/",
+        date: "2026-04",
+        category: "Markt & Trends",
+        addedAt: "2026-04-26",
+      },
+      {
+        summary: "Welt-Bestattung.de (April 2026): 'HYLI – Digitale Vorsorge-Plattform für Bestattung und Nachlass' – HYLI bietet einen zentralen digitalen Ort für alle Vorsorge- und Nachlassthemen, inkl. digitaler Nachlass-Verwaltung (Online-Konten, Fotos, Dokumente). Immer mehr Menschen schliessen zu Lebzeiten Bestattungsvorsorgeverträge ab, um Angehörige zu entlasten. Wachsende Digitalisierung der Bestattungsvorsorge bestätigt das Marktpotenzial von bestattungsplaner.ch.",
+        source: "Welt-Bestattung.de",
+        url: "https://welt-bestattung.de/hyli-digitale-vorsorge/",
+        date: "2026-04",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-04-26",
+      },
       {
         summary: "die-bestatter.ch (2026): 'Bestattungsarten in der Schweiz – naturnah und traditionell' – die-bestatter.ch gibt einen Überblick über alle Bestattungsformen in der Schweiz: Erdbestattung (unter 10% Anteil), Kremation (dominant), Seebestattung, Naturbestattung und Urnenbestattung in Gemeinschaftsgräbern. Trend zur Kremation und zu individualisierten, naturnahen Bestattungsformen wächst weiter. Die zunehmende Vielfalt der Bestattungsoptionen und der Informationsbedarf bei Angehörigen stärken das Marktpotenzial von bestattungsplaner.ch als neutrale Informations- und Buchungsplattform.",
         source: "die-bestatter.ch",
