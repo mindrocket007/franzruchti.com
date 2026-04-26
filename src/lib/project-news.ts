@@ -1810,7 +1810,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
-      // Neu: 26.04.2026 (1)
+      // Neu: 26.04.2026 (3)
+      {
+        summary: "Elite Trader Funding (2026): 'Futures Funded Account: How to Get Funded in 2026' – Praxisleitfaden für angehende Futures-Prop-Trader: So erhält man einen funded Account für ES Futures. Mit S&P 500 Futures, die im April 2026 Inflationssorgen und eine fragile geopolitische Lage navigieren, suchen mehr Trader denn je Zugang zu Futures-Märkten über Prop Firms ohne eigenes Startkapital.",
+        source: "Elite Trader Funding",
+        url: "https://elitetraderfunding.app/blog/futures-funded-account-how-to-get-funded-in-2026",
+        date: "2026-04",
+        category: "Futures & Trading",
+        addedAt: "2026-04-26",
+      },
+      {
+        summary: "The Hans India (2026): 'How to Trade S&P 500 Futures with Futures Trading Prop Firms' – Umfassender Leitfaden für ES-Futures-Trading über Prop-Firmen: Evaluationsphasen, Kapital-Splits und Risikomanagement-Regeln im Überblick. Prop-Firmen bieten Zugang zu regulierten Futures-Märkten ohne eigenes Startkapital – relevantes Geschäftsmodell-Umfeld für Mind Rocket Trading.",
+        source: "The Hans India",
+        url: "https://www.thehansindia.com/business/how-to-trade-sp-500-futures-with-futures-trading-prop-firms-a-guide-for-aspiring-funded-traders-999166",
+        date: "2026-04",
+        category: "Futures & Trading",
+        addedAt: "2026-04-26",
+      },
       {
         summary: "NinjaTrader YouTube (März 2026): '2026 Market Outlook mit Larry Williams' – NinjaTrader Live präsentiert den Marktausblick für ES Futures und Trading-Strategien für 2026 mit Keynote-Inputs von Futures-Trading-Legende Larry Williams. Aktueller Bildungsinhalt für algorithmische und diskretionäre ES-Futures-Händler direkt von der führenden Futures-Broker-Plattform.",
         source: "NinjaTrader YouTube",
@@ -4495,7 +4511,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
-      // Neu: 26.04.2026 (1)
+      // Neu: 26.04.2026 (4)
+      {
+        summary: "HSLU – Hochschule Luzern (28. April 2026): Info-Veranstaltung MAS Betriebliches Gesundheitsmanagement – Online-Informationsanlass zur berufsbegleitenden Weiterbildung im BGM, inkl. CAS-Programme für Fachpersonen in Prävention und Gesundheitsförderung. Wachsende akademische BGM-Ausbildungsangebote signalisieren die Professionalisierung des Sektors – positiver Marktkontext für hypnovital® als anerkanntes Instrument für betriebliche Stressprävention.",
+        source: "Hochschule Luzern (HSLU)",
+        url: "https://www.hslu.ch/de-ch/soziale-arbeit/agenda/veranstaltungen/2026/04/28/info-veranstaltung-mas-bgm-und-pg/",
+        date: "2026-04-28",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-26",
+      },
+      {
+        summary: "Schweizer Expertennetzwerk für Burnout (burnoutexperts.ch, 2026): Vernetzungsplattform zertifizierter Burnout-Expert:innen in der Schweiz – Mitgliederliste zeigt breites Spektrum von Therapeuten, Coaches und BGM-Spezialisten. Die Institutionalisierung eines nationalen Expertennetzwerks für Burnout bestätigt die wachsende Nachfrage nach spezialisierten Präventionslösungen – direktes Marktumfeld für hypnovital® als skalierbare Audio-Coaching-Lösung.",
+        source: "burnoutexperts.ch",
+        url: "https://www.burnoutexperts.ch/membres/",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-26",
+      },
+      {
+        summary: "Hypnomedis (Sibylle Lätzsch, 2026): 'Hypnosetherapie gegen Stress, Burnout und Burnoutprävention' – Hypnose adressiert Stress und Burnout auf Unterbewusstseinsebene: Erholung wird tiefergehend und nachhaltiger als durch klassische Entspannungsmethoden; der Körper lernt, in den Erholungsmodus zu wechseln. Wachsendes Angebot an Hypnose-basierten BGM-Lösungen im DACH-Raum validiert das Wirkprinzip von hypnovital® als digitaler Audio-Coaching-Lösung.",
+        source: "Hypnomedis",
+        url: "https://www.hypnomedis.de/stress-burnout-und-burnoutpraevention/",
+        date: "2026-04",
+        category: "Hypnose & Coaching",
+        addedAt: "2026-04-26",
+      },
       {
         summary: "bern-hypnose.ch (2026): 'Stress, Burnout und Depression mit Hypnose überwinden' – Schweizer Hypnotherapie-Praxis Bern erklärt, wie Hypnose bei Stress, Burnout und Depression nachhaltig wirkt: Das Unterbewusstsein wird direkt adressiert, unbewusste Stressmuster aufgelöst und psychische Resilienz gestärkt. Wachsende Professionalisierung der Schweizer Hypnosetherapie-Landschaft mit Fokus auf BGM-Kernthemen bestätigt das Marktpotenzial – hypnovital® als skalierbare digitale Alternative zu individueller Präsenztherapie trifft den Zeitgeist.",
         source: "bern-hypnose.ch",
@@ -8863,7 +8903,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
-      // Neu: 26.04.2026 (4)
+      // Neu: 26.04.2026 (5)
+      {
+        summary: "i3-connect.com (2026): 'Education Trends in 2026: Technology in Service of Learning' – Internationale Bildungsplattform analysiert die wichtigsten Education-Trends 2026: KI als persönlicher Lernbegleiter, Immersive Learning durch AR/VR, datengetriebene Lernpfade und Soft-Skills als strategische Priorität. Globale Lerntrends bestätigen den Fokus von learnfluencer.ch: Lernkompetenz und KI-Integration sind die entscheidenden Weiterbildungsthemen des Jahres.",
+        source: "i3-connect.com",
+        url: "https://i3-connect.com/blog/news/education-trends-in-2026-technology-in-service-of-learning",
+        date: "2026-04",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-26",
+      },
       {
         summary: "ad-hoc-news.de (2026): 'KI-gesteuerte Lernsysteme revolutionieren Weiterbildung' – Adaptive KI-Software für betriebliche Weiterbildung erreicht 2026 ein weltweites Marktvolumen von 5,89 Mrd. USD. KI-Algorithmen analysieren Nutzerverhalten in Echtzeit, erkennen Wissenslücken und passen Schulungsinhalte automatisch an. 93% der Organisationen halten Microlearning für essenziell; bis zu 150 Mio. Arbeitnehmer benötigen bis 2026 eine KI-bezogene Umschulung. Idealer Zeitpunkt für learnfluencer.ch, sich als führende Stimme für KI-Lernkompetenz in der DACH-Region zu positionieren.",
         source: "ad-hoc-news.de",
@@ -11263,7 +11311,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
-      // Neu: 26.04.2026 (3)
+      // Neu: 26.04.2026 (5)
+      {
+        summary: "DeinAdieu.ch (2026): 'Bestattungsplanung – Tipps und Ratgeber' – Schweizer Ratgeberportal für Trauer und Bestattung mit umfassenden Informationen zu Bestattungsplanung, Vorsorge und Nachlass. Wachsende Nutzung digitaler Ratgeberplattformen für Bestattungsthemen zeigt die digitale Aufgeschlossenheit der Zielgruppe – direktes Marktumfeld für bestattungsplaner.ch als Online-Vergleichs- und Buchungsportal.",
+        source: "DeinAdieu.ch",
+        url: "https://www.deinadieu.ch/tag/bestattungsplanung/",
+        date: "2026-04",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-04-26",
+      },
+      {
+        summary: "VPZ Vermögens Planungs Zentrum AG (2026): 'Digitale Nachlassplanung – Vorsorge in einer digitalen Welt' – Immer mehr Verträge, Bankkonten und Abo-Dienste existieren nur noch digital, was die Nachlassplanung komplexer macht. Strukturiertes Vorgehen und digitale Werkzeuge für den eigenen Nachlass gewinnen an Bedeutung. Wachsende Auseinandersetzung mit digitalem Nachlass stärkt das Marktpotenzial von bestattungsplaner.ch als ganzheitlicher digitaler Vorsorge-Plattform.",
+        source: "VPZ Vermögens Planungs Zentrum AG",
+        url: "https://vpz.ch/vorsorge-in-einer-digitalen-welt/",
+        date: "2026-04",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-04-26",
+      },
       {
         summary: "Bestatter.ch (April 2026): 'Bestattungskosten in der Schweiz 2026 – individuelle Beratung für klare Kalkulation' – Bestattungskosten reichen von ca. CHF 2.000 bis über CHF 10.000. In Zürich, Basel und St. Gallen sind Einsargung, Transport und Kremation für Einwohner kostenlos. Einäscherung allein kostet CHF 500–1.000. Die Kostentransparenz ist für Angehörige ein zentrales Bedürfnis – direktes Argument für bestattungsplaner.ch als neutrale Vergleichs- und Buchungsplattform.",
         source: "bestatter.ch",
