@@ -1359,6 +1359,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
+      // Neu: 26.04.2026 (2)
+      {
+        summary: "personalwirtschaft.de (2026): 'Wie verändert KI die Logik des Corporate Learnings?' – Exklusiver Roundtable der Fachzeitschrift Personalwirtschaft: KI transformiert betriebliches Lernen grundlegend – Lernpfade werden automatisiert, Skill-Gaps in Echtzeit erkannt, Wissen wird arbeitsintegriert und kontextbezogen zugänglich gemacht. Strukturwandel im Corporate Learning wird zum strategischen Hebel für Coaching-Anbieter mit KI-Integration – direktes Wachstumsumfeld für digitale Coaching-Programme von Mind Rocket GmbH.",
+        source: "personalwirtschaft.de",
+        url: "https://www.personalwirtschaft.de/events/roundtables/wie-veraendert-ki-die-logik-des-corporate-learnings-202905/",
+        date: "2026-04",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-04-26",
+      },
+      {
+        summary: "Handelsblatt (2026): 'Betriebliche Fortbildung: Wie KI das Weiterbildungsangebot in Unternehmen erweitert' – KI erweitert betriebliche Weiterbildungsangebote: automatisierte Lernpfade, adaptive Kompetenzentwicklung und ortsunabhängige Programmformate. Steigende Nachfrage nach hybriden, KI-gestützten Lernformaten schafft direktes Marktpotenzial für digitale Coaching-Programme wie jene von Mind Rocket GmbH, die persönliche Entwicklung skalierbar machen.",
+        source: "Handelsblatt",
+        url: "https://www.handelsblatt.com/unternehmen/betriebliche-fortbildung-wie-ki-das-weiterbildungsangebot-in-unternehmen-erweitert/100203665.html",
+        date: "2026-04",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-04-26",
+      },
       // Neu: 25.04.2026 (2)
       {
         summary: "Trigon Entwicklungsberatung (2026): 'Diplom-Lehrgang Coaching Zürich 2026' – Trigon bietet in Zürich einen anerkannten Diplom-Lehrgang für systemisches Coaching an; aktive Nachfrage nach professionellem Coaching-Angebot in der Schweiz. Die hohe Dichte an professionellen Coaching-Ausbildungen und -Programmen in Zürich und der Deutschschweiz bestätigt das Wachstum des Coaching-Markts – direktes Marktumfeld für die persönlichkeitsorientierten Coaching-Programme von Mind Rocket GmbH.",
@@ -8671,6 +8688,39 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 26.04.2026 (4)
+      {
+        summary: "ad-hoc-news.de (2026): 'KI-gesteuerte Lernsysteme revolutionieren Weiterbildung' – Adaptive KI-Software für betriebliche Weiterbildung erreicht 2026 ein weltweites Marktvolumen von 5,89 Mrd. USD. KI-Algorithmen analysieren Nutzerverhalten in Echtzeit, erkennen Wissenslücken und passen Schulungsinhalte automatisch an. 93% der Organisationen halten Microlearning für essenziell; bis zu 150 Mio. Arbeitnehmer benötigen bis 2026 eine KI-bezogene Umschulung. Idealer Zeitpunkt für learnfluencer.ch, sich als führende Stimme für KI-Lernkompetenz in der DACH-Region zu positionieren.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/ki-gesteuerte-lernsysteme-revolutionieren-weiterbildung/68538056",
+        date: "2026-04",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-26",
+      },
+      {
+        summary: "ad-hoc-news.de (2026): 'KI-gesteuerte Lern-Sprints revolutionieren Weiterbildung' – Lern-Sprints als neue Methode: kurze, intensive KI-gestützte Lernphasen ersetzen klassische Langzeitkurse; komprimierte Lernformate erhöhen Transferleistung und Umsetzungsquoten erheblich. Sprint-basierte Lernmethoden bestätigen die Relevanz zeitgemässer Lernkonzepte – direktes Thought-Leadership-Terrain für learnfluencer.ch als Plattform, die neue Lernformen praxisnah aufbereitet.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/ki-gesteuerte-lern-sprints-revolutionieren-weiterbildung/68467691",
+        date: "2026-04",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-26",
+      },
+      {
+        summary: "ad-hoc-news.de (2026): 'Top-Trainingsfirmen setzen 2026 auf KI und digitale Tools' – Führende Trainingsfirmen integrieren 2026 flächendeckend KI-gestützte Werkzeuge: adaptive Lernplattformen, KI-Coaching, automatisiertes Kompetenzmanagement und datengestützte Erfolgsmessung. Professionalisierung und Digitalisierung des Weiterbildungsmarkts unterstreicht die Relevanz kompetenter Orientierungsplattformen für Lernende – strategisches Positionierungsumfeld für learnfluencer.ch.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/top-trainingsfirmen-setzen-2026-auf-ki-und-digitale-tools/68654013",
+        date: "2026-04",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-26",
+      },
+      {
+        summary: "ad-hoc-news.de (2026): 'KI und Microlearning dominieren die Weiterbildung 2026' – KI und Microlearning haben sich 2026 als dominierende Lernformate in Unternehmen durchgesetzt: personalisierte Mikrolerneinheiten im Arbeitsfluss, KI-gestütztes Coaching und Skills-Based Learning. Dominanz dieser Lernformate stärkt die Nachfrage nach Expertenwissen zu modernen Lernkonzepten – direktes Thought-Leadership-Themenfeld für Franz Ruchtis Plattform learnfluencer.ch.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/ki-und-microlearning-dominieren-die-weiterbildung-2026/68549229",
+        date: "2026-04",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-26",
+      },
       // Neu: 25.04.2026 (2 weitere)
       {
         summary: "Swiss AI Experts (2026): 'Noch liegen 94,79% des Jahres 2026 vor uns – Was machen wir daraus?' – KI-Strategie-Einschätzung für Schweizer Unternehmen: 48% der Schweizer Firmen nutzen bereits KI in Kernprozessen; strategische Fokussierung auf messbare Anwendungsfälle und Kompetenzaufbau ist die zentrale Herausforderung 2026. Direktes Thought-Leadership-Terrain für learnfluencer.ch: Wie KI-Kompetenz gezielt entwickelt und eingesetzt wird, ist das zentrale Lernthema des Jahres.",
