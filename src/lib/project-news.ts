@@ -26,6 +26,15 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 26.04.2026 (1)
+      {
+        summary: "ICT-Berufsbildung Schweiz (2026): 'Doppelte Anzahl an diplomierten Security Fachkräften' – Seit Einführung des eidg. Fachausweises 'Cyber Security Specialist' 2019 hat sich die Zahl der Prüfungskandidierenden jährlich verdoppelt. Seit 2010 hat sich die Gesamtzahl an Security-Fachkräften auf 5'100 verdreifacht; bis 2030 werden 60% mehr ICT-Security-Fachkräfte benötigt. Rasantes Wachstum im Security-Qualifikationssegment schafft strategische Marktchancen für anerkannte ICT-Prüfungsorganisationen – direktes Wachstumsumfeld für SIZ AG.",
+        source: "ICT-Berufsbildung Schweiz",
+        url: "https://www.ict-berufsbildung.ch/doppelte-anzahl-an-diplomierten-security-fachkraeften",
+        date: "2026-03",
+        category: "Bildungspolitik",
+        addedAt: "2026-04-26",
+      },
       // Neu: 25.04.2026 (5)
       {
         summary: "ZHAW Zürcher Hochschule für Angewandte Wissenschaften (1. September 2024): 'ZHAW wird Hochschulpartnerin von ICT-Berufsbildung Schweiz' – Die ZHAW School of Management and Law (SML) und ICT-Berufsbildung Schweiz haben per 1. September 2024 eine Hochschulpartnerschaft etabliert: Ziel ist eine bessere Abstimmung von Bildungsangeboten und -wegen im ICT-Bereich; sechs von zehn ICT-Lernenden streben nach der Lehre eine Tertiärausbildung an. Wachsende Hochschulvernetzung im ICT-Bereich stärkt den Stellenwert anerkannter ICT-Qualifikationen als Brücke zwischen Berufsbildung und Hochschule – direktes strategisches Umfeld für SIZ AG.",
@@ -3665,6 +3674,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 26.04.2026 (2)
+      {
+        summary: "persolog.ch (2026): Persolog Schweiz bietet Persönlichkeitsanalysen und Entwicklungsinstrumente für Beruf und Privatleben an. Das persolog-Profil (D-I-S-G-Modell) ist eines der meistgenutzten Persönlichkeitsdiagnostik-Systeme im deutschsprachigen Raum – mit breitem Einsatz in Coaching, HR und Personalentwicklung. Wachsendes Schweizer Angebot an strukturierten Persönlichkeitsentwicklungs-Tools bestätigt die stabile Nachfrage – direktes Marktumfeld für mindtools.ch als digitale Ergänzungsplattform mit PDF-Werkzeugen und mentalen Entwicklungshilfen.",
+        source: "persolog.ch",
+        url: "https://persolog.ch/",
+        date: "2026-04",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-04-26",
+      },
+      {
+        summary: "6minutenverlag.de (2026): 'Die 11 besten Bücher zur Persönlichkeitsentwicklung' – Praxisorientierte Buchauswahl mit Fokus auf Titeln, die Denkmuster wirklich verändern und nachhaltige Gewohnheiten formen; unmittelbare Anwendbarkeit als zentrales Auswahlkriterium. Der anhaltend hohe Bedarf nach sofort anwendbaren, strukturierten Selbsthilfe-Werkzeugen im Buchmarkt bestätigt das Marktpotenzial von mindtools.ch als digitale Plattform für praktisch einsetzbare mentale Werkzeuge und Selbsthilfe-PDFs.",
+        source: "6minutenverlag.de",
+        url: "https://6minutenverlag.de/blogs/article/buecher-persoenlichkeitsentwicklung",
+        date: "2026-04",
+        category: "Buchmarkt & Publishing",
+        addedAt: "2026-04-26",
+      },
       // Neu: 25.04.2026 (2)
       {
         summary: "it-boltwise.de (2026): 'Buchmarkt 2026: KI und menschliche Intuition im Fokus' – Der Buchmarkt 2026 zeigt ein Spannungsfeld: Während KI-generierte Inhalte zunehmen, steigt die Nachfrage nach authentischen, menschlich geschriebenen Ratgebern mit tiefer Persönlichkeitsentwicklung und Intuition als Differenzierungsmerkmal. Leser bevorzugen 2026 Sachbücher, die echte Transformation ermöglichen statt schnelle Tipps – direktes Marktumfeld für tiefenwirksame Self-Help-Werkzeuge wie jene auf mindtools.ch.",
@@ -4412,6 +4438,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 26.04.2026 (1)
+      {
+        summary: "bern-hypnose.ch (2026): 'Stress, Burnout und Depression mit Hypnose überwinden' – Schweizer Hypnotherapie-Praxis Bern erklärt, wie Hypnose bei Stress, Burnout und Depression nachhaltig wirkt: Das Unterbewusstsein wird direkt adressiert, unbewusste Stressmuster aufgelöst und psychische Resilienz gestärkt. Wachsende Professionalisierung der Schweizer Hypnosetherapie-Landschaft mit Fokus auf BGM-Kernthemen bestätigt das Marktpotenzial – hypnovital® als skalierbare digitale Alternative zu individueller Präsenztherapie trifft den Zeitgeist.",
+        source: "bern-hypnose.ch",
+        url: "https://bern-hypnose.ch/hypnosetherapie/stress-burnout-und-depression/",
+        date: "2026-04",
+        category: "Hypnose & Coaching",
+        addedAt: "2026-04-26",
+      },
       // Neu: 25.04.2026 (3 weitere)
       {
         summary: "Digital Wellness Institute / PR.com (April 2026): 'AI & Burnout Are Rising: Digital Wellness Day May 1st 2026 Offers a Path to Balance in a Hyper-Digital World' – Digital Wellness Day am 1. Mai 2026 vernetzt 64+ Länder zur Thematik KI-Burnout und digitalem Overload; 77% der Angestellten berichten von Rekordwerten bei Burnout; 1 Milliarde Menschen nutzen monatlich generative KI. Wachsende globale Aufmerksamkeit für KI-induzierte mentale Erschöpfung schafft direktes Nachfragepotenzial für evidenzbasierte digitale Präventionslösungen wie hypnovital®.",
@@ -6047,6 +6082,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 26.04.2026 (1)
+      {
+        summary: "ad-hoc-news.de (2026): 'Karriere 2026: SMART-Ziele müssen jetzt schärfer werden' – Karriere-Coaches empfehlen 2026 eine Neuausrichtung: Das terminierte Element der SMART-Formel soll auf Quartals-Sprints (90 Tage) verkürzt werden. Statt langwieriger Zertifikate sind überprüfbare Ergebnisse alle 90 Tage gefragt; die 12-Week-Year-Methode gilt als führendes Framework für diese Zielsetzungsstrategie. Wachsende Mainstream-Akzeptanz von Quartalssprint-Methoden bestätigt den strategischen Nutzen des 12wy-planners als spezialisiertes SaaS-Tool für präzise, kurzzyklige Zielplanung.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/karriere-2026-smart-ziele-muessen-jetzt-schaerfer-werden/68437266",
+        date: "2026-04",
+        category: "Produktivität & Planung",
+        addedAt: "2026-04-26",
+      },
       // Neu: 25.04.2026 (2)
       {
         summary: "northlyapp.com (2026): 'OKR-Methode – der komplette Leitfaden 2026' – OKRs werden in Quartalszyklen definiert; die 12-Week-Year-Methode bietet den persönlichen Ausführungsrhythmus, der OKR-Systeme zum Funktionieren bringt. Die Kombination beider Ansätze sorgt für Ausrichtung, Transparenz und eine angestrebte Erfüllungsquote von 85% wöchentlicher Leadmassnahmen. Direkter strategischer Kontext für den 12wy-planner als Werkzeug, das OKR-Integration als Feature erschliessen kann.",
@@ -6967,6 +7011,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 26.04.2026 (2)
+      {
+        summary: "netdoktor.ch (2026): 'Vorzeitiger Samenerguss: Ursachen' – Schweizer Gesundheitsportal NetDoktor klärt über vorzeitigen Samenerguss auf: Psychische Faktoren wie Stress, Leistungsdruck und Beziehungsprobleme sind häufigste Ursachen; Verhaltenstechniken und Sexualtherapie wirksame Behandlungsmethoden. Normalisierung und öffentliche Aufklärung durch seriöse Schweizer Gesundheitsmedien erhöht die Nachfrage nach diskreten, niedrigschwelligen Selbsthilfe-Formaten – direktes Marktumfeld für orgasmus-hinauszoegern.de.",
+        source: "netdoktor.ch",
+        url: "https://www.netdoktor.ch/symptome/vorzeitiger-samenerguss/",
+        date: "2026-04",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-26",
+      },
+      {
+        summary: "Apotheken Umschau (2026): 'Vorzeitiger Samenerguss: Ursachen und was helfen kann' – Eine der meistgelesenen Gesundheitspublikationen im DACH-Raum erklärt Ursachen und Behandlungsoptionen für Ejaculatio praecox. 20–30% aller Männer betroffen; Verhaltenstechniken (Start-Stopp, Squeeze), Beckenbodentraining und nicht-medikamentöse Ansätze als wirksame Selbsthilfe-Methoden hervorgehoben. Breite gesellschaftliche Aufklärung in mainstreamigen Gesundheitsmedien normalisiert das Thema und steigert Suchnachfrage nach digitalen Selbsthilfe-Angeboten wie orgasmus-hinauszoegern.de.",
+        source: "Apotheken Umschau",
+        url: "https://www.apotheken-umschau.de/gesund-bleiben/sex/vorzeitiger-samenerguss-ursachen-und-was-helfen-kann-1457827.html",
+        date: "2026-04",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-26",
+      },
       // Neu: 25.04.2026 (2)
       {
         summary: "presse-nachrichten.de (22. April 2026): 'Wiener Zielsteuerung: Zentrum für sexuelle Gesundheit Magnus und Digitalisierung von Gesundheitsangeboten' – In Wien entsteht das neue Zentrum für sexuelle Gesundheit Magnus; gleichzeitig werden digitale Gesundheitsanwendungen als Pilotprojekte in der Kinder- und Jugendpsychiatrie ausgebaut, um Versorgungslücken zu schließen. Wachsende Institutionalisierung und Digitalisierung sexueller Gesundheitsangebote in der DACH-Region unterstreicht die Marktrelevanz zugänglicher digitaler Selbsthilfeangebote für sexuelle Gesundheit wie orgasmus-hinauszoegern.de.",
@@ -7762,6 +7823,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 26.04.2026 (2)
+      {
+        summary: "angstfreier-leben.de (2026): 'Lampenfieber überwinden – Hypnosetherapie' – Spezialisierter Anbieter im DACH-Raum beschreibt, wie Hypnose Lampenfieber und Auftrittsangst auf Unterbewusstseinsebene auflöst: Neue Handlungsmuster für Auftrittssituationen werden verankert, das Nervensystem lernt entspannte Reaktionen auf Auslöser. Wachsendes Online-Angebot an Hypnosetherapie speziell für Lampenfieber bestätigt die hohe Marktakzeptanz des Ansatzes – direktes Validierungsumfeld für lampenfieber-besiegen.de als sofort verfügbares Audio-Selbsthilfe-Format.",
+        source: "angstfreier-leben.de",
+        url: "https://www.angstfreier-leben.de/lampenfieber-hypnosetherapie",
+        date: "2026-04",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-26",
+      },
+      {
+        summary: "therapie-lieberam.de (2026): 'Prüfungsangst – Lampenfieber – Versagensangst – Redeangst' – Therapeutischer Anbieter behandelt explizit das gesamte Spektrum von Auftrittsangst: Prüfungsangst, Lampenfieber, Versagensangst und Redeangst werden mit Psychotherapie und Hypnose kombiniert adressiert. Die Professionalisierung und Spezialisierung von Therapieangeboten für Auftrittsangst bestätigt das breite Nachfragespektrum – direktes Validierungs- und Wettbewerbsumfeld für lampenfieber-besiegen.de.",
+        source: "therapie-lieberam.de",
+        url: "https://therapie-lieberam.de/pruefungsangst-lampenfieber-versagensangst-redeangst/",
+        date: "2026-04",
+        category: "Psychologie & Forschung",
+        addedAt: "2026-04-26",
+      },
       // Neu: 25.04.2026 (4)
       {
         summary: "GDCP / Universität Tübingen (Januar 2026): 'Präsentationskompetenz als Future Skill – Call für interdisziplinäre Tagung' – Die Gesellschaft für Didaktik der Chemie und Physik (GDCP) ruft zur Einreichung von Beiträgen für eine interdisziplinäre Tagung zur Präsentationskompetenz als Zukunftskompetenz auf; Fokus auf Forschung zu kommunikativer Kompetenz bei Schülerinnen und Schülern. Wachsende wissenschaftliche Auseinandersetzung mit Präsentationskompetenz als 'Future Skill' unterstreicht die gesellschaftliche Relevanz – direktes Forschungsumfeld für Lösungen gegen Auftrittsangst wie lampenfieber-besiegen.de.",
@@ -10139,6 +10217,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 26.04.2026 (1)
+      {
+        summary: "marketingautomation.tech (2026): 'Neukundengewinnung Schweiz 2026: Mit KI & Automation zu Neukunden' – Schweizer KMU können mit KI-gestützter Marketing-Automation 2026 Neukundengewinnung signifikant skalieren; der ROI liegt laut Deloitte bei CHF 3.70 pro investiertem Franken. Grundvoraussetzung: Ein klares, strukturiertes Marketingkonzept als Fundament. Die Erkenntnis, dass Automation ohne strategischen Plan scheitert, stärkt direkt die Nachfrage nach Tools wie dem Marketingkonzept-Generator auf learnfluencer.ch.",
+        source: "marketingautomation.tech",
+        url: "https://www.marketingautomation.tech/neukundengewinnung-schweiz/",
+        date: "2026-04",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-26",
+      },
       // Neu: 25.04.2026 (2)
       {
         summary: "lorien.group (2026): 'Online-Marketing-Strategie für KMU Schweiz 2026' – Erfolgreiche Schweizer KMU entwickeln 2026 eine fundierte Online-Marketing-Strategie: klare Zielgruppenanalyse, strukturierter Kanal-Mix und messbare KPIs als Fundament. Ohne strategischen Plan bleibt jedes Tool wirkungslos. Direktes Argument für interaktive Marketingkonzept-Tools mit PESTEL, SWOT und KPI-Planung wie jenes auf learnfluencer.ch.",
@@ -11063,6 +11150,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 26.04.2026 (1)
+      {
+        summary: "die-bestatter.ch (2026): 'Bestattungsarten in der Schweiz – naturnah und traditionell' – die-bestatter.ch gibt einen Überblick über alle Bestattungsformen in der Schweiz: Erdbestattung (unter 10% Anteil), Kremation (dominant), Seebestattung, Naturbestattung und Urnenbestattung in Gemeinschaftsgräbern. Trend zur Kremation und zu individualisierten, naturnahen Bestattungsformen wächst weiter. Die zunehmende Vielfalt der Bestattungsoptionen und der Informationsbedarf bei Angehörigen stärken das Marktpotenzial von bestattungsplaner.ch als neutrale Informations- und Buchungsplattform.",
+        source: "die-bestatter.ch",
+        url: "https://die-bestatter.ch/todesfall/bestattungsarten/",
+        date: "2026-04",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-26",
+      },
       // Neu: 25.04.2026 (5 weitere)
       {
         summary: "Adelta Finanz Magazin (2026): 'Digitalisierung im Bestattungswesen: Moderne Lösungen für eine traditionelle Branche' – Hinterbliebene können heute die komplette Planung einer Beisetzung online abwickeln; cloudbasierte Bestattersoftware (z.B. memilius, seit Februar 2026 öffentlich verfügbar) und neue digitale Kommunikationswege transformieren die gesamte Branche. Die vollständige Digitalisierung des Bestattungsprozesses bestätigt das Marktmodell von bestattungsplaner.ch als digitale Erstanlaufstelle für Vorsorge und Buchung.",
