@@ -8090,7 +8090,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
-      // Neu: 27.04.2026 (2)
+      // Neu: 27.04.2026 (3)
+      {
+        summary: "Psychiatric Times (17. Dezember 2025): 'Fasedienol zeigt in Phase-3-Studie keine signifikante Verbesserung bei sozialer Angststörung' – Vistagen PALISADE-3 Phase-3-Studie scheiterte am primären Endpunkt: Das Nasenspray Fasedienol zeigte im randomisierten, doppelblinden Vergleich keinen signifikanten Unterschied zu Placebo bei der Reduktion von Redeangst (SUDS-Score-Differenz nur 0,4 Punkte, statistisch nicht signifikant). Das Scheitern pharmakologischer Ansätze unterstreicht: Nicht-medikamentöse, mentalbasierte Methoden wie Hypnose-Audios bleiben ein zentrales Mittel bei Auftrittsangst – direktes Marktumfeld für lampenfieber-besiegen.de.",
+        source: "Psychiatric Times",
+        url: "https://www.psychiatrictimes.com/view/fasedienol-for-social-anxiety-disorder-does-not-demonstrate-significant-improvement-in-phase-3-study",
+        date: "2025-12-17",
+        category: "Psychologie & Forschung",
+        addedAt: "2026-04-27",
+      },
       {
         summary: "ad-hoc-news.de (April 2026): 'KI und VR revolutionieren Präsentationstraining 2026' – KI-Coaches geben personalisiertes Echtzeit-Feedback, VR ermöglicht risikofreies Üben vor virtuellen Zuhörern bis zu 500 Personen; Forschungsergebnisse 2025/2026 belegen: VR-Training senkt Redeangst um bis zu 40% in 4–6 Einheiten. Technologische Revolution im Präsentationstraining schafft breites gesellschaftliches Bewusstsein für Angstüberwindungsmethoden – direktes Wachstumsumfeld für Selbsthilfe-Formate wie lampenfieber-besiegen.de.",
         source: "ad-hoc-news.de",
@@ -10552,7 +10560,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
-      // Neu: 27.04.2026 (1)
+      // Neu: 27.04.2026 (2)
+      {
+        summary: "kmu-digitalisierung.app (2026): 'Prozesse digitalisieren im KMU: Der ultimative Leitfaden für Schweizer Unternehmen 2026' – Schweizer KMU-Digitalisierungsplattform zeigt: Echter Digitalisierungsfortschritt beginnt, wenn Systeme miteinander kommunizieren – doch Voraussetzung ist stets ein strukturierter Strategieplan. 5-Schritte-Lean-Fahrplan für KMU in der Schweiz; ohne konzeptionelle Grundlage scheitert jede Tool-Implementierung. Direktes Argument für strukturierte Marketingkonzept-Tools wie das auf learnfluencer.ch als strategische Basis vor jeder KMU-Digitalisierung.",
+        source: "kmu-digitalisierung.app",
+        url: "https://kmu-digitalisierung.app/prozesse-digitalisieren-im-kmu-der-ultimative-leitfaden-fuer-schweizer-unternehmen-2026/",
+        date: "2026",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-27",
+      },
       {
         summary: "StartingUp.de (2026): 'Check: Businessplan-Software für KMU 2026' – Gründermagazin testet führende Businessplan- und Marketing-Software-Lösungen für KMU: Strukturierte Planungstools sparen durchschnittlich 30–40% Planungsaufwand und erhöhen die Qualität strategischer Grundlagen. Wachsende Nachfrage nach digitalen Planungsframeworks für KMU-Gründungen bestätigt das Marktpotenzial des interaktiven Marketingkonzept-Tools auf learnfluencer.ch als niedrigschwellige Einstiegslösung.",
         source: "StartingUp.de",
