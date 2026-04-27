@@ -1377,6 +1377,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
+      // Neu: 27.04.2026 (2)
+      {
+        summary: "Coach Akademie Schweiz (April 2026): Neue Coaching-Ausbildungsreihe mit Startterminen 24./27. April 2026 – Die Coach Akademie bietet Ausbildungen auf Basis des St. Galler Coaching Modells® an; Frühjahrs-Startermine am 24. und 27. April 2026 belegen die kontinuierlich hohe Nachfrage nach anerkannten Coaching-Qualifikationen in der Schweiz. Wachsende Institutionalisierung professioneller Coaching-Ausbildungen stärkt das Coaching-Marktumfeld – direktes Wachstumsfeld für die Online-Coaching-Programme von Mind Rocket GmbH.",
+        source: "Coach Akademie Schweiz",
+        url: "https://coachakademie.ch/infos/ausbildungsuebersicht",
+        date: "2026-04",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-04-27",
+      },
+      {
+        summary: "3minutencoach.com (2026): 'HR-Trends 2026: Die wichtigsten Kennzahlen für den Schweizer Markt' – Persönlichkeitsentwicklung und Weiterbildung zählen 2026 zu den Top-Benefits, die Schweizer Unternehmen einsetzen, um Talente zu gewinnen und zu halten. Die institutionelle Verankerung von Persönlichkeitsentwicklung als strategischer HR-Faktor schafft direkte Nachfrage für Online-Coaching-Formate wie jene von Mind Rocket GmbH.",
+        source: "3minutencoach.com",
+        url: "https://www.3minutencoach.com/hr-trends-2026-die-wichtigsten-kennzahlen-fuer-den-schweizer-markt/",
+        date: "2026",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-04-27",
+      },
       // Neu: 26.04.2026 (4)
       {
         summary: "EHB – Eidgenössische Hochschule für Berufsbildung (März 2026): Die EHB baut 2026 ihre Weiterbildungen in Berufspädagogik aus und integriert explizit E-Learning, KI und Virtual Reality in ihre Didaktik-Lehrpläne. Diese Institutionalisierung digitaler Lernformate stärkt die Marktposition von Online-Trainingsanbietern wie Mind Rocket GmbH im deutschsprachigen Schweizer Markt.",
@@ -3775,6 +3792,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 27.04.2026 (2)
+      {
+        summary: "The Golden Twenties (2026): 'Mental Health Apps aus Österreich' – Überblick über österreichische Mental-Health-Apps mit Fokus auf Datenschutz und Nutzbarkeit: Das DACH-App-Ökosystem für psychische Gesundheit wächst. Zunehmendes App-Angebot für mentale Gesundheit schärft die Nutzerwartungen an digitale Selbsthilfe-Tools und bestätigt die stabile Marktnachfrage – direktes Umfeld für mindtools.ch als PDF-basierte Werkzeugplattform für persönliche Entwicklung.",
+        source: "The Golden Twenties",
+        url: "https://www.thegoldentwenties.at/psychologie/mental-health-apps-oesterreich/",
+        date: "2026-04",
+        category: "Mental Health",
+        addedAt: "2026-04-27",
+      },
+      {
+        summary: "meine-klinik.com (2026): 'Apps für Mentale Gesundheit' – Übersichtsseite für Mental-Health-Apps im deutschsprachigen Raum: Von Achtsamkeits-Apps bis Coaching-Tools deckt das digitale Selbsthilfe-Segment immer mehr Bedürfnisse ab. Wachsende Digitalisierung der mentalen Gesundheit stärkt die Nachfrage nach strukturierten, niedrigschwelligen Selbsthilfe-Werkzeugen – direktes Marktumfeld für mindtools.ch als praxisorientierte Plattform.",
+        source: "meine-klinik.com",
+        url: "https://meine-klinik.com/apps-fuer-mentale-gesundheit/",
+        date: "2026-04",
+        category: "Mental Health",
+        addedAt: "2026-04-27",
+      },
       // Neu: 26.04.2026 (6)
       {
         summary: "Mindtools Kineo (April 2026): 'Manager Skills Workshops für den modernen Arbeitsplatz' – Mindtools Kineo lanciert 2026 neue Manager-Skills-Workshops in virtuellen, Präsenz- und Blended-Learning-Formaten. Mindtools Kineo wurde erneut unter die Top 20 Custom Content Development Companies von Training Industry gewählt. Wachsendes institutionelles Angebot an strukturierten Führungskräfte-Entwicklungstools bestätigt die Marktdynamik im Selbstentwicklungs-Segment.",
@@ -6257,6 +6291,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 27.04.2026 (2)
+      {
+        summary: "Men's Health Deutschland (2026): 'Selbstmanagement 2026: Wie du mit weniger Anstrengung mehr erreichen kannst' – Deep-Work-Blöcke à 60–90 Minuten, 90-Tage-Zielplanung statt Jahresziele und systematische Schwachstellenanalyse als Kernstrategien für 2026. Wachsendes Mainstream-Bewusstsein für kurze Planungszyklen und fokussierte Umsetzung stärkt die Nachfrage nach Tools wie dem 12wy-planner als SaaS für präzise 12-Wochen-Zielplanung.",
+        source: "Men's Health Deutschland",
+        url: "https://www.menshealth.de/mind/selbstmanagement-wie-du-im-jahr-2026-mit-weniger-anstrengung-mehr-erreichen-kannst/",
+        date: "2026",
+        category: "Produktivität & Planung",
+        addedAt: "2026-04-27",
+      },
+      {
+        summary: "ad-hoc-news.de (2026): '90/10-Prinzip: Die Überlebensstrategie für die Arbeitswelt 2026' – Nur 10% des Aufwands generieren den Grossteil des Erfolgs; Fokus auf die wirkungsvollsten 10% aller Aktivitäten in 90-Tage-Zyklen maximiert Output bei minimalem Ressourceneinsatz. Wachsende Popularität des Pareto-optimierten Kurzzeit-Planungsdenkens bestätigt die Marktrelevanz des 12wy-planners als Tool für fokussierte 12-Wochen-Umsetzung.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/90-10-prinzip-die-ueberlebensstrategie-fuer-die-arbeitswelt-2026/68493144",
+        date: "2026-04",
+        category: "Produktivität & Planung",
+        addedAt: "2026-04-27",
+      },
       // Neu: 26.04.2026 (2)
       {
         summary: "OKRs Tool (März 2026): Q1 2026 Produkt-Roadmap veröffentlicht – Führende OKR-Software-Anbieter wie Weekdone, Mooncamp und Perdoo erweitern ihre Features. 65% der Früh-Teams tracken Ziele noch in Excel/Sheets; kein getestetes OKR-Tool ist explizit auf die 12-Week-Year-Methode zugeschnitten – die Nische des 12wy-planners als dediziertes, methodenspezifisches Werkzeug bleibt unbesetzt.",
@@ -7194,6 +7245,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 27.04.2026 (2)
+      {
+        summary: "Schwulissimo (April 2026): 'Neue Intimität durch KI – Studie zur Sexualität 2026' – KI-gestützte Beratungstools bieten diskrete, personalisierte Antworten auf intime Fragen; Männer nutzen KI häufiger als Frauen im Kontext sexueller Kommunikation. Die Digitalisierung intimer Gesundheitsberatung senkt Hemmschwellen und steigert die Nachfrage nach digitalen Selbsthilfe-Formaten – direktes Marktumfeld für Audio-Selbsthilfeangebote wie orgasmus-hinauszoegern.de.",
+        source: "Schwulissimo",
+        url: "https://schwulissimo.de/neuigkeiten/neue-intimitaet-durch-ki-studie-zur-sexualitaet-2026",
+        date: "2026-04",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-27",
+      },
+      {
+        summary: "Highways2Health (2026): 'Liebe und Sexualität in Zeiten der Digitalisierung' – Analyse der Auswirkungen digitaler Medien auf Beziehungen und sexuelle Gesundheit: Digitalisierung erhöht den Informationszugang zu Themen wie sexuelle Dysfunktion und senkt Tabuisierung. Wachsende öffentliche Auseinandersetzung mit Sexualität und Digitalisierung stärkt die Akzeptanz für diskrete digitale Selbsthilfeangebote – direktes Nachfrageumfeld für orgasmus-hinauszoegern.de.",
+        source: "Highways2Health",
+        url: "https://highways2health.de/blog/liebe-sexualitaet.html",
+        date: "2026",
+        category: "Digital Health",
+        addedAt: "2026-04-27",
+      },
       // Neu: 26.04.2026 (4)
       {
         summary: "Urologielehrbuch.de (April 2026): 'Vorzeitige Ejakulation – aktuelle Behandlungsoptionen' – 2026 kombiniert die Behandlung Dapoxetin/SSRIs, Lokalanästhetika (Lidocain/Prilocain), Sexualtherapie und bei therapieresistenten Fällen chirurgische Eingriffe (selektive laterale Neurektomie). Vorteile der Sexualtherapie: keine Nebenwirkungen, bessere Paarkommunikation. Wachsende Informationsnachfrage stärkt den Markt für diskrete Selbsthilfeformate.",
@@ -8022,6 +8090,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 27.04.2026 (2)
+      {
+        summary: "ad-hoc-news.de (April 2026): 'KI und VR revolutionieren Präsentationstraining 2026' – KI-Coaches geben personalisiertes Echtzeit-Feedback, VR ermöglicht risikofreies Üben vor virtuellen Zuhörern bis zu 500 Personen; Forschungsergebnisse 2025/2026 belegen: VR-Training senkt Redeangst um bis zu 40% in 4–6 Einheiten. Technologische Revolution im Präsentationstraining schafft breites gesellschaftliches Bewusstsein für Angstüberwindungsmethoden – direktes Wachstumsumfeld für Selbsthilfe-Formate wie lampenfieber-besiegen.de.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/ki-und-vr-revolutionieren-praesentationstraining-2026/69124786",
+        date: "2026-04",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-04-27",
+      },
+      {
+        summary: "KGSt – Kommunale Gemeinschaftsstelle für Verwaltungsmanagement (2026): 'Mit VR-Präsentationstraining sicher vor Publikum sprechen' – Die KGSt empfiehlt VR-gestütztes Präsentationstraining für öffentliche Verwaltung und Führungskräfte; institutionelle Verankerung von VR-basierten Trainingsformaten gegen Redeangst. Breite gesellschaftliche Akzeptanz technologiebasierter Methoden zur Überwindung von Auftrittsangst stärkt das Marktumfeld für innovative Formate – direktes Validierungsumfeld für lampenfieber-besiegen.de.",
+        source: "KGSt",
+        url: "https://www.kgst.de/vr-praesentationstraining",
+        date: "2026",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-04-27",
+      },
       // Neu: 26.04.2026 (4)
       {
         summary: "ad-hoc-news.de (März 2026): 'Akupressur – die neue Selbstbehauptung für Jugendliche' – Wissenschaftliche Studien stützen die Wirksamkeit von Akupressur bei Stresssymptomen wie Prüfungsangst. Ergänzend bewährt: 4-7-8-Atemtechnik, progressive Muskelentspannung, kognitive Verhaltenstherapie und strukturierte Lernplanung. Wachsendes Interesse an nichtmedikamentösen Methoden stärkt das Marktumfeld für Audio-Hypnose-Formate wie lampenfieber-besiegen.de.",
@@ -10467,6 +10552,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 27.04.2026 (1)
+      {
+        summary: "StartingUp.de (2026): 'Check: Businessplan-Software für KMU 2026' – Gründermagazin testet führende Businessplan- und Marketing-Software-Lösungen für KMU: Strukturierte Planungstools sparen durchschnittlich 30–40% Planungsaufwand und erhöhen die Qualität strategischer Grundlagen. Wachsende Nachfrage nach digitalen Planungsframeworks für KMU-Gründungen bestätigt das Marktpotenzial des interaktiven Marketingkonzept-Tools auf learnfluencer.ch als niedrigschwellige Einstiegslösung.",
+        source: "StartingUp.de",
+        url: "https://www.starting-up.de/tools/check-businessplan-software-fuer-kmu-2026.html",
+        date: "2026",
+        category: "Marketing-Tools & Software",
+        addedAt: "2026-04-27",
+      },
       // Neu: 26.04.2026 (3)
       {
         summary: "Pearl Lemon Consulting (April 2026): 'Best 20 SWOT Analysis Software for 2026' – Über 50 SWOT-Tools verfügbar in 2026. Top-Lösungen: Lucidchart, Miro, Creately, Canva. Neu: KI-gestützte Tools wie SWOTPal generieren in Sekunden datenbasierte SWOT-Analysen aus Jahresberichten und Marktdaten. Wachsender Markt für Strategie-Analysetools stärkt die Nachfrage nach integrierten Lösungen wie dem Marketingkonzept-Tool auf learnfluencer.ch.",
@@ -11416,6 +11510,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 27.04.2026 (2)
+      {
+        summary: "versicherungsriese.de (2026): 'Bestattungsvorsorge Vergleich 2026 – Angehörige entlasten' – Vergleichsportal beleuchtet die wachsende Nachfrage nach Bestattungsvorsorge: Steigende Sensibilisierung für frühzeitige Vorsorge, Preisvergleiche und digitale Buchungsoptionen gewinnen an Bedeutung. Wachsende Vergleichskultur in der Bestattungsvorsorge-Branche stärkt das Marktmodell digitaler Lead-Plattformen wie bestattungsplaner.ch als unabhängige Vergleichs- und Buchungsplattform.",
+        source: "versicherungsriese.de",
+        url: "https://www.versicherungsriese.de/bestattungsvorsorge/",
+        date: "2026",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-04-27",
+      },
+      {
+        summary: "bestattungsvorsorge.ch (2026): Eigenständiges Schweizer Portal für Bestattungsvorsorge-Information – Neue Schweizer Nischenplattform mit Fokus auf digitale Bestattungsvorsorge-Information zeigt wachsendes unternehmerisches Interesse am Markt. Die Entstehung spezialisierter Schweizer Digitalangebote rund um Bestattungsvorsorge belegt das Marktpotenzial und stärkt das Ökosystem, in dem bestattungsplaner.ch als Lead-Vermittler agiert.",
+        source: "bestattungsvorsorge.ch",
+        url: "https://bestattungsvorsorge.ch/",
+        date: "2026-04",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-04-27",
+      },
       // Neu: 26.04.2026 (5)
       {
         summary: "DeinAdieu.ch (2026): 'Bestattungsplanung – Tipps und Ratgeber' – Schweizer Ratgeberportal für Trauer und Bestattung mit umfassenden Informationen zu Bestattungsplanung, Vorsorge und Nachlass. Wachsende Nutzung digitaler Ratgeberplattformen für Bestattungsthemen zeigt die digitale Aufgeschlossenheit der Zielgruppe – direktes Marktumfeld für bestattungsplaner.ch als Online-Vergleichs- und Buchungsportal.",
