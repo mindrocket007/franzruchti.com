@@ -1836,6 +1836,24 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 27.04.2026 (8)
+      {
+        summary: "MacObserver (April 2026): 'Apple Q2 2026 Earnings Preview: Can Tim Cook End His CEO Run With Another Record Quarter?' – Apple Q2 FY2026 Earnings am 30. April; Wall Street erwartet EPS $1.94 / Revenue $109.32 Mrd. Besonderer Fokus: Tim Cooks voraussichtlich letztes Quartal als CEO vor der Übergabe an John Ternus (September 2026). iPhone-Umsatz $56.5 Mrd. und Services $30 Mrd. erwartet. Post-Earnings-Volatilität von ~5.4% eingepreist – deutlich über dem 4-Quartals-Durchschnitt von 1.9%. Apple-Earnings am Donnerstag sind Schlüsselereignis für ES Futures Trader bei Mind Rocket Trading.",
+        source: "MacObserver",
+        url: "https://www.macobserver.com/news/apple-q2-2026-earnings-preview-can-tim-cook-end-his-ceo-run-with-another-record-quarter/",
+        date: "2026-04",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-27",
+      },
+      // Neu: 27.04.2026 (7)
+      {
+        summary: "Apple Insider (26. April 2026): 'What to expect from Apple's Q2 2026 earnings on April 30' – Detaillierte Erwartungsanalyse: iPhone-Umsatz $56.5 Mrd., Services $30 Mrd., Gesamt-Revenue $109.3 Mrd. (+13-16% YoY). Kombination aus CEO-Transition (Tim Cook → John Ternus) und Q2-Earnings macht dies zum wichtigsten Einzel-Event der aktuellen Earnings-Saison. Options-Markt preist post-Earnings-Move von ~5.4% ein (historischer Durchschnitt: 1.9%) – historisch hohe Volatilitätserwartung. Key Event für ES Futures-Positionierung bei Mind Rocket Trading.",
+        source: "Apple Insider",
+        url: "https://appleinsider.com/articles/26/04/26/what-to-expect-from-apples-q2-2026-earnings-on-april-30",
+        date: "2026-04-26",
+        category: "Futures & Trading",
+        addedAt: "2026-04-27",
+      },
       // Neu: 27.04.2026 (6)
       {
         summary: "CNN (26. April 2026): 'As prediction markets explode in popularity, the regulator that polices them has been shrinking' – CFTC-Belegschaft sank seit Trumps Rückkehr um 24% (DOGE-Kürzungen); Chair Michael Selig behauptet, KI kompensiere Personalabbau; überparteiliche Besorgnis über schwindende Aufsichtskapazität bei explodierender Popularität von Prediction Markets. Regulatorische Lücken und geschwächte CFTC-Oversight erhöhen das Compliance-Risiko für professionelle Trader – wichtiger Kontext für Mind Rocket Trading.",
@@ -6291,6 +6309,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 27.04.2026 (3)
+      {
+        summary: "OKRs Tool (2026): '15 Free OKR Software Tools for Startups (2026)' – Überblick über 15 kostenlose OKR-Software-Tools: Weekdone, Lattice, Notion-Templates u.a. 65% der Früh-Teams tracken Ziele noch manuell in Excel/Sheets. Wichtigste Erkenntnis: Kein verfügbares OKR-Tool ist explizit auf die 12-Week-Year-Methode zugeschnitten – die spezifische Nische des 12wy-planners als dediziertes, methodenspezifisches SaaS-Werkzeug bleibt unbesetzt und validiert den Produktansatz.",
+        source: "OKRs Tool",
+        url: "https://www.okrstool.com/blog/free-okr-software",
+        date: "2026",
+        category: "SaaS & Tools",
+        addedAt: "2026-04-27",
+      },
       // Neu: 27.04.2026 (2)
       {
         summary: "Men's Health Deutschland (2026): 'Selbstmanagement 2026: Wie du mit weniger Anstrengung mehr erreichen kannst' – Deep-Work-Blöcke à 60–90 Minuten, 90-Tage-Zielplanung statt Jahresziele und systematische Schwachstellenanalyse als Kernstrategien für 2026. Wachsendes Mainstream-Bewusstsein für kurze Planungszyklen und fokussierte Umsetzung stärkt die Nachfrage nach Tools wie dem 12wy-planner als SaaS für präzise 12-Wochen-Zielplanung.",
