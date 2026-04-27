@@ -1810,6 +1810,39 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 27.04.2026 (4)
+      {
+        summary: "Smashelito Newsletter (27. April 2026): 'ES Daily Plan | April 27, 2026' – Technischer Tagesplan für ES Futures: Neues ATH bei 7200.50 (poor high, fehlende Excess). Pivotlevel Smashlevel 7183; Aufwärtsziele UT1 7210, UT2 7232, FUT 7260; Abwärtsziele DT1 7162, FDT 7126. VIX-Bestätigungsniveaus 17.66 (bullisch) / 19.76 (bärisch). Konkrete Intraday-Levels für ES-Futures-Trading direkt relevant für diskretionäre und algorithmische Strategien wie bei Mind Rocket Trading.",
+        source: "newsletter.smashelito.com",
+        url: "https://newsletter.smashelito.com/p/es-daily-plan-april-27-2026",
+        date: "2026-04-27",
+        category: "Futures & Trading",
+        addedAt: "2026-04-27",
+      },
+      {
+        summary: "Smashelito Newsletter (27. April 2026): 'ES Weekly Plan | April 27 - May 1, 2026' – Wöchentlicher technischer Plan für ES Futures: S&P 500 schloss Vorwoche mit frischem ATH bei 7168.59 (+0.80%), ES-ATH 7200.50. Fokus: Kann Käufer den Breakout aus Mehrtagsbalance bestätigen? Schlüsselereignisse: Fed-Sitzung Mittwoch (wahrscheinlich Powells letztes Meeting vor Übergabe an Kevin Warsh), Q1 BIP und Core PCE Donnerstag, Apple-Earnings. Geopolitik: Strait-of-Hormuz-Spannungen drücken Ölpreise nach oben. Kompletter Wochenplan für ES-Futures-Positionierung.",
+        source: "newsletter.smashelito.com",
+        url: "https://newsletter.smashelito.com/p/es-weekly-plan-april-27-may-1-2026",
+        date: "2026-04-27",
+        category: "Futures & Trading",
+        addedAt: "2026-04-27",
+      },
+      {
+        summary: "CNBC (24. April 2026): 'Stock market next week: Outlook for April 27-May 1, 2026' – S&P 500 erreichte Allzeithoch 7168.59; Schlüsselereignisse KW18: Fed-Entscheidung (100% Wahrscheinlichkeit unverändert; nur 8% Chance auf Zinsänderung 2026), Q1 BIP und PCE-Daten Donnerstag, Apple-Earnings. Analyst-Warnung: 'Mehr Downside-Risiko als Upside-Potenzial' bei hoher Marktkonzentration; Empfehlung zur Diversifikation nach dem Bounce. Strait-of-Hormuz-Spannungen erhöhen Ölpreisrisiken. Makro-Wochenausblick direkt relevant für ES-Futures-Positionierung bei Mind Rocket Trading.",
+        source: "CNBC",
+        url: "https://www.cnbc.com/2026/04/24/stock-market-next-week-outlook-for-april-27-may-1-2026.html",
+        date: "2026-04-24",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-27",
+      },
+      {
+        summary: "CNBC (26. April 2026): 'Here are the 3 big things we're watching in the stock market in the week ahead' – Die 3 marktbewegenden Faktoren der KW18: (1) Fed-Sitzung unter Powell (wahrscheinlich letzte vor Amtsübergabe an Kevin Warsh im Mai), (2) Q1 BIP-Daten und Core PCE als Inflationsindikator, (3) Earnings-Saison (Apple u.a.). Saisonaler Kontext: 'Sell in May and go Away' startet; Händler preisen Zinspause für den Rest von 2026 ein. Kontext für ES-Futures-Strategie in der laufenden Woche.",
+        source: "CNBC",
+        url: "https://www.cnbc.com/2026/04/26/here-are-the-3-big-things-were-watching-in-the-stock-market-in-the-week-ahead.html",
+        date: "2026-04-26",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-27",
+      },
       // Neu: 26.04.2026 (3)
       {
         summary: "Elite Trader Funding (2026): 'Futures Funded Account: How to Get Funded in 2026' – Praxisleitfaden für angehende Futures-Prop-Trader: So erhält man einen funded Account für ES Futures. Mit S&P 500 Futures, die im April 2026 Inflationssorgen und eine fragile geopolitische Lage navigieren, suchen mehr Trader denn je Zugang zu Futures-Märkten über Prop Firms ohne eigenes Startkapital.",
@@ -8903,6 +8936,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 27.04.2026 (1)
+      {
+        summary: "ad-hoc-news.de (2026): 'KI und Regeln prägen Weiterbildung 2026' – 'Responsible AI' (RAI) steht im H1 2026 ganz oben auf der Weiterbildungsagenda; Nachfrage nach Qualifikationen in KI-Governance und Cybersecurity erreicht neue Höchststände, getrieben von regulatorischen Anforderungen und dem produktiven Einsatz von KI-Tools. Die starke Nachfrage nach formalisierten KI-Kompetenzprogrammen bestätigt die strategische Ausrichtung von learnfluencer.ch als Thought-Leadership-Plattform für KI-Lernkompetenz und Weiterbildung.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/ki-und-regeln-praegen-weiterbildung-2026/69114419",
+        date: "2026-04",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-27",
+      },
       // Neu: 26.04.2026 (5)
       {
         summary: "i3-connect.com (2026): 'Education Trends in 2026: Technology in Service of Learning' – Internationale Bildungsplattform analysiert die wichtigsten Education-Trends 2026: KI als persönlicher Lernbegleiter, Immersive Learning durch AR/VR, datengetriebene Lernpfade und Soft-Skills als strategische Priorität. Globale Lerntrends bestätigen den Fokus von learnfluencer.ch: Lernkompetenz und KI-Integration sind die entscheidenden Weiterbildungsthemen des Jahres.",
