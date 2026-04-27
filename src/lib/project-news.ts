@@ -26,6 +26,15 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 27.04.2026 (1)
+      {
+        summary: "SIZ AG (April 2026): 'Newsflash Update zum Launch des neuen mySIZ-Systems' – Follow-up-Update zum Launch des mySIZ-Systems: Detaillierte Informationen über den neuen Mitgliederbereich, aktuelle Statusmeldungen und nächste Schritte für SIZ-Partner und -Kandidaten. Der direkte Update-Post von SIZ AG zum mySIZ-Systemstart dokumentiert die aktive Kommunikationsstrategie und das Engagement mit der ICT-Bildungsgemeinschaft.",
+        source: "SIZ AG",
+        url: "https://siz.ch/newsflash-update-zum-launch-des-neuen-mysiz-systems/",
+        date: "2026-04",
+        category: "SIZ AG direkt",
+        addedAt: "2026-04-27",
+      },
       // Neu: 26.04.2026 (1)
       {
         summary: "ICT-Berufsbildung Schweiz (2026): 'Doppelte Anzahl an diplomierten Security Fachkräften' – Seit Einführung des eidg. Fachausweises 'Cyber Security Specialist' 2019 hat sich die Zahl der Prüfungskandidierenden jährlich verdoppelt. Seit 2010 hat sich die Gesamtzahl an Security-Fachkräften auf 5'100 verdreifacht; bis 2030 werden 60% mehr ICT-Security-Fachkräfte benötigt. Rasantes Wachstum im Security-Qualifikationssegment schafft strategische Marktchancen für anerkannte ICT-Prüfungsorganisationen – direktes Wachstumsumfeld für SIZ AG.",
@@ -1810,6 +1819,24 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 27.04.2026 (6)
+      {
+        summary: "CNN (26. April 2026): 'As prediction markets explode in popularity, the regulator that polices them has been shrinking' – CFTC-Belegschaft sank seit Trumps Rückkehr um 24% (DOGE-Kürzungen); Chair Michael Selig behauptet, KI kompensiere Personalabbau; überparteiliche Besorgnis über schwindende Aufsichtskapazität bei explodierender Popularität von Prediction Markets. Regulatorische Lücken und geschwächte CFTC-Oversight erhöhen das Compliance-Risiko für professionelle Trader – wichtiger Kontext für Mind Rocket Trading.",
+        source: "CNN",
+        url: "https://www.cnn.com/2026/04/26/politics/commodity-futures-trading-commission-shrinking-prediction-markets",
+        date: "2026-04-26",
+        category: "Regulierung",
+        addedAt: "2026-04-27",
+      },
+      // Neu: 27.04.2026 (5)
+      {
+        summary: "Propinformer.com (2026): 'Prop Trading in 2026: From Wild West to Regulated Reality' – Ein Drittel der Prop-Firmen verschwand seit 2024; CFTC CTA-Klassifikation wird erwartet; Konsolidierung führt zu weniger, aber solideren Firmierungen. Regulierungsschub im Prop-Trading-Markt fordert institutionelleres Setup – direkter Kontext für Mind Rocket Tradings Positionierung im professionalisierten Prop-Trading-Umfeld.",
+        source: "Propinformer.com",
+        url: "https://propinformer.com/prop-trading-in-2026-from-wild-west-to-regulated-reality/",
+        date: "2026-04",
+        category: "Regulierung",
+        addedAt: "2026-04-27",
+      },
       // Neu: 27.04.2026 (4)
       {
         summary: "Smashelito Newsletter (27. April 2026): 'ES Daily Plan | April 27, 2026' – Technischer Tagesplan für ES Futures: Neues ATH bei 7200.50 (poor high, fehlende Excess). Pivotlevel Smashlevel 7183; Aufwärtsziele UT1 7210, UT2 7232, FUT 7260; Abwärtsziele DT1 7162, FDT 7126. VIX-Bestätigungsniveaus 17.66 (bullisch) / 19.76 (bärisch). Konkrete Intraday-Levels für ES-Futures-Trading direkt relevant für diskretionäre und algorithmische Strategien wie bei Mind Rocket Trading.",
@@ -4544,6 +4571,24 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 27.04.2026 (2)
+      {
+        summary: "ad-hoc-news.de (2026): 'Hypnose wird 2026 zum Mainstream-Tool gegen Stress' – Hypnose ersetzt als präventives Tool traditionelle Entspannungsmethoden in Unternehmen; Paradigmenwechsel in Richtung Nervensystemregulation; KI-gestützte Hypnose-Apps auf Basis biometrischer Daten. Wachsende Akzeptanz von Hypnose im betrieblichen Umfeld bestätigt die strategische Ausrichtung von hypnovital® als skalierbare Audio-Coaching-Lösung für Stressprävention.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/hypnose-wird-2026-zum-mainstream-tool-gegen-stress/68477939",
+        date: "2026-04",
+        category: "Hypnose & Coaching",
+        addedAt: "2026-04-27",
+      },
+      // Neu: 27.04.2026 (1)
+      {
+        summary: "ad-hoc-news.de (2026): 'Burnout-Gefahr 2026: Psychische Belastungen am Arbeitsplatz steigen' – Psychische Belastungen am Arbeitsplatz steigen 2026 weiter an; Burnout-Prävention wird zur Kernaufgabe für HR und BGM-Verantwortliche in Unternehmen. Wachsender Druck auf betriebliche Gesundheitslösungen schafft direktes Marktpotenzial für hypnovital® als niedrigschwellige, skalierbare Burnout-Präventionslösung.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/burnout-gefahr-2026-psychische-belastungen-am-arbeitsplatz-steigen/68532499",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-27",
+      },
       // Neu: 26.04.2026 (4)
       {
         summary: "HSLU – Hochschule Luzern (28. April 2026): Info-Veranstaltung MAS Betriebliches Gesundheitsmanagement – Online-Informationsanlass zur berufsbegleitenden Weiterbildung im BGM, inkl. CAS-Programme für Fachpersonen in Prävention und Gesundheitsförderung. Wachsende akademische BGM-Ausbildungsangebote signalisieren die Professionalisierung des Sektors – positiver Marktkontext für hypnovital® als anerkanntes Instrument für betriebliche Stressprävention.",
@@ -8936,6 +8981,24 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 27.04.2026 (3)
+      {
+        summary: "cegos-integrata.de (2026): 'Die wichtigsten E-Learning-Trends 2026' – Überblick der Top-E-Learning-Trends: Microlearning, KI-personalisierte Lernpfade, Social Learning, Gamification und Learning Analytics als strategische Hebel für Unternehmensweiterbildung. Globale E-Learning-Trends bestätigen die Relevanz von learnfluencer.ch als Thought-Leadership-Plattform für moderne Lernkompetenz und KI-Integration in der Weiterbildung.",
+        source: "cegos-integrata.de",
+        url: "https://www.cegos-integrata.de/blog/learning-development/digital-learning/die-wichtigsten-e-learning-trends-2026",
+        date: "2026-04",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-27",
+      },
+      // Neu: 27.04.2026 (2)
+      {
+        summary: "keelearning.de (2026): 'E-Learning Trends 2026: So lernen Unternehmen morgen' – Unternehmensweiterbildung 2026: KI-basiertes adaptives Lernen, Immersive Learning (VR/AR), Lernökosysteme und datengetriebenes Kompetenzmanagement als prägende Trends. Die Konvergenz von KI und betrieblichem Lernen spiegelt genau das Themenfeld wider, das learnfluencer.ch mit Thought-Leadership-Content bedient.",
+        source: "keelearning.de",
+        url: "https://www.keelearning.de/blog/e-learning-trends-2026/",
+        date: "2026-04",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-27",
+      },
       // Neu: 27.04.2026 (1)
       {
         summary: "ad-hoc-news.de (2026): 'KI und Regeln prägen Weiterbildung 2026' – 'Responsible AI' (RAI) steht im H1 2026 ganz oben auf der Weiterbildungsagenda; Nachfrage nach Qualifikationen in KI-Governance und Cybersecurity erreicht neue Höchststände, getrieben von regulatorischen Anforderungen und dem produktiven Einsatz von KI-Tools. Die starke Nachfrage nach formalisierten KI-Kompetenzprogrammen bestätigt die strategische Ausrichtung von learnfluencer.ch als Thought-Leadership-Plattform für KI-Lernkompetenz und Weiterbildung.",
