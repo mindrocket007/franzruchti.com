@@ -26,7 +26,15 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
-      // Neu: 27.04.2026 (1)
+      // Neu: 27.04.2026 (2)
+      {
+        summary: "ICT-Berufsbildung Schweiz (April 2026): 'Nationaler Zukunftstag 2026: Chancengleichheit in der Berufswahl fördern' – ICT-Berufsbildung Schweiz unterstützt den Nationalen Zukunftstag 2026, um Chancengleichheit in ICT-Berufen zu fördern und Nachwuchs – besonders Mädchen und Jugendliche mit Migrationshintergrund – für IT-Karrieren zu gewinnen. 319 ICT-Nachwuchstalente nehmen jährlich an ICT-Regiomeisterschaften teil. Gezielte Nachwuchsförderung stärkt langfristig die Nachfrage nach ICT-Qualifikationen und -Zertifizierungen – direktes Marktumfeld für SIZ AG.",
+        source: "ICT-Berufsbildung Schweiz",
+        url: "https://www.ict-berufsbildung.ch/nationaler-zukunftstag-2026-chancengleichheit-in-der-berufswahl-foerdern",
+        date: "2026-04",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-27",
+      },
       {
         summary: "SIZ AG (April 2026): 'Newsflash Update zum Launch des neuen mySIZ-Systems' – Follow-up-Update zum Launch des mySIZ-Systems: Detaillierte Informationen über den neuen Mitgliederbereich, aktuelle Statusmeldungen und nächste Schritte für SIZ-Partner und -Kandidaten. Der direkte Update-Post von SIZ AG zum mySIZ-Systemstart dokumentiert die aktive Kommunikationsstrategie und das Engagement mit der ICT-Bildungsgemeinschaft.",
         source: "SIZ AG",
@@ -1836,7 +1844,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
-      // Neu: 27.04.2026 (8)
+      // Neu: 27.04.2026 (11)
+      {
+        summary: "Reuters / Investing.com (28. April 2026): 'Soaring US stocks face pivotal week of tech-led earnings, Fed meeting' – Pivotale Earnings-Woche: 5 der Magnificent Seven berichten (Microsoft, Alphabet, Meta, Amazon am Mittwoch; Apple am Donnerstag). FOMC-Meeting (28.-29. April) ohne erwartete Zinsänderung. S&P 500 im April +9%, Nasdaq +15%. Geopolitische Spannungen (Iran/Hormuz) treiben Öl auf $96-107/Barrel. Alle Schlüsselkatalysatoren aktiv – kritische Woche für ES Futures Positionierung bei Mind Rocket Trading.",
+        source: "Reuters / Investing.com",
+        url: "https://ca.investing.com/news/economy-news/soaring-us-stocks-face-pivotal-week-of-techled-earnings-fed-meeting-4585353",
+        date: "2026-04-27",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-27",
+      },
+      {
+        summary: "CNBC (26. April 2026): 'Earnings playbook: Five of the Magnificent Seven set to report in busiest week of season' – Detaillierter Earnings-Ausblick: Microsoft ($3.88/share +20%), Alphabet ($2.64/share), Meta ($8.15/share +20%), Amazon und Apple (Donnerstag). >180 S&P 500 Unternehmen berichten diese Woche; Magnificent Seven setzen Ton für Gesamtmarkt. Hohe Erwartungen durch KI-Investitionen als Schlüsselereignis für ES Futures Trader bei Mind Rocket Trading.",
+        source: "CNBC",
+        url: "https://www.cnbc.com/2026/04/26/earnings-playbook-five-of-mag-7-set-to-report-in-busiest-week-of-season.html",
+        date: "2026-04-26",
+        category: "Futures & Trading",
+        addedAt: "2026-04-27",
+      },
+      {
+        summary: "Yahoo Finance (April 2026): 'Mag 7 Earnings Take the Spotlight: What to Expect' – Übersicht aller Magnificent-Seven-Earnings-Erwartungen: Fokus auf AI-Capex-Commitments, Cloud-Wachstum und Management Guidance Q2 2026. Markt erwartet starke Umsatzwachstums-Zahlen als Bestätigung massiver KI-Infrastruktur-Investitionen. Kritisches Signal für Risk-On/Risk-Off-Sentiment an Futures-Märkten – direktes Schlüsselereignis für Mind Rocket Trading ES Futures Strategie.",
+        source: "Yahoo Finance",
+        url: "https://finance.yahoo.com/markets/stocks/articles/mag-7-earnings-spotlight-expect-233000927.html",
+        date: "2026-04-27",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-27",
+      },
       {
         summary: "MacObserver (April 2026): 'Apple Q2 2026 Earnings Preview: Can Tim Cook End His CEO Run With Another Record Quarter?' – Apple Q2 FY2026 Earnings am 30. April; Wall Street erwartet EPS $1.94 / Revenue $109.32 Mrd. Besonderer Fokus: Tim Cooks voraussichtlich letztes Quartal als CEO vor der Übergabe an John Ternus (September 2026). iPhone-Umsatz $56.5 Mrd. und Services $30 Mrd. erwartet. Post-Earnings-Volatilität von ~5.4% eingepreist – deutlich über dem 4-Quartals-Durchschnitt von 1.9%. Apple-Earnings am Donnerstag sind Schlüsselereignis für ES Futures Trader bei Mind Rocket Trading.",
         source: "MacObserver",
