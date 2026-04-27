@@ -3842,7 +3842,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
-      // Neu: 27.04.2026 (2)
+      // Neu: 27.04.2026 (4)
+      {
+        summary: "SRF News (März 2026): 'Krankenkassen-finanzierte App gegen Depressionen – ab Juli wird sie rückvergütet' – Die kognitive Verhaltenstherapie-App Deprexis wird ab Juli 2026 erstmals von Schweizer Krankenkassen finanziert: Das Bundesamt für Gesundheit öffnet damit den regulierten Markt für digitale Mental-Health-Anwendungen in der Schweiz. Wegweisendes Signal für die Akzeptanz digitaler Selbsthilfe-Tools im Schweizer Gesundheitssystem – direktes Marktöffnungsumfeld für mindtools.ch.",
+        source: "SRF News",
+        url: "https://www.srf.ch/news/dialog/krankenkassenfinanziert-app-gegen-depressionen-kommt-und-ab-juli-wird-sie-rueckverguetet",
+        date: "2026-03",
+        category: "Mental Health",
+        addedAt: "2026-04-27",
+      },
+      {
+        summary: "Medinside (Dezember 2025): 'Digitaltherapien auf Rezept – eine Depressions-App macht den Anfang' – Schweizer BAG legt den regulatorischen Rahmen für erstattungsfähige Therapie-Apps fest: 90 Tage Nutzungsdauer, klinischer Nachweis beim Antrag erforderlich. Konservativer aber klarer Schweizer Weg zur Marktreife für digitale Gesundheitsanwendungen schafft seriöse Marktnische für evidenzbasierte digitale Tools – relevantes Regulierungsumfeld für mindtools.ch.",
+        source: "Medinside",
+        url: "https://www.medinside.ch/de/digitaltherapien-auf-rezept-eine-depressions-app-macht-den-anfang-20251215",
+        date: "2025-12",
+        category: "Mental Health",
+        addedAt: "2026-04-27",
+      },
       {
         summary: "The Golden Twenties (2026): 'Mental Health Apps aus Österreich' – Überblick über österreichische Mental-Health-Apps mit Fokus auf Datenschutz und Nutzbarkeit: Das DACH-App-Ökosystem für psychische Gesundheit wächst. Zunehmendes App-Angebot für mentale Gesundheit schärft die Nutzerwartungen an digitale Selbsthilfe-Tools und bestätigt die stabile Marktnachfrage – direktes Umfeld für mindtools.ch als PDF-basierte Werkzeugplattform für persönliche Entwicklung.",
         source: "The Golden Twenties",
@@ -4655,7 +4671,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
-      // Neu: 27.04.2026 (2)
+      // Neu: 27.04.2026 (3)
+      {
+        summary: "ad-hoc-news.de (April 2026): 'Resilienz wird messbar – neue Wege für mentale Gesundheit im Jahr 2026' – Resilienz entwickelt sich 2026 zu einem messbaren Unternehmenskennwert: Digitale Mental-Health-Apps wachsen auf über 8 Milliarden USD Marktvolumen, Hypnosetherapie wird vermehrt als Ergänzung in Unternehmen und Schulen integriert. Wachsende institutionelle Akzeptanz für Hypnose im BGM-Bereich stärkt direkt die Positionierung von hypnovital® als skalierbare Präventionslösung.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/resilienz-wird-messbar-neue-wege-fuer-mentale-gesundheit-im-jahr-2026/69153813",
+        date: "2026-04",
+        category: "Digitale Gesundheit",
+        addedAt: "2026-04-27",
+      },
       {
         summary: "ad-hoc-news.de (2026): 'Hypnose wird 2026 zum Mainstream-Tool gegen Stress' – Hypnose ersetzt als präventives Tool traditionelle Entspannungsmethoden in Unternehmen; Paradigmenwechsel in Richtung Nervensystemregulation; KI-gestützte Hypnose-Apps auf Basis biometrischer Daten. Wachsende Akzeptanz von Hypnose im betrieblichen Umfeld bestätigt die strategische Ausrichtung von hypnovital® als skalierbare Audio-Coaching-Lösung für Stressprävention.",
         source: "ad-hoc-news.de",
@@ -6341,7 +6365,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
-      // Neu: 27.04.2026 (3)
+      // Neu: 27.04.2026 (4)
+      {
+        summary: "Atlassian Community (Februar 2026): 'What is 12 Week Year Time Management System?' – Die 12-Week-Year-Methode wird 2026 zunehmend in professionellen Produktivitäts-Communitys diskutiert und in Tools wie Jira und Notion implementiert. Wachsende Mainstream-Akzeptanz der Methode und Integration in etablierte Plattformen bestätigt die steigende Nachfrage nach spezialisierten 12-Week-Year-Planungstools wie dem 12wy-planner.",
+        source: "Atlassian Community",
+        url: "https://community.atlassian.com/forums/App-Central-articles/What-is-12-Week-Year-Time-Management-System/ba-p/2811647",
+        date: "2026-02",
+        category: "Produktivität & Planung",
+        addedAt: "2026-04-27",
+      },
       {
         summary: "OKRs Tool (2026): '15 Free OKR Software Tools for Startups (2026)' – Überblick über 15 kostenlose OKR-Software-Tools: Weekdone, Lattice, Notion-Templates u.a. 65% der Früh-Teams tracken Ziele noch manuell in Excel/Sheets. Wichtigste Erkenntnis: Kein verfügbares OKR-Tool ist explizit auf die 12-Week-Year-Methode zugeschnitten – die spezifische Nische des 12wy-planners als dediziertes, methodenspezifisches SaaS-Werkzeug bleibt unbesetzt und validiert den Produktansatz.",
         source: "OKRs Tool",
@@ -7304,7 +7336,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
-      // Neu: 27.04.2026 (2)
+      // Neu: 27.04.2026 (4)
+      {
+        summary: "Futurezone.at (April 2026): 'Neue App Melonga: Hilfe bei frühzeitigem Samenerguss nach 12 Wochen Therapie' – Die App der Europäischen Urologischen Gesellschaft (EAU) hilft Männern mit vorzeitigem Samenerguss durch verhaltenstherapeutische Übungen und Achtsamkeitsansätze; in Studien verdoppelte sich die Zeit bis zur Ejakulation nach 12 Wochen. Wachsendes digitales Produktangebot im Segment sexueller Gesundheit belegt den Markttrend – direktes Konkurrenzumfeld für orgasmus-hinauszoegern.de.",
+        source: "Futurezone.at",
+        url: "https://futurezone.at/apps/neue-appmelonga-hilfe-fruehzeitiger-samenerguss-12-wochen-therapie/403141316",
+        date: "2026-04",
+        category: "Digital Health",
+        addedAt: "2026-04-27",
+      },
+      {
+        summary: "Handelsblatt (2026): 'Kranus Health: App gegen Erektionsstörung – Gründerteam erhält Millionenfinanzierung' – Münchner Startup Kranus Health erhält Millionenfinanzierung für digitale Angebote im Bereich männliche Sexualgesundheit und plant Ausweitung auf Ejaculatio praecox. Wachsendes Investoreninteresse an digitalen Produkten für männliche Sexualgesundheit bestätigt das Marktpotenzial für Audio-Selbsthilfe-Angebote wie orgasmus-hinauszoegern.de.",
+        source: "Handelsblatt",
+        url: "https://www.handelsblatt.com/inside/digital_health/kranus-health-app-gegen-erektionsstoerung-gruender-team-erhaelt-millionenfinanzierung/26881266.html",
+        date: "2026-04",
+        category: "Digital Health",
+        addedAt: "2026-04-27",
+      },
       {
         summary: "Schwulissimo (April 2026): 'Neue Intimität durch KI – Studie zur Sexualität 2026' – KI-gestützte Beratungstools bieten diskrete, personalisierte Antworten auf intime Fragen; Männer nutzen KI häufiger als Frauen im Kontext sexueller Kommunikation. Die Digitalisierung intimer Gesundheitsberatung senkt Hemmschwellen und steigert die Nachfrage nach digitalen Selbsthilfe-Formaten – direktes Marktumfeld für Audio-Selbsthilfeangebote wie orgasmus-hinauszoegern.de.",
         source: "Schwulissimo",
@@ -10619,7 +10667,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
-      // Neu: 27.04.2026 (2)
+      // Neu: 27.04.2026 (3)
+      {
+        summary: "Improvado.io (April 2026): 'Marketing Technology Trends and Innovations 2026' – KI-gesteuerte Hyper-Personalisierung, First-Party-Data-Strategien und Marketing Operations als strategische Unternehmensfunktion zählen zu den Top-MarTech-Trends 2026. Steigender Innovationsdruck durch MarTech-Trends erhöht den Bedarf an strukturierten Planungsinstrumenten wie dem interaktiven Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "Improvado.io",
+        url: "https://improvado.io/blog/marketing-technology-trends-and-innovations",
+        date: "2026-04",
+        category: "MarTech & Trends",
+        addedAt: "2026-04-27",
+      },
       {
         summary: "kmu-digitalisierung.app (2026): 'Prozesse digitalisieren im KMU: Der ultimative Leitfaden für Schweizer Unternehmen 2026' – Schweizer KMU-Digitalisierungsplattform zeigt: Echter Digitalisierungsfortschritt beginnt, wenn Systeme miteinander kommunizieren – doch Voraussetzung ist stets ein strukturierter Strategieplan. 5-Schritte-Lean-Fahrplan für KMU in der Schweiz; ohne konzeptionelle Grundlage scheitert jede Tool-Implementierung. Direktes Argument für strukturierte Marketingkonzept-Tools wie das auf learnfluencer.ch als strategische Basis vor jeder KMU-Digitalisierung.",
         source: "kmu-digitalisierung.app",
@@ -11585,7 +11641,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
-      // Neu: 27.04.2026 (2)
+      // Neu: 27.04.2026 (5)
+      {
+        summary: "EKZ Crosstour (April 2026): 'Der Markt für Bestattungs- und Friedhofsdienstleistungen wird bis 2033 rasant wachsen' – Globale Marktanalyse zeigt: Digitalisierung, Personalisierung und Online-Planung sind die Haupttreiber des Wachstums im Bestattungsmarkt. Das wachsende globale Marktpotenzial im Bestattungswesen bestätigt die Chancen für digitale Nischenplattformen wie bestattungsplaner.ch.",
+        source: "EKZ Crosstour",
+        url: "https://ekz-crosstour.ch/2026/04/08/der-markt-fur-bestattungs-und-friedhofsdienstleistungen-wird-bis-2847-voraussichtlich-rasant-wachsen/",
+        date: "2026-04",
+        category: "Markt & Trends",
+        addedAt: "2026-04-27",
+      },
+      {
+        summary: "Investorszene.de (Mai 2025): 'Digitalisierung im Bestattungswesen: Chancen für Startups und etablierte Bestatter' – Vergleichsportale und Online-Planungstools werden als die vielversprechendsten Innovationsfelder im Bestattungswesen identifiziert. Direkte strategische Bestätigung des Geschäftsmodells von bestattungsplaner.ch als digitale Lead-Vermittlungsplattform im Schweizer Bestattungsmarkt.",
+        source: "Investorszene.de",
+        url: "https://www.investorszene.de/2025/05/21/digitalisierung-im-bestattungswesen-chancen-fuer-startups-und-etablierte-bestatter/",
+        date: "2025-05",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-27",
+      },
+      {
+        summary: "Everlife.ch (April 2026): Schweizer Bestattungsvorsorge-Plattform zeigt: Nur 10% der Todesfälle in der Schweiz sind durch Vorsorgeverträge abgedeckt (Frankreich 25%, Niederlande 85%) – enormes Wachstumspotenzial für digitale Vorsorgelösungen im Schweizer Markt. Der massive Rückstand der Schweiz bei Bestattungsvorsorge belegt direkt das Marktpotenzial für bestattungsplaner.ch als innovativer Online-Bestattungsplaner.",
+        source: "Everlife.ch",
+        url: "https://everlife.ch/de/bestattungsvorsorge/",
+        date: "2026-04",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-04-27",
+      },
       {
         summary: "versicherungsriese.de (2026): 'Bestattungsvorsorge Vergleich 2026 – Angehörige entlasten' – Vergleichsportal beleuchtet die wachsende Nachfrage nach Bestattungsvorsorge: Steigende Sensibilisierung für frühzeitige Vorsorge, Preisvergleiche und digitale Buchungsoptionen gewinnen an Bedeutung. Wachsende Vergleichskultur in der Bestattungsvorsorge-Branche stärkt das Marktmodell digitaler Lead-Plattformen wie bestattungsplaner.ch als unabhängige Vergleichs- und Buchungsplattform.",
         source: "versicherungsriese.de",
