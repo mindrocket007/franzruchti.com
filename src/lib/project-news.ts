@@ -26,6 +26,24 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 28.04.2026 (3)
+      {
+        summary: "SIW Schweizerisches Institut für Weiterbildung (2026): 'Die Schweiz verschläft ihren digitalen Nachwuchs – und riskiert 54'400 offene ICT-Stellen' – Bis 2033 droht der Schweiz eine ICT-Fachkräftelücke von 54'400 Stellen; mangelnde Nachwuchsförderung und Bildungsengpässe gefährden die digitale Wettbewerbsfähigkeit. Enormer ICT-Fachkräftemangel schafft starken Bedarf an anerkannten Qualifizierungsangeboten und Zertifizierungen – direktes Wachstumsumfeld für SIZ AG.",
+        source: "SIW Schweizerisches Institut für Weiterbildung",
+        url: "https://siw.swiss/ict-nachwuchs/",
+        date: "2026-04",
+        category: "Arbeitsmarkt & IT",
+        addedAt: "2026-04-28",
+      },
+      // Neu: 28.04.2026 (2)
+      {
+        summary: "ICT-Berufsbildung Schweiz (2026): 'ICT-Diplomfeier 2026: Die höhere Berufsbildung bleibt wichtig für den Schweizer Arbeitsmarkt' – Jährliche ICT-Diplomfeier zeichnet Absolvierende der höheren ICT-Berufsbildung aus; höhere Berufsbildung liefert zentrale Qualifikationen für den Schweizer ICT-Arbeitsmarkt. Gesellschaftliche Verankerung von ICT-Zertifizierungen als Karriereschritte stärkt nachhaltig die Nachfrage nach Diplomen und Prüfungsangeboten – direktes Umfeld für SIZ AG.",
+        source: "ICT-Berufsbildung Schweiz",
+        url: "https://www.ict-berufsbildung.ch/ict-diplomfeier-2026-die-hoehere-berufsbildung-bleibt-wichtig-fuer-den-schweizer-arbeitsmarkt",
+        date: "2026-04",
+        category: "Bildungspolitik",
+        addedAt: "2026-04-28",
+      },
       // Neu: 28.04.2026 (1)
       {
         summary: "ICT-Berufsbildung Schweiz (April 2026): 'Zukunftstag 2026: Mädchen und Jugendliche entdecken ICT-Berufe' – Der Nationale Zukunftstag am 12. November 2026 öffnet Türen in ICT-Betrieben für Schülerinnen und Schüler; ICT-Berufsbildung Schweiz engagiert sich aktiv für mehr Diversität und Nachwuchsförderung in der IT-Branche. Gezielte Nachwuchsrekrutierung durch den Zukunftstag stärkt die Nachfrage nach ICT-Qualifikationen und Bildungsangeboten – direktes Wachstumsumfeld für SIZ AG.",
@@ -1862,6 +1880,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 28.04.2026 (2)
+      {
+        summary: "BeInCrypto (2026): 'Kraken expands into futures, tokenized stocks, and payments' – Kraken baut nach der Übernahme von NinjaTrader (1,5 Mrd. USD) seine Position in traditionellen Futures-Märkten weiter aus: Krypto-Trader erhalten Zugang zu ES Futures und traditionellen Derivaten; traditionelle Futures-Trader zu Krypto-Märkten. Konvergenz von Krypto- und traditionellen Futures-Märkten schafft neue Trader-Zielgruppen und erhöht das Marktbewusstsein für ES-Futures-Strategien wie die von mindrocket-trading.com.",
+        source: "BeInCrypto",
+        url: "https://beincrypto.com/kraken-expands-futures-tokenized-stocks-payments/",
+        date: "2026-04",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-28",
+      },
+      {
+        summary: "StockBrokers.com (2026): 'NinjaTrader Review 2026: Futures Fees, Margins & Platforms' – StockBrokers.com zeichnet NinjaTrader als führende Futures-Plattform 2026 aus: C#-basiertes Algorithmic Trading, Micro-Kontrakte ab $0.09/Side, CySEC-regulierter Zugang für europäische Trader ab Januar 2026. Breite externe Anerkennung von NinjaTrader als Premium-Futures-Plattform stärkt die Glaubwürdigkeit von mindrocket-trading.com als Anbieter NinjaTrader-basierter Handelsstrategien.",
+        source: "StockBrokers.com",
+        url: "https://www.stockbrokers.com/futures/review/ninjatrader",
+        date: "2026-04",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-28",
+      },
       // Neu: 28.04.2026 (5)
       {
         summary: "CNBC (27. April 2026): 'Stock futures inch higher after the S&P 500 posts another record, Wall Street awaits earnings' – S&P 500 Futures steigen nach neuem Rekordhoch; drei Zentralbankmeetings (inkl. FOMC), 5 Magnificent-Seven-Earnings und ~180 S&P-500-Berichte diese Woche. Fed hält Zinsen erwartungsgemäss unverändert (100% Wahrscheinlichkeit laut Fed Funds Futures). Historisch dichte Ereignislage erzeugt erhöhte Intraday-Volatilität in ES Futures – optimales Umfeld für algorithmische Handelsstrategien von Mind Rocket Trading.",
@@ -9387,6 +9422,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 28.04.2026 (2)
+      {
+        summary: "hrtoday.ch (2026): 'Learnfluencer werden?' – HR Today analysiert die Rolle von Learnfluencern als Schlüsselpersonen für intrinsische Lernmotivation: Learnfluencer verknüpfen individuelles und kollektives Lernen, etablieren Lernkulturen und gestalten digitale Lernumgebungen mit persönlicher Verantwortung. Verbreitung des Begriffs 'Learnfluencer' in Schweizer HR-Fachmedien bestätigt das Marktpotenzial und die Markenrelevanz von learnfluencer.ch.",
+        source: "hrtoday.ch",
+        url: "https://www.hrtoday.ch/de/article/learnfluencer-werden",
+        date: "2026-04",
+        category: "Content & Thought Leadership",
+        addedAt: "2026-04-28",
+      },
+      {
+        summary: "ICT-Berufsbildung Schweiz (2026): 'Neuer KI-Abschluss' – ICT-Berufsbildung Schweiz lanciert einen neuen KI-spezifischen Abschluss für die berufliche Weiterbildung in der Schweiz: strukturierte KI-Kompetenzentwicklung wird im Schweizer Bildungssystem institutionalisiert. Wachsende Nachfrage nach anerkannten KI-Qualifikationen bestätigt das Thought-Leadership-Potenzial von learnfluencer.ch im Bereich KI-Lernkompetenz.",
+        source: "ICT-Berufsbildung Schweiz",
+        url: "https://www.ict-berufsbildung.ch/projekte/weiterbildung/neuer-ki-abschluss",
+        date: "2026-04",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-28",
+      },
       // Neu: 28.04.2026 (1)
       {
         summary: "blog.linkboost.co (2026): 'LinkedIn Thought Leadership in 2026: Algorithm & Strategy' – LinkedIn änderte im März 2026 seinen Algorithmus von einem netzwerkbasierten auf ein relevanzbasiertes Modell; generische KI-Inhalte und oberflächliches Engagement werden aktiv bestraft. Thought Leaders mit authentischer Expertise werden bevorzugt. Direkt relevant für learnfluencer.ch: menschliche Expertise und echte Lernkompetenz werden 2026 zum strategischen Content-Vorteil gegenüber KI-generierten Inhalten.",
@@ -10900,6 +10952,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 28.04.2026 (2)
+      {
+        summary: "KIMarketing.ch (2026): 'Die besten KI-Marketing-Tools 2026 für Schweizer KMU – nicht die grösste Liste, sondern die richtige' – Kuratierte Übersicht der besten KI-Marketing-Tools für Schweizer KMU 2026: ChatGPT/Claude für Content, Canva Magic für Visuals, HubSpot für Automation; Fokus auf ROI und praktische Anwendbarkeit ohne IT-Abteilung. Wachsende Schweizer KI-Marketing-Ressourcen bestätigen den Bedarf an strukturierten Strategie-Tools als Grundlage – direktes Marktumfeld für das Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "KIMarketing.ch",
+        url: "https://www.kimarketing.ch/beste-ki-marketing-tools-2026-kmu/",
+        date: "2026-04",
+        category: "Marketing-Tools & Software",
+        addedAt: "2026-04-28",
+      },
+      {
+        summary: "KMU Performer AG (2026): 'Unsere KMU Marketing-Trends 2026' – Analyse der wichtigsten Schweizer KMU-Marketing-Trends 2026: KI-gestützte Personalisierung, Video-Content-Dominanz, Community-Building und datenschutzkonforme First-Party-Datenstrategien als Kernthemen. Starke Nachfrage nach strukturierter Marketingplanung als strategische Grundlage – direktes Marktumfeld für das Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "KMU Performer AG",
+        url: "https://kmu-performer.ch/trends-2026/",
+        date: "2026-04",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-28",
+      },
       // Neu: 28.04.2026 (4)
       {
         summary: "Bexolutions.ch (10. Februar 2026): 'Marketing-Automation für Schweizer KMU 2026: Tools & ROI' – Marketing-Automation spart Schweizer KMU durchschnittlich 6–9 Stunden pro Woche; 4-Stufen-Implementierungsmodell von Foundation bis Scaling; ROI-Berechnung zeigt Nettojahresgewinn von 79'000 CHF bei typischer KMU-Implementierung. Steigender Automatisierungsdruck bei KMU bestätigt den Bedarf an strukturierten Marketingkonzept-Prozessen als strategische Basis – direktes Marktumfeld für das Marketingkonzept-Tool auf learnfluencer.ch.",
@@ -11908,6 +11977,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 28.04.2026 (3)
+      {
+        summary: "abschied.swiss (2026): 'Abschied'26 – Schweizer Fachmesse für Vorsorge, Palliative und Trauer' – Die Schweizer Branchenmesse für Bestattung, Trauer und Vorsorge 2026 ist der Treffpunkt für Bestattungsunternehmen, Vorsorge-Anbieter und Palliative-Care-Organisationen in der Schweiz. Aktive Fachmesse signalisiert Professionalisierung und Digitalisierungsdruck in der Schweizer Bestattungsbranche – direktes Wachstumsumfeld für bestattungsplaner.ch.",
+        source: "abschied.swiss",
+        url: "https://www.abschied.swiss",
+        date: "2026-04",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-28",
+      },
       // Neu: 28.04.2026 (2)
       {
         summary: "addis-techblog.de (18. Dezember 2025): 'Online-Bestattung: Wie digitale Lösungen Angehörige entlasten' – Digitale Bestattungsservices entlasten Angehörige durch Online-Beratung, Planungstools, digitale Gedenkseiten und Live-Streaming; Kombination aus digitaler Unterstützung und persönlichem Kontakt gilt als Goldstandard. Breite Anerkennung digitaler Bestattungsplanung als Entlastungslösung für Angehörige stärkt die gesellschaftliche Akzeptanz und Marktreife von bestattungsplaner.ch.",
