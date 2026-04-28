@@ -3893,6 +3893,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 28.04.2026 (2)
+      {
+        summary: "coachingausbildungen.ch (2026): 'Coaching-Marktanalyse 2025/2026: Welche Trends prägen die deutschsprachige Region?' – Der Schweizer Coaching- und Persönlichkeitsentwicklungs-Markt konsolidiert sich 2026: Wachsende Nachfrage nach messbaren, wirkungsorientierten Kurzformaten und Spezialisierungsnischen. Der strukturelle Shift weg von reiner Motivation hin zu tool-gestützter Persönlichkeitsentwicklung bestätigt das Marktumfeld für mindtools.ch als kompakte, praxisorientierte Werkzeugplattform.",
+        source: "coachingausbildungen.ch",
+        url: "https://www.coachingausbildungen.ch/coaching-markt-schweiz-trends-2025-2026-analyse/",
+        date: "2026-04",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-04-28",
+      },
       // Neu: 28.04.2026 (1)
       {
         summary: "buchmarkt.de (9. Januar 2026): 'Der deutsche Buchmarkt 2025: Anhaltende Kaufzurückhaltung macht sich bemerkbar' – Sachbücher verloren 4,7%, Ratgeber sogar 7,0% gegenüber 2024; der klassische Buchkanal steht unter Druck, das Interesse an persönlicher Entwicklung und Psychologie bleibt aber strukturell intakt. Der Trend unterstreicht den Bedarf an digital-ergänzenden Angeboten wie Tools, Community-Inhalte und Online-Bücher – direktes Marktumfeld für mindtools.ch.",
@@ -6442,6 +6451,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 28.04.2026 (4)
+      {
+        summary: "Pipedrive Blog (2026): 'How to set a 12-week year to get more done this quarter' – Detaillierter Praxisleitfaden zur Implementierung der 12-Week-Year-Methode: Wöchentliche Aktionspläne, Scorecard-Tracking und Accountability-Meetings als Kerndisziplinen. Die wachsende Präsenz der Methode auf etablierten Business-Plattformen wie Pipedrive bestätigt das steigende Mainstream-Interesse und den Bedarf an spezialisierten SaaS-Tools wie dem 12wy-planner.",
+        source: "Pipedrive Blog",
+        url: "https://www.pipedrive.com/en/blog/12-week-year",
+        date: "2026-04",
+        category: "12 Week Year Methode",
+        addedAt: "2026-04-28",
+      },
       // Neu: 28.04.2026 (3)
       {
         summary: "FinancialContent / MarketMinute (15. April 2026): 'The Great Software Awakening: Why April 2026 Marks the End of the SaaS Apocalypse' – Nach einem 18-monatigen Abschwung stabilisierte sich der SaaS-Sektor im April 2026, da institutionelle Investoren zurück in Cloud-Aktien rotierten; Unternehmen wechseln von Abo-Modellen zu verbrauchsbasierter Preisgestaltung. Für den 12wy-planner zeigt dies: Nutzenorientierte Tools mit klarem ROI-Nachweis sind trotz Marktkonsolidierung gefragt.",
@@ -7438,6 +7456,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 28.04.2026 (2)
+      {
+        summary: "Universität Marburg / CLIMACS-Studie (2023–2026): 'CLIMACS – Klinische Wirksamkeit der digitalen Anwendung MELONGA bei Ejaculatio praecox' – Klinische Studie der Philipps-Universität Marburg untersucht die Wirksamkeit der CE-zertifizierten App MELONGA: verhaltenstherapeutische Übungen in 12-wöchiger Intervention; 90% der Betroffenen suchen aus Stigma-Angst keine professionelle Hilfe. Wissenschaftliche Validierung digitaler Selbsthilfe-Angebote im Bereich vorzeitiger Samenerguss bestätigt das Marktpotenzial für diskrete Audio-Lösungen wie orgasmus-hinauszoegern.de.",
+        source: "Universität Marburg",
+        url: "https://www.uni-marburg.de/de/fb20/bereiche/zom/urologie/forschung/versorgungsforschung/climacs",
+        date: "2026-04",
+        category: "Digital Health",
+        addedAt: "2026-04-28",
+      },
       // Neu: 28.04.2026 (1)
       {
         summary: "gesund.bund.de (2026): 'Vorzeitiger Samenerguss: Behandlung' – Das Nationale Gesundheitsportal des deutschen Bundesgesundheitsministeriums informiert ausführlich über Behandlungsoptionen bei vorzeitigem Samenerguss, darunter multimodale Therapieansätze, Verhaltenstherapie und Selbsthilfemethoden. Institutionalisierung von Aufklärung und Entstigmatisierung durch offizielle Gesundheitsportale senkt die Hemmschwelle und erhöht die Nachfrage nach diskreten digitalen Selbsthilfe-Angeboten – direktes Marktumfeld für orgasmus-hinauszoegern.de.",
@@ -8308,6 +8335,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 28.04.2026 (2)
+      {
+        summary: "ad-hoc-news.de (19. Januar 2026): 'KI und VR besiegen die Angst vor dem Reden' – Studie der Universität Osnabrück bestätigt: Kurze VR-Trainingseinheiten steigern das Selbstvertrauen für reale Präsentationen signifikant; KI-Echtzeit-Feedback zu Sprechtempo, Füllwörtern und Blickkontakt revolutioniert das Rhetorik-Training 2026. Technologische Innovationen im Präsentationsangst-Segment schaffen Marktbewusstsein für Alternativen zur teuren Therapie – direktes Nachfrageumfeld für audio-basierte Selbsthilfe-Formate wie lampenfieber-besiegen.de.",
+        source: "ad-hoc-news.de / boerse-global.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/ki-und-vr-besiegen-die-angst-vor-dem-reden/68500034",
+        date: "2026-01",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-04-28",
+      },
       // Neu: 28.04.2026 (1)
       {
         summary: "wagner-empowerment.de (2026): 'Online-Seminare 2026 – Schluss mit Lampenfieber' – Neue 2026-Seminarreihe in Frankfurt, Hamburg, München, Augsburg, Leipzig und als Online-Format zur Überwindung von Redeangst und Lampenfieber; aktive Buchungsseite belegt hohe Marktnachfrage. Der florierende Seminar-Markt für Lampenfieber-Überwindung bestätigt die starke Nachfrage nach Selbsthilfe-Formaten – direktes Marktumfeld für lampenfieber-besiegen.de.",
@@ -9301,6 +9337,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 28.04.2026 (2)
+      {
+        summary: "Netzwoche (21. April 2026): 'Schweizer Bevölkerung nutzt KI deutlich häufiger als der europäische Durchschnitt' – BFS-Studie: 47% der 16- bis 74-jährigen Schweizer:innen nutzen generative KI regelmässig – deutlich über dem EU-Schnitt von 33%. 73% der KI-Nutzenden setzen die Technologie auch beruflich ein; Schweiz belegt Platz 2 in Europa beim professionellen KI-Einsatz (41% der Berufstätigen). Strategische Bestätigung für learnfluencer.ch als Plattform für KI-Lernkompetenz im Schweizer Weiterbildungsmarkt.",
+        source: "Netzwoche",
+        url: "https://www.netzwoche.ch/news/2026-04-21/schweizer-bevoelkerung-nutzt-ki-deutlich-haeufiger-als-der-europaeische",
+        date: "2026-04-21",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-28",
+      },
       // Neu: 28.04.2026 (1)
       {
         summary: "opportunitiesforyouth.org (24. April 2026): 'European EdTech Fellowship 2026: Fully Funded 6-Month Programme for Founders Scaling Across Europe' – Das European EdTech Fellowship 2026 öffnet seine Bewerbungsphase für EdTech-Gründer, die Lösungen europaweit skalieren möchten; Schwerpunkte: Beschaffungsprozesse, Lernwissenschaft und europäische Bildungspolitik. Das aktive europäische EdTech-Ökosystem zeigt, wie learnfluencer.ch als Schweizer Stimme für Lernkompetenz und KI international positioniert werden kann.",
@@ -10796,6 +10841,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 28.04.2026 (4)
+      {
+        summary: "Bexolutions.ch (10. Februar 2026): 'Marketing-Automation für Schweizer KMU 2026: Tools & ROI' – Marketing-Automation spart Schweizer KMU durchschnittlich 6–9 Stunden pro Woche; 4-Stufen-Implementierungsmodell von Foundation bis Scaling; ROI-Berechnung zeigt Nettojahresgewinn von 79'000 CHF bei typischer KMU-Implementierung. Steigender Automatisierungsdruck bei KMU bestätigt den Bedarf an strukturierten Marketingkonzept-Prozessen als strategische Basis – direktes Marktumfeld für das Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "Bexolutions.ch",
+        url: "https://bexolutions.ch/marketing-automation-fur-schweizer-kmu-2026-tools-roi/",
+        date: "2026-02",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-28",
+      },
       // Neu: 28.04.2026 (3)
       {
         summary: "CX Today (21. April 2026): 'Martech Innovations That Will Boost Revenue in 2026 and Beyond' – Drei Top-MarTech-Trends 2026: KI-gestützte Hyper-Personalisierung, KI-Agenten zur Workflow-Automatisierung und Privacy-first-Measurement auf Basis von First-Party-Daten. Strukturierte Marketing-Planung und strategische Analyse sind die Grundlage für den Einsatz dieser Technologien – direktes Marktumfeld für das Marketingkonzept-Tool auf learnfluencer.ch.",
@@ -11795,6 +11849,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 28.04.2026 (2)
+      {
+        summary: "addis-techblog.de (18. Dezember 2025): 'Online-Bestattung: Wie digitale Lösungen Angehörige entlasten' – Digitale Bestattungsservices entlasten Angehörige durch Online-Beratung, Planungstools, digitale Gedenkseiten und Live-Streaming; Kombination aus digitaler Unterstützung und persönlichem Kontakt gilt als Goldstandard. Breite Anerkennung digitaler Bestattungsplanung als Entlastungslösung für Angehörige stärkt die gesellschaftliche Akzeptanz und Marktreife von bestattungsplaner.ch.",
+        source: "addis-techblog.de",
+        url: "https://addis-techblog.de/2025/12/online-bestattung-wie-digitale-loesungen-angehoerigen-heute-wirklich-helfen/",
+        date: "2025-12",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-28",
+      },
       // Neu: 28.04.2026 (1)
       {
         summary: "kath.ch (2026): 'Tod, Trauer und Andenken im digitalen Zeitalter' – Analyse der digitalen Transformation von Trauer und Bestattung: Digitale Todesanzeigen, Online-Gedenkseiten und digitale Nachlässe wachsen stark; kirchliche und gesellschaftliche Institutionen setzen sich mit digitalem Umgang mit Tod und Trauer auseinander. Die breite gesellschaftliche Digitalisierung von Trauer- und Bestattungsritualen stärkt die Akzeptanz und Nachfrage für digitale Bestattungsplanungs-Plattformen – direktes Marktumfeld für bestattungsplaner.ch.",
