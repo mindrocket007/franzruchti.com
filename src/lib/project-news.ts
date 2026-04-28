@@ -1880,6 +1880,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 28.04.2026 (1)
+      {
+        summary: "phidiaspropfirm.com (2026): 'Apex Trader Funding 4.0: Everything That Changed March 2026' – Apex führte am 1. März 2026 ein umfassendes Plattform-Update ein: Metall-Futures (Gold, Silber, Kupfer, Platin, Palladium) dauerhaft eingestellt wegen extremer Gap-Volatilität; OTP-Preismodell (einmalige Zahlung) ersetzt monatliche Abos; zwei Drawdown-Typen (EOD Trail oder Intraday Trail); 30-Tage-Eval-Ablauf; max. 6 Auszahlungen pro Konto. ES-Futures bleiben vollständig verfügbar. Klare Plattformreform bei der führenden Prop-Firm schafft neue Spielregeln für algorithmisches ES-Futures-Trading – direktes operatives Umfeld für mindrocket-trading.com.",
+        source: "phidiaspropfirm.com",
+        url: "https://phidiaspropfirm.com/education/apex-trader-funding-4-0-explained",
+        date: "2026-03",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-28",
+      },
       // Neu: 28.04.2026 (2)
       {
         summary: "BeInCrypto (2026): 'Kraken expands into futures, tokenized stocks, and payments' – Kraken baut nach der Übernahme von NinjaTrader (1,5 Mrd. USD) seine Position in traditionellen Futures-Märkten weiter aus: Krypto-Trader erhalten Zugang zu ES Futures und traditionellen Derivaten; traditionelle Futures-Trader zu Krypto-Märkten. Konvergenz von Krypto- und traditionellen Futures-Märkten schafft neue Trader-Zielgruppen und erhöht das Marktbewusstsein für ES-Futures-Strategien wie die von mindrocket-trading.com.",
@@ -9424,6 +9433,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 28.04.2026 (2)
       {
+        summary: "ki-cafe.de (2026): 'EU AI Act 2026: Schulungspflichten, Fristen & Umsetzung der KI-Verordnung' – Ab August 2026 findet der EU AI Act vollständige Anwendung: Artikel 4 verpflichtet Arbeitgeber zur KI-Schulung aller Mitarbeitenden; Verstösse bis 30 Mio. Euro Strafe; über 60% der betroffenen Unternehmen haben bereits interne Schulungskonzepte entwickelt; E-Learning, Präsenz und Blended Learning sind gleichermassen zulässig. Der EU AI Act als regulatorischer Treiber für strukturierte KI-Kompetenzprogramme bestätigt direkt das Thought-Leadership-Potenzial von learnfluencer.ch als Plattform für KI-Lernkompetenz.",
+        source: "ki-cafe.de",
+        url: "https://ki-cafe.de/ki-verordnung/aktuelles-zum-eu-ai-act/",
+        date: "2026-04",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-28",
+      },
+      {
+        summary: "Haufe Akademie (2026): 'KI-Schulungspflicht: Was der EU AI Act fordert' – Haufe Akademie erläutert die KI-Schulungspflicht nach Art. 4 EU AI Act: Format ist frei wählbar (E-Learning, Präsenz, Blended Learning); gilt für alle Mitarbeitenden, die KI-Systeme einsetzen oder überwachen; keine Empfehlung, sondern rechtliche Pflicht mit Haftungsfolgen. Institutionelle Bildungsanbieter reagieren mit strukturierten KI-Kompetenzprogrammen – direktes Wachstumsumfeld für learnfluencer.ch als Thought-Leadership-Plattform für KI-Lernkompetenz und Weiterbildung.",
+        source: "Haufe Akademie",
+        url: "https://www.haufe-akademie.de/digital-suite/blog/ds-ki-schulungspflicht",
+        date: "2026-04",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-28",
+      },
+      // Neu: 28.04.2026 (2)
+      {
         summary: "hrtoday.ch (2026): 'Learnfluencer werden?' – HR Today analysiert die Rolle von Learnfluencern als Schlüsselpersonen für intrinsische Lernmotivation: Learnfluencer verknüpfen individuelles und kollektives Lernen, etablieren Lernkulturen und gestalten digitale Lernumgebungen mit persönlicher Verantwortung. Verbreitung des Begriffs 'Learnfluencer' in Schweizer HR-Fachmedien bestätigt das Marktpotenzial und die Markenrelevanz von learnfluencer.ch.",
         source: "hrtoday.ch",
         url: "https://www.hrtoday.ch/de/article/learnfluencer-werden",
@@ -11977,6 +12003,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 28.04.2026 (1)
+      {
+        summary: "inar.de (2026): 'Digitale Vorsorge: Eine Chance für die Bestattungsbranche' – Das Institut für Angewandte Rechercheforschung analysiert digitale Vorsorge als Wachstumssegment für Bestattungsunternehmen: Vergleichsportale und Online-Planungstools werden als die vielversprechendsten Innovationsfelder identifiziert; Digitalisierung von Vorsorgedokumenten und Vertriebsprozessen schafft neue Erlöskanäle. Direkte strategische Validierung des Geschäftsmodells von bestattungsplaner.ch als digitale Lead-Vermittlungsplattform im Schweizer Bestattungsmarkt.",
+        source: "inar.de",
+        url: "https://www.inar.de/digitale-vorsorge-eine-chance-fuer-die-bestattungsbranche/",
+        date: "2026-04",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-04-28",
+      },
       // Neu: 28.04.2026 (3)
       {
         summary: "abschied.swiss (2026): 'Abschied'26 – Schweizer Fachmesse für Vorsorge, Palliative und Trauer' – Die Schweizer Branchenmesse für Bestattung, Trauer und Vorsorge 2026 ist der Treffpunkt für Bestattungsunternehmen, Vorsorge-Anbieter und Palliative-Care-Organisationen in der Schweiz. Aktive Fachmesse signalisiert Professionalisierung und Digitalisierungsdruck in der Schweizer Bestattungsbranche – direktes Wachstumsumfeld für bestattungsplaner.ch.",
