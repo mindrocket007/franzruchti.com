@@ -26,6 +26,15 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 28.04.2026 (1)
+      {
+        summary: "ICT-Berufsbildung Schweiz (April 2026): 'Zukunftstag 2026: Mädchen und Jugendliche entdecken ICT-Berufe' – Der Nationale Zukunftstag am 12. November 2026 öffnet Türen in ICT-Betrieben für Schülerinnen und Schüler; ICT-Berufsbildung Schweiz engagiert sich aktiv für mehr Diversität und Nachwuchsförderung in der IT-Branche. Gezielte Nachwuchsrekrutierung durch den Zukunftstag stärkt die Nachfrage nach ICT-Qualifikationen und Bildungsangeboten – direktes Wachstumsumfeld für SIZ AG.",
+        source: "ICT-Berufsbildung Schweiz",
+        url: "https://www.ict-berufsbildung.ch/zukunftstag-maedchen-entdecken-die-ict-welt",
+        date: "2026-11",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-28",
+      },
       // Neu: 27.04.2026 (2)
       {
         summary: "ICT-Berufsbildung Schweiz (April 2026): 'Nationaler Zukunftstag 2026: Chancengleichheit in der Berufswahl fördern' – ICT-Berufsbildung Schweiz unterstützt den Nationalen Zukunftstag 2026, um Chancengleichheit in ICT-Berufen zu fördern und Nachwuchs – besonders Mädchen und Jugendliche mit Migrationshintergrund – für IT-Karrieren zu gewinnen. 319 ICT-Nachwuchstalente nehmen jährlich an ICT-Regiomeisterschaften teil. Gezielte Nachwuchsförderung stärkt langfristig die Nachfrage nach ICT-Qualifikationen und -Zertifizierungen – direktes Marktumfeld für SIZ AG.",
@@ -1385,6 +1394,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
+      // Neu: 28.04.2026 (1)
+      {
+        summary: "nume.ch (2026): 'Mentale Gesundheit 2026: Warum gesunde Führung Pflicht ist' – Burnout-bedingte Arbeitsausfälle stiegen in 5 Jahren um 33%; wirtschaftlicher Erfolg hängt direkt von der mentalen Fitness der Belegschaft ab. Self-Leadership als Voraussetzung für gesunde Führung wird zum strategischen Unternehmensthema. Wachsendes Unternehmens- und HR-Bewusstsein für mentale Gesundheit und Selbstführung stärkt die Nachfrage nach Online-Coaching-Programmen – direktes Wachstumsumfeld für Mind Rocket GmbH.",
+        source: "nume.ch",
+        url: "https://www.nume.ch/mentale-gesundheit-2026-warum-gesunde-fuehrung-pflicht-ist/",
+        date: "2026",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-04-28",
+      },
       // Neu: 27.04.2026 (2)
       {
         summary: "Coach Akademie Schweiz (April 2026): Neue Coaching-Ausbildungsreihe mit Startterminen 24./27. April 2026 – Die Coach Akademie bietet Ausbildungen auf Basis des St. Galler Coaching Modells® an; Frühjahrs-Startermine am 24. und 27. April 2026 belegen die kontinuierlich hohe Nachfrage nach anerkannten Coaching-Qualifikationen in der Schweiz. Wachsende Institutionalisierung professioneller Coaching-Ausbildungen stärkt das Coaching-Marktumfeld – direktes Wachstumsfeld für die Online-Coaching-Programme von Mind Rocket GmbH.",
@@ -1844,7 +1862,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
-      // Neu: 28.04.2026 (2)
+      // Neu: 28.04.2026 (4)
+      {
+        summary: "Yahoo Finance (28. April 2026): 'Stock market today: S&P 500 slips from record as Fed stands pat, Nasdaq rises before Big Tech earnings flurry' – FOMC hält Zinsen unverändert; Fed-Chair Powell betont Warteposition; Nasdaq legt vor Mag-7-Earnings zu; S&P 500 gibt leicht nach. Apple, Microsoft, Meta, Amazon und Alphabet berichten diese Woche. Fed-Entscheid und Earnings-Woche als zentrale Marktbeweger für ES-Futures-Positionen – praxisrelevant für mindrocket-trading.com-Strategien.",
+        source: "Yahoo Finance",
+        url: "https://finance.yahoo.com/news/live/stock-market-today-sp-500-slips-from-record-as-fed-stands-pat-nasdaq-rises-before-big-tech-earnings-flurry-210119313.html",
+        date: "2026-04-28",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-28",
+      },
+      {
+        summary: "Charles Schwab (28. April 2026): 'Stocks Slip, Oil Up to Start Crowded Earnings Week' – S&P 500 gibt leicht nach; Öl steigt; mehr als 180 S&P-500-Unternehmen berichten diese Woche, darunter 5 der Magnificent Seven. Geopolitische Spannungen und Fed-Entscheid als Schlüsseltreiber. Hochvolatile Earnings-Woche mit breiter Berichterstattung – typische Bedingungen für erhöhte Beweglichkeit in ES Futures, die algorithmische Strategien von mindrocket-trading.com nutzen.",
+        source: "Charles Schwab",
+        url: "https://www.schwab.com/learn/story/stock-market-update-open",
+        date: "2026-04-28",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-28",
+      },
       {
         summary: "intellectia.ai (April 2026): 'S&P 500 Record High April 2026' – Der S&P 500 erreichte am 25. April 2026 ein Allzeit-Hoch von 7.165,08 Punkten; der Index legte im April rund 8,7% zu, getrieben durch starke Tech-Earnings, KI-Investitionen und geopolitische Entspannung. ES-Futures spiegeln diese starke Trendmarktbewegung direkt wider – ideale Bedingungen für die algorithmischen Handelsstrategien von mindrocket-trading.com.",
         source: "intellectia.ai",
@@ -7404,6 +7438,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 28.04.2026 (1)
+      {
+        summary: "gesund.bund.de (2026): 'Vorzeitiger Samenerguss: Behandlung' – Das Nationale Gesundheitsportal des deutschen Bundesgesundheitsministeriums informiert ausführlich über Behandlungsoptionen bei vorzeitigem Samenerguss, darunter multimodale Therapieansätze, Verhaltenstherapie und Selbsthilfemethoden. Institutionalisierung von Aufklärung und Entstigmatisierung durch offizielle Gesundheitsportale senkt die Hemmschwelle und erhöht die Nachfrage nach diskreten digitalen Selbsthilfe-Angeboten – direktes Marktumfeld für orgasmus-hinauszoegern.de.",
+        source: "gesund.bund.de",
+        url: "https://gesund.bund.de/vorzeitiger-samenerguss",
+        date: "2026",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-28",
+      },
       // Neu: 27.04.2026 (4)
       {
         summary: "Futurezone.at (April 2026): 'Neue App Melonga: Hilfe bei frühzeitigem Samenerguss nach 12 Wochen Therapie' – Die App der Europäischen Urologischen Gesellschaft (EAU) hilft Männern mit vorzeitigem Samenerguss durch verhaltenstherapeutische Übungen und Achtsamkeitsansätze; in Studien verdoppelte sich die Zeit bis zur Ejakulation nach 12 Wochen. Wachsendes digitales Produktangebot im Segment sexueller Gesundheit belegt den Markttrend – direktes Konkurrenzumfeld für orgasmus-hinauszoegern.de.",
@@ -8265,6 +8308,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 28.04.2026 (1)
+      {
+        summary: "wagner-empowerment.de (2026): 'Online-Seminare 2026 – Schluss mit Lampenfieber' – Neue 2026-Seminarreihe in Frankfurt, Hamburg, München, Augsburg, Leipzig und als Online-Format zur Überwindung von Redeangst und Lampenfieber; aktive Buchungsseite belegt hohe Marktnachfrage. Der florierende Seminar-Markt für Lampenfieber-Überwindung bestätigt die starke Nachfrage nach Selbsthilfe-Formaten – direktes Marktumfeld für lampenfieber-besiegen.de.",
+        source: "wagner-empowerment.de",
+        url: "https://www.wagner-empowerment.de/online-seminar-redeangst-%C3%BCberwinden/",
+        date: "2026",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-04-28",
+      },
       // Neu: 27.04.2026 (3)
       {
         summary: "Psychiatric Times (17. Dezember 2025): 'Fasedienol zeigt in Phase-3-Studie keine signifikante Verbesserung bei sozialer Angststörung' – Vistagen PALISADE-3 Phase-3-Studie scheiterte am primären Endpunkt: Das Nasenspray Fasedienol zeigte im randomisierten, doppelblinden Vergleich keinen signifikanten Unterschied zu Placebo bei der Reduktion von Redeangst (SUDS-Score-Differenz nur 0,4 Punkte, statistisch nicht signifikant). Das Scheitern pharmakologischer Ansätze unterstreicht: Nicht-medikamentöse, mentalbasierte Methoden wie Hypnose-Audios bleiben ein zentrales Mittel bei Auftrittsangst – direktes Marktumfeld für lampenfieber-besiegen.de.",
@@ -11743,6 +11795,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 28.04.2026 (1)
+      {
+        summary: "kath.ch (2026): 'Tod, Trauer und Andenken im digitalen Zeitalter' – Analyse der digitalen Transformation von Trauer und Bestattung: Digitale Todesanzeigen, Online-Gedenkseiten und digitale Nachlässe wachsen stark; kirchliche und gesellschaftliche Institutionen setzen sich mit digitalem Umgang mit Tod und Trauer auseinander. Die breite gesellschaftliche Digitalisierung von Trauer- und Bestattungsritualen stärkt die Akzeptanz und Nachfrage für digitale Bestattungsplanungs-Plattformen – direktes Marktumfeld für bestattungsplaner.ch.",
+        source: "kath.ch",
+        url: "https://www.kath.ch/newsd/tod-trauer-und-andenken-im-digitalen-zeitalter/",
+        date: "2026",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-04-28",
+      },
       // Neu: 27.04.2026 (5)
       {
         summary: "EKZ Crosstour (April 2026): 'Der Markt für Bestattungs- und Friedhofsdienstleistungen wird bis 2033 rasant wachsen' – Globale Marktanalyse zeigt: Digitalisierung, Personalisierung und Online-Planung sind die Haupttreiber des Wachstums im Bestattungsmarkt. Das wachsende globale Marktpotenzial im Bestattungswesen bestätigt die Chancen für digitale Nischenplattformen wie bestattungsplaner.ch.",
