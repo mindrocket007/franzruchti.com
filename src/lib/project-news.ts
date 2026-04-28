@@ -1862,6 +1862,47 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 28.04.2026 (5)
+      {
+        summary: "CNBC (27. April 2026): 'Stock futures inch higher after the S&P 500 posts another record, Wall Street awaits earnings' – S&P 500 Futures steigen nach neuem Rekordhoch; drei Zentralbankmeetings (inkl. FOMC), 5 Magnificent-Seven-Earnings und ~180 S&P-500-Berichte diese Woche. Fed hält Zinsen erwartungsgemäss unverändert (100% Wahrscheinlichkeit laut Fed Funds Futures). Historisch dichte Ereignislage erzeugt erhöhte Intraday-Volatilität in ES Futures – optimales Umfeld für algorithmische Handelsstrategien von Mind Rocket Trading.",
+        source: "CNBC",
+        url: "https://www.cnbc.com/2026/04/27/stock-market-today-live-updates.html",
+        date: "2026-04-27",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-28",
+      },
+      {
+        summary: "CNBC (27. April 2026): 'What the Magnificent Seven charts are showing ahead of earnings, according to Katie Stockton' – Technische Analystin Katie Stockton identifiziert Schlüsselniveaus in Mag-7-Charts vor den Earnings: Widerstands- und Unterstützungszonen in Nvidia, Apple, Alphabet und anderen. Technische Setups liefern konkrete Handlungsrahmen für kurzfristige ES-Futures-Positionen – relevante Marktbeobachtung für die Strategien von Mind Rocket Trading.",
+        source: "CNBC",
+        url: "https://www.cnbc.com/2026/04/27/levels-to-watch-ahead-of-tech-earnings-according-to-katie-stockton.html",
+        date: "2026-04-27",
+        category: "Futures & Trading",
+        addedAt: "2026-04-28",
+      },
+      {
+        summary: "CNBC (27. April 2026): 'The earnings season has been really, really good' – Q1-2026-Earnings deutlich besser als erwartet: 82% der S&P-500-Unternehmen übertreffen Erwartungen, im Schnitt um 12,3% (5-Jahres-Schnitt: 7,3%). FactSet-Daten bestätigen starke Fundamentaldaten als Basis für weitere Kursgewinne. Bullische Unternehmensgewinne stützen die ES-Futures-Aufwärtstendenz – direkt relevant für die Handelsstrategien von Mind Rocket Trading.",
+        source: "CNBC",
+        url: "https://www.cnbc.com/2026/04/27/the-earnings-season-has-been-really-really-good.html",
+        date: "2026-04-27",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-28",
+      },
+      {
+        summary: "CNBC (26. April 2026): 'S&P 500 ticks higher to another record close as traders look past stalled U.S.-Iran peace talks' – S&P 500 schließt auf neuem Rekordhoch (7.173,91 Punkte) trotz stagnierender US-Iran-Friedensgespräche; Nasdaq auf Rekordniveau (24.887,10). Öl >$96/Barrel. Aktienmärkte zeigen Resilienz gegenüber geopolitischen Risiken – wichtige Marktlage für ES-Futures-Positionierung bei Mind Rocket Trading.",
+        source: "CNBC",
+        url: "https://www.cnbc.com/2026/04/26/stock-market-today-live-updates.html",
+        date: "2026-04-26",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-28",
+      },
+      {
+        summary: "Benzinga (April 2026): 'Earnings Volatility Watch: SanDisk, Mag 7 Lead $18.59T Test' – USD 18,59 Billionen Marktkapitalisierung steht in der Earnings-Woche auf dem Prüfstand; SanDisk und fünf Magnificent-Seven-Unternehmen treiben erwartete Optionspreisvolatilität. Erhöhte implizite Volatilität in ES Futures schafft sowohl Chancen als auch Risiken für algorithmische Strategien von Mind Rocket Trading.",
+        source: "Benzinga",
+        url: "https://www.benzinga.com/markets/earnings/26/04/52061245/earnings-volatility-watch-sandisk-magnificent-seven-april-2026",
+        date: "2026-04",
+        category: "Futures & Trading",
+        addedAt: "2026-04-28",
+      },
       // Neu: 28.04.2026 (4)
       {
         summary: "Yahoo Finance (28. April 2026): 'Stock market today: S&P 500 slips from record as Fed stands pat, Nasdaq rises before Big Tech earnings flurry' – FOMC hält Zinsen unverändert; Fed-Chair Powell betont Warteposition; Nasdaq legt vor Mag-7-Earnings zu; S&P 500 gibt leicht nach. Apple, Microsoft, Meta, Amazon und Alphabet berichten diese Woche. Fed-Entscheid und Earnings-Woche als zentrale Marktbeweger für ES-Futures-Positionen – praxisrelevant für mindrocket-trading.com-Strategien.",
@@ -4740,6 +4781,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 28.04.2026 (1)
+      {
+        summary: "conceptplus-bgm.de (2026): 'BGM 2026 – Gesund ins neue Jahr planen' – Praxisleitfaden für die BGM-Jahresplanung 2026: Gesundheitszirkel aufsetzen, Bedarfsanalysen durchführen, Maßnahmen priorisieren und Budget kalkulieren. Fokus auf präventive Programme und Führungskräfte-Schulungen. Der strukturierte Bedarf nach geplanten BGM-Programmen stärkt die Nachfrage nach pragmatischen, sofort einsetzbaren Lösungen wie hypnovital® als Audio-Programm für Betriebe.",
+        source: "conceptplus-bgm.de",
+        url: "https://www.conceptplus-bgm.de/post/bgm-2026-gesund-ins-neue-jahr-planen",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-28",
+      },
       // Neu: 28.04.2026 (2)
       {
         summary: "oeffentlichespersonal.ch (April 2026): 'Psychische Erkrankungen am Arbeitsplatz: Mögliche Ursachen – und was helfen könnte' – Dr. Michael Merker analysiert, warum psychische Erkrankungen trotz stabiler Gesamtprävalenz in der Schweiz immer öfter zu Arbeitsausfällen führen. Moderne Wissensarbeit kennt keine klaren Leistungsgrenzen, was zu permanentem Erschöpfungsgefühl führt. Direktes Marktumfeld für niederschwellige mentale Unterstützungsangebote wie hypnovital® Audio-Programme.",
@@ -9337,6 +9387,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 28.04.2026 (1)
+      {
+        summary: "blog.linkboost.co (2026): 'LinkedIn Thought Leadership in 2026: Algorithm & Strategy' – LinkedIn änderte im März 2026 seinen Algorithmus von einem netzwerkbasierten auf ein relevanzbasiertes Modell; generische KI-Inhalte und oberflächliches Engagement werden aktiv bestraft. Thought Leaders mit authentischer Expertise werden bevorzugt. Direkt relevant für learnfluencer.ch: menschliche Expertise und echte Lernkompetenz werden 2026 zum strategischen Content-Vorteil gegenüber KI-generierten Inhalten.",
+        source: "blog.linkboost.co",
+        url: "https://blog.linkboost.co/linkedin-thought-leadership-2026/",
+        date: "2026",
+        category: "Content & Thought Leadership",
+        addedAt: "2026-04-28",
+      },
       // Neu: 28.04.2026 (2)
       {
         summary: "Netzwoche (21. April 2026): 'Schweizer Bevölkerung nutzt KI deutlich häufiger als der europäische Durchschnitt' – BFS-Studie: 47% der 16- bis 74-jährigen Schweizer:innen nutzen generative KI regelmässig – deutlich über dem EU-Schnitt von 33%. 73% der KI-Nutzenden setzen die Technologie auch beruflich ein; Schweiz belegt Platz 2 in Europa beim professionellen KI-Einsatz (41% der Berufstätigen). Strategische Bestätigung für learnfluencer.ch als Plattform für KI-Lernkompetenz im Schweizer Weiterbildungsmarkt.",
