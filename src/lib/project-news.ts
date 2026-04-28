@@ -26,6 +26,31 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 28.04.2026 (erw.)
+      {
+        summary: "SwissCybersecurity.net (31. März 2026): 'ICT-Berufsbildung Schweiz diplomiert 145 ICT-Fachkräfte' – 145 ICT-Fachkräfte erhielten auf der Diplomfeier 2026 ihre eidgenössischen Abschlüsse in höherer Berufsbildung; die höhere Berufsbildung bleibt tragende Säule des Schweizer ICT-Arbeitsmarkts. Jährliche Diplomierung stärkt die gesellschaftliche Verankerung von ICT-Zertifizierungen – direktes Wachstumsumfeld für SIZ AG.",
+        source: "SwissCybersecurity.net",
+        url: "https://www.swisscybersecurity.net/news/2026-03-31/ict-berufsbildung-schweiz-diplomiert-145-ict-fachkraefte",
+        date: "2026-03-31",
+        category: "Bildungspolitik",
+        addedAt: "2026-04-28",
+      },
+      {
+        summary: "ICT-Berufsbildung Schweiz (2026): 'AI Business Specialists machen KI-Potenzial nutzbar' – Der neue eidgenössische Fachausweis AI Business Specialist bereitet Fachkräfte darauf vor, KI strategisch in Unternehmen einzusetzen; erste Abschlussprüfungen im Herbst 2026. Neue KI-Qualifikation stärkt das Ökosystem anerkannter ICT-Zertifizierungen – direktes Wachstumsumfeld für SIZ AG.",
+        source: "ICT-Berufsbildung Schweiz",
+        url: "https://www.ict-berufsbildung.ch/ai-business-specialists-machen-ki-potenzial-nutzbar",
+        date: "2026-04",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-28",
+      },
+      {
+        summary: "IT Business.ch (2026): 'ICT-Berufsbildung Schweiz und OST kooperieren – neue Hochschulpartnerin' – ICT-Berufsbildung Schweiz gewinnt die Ostschweizer Fachhochschule (OST) als neue Hochschulpartnerin; Vernetzung von höherer Berufsbildung und Fachhochschule schafft neue Weiterbildungswege. Stärkere Vernetzung zwischen Berufsbildung und Hochschulen erhöht die Attraktivität von ICT-Zertifikaten – direktes Umfeld für SIZ AG.",
+        source: "IT Business.ch",
+        url: "https://www.itbusiness.ch/news/bildung/neue-hochschulpartnerin-fuer-ict-berufsbildung-schweiz",
+        date: "2026-04",
+        category: "Bildungspolitik",
+        addedAt: "2026-04-28",
+      },
       // Neu: 28.04.2026 (3)
       {
         summary: "SIW Schweizerisches Institut für Weiterbildung (2026): 'Die Schweiz verschläft ihren digitalen Nachwuchs – und riskiert 54'400 offene ICT-Stellen' – Bis 2033 droht der Schweiz eine ICT-Fachkräftelücke von 54'400 Stellen; mangelnde Nachwuchsförderung und Bildungsengpässe gefährden die digitale Wettbewerbsfähigkeit. Enormer ICT-Fachkräftemangel schafft starken Bedarf an anerkannten Qualifizierungsangeboten und Zertifizierungen – direktes Wachstumsumfeld für SIZ AG.",
@@ -1412,6 +1437,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
+      // Neu: 28.04.2026 (erw.)
+      {
+        summary: "SwissNova (2026): 'Weiterbildung für Unternehmen in der Schweiz: 10 Trends für 2026' – Hybrides, KI-gestütztes und ergebnisorientiertes Lernen, Microlearning, Coaching-Integrationsprogramme und mentales Wohlbefinden als strategische HR-Investitionen zählen zu den Top-10-Weiterbildungstrends 2026 in der Schweiz. Wachsender strategischer Stellenwert von Coaching und Persönlichkeitsentwicklung schafft direktes Nachfrageumfeld für die Online-Programme von Mind Rocket GmbH.",
+        source: "SwissNova",
+        url: "https://unternehmen.swissnova.swiss/weiterbildung-unternehmen-schweiz-trends-2026/",
+        date: "2026-04",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-04-28",
+      },
+      {
+        summary: "Computerworld.ch (2026): 'Wie KI die betriebliche Weiterbildung transformiert' – KI revolutioniert Corporate Learning: personalisierte Lernpfade, adaptive Kompetenzentwicklung und ortsunabhängige Programme werden zum Standard. Schweizer Unternehmen berichten von messbaren Effizienzgewinnen. Strukturwandel im betrieblichen Lernen stärkt die Nachfrage nach digitalisierten Coaching-Formaten – direktes Wachstumsumfeld für Mind Rocket GmbH.",
+        source: "Computerworld.ch",
+        url: "https://www.computerworld.ch/themen/business-und-it-strategie/ki-betriebliche-weiterbildung-transformiert",
+        date: "2026-04",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-04-28",
+      },
       // Neu: 28.04.2026 (1)
       {
         summary: "nume.ch (2026): 'Mentale Gesundheit 2026: Warum gesunde Führung Pflicht ist' – Burnout-bedingte Arbeitsausfälle stiegen in 5 Jahren um 33%; wirtschaftlicher Erfolg hängt direkt von der mentalen Fitness der Belegschaft ab. Self-Leadership als Voraussetzung für gesunde Führung wird zum strategischen Unternehmensthema. Wachsendes Unternehmens- und HR-Bewusstsein für mentale Gesundheit und Selbstführung stärkt die Nachfrage nach Online-Coaching-Programmen – direktes Wachstumsumfeld für Mind Rocket GmbH.",
@@ -1880,6 +1922,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 28.04.2026 (erw.)
+      {
+        summary: "MasteryTrader Academy (2026): 'NinjaTrader Prop Firm Setup Mistakes 2026' – Praxisanleitung für den ersten Prop-Firm-Trade auf NinjaTrader: kritische Setup-Fehler bei Datenfeeds, Kontoverbindung, Risk-Parametern und Ordermaske. Community-Wissen für NinjaTrader-Prop-Trader wächst und stärkt den Informationsmarkt für strategiebasierte Angebote wie mindrocket-trading.com.",
+        source: "MasteryTrader Academy",
+        url: "https://masterytraderacademy.com/first-prop-firm-trade-ninjatrader/",
+        date: "2026-04",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-28",
+      },
+      {
+        summary: "PropFirmApp.com (2026): 'NinjaTrader Review 2026: Is the Trading Tool Worth It?' – PropFirmApp bewertet NinjaTrader 2026 als führendes Tool für Prop-Trader: C#-basiertes Algo-Trading, eigene Prop-Plattform, Micro-Kontrakte und tiefe Margen für ES Futures. NinjaTrader-Ökosystem wächst und stärkt den Markt für NinjaTrader-basierte Handelsstrategien – direktes Umfeld für mindrocket-trading.com.",
+        source: "PropFirmApp.com",
+        url: "https://propfirmapp.com/trading-tools/ninjatrader",
+        date: "2026-04",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-28",
+      },
       // Neu: 28.04.2026 (1)
       {
         summary: "phidiaspropfirm.com (2026): 'Apex Trader Funding 4.0: Everything That Changed March 2026' – Apex führte am 1. März 2026 ein umfassendes Plattform-Update ein: Metall-Futures (Gold, Silber, Kupfer, Platin, Palladium) dauerhaft eingestellt wegen extremer Gap-Volatilität; OTP-Preismodell (einmalige Zahlung) ersetzt monatliche Abos; zwei Drawdown-Typen (EOD Trail oder Intraday Trail); 30-Tage-Eval-Ablauf; max. 6 Auszahlungen pro Konto. ES-Futures bleiben vollständig verfügbar. Klare Plattformreform bei der führenden Prop-Firm schafft neue Spielregeln für algorithmisches ES-Futures-Trading – direktes operatives Umfeld für mindrocket-trading.com.",
@@ -3978,6 +4037,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 28.04.2026 (erw.)
+      {
+        summary: "The Urban List (2026): '27 Self-Help Books Worth Reading In 2026' – Kuratierte Liste der empfehlenswertesten Selbsthilfe-Bücher 2026: Themen reichen von mentalem Wohlbefinden über Produktivität bis Beziehungskompetenz. Anhaltend hohe Nachfrage nach Selbsthilfe-Inhalten bestätigt die Marktrelevanz von mindtools.ch als digitale Plattform für persönliche Entwicklungswerkzeuge.",
+        source: "The Urban List",
+        url: "https://www.theurbanlist.com/a-list/best-self-help-books",
+        date: "2026-04",
+        category: "Buchmarkt & Publishing",
+        addedAt: "2026-04-28",
+      },
+      {
+        summary: "Pan Macmillan (2026): '28 Best Mental Health Books to Read in 2026' – Buchverlag Pan Macmillan kuratiert die 28 besten Bücher zu mentaler Gesundheit 2026: Themen umfassen Trauma-Heilung, Angstbewältigung, Selbstfürsorge und resilientes Denken. Starke Nachfrage nach Mental-Health-Büchern bestätigt das Wachstum des Selbsthilfesegments – direktes Marktumfeld für mindtools.ch.",
+        source: "Pan Macmillan",
+        url: "https://www.panmacmillan.com/blogs/lifestyle-wellbeing/best-mental-health-books",
+        date: "2026-04",
+        category: "Buchmarkt & Publishing",
+        addedAt: "2026-04-28",
+      },
       // Neu: 28.04.2026 (2)
       {
         summary: "coachingausbildungen.ch (2026): 'Coaching-Marktanalyse 2025/2026: Welche Trends prägen die deutschsprachige Region?' – Der Schweizer Coaching- und Persönlichkeitsentwicklungs-Markt konsolidiert sich 2026: Wachsende Nachfrage nach messbaren, wirkungsorientierten Kurzformaten und Spezialisierungsnischen. Der strukturelle Shift weg von reiner Motivation hin zu tool-gestützter Persönlichkeitsentwicklung bestätigt das Marktumfeld für mindtools.ch als kompakte, praxisorientierte Werkzeugplattform.",
@@ -4825,6 +4901,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 28.04.2026 (erw.)
+      {
+        summary: "hypnovital.net (2026): 'Ausbildungsstart hypnovital® Coach: 03. Mai 2026' – Der nächste offizielle Ausbildungsstart für zertifizierte hypnovital® Coaches findet am 03. Mai 2026 statt; Coaches werden in öffentlichen Kursen sowie in Unternehmen zur Gesundheitsförderung eingesetzt. Aktives Coach-Netzwerkwachstum stärkt die Skalierbarkeit und Marktabdeckung von hypnovital® als betriebliche Präventionslösung.",
+        source: "hypnovital.net",
+        url: "https://hypnovital.net/coach-werden/",
+        date: "2026-05",
+        category: "hypnovital direkt",
+        addedAt: "2026-04-28",
+      },
+      {
+        summary: "HealthExpo.ch (2026): 'HealthExpo 2026 – Schweizer Fachmesse für betriebliche Gesundheit' – Die HealthExpo 2026 bringt BGM-Verantwortliche, Gesundheitsdienstleister und Innovationsanbieter zusammen; ein zentraler Marktplatz für betriebliche Gesundheitslösungen in der Schweiz. Aktive Branchenmesse belegt die wachsende institutionelle Nachfrage nach BGM-Lösungen – direktes Marktumfeld für hypnovital® als Anbieter skalierbarer Audio-Coaching-Programme.",
+        source: "HealthExpo.ch",
+        url: "https://healthexpo.ch/",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-28",
+      },
       // Neu: 28.04.2026 (1)
       {
         summary: "conceptplus-bgm.de (2026): 'BGM 2026 – Gesund ins neue Jahr planen' – Praxisleitfaden für die BGM-Jahresplanung 2026: Gesundheitszirkel aufsetzen, Bedarfsanalysen durchführen, Maßnahmen priorisieren und Budget kalkulieren. Fokus auf präventive Programme und Führungskräfte-Schulungen. Der strukturierte Bedarf nach geplanten BGM-Programmen stärkt die Nachfrage nach pragmatischen, sofort einsetzbaren Lösungen wie hypnovital® als Audio-Programm für Betriebe.",
@@ -7550,6 +7643,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 28.04.2026 (erw.)
+      {
+        summary: "impotenz-selbsthilfe.org (2026): 'Vorzeitiger Samenerguss: Diese Behandlungsmethoden gibt es' – Übersicht der wichtigsten Behandlungsoptionen 2026: Verhaltenstechniken (Start-Stopp, Squeeze-Methode), Beckenbodentraining, Sexualtherapie und Medikamente. Steigende Online-Informationssuche belegt den Marktbedarf für diskrete digitale Selbsthilfe-Angebote – direktes Nachfrageumfeld für orgasmus-hinauszoegern.de.",
+        source: "impotenz-selbsthilfe.org",
+        url: "https://impotenz-selbsthilfe.org/vorzeitiger-samenerguss-behandlung/",
+        date: "2026-04",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-28",
+      },
       // Neu: 28.04.2026 (2)
       {
         summary: "Universität Marburg / CLIMACS-Studie (2023–2026): 'CLIMACS – Klinische Wirksamkeit der digitalen Anwendung MELONGA bei Ejaculatio praecox' – Klinische Studie der Philipps-Universität Marburg untersucht die Wirksamkeit der CE-zertifizierten App MELONGA: verhaltenstherapeutische Übungen in 12-wöchiger Intervention; 90% der Betroffenen suchen aus Stigma-Angst keine professionelle Hilfe. Wissenschaftliche Validierung digitaler Selbsthilfe-Angebote im Bereich vorzeitiger Samenerguss bestätigt das Marktpotenzial für diskrete Audio-Lösungen wie orgasmus-hinauszoegern.de.",
@@ -8429,6 +8531,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 28.04.2026 (erw.)
+      {
+        summary: "NOACK Hypnotherapie Berlin (2026): 'Redeangst ist kein Lampenfieber – Aufklärung, Tipps, Hilfe' – Differenzierte Erklärung von Redeangst vs. Lampenfieber: Ausgeprägte Formen erfordern systematische therapeutische Arbeit; Kombination aus Hypnosetherapie und Selbsthilfetechniken gilt als wirksamstes Format. Wachsendes Bewusstsein für therapeutische Ansätze bei Redeangst stärkt den Markt für Selbsthilfe-Audio-Formate – direktes Nachfrageumfeld für lampenfieber-besiegen.de.",
+        source: "NOACK Hypnotherapie",
+        url: "https://www.noack-hypnose.de/redeangst/",
+        date: "2026-04",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-28",
+      },
       // Neu: 28.04.2026 (2)
       {
         summary: "ad-hoc-news.de (19. Januar 2026): 'KI und VR besiegen die Angst vor dem Reden' – Studie der Universität Osnabrück bestätigt: Kurze VR-Trainingseinheiten steigern das Selbstvertrauen für reale Präsentationen signifikant; KI-Echtzeit-Feedback zu Sprechtempo, Füllwörtern und Blickkontakt revolutioniert das Rhetorik-Training 2026. Technologische Innovationen im Präsentationsangst-Segment schaffen Marktbewusstsein für Alternativen zur teuren Therapie – direktes Nachfrageumfeld für audio-basierte Selbsthilfe-Formate wie lampenfieber-besiegen.de.",
@@ -9431,6 +9542,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 28.04.2026 (erw.)
+      {
+        summary: "Cegos Integrata (2026): 'Die wichtigsten E-Learning-Trends 2026' – KI als aktiver Lerncoach, adaptive Lernpfade, immersive Learning-Experiences (VR/AR), Microlearning und Community-basiertes Lernen zählen zu den Top-E-Learning-Trends 2026. Wachsende Konvergenz von KI und Lernkompetenz bestätigt das Thought-Leadership-Potenzial von learnfluencer.ch als Plattform für Lernkompetenz.",
+        source: "Cegos Integrata",
+        url: "https://www.cegos-integrata.de/blog/learning-development/digital-learning/die-wichtigsten-e-learning-trends-2026",
+        date: "2026-04",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-28",
+      },
+      {
+        summary: "Bitkom Akademie (2026): 'KI-Kompetenzschulungen 2026' – Die Bitkom Akademie bietet 2026 gezielte KI-Kompetenzschulungen für Unternehmen an, um die Anforderungen des EU AI Acts (Artikel 4) zu erfüllen; praxisorientierte Formate für verschiedene Rollen und Branchen. Wachsende institutionelle Nachfrage nach KI-Kompetenzschulungen schafft direktes Wachstumsumfeld für learnfluencer.ch als Thought-Leadership-Plattform.",
+        source: "Bitkom Akademie",
+        url: "https://bitkom-akademie.de/KI-Kompetenzschulungen-2026",
+        date: "2026-04",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-28",
+      },
       // Neu: 28.04.2026 (2)
       {
         summary: "ki-cafe.de (2026): 'EU AI Act 2026: Schulungspflichten, Fristen & Umsetzung der KI-Verordnung' – Ab August 2026 findet der EU AI Act vollständige Anwendung: Artikel 4 verpflichtet Arbeitgeber zur KI-Schulung aller Mitarbeitenden; Verstösse bis 30 Mio. Euro Strafe; über 60% der betroffenen Unternehmen haben bereits interne Schulungskonzepte entwickelt; E-Learning, Präsenz und Blended Learning sind gleichermassen zulässig. Der EU AI Act als regulatorischer Treiber für strukturierte KI-Kompetenzprogramme bestätigt direkt das Thought-Leadership-Potenzial von learnfluencer.ch als Plattform für KI-Lernkompetenz.",
@@ -10978,6 +11106,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 28.04.2026 (erw.)
+      {
+        summary: "Bexolutions.ch (2026): 'KI-Marketing für Schweizer KMU 2026 – Praxisleitfaden' – Praxisleitfaden für KMU: ChatGPT und Claude für Content-Erstellung, Midjourney für Visuals, HubSpot für Marketing-Automation; ROI-Analyse zeigt messbare Zeitersparnis. Strukturiertes Marketingkonzept als Basis für KI-Marketing-Implementierungen unterstreicht die Relevanz des Marketingkonzept-Tools auf learnfluencer.ch.",
+        source: "Bexolutions.ch",
+        url: "https://bexolutions.ch/ki-marketing-fur-schweizer-kmu-2026-praxisleitfaden/",
+        date: "2026-04",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-28",
+      },
       // Neu: 28.04.2026 (2)
       {
         summary: "KIMarketing.ch (2026): 'Die besten KI-Marketing-Tools 2026 für Schweizer KMU – nicht die grösste Liste, sondern die richtige' – Kuratierte Übersicht der besten KI-Marketing-Tools für Schweizer KMU 2026: ChatGPT/Claude für Content, Canva Magic für Visuals, HubSpot für Automation; Fokus auf ROI und praktische Anwendbarkeit ohne IT-Abteilung. Wachsende Schweizer KI-Marketing-Ressourcen bestätigen den Bedarf an strukturierten Strategie-Tools als Grundlage – direktes Marktumfeld für das Marketingkonzept-Tool auf learnfluencer.ch.",
@@ -12003,6 +12140,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 28.04.2026 (erw.)
+      {
+        summary: "Luzerner Zeitung (2024): 'Horw: Die digitalen Bestatter' – Die Luzerner Zeitung porträtiert Horwer Digitalbestatter: Online-Planung, transparente Preise und Vergleichsmöglichkeiten als USPs gegenüber traditionellen Bestattungsunternehmen. Etablierung digitaler Bestattungsanbieter in der Zentralschweiz zeigt wachsende gesellschaftliche Akzeptanz für Online-Bestattungsplanung – direktes Marktumfeld für bestattungsplaner.ch.",
+        source: "Luzerner Zeitung",
+        url: "https://www.luzernerzeitung.ch/wirtschaft/horw-die-digitalen-bestatter-ld.85302",
+        date: "2024-04",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-28",
+      },
+      {
+        summary: "SSBV – Stiftung Schweizerische Bestattungsvorsorge (2026): Offizielle Schweizer Stiftung für Bestattungsvorsorge – Die SSBV ist die unabhängige Schweizer Anlaufstelle für Bestattungsvorsorge-Verträge und fungiert als Garant für Angehörige. Institutionelle Absicherung von Bestattungsvorsorge-Verträgen in der Schweiz stärkt die gesellschaftliche Legitimität digitaler Bestattungsplanungs-Plattformen – Marktumfeld für bestattungsplaner.ch.",
+        source: "SSBV",
+        url: "https://www.ssbv.swiss/",
+        date: "2026-04",
+        category: "Recht & Regelungen",
+        addedAt: "2026-04-28",
+      },
       // Neu: 28.04.2026 (1)
       {
         summary: "inar.de (2026): 'Digitale Vorsorge: Eine Chance für die Bestattungsbranche' – Das Institut für Angewandte Rechercheforschung analysiert digitale Vorsorge als Wachstumssegment für Bestattungsunternehmen: Vergleichsportale und Online-Planungstools werden als die vielversprechendsten Innovationsfelder identifiziert; Digitalisierung von Vorsorgedokumenten und Vertriebsprozessen schafft neue Erlöskanäle. Direkte strategische Validierung des Geschäftsmodells von bestattungsplaner.ch als digitale Lead-Vermittlungsplattform im Schweizer Bestattungsmarkt.",
@@ -13367,5 +13521,35 @@ export const projectIntel: Record<string, ProjectIntel> = {
       },
     ],
     socialSummary: "Die urspruengliche Bestattungsplaner GmbH (Horw, LU) wurde 2022 liquidiert – Domain bestattungsplaner.ch noch aktiv mit altem Angebot. Wettbewerber: Everlife.ch (staerkster digitaler Player, expandiert in Deutschschweiz), DeinAdieu.ch (Content/Testamente), Letzte Reise (Age-Stiftung-gefoerdert). Der Schweizer Bestattungsmarkt waechst demografisch (72'000+ Todesfaelle/Jahr, 90%+ Kremation).",
+  },
+  "12wy-planner": {
+    news: [
+      // Neu: 28.04.2026 (3)
+      {
+        summary: "12Week-Breakthrough.com (2026): 'The Complete 12-Week Year Implementation Guide for 2026' – Praxisleitfaden zur vollständigen Umsetzung der 12-Week-Year-Methode: Vision aufbauen, Quartals-Ziele setzen, wöchentliche Scorecard führen, Leistungsmessung. Die wachsende Community rund um 12-Week-Year-Ressourcen belegt das globale Interesse an kurzzyklischer Zielplanung – direktes Wachstumsumfeld für 12wy-planner.vercel.app.",
+        source: "12Week-Breakthrough.com",
+        url: "https://12week-breakthrough.com/implementation-guide-2026-12-week-year/",
+        date: "2026-04",
+        category: "12 Week Year Methode",
+        addedAt: "2026-04-28",
+      },
+      {
+        summary: "minschtl.de (2026): 'Wie funktioniert die Jahresplanung mit dem 12-Wochen-Jahr?' – Persönlicher Erfahrungsbericht zur 12-Wochen-Jahr-Methode: Klarheit, Fokus und Kontrollierbarkeit als zentrale Vorteile gegenüber klassischer 12-Monats-Jahresplanung. Wachsende Nachfrage nach der Methode in deutschsprachigen Märkten schafft Marktpotenzial für SaaS-Tools wie 12wy-planner.vercel.app.",
+        source: "minschtl.de",
+        url: "https://minschtl.de/blog-wortgefluester/jahresplanung-mit-dem-12-wochen-jahr/",
+        date: "2026-04",
+        category: "Produktivität & Planung",
+        addedAt: "2026-04-28",
+      },
+      {
+        summary: "selbst-management.biz (2026): 'Das 12 Wochen Jahr: Wie du in 12 Wochen mehr schaffst als andere in 12 Monaten' – Umfassende Erklärung der 12-Week-Year-Methode von Brian Moran: Vision, Quartals-Ziele, wöchentliche Scorecard, klare Accountability-Struktur. Breite Methoden-Bekanntheit im deutschsprachigen DACH-Markt validiert die Marktchance für ein dediziertes SaaS-Planungstool wie 12wy-planner.vercel.app.",
+        source: "selbst-management.biz",
+        url: "https://selbst-management.biz/das-12-wochen-jahr-wie-du-in-12-wochen-mehr-schaffst-als-andere-in-12-monaten/",
+        date: "2026-04",
+        category: "12 Week Year Methode",
+        addedAt: "2026-04-28",
+      },
+    ],
+    social: [],
   },
 };
