@@ -1844,6 +1844,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 28.04.2026 (2)
+      {
+        summary: "intellectia.ai (April 2026): 'S&P 500 Record High April 2026' – Der S&P 500 erreichte am 25. April 2026 ein Allzeit-Hoch von 7.165,08 Punkten; der Index legte im April rund 8,7% zu, getrieben durch starke Tech-Earnings, KI-Investitionen und geopolitische Entspannung. ES-Futures spiegeln diese starke Trendmarktbewegung direkt wider – ideale Bedingungen für die algorithmischen Handelsstrategien von mindrocket-trading.com.",
+        source: "intellectia.ai",
+        url: "https://intellectia.ai/blog/sp-500-record-high-april-2026",
+        date: "2026-04",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-28",
+      },
+      {
+        summary: "ad-hoc-news.de (April 2026): 'KI Act: Ab August 2026 gelten strenge Regeln für Hochrisiko-KI' – Ab 2. August 2026 treten die Kernvorschriften der EU-KI-Verordnung in Kraft; algorithmische Handelssysteme können als Hochrisiko-KI eingestuft werden und unterliegen dann Anforderungen an Transparenz, menschliche Überwachung und Auditierbarkeit. Verstösse bis zu 35 Mio. EUR oder 7% Umsatz – wichtiges Compliance-Thema für die ES-Futures-Trader-Zielgruppe von mindrocket-trading.com.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/ki-act-ab-august-2026-gelten-strenge-regeln-fuer-hochrisiko-ki/68624785",
+        date: "2026-04",
+        category: "Regulierung",
+        addedAt: "2026-04-28",
+      },
       // Neu: 27.04.2026 (11)
       {
         summary: "Reuters / Investing.com (28. April 2026): 'Soaring US stocks face pivotal week of tech-led earnings, Fed meeting' – Pivotale Earnings-Woche: 5 der Magnificent Seven berichten (Microsoft, Alphabet, Meta, Amazon am Mittwoch; Apple am Donnerstag). FOMC-Meeting (28.-29. April) ohne erwartete Zinsänderung. S&P 500 im April +9%, Nasdaq +15%. Geopolitische Spannungen (Iran/Hormuz) treiben Öl auf $96-107/Barrel. Alle Schlüsselkatalysatoren aktiv – kritische Woche für ES Futures Positionierung bei Mind Rocket Trading.",
@@ -3842,6 +3859,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 28.04.2026 (1)
+      {
+        summary: "buchmarkt.de (9. Januar 2026): 'Der deutsche Buchmarkt 2025: Anhaltende Kaufzurückhaltung macht sich bemerkbar' – Sachbücher verloren 4,7%, Ratgeber sogar 7,0% gegenüber 2024; der klassische Buchkanal steht unter Druck, das Interesse an persönlicher Entwicklung und Psychologie bleibt aber strukturell intakt. Der Trend unterstreicht den Bedarf an digital-ergänzenden Angeboten wie Tools, Community-Inhalte und Online-Bücher – direktes Marktumfeld für mindtools.ch.",
+        source: "buchmarkt.de",
+        url: "https://buchmarkt.de/2026/01/09/der-deutsche-buchmarkt-2025-anhaltende-kaufzurueckhaltung-macht-sich-bemerkbar/",
+        date: "2026-01-09",
+        category: "Buchmarkt & Publishing",
+        addedAt: "2026-04-28",
+      },
       // Neu: 27.04.2026 (4)
       {
         summary: "SRF News (März 2026): 'Krankenkassen-finanzierte App gegen Depressionen – ab Juli wird sie rückvergütet' – Die kognitive Verhaltenstherapie-App Deprexis wird ab Juli 2026 erstmals von Schweizer Krankenkassen finanziert: Das Bundesamt für Gesundheit öffnet damit den regulierten Markt für digitale Mental-Health-Anwendungen in der Schweiz. Wegweisendes Signal für die Akzeptanz digitaler Selbsthilfe-Tools im Schweizer Gesundheitssystem – direktes Marktöffnungsumfeld für mindtools.ch.",
@@ -4671,6 +4697,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 28.04.2026 (2)
+      {
+        summary: "oeffentlichespersonal.ch (April 2026): 'Psychische Erkrankungen am Arbeitsplatz: Mögliche Ursachen – und was helfen könnte' – Dr. Michael Merker analysiert, warum psychische Erkrankungen trotz stabiler Gesamtprävalenz in der Schweiz immer öfter zu Arbeitsausfällen führen. Moderne Wissensarbeit kennt keine klaren Leistungsgrenzen, was zu permanentem Erschöpfungsgefühl führt. Direktes Marktumfeld für niederschwellige mentale Unterstützungsangebote wie hypnovital® Audio-Programme.",
+        source: "oeffentlichespersonal.ch",
+        url: "https://oeffentlichespersonal.ch/aktuelles/2026/04/psychische-erkrankungen-am-arbeitsplatz-moegliche-ursachen-und-was-helfen-koennte",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-28",
+      },
+      {
+        summary: "fhnews.ch (16. April 2026): 'Nationale BGM-Tagung 2026: Gesunde Teams – Wie Zusammenarbeit gelingt' – Die Nationale BGM-Tagung vom 15. September 2026 in Bern (Gesundheitsförderung Schweiz, Suva, SECO) mit ~1.000 Fachleuten fokussiert auf psychologische Sicherheit in Teams und hybride Arbeitsmodelle. Das zentrale Branchen-Event unterstreicht die strategische Bedeutung von hypnovitals BGM-Angebot und Firmentrainings.",
+        source: "fhnews.ch",
+        url: "https://www.fhnews.ch/artikel/nationale-bgm-tagung-2026-gesunde-teams-wie-zusammenarbeit-gelingt",
+        date: "2026-04-16",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-28",
+      },
       // Neu: 27.04.2026 (3)
       {
         summary: "ad-hoc-news.de (April 2026): 'Resilienz wird messbar – neue Wege für mentale Gesundheit im Jahr 2026' – Resilienz entwickelt sich 2026 zu einem messbaren Unternehmenskennwert: Digitale Mental-Health-Apps wachsen auf über 8 Milliarden USD Marktvolumen, Hypnosetherapie wird vermehrt als Ergänzung in Unternehmen und Schulen integriert. Wachsende institutionelle Akzeptanz für Hypnose im BGM-Bereich stärkt direkt die Positionierung von hypnovital® als skalierbare Präventionslösung.",
@@ -6365,6 +6408,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 28.04.2026 (3)
+      {
+        summary: "FinancialContent / MarketMinute (15. April 2026): 'The Great Software Awakening: Why April 2026 Marks the End of the SaaS Apocalypse' – Nach einem 18-monatigen Abschwung stabilisierte sich der SaaS-Sektor im April 2026, da institutionelle Investoren zurück in Cloud-Aktien rotierten; Unternehmen wechseln von Abo-Modellen zu verbrauchsbasierter Preisgestaltung. Für den 12wy-planner zeigt dies: Nutzenorientierte Tools mit klarem ROI-Nachweis sind trotz Marktkonsolidierung gefragt.",
+        source: "FinancialContent / MarketMinute",
+        url: "https://markets.financialcontent.com/stocks/article/marketminute-2026-4-15-the-great-software-awakening-why-april-2026-marks-the-end-of-the-saas-apocalypse",
+        date: "2026-04-15",
+        category: "SaaS & Tools",
+        addedAt: "2026-04-28",
+      },
+      {
+        summary: "FinTech Global (2. April 2026): 'Why AI is changing how SaaS products are designed' – KI verändert grundlegend die SaaS-Produktentwicklung: Statt komplexer Dashboards interpretieren KI-Systeme Nutzerabsichten und erledigen Aufgaben automatisch; Product Manager müssen zunehmend adaptive Plattformen statt statischer Features entwickeln. Für den 12wy-planner bedeutet das, dass KI-gestützte Zielverfolgung und automatisches Fortschritts-Tracking zentrale Differenzierungsmerkmale werden.",
+        source: "FinTech Global",
+        url: "https://fintech.global/2026/04/02/why-ai-is-changing-how-saas-products-are-designed/",
+        date: "2026-04-02",
+        category: "SaaS & Tools",
+        addedAt: "2026-04-28",
+      },
+      {
+        summary: "SaaS Capital (9. April 2026): 'Four early 2026 SaaS trends' – SaaS-Bewertungen befinden sich auf dem niedrigsten Niveau seit über einem Jahrzehnt, da KI als existenzielle Bedrohung wahrgenommen wird; Betriebsmargen verbessern sich jedoch, was auf Reifung hindeutet. Für den 12wy-planner: Tools mit klar messbarem Nutzen und Produktivitätsnachweis sind besser positioniert als rein feature-getriebene Plattformen.",
+        source: "SaaS Capital",
+        url: "https://www.saas-capital.com/blog-posts/four-early-2026-saas-trends/",
+        date: "2026-04-09",
+        category: "SaaS & Tools",
+        addedAt: "2026-04-28",
+      },
       // Neu: 27.04.2026 (4)
       {
         summary: "Atlassian Community (Februar 2026): 'What is 12 Week Year Time Management System?' – Die 12-Week-Year-Methode wird 2026 zunehmend in professionellen Produktivitäts-Communitys diskutiert und in Tools wie Jira und Notion implementiert. Wachsende Mainstream-Akzeptanz der Methode und Integration in etablierte Plattformen bestätigt die steigende Nachfrage nach spezialisierten 12-Week-Year-Planungstools wie dem 12wy-planner.",
@@ -9181,6 +9249,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 28.04.2026 (1)
+      {
+        summary: "opportunitiesforyouth.org (24. April 2026): 'European EdTech Fellowship 2026: Fully Funded 6-Month Programme for Founders Scaling Across Europe' – Das European EdTech Fellowship 2026 öffnet seine Bewerbungsphase für EdTech-Gründer, die Lösungen europaweit skalieren möchten; Schwerpunkte: Beschaffungsprozesse, Lernwissenschaft und europäische Bildungspolitik. Das aktive europäische EdTech-Ökosystem zeigt, wie learnfluencer.ch als Schweizer Stimme für Lernkompetenz und KI international positioniert werden kann.",
+        source: "opportunitiesforyouth.org",
+        url: "https://opportunitiesforyouth.org/2026/04/24/european-edtech-fellowship-2026-fully-funded-6-month-programme-for-founders-scaling-across-europe/",
+        date: "2026-04-24",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-28",
+      },
       // Neu: 27.04.2026 (3)
       {
         summary: "cegos-integrata.de (2026): 'Die wichtigsten E-Learning-Trends 2026' – Überblick der Top-E-Learning-Trends: Microlearning, KI-personalisierte Lernpfade, Social Learning, Gamification und Learning Analytics als strategische Hebel für Unternehmensweiterbildung. Globale E-Learning-Trends bestätigen die Relevanz von learnfluencer.ch als Thought-Leadership-Plattform für moderne Lernkompetenz und KI-Integration in der Weiterbildung.",
@@ -10667,6 +10744,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 28.04.2026 (3)
+      {
+        summary: "CX Today (21. April 2026): 'Martech Innovations That Will Boost Revenue in 2026 and Beyond' – Drei Top-MarTech-Trends 2026: KI-gestützte Hyper-Personalisierung, KI-Agenten zur Workflow-Automatisierung und Privacy-first-Measurement auf Basis von First-Party-Daten. Strukturierte Marketing-Planung und strategische Analyse sind die Grundlage für den Einsatz dieser Technologien – direktes Marktumfeld für das Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "CX Today",
+        url: "https://www.cxtoday.com/marketing-sales-technology/martech-innovations-boost-revenue-2026/",
+        date: "2026-04-21",
+        category: "MarTech & Trends",
+        addedAt: "2026-04-28",
+      },
+      {
+        summary: "Demand Gen Report (20. April 2026): 'Focus on MarTech Integration, Not New Tools' – B2B-Marketingverantwortliche wollen bestehende Systeme besser integrieren statt neue Tools kaufen; viele leiden an 'Stack Bloat' – zu vielen ungenutzten Tools mit Daten-Silos. Der Bedarf an klaren, strukturierten Marketingkonzept-Prozessen wie jenen des Tools auf learnfluencer.ch wird dadurch gestärkt.",
+        source: "Demand Gen Report",
+        url: "https://www.demandgenreport.com/industry-news/news-brief/focus-on-martech-integration-not-new-tools/52542/",
+        date: "2026-04-20",
+        category: "MarTech & Trends",
+        addedAt: "2026-04-28",
+      },
+      {
+        summary: "kmu.admin.ch (März 2026): 'Influencer Marketing: Prioritizing Authenticity' – Das offizielle Schweizer KMU-Portal publizierte einen umfassenden Leitfaden zu Influencer-Marketing für Schweizer KMU; der Markt beläuft sich auf ~120 Mio. USD. Nano-Influencer (unter 10.000 Follower) liefern einen 46-fach höheren ROI als Macro-Influencer – ein Kontext für KMU, die mit dem Marketingkonzept-Tool auf learnfluencer.ch strategisch planen.",
+        source: "kmu.admin.ch",
+        url: "https://www.kmu.admin.ch/content/kmu/en/home/new/monatsthema/2026/influencer-marketing-prioritizing-authenticity.html",
+        date: "2026-03",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-28",
+      },
       // Neu: 27.04.2026 (3)
       {
         summary: "Improvado.io (April 2026): 'Marketing Technology Trends and Innovations 2026' – KI-gesteuerte Hyper-Personalisierung, First-Party-Data-Strategien und Marketing Operations als strategische Unternehmensfunktion zählen zu den Top-MarTech-Trends 2026. Steigender Innovationsdruck durch MarTech-Trends erhöht den Bedarf an strukturierten Planungsinstrumenten wie dem interaktiven Marketingkonzept-Tool auf learnfluencer.ch.",
