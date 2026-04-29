@@ -4037,6 +4037,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 29.04.2026
+      {
+        summary: "semigator.de (2026): 'Trends in der Personalentwicklung 2026: Wie Sie KI und Agilität nutzen' – KI-gestützte adaptive Lernsysteme, Micro-Learning und hybride Lernmodelle prägen 2026 die Personalentwicklung; Soft Skills wie emotionale Intelligenz, Resilienz und Entscheidungsfähigkeit rücken parallel zur KI-Kompetenz in den Vordergrund. Dies bestätigt die Marktnachfrage nach digitalen Mental-Tools für den Alltag – relevantes Umfeld für mindtools.",
+        source: "semigator.de",
+        url: "https://www.semigator.de/enterprise/blog/4-trends-in-der-personalentwicklung",
+        date: "2026-04",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-04-29",
+      },
       // Neu: 28.04.2026 (erw.)
       {
         summary: "The Urban List (2026): '27 Self-Help Books Worth Reading In 2026' – Kuratierte Liste der empfehlenswertesten Selbsthilfe-Bücher 2026: Themen reichen von mentalem Wohlbefinden über Produktivität bis Beziehungskompetenz. Anhaltend hohe Nachfrage nach Selbsthilfe-Inhalten bestätigt die Marktrelevanz von mindtools.ch als digitale Plattform für persönliche Entwicklungswerkzeuge.",
@@ -4901,6 +4910,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 29.04.2026
+      {
+        summary: "ad-hoc-news.de (2026): 'Psychische Gesundheit: Arbeitsschutz rückt 2026 in den Fokus' – Psychische Gesundheit am Arbeitsplatz rückt 2026 regulatorisch und gesellschaftlich ins Zentrum: Neue Strategien gegen Burnout, Resilienz-Workshops und Psychoedukation zeigen nachweisliche Wirkung. Dies schafft ein wachsendes Marktumfeld für betriebliche Gesundheitsangebote und Hypnose-Coaching-Lösungen wie hypnovital.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/psychische-gesundheit-arbeitsschutz-rueckt-2026-in-den-fokus/69051859",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-29",
+      },
       // Neu: 28.04.2026 (erw.)
       {
         summary: "hypnovital.net (2026): 'Ausbildungsstart hypnovital® Coach: 03. Mai 2026' – Der nächste offizielle Ausbildungsstart für zertifizierte hypnovital® Coaches findet am 03. Mai 2026 statt; Coaches werden in öffentlichen Kursen sowie in Unternehmen zur Gesundheitsförderung eingesetzt. Aktives Coach-Netzwerkwachstum stärkt die Skalierbarkeit und Marktabdeckung von hypnovital® als betriebliche Präventionslösung.",
@@ -6638,11 +6656,44 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 29.04.2026
+      {
+        summary: "12week-breakthrough.com (2026): 'The 12-Week Year vs OKRs: A Deep Dive Comparison 2026' – Das 12 Week Year eignet sich als vollständiges Ausführungssystem für Einzelpersonen und kleine Teams (1–5 Personen), während OKRs als organisatorisches Alignment-Framework für grössere Teams (5–100+) funktionieren. 2026 bieten KI-Tools die automatische Erfassung von Lead-Indikatoren und Fortschrittsberichten – direkte Produktentwicklungsrelevanz für den 12WY-Planner.",
+        source: "12week-breakthrough.com",
+        url: "https://12week-breakthrough.com/the-12-week-year-vs-okrs/",
+        date: "2026-04",
+        category: "12 Week Year Methode",
+        addedAt: "2026-04-29",
+      },
       // Neu: 28.04.2026 (4)
       {
         summary: "Pipedrive Blog (2026): 'How to set a 12-week year to get more done this quarter' – Detaillierter Praxisleitfaden zur Implementierung der 12-Week-Year-Methode: Wöchentliche Aktionspläne, Scorecard-Tracking und Accountability-Meetings als Kerndisziplinen. Die wachsende Präsenz der Methode auf etablierten Business-Plattformen wie Pipedrive bestätigt das steigende Mainstream-Interesse und den Bedarf an spezialisierten SaaS-Tools wie dem 12wy-planner.",
         source: "Pipedrive Blog",
         url: "https://www.pipedrive.com/en/blog/12-week-year",
+        date: "2026-04",
+        category: "12 Week Year Methode",
+        addedAt: "2026-04-28",
+      },
+      {
+        summary: "12Week-Breakthrough.com (2026): 'The Complete 12-Week Year Implementation Guide for 2026' – Praxisleitfaden zur vollständigen Umsetzung der 12-Week-Year-Methode: Vision aufbauen, Quartals-Ziele setzen, wöchentliche Scorecard führen, Leistungsmessung. Die wachsende Community rund um 12-Week-Year-Ressourcen belegt das globale Interesse an kurzzyklischer Zielplanung – direktes Wachstumsumfeld für 12wy-planner.vercel.app.",
+        source: "12Week-Breakthrough.com",
+        url: "https://12week-breakthrough.com/implementation-guide-2026-12-week-year/",
+        date: "2026-04",
+        category: "12 Week Year Methode",
+        addedAt: "2026-04-28",
+      },
+      {
+        summary: "minschtl.de (2026): 'Wie funktioniert die Jahresplanung mit dem 12-Wochen-Jahr?' – Persönlicher Erfahrungsbericht zur 12-Wochen-Jahr-Methode: Klarheit, Fokus und Kontrollierbarkeit als zentrale Vorteile gegenüber klassischer 12-Monats-Jahresplanung. Wachsende Nachfrage nach der Methode in deutschsprachigen Märkten schafft Marktpotenzial für SaaS-Tools wie 12wy-planner.vercel.app.",
+        source: "minschtl.de",
+        url: "https://minschtl.de/blog-wortgefluester/jahresplanung-mit-dem-12-wochen-jahr/",
+        date: "2026-04",
+        category: "Produktivität & Planung",
+        addedAt: "2026-04-28",
+      },
+      {
+        summary: "selbst-management.biz (2026): 'Das 12 Wochen Jahr: Wie du in 12 Wochen mehr schaffst als andere in 12 Monaten' – Umfassende Erklärung der 12-Week-Year-Methode von Brian Moran: Vision, Quartals-Ziele, wöchentliche Scorecard, klare Accountability-Struktur. Breite Methoden-Bekanntheit im deutschsprachigen DACH-Markt validiert die Marktchance für ein dediziertes SaaS-Planungstool wie 12wy-planner.",
+        source: "selbst-management.biz",
+        url: "https://selbst-management.biz/das-12-wochen-jahr-wie-du-in-12-wochen-mehr-schaffst-als-andere-in-12-monaten/",
         date: "2026-04",
         category: "12 Week Year Methode",
         addedAt: "2026-04-28",
@@ -7643,6 +7694,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 29.04.2026
+      {
+        summary: "hypnosecoach-zuerich.ch (2026): 'Hypnose für sexuelle Probleme' – Eine Zürcher Hypnosepraxis bietet gezielte Hypnotherapie für sexuelle Funktionsstörungen bei Männern an – darunter vorzeitiger Samenerguss, Erektionsprobleme und Leistungsdruck; der Behandlungsansatz sucht Ursachen im Unbewussten und setzt Entspannungsanker. Das wachsende Angebot an Hypnose-Sexualtherapie im Schweizer Markt bestätigt die Marktnachfrage – relevantes Wettbewerbsumfeld für orgasmus-hinauszoegern.de.",
+        source: "hypnosecoach-zuerich.ch",
+        url: "https://hypnosecoach-zuerich.ch/hypnose-sexuelle-probleme/",
+        date: "2026-04",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-04-29",
+      },
       // Neu: 28.04.2026 (erw.)
       {
         summary: "impotenz-selbsthilfe.org (2026): 'Vorzeitiger Samenerguss: Diese Behandlungsmethoden gibt es' – Übersicht der wichtigsten Behandlungsoptionen 2026: Verhaltenstechniken (Start-Stopp, Squeeze-Methode), Beckenbodentraining, Sexualtherapie und Medikamente. Steigende Online-Informationssuche belegt den Marktbedarf für diskrete digitale Selbsthilfe-Angebote – direktes Nachfrageumfeld für orgasmus-hinauszoegern.de.",
@@ -8531,6 +8591,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 29.04.2026
+      {
+        summary: "qi-hypnosia.com (2026): 'Prüfungsangst & Lampenfieber: Hypnose bei Qi-Hypnosia Berlin' – Hypnose-Therapeuten positionieren sich 2026 gezielt für die Behandlung von Prüfungsangst, Lampenfieber und Lernblockaden; Behandlungsziel: natürliche Nervosität ohne Blockaden, gesteigerte Konzentration. Das wachsende Angebot spezialisierter Hypnose-Anbieter für Lampenfieber zeigt Marktpotenzial und Wettbewerbsumfeld – relevant für lampenfieber-besiegen.de.",
+        source: "qi-hypnosia.com",
+        url: "https://qi-hypnosia.com/hypnose-berlin-lernblockaden-pruefungsangst-lampenfieber/",
+        date: "2026-04",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-04-29",
+      },
       // Neu: 28.04.2026 (erw.)
       {
         summary: "NOACK Hypnotherapie Berlin (2026): 'Redeangst ist kein Lampenfieber – Aufklärung, Tipps, Hilfe' – Differenzierte Erklärung von Redeangst vs. Lampenfieber: Ausgeprägte Formen erfordern systematische therapeutische Arbeit; Kombination aus Hypnosetherapie und Selbsthilfetechniken gilt als wirksamstes Format. Wachsendes Bewusstsein für therapeutische Ansätze bei Redeangst stärkt den Markt für Selbsthilfe-Audio-Formate – direktes Nachfrageumfeld für lampenfieber-besiegen.de.",
@@ -9542,6 +9611,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 29.04.2026
+      {
+        summary: "hrpraxis.ch (März 2026): 'Vom Trainer zum Bildungsbegleiter: Was Sie über KI-gestützte Lernformate wissen sollten' – KI-gestützte Lernformate verschieben die Rolle von Trainer zu Bildungsbegleiter: personalisierte Lernpfade in Echtzeit, adaptive Systeme und Microlearning prägen 2026 die Personalentwicklung in der Schweiz. Für learnfluencer ist dies ein direktes Signal: Der Markt für digitale, KI-unterstützte Lernkompetenz-Vermittlung wächst rasant.",
+        source: "hrpraxis.ch",
+        url: "https://www.hrpraxis.ch/2026/03/vom-trainer-zum-bildungsbegleiter-was-sie-ueber-ki-gestuetzte-lernformate-wissen-sollten.html",
+        date: "2026-03",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-29",
+      },
       // Neu: 28.04.2026 (erw.)
       {
         summary: "Cegos Integrata (2026): 'Die wichtigsten E-Learning-Trends 2026' – KI als aktiver Lerncoach, adaptive Lernpfade, immersive Learning-Experiences (VR/AR), Microlearning und Community-basiertes Lernen zählen zu den Top-E-Learning-Trends 2026. Wachsende Konvergenz von KI und Lernkompetenz bestätigt das Thought-Leadership-Potenzial von learnfluencer.ch als Plattform für Lernkompetenz.",
@@ -13521,35 +13599,5 @@ export const projectIntel: Record<string, ProjectIntel> = {
       },
     ],
     socialSummary: "Die urspruengliche Bestattungsplaner GmbH (Horw, LU) wurde 2022 liquidiert – Domain bestattungsplaner.ch noch aktiv mit altem Angebot. Wettbewerber: Everlife.ch (staerkster digitaler Player, expandiert in Deutschschweiz), DeinAdieu.ch (Content/Testamente), Letzte Reise (Age-Stiftung-gefoerdert). Der Schweizer Bestattungsmarkt waechst demografisch (72'000+ Todesfaelle/Jahr, 90%+ Kremation).",
-  },
-  "12wy-planner": {
-    news: [
-      // Neu: 28.04.2026 (3)
-      {
-        summary: "12Week-Breakthrough.com (2026): 'The Complete 12-Week Year Implementation Guide for 2026' – Praxisleitfaden zur vollständigen Umsetzung der 12-Week-Year-Methode: Vision aufbauen, Quartals-Ziele setzen, wöchentliche Scorecard führen, Leistungsmessung. Die wachsende Community rund um 12-Week-Year-Ressourcen belegt das globale Interesse an kurzzyklischer Zielplanung – direktes Wachstumsumfeld für 12wy-planner.vercel.app.",
-        source: "12Week-Breakthrough.com",
-        url: "https://12week-breakthrough.com/implementation-guide-2026-12-week-year/",
-        date: "2026-04",
-        category: "12 Week Year Methode",
-        addedAt: "2026-04-28",
-      },
-      {
-        summary: "minschtl.de (2026): 'Wie funktioniert die Jahresplanung mit dem 12-Wochen-Jahr?' – Persönlicher Erfahrungsbericht zur 12-Wochen-Jahr-Methode: Klarheit, Fokus und Kontrollierbarkeit als zentrale Vorteile gegenüber klassischer 12-Monats-Jahresplanung. Wachsende Nachfrage nach der Methode in deutschsprachigen Märkten schafft Marktpotenzial für SaaS-Tools wie 12wy-planner.vercel.app.",
-        source: "minschtl.de",
-        url: "https://minschtl.de/blog-wortgefluester/jahresplanung-mit-dem-12-wochen-jahr/",
-        date: "2026-04",
-        category: "Produktivität & Planung",
-        addedAt: "2026-04-28",
-      },
-      {
-        summary: "selbst-management.biz (2026): 'Das 12 Wochen Jahr: Wie du in 12 Wochen mehr schaffst als andere in 12 Monaten' – Umfassende Erklärung der 12-Week-Year-Methode von Brian Moran: Vision, Quartals-Ziele, wöchentliche Scorecard, klare Accountability-Struktur. Breite Methoden-Bekanntheit im deutschsprachigen DACH-Markt validiert die Marktchance für ein dediziertes SaaS-Planungstool wie 12wy-planner.vercel.app.",
-        source: "selbst-management.biz",
-        url: "https://selbst-management.biz/das-12-wochen-jahr-wie-du-in-12-wochen-mehr-schaffst-als-andere-in-12-monaten/",
-        date: "2026-04",
-        category: "12 Week Year Methode",
-        addedAt: "2026-04-28",
-      },
-    ],
-    social: [],
   },
 };
