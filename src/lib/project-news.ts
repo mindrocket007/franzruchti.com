@@ -26,6 +26,23 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 29.04.2026
+      {
+        summary: "ICT-Berufsbildung Schweiz (April 2026): 'ICT-Regionalmeisterschaften 2026: Das sind die Besten' – Über 330 ICT-Lernende aus der ganzen Schweiz traten in den Skills Software Application Development, Web Technologies, Cloud Computing, Mediamatics und Cyber Security an; die Top 11 jedes Skills qualifizieren sich für die Schweizer Meisterschaften ICTskills2027. Das jährliche Nachwuchsturnier stärkt das Renommée der ICT-Berufsbildung und schafft Bedarf an anerkannten Zertifizierungen – direktes Wachstumsumfeld für SIZ AG.",
+        source: "ICT-Berufsbildung Schweiz",
+        url: "https://www.ict-berufsbildung.ch/ict-regional-shymeisterschaften-2026-das-sind-die-besten",
+        date: "2026-04",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-29",
+      },
+      {
+        summary: "CNBC (28. April 2026): 'S&P 500 futures flat as Wall Street looks ahead to Mag 7 earnings and Fed decision' – Futures stagnieren vor wichtigen Quartalszahlen von Microsoft, Alphabet und Meta sowie dem bevorstehenden Fed-Entscheid; Brent Crude über 110 USD/Barrel erhöht Inflationsdruck. Makroökonomische Unsicherheit und Technologietrends beeinflussen den Schweizer IT-Arbeitsmarkt indirekt – relevantes Umfeld für SIZ AG als ICT-Qualifizierungsorganisation.",
+        source: "CNBC",
+        url: "https://www.cnbc.com/2026/04/28/stock-market-today-live-updates.html",
+        date: "2026-04-28",
+        category: "Wirtschaft & Digitalisierung",
+        addedAt: "2026-04-29",
+      },
       // Neu: 28.04.2026 (erw.)
       {
         summary: "SwissCybersecurity.net (31. März 2026): 'ICT-Berufsbildung Schweiz diplomiert 145 ICT-Fachkräfte' – 145 ICT-Fachkräfte erhielten auf der Diplomfeier 2026 ihre eidgenössischen Abschlüsse in höherer Berufsbildung; die höhere Berufsbildung bleibt tragende Säule des Schweizer ICT-Arbeitsmarkts. Jährliche Diplomierung stärkt die gesellschaftliche Verankerung von ICT-Zertifizierungen – direktes Wachstumsumfeld für SIZ AG.",
@@ -1437,6 +1454,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
+      // Neu: 29.04.2026
+      {
+        summary: "coachingausbildungen.ch (April 2026): 'Wie verändert Walk & Talk Coaching den Schweizer Coachingmarkt 2026?' – Walk & Talk Coaching etabliert sich als integraler Bestandteil moderner Coaching-Landschaften; Unternehmen integrieren Bewegung in betriebliche Gesundheitsförderung, was neue Kanäle für Coaches öffnet. Wachsende Nachfrage nach innovativen Coaching-Formaten bestätigt das Marktpotenzial für digitale Coaching-Angebote wie jene von Mind Rocket GmbH.",
+        source: "coachingausbildungen.ch",
+        url: "https://www.coachingausbildungen.ch/walk-and-talk-coaching-schweiz-coachingmarkt-2026/",
+        date: "2026-04",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-04-29",
+      },
+      {
+        summary: "IPC Akademie (2026): 'Swiss Coaching Day 2026 – Der Top-Event für Coaches in Bern' – Der Swiss Coaching Day am 23. April 2026 in Bern brachte Coaches und Führungskräfte zu Workshops, Keynotes und Networking zusammen; Fokus auf Resilienz, Selbstführung und moderne Coaching-Methoden. Der wachsende Stellenwert von Coaching-Events in der Schweiz unterstreicht das Marktpotenzial für professionelle Coaching-Angebote – direktes Wachstumsumfeld für Mind Rocket GmbH.",
+        source: "IPC Akademie",
+        url: "https://ipc-akademie.com/weiterbildungen/swiss-coaching-day/",
+        date: "2026-04-23",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-04-29",
+      },
       // Neu: 28.04.2026 (erw.)
       {
         summary: "SwissNova (2026): 'Weiterbildung für Unternehmen in der Schweiz: 10 Trends für 2026' – Hybrides, KI-gestütztes und ergebnisorientiertes Lernen, Microlearning, Coaching-Integrationsprogramme und mentales Wohlbefinden als strategische HR-Investitionen zählen zu den Top-10-Weiterbildungstrends 2026 in der Schweiz. Wachsender strategischer Stellenwert von Coaching und Persönlichkeitsentwicklung schafft direktes Nachfrageumfeld für die Online-Programme von Mind Rocket GmbH.",
@@ -1922,6 +1956,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 29.04.2026
+      {
+        summary: "CNBC (28. April 2026): 'S&P 500 futures flat as Wall Street looks ahead to Mag 7 earnings and Fed decision' – ES-Futures stagnieren am 28. April vor wichtigen Quartalszahlen von Microsoft, Alphabet und Meta sowie dem Fed-Entscheid; Brent Crude über 110 USD/Barrel erhöht Inflationsdruck und Marktvolatilität. Für ES-Futures-Trader bedeutet das eine Phase erhöhter Vorsicht und präzisem Risikomanagement – direktes Marktumfeld für algorithmische Strategien.",
+        source: "CNBC",
+        url: "https://www.cnbc.com/2026/04/28/stock-market-today-live-updates.html",
+        date: "2026-04-28",
+        category: "Futures & Trading",
+        addedAt: "2026-04-29",
+      },
+      {
+        summary: "CME Group (Februar 2026): 'CME Group to Launch 24/7 Cryptocurrency Futures and Options Trading on May 29' – Ab dem 29. Mai 2026 werden BTC, ETH, SOL und XRP Futures und Optionen auf CME rund um die Uhr handelbar sein; 2025 wurden bereits $3 Billionen in Krypto-Futures-Volumen erzielt (+46% YoY). Für algorithmische Trader erweitert sich das handelbare Universum erheblich – relevantes Expansionspotenzial für Multi-Asset-Strategien.",
+        source: "CME Group",
+        url: "https://www.cmegroup.com/media-room/press-releases/2026/2/19/cme_group_to_launch247cryptocurrencyfuturesandoptionstradingonma.html",
+        date: "2026-02-19",
+        category: "Futures & Trading",
+        addedAt: "2026-04-29",
+      },
       // Neu: 28.04.2026 (erw.)
       {
         summary: "MasteryTrader Academy (2026): 'NinjaTrader Prop Firm Setup Mistakes 2026' – Praxisanleitung für den ersten Prop-Firm-Trade auf NinjaTrader: kritische Setup-Fehler bei Datenfeeds, Kontoverbindung, Risk-Parametern und Ordermaske. Community-Wissen für NinjaTrader-Prop-Trader wächst und stärkt den Informationsmarkt für strategiebasierte Angebote wie mindrocket-trading.com.",
@@ -11184,6 +11235,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 29.04.2026
+      {
+        summary: "ClickUp Blog (2026): 'Top 10 SWOT Analysis Generators for 2026' – KI-gestützte SWOT-Generatoren wie SWOTPal analysieren 10-K-Berichte, Marktdaten und Wettbewerbslandschaft in Echtzeit; führende Plattformen sind Lucidchart, Miro und Creately. Steigende Nachfrage nach datengestützten SWOT-Tools unterstreicht die Relevanz eines interaktiven, strukturierten Marketingkonzept-Tools für Schweizer KMU.",
+        source: "ClickUp Blog",
+        url: "https://clickup.com/blog/swot-analysis-generators/",
+        date: "2026-04",
+        category: "Strategie & Analyse",
+        addedAt: "2026-04-29",
+      },
+      {
+        summary: "Aivie / kmu.digital (2026): 'Marketing-Automation mit kmu.digital 2026: Jetzt Förderung nutzen' – Schweizer und österreichische KMU können Marketing-Automation-Projekte mit bis zu 30% Förderung über kmu.digital finanzieren; Unternehmen sparen durchschnittlich 6–9 Stunden pro Woche durch Automatisierung. Steigende staatliche Förderung für KMU-Digitalisierung erhöht den Investitionswillen in Marketingtools – Marktchance für das Marketingkonzept-Tool.",
+        source: "aivie.ch",
+        url: "https://aivie.ch/marketing-automation-kmu-digital-forderung/",
+        date: "2026-04",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-29",
+      },
       // Neu: 28.04.2026 (erw.)
       {
         summary: "Bexolutions.ch (2026): 'KI-Marketing für Schweizer KMU 2026 – Praxisleitfaden' – Praxisleitfaden für KMU: ChatGPT und Claude für Content-Erstellung, Midjourney für Visuals, HubSpot für Marketing-Automation; ROI-Analyse zeigt messbare Zeitersparnis. Strukturiertes Marketingkonzept als Basis für KI-Marketing-Implementierungen unterstreicht die Relevanz des Marketingkonzept-Tools auf learnfluencer.ch.",
@@ -12218,6 +12286,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 29.04.2026
+      {
+        summary: "ZKB (2026): 'Regeln Sie Ihren digitalen Nachlass zu Lebzeiten' – Die Zürcher Kantonalbank empfiehlt, den digitalen Nachlass aktiv zu planen: Passwortlisten, Kontenübersichten und Zugangsanweisungen für Angehörige als Teil moderner Vorsorge. Steigende Sensibilisierung für digitale Vorsorge und Nachlass schafft Nachfrageumfeld für umfassende Online-Bestattungsplanungs-Plattformen wie bestattungsplaner.ch.",
+        source: "ZKB",
+        url: "https://www.zkb.ch/de/private/vorsorge/wissenswertes/digitaler-nachlass.html",
+        date: "2026-04",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-04-29",
+      },
+      {
+        summary: "die-bestatter.ch (2026): 'Digitaler Nachlass – wir regeln Zugriff & Verantwortung vorsorglich' – Schweizer Bestattungsunternehmen bieten bereits spezialisierte Dienstleistungen für digitalen Nachlass an: Passwortlisten vertraulich hinterlegen, im Todesfall an Angehörige übergeben. Das wachsende Angebot zeigt, dass Digitalisierung die Bestattungsbranche transformiert – direktes Wettbewerbsumfeld und Marktbestätigung für bestattungsplaner.ch.",
+        source: "die-bestatter.ch",
+        url: "https://die-bestatter.ch/dienstleistungen/digitaler-nachlass/",
+        date: "2026-04",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-04-29",
+      },
       // Neu: 28.04.2026 (erw.)
       {
         summary: "Luzerner Zeitung (2024): 'Horw: Die digitalen Bestatter' – Die Luzerner Zeitung porträtiert Horwer Digitalbestatter: Online-Planung, transparente Preise und Vergleichsmöglichkeiten als USPs gegenüber traditionellen Bestattungsunternehmen. Etablierung digitaler Bestattungsanbieter in der Zentralschweiz zeigt wachsende gesellschaftliche Akzeptanz für Online-Bestattungsplanung – direktes Marktumfeld für bestattungsplaner.ch.",
