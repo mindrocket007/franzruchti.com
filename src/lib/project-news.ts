@@ -9847,6 +9847,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         category: "E-Learning & EdTech",
         addedAt: "2026-04-29",
       },
+      {
+        summary: "Economiesuisse (April 2026): 'Digitalisierung: Diese sieben Dinge braucht die Schule der Zukunft' – Economiesuisse fordert sieben konkrete Massnahmen für die digitale Schule der Zukunft in der Schweiz, darunter verbindliche digitale Kompetenzen für alle Lehrpersonen und kontinuierliche Lehrerfortbildung als strategische Prioritäten. Der Fokus des Wirtschaftsdachverbands auf digitale Bildungsreform schafft institutionellen Druck und Nachfrage für Thought-Leadership-Angebote wie learnfluencer.ch.",
+        source: "Economiesuisse",
+        url: "https://www.economiesuisse.ch/de/artikel/digitalisierung-diese-sieben-dinge-braucht-die-schule-der-zukunft",
+        date: "2026-04",
+        category: "Weiterbildung Schweiz",
+        addedAt: "2026-04-29",
+      },
       // Neu: 28.04.2026 (erw.)
       {
         summary: "Cegos Integrata (2026): 'Die wichtigsten E-Learning-Trends 2026' – KI als aktiver Lerncoach, adaptive Lernpfade, immersive Learning-Experiences (VR/AR), Microlearning und Community-basiertes Lernen zählen zu den Top-E-Learning-Trends 2026. Wachsende Konvergenz von KI und Lernkompetenz bestätigt das Thought-Leadership-Potenzial von learnfluencer.ch als Plattform für Lernkompetenz.",
