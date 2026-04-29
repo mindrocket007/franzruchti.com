@@ -1966,6 +1966,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 29.04.2026
       {
+        summary: "Tradersunion.com (2026): 'Apex Trader Funding Erfahrungen 2026 – Ist diese Prop Firm vertrauenswürdig?' – Tradersunion bewertet Apex Trader Funding mit 7.74/10: Stärken sind transparente Regeln, keine versteckten Gebühren und gute Payout-Quoten; Schwächen sind Kontoeinschränkungen bei Überaktivität sowie die Activity Rule. Unabhängige Vergleichsplattformen bestätigen Apex als führende Prop-Firm für ES-Futures – direktes Marktumfeld für mindrocket-trading.com-Strategien.",
+        source: "tradersunion.com",
+        url: "https://tradersunion.com/brokers/prop/view/apex-trader-funding/",
+        date: "2026-04",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-29",
+      },
+      {
+        summary: "prop-trader.de (2026): 'Aktivitätsregel bei Apex Trader Funding – Was Trader wissen müssen' – Apex verlangt Aktivität an mindestens 30% der Handelstage im Evaluation-Zeitraum; Inaktivität kann zur Kontoschließung führen. Die Activity Rule beeinflusst direkt algorithmische Trading-Strategien, die nur bei bestimmten Marktbedingungen handeln – relevante Compliance-Information für ES-Futures-Trader wie mindrocket-trading.com.",
+        source: "prop-trader.de",
+        url: "https://www.prop-trader.de/en/aktivitaetsregel-bei-apex-trader-funding/",
+        date: "2026-04",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-29",
+      },
+      {
+        summary: "Investing.com (2026): 'NinjaTrader Review 2026' – Investing.com bewertet NinjaTrader als führende Futures-Trading-Plattform: Commission-freies Trading in Standard-Konten, fortgeschrittene Charting-Tools, robuste Backtesting-Umgebung und NinjaScript für algorithmische Strategien. Die Anerkennung durch eine der weltweit größten Finanzplattformen bestätigt NinjaTrader als Industriestandard für regelbasiertes Futures-Trading – direktes Marktumfeld für mindrocket-trading.com.",
+        source: "Investing.com",
+        url: "https://www.investing.com/brokers/reviews/ninja-trader/",
+        date: "2026-04",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-29",
+      },
+      {
         summary: "Yahoo Finance / FOMC (29. April 2026): 'Fed hält Leitzins stabil – 1 Zinssenkung für 2026 prognostiziert' – Die US-Notenbank hielt an ihrem April-FOMC-Treffen die Zinsen zum dritten Mal in Folge unverändert bei 3,50–3,75%; Powell warnt vor anhaltendem Inflationsdruck durch hohe Energiepreise; Markt rechnet mit 1 Zinssenkung im späteren Jahresverlauf 2026. Das Zinsniveau beeinflusst direkt ES-Futures-Bewegungen und algorithmische Risikomanagement-Strategien – relevantes Marktumfeld für mindrocket-trading.com.",
         source: "Yahoo Finance",
         url: "https://finance.yahoo.com/news/live/fed-meeting-live-updates-federal-reserve-holds-rates-steady-forecasts-1-rate-cut-in-2026-180216872.html",
@@ -11460,6 +11484,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "marketingplan-software": {
     news: [
       // Neu: 29.04.2026
+      {
+        summary: "Pipedrive Blog (2026): 'Die 20 besten KI-Marketing-Tools für KMU in 2026' – Pipedrive listet und bewertet 20 KI-Marketing-Tools für KMUs: von Jasper AI (Content) über Surfer SEO (Keyword-Optimierung) bis HubSpot (CRM + Marketing Automation). Die Vielfalt der Tools unterstreicht den wachsenden Bedarf nach strukturierten Marketingkonzept-Frameworks, um KI-Tools gezielt einzusetzen – bestätigt die Relevanz des interaktiven Marketingkonzept-Tools auf learnfluencer.ch für Schweizer KMU.",
+        source: "Pipedrive Blog",
+        url: "https://www.pipedrive.com/en/blog/small-business-using-ai-for-marketing",
+        date: "2026-04",
+        category: "Marketing-Tools & Software",
+        addedAt: "2026-04-29",
+      },
       {
         summary: "online-marketing-schweiz.ch (2026): 'KI im Marketing: Warum die besten Unternehmen zuerst in Daten investieren' – 52% der Schweizer Organisationen setzen bereits KI-Agenten ein; Datenqualität und strukturierte Analyse-Frameworks sind entscheidender als der Einsatz einzelner KI-Tools. Strukturierte Marketingkonzept-Frameworks bleiben die Grundlage für erfolgreichen KI-Einsatz – bestätigt die Relevanz des interaktiven Marketingkonzept-Tools für Schweizer KMU.",
         source: "online-marketing-schweiz.ch",
