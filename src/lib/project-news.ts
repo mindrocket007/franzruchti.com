@@ -1966,6 +1966,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 29.04.2026
       {
+        summary: "HeyGoTrade (29. April 2026): 'S&P 500, Nasdaq Touch Record Highs Ahead of FOMC Decision' – Der S&P 500 und der Nasdaq erreichten intraday Rekordhochs am 29. April 2026 vor dem FOMC-Entscheid; Marktteilnehmer preisen eine 100%ige Wahrscheinlichkeit für unveränderte Zinsen ein; 5 der Magnificent-7-Unternehmen berichten in dieser Woche. Rekordkurse und FOMC-Spannung sorgen für erhöhte Volatilität im ES-Futures-Markt – direktes Marktumfeld für algorithmische Handelssysteme wie mindrocket-trading.com.",
+        source: "HeyGoTrade",
+        url: "https://www.heygotrade.com/en/news/sp500-nasdaq-record-highs-fomc-april-2026/",
+        date: "2026-04-29",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-29",
+      },
+      {
+        summary: "Kiplinger (29. April 2026): 'April Fed Meeting: Live Updates and Commentary' – Kiplinger begleitet das FOMC-Meeting vom 28.–29. April 2026 live: Leitzins erwartungsgemäss unverändert; Powell-Pressekonferenz im Fokus wegen Öl-Inflation; Fed Funds Futures zeigen kaum Zinssenkungserwartungen für Rest 2026. Stabilitätssignal der Fed schafft kalkulierbareres Trend-Umfeld für regelbasierte algorithmische ES-Futures-Strategien wie jene auf mindrocket-trading.com.",
+        source: "Kiplinger",
+        url: "https://www.kiplinger.com/news/live/fed-meeting-updates-and-commentary-april-2026",
+        date: "2026-04-29",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-29",
+      },
+      {
         summary: "Tradersunion.com (2026): 'Apex Trader Funding Erfahrungen 2026 – Ist diese Prop Firm vertrauenswürdig?' – Tradersunion bewertet Apex Trader Funding mit 7.74/10: Stärken sind transparente Regeln, keine versteckten Gebühren und gute Payout-Quoten; Schwächen sind Kontoeinschränkungen bei Überaktivität sowie die Activity Rule. Unabhängige Vergleichsplattformen bestätigen Apex als führende Prop-Firm für ES-Futures – direktes Marktumfeld für mindrocket-trading.com-Strategien.",
         source: "tradersunion.com",
         url: "https://tradersunion.com/brokers/prop/view/apex-trader-funding/",
@@ -9895,6 +9911,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "learnfluencer": {
     news: [
       // Neu: 29.04.2026
+      {
+        summary: "easylearn.ch (2026): 'EU AI Act: Das müssen Sie für Ihre betriebliche Bildung wissen' – Die Schweizer HR/E-Learning-Plattform easylearn erläutert die Auswirkungen des EU AI Acts auf betriebliche Bildung: Artikel 4 verpflichtet Arbeitgeber zur KI-Kompetenzentwicklung aller Mitarbeitenden; gilt auch für Schweizer Unternehmen mit EU-Marktpräsenz. Regulatorischer Druck als Wachstumstreiber für KI-Lernkompetenz – direktes Thought-Leadership-Potenzial für learnfluencer.ch.",
+        source: "easylearn.ch",
+        url: "https://www.easylearn.ch/en/eu-ai-act-personalwesen-hr",
+        date: "2026-04",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-29",
+      },
+      {
+        summary: "TÜV SÜD Consulting (2026): 'EU AI Act ab 2. August 2026: Was Unternehmen jetzt tun müssen' – Ab dem 2. August 2026 findet der EU AI Act vollständige Anwendung; Hochrisiko-KI-Systeme unterliegen strengen Konformitätspflichten; Artikel 4-Schulungen müssen nachweislich durchgeführt sein. Verbindlicher Anwendungstermin schafft unmittelbaren Weiterbildungsdruck bei Unternehmen – direktes Wachstumsfeld für KI-Lernkompetenz-Angebote und Thought-Leadership-Plattformen wie learnfluencer.ch.",
+        source: "TÜV SÜD Consulting",
+        url: "https://consulting.tuv.com/aktuelles/ki-im-fokus/hochrisiko-ki-anhang-iii",
+        date: "2026-04",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-29",
+      },
       {
         summary: "inventivo.de (2026): 'KI Agenten Unternehmen 2026: Die nächste Stufe der Automatisierung – und was du jetzt wissen musst' – KI-Agenten erledigen 2026 eigenständig komplexe Aufgaben wie Marktrecherche, Datenanalyse und Entscheidungsvorbereitung; über 50% der deutschsprachigen Mittelständler haben KI im produktiven Einsatz oder planen es. Führungskräfte und Teams brauchen gezielte KI-Kompetenz – direktes Thought-Leadership-Thema und Wachstumsfeld für learnfluencer.ch.",
         source: "inventivo.de",
