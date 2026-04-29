@@ -1456,6 +1456,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 29.04.2026
       {
+        summary: "Coaching-Magazin.de (April 2026): 'Swiss Coaching Day 2026 – Coaching-Branche trifft sich in Bern' – Das Coaching-Magazin berichtet über den Swiss Coaching Day am 23. April 2026 in der Champions Lounge, Stadion Wankdorf Bern; Fokus auf KI im Coaching, Resilienz, Selbstführung und professionelle Coaching-Methoden; über 250 Coaches, Trainer, HR-Fachleute und Führungskräfte. Wachsende institutionelle Vernetzung der Schweizer Coaching-Szene bestätigt das Marktpotenzial für professionelle digitale Coaching-Angebote – direktes Wachstumsumfeld für Mind Rocket GmbH.",
+        source: "Coaching-Magazin.de",
+        url: "https://www.coaching-magazin.de/news/2026/swiss-coaching-day-2026",
+        date: "2026-04-23",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-04-29",
+      },
+      {
         summary: "coachingausbildungen.ch (April 2026): 'Wie verändert Walk & Talk Coaching den Schweizer Coachingmarkt 2026?' – Walk & Talk Coaching etabliert sich als integraler Bestandteil moderner Coaching-Landschaften; Unternehmen integrieren Bewegung in betriebliche Gesundheitsförderung, was neue Kanäle für Coaches öffnet. Wachsende Nachfrage nach innovativen Coaching-Formaten bestätigt das Marktpotenzial für digitale Coaching-Angebote wie jene von Mind Rocket GmbH.",
         source: "coachingausbildungen.ch",
         url: "https://www.coachingausbildungen.ch/walk-and-talk-coaching-schweiz-coachingmarkt-2026/",
@@ -5026,6 +5034,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "hypnovital": {
     news: [
       // Neu: 29.04.2026
+      {
+        summary: "news-research.net (April 2026): 'Jonglieren als Gehirntraining: Workshop zeigt neue Wege für Therapie, Prävention und mentale Gesundheit' – Ein April-2026-Workshop präsentiert Jonglieren als innovativen Ansatz für mentale Gesundheitsförderung; Bewegungsbasierte Methoden ergänzen klassische Hypnose- und Coaching-Interventionen in der Prävention. Der wachsende Markt für ganzheitliche, niedrigschwellige Präventionsmethoden bestätigt das Potenzial für Audio-Hypnose-Programme wie hypnovital® im BGM-Bereich.",
+        source: "news-research.net",
+        url: "https://www.news-research.net/2026/04/jonglieren-als-gehirntraining-workshop-zeigt-neue-wege-fr-therapie-prvention-und-mentale-gesundheit/",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-29",
+      },
       {
         summary: "ad-hoc-news.de (2026): 'Psychische Gesundheit: Arbeitsschutz rückt 2026 in den Fokus' – Psychische Gesundheit am Arbeitsplatz rückt 2026 regulatorisch und gesellschaftlich ins Zentrum: Neue Strategien gegen Burnout, Resilienz-Workshops und Psychoedukation zeigen nachweisliche Wirkung. Dies schafft ein wachsendes Marktumfeld für betriebliche Gesundheitsangebote und Hypnose-Coaching-Lösungen wie hypnovital.",
         source: "ad-hoc-news.de",
@@ -9840,6 +9856,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 29.04.2026
       {
+        summary: "inventivo.de (2026): 'KI Agenten Unternehmen 2026: Die nächste Stufe der Automatisierung – und was du jetzt wissen musst' – KI-Agenten erledigen 2026 eigenständig komplexe Aufgaben wie Marktrecherche, Datenanalyse und Entscheidungsvorbereitung; über 50% der deutschsprachigen Mittelständler haben KI im produktiven Einsatz oder planen es. Führungskräfte und Teams brauchen gezielte KI-Kompetenz – direktes Thought-Leadership-Thema und Wachstumsfeld für learnfluencer.ch.",
+        source: "inventivo.de",
+        url: "https://www.inventivo.de/blog/ki-automatisierung/ki-agenten-unternehmen-2026",
+        date: "2026-04",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-29",
+      },
+      {
         summary: "hrpraxis.ch (März 2026): 'Vom Trainer zum Bildungsbegleiter: Was Sie über KI-gestützte Lernformate wissen sollten' – KI-gestützte Lernformate verschieben die Rolle von Trainer zu Bildungsbegleiter: personalisierte Lernpfade in Echtzeit, adaptive Systeme und Microlearning prägen 2026 die Personalentwicklung in der Schweiz. Für learnfluencer ist dies ein direktes Signal: Der Markt für digitale, KI-unterstützte Lernkompetenz-Vermittlung wächst rasant.",
         source: "hrpraxis.ch",
         url: "https://www.hrpraxis.ch/2026/03/vom-trainer-zum-bildungsbegleiter-was-sie-ueber-ki-gestuetzte-lernformate-wissen-sollten.html",
@@ -11421,6 +11445,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 29.04.2026
       {
+        summary: "researchly.at (2026): 'KI Analyse Tools 2026: Die 5 besten im Vergleich' – KI-gestützte Analyse-Tools wie Researchly, Crayon und Kompyte automatisieren 2026 SWOT-, PESTEL- und Wettbewerbsanalysen in Minutenschnelle; KI-Tools ersetzen zunehmend manuelle strategische Analysen. Dies bestätigt die Relevanz strukturierter, geführter Marketingkonzept-Frameworks für Schweizer KMU als Alternative zu reinen KI-generierten Analysen – direktes Marktumfeld für das Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "researchly.at",
+        url: "https://www.researchly.at/post/ki-analyse-tools-vergleich",
+        date: "2026-04",
+        category: "Strategie & Analyse",
+        addedAt: "2026-04-29",
+      },
+      {
+        summary: "researchly.at (2026): 'KI-Agenten Beispiele für Unternehmen: 50+ Use Cases & Tools (2026)' – KI-Agenten übernehmen 2026 strategische Marketingaufgaben: automatische PESTEL-Analyse, SWOT-Generierung, Wettbewerbsmonitoring und Content-Erstellung. Unternehmen, die KI-Analysen ohne strukturiertes Framework einsetzen, riskieren Qualitätsverlust – unterstreicht den Bedarf nach geführten, interaktiven Marketingkonzept-Tools für Schweizer KMU.",
+        source: "researchly.at",
+        url: "https://www.researchly.at/post/ki-agenten-beispiele-unternehmen",
+        date: "2026-04",
+        category: "Marketing-Tools & Software",
+        addedAt: "2026-04-29",
+      },
+      {
         summary: "ClickUp Blog (2026): 'Top 10 SWOT Analysis Generators for 2026' – KI-gestützte SWOT-Generatoren wie SWOTPal analysieren 10-K-Berichte, Marktdaten und Wettbewerbslandschaft in Echtzeit; führende Plattformen sind Lucidchart, Miro und Creately. Steigende Nachfrage nach datengestützten SWOT-Tools unterstreicht die Relevanz eines interaktiven, strukturierten Marketingkonzept-Tools für Schweizer KMU.",
         source: "ClickUp Blog",
         url: "https://clickup.com/blog/swot-analysis-generators/",
@@ -12471,6 +12511,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "bestattungsplaner": {
     news: [
       // Neu: 29.04.2026
+      {
+        summary: "Life Festival GmbH (lifefestival.ch, 2026): Individuelle Bestattungsbegleitung in der Deutschschweiz – Renée Haefelin begleitet Menschen persönlich bei der Planung ihres eigenen Vermächtnisses und der individuellen Abschiedsfeier; Dienstleistungen umfassen Lebensgeschichte dokumentieren, Bestattung planen und persönliche Trauerfeier gestalten. Das wachsende Angebot spezialisierter Bestattungsbegleiterinnen bestätigt den Trend zur personalisierten Vorsorge – direktes Wettbewerbs- und Marktumfeld für bestattungsplaner.ch.",
+        source: "Life Festival GmbH",
+        url: "https://www.lifefestival.ch/",
+        date: "2026-04",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-29",
+      },
       {
         summary: "ZKB (2026): 'Regeln Sie Ihren digitalen Nachlass zu Lebzeiten' – Die Zürcher Kantonalbank empfiehlt, den digitalen Nachlass aktiv zu planen: Passwortlisten, Kontenübersichten und Zugangsanweisungen für Angehörige als Teil moderner Vorsorge. Steigende Sensibilisierung für digitale Vorsorge und Nachlass schafft Nachfrageumfeld für umfassende Online-Bestattungsplanungs-Plattformen wie bestattungsplaner.ch.",
         source: "ZKB",
