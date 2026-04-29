@@ -1966,6 +1966,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 29.04.2026
       {
+        summary: "Yahoo Finance / FOMC (29. April 2026): 'Fed hält Leitzins stabil – 1 Zinssenkung für 2026 prognostiziert' – Die US-Notenbank hielt an ihrem April-FOMC-Treffen die Zinsen zum dritten Mal in Folge unverändert bei 3,50–3,75%; Powell warnt vor anhaltendem Inflationsdruck durch hohe Energiepreise; Markt rechnet mit 1 Zinssenkung im späteren Jahresverlauf 2026. Das Zinsniveau beeinflusst direkt ES-Futures-Bewegungen und algorithmische Risikomanagement-Strategien – relevantes Marktumfeld für mindrocket-trading.com.",
+        source: "Yahoo Finance",
+        url: "https://finance.yahoo.com/news/live/fed-meeting-live-updates-federal-reserve-holds-rates-steady-forecasts-1-rate-cut-in-2026-180216872.html",
+        date: "2026-04-29",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-29",
+      },
+      {
+        summary: "ad-hoc-news.de (April 2026): 'S&P 500 stabilisiert sich nach Wochenhoch – Ausblick auf Inflationsdaten und Fed-Entscheidung' – Der S&P 500 hat sich nach seinem Wochenhoch stabilisiert; Markt wartete auf Inflationsdaten und den Fed-Entscheid am 29. April. Inflationsgetriebene Volatilität und Fed-Unsicherheit prägten das ES-Futures-Marktumfeld – direkt relevant für algorithmische Handelssysteme wie mindrocket-trading.com.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/s-and-p-500-stabilisiert-sich-nach-wochenhoch-ausblick-auf/69135717",
+        date: "2026-04-29",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-29",
+      },
+      {
         summary: "CNBC (28. April 2026): 'S&P 500 futures flat as Wall Street looks ahead to Mag 7 earnings and Fed decision' – ES-Futures stagnieren am 28. April vor wichtigen Quartalszahlen von Microsoft, Alphabet und Meta sowie dem Fed-Entscheid; Brent Crude über 110 USD/Barrel erhöht Inflationsdruck und Marktvolatilität. Für ES-Futures-Trader bedeutet das eine Phase erhöhter Vorsicht und präzisem Risikomanagement – direktes Marktumfeld für algorithmische Strategien.",
         source: "CNBC",
         url: "https://www.cnbc.com/2026/04/28/stock-market-today-live-updates.html",
@@ -11444,6 +11460,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "marketingplan-software": {
     news: [
       // Neu: 29.04.2026
+      {
+        summary: "online-marketing-schweiz.ch (2026): 'KI im Marketing: Warum die besten Unternehmen zuerst in Daten investieren' – 52% der Schweizer Organisationen setzen bereits KI-Agenten ein; Datenqualität und strukturierte Analyse-Frameworks sind entscheidender als der Einsatz einzelner KI-Tools. Strukturierte Marketingkonzept-Frameworks bleiben die Grundlage für erfolgreichen KI-Einsatz – bestätigt die Relevanz des interaktiven Marketingkonzept-Tools für Schweizer KMU.",
+        source: "online-marketing-schweiz.ch",
+        url: "https://www.online-marketing-schweiz.ch/allgemein/ki-im-marketing-warum-die-besten-unternehmen-zuerst-in-daten-investieren/",
+        date: "2026-04",
+        category: "Marketing-Tools & Software",
+        addedAt: "2026-04-29",
+      },
+      {
+        summary: "Dinnova AG (2026): 'Digitalisierung in der Schweiz: Die wichtigsten Trends für KMU in 2026' – Schweizer KMU stehen 2026 vor tiefgreifendem digitalem Wandel: KI-Integration, Marketing-Automatisierung und datengetriebene Entscheidungen als Kerntreiber; DSG-konforme Umsetzung entscheidend. Digitaler Transformationsdruck bei Schweizer KMU stärkt den Bedarf nach strukturierten, interaktiven Marketingkonzept-Tools.",
+        source: "Dinnova AG",
+        url: "https://dinnova.ch/blog/digitalisierung-in-der-schweiz-die-wichtigsten-trends-fuer-kmu-in-2026",
+        date: "2026-04",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-29",
+      },
       {
         summary: "researchly.at (2026): 'KI Analyse Tools 2026: Die 5 besten im Vergleich' – KI-gestützte Analyse-Tools wie Researchly, Crayon und Kompyte automatisieren 2026 SWOT-, PESTEL- und Wettbewerbsanalysen in Minutenschnelle; KI-Tools ersetzen zunehmend manuelle strategische Analysen. Dies bestätigt die Relevanz strukturierter, geführter Marketingkonzept-Frameworks für Schweizer KMU als Alternative zu reinen KI-generierten Analysen – direktes Marktumfeld für das Marketingkonzept-Tool auf learnfluencer.ch.",
         source: "researchly.at",
