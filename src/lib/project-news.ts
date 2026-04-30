@@ -5191,6 +5191,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 30.04.2026
       {
+        summary: "ad-hoc-news.de (2026): 'Psychischer Stress am Arbeitsplatz erreicht 2026 neue Höchststände' – Trotz KI und neuer digitaler Tools steigt der psychische Stress in Unternehmen 2026 auf neue Rekordwerte; burnoutbedingte Ausfälle nahmen in den letzten fünf Jahren deutlich zu; fortschreitende Digitalisierung und Fachkräftemangel verschärfen die Lage. Der messbare Anstieg psychischer Belastung am Arbeitsplatz bestätigt den wachsenden Bedarf an präventiven Entspannungs- und Resilienz-Angeboten – direktes Marktumfeld für hypnovital®-Audio-Programme im BGM.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/psychischer-stress-am-arbeitsplatz-erreicht-2026-neue-hoechststaende/68571996",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-30",
+      },
+      {
         summary: "BBGM e.V. (2026): 'Berliner Symposium 2026 – Mentale Gesundheit und Arbeit' – Das Bundesverband Betriebliches Gesundheitsmanagement veranstaltet am 7. Mai 2026 in Berlin sein jährliches Fachsymposium zum Thema mentale Gesundheit am Arbeitsplatz; Fokus auf Prävention, Resilienz und digitale BGM-Lösungen für Unternehmen. Führendes BGM-Fachforum in Deutschland bestätigt wachsende institutionelle Nachfrage nach digitalisierten Präventionsangeboten – direktes Marktumfeld für hypnovital®-Audio-Programme im betrieblichen Einsatz.",
         source: "BBGM e.V.",
         url: "https://bbgm.de/blog/2025/11/11/berliner-symposium-2026-mentale-gesundheit-und-arbeit/",
