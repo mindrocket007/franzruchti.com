@@ -1992,6 +1992,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 30.04.2026
       {
+        summary: "CNBC (29. April 2026): 'S&P 500 futures climb after Mag 7 titans Alphabet, Amazon report earnings' – S&P 500-Futures stiegen nach Börsenschluss auf neue Rekordhöhen, angetrieben von starken Quartalszahlen: Alphabet +4,9%, Amazon +3,4%; Nasdaq Composite schloss auf Allzeithoch (24.887 Punkte). S&P 500 auf Kurs für besten Monat seit 2020 (+9,3% im April). Die Mag-7-Earnings-Dynamik erzeugt erhöhte Volatilität und klare Handelsimpulse für ES-Futures-Strategien – direktes Marktumfeld für mindrocket-trading.com.",
+        source: "CNBC",
+        url: "https://www.cnbc.com/2026/04/29/stock-market-today-live-updates.html",
+        date: "2026-04-29",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-30",
+      },
+      {
+        summary: "Crowell & Moring (März 2026): 'CFTC Takes Additional Steps Toward Prediction Market Regulation' – CFTC startete formalen Rulemaking-Prozess für Prediction Markets mit ANPRM; öffentliche Kommentarfrist endete am 30. April 2026. Regulierung der Prediction Markets tangiert direkt NinjaTrader Connect und Futures-Infrastruktur – relevantes regulatorisches Umfeld für professionelle ES-Futures-Trader wie mindrocket-trading.com.",
+        source: "Crowell & Moring",
+        url: "https://www.crowell.com/en/insights/client-alerts/cftc-takes-additional-steps-toward-prediction-market-regulation-what-you-need-to-know",
+        date: "2026-03",
+        category: "Regulierung",
+        addedAt: "2026-04-30",
+      },
+      {
         summary: "Bloomberg (30. April 2026): 'Stock Market Today: Dow, S&P Live Updates for April 30, 2026' – S&P 500 steigt um 1,05% auf ca. 5.570 Punkte, angetrieben von starken Quartalszahlen von Alphabet (+4,9%) und Amazon (+3,4%); Nasdaq +1,35%. Mag-7-Earnings-Saison zeigt breite Stärke und gibt ES-Futures-Tradern wie mindrocket-trading.com klare Marktimpulse für algorithmische Strategien.",
         source: "Bloomberg",
         url: "https://www.bloomberg.com/news/articles/2026-04-29/stock-market-today-dow-s-p-live-updates",
