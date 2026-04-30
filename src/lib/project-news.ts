@@ -7026,6 +7026,38 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 30.04.2026
       {
+        summary: "Tridens Technology (2026): 'Top 6 SaaS Industry Trends for 2026' – KI-native SaaS-Architekturen, Usage-Based-Pricing und vertikale Spezialisierung dominieren den Markt; Usage-Based-Pricing löst klassische Abonnements ab und richtet Kosten nach tatsächlicher Nutzung aus; SaaS-Markt wächst 2026 auf $299 Milliarden. Der Trend zu spezialisierten, KI-gestützten Micro-SaaS-Tools bestätigt die Marktpositionierung des 12wy-planners als methoden-fokussiertes Nischentool.",
+        source: "Tridens Technology",
+        url: "https://tridenstechnology.com/saas-trends/",
+        date: "2026-04",
+        category: "SaaS & Tools",
+        addedAt: "2026-04-30",
+      },
+      {
+        summary: "Innovecs (2026): 'Top SaaS Trends in 2026: AI, Security & Growth Models' – 92% der SaaS-Unternehmen haben KI-Features lanciert oder auf der Roadmap; SaaS-Markt wächst von $197B (2023) auf $299B (2026); KI-Integration ist kein Differenzierungsmerkmal mehr, sondern Grundvoraussetzung für wettbewerbsfähige Tools. Marktexpansion und Demokratisierung von KI-Tools schaffen Chancen für spezialisierte Planungs-Apps wie den 12wy-planner.",
+        source: "Innovecs",
+        url: "https://innovecs.com/blog/the-top-7-saas-trends/",
+        date: "2026-04",
+        category: "SaaS & Tools",
+        addedAt: "2026-04-30",
+      },
+      {
+        summary: "Dodo Payments (2026): 'SaaS Industry Report 2025–2026: 50+ Stats, Trends & 2026 Forecasts' – SaaS-Markt 2026: $299 Milliarden Gesamtvolumen; Micro-SaaS-Produkte erzielen 70–80% Gewinnmargen durch niedrige Overheads und hohe Automatisierung; Usage-Based-Pricing und AI-native Architekturen prägen die Branche. Marktbedingungen für profitables Micro-SaaS sind 2026 ideal – direktes Validierungsumfeld für den 12wy-planner.",
+        source: "Dodo Payments",
+        url: "https://dodopayments.com/blogs/saas-report-trends-2025-2026",
+        date: "2026-04",
+        category: "SaaS & Tools",
+        addedAt: "2026-04-30",
+      },
+      {
+        summary: "NxCode (2026): '50 Micro SaaS Ideas for 2026 That Actually Make Money (With Revenue Data)' – Produktivitäts- und Planungstools gehören zu den profitabelsten Micro-SaaS-Kategorien 2026: 70–80% Gewinnmargen, $50K–$3M+ Jahresumsatz mit 1–5 Personen, Profitabilität in 1–2 Jahren. Das Micro-SaaS-Modell für Nischen-Produktivitätstools bestätigt die wirtschaftliche Tragfähigkeit des 12wy-planners.",
+        source: "NxCode",
+        url: "https://www.nxcode.io/resources/news/micro-saas-ideas-2026",
+        date: "2026-04",
+        category: "SaaS & Tools",
+        addedAt: "2026-04-30",
+      },
+      {
         summary: "ClickUp (2026): 'Free 12-Week Year Templates to Crush Your Goals' – ClickUp bietet kostenlose 12-Week-Year-Templates für Einzel- und Teamplanung an; hohe Nachfrage nach vorgefertigten Vorlagen in etablierten Plattformen bestätigt das Marktinteresse an der Methode. Grosse Plattformen besetzen die Template-Nische – dediziertes SaaS-Tool wie der 12wy-planner bleibt durch Methoden-Fokus und Tiefe differenziert.",
         source: "ClickUp",
         url: "https://clickup.com/blog/12-week-year-templates/",
@@ -12865,6 +12897,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "bestattungsplaner": {
     news: [
       // Neu: 30.04.2026
+      {
+        summary: "Helvetic Care (2026): 'Bestattungsvorsorge: Ersparen Sie Ihren Liebsten viel Leid und finanzielle Probleme' – Helvetic Care empfiehlt Bestattungsvorsorge als Teil umfassender Lebensplanung: Wünsche für Beerdigung, Trauerfeier und Nachlass frühzeitig dokumentieren; CHF 8'000–10'000 Kosten lassen sich durch rechtzeitige Vorsorge abfedern. Wachsendes Bewusstsein für aktive Bestattungsvorsorge bestätigt die Nachfrage nach Online-Planungsplattformen wie bestattungsplaner.ch.",
+        source: "Helvetic Care",
+        url: "https://www.helveticcare.ch/bestattungsvorsorge",
+        date: "2026-04",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-04-30",
+      },
+      {
+        summary: "bonus.ch (April 2026): 'Lebensversicherung in der Schweiz: Vergleich der Todesfallprämien im Jahr 2026' – Krankenkassenprämien steigen 2026 um durchschnittlich 4,4%; Todesfallversicherungen (CHF 10'000–20'000 Deckung) als ergänzende Bestattungsvorsorge; Prämienunterschiede bis zum Doppelten je nach Anbieter. Preisvergleich-Bedürfnis und Kostenbewusstsein der Schweizer treibt Nachfrage nach transparenten Online-Vergleichsplattformen – direktes Marktumfeld für bestattungsplaner.ch.",
+        source: "bonus.ch",
+        url: "https://www.bonus.ch/ND/Lebensversicherung-in-der-schweiz-vergleich-der-todesfallpramien-im-jahr-2026-ID202604141CLW.aspx",
+        date: "2026-04",
+        category: "Markt & Trends",
+        addedAt: "2026-04-30",
+      },
+      {
+        summary: "Handelszeitung (2026): 'Die Prämien für Todesfallversicherungen in der Schweiz variieren stark' – Analyse der Handelszeitung: Grosse Preisunterschiede zwischen Anbietern bei vergleichbaren Leistungen; Todesfallversicherungen sind wichtiger Bestandteil der Bestattungsvorsorge; Vergleichsportale gewinnen an Bedeutung. Preistransparenz wird immer wichtiger bei finanziellen Vorsorgeentscheidungen – Wachstumsumfeld für digitale Bestattungsplanungs-Plattformen wie bestattungsplaner.ch.",
+        source: "Handelszeitung",
+        url: "https://www.handelszeitung.ch/insurance/pramien-fur-todesfallversicherungen-variieren-stark-927534",
+        date: "2026-04",
+        category: "Markt & Trends",
+        addedAt: "2026-04-30",
+      },
       {
         summary: "Schweizer Verband der Bestattungsdienste / bestatter.ch (2026): 'Bestattungskosten in der Schweiz – individuelle Beratung für klare Kalkulation' – Grosse Bandbreite der Bestattungskosten: CHF 2'000 bis 10'000+; Kremation als günstigere Alternative gewinnt an Beliebtheit; regionale Kostenunterschiede sind erheblich. Hoher Informationsbedarf zu Bestattungskosten bestätigt das Potenzial für transparente Online-Vergleichsplattformen wie bestattungsplaner.ch.",
         source: "bestatter.ch",
