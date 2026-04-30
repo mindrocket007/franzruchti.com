@@ -29,6 +29,14 @@ function generateId() {
   return Math.random().toString(36).slice(2, 9);
 }
 
+function safeJson<T>(raw: string, fallback: T): T {
+  try {
+    return JSON.parse(raw) as T;
+  } catch {
+    return fallback;
+  }
+}
+
 function createGoals(count: number): Goal[] {
   return Array.from({ length: count }, () => ({ id: generateId(), text: "" }));
 }
@@ -76,52 +84,142 @@ export default function ProjectPage() {
 
   // Save indicator
   const [saved, setSaved] = useState(false);
+  const [saveError, setSaveError] = useState<string | null>(null);
+  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
-    const storedNotes = localStorage.getItem(`notes-${slug}`);
-    if (storedNotes) setNotes(storedNotes);
+    let cancelled = false;
 
-    const storedGoals = localStorage.getItem(`goals-${slug}`);
-    if (storedGoals) {
-      try {
-        setGoals(JSON.parse(storedGoals));
-      } catch {}
+    function readLocal() {
+      const ls = {
+        notes: localStorage.getItem(`notes-${slug}`),
+        goals: localStorage.getItem(`goals-${slug}`),
+        tasks: localStorage.getItem(`tasks-${slug}`),
+        accesses: localStorage.getItem(`accesses-${slug}`),
+      };
+      const parsed = {
+        notes: ls.notes ?? "",
+        goals: ls.goals ? safeJson<Goal[]>(ls.goals, []) : null,
+        tasks: ls.tasks ? safeJson<Task[]>(ls.tasks, []) : null,
+        accesses: ls.accesses ? safeJson<Access[]>(ls.accesses, []) : null,
+      };
+      const hasAny =
+        (parsed.notes && parsed.notes.length > 0) ||
+        (parsed.goals && parsed.goals.length > 0) ||
+        (parsed.tasks && parsed.tasks.length > 0) ||
+        (parsed.accesses && parsed.accesses.length > 0);
+      return { parsed, hasAny };
     }
 
-    const storedTasks = localStorage.getItem(`tasks-${slug}`);
-    if (storedTasks) {
-      try {
-        setTasks(JSON.parse(storedTasks));
-      } catch {}
+    function applyDefaults() {
+      if (project?.defaultAccesses && project.defaultAccesses.length > 0) {
+        setAccesses(
+          project.defaultAccesses.map((a) => ({
+            id: generateId(),
+            label: a.label,
+            url: a.url,
+            username: a.username,
+            password: a.password,
+            note: a.note ?? "",
+          })),
+        );
+      }
     }
 
-    const storedAccesses = localStorage.getItem(`accesses-${slug}`);
-    if (storedAccesses) {
+    async function load() {
       try {
-        setAccesses(JSON.parse(storedAccesses));
-      } catch {}
-    } else if (project?.defaultAccesses && project.defaultAccesses.length > 0) {
-      // Seed from project defaults on first visit
-      setAccesses(
-        project.defaultAccesses.map((a) => ({
-          id: generateId(),
-          label: a.label,
-          url: a.url,
-          username: a.username,
-          password: a.password,
-          note: a.note ?? "",
-        })),
-      );
+        const res = await fetch(`/api/project/${slug}/data`, { cache: "no-store" });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+
+        if (cancelled) return;
+
+        if (data.exists) {
+          setNotes(data.notes ?? "");
+          if (Array.isArray(data.goals) && data.goals.length > 0) setGoals(data.goals);
+          if (Array.isArray(data.tasks) && data.tasks.length > 0) setTasks(data.tasks);
+          if (Array.isArray(data.accesses)) {
+            if (data.accesses.length > 0) {
+              setAccesses(data.accesses);
+            } else {
+              applyDefaults();
+            }
+          }
+          // Cache copy for offline view
+          localStorage.setItem(`notes-${slug}`, data.notes ?? "");
+          localStorage.setItem(`goals-${slug}`, JSON.stringify(data.goals ?? []));
+          localStorage.setItem(`tasks-${slug}`, JSON.stringify(data.tasks ?? []));
+          localStorage.setItem(`accesses-${slug}`, JSON.stringify(data.accesses ?? []));
+        } else {
+          // No server data yet: seed from localStorage if present, else defaults
+          const { parsed, hasAny } = readLocal();
+          if (hasAny) {
+            setNotes(parsed.notes);
+            if (parsed.goals && parsed.goals.length > 0) setGoals(parsed.goals);
+            if (parsed.tasks && parsed.tasks.length > 0) setTasks(parsed.tasks);
+            if (parsed.accesses && parsed.accesses.length > 0) {
+              setAccesses(parsed.accesses);
+            } else {
+              applyDefaults();
+            }
+            // Migrate local data to server (best-effort)
+            void fetch(`/api/project/${slug}/data`, {
+              method: "PUT",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                notes: parsed.notes,
+                goals: parsed.goals ?? [],
+                tasks: parsed.tasks ?? [],
+                accesses: parsed.accesses ?? [],
+              }),
+            });
+          } else {
+            applyDefaults();
+          }
+        }
+      } catch {
+        // Network/auth failure: fall back to localStorage so the page still works
+        const { parsed } = readLocal();
+        if (cancelled) return;
+        setNotes(parsed.notes);
+        if (parsed.goals && parsed.goals.length > 0) setGoals(parsed.goals);
+        if (parsed.tasks && parsed.tasks.length > 0) setTasks(parsed.tasks);
+        if (parsed.accesses && parsed.accesses.length > 0) {
+          setAccesses(parsed.accesses);
+        } else {
+          applyDefaults();
+        }
+      } finally {
+        if (!cancelled) setLoaded(true);
+      }
     }
+
+    load();
+    return () => {
+      cancelled = true;
+    };
   }, [slug, project]);
 
-  const saveAll = useCallback(() => {
+  const saveAll = useCallback(async () => {
+    setSaveError(null);
+    // Local cache write-through for instant feedback / offline view
     localStorage.setItem(`notes-${slug}`, notes);
     localStorage.setItem(`goals-${slug}`, JSON.stringify(goals));
     localStorage.setItem(`tasks-${slug}`, JSON.stringify(tasks));
     localStorage.setItem(`accesses-${slug}`, JSON.stringify(accesses));
-    setSaved(true);
-    setTimeout(() => setSaved(false), 2000);
+
+    try {
+      const res = await fetch(`/api/project/${slug}/data`, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ notes, goals, tasks, accesses }),
+      });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      setSaved(true);
+      setTimeout(() => setSaved(false), 2000);
+    } catch (err) {
+      setSaveError(err instanceof Error ? err.message : "Speichern fehlgeschlagen");
+    }
   }, [slug, notes, goals, tasks, accesses]);
 
   // Goal handlers
@@ -457,12 +555,16 @@ export default function ProjectPage() {
       <div className="flex items-center gap-3 mb-16">
         <button
           onClick={saveAll}
-          className="bg-white text-black font-semibold px-6 py-2 rounded-lg hover:bg-neutral-200 transition-colors text-sm"
+          disabled={!loaded}
+          className="bg-white text-black font-semibold px-6 py-2 rounded-lg hover:bg-neutral-200 transition-colors text-sm disabled:opacity-50 disabled:cursor-not-allowed"
         >
           Speichern
         </button>
         {saved && (
           <span className="text-green-500 text-sm">Gespeichert</span>
+        )}
+        {saveError && (
+          <span className="text-red-500 text-sm">Fehler: {saveError}</span>
         )}
       </div>
 

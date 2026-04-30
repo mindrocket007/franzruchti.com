@@ -4,21 +4,68 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { projects } from "@/lib/projects";
 
-const NOTES_KEY = "dashboard-notes";
+const LOCAL_NOTES_KEY = "dashboard-notes";
+const DASHBOARD_SLUG = "_dashboard";
 
 export default function DashboardPage() {
   const router = useRouter();
   const [notes, setNotes] = useState("");
   const [savedAt, setSavedAt] = useState<string | null>(null);
+  const [saveError, setSaveError] = useState<string | null>(null);
+  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
-    const stored = localStorage.getItem(NOTES_KEY);
-    if (stored) setNotes(stored);
+    let cancelled = false;
+    async function load() {
+      try {
+        const res = await fetch(`/api/project/${DASHBOARD_SLUG}/data`, { cache: "no-store" });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+        if (cancelled) return;
+
+        if (data.exists) {
+          setNotes(data.notes ?? "");
+          localStorage.setItem(LOCAL_NOTES_KEY, data.notes ?? "");
+        } else {
+          // No server data: migrate from localStorage if present
+          const local = localStorage.getItem(LOCAL_NOTES_KEY) ?? "";
+          if (local) {
+            setNotes(local);
+            void fetch(`/api/project/${DASHBOARD_SLUG}/data`, {
+              method: "PUT",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ notes: local, goals: [], tasks: [], accesses: [] }),
+            });
+          }
+        }
+      } catch {
+        // Offline or auth issue: fall back to localStorage
+        const local = localStorage.getItem(LOCAL_NOTES_KEY) ?? "";
+        if (!cancelled) setNotes(local);
+      } finally {
+        if (!cancelled) setLoaded(true);
+      }
+    }
+    load();
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
-  function handleSaveNotes() {
-    localStorage.setItem(NOTES_KEY, notes);
-    setSavedAt(new Date().toLocaleTimeString("de-CH", { hour: "2-digit", minute: "2-digit" }));
+  async function handleSaveNotes() {
+    setSaveError(null);
+    localStorage.setItem(LOCAL_NOTES_KEY, notes);
+    try {
+      const res = await fetch(`/api/project/${DASHBOARD_SLUG}/data`, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ notes, goals: [], tasks: [], accesses: [] }),
+      });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      setSavedAt(new Date().toLocaleTimeString("de-CH", { hour: "2-digit", minute: "2-digit" }));
+    } catch (e) {
+      setSaveError(e instanceof Error ? e.message : "Speichern fehlgeschlagen");
+    }
   }
 
   const [importStatus, setImportStatus] = useState<string | null>(null);
@@ -35,6 +82,19 @@ export default function DashboardPage() {
           id: Math.random().toString(36).slice(2, 9),
           ...e,
         }));
+        // Read current server data so we don't overwrite notes/goals/tasks
+        const cur = await fetch(`/api/project/${slug}/data`, { cache: "no-store" });
+        const curData = cur.ok ? await cur.json() : { notes: "", goals: [], tasks: [] };
+        await fetch(`/api/project/${slug}/data`, {
+          method: "PUT",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            notes: curData.notes ?? "",
+            goals: curData.goals ?? [],
+            tasks: curData.tasks ?? [],
+            accesses: withIds,
+          }),
+        });
         localStorage.setItem(`accesses-${slug}`, JSON.stringify(withIds));
         count += withIds.length;
       }
@@ -68,9 +128,13 @@ export default function DashboardPage() {
             {savedAt && (
               <span className="text-neutral-500 text-xs">Gespeichert um {savedAt}</span>
             )}
+            {saveError && (
+              <span className="text-red-500 text-xs">Fehler: {saveError}</span>
+            )}
             <button
               onClick={handleSaveNotes}
-              className="text-xs bg-white text-black px-3 py-1 rounded hover:bg-neutral-200 transition-colors"
+              disabled={!loaded}
+              className="text-xs bg-white text-black px-3 py-1 rounded hover:bg-neutral-200 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
               Speichern
             </button>

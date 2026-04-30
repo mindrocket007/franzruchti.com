@@ -228,3 +228,20 @@ model WorkoutSet {
 
   @@index([workoutLogId])
 }
+
+// ─── Projekt-Daten (Notizen, Ziele, Tasks, Zugaenge pro Projekt) ─
+
+model ProjectData {
+  id        String   @id @default(cuid())
+  userId    String
+  slug      String
+  notes     String   @default("")
+  goals     String   @default("[]")
+  tasks     String   @default("[]")
+  accesses  String   @default("[]")
+  updatedAt DateTime @updatedAt
+  createdAt DateTime @default(now())
+
+  @@unique([userId, slug])
+  @@index([userId])
+}

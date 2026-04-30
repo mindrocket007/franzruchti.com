@@ -63,6 +63,26 @@ export const projects: Project[] = [
         file: "/projects/siz-ag/SIZ_Marketing.html",
       },
       {
+        slug: "einsatzgebiete",
+        title: "Einsatzgebiete SIZ-Diplome",
+        file: "/projects/siz-ag/SIZ_Einsatzgebiete.html",
+      },
+      {
+        slug: "diplome",
+        title: "SIZ-Diplome Übersicht",
+        file: "/projects/siz-ag/SIZ_Diplome_Uebersicht.html",
+      },
+      {
+        slug: "pruefungsarten",
+        title: "Prüfungsarten Übersicht",
+        file: "/projects/siz-ag/SIZ_Pruefungsarten.html",
+      },
+      {
+        slug: "website-analyse",
+        title: "Website-Analyse siz.ch",
+        file: "/projects/siz-ag/SIZ_Website_Analyse.html",
+      },
+      {
         slug: "12wy-planner",
         title: "12 Week Year Planner",
         file: "https://planner.learnfluencer.ch",
