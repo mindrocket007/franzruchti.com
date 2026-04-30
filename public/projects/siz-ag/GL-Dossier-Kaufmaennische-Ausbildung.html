@@ -1,0 +1,2113 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GL-Dossier: Kaufmännische Ausbildung — SIZ AG</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#185FA5;--blue-dark:#0d3d6e;--blue-light:#E6F1FB;--blue-mid:#378ADD;--green:#1D9E75;--green-light:#E1F5EE;--green-deep:#0F6E56;--teal:#0F6E56;--amber:#BA7517;--amber-light:#FAEEDA;--red:#A32D2D;--red-light:#FCEBEB;--purple:#534AB7;--purple-light:#EEEDFE;--gray:#333330;--gray-light:#F4F3EF;--gray-mid:#777770;--border:#D8D6CF;--bg:#F7F6F2;--white:#FFFFFF;--siz-blue:#185FA5;--siz-navy:#0d3d6e;--ka-accent:#185FA5;--ka-accent-light:#E6F1FB;--ka-deep:#0d3d6e}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:'IBM Plex Sans',sans-serif;background:var(--bg);color:var(--gray);font-size:14px;line-height:1.6}
+.topnav{position:sticky;top:0;z-index:100;background:var(--siz-navy);display:flex;align-items:center;gap:0;box-shadow:0 2px 12px rgba(0,0,0,.25)}
+.topnav-brand{padding:.75rem 1.5rem;color:#fff;font-weight:700;font-size:14px;border-right:1px solid rgba(255,255,255,.1);white-space:nowrap}
+.topnav-brand span{color:#7DB9E8;font-weight:400}
+.topnav-links{display:flex;gap:0;flex:1;overflow-x:auto}
+.topnav-links a{color:rgba(255,255,255,.75);text-decoration:none;padding:.75rem 1rem;font-size:12px;white-space:nowrap;transition:all .2s;border-right:1px solid rgba(255,255,255,.08)}
+.topnav-links a:hover,.topnav-links a.active{color:#fff;background:rgba(255,255,255,.1)}
+.topnav-meta{padding:.75rem 1.5rem;color:rgba(255,255,255,.45);font-size:11px;font-family:'IBM Plex Mono',monospace;white-space:nowrap;border-left:1px solid rgba(255,255,255,.1)}
+.section{padding:3rem 2rem;max-width:1280px;margin:0 auto}
+.section-hero{background:linear-gradient(135deg,var(--siz-navy) 0%,#13427a 55%,var(--blue) 100%);color:#fff;padding:4rem 2rem 3rem;position:relative;overflow:hidden}
+.section-hero::before{content:'';position:absolute;top:-50%;right:-10%;width:600px;height:600px;background:radial-gradient(circle,rgba(255,255,255,.06) 0%,transparent 70%);border-radius:50%}
+.hero-inner{max-width:1280px;margin:0 auto;position:relative;z-index:1}
+.hero-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);border-radius:20px;padding:4px 14px;font-size:11px;font-family:'IBM Plex Mono',monospace;margin-bottom:1.25rem;color:rgba(255,255,255,.9)}
+.hero-title{font-size:clamp(24px,4vw,40px);font-weight:700;line-height:1.2;margin-bottom:.5rem}
+.hero-subtitle{font-size:16px;font-weight:300;color:rgba(255,255,255,.8);margin-bottom:2rem}
+.hero-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem;margin-top:2.5rem}
+.kpi-card{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:1.25rem 1rem;text-align:center;backdrop-filter:blur(4px);transition:transform .2s,background .2s}
+.kpi-card:hover{transform:translateY(-2px);background:rgba(255,255,255,.18)}
+.kpi-num{font-size:2rem;font-weight:700;line-height:1;color:#fff}
+.kpi-label{font-size:11px;color:rgba(255,255,255,.75);margin-top:4px;line-height:1.4}
+.kpi-icon{font-size:20px;margin-bottom:6px}
+.alert-banner{background:#FFF3CD;border:1px solid #FFC107;border-radius:10px;padding:1rem 1.25rem;margin-bottom:1.5rem;display:flex;gap:12px;align-items:flex-start}
+.alert-banner-icon{font-size:20px;flex-shrink:0}
+.alert-banner-body{font-size:12px;line-height:1.6;color:#664d03}
+.alert-banner-body strong{color:#512900;display:block;margin-bottom:4px;font-size:13px}
+.insight-banner{background:var(--ka-accent-light);border:1px solid var(--ka-accent);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1.5rem;display:flex;gap:12px;align-items:flex-start}
+.insight-banner-icon{font-size:20px;flex-shrink:0}
+.insight-banner-body{font-size:12px;line-height:1.6;color:var(--ka-deep)}
+.insight-banner-body strong{display:block;margin-bottom:4px;font-size:13px}
+.sec-label{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:1.5rem;display:flex;align-items:center;gap:12px}
+.sec-label::after{content:'';flex:1;height:1px;background:var(--border)}
+.ebenen-grid{display:flex;flex-direction:column;gap:6px}
+.ebene{border:1px solid var(--border);border-radius:10px;overflow:hidden;cursor:pointer;transition:box-shadow .2s,border-color .2s}
+.ebene:hover{box-shadow:0 4px 16px rgba(0,0,0,.08)}
+.ebene-header{display:flex;align-items:center;min-height:64px}
+.ebene-num{width:56px;min-height:64px;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:18px;font-weight:700;color:#fff;flex-shrink:0}
+.ebene-info{flex:1;background:var(--white);padding:.875rem 1.25rem;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.ebene-title{font-size:14px;font-weight:600;min-width:200px;flex-shrink:0}
+.ebene-desc{font-size:12px;color:#555;flex:1;min-width:180px}
+.ebene-tags{display:flex;gap:5px;flex-wrap:wrap;flex-shrink:0;margin-left:auto}
+.ebene-siz{background:var(--white);border-top:1px solid var(--border);padding:1rem 1.25rem 1rem 72px;display:none}
+.ebene-siz.open{display:block}
+.ebene-siz-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:.875rem;margin-top:.75rem}
+.siz-item{background:var(--gray-light);border-radius:8px;padding:.875rem 1rem}
+.siz-item strong{display:block;font-size:12px;font-weight:600;color:#222;margin-bottom:4px}
+.siz-item p{font-size:11px;color:#444;line-height:1.6}
+.siz-item a{color:var(--blue);text-decoration:none;font-size:11px}
+.siz-item a:hover{text-decoration:underline}
+.siz-highlight{border-left:3px solid var(--ka-accent);background:var(--ka-accent-light)}
+.siz-highlight strong{color:var(--ka-deep)}
+.siz-warn{border-left:3px solid var(--amber);background:var(--amber-light)}
+.siz-warn strong{color:#633806}
+.siz-gap{border-left:3px solid #ccc;background:#F9F9F7}
+.siz-gap strong{color:var(--gray-mid)}
+.e1 .ebene-num{background:#1a1a18}.e2 .ebene-num{background:var(--ka-accent)}.e3 .ebene-num{background:var(--teal)}.e4 .ebene-num{background:var(--blue-mid)}.e5 .ebene-num{background:var(--green)}.e6 .ebene-num{background:var(--amber)}.e7 .ebene-num{background:var(--purple)}.e8 .ebene-num{background:var(--red)}.e9 .ebene-num{background:#333}
+.tag{display:inline-block;font-size:10px;padding:2px 9px;border-radius:10px;font-weight:500;white-space:nowrap}
+.tag-blue{background:var(--blue-light);color:var(--blue-dark)}.tag-green{background:var(--green-light);color:var(--teal)}.tag-amber{background:var(--amber-light);color:#633806}.tag-purple{background:var(--purple-light);color:var(--purple)}.tag-gray{background:var(--gray-light);color:var(--gray)}.tag-red{background:var(--red-light);color:var(--red)}.tag-siz{background:var(--ka-accent-light);color:var(--ka-deep);font-weight:600}
+.swot-grid{display:grid;grid-template-columns:1fr 1fr;gap:3px;border-radius:12px;overflow:hidden;border:1px solid var(--border)}
+.swot-cell{padding:1.5rem;background:var(--white)}
+.swot-cell:nth-child(1){border-bottom:3px solid var(--green);border-right:3px solid var(--border)}.swot-cell:nth-child(2){border-bottom:3px solid var(--red);border-left:3px solid var(--border)}.swot-cell:nth-child(3){border-top:3px solid var(--border);border-right:3px solid var(--border)}.swot-cell:nth-child(4){border-top:3px solid var(--border);border-left:3px solid var(--border)}
+.swot-head{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.875rem;display:flex;align-items:center;gap:8px}
+.swot-cell:nth-child(1) .swot-head{color:var(--teal)}.swot-cell:nth-child(2) .swot-head{color:var(--red)}.swot-cell:nth-child(3) .swot-head{color:var(--blue)}.swot-cell:nth-child(4) .swot-head{color:var(--amber)}
+.swot-items{list-style:none}
+.swot-items li{font-size:12px;color:#333;padding:4px 0;border-bottom:1px solid var(--border);display:flex;gap:8px;align-items:flex-start}
+.swot-items li:last-child{border-bottom:none}
+.swot-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0;margin-top:6px}
+.swot-cell:nth-child(1) .swot-dot{background:var(--green)}.swot-cell:nth-child(2) .swot-dot{background:var(--red)}.swot-cell:nth-child(3) .swot-dot{background:var(--blue)}.swot-cell:nth-child(4) .swot-dot{background:var(--amber)}
+.markt-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.markt-box{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:1.5rem;overflow:hidden}
+.markt-title{font-size:12px;font-weight:600;color:var(--gray-mid);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1.25rem}
+.bar-chart{display:flex;flex-direction:column;gap:10px}
+.bar-row{display:flex;align-items:center;gap:10px}
+.bar-label{font-size:11px;color:#555;width:200px;flex-shrink:0;line-height:1.3}
+.bar-track{flex:1;background:var(--gray-light);border-radius:4px;height:24px;overflow:hidden;position:relative}
+.bar-fill{height:100%;border-radius:4px;display:flex;align-items:center;padding-left:8px;font-size:11px;font-weight:600;color:#fff;transition:width 1s ease;white-space:nowrap}
+.bar-val{font-size:11px;color:#555;width:80px;flex-shrink:0;text-align:right}
+.siz-treppe{display:flex;gap:6px;margin-top:.5rem}
+.treppe-step{flex:1;border-radius:10px;padding:1.25rem 1rem;text-align:center;border:2px solid transparent;transition:transform .2s}
+.treppe-step:hover{transform:translateY(-3px)}
+.treppe-smart{background:var(--gray-light);border-color:var(--border);opacity:.55}.treppe-advanced{background:var(--ka-accent-light);border-color:var(--ka-accent)}.treppe-power{background:var(--gray-light);border-color:var(--border);opacity:.65}
+.treppe-icon{font-size:28px;margin-bottom:8px}
+.treppe-title{font-size:13px;font-weight:700;margin-bottom:4px}
+.treppe-smart .treppe-title{color:var(--gray-mid)}.treppe-advanced .treppe-title{color:var(--ka-deep)}.treppe-power .treppe-title{color:var(--gray-mid)}
+.treppe-desc{font-size:11px;line-height:1.5;color:#555}
+.treppe-badge{display:inline-block;margin-top:8px;font-size:10px;font-weight:600;padding:3px 10px;border-radius:10px}
+.treppe-smart .treppe-badge{background:var(--gray-light);color:var(--gray-mid)}.treppe-advanced .treppe-badge{background:var(--ka-accent);color:#fff}.treppe-power .treppe-badge{background:var(--gray-light);color:var(--gray-mid)}
+.steps{display:flex;flex-direction:column;gap:0}
+.step{display:flex;gap:0;position:relative}
+.step-connector{display:flex;flex-direction:column;align-items:center;width:48px;flex-shrink:0}
+.step-dot{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#fff;flex-shrink:0;z-index:1}
+.step-line{flex:1;width:2px;background:var(--border);min-height:20px}
+.step:last-child .step-line{display:none}
+.step-content{flex:1;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:10px}
+.step-meta{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--gray-mid);margin-bottom:4px}
+.step-title{font-size:14px;font-weight:600;color:var(--gray);margin-bottom:4px}
+.step-body{font-size:12px;color:#555;line-height:1.6}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.three-col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem}
+.card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:1.5rem}
+.card-title{font-size:13px;font-weight:600;color:var(--gray);margin-bottom:1rem;display:flex;align-items:center;gap:8px}
+.schulen-table-wrap{overflow-x:auto;max-height:550px;overflow-y:auto;border:1px solid var(--border);border-radius:8px;margin-top:1rem}
+table.schulen{width:100%;border-collapse:collapse;font-size:12px}
+table.schulen th{background:var(--siz-navy);color:#fff;padding:.625rem .875rem;text-align:left;font-weight:600;font-size:11px;white-space:nowrap;position:sticky;top:0;z-index:1}
+table.schulen td{padding:.625rem .875rem;border-bottom:1px solid var(--border);vertical-align:top}
+table.schulen tr:last-child td{border-bottom:none}
+table.schulen tr:nth-child(even) td{background:#FAFAF8}
+table.schulen tr:hover td{background:var(--ka-accent-light)}
+.prio-high{color:var(--ka-deep);font-weight:600}
+.badge-konkurrenz{background:var(--red-light);color:var(--red);padding:1px 7px;border-radius:8px;font-size:10px;font-weight:600}
+.badge-referenz{background:var(--green-light);color:var(--teal);padding:1px 7px;border-radius:8px;font-size:10px;font-weight:600}
+.badge-bestand{background:var(--blue-light);color:var(--blue-dark);padding:1px 7px;border-radius:8px;font-size:10px;font-weight:600}
+.badge-offen{background:var(--amber-light);color:#633806;padding:1px 7px;border-radius:8px;font-size:10px;font-weight:600}
+.download-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.download-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:1.5rem;display:flex;flex-direction:column;gap:.75rem;transition:box-shadow .2s,transform .2s}
+.download-card:hover{box-shadow:0 4px 20px rgba(0,0,0,.1);transform:translateY(-2px)}
+.dl-icon{font-size:32px}.dl-name{font-size:14px;font-weight:600;color:var(--gray)}.dl-desc{font-size:12px;color:var(--gray-mid);line-height:1.5}
+.dl-btn{display:inline-flex;align-items:center;gap:6px;background:var(--ka-accent);color:#fff;padding:.5rem 1rem;border-radius:8px;font-size:12px;font-weight:600;text-decoration:none;margin-top:auto;transition:background .2s}
+.dl-btn:hover{background:var(--ka-deep)}
+.section-divider{border:none;border-top:1px solid var(--border);margin:0}
+.fade-in{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+.fade-in.visible{opacity:1;transform:translateY(0)}
+.funnel{display:flex;flex-direction:column;gap:3px}
+.funnel-step{padding:.875rem 1.25rem;border-radius:8px;display:flex;align-items:center;gap:12px;font-size:12px}
+.funnel-icon{font-size:18px;flex-shrink:0;width:28px;text-align:center}
+.funnel-label{font-weight:600;width:200px;flex-shrink:0}
+.funnel-desc{flex:1;color:#555}
+.funnel-tag{margin-left:auto;flex-shrink:0}
+.f-primary{background:var(--ka-accent-light);border-left:4px solid var(--ka-accent)}
+.f-secondary{background:var(--blue-light);border-left:4px solid var(--blue)}
+.f-tertiary{background:var(--amber-light);border-left:4px solid var(--amber)}
+.f-long{background:var(--gray-light);border-left:4px solid #ccc}
+.hkb-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:.75rem;margin-top:1rem}
+.hkb-card{background:var(--white);border:1px solid var(--border);border-radius:8px;padding:1rem 1.25rem;border-left:4px solid var(--ka-accent)}
+.hkb-letter{display:inline-block;background:var(--ka-accent);color:#fff;width:22px;height:22px;border-radius:50%;text-align:center;font-weight:700;font-size:11px;margin-right:8px;line-height:22px}
+.hkb-title{font-size:13px;font-weight:600;margin-bottom:4px}
+.hkb-desc{font-size:11px;color:#555;line-height:1.5}
+.hkb-siz{display:inline-block;margin-top:6px;font-size:10px;background:var(--ka-accent-light);color:var(--ka-deep);padding:2px 8px;border-radius:10px;font-weight:600}
+.verband-tabs{display:flex;gap:.5rem;margin-bottom:1rem;flex-wrap:wrap}
+.verband-tab{padding:.5rem 1rem;border-radius:8px;border:1px solid var(--border);background:var(--white);cursor:pointer;font-size:12px;font-weight:500;transition:all .2s;display:flex;align-items:center;gap:6px}
+.verband-tab:hover{background:var(--ka-accent-light)}
+.verband-tab.active{background:var(--ka-accent);color:#fff;border-color:var(--ka-accent)}
+.verband-tab .count{background:rgba(0,0,0,.15);color:#fff;padding:1px 7px;border-radius:8px;font-size:10px;font-weight:700}
+.verband-tab:not(.active) .count{background:var(--ka-accent);color:#fff}
+.verband-content{display:none}
+.verband-content.active{display:block}
+.kunde-badge{display:inline-block;font-size:10px;font-weight:700;padding:3px 8px;border-radius:10px;white-space:nowrap}
+.kunde-aktiv{background:#D1FAE5;color:#065F46;border:1px solid #10B981}
+.kunde-gek{background:#FEE2E2;color:#991B1B;border:1px solid #DC2626}
+.kunde-prospect{background:#FEF3C7;color:#92400E;border:1px solid #F59E0B}
+.kunde-nein{background:#F3F4F6;color:#6B7280;border:1px solid #D1D5DB}
+.row-aktiv td{background:rgba(16,185,129,.06)!important}
+.row-aktiv:hover td{background:rgba(16,185,129,.14)!important}
+.row-gek td{background:rgba(220,38,38,.06)!important;text-decoration:line-through;opacity:.85}
+.kunden-summary{display:flex;gap:.75rem;flex-wrap:wrap;margin:.5rem 0;font-size:11px}
+.kunden-summary span{padding:3px 10px;border-radius:8px;font-weight:600}
+.ks-aktiv{background:#D1FAE5;color:#065F46}
+.ks-gek{background:#FEE2E2;color:#991B1B}
+.ks-offen{background:#F3F4F6;color:#6B7280}
+@media print{.topnav{display:none}.ebene-siz{display:block!important}.section{padding:1rem}.markt-grid,.two-col,.three-col{display:block}.markt-box,.card{margin-bottom:1rem}body{font-size:12px}.schulen-table-wrap{max-height:none;overflow:visible}.verband-content{display:block!important}.verband-tabs{display:none}}
+@media(max-width:900px){.markt-grid,.two-col{grid-template-columns:1fr}.three-col{grid-template-columns:1fr 1fr}.swot-grid{grid-template-columns:1fr}.hero-kpis{grid-template-columns:repeat(2,1fr)}.siz-treppe{flex-direction:column}}
+@media(max-width:600px){.three-col{grid-template-columns:1fr}.topnav-meta{display:none}.ebene-tags{display:none}}
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="topnav-brand">SIZ AG <span>GL-Dossier</span></div>
+  <div class="topnav-links">
+    <a href="#onepager" class="active">One-Pager</a>
+    <a href="#strategischer-befund">Strategischer Befund</a>
+    <a href="#detail">Detailanalyse E1–E9</a>
+    <a href="#au-reform">AU-Reform 26/27</a>
+    <a href="#hkb">HKB · Optionen · IDPA</a>
+    <a href="#businesscase">Business Case</a>
+    <a href="#swot">SWOT</a>
+    <a href="#nextSteps">Nächste Schritte</a>
+    <a href="#schulen">Schulen (36/120)</a>
+    <a href="#anhaenge">Anhänge</a>
+  </div>
+  <div class="topnav-meta">Kaufm. Ausbildung · April 2026</div>
+</nav>
+
+<!-- HERO -->
+<div class="section-hero" id="onepager">
+  <div class="hero-inner">
+    <div class="hero-badge">📊 GL-Dossier · SIZ AG · Kaufmännische Ausbildung Sek II — HMS/WMS/IMS · KV-Lehre · Erwachsenenbildung</div>
+    <div class="hero-title">Kaufmännische<br>Ausbildung Schweiz</div>
+    <div class="hero-subtitle">Marktanalyse &amp; SIZ-Strategiebewertung — Mittelschulen, Berufsfachschulen, KV-Verbandsschulen, Privat-Handelsschulen · April 2026<br><strong style="color:#fff;font-weight:600">120 Schulen · 36 Kunden · 2 gekündigt · 82 offen</strong></div>
+    <div class="hero-kpis">
+      <div class="kpi-card fade-in">
+        <div class="kpi-icon">🎓</div>
+        <div class="kpi-num">~6'400</div>
+        <div class="kpi-label">HMS/WMS-Lernende CH<br>schweizweit, KSHW</div>
+      </div>
+      <div class="kpi-card fade-in">
+        <div class="kpi-icon">🏛️</div>
+        <div class="kpi-num">46</div>
+        <div class="kpi-label">KSHW-Mittelschulen<br>HMS/WMS/IMS · kantonal</div>
+      </div>
+      <div class="kpi-card fade-in">
+        <div class="kpi-icon">🤝</div>
+        <div class="kpi-num">31</div>
+        <div class="kpi-label">kv edupool Partnerschulen<br>KV-Verband + kantonal</div>
+      </div>
+      <div class="kpi-card fade-in">
+        <div class="kpi-icon">🏢</div>
+        <div class="kpi-num">43</div>
+        <div class="kpi-label">VSH Privat-Handelsschulen<br>Erwachsenenbildung</div>
+      </div>
+      <div class="kpi-card fade-in">
+        <div class="kpi-icon">⚙️</div>
+        <div class="kpi-num">3</div>
+        <div class="kpi-label">SIZ AU-Module ab 26/27<br><strong>NEU: AU1+AU2 fusioniert</strong></div>
+      </div>
+      <div class="kpi-card fade-in">
+        <div class="kpi-icon">✅</div>
+        <div class="kpi-num">36/120</div>
+        <div class="kpi-label">SIZ-Kunden bereits<br>2 gek. · 82 noch offen</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- STRATEGISCHER BEFUND -->
+<div class="section" id="strategischer-befund">
+  <div class="sec-label">⚡ Strategischer Befund — Ausgangslage &amp; SIZ-Position</div>
+
+  <div class="insight-banner fade-in">
+    <div class="insight-banner-icon">✅</div>
+    <div class="insight-banner-body">
+      <strong>Der Gold-Anker: SIZ Advanced User ist im Zürcher HMS-Lehrplan als <em>obligatorisches</em> externes Zertifikat verankert.</strong>
+      Lehrplan HMS Kanton Zürich, Ausgabe 2023 (S. 19, § 1.9): «Externe Zertifikate sind obligatorischer Bestandteil der Ausbildung. In den folgenden Fachbereichen sind externe Zertifikate Pflicht: <strong>IKT: SIZ Advanced User</strong> (Schweizerisches Informatik Zertifikat).» Prüfung gegen Ende des 1. Schuljahres (S. 116). Damit ist die SIZ-Position bei den drei Zürcher HMS (KS Enge, KS Hottingen, KS Büelrain Winterthur) institutionalisiert.
+    </div>
+  </div>
+
+  <div class="insight-banner fade-in" style="background:#FAEEDA;border-color:var(--amber);color:#633806">
+    <div class="insight-banner-icon">🎯</div>
+    <div class="insight-banner-body">
+      <strong>Wichtiger Verkaufstreiber: das Langzeitpraktikum (LZP) und die IDPA-Vorbereitung</strong>
+      Bei der HMS ist das <strong>Langzeitpraktikum (LZP)</strong> der eigentliche Treiber für SIZ. Praktikumsbetriebe (Banken, Versicherungen, KMU) erwarten ICT-Kompetenz vom 1. Tag — das SIZ Advanced User am Ende des 1. Schuljahres ist der Nachweis. <strong>Ohne Praktikum kein zwingender SIZ-Bedarf</strong> — daher KSHW-Schulen prioritär. Zusätzlich zentral: die <strong>Interdisziplinäre Projektarbeit (IDPA, im Kanton ZH «Selbständige Arbeit»)</strong> als Berufsmaturitäts-Abschlussarbeit. Sie beginnt am Ende des 2. Schuljahres, umfasst mind. 40 Lektionen und verlangt Recherche, Datenanalyse, Layout, Präsentation — also <strong>genau die SIZ-AU-Kompetenzen</strong>. Die IDPA-Note bildet zusammen mit der IDAF-Erfahrungsnote die Fachnote «Selbständiges Arbeiten» und zählt für den BM-Abschluss. SIZ Advanced User aus dem 1. Schuljahr ist die methodische Grundlage für eine erfolgreiche IDPA im 3. Jahr.
+    </div>
+  </div>
+
+  <div class="alert-banner fade-in">
+    <div class="alert-banner-icon">⚠️</div>
+    <div class="alert-banner-body">
+      <strong>Doch zwei Reform-Wellen verändern das Marktumfeld:</strong>
+      (1) <strong>BiVo 2023 KV-Reform</strong> — neue Handlungskompetenzen E1–E6, davon E5/E6 als Tech-Optionen mit ICT-Schwerpunkt. (2) <strong>SIZ AU-Modul-Reform per SJ 2026/27</strong> — Module AU1 und AU2 werden zu einem neuen «AU1 Communication &amp; Presentation» fusioniert. Damit besteht das Advanced-User-Diplom neu aus 3 statt 4 Modulen. Lehrmittel und Prüfungen müssen angepasst werden. (3) <strong>Fusion KV Bildungsgruppe → kv edupool AG</strong> per 26.06.2024 hat die Verbandslandschaft neu sortiert.
+    </div>
+  </div>
+
+  <div class="three-col fade-in" style="margin-top:1.5rem">
+    <div class="card">
+      <div class="card-title">🟢 Hebel, die hier funktionieren</div>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:8px">
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--green);font-weight:700">✓</span> SIZ AU = Pflicht-Zertifikat in HMS Zürich (Lehrplan 2023)</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--green);font-weight:700">✓</span> KSHW als Dachverband: ~6'400 Lernende, 350 Partnerfirmen</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--green);font-weight:700">✓</span> Praktikum als Treiber: Betriebe verlangen ICT-Nachweis</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--green);font-weight:700">✓</span> AU3M/AU4M (Mittelschule) explizit im ZH-Lehrplan</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--green);font-weight:700">✓</span> kv edupool AG mit Mitsignatur Kfm. Verband Schweiz</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--green);font-weight:700">✓</span> AU3K/AU4K (kaufmännisch) für KV-Lehre BiVo 2023</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">🔴 Hürden &amp; Risiken</div>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:8px">
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--red);font-weight:700">✗</span> Nur Kanton ZH-HMS hat SIZ AU explizit verankert — andere optional</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--red);font-weight:700">✗</span> ICDL/ECDL konkurriert bei Erwachsenenbildung VSH</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--red);font-weight:700">✗</span> AU-Reform 26/27 erfordert Lehrmittel-Update bei Wings &amp; Partnern</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--red);font-weight:700">✗</span> Generative KI nicht in SIZ AU abgedeckt — Marktbedarf wächst</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--red);font-weight:700">✗</span> Power Platform (BI/Automate) nicht in AU — Lücke zu PU41</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--red);font-weight:700">✗</span> KSHW-Mitgliederliste nicht öffentlich verfügbar</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">🎯 SIZ-Produkt-Empfehlung pro Segment</div>
+      <p style="font-size:12px;color:#555;margin-bottom:.75rem">Differenzierter Ansatz pro Schultyp:</p>
+      <div style="display:flex;flex-direction:column;gap:6px">
+        <div style="background:var(--ka-accent-light);border-radius:6px;padding:.5rem .75rem;font-size:12px"><strong style="color:var(--ka-deep)">🥇 HMS/WMS/IMS:</strong> <span style="color:#333">AU3M/AU4M-Variante</span><br><span style="font-size:11px;color:#555">3 Module ab 2026/27 · Pflicht-Zertifikat in ZH</span></div>
+        <div style="background:var(--ka-accent-light);border-radius:6px;padding:.5rem .75rem;font-size:12px"><strong style="color:var(--ka-deep)">🥈 KV-BFS &amp; KV-Verband:</strong> <span style="color:#333">AU3K/AU4K-Variante</span><br><span style="font-size:11px;color:#555">BiVo 2023 e1–e4 · 31 kv edupool-Schulen</span></div>
+        <div style="background:var(--gray-light);border-radius:6px;padding:.5rem .75rem;font-size:12px"><strong style="color:var(--gray-mid)">💎 Privat (VSH):</strong> <span style="color:#333">Smart-User &amp; Advanced-User</span><br><span style="font-size:11px;color:#555">Erwachsene · ICT-Add-on · ICDL-Konkurrenz</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- EBENEN E1-E9 -->
+<div class="section" id="detail">
+  <div class="sec-label">Systemübersicht — Ebenen E1 bis E9 (klicken für Details)</div>
+  <div class="ebenen-grid">
+
+    <div class="ebene e1 fade-in" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E1</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Gesetzliche Grundlage / SBFI</div>
+          <div class="ebene-desc">BBG SR 412.10 · BiVo 2023 Kauffrau/Kaufmann EFZ · Berufsmaturitätsverordnung · Bildungsplan SOG</div>
+          <div class="ebene-tags"><span class="tag tag-gray">Bundesebene</span><span class="tag tag-gray">BiVo 2023</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="ebene-siz-grid">
+          <div class="siz-item"><strong>Berufsbezeichnung &amp; Abschlüsse</strong><p>Kauffrau/Kaufmann EFZ (Eidg. Fähigkeitszeugnis)<br>+ Berufsmaturität «Wirtschaft &amp; Dienstleistungen, Typ Wirtschaft»<br>FR: Employé/Employée de commerce CFC<br>IT: Impiegato/-a di commercio AFC</p></div>
+          <div class="siz-item"><strong>Gesetzliche Grundlage</strong><p>Art. 17 BBG (SR 412.10) · BiVo Kauffrau/Kaufmann EFZ vom 04.11.2021 (in Kraft seit 01.08.2023) · Bildungsplan SOG vom 21.11.2014<br>Berufsmaturitätsverordnung BMV vom 24.06.2009</p></div>
+          <div class="siz-item"><strong>SBFI-Status</strong><p>HMS/WMS/IMS = «Schulisch organisierte Grundbildung» (SOG) · Modell 3+1 (3 Jahre Schule + 1 Jahr Praktikum) · Bundes- und Kantonsfinanziert</p></div>
+          <div class="siz-item siz-highlight"><strong>🔗 Quellen</strong><p><a href="https://www.becc.admin.ch" target="_blank">SBFI Berufsverzeichnis</a><br><a href="https://www.bikas.ch" target="_blank">bikas.ch (Bildung Kaufleute Schweiz)</a><br><a href="https://www.kshw.ch" target="_blank">kshw.ch</a></p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ebene e2 fade-in" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E2</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Trägerschaftslandschaft (4 Modelle)</div>
+          <div class="ebene-desc">Kantonale Mittelschulen · Kantonale BFS · Privatrechtliche KV-Verbandsschulen mit Leistungsauftrag · Echte Privatschulen</div>
+          <div class="ebene-tags"><span class="tag tag-blue">4 Modelle</span><span class="tag tag-siz">CRM-relevant</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="ebene-siz-grid">
+          <div class="siz-item siz-highlight"><strong>1. Kantonale Mittelschule (HMS/WMS/IMS)</strong><p>43 kantonal · 2 KV-Verband · 1 privat<br>Beispiele: KS Enge, KS Hottingen, KS Büelrain WI, WMS Bern, WMS Reinach<br>SIZ-Variante: <strong>AU3M / AU4M</strong></p></div>
+          <div class="siz-item"><strong>2. Kantonale Berufsfachschule (KV-Lehre)</strong><p>BBZ, BWZ, KBZ unter Kanton<br>Beispiele: KBZSG St. Gallen, BBB Baden, BBZ Olten, BWZ Lyss<br>SIZ-Variante: <strong>AU3K / AU4K</strong></p></div>
+          <div class="siz-item"><strong>3. KV-Verbands-Schule (privatrechtlich + Leistungsauftrag)</strong><p>11 Mitgliedsschulen ehem. KV Bildungsgruppe (heute kv edupool AG)<br>Beispiele: Wirtschaftsschule KV Zürich (~3'800 Lernende, gegr. 1887), KV Luzern, HKV Aarau, WKS KV Bildung Bern<br>SIZ-Variante: <strong>AU3K / AU4K</strong></p></div>
+          <div class="siz-item"><strong>4. Echte Privatschule (Erwachsenenbildung)</strong><p>34 VSH-Mitglieder<br>Beispiele: AKAD, Benedict, Feusi, HSO, Juventus, Minerva, sfb, NSH<br>SIZ optional als ICT-Add-on</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ebene e3 fade-in" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E3</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Lehrplan HMS Kanton Zürich 2023 — SIZ Pflicht</div>
+          <div class="ebene-desc"><strong>SIZ Advanced User = obligatorisches externes Zertifikat</strong> · Prüfung Ende 1. Schuljahr · 12.5 Jahreslektionen IKT</div>
+          <div class="ebene-tags"><span class="tag tag-green">SIZ Pflicht</span><span class="tag tag-amber">Gold-Anker</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="ebene-siz-grid">
+          <div class="siz-item siz-highlight"><strong>✅ Wörtlich aus Lehrplan HMS ZH 2023, S. 19</strong><p>«Externe Zertifikate sind obligatorischer Bestandteil der Ausbildung. In den folgenden Fachbereichen sind externe Zertifikate Pflicht: <strong>IKT: SIZ Advanced User</strong> · IKT: Abacus Finanzbuchhaltung · Englisch: Cambridge First · Französisch: DELF B1»</p></div>
+          <div class="siz-item siz-highlight"><strong>✅ Lehrplan S. 116</strong><p>«Gegen Ende des ersten Schuljahres findet die externe Zertifikatsprüfung (SIZ Advanced User) statt. Die Vorbereitung ist integrativer Bestandteil des Lehrplans.»</p></div>
+          <div class="siz-item siz-highlight"><strong>✅ Lehrplan S. 127, 129</strong><p>«SIZ AU3M im 1. Schuljahr» (Texte) und «SIZ AU4M im 1. Schuljahr» (Tabellen) — explizite Mittelschul-Variante!</p></div>
+          <div class="siz-item"><strong>IKT-Stundentafel HMS</strong><p>5+4+3+3+5+5 = 12.5 Jahreslektionen IKT über 6 Semester · sehr hoher Anteil im Vergleich zum Gymnasium</p></div>
+          <div class="siz-item siz-warn"><strong>⚠️ Risiko: Nur ZH-HMS verankert</strong><p>Andere Kantone (BE, AG, LU, BS, SG etc.) haben SIZ optional — nicht obligatorisch. Risiko bei Lehrplan-Revisionen, dass SIZ rausfliegt. Präventiv-Aktion: KSHW-Tagung &amp; kantonale Lobby</p></div>
+          <div class="siz-item"><strong>🔗 Quelle</strong><p><a href="https://www.ken.ch/fileadmin/content/03_HMS/Lehrplan_HMS_2023_24.pdf" target="_blank">Lehrplan HMS Kanton ZH 2023 (PDF, 155 S.)</a></p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ebene e4 fade-in" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E4</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Verbände &amp; Schlüsselpersonen</div>
+          <div class="ebene-desc">KSHW · SKKBS · kv edupool AG · VSH · Kfm. Verband Schweiz · IGKG · BIKAS</div>
+          <div class="ebene-tags"><span class="tag tag-blue">7 Verbände</span><span class="tag tag-siz">Akquise-Pfade</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="ebene-siz-grid">
+          <div class="siz-item siz-highlight"><strong>KSHW — Konferenz Schweizer Handels- u. Wirtschaftsmittelschulen</strong><p>~50 HMS/WMS-Mittelschulen · ~6'400 Lernende · 350 Praktikums-Partnerfirmen<br><strong>Präsident:</strong> Flavio Maggi (Direttore CPC Lugano)<br><strong>Vizepräs.:</strong> Stephan Amstutz (Vizerektor KS Hottingen ZH)<br>Sekretariat: Gletterens · sekretariat@kshw.ch · <a href="https://www.kshw.ch" target="_blank">kshw.ch</a></p></div>
+          <div class="siz-item siz-highlight"><strong>SKKBS / CSEPC</strong><p>Rektorenkonferenz aller kfm. Berufsfachschulen<br><strong>Präs.:</strong> Peter Kaeser (WKS KV Bildung Bern)<br><strong>Vize:</strong> Gabriel Willemin (École prof. comm. Lausanne)<br>GS: Andrea Carbonnet, Freiburg<br><a href="https://www.skkbs-csepc.ch" target="_blank">skkbs-csepc.ch</a></p></div>
+          <div class="siz-item siz-highlight"><strong>kv edupool AG (NEU 2024)</strong><p>Sitz: Baarerstrasse 77, 6300 Zug · UID CHE-364.040.400<br>Fusion 26.06.2024 (KV Bildungsgruppe + edupool.ch)<br><strong>VR-Präs.:</strong> Thomas Kölliker<br><strong>Co-CEO:</strong> Caroline Köthe + Judith Wespi-Krummenacher<br>31 Partnerschulen · &gt;4'000 Prüfungen/J · <a href="https://www.kv-edupool.ch" target="_blank">kv-edupool.ch</a></p></div>
+          <div class="siz-item"><strong>VSH — Verband Schweiz. Handelsschulen</strong><p>34 Privatschulen · gegr. 1978 · Sitz Bern<br><strong>Präs.:</strong> Andreas Hösli (Kalaidos Bildungsgruppe)<br><strong>Vize:</strong> Lukas Kmoch (Feusi Bildungszentrum)<br><strong>GF:</strong> Christian Hodler · Belpstrasse 41, 3007 Bern<br><a href="https://www.vsh.swiss" target="_blank">vsh.swiss</a></p></div>
+          <div class="siz-item"><strong>Kaufmännischer Verband Schweiz (kfmv)</strong><p>~37'800 Mitglieder · 23 Sektionen · Hauptträger KV-Verbandsschulen<br><strong>Präs.:</strong> Daniel Jositsch (SR ZH)<br><strong>CEO:</strong> Sascha M. Burkhalter<br><a href="https://www.kfmv.ch" target="_blank">kfmv.ch</a> · T 044 283 45 45</p></div>
+          <div class="siz-item"><strong>IGKG &amp; BIKAS</strong><p><strong>IGKG:</strong> Branche DA · GL Karin Imboden · igkg.ch<br><strong>BIKAS:</strong> Trägerin BiVo 2023 · Co-Präs. Bruno Schumacher (Post) + Nicole Meier · GL Marco Niklaus · bikas.ch</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ebene e5 fade-in" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E5</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Praktikum (LZP) als SIZ-Treiber</div>
+          <div class="ebene-desc">Langzeitpraktikum 1 Jahr · ~350 Partnerfirmen · Praktikumsbetriebe verlangen ICT-Kompetenz</div>
+          <div class="ebene-tags"><span class="tag tag-green">SIZ-Treiber</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="ebene-siz-grid">
+          <div class="siz-item siz-highlight"><strong>⭐ Warum HMS-Schulen SIZ machen</strong><p>Lehrplan HMS ZH § 6 (S. 152): «Externes Langzeitpraktikum von mindestens einem Jahr.» Praktikumsbetriebe (Banken, Versicherungen, KMU) erwarten <strong>ICT-Kompetenz vom 1. Tag</strong> — SIZ AU am Ende des 1. Schuljahres ist der Nachweis. <strong>Ohne Praktikum kein SIZ-Bedarf</strong> — daher KSHW-Schulen prioritär.</p></div>
+          <div class="siz-item"><strong>Vertragliche Basis</strong><p>Praktikumsvertrag (Betrieb ↔ Lernender) + Rahmenvertrag (Betrieb ↔ Schule) · Schulische Betreuungsperson inkl. Betriebsbesuch</p></div>
+          <div class="siz-item"><strong>Praktikums-Partnerfirmen</strong><p>KSHW publiziert &gt;150 Logos (von 350): UBS, Coop, Raiffeisen, BCV, Migros, SRF, etc. · Vollständige Liste nicht öffentlich · IGKG Zürich führt eigene Liste</p></div>
+          <div class="siz-item"><strong>Kantone Zürich-Standorte</strong><p>KS Enge (HMS), KS Hottingen (HMS+IMS), KS Büelrain WI (HMS+IMS) — alle drei mit gemeinsamem Lehrplan, Bildungsratsbeschluss BRB 9/2012, Neufassung 2023</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ebene e6 fade-in" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E6</div>
+        <div class="ebene-info">
+          <div class="ebene-title">SIZ AU-Modul-Reform per SJ 2026/27</div>
+          <div class="ebene-desc"><strong>3 Module statt 4</strong> — AU1+AU2 fusionieren zu «AU1 Communication &amp; Presentation»</div>
+          <div class="ebene-tags"><span class="tag tag-amber">NEU 26/27</span><span class="tag tag-siz">3 Module</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="ebene-siz-grid">
+          <div class="siz-item siz-highlight"><strong>📅 Was ändert sich SJ 2026/27</strong><p>Prüfungskommission entscheidet: AU1 «Kommunikation» und AU2 «Präsentation» werden zu einem neuen Modul «<strong>AU1 Communication &amp; Presentation</strong>» fusioniert. Damit besteht das ICT Advanced-User-Diplom neu aus <strong>3 statt 4 Modulen</strong>.</p></div>
+          <div class="siz-item"><strong>Neue 3-Modul-Struktur</strong><p><strong>AU1 Communication &amp; Presentation</strong> (kombiniert)<br><strong>AU3 Texte</strong> (K + M)<br><strong>AU4 Tabellen</strong> (K + M)<br>Diplom: 3 von 3 Modulen, Schnitt ≥ 4.0</p></div>
+          <div class="siz-item siz-warn"><strong>⚠️ Auswirkungen Lehrmittel</strong><p>Wings und andere Partner überarbeiten ihre Lehrmittel · Bestehende AU1- und AU2-Prüfungen bleiben übergangsweise · Neue MID (Modul-Identifikation) im Laufe 2026 · Schulen müssen Stundentafel anpassen</p></div>
+          <div class="siz-item"><strong>K- und M-Variante bleiben</strong><p>AU3K/AU4K = kaufmännische Berufsfachschule (KV-Lehre, BiVo 2023)<br>AU3M/AU4M = Mittelschule (HMS/WMS/IMS)<br>AU1 (neu kombiniert) = einheitlich, ohne K/M-Differenzierung</p></div>
+          <div class="siz-item siz-highlight"><strong>🔗 Quellen</strong><p><a href="https://siz.ch/newsflash-oktober2025/" target="_blank">SIZ Newsflash Oktober 2025</a><br><a href="https://siz.ch/newsflash-dezember-2025/" target="_blank">SIZ Newsflash Dezember 2025</a></p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ebene e7 fade-in" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E7</div>
+        <div class="ebene-info">
+          <div class="ebene-title">SIZ-Produkt-Positionierung</div>
+          <div class="ebene-desc">ICT Advanced-User SIZ = Primärprodukt · 3 Module ab 26/27 · CHF 360/TN · M-Variante für HMS, K-Variante für KV-Lehre</div>
+          <div class="ebene-tags"><span class="tag tag-green">Advanced-User</span><span class="tag tag-siz">CHF 360/TN</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div style="margin-top:.75rem">
+          <div class="siz-treppe">
+            <div class="treppe-step treppe-smart">
+              <div class="treppe-icon">💡</div>
+              <div class="treppe-title">ICT Smart-User SIZ</div>
+              <div class="treppe-desc">Office-Grundlagen · für Sek I, Erwachsene Wiedereinsteiger · Niveau zu tief für HMS</div>
+              <div class="treppe-badge">Sekundär (Erwachsene)</div>
+            </div>
+            <div class="treppe-step treppe-advanced">
+              <div class="treppe-icon">🎯</div>
+              <div class="treppe-title">ICT Advanced-User SIZ</div>
+              <div class="treppe-desc">3 Module ab SJ 26/27: AU1 Komm.&amp;Präs. · AU3 Texte · AU4 Tabellen · M-Variante (HMS) und K-Variante (KV) · IN HMS-LEHRPLAN VERANKERT</div>
+              <div class="treppe-badge">✅ Primär-Empfehlung</div>
+            </div>
+            <div class="treppe-step treppe-power">
+              <div class="treppe-icon">⚙️</div>
+              <div class="treppe-title">ICT Power-User SIZ</div>
+              <div class="treppe-desc">Data &amp; Technology (PU41) · Systems &amp; Network (PU45) · Über Anforderung HMS · für IMS attraktiv</div>
+              <div class="treppe-badge">Tertiär (IMS)</div>
+            </div>
+          </div>
+          <div class="siz-item siz-highlight" style="margin-top:1rem"><strong>⭐ Umsatz-Kalkulation</strong><p><strong>ICT Advanced-User SIZ:</strong> 3 Module × CHF 120 = <strong>CHF 360/TN</strong> (alte Struktur 4 × 90 = 360 — gleicher Preis bei 3 Modulen)<br>Bei ~6'400 HMS/WMS-Lernenden &amp; ~80 % SIZ-Marktanteil = <strong>~CHF 1.84 Mio./Jahr</strong> aus HMS allein.<br>Plus KV-Lehre Schweiz (BiVo 2023, Tech-Option) &amp; Erwachsenenbildung kv edupool/VSH = Multiplikator-Effekt</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ebene e8 fade-in" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E8</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Bildungsanbieter / Schulen — 120 Schulen</div>
+          <div class="ebene-desc">46 KSHW (HMS/WMS/IMS) · 31 kv edupool · 43 VSH · siehe Sektion «Schulen» unten</div>
+          <div class="ebene-tags"><span class="tag tag-red">Marktkanal</span><span class="tag tag-gray">120 Schulen</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="ebene-siz-grid">
+          <div class="siz-item siz-highlight"><strong>KSHW: 46 Mittelschulen</strong><p>43 kantonal · 2 KV-Verband · 1 privat<br>Davon 3 Zürcher HMS mit gemeinsamem Lehrplan: KS Enge, KS Hottingen, KS Büelrain WI<br>Vollständige Liste in Sektion «Schulen» unten</p></div>
+          <div class="siz-item"><strong>kv edupool AG: 31 Partnerschulen</strong><p>14 KV-Verband · 16 kantonal · 1 privat<br>Inkludiert die 11 KV-Verbandsschulen (Wirtschaftsschule KV Zürich, KV Luzern, HKV Aarau, WKS Bern etc.) plus weitere kantonale BFS</p></div>
+          <div class="siz-item"><strong>VSH: 43 Privatschulen</strong><p>43 privat<br>Erwachsenenbildung mit Handelsdiplom VSH · konkurriert mit kv edupool-Diplom · Beide nicht-formal (kein EFZ)</p></div>
+          <div class="siz-item siz-highlight"><strong>HubSpot-Integration</strong><p>Alle 120 Schulen via Python-Script importiert/aktualisiert · Custom Properties: <code>kshw_mitglied</code>, <code>kv_edupool_partner</code>, <code>vsh_mitglied</code> · Bestehende Companies werden über Kürzel matched</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ebene e9 fade-in" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E9</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Lernenden-Profil &amp; Marktentwicklung</div>
+          <div class="ebene-desc">~6'400 HMS/WMS schweizweit · ZH wachsend · BFS-Szenario +10 % EFZ bis 2033 · Demografie-Treiber</div>
+          <div class="ebene-tags"><span class="tag tag-gray">Marktdaten</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="ebene-siz-grid">
+          <div class="siz-item"><strong>Typisches HMS-Profil</strong><p>Alter: 15–18 Jahre · Eintritt nach 2./3. Sek · Sek-A-Quote 79 % · Frauen 43 % · Schweizer-Anteil 88 % · 100 % Kantonseinwohner · Vorbildung ähnlich Kurzgymnasium</p></div>
+          <div class="siz-item"><strong>Kanton Zürich Wachstum</strong><p>HMS 2008/09 → 2018/19: +24 % · 2022/23: 490 Lernende (1.+2.+3. Klasse) · Abschlüsse stabil bei 125–129/Jahr · Bestehensquote QV 99.8 %</p></div>
+          <div class="siz-item"><strong>Schweizweiter Trend gemischt</strong><p><strong>Wachsend:</strong> ZH, BS, GE, AG (+15 %)<br><strong>Stagnation:</strong> TI, NE, JU<br><strong>Schliessung:</strong> WMS Willisau (LU) 2024 — wegen sinkender Anmeldungen seit 2008</p></div>
+          <div class="siz-item siz-highlight"><strong>BFS-Szenarien 2024–2033</strong><p>EFZ: +10 % · Gymi: +17 % · FMS: +19 % · ICT-Berufe: +32 %<br>HMS profitiert vom Wachstum, verliert aber relativ Marktanteile zum Gymnasium · Praktikum als Differenzierungsmerkmal stärken</p></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- AU-REFORM -->
+<div class="section" id="au-reform">
+  <div class="sec-label">⚙️ AU-Modul-Reform — Neue Struktur ab Schuljahr 2026/27</div>
+  <div class="alert-banner fade-in">
+    <div class="alert-banner-icon">🔄</div>
+    <div class="alert-banner-body">
+      <strong>Wichtige Änderung: 3 Module statt 4 ab SJ 2026/27</strong>
+      Die Prüfungskommission hat die Fusion von AU1 (Kommunikation) und AU2 (Präsentation) zu einem neuen Modul beschlossen. Damit besteht das ICT Advanced-User-Diplom neu aus 3 Modulen. Lehrmittel-Partner (Wings et al.) überarbeiten ihre Materialien. MID-Dokumente werden im Laufe 2026 publiziert.
+    </div>
+  </div>
+  <table class="schulen" style="margin-top:1rem">
+    <thead><tr><th>Modul (neu ab 26/27)</th><th>Inhalt</th><th>Variante K (KV-Lehre)</th><th>Variante M (Mittelschule)</th></tr></thead>
+    <tbody>
+      <tr><td><strong>AU1 Communication &amp; Presentation</strong> <span class="badge-offen">NEU</span></td><td>ICT-Grundlagen, Groupware, E-Mail, Internet-Recherche + PowerPoint, Multimedia-Präsentationen (Fusion AU1+AU2)</td><td>einheitlich</td><td>einheitlich</td></tr>
+      <tr><td><strong>AU3 Texte</strong></td><td>Word — Dokumente, Formatvorlagen, Briefe, Mahnungen, Berichte</td><td><strong>AU3K</strong> (kaufmännisch)</td><td><strong>AU3M</strong> (Mittelschule)</td></tr>
+      <tr><td><strong>AU4 Tabellen</strong></td><td>Excel — Berechnungen, Pivot, Diagramme, Statistik</td><td><strong>AU4K</strong> (kaufmännisch)</td><td><strong>AU4M</strong> (Mittelschule)</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<hr class="section-divider">
+
+<!-- HKB-MAPPING BiVo 2023 -->
+<div class="section" id="hkb">
+  <div class="sec-label">Handlungskompetenzbereich E «Technologie» — BiVo 2023 Kauffrau/Kaufmann EFZ (SIZ-Mapping)</div>
+  <p style="font-size:13px;color:#555;margin-bottom:1rem">Der HKB E «Einsatz von Technologien der digitalen Arbeitswelt» umfasst <strong>obligatorisch e1–e4 für alle Lernenden</strong>. <strong>e5 und e6 gehören zur Wahl-Option «Technologie»</strong> und sind nicht einzeln wählbar.</p>
+
+  <div class="insight-banner fade-in" style="margin-bottom:1rem">
+    <div class="insight-banner-icon">📋</div>
+    <div class="insight-banner-body">
+      <strong>Wie funktioniert die Wahl unter BiVo 2023?</strong>
+      Die BiVo 2023 hat <strong>zwei voneinander unabhängige Wahlbereiche</strong> für KV-Lernende: (1) <strong>Wahlpflichtbereich (WPB)</strong> ab dem 1. Lehrjahr — eine Variante der zweiten Fremdsprache. (2) <strong>Optionen im 3. Lehrjahr</strong> — eine von vier Vertiefungen. Die Option «Technologie» entspricht den Kompetenzen e5+e6 zusammen — man kann <strong>nicht nur eine</strong> davon wählen.
+    </div>
+  </div>
+
+  <h3 style="margin:1.5rem 0 .5rem 0;color:var(--ka-deep)">A) Pflicht für alle: e1–e4</h3>
+  <div class="hkb-grid">
+    <div class="hkb-card">
+      <span class="hkb-letter">e1</span><span class="hkb-title">Anwendungen anwenden</span>
+      <div class="hkb-desc">Office-Anwendungen im kaufmännischen Bereich anwenden (Word, Excel, PowerPoint, E-Mail, Browser)</div>
+      <span class="hkb-siz">🎯 SIZ AU1, AU3 (kombiniert)</span>
+    </div>
+    <div class="hkb-card">
+      <span class="hkb-letter">e2</span><span class="hkb-title">Information recherchieren</span>
+      <div class="hkb-desc">Informationen recherchieren und bewerten (Internet-Suche, Datenbanken, Quellenkritik)</div>
+      <span class="hkb-siz">🎯 SIZ AU1, AU3</span>
+    </div>
+    <div class="hkb-card">
+      <span class="hkb-letter">e3</span><span class="hkb-title">Statistiken auswerten</span>
+      <div class="hkb-desc">Statistiken und Daten auswerten (Excel-Funktionen, Diagramme, Pivot, einfache Statistik)</div>
+      <span class="hkb-siz">🎯 SIZ AU4</span>
+    </div>
+    <div class="hkb-card">
+      <span class="hkb-letter">e4</span><span class="hkb-title">Multimedia erstellen</span>
+      <div class="hkb-desc">Multimedia-Inhalte erstellen (Präsentationen, einfache Bild-/Video-Bearbeitung, Corporate Design)</div>
+      <span class="hkb-siz">🎯 SIZ AU1 (neu, inkl. Präs.)</span>
+    </div>
+  </div>
+
+  <h3 style="margin:1.5rem 0 .5rem 0;color:var(--ka-deep)">B) Optionen im 3. Lehrjahr — eine von vier wählen</h3>
+  <p style="font-size:12px;color:#555;margin-bottom:1rem">Spätestens am Ende des 2. Lehrjahres einigen sich Lehrbetrieb und Lernende auf <strong>genau eine Option</strong>. Die Wahl wird im Schullehrplan berücksichtigt. Die Option wird nicht im Lehrvertrag eingetragen.</p>
+  <div class="hkb-grid">
+    <div class="hkb-card" style="border-left-color:var(--blue)">
+      <span class="hkb-letter" style="background:var(--blue)">F</span><span class="hkb-title">Option Finanzen</span>
+      <div class="hkb-desc">Buchhalterische Aufgaben ausführen, bei der Lohnbuchhaltung und der Erstellung des Jahresabschlusses mitarbeiten</div>
+      <span class="hkb-siz" style="background:#FAEEDA;color:#633806">🎓 BM2-Empfehlung — wer Berufsmatura Wirtschaft anstrebt, sollte Finanzen wählen</span>
+    </div>
+    <div class="hkb-card" style="border-left-color:var(--green)">
+      <span class="hkb-letter" style="background:var(--green)">D</span><span class="hkb-title">Option Kommunikation Landessprache</span>
+      <div class="hkb-desc">Anspruchsvolle Beratungs- und Verkaufsgespräche oder Verhandlungen auf Deutsch führen (D-CH); FR/IT in den anderen Sprachregionen</div>
+      <span class="hkb-siz">Sprache vertieft</span>
+    </div>
+    <div class="hkb-card" style="border-left-color:var(--purple)">
+      <span class="hkb-letter" style="background:var(--purple)">E</span><span class="hkb-title">Option Kommunikation Fremdsprache</span>
+      <div class="hkb-desc">Anspruchsvolle Beratungs- und Verkaufsgespräche oder Verhandlungen auf Englisch führen</div>
+      <span class="hkb-siz">Englisch vertieft</span>
+    </div>
+    <div class="hkb-card" style="border-left-color:var(--amber);background:var(--amber-light)">
+      <span class="hkb-letter" style="background:var(--amber)">T</span><span class="hkb-title">Option Technologie (e5 + e6)</span>
+      <div class="hkb-desc"><strong>e5:</strong> Datenbanken und Inhaltsverwaltungssysteme einrichten und betreuen, Mitarbeitende beim Einsatz unterstützen<br><strong>e6:</strong> Daten und Datensätze mit geeigneten Programmen evaluieren und Resultate aufbereiten</div>
+      <span class="hkb-siz" style="background:#FCEBEB;color:#A32D2D">⚠️ NICHT verfügbar bei BM1 (Berufsmaturität integriert)</span><br>
+      <span class="hkb-siz" style="margin-top:4px">🎯 SIZ Power-User PU41 + PU45 · perfekter Anknüpfungspunkt für neues AU7 «Power Platform Light»</span>
+    </div>
+  </div>
+
+  <h3 style="margin:1.5rem 0 .5rem 0;color:var(--ka-deep)">C) Wahlpflichtbereich (WPB) — zweite Fremdsprache</h3>
+  <p style="font-size:12px;color:#555;margin-bottom:1rem">Unabhängig von der Optionen-Wahl entscheiden sich KV-Lernende <strong>zu Beginn der Lehre</strong> für eine Variante der zweiten Fremdsprache (in D-CH üblicherweise Französisch). <strong>Mit Berufsmaturität BM1 ist nur WPB A möglich</strong>.</p>
+  <div class="hkb-grid">
+    <div class="hkb-card" style="border-left-color:var(--ka-accent)">
+      <span class="hkb-letter" style="background:var(--ka-accent)">A</span><span class="hkb-title">WPB A — Französisch B1 (DELF)</span>
+      <div class="hkb-desc">Vertiefte Sprachkompetenz mündlich und schriftlich auf B1-Niveau, mit Vorbereitung auf das DELF-B1-Zertifikat</div>
+      <span class="hkb-siz" style="background:#FAEEDA;color:#633806">🎓 Pflicht für BM1 (Berufsmatura integriert)</span>
+    </div>
+    <div class="hkb-card" style="border-left-color:var(--gray-mid)">
+      <span class="hkb-letter" style="background:var(--gray-mid)">B</span><span class="hkb-title">WPB B — Französisch mit Projekt</span>
+      <div class="hkb-desc">Mündliche Kommunikation auf B1-Niveau + schriftlich auf A2-Niveau · Erwerb kultureller Kompetenzen mit individueller Projektarbeit</div>
+      <span class="hkb-siz">Sprache leichter, Projektarbeit-Fokus</span>
+    </div>
+  </div>
+
+  <div class="alert-banner fade-in" style="margin-top:1.5rem">
+    <div class="alert-banner-icon">⚠️</div>
+    <div class="alert-banner-body">
+      <strong>Wichtig für SIZ-Strategie</strong>
+      Wer e5/e6 nicht macht (also nicht Option Technologie wählt), ist trotzdem mit e1–e4 in Kontakt mit allen SIZ AU-Inhalten. <strong>Die Tech-Option erweitert das ICT-Niveau</strong> in Richtung Datenbanken/CMS/BI — perfekter Anknüpfungspunkt für SIZ Power-User. <strong>Allerdings:</strong> Lernende mit BM1 (integrierte Berufsmaturität) können die Tech-Option <em>nicht</em> wählen — das limitiert PU41/PU45 auf KV-Lernende ohne BM (E-Profil) und auf Quereinsteiger via Erwachsenenbildung. Die HMS/WMS-Mittelschulen haben eine eigene Stundentafel ohne dieses Optionen-System (12.5 Jahreslektionen IKT).
+    </div>
+  </div>
+
+  <h3 style="margin:1.5rem 0 .5rem 0;color:var(--ka-deep)">D) IDPA-Vorbereitung — Interdisziplinäre Projektarbeit</h3>
+  <p style="font-size:12px;color:#555;margin-bottom:1rem">Die <strong>Interdisziplinäre Projektarbeit (IDPA)</strong> ist die Berufsmaturitäts-Abschlussarbeit (im Kanton Zürich «Selbständige Arbeit» genannt). Sie ist ein zentrales SIZ-Verkaufsargument für die HMS — wer SIZ Advanced User früh absolviert hat, ist in Word/Excel/PowerPoint sicher unterwegs und kann die IDPA professionell umsetzen.</p>
+  <div class="hkb-grid">
+    <div class="hkb-card" style="border-left-color:var(--purple)">
+      <span class="hkb-letter" style="background:var(--purple)">i1</span><span class="hkb-title">Was ist die IDPA?</span>
+      <div class="hkb-desc"><strong>Berufsmaturitätsarbeit nach BMV.</strong> Mindestens 40 Lektionen, beginnt am Ende des 2. Schuljahres, wird im 3. Schuljahr abgeschlossen. Interdisziplinäre Verbindung von zwei Fächern + Anwendungsbezug zur Arbeitswelt. Schriftliche Arbeit, gestalterisches oder technisches Produkt.</div>
+    </div>
+    <div class="hkb-card" style="border-left-color:var(--purple)">
+      <span class="hkb-letter" style="background:var(--purple)">i2</span><span class="hkb-title">Was wird benotet?</span>
+      <div class="hkb-desc">Die <strong>Note «Selbständiges Arbeiten»</strong> für den BM-Abschluss bildet sich aus dem <strong>Mittelwert IDAF-Erfahrungsnote + IDPA-Note</strong>. Sie zählt zum Berufsmaturitätszeugnis. Bewertung durch betreuende Lehrperson(en), bei Bedarf zusätzlicher Fachexperte.</div>
+    </div>
+    <div class="hkb-card" style="border-left-color:var(--purple)">
+      <span class="hkb-letter" style="background:var(--purple)">i3</span><span class="hkb-title">Stundentafel HMS ZH</span>
+      <div class="hkb-desc">Total 144 Lektionen für IDAF + IDPA über 3 Schuljahre (=10 % des BM-Unterrichts). Im Stundenplan HMS ZH: 4 IDAF-Module (Deutsch 3. Sem · Geschichte/Politik 3. Sem · W&amp;R 4. Sem · Technik &amp; Umwelt 4. Sem) + IDPA selbst im 5./6. Sem.</div>
+    </div>
+    <div class="hkb-card" style="border-left-color:var(--purple);background:var(--ka-accent-light)">
+      <span class="hkb-letter" style="background:var(--ka-accent)">⚙️</span><span class="hkb-title">SIZ-Bezug zur IDPA</span>
+      <div class="hkb-desc">Die IDPA verlangt <strong>genau die SIZ-AU-Kompetenzen</strong>: <br>· Recherche &amp; Quellenkritik (AU1)<br>· Texte mit Verzeichnissen, Abschnitten, Zitaten (AU3)<br>· Datenanalyse, Diagramme, Statistiken (AU4)<br>· Präsentation der Resultate (AU1 neu, ehem. AU2)<br><strong>Argument an HMS:</strong> «SIZ Advanced User Ende 1. SJ ist die methodische Grundlage für eine erfolgreiche IDPA Ende 3. SJ.»</div>
+    </div>
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- BUSINESS CASE -->
+<div class="section" id="businesscase">
+  <div class="sec-label">Business Case — SIZ-Marktpotenzial Kaufmännische Ausbildung</div>
+  <div class="markt-grid fade-in">
+    <div class="markt-box">
+      <div class="markt-title">📊 Marktpotenzial HMS/WMS (CHF/Jahr · CHF 360/TN)</div>
+      <div class="bar-chart">
+        <div class="bar-row"><div class="bar-label">Gesamtmarkt (~6'400 × CHF 360)</div><div class="bar-track"><div class="bar-fill" style="width:100%;background:var(--ka-accent)">CHF 2.30 Mio</div></div><div class="bar-val">max</div></div>
+        <div class="bar-row"><div class="bar-label">Aktuell (~80 % Marktanteil)</div><div class="bar-track"><div class="bar-fill" style="width:80%;background:var(--green)">CHF 1.84 Mio</div></div><div class="bar-val">Status Quo</div></div>
+        <div class="bar-row"><div class="bar-label">Ausbau 90 %</div><div class="bar-track"><div class="bar-fill" style="width:90%;background:var(--green-deep)">CHF 2.07 Mio</div></div><div class="bar-val">+230k</div></div>
+      </div>
+      <p style="font-size:11px;color:var(--gray-mid);margin-top:.75rem"><strong>Basis:</strong> 3 Module × CHF 120 = CHF 360/TN · KSHW-Zahl ~6'400 schweizweit · ZH-Anteil prominent</p>
+    </div>
+    <div class="markt-box">
+      <div class="markt-title">🎯 Multiplikator-Wirkung kv edupool / VSH</div>
+      <div class="bar-chart">
+        <div class="bar-row"><div class="bar-label">HMS/WMS Pflicht (ZH)</div><div class="bar-track"><div class="bar-fill" style="width:30%;background:var(--ka-accent)">~600k</div></div><div class="bar-val">~CHF 600k</div></div>
+        <div class="bar-row"><div class="bar-label">+ HMS/WMS andere Kantone</div><div class="bar-track"><div class="bar-fill" style="width:70%;background:var(--blue)">~1.84 Mio</div></div><div class="bar-val">+1.24 Mio</div></div>
+        <div class="bar-row"><div class="bar-label">+ KV-Lehre BiVo 2023 (BFS)</div><div class="bar-track"><div class="bar-fill" style="width:90%;background:var(--green)">+~3 Mio</div></div><div class="bar-val">+&gt;1 Mio</div></div>
+        <div class="bar-row"><div class="bar-label">+ kv edupool Erwachsenenbildung</div><div class="bar-track"><div class="bar-fill" style="width:95%;background:var(--green-deep)">~&gt;3.5 Mio</div></div><div class="bar-val">+~500k</div></div>
+        <div class="bar-row"><div class="bar-label">+ VSH Privat-Erwachsenenbildung</div><div class="bar-track"><div class="bar-fill" style="width:100%;background:var(--purple)">~&gt;4 Mio</div></div><div class="bar-val">+~500k</div></div>
+      </div>
+      <p style="font-size:11px;color:var(--gray-mid);margin-top:.75rem"><strong>Interpretation:</strong> Kaufmännische Ausbildung ist Top-3-Segment für SIZ. Mit Vollabdeckung über alle 4 Trägerschaftsmodelle Potenzial bis CHF 4 Mio./Jahr nur aus diesem Segment.</p>
+    </div>
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- SWOT -->
+<div class="section" id="swot">
+  <div class="sec-label">SWOT — SIZ AG im Segment Kaufmännische Ausbildung</div>
+  <div class="swot-grid fade-in">
+    <div class="swot-cell">
+      <div class="swot-head">💪 Stärken (Strengths)</div>
+      <ul class="swot-items">
+        <li><div class="swot-dot"></div><div><strong>SIZ AU als Pflicht-Zertifikat in HMS Zürich verankert</strong> (Lehrplan 2023)</div></li>
+        <li><div class="swot-dot"></div><div>K- und M-Varianten differenzieren KV-Lehre vs. Mittelschule perfekt</div></li>
+        <li><div class="swot-dot"></div><div>~80 % Marktanteil bei HMS/WMS — dominante Position</div></li>
+        <li><div class="swot-dot"></div><div>Praktikum als natürlicher Treiber für Zertifikatsbedarf</div></li>
+        <li><div class="swot-dot"></div><div>Schweizer Standard, BiVo-2023-konform, OdA-anerkannt</div></li>
+        <li><div class="swot-dot"></div><div>Wings/Lehrmittel-Partner liefern fertige Schulungs-Pakete</div></li>
+      </ul>
+    </div>
+    <div class="swot-cell">
+      <div class="swot-head">⚠️ Schwächen (Weaknesses)</div>
+      <ul class="swot-items">
+        <li><div class="swot-dot"></div><div>Pflicht-Status nur in ZH — andere Kantone optional</div></li>
+        <li><div class="swot-dot"></div><div>Generative KI / Copilot nicht in AU-Curriculum integriert</div></li>
+        <li><div class="swot-dot"></div><div>Power Platform (BI/Automate) Lücke zwischen AU4 und PU41</div></li>
+        <li><div class="swot-dot"></div><div>Cybersecurity Awareness nur oberflächlich in AU1</div></li>
+        <li><div class="swot-dot"></div><div>VSH-Privatschulen schwer erreichbar — ICDL-dominiert</div></li>
+        <li><div class="swot-dot"></div><div>Wenig HMS-spezifisches Marketingmaterial</div></li>
+      </ul>
+    </div>
+    <div class="swot-cell">
+      <div class="swot-head">🎯 Chancen (Opportunities)</div>
+      <ul class="swot-items">
+        <li><div class="swot-dot"></div><div>AU-Reform 26/27 = Window für Markenrelaunch + neue Module</div></li>
+        <li><div class="swot-dot"></div><div>kv edupool AG Fusion 2024 → konsolidierter Single-Point-of-Contact</div></li>
+        <li><div class="swot-dot"></div><div>BiVo 2023 Tech-Optionen e5/e6 öffnen Power-User-Markt</div></li>
+        <li><div class="swot-dot"></div><div>Neue Module AU5 (KI), AU6 (Multimedia/Web), AU7 (Power Platform) — siehe White Spots</div></li>
+        <li><div class="swot-dot"></div><div>BFS-Szenario +10 % EFZ + 19 % FMS bis 2033 = wachsender Markt</div></li>
+        <li><div class="swot-dot"></div><div>Cantonal Lobbying via KSHW: SIZ in andere Kanton-Lehrpläne</div></li>
+      </ul>
+    </div>
+    <div class="swot-cell">
+      <div class="swot-head">🔴 Risiken (Threats)</div>
+      <ul class="swot-items">
+        <li><div class="swot-dot"></div><div>ICDL/ECDL bei Erwachsenenbildung VSH dominant — schwer zu drehen</div></li>
+        <li><div class="swot-dot"></div><div>AU-Reform-Umsetzung könnte Schulen verunsichern (Übergangsjahr)</div></li>
+        <li><div class="swot-dot"></div><div>Generative-KI-Konkurrenz: Microsoft/Google bieten eigene Zertifikate</div></li>
+        <li><div class="swot-dot"></div><div>Kantonale Sparmaßnahmen → Budgetkürzungen Mittelschulen</div></li>
+        <li><div class="swot-dot"></div><div>WMS-Schliessungen wie Willisau 2024 reduzieren Marktbasis</div></li>
+        <li><div class="swot-dot"></div><div>Privatschulen migrieren bei Lizenz-Deals zu ICDL</div></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- NÄCHSTE SCHRITTE -->
+<div class="section" id="nextSteps">
+  <div class="sec-label">Empfohlene Massnahmen — Priorisierte Roadmap</div>
+  <div class="funnel fade-in" style="margin-bottom:2rem">
+    <div class="funnel-step f-primary">
+      <div class="funnel-icon">🔑</div><div class="funnel-label">Schlüsselhebel</div>
+      <div class="funnel-desc">KSHW-Vorstand (Maggi/Amstutz) ansprechen + AU-Reform-Kommunikation an alle ~50 KSHW-Schulen koordinieren</div>
+      <div class="funnel-tag"><span class="tag tag-green">Q2 2026</span></div>
+    </div>
+    <div class="funnel-step f-secondary">
+      <div class="funnel-icon">🏫</div><div class="funnel-label">kv edupool Partner-Push</div>
+      <div class="funnel-desc">Co-CEO Köthe/Wespi: Gemeinsame Roadmap AU-Reform + neue Module (KI, Power Platform)</div>
+      <div class="funnel-tag"><span class="tag tag-blue">Q2 2026</span></div>
+    </div>
+    <div class="funnel-step f-tertiary">
+      <div class="funnel-icon">📋</div><div class="funnel-label">VSH-Outreach</div>
+      <div class="funnel-desc">Andreas Hösli (Kalaidos) + Christian Hodler (GF): Privatschul-Distribution für Erwachsenen-AU</div>
+      <div class="funnel-tag"><span class="tag tag-amber">Q3 2026</span></div>
+    </div>
+    <div class="funnel-step f-long">
+      <div class="funnel-icon">⚙️</div><div class="funnel-label">Neue Module entwickeln</div>
+      <div class="funnel-desc">AU5 KI-Sicherheit · AU6 Multimedia/Web · AU7 Power Platform — siehe separates White-Spots-Dossier</div>
+      <div class="funnel-tag"><span class="tag tag-gray">2026–2027</span></div>
+    </div>
+  </div>
+
+  <div class="steps">
+    <div class="step fade-in"><div class="step-connector"><div class="step-dot" style="background:var(--ka-accent)">1</div><div class="step-line"></div></div>
+      <div class="step-content"><div class="step-meta">Q2 2026 · Höchste Priorität</div><div class="step-title">KSHW-Vorstand persönlich ansprechen</div>
+      <div class="step-body">Flavio Maggi (Präs., CPC Lugano) und Stephan Amstutz (Vize, KS Hottingen) zu SIZ-Strategiegespräch einladen. Themen: (a) AU-Reform 26/27 Kommunikation, (b) Pflicht-Status in andere Kantone übernehmen, (c) gemeinsame Praktikumsbetriebe-Kampagne via 350 Partnerfirmen.</div></div></div>
+
+    <div class="step fade-in"><div class="step-connector"><div class="step-dot" style="background:var(--blue)">2</div><div class="step-line"></div></div>
+      <div class="step-content"><div class="step-meta">Q2 2026 · Parallel · Hohe Priorität</div><div class="step-title">kv edupool AG Co-CEOs Köthe / Wespi</div>
+      <div class="step-body">Termin in Zug (Baarerstrasse 77). Themen: (a) AU-Reform 26/27 für 31 Partnerschulen, (b) BiVo 2023 e1–e4 Mapping, (c) gemeinsame Lehrmittel-Roadmap mit Wings, (d) AU5/AU6/AU7 als Pilotpartner.</div></div></div>
+
+    <div class="step fade-in"><div class="step-connector"><div class="step-dot" style="background:var(--purple)">3</div><div class="step-line"></div></div>
+      <div class="step-content"><div class="step-meta">Q2–Q3 2026 · Aktiv</div><div class="step-title">3 Zürcher HMS Pilot AU5/AU6 (M-Variante)</div>
+      <div class="step-body">KS Enge, KS Hottingen, KS Büelrain WI als Pilot für neue Module. Über Stephan Amstutz (Vize-Rektor KSH + KSHW-Vize): konkretes Pilotangebot Schuljahr 2027/28. Ziel: 3 Schulen × 80 Lernende = 240 TN Pilot.</div></div></div>
+
+    <div class="step fade-in"><div class="step-connector"><div class="step-dot" style="background:var(--teal)">4</div><div class="step-line"></div></div>
+      <div class="step-content"><div class="step-meta">Q3 2026 · Aufbau</div><div class="step-title">3 kv edupool-Schulen Pilot AU5/AU6 (K-Variante)</div>
+      <div class="step-body">Wirtschaftsschule KV Zürich (Christian Wölfle), KV Luzern Berufsakademie, KBZ Zug Weiterbildung als parallele Piloten. Vorteil: KV-Lehre BiVo 2023 mit Tech-Option e5/e6 — perfektes Anschluss-Argument.</div></div></div>
+
+    <div class="step fade-in"><div class="step-connector"><div class="step-dot" style="background:var(--amber)">5</div><div class="step-line"></div></div>
+      <div class="step-content"><div class="step-meta">Q3 2026 · Strategisch</div><div class="step-title">VSH-Distribution Andreas Hösli (Kalaidos)</div>
+      <div class="step-body">VSH-Präs. Hösli + GF Hodler: AU für Erwachsenenbildung positionieren. Argument: ICDL ist intl., SIZ ist CH-Standard. Bei 34 Privatschulen mit Tausenden Erwachsenen-Lernenden grosses Volumen-Potenzial.</div></div></div>
+
+    <div class="step fade-in"><div class="step-connector"><div class="step-dot" style="background:var(--gray)">6</div></div>
+      <div class="step-content"><div class="step-meta">Q4 2026 · Audit</div><div class="step-title">Kantonale Lehrplan-Lobby</div>
+      <div class="step-body">In ZH ist SIZ AU Pflicht — Ziel: in BE, AG, BS, LU, SG-Kanton-Lehrpläne aufnehmen. Über KSHW-Mitglieder + kantonale Bildungsdirektionen + Memorandum «SIZ als Schweizer Standard für HMS/WMS».</div></div></div>
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- SCHULEN -->
+<div class="section" id="schulen">
+  <div class="sec-label">Bildungsanbieter — 120 Schulen über 3 Verbände</div>
+  <p style="font-size:13px;color:#555;margin-bottom:1rem">Vollständige Liste der Schulen pro Verband mit Trägerschaft, Standort, Schultyp und Kontakt. Klicken auf Tab wechselt Verband. Alle Schulen sind in HubSpot importiert (Custom Properties: kshw_mitglied, kv_edupool_partner, vsh_mitglied).</p>
+
+  <div class="insight-banner fade-in" style="margin-bottom:1rem">
+    <div class="insight-banner-icon">📊</div>
+    <div class="insight-banner-body">
+      <strong>Kunden-Übersicht (Excel-Abgleich «Neue Verträge Partnerschulen 08/24–07/25»):</strong>
+      Total <strong>120 Schulen</strong> · <strong>36 bereits SIZ-Kunden</strong> (30 %) · <strong>2 gekündigt</strong> · <strong>82 offen</strong>. Top-5 nach Prüfungsvolumen 2024–25: SWS Winterthur (650), kvBL Reinach (580), HKV Aarau (501), KS Büelrain WI (418), KS Hottingen (357). Status-Badge in jeder Tabellenzeile zeigt direkt: <span class="kunde-badge kunde-aktiv">✅ Kunde · X Prüf.</span> · <span class="kunde-badge kunde-gek">❌ gekündigt</span> · <span class="kunde-badge kunde-nein">— offen</span>.
+    </div>
+  </div>
+
+  <div class="verband-tabs">
+    <button class="verband-tab active" onclick="switchVerband('kshw')">🏛️ KSHW <span class="count">13/46 ✅</span></button>
+    <button class="verband-tab" onclick="switchVerband('kvedu')">🤝 kv edupool <span class="count">11/31 ✅</span></button>
+    <button class="verband-tab" onclick="switchVerband('vsh')">🏢 VSH <span class="count">12/43 ✅</span></button>
+  </div>
+
+  <div class="verband-content active" id="content-kshw">
+    <p style="font-size:12px;color:#555"><strong>KSHW — Konferenz Schweizer Handels- und Wirtschaftsmittelschulen</strong> · Träger: 43 kantonal · 2 KV-Verband · 1 privat · Schweizweit ~6'400 Lernende · ~350 Praktikums-Partnerfirmen</p>
+    <div class="kunden-summary"><span class="ks-aktiv">✅ 13 aktiv</span><span class="ks-gek">❌ 1 gekündigt</span><span class="ks-offen">— 32 offen</span></div>
+    <div class="schulen-table-wrap"><table class="schulen">
+  <thead>
+    <tr>
+      <th>SIZ-Status</th>
+      <th>Kürzel</th>
+      <th>Name</th>
+      <th>Standort</th>
+      <th>Schultyp</th>
+      <th>Träger</th>
+      <th>Telefon</th>
+      <th>Web</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr class="row-aktiv">
+        <td><span class="kunde-badge kunde-aktiv">✅ Kunde · 222 Prüf.</span></td>
+        <td><strong>KSENGE</strong></td>
+        <td>Kantonsschule Enge</td>
+        <td>Zürich <span style="color:var(--gray-mid)">(ZH)</span></td>
+        <td>HMS</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 44 286 76 11</td>
+        <td><a href="https://ken.ch" target="_blank">ken.ch</a></td>
+      </tr>
+<tr class="row-aktiv">
+        <td><span class="kunde-badge kunde-aktiv">✅ Kunde · 357 Prüf.</span></td>
+        <td><strong>KSHOTT</strong></td>
+        <td>Kantonsschule Hottingen</td>
+        <td>Zürich <span style="color:var(--gray-mid)">(ZH)</span></td>
+        <td>HMS, IMS</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 44 266 57 57</td>
+        <td><a href="https://ksh.ch" target="_blank">ksh.ch</a></td>
+      </tr>
+<tr class="row-aktiv">
+        <td><span class="kunde-badge kunde-aktiv">✅ Kunde · 418 Prüf.</span></td>
+        <td><strong>KSBUEL</strong></td>
+        <td>Kantonsschule Büelrain</td>
+        <td>Winterthur <span style="color:var(--gray-mid)">(ZH)</span></td>
+        <td>HMS, IMS</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 52 260 03 03</td>
+        <td><a href="https://kbw.ch" target="_blank">kbw.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>WMSBER</strong></td>
+        <td>Wirtschaftsmittelschule Bern (bwd)</td>
+        <td>Bern <span style="color:var(--gray-mid)">(BE)</span></td>
+        <td>WMS, IMS</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 31 635 38 35</td>
+        <td><a href="https://bwdbern.ch" target="_blank">bwdbern.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>WMSBIE</strong></td>
+        <td>Wirtschaftsmittelschule Biel-Seeland</td>
+        <td>Biel <span style="color:var(--gray-mid)">(BE)</span></td>
+        <td>WMS</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 32 327 06 11</td>
+        <td><a href="https://gym-bielseeland.ch" target="_blank">gym-bielseeland.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>WMSTHU</strong></td>
+        <td>WMS Thun-Schadau</td>
+        <td>Thun <span style="color:var(--gray-mid)">(BE)</span></td>
+        <td>WMS</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 33 225 84 84</td>
+        <td><a href="https://thunschadau.ch" target="_blank">thunschadau.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>WMSNEU</strong></td>
+        <td>École supérieure de commerce La Neuveville</td>
+        <td>La Neuveville <span style="color:var(--gray-mid)">(BE)</span></td>
+        <td>WMS/ESC</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 32 886 92 11</td>
+        <td><a href="https://esclaneuveville.ch" target="_blank">esclaneuveville.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>CEFTRA</strong></td>
+        <td>ceff COMMERCE</td>
+        <td>Tramelan <span style="color:var(--gray-mid)">(BE)</span></td>
+        <td>WMS/ESC</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 32 486 06 06</td>
+        <td><a href="https://ceff.ch" target="_blank">ceff.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>WGWMSB</strong></td>
+        <td>Wirtschaftsgymnasium und WMS Basel</td>
+        <td>Basel <span style="color:var(--gray-mid)">(BS)</span></td>
+        <td>WMS, IMS</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 61 552 30 80</td>
+        <td><a href="https://wg.edubs.ch" target="_blank">wg.edubs.ch</a></td>
+      </tr>
+<tr class="row-aktiv">
+        <td><span class="kunde-badge kunde-aktiv">✅ Kunde · 580 Prüf.</span></td>
+        <td><strong>KVBLRE</strong></td>
+        <td>Schulen kvBL Reinach (WMS/IMS)</td>
+        <td>Reinach <span style="color:var(--gray-mid)">(BL)</span></td>
+        <td>WMS, IMS</td>
+        <td><span class="badge-referenz">KV-Verband (LA)</span></td>
+        <td>+41 61 716 96 96</td>
+        <td><a href="https://wms.kvbl.ch" target="_blank">wms.kvbl.ch</a></td>
+      </tr>
+<tr class="row-aktiv">
+        <td><span class="kunde-badge kunde-aktiv">✅ Kunde · 267 Prüf.</span></td>
+        <td><strong>KVBLLI</strong></td>
+        <td>Schulen kvBL Liestal (WMS)</td>
+        <td>Liestal <span style="color:var(--gray-mid)">(BL)</span></td>
+        <td>WMS</td>
+        <td><span class="badge-referenz">KV-Verband (LA)</span></td>
+        <td>+41 61 925 64 64</td>
+        <td><a href="https://wms.kvbl.ch" target="_blank">wms.kvbl.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>AKSAAR</strong></td>
+        <td>Alte Kantonsschule Aarau (WMS, IMS)</td>
+        <td>Aarau <span style="color:var(--gray-mid)">(AG)</span></td>
+        <td>WMS, IMS</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 62 837 94 11</td>
+        <td><a href="https://altekanti.ch" target="_blank">altekanti.ch</a></td>
+      </tr>
+<tr class="row-aktiv">
+        <td><span class="kunde-badge kunde-aktiv">✅ Kunde · 64 Prüf.</span></td>
+        <td><strong>KSBADE</strong></td>
+        <td>Kantonsschule Baden (WMS, IMS)</td>
+        <td>Baden <span style="color:var(--gray-mid)">(AG)</span></td>
+        <td>WMS, IMS</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 56 200 04 11</td>
+        <td><a href="https://kanti-baden.ch" target="_blank">kanti-baden.ch</a></td>
+      </tr>
+<tr class="row-aktiv">
+        <td><span class="kunde-badge kunde-aktiv">✅ Kunde · 184 Prüf.</span></td>
+        <td><strong>FMSWLU</strong></td>
+        <td>Fach- und Wirtschaftsmittelschule Luzern</td>
+        <td>Luzern <span style="color:var(--gray-mid)">(LU)</span></td>
+        <td>WMS, IMS</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 41 228 98 98</td>
+        <td><a href="https://fmz.lu.ch" target="_blank">fmz.lu.ch</a></td>
+      </tr>
+<tr class="row-aktiv">
+        <td><span class="kunde-badge kunde-aktiv">✅ Kunde · 159 Prüf.</span></td>
+        <td><strong>WMSZUG</strong></td>
+        <td>Wirtschaftsmittelschule Zug</td>
+        <td>Zug <span style="color:var(--gray-mid)">(ZG)</span></td>
+        <td>WMS</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 41 728 32 80</td>
+        <td><a href="https://wms-zg.ch" target="_blank">wms-zg.ch</a></td>
+      </tr>
+<tr class="row-gek">
+        <td><span class="kunde-badge kunde-gek">❌ gekündigt</span></td>
+        <td><strong>KSBRUE</strong></td>
+        <td>Kantonsschule am Brühl (WMS, IMS)</td>
+        <td>St. Gallen <span style="color:var(--gray-mid)">(SG)</span></td>
+        <td>WMS, IMS</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 58 229 72 72</td>
+        <td><a href="https://ksb-sg.ch" target="_blank">ksb-sg.ch</a></td>
+      </tr>
+<tr class="row-aktiv">
+        <td><span class="kunde-badge kunde-aktiv">✅ Kunde · 60 Prüf.</span></td>
+        <td><strong>KSSARG</strong></td>
+        <td>Kantonsschule Sargans (WMS, IMS)</td>
+        <td>Sargans <span style="color:var(--gray-mid)">(SG)</span></td>
+        <td>WMS, IMS</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 58 228 81 00</td>
+        <td><a href="https://kantisargans.ch" target="_blank">kantisargans.ch</a></td>
+      </tr>
+<tr class="row-aktiv">
+        <td><span class="kunde-badge kunde-aktiv">✅ Kunde · 125 Prüf.</span></td>
+        <td><strong>BWZRAP</strong></td>
+        <td>BWZ Rapperswil (IMS)</td>
+        <td>Rapperswil <span style="color:var(--gray-mid)">(SG)</span></td>
+        <td>IMS</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 58 228 26 00</td>
+        <td><a href="https://bwz-rappi.ch" target="_blank">bwz-rappi.ch</a></td>
+      </tr>
+<tr class="row-aktiv">
+        <td><span class="kunde-badge kunde-aktiv">✅ Kunde</span></td>
+        <td><strong>KSFRAU</strong></td>
+        <td>Kantonsschule Frauenfeld (IMS)</td>
+        <td>Frauenfeld <span style="color:var(--gray-mid)">(TG)</span></td>
+        <td>IMS</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 58 345 78 00</td>
+        <td><a href="https://kanti-frauenfeld.ch" target="_blank">kanti-frauenfeld.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>KSKREU</strong></td>
+        <td>Kantonsschule Kreuzlingen (WMS)</td>
+        <td>Kreuzlingen <span style="color:var(--gray-mid)">(TG)</span></td>
+        <td>WMS</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 58 345 19 19</td>
+        <td><a href="https://ksk.tg.ch" target="_blank">ksk.tg.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>BKSCHU</strong></td>
+        <td>Bündner Kantonsschule (WMS, IMS)</td>
+        <td>Chur <span style="color:var(--gray-mid)">(GR)</span></td>
+        <td>WMS, IMS</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 81 257 47 47</td>
+        <td><a href="https://bks.gr.ch" target="_blank">bks.gr.ch</a></td>
+      </tr>
+<tr class="row-aktiv">
+        <td><span class="kunde-badge kunde-aktiv">✅ Kunde · 47 Prüf.</span></td>
+        <td><strong>BZSURS</strong></td>
+        <td>BZS Surselva (WMS, IMS)</td>
+        <td>Ilanz <span style="color:var(--gray-mid)">(GR)</span></td>
+        <td>WMS, IMS</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 81 920 17 80</td>
+        <td><a href="https://bzs-surselva.ch" target="_blank">bzs-surselva.ch</a></td>
+      </tr>
+<tr class="row-aktiv">
+        <td><span class="kunde-badge kunde-aktiv">✅ Kunde · 21 Prüf.</span></td>
+        <td><strong>SAMDAV</strong></td>
+        <td>Schweiz. Alpine Mittelschule Davos (WMS)</td>
+        <td>Davos <span style="color:var(--gray-mid)">(GR)</span></td>
+        <td>WMS</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 81 410 03 33</td>
+        <td><a href="https://samd.ch" target="_blank">samd.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>KSSCHA</strong></td>
+        <td>Kantonsschule Schaffhausen (WMS)</td>
+        <td>Schaffhausen <span style="color:var(--gray-mid)">(SH)</span></td>
+        <td>WMS</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 52 632 76 11</td>
+        <td><a href="https://kanti.sh.ch" target="_blank">kanti.sh.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>KSGLAR</strong></td>
+        <td>Kantonsschule Glarus (WMS)</td>
+        <td>Glarus <span style="color:var(--gray-mid)">(GL)</span></td>
+        <td>WMS</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 55 645 50 50</td>
+        <td><a href="https://kanti-glarus.ch" target="_blank">kanti-glarus.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>KSSOLO</strong></td>
+        <td>Kantonsschule Solothurn (WMS)</td>
+        <td>Solothurn <span style="color:var(--gray-mid)">(SO)</span></td>
+        <td>WMS</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 32 627 99 99</td>
+        <td><a href="https://ksso.ch" target="_blank">ksso.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>KSOLTE</strong></td>
+        <td>Kantonsschule Olten (WMS)</td>
+        <td>Olten <span style="color:var(--gray-mid)">(SO)</span></td>
+        <td>WMS</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 62 311 81 11</td>
+        <td><a href="https://kanti-olten.ch" target="_blank">kanti-olten.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>GAMBAC</strong></td>
+        <td>Collège de Gambach</td>
+        <td>Fribourg <span style="color:var(--gray-mid)">(FR)</span></td>
+        <td>ESC/WMS</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 26 305 65 00</td>
+        <td><a href="https://edufr.ch/cga" target="_blank">edufr.ch/cga</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>COLSUD</strong></td>
+        <td>Collège du Sud</td>
+        <td>Bulle <span style="color:var(--gray-mid)">(FR)</span></td>
+        <td>ESC</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 26 919 35 00</td>
+        <td><a href="https://csud.ch" target="_blank">csud.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>GIPAYE</strong></td>
+        <td>Gymnase intercantonal de la Broye</td>
+        <td>Payerne <span style="color:var(--gray-mid)">(FR/VD)</span></td>
+        <td>ESC</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 26 662 01 50</td>
+        <td><a href="https://gymnasebroye.ch" target="_blank">gymnasebroye.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>GBEAUL</strong></td>
+        <td>Gymnase de Beaulieu</td>
+        <td>Lausanne <span style="color:var(--gray-mid)">(VD)</span></td>
+        <td>ESC</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 21 316 03 30</td>
+        <td><a href="https://gybeau.ch" target="_blank">gybeau.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>GBURIE</strong></td>
+        <td>Gymnase de Burier</td>
+        <td>La Tour-de-Peilz <span style="color:var(--gray-mid)">(VD)</span></td>
+        <td>ESC</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 21 967 21 00</td>
+        <td><a href="https://gymnasedeburier.ch" target="_blank">gymnasedeburier.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>GYVERD</strong></td>
+        <td>Gymnase d'Yverdon</td>
+        <td>Yverdon-les-Bains <span style="color:var(--gray-mid)">(VD)</span></td>
+        <td>ESC</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 24 557 71 00</td>
+        <td><a href="https://gyyv.ch" target="_blank">gyyv.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>CSTAEL</strong></td>
+        <td>Collège Madame de Staël</td>
+        <td>Carouge GE <span style="color:var(--gray-mid)">(GE)</span></td>
+        <td>ESC</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 22 388 28 00</td>
+        <td><a href="https://edu.ge.ch/co/cdms" target="_blank">edu.ge.ch/co/cdms</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>CSISMO</strong></td>
+        <td>Collège Sismondi</td>
+        <td>Genève <span style="color:var(--gray-mid)">(GE)</span></td>
+        <td>ESC</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 22 388 27 11</td>
+        <td><a href="https://edu.ge.ch/co/sismondi" target="_blank">edu.ge.ch/co/sismondi</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>ECAIME</strong></td>
+        <td>ECCG Aimée-Stitelmann</td>
+        <td>Plan-les-Ouates <span style="color:var(--gray-mid)">(GE)</span></td>
+        <td>ESC</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 22 388 73 00</td>
+        <td><a href="https://edu.ge.ch/secondaire2/aimeestitelmann" target="_blank">edu.ge.ch/secondaire2/aimeestitelmann</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>ESCNEU</strong></td>
+        <td>École supérieure Numa-Droz / ESC Neuchâtel</td>
+        <td>Neuchâtel <span style="color:var(--gray-mid)">(NE)</span></td>
+        <td>ESC</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 32 717 88 00</td>
+        <td><a href="https://rpn.ch" target="_blank">rpn.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>ESCCHA</strong></td>
+        <td>Centre interrégional de formation des Montagnes neuchâteloises</td>
+        <td>La Chaux-de-Fonds <span style="color:var(--gray-mid)">(NE)</span></td>
+        <td>ESC</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 32 886 33 00</td>
+        <td><a href="https://cifom.ch" target="_blank">cifom.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>CEJEDE</strong></td>
+        <td>CEJEF Division commerciale</td>
+        <td>Delémont <span style="color:var(--gray-mid)">(JU)</span></td>
+        <td>ESC</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 32 420 76 00</td>
+        <td><a href="https://cejef.ch" target="_blank">cejef.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>ECCSIO</strong></td>
+        <td>ECCG Sion</td>
+        <td>Sion <span style="color:var(--gray-mid)">(VS)</span></td>
+        <td>ESC</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 27 606 47 00</td>
+        <td><a href="https://eccgsion.ch" target="_blank">eccgsion.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>OMSBRI</strong></td>
+        <td>Oberwalliser Mittelschule (WMS)</td>
+        <td>Brig <span style="color:var(--gray-mid)">(VS)</span></td>
+        <td>WMS</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 27 922 35 00</td>
+        <td><a href="https://omsbrig.ch" target="_blank">omsbrig.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>CPCLUG</strong></td>
+        <td>Centro Professionale Commerciale (CPC)</td>
+        <td>Lugano <span style="color:var(--gray-mid)">(TI)</span></td>
+        <td>ESC</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 91 815 16 11</td>
+        <td><a href="https://cpc-lugano.ch" target="_blank">cpc-lugano.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>SCCBEL</strong></td>
+        <td>Scuola cantonale di commercio Bellinzona</td>
+        <td>Bellinzona <span style="color:var(--gray-mid)">(TI)</span></td>
+        <td>ESC</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 91 814 55 11</td>
+        <td><a href="https://scc.ti.ch" target="_blank">scc.ti.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>SCCLOC</strong></td>
+        <td>Scuola cantonale di commercio Locarno</td>
+        <td>Locarno <span style="color:var(--gray-mid)">(TI)</span></td>
+        <td>ESC</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 91 759 00 30</td>
+        <td><a href="https://scclocarno.ti.ch" target="_blank">scclocarno.ti.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>GBSSGA</strong></td>
+        <td>GBS St. Gallen (IMS Tech)</td>
+        <td>St. Gallen <span style="color:var(--gray-mid)">(SG)</span></td>
+        <td>IMS</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 58 228 28 28</td>
+        <td><a href="https://gbssg.ch" target="_blank">gbssg.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>BZBSAR</strong></td>
+        <td>BZB Buchs (IMS)</td>
+        <td>Buchs <span style="color:var(--gray-mid)">(SG)</span></td>
+        <td>IMS</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 58 228 22 00</td>
+        <td><a href="https://bzbs.ch" target="_blank">bzbs.ch</a></td>
+      </tr>
+  </tbody>
+</table></div>
+  </div>
+  <div class="verband-content" id="content-kvedu">
+    <p style="font-size:12px;color:#555"><strong>kv edupool AG (Sitz Zug, Fusion 2024)</strong> · Träger: 14 KV-Verband · 16 kantonal · 1 privat · 31 Partnerschulen in 19 Kantonen · &gt;4'000 Prüfungen/Jahr</p>
+    <div class="kunden-summary"><span class="ks-aktiv">✅ 11 aktiv</span><span class="ks-gek">❌ 0 gekündigt</span><span class="ks-offen">— 20 offen</span></div>
+    <div class="schulen-table-wrap"><table class="schulen">
+  <thead>
+    <tr>
+      <th>SIZ-Status</th>
+      <th>Kürzel</th>
+      <th>Name</th>
+      <th>Standort</th>
+      <th>Schultyp</th>
+      <th>Träger</th>
+      <th>Telefon</th>
+      <th>Web</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr class="row-aktiv">
+        <td><span class="kunde-badge kunde-aktiv">✅ Kunde</span></td>
+        <td><strong>KVZHWS</strong></td>
+        <td>Wirtschaftsschule KV Zürich</td>
+        <td>Zürich <span style="color:var(--gray-mid)">(ZH)</span></td>
+        <td>—</td>
+        <td><span class="badge-referenz">KV-Verband</span></td>
+        <td>+41 44 444 66 00</td>
+        <td><a href="https://kvz-schule.ch" target="_blank">kvz-schule.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>KVZHBS</strong></td>
+        <td>KV Business School Zürich (Weiterbildung)</td>
+        <td>Zürich <span style="color:var(--gray-mid)">(ZH)</span></td>
+        <td>—</td>
+        <td><span class="badge-referenz">KV-Verband</span></td>
+        <td>+41 44 974 30 00</td>
+        <td><a href="https://kv-business-school.ch" target="_blank">kv-business-school.ch</a></td>
+      </tr>
+<tr class="row-aktiv">
+        <td><span class="kunde-badge kunde-aktiv">✅ Kunde · 106 Prüf.</span></td>
+        <td><strong>KVLUZ</strong></td>
+        <td>KV Luzern Berufsfachschule + Berufsakademie</td>
+        <td>Luzern <span style="color:var(--gray-mid)">(LU)</span></td>
+        <td>—</td>
+        <td><span class="badge-referenz">KV-Verband</span></td>
+        <td>+41 41 417 16 00</td>
+        <td><a href="https://kvlu.ch" target="_blank">kvlu.ch</a></td>
+      </tr>
+<tr class="row-aktiv">
+        <td><span class="kunde-badge kunde-aktiv">✅ Kunde · 65 Prüf.</span></td>
+        <td><strong>WKSBER</strong></td>
+        <td>WKS KV Bildung Bern</td>
+        <td>Bern <span style="color:var(--gray-mid)">(BE)</span></td>
+        <td>—</td>
+        <td><span class="badge-referenz">KV-Verband</span></td>
+        <td>+41 31 380 30 30</td>
+        <td><a href="https://wksbern.ch" target="_blank">wksbern.ch</a></td>
+      </tr>
+<tr class="row-aktiv">
+        <td><span class="kunde-badge kunde-aktiv">✅ Kunde · 501 Prüf.</span></td>
+        <td><strong>HKVAAR</strong></td>
+        <td>Handelsschule KV Aarau (HKV)</td>
+        <td>Aarau <span style="color:var(--gray-mid)">(AG)</span></td>
+        <td>—</td>
+        <td><span class="badge-referenz">KV-Verband</span></td>
+        <td>+41 62 837 97 77</td>
+        <td><a href="https://hkvaarau.ch" target="_blank">hkvaarau.ch</a></td>
+      </tr>
+<tr class="row-aktiv">
+        <td><span class="kunde-badge kunde-aktiv">✅ Kunde · 102 Prüf.</span></td>
+        <td><strong>KVBASE</strong></td>
+        <td>KV Basel Schule Wirtschaft</td>
+        <td>Basel <span style="color:var(--gray-mid)">(BS)</span></td>
+        <td>—</td>
+        <td><span class="badge-referenz">KV-Verband</span></td>
+        <td>+41 61 295 30 30</td>
+        <td><a href="https://kvbasel.ch" target="_blank">kvbasel.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>KVWINT</strong></td>
+        <td>Wirtschaftsschule KV Winterthur</td>
+        <td>Winterthur <span style="color:var(--gray-mid)">(ZH)</span></td>
+        <td>—</td>
+        <td><span class="badge-referenz">KV-Verband</span></td>
+        <td>+41 52 269 04 04</td>
+        <td><a href="https://wskvw.ch" target="_blank">wskvw.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>KVBIEL</strong></td>
+        <td>KV Biel Bildungszentrum</td>
+        <td>Biel <span style="color:var(--gray-mid)">(BE)</span></td>
+        <td>—</td>
+        <td><span class="badge-referenz">KV-Verband</span></td>
+        <td>+41 32 328 30 30</td>
+        <td><a href="https://kvbiel.ch" target="_blank">kvbiel.ch</a></td>
+      </tr>
+<tr class="row-aktiv">
+        <td><span class="kunde-badge kunde-aktiv">✅ Kunde · 107 Prüf.</span></td>
+        <td><strong>WSTTHU</strong></td>
+        <td>Wirtschaftsschule Thun (WST)</td>
+        <td>Thun <span style="color:var(--gray-mid)">(BE)</span></td>
+        <td>—</td>
+        <td><span class="badge-referenz">KV-Verband</span></td>
+        <td>+41 33 225 26 27</td>
+        <td><a href="https://wst.ch" target="_blank">wst.ch</a></td>
+      </tr>
+<tr class="row-aktiv">
+        <td><span class="kunde-badge kunde-aktiv">✅ Kunde · 112 Prüf.</span></td>
+        <td><strong>KBZZUG</strong></td>
+        <td>Kaufm. Bildungszentrum Zug (KBZ)</td>
+        <td>Zug <span style="color:var(--gray-mid)">(ZG)</span></td>
+        <td>—</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 41 728 28 28</td>
+        <td><a href="https://kbz-zug.ch" target="_blank">kbz-zug.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>ZBBADN</strong></td>
+        <td>Zentrum Bildung Baden (zB.)</td>
+        <td>Baden <span style="color:var(--gray-mid)">(AG)</span></td>
+        <td>—</td>
+        <td><span class="badge-referenz">KV-Verband</span></td>
+        <td>+41 56 203 15 50</td>
+        <td><a href="https://zentrumbildung.ch" target="_blank">zentrumbildung.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>WZRZOF</strong></td>
+        <td>Wirtschaftszentrum Region Zofingen (WZR)</td>
+        <td>Zofingen <span style="color:var(--gray-mid)">(AG)</span></td>
+        <td>—</td>
+        <td><span class="badge-referenz">KV-Verband</span></td>
+        <td>+41 62 745 80 80</td>
+        <td><a href="https://wzr.ch" target="_blank">wzr.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>KBZSGA</strong></td>
+        <td>Kaufm. Berufs- u. Weiterbild.zentrum St. Gallen (KBZSG)</td>
+        <td>St. Gallen <span style="color:var(--gray-mid)">(SG)</span></td>
+        <td>—</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 71 228 18 18</td>
+        <td><a href="https://kbzsg.ch" target="_blank">kbzsg.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>AKASGA</strong></td>
+        <td>Akademie St. Gallen</td>
+        <td>St. Gallen <span style="color:var(--gray-mid)">(SG)</span></td>
+        <td>—</td>
+        <td><span class="badge-referenz">KV-Verband</span></td>
+        <td>+41 71 228 18 28</td>
+        <td><a href="https://akademie.ch" target="_blank">akademie.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>BZWUWI</strong></td>
+        <td>BZWU Wil-Uzwil</td>
+        <td>Wil <span style="color:var(--gray-mid)">(SG)</span></td>
+        <td>—</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 71 913 80 80</td>
+        <td><a href="https://bzwu.ch" target="_blank">bzwu.ch</a></td>
+      </tr>
+<tr class="row-aktiv">
+        <td><span class="kunde-badge kunde-aktiv">✅ Kunde · 28 Prüf.</span></td>
+        <td><strong>BZWEIN</strong></td>
+        <td>Bildungszentrum für Wirtschaft Weinfelden (BZW)</td>
+        <td>Weinfelden <span style="color:var(--gray-mid)">(TG)</span></td>
+        <td>—</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 71 626 87 00</td>
+        <td><a href="https://bzww.ch" target="_blank">bzww.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>KBZFRA</strong></td>
+        <td>Kaufm. Berufsschule Frauenfeld (KBZ)</td>
+        <td>Frauenfeld <span style="color:var(--gray-mid)">(TG)</span></td>
+        <td>—</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 58 345 70 50</td>
+        <td><a href="https://kbzfrauenfeld.ch" target="_blank">kbzfrauenfeld.ch</a></td>
+      </tr>
+<tr class="row-aktiv">
+        <td><span class="kunde-badge kunde-aktiv">✅ Kunde</span></td>
+        <td><strong>BBZOLT</strong></td>
+        <td>BBZ Olten (Berufsbildungszentrum)</td>
+        <td>Olten <span style="color:var(--gray-mid)">(SO)</span></td>
+        <td>—</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 62 311 83 33</td>
+        <td><a href="https://bbzolten.ch" target="_blank">bbzolten.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>BBBBAD</strong></td>
+        <td>BBB Baden (Berufsfachschule)</td>
+        <td>Baden <span style="color:var(--gray-mid)">(AG)</span></td>
+        <td>—</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 56 200 15 60</td>
+        <td><a href="https://bbbaden.ch" target="_blank">bbbaden.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>KVPRO</strong></td>
+        <td>kv pro Bildungszentrum</td>
+        <td>Münchenstein/Liestal <span style="color:var(--gray-mid)">(BL)</span></td>
+        <td>—</td>
+        <td><span class="badge-referenz">KV-Verband</span></td>
+        <td>+41 61 415 22 22</td>
+        <td><a href="https://kvpro.ch" target="_blank">kvpro.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>KVSCHA</strong></td>
+        <td>Berufsbildungszentrum Schaffhausen (BBZ SH / HKV)</td>
+        <td>Schaffhausen <span style="color:var(--gray-mid)">(SH)</span></td>
+        <td>—</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 52 632 87 00</td>
+        <td><a href="https://bbz-sh.ch" target="_blank">bbz-sh.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>KSGLAR2</strong></td>
+        <td>Kaufm. Berufsschule Glarus</td>
+        <td>Glarus <span style="color:var(--gray-mid)">(GL)</span></td>
+        <td>—</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 55 646 65 65</td>
+        <td><a href="https://kbsglarus.ch" target="_blank">kbsglarus.ch</a></td>
+      </tr>
+<tr class="row-aktiv">
+        <td><span class="kunde-badge kunde-aktiv">✅ Kunde · 313 Prüf.</span></td>
+        <td><strong>IBWCHU</strong></td>
+        <td>ibW Höhere Fachschule Südostschweiz</td>
+        <td>Chur <span style="color:var(--gray-mid)">(GR)</span></td>
+        <td>—</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 81 286 62 62</td>
+        <td><a href="https://ibw.ch" target="_blank">ibw.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>BSCDAV</strong></td>
+        <td>Berufsschule Davos (BSD)</td>
+        <td>Davos <span style="color:var(--gray-mid)">(GR)</span></td>
+        <td>—</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 81 410 06 06</td>
+        <td><a href="https://berufsschuledavos.ch" target="_blank">berufsschuledavos.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>BFSLIE</strong></td>
+        <td>BFS Liestal (Berufsfachschule)</td>
+        <td>Liestal <span style="color:var(--gray-mid)">(BL)</span></td>
+        <td>—</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 61 552 95 95</td>
+        <td><a href="https://bfsl.ch" target="_blank">bfsl.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>EPCLAU</strong></td>
+        <td>EPCL Lausanne (École professionnelle commerciale)</td>
+        <td>Lausanne <span style="color:var(--gray-mid)">(VD)</span></td>
+        <td>—</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 21 316 95 00</td>
+        <td><a href="https://epcl.vd.ch" target="_blank">epcl.vd.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>ROFGEN</strong></td>
+        <td>Romandie Formation</td>
+        <td>Paudex/Genève <span style="color:var(--gray-mid)">(VD/GE)</span></td>
+        <td>—</td>
+        <td><span class="badge-referenz">KV-Verband</span></td>
+        <td>+41 21 796 33 67</td>
+        <td><a href="https://romandieformation.ch" target="_blank">romandieformation.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>EPCNEU</strong></td>
+        <td>EPC Neuchâtel (École professionnelle commerciale)</td>
+        <td>Neuchâtel <span style="color:var(--gray-mid)">(NE)</span></td>
+        <td>—</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 32 717 88 00</td>
+        <td><a href="https://rpn.ch" target="_blank">rpn.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>EPCFRI</strong></td>
+        <td>EPC Fribourg</td>
+        <td>Fribourg <span style="color:var(--gray-mid)">(FR)</span></td>
+        <td>—</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 26 305 25 26</td>
+        <td><a href="https://epcfri.ch" target="_blank">epcfri.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>ECCSI2</strong></td>
+        <td>ECCG Sion (Weiterbildung)</td>
+        <td>Sion <span style="color:var(--gray-mid)">(VS)</span></td>
+        <td>—</td>
+        <td><span class="badge-bestand">kantonal</span></td>
+        <td>+41 27 606 47 00</td>
+        <td><a href="https://eccgsion.ch" target="_blank">eccgsion.ch</a></td>
+      </tr>
+<tr class="row-aktiv">
+        <td><span class="kunde-badge kunde-aktiv">✅ Kunde · 35 Prüf.</span></td>
+        <td><strong>LBSLUG</strong></td>
+        <td>Lugano Business School</td>
+        <td>Lugano <span style="color:var(--gray-mid)">(TI)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 91 922 03 26</td>
+        <td><a href="https://luganobusinessschool.ch" target="_blank">luganobusinessschool.ch</a></td>
+      </tr>
+  </tbody>
+</table></div>
+  </div>
+  <div class="verband-content" id="content-vsh">
+    <p style="font-size:12px;color:#555"><strong>VSH — Verband Schweizerischer Handelsschulen</strong> · Träger: 43 privat · 34 Privatschulen · gegründet 1978 · Erwachsenenbildung</p>
+    <div class="kunden-summary"><span class="ks-aktiv">✅ 12 aktiv</span><span class="ks-gek">❌ 1 gekündigt</span><span class="ks-offen">— 30 offen</span></div>
+    <div class="schulen-table-wrap"><table class="schulen">
+  <thead>
+    <tr>
+      <th>SIZ-Status</th>
+      <th>Kürzel</th>
+      <th>Name</th>
+      <th>Standort</th>
+      <th>Schultyp</th>
+      <th>Träger</th>
+      <th>Telefon</th>
+      <th>Web</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr class="row-aktiv">
+        <td><span class="kunde-badge kunde-aktiv">✅ Kunde · 1 Prüf.</span></td>
+        <td><strong>AKADZH</strong></td>
+        <td>AKAD Business AG</td>
+        <td>Zürich <span style="color:var(--gray-mid)">(ZH)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 44 723 23 23</td>
+        <td><a href="https://akad.ch" target="_blank">akad.ch</a></td>
+      </tr>
+<tr class="row-gek">
+        <td><span class="kunde-badge kunde-gek">❌ gekündigt</span></td>
+        <td><strong>BENBER</strong></td>
+        <td>Benedict-Schule Bern</td>
+        <td>Bern <span style="color:var(--gray-mid)">(BE)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 31 326 22 22</td>
+        <td><a href="https://benedict.ch" target="_blank">benedict.ch</a></td>
+      </tr>
+<tr class="row-aktiv">
+        <td><span class="kunde-badge kunde-aktiv">✅ Kunde · 52 Prüf.</span></td>
+        <td><strong>BENLUZ</strong></td>
+        <td>Benedict-Schule Luzern</td>
+        <td>Luzern <span style="color:var(--gray-mid)">(LU)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 41 318 03 33</td>
+        <td><a href="https://benedict.ch" target="_blank">benedict.ch</a></td>
+      </tr>
+<tr class="row-aktiv">
+        <td><span class="kunde-badge kunde-aktiv">✅ Kunde</span></td>
+        <td><strong>BENSGA</strong></td>
+        <td>Benedict-Schule St. Gallen</td>
+        <td>St. Gallen <span style="color:var(--gray-mid)">(SG)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 71 222 84 35</td>
+        <td><a href="https://benedict.ch" target="_blank">benedict.ch</a></td>
+      </tr>
+<tr class="row-aktiv">
+        <td><span class="kunde-badge kunde-aktiv">✅ Kunde · 158 Prüf.</span></td>
+        <td><strong>BENZUR</strong></td>
+        <td>Benedict-Schule Zürich</td>
+        <td>Zürich <span style="color:var(--gray-mid)">(ZH)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 44 200 50 60</td>
+        <td><a href="https://benedict.ch" target="_blank">benedict.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>SFBBER</strong></td>
+        <td>sfb Bildungszentrum Bern</td>
+        <td>Bern <span style="color:var(--gray-mid)">(BE)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 58 100 90 90</td>
+        <td><a href="https://sfb.ch" target="_blank">sfb.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>SFBDIE</strong></td>
+        <td>sfb Bildungszentrum Dietikon</td>
+        <td>Dietikon <span style="color:var(--gray-mid)">(ZH)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 58 100 90 90</td>
+        <td><a href="https://sfb.ch" target="_blank">sfb.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>SFBEMM</strong></td>
+        <td>sfb Bildungszentrum Emmenbrücke</td>
+        <td>Emmenbrücke <span style="color:var(--gray-mid)">(LU)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 58 100 90 90</td>
+        <td><a href="https://sfb.ch" target="_blank">sfb.ch</a></td>
+      </tr>
+<tr class="row-aktiv">
+        <td><span class="kunde-badge kunde-aktiv">✅ Kunde</span></td>
+        <td><strong>SFBOLT</strong></td>
+        <td>sfb Bildungszentrum Olten</td>
+        <td>Olten <span style="color:var(--gray-mid)">(SO)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 58 100 90 90</td>
+        <td><a href="https://sfb.ch" target="_blank">sfb.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>SFBRUE</strong></td>
+        <td>sfb Bildungszentrum Rüti</td>
+        <td>Rüti ZH <span style="color:var(--gray-mid)">(ZH)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 58 100 90 90</td>
+        <td><a href="https://sfb.ch" target="_blank">sfb.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>SFBWIN</strong></td>
+        <td>sfb Bildungszentrum Winterthur</td>
+        <td>Winterthur <span style="color:var(--gray-mid)">(ZH)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 58 100 90 90</td>
+        <td><a href="https://sfb.ch" target="_blank">sfb.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>BEMEDB</strong></td>
+        <td>be-med Berufsfachschule</td>
+        <td>Bern <span style="color:var(--gray-mid)">(BE)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 31 311 26 26</td>
+        <td><a href="https://be-med.ch" target="_blank">be-med.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>BERIEX</strong></td>
+        <td>BERIT-EXBIT-Schulen AG</td>
+        <td>n/a <span style="color:var(--gray-mid)">(n/a)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>n/a</td>
+        <td><a href="https://berit-exbit.ch" target="_blank">berit-exbit.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>BWZSGA</strong></td>
+        <td>Berufs- u. Weiterbild.zentrum Gesundheit/Sozial SG</td>
+        <td>St. Gallen <span style="color:var(--gray-mid)">(SG)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 71 228 09 88</td>
+        <td><a href="https://bzgs-sg.ch" target="_blank">bzgs-sg.ch</a></td>
+      </tr>
+<tr class="row-aktiv">
+        <td><span class="kunde-badge kunde-aktiv">✅ Kunde · 341 Prüf.</span></td>
+        <td><strong>BVSSGA</strong></td>
+        <td>BVS St. Gallen</td>
+        <td>St. Gallen <span style="color:var(--gray-mid)">(SG)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 71 228 22 22</td>
+        <td><a href="https://bvs.ch" target="_blank">bvs.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>DIDBER</strong></td>
+        <td>Didac Bern</td>
+        <td>Bern <span style="color:var(--gray-mid)">(BE)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 31 311 70 70</td>
+        <td><a href="https://didac.ch" target="_blank">didac.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>DRRZUR</strong></td>
+        <td>Dr. Raebers Höhere Handelsschule</td>
+        <td>Zürich <span style="color:var(--gray-mid)">(ZH)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 44 251 19 71</td>
+        <td><a href="https://raebers.ch" target="_blank">raebers.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>ECMEDI</strong></td>
+        <td>Ecole Medica</td>
+        <td>n/a <span style="color:var(--gray-mid)">(n/a)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>n/a</td>
+        <td><a href="https://ecolemedica.ch" target="_blank">ecolemedica.ch</a></td>
+      </tr>
+<tr class="row-aktiv">
+        <td><span class="kunde-badge kunde-aktiv">✅ Kunde · 25 Prüf.</span></td>
+        <td><strong>FEUBER</strong></td>
+        <td>Feusi Bildungszentrum Bern</td>
+        <td>Bern <span style="color:var(--gray-mid)">(BE)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 31 537 37 37</td>
+        <td><a href="https://feusi.ch" target="_blank">feusi.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>FEUSOL</strong></td>
+        <td>Feusi Bildungszentrum Solothurn</td>
+        <td>Solothurn <span style="color:var(--gray-mid)">(SO)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 32 544 54 54</td>
+        <td><a href="https://feusi.ch" target="_blank">feusi.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>FREILU</strong></td>
+        <td>FREI'S Schulen AG</td>
+        <td>Luzern <span style="color:var(--gray-mid)">(LU)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 41 419 56 56</td>
+        <td><a href="https://freis.ch" target="_blank">freis.ch</a></td>
+      </tr>
+<tr class="row-aktiv">
+        <td><span class="kunde-badge kunde-aktiv">✅ Kunde · 21 Prüf.</span></td>
+        <td><strong>FSWIWI</strong></td>
+        <td>fswi Fachschule Wirtschaft+Informatik</td>
+        <td>Winterthur <span style="color:var(--gray-mid)">(ZH)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 52 269 06 70</td>
+        <td><a href="https://fswi.ch" target="_blank">fswi.ch</a></td>
+      </tr>
+<tr class="row-aktiv">
+        <td><span class="kunde-badge kunde-aktiv">✅ Kunde · 41 Prüf.</span></td>
+        <td><strong>HSOZUR</strong></td>
+        <td>HSO Wirtschaftsschule Schweiz</td>
+        <td>diverse <span style="color:var(--gray-mid)">(ZH/BE/LU/SG/SO/ZG)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 44 215 33 11</td>
+        <td><a href="https://hso.ch" target="_blank">hso.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>HWSBAS</strong></td>
+        <td>HWS Huber Widemann Schule</td>
+        <td>Basel <span style="color:var(--gray-mid)">(BS)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 61 261 16 56</td>
+        <td><a href="https://hws.ch" target="_blank">hws.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>IFAZUR</strong></td>
+        <td>IFA Weiterbildung</td>
+        <td>diverse <span style="color:var(--gray-mid)">(ZH/AG/BS/BE/SG)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 44 218 79 79</td>
+        <td><a href="https://ifa.ch" target="_blank">ifa.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>ISTLUG</strong></td>
+        <td>Istituto Sant'Anna</td>
+        <td>Lugano <span style="color:var(--gray-mid)">(TI)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 91 942 26 51</td>
+        <td><a href="https://istitutosantanna.ch" target="_blank">istitutosantanna.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>IPSBAS</strong></td>
+        <td>ipso Bildung AG</td>
+        <td>Basel <span style="color:var(--gray-mid)">(BS)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 61 205 60 60</td>
+        <td><a href="https://ipso.ch" target="_blank">ipso.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>JUVZUR</strong></td>
+        <td>Juventus Schulen</td>
+        <td>Zürich <span style="color:var(--gray-mid)">(ZH)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 43 268 26 26</td>
+        <td><a href="https://juventus.ch" target="_blank">juventus.ch</a></td>
+      </tr>
+<tr class="row-aktiv">
+        <td><span class="kunde-badge kunde-aktiv">✅ Kunde</span></td>
+        <td><strong>KAZAAR</strong></td>
+        <td>kaz. Aarau AG</td>
+        <td>Aarau <span style="color:var(--gray-mid)">(AG)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 62 836 95 95</td>
+        <td><a href="https://kaz.ch" target="_blank">kaz.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>KSPCHU</strong></td>
+        <td>Klubschule Pro Chur/St. Gallen</td>
+        <td>Chur <span style="color:var(--gray-mid)">(GR)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 84 884 84 84</td>
+        <td><a href="https://klubschule.ch" target="_blank">klubschule.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>MACZUR</strong></td>
+        <td>Machon Chen</td>
+        <td>Zürich <span style="color:var(--gray-mid)">(ZH)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 44 261 17 04</td>
+        <td><a href="https://machonchen.ch" target="_blank">machonchen.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>MBSZUR</strong></td>
+        <td>MBSZ</td>
+        <td>Zürich <span style="color:var(--gray-mid)">(ZH)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 44 396 14 96</td>
+        <td><a href="https://mbsz.ch" target="_blank">mbsz.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>MINZUR</strong></td>
+        <td>Minerva Zürich</td>
+        <td>Zürich <span style="color:var(--gray-mid)">(ZH)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 44 219 60 19</td>
+        <td><a href="https://minervaschulen.ch" target="_blank">minervaschulen.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>MKSCHU</strong></td>
+        <td>MKS Kompetenzzentrum</td>
+        <td>Chur/Rapperswil/Sargans/ZH <span style="color:var(--gray-mid)">(GR/SG/ZH)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 81 252 16 16</td>
+        <td><a href="https://mks.ch" target="_blank">mks.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>MPABUC</strong></td>
+        <td>MPA Berufs- und Handelsschule</td>
+        <td>Buchs <span style="color:var(--gray-mid)">(SG)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 81 750 13 13</td>
+        <td><a href="https://mpa-buchs.ch" target="_blank">mpa-buchs.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>NBWBER</strong></td>
+        <td>NBW Betriebsw. Weiterbildung AG</td>
+        <td>Bern/Zürich <span style="color:var(--gray-mid)">(BE/ZH)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 31 332 11 26</td>
+        <td><a href="https://nbw.ch" target="_blank">nbw.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>NSHBAS</strong></td>
+        <td>NSH Basel</td>
+        <td>Basel <span style="color:var(--gray-mid)">(BS)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 61 313 23 23</td>
+        <td><a href="https://nsh.ch" target="_blank">nsh.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>NOSSPI</strong></td>
+        <td>Noss Schulzentrum</td>
+        <td>Spiez <span style="color:var(--gray-mid)">(BE)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 33 654 22 76</td>
+        <td><a href="https://noss-schulzentrum.ch" target="_blank">noss-schulzentrum.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>SSTHPA</strong></td>
+        <td>SSTH Schweiz. Schule für Touristik+Hotellerie</td>
+        <td>Passugg <span style="color:var(--gray-mid)">(GR)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 81 255 11 11</td>
+        <td><a href="https://ssth.ch" target="_blank">ssth.ch</a></td>
+      </tr>
+<tr class="row-aktiv">
+        <td><span class="kunde-badge kunde-aktiv">✅ Kunde · 650 Prüf.</span></td>
+        <td><strong>SWSWIN</strong></td>
+        <td>SWS Winterthur</td>
+        <td>Winterthur <span style="color:var(--gray-mid)">(ZH)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 52 213 44 44</td>
+        <td><a href="https://sws.ch" target="_blank">sws.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>TEKOLT</strong></td>
+        <td>TEKO</td>
+        <td>Olten <span style="color:var(--gray-mid)">(SO)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 62 212 12 22</td>
+        <td><a href="https://teko.ch" target="_blank">teko.ch</a></td>
+      </tr>
+<tr>
+        <td><span class="kunde-badge kunde-nein">— offen</span></td>
+        <td><strong>WIOSZH</strong></td>
+        <td>WIOS Bildungszentrum</td>
+        <td>n/a <span style="color:var(--gray-mid)">(n/a)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>n/a</td>
+        <td><a href="https://wios.ch" target="_blank">wios.ch</a></td>
+      </tr>
+<tr class="row-aktiv">
+        <td><span class="kunde-badge kunde-aktiv">✅ Kunde · 208 Prüf.</span></td>
+        <td><strong>WSFFIV</strong></td>
+        <td>WSF Wirtschaftsschule Five</td>
+        <td>diverse <span style="color:var(--gray-mid)">(div)</span></td>
+        <td>—</td>
+        <td><span class="badge-konkurrenz">privat</span></td>
+        <td>+41 44 225 78 78</td>
+        <td><a href="https://wirtschaftsschule-five.ch" target="_blank">wirtschaftsschule-five.ch</a></td>
+      </tr>
+  </tbody>
+</table></div>
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- ANHÄNGE -->
+<div class="section" id="anhaenge">
+  <div class="sec-label">Anhänge &amp; verwandte Dossiers</div>
+  <div class="download-grid">
+    <div class="download-card fade-in">
+      <div class="dl-icon">🔍</div><div class="dl-name">White Spots Dossier (separat)</div>
+      <div class="dl-desc">Detaillierte Analyse der inhaltlichen Lücken zwischen Lehrplänen und SIZ AU. Vorschlag für 3 neue Module: AU5 KI&amp;Sicherheit, AU6 Multimedia/Web, AU7 Power Platform.</div>
+      <a class="dl-btn" href="GL-Dossier-Kaufmaennische-Ausbildung-WhiteSpots.html">📊 Open White Spots</a>
+    </div>
+    <div class="download-card fade-in">
+      <div class="dl-icon">📄</div><div class="dl-name">Lehrplan HMS Kanton ZH 2023 (PDF)</div>
+      <div class="dl-desc">155-seitiger Lehrplan der drei Zürcher HMS (KS Enge, KS Hottingen, KS Büelrain WI). SIZ-Pflicht-Verankerung in §1.9 (S. 19) und §4.1.4 (S. 116).</div>
+      <a class="dl-btn" href="https://www.ken.ch/fileadmin/content/03_HMS/Lehrplan_HMS_2023_24.pdf" target="_blank">⬇ Lehrplan HMS</a>
+    </div>
+    <div class="download-card fade-in">
+      <div class="dl-icon">📊</div><div class="dl-name">Schulen JSON-Datenbasis</div>
+      <div class="dl-desc">Strukturierte Daten aller 120 Schulen mit Kürzel, Träger, Standort, Kanton, Telefon, Web, Sprache, Schultyp. Quelle für HubSpot-Import-Script.</div>
+      <a class="dl-btn" href="schulen_data.json" download>⬇ schulen_data.json</a>
+    </div>
+    <div class="download-card fade-in">
+      <div class="dl-icon">🐍</div><div class="dl-name">HubSpot Import-Script</div>
+      <div class="dl-desc">Python-Script zum Upsert aller Schulen ins SIZ HubSpot CRM. Erstellt Custom Properties (kshw_mitglied, kv_edupool_partner, vsh_mitglied). Ausgeführt: April 2026.</div>
+      <a class="dl-btn" href="hubspot_import_schulen.py" download>⬇ hubspot_import_schulen.py</a>
+    </div>
+  </div>
+
+  <div class="card fade-in" style="margin-top:1.5rem">
+    <div class="card-title">🔗 Wichtige externe Links &amp; Verbands-Kontakte</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:.75rem">
+      <div style="font-size:12px"><strong>KSHW</strong><br><a href="https://www.kshw.ch" target="_blank" style="color:var(--blue)">kshw.ch</a><br>Präs. Flavio Maggi (CPC Lugano)<br>Vize Stephan Amstutz (KS Hottingen)</div>
+      <div style="font-size:12px"><strong>SKKBS / CSEPC</strong><br><a href="https://www.skkbs-csepc.ch" target="_blank" style="color:var(--blue)">skkbs-csepc.ch</a><br>Präs. Peter Kaeser (WKS Bern)</div>
+      <div style="font-size:12px"><strong>kv edupool AG</strong><br><a href="https://www.kv-edupool.ch" target="_blank" style="color:var(--blue)">kv-edupool.ch</a><br>Baarerstr. 77, 6300 Zug<br>Co-CEO Köthe / Wespi-Krummenacher</div>
+      <div style="font-size:12px"><strong>VSH</strong><br><a href="https://www.vsh.swiss" target="_blank" style="color:var(--blue)">vsh.swiss</a><br>Belpstr. 41, 3007 Bern<br>Präs. Hösli, GF Hodler</div>
+      <div style="font-size:12px"><strong>Kfm. Verband Schweiz</strong><br><a href="https://www.kfmv.ch" target="_blank" style="color:var(--blue)">kfmv.ch</a><br>Präs. Daniel Jositsch · CEO Burkhalter</div>
+      <div style="font-size:12px"><strong>BIKAS / IGKG</strong><br><a href="https://www.bikas.ch" target="_blank" style="color:var(--blue)">bikas.ch</a> · <a href="https://igkg.ch" target="_blank" style="color:var(--blue)">igkg.ch</a><br>BiVo 2023 Trägerin</div>
+      <div style="font-size:12px"><strong>SIZ Newsflash &amp; AU-Reform</strong><br><a href="https://siz.ch/newsflash-dezember-2025/" target="_blank" style="color:var(--blue)">siz.ch/newsflash-dezember-2025</a></div>
+      <div style="font-size:12px;background:var(--amber-light);padding:.5rem;border-radius:6px"><strong style="color:#633806">⚠️ Offene Aufgabe 1</strong><br><span style="color:#7A5C00">KSHW-Mitgliederliste vollständig verifizieren (Mitgliederkarte)</span></div>
+      <div style="font-size:12px;background:var(--amber-light);padding:.5rem;border-radius:6px"><strong style="color:#633806">⚠️ Offene Aufgabe 2</strong><br><span style="color:#7A5C00">AU-Reform-Kommunikation an alle 120 Schulen bis Q3 2026</span></div>
+      <div style="font-size:12px;background:var(--amber-light);padding:.5rem;border-radius:6px"><strong style="color:#633806">⚠️ Offene Aufgabe 3</strong><br><span style="color:#7A5C00">Pilot-Verträge AU5/AU6 mit 6 Schulen (3 ZH-HMS + 3 kv edupool)</span></div>
+      <div style="font-size:12px;background:var(--amber-light);padding:.5rem;border-radius:6px"><strong style="color:#633806">⚠️ Offene Aufgabe 4</strong><br><span style="color:#7A5C00">Kantonale Lehrplan-Audit (BE, AG, BS, LU, SG): SIZ-Status</span></div>
+    </div>
+  </div>
+</div>
+
+<div style="background:var(--siz-navy);color:rgba(255,255,255,.5);text-align:center;padding:1.5rem;font-size:11px;font-family:'IBM Plex Mono',monospace">
+  SIZ AG · GL-Dossier Kaufmännische Ausbildung · Erstellt April 2026 · Vertraulich<br>
+  <span style="font-size:10px;opacity:.7">Quellen: Lehrplan HMS Kanton ZH 2023 · Zefix-Handelsregister · KSHW · kv edupool AG · VSH · BIKAS · IGKG · kfmv · SIZ Newsflash 2025 · BFS Bildungsstatistik · 120 Schulen recherchiert</span>
+</div>
+
+<script>
+function toggleEbene(el){const siz=el.querySelector('.ebene-siz');if(!siz)return;const open=siz.classList.contains('open');document.querySelectorAll('.ebene-siz.open').forEach(s=>s.classList.remove('open'));if(!open)siz.classList.add('open')}
+function switchVerband(v){document.querySelectorAll('.verband-tab').forEach(t=>t.classList.remove('active'));document.querySelectorAll('.verband-content').forEach(c=>c.classList.remove('active'));event.target.closest('.verband-tab').classList.add('active');document.getElementById('content-'+v).classList.add('active')}
+const observer=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}})},{threshold:.1});
+document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
+const sections=document.querySelectorAll('[id]');
+const navLinks=document.querySelectorAll('.topnav-links a');
+window.addEventListener('scroll',()=>{let cur='';sections.forEach(s=>{if(window.scrollY>=s.offsetTop-80)cur=s.id});navLinks.forEach(l=>{l.classList.remove('active');if(l.getAttribute('href')==='#'+cur)l.classList.add('active')})});
+window.addEventListener('load',()=>{document.querySelectorAll('.bar-fill').forEach(b=>{const w=b.style.width;b.style.width='0';setTimeout(()=>{b.style.width=w},300)})});
+</script>
+</body>
+</html>

@@ -43,6 +43,26 @@ export const projects: Project[] = [
         file: "/projects/siz-ag/GL-Dossier-DirektionsAssistentin.html",
       },
       {
+        slug: "dossier-kaufmaennische-ausbildung",
+        title: "GL-Dossier Kaufmännische Ausbildung",
+        file: "/projects/siz-ag/GL-Dossier-Kaufmaennische-Ausbildung.html",
+      },
+      {
+        slug: "dossier-kaufmaennische-whitespots",
+        title: "GL-Dossier Kaufmännische Ausbildung – White Spots",
+        file: "/projects/siz-ag/GL-Dossier-Kaufmaennische-Ausbildung-WhiteSpots.html",
+      },
+      {
+        slug: "dossier-blueprint",
+        title: "GL-Dossier Blueprint-Template",
+        file: "/projects/siz-ag/GL-Dossier-Blueprint-Template.html",
+      },
+      {
+        slug: "ceo-siz-agent",
+        title: "CEO SIZ-Agent (Erstversion)",
+        file: "/projects/siz-ag/ceo-siz-agent.html",
+      },
+      {
         slug: "ch-berufsbildung",
         title: "CH-Berufsbildungssystem Übersicht",
         file: "/projects/siz-ag/CH_Berufsbildungssystem_Systemuebersicht.html",

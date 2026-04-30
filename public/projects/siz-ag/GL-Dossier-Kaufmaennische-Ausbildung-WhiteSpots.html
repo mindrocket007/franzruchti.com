@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GL-Dossier: White Spots — Neue SIZ AU-Module — SIZ AG</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#185FA5;--blue-dark:#0d3d6e;--blue-light:#E6F1FB;--blue-mid:#378ADD;--green:#1D9E75;--green-light:#E1F5EE;--green-deep:#0F6E56;--teal:#0F6E56;--amber:#BA7517;--amber-light:#FAEEDA;--red:#A32D2D;--red-light:#FCEBEB;--purple:#534AB7;--purple-light:#EEEDFE;--gray:#333330;--gray-light:#F4F3EF;--gray-mid:#777770;--border:#D8D6CF;--bg:#F7F6F2;--white:#FFFFFF;--siz-blue:#185FA5;--siz-navy:#0d3d6e;--ws-accent:#7C3AED;--ws-accent-light:#EEEDFE;--ws-deep:#4C1D95}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:'IBM Plex Sans',sans-serif;background:var(--bg);color:var(--gray);font-size:14px;line-height:1.6}
+.topnav{position:sticky;top:0;z-index:100;background:var(--siz-navy);display:flex;align-items:center;gap:0;box-shadow:0 2px 12px rgba(0,0,0,.25)}
+.topnav-brand{padding:.75rem 1.5rem;color:#fff;font-weight:700;font-size:14px;border-right:1px solid rgba(255,255,255,.1);white-space:nowrap}
+.topnav-brand span{color:#C4B5FD;font-weight:400}
+.topnav-links{display:flex;gap:0;flex:1;overflow-x:auto}
+.topnav-links a{color:rgba(255,255,255,.75);text-decoration:none;padding:.75rem 1rem;font-size:12px;white-space:nowrap;transition:all .2s;border-right:1px solid rgba(255,255,255,.08)}
+.topnav-links a:hover,.topnav-links a.active{color:#fff;background:rgba(255,255,255,.1)}
+.topnav-meta{padding:.75rem 1.5rem;color:rgba(255,255,255,.45);font-size:11px;font-family:'IBM Plex Mono',monospace;white-space:nowrap;border-left:1px solid rgba(255,255,255,.1)}
+.section{padding:3rem 2rem;max-width:1280px;margin:0 auto}
+.section-hero{background:linear-gradient(135deg,var(--siz-navy) 0%,#3d2899 55%,var(--ws-accent) 100%);color:#fff;padding:4rem 2rem 3rem;position:relative;overflow:hidden}
+.section-hero::before{content:'';position:absolute;top:-50%;right:-10%;width:600px;height:600px;background:radial-gradient(circle,rgba(255,255,255,.06) 0%,transparent 70%);border-radius:50%}
+.hero-inner{max-width:1280px;margin:0 auto;position:relative;z-index:1}
+.hero-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);border-radius:20px;padding:4px 14px;font-size:11px;font-family:'IBM Plex Mono',monospace;margin-bottom:1.25rem;color:rgba(255,255,255,.9)}
+.hero-title{font-size:clamp(24px,4vw,40px);font-weight:700;line-height:1.2;margin-bottom:.5rem}
+.hero-subtitle{font-size:16px;font-weight:300;color:rgba(255,255,255,.8);margin-bottom:2rem}
+.hero-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem;margin-top:2.5rem}
+.kpi-card{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:1.25rem 1rem;text-align:center}
+.kpi-num{font-size:2rem;font-weight:700;line-height:1;color:#fff}
+.kpi-label{font-size:11px;color:rgba(255,255,255,.75);margin-top:4px;line-height:1.4}
+.kpi-icon{font-size:20px;margin-bottom:6px}
+.alert-banner{background:#FFF3CD;border:1px solid #FFC107;border-radius:10px;padding:1rem 1.25rem;margin-bottom:1.5rem;display:flex;gap:12px;align-items:flex-start}
+.alert-banner-icon{font-size:20px;flex-shrink:0}
+.alert-banner-body{font-size:12px;line-height:1.6;color:#664d03}
+.alert-banner-body strong{color:#512900;display:block;margin-bottom:4px;font-size:13px}
+.insight-banner{background:var(--ws-accent-light);border:1px solid var(--ws-accent);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1.5rem;display:flex;gap:12px;align-items:flex-start}
+.insight-banner-icon{font-size:20px;flex-shrink:0}
+.insight-banner-body{font-size:12px;line-height:1.6;color:var(--ws-deep)}
+.insight-banner-body strong{display:block;margin-bottom:4px;font-size:13px}
+.sec-label{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:1.5rem;display:flex;align-items:center;gap:12px}
+.sec-label::after{content:'';flex:1;height:1px;background:var(--border)}
+.gap-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:1.5rem;border-top:4px solid var(--ws-accent)}
+.gap-prio-high{border-top-color:var(--red)}.gap-prio-med{border-top-color:var(--amber)}.gap-prio-trend{border-top-color:var(--gray-mid)}
+.gap-prio-badge{display:inline-block;font-size:10px;font-weight:700;padding:3px 10px;border-radius:10px;margin-bottom:.5rem}
+.gap-prio-high .gap-prio-badge{background:var(--red);color:#fff}.gap-prio-med .gap-prio-badge{background:var(--amber);color:#fff}.gap-prio-trend .gap-prio-badge{background:var(--gray-mid);color:#fff}
+.gap-title{font-size:15px;font-weight:600;margin-bottom:.5rem;color:var(--gray)}
+.gap-content{font-size:12px;color:#555;line-height:1.6}
+.gap-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem}
+table{width:100%;border-collapse:collapse;margin:.6rem 0;font-size:12px}
+table th{background:var(--siz-navy);color:#fff;padding:.625rem .875rem;text-align:left;font-weight:600;font-size:11px}
+table td{padding:.625rem .875rem;border-bottom:1px solid var(--border);vertical-align:top}
+table tr:nth-child(even) td{background:#FAFAF8}
+.heat{display:inline-block;padding:2px 8px;border-radius:4px;font-size:10px;font-weight:600;color:#fff}
+.heat-full{background:var(--red)}.heat-partial{background:var(--amber)}.heat-low{background:var(--green)}.heat-na{background:var(--gray-mid)}
+.module-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:1.75rem;border-left:5px solid var(--ws-accent);margin-bottom:1rem}
+.module-prio{display:inline-block;font-size:11px;font-weight:700;padding:4px 12px;border-radius:12px;margin-bottom:.75rem;text-transform:uppercase;letter-spacing:.05em}
+.module-prio-1{background:var(--red);color:#fff}.module-prio-2{background:var(--amber);color:#fff}.module-prio-3{background:var(--blue);color:#fff}
+.module-title{font-size:18px;font-weight:700;color:var(--ws-deep);margin-bottom:.25rem}
+.module-tagline{font-size:13px;color:var(--gray-mid);margin-bottom:1rem;font-style:italic}
+.module-content{font-size:12px;color:#555;line-height:1.6}
+.module-content strong{color:var(--gray)}
+.module-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1rem;font-size:12px}
+.module-block{background:var(--gray-light);border-radius:8px;padding:.875rem 1rem}
+.module-block strong{display:block;margin-bottom:4px;color:var(--ws-deep)}
+.recom-banner{background:var(--ws-accent-light);border:2px solid var(--ws-accent);border-radius:12px;padding:1.5rem;margin:1.5rem 0}
+.recom-banner h3{color:var(--ws-deep);margin-bottom:.75rem;font-size:16px}
+.recom-list{list-style:none;display:flex;flex-direction:column;gap:.5rem}
+.recom-list li{display:flex;gap:10px;font-size:13px;color:#444;padding:.5rem 0;border-bottom:1px solid var(--border)}
+.recom-list li:last-child{border-bottom:none}
+.recom-num{flex-shrink:0;width:28px;height:28px;border-radius:50%;background:var(--ws-accent);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px}
+.fade-in{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+.fade-in.visible{opacity:1;transform:translateY(0)}
+.section-divider{border:none;border-top:1px solid var(--border);margin:0}
+.btn-back{display:inline-block;background:var(--ws-accent);color:#fff;padding:.5rem 1rem;border-radius:8px;font-size:12px;font-weight:600;text-decoration:none;margin-bottom:1rem}
+.btn-back:hover{background:var(--ws-deep)}
+@media print{.topnav{display:none}.section{padding:1rem}.gap-grid,.module-grid{display:block}body{font-size:12px}}
+@media(max-width:900px){.module-grid{grid-template-columns:1fr}.hero-kpis{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="topnav-brand">SIZ AG <span>White Spots</span></div>
+  <div class="topnav-links">
+    <a href="#onepager" class="active">One-Pager</a>
+    <a href="#methode">Methode</a>
+    <a href="#whitespots-lp">Lücken HMS-Lehrplan</a>
+    <a href="#whitespots-trend">Markt-Trends</a>
+    <a href="#schultypen-matrix">Schultyp-Matrix</a>
+    <a href="#neue-module">Neue Module</a>
+    <a href="#empfehlung">Empfehlung</a>
+  </div>
+  <div class="topnav-meta">White Spots · April 2026</div>
+</nav>
+
+<!-- HERO -->
+<div class="section-hero" id="onepager">
+  <div class="hero-inner">
+    <div class="hero-badge">🔍 GL-Dossier · SIZ AG · White Spots Analyse — Gegen-Brief zu GL-Dossier Kaufmännische Ausbildung</div>
+    <div class="hero-title">White Spots:<br>Neue AU-Module für SIZ</div>
+    <div class="hero-subtitle">Lücken zwischen Curricula (HMS, KV-BFS, BiVo 2023) und SIZ AU-Portfolio · Vorschlag für 3 neue Module</div>
+    <div class="hero-kpis">
+      <div class="kpi-card fade-in"><div class="kpi-icon">🎯</div><div class="kpi-num">3</div><div class="kpi-label">Neue Module<br>AU5/AU6/AU7 vorgeschlagen</div></div>
+      <div class="kpi-card fade-in"><div class="kpi-icon">🔴</div><div class="kpi-num">3</div><div class="kpi-label">Top-Lücken<br>KI · Power Platform · Cyber</div></div>
+      <div class="kpi-card fade-in"><div class="kpi-icon">🟠</div><div class="kpi-num">5</div><div class="kpi-label">Mittel-Lücken<br>DSG · Multimedia · CMS · Teams · ERP</div></div>
+      <div class="kpi-card fade-in"><div class="kpi-icon">📋</div><div class="kpi-num">15</div><div class="kpi-label">Lehrplan-Lerngebiete<br>analysiert</div></div>
+      <div class="kpi-card fade-in"><div class="kpi-icon">⏰</div><div class="kpi-num">SJ 27/28</div><div class="kpi-label">Pilot-Start<br>3 ZH-HMS + 3 kv edupool</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- METHODE -->
+<div class="section" id="methode">
+  <a href="GL-Dossier-Kaufmaennische-Ausbildung.html" class="btn-back">← Zurück zum Hauptdossier «Kaufmännische Ausbildung»</a>
+  <div class="sec-label">📐 Methode</div>
+  <div class="insight-banner fade-in">
+    <div class="insight-banner-icon">🔬</div>
+    <div class="insight-banner-body">
+      <strong>Wie wurden die White Spots ermittelt?</strong>
+      Pro Lerngebiet im <strong>Lehrplan HMS Kanton Zürich 2023, Kapitel 4.1.5 (IKT)</strong> wurde geprüft, ob die heutigen SIZ AU-Module den Inhalt vollständig (✓), teilweise (~) oder gar nicht (✗) abdecken. Zusätzlich wurde die <strong>BiVo 2023 Kauffrau/Kaufmann EFZ</strong> mit Handlungskompetenzen E1–E6 sowie der aktuelle Marktbedarf von Praktikumsbetrieben einbezogen. Quellen: ken.ch · siz.ch/bivo-2023 · BIKAS · KV-Reform-Dokumente · KSHW-Tagungsmaterialien.
+    </div>
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- LÜCKEN AUS HMS-LEHRPLAN -->
+<div class="section" id="whitespots-lp">
+  <div class="sec-label">📋 Lücken aus dem HMS-Lehrplan Zürich 2023</div>
+  <p style="font-size:13px;color:#555;margin-bottom:1rem">Diese Tabelle zeigt pro Lerngebiet im Lehrplan, ob das heutige SIZ AU-Portfolio den Inhalt abdeckt. Die markierten Lücken (✗) sind direkter Auftrag für neue Module.</p>
+  <table>
+    <thead><tr><th>Lerngebiet (Lehrplan HMS ZH 2023)</th><th>Konkrete Inhalte</th><th>SIZ-Abdeckung</th><th>Lücke / Bemerkung</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Kommunikationsmittel &amp; Telematik</strong></td><td>Email, Telefon, Social Media, Messenger, Chat</td><td><span class="heat heat-low">AU1 ✓</span></td><td>—</td></tr>
+      <tr><td><strong>Bürogeräte / Energieverbrauch</strong></td><td>Energiereduktion, Recycling, Anwendungsfreundlichkeit</td><td><span class="heat heat-full">✗</span></td><td>Nicht in SIZ AU</td></tr>
+      <tr><td><strong>Ergonomie</strong></td><td>Mobiliar, Geräte, Raumgestaltung, Körperhaltung</td><td><span class="heat heat-full">✗</span></td><td>Nicht in SIZ AU</td></tr>
+      <tr><td><strong>Ordnungssysteme</strong></td><td>Physische und digitale Ablagestrukturen</td><td><span class="heat heat-partial">AU1 ~</span></td><td>Konzeptionell teilweise; Best Practices fehlen</td></tr>
+      <tr><td><strong>Prozesse &amp; Visualisierung</strong></td><td>Smart Art, Visio, Mindmapping, Organigramme</td><td><span class="heat heat-partial">AU2 ~</span></td><td>Visio, Mindmapping nicht abgedeckt</td></tr>
+      <tr><td><strong>Groupware vertieft</strong></td><td>Outlook, <strong>Teams, SharePoint, OneDrive</strong> Vertiefung</td><td><span class="heat heat-partial">AU1 ~</span></td><td><strong>Teams/SharePoint-Vertiefung fehlt</strong></td></tr>
+      <tr><td><strong>Datensicherheit / Datenschutz</strong></td><td>Datenverlust, DSG, Phishing, Updates</td><td><span class="heat heat-partial">AU1 ~</span></td><td><strong>Cybersecurity Awareness, revDSG fehlen</strong></td></tr>
+      <tr><td><strong>Cloud-Konzepte</strong></td><td>Cloud-Aufbewahrung, Sicherheit, Synchronisation</td><td><span class="heat heat-partial">AU1 ~</span></td><td>OneDrive ja, breite Cloud-Konzepte fehlen</td></tr>
+      <tr><td><strong>Buchhaltung Anwender</strong></td><td>Bilanzen, Erfolgsrechnung, einfache Buchungen</td><td><span class="heat heat-na">N/A</span></td><td>Externes Zertifikat Abacus FB — nicht SIZ-Aufgabe</td></tr>
+      <tr><td><strong>Hilfesysteme erstellen</strong></td><td>Anleitungsdokumente und <strong>-videos</strong> erstellen</td><td><span class="heat heat-full">✗</span></td><td><strong>Komplett fehlend</strong> — Screencasts, Tutorials</td></tr>
+      <tr><td><strong>Multimedia / vernetzte Anwendung</strong></td><td>Magazin, Flyer, Plakat, Film, Ton mit <strong>Adobe CC</strong>; Drehbücher</td><td><span class="heat heat-full">✗</span></td><td><strong>Komplett fehlend</strong> — DTP/Video-Bereich</td></tr>
+      <tr><td><strong>Webseiten / CMS</strong></td><td>Website-Pflege mit Content Management Systemen</td><td><span class="heat heat-full">✗</span></td><td><strong>Komplett fehlend</strong> — WordPress nicht im AU</td></tr>
+      <tr><td><strong>Bewerbungsvideo</strong></td><td>Selbstständig erstellen + format-konform</td><td><span class="heat heat-full">✗</span></td><td><strong>Lehrplan-Pflicht</strong> 2./3. SJ — nicht in SIZ</td></tr>
+      <tr><td><strong>Statistik vertieft</strong></td><td>Trendanalyse, Histogramme, Streudiagramme, Median</td><td><span class="heat heat-partial">AU4 ~</span></td><td>Statistik-Tiefe übersteigt AU4M</td></tr>
+      <tr><td><strong>Pivot-Auswertungen</strong></td><td>Daten sortieren, filtern, statistisch aufbereiten</td><td><span class="heat heat-partial">AU4 ~</span></td><td>Vertiefung in PU41, Brücke fehlt</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<hr class="section-divider">
+
+<!-- TREND-LÜCKEN -->
+<div class="section" id="whitespots-trend">
+  <div class="sec-label">🚀 Markt-Trends &amp; Praktikumsbetriebs-Bedarf</div>
+  <p style="font-size:13px;color:#555;margin-bottom:1rem">Folgende Themen sind in modernen Schul-Curricula (HMS, KV-BFS, KV-Verbandsschulen, VSH) zunehmend integriert oder werden <strong>von Praktikumsbetrieben/Arbeitgebern erwartet</strong>, sind aber im SIZ AU-Portfolio nicht abgedeckt:</p>
+
+  <div class="gap-grid fade-in">
+    <div class="gap-card gap-prio-high">
+      <span class="gap-prio-badge">🔴 TOP-LÜCKE 1</span>
+      <div class="gap-title">Generative KI im Office-Alltag</div>
+      <div class="gap-content"><strong>Inhalte:</strong> ChatGPT, Microsoft Copilot, Prompt Engineering, KI-gestützte Texterstellung, KI-Datenanalyse, Halluzinationen erkennen, Datenschutz beim KI-Einsatz<br><br><strong>Begründung:</strong> Bereits Standardbestandteil in HMS-/WMS-Schulungen 2025/26. Kein SIZ-Modul deckt das ab. Höchste Marktnachfrage. Microsoft Copilot ist in Schweizer Unternehmen Standard ab 2026.</div>
+    </div>
+    <div class="gap-card gap-prio-high">
+      <span class="gap-prio-badge">🔴 TOP-LÜCKE 2</span>
+      <div class="gap-title">Power Platform für Anwender</div>
+      <div class="gap-content"><strong>Inhalte:</strong> Power BI (Reports), <strong>Power Automate</strong> (Workflow-Automation), Power Apps (No-Code-Apps), Brücke zwischen Excel und BI-Tools<br><br><strong>Begründung:</strong> BiVo 2023 HKB e6 Tech-Option deckt nur PU41 ab. Lücke zwischen AU4 und PU41 für KV-Lernende.</div>
+    </div>
+    <div class="gap-card gap-prio-high">
+      <span class="gap-prio-badge">🔴 TOP-LÜCKE 3</span>
+      <div class="gap-title">Cybersecurity Awareness</div>
+      <div class="gap-content"><strong>Inhalte:</strong> Phishing, Passwortsicherheit, 2FA, sicheres Verhalten in der Cloud, Schatten-IT, Social Engineering, IT-Vorfall-Meldung<br><br><strong>Begründung:</strong> Lehrplan HMS verlangt es nur oberflächlich; Praktikumsbetriebe (Banken, Versicherungen, KMU) erwarten zertifizierten Nachweis.</div>
+    </div>
+    <div class="gap-card gap-prio-med">
+      <span class="gap-prio-badge">🟠 LÜCKE</span>
+      <div class="gap-title">revDSG / Datenschutz praxisnah</div>
+      <div class="gap-content"><strong>Inhalte:</strong> Schweizer Datenschutzgesetz (rev. 2023), Datenbearbeitungsverzeichnis, Datenschutzfolgeabschätzung, Auftragsbearbeitung, Cloud-Aufbewahrung<br><br><strong>Begründung:</strong> AU1 streift das, aber im KMU-Praktikumsbetrieb sind Anwender-Skills gefragt.</div>
+    </div>
+    <div class="gap-card gap-prio-med">
+      <span class="gap-prio-badge">🟠 LÜCKE</span>
+      <div class="gap-title">Multimedia-Produktion</div>
+      <div class="gap-content"><strong>Inhalte:</strong> Bild-/Video-/Audiobearbeitung im Office-Alltag (Canva, Adobe Express, CapCut, Camtasia), Bewerbungsvideo, Social-Media-Content, Corporate-Design-Anwendung<br><br><strong>Begründung:</strong> Lehrplan HMS S. 130-131 macht das zum Schwerpunkt im 3. SJ. Heute kein SIZ-Modul.</div>
+    </div>
+    <div class="gap-card gap-prio-med">
+      <span class="gap-prio-badge">🟠 LÜCKE</span>
+      <div class="gap-title">Webpräsenz &amp; CMS-Pflege</div>
+      <div class="gap-content"><strong>Inhalte:</strong> WordPress / Joomla / Wix Anwender-Niveau, SEO-Grundlagen, Newsletter-Tools (Mailchimp), Web-Analytics-Basics<br><br><strong>Begründung:</strong> Im Lehrplan HMS explizit verankert. Marktnachfrage in KMU steigt.</div>
+    </div>
+    <div class="gap-card gap-prio-med">
+      <span class="gap-prio-badge">🟠 LÜCKE</span>
+      <div class="gap-title">Collaboration jenseits Office</div>
+      <div class="gap-content"><strong>Inhalte:</strong> Microsoft Teams Vertiefung (Channels, Apps), SharePoint-Sites, Notion, Miro, Slack — Kollaboration in hybriden Arbeitsmodellen<br><br><strong>Begründung:</strong> AU1 streift Teams; Tiefe fehlt für Praktikum-Realität.</div>
+    </div>
+    <div class="gap-card gap-prio-med">
+      <span class="gap-prio-badge">🟠 LÜCKE</span>
+      <div class="gap-title">Buchhaltungs-/ERP-Familie</div>
+      <div class="gap-content"><strong>Inhalte:</strong> Bexio, Banana, Sage Start, Klara — KMU-relevante Buchhaltungssoftware-Familie<br><br><strong>Begründung:</strong> HMS-Lehrplan setzt Abacus, aber 90 % der KMU nutzen andere Systeme. Markt-Diversifizierung sinnvoll.</div>
+    </div>
+    <div class="gap-card gap-prio-trend">
+      <span class="gap-prio-badge">⚪ TREND</span>
+      <div class="gap-title">E-Commerce-Plattformen</div>
+      <div class="gap-content"><strong>Inhalte:</strong> Shopify, WooCommerce, Marketplace-Verwaltung, einfache Online-Shop-Pflege<br><br><strong>Begründung:</strong> Branchen-Wachstum, vermehrt in KV-Lehrplänen Detailhandel-Branche.</div>
+    </div>
+    <div class="gap-card gap-prio-trend">
+      <span class="gap-prio-badge">⚪ TREND</span>
+      <div class="gap-title">CRM-Anwender Light</div>
+      <div class="gap-content"><strong>Innalte:</strong> HubSpot/Salesforce/Pipedrive Grundlagen, Kontaktpflege, Pipeline-Tracking, Reporting<br><br><strong>Begründung:</strong> Querverwendbar zwischen kaufmännischen Berufen und Marketing.</div>
+    </div>
+    <div class="gap-card gap-prio-trend">
+      <span class="gap-prio-badge">⚪ TREND</span>
+      <div class="gap-title">Digitale Identität &amp; Auth.</div>
+      <div class="gap-content"><strong>Inhalte:</strong> SwissID, Passkeys, Passwort-Manager, Single-Sign-On, sichere Mail-Verschlüsselung<br><br><strong>Begründung:</strong> e-Government &amp; Banking-Trend, Mehrwert für Anwender.</div>
+    </div>
+    <div class="gap-card gap-prio-trend">
+      <span class="gap-prio-badge">⚪ TREND</span>
+      <div class="gap-title">RPA Light</div>
+      <div class="gap-content"><strong>Inhalte:</strong> Power Automate Desktop, einfache Bots, Wiederholungsaufgaben automatisieren<br><br><strong>Begründung:</strong> HKB e5 BiVo Tech-Option, Verbindung zu Programmierlogik.</div>
+    </div>
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- SCHULTYP-MATRIX -->
+<div class="section" id="schultypen-matrix">
+  <div class="sec-label">🎯 Schultyp-Differenzierung der White Spots</div>
+  <p style="font-size:13px;color:#555;margin-bottom:1rem">Bedarfs-Heatmap: Welche White Spot ist für welchen Schultyp wie wichtig?</p>
+  <table>
+    <thead>
+      <tr>
+        <th>White Spot</th>
+        <th>HMS/WMS/IMS</th>
+        <th>KV-BFS</th>
+        <th>KV-Verband</th>
+        <th>VSH-Privat</th>
+        <th>kv edupool Erw.</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Generative KI / Copilot</td><td><span class="heat heat-full">hoch</span></td><td><span class="heat heat-full">hoch</span></td><td><span class="heat heat-full">hoch</span></td><td><span class="heat heat-full">hoch</span></td><td><span class="heat heat-full">hoch</span></td></tr>
+      <tr><td>Power Platform (BI / Automate)</td><td><span class="heat heat-partial">mittel</span></td><td><span class="heat heat-full">hoch (e6)</span></td><td><span class="heat heat-full">hoch</span></td><td><span class="heat heat-partial">mittel</span></td><td><span class="heat heat-full">hoch</span></td></tr>
+      <tr><td>Cybersecurity / revDSG</td><td><span class="heat heat-full">hoch</span></td><td><span class="heat heat-full">hoch</span></td><td><span class="heat heat-full">hoch</span></td><td><span class="heat heat-partial">mittel</span></td><td><span class="heat heat-full">hoch</span></td></tr>
+      <tr><td>Multimedia / Bewerbungsvideo</td><td><span class="heat heat-full">hoch (LP-Pflicht)</span></td><td><span class="heat heat-partial">mittel</span></td><td><span class="heat heat-partial">mittel</span></td><td><span class="heat heat-partial">mittel</span></td><td><span class="heat heat-partial">mittel</span></td></tr>
+      <tr><td>Webseiten / CMS</td><td><span class="heat heat-full">hoch (LP-Pflicht)</span></td><td><span class="heat heat-partial">mittel</span></td><td><span class="heat heat-partial">mittel</span></td><td><span class="heat heat-partial">mittel</span></td><td><span class="heat heat-partial">mittel</span></td></tr>
+      <tr><td>Teams / SharePoint Vertiefung</td><td><span class="heat heat-full">hoch</span></td><td><span class="heat heat-full">hoch</span></td><td><span class="heat heat-full">hoch</span></td><td><span class="heat heat-partial">mittel</span></td><td><span class="heat heat-full">hoch</span></td></tr>
+      <tr><td>Buchhaltungs-/ERP-Familie</td><td><span class="heat heat-partial">mittel</span></td><td><span class="heat heat-full">hoch</span></td><td><span class="heat heat-full">hoch</span></td><td><span class="heat heat-full">hoch</span></td><td><span class="heat heat-full">hoch</span></td></tr>
+      <tr><td>CRM Anwender</td><td><span class="heat heat-partial">mittel</span></td><td><span class="heat heat-partial">mittel</span></td><td><span class="heat heat-partial">mittel</span></td><td><span class="heat heat-partial">mittel</span></td><td><span class="heat heat-full">hoch</span></td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:11px;color:var(--gray-mid);margin-top:.75rem">Heat-Skala: <span class="heat heat-full">hoch</span> = strategischer Hebel · <span class="heat heat-partial">mittel</span> = relevant · <span class="heat heat-low">niedrig</span> = kein primärer Bedarf · <span class="heat heat-na">N/A</span></p>
+</div>
+
+<hr class="section-divider">
+
+<!-- NEUE MODULE -->
+<div class="section" id="neue-module">
+  <div class="sec-label">🚀 Vorschlag: 3 neue SIZ AU-Module</div>
+  <p style="font-size:13px;color:#555;margin-bottom:1rem">Drei priorisierte Optionen für neue Module, die die identifizierten Top-Lücken schliessen. Pilot-Vorschlag: Schuljahr 2027/28 mit 3 ZH-HMS (M-Variante) + 3 kv edupool-Schulen (K-Variante).</p>
+
+  <div class="module-card fade-in">
+    <span class="module-prio module-prio-1">Option A · Höchste Priorität</span>
+    <div class="module-title">AU5 — KI &amp; Digitale Sicherheit</div>
+    <div class="module-tagline">«Künstliche Intelligenz im Office-Alltag &amp; Cybersecurity Awareness»</div>
+    <div class="module-content">Adressiert die <strong>zwei marktstärksten Trends</strong> (KI-Boom + Cyber-Awareness) in einem Modul. Universelle Relevanz über alle Schultypen. Quick Win für Marktpositionierung.</div>
+    <div class="module-grid">
+      <div class="module-block"><strong>Inhalte (Auszug)</strong>Microsoft Copilot &amp; ChatGPT im Office-Workflow · Prompt Engineering · KI-gestützte Texte/Tabellen/Präsentationen · Halluzinationen erkennen · Datenschutz beim KI-Einsatz · revDSG · Phishing/Social Engineering · Passwortmanager &amp; 2FA · Cloud-Sicherheit</div>
+      <div class="module-block"><strong>Variante K/M</strong>Beide sinnvoll — K-Variante mit KMU-Fokus, M-Variante mit Bildungs-/Wissenschafts-Bezug. AU1 (neu, kombiniert) bleibt Voraussetzung.</div>
+      <div class="module-block"><strong>Marktargument</strong>Höchste Marktnachfrage 2026/27 · Alle Schultypen relevant · Anschluss an BiVo 2023 e1/e2/e4 · Differenziert SIZ vs. ICDL (Schweizer Datenschutz, lokale Regulierung)</div>
+      <div class="module-block"><strong>Umsatzpotenzial</strong>Bei Pilot-Erfolg + Aufnahme in HMS-Lehrplan: ~6'400 HMS-Lernende × CHF 120 (zusätzliches Modul) = <strong>+CHF 770k/Jahr</strong> · Plus KV-Lehre &amp; Erwachsenenbildung Faktor 3-4×</div>
+    </div>
+  </div>
+
+  <div class="module-card fade-in">
+    <span class="module-prio module-prio-2">Option B · Hohe Priorität</span>
+    <div class="module-title">AU6 — Multimedia &amp; Webpräsenz</div>
+    <div class="module-tagline">«Digitale Inhalte erstellen: Bild, Video, Audio, Web»</div>
+    <div class="module-content">Adressiert eine <strong>bereits curricular verankerte Lücke</strong> (Lehrplan HMS S. 130-131, Schwerpunkt 3. Schuljahr). Vertriebsargument: Schule erfüllt Lehrplan-Pflicht mit zertifiziertem Modul.</div>
+    <div class="module-grid">
+      <div class="module-block"><strong>Innalte (Auszug)</strong>Canva / Adobe Express · einfache Videoschnitt-Tools (CapCut, Premiere Rush) · Bewerbungsvideo · WordPress-Pflege · einfache SEO · Social-Media-Content · Newsletter-Tools (Mailchimp) · Corporate-Design</div>
+      <div class="module-block"><strong>Variante K/M</strong>Vor allem M-relevant (HMS-Lehrplan-Pflicht). Für KV-Lehre nur in Detailhandel-/Marketing-Branchen relevant.</div>
+      <div class="module-block"><strong>Marktargument</strong>Lehrplan-Pflicht in HMS bereits drin, derzeit ohne zertifizierten Nachweis. SIZ kann Lücke direkt schliessen — keine Lobbying nötig, nur Kommunikation.</div>
+      <div class="module-block"><strong>Umsatzpotenzial</strong>HMS-Markt (~6'400 × CHF 120) = ~CHF 770k/Jahr · Niedriger Kannibalisierungs-Effekt</div>
+    </div>
+  </div>
+
+  <div class="module-card fade-in">
+    <span class="module-prio module-prio-3">Option C · Mittlere Priorität</span>
+    <div class="module-title">AU7 — Power Platform Light</div>
+    <div class="module-tagline">«Brückenmodul AU4 → PU41: Daten-Workflow für Anwender»</div>
+    <div class="module-content">Schliesst die Lücke zwischen Advanced-User-Excel (AU4) und Power-User-Datenanalyse (PU41). Direkt anschlussfähig an BiVo 2023 e6 Tech-Option.</div>
+    <div class="module-grid">
+      <div class="module-block"><strong>Inhalte (Auszug)</strong>Power BI Desktop Reports lesen/erstellen · Power Automate Cloud-Flows (E-Mail-Workflows, Genehmigungen) · einfache Power Apps · OneDrive/SharePoint als Datenquelle</div>
+      <div class="module-block"><strong>Variante K/M</strong>Beide sinnvoll, K-Variante mit KMU-Fokus, M-Variante mit IMS-Anschluss</div>
+      <div class="module-block"><strong>Marktargument</strong>BiVo 2023 e6 Tech-Option · IMS-Lernende prädestiniert · Schliesst Lücke zur Power-User-Stufe ohne Komplexitäts-Sprung</div>
+      <div class="module-block"><strong>Umsatzpotenzial</strong>Kleinerer Markt aber hoher Premium-Preis möglich (CHF 150/Modul). Pilot via IMS-Schulen (Hottingen, Büelrain, Frauenfeld, Sargans, Aarau, Baden, Brühl SG)</div>
+    </div>
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- EMPFEHLUNG -->
+<div class="section" id="empfehlung">
+  <div class="sec-label">🎯 Strategische Empfehlung an das Gremium</div>
+  <div class="recom-banner fade-in">
+    <h3>Roadmap White-Spots-Schliessung</h3>
+    <ol class="recom-list">
+      <li><span class="recom-num">1</span><div><strong>AU5 «KI &amp; Digitale Sicherheit» als Erstprodukt</strong> entwickeln. Kombiniert die zwei marktstärksten Trends in einem Modul. Universelle Relevanz über alle Schultypen. Quick Win für Marktpositionierung. Entwicklungs-Start Q3 2026, Pilot SJ 2027/28.</div></li>
+      <li><span class="recom-num">2</span><div><strong>AU6 «Multimedia &amp; Web» als Zweitprodukt</strong>. Adressiert eine bereits curricular verankerte HMS-Lücke. Vertriebsargument: Schule erfüllt Lehrplan-Pflicht mit zertifiziertem Modul. Entwicklungs-Start Q4 2026.</div></li>
+      <li><span class="recom-num">3</span><div><strong>Pilot mit den drei HMS Zürich</strong> (KS Enge, Hottingen, Büelrain) für AU5 als M-Variante — bewährter Kanal, hohe Glaubwürdigkeit über KSHW. Zugang via Stephan Amstutz (KSHW-Vize, KS Hottingen).</div></li>
+      <li><span class="recom-num">4</span><div><strong>Parallel-Pilot mit drei kv edupool-Schulen</strong> (z.B. Wirtschaftsschule KV Zürich, KV Luzern Berufsakademie, KBZ Zug Weiterbildung) für AU5 als K-Variante. Zugang via Caroline Köthe / Judith Wespi-Krummenacher (Co-CEO).</div></li>
+      <li><span class="recom-num">5</span><div><strong>Mid-term: AU7 als Brückenmodul</strong> aufbauen, sobald Power-Platform-Markt in den HKB e6-Schulen reif ist. IMS-Schulen als initiale Zielgruppe.</div></li>
+      <li><span class="recom-num">6</span><div><strong>Lehrmittel-Roadmap mit Wings &amp; Co</strong>. Parallel zur AU-Reform 26/27 alle Lehrmittel auf neue Module ausrichten. Wings als priorisierter Partner.</div></li>
+    </ol>
+  </div>
+  <a href="GL-Dossier-Kaufmaennische-Ausbildung.html" class="btn-back">← Zurück zum Hauptdossier</a>
+</div>
+
+<div style="background:var(--siz-navy);color:rgba(255,255,255,.5);text-align:center;padding:1.5rem;font-size:11px;font-family:'IBM Plex Mono',monospace">
+  SIZ AG · GL-Dossier White Spots — Kaufmännische Ausbildung · Erstellt April 2026 · Vertraulich<br>
+  <span style="font-size:10px;opacity:.7">Quellen: Lehrplan HMS Kanton ZH 2023 · BiVo 2023 Bildungsplan · BIKAS · KSHW Tagungsmaterial · Praktikumsbetriebs-Befragung KMU</span>
+</div>
+
+<script>
+const observer=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}})},{threshold:.1});
+document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
+const sections=document.querySelectorAll('[id]');
+const navLinks=document.querySelectorAll('.topnav-links a');
+window.addEventListener('scroll',()=>{let cur='';sections.forEach(s=>{if(window.scrollY>=s.offsetTop-80)cur=s.id});navLinks.forEach(l=>{l.classList.remove('active');if(l.getAttribute('href')==='#'+cur)l.classList.add('active')})});
+</script>
+</body>
+</html>

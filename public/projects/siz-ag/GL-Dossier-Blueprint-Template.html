@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- ============================================================
+  GL-DOSSIER BLUEPRINT-TEMPLATE — SIZ AG
+  ============================================================
+  ANLEITUNG:
+  Ersetze alle [PLATZHALTER] mit den echten Daten des Berufs.
+  Kommentare <!-- TIPP: --> geben Hinweise, was wo einzufügen ist.
+  
+  DATEIPFADE:
+  Kopiere dieses Template in den Ordner des jeweiligen Berufs:
+  G:\Meine Ablage\OpenClaw\[BERUF-NAME]-recherche\
+  
+  VORLAGE-REFERENZ:
+  Ausgefülltes Beispiel: ..\Hauswart-Recherche\GL-Dossier-Hauswart.html
+  ============================================================ -->
+<title>GL-Dossier: [BERUFSBEZEICHNUNG] — SIZ AG</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --blue:        #185FA5;
+  --blue-dark:   #0d3d6e;
+  --blue-light:  #E6F1FB;
+  --blue-mid:    #378ADD;
+  --green:       #1D9E75;
+  --green-light: #E1F5EE;
+  --teal:        #0F6E56;
+  --amber:       #BA7517;
+  --amber-light: #FAEEDA;
+  --red:         #A32D2D;
+  --red-light:   #FCEBEB;
+  --purple:      #534AB7;
+  --purple-light:#EEEDFE;
+  --gray:        #333330;
+  --gray-light:  #F4F3EF;
+  --gray-mid:    #777770;
+  --border:      #D8D6CF;
+  --bg:          #F7F6F2;
+  --white:       #FFFFFF;
+  --siz-blue:    #185FA5;
+  --siz-navy:    #0d3d6e;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'IBM Plex Sans',sans-serif;background:var(--bg);color:var(--gray);font-size:14px;line-height:1.6}
+
+/* NAV */
+.topnav{position:sticky;top:0;z-index:100;background:var(--siz-navy);display:flex;align-items:center;gap:0;box-shadow:0 2px 12px rgba(0,0,0,.25)}
+.topnav-brand{padding:.75rem 1.5rem;color:#fff;font-weight:700;font-size:14px;border-right:1px solid rgba(255,255,255,.1);white-space:nowrap}
+.topnav-brand span{color:#7DB9E8;font-weight:400}
+.topnav-links{display:flex;gap:0;flex:1;overflow-x:auto}
+.topnav-links a{color:rgba(255,255,255,.75);text-decoration:none;padding:.75rem 1rem;font-size:12px;white-space:nowrap;transition:all .2s;border-right:1px solid rgba(255,255,255,.08)}
+.topnav-links a:hover,.topnav-links a.active{color:#fff;background:rgba(255,255,255,.1)}
+.topnav-meta{padding:.75rem 1.5rem;color:rgba(255,255,255,.45);font-size:11px;font-family:'IBM Plex Mono',monospace;white-space:nowrap;border-left:1px solid rgba(255,255,255,.1)}
+.section{padding:3rem 2rem;max-width:1280px;margin:0 auto}
+.section-hero{background:linear-gradient(135deg,var(--siz-navy) 0%,var(--blue) 60%,#2A7FD4 100%);color:#fff;padding:4rem 2rem 3rem;position:relative;overflow:hidden}
+.section-hero::before{content:'';position:absolute;top:-50%;right:-10%;width:600px;height:600px;background:radial-gradient(circle,rgba(255,255,255,.06) 0%,transparent 70%);border-radius:50%}
+.hero-inner{max-width:1280px;margin:0 auto;position:relative;z-index:1}
+.hero-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);border-radius:20px;padding:4px 14px;font-size:11px;font-family:'IBM Plex Mono',monospace;margin-bottom:1.25rem;color:rgba(255,255,255,.9)}
+.hero-title{font-size:clamp(24px,4vw,40px);font-weight:700;line-height:1.2;margin-bottom:.5rem}
+.hero-subtitle{font-size:16px;font-weight:300;color:rgba(255,255,255,.8);margin-bottom:2rem}
+.hero-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem;margin-top:2.5rem}
+.kpi-card{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:1.25rem 1rem;text-align:center}
+.kpi-num{font-size:2rem;font-weight:700;line-height:1;color:#fff}
+.kpi-label{font-size:11px;color:rgba(255,255,255,.75);margin-top:4px;line-height:1.4}
+.kpi-icon{font-size:20px;margin-bottom:6px}
+.sec-label{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:1.5rem;display:flex;align-items:center;gap:12px}
+.sec-label::after{content:'';flex:1;height:1px;background:var(--border)}
+.ebenen-grid{display:flex;flex-direction:column;gap:6px}
+.ebene{border:1px solid var(--border);border-radius:10px;overflow:hidden;cursor:pointer;transition:box-shadow .2s}
+.ebene:hover{box-shadow:0 4px 16px rgba(0,0,0,.08)}
+.ebene-header{display:flex;align-items:center;min-height:64px}
+.ebene-num{width:56px;min-height:64px;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:18px;font-weight:700;color:#fff;flex-shrink:0}
+.ebene-info{flex:1;background:var(--white);padding:.875rem 1.25rem;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.ebene-title{font-size:14px;font-weight:600;min-width:200px;flex-shrink:0}
+.ebene-desc{font-size:12px;color:#555;flex:1;min-width:180px}
+.ebene-tags{display:flex;gap:5px;flex-wrap:wrap;flex-shrink:0;margin-left:auto}
+.ebene-siz{background:var(--white);border-top:1px solid var(--border);padding:1rem 1.25rem 1rem 72px;display:none}
+.ebene-siz.open{display:block}
+.ebene-siz-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:.875rem;margin-top:.75rem}
+.siz-item{background:var(--gray-light);border-radius:8px;padding:.875rem 1rem}
+.siz-item strong{display:block;font-size:12px;font-weight:600;color:#222;margin-bottom:4px}
+.siz-item p{font-size:11px;color:#444;line-height:1.6}
+.siz-item a{color:var(--blue);text-decoration:none;font-size:11px}
+.siz-highlight{border-left:3px solid var(--blue);background:var(--blue-light)}
+.siz-highlight strong{color:var(--blue-dark)}
+.placeholder{background:#FFF9E6;border:1px dashed #D4AA40;border-radius:6px;padding:.75rem 1rem;font-size:11px;color:#7A5C00;font-style:italic}
+.placeholder strong{color:#6B4E00;font-style:normal}
+.e1 .ebene-num{background:#1a1a18}
+.e2 .ebene-num{background:var(--blue)}
+.e3 .ebene-num{background:var(--teal)}
+.e4 .ebene-num{background:var(--blue-mid)}
+.e5 .ebene-num{background:var(--green)}
+.e6 .ebene-num{background:var(--amber)}
+.e7 .ebene-num{background:var(--purple)}
+.e8 .ebene-num{background:var(--red)}
+.e9 .ebene-num{background:#333}
+.tag{display:inline-block;font-size:10px;padding:2px 9px;border-radius:10px;font-weight:500;white-space:nowrap}
+.tag-blue{background:var(--blue-light);color:var(--blue-dark)}
+.tag-green{background:var(--green-light);color:var(--teal)}
+.tag-amber{background:var(--amber-light);color:#633806}
+.tag-purple{background:var(--purple-light);color:var(--purple)}
+.tag-gray{background:var(--gray-light);color:var(--gray)}
+.tag-red{background:var(--red-light);color:var(--red)}
+.tag-siz{background:#E6F1FB;color:#0d3d6e;font-weight:600}
+.swot-grid{display:grid;grid-template-columns:1fr 1fr;gap:3px;border-radius:12px;overflow:hidden;border:1px solid var(--border)}
+.swot-cell{padding:1.5rem;background:var(--white)}
+.swot-cell:nth-child(1){border-bottom:3px solid var(--green);border-right:3px solid var(--border)}
+.swot-cell:nth-child(2){border-bottom:3px solid var(--red);border-left:3px solid var(--border)}
+.swot-cell:nth-child(3){border-top:3px solid var(--border);border-right:3px solid var(--border)}
+.swot-cell:nth-child(4){border-top:3px solid var(--border);border-left:3px solid var(--border)}
+.swot-head{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.875rem;display:flex;align-items:center;gap:8px}
+.swot-cell:nth-child(1) .swot-head{color:var(--teal)}
+.swot-cell:nth-child(2) .swot-head{color:var(--red)}
+.swot-cell:nth-child(3) .swot-head{color:var(--blue)}
+.swot-cell:nth-child(4) .swot-head{color:var(--amber)}
+.swot-items{list-style:none}
+.swot-items li{font-size:12px;color:#333;padding:4px 0;border-bottom:1px solid var(--border);display:flex;gap:8px;align-items:flex-start}
+.swot-items li:last-child{border-bottom:none}
+.swot-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0;margin-top:6px}
+.swot-cell:nth-child(1) .swot-dot{background:var(--green)}
+.swot-cell:nth-child(2) .swot-dot{background:var(--red)}
+.swot-cell:nth-child(3) .swot-dot{background:var(--blue)}
+.swot-cell:nth-child(4) .swot-dot{background:var(--amber)}
+.markt-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.markt-box{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:1.5rem}
+.markt-title{font-size:12px;font-weight:600;color:var(--gray-mid);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1.25rem}
+.bar-chart{display:flex;flex-direction:column;gap:10px}
+.bar-row{display:flex;align-items:center;gap:10px}
+.bar-label{font-size:11px;color:#555;width:160px;flex-shrink:0;line-height:1.3}
+.bar-track{flex:1;background:var(--gray-light);border-radius:4px;height:24px;overflow:hidden}
+.bar-fill{height:100%;border-radius:4px;display:flex;align-items:center;padding-left:8px;font-size:11px;font-weight:600;color:#fff;transition:width 1s ease}
+.bar-val{font-size:11px;color:#555;width:90px;flex-shrink:0;text-align:right}
+.siz-treppe{display:flex;gap:6px;margin-top:.5rem}
+.treppe-step{flex:1;border-radius:10px;padding:1.25rem 1rem;text-align:center;border:2px solid transparent}
+.treppe-smart{background:#E1F5EE;border-color:var(--green)}
+.treppe-advanced{background:#E6F1FB;border-color:var(--blue)}
+.treppe-power{background:var(--gray-light);border-color:var(--border);opacity:.6}
+.treppe-icon{font-size:28px;margin-bottom:8px}
+.treppe-title{font-size:13px;font-weight:700;margin-bottom:4px}
+.treppe-smart .treppe-title{color:var(--teal)}
+.treppe-advanced .treppe-title{color:var(--blue)}
+.treppe-power .treppe-title{color:var(--gray-mid)}
+.treppe-desc{font-size:11px;line-height:1.5;color:#555}
+.treppe-badge{display:inline-block;margin-top:8px;font-size:10px;font-weight:600;padding:3px 10px;border-radius:10px}
+.treppe-smart .treppe-badge{background:var(--green);color:#fff}
+.treppe-advanced .treppe-badge{background:var(--blue-light);color:var(--blue-dark)}
+.treppe-power .treppe-badge{background:var(--gray-light);color:var(--gray-mid)}
+.steps{display:flex;flex-direction:column;gap:0}
+.step{display:flex;gap:0;position:relative}
+.step-connector{display:flex;flex-direction:column;align-items:center;width:48px;flex-shrink:0}
+.step-dot{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#fff;flex-shrink:0;z-index:1}
+.step-line{flex:1;width:2px;background:var(--border);min-height:20px}
+.step:last-child .step-line{display:none}
+.step-content{flex:1;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:10px}
+.step-meta{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--gray-mid);margin-bottom:4px}
+.step-title{font-size:14px;font-weight:600;color:var(--gray);margin-bottom:4px}
+.step-body{font-size:12px;color:#555;line-height:1.6}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:1.5rem}
+.card-title{font-size:13px;font-weight:600;color:var(--gray);margin-bottom:1rem;display:flex;align-items:center;gap:8px}
+.download-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.download-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:1.5rem;display:flex;flex-direction:column;gap:.75rem}
+.dl-icon{font-size:32px}
+.dl-name{font-size:14px;font-weight:600;color:var(--gray)}
+.dl-desc{font-size:12px;color:var(--gray-mid);line-height:1.5}
+.dl-btn{display:inline-flex;align-items:center;gap:6px;background:var(--blue);color:#fff;padding:.5rem 1rem;border-radius:8px;font-size:12px;font-weight:600;text-decoration:none;margin-top:auto}
+.section-divider{border:none;border-top:1px solid var(--border);margin:0}
+.fade-in{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+.fade-in.visible{opacity:1;transform:translateY(0)}
+@media print{.topnav{display:none}.ebene-siz{display:block!important}.section{padding:1rem}}
+@media(max-width:900px){.markt-grid,.two-col{grid-template-columns:1fr}.swot-grid{grid-template-columns:1fr}.siz-treppe{flex-direction:column}}
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+  NAVIGATION — Passe die Links an wenn du Sektionen hinzufügst
+  ============================================================ -->
+<nav class="topnav">
+  <div class="topnav-brand">SIZ AG <span>GL-Dossier</span></div>
+  <div class="topnav-links">
+    <a href="#onepager" class="active">One-Pager</a>
+    <a href="#businesscase">Business Case</a>
+    <a href="#swot">SWOT</a>
+    <a href="#nextSteps">Nächste Schritte</a>
+    <a href="#detail">Detailanalyse E1–E9</a>
+    <a href="#schulen">Schulen</a>
+    <a href="#anhaenge">Anhänge</a>
+  </div>
+  <!-- TIPP: Passe Beruf und Jahr an -->
+  <div class="topnav-meta">[BERUF KÜRZEL] FA · [MONAT JAHR]</div>
+</nav>
+
+<!-- ═══ HERO / ONE-PAGER ═══ -->
+<div class="section-hero" id="onepager">
+  <div class="hero-inner">
+    <!-- TIPP: Beruf-Nr. aus SBFI-Berufsverzeichnis: becc.admin.ch -->
+    <div class="hero-badge">📋 GL-Dossier · SIZ AG · Beruf-Nr. [BERUFSNUMMER SBFI]</div>
+    <!-- TIPP: Offizieller Berufstitel gemäss Prüfungsordnung (DE/FR/IT) -->
+    <div class="hero-title">[BERUFSBEZEICHNUNG DEUTSCH]<br>[UNTERTITEL ODER ABSCHLUSS: z.B. "mit eidg. Fachausweis"]</div>
+    <div class="hero-subtitle">Marktanalyse &amp; Strategiebewertung für die SIZ AG — Berufsbildung Schweiz, [MONAT JAHR]</div>
+
+    <!-- KPIs: Fülle mit echten Zahlen aus Statistiken (fachausweise.ch, Schlussberichte Trägerschaft) -->
+    <div class="hero-kpis">
+      <div class="kpi-card">
+        <div class="kpi-icon">👥</div>
+        <!-- TIPP: Aus Schlussbericht der Berufsprüfung (letzte verfügbare Statistik) -->
+        <div class="kpi-num">[ANZAHL]</div>
+        <div class="kpi-label">Kandidaten [JAHR]<br>[X] bestanden ([Y]%)</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-icon">🏫</div>
+        <!-- TIPP: Anzahl Anbieter von meldeliste.ch oder Trägerschaft-Website -->
+        <div class="kpi-num">[ANZAHL]</div>
+        <div class="kpi-label">Bildungsanbieter<br>Deutschschweiz + Romandie</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-icon">💰</div>
+        <!-- TIPP: Berechnung: offene Kandidaten × CHF 250–600 SIZ-Preis -->
+        <div class="kpi-num">~[CHFk]</div>
+        <div class="kpi-label">CHF/Jahr Direktpotenzial<br>für SIZ (adressierbar)</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-icon">🏆</div>
+        <!-- TIPP: Kumulierte Absolventen aus Berufsverband-Website -->
+        <div class="kpi-num">[ANZAHL]</div>
+        <div class="kpi-label">Kumulierte Absolventen<br>seit Einführung</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-icon">🎯</div>
+        <!-- TIPP: Kandidaten ohne internes IT-Modul bei ihrer Schule -->
+        <div class="kpi-num">~[ANZAHL]</div>
+        <div class="kpi-label">Offene IT-Zertifikate/Jahr<br>ohne interne Lösung</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-icon">⚡</div>
+        <!-- TIPP: Wann läuft die aktuelle PO aus? Wann Trägerschaft-Wechsel? -->
+        <div class="kpi-num">[JAHR]</div>
+        <div class="kpi-label">[BEGRÜNDUNG WINDOW OF OPPORTUNITY]</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ EBENEN E1–E9 ═══ -->
+<div class="section" id="onepager-ebenen">
+  <div class="sec-label">Systemübersicht — Ebenen E1 bis E9 (klicken für Details)</div>
+  <div class="ebenen-grid">
+
+    <!-- ─── E1: GESETZLICHE GRUNDLAGE ─── -->
+    <!-- TIPP: Infos aus becc.admin.ch — Berufsverzeichnis. Klick auf Beruf → PO-Details -->
+    <div class="ebene e1" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E1</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Gesetzliche Grundlage / SBFI</div>
+          <!-- TIPP: "BBG SR 412.10 · Berufsnr. [X] · PO genehmigt [Datum]" -->
+          <div class="ebene-desc">[BBG SR 412.10 · Berufsnr. XXXXX · PO genehmigt TT.MM.JJJJ, revidiert TT.MM.JJJJ]</div>
+          <div class="ebene-tags"><span class="tag tag-gray">Bundesebene</span><span class="tag tag-gray">SR 412.10</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="placeholder"><strong>⚠️ Auszufüllen:</strong> Berufsbezeichnung DE/FR/IT · Berufsnummer SBFI · Genehmigungsdatum PO · Letzte Revision · Nächste geplante Revision · SBFI-Zuständiger</div>
+        <div class="ebene-siz-grid">
+          <div class="siz-item"><strong>Berufsbezeichnung</strong><p>[Vollständige DE/FR/IT Bezeichnung gemäss PO]</p></div>
+          <div class="siz-item"><strong>Gesetzliche Grundlage</strong><p>Art. 28 Abs. 2 BBG (SR 412.10) · Genehmigt durch SBFI, [Name zuständiger Beamter]</p></div>
+          <div class="siz-item"><strong>Status &amp; Revision</strong><p>PO von [JAHR] — [STATUS: Revision geplant/nicht geplant/laufend]. Klassisch/In Revision/Neu.</p></div>
+          <div class="siz-item siz-highlight"><strong>🔗 SBFI-Berufsverzeichnis</strong><p><a href="https://www.becc.admin.ch/becc/public/bvz/beruf/show/[BERUFSNR]" target="_blank">becc.admin.ch · Beruf [BERUFSNR]</a></p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── E2: TRÄGERSCHAFT ─── -->
+    <!-- TIPP: Website der Trägerschaft (OdA) aufrufen. Meist unter "Trägerschaft" oder "Über uns".
+         Prüfungsordnung gibt Unterzeichner (= Träger) an. -->
+    <div class="ebene e2" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E2</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Trägerschaft / OdA</div>
+          <div class="ebene-desc">[X Trägerorganisationen] · [Hauptträger 1], [Hauptträger 2], ... · Sekretariat [Ort]</div>
+          <div class="ebene-tags"><span class="tag tag-blue">Strategischer Hebel</span><span class="tag tag-siz">SIZ-Lobbying</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="placeholder"><strong>⚠️ Auszufüllen:</strong> Alle Trägerorganisationen mit Namen, Präsidenten/Direktoren, E-Mails. Sekretariat der Berufsprüfung (Adresse, Tel, E-Mail, Website). Schlüsselkontakte für SIZ-Lobbying.</div>
+        <div class="ebene-siz-grid">
+          <div class="siz-item"><strong>[Träger 1 Name]</strong><p>[Vollständiger Verbandsname] · Präsident/Direktor: [Name]</p></div>
+          <div class="siz-item"><strong>[Träger 2 Name]</strong><p>[Vollständiger Verbandsname] · Kontakt: [E-Mail]</p></div>
+          <div class="siz-item"><strong>[Weiterer Träger – Schlüsselkontakt]</strong><p>Präsident: [Name] — [E-Mail] · Ressort Bildung: [Name]</p></div>
+          <div class="siz-item"><strong>Sekretariat Berufsprüfung</strong><p>[Adresse] · <a href="mailto:[EMAIL]">[EMAIL]</a> · [TEL]</p></div>
+          <div class="siz-item"><strong>Website Prüfung</strong><p><a href="[URL]" target="_blank">[URL der Berufsprüfungs-Website]</a></p></div>
+          <div class="siz-item siz-highlight"><strong>⭐ SIZ-Strategie E2</strong><p>Lobbying bei [SCHLÜSSELTRÄGER] für Aufnahme "ICT Smart-User SIZ" als gleichwertige Alternative in der Wegleitung.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── E3: PRÜFUNGSORDNUNG ─── -->
+    <!-- TIPP: Prüfungsordnung PDF von der Trägerschafts-Website herunterladen.
+         Zulassungsbedingungen sind in Ziff. 3.3x aufgeführt. Hier steht ECDL/IT-Zertifikat! -->
+    <div class="ebene e3" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E3</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Prüfungsordnung</div>
+          <div class="ebene-desc">[Gültig ab Prüfung JJJJ] · [X Prüfungsteile] · [H] Stunden · CHF [X'XXX] · Prüfung [JJJJ]: [Datum]</div>
+          <div class="ebene-tags"><span class="tag tag-green">Rechtlich bindend</span><span class="tag tag-green">Öffentlich</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="placeholder"><strong>⚠️ Auszufüllen:</strong> Anzahl Prüfungsteile · Prüfungsformat (schriftlich/praktisch/mündlich) · Gesamtdauer · Prüfungsgebühr · Prüfungsdaten nächstes Jahr · Anmeldefrist · ZULASSUNGSBEDINGUNGEN (insb. IT-Zertifikat!)</div>
+        <div class="ebene-siz-grid">
+          <div class="siz-item"><strong>Prüfungsformat</strong><p>[X] Prüfungsteile · [schriftlich + praktisch + mündlich] · Total [X] Stunden · CHF [X'XXX] Gebühr</p></div>
+          <div class="siz-item"><strong>Prüfungsdaten [JJJJ]</strong><p>[Datum Start] – [Datum Ende] · Anmeldefrist: [Datum Start] – [Datum Ende]</p></div>
+          <div class="siz-item"><strong>Zulassungsbedingungen (PO Ziff. 3.3x)</strong><p>[EFZ/Anforderung] + [X] Jahre Berufspraxis + [IT-ZERTIFIKAT = DER SIZ-PUNKT!] + [weitere Pflicht-Zertifikate]</p></div>
+          <div class="siz-item siz-highlight"><strong>🎯 IT-Anforderung aus PO</strong><p>[Genaues Zitat aus Prüfungsordnung zum IT-Zertifikat — z.B. "ECDL Base" oder "ICDL" oder "gleichwertiges Zertifikat"]</p></div>
+          <div class="siz-item"><strong>🔗 Prüfungsordnung (PDF)</strong><p><a href="[URL GRUNDLAGEN]" target="_blank">[URL der Trägerschafts-Grundlagen-Seite]</a></p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── E4: PRÜFUNGSKOMMISSION ─── -->
+    <!-- TIPP: Mitglieder oft auf Website der Trägerschaft oder auf Grundlagen-Seite.
+         Alternativ: Prüfungsordnung PDF (Unterzeichner = oft auch PK-Mitglieder).
+         Gleichwertigkeitsantrag = schnellster formaler Weg für SIZ! -->
+    <div class="ebene e4" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E4</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Prüfungskommission</div>
+          <div class="ebene-desc">Präsident: [NAME] · [X]–[Y] Mitglieder · [X]-jährige Amtsdauer · Gleichwertigkeitsentscheid (Ziff. 2.21k)</div>
+          <div class="ebene-tags"><span class="tag tag-blue">Operativer Hebel</span><span class="tag tag-siz">Gleichwertigkeit</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="placeholder"><strong>⚠️ Auszufüllen:</strong> Präsident + Kontakt · Anzahl Mitglieder · Amtsdauer · Bekannte Mitglieder (aus PO-Unterzeichnern oder Website). PK-Kontakt via Sekretariat.</div>
+        <div class="ebene-siz-grid">
+          <div class="siz-item"><strong>Präsident/Präsidentin</strong><p>[Name] · [Arbeitgeber/Funktion] · [Verband] · Kontakt: [E-Mail / via Sekretariat]</p></div>
+          <div class="siz-item"><strong>Zusammensetzung</strong><p>[X]–[Y] Mitglieder aus Trägerschaft + Experten · Amtsdauer [X] Jahre · [öffentlich gelistet: ja/nein]</p></div>
+          <div class="siz-item"><strong>Kontakt</strong><p>Via Sekretariat: <a href="mailto:[SEKRETARIAT-EMAIL]">[SEKRETARIAT-EMAIL]</a> · [TEL]</p></div>
+          <div class="siz-item siz-highlight"><strong>⭐ SIZ-Strategie E4</strong><p>Gleichwertigkeitsantrag für ICT Smart-User SIZ bei der PK einreichen (PO Ziff. 2.21k). Kein SBFI nötig — PK entscheidet allein. Schnellster formaler Weg.</p></div>
+          <div class="siz-item"><strong>📥 Prüfungskommissions-Datei</strong><p>Vollständige Liste der bekannten Mitglieder: <strong>pruefungskommission.csv</strong> im gleichen Ordner</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── E5: WEGLEITUNG ─── -->
+    <!-- TIPP: Wegleitung-PDF herunterladen und nach IT/ECDL/ICDL suchen.
+         Exakter Wortlaut entscheidet: "ECDL" allein = SIZ als Alternative argumentierbar.
+         "ICDL Base (Nummer XY)" = Gleichwertigkeitsantrag nötig. -->
+    <div class="ebene e5" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E5</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Wegleitung</div>
+          <div class="ebene-desc">Erstellt von PK · Genehmigt von Trägerschaft · Enthält konkrete Zertifikatsanforderungen · [Häufigkeit] aktualisiert</div>
+          <div class="ebene-tags"><span class="tag tag-green">Schnellster Hebel</span><span class="tag tag-siz">Kein SBFI nötig</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="placeholder"><strong>⚠️ Auszufüllen:</strong> Genaues Zitat IT-Anforderung aus Wegleitung (Ziff. X.X) · Weitere Pflicht-Unterlagen · Aktualisierungsrhythmus · Link zur Wegleitung</div>
+        <div class="ebene-siz-grid">
+          <div class="siz-item"><strong>IT-Anforderung in Wegleitung (Ziff. X.X)</strong><p>[Genaues Zitat: z.B. "ECDL Base" oder "ICDL Modules" oder "gleichwertiges IT-Zertifikat"]</p></div>
+          <div class="siz-item"><strong>Weitere Pflicht-Unterlagen</strong><p>[Liste: z.B. Nothilfe, Berufsbildnerkurs, Branchenbescheinigung, etc.]</p></div>
+          <div class="siz-item siz-highlight"><strong>⭐ SIZ-Strategie E5 (Priorität 1)</strong><p>Aufnahme "ICT Smart-User SIZ" als gleichwertige Alternative zu ECDL Base in der Wegleitung. Genehmigung nur durch Trägerschaft. Zeitrahmen: 6–18 Monate.</p></div>
+          <div class="siz-item"><strong>🔗 Wegleitung</strong><p><a href="[URL]" target="_blank">[URL Wegleitung/Grundlagen]</a></p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── E6: LERNZIELKATALOG / QUALIFIKATIONSPROFIL ─── -->
+    <!-- TIPP: Gibt es separate Qualifikationsprofil-Dokumente? Anhang zur PO?
+         Suche nach "Handlungskompetenzen" oder "HKB" im PO-PDF.
+         Frage: Sind IT-Kompetenzen als HKB oder Lernziel explizit verankert? -->
+    <div class="ebene e6" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E6</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Lernzielkatalog / Qualifikationsprofil / Bildungsplan</div>
+          <div class="ebene-desc">HKBs: [HKB1], [HKB2], [HKB3], ... · IT [explizit verankert / implizit / nicht erwähnt]</div>
+          <div class="ebene-tags"><span class="tag tag-amber">Handlungskompetenzen</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="placeholder"><strong>⚠️ Auszufüllen:</strong> Alle Handlungskompetenzbereiche (HKB) · Wird IT als eigenes HKB erwähnt? · Sind spezifische IT-Werkzeuge im Bildungsplan erwähnt? · Gibt es Lernzielkatalog separat?</div>
+        <div class="ebene-siz-grid">
+          <div class="siz-item"><strong>Handlungskompetenzbereiche (HKB)</strong><p>[HKB 1: Name] · [HKB 2: Name] · [HKB 3: Name] · [HKB 4: Name] · [etc.]</p></div>
+          <div class="siz-item"><strong>IT im Qualifikationsprofil</strong><p>[Ist IT als HKB vorhanden? JA/NEIN/IMPLIZIT. Wenn ja: welche IT-Kompetenzen?]</p></div>
+          <div class="siz-item"><strong>Dokument vorhanden?</strong><p>[Separates Qualifikationsprofil-Dokument? Link? Oder nur in PO integriert?]</p></div>
+          <div class="siz-item siz-highlight"><strong>⭐ SIZ-Relevanz E6</strong><p>[Argumentationsgrundlage: Warum ICT Smart-User SIZ zu den HKBs passt]</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── E7: MODULIDENTIFIKATION / SIZ-PRODUKTE ─── -->
+    <!-- TIPP: Das ist die Kernseite für die SIZ-Positionierung!
+         Welches SIZ-Produkt passt zum Niveau der Zielgruppe?
+         Smart User = ECDL Base-Äquivalent (E-Mail, Office-Basics, Internet)
+         Advanced User = Über ECDL Base, komplexere Anwendungen
+         Power User = IT-Profis, nicht für Berufsbildungs-Zulassung relevant -->
+    <div class="ebene e7" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E7</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Modulidentifikation / SIZ-Produkte</div>
+          <div class="ebene-desc">[Empfohlenes SIZ-Produkt] = direktes [ECDL/ICDL-Äquivalent] · [Referenzschule akzeptiert SIZ: ja/nein]</div>
+          <div class="ebene-tags"><span class="tag tag-purple">SIZ-Kernprodukt</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="placeholder"><strong>⚠️ Auszufüllen:</strong> Empfohlenes SIZ-Produkt für diesen Beruf (Smart/Advanced/Power) · Begründung anhand Zielgruppen-IT-Niveau · Referenzschulen die SIZ bereits akzeptieren</div>
+        <div style="margin-top:.75rem">
+          <!-- TIPP: Passe die "treppe-badge" Texte und die Empfehlung an den Beruf an -->
+          <div class="siz-treppe">
+            <div class="treppe-step treppe-smart">
+              <div class="treppe-icon">💡</div>
+              <div class="treppe-title">ICT Smart-User SIZ</div>
+              <div class="treppe-desc">Windows, Word, Excel, Internet, E-Mail, Dateiverwaltung · Basis-IT-Kompetenzen</div>
+              <!-- TIPP: Ändere Badge je nach Empfehlung für diesen Beruf -->
+              <div class="treppe-badge">[✅ Empfohlen / Optional / Nicht relevant]</div>
+            </div>
+            <div class="treppe-step treppe-advanced">
+              <div class="treppe-icon">🔧</div>
+              <div class="treppe-title">ICT Advanced-User SIZ</div>
+              <div class="treppe-desc">Erweiterte Anwenderkenntnisse, komplexere Office-Anwendungen</div>
+              <div class="treppe-badge">[✅ Empfohlen / Optional / Nicht relevant]</div>
+            </div>
+            <div class="treppe-step treppe-power">
+              <div class="treppe-icon">⚙️</div>
+              <div class="treppe-title">SIZ Power-User</div>
+              <div class="treppe-desc">Experten-Niveau, IT-Administration</div>
+              <div class="treppe-badge">[Nicht relevant / Optional]</div>
+            </div>
+          </div>
+          <div class="siz-item siz-highlight" style="margin-top:1rem"><strong>⭐ Referenzschulen die SIZ akzeptieren</strong><p>[NAME SCHULE] akzeptiert [SIZ-Produkt] bereits. Kontakt: [Name], [E-Mail]. Falls keine Referenz vorhanden: "Keine bekannte Schule — Gleichwertigkeitsantrag empfohlen"</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── E8: BILDUNGSANBIETER ─── -->
+    <!-- TIPP: Schulen auf Website der Trägerschaft oder meldeliste.ch finden.
+         Pro Schule ermitteln: Bieten sie IT-Modul intern an? (= Konkurrenz) oder verlangen extern? (= SIZ-Chance)
+         Kontaktperson: Lehrgangsleitung oder Studienberatung -->
+    <div class="ebene e8" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E8</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Bildungsanbieter / Schulen</div>
+          <div class="ebene-desc">[X] aktive Anbieter CH · ~[X]–[Y] Lehrgangsteilnehmende/Jahr · [Grösster Anbieter] grösster Einzelanbieter ([X] TN/J)</div>
+          <div class="ebene-tags"><span class="tag tag-red">Marktkanal</span><span class="tag tag-gray">[X] Schulen</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="placeholder"><strong>⚠️ Auszufüllen:</strong> Alle identifizierten Schulen. Pro Schule: Name, Standort, Kontaktperson + E-Mail + Tel, TN/Jahr (falls bekannt), IT-Lösung (intern/extern/SIZ bereits), SIZ-Priorität.</div>
+        <div class="ebene-siz-grid">
+          <!-- TIPP: Füge hier die Top 3-4 Schulen ein, Rest in CSV-Datei -->
+          <div class="siz-item siz-highlight"><strong>Top 1: [SCHULNAME] ([Status])</strong><p>[Kontaktperson] · [E-Mail] · [Tel] · [TN/Jahr] TN/Jahr · [IT-Lösung]</p></div>
+          <div class="siz-item siz-highlight"><strong>Top 2: [SCHULNAME] ([Status])</strong><p>[Kontaktperson] · [E-Mail] · [Tel] · [Besonderheit]</p></div>
+          <div class="siz-item"><strong>Top 3: [SCHULNAME] (Angriffsziel)</strong><p>[Kontaktperson] · [E-Mail] · [TN/Jahr] TN/Jahr · [IT-Lösung: intern = Konkurrenz]</p></div>
+          <div class="siz-item"><strong>Weitere [X] Anbieter</strong><p>[Aufzählung weitere Schulen]</p></div>
+          <div class="siz-item"><strong>📊 Vollständige Schulliste</strong><p>Siehe <strong>[schulen-beruf].csv</strong> im gleichen Ordner</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── E9: KANDIDATENPROFIL / IT-VORWISSEN ─── -->
+    <!-- TIPP: Was ist der typische Beruf dieser Kandidaten? Handwerklich, kaufmännisch, technisch, sozial?
+         Davon leitet sich das IT-Niveau ab:
+         Handwerklich/sozial → eher Smart User Niveau
+         Kaufmännisch → eher Advanced User Niveau
+         IT-nahe Berufe → evtl. kein SIZ nötig
+         Immer fragen: Was nutzen sie täglich am PC? -->
+    <div class="ebene e9" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E9</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Kandidatenprofil / IT-Vorwissen</div>
+          <div class="ebene-desc">[Berufstyp: handwerklich/kaufmännisch/sozial] · IT-Niveau: [Basis/Mittel/Fortgeschritten] · Bedarf: [Hauptanwendungen]</div>
+          <div class="ebene-tags"><span class="tag tag-gray">[Smart/Advanced] User Level</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="placeholder"><strong>⚠️ Auszufüllen:</strong> Typisches Kandidatenprofil (Alter, Vorausbildung, Berufsjahre) · IT-Kenntnisse (was nutzen sie täglich?) · Welches SIZ-Niveau passt? · ECDL-Trägerwechsel-Argument falls relevant.</div>
+        <div class="ebene-siz-grid">
+          <div class="siz-item"><strong>Typisches Kandidatenprofil</strong><p>[Berufstyp] · [EFZ/Abschluss] · [Altersspanne] · [Berufspraxis X Jahre]</p></div>
+          <div class="siz-item"><strong>IT-Kenntnisse (typisch)</strong><p>[E-Mail: gut/basis/kaum] · [Office: gut/basis/kaum] · [Branchensoftware: häufig/selten] · [IT-Ausbildung: ja/nein]</p></div>
+          <div class="siz-item siz-highlight"><strong>⭐ Richtige SIZ-Positionierung</strong><p>[Welcher SIZ-Level ist richtig?] ist das passende Niveau. [Begründung: deckt X und Y ab, entspricht den Anforderungen des Berufsbilds]</p></div>
+          <div class="siz-item"><strong>Markt-Argument</strong><p>[Warum wechseln Kandidaten von ECDL zu SIZ? Timing, Preis, Swiss-made-Argument, Trägerwechsel?]</p></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- ═══ BUSINESS CASE ═══ -->
+<div class="section" id="businesscase">
+  <div class="sec-label">Business Case — Marktpotenzial für die SIZ AG</div>
+  <!-- TIPP: Zahlen für Balkendiagramme: Kandidaten × SIZ-Preis CHF 250–600 -->
+  <div class="markt-grid">
+    <div class="markt-box">
+      <div class="markt-title">📊 Marktpotenzial Direktkanal (CHF/Jahr)</div>
+      <div class="placeholder" style="margin-bottom:1rem"><strong>⚠️ Auszufüllen:</strong> Berechne: Gesamtkandidaten × SIZ-Preis (max/realistisch/min). Abzüglich Kandidaten mit internem IT-Modul.</div>
+      <div class="bar-chart">
+        <div class="bar-row">
+          <div class="bar-label">Gesamtmarkt (alle Schulen)</div>
+          <div class="bar-track"><div class="bar-fill" style="width:100%;background:var(--blue)">[CHF XXX'000]</div></div>
+          <div class="bar-val">max.</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Adressierbarer Markt</div>
+          <div class="bar-track"><div class="bar-fill" style="width:70%;background:var(--green)">[CHF XX'000]</div></div>
+          <div class="bar-val">realistisch</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Konservative Schätzung</div>
+          <div class="bar-track"><div class="bar-fill" style="width:30%;background:var(--amber)">[CHF XX'000]</div></div>
+          <div class="bar-val">min.</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Intern abgedeckt (Konkurrenz)</div>
+          <div class="bar-track"><div class="bar-fill" style="width:40%;background:var(--red)">[~XX TN]</div></div>
+          <div class="bar-val">Konkurrenz</div>
+        </div>
+      </div>
+    </div>
+    <div class="markt-box">
+      <div class="markt-title">📈 Kandidaten-Funnel ([JJJJ])</div>
+      <div class="placeholder" style="margin-bottom:1rem"><strong>⚠️ Auszufüllen:</strong> Aus Schlussbericht der Berufsprüfung oder fachausweise.ch</div>
+      <div class="bar-chart">
+        <div class="bar-row">
+          <div class="bar-label">Registrierte Kandidaten</div>
+          <div class="bar-track"><div class="bar-fill" style="width:100%;background:var(--blue)">[XXX]</div></div>
+          <div class="bar-val">100%</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Brauchen IT-Zertifikat</div>
+          <div class="bar-track"><div class="bar-fill" style="width:95%;background:var(--blue-mid)">[~XXX]</div></div>
+          <div class="bar-val">~[X]%</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Extern (SIZ-Chance)</div>
+          <div class="bar-track"><div class="bar-fill" style="width:65%;background:var(--green)">[~XXX]</div></div>
+          <div class="bar-val">~[X]%</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Bestanden ([JJJJ])</div>
+          <div class="bar-track"><div class="bar-fill" style="width:75%;background:var(--teal)">[XXX]</div></div>
+          <div class="bar-val">[X]%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="two-col" style="margin-top:1.5rem">
+    <div class="card">
+      <div class="card-title">💡 Strategische Ausgangslage</div>
+      <div class="placeholder"><strong>⚠️ Auszufüllen:</strong> 3–5 Stärken und 2–3 Schwächen aus Sicht SIZ AG für diesen Beruf</div>
+    </div>
+    <div class="card">
+      <div class="card-title">🚀 Skalierungspotenzial (Blueprint)</div>
+      <div class="placeholder"><strong>⚠️ Auszufüllen:</strong> Wie viele vergleichbare Berufe gibt es? Welches Gesamtpotenzial über alle Berufe?</div>
+    </div>
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- ═══ SWOT ═══ -->
+<div class="section" id="swot">
+  <div class="sec-label">SWOT-Analyse — SIZ AG im [BERUF]-Segment</div>
+  <div class="swot-grid">
+    <div class="swot-cell">
+      <div class="swot-head">💪 Stärken (Strengths)</div>
+      <!-- TIPP: Interne Stärken von SIZ in diesem spezifischen Berufssegment -->
+      <ul class="swot-items">
+        <li><div class="swot-dot"></div><div>[Stärke 1: z.B. Bestandskunde X akzeptiert SIZ bereits]</div></li>
+        <li><div class="swot-dot"></div><div>[Stärke 2: z.B. Swiss-made Argument]</div></li>
+        <li><div class="swot-dot"></div><div>[Stärke 3: z.B. ICT Smart-User = exaktes Äquivalent]</div></li>
+        <li><div class="swot-dot"></div><div>[Weitere Stärken ergänzen]</div></li>
+      </ul>
+    </div>
+    <div class="swot-cell">
+      <div class="swot-head">⚠️ Schwächen (Weaknesses)</div>
+      <!-- TIPP: Interne Schwächen — was fehlt noch? -->
+      <ul class="swot-items">
+        <li><div class="swot-dot"></div><div>[Schwäche 1: z.B. SIZ nicht in PO/Wegleitung verankert]</div></li>
+        <li><div class="swot-dot"></div><div>[Schwäche 2: z.B. Bekanntheit im Segment gering]</div></li>
+        <li><div class="swot-dot"></div><div>[Weitere Schwächen ergänzen]</div></li>
+      </ul>
+    </div>
+    <div class="swot-cell">
+      <div class="swot-head">🎯 Chancen (Opportunities)</div>
+      <!-- TIPP: Externe Chancen — Marktumfeld, Timing, regulatorisch -->
+      <ul class="swot-items">
+        <li><div class="swot-dot"></div><div>[Chance 1: z.B. ECDL/ICDL Trägerwechsel 2025]</div></li>
+        <li><div class="swot-dot"></div><div>[Chance 2: z.B. Wegleitung anpassbar ohne SBFI]</div></li>
+        <li><div class="swot-dot"></div><div>[Chance 3: z.B. PO-Revision fällig]</div></li>
+        <li><div class="swot-dot"></div><div>[Weitere Chancen ergänzen]</div></li>
+      </ul>
+    </div>
+    <div class="swot-cell">
+      <div class="swot-head">🔴 Risiken (Threats)</div>
+      <!-- TIPP: Externe Risiken — Wettbewerb, regulatorisch, Markt -->
+      <ul class="swot-items">
+        <li><div class="swot-dot"></div><div>[Risiko 1: z.B. ICDL stabilisiert Marktposition]</div></li>
+        <li><div class="swot-dot"></div><div>[Risiko 2: z.B. PO-Revision verankert ICDL explizit]</div></li>
+        <li><div class="swot-dot"></div><div>[Weitere Risiken ergänzen]</div></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- ═══ NÄCHSTE SCHRITTE ═══ -->
+<div class="section" id="nextSteps">
+  <div class="sec-label">Empfohlene Massnahmen — Priorisierte Roadmap</div>
+  <!-- TIPP: Minimum 4–6 Schritte. Immer mit konkreten Kontaktpersonen und Zeitrahmen. -->
+  <div class="steps">
+
+    <div class="step">
+      <div class="step-connector">
+        <div class="step-dot" style="background:var(--green)">1</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <div class="step-meta">[ZEITRAUM] · Sofort · Hohe Priorität</div>
+        <div class="step-title">[Massnahme 1: z.B. Bestandskunden aktivieren + Referenzschule festigen]</div>
+        <div class="step-body">[Konkreter Aktionsplan mit Ansprechpersonen, E-Mails, Argumenten]</div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-connector">
+        <div class="step-dot" style="background:var(--blue)">2</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <div class="step-meta">[ZEITRAUM] · Mittelfristig</div>
+        <div class="step-title">[Massnahme 2: z.B. Sales-Kampagne alle Schulen]</div>
+        <div class="step-body">[Details]</div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-connector">
+        <div class="step-dot" style="background:var(--purple)">3</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <div class="step-meta">[ZEITRAUM] · Parallel</div>
+        <div class="step-title">[Massnahme 3: z.B. Gleichwertigkeitsantrag Prüfungskommission]</div>
+        <div class="step-body">[Details mit Kontaktperson PK]</div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-connector">
+        <div class="step-dot" style="background:var(--teal)">4</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <div class="step-meta">[ZEITRAUM] · Strategisch</div>
+        <div class="step-title">[Massnahme 4: z.B. Lobby Trägerschaft — SIZ in Wegleitung]</div>
+        <div class="step-body">[Kontaktpersonen Trägerschaft mit E-Mails]</div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-connector">
+        <div class="step-dot" style="background:var(--gray)">5</div>
+      </div>
+      <div class="step-content">
+        <div class="step-meta">[ZEITRAUM] · Skalierung</div>
+        <div class="step-title">[Massnahme 5: z.B. Blueprint auf weitere Berufe ausrollen]</div>
+        <div class="step-body">[Welche nächsten Berufe sind interessant?]</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- ═══ ANHÄNGE ═══ -->
+<div class="section" id="anhaenge">
+  <div class="sec-label">Anhänge &amp; Downloads</div>
+  <!-- TIPP: Passe Dateinamen und Beschreibungen an den Beruf an -->
+  <div class="download-grid">
+    <div class="download-card">
+      <div class="dl-icon">📊</div>
+      <div class="dl-name">Schulen &amp; Anbieter</div>
+      <div class="dl-desc">Alle Bildungsanbieter mit Adressen, Kontakten, Lehrgangszeiten, Kosten und IT-Lösung.</div>
+      <!-- TIPP: Dateiname anpassen: [beruf]-schulen.csv -->
+      <a class="dl-btn" href="[beruf]-schulen-anbieter.csv" download>⬇ schulen-anbieter.csv</a>
+    </div>
+    <div class="download-card">
+      <div class="dl-icon">👥</div>
+      <div class="dl-name">Prüfungskommission</div>
+      <div class="dl-desc">Bekannte Mitglieder der Prüfungskommission und Trägerschaftsvertreter.</div>
+      <a class="dl-btn" href="[beruf]-pruefungskommission.csv" download>⬇ pruefungskommission.csv</a>
+    </div>
+    <div class="download-card">
+      <div class="dl-icon">📝</div>
+      <div class="dl-name">Vollständiger Bericht</div>
+      <div class="dl-desc">Detaillierter Marktrecherche-Bericht mit allen Quellen.</div>
+      <a class="dl-btn" href="[beruf]-recherche-report.html">📄 Bericht öffnen</a>
+    </div>
+    <div class="download-card">
+      <div class="dl-icon">📋</div>
+      <div class="dl-name">GL Executive Summary</div>
+      <div class="dl-desc">Kurzfassung für die Geschäftsleitung.</div>
+      <a class="dl-btn" href="zusammenfassung-gl-praesentation.html">📄 Summary öffnen</a>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:1.5rem">
+    <div class="card-title">🔗 Wichtige externe Links</div>
+    <div class="placeholder"><strong>⚠️ Auszufüllen:</strong> SBFI-Link · Trägerschafts-Website · Prüfungsordnung-Link · SIZ-Produkt-Link · Statistiken-Link</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:.75rem;margin-top:.75rem">
+      <div style="font-size:12px"><strong>SBFI Berufsverzeichnis</strong><br><a href="https://www.becc.admin.ch/becc/public/bvz/beruf/show/[BERUFSNR]" target="_blank" style="color:var(--blue)">becc.admin.ch · Beruf [BERUFSNR]</a></div>
+      <div style="font-size:12px"><strong>Trägerschaft &amp; Prüfung</strong><br><a href="[URL-TRÄGERSCHAFT]" target="_blank" style="color:var(--blue)">[URL-TRÄGERSCHAFT]</a></div>
+      <div style="font-size:12px"><strong>Prüfungsordnung &amp; Wegleitung</strong><br><a href="[URL-GRUNDLAGEN]" target="_blank" style="color:var(--blue)">[URL-GRUNDLAGEN]</a></div>
+      <div style="font-size:12px"><strong>ICT Smart-User SIZ</strong><br><a href="https://www.enter-it.ch/ict-diplome-zertifikate/ict-smart-user-siz/" target="_blank" style="color:var(--blue)">enter-it.ch</a></div>
+    </div>
+  </div>
+</div>
+
+<div style="background:var(--siz-navy);color:rgba(255,255,255,.5);text-align:center;padding:1.5rem;font-size:11px;font-family:'IBM Plex Mono',monospace">
+  SIZ AG · GL-Dossier [BERUFSBEZEICHNUNG] · Beruf-Nr. [BERUFSNR] · Erstellt [MONAT JAHR] · Vertraulich
+</div>
+
+<script>
+function toggleEbene(el){
+  const siz=el.querySelector('.ebene-siz');
+  if(!siz)return;
+  const open=siz.classList.contains('open');
+  document.querySelectorAll('.ebene-siz.open').forEach(s=>s.classList.remove('open'));
+  if(!open)siz.classList.add('open');
+}
+const observer=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}});
+},{threshold:.1});
+document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
+const sections=document.querySelectorAll('[id]');
+const navLinks=document.querySelectorAll('.topnav-links a');
+window.addEventListener('scroll',()=>{
+  let cur='';
+  sections.forEach(s=>{if(window.scrollY>=s.offsetTop-80)cur=s.id});
+  navLinks.forEach(l=>{
+    l.classList.remove('active');
+    if(l.getAttribute('href')==='#'+cur)l.classList.add('active');
+  });
+});
+window.addEventListener('load',()=>{
+  document.querySelectorAll('.bar-fill').forEach(b=>{
+    const w=b.style.width;b.style.width='0';
+    setTimeout(()=>{b.style.width=w;},300);
+  });
+});
+</script>
+</body>
+</html>

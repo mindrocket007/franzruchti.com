@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CEO SIZ AG Agent – Dein virtueller CEO-Sparringpartner</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --bg: #0f1117;
+    --surface: #1a1d27;
+    --surface2: #242836;
+    --border: #2e3348;
+    --text: #e8eaed;
+    --text-secondary: #9aa0b4;
+    --accent: #6366f1;
+    --accent-light: #818cf8;
+    --green: #22c55e;
+    --yellow: #eab308;
+    --red: #ef4444;
+    --orange: #f97316;
+    --blue: #3b82f6;
+    --purple: #a855f7;
+    --cyan: #06b6d4;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  .app { max-width: 1400px; margin: 0 auto; padding: 20px; }
+
+  /* Header */
+  .header {
+    text-align: center;
+    padding: 40px 20px 30px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 30px;
+  }
+  .header h1 {
+    font-size: 2.2em;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--accent-light), var(--cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 8px;
+  }
+  .header p { color: var(--text-secondary); font-size: 1.05em; max-width: 700px; margin: 0 auto; }
+
+  /* Navigation */
+  .nav {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding: 0 10px;
+  }
+  .nav button {
+    padding: 10px 18px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text-secondary);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.88em;
+    font-weight: 500;
+    transition: all 0.2s;
+    font-family: inherit;
+  }
+  .nav button:hover { border-color: var(--accent); color: var(--text); }
+  .nav button.active {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+  }
+
+  /* Cards */
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 28px;
+    margin-bottom: 20px;
+  }
+  .card h2 {
+    font-size: 1.35em;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .card h3 {
+    font-size: 1.05em;
+    color: var(--accent-light);
+    margin: 18px 0 10px;
+  }
+  .card-subtitle { color: var(--text-secondary); font-size: 0.92em; margin-bottom: 18px; }
+
+  /* Phase indicator */
+  .phase-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.78em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .phase-1 { background: rgba(99,102,241,0.15); color: var(--accent-light); }
+  .phase-2 { background: rgba(6,182,212,0.15); color: var(--cyan); }
+  .phase-3 { background: rgba(34,197,94,0.15); color: var(--green); }
+  .phase-4 { background: rgba(168,85,247,0.15); color: var(--purple); }
+
+  /* Checklist */
+  .checklist { list-style: none; }
+  .checklist li {
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    cursor: pointer;
+    transition: background 0.15s;
+    font-size: 0.94em;
+    line-height: 1.5;
+  }
+  .checklist li:hover { background: var(--surface2); }
+  .check-box {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    border: 2px solid var(--border);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    transition: all 0.2s;
+  }
+  .check-box.checked {
+    background: var(--green);
+    border-color: var(--green);
+  }
+  .check-box.checked::after { content: '✓'; color: white; font-size: 12px; font-weight: 700; }
+  .checklist li.done .check-text { text-decoration: line-through; color: var(--text-secondary); }
+
+  /* Question cards */
+  .q-card {
+    background: var(--surface2);
+    border-left: 3px solid var(--accent);
+    padding: 14px 18px;
+    border-radius: 0 10px 10px 0;
+    margin-bottom: 10px;
+    font-size: 0.94em;
+  }
+  .q-card .q-role {
+    font-size: 0.78em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+  }
+  .q-card.ceo { border-left-color: var(--yellow); }
+  .q-card.ceo .q-role { color: var(--yellow); }
+  .q-card.cfo { border-left-color: var(--green); }
+  .q-card.cfo .q-role { color: var(--green); }
+  .q-card.coo { border-left-color: var(--orange); }
+  .q-card.coo .q-role { color: var(--orange); }
+  .q-card.strategy { border-left-color: var(--purple); }
+  .q-card.strategy .q-role { color: var(--purple); }
+  .q-card.market { border-left-color: var(--cyan); }
+  .q-card.market .q-role { color: var(--cyan); }
+  .q-card.hr { border-left-color: var(--red); }
+  .q-card.hr .q-role { color: var(--red); }
+
+  /* KPI Grid */
+  .kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 14px;
+    margin-top: 14px;
+  }
+  .kpi-item {
+    background: var(--surface2);
+    padding: 18px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+  .kpi-item .kpi-label { font-size: 0.82em; color: var(--text-secondary); margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.3px; }
+  .kpi-item .kpi-name { font-weight: 600; margin-bottom: 6px; }
+  .kpi-item .kpi-desc { font-size: 0.85em; color: var(--text-secondary); line-height: 1.4; }
+  .kpi-item .kpi-target { font-size: 0.85em; color: var(--green); margin-top: 6px; font-weight: 500; }
+
+  /* Stakeholder map */
+  .stakeholder-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 14px;
+  }
+  .stakeholder-card {
+    background: var(--surface2);
+    border-radius: 10px;
+    padding: 18px;
+    border: 1px solid var(--border);
+  }
+  .stakeholder-card .sh-name { font-weight: 600; font-size: 1em; margin-bottom: 2px; }
+  .stakeholder-card .sh-freq { font-size: 0.8em; color: var(--accent-light); margin-bottom: 8px; }
+  .stakeholder-card .sh-topics { font-size: 0.88em; color: var(--text-secondary); }
+  .sh-priority {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.72em;
+    font-weight: 600;
+    margin-left: 8px;
+  }
+  .sh-priority.high { background: rgba(239,68,68,0.15); color: var(--red); }
+  .sh-priority.medium { background: rgba(234,179,8,0.15); color: var(--yellow); }
+  .sh-priority.low { background: rgba(34,197,94,0.15); color: var(--green); }
+
+  /* Timeline */
+  .timeline { position: relative; padding-left: 30px; }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--border);
+  }
+  .timeline-item {
+    position: relative;
+    margin-bottom: 24px;
+    padding: 16px 20px;
+    background: var(--surface2);
+    border-radius: 10px;
+  }
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -26px;
+    top: 20px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--accent);
+    border: 2px solid var(--bg);
+  }
+  .timeline-item .tl-period { font-size: 0.8em; font-weight: 600; color: var(--accent-light); margin-bottom: 4px; }
+  .timeline-item .tl-title { font-weight: 600; margin-bottom: 6px; }
+  .timeline-item .tl-desc { font-size: 0.9em; color: var(--text-secondary); }
+
+  /* Tabs within sections */
+  .subtabs {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 10px;
+    flex-wrap: wrap;
+  }
+  .subtabs button {
+    padding: 6px 14px;
+    border: none;
+    background: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 0.88em;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: all 0.15s;
+    font-family: inherit;
+  }
+  .subtabs button:hover { color: var(--text); background: var(--surface2); }
+  .subtabs button.active { color: var(--accent-light); background: rgba(99,102,241,0.1); }
+
+  /* Progress bar */
+  .progress-bar { background: var(--surface2); height: 8px; border-radius: 4px; margin: 14px 0; overflow: hidden; }
+  .progress-fill { height: 100%; background: linear-gradient(90deg, var(--accent), var(--cyan)); border-radius: 4px; transition: width 0.4s; }
+
+  /* Denkweise section */
+  .mindset-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 14px;
+  }
+  .mindset-card {
+    background: var(--surface2);
+    padding: 20px;
+    border-radius: 10px;
+    border-top: 3px solid var(--accent);
+  }
+  .mindset-card h4 { margin-bottom: 8px; font-size: 1em; }
+  .mindset-card p { font-size: 0.9em; color: var(--text-secondary); line-height: 1.5; }
+
+  /* Wochenplan */
+  .week-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+  }
+  @media (max-width: 900px) { .week-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 500px) { .week-grid { grid-template-columns: 1fr; } }
+  .day-card {
+    background: var(--surface2);
+    border-radius: 10px;
+    padding: 14px;
+    border-top: 2px solid var(--border);
+  }
+  .day-card .day-name { font-weight: 700; font-size: 0.85em; margin-bottom: 10px; color: var(--accent-light); }
+  .day-card .day-item {
+    font-size: 0.82em;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(46,51,72,0.5);
+    color: var(--text-secondary);
+  }
+  .day-card .day-item:last-child { border: none; }
+  .day-card .day-item .time { color: var(--text); font-weight: 500; }
+
+  /* Notes area */
+  .notes-area {
+    width: 100%;
+    min-height: 120px;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px;
+    color: var(--text);
+    font-family: inherit;
+    font-size: 0.92em;
+    resize: vertical;
+    outline: none;
+    margin-top: 10px;
+  }
+  .notes-area:focus { border-color: var(--accent); }
+  .notes-area::placeholder { color: var(--text-secondary); }
+
+  /* Grid 2 col */
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } }
+
+  /* Decision framework */
+  .decision-step {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 14px;
+    align-items: flex-start;
+  }
+  .decision-num {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    background: var(--accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.85em;
+  }
+  .decision-content h4 { font-size: 0.95em; margin-bottom: 3px; }
+  .decision-content p { font-size: 0.88em; color: var(--text-secondary); }
+
+  .highlight-box {
+    background: rgba(99,102,241,0.08);
+    border: 1px solid rgba(99,102,241,0.2);
+    border-radius: 10px;
+    padding: 18px;
+    margin: 14px 0;
+  }
+  .highlight-box p { font-size: 0.92em; color: var(--text-secondary); line-height: 1.6; }
+  .highlight-box strong { color: var(--text); }
+</style>
+</head>
+<body>
+<div class="app" id="app"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.9/babel.min.js"></script>
+
+<script type="text/babel">
+const { useState, useCallback } = React;
+
+// ============================================================
+// DATA
+// ============================================================
+
+const SECTIONS = [
+  { id: 'overview', label: 'Überblick' },
+  { id: 'phase1', label: 'Tag 1–30' },
+  { id: 'phase2', label: 'Tag 31–60' },
+  { id: 'phase3', label: 'Tag 61–100' },
+  { id: 'kpis', label: 'KPIs' },
+  { id: 'stakeholders', label: 'Stakeholder' },
+  { id: 'questions', label: 'Fragenkatalog' },
+  { id: 'strategy', label: 'Strategiearbeit' },
+  { id: 'weekplan', label: 'Wochenrhythmus' },
+  { id: 'mindset', label: 'CEO-Denkweise' },
+  { id: 'comms', label: 'Kommunikation' },
+  { id: 'risks', label: 'Risiken & Chancen' },
+  { id: 'notes', label: 'Meine Notizen' },
+];
+
+const PHASE1_TASKS = [
+  { text: 'Alle GL-Mitglieder einzeln treffen – je 90min, offene Gespräche, zuhören', done: false },
+  { text: 'Geschäftszahlen der letzten 3 Jahre analysieren (Umsatz, Kosten, Marge, Prüfungsvolumen)', done: false },
+  { text: 'Top-10-Partnerschulen besuchen – verstehen wie sie SIZ-Produkte nutzen', done: false },
+  { text: 'Mit Swico und Kaufmännischem Verband (Träger) sprechen – Erwartungen abholen', done: false },
+  { text: 'Organigramm und alle Teamrollen verstehen – wer macht was, wo sind Engpässe?', done: false },
+  { text: 'IT-Infrastruktur und Prüfungsplattform begutachten (technischer Zustand)', done: false },
+  { text: 'Wettbewerbsanalyse: ECDL/ICDL, Microsoft-Zertifizierungen, Google-Zertifikate', done: false },
+  { text: 'Kundenzufriedenheits-Daten sichten (NPS, Beschwerden, Feedback)', done: false },
+  { text: 'Verträge mit Partnerschulen prüfen – Laufzeiten, Konditionen, Exklusivitäten', done: false },
+  { text: 'Regulatorisches Umfeld verstehen (SBFI, Bildungssystem, Anerkennungen)', done: false },
+  { text: 'Cash-Position und Liquiditätsplanung mit CFO durchgehen', done: false },
+  { text: 'Mitarbeitende auf allen Ebenen kennenlernen – informelle Gespräche', done: false },
+  { text: 'Bisherige Strategiepapiere und VR-Protokolle der letzten 2 Jahre lesen', done: false },
+  { text: 'Marktgrösse Schweiz abschätzen: Wie viele potenzielle Prüflinge gibt es?', done: false },
+];
+
+const PHASE2_TASKS = [
+  { text: 'SWOT-Analyse der SIZ AG erstellen und mit GL validieren', done: false },
+  { text: 'Strategische Prioritäten definieren (max. 3–5 Fokusthemen)', done: false },
+  { text: 'KPI-Dashboard aufbauen mit den 12–15 wichtigsten Kennzahlen', done: false },
+  { text: 'Business Model Canvas aktualisieren – wo sind die grössten Hebel?', done: false },
+  { text: 'Digitalisierungsstrategie bewerten: Online-Prüfungen, KI-gestützte Tests?', done: false },
+  { text: 'Pricing-Modell analysieren – stimmt die Wertschöpfung pro Prüfung?', done: false },
+  { text: 'Partnerstrategie überarbeiten: Qualität vs. Quantität der Schulen', done: false },
+  { text: 'Neue Marktsegmente evaluieren: Firmen, RAV, HR-Abteilungen, Spitäler', done: false },
+  { text: 'Team-Assessment: Sind die richtigen Leute in den richtigen Rollen?', done: false },
+  { text: 'Budget und Investitionsplanung für nächstes Jahr vorbereiten', done: false },
+  { text: 'Quick Wins identifizieren und erste 2–3 umsetzen', done: false },
+  { text: 'VR-Strategie-Workshop planen und vorbereiten', done: false },
+];
+
+const PHASE3_TASKS = [
+  { text: 'Strategiepräsentation für VR finalisieren und präsentieren', done: false },
+  { text: 'Operative Ziele pro GL-Bereich für die nächsten 12 Monate festlegen', done: false },
+  { text: 'Kommunikationsoffensive starten: intern (Team) und extern (Partner, Markt)', done: false },
+  { text: 'Erste strategische Initiative lancieren (z.B. Firmenkunden-Pilotprogramm)', done: false },
+  { text: 'Monatliches Reporting-Rhythmus mit GL und VR etablieren', done: false },
+  { text: 'Kooperationsgespräche mit potenziellen Partnern starten', done: false },
+  { text: 'Innovationspipeline aufbauen: Was kommt nach den heutigen Zertifikaten?', done: false },
+  { text: 'Kultur und Werte der Organisation bewusst gestalten', done: false },
+  { text: '100-Tage-Bilanz erstellen: Was wurde erreicht, was nicht, warum?', done: false },
+  { text: 'Jahresplanung und OKRs für das nächste Geschäftsjahr starten', done: false },
+];
+
+const KPI_DATA = [
+  { cat: 'Finanzen', name: 'Umsatz / Revenue', desc: 'Gesamtumsatz aus Prüfungsgebühren, Lizenzen, Dienstleistungen', target: 'Ziel: +5–10% YoY' },
+  { cat: 'Finanzen', name: 'EBITDA-Marge', desc: 'Operatives Ergebnis – zeigt ob das Geschäftsmodell profitabel skaliert', target: 'Ziel: >15%' },
+  { cat: 'Finanzen', name: 'Revenue pro Prüfung', desc: 'Durchschnittlicher Ertrag pro durchgeführter Prüfung', target: 'Trend: stabil oder steigend' },
+  { cat: 'Finanzen', name: 'Cash Runway', desc: 'Monate an Liquiditätsreserven bei aktuellem Burn', target: 'Ziel: >12 Monate' },
+  { cat: 'Markt', name: 'Prüfungsvolumen', desc: 'Gesamtanzahl durchgeführter Prüfungen/Tests pro Jahr', target: 'Baseline: ~100k, Ziel: Wachstum' },
+  { cat: 'Markt', name: 'Anzahl aktive Partnerschulen', desc: 'Schulen die aktiv Prüfungen über SIZ abwickeln', target: 'Aktuell: ~100+, Ziel: Retention >95%' },
+  { cat: 'Markt', name: 'Neue Marktsegmente', desc: 'Anteil Umsatz aus Firmen/RAV/neue Kanäle vs. klassische Schulen', target: 'Ziel: >10% in 2 Jahren' },
+  { cat: 'Markt', name: 'Marktanteil ICT-Zertifizierungen CH', desc: 'Position gegenüber ECDL, Microsoft, Google', target: 'Marktführerschaft verteidigen' },
+  { cat: 'Kunden', name: 'NPS Partnerschulen', desc: 'Wie zufrieden sind die Schulen mit SIZ als Prüfungsorganisation?', target: 'Ziel: >50' },
+  { cat: 'Kunden', name: 'Prüflings-Zufriedenheit', desc: 'Wie erleben die Lernenden die Prüfung? (Plattform, Fairness, Support)', target: 'Ziel: >4.0/5' },
+  { cat: 'Kunden', name: 'Churn Rate Partnerschulen', desc: 'Wie viele Partnerschulen verlieren wir pro Jahr?', target: 'Ziel: <5%' },
+  { cat: 'Operations', name: 'Prüfungsfehlerrate', desc: 'Technische Fehler oder Reklamationen pro 1000 Prüfungen', target: 'Ziel: <1%' },
+  { cat: 'Operations', name: 'Time-to-Result', desc: 'Wie schnell erhalten Prüflinge ihr Ergebnis?', target: 'Ziel: <24h' },
+  { cat: 'Innovation', name: 'Anteil digitale Prüfungen', desc: 'Online vs. vor-Ort-Prüfungen', target: 'Trend: steigend' },
+  { cat: 'Innovation', name: 'Neue Diplome/Module', desc: 'Wie viele neue Prüfungsformate wurden lanciert?', target: 'Ziel: 2–3 pro Jahr' },
+  { cat: 'Team', name: 'Mitarbeiterzufriedenheit', desc: 'Engagement Score des internen Teams', target: 'Ziel: >75%' },
+];
+
+const STAKEHOLDERS = [
+  { name: 'Verwaltungsrat (VR)', freq: 'Alle 6–8 Wochen', priority: 'high', topics: 'Strategie, Finanzen, Risiken, Governance. Der VR will wissen: Sind wir auf Kurs? Welche strategischen Entscheide stehen an? Wie ist die Risikolage?' },
+  { name: 'Swico (Träger)', freq: 'Quartalsweise + bei Bedarf', priority: 'high', topics: 'Strategische Ausrichtung, Branchenentwicklung, Digitalisierung. Swico vertritt die ICT-Branche und will wissen, ob SIZ relevant bleibt.' },
+  { name: 'Kaufmännischer Verband (Träger)', freq: 'Quartalsweise', priority: 'high', topics: 'Bildungspolitik, Berufsbildung, Positionierung im Bildungssystem. Will Sicherheit, dass SIZ in der kaufmännischen Bildung verankert bleibt.' },
+  { name: 'Geschäftsleitung intern', freq: 'Wöchentlich', priority: 'high', topics: 'Operative Fortschritte, Engpässe, Personalthemen, Budget. Die GL will klare Prioritäten und Entscheidungsfreude.' },
+  { name: 'Partnerschulen (Top 20)', freq: 'Halbjährlich persönlich', priority: 'high', topics: 'Zusammenarbeit, Prüfungsqualität, neue Angebote, Preisgestaltung. Sie sind dein Vertriebskanal – ihre Zufriedenheit ist existenziell.' },
+  { name: 'SBFI / Bildungsbehörden', freq: 'Bei Bedarf / jährlich', priority: 'medium', topics: 'Anerkennung, Regulierung, Bildungspolitik, Qualitätssicherung. Hier geht es um die formale Legitimation der SIZ-Zertifikate.' },
+  { name: 'Fachexperten (60+ Prüfungsentwickler)', freq: 'Halbjährlich', priority: 'medium', topics: 'Prüfungsqualität, Aktualität der Inhalte, Vergütung, Zusammenarbeit. Sie sichern die inhaltliche Qualität – ohne sie keine guten Prüfungen.' },
+  { name: 'Firmen / HR-Abteilungen (neues Segment)', freq: 'Laufend (Akquise)', priority: 'medium', topics: 'Skill-Assessments, Mitarbeiterentwicklung, Pricing, ROI. Neues Wachstumsfeld – CEO muss hier persönlich Türen öffnen.' },
+  { name: 'RAV / Arbeitslosenkassen', freq: 'Quartalsweise', priority: 'medium', topics: 'Integrationsmassnahmen, Kompetenznachweis, Pricing, Zusammenarbeit. Öffentliche Gelder, aber stabiler Bedarf.' },
+  { name: 'Wettbewerber (ECDL, Microsoft etc.)', freq: 'Laufendes Monitoring', priority: 'low', topics: 'Nicht direkt kommunizieren, aber ständig beobachten: Was bieten sie an? Wo ziehen sie Kunden ab? Wo kooperieren?' },
+  { name: 'Medien / Öffentlichkeit', freq: 'Bei Bedarf', priority: 'low', topics: 'Bildungsthemen, Digitalisierung, Fachkräftemangel. Positionierung als Thought Leader für ICT-Bildung in der Schweiz.' },
+];
+
+const CEO_QUESTIONS = {
+  'Strategie & Vision': [
+    { role: 'CEO', q: 'Was ist die Existenzberechtigung der SIZ in 5 Jahren, wenn KI-Tools ICT-Skills automatisieren?', cls: 'ceo' },
+    { role: 'CEO', q: 'Warum sollte eine Schule mit uns statt direkt mit Microsoft oder Google zusammenarbeiten?', cls: 'ceo' },
+    { role: 'CEO', q: 'Sind wir ein Prüfungsunternehmen oder ein Kompetenz-Unternehmen? Was ist unser Kern?', cls: 'ceo' },
+    { role: 'Strategie', q: 'Welche 3 Megatrends treffen uns am härtesten und wie reagieren wir?', cls: 'strategy' },
+    { role: 'Strategie', q: 'Sollten wir vertikal integrieren (auch Schulungen anbieten) oder horizontal expandieren (neue Zertifikatstypen)?', cls: 'strategy' },
+    { role: 'Strategie', q: 'Was ist unser unfairer Vorteil gegenüber internationalen Anbietern?', cls: 'strategy' },
+  ],
+  'Finanzen & KPIs': [
+    { role: 'CFO', q: 'Wie verteilt sich unser Umsatz auf die einzelnen Diplome und Module?', cls: 'cfo' },
+    { role: 'CFO', q: 'Was kostet uns eine Prüfung in der Herstellung vs. was verdienen wir daran?', cls: 'cfo' },
+    { role: 'CFO', q: 'Wie hoch ist unsere Abhängigkeit von den Top-10-Partnerschulen?', cls: 'cfo' },
+    { role: 'CFO', q: 'Was passiert mit unserem Revenue, wenn das Prüfungsvolumen um 20% sinkt?', cls: 'cfo' },
+    { role: 'CFO', q: 'Haben wir genug Reserven für 2 Jahre Investition in Digitalisierung?', cls: 'cfo' },
+    { role: 'CFO', q: 'Wie sieht die Unit Economics pro Partnerschule aus?', cls: 'cfo' },
+  ],
+  'Markt & Partner': [
+    { role: 'Markt', q: 'Wie viele potenzielle Partnerschulen gibt es in der Schweiz, die noch nicht mit uns arbeiten?', cls: 'market' },
+    { role: 'Markt', q: 'Was ist der Hauptgrund, warum Schulen uns verlassen oder nicht zu uns kommen?', cls: 'market' },
+    { role: 'Markt', q: 'Wie gross ist das Firmenkunden-Segment realistisch in CHF?', cls: 'market' },
+    { role: 'Markt', q: 'Welche Partnerschulen sind unsere Champions und warum?', cls: 'market' },
+    { role: 'Markt', q: 'Brauchen wir eine Romandie- und Tessin-Strategie?', cls: 'market' },
+    { role: 'Markt', q: 'Was wäre ein realistischer Umsatz aus dem RAV/Arbeitslosenkassen-Kanal in 3 Jahren?', cls: 'market' },
+  ],
+  'Operations & Produkt': [
+    { role: 'COO', q: 'Wie skalierbar ist unsere Prüfungsplattform? Was passiert bei 200k Prüfungen?', cls: 'coo' },
+    { role: 'COO', q: 'Wie hoch ist der Automatisierungsgrad unserer Prüfungsprozesse?', cls: 'coo' },
+    { role: 'COO', q: 'Welche Prozesse sind heute manuell und fressen am meisten Zeit?', cls: 'coo' },
+    { role: 'COO', q: 'Wie aktuell sind unsere Prüfungsinhalte? Hinkt die Entwicklung der Technologie hinterher?', cls: 'coo' },
+    { role: 'COO', q: 'Können wir adaptive, KI-gestützte Prüfungen einführen?', cls: 'coo' },
+  ],
+  'Team & Kultur': [
+    { role: 'HR', q: 'Wie viele FTE haben wir und wie verteilen sich diese auf die Funktionen?', cls: 'hr' },
+    { role: 'HR', q: 'Wo sind die kritischsten Wissensträger – was passiert, wenn sie gehen?', cls: 'hr' },
+    { role: 'HR', q: 'Ist unser Team für die Zukunft richtig aufgestellt oder brauchen wir neue Skills?', cls: 'hr' },
+    { role: 'HR', q: 'Wie ist die Kultur? Wird innovativ gedacht oder wird vor allem verwaltet?', cls: 'hr' },
+    { role: 'HR', q: 'Sind die Gehälter marktgerecht? Können wir die besten Leute halten und gewinnen?', cls: 'hr' },
+  ],
+};
+
+const STRATEGY_FRAMEWORKS = [
+  { name: 'Blue Ocean Strategy', desc: 'Wo können wir Märkte schaffen, statt in bestehenden zu kämpfen? Welche Faktoren können wir eliminieren, reduzieren, steigern oder neu schaffen? Für SIZ z.B.: weg vom reinen Zertifikat hin zum Skill-Ökosystem.' },
+  { name: 'Porter\'s Five Forces', desc: 'Bedrohung durch Substitution (KI-Tools, Self-Learning), Verhandlungsmacht der Schulen, Wettbewerb (ECDL, Microsoft), neue Wettbewerber (EdTech-Startups), Lieferantenmacht (Fachexperten).' },
+  { name: 'Jobs to Be Done', desc: 'Welchen "Job" erfüllt ein SIZ-Zertifikat? Arbeitgebern: Nachweis digitaler Kompetenz. Lernenden: Karrierevorteil. Schulen: Qualitätslabel und Curriculum. RAV: Integrationsnachweis.' },
+  { name: 'Ansoff-Matrix', desc: 'Marktdurchdringung (mehr Prüfungen bei bestehenden Schulen), Marktentwicklung (Firmen, RAV), Produktentwicklung (neue Zertifikate, KI-Assessments), Diversifikation (Consulting, Plattform-Lizenzierung).' },
+  { name: 'OKR Framework', desc: 'Objective: SIZ wird zum unverzichtbaren Partner für digitale Kompetenz in der Schweiz. Key Results: 120k Prüfungen, 15 neue Firmenkunden, NPS >55, 3 neue Module lanciert.' },
+  { name: 'BCG Matrix', desc: 'Stars: Kern-Diplome (ICT Smart-User, Advanced-User). Cash Cows: Etablierte Partnerschulen. Question Marks: Firmenkunden-Segment. Dogs: Veraltete Module mit sinkendem Volumen.' },
+];
+
+const WEEK_PLAN = {
+  Montag: [
+    { time: '08:00', item: 'Persönliche Vorbereitung, Wochenziele setzen' },
+    { time: '09:00', item: 'GL-Sitzung (60-90min): Prioritäten, Blockers, Entscheide' },
+    { time: '10:30', item: 'Strategiearbeit / Deep Work (keine Meetings)' },
+    { time: '14:00', item: '1:1 mit einem GL-Mitglied (rotierend)' },
+    { time: '15:30', item: 'Markt & Wettbewerb: News, Trends, Monitoring' },
+  ],
+  Dienstag: [
+    { time: '08:00', item: 'KPI-Review: Dashboard checken, Abweichungen notieren' },
+    { time: '09:30', item: 'Partnerschulen: Gespräche, Besuche oder Calls' },
+    { time: '13:00', item: 'Produktentwicklung: Stand Prüfungen, neue Module' },
+    { time: '15:00', item: 'Team-Gespräche / Skip-Level Meetings' },
+  ],
+  Mittwoch: [
+    { time: '08:00', item: 'Strategischer Deep-Work-Block (keine Meetings bis 11:00)' },
+    { time: '11:00', item: 'Externe Meetings: Swico, Kaufm. Verband, SBFI' },
+    { time: '14:00', item: 'Innovationsprojekte vorantreiben' },
+    { time: '16:00', item: 'Finanzreview mit CFO/Controller (bi-weekly)' },
+  ],
+  Donnerstag: [
+    { time: '08:00', item: 'Networking / externe Termine / Firmenbesuche' },
+    { time: '10:00', item: 'Akquise: potenzielle neue Partnerschulen oder Firmenkunden' },
+    { time: '14:00', item: 'Projektreviews und operative Themen' },
+    { time: '16:00', item: 'Reflexion: Was ist diese Woche gut gelaufen, was nicht?' },
+  ],
+  Freitag: [
+    { time: '08:00', item: 'E-Mails, Admin, Pendenzen abarbeiten' },
+    { time: '10:00', item: 'VR-Vorbereitung (wenn VR-Sitzung ansteht)' },
+    { time: '13:00', item: 'Weiterbildung: Artikel, Bücher, Trends' },
+    { time: '14:30', item: 'Wochenrückblick & Planung nächste Woche' },
+    { time: '15:30', item: 'Optional: Informeller Austausch mit Team (Kaffee)' },
+  ],
+};
+
+const MINDSET_ITEMS = [
+  { title: 'Zuhören vor Entscheiden', text: 'Die ersten 30 Tage gehst du in den "Schwamm-Modus". Du hörst zu, fragst nach, verstehst. Keine grossen Entscheide vor Tag 30. Wer zu schnell urteilt, löst die falschen Probleme.' },
+  { title: 'Denke in Systemen', text: 'SIZ ist ein Ökosystem: Fachexperten entwickeln Prüfungen, Schulen vermitteln Wissen, Lernende legen Prüfungen ab, Arbeitgeber anerkennen Zertifikate. Jede Entscheidung wirkt auf alle Teile.' },
+  { title: '80/20 radikal anwenden', text: 'Welche 20% der Aktivitäten erzeugen 80% des Werts? Fokussiere dort. Bei SIZ: Die Beziehung zu den Top-20-Schulen ist wichtiger als 50 kleine Partner-Aktivitäten.' },
+  { title: 'Disagree and Commit', text: 'Fördere offene Diskussion in der GL. Jeder darf (und soll) widersprechen. Aber wenn entschieden ist, ziehen alle mit. Keine Guerilla-Politik.' },
+  { title: 'Outside-In denken', text: 'Starte nicht bei deiner Organisation, starte beim Markt. Was braucht ein Arbeitgeber 2027? Was braucht ein 17-jähriger Lernender? Von dort zurückarbeiten.' },
+  { title: 'Energie managen, nicht nur Zeit', text: 'Strategiearbeit morgens, Admin nachmittags. Keine Meetings am Montagmorgen vor 09:00. Freitagnachmittag zum Denken freihalten. Sport ist nicht optional.' },
+  { title: 'Transparenz als Kultur', text: 'Teile offen, was du siehst, denkst und planst – auch wenn es unangenehm ist. Teams, die alles wissen, treffen bessere Entscheide auf jeder Ebene.' },
+  { title: 'Kill your Darlings', text: 'Sei bereit, auch heilige Kühe zu schlachten. Wenn ein Diplom-Typ keinen Markt mehr hat, beende ihn. Wenn ein Prozess nur aus Tradition existiert, hinterfrage ihn.' },
+];
+
+const COMMS_DATA = {
+  intern: [
+    { what: 'Wöchentliches GL-Update', how: 'Kurz-Mail jeden Montag: 3 Prioritäten der Woche, 1 Erfolg, 1 Herausforderung. Max. 10 Zeilen.', why: 'Alignment und Transparenz im Führungsteam.' },
+    { what: 'Monatliches All-Hands', how: '30min stehend. Geschäftsupdate, Highlights, Fragen beantworten. Authentisch, nicht poliert.', why: 'Jeder im Team soll wissen, wohin die Reise geht.' },
+    { what: 'Quartalsbericht ans Team', how: '1-Seiter: Zahlen, Fortschritte, Learnings, nächstes Quartal. Ehrlich, auch über Rückschläge.', why: 'Vertrauen aufbauen durch Offenheit.' },
+    { what: '1:1 mit Direktberichten', how: 'Wöchentlich 30min. Agenda: Wie geht es dir? Was blockiert dich? Wo brauchst du mich?', why: 'Beziehung aufbauen und Probleme früh erkennen.' },
+  ],
+  extern: [
+    { what: 'VR-Reporting', how: 'Monatlicher Finanzbericht + Dashboard. Quartalsstrategie-Update. Immer mit "So what?" und Handlungsempfehlung.', why: 'Der VR will Orientierung, nicht nur Zahlen.' },
+    { what: 'Partnerschul-Newsletter', how: 'Alle 2 Monate: Neue Module, Erfolgsgeschichten, Termine. Wertvoll, nicht werblich.', why: 'Partner bei der Stange halten und Nähe zeigen.' },
+    { what: 'Träger-Gespräche', how: 'Quartalsweise proaktiver Update an Swico und KV Schweiz. Strategie, Zahlen, Ausblick. Keine Überraschungen.', why: 'Die Träger sind dein Sicherheitsnetz – pflege die Beziehung.' },
+    { what: 'Medien & Positionierung', how: 'Jährlich 2–3 Artikel/Interviews zu Bildung, Digitalisierung, Skills. CEO als Thought Leader positionieren.', why: 'SIZ sichtbar machen und als relevante Stimme im Bildungsmarkt etablieren.' },
+  ],
+};
+
+const RISKS_CHANCES = {
+  risks: [
+    { title: 'Disruption durch KI', desc: 'KI-Tools wie ChatGPT oder Copilot könnten ICT-Grundkenntnisse entwerten. Wenn jeder mit KI coden kann, wozu noch ein SIZ-Zertifikat?', action: 'Prüfungsinhalte auf KI-Kompetenz ausrichten. "ICT with AI" statt "ICT without AI". Zertifikate für KI-Anwenderkompetenz entwickeln.' },
+    { title: 'Rückgang Berufsbildung', desc: 'Demografischer Wandel + Akademisierung könnten das Berufsbildungs-Volumen senken.', action: 'Neue Zielgruppen erschliessen: Quereinsteiger, Umschulungen, lebenslanges Lernen, Firmenkunden.' },
+    { title: 'Partnerschul-Konzentration', desc: 'Wenn die Top-10-Schulen 60%+ des Volumens bringen, ist das ein Klumpenrisiko.', action: 'Diversifizieren: mehr Schulen, Firmen, neue Kanäle. Revenue-Mix aktiv steuern.' },
+    { title: 'Technologische Altlasten', desc: 'Wenn die Prüfungsplattform veraltet ist, leidet die Skalierbarkeit und User Experience.', action: 'Tech-Audit in den ersten 30 Tagen. Budget für Modernisierung reservieren.' },
+    { title: 'Regulatorisches Risiko', desc: 'Änderungen im Bildungssystem könnten die Stellung der SIZ-Zertifikate beeinflussen.', action: 'Enge Beziehung zu SBFI und Bildungspolitik pflegen. Proaktiv an Reformen mitwirken.' },
+  ],
+  chances: [
+    { title: 'KI-Zertifikate als First Mover', desc: 'Noch gibt es keinen Standard für "KI-Anwenderkompetenz" in der Schweiz.', action: 'Jetzt ein "ICT AI-User SIZ"-Zertifikat entwickeln. Positionierung als DER Schweizer Standard für KI-Kompetenz.' },
+    { title: 'Firmenkunden-Markt', desc: 'Grosses unerschlossenes Potenzial bei Unternehmen, die Mitarbeitende digital weiterentwickeln wollen.', action: 'Corporate-Angebot aufbauen: Skill-Assessments, Benchmarking, Entwicklungsprogramme.' },
+    { title: 'Plattform-Ökonomie', desc: 'Von der Prüfungsorganisation zur Plattform: Lern-Ökosystem mit Partnern, Content, Zertifizierung.', action: 'Tech-Plattform öffnen: API für Partnerschulen, LMS-Integration, White-Label-Prüfungen.' },
+    { title: 'Romandie & Tessin', desc: 'Vermutlich untervertreten in der französisch- und italienischsprachigen Schweiz.', action: 'Lokalisierung der Prüfungen, Partnerschulen in der Romandie und im Tessin gezielt aufbauen.' },
+    { title: 'Micro-Credentials-Trend', desc: 'Weltweit boomen kurze, stackbare Zertifizierungen – SIZ ist perfekt positioniert.', action: 'Module noch granularer anbieten. Digital Badges einführen. Integration mit LinkedIn und Europass.' },
+  ],
+};
+
+
+// ============================================================
+// COMPONENTS
+// ============================================================
+
+function App() {
+  const [section, setSection] = useState('overview');
+  const [checks, setChecks] = useState({});
+  const [notes, setNotes] = useState('');
+  const [qFilter, setQFilter] = useState(Object.keys(CEO_QUESTIONS)[0]);
+  const [stratTab, setStratTab] = useState('frameworks');
+  const [commsTab, setCommsTab] = useState('intern');
+  const [riskTab, setRiskTab] = useState('risks');
+  const [kpiFilter, setKpiFilter] = useState('Alle');
+
+  const toggleCheck = useCallback((phase, idx) => {
+    const key = `${phase}-${idx}`;
+    setChecks(prev => ({ ...prev, [key]: !prev[key] }));
+  }, []);
+
+  const countDone = (phase, tasks) => tasks.filter((_, i) => checks[`${phase}-${i}`]).length;
+
+  const renderChecklist = (phase, tasks) => (
+    <ul className="checklist">
+      {tasks.map((t, i) => (
+        <li key={i} className={checks[`${phase}-${i}`] ? 'done' : ''} onClick={() => toggleCheck(phase, i)}>
+          <div className={`check-box ${checks[`${phase}-${i}`] ? 'checked' : ''}`}></div>
+          <span className="check-text">{t.text}</span>
+        </li>
+      ))}
+    </ul>
+  );
+
+  const renderProgress = (phase, tasks) => {
+    const done = countDone(phase, tasks);
+    const pct = Math.round((done / tasks.length) * 100);
+    return (
+      <div>
+        <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.85em', color: 'var(--text-secondary)' }}>
+          <span>{done} von {tasks.length} erledigt</span>
+          <span>{pct}%</span>
+        </div>
+        <div className="progress-bar"><div className="progress-fill" style={{ width: `${pct}%` }}></div></div>
+      </div>
+    );
+  };
+
+  // ---- SECTIONS ----
+
+  const renderOverview = () => (
+    <div>
+      <div className="card">
+        <h2>Willkommen, CEO der SIZ AG</h2>
+        <p className="card-subtitle">Dieses Playbook simuliert, wie ein neu eingestellter CEO der SIZ AG vom ersten Tag an vorgeht – Schritt für Schritt, von der Analyse bis zur Umsetzung.</p>
+
+        <div className="highlight-box">
+          <p><strong>SIZ AG auf einen Blick:</strong> Führende ICT-Prüfungsorganisation der Schweiz. ~100'000 Prüfungen/Jahr. 100+ Partnerschulen. Getragen von Swico und Kaufmännischem Verband. Rund 15–20 Mitarbeitende. Sitz: Zürich. Kein Schulungsanbieter – reiner Prüfungs- und Zertifizierungsanbieter.</p>
+        </div>
+      </div>
+
+      <div className="card">
+        <h2>Die 100-Tage-Roadmap</h2>
+        <div className="timeline">
+          <div className="timeline-item">
+            <div className="tl-period">Tag 1–30: ZUHÖREN & VERSTEHEN</div>
+            <div className="tl-title">Bestandsaufnahme – Alles aufsaugen</div>
+            <div className="tl-desc">Menschen kennenlernen, Zahlen verstehen, Partner besuchen, Wettbewerb analysieren, Kultur fühlen. Keine grossen Entscheide. Dein einziger Job: die richtigen Fragen stellen und zuhören.</div>
+          </div>
+          <div className="timeline-item">
+            <div className="tl-period">Tag 31–60: ANALYSIEREN & FORMEN</div>
+            <div className="tl-title">Strategie entwickeln – Klarheit schaffen</div>
+            <div className="tl-desc">SWOT erstellen, KPIs definieren, Quick Wins identifizieren, strategische Prioritäten setzen. Erste Hypothesen testen. VR-Strategie-Workshop planen.</div>
+          </div>
+          <div className="timeline-item">
+            <div className="tl-period">Tag 61–100: UMSETZEN & KOMMUNIZIEREN</div>
+            <div className="tl-title">Loslegen – Ergebnisse liefern</div>
+            <div className="tl-desc">Strategie präsentieren, operative Ziele setzen, erste Initiativen lancieren, Rhythmus etablieren. 100-Tage-Bilanz ziehen.</div>
+          </div>
+        </div>
+      </div>
+
+      <div className="card">
+        <h2>Gesamtfortschritt</h2>
+        <p className="card-subtitle">Dein Fortschritt über alle Phasen hinweg</p>
+        {renderProgress('p1', PHASE1_TASKS)}
+        <p style={{ fontSize: '0.82em', color: 'var(--text-secondary)', marginTop: 4 }}>Phase 1: Tag 1–30</p>
+        {renderProgress('p2', PHASE2_TASKS)}
+        <p style={{ fontSize: '0.82em', color: 'var(--text-secondary)', marginTop: 4 }}>Phase 2: Tag 31–60</p>
+        {renderProgress('p3', PHASE3_TASKS)}
+        <p style={{ fontSize: '0.82em', color: 'var(--text-secondary)', marginTop: 4 }}>Phase 3: Tag 61–100</p>
+      </div>
+    </div>
+  );
+
+  const renderPhase = (title, subtitle, badge, phase, tasks) => (
+    <div className="card">
+      <h2><span className={`phase-badge ${badge}`}>{title.split(':')[0]}</span> {title.split(':').slice(1).join(':')}</h2>
+      <p className="card-subtitle">{subtitle}</p>
+      {renderProgress(phase, tasks)}
+      <div style={{ marginTop: 18 }}>{renderChecklist(phase, tasks)}</div>
+    </div>
+  );
+
+  const renderKPIs = () => {
+    const cats = ['Alle', ...new Set(KPI_DATA.map(k => k.cat))];
+    const filtered = kpiFilter === 'Alle' ? KPI_DATA : KPI_DATA.filter(k => k.cat === kpiFilter);
+    return (
+      <div className="card">
+        <h2>KPI-Dashboard des CEO</h2>
+        <p className="card-subtitle">Die 15+ wichtigsten Kennzahlen, die du als CEO wöchentlich/monatlich im Blick haben musst</p>
+        <div className="subtabs">
+          {cats.map(c => <button key={c} className={kpiFilter === c ? 'active' : ''} onClick={() => setKpiFilter(c)}>{c}</button>)}
+        </div>
+        <div className="kpi-grid">
+          {filtered.map((k, i) => (
+            <div className="kpi-item" key={i}>
+              <div className="kpi-label">{k.cat}</div>
+              <div className="kpi-name">{k.name}</div>
+              <div className="kpi-desc">{k.desc}</div>
+              <div className="kpi-target">{k.target}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    );
+  };
+
+  const renderStakeholders = () => (
+    <div className="card">
+      <h2>Stakeholder-Map</h2>
+      <p className="card-subtitle">Mit wem spricht der CEO was, wie oft und warum?</p>
+      <div className="stakeholder-grid">
+        {STAKEHOLDERS.map((s, i) => (
+          <div className="stakeholder-card" key={i}>
+            <div className="sh-name">{s.name} <span className={`sh-priority ${s.priority}`}>{s.priority === 'high' ? 'Hoch' : s.priority === 'medium' ? 'Mittel' : 'Tief'}</span></div>
+            <div className="sh-freq">{s.freq}</div>
+            <div className="sh-topics">{s.topics}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+
+  const renderQuestions = () => {
+    const cats = Object.keys(CEO_QUESTIONS);
+    return (
+      <div className="card">
+        <h2>Fragenkatalog – Was fragt sich ein CEO?</h2>
+        <p className="card-subtitle">Die strategischen Fragen, die ein CEO sich stellt – sortiert nach Thema und Perspektive</p>
+        <div className="subtabs">
+          {cats.map(c => <button key={c} className={qFilter === c ? 'active' : ''} onClick={() => setQFilter(c)}>{c}</button>)}
+        </div>
+        {CEO_QUESTIONS[qFilter].map((q, i) => (
+          <div className={`q-card ${q.cls}`} key={i}>
+            <div className="q-role">{q.role}-Perspektive</div>
+            <div>{q.q}</div>
+          </div>
+        ))}
+      </div>
+    );
+  };
+
+  const renderStrategy = () => (
+    <div className="card">
+      <h2>Strategiearbeit</h2>
+      <p className="card-subtitle">Frameworks und Werkzeuge, die ein CEO für die strategische Analyse nutzt</p>
+      <div className="subtabs">
+        <button className={stratTab === 'frameworks' ? 'active' : ''} onClick={() => setStratTab('frameworks')}>Frameworks</button>
+        <button className={stratTab === 'decisions' ? 'active' : ''} onClick={() => setStratTab('decisions')}>Entscheidungsprozess</button>
+      </div>
+      {stratTab === 'frameworks' && (
+        <div className="mindset-grid">
+          {STRATEGY_FRAMEWORKS.map((f, i) => (
+            <div className="mindset-card" key={i} style={{ borderTopColor: ['var(--accent)', 'var(--cyan)', 'var(--green)', 'var(--yellow)', 'var(--purple)', 'var(--orange)'][i % 6] }}>
+              <h4>{f.name}</h4>
+              <p>{f.desc}</p>
+            </div>
+          ))}
+        </div>
+      )}
+      {stratTab === 'decisions' && (
+        <div>
+          <h3>Wie trifft ein CEO strategische Entscheide?</h3>
+          <div style={{ marginTop: 14 }}>
+            {[
+              { n: '1', t: 'Problem klar definieren', d: 'Was genau ist die Entscheidung? "Sollen wir Firmenkunden aktiv angehen?" ist besser als "Sollen wir wachsen?"' },
+              { n: '2', t: 'Daten sammeln', d: 'Marktgrösse, Kosten, Risiken, Wettbewerb. Quantitativ wo möglich, qualitativ wo nötig.' },
+              { n: '3', t: 'Optionen entwickeln', d: 'Mindestens 3 Optionen: Status quo, konservativ, aggressiv. Jede Option mit Pro/Contra und Ressourcenbedarf.' },
+              { n: '4', t: 'GL einbeziehen', d: 'Diskutieren, Perspektiven sammeln, Devil\'s Advocate spielen lassen. Bessere Entscheide brauchen Widerspruch.' },
+              { n: '5', t: 'Entscheiden und kommunizieren', d: 'Klar entscheiden, begründen und kommunizieren. "Wir machen X weil Y. Ich erwarte Z bis dann."' },
+              { n: '6', t: 'Messen und korrigieren', d: 'KPI definieren, Review-Datum setzen. Wenn nach 3 Monaten keine Resultate: Kurs korrigieren. Keine Angst vor Richtungswechsel.' },
+            ].map((s, i) => (
+              <div className="decision-step" key={i}>
+                <div className="decision-num">{s.n}</div>
+                <div className="decision-content"><h4>{s.t}</h4><p>{s.d}</p></div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+
+  const renderWeekplan = () => (
+    <div className="card">
+      <h2>Idealer Wochenrhythmus</h2>
+      <p className="card-subtitle">So organisiert sich ein CEO – Struktur gibt Freiheit für das Wichtige</p>
+      <div className="week-grid">
+        {Object.entries(WEEK_PLAN).map(([day, items]) => (
+          <div className="day-card" key={day}>
+            <div className="day-name">{day}</div>
+            {items.map((item, i) => (
+              <div className="day-item" key={i}><span className="time">{item.time}</span> – {item.item}</div>
+            ))}
+          </div>
+        ))}
+      </div>
+      <div className="highlight-box" style={{ marginTop: 20 }}>
+        <p><strong>Goldene Regel:</strong> Mindestens 30% deiner Zeit muss für strategische Arbeit und Denken reserviert sein. Wenn dein Kalender nur aus Meetings besteht, managst du – aber du führst nicht.</p>
+      </div>
+    </div>
+  );
+
+  const renderMindset = () => (
+    <div className="card">
+      <h2>CEO-Denkweise & Selbstmanagement</h2>
+      <p className="card-subtitle">Wie denkt ein erfolgreicher CEO? Prinzipien für Führung und Selbstführung</p>
+      <div className="mindset-grid">
+        {MINDSET_ITEMS.map((m, i) => (
+          <div className="mindset-card" key={i}>
+            <h4>{m.title}</h4>
+            <p>{m.text}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+
+  const renderComms = () => (
+    <div className="card">
+      <h2>Kommunikationsstrategie</h2>
+      <p className="card-subtitle">Was kommuniziert ein CEO wann, wie und an wen?</p>
+      <div className="subtabs">
+        <button className={commsTab === 'intern' ? 'active' : ''} onClick={() => setCommsTab('intern')}>Intern</button>
+        <button className={commsTab === 'extern' ? 'active' : ''} onClick={() => setCommsTab('extern')}>Extern</button>
+      </div>
+      {COMMS_DATA[commsTab].map((c, i) => (
+        <div key={i} style={{ marginBottom: 16 }}>
+          <h3 style={{ fontSize: '1em', color: 'var(--text)', marginBottom: 4 }}>{c.what}</h3>
+          <p style={{ fontSize: '0.9em', color: 'var(--text-secondary)', marginBottom: 4 }}><strong style={{ color: 'var(--accent-light)' }}>Wie:</strong> {c.how}</p>
+          <p style={{ fontSize: '0.9em', color: 'var(--text-secondary)' }}><strong style={{ color: 'var(--green)' }}>Warum:</strong> {c.why}</p>
+        </div>
+      ))}
+    </div>
+  );
+
+  const renderRisks = () => (
+    <div className="card">
+      <h2>Risiken & Chancen</h2>
+      <p className="card-subtitle">Was hält dich nachts wach – und was sollte dich morgens begeistern?</p>
+      <div className="subtabs">
+        <button className={riskTab === 'risks' ? 'active' : ''} onClick={() => setRiskTab('risks')}>Risiken</button>
+        <button className={riskTab === 'chances' ? 'active' : ''} onClick={() => setRiskTab('chances')}>Chancen</button>
+      </div>
+      {RISKS_CHANCES[riskTab].map((r, i) => (
+        <div key={i} style={{ marginBottom: 20, padding: '16px 20px', background: 'var(--surface2)', borderRadius: 10, borderLeft: `3px solid ${riskTab === 'risks' ? 'var(--red)' : 'var(--green)'}` }}>
+          <h3 style={{ fontSize: '1em', color: 'var(--text)', marginBottom: 4 }}>{r.title}</h3>
+          <p style={{ fontSize: '0.9em', color: 'var(--text-secondary)', marginBottom: 8 }}>{r.desc}</p>
+          <p style={{ fontSize: '0.88em', color: riskTab === 'risks' ? 'var(--yellow)' : 'var(--green)' }}><strong>Massnahme:</strong> {r.action}</p>
+        </div>
+      ))}
+    </div>
+  );
+
+  const renderNotes = () => (
+    <div className="card">
+      <h2>Meine CEO-Notizen</h2>
+      <p className="card-subtitle">Dein persönlicher Raum für Gedanken, Entscheide und Reflexionen</p>
+      <textarea
+        className="notes-area"
+        value={notes}
+        onChange={e => setNotes(e.target.value)}
+        placeholder="Schreibe hier deine Gedanken, Entscheide, offenen Fragen und Reflexionen auf..."
+        rows={15}
+      />
+      <p style={{ fontSize: '0.8em', color: 'var(--text-secondary)', marginTop: 8 }}>Tipp: Nutze diesen Bereich, um nach jeder Phase deine wichtigsten Erkenntnisse festzuhalten.</p>
+    </div>
+  );
+
+  const sectionMap = {
+    overview: renderOverview,
+    phase1: () => renderPhase('Phase 1: Zuhören & Verstehen (Tag 1–30)', 'Dein einziger Job in den ersten 30 Tagen: Fragen stellen, zuhören, alles aufsaugen. Noch keine grossen Entscheide.', 'phase-1', 'p1', PHASE1_TASKS),
+    phase2: () => renderPhase('Phase 2: Analysieren & Formen (Tag 31–60)', 'Jetzt formst du dein Bild. SWOT, KPIs, Quick Wins, strategische Prioritäten. Du beginnst, deine Handschrift zu hinterlassen.', 'phase-2', 'p2', PHASE2_TASKS),
+    phase3: () => renderPhase('Phase 3: Umsetzen & Kommunizieren (Tag 61–100)', 'Strategie präsentieren, Ziele setzen, erste Initiativen lancieren, Rhythmus finden. Ab jetzt zählen Resultate.', 'phase-3', 'p3', PHASE3_TASKS),
+    kpis: renderKPIs,
+    stakeholders: renderStakeholders,
+    questions: renderQuestions,
+    strategy: renderStrategy,
+    weekplan: renderWeekplan,
+    mindset: renderMindset,
+    comms: renderComms,
+    risks: renderRisks,
+    notes: renderNotes,
+  };
+
+  return (
+    <div>
+      <div className="header">
+        <h1>CEO SIZ AG Agent</h1>
+        <p>Dein virtueller Sparringpartner – so denkt, plant und handelt ein CEO der SIZ AG. Von Tag 1 bis zum laufenden Betrieb.</p>
+      </div>
+      <nav className="nav">
+        {SECTIONS.map(s => (
+          <button key={s.id} className={section === s.id ? 'active' : ''} onClick={() => setSection(s.id)}>
+            {s.label}
+          </button>
+        ))}
+      </nav>
+      {sectionMap[section]()}
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('app')).render(<App />);
+</script>
+</body>
+</html>
