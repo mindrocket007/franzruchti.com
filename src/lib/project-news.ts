@@ -28,6 +28,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 30.04.2026
       {
+        summary: "itmagazine.ch (Oktober 2025): 'Neuer Fachausweis AI Business Specialist vom Bund genehmigt' – Das SBFI hat die Prüfungsordnung für den neuen eidgenössischen Fachausweis AI Business Specialist genehmigt; erste Berufsprüfung findet im Herbst 2026 statt; 50%-Rückerstattung der Kursgebühren bis CHF 9'500 durch Bund. Die Lancierung eines bundesanerkannten KI-Fachausweises erweitert das Ökosystem staatlicher ICT-Qualifikationen – wachsendes Marktumfeld für anerkannte Zertifizierungsorganisationen wie SIZ AG.",
+        source: "itmagazine.ch",
+        url: "https://www.itmagazine.ch/artikel/85742/Neuer_Fachausweis_AI_Business_Specialist_vom_Bund_genehmigt.html",
+        date: "2025-10",
+        category: "Bildungspolitik",
+        addedAt: "2026-04-30",
+      },
+      {
         summary: "ICT-Berufsbildung Schweiz (2026): 'Berufsbildung mit Abstand grösste Zubringerin an ICT-Fachkräften' – Bis 2030 benötigt die Schweiz 119'600 zusätzliche ICT-Fachkräfte; die Berufsbildung liefert auf allen Bildungsstufen den grössten Anteil und bleibt der wichtigste Qualifizierungskanal. Struktureller Fachkräftemangel im ICT-Sektor schafft stabiles Wachstumsumfeld für anerkannte Zertifizierungsangebote – direktes Marktfeld für SIZ AG.",
         source: "ICT-Berufsbildung Schweiz",
         url: "https://www.ict-berufsbildung.ch/berufsbildung-mit-abstand-groesste-zubringerin-an-ict-fachkraeften",
@@ -1991,6 +1999,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "mindrocket-trading": {
     news: [
       // Neu: 30.04.2026
+      {
+        summary: "Angle360 (April 2026): 'S and P 500 Forecast April 27 to May 1, 2026 – Next Move After 7,165' – S&P 500 nach Record-Close bei 7.165 Punkten; Forecasts zeigen Range 7.100–7.300 für die erste Mai-Woche 2026; bullische Dynamik bleibt intakt, Volatilität durch Earnings-Saison erhöht. Klar definiertes technisches Marktumfeld mit Bull-Trend liefert ES-Futures-Tradern wie mindrocket-trading.com präzise Marktstruktur für algorithmische Einstiegspunkte in den Mai 2026.",
+        source: "Angle360",
+        url: "https://angle360ng.com/s-and-p-500-forecast-april-27-to-may-1-2026/",
+        date: "2026-04",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-30",
+      },
       {
         summary: "CNBC (29. April 2026): 'S&P 500 futures climb after Mag 7 titans Alphabet, Amazon report earnings' – S&P 500-Futures stiegen nach Börsenschluss auf neue Rekordhöhen, angetrieben von starken Quartalszahlen: Alphabet +4,9%, Amazon +3,4%; Nasdaq Composite schloss auf Allzeithoch (24.887 Punkte). S&P 500 auf Kurs für besten Monat seit 2020 (+9,3% im April). Die Mag-7-Earnings-Dynamik erzeugt erhöhte Volatilität und klare Handelsimpulse für ES-Futures-Strategien – direktes Marktumfeld für mindrocket-trading.com.",
         source: "CNBC",
@@ -10168,6 +10184,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 30.04.2026
       {
+        summary: "Haufe.de (April 2026): 'KI-Verordnung: Digitaler Omnibus zum EU AI Act' – Der Digitale Omnibus schlägt vor, die KI-Kompetenzpflicht (Artikel 4) von einer verbindlichen Obligation in eine Empfehlung umzuwandeln; Artikel 4 gilt jedoch seit Februar 2025 und bleibt vorerst in Kraft; politische Trilog-Verhandlungen mit EU-Parlament und Rat laufen, finales Agreement erwartet Sommer 2026. Strategische Unsicherheit über die finale KI-Schulungspflicht bestätigt den Bedarf nach unabhängiger Thought-Leadership-Orientierung – Wachstumsfeld für learnfluencer.ch.",
+        source: "Haufe.de",
+        url: "https://www.haufe.de/personal/arbeitsrecht/ki-verordnung-digitaler-omnibus-zum-eu-ai-act_76_683992.html",
+        date: "2026-04",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-30",
+      },
+      {
+        summary: "Skill-Sprinters (2026): 'EU AI Act auf 2027 verschoben? Trotzdem JETZT mit der Schulung anfangen' – Trotz möglicher Verschiebung der Hochrisiko-Anforderungen auf 2027 bleibt Artikel 4 (KI-Kompetenzpflicht) in Kraft; Unternehmen, die jetzt schulen, sichern Wettbewerbsvorteile und vermeiden Compliance-Risiken; praktische Schulungspflicht gilt unabhängig von regulatorischen Anpassungsdiskussionen. Anhaltender regulatorischer Druck für KI-Kompetenzvermittlung – direktes Thought-Leadership-Potenzial für learnfluencer.ch.",
+        source: "Skill-Sprinters",
+        url: "https://skill-sprinters.de/blog/compliance/eu-ai-act-2027-schulung-trotzdem-jetzt-anfangen/",
+        date: "2026-04",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-30",
+      },
+      {
         summary: "Cegos-Integrata (2026): 'Die wichtigsten E-Learning-Trends 2026' – KI als persönlicher Lerncoach, Microlearning, immersive Technologien (AR/VR) und datengetriebene Personalisierung prägen E-Learning 2026; Lernplattformen nutzen Verhaltensdaten für individuelle Lernpfade. Wachsende Relevanz von KI-gestütztem Lernen bestätigt das Thought-Leadership-Potenzial von learnfluencer.ch für Lernkompetenz und digitale Bildung.",
         source: "Cegos-Integrata",
         url: "https://www.cegos-integrata.de/blog/learning-development/digital-learning/die-wichtigsten-e-learning-trends-2026",
@@ -12921,6 +12953,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "bestattungsplaner": {
     news: [
       // Neu: 30.04.2026
+      {
+        summary: "Schweizer Verband für Feuerbestattungen – kremation-svfb.ch (2026): 'Die Feuerbestattung in der Schweiz' – Der SVFB vertritt die 29 vollständig modernisierten Schweizer Krematorien; Feuerbestattungen machen rund 90% aller Bestattungen in der Schweiz aus; vollständige Modernisierung aller Krematorien bis Ende 2020 abgeschlossen. Professioneller Dachverband der dominierenden Bestattungsform in der Schweiz – direktes Branchennetzwerk und Kooperationspotenzial für bestattungsplaner.ch als Online-Vermittlungsplattform.",
+        source: "kremation-svfb.ch",
+        url: "https://www.kremation-svfb.ch/informationen/die-feuerbestattung",
+        date: "2026-04",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-30",
+      },
       {
         summary: "Helvetic Care (2026): 'Bestattungsvorsorge: Ersparen Sie Ihren Liebsten viel Leid und finanzielle Probleme' – Helvetic Care empfiehlt Bestattungsvorsorge als Teil umfassender Lebensplanung: Wünsche für Beerdigung, Trauerfeier und Nachlass frühzeitig dokumentieren; CHF 8'000–10'000 Kosten lassen sich durch rechtzeitige Vorsorge abfedern. Wachsendes Bewusstsein für aktive Bestattungsvorsorge bestätigt die Nachfrage nach Online-Planungsplattformen wie bestattungsplaner.ch.",
         source: "Helvetic Care",
