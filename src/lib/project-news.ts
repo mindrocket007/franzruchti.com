@@ -4245,6 +4245,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 30.04.2026
       {
+        summary: "Mindtools Kineo (Learning Technologies 2026, 29./30. April 2026): 'Mindtools Kineo lanciert neue Marke und Vision' – Mindtools Kineo präsentierte am 29./30. April 2026 auf der Learning Technologies in London seine neue vereinheitlichte Marke: zeitgemässes Design, KI-gestützte Personalisierung und eine vollständig integrierte Lernlösung (Skills Accelerator, Learning Services, Learning Technologies). CEO Shabnam Shahani keynote: 'The Skills Pivot – how leading organizations are turning learning into performance'. Die globale Neupositionierung des namensähnlichen Wettbewerbers unterstreicht die wachsende Bedeutung des Marktes für Persönlichkeitsentwicklungs-Tools – relevantes Wettbewerbsumfeld für mindtools.ch.",
+        source: "Learning News / Mindtools Kineo",
+        url: "https://learningnews.com/news/mindtools/2026/mindtools-kineo-launches-new-brand-and-vision-at-learning-technologies",
+        date: "2026-04-30",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-04-30",
+      },
+      {
+        summary: "Mindtools (April 2026): 'Mindtools feiert Double Gold bei den Learning Technologies Awards 2026' – Mindtools.com gewann an den renommierten Learning Technologies Awards 2026 zwei Goldmedaillen für herausragende digitale Lernlösungen. Internationale Award-Anerkennung für namensähnlichen Wettbewerber Mindtools.com zeigt die globale Wachstumsdynamik im strukturierten digitalen Lernen – relevantes Marktumfeld für mindtools.ch als Schweizer Nischenanbieter.",
+        source: "Mindtools Blog",
+        url: "https://www.mindtools.com/blog/mind-tools-celebrates-double-gold-wins-at-learning-technologies-awards/",
+        date: "2026-04-30",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-04-30",
+      },
+      {
         summary: "friendlyworkspace.ch (2026): 'Stress und Burnout – HR-Toolbox für betriebliche Gesundheitsförderung' – Friendly Workspace stellt Unternehmen praxisnahe Werkzeuge und Wissensartikel zur Burnout-Prävention und Stressreduktion bereit; mentale Selbsthilfetools werden als ergänzende Massnahme zur professionellen BGM-Beratung empfohlen. Steigende Nutzung digitaler Mental-Health-Toolboxes zeigt Nachfrage nach niedrigschwelligen Selbsthilfe-Werkzeugen – direktes Marktumfeld für mindtools.ch.",
         source: "friendlyworkspace.ch",
         url: "https://friendlyworkspace.ch/de/bgm-services/hr-toolbox/themen/verstehen/stress-und-burnout",
@@ -5179,6 +5195,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         source: "Swiss Life",
         url: "https://www.swisslife.ch/de/unternehmen/unsere-loesungen/betriebliches-gesundheitsmanagement/kurse/online-seminare/burnout-praevention.html",
         date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-30",
+      },
+      {
+        summary: "BMC Public Health / Springer Nature (2026): 'Occupational burnout and depression among emergency medical service providers in Switzerland and Liechtenstein: a cross-sectional nationwide web-based study' – Erste gross angelegte Schweizer Querschnittsstudie zeigt: Rettungssanitäter, Notärzte und Rettungsassistenten in der Schweiz und Liechtenstein leiden unter erhöhten Burnout- und Depressionsraten; die Studie fordert systematische Prävention auf Organisationsebene. Wissenschaftlich fundierte Belege für berufsgruppenspezifisches Burnout-Risiko stärken den Bedarf nach skalierbaren, niedrigschwelligen BGM-Präventionsprogrammen – direktes Nachfrageumfeld für hypnovital®.",
+        source: "BMC Public Health / Springer Nature",
+        url: "https://link.springer.com/article/10.1186/s12889-026-26184-z",
+        date: "2026",
         category: "BGM & Gesundheit",
         addedAt: "2026-04-30",
       },
@@ -10085,6 +10109,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
         url: "https://www.keelearning.de/blog/e-learning-trends-2026/",
         date: "2026-04",
         category: "E-Learning & EdTech",
+        addedAt: "2026-04-30",
+      },
+      {
+        summary: "Handelskammer Schweiz-Österreich-Liechtenstein (2026): 'KI Kompakt: KI-Kompetenzpflicht für Unternehmen' – Artikel 4 des EU AI Acts verpflichtet Unternehmen, allen Mitarbeitenden, die KI einsetzen, nachweisbare KI-Kompetenz zu vermitteln; Deadline: August 2026. Regulatorische KI-Kompetenzpflicht als Wachstumstreiber für Thought-Leadership-Plattformen – direktes Nachfrageumfeld für learnfluencer.ch als KI-Lernkompetenz-Plattform.",
+        source: "Handelskammer Schweiz-Österreich-Liechtenstein",
+        url: "https://www.hk-schweiz.at/blog/ki-kompakt-ki-kompetenzpflicht-fuer-unternehmen",
+        date: "2026-04",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-04-30",
+      },
+      {
+        summary: "Kloepfel Consulting (24. April 2026): 'EU AI Act: Anforderungen, Umsetzung und Compliance für Unternehmen' – Praxisleitfaden für Unternehmen zur EU AI Act Compliance: Risikoklassen, Artikel-4-Schulungspflicht, Dokumentationsanforderungen und konkrete Umsetzungsschritte bis August 2026. Compliance-Druck schafft unmittelbaren Schulungsbedarf für KI-Kompetenz – direktes Wachstumsfeld für learnfluencer.ch als Thought-Leadership-Plattform für Lernkompetenz und KI.",
+        source: "Kloepfel Consulting",
+        url: "https://kloepfel-consulting.com/2026/04/24/eu-ai-act/",
+        date: "2026-04-24",
+        category: "Lernkompetenz & KI",
         addedAt: "2026-04-30",
       },
       // Neu: 29.04.2026
