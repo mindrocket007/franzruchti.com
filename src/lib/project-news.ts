@@ -8055,6 +8055,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 30.04.2026
+      {
+        summary: "LELO / IntimA.I.cy-Studie 2026 (via schwulissimo.de): 'Neue Intimität durch KI – Studie zur Sexualität 2026' – 60% von 6.000 Befragten aus 6 Ländern haben KI bereits für sexuelle oder zwischenmenschliche Kommunikation eingesetzt; KI, digitale Intimität und körperliche Aktivität werden zentrale Aspekte moderner Sexualität; 2026 steht für Integration von Technologie und Körper, Lust und mentaler Gesundheit. Wachsende Digitalisierung der Sexualität und Entstigmatisierung im digitalen Raum bestätigt das Marktpotenzial für diskrete digitale Selbsthilfeprodukte wie orgasmus-hinauszoegern.de.",
+        source: "schwulissimo.de / LELO IntimA.I.cy-Studie",
+        url: "https://schwulissimo.de/neuigkeiten/neue-intimitaet-durch-ki-studie-zur-sexualitaet-2026",
+        date: "2026-04",
+        category: "Digital Health",
+        addedAt: "2026-04-30",
+      },
+      {
+        summary: "Hypnosis Zentrum München (2026): 'Ejaculatio Praecox – Behandlung mit Hypnose' – Das Münchner Hypnose-Zentrum bietet spezialisierte Hypnotherapie für Ejaculatio praecox an und betont: Ejaculatio praecox ist selten organisch bedingt und lässt sich oft psychotherapeutisch lösen; Hypnotherapie gilt als eine der besten Methoden neben konventioneller Sexual-Psychotherapie; unbewusste Faktoren werden direkt auf Unterbewusstseinsebene adressiert. Das wachsende professionelle Hypnose-Netzwerk für Ejaculatio praecox bestätigt Marktpotenzial und Wettbewerbsumfeld – direkt relevant für orgasmus-hinauszoegern.de.",
+        source: "Hypnosis Zentrum München",
+        url: "https://www.hypnose-muenchen.de/hypnose/anwendungsgebiete/ejaculatio-praecox",
+        date: "2026-04",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-30",
+      },
+      {
+        summary: "HYPNOS – Zentrum für Hypnose (2026): 'Sexualstörungen mit Hypnose behandeln' – Spezialisiertes Hypnose-Zentrum positioniert Hypnose als wirksame Methode für sexuelle Dysfunktionen bei Männern und Frauen: Leistungsdruck, Erektionsprobleme und vorzeitiger Samenerguss werden durch Arbeit an unbewussten Blockaden angegangen; Hypnoanalyse identifiziert psychische Ursachen wie Ängste, Traumata oder unbewusste Konflikte. Professionelle Hypnose-Angebote für Sexualstörungen festigen das Marktumfeld – relevantes Wettbewerbs- und Vertrauensumfeld für das Audio-Selbsthilfeprodukt orgasmus-hinauszoegern.de.",
+        source: "HYPNOS – Zentrum für Hypnose",
+        url: "https://hypnose-zentrum.com/therapiefelder/psychosomatik-und-koerper/sexualstoerungen-mit-hypnose-behandeln/",
+        date: "2026-04",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-04-30",
+      },
       // Neu: 29.04.2026
       {
         summary: "hypnosecoach-zuerich.ch (2026): 'Hypnose für sexuelle Probleme' – Eine Zürcher Hypnosepraxis bietet gezielte Hypnotherapie für sexuelle Funktionsstörungen bei Männern an – darunter vorzeitiger Samenerguss, Erektionsprobleme und Leistungsdruck; der Behandlungsansatz sucht Ursachen im Unbewussten und setzt Entspannungsanker. Das wachsende Angebot an Hypnose-Sexualtherapie im Schweizer Markt bestätigt die Marktnachfrage – relevantes Wettbewerbsumfeld für orgasmus-hinauszoegern.de.",
