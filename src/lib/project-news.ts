@@ -26,6 +26,23 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 30.04.2026
+      {
+        summary: "ICT-Berufsbildung Schweiz (2026): 'Berufsbildung mit Abstand grösste Zubringerin an ICT-Fachkräften' – Bis 2030 benötigt die Schweiz 119'600 zusätzliche ICT-Fachkräfte; die Berufsbildung liefert auf allen Bildungsstufen den grössten Anteil und bleibt der wichtigste Qualifizierungskanal. Struktureller Fachkräftemangel im ICT-Sektor schafft stabiles Wachstumsumfeld für anerkannte Zertifizierungsangebote – direktes Marktfeld für SIZ AG.",
+        source: "ICT-Berufsbildung Schweiz",
+        url: "https://www.ict-berufsbildung.ch/berufsbildung-mit-abstand-groesste-zubringerin-an-ict-fachkraeften",
+        date: "2026-04",
+        category: "Arbeitsmarkt & IT",
+        addedAt: "2026-04-30",
+      },
+      {
+        summary: "swissICT x ZLI (9. April 2026): 'ICT-Ausbildung Schweiz: Chancen, Lücken, Lösungen' – Interaktiver Workshop von swissICT und ZLI zu ICT-Nachwuchsförderung: Lebenskompetenzen der Gen Z & Gen Alpha, Chancen der Schweizer Bildungslandschaft, Berufsbildung als strategischer Erfolgsfaktor. Institutionalisierter Dialog über ICT-Nachwuchsmangel stärkt die gesellschaftliche Relevanz anerkannter Zertifizierungsorganisationen wie SIZ AG.",
+        source: "swissICT x ZLI",
+        url: "https://www.swissict.ch/ict-ausbildung-schweiz-workshop-event-zli/",
+        date: "2026-04-09",
+        category: "Digitale Bildung",
+        addedAt: "2026-04-30",
+      },
       // Neu: 29.04.2026
       {
         summary: "ICT-Berufsbildung Schweiz (April 2026): 'ICT-Regionalmeisterschaften 2026: Das sind die Besten' – Über 330 ICT-Lernende aus der ganzen Schweiz traten in den Skills Software Application Development, Web Technologies, Cloud Computing, Mediamatics und Cyber Security an; die Top 11 jedes Skills qualifizieren sich für die Schweizer Meisterschaften ICTskills2027. Das jährliche Nachwuchsturnier stärkt das Renommée der ICT-Berufsbildung und schafft Bedarf an anerkannten Zertifizierungen – direktes Wachstumsumfeld für SIZ AG.",
@@ -1454,6 +1471,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
+      // Neu: 30.04.2026
+      {
+        summary: "dimind.ch (2026): 'Von der Erschöpfung zur Balance: Ein neues Arbeitsmodell' – Neue Arbeitsmodelle setzen auf mentale Regeneration, klare Grenzen und sinnorientiertes Führen als Antwort auf steigenden Burnout-Druck; individuelle Resilienz und Selbstführung rücken als Kernkompetenzen in den Fokus. Wachsende Nachfrage nach ganzheitlichen Ansätzen zu mentaler Stärke und Work-Life-Balance bestätigt das Marktpotenzial für persönlichkeitsorientierte Programme – direktes Nachfrageumfeld für Mind Rocket GmbH.",
+        source: "dimind.ch",
+        url: "https://www.dimind.ch/post/von-der-ersch%C3%B6pfung-zur-balance-ein-neues-arbeitsmodell",
+        date: "2026-04",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-04-30",
+      },
       // Neu: 29.04.2026
       {
         summary: "Coaching-Magazin.de (April 2026): 'Swiss Coaching Day 2026 – Coaching-Branche trifft sich in Bern' – Das Coaching-Magazin berichtet über den Swiss Coaching Day am 23. April 2026 in der Champions Lounge, Stadion Wankdorf Bern; Fokus auf KI im Coaching, Resilienz, Selbstführung und professionelle Coaching-Methoden; über 250 Coaches, Trainer, HR-Fachleute und Führungskräfte. Wachsende institutionelle Vernetzung der Schweizer Coaching-Szene bestätigt das Marktpotenzial für professionelle digitale Coaching-Angebote – direktes Wachstumsumfeld für Mind Rocket GmbH.",
@@ -1964,6 +1990,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 30.04.2026
+      {
+        summary: "FuturesPropTrader.com (2026): 'Apex Trader Funding Review 2026: The 4.0 OTP Model Analyzed' – Apex Trader Funding hat am 1. März 2026 ein neues One-Time-Payment-Modell (OTP) eingeführt: Keine monatlichen Gebühren, strenge 30-Tage-Evaluation; Metalle-Futures (Gold, Silber, Kupfer, Platin) dauerhaft gesperrt; Auszahlungen über $738 Mio. an Trader. Regulatorische und strukturelle Änderungen der führenden Prop-Firm beeinflussen direkt Strategieauswahl für ES-Futures-Trader wie mindrocket-trading.com.",
+        source: "FuturesPropTrader.com",
+        url: "https://futuresproptrader.com/",
+        date: "2026-04",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-30",
+      },
+      {
+        summary: "StockBrokers.com (2026): 'NinjaTrader Review 2026: Futures Fees, Margins & Platforms' – NinjaTrader erhält Top-Bewertung als Futures-Plattform 2026: $0.09 Kommission + $0.15 Clearing pro Kontrakt; Day-Trading-Margen für MES ab $50; starke Algorithmic-Trading-Unterstützung durch NinjaScript und Strategy Analyzer. Etabliertes Bewertungsumfeld für die Kernplattform des algorithmischen ES-Futures-Tradings – direktes Technologie-Fundament von mindrocket-trading.com.",
+        source: "StockBrokers.com",
+        url: "https://www.stockbrokers.com/futures/review/ninjatrader",
+        date: "2026-04",
+        category: "Trading-Technologie",
+        addedAt: "2026-04-30",
+      },
+      {
+        summary: "DamnPropFirms.com (2026): 'Apex Trader Funding Restricted Countries 2026' – Apex Trader Funding hat 84 Länder als gesperrt klassifiziert (Stand April 2026); betroffene Trader können weder Konten eröffnen noch Auszahlungen beantragen. Geografische Nutzungseinschränkungen der wichtigsten Prop-Firm sind relevante Compliance-Information für internationale ES-Futures-Trader – Marktumfeld für mindrocket-trading.com.",
+        source: "DamnPropFirms.com",
+        url: "https://damnpropfirms.com/prop-firms/apex-trader-funding-restricted-countries-2026/",
+        date: "2026-04",
+        category: "Regulierung",
+        addedAt: "2026-04-30",
+      },
       // Neu: 29.04.2026
       {
         summary: "HeyGoTrade (29. April 2026): 'S&P 500, Nasdaq Touch Record Highs Ahead of FOMC Decision' – Der S&P 500 und der Nasdaq erreichten intraday Rekordhochs am 29. April 2026 vor dem FOMC-Entscheid; Marktteilnehmer preisen eine 100%ige Wahrscheinlichkeit für unveränderte Zinsen ein; 5 der Magnificent-7-Unternehmen berichten in dieser Woche. Rekordkurse und FOMC-Spannung sorgen für erhöhte Volatilität im ES-Futures-Markt – direktes Marktumfeld für algorithmische Handelssysteme wie mindrocket-trading.com.",
@@ -4192,6 +4243,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 30.04.2026
+      {
+        summary: "friendlyworkspace.ch (2026): 'Stress und Burnout – HR-Toolbox für betriebliche Gesundheitsförderung' – Friendly Workspace stellt Unternehmen praxisnahe Werkzeuge und Wissensartikel zur Burnout-Prävention und Stressreduktion bereit; mentale Selbsthilfetools werden als ergänzende Massnahme zur professionellen BGM-Beratung empfohlen. Steigende Nutzung digitaler Mental-Health-Toolboxes zeigt Nachfrage nach niedrigschwelligen Selbsthilfe-Werkzeugen – direktes Marktumfeld für mindtools.ch.",
+        source: "friendlyworkspace.ch",
+        url: "https://friendlyworkspace.ch/de/bgm-services/hr-toolbox/themen/verstehen/stress-und-burnout",
+        date: "2026-04",
+        category: "Mental Health",
+        addedAt: "2026-04-30",
+      },
+      {
+        summary: "produkt-suchmaschine.com (2026): 'Digitale Lernangebote im Überblick 2026' – Überblick über digitale Lern- und Persönlichkeitsentwicklungsangebote 2026: PDF-Bücher, E-Books, Audio-Programme und interaktive Tools gewinnen gegenüber klassischen Präsenz-Formaten; mobile Nutzung dominiert. Wachsende Akzeptanz digitaler Selbstlernformate bestätigt das Marktpotenzial für kompakte, herunterladbare Werkzeuge – direktes Umfeld für mindtools.ch.",
+        source: "produkt-suchmaschine.com",
+        url: "https://produkt-suchmaschine.com/digitale-lernangebote-ueberblick-2026/",
+        date: "2026-04",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-04-30",
+      },
       // Neu: 29.04.2026
       {
         summary: "semigator.de (2026): 'Trends in der Personalentwicklung 2026: Wie Sie KI und Agilität nutzen' – KI-gestützte adaptive Lernsysteme, Micro-Learning und hybride Lernmodelle prägen 2026 die Personalentwicklung; Soft Skills wie emotionale Intelligenz, Resilienz und Entscheidungsfähigkeit rücken parallel zur KI-Kompetenz in den Vordergrund. Dies bestätigt die Marktnachfrage nach digitalen Mental-Tools für den Alltag – relevantes Umfeld für mindtools.",
@@ -5089,6 +5157,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 30.04.2026
+      {
+        summary: "ad-hoc-news.de (2026): 'Burnout-Gefahr 2026: Psychische Belastungen am Arbeitsplatz steigen' – Psychische Erkrankungen sind 2026 der häufigste Grund für Langzeitausfälle in Deutschland und der Schweiz; ca. 30% der Schweizer Erwerbstätigen leiden unter hohem Stress, Burnout-Prävention ist gefragter denn je. Wachsende Nachfrage nach betrieblicher Burnout-Prävention bestätigt das Marktpotenzial für niedrigschwellige Audio-Hypnose-Programme wie hypnovital® im BGM-Bereich.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/burnout-gefahr-2026-psychische-belastungen-am-arbeitsplatz-steigen/68532499",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-30",
+      },
+      {
+        summary: "HealthExpo 2026 (healthexpo.ch): Schweizer Fachmesse für betriebliche Gesundheitsförderung – Die HealthExpo 2026 vernetzt BGM-Anbieter, Unternehmen und HR-Verantwortliche; Schwerpunkte: mentale Gesundheit, Prävention und digitale Gesundheitsangebote. Institutionalisierter Markt für BGM-Lösungen bestätigt die Nachfrage nach skalierbaren digitalen Angeboten – direktes Messeumfeld für hypnovital®-Programme.",
+        source: "HealthExpo 2026",
+        url: "https://healthexpo.ch/",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-30",
+      },
+      {
+        summary: "Swiss Life (2026): 'Impuls-Referat Burnout-Prävention – Betriebliches Gesundheitsmanagement' – Swiss Life bietet ein Impuls-Referat zur Burnout-Prävention als BGM-Baustein an; Fokus auf Früherkennung, Ressourcenstärkung und mentale Resilienz für Mitarbeitende. Grossunternehmen etablieren interne BGM-Referate – die Lücke für externe, niedrigschwellige Audio-Hypnose-Lösungen wie hypnovital® bleibt bestehen.",
+        source: "Swiss Life",
+        url: "https://www.swisslife.ch/de/unternehmen/unsere-loesungen/betriebliches-gesundheitsmanagement/kurse/online-seminare/burnout-praevention.html",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-30",
+      },
       // Neu: 29.04.2026
       {
         summary: "news-research.net (April 2026): 'Jonglieren als Gehirntraining: Workshop zeigt neue Wege für Therapie, Prävention und mentale Gesundheit' – Ein April-2026-Workshop präsentiert Jonglieren als innovativen Ansatz für mentale Gesundheitsförderung; Bewegungsbasierte Methoden ergänzen klassische Hypnose- und Coaching-Interventionen in der Prävention. Der wachsende Markt für ganzheitliche, niedrigschwellige Präventionsmethoden bestätigt das Potenzial für Audio-Hypnose-Programme wie hypnovital® im BGM-Bereich.",
@@ -6883,6 +6976,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 30.04.2026
+      {
+        summary: "ClickUp (2026): 'Free 12-Week Year Templates to Crush Your Goals' – ClickUp bietet kostenlose 12-Week-Year-Templates für Einzel- und Teamplanung an; hohe Nachfrage nach vorgefertigten Vorlagen in etablierten Plattformen bestätigt das Marktinteresse an der Methode. Grosse Plattformen besetzen die Template-Nische – dediziertes SaaS-Tool wie der 12wy-planner bleibt durch Methoden-Fokus und Tiefe differenziert.",
+        source: "ClickUp",
+        url: "https://clickup.com/blog/12-week-year-templates/",
+        date: "2026-04",
+        category: "Produktivität & Planung",
+        addedAt: "2026-04-30",
+      },
+      {
+        summary: "Asian Efficiency (2026): 'The 12 Week Year: Common Mistakes and How to Avoid Them' – Asian Efficiency identifiziert häufigste Fehler bei der 12-Week-Year-Umsetzung: fehlende Wochenpläne, zu viele gleichzeitige Ziele, mangelndes Tracking und fehlende Konsequenz-Strukturen. Bekannte Implementierungsprobleme zeigen den Bedarf nach strukturierten, geführten Tools – direktes Produktentwicklungs-Feedback für den 12wy-planner.",
+        source: "Asian Efficiency",
+        url: "https://www.asianefficiency.com/systems/common-12-week-year-mistakes/",
+        date: "2026-04",
+        category: "12 Week Year Methode",
+        addedAt: "2026-04-30",
+      },
       // Neu: 29.04.2026
       {
         summary: "12week-breakthrough.com (2026): 'The 12-Week Year vs OKRs: A Deep Dive Comparison 2026' – Das 12 Week Year eignet sich als vollständiges Ausführungssystem für Einzelpersonen und kleine Teams (1–5 Personen), während OKRs als organisatorisches Alignment-Framework für grössere Teams (5–100+) funktionieren. 2026 bieten KI-Tools die automatische Erfassung von Lead-Indikatoren und Fortschrittsberichten – direkte Produktentwicklungsrelevanz für den 12WY-Planner.",
@@ -8866,6 +8976,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 30.04.2026
+      {
+        summary: "Wagner Empowerment (2026): 'Kurs, Seminar & 1:1 Redeangst überwinden – Coaching, Mentaltraining & Hypnose' – Spezialisierter Anbieter für Redeangst-Überwindung bietet Einzel- und Gruppen-Coaching mit Hypnose in Bad Homburg, Frankfurt und deutschlandweit an; neue Kurstermine 2026 verfügbar. Wachsendes Coaching-Angebot für Lampenfieber und Redeangst bestätigt den Marktbedarf – Wettbewerbsumfeld für digitale Audio-Hypnose-Produkte wie lampenfieber-besiegen.de.",
+        source: "Wagner Empowerment",
+        url: "https://www.wagner-empowerment.de/online-seminar-redeangst-%C3%BCberwinden/",
+        date: "2026-04",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-04-30",
+      },
+      {
+        summary: "TopGunSpeaking (2026): 'Lampenfieber überwinden – 20 Wege zu Gelassenheit' – Redeexperten listen 20 Methoden zur Lampenfieber-Überwindung; Hypnose und Mentaltraining werden als besonders wirksame Langzeitstrategien gegen Redeangst hervorgehoben. Prominente Empfehlung von Hypnose als effektive Methode stärkt die Marktpositionierung für Audio-Hypnose-Produkte wie lampenfieber-besiegen.de.",
+        source: "TopGunSpeaking",
+        url: "https://topgunspeaking.com/redeangst-ueberwinden-lampenfieber/redeangst/",
+        date: "2026-04",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-04-30",
+      },
       // Neu: 29.04.2026
       {
         summary: "qi-hypnosia.com (2026): 'Prüfungsangst & Lampenfieber: Hypnose bei Qi-Hypnosia Berlin' – Hypnose-Therapeuten positionieren sich 2026 gezielt für die Behandlung von Prüfungsangst, Lampenfieber und Lernblockaden; Behandlungsziel: natürliche Nervosität ohne Blockaden, gesteigerte Konzentration. Das wachsende Angebot spezialisierter Hypnose-Anbieter für Lampenfieber zeigt Marktpotenzial und Wettbewerbsumfeld – relevant für lampenfieber-besiegen.de.",
@@ -9910,6 +10037,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 30.04.2026
+      {
+        summary: "Cegos-Integrata (2026): 'Die wichtigsten E-Learning-Trends 2026' – KI als persönlicher Lerncoach, Microlearning, immersive Technologien (AR/VR) und datengetriebene Personalisierung prägen E-Learning 2026; Lernplattformen nutzen Verhaltensdaten für individuelle Lernpfade. Wachsende Relevanz von KI-gestütztem Lernen bestätigt das Thought-Leadership-Potenzial von learnfluencer.ch für Lernkompetenz und digitale Bildung.",
+        source: "Cegos-Integrata",
+        url: "https://www.cegos-integrata.de/blog/learning-development/digital-learning/die-wichtigsten-e-learning-trends-2026",
+        date: "2026-04",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-30",
+      },
+      {
+        summary: "SMART Technologies (2026): '2026 EdTech-Prognosen zu KI und darüber hinaus' – EdTech-Experten prognostizieren 2026 einen Paradigmenwechsel: KI gestaltet aktiv individuelle Lernpfade, menschliche Lehrkompetenzen werden als komplementäre Fähigkeit neu bewertet; hybrides Lernen wird Standard. Wachstum von KI-gestützten EdTech-Lösungen verstärkt den Bedarf nach menschlicher Lernkompetenz-Beratung – direktes Thought-Leadership-Potenzial für learnfluencer.ch.",
+        source: "SMART Technologies",
+        url: "https://www.smarttech.com/de-de/news/predictions-on-future-of-edtech-2026",
+        date: "2026-04",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-30",
+      },
+      {
+        summary: "keelearning (2026): 'E-Learning Trends 2026: So lernen Unternehmen morgen' – Microlearning, KI-Personalisierung, Social Learning und mobile-first Konzepte dominieren betriebliche Weiterbildung 2026; Lernplattformen verknüpfen Lernen mit echten Arbeitsprozessen für höhere Transfer-Quoten. Institutionelle Verschiebung zu kontinuierlichem, prozessintegriertem Lernen schafft Nachfrage für Thought-Leadership – direktes Wachstumsumfeld für learnfluencer.ch.",
+        source: "keelearning",
+        url: "https://www.keelearning.de/blog/e-learning-trends-2026/",
+        date: "2026-04",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-04-30",
+      },
       // Neu: 29.04.2026
       {
         summary: "easylearn.ch (2026): 'EU AI Act: Das müssen Sie für Ihre betriebliche Bildung wissen' – Die Schweizer HR/E-Learning-Plattform easylearn erläutert die Auswirkungen des EU AI Acts auf betriebliche Bildung: Artikel 4 verpflichtet Arbeitgeber zur KI-Kompetenzentwicklung aller Mitarbeitenden; gilt auch für Schweizer Unternehmen mit EU-Marktpräsenz. Regulatorischer Druck als Wachstumstreiber für KI-Lernkompetenz – direktes Thought-Leadership-Potenzial für learnfluencer.ch.",
@@ -11515,6 +11667,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 30.04.2026
+      {
+        summary: "Bexolutions (2026): 'KI-Marketing für Schweizer KMU 2026 – Praxisleitfaden' – Ein gutes KI-Marketing-Setup für Schweizer KMU braucht selten mehr als fünf Kernwerkzeuge: Text-/Reasoning-Modell, Visual-Tool, SEO-Werkzeug, Automation-Tool und sauberes CMS; strukturierter Marketingplan bleibt Voraussetzung für sinnvollen KI-Einsatz. Marketingplan als KI-Enabler bestätigt die Relevanz des interaktiven Marketingkonzept-Tools für Schweizer KMU.",
+        source: "Bexolutions",
+        url: "https://bexolutions.ch/ki-marketing-fur-schweizer-kmu-2026-praxisleitfaden/",
+        date: "2026-04",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-30",
+      },
+      {
+        summary: "KMU Performer AG (2026): 'Unsere KMU Marketing-Trends 2026' – Top-Trends für Schweizer KMU-Marketing: KI-gestützter Content, hyperlokales Targeting, Video-Marketing und datengetriebene Entscheidungen; klare Marketingstrategie als unverzichtbare Grundlage. Strategiefundament als Voraussetzung für alle KI-Massnahmen bestätigt die Relevanz strukturierter Marketingkonzept-Tools wie jenem auf learnfluencer.ch.",
+        source: "KMU Performer AG",
+        url: "https://kmu-performer.ch/trends-2026/",
+        date: "2026-04",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-04-30",
+      },
       // Neu: 29.04.2026
       {
         summary: "Pipedrive Blog (2026): 'Die 20 besten KI-Marketing-Tools für KMU in 2026' – Pipedrive listet und bewertet 20 KI-Marketing-Tools für KMUs: von Jasper AI (Content) über Surfer SEO (Keyword-Optimierung) bis HubSpot (CRM + Marketing Automation). Die Vielfalt der Tools unterstreicht den wachsenden Bedarf nach strukturierten Marketingkonzept-Frameworks, um KI-Tools gezielt einzusetzen – bestätigt die Relevanz des interaktiven Marketingkonzept-Tools auf learnfluencer.ch für Schweizer KMU.",
@@ -12606,6 +12775,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 30.04.2026
+      {
+        summary: "Schweizer Verband der Bestattungsdienste / bestatter.ch (2026): 'Bestattungskosten in der Schweiz – individuelle Beratung für klare Kalkulation' – Grosse Bandbreite der Bestattungskosten: CHF 2'000 bis 10'000+; Kremation als günstigere Alternative gewinnt an Beliebtheit; regionale Kostenunterschiede sind erheblich. Hoher Informationsbedarf zu Bestattungskosten bestätigt das Potenzial für transparente Online-Vergleichsplattformen wie bestattungsplaner.ch.",
+        source: "bestatter.ch",
+        url: "https://bestatter.ch/bestattungskosten-in-der-schweiz-individuelle-beratung-fur-klare-kalkulation/",
+        date: "2026-04",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-04-30",
+      },
+      {
+        summary: "todesanzeigenschweiz.ch (2026): 'Was kostet eine Beerdigung in der Schweiz?' – Übersicht der Bestattungskosten: Kremation ca. CHF 500–1'000, stille Bestattung unter CHF 2'000, traditionelle Bestattung CHF 2'500–5'000; Friedhofgebühren variieren zwischen Kantonen bis zum 50-fachen. Preistransparenz-Bedürfnis und regionale Kostenkomplexität bestätigen den Bedarf nach Online-Vergleichstools – direktes Marktumfeld für bestattungsplaner.ch.",
+        source: "todesanzeigenschweiz.ch",
+        url: "https://todesanzeigenschweiz.ch/blog/kosten-beerdigung-schweiz/",
+        date: "2026-04",
+        category: "Markt & Trends",
+        addedAt: "2026-04-30",
+      },
       // Neu: 29.04.2026
       {
         summary: "Life Festival GmbH (lifefestival.ch, 2026): Individuelle Bestattungsbegleitung in der Deutschschweiz – Renée Haefelin begleitet Menschen persönlich bei der Planung ihres eigenen Vermächtnisses und der individuellen Abschiedsfeier; Dienstleistungen umfassen Lebensgeschichte dokumentieren, Bestattung planen und persönliche Trauerfeier gestalten. Das wachsende Angebot spezialisierter Bestattungsbegleiterinnen bestätigt den Trend zur personalisierten Vorsorge – direktes Wettbewerbs- und Marktumfeld für bestattungsplaner.ch.",
