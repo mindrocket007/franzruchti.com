@@ -1992,6 +1992,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 30.04.2026
       {
+        summary: "Bloomberg (30. April 2026): 'Stock Market Today: Dow, S&P Live Updates for April 30, 2026' – S&P 500 steigt um 1,05% auf ca. 5.570 Punkte, angetrieben von starken Quartalszahlen von Alphabet (+4,9%) und Amazon (+3,4%); Nasdaq +1,35%. Mag-7-Earnings-Saison zeigt breite Stärke und gibt ES-Futures-Tradern wie mindrocket-trading.com klare Marktimpulse für algorithmische Strategien.",
+        source: "Bloomberg",
+        url: "https://www.bloomberg.com/news/articles/2026-04-29/stock-market-today-dow-s-p-live-updates",
+        date: "2026-04-30",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-30",
+      },
+      {
+        summary: "TheStreet (29. April 2026): 'Stock Market Today Apr. 29: Alphabet, Microsoft, Amazon, and Meta to report after bell after Fed shock' – Nach Fed-Zinsentscheid-Schock (unverändert bei 4,25–4,5%) berichten Alphabet, Microsoft, Amazon und Meta nach Börsenschluss; S&P 500 und Nasdaq auf Rekordhochs. Earnings-Katalysator für die gesamte Mag-7-Gruppe erzeugt erhöhte Volatilität in ES-Futures – direktes Handelsumfeld für algorithmische Systeme wie mindrocket-trading.com.",
+        source: "TheStreet",
+        url: "https://www.thestreet.com/latest-news/stock-market-today-apr-29-2026-update",
+        date: "2026-04-29",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-04-30",
+      },
+      {
         summary: "FuturesPropTrader.com (2026): 'Apex Trader Funding Review 2026: The 4.0 OTP Model Analyzed' – Apex Trader Funding hat am 1. März 2026 ein neues One-Time-Payment-Modell (OTP) eingeführt: Keine monatlichen Gebühren, strenge 30-Tage-Evaluation; Metalle-Futures (Gold, Silber, Kupfer, Platin) dauerhaft gesperrt; Auszahlungen über $738 Mio. an Trader. Regulatorische und strukturelle Änderungen der führenden Prop-Firm beeinflussen direkt Strategieauswahl für ES-Futures-Trader wie mindrocket-trading.com.",
         source: "FuturesPropTrader.com",
         url: "https://futuresproptrader.com/",
@@ -5174,6 +5190,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "hypnovital": {
     news: [
       // Neu: 30.04.2026
+      {
+        summary: "BBGM e.V. (2026): 'Berliner Symposium 2026 – Mentale Gesundheit und Arbeit' – Das Bundesverband Betriebliches Gesundheitsmanagement veranstaltet am 7. Mai 2026 in Berlin sein jährliches Fachsymposium zum Thema mentale Gesundheit am Arbeitsplatz; Fokus auf Prävention, Resilienz und digitale BGM-Lösungen für Unternehmen. Führendes BGM-Fachforum in Deutschland bestätigt wachsende institutionelle Nachfrage nach digitalisierten Präventionsangeboten – direktes Marktumfeld für hypnovital®-Audio-Programme im betrieblichen Einsatz.",
+        source: "BBGM e.V.",
+        url: "https://bbgm.de/blog/2025/11/11/berliner-symposium-2026-mentale-gesundheit-und-arbeit/",
+        date: "2026-05-07",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-04-30",
+      },
       {
         summary: "ad-hoc-news.de (2026): 'Burnout-Gefahr 2026: Psychische Belastungen am Arbeitsplatz steigen' – Psychische Erkrankungen sind 2026 der häufigste Grund für Langzeitausfälle in Deutschland und der Schweiz; ca. 30% der Schweizer Erwerbstätigen leiden unter hohem Stress, Burnout-Prävention ist gefragter denn je. Wachsende Nachfrage nach betrieblicher Burnout-Prävention bestätigt das Marktpotenzial für niedrigschwellige Audio-Hypnose-Programme wie hypnovital® im BGM-Bereich.",
         source: "ad-hoc-news.de",
