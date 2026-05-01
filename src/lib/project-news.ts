@@ -26,6 +26,15 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 2026-05-01
+      {
+        summary: "SIZ AG (2. April 2026): 'mySIZ-Plattform-Relaunch am 9. April 2026' – SIZ lanciert am 9. April 2026 die komplett überarbeitete Plattform mySIZ unter der neuen URL my.siz.ch, mit vereinfachtem Login (Microsoft-Integration), direktem Prüfungsstart aus dem Nutzerkonto und Wegfall von Vouchern für TRAIN@SIZ. Die Selbstregistrierung entfällt; Bildungsinstitute übernehmen die Registrierung von Prüfungsteilnehmenden – strategische Modernisierung der SIZ-Infrastruktur.",
+        source: "SIZ AG",
+        url: "https://siz.ch/it/newsflash-april-2026/",
+        date: "2026-04-02",
+        category: "SIZ AG direkt",
+        addedAt: "2026-05-01",
+      },
       // Neu: 30.04.2026
       {
         summary: "itmagazine.ch (Oktober 2025): 'Neuer Fachausweis AI Business Specialist vom Bund genehmigt' – Das SBFI hat die Prüfungsordnung für den neuen eidgenössischen Fachausweis AI Business Specialist genehmigt; erste Berufsprüfung findet im Herbst 2026 statt; 50%-Rückerstattung der Kursgebühren bis CHF 9'500 durch Bund. Die Lancierung eines bundesanerkannten KI-Fachausweises erweitert das Ökosystem staatlicher ICT-Qualifikationen – wachsendes Marktumfeld für anerkannte Zertifizierungsorganisationen wie SIZ AG.",
@@ -4291,6 +4300,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 2026-05-01
+      {
+        summary: "Yvonne Kraus Buchcoach (Januar 2026): '7 Buchmarkt-Trends 2026' – 'Reading as Stress Relief' zeigt, dass Krisenzeiten die Nachfrage nach praktischen Self-Help-Inhalten stark erhöhen; der Trend 'Author Personality Becomes Essential' belegt, dass Leser Bücher zunehmend von Autoren kaufen, denen sie vertrauen. Diese Entwicklungen stärken die Positionierung von mindtools.ch mit kompakten mentalen Werkzeugen direkt.",
+        source: "yvonnekraus.de",
+        url: "https://yvonnekraus.de/7-trends-im-buchmarkt-2026/",
+        date: "2026-01",
+        category: "Buchmarkt & Publishing",
+        addedAt: "2026-05-01",
+      },
       // Neu: 30.04.2026
       {
         summary: "Mindtools Kineo (Learning Technologies 2026, 29./30. April 2026): 'Mindtools Kineo lanciert neue Marke und Vision' – Mindtools Kineo präsentierte am 29./30. April 2026 auf der Learning Technologies in London seine neue vereinheitlichte Marke: zeitgemässes Design, KI-gestützte Personalisierung und eine vollständig integrierte Lernlösung (Skills Accelerator, Learning Services, Learning Technologies). CEO Shabnam Shahani keynote: 'The Skills Pivot – how leading organizations are turning learning into performance'. Die globale Neupositionierung des namensähnlichen Wettbewerbers unterstreicht die wachsende Bedeutung des Marktes für Persönlichkeitsentwicklungs-Tools – relevantes Wettbewerbsumfeld für mindtools.ch.",
@@ -5221,6 +5239,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 2026-05-01
+      {
+        summary: "ad-hoc-news.de (April 2026): 'Arbeitsschutz 2026: Neue Regeln zwingen zu mehr Burnout-Prävention' – Neue Arbeitsschutzregeln 2026 rücken psychische Gesundheit ins Zentrum; die Psychische Gefährdungsbeurteilung (§5 ArbSchG) wird verstärkt kontrolliert und mentale Gesundheit zur Hauptgefahr im Arbeitsschutz deklariert. EU-OSHA hat die Kampagne 'Healthy Workplaces 2026–2028' gestartet mit Fokus auf psychische Gesundheit – direktes Wachstumsumfeld für hypnovital®-BGM-Angebote.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/arbeitsschutz-2026-neue-regeln-zwingen-zu-mehr-burnout-praevention/68574553",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-01",
+      },
       // Neu: 30.04.2026
       {
         summary: "ad-hoc-news.de (2026): 'Psychischer Stress am Arbeitsplatz erreicht 2026 neue Höchststände' – Trotz KI und neuer digitaler Tools steigt der psychische Stress in Unternehmen 2026 auf neue Rekordwerte; burnoutbedingte Ausfälle nahmen in den letzten fünf Jahren deutlich zu; fortschreitende Digitalisierung und Fachkräftemangel verschärfen die Lage. Der messbare Anstieg psychischer Belastung am Arbeitsplatz bestätigt den wachsenden Bedarf an präventiven Entspannungs- und Resilienz-Angeboten – direktes Marktumfeld für hypnovital®-Audio-Programme im BGM.",
@@ -10182,6 +10209,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 2026-05-01
+      {
+        summary: "Swiss Digital Leadership Forum / Advatera (31. August 2026, Olten): 'Swiss Digital Leadership Forum 2026' – Das Forum behandelt Responsible AI, digitale Transformation und Unternehmenskultur mit praktischen Cases und bietet eine Networking-Plattform für Thought Leader in Digitalisierung und KI-Kompetenz in der Schweiz. Für learnfluencer.ch als Thought-Leadership-Plattform bietet sich die Konferenz als Sichtbarkeits- und Positioning-Gelegenheit im Schweizer KI/Lern-Ökosystem an.",
+        source: "Swiss Digital Leadership Forum / Advatera",
+        url: "https://www.digitalleadershipforum.ch/",
+        date: "2026-08-31",
+        category: "Content & Thought Leadership",
+        addedAt: "2026-05-01",
+      },
       // Neu: 30.04.2026
       {
         summary: "Haufe.de (April 2026): 'KI-Verordnung: Digitaler Omnibus zum EU AI Act' – Der Digitale Omnibus schlägt vor, die KI-Kompetenzpflicht (Artikel 4) von einer verbindlichen Obligation in eine Empfehlung umzuwandeln; Artikel 4 gilt jedoch seit Februar 2025 und bleibt vorerst in Kraft; politische Trilog-Verhandlungen mit EU-Parlament und Rat laufen, finales Agreement erwartet Sommer 2026. Strategische Unsicherheit über die finale KI-Schulungspflicht bestätigt den Bedarf nach unabhängiger Thought-Leadership-Orientierung – Wachstumsfeld für learnfluencer.ch.",
