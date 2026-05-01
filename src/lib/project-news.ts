@@ -1490,6 +1490,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-01
       {
+        summary: "argumentorik.com (2026): 'Online-Kurs Persönlichkeitsentwicklung' – Strukturierter Online-Kurs mit über 30 praxisorientierten Modulen zu Mindset, Selbstmotivation, Kommunikation und Selbstmanagement; Inhalte basieren auf neurowissenschaftlichen und psychologischen Grundlagen für nachhaltige Veränderung. Wachsende Nachfrage nach strukturierten digitalen Lernformaten für Persönlichkeitsentwicklung validiert den Marktbedarf – direktes Wachstumsumfeld für Mind Rocket GmbH.",
+        source: "argumentorik.com",
+        url: "https://argumentorik.com/online-kurse/persoenlichkeitsentwicklung-online-kurs/",
+        date: "2026-04",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-05-01",
+      },
+      {
         summary: "liz.solutions (2026): 'New Work & Zukunft der Arbeit: Die wichtigsten Trends 2026' – Fünf zentrale Trends prägen 2026 die Arbeitswelt: menschenzentriertes Leadership, KI-Kollaboration, Selbstführung als Kernkompetenz, wellbeing-getriebene Unternehmenskultur und lebenslanges Lernen als strategischer Wettbewerbsvorteil. Wachsende Bedeutung von Selbstführung und persönlicher Kompetenzentwicklung schafft anhaltend starkes Marktumfeld für persönlichkeitsorientierte Programme – direktes Nachfrageumfeld für Mind Rocket GmbH.",
         source: "liz.solutions",
         url: "https://www.liz.solutions/new-work-zukunft-der-arbeit-die-wichtigsten-trends-2026/",
@@ -2017,6 +2025,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "mindrocket-trading": {
     news: [
       // Neu: 2026-05-01
+      {
+        summary: "tradezella.com (2026): 'Best Prop Trading Firms 2026 (Tested & Compared): FTMO, Topstep, The5ers, FundedNext' – Umfassender Vergleich der Top-Prop-Firmen 2026: Topstep verlangt 10 Winning Days statt fixer Profit-Targets; FTMO nach OANDA-Akquisition und US-Rückkehr; FundedNext und The5ers mit starkem Wachstum. Laufende Marktbereinigung und Regelanpassungen bei Prop-Firmen schaffen Bedarf an neutraler Analyse – relevanter Kontext für algorithmische ES-Futures-Trader wie mindrocket-trading.com.",
+        source: "tradezella.com",
+        url: "https://www.tradezella.com/blog/best-prop-firms-2026-rankings",
+        date: "2026-04",
+        category: "Futures & Trading",
+        addedAt: "2026-05-01",
+      },
+      {
+        summary: "PropFirmMatch (2026): 'Futures Prop Firm Rule Changes 2026' – Laufende Regeländerungen bei US-Futures-Prop-Firmen 2026: Neue Drawdown-Strukturen, veränderte Payout-Limits und verschärfte Konsistenzregeln. Kontinuierliche Regelanpassungen im Prop-Trading-Ökosystem erfordern algorithmische Strategien, die regelkonform und anpassungsfähig bleiben – direktes Planungsumfeld für mindrocket-trading.com.",
+        source: "PropFirmMatch",
+        url: "https://propfirmmatch.com/futures/prop-firm-rule-changes",
+        date: "2026-04",
+        category: "Regulierung",
+        addedAt: "2026-05-01",
+      },
       {
         summary: "CNBC (30. April 2026): 'Stock futures little changed after S&P 500 hits record to wrap April trading' – S&P 500 schloss den April mit neuem Allzeithoch (+1,02% am 30. April, erstmals über 7.200 Punkte) und bester Monatsperformance seit 2020 (+9,3%); Nasdaq ebenfalls auf Rekordhöhe; ES-Futures stabil. Historisch starker April-Abschluss definiert die Marktstruktur für ES-Futures-Strategien im Mai 2026 – direkter Handelskontext für mindrocket-trading.com.",
         source: "CNBC",
@@ -4319,6 +4343,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "mindtools": {
     news: [
       // Neu: 2026-05-01
+      {
+        summary: "Seadreamer (2026): 'Mindfulness Practices Trends to Watch in 2026' – KI-gestützte Personalisierung von Meditationssessions auf Basis von Echtzeit-Biometrie; Eco-Mindfulness-Programme; 60% der Fortune-500-Unternehmen planen strukturierte Mindfulness-Trainings für Mitarbeitende bis 2026. Stark wachsender globaler Markt für digitale Mindfulness- und Mental-Health-Tools schafft nachhaltiges Nachfrageumfeld für kompakte mentale Werkzeugsammlungen wie mindtools.ch.",
+        source: "seadreamerthelabel.com",
+        url: "https://seadreamerthelabel.com/mindfulness-practices-trends-2026/",
+        date: "2026-04",
+        category: "Mental Health",
+        addedAt: "2026-05-01",
+      },
       {
         summary: "Yvonne Kraus Buchcoach (Januar 2026): '7 Buchmarkt-Trends 2026' – 'Reading as Stress Relief' zeigt, dass Krisenzeiten die Nachfrage nach praktischen Self-Help-Inhalten stark erhöhen; der Trend 'Author Personality Becomes Essential' belegt, dass Leser Bücher zunehmend von Autoren kaufen, denen sie vertrauen. Diese Entwicklungen stärken die Positionierung von mindtools.ch mit kompakten mentalen Werkzeugen direkt.",
         source: "yvonnekraus.de",
@@ -7111,6 +7143,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-01
       {
+        summary: "TechRadar (2026): 'Best Objectives and Key Results (OKR) software of 2026' – Umfassender Vergleich führender OKR-Plattformen 2026: Spezialisierte Nischen-Tools für spezifische Methoden (wie 12 Week Year) fehlen in der Marktübersicht. OKR-Markt wächst stark, bietet aber kaum Lösungen speziell für das 12-Wochen-Zyklus-Modell – direktes Alleinstellungsmerkmal des 12wy-planners als dediziertes Planungstool für die 12-Week-Year-Methode.",
+        source: "TechRadar",
+        url: "https://www.techradar.com/best/best-okr-software",
+        date: "2026-04",
+        category: "SaaS & Tools",
+        addedAt: "2026-05-01",
+      },
+      {
         summary: "ad-hoc-news.de (2026): 'Notizzettel-Methode erlebt 2026 überraschendes Comeback' – Der analoge Notizzettel feiert 2026 ein Revival als Gegentrend zum digitalen Overload: handgeschriebene Notizen verankern Information bis zu 40% besser im Gedächtnis und signalisieren in KI-geprägten Arbeitsumgebungen fokussiertes Denken. Die Rehabilitation analoger Produktivitätsmethoden bestätigt den Trend zur methodenbasierten Selbstorganisation – direktes Marktumfeld für methodenfokussierte Planungstools wie den 12wy-planner.",
         source: "ad-hoc-news.de",
         url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/notizzettel-methode-erlebt-2026-ueberraschendes-comeback/68563907",
@@ -9186,6 +9226,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-01
       {
+        summary: "Heimsoeth Academy (2026): 'Lampenfieber Seminar: Lampenfieber und Redeangst mit mentalen Techniken überwinden!' – Mentale Techniken und Visualisierungsübungen helfen, Lampenfieber dauerhaft zu überwinden; der Ansatz wirkt auf unbewusster Ebene und schafft neue, positive Verhaltensmuster für Auftrittssituationen. Etablierter Seminar-Anbieter setzt auf mentale Methoden und bestätigt die Wirksamkeit unbewusster Konditionierung – validiert den Ansatz von Audio-Hypnose-Produkten wie lampenfieber-besiegen.de.",
+        source: "Heimsoeth Academy",
+        url: "https://www.heimsoeth-academy.com/mental/seminar-lampenfieber-redeangst/",
+        date: "2026-04",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-05-01",
+      },
+      {
         summary: "wolfzinn.de (2026): 'Wie kann man Lampenfieber und Redeangst überwinden?' – Rhetorikexperte Wolf Zinn empfiehlt neben Rhetorikkursen und mentalem Training insbesondere Hypnose und Entspannungstechniken, die Redeangst direkt auf der unbewussten Ebene adressieren und nachhaltig auflösen können. Die prominente Empfehlung von Hypnosemethoden durch etablierte Rhetorikexperten stärkt die Marktpositionierung für Audio-Hypnose-Produkte wie lampenfieber-besiegen.de.",
         source: "wolfzinn.de",
         url: "https://www.wolfzinn.de/faq/wie-kann-man-lampenfieber-und-redeangst-ueberwinden/",
@@ -10255,6 +10303,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "learnfluencer": {
     news: [
       // Neu: 2026-05-01
+      {
+        summary: "Kingfluencers (2026): 'Schweizer Influencer:innen, denen man 2026 folgen sollte' – 81 kuratierte Schweizer Influencer:innen und Content-Creator:innen 2026, die Communities bewegen und Brand-Relevanz schaffen; Fokus auf Creator, die aus Reichweite echte Wirkung machen. Growing Creator Economy in der Schweiz schafft Sichtbarkeits-Ökosystem – direkte Positionierungschance für Thought-Leadership-Plattformen wie learnfluencer.ch.",
+        source: "Kingfluencers",
+        url: "https://www.kingfluencers.com/en/blog/schweizer-influencer-innen-denen-man-2026-folgen-sollte",
+        date: "2026-04",
+        category: "Content & Thought Leadership",
+        addedAt: "2026-05-01",
+      },
       {
         summary: "Swiss Digital Leadership Forum / Advatera (31. August 2026, Olten): 'Swiss Digital Leadership Forum 2026' – Das Forum behandelt Responsible AI, digitale Transformation und Unternehmenskultur mit praktischen Cases und bietet eine Networking-Plattform für Thought Leader in Digitalisierung und KI-Kompetenz in der Schweiz. Für learnfluencer.ch als Thought-Leadership-Plattform bietet sich die Konferenz als Sichtbarkeits- und Positioning-Gelegenheit im Schweizer KI/Lern-Ökosystem an.",
         source: "Swiss Digital Leadership Forum / Advatera",
