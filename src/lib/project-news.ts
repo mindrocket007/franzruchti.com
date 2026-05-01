@@ -2034,6 +2034,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-01
       {
+        summary: "proptradingvibes.com (Mai 2026): 'State of Prop Trading Q2 2026 — The Quiet Consolidation' – Der Q2-2026-Census dokumentiert 63 Schliessungen in der Prop-Trading-Kategorie, davon 28 allein seit Q1 2026 (u.a. OANDA Prop Trader, Seacrest Markets). Plattformkonsolidierung läuft um Rithmic (17), NinjaTrader (22) und Tradovate (22); NinjaTrader Group besitzt seit Oktober 2025 sowohl NinjaTrader Prop als auch Tradovate Prop. Branchenkonsolidierung im US-Futures-Prop-Markt zwingt algorithmische Trader zur sorgfältigen Plattformwahl – direktes Marktumfeld für mindrocket-trading.com.",
+        source: "proptradingvibes.com",
+        url: "https://proptradingvibes.com/state-of-prop-trading",
+        date: "2026-05",
+        category: "Futures & Trading",
+        addedAt: "2026-05-01",
+      },
+      {
+        summary: "CNN Politics (26. April 2026): 'CFTC-Belegschaft um 24% geschrumpft, während Prediction Markets boomen' – Die US-Futures-Regulierungsbehörde CFTC verlor seit Trumps Rückkehr 24% ihrer Stellen; das Enforcement-Büro in Chicago fiel von 20 Anwälten auf null. Gleichzeitig explodiert das Volumen in Prediction Markets (Kalshi, Polymarket) auf Milliarden Dollar pro Woche, und Insider-Trading-Fälle (Militäraktion, Taylor-Swift-Engagement) häufen sich. Regulatorisches Aufsichtsvakuum bei US-Futures schafft Unsicherheit – relevanter Kontext für ES-Futures-Trader auf mindrocket-trading.com.",
+        source: "CNN Politics",
+        url: "https://www.cnn.com/2026/04/26/politics/commodity-futures-trading-commission-shrinking-prediction-markets",
+        date: "2026-04-26",
+        category: "Regulierung",
+        addedAt: "2026-05-01",
+      },
+      {
+        summary: "CNBC (30. April 2026): 'Demokraten fordern CFTC auf, Prediction Markets Kalshi und Polymarket einzudämmen' – Kongressabgeordnete fordern härtere CFTC-Regulierung von Prediction Markets angesichts von Insider-Trading-Vorwürfen und dem geschwächten Enforcement-Apparat der Behörde. Wachsender politischer Druck auf die CFTC inmitten personeller Schwächung schafft regulatorische Unsicherheit im gesamten US-Futures-Ökosystem – relevanter Hintergrund für algorithmische Futures-Trader auf mindrocket-trading.com.",
+        source: "CNBC",
+        url: "https://www.cnbc.com/2026/04/30/congress-kalshi-polymarket-prediction-markets-cftc.html",
+        date: "2026-04-30",
+        category: "Regulierung",
+        addedAt: "2026-05-01",
+      },
+      {
         summary: "Finance Magnates (23. April 2026): 'Prop Firm The Trading Pit Expands into the UK and US with NinjaTrader Integration' – Die Prop-Trading-Firma The Trading Pit gibt ihre Expansion nach UK und USA bekannt und integriert NinjaTrader als Handelsplattform; Trader können damit NinjaTrader und Tradovate mit demselben Konto nutzen. NinjaTrader-Integration bei Prop-Firmen setzt sich als Standard durch – relevanter Marktkontext für algorithmische ES-Futures-Strategien auf mindrocket-trading.com.",
         source: "Finance Magnates",
         url: "https://www.financemagnates.com/forex/prop-firm-the-trading-pit-expands-into-the-uk-and-us-with-ninjatrader-integration/",
@@ -5306,6 +5330,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "hypnovital": {
     news: [
       // Neu: 2026-05-01
+      {
+        summary: "Gesundheitsförderung Schweiz (2026): 'Lernendenbefragung zeigt: Die Berufslehre fördert die psychische Gesundheit stark, Belastungen müssen noch besser abgeholt werden' – Nationale Studie mit 45'000 befragten Lernenden: Über 80 % geht es in der Ausbildung gut oder sehr gut, doch 61 % erleben psychische Probleme – rund die Hälfte dieser Fälle sollte aktiver angegangen werden. Institutionelles Signal für den wachsenden Bedarf an psychischer Gesundheitsförderung im Bildungsumfeld – direktes Marktumfeld für präventive digitale Hypnose-Audio-Programme wie hypnovital® im BGM-Kontext.",
+        source: "Gesundheitsförderung Schweiz",
+        url: "https://gesundheitsfoerderung.ch/news/betriebliches-gesundheitsmanagement-bgm/lernendenbefragung-zeigt-die-berufslehre-foerdert-die",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-01",
+      },
       {
         summary: "ad-hoc-news.de (2026): 'Burnout-Schutz wird 2026 zum strategischen Muss für Unternehmen' – BGM wandelt sich 2026 von reaktiven Einzelmassnahmen zu einem zentralen Steuerungsinstrument: Psychische Gesundheit der Belegschaft avanciert zum KPI; Burnout gilt nicht mehr als Privatproblem, sondern als direktes Unternehmensrisiko. Der Job Stress Index zeigt mit 30,3 % emotional Erschöpfter einen Höchstwert. Strategische BGM-Positionierung schafft wachsendes Marktumfeld für skalierbare Präventionsprogramme wie hypnovital®-Angebote.",
         source: "ad-hoc-news.de",
