@@ -2034,6 +2034,38 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-01
       {
+        summary: "CNBC (29. April 2026): 'Warsh clears Senate Banking Committee – Fed Chair Transition steht unmittelbar bevor' – Senat-Bankenausschuss bestätigte Kevin Warshs Nominierung als nächster Fed-Chef entlang Parteilinien (13 Republikaner dafür, 11 Demokraten dagegen); vollständige Senatsabstimmung in der Woche des 11. Mai erwartet; Bestätigung vor Powells Amtsende am 15. Mai möglich. Warshs potenzielle 'Regime-Change'-Agenda schafft erhöhte Makro-Volatilität für ES-Futures-Positioning – direktes Marktumfeld für mindrocket-trading.com.",
+        source: "CNBC",
+        url: "https://www.cnbc.com/2026/04/29/trump-fed-nominee-kevin-warsh-senate-approval.html",
+        date: "2026-04-29",
+        category: "Regulierung",
+        addedAt: "2026-05-01",
+      },
+      {
+        summary: "CNBC (29. April 2026): 'Fed hält Zinsen stabil in Powells letztem FOMC-Meeting als Vorsitzender' – Fed beließ Zinsen unverändert; Powell bestätigte, als Fed-Gouverneur zu bleiben ('die Dinge der letzten drei Monate haben mir keine andere Wahl gelassen'). Polymarket: 87% Wahrscheinlichkeit Powell-Abgang 15.–22. Mai 2026. S&P 500 schloss April mit Allzeithoch bei 7.168 Punkten. Zinsentscheid und Powell-Nachfolge definieren das geldpolitische Makro-Regime für ES-Futures-Strategien im Mai 2026 – direkter Handelskontext für mindrocket-trading.com.",
+        source: "CNBC",
+        url: "https://www.cnbc.com/2026/04/29/fed-meeting-today-live-updates-warsh-powell.html",
+        date: "2026-04-29",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-05-01",
+      },
+      {
+        summary: "CNN (30. April 2026): 'Powell closes out eight years at the helm of the Fed' – Rückblick auf Powells Ära als Fed-Chair: Drittbeste S&P-500-Performance aller Fed-Vorsitzenden (Ø 12,9% p.a.); politische Angriffe als 'unprecedented' bezeichnet; bleibt als Fed-Governor. Ende der Powell-Ära markiert potenzielle geldpolitische Zäsur unter Warsh – bedeutsames Makro-Signal für algorithmische ES-Futures-Strategien auf mindrocket-trading.com.",
+        source: "CNN",
+        url: "https://www.cnn.com/2026/04/30/economy/jerome-powell-retrospective",
+        date: "2026-04-30",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-05-01",
+      },
+      {
+        summary: "Chatham Financial (April 2026): 'Kevin Warsh's Nomination: What It Means for Markets and Rates' – Analyse: Warshs Nominierung löste initial Treasury-Renditeanstieg und Dollar-Stärke aus; Märkte stabilisierten sich, interpretierten Wechsel als 'Policy Continuity'. Warshs mögliche 'Regime-Change'-Agenda (veränderte Fed-Kommunikation, schnellere Zinssenkungen) birgt erhöhtes Volatilitätspotenzial – kritischer Makro-Risikofaktor für algorithmisches ES-Futures-Trading auf mindrocket-trading.com.",
+        source: "Chatham Financial",
+        url: "https://www.chathamfinancial.com/insights/kevin-warsh-nomination-what-it-means-for-markets-and-rates",
+        date: "2026-04",
+        category: "Regulierung",
+        addedAt: "2026-05-01",
+      },
+      {
         summary: "proptradingvibes.com (Mai 2026): 'State of Prop Trading Q2 2026 — The Quiet Consolidation' – Der Q2-2026-Census dokumentiert 63 Schliessungen in der Prop-Trading-Kategorie, davon 28 allein seit Q1 2026 (u.a. OANDA Prop Trader, Seacrest Markets). Plattformkonsolidierung läuft um Rithmic (17), NinjaTrader (22) und Tradovate (22); NinjaTrader Group besitzt seit Oktober 2025 sowohl NinjaTrader Prop als auch Tradovate Prop. Branchenkonsolidierung im US-Futures-Prop-Markt zwingt algorithmische Trader zur sorgfältigen Plattformwahl – direktes Marktumfeld für mindrocket-trading.com.",
         source: "proptradingvibes.com",
         url: "https://proptradingvibes.com/state-of-prop-trading",
