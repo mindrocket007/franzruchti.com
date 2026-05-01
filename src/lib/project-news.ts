@@ -5298,6 +5298,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         category: "BGM & Gesundheit",
         addedAt: "2026-05-01",
       },
+      {
+        summary: "psychotherapie-reus.de (2026): 'Neue WHO-Richtlinien 2026: 5 Strategien gegen Burnout, die jeder kennen sollte' – Die WHO hat 2026 fünf wissenschaftlich fundierte Strategien gegen Burnout veröffentlicht: strukturierte Arbeitsorganisation mit klaren Arbeitszeitgrenzen, soziale Unterstützung und Teamgespräche, Achtsamkeitspraktiken, körperliche Aktivität sowie professionelle Beratungsangebote; Pilotprojekte zeigen -25% Krankheitstage und +40% Mitarbeiterzufriedenheit. Die globale WHO-Empfehlung bestätigt den Bedarf nach skalierbaren Präventionsprogrammen – direktes Marktumfeld für hypnovital®-BGM-Angebote.",
+        source: "psychotherapie-reus.de",
+        url: "https://psychotherapie-reus.de/neue-who-richtlinien-2026-5-strategien-gegen-burnout-die-jeder-kennen-sollte/",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-01",
+      },
       // Neu: 30.04.2026
       {
         summary: "ad-hoc-news.de (2026): 'Psychischer Stress am Arbeitsplatz erreicht 2026 neue Höchststände' – Trotz KI und neuer digitaler Tools steigt der psychische Stress in Unternehmen 2026 auf neue Rekordwerte; burnoutbedingte Ausfälle nahmen in den letzten fünf Jahren deutlich zu; fortschreitende Digitalisierung und Fachkräftemangel verschärfen die Lage. Der messbare Anstieg psychischer Belastung am Arbeitsplatz bestätigt den wachsenden Bedarf an präventiven Entspannungs- und Resilienz-Angeboten – direktes Marktumfeld für hypnovital®-Audio-Programme im BGM.",
@@ -13104,6 +13112,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
         source: "20 Minuten",
         url: "https://www.20min.ch/story/neue-gesetze-diese-aenderungen-treten-2026-in-der-schweiz-in-kraft-103469081",
         date: "2026-01",
+        category: "Recht & Regelungen",
+        addedAt: "2026-05-01",
+      },
+      {
+        summary: "Schweizerisches Rotes Kreuz (SRK): 'Anordnung im Todesfall – Hinterbliebene entlasten' – Das SRK empfiehlt, Bestattungswünsche, Trauerfeier und Nachlass frühzeitig schriftlich festzuhalten; die 'Anordnung im Todesfall' entlastet Angehörige von schwierigen Entscheidungen inmitten der Trauer; Aufbewahrung in der SRK-Vorsorgemappe empfohlen. Die offizielle SRK-Unterstützung für vorausschauende Bestattungsplanung bestätigt das gesellschaftliche Bedürfnis – direktes Marktumfeld für bestattungsplaner.ch.",
+        source: "Schweizerisches Rotes Kreuz (SRK)",
+        url: "https://www.redcross.ch/de/unser-angebot/vorsorge-und-nachlassplanung/anordnung-im-todesfall",
+        date: "2026-04",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-05-01",
+      },
+      {
+        summary: "Allianz Schweiz (2026): 'Rechtliche Vorsorge: Das sind die Möglichkeiten' – Allianz Schweiz beleuchtet die Vorsorge-Instrumente 2026: Patientenverfügung, Vorsorgeauftrag, Testament und Bestattungswünsche; das Erbrecht wurde 2023 reformiert mit mehr individuellen Spielräumen; digitaler Nachlass wird als eigenständiges Thema behandelt. Wachsendes Angebot institutioneller Vorsorgeberatung bestätigt die gesellschaftliche Nachfrage nach digitalen Planungsplattformen – direktes Marktumfeld für bestattungsplaner.ch.",
+        source: "Allianz Schweiz",
+        url: "https://www.allianz.ch/de/privatkunden/ratgeber/vorsorge/rechtliche-vorsorge.html",
+        date: "2026-04",
         category: "Recht & Regelungen",
         addedAt: "2026-05-01",
       },
