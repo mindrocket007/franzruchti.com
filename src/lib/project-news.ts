@@ -2034,6 +2034,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-01
       {
+        summary: "Finance Magnates (23. April 2026): 'Prop Firm The Trading Pit Expands into the UK and US with NinjaTrader Integration' – Die Prop-Trading-Firma The Trading Pit gibt ihre Expansion nach UK und USA bekannt und integriert NinjaTrader als Handelsplattform; Trader können damit NinjaTrader und Tradovate mit demselben Konto nutzen. NinjaTrader-Integration bei Prop-Firmen setzt sich als Standard durch – relevanter Marktkontext für algorithmische ES-Futures-Strategien auf mindrocket-trading.com.",
+        source: "Finance Magnates",
+        url: "https://www.financemagnates.com/forex/prop-firm-the-trading-pit-expands-into-the-uk-and-us-with-ninjatrader-integration/",
+        date: "2026-04-23",
+        category: "Futures & Trading",
+        addedAt: "2026-05-01",
+      },
+      {
         summary: "tradezella.com (2026): 'Best Prop Trading Firms 2026 (Tested & Compared): FTMO, Topstep, The5ers, FundedNext' – Umfassender Vergleich der Top-Prop-Firmen 2026: Topstep verlangt 10 Winning Days statt fixer Profit-Targets; FTMO nach OANDA-Akquisition und US-Rückkehr; FundedNext und The5ers mit starkem Wachstum. Laufende Marktbereinigung und Regelanpassungen bei Prop-Firmen schaffen Bedarf an neutraler Analyse – relevanter Kontext für algorithmische ES-Futures-Trader wie mindrocket-trading.com.",
         source: "tradezella.com",
         url: "https://www.tradezella.com/blog/best-prop-firms-2026-rankings",
@@ -5298,6 +5306,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "hypnovital": {
     news: [
       // Neu: 2026-05-01
+      {
+        summary: "ad-hoc-news.de (2026): 'Burnout-Schutz wird 2026 zum strategischen Muss für Unternehmen' – BGM wandelt sich 2026 von reaktiven Einzelmassnahmen zu einem zentralen Steuerungsinstrument: Psychische Gesundheit der Belegschaft avanciert zum KPI; Burnout gilt nicht mehr als Privatproblem, sondern als direktes Unternehmensrisiko. Der Job Stress Index zeigt mit 30,3 % emotional Erschöpfter einen Höchstwert. Strategische BGM-Positionierung schafft wachsendes Marktumfeld für skalierbare Präventionsprogramme wie hypnovital®-Angebote.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/burnout-schutz-wird-2026-zum-strategischen-muss-fuer-unternehmen/68485357",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-01",
+      },
       {
         summary: "ad-hoc-news.de (April 2026): 'Arbeitsschutz 2026: Neue Regeln zwingen zu mehr Burnout-Prävention' – Neue Arbeitsschutzregeln 2026 rücken psychische Gesundheit ins Zentrum; die Psychische Gefährdungsbeurteilung (§5 ArbSchG) wird verstärkt kontrolliert und mentale Gesundheit zur Hauptgefahr im Arbeitsschutz deklariert. EU-OSHA hat die Kampagne 'Healthy Workplaces 2026–2028' gestartet mit Fokus auf psychische Gesundheit – direktes Wachstumsumfeld für hypnovital®-BGM-Angebote.",
         source: "ad-hoc-news.de",
@@ -11998,6 +12014,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "marketingplan-software": {
     news: [
       // Neu: 2026-05-01
+      {
+        summary: "ZHAW Institut für Marketing Management (28. Mai 2026): 'Swiss MarTech Summit 2026' – Der Swiss MarTech Summit findet am 28. Mai 2026 an der ZHAW Winterthur statt; Schwerpunkte: KI-Agenten in der Content-Produktion (Keynote: Jonathan Fearns, Accenture), Reinvention des Marketings durch KI-Automatisierung; erstmals wird der Swiss MarTech Award 2026 vergeben. Institutionalisierter Schweizer MarTech-Dialog stärkt Nachfrage nach strukturierten Marketing-Planungstools – direktes Wachstumsumfeld für das Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "ZHAW Institut für Marketing Management",
+        url: "https://www.zhaw.ch/de/sml/institute-zentren/imm/ueber-uns/marketing-management-labs/martech-lab/swiss-martech-summit-2026",
+        date: "2026-05-28",
+        category: "MarTech & Trends",
+        addedAt: "2026-05-01",
+      },
       {
         summary: "kimarketing.ch (2026): 'KI-Marketing Schweiz Preise für KMU 2026 – Was kostet der Einstieg wirklich?' – Realistischer KI-Marketing-Einstieg für Schweizer KMU liegt 2026 bei CHF 10'000–30'000 pro Jahr; Projekte darunter scheitern oft an fehlender Strategie. Kernbotschaft: Ohne strukturierten Marketingplan keine erfolgreiche Automation. Direktes Marktargument für das interaktive Marketingkonzept-Tool auf learnfluencer.ch als unverzichtbare Basis vor jedem KI-Einsatz.",
         source: "kimarketing.ch",
