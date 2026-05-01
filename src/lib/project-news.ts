@@ -1488,6 +1488,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
+      // Neu: 2026-05-01
+      {
+        summary: "liz.solutions (2026): 'New Work & Zukunft der Arbeit: Die wichtigsten Trends 2026' – Fünf zentrale Trends prägen 2026 die Arbeitswelt: menschenzentriertes Leadership, KI-Kollaboration, Selbstführung als Kernkompetenz, wellbeing-getriebene Unternehmenskultur und lebenslanges Lernen als strategischer Wettbewerbsvorteil. Wachsende Bedeutung von Selbstführung und persönlicher Kompetenzentwicklung schafft anhaltend starkes Marktumfeld für persönlichkeitsorientierte Programme – direktes Nachfrageumfeld für Mind Rocket GmbH.",
+        source: "liz.solutions",
+        url: "https://www.liz.solutions/new-work-zukunft-der-arbeit-die-wichtigsten-trends-2026/",
+        date: "2026-04",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-05-01",
+      },
       // Neu: 30.04.2026
       {
         summary: "dimind.ch (2026): 'Von der Erschöpfung zur Balance: Ein neues Arbeitsmodell' – Neue Arbeitsmodelle setzen auf mentale Regeneration, klare Grenzen und sinnorientiertes Führen als Antwort auf steigenden Burnout-Druck; individuelle Resilienz und Selbstführung rücken als Kernkompetenzen in den Fokus. Wachsende Nachfrage nach ganzheitlichen Ansätzen zu mentaler Stärke und Work-Life-Balance bestätigt das Marktpotenzial für persönlichkeitsorientierte Programme – direktes Nachfrageumfeld für Mind Rocket GmbH.",
@@ -2007,6 +2016,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 2026-05-01
+      {
+        summary: "CNBC (30. April 2026): 'Stock futures little changed after S&P 500 hits record to wrap April trading' – S&P 500 schloss den April mit neuem Allzeithoch (+1,02% am 30. April, erstmals über 7.200 Punkte) und bester Monatsperformance seit 2020 (+9,3%); Nasdaq ebenfalls auf Rekordhöhe; ES-Futures stabil. Historisch starker April-Abschluss definiert die Marktstruktur für ES-Futures-Strategien im Mai 2026 – direkter Handelskontext für mindrocket-trading.com.",
+        source: "CNBC",
+        url: "https://www.cnbc.com/2026/04/30/stock-market-today-live-updates.html",
+        date: "2026-04-30",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-05-01",
+      },
       // Neu: 30.04.2026
       {
         summary: "Angle360 (April 2026): 'S and P 500 Forecast April 27 to May 1, 2026 – Next Move After 7,165' – S&P 500 nach Record-Close bei 7.165 Punkten; Forecasts zeigen Range 7.100–7.300 für die erste Mai-Woche 2026; bullische Dynamik bleibt intakt, Volatilität durch Earnings-Saison erhöht. Klar definiertes technisches Marktumfeld mit Bull-Trend liefert ES-Futures-Tradern wie mindrocket-trading.com präzise Marktstruktur für algorithmische Einstiegspunkte in den Mai 2026.",
@@ -7091,6 +7109,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 2026-05-01
+      {
+        summary: "ad-hoc-news.de (2026): 'Notizzettel-Methode erlebt 2026 überraschendes Comeback' – Der analoge Notizzettel feiert 2026 ein Revival als Gegentrend zum digitalen Overload: handgeschriebene Notizen verankern Information bis zu 40% besser im Gedächtnis und signalisieren in KI-geprägten Arbeitsumgebungen fokussiertes Denken. Die Rehabilitation analoger Produktivitätsmethoden bestätigt den Trend zur methodenbasierten Selbstorganisation – direktes Marktumfeld für methodenfokussierte Planungstools wie den 12wy-planner.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/notizzettel-methode-erlebt-2026-ueberraschendes-comeback/68563907",
+        date: "2026-04",
+        category: "Produktivität & Planung",
+        addedAt: "2026-05-01",
+      },
       // Neu: 30.04.2026
       {
         summary: "Tridens Technology (2026): 'Top 6 SaaS Industry Trends for 2026' – KI-native SaaS-Architekturen, Usage-Based-Pricing und vertikale Spezialisierung dominieren den Markt; Usage-Based-Pricing löst klassische Abonnements ab und richtet Kosten nach tatsächlicher Nutzung aus; SaaS-Markt wächst 2026 auf $299 Milliarden. Der Trend zu spezialisierten, KI-gestützten Micro-SaaS-Tools bestätigt die Marktpositionierung des 12wy-planners als methoden-fokussiertes Nischentool.",
@@ -8202,6 +8229,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 2026-05-01
+      {
+        summary: "euronews.com (17. Januar 2026): 'Not just a young man's game: male sexual desire soars until middle age' – Neue Forschung zeigt, dass männliches sexuelles Interesse und Verlangen bis ins mittlere Alter (40+) oft anhält oder zunimmt; der Mythos, Sexualität sei primär ein Thema junger Männer, wird wissenschaftlich widerlegt. Wachsendes wissenschaftliches Interesse an männlicher Sexualgesundheit über alle Altersgruppen hinweg validiert den breiten Marktbedarf für Selbsthilfe-Produkte zur Sexualitätskontrolle wie orgasmus-hinauszoegern.de.",
+        source: "euronews.com",
+        url: "https://www.euronews.com/health/2026/01/17/not-just-a-young-mans-game-male-sexual-desire-soars-until-middle-age-research-reveals",
+        date: "2026-01-17",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-05-01",
+      },
       // Neu: 30.04.2026
       {
         summary: "LELO / IntimA.I.cy-Studie 2026 (via schwulissimo.de): 'Neue Intimität durch KI – Studie zur Sexualität 2026' – 60% von 6.000 Befragten aus 6 Ländern haben KI bereits für sexuelle oder zwischenmenschliche Kommunikation eingesetzt; KI, digitale Intimität und körperliche Aktivität werden zentrale Aspekte moderner Sexualität; 2026 steht für Integration von Technologie und Körper, Lust und mentaler Gesundheit. Wachsende Digitalisierung der Sexualität und Entstigmatisierung im digitalen Raum bestätigt das Marktpotenzial für diskrete digitale Selbsthilfeprodukte wie orgasmus-hinauszoegern.de.",
@@ -9148,6 +9184,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 2026-05-01
+      {
+        summary: "wolfzinn.de (2026): 'Wie kann man Lampenfieber und Redeangst überwinden?' – Rhetorikexperte Wolf Zinn empfiehlt neben Rhetorikkursen und mentalem Training insbesondere Hypnose und Entspannungstechniken, die Redeangst direkt auf der unbewussten Ebene adressieren und nachhaltig auflösen können. Die prominente Empfehlung von Hypnosemethoden durch etablierte Rhetorikexperten stärkt die Marktpositionierung für Audio-Hypnose-Produkte wie lampenfieber-besiegen.de.",
+        source: "wolfzinn.de",
+        url: "https://www.wolfzinn.de/faq/wie-kann-man-lampenfieber-und-redeangst-ueberwinden/",
+        date: "2026-04",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-05-01",
+      },
       // Neu: 30.04.2026
       {
         summary: "Wagner Empowerment (2026): 'Kurs, Seminar & 1:1 Redeangst überwinden – Coaching, Mentaltraining & Hypnose' – Spezialisierter Anbieter für Redeangst-Überwindung bietet Einzel- und Gruppen-Coaching mit Hypnose in Bad Homburg, Frankfurt und deutschlandweit an; neue Kurstermine 2026 verfügbar. Wachsendes Coaching-Angebot für Lampenfieber und Redeangst bestätigt den Marktbedarf – Wettbewerbsumfeld für digitale Audio-Hypnose-Produkte wie lampenfieber-besiegen.de.",
@@ -11880,6 +11925,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 2026-05-01
+      {
+        summary: "kimarketing.ch (2026): 'KI-Marketing Schweiz Preise für KMU 2026 – Was kostet der Einstieg wirklich?' – Realistischer KI-Marketing-Einstieg für Schweizer KMU liegt 2026 bei CHF 10'000–30'000 pro Jahr; Projekte darunter scheitern oft an fehlender Strategie. Kernbotschaft: Ohne strukturierten Marketingplan keine erfolgreiche Automation. Direktes Marktargument für das interaktive Marketingkonzept-Tool auf learnfluencer.ch als unverzichtbare Basis vor jedem KI-Einsatz.",
+        source: "kimarketing.ch",
+        url: "https://www.kimarketing.ch/ki-marketing-schweiz-preise-kmu-2026/",
+        date: "2026-04",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-05-01",
+      },
       // Neu: 30.04.2026
       {
         summary: "Bexolutions (2026): 'KI-Marketing für Schweizer KMU 2026 – Praxisleitfaden' – Ein gutes KI-Marketing-Setup für Schweizer KMU braucht selten mehr als fünf Kernwerkzeuge: Text-/Reasoning-Modell, Visual-Tool, SEO-Werkzeug, Automation-Tool und sauberes CMS; strukturierter Marketingplan bleibt Voraussetzung für sinnvollen KI-Einsatz. Marketingplan als KI-Enabler bestätigt die Relevanz des interaktiven Marketingkonzept-Tools für Schweizer KMU.",
@@ -12988,6 +13042,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 2026-05-01
+      {
+        summary: "20 Minuten (2026): 'Neue Gesetze: Diese Änderungen treten 2026 in der Schweiz in Kraft' – Die Schweiz modernisiert 2026 zahlreiche gesetzliche Rahmenbedingungen: Einführung der freiwilligen e-ID, neue Strassenverkehrsregeln, Anpassungen im Sozialversicherungsbereich. Die schrittweise Digitalisierung staatlicher Prozesse schafft technische und gesellschaftliche Grundlage für digitale Verwaltungsprozesse inklusive digitaler Bestattungsvorsorge – strategischer Rückenwind für bestattungsplaner.ch.",
+        source: "20 Minuten",
+        url: "https://www.20min.ch/story/neue-gesetze-diese-aenderungen-treten-2026-in-der-schweiz-in-kraft-103469081",
+        date: "2026-01",
+        category: "Recht & Regelungen",
+        addedAt: "2026-05-01",
+      },
       // Neu: 30.04.2026
       {
         summary: "Schweizer Verband für Feuerbestattungen – kremation-svfb.ch (2026): 'Die Feuerbestattung in der Schweiz' – Der SVFB vertritt die 29 vollständig modernisierten Schweizer Krematorien; Feuerbestattungen machen rund 90% aller Bestattungen in der Schweiz aus; vollständige Modernisierung aller Krematorien bis Ende 2020 abgeschlossen. Professioneller Dachverband der dominierenden Bestattungsform in der Schweiz – direktes Branchennetzwerk und Kooperationspotenzial für bestattungsplaner.ch als Online-Vermittlungsplattform.",
