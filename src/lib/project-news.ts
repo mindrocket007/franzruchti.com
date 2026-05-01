@@ -28,6 +28,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-01
       {
+        summary: "computerworld.ch (11. Februar 2026): 'swissICT-Geschäftsführer Christian Hunziker kündigt Rücktritt an' – Christian Hunziker, seit 2018 Geschäftsführer von swissICT (dem grössten Schweizer ICT-Berufsverband), geht aus dringenden persönlichen Gründen per Ende Mai 2026 in Frühpension; sein letzter öffentlicher Auftritt findet am 5. Mai 2026 am #DIGITUP/GV in Zürich statt. Der Führungswechsel beim wichtigsten Schweizer ICT-Branchenverband ist ein bedeutsames Industrieereignis – relevanter Kontext für SIZ AG als anerkannte ICT-Prüfungsorganisation im selben Ökosystem.",
+        source: "computerworld.ch",
+        url: "https://www.computerworld.ch/themen/people/swiss-ict-geschaeftsfuehrer-christian-hunziker-kuendigt-ruecktritt-an",
+        date: "2026-02-11",
+        category: "Digitale Bildung",
+        addedAt: "2026-05-01",
+      },
+      {
         summary: "SIZ AG (2. April 2026): 'mySIZ-Plattform-Relaunch am 9. April 2026' – SIZ lanciert am 9. April 2026 die komplett überarbeitete Plattform mySIZ unter der neuen URL my.siz.ch, mit vereinfachtem Login (Microsoft-Integration), direktem Prüfungsstart aus dem Nutzerkonto und Wegfall von Vouchern für TRAIN@SIZ. Die Selbstregistrierung entfällt; Bildungsinstitute übernehmen die Registrierung von Prüfungsteilnehmenden – strategische Modernisierung der SIZ-Infrastruktur.",
         source: "SIZ AG",
         url: "https://siz.ch/it/newsflash-april-2026/",
