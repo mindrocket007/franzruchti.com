@@ -28,6 +28,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-02
       {
+        summary: "inside-it.ch (29. April 2026): 'SwissICT wählt Kurt Lanz als neuen Geschäftsführer' – Der Ökonom und erfahrene Verbandsstratege Kurt Lanz übernimmt per 1. August 2026 die Geschäftsführung von swissICT; er folgt auf Christian Hunziker, der Mitte Mai in Frühpension geht. Lanz war zuletzt CEO des Energieverbands Powerloop und davor Mitglied der Geschäftsleitung von Economiesuisse (Digitalisierungsportfolio). Führungswechsel beim wichtigsten Schweizer ICT-Branchenverband – relevanter Governance-Wechsel im direkten Ökosystem von SIZ AG als anerkannte ICT-Prüfungsorganisation.",
+        source: "inside-it.ch",
+        url: "https://www.inside-it.ch/swissict-waehlt-kurt-lanz-als-neuen-geschaeftsfuehrer-20260429",
+        date: "2026-04-29",
+        category: "Digitale Bildung",
+        addedAt: "2026-05-02",
+      },
+      {
+        summary: "itreseller.ch (April 2026): 'SwissICT ernennt Kurt Lanz zum Geschäftsführer' – IT-Branchenmedium berichtet: swissICT (wichtigster Schweizer ICT-Berufsverband) ernennt Kurt Lanz zum Nachfolger von Christian Hunziker; Lanz bringt Erfahrung aus Swisscom, Sunrise, SBB und Economiesuisse mit. Amtsantritt 1. August 2026 – Kontinuität und frischer Impuls im zentralen Trägerverband des Schweizer ICT-Bildungsökosystems, in dem SIZ AG als Prüfungsorganisation verankert ist.",
+        source: "itreseller.ch",
+        url: "https://www.itreseller.ch/Artikel/105371/SwissICT_ernennt_Kurt_Lanz_zum_Geschaeftsfuehrer.html",
+        date: "2026-04-29",
+        category: "Digitale Bildung",
+        addedAt: "2026-05-02",
+      },
+      {
         summary: "swissICT (Mai 2026): '#DIGITUP & Generalversammlung, 5. Mai 2026 Zürich' – swissICT stellt den neuen Geschäftsführer Kurt Lanz vor (Amtsantritt 1. August 2026) und bietet rund 25 Sessions zu KI, Digital Sovereignty und ICT-Bildung; der Anlass markiert den Führungswechsel beim wichtigsten Schweizer ICT-Branchenverband. Als ICT-Prüfungsorganisation im selben Ökosystem profitiert SIZ AG direkt von einem Branchenkalender, der Qualifikationsstandards und Fachkräftebedarf prägt.",
         source: "swissICT",
         url: "https://www.swissict.ch/digitup-gv-2026/",
@@ -2075,6 +2091,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "mindrocket-trading": {
     news: [
       // Neu: 2026-05-02
+      {
+        summary: "propfirmshop.com (März 2026): 'Apex 4.0 dropped in March 2026: Six rules that got deleted overnight' – Detaillierte Analyse der sechs abgeschafften Regeln bei Apex Trader Funding 4.0: MAE-Regel, 5:1-RR-Anforderung, One-Direction-Regel, 7-tägige Mindesthandelsperiode, monatliche Abo-Gebühren und Chart-Reviews entfallen; neue Intraday- und EOD-Drawdown-Optionen. Wochentäglich aktualisiertes Prop-Firm-Verzeichnis bestätigt die führende Stellung von Apex für algorithmische ES-Futures-Strategien – direktes Regelwerk-Update für mindrocket-trading.com.",
+        source: "propfirmshop.com",
+        url: "https://propfirmshop.com/blog/apex-4-0-dropped-in-march-2026-six-rules-that-got-deleted-overnight/",
+        date: "2026-03",
+        category: "Futures & Trading",
+        addedAt: "2026-05-02",
+      },
       {
         summary: "Optimus Futures (2026): 'Best Futures to Trade in 2026' – Umfassender Marktguide für die wichtigsten Futures-Instrumente 2026: ES-Futures bleiben das liquideste Index-Instrument; Micro-Futures (MES, MNQ) gelten als vollwertige Alternative zu Standard-Kontrakten mit derselben Liquidität; algorithmische Strategien profitieren von konstantem Volumen und engen Spreads. Direkte Marktvalidierung der ES-Fokus-Strategie von Mind Rocket Trading sowie Einsteigerargument für Micro-ES-Konten.",
         source: "Optimus Futures",
@@ -10615,6 +10639,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "learnfluencer": {
     news: [
       // Neu: 2026-05-02
+      {
+        summary: "forumbd.de (2026): 'Das Forum Bildung Digitalisierung auf der LEARNTEC 2026' – Das Forum Bildung Digitalisierung präsentiert sich an der LEARNTEC 2026 (5.–7. Mai, Karlsruhe) mit zwei Panel-Diskussionen zur schulischen KI-Strategie auf der school@LEARNTEC Spotlight Stage sowie eigenem Stand (M30, Halle 2); Keynote von Board-Mitglied Raph Müller-Eiselt: 'And now also AI?!' – KI als zwingende Schulentwicklungsaufgabe. Institutionelle NGO-Präsenz für KI-Bildung stärkt das gesellschaftliche Diskursfeld rund um Lernkompetenz und digitale Transformation – direktes Thought-Leadership-Umfeld für learnfluencer.ch.",
+        source: "forumbd.de",
+        url: "https://www.forumbd.de/blog/das-forum-bildung-digitalisierung-auf-der-learntec-2026/",
+        date: "2026-04",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-05-02",
+      },
       {
         summary: "presseportal.de (29. April 2026): 'LEARNTEC 2026 startet am 5. Mai in Karlsruhe – Fokus auf DigitalPakt 2.0, KI und immersive Lernwelten' – Europas grösste Fachmesse für digitale Bildung (5.–7. Mai 2026) mit über 350 Ausstellern; Schwerpunkte: KI in Berufs- und Weiterbildung, DigitalPakt Schule 2.0 und immersive Lerntechnologien (XR, Metaverse); neue Formate wie 'Innovation Island' und kostenlose Masterclasses zu Trend-Themen. Institutionalisiertes europäisches Signal für KI in der Bildung schafft Thought-Leadership-Kontext – direktes Positionierungsumfeld für learnfluencer.ch.",
         source: "presseportal.de",
