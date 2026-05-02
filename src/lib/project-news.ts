@@ -2032,6 +2032,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 2026-05-02
+      {
+        summary: "oneuptrader.com (1. Mai 2026): 'S&P 500 Technical Analysis – 1 May 2026' – S&P 500 schloss April 2026 mit neuem ATH bei 7'230.12; Nasdaq schloss bei 25'114.44 (Allzeithoch) – stärkste Monatsperformance seit 2020. Nächste Unterstützungszone bei 7'100–7'130. Longs favorisieren den Trend, aber auf aktuellem Level wird Nachjagen weniger attraktiv. FOMC-Entscheid am 6. Mai 2026 und Nahost-Entwicklungen als Schlüsselkatalysatoren. Persistente Aufwärtsdynamik mit flachen Korrekturen setzt Massstab für algorithmische ES-Futures-Strategien – direktes Marktumfeld für mindrocket-trading.com.",
+        source: "oneuptrader.com",
+        url: "https://blog.oneuptrader.com/analysis/technical-analysis/sp-500-technical-analysis-1-may-2026/",
+        date: "2026-05-01",
+        category: "Futures & Trading",
+        addedAt: "2026-05-02",
+      },
+      {
+        summary: "liquidityfinder.com (30. Januar 2026): 'NinjaTrader Launches Futures Trading in Europe Via Payward Europe Digital Solutions' – NinjaTrader startete am 30. Januar 2026 Futures-Trading für europäische Kunden via Payward Europe Digital Solutions (Krakens CySEC-regulierte Einheit); Launch zunächst in Niederlande und Deutschland, Frankreich und Italien folgen später 2026. EU-Expansion öffnet den europäischen Retail-Futures-Markt für NinjaTrader/Kraken-Kunden – neues Wettbewerbs- und Marktumfeld für algorithmische ES-Futures-Angebote wie mindrocket-trading.com.",
+        source: "liquidityfinder.com",
+        url: "https://liquidityfinder.com/news/ninjatrader-launches-futures-trading-in-europe-via-payward-europe-digital-solutions-f0973",
+        date: "2026-01-30",
+        category: "Trading-Technologie",
+        addedAt: "2026-05-02",
+      },
       // Neu: 2026-05-01
       {
         summary: "CNBC (29. April 2026): 'Warsh clears Senate Banking Committee – Fed Chair Transition steht unmittelbar bevor' – Senat-Bankenausschuss bestätigte Kevin Warshs Nominierung als nächster Fed-Chef entlang Parteilinien (13 Republikaner dafür, 11 Demokraten dagegen); vollständige Senatsabstimmung in der Woche des 11. Mai erwartet; Bestätigung vor Powells Amtsende am 15. Mai möglich. Warshs potenzielle 'Regime-Change'-Agenda schafft erhöhte Makro-Volatilität für ES-Futures-Positioning – direktes Marktumfeld für mindrocket-trading.com.",
@@ -5361,6 +5378,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 2026-05-02
+      {
+        summary: "ad-hoc-news.de (2026): 'Psychische Gesundheit: Prävention wird zum Megatrend 2026' – Unternehmen und Institutionen setzen 2026 verstärkt auf mentale Prävention: Resilienztraining, KI-gestützte Tools und strukturierte BGM-Programme; psychische Gesundheit avanciert zum strategischen Unternehmensziel; der Trend übertrifft somatische Gesundheitsprogramme. Makro-Trend zu institutionalisierter Prävention psychischer Erkrankungen schafft wachsendes Marktumfeld für skalierbare Präventionsprogramme – direktes Nachfrageumfeld für hypnovital®-BGM-Angebote.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/psychische-gesundheit-praevention-wird-zum-megatrend-2026/69142710",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-02",
+      },
+      {
+        summary: "healthymind.ch (2026): 'Hypnose und Wissenschaft – Studien bestätigen die Wirksamkeit der Hypnosetherapie' – Über 200 empirische Studien belegen die Wirksamkeit klinischer Hypnose; Studien der Universität Zürich und Stanford University zeigen messbare Schmerzreduktion; besonders wirksam bei Angst- und Belastungsstörungen, psychosomatischen Problemen und Schlafstörungen. Wachsende wissenschaftliche Evidenz stärkt das gesellschaftliche Vertrauen in Hypnose als Methode – direkter Glaubwürdigkeitsrückhalt für hypnovital®-Audio-Programme.",
+        source: "healthymind.ch",
+        url: "https://healthymind.ch/hypnose-und-wissenschaft/",
+        date: "2026-04",
+        category: "Hypnose & Coaching",
+        addedAt: "2026-05-02",
+      },
       // Neu: 2026-05-01
       {
         summary: "Gesundheitsförderung Schweiz (2026): 'Lernendenbefragung zeigt: Die Berufslehre fördert die psychische Gesundheit stark, Belastungen müssen noch besser abgeholt werden' – Nationale Studie mit 45'000 befragten Lernenden: Über 80 % geht es in der Ausbildung gut oder sehr gut, doch 61 % erleben psychische Probleme – rund die Hälfte dieser Fälle sollte aktiver angegangen werden. Institutionelles Signal für den wachsenden Bedarf an psychischer Gesundheitsförderung im Bildungsumfeld – direktes Marktumfeld für präventive digitale Hypnose-Audio-Programme wie hypnovital® im BGM-Kontext.",
@@ -9320,6 +9354,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 2026-05-02
+      {
+        summary: "healthymind.ch (2026): 'Hypnose und Wissenschaft – Studien bestätigen die Wirksamkeit der Hypnosetherapie' – Über 200 empirische Studien belegen die Wirksamkeit klinischer Hypnose; besonders wirksam bei allen Angst- und Belastungsstörungen sowie psychosomatischen Problemen. Wachsende wissenschaftliche Evidenzlage für Hypnose gegen Angststörungen stärkt die Marktpositionierung für Audio-Hypnose-Produkte – direkter Wirksamkeitsnachweis für lampenfieber-besiegen.de.",
+        source: "healthymind.ch",
+        url: "https://healthymind.ch/hypnose-und-wissenschaft/",
+        date: "2026-04",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-05-02",
+      },
       // Neu: 2026-05-01
       {
         summary: "Heimsoeth Academy (2026): 'Lampenfieber Seminar: Lampenfieber und Redeangst mit mentalen Techniken überwinden!' – Mentale Techniken und Visualisierungsübungen helfen, Lampenfieber dauerhaft zu überwinden; der Ansatz wirkt auf unbewusster Ebene und schafft neue, positive Verhaltensmuster für Auftrittssituationen. Etablierter Seminar-Anbieter setzt auf mentale Methoden und bestätigt die Wirksamkeit unbewusster Konditionierung – validiert den Ansatz von Audio-Hypnose-Produkten wie lampenfieber-besiegen.de.",
@@ -10398,6 +10441,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 2026-05-02
+      {
+        summary: "presseportal.de (29. April 2026): 'LEARNTEC 2026 startet am 5. Mai in Karlsruhe – Fokus auf DigitalPakt 2.0, KI und immersive Lernwelten' – Europas grösste Fachmesse für digitale Bildung (5.–7. Mai 2026) mit über 350 Ausstellern; Schwerpunkte: KI in Berufs- und Weiterbildung, DigitalPakt Schule 2.0 und immersive Lerntechnologien (XR, Metaverse); neue Formate wie 'Innovation Island' und kostenlose Masterclasses zu Trend-Themen. Institutionalisiertes europäisches Signal für KI in der Bildung schafft Thought-Leadership-Kontext – direktes Positionierungsumfeld für learnfluencer.ch.",
+        source: "presseportal.de",
+        url: "https://www.presseportal.de/pm/62644/6265438",
+        date: "2026-04-29",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-05-02",
+      },
+      {
+        summary: "ad-hoc-news.de (29. April 2026): 'LEARNTEC 2026 startet am 5. Mai in Karlsruhe / Fokus auf DigitalPakt 2.0, KI und immersive Lernwelten' – Europas Leitveranstaltung für digitale Bildung; school@LEARNTEC-Sonderprogramm für Schulverantwortliche; Fokus auf praktische KI-Anwendungen in Schule, Berufsbildung und Unternehmensweiterbildung; über 350 Aussteller. LEARNTEC 2026 als Leitindikator für KI-Integrationstrends in Bildung und Weiterbildung – direktes Thought-Leadership-Feld für learnfluencer.ch.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/unterhaltung/boulevard/learntec-2026-startet-am-5-mai-in-karlsruhe-fokus-auf-digitalpakt-2-0/69258747",
+        date: "2026-04-29",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-05-02",
+      },
       // Neu: 2026-05-01
       {
         summary: "Kingfluencers (2026): 'Schweizer Influencer:innen, denen man 2026 folgen sollte' – 81 kuratierte Schweizer Influencer:innen und Content-Creator:innen 2026, die Communities bewegen und Brand-Relevanz schaffen; Fokus auf Creator, die aus Reichweite echte Wirkung machen. Growing Creator Economy in der Schweiz schafft Sichtbarkeits-Ökosystem – direkte Positionierungschance für Thought-Leadership-Plattformen wie learnfluencer.ch.",
@@ -13202,6 +13262,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 2026-05-02
+      {
+        summary: "everlife.ch (2026): 'Was ist eine Kremation?' – Über 80% der Verstorbenen in der Schweiz werden kremiert; Erdbestattungen machen nur noch 10–15% aller Beerdigungen aus; Kremation bietet mehr Gestaltungsspielraum für individuelle Abschiednahme und wird seit Jahrzehnten zunehmend bevorzugt. Kremation als dominante Schweizer Bestattungsform schafft einheitlicheres Marktumfeld für digitale Bestattungsplanung – direktes Marktumfeld für bestattungsplaner.ch.",
+        source: "everlife.ch",
+        url: "https://everlife.ch/de/veroffentlichung/was-ist-eine-kremation/",
+        date: "2026-04",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-05-02",
+      },
+      {
+        summary: "vokuhila-mag.ch (2026): 'Schluss mit Tod schweigen' – Gesellschaftlicher Paradigmenwechsel: Tod und Bestattung werden zunehmend enttabuisiert; jüngere Generationen fordern offene Gespräche über Sterblichkeit, Vorsorge und Bestattungswünsche; Entstigmatisierung wird zur gesellschaftlichen Forderung. Wachsendes gesellschaftliches Bewusstsein für frühzeitige Bestattungsplanung schafft direkten Rückenwind – direktes gesellschaftliches Marktumfeld für bestattungsplaner.ch.",
+        source: "vokuhila-mag.ch",
+        url: "https://vokuhila-mag.ch/schluss-mit-tod-schweigen/",
+        date: "2026-04",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-05-02",
+      },
+      {
+        summary: "wyss-vorsorge.ch (2026): 'Tod & Trauer' – Wyss Vorsorge empfiehlt, Bestattungswünsche frühzeitig schriftlich festzuhalten, um Angehörige im Trauerfall zu entlasten; umfassende Beratung zu Bestattungsart, Kosten und rechtlichen Verfügungen als professioneller Schweizer Anbieter. Institutionalisierte Vorsorgeberatung bestätigt das gesellschaftliche Bedürfnis nach frühzeitiger Bestattungsplanung – direktes Marktumfeld für bestattungsplaner.ch.",
+        source: "wyss-vorsorge.ch",
+        url: "https://www.wyss-vorsorge.ch/service/tod-trauer/",
+        date: "2026-04",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-05-02",
+      },
       // Neu: 2026-05-01
       {
         summary: "20 Minuten (2026): 'Neue Gesetze: Diese Änderungen treten 2026 in der Schweiz in Kraft' – Die Schweiz modernisiert 2026 zahlreiche gesetzliche Rahmenbedingungen: Einführung der freiwilligen e-ID, neue Strassenverkehrsregeln, Anpassungen im Sozialversicherungsbereich. Die schrittweise Digitalisierung staatlicher Prozesse schafft technische und gesellschaftliche Grundlage für digitale Verwaltungsprozesse inklusive digitaler Bestattungsvorsorge – strategischer Rückenwind für bestattungsplaner.ch.",
