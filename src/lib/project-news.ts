@@ -26,6 +26,23 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 2026-05-02
+      {
+        summary: "cmm360.ch (2026): 'KI 2026: Innovation trifft Pragmatismus' – 2026 tritt KI in ihre industrielle Phase: von der experimentellen Standalone-Funktion zur Grundlage vieler Arbeitsbereiche; Fokus liegt nicht mehr auf Einführung, sondern auf effektivem Management – technisch robust, regulatorisch sicher und strategisch gesteuert. Wachsende KI-Kompetenzanforderungen an Mitarbeitende aller Branchen erhöhen den strukturellen Bedarf nach anerkannten Qualifikationsnachweisen – direktes Wachstumsumfeld für SIZ AG als ICT-Prüfungsorganisation.",
+        source: "cmm360.ch",
+        url: "https://www.cmm360.ch/artikel/ki-2026-innovation-trifft-pragmatismus/",
+        date: "2026-04",
+        category: "Wirtschaft & Digitalisierung",
+        addedAt: "2026-05-02",
+      },
+      {
+        summary: "cmm360.ch (2026): 'Trend 2026: Der neue Kollege heisst KI' – Digitale Arbeitskräfte sichern Wissen in der Fertigung und im Kundenservice; Qualifikationsanforderungen an Mitarbeitende steigen durch KI-Integration in alle Geschäftsbereiche; die Qualifikationslücke wächst strukturell. Steigende KI-getriebene Kompetenzanforderungen schaffen anhaltenden Bedarf nach anerkannten ICT-Kompetenznachweisen – direktes Marktumfeld für SIZ AG als Schweizer Prüfungsorganisation.",
+        source: "cmm360.ch",
+        url: "https://www.cmm360.ch/newsflash/trend-2026-der-neue-kollege-heisst-ki/",
+        date: "2026-04",
+        category: "Arbeitsmarkt & IT",
+        addedAt: "2026-05-02",
+      },
       // Neu: 2026-05-01
       {
         summary: "computerworld.ch (11. Februar 2026): 'swissICT-Geschäftsführer Christian Hunziker kündigt Rücktritt an' – Christian Hunziker, seit 2018 Geschäftsführer von swissICT (dem grössten Schweizer ICT-Berufsverband), geht aus dringenden persönlichen Gründen per Ende Mai 2026 in Frühpension; sein letzter öffentlicher Auftritt findet am 5. Mai 2026 am #DIGITUP/GV in Zürich statt. Der Führungswechsel beim wichtigsten Schweizer ICT-Branchenverband ist ein bedeutsames Industrieereignis – relevanter Kontext für SIZ AG als anerkannte ICT-Prüfungsorganisation im selben Ökosystem.",
@@ -1496,6 +1513,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
+      // Neu: 2026-05-02
+      {
+        summary: "springest.de (2026): '118 Persönlichkeitsentwicklung Seminare, Kurse und Weiterbildungen' – Breites Marktangebot an Präsenz- und Online-Kursen zu Kommunikation, Selbstbewusstsein, Resilienz und Selbstmanagement; wachsende Plattformtransparenz erhöht gesellschaftliche Nachfrage und demokratisiert den Zugang zu Persönlichkeitsentwicklungsformaten im deutschsprachigen Raum. Aktiver Weiterbildungsmarkt für Persönlichkeitsentwicklung schafft stabiles Nachfrageumfeld für Online-Programme wie jene von Mind Rocket GmbH.",
+        source: "springest.de",
+        url: "https://www.springest.de/personliche-entwicklung/personlichkeitsentwicklung",
+        date: "2026-04",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-05-02",
+      },
+      {
+        summary: "myCompetence (2026): 'Persönlichkeitsentwicklung Online-Kurse in TÜV-Rheinland-Qualität' – Führende deutsche Lernplattform bietet über 1.300 E-Learnings zu Persönlichkeitsentwicklung, Kommunikation, Resilienz und Selbstmanagement in zertifizierter Qualität; digitales Lernen wird Standard. Wachsendes Angebot zertifizierter digitaler Lernformate für Persönlichkeitsentwicklung bestätigt die Marktreife und den Bedarf – direktes Wachstumsumfeld für skalierbare Online-Programme wie jene von Mind Rocket GmbH.",
+        source: "mycompetence.de",
+        url: "https://mycompetence.de/online-kurse/persoenlichkeitsentwicklung",
+        date: "2026-04",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-05-02",
+      },
       // Neu: 2026-05-01
       {
         summary: "argumentorik.com (2026): 'Online-Kurs Persönlichkeitsentwicklung' – Strukturierter Online-Kurs mit über 30 praxisorientierten Modulen zu Mindset, Selbstmotivation, Kommunikation und Selbstmanagement; Inhalte basieren auf neurowissenschaftlichen und psychologischen Grundlagen für nachhaltige Veränderung. Wachsende Nachfrage nach strukturierten digitalen Lernformaten für Persönlichkeitsentwicklung validiert den Marktbedarf – direktes Wachstumsumfeld für Mind Rocket GmbH.",
@@ -4431,6 +4465,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 2026-05-02
+      {
+        summary: "Blinkist (2026): 'Die 100 besten Selbsthilfe-Bücher' – Die globale Zusammenfassungsplattform Blinkist verzeichnet 2026 anhaltend hohe Nachfrage nach Selbsthilfe-Inhalten; Selbsthilfe gehört zu den meistgenutzten Kategorien der Plattform weltweit; persönliche Entwicklung, Resilienz und Mindset-Training bleiben Top-Themen. Stabile Massenmarkt-Nachfrage nach kompakten Selbsthilfe-Inhalten in digitaler Form bestätigt das Marktpotenzial für praxisnahe digitale Werkzeuge wie mindtools.ch.",
+        source: "blinkist.com",
+        url: "https://www.blinkist.com/en/content/topics/self-help-en",
+        date: "2026-04",
+        category: "Buchmarkt & Publishing",
+        addedAt: "2026-05-02",
+      },
+      {
+        summary: "gedankenwohnung.de (2026): 'Die besten Selbsthilfe-Bücher für mentale Gesundheit' – Evidenzbasierte Buchempfehlungen zu Resilienz, Selbstfürsorge und Kognition für Alltag und persönliche Entwicklung; wachsende Bedeutung von Bibliotherapie als niederschwelligem Zugang zu mentaler Gesundheit. Gesellschaftlicher Trend zu kompakten, zugänglichen mentalen Hilfsmitteln und Selbsthilfeformaten stärkt die Positionierung von mindtools.ch als digitale Werkzeugkiste für persönliche Entwicklung.",
+        source: "gedankenwohnung.de",
+        url: "https://gedankenwohnung.de/selbsthilfebuecher/",
+        date: "2026-04",
+        category: "Mental Health",
+        addedAt: "2026-05-02",
+      },
       // Neu: 2026-05-01
       {
         summary: "Seadreamer (2026): 'Mindfulness Practices Trends to Watch in 2026' – KI-gestützte Personalisierung von Meditationssessions auf Basis von Echtzeit-Biometrie; Eco-Mindfulness-Programme; 60% der Fortune-500-Unternehmen planen strukturierte Mindfulness-Trainings für Mitarbeitende bis 2026. Stark wachsender globaler Markt für digitale Mindfulness- und Mental-Health-Tools schafft nachhaltiges Nachfrageumfeld für kompakte mentale Werkzeugsammlungen wie mindtools.ch.",
@@ -7271,6 +7322,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 2026-05-02
+      {
+        summary: "ad-hoc-news.de (2026): 'Produktivität 2026: Mehr Entscheidungskraft, weniger To-Do-Listen' – 2026 bringt einen Paradigmenwechsel: Statt neuer Apps und endloser Aufgabenlisten steht bewusste Entscheidungskompetenz im Fokus; 'Was ist gerade am wichtigsten für meine Ziele?' ersetzt 'Wie erledige ich alles?'; Energie vor Zeit, Tiefe vor Quantität. Trend zu intentionaler, zielgebundener Priorisierung bestätigt die Relevanz methodischer Planungsframes – direktes Marktumfeld für den 12wy-planner als Werkzeug bewusster Quartalsplanung nach der 12-Week-Year-Methode.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/produktivitaet-2026-mehr-entscheidungskraft-weniger-to-do-listen/68486226",
+        date: "2026-04",
+        category: "Produktivität & Planung",
+        addedAt: "2026-05-02",
+      },
+      {
+        summary: "ad-hoc-news.de (2026): 'Tagesplanung 2026: Schluss mit starren To-Do-Listen' – Starre Tagespläne und lineare To-Do-Listen gelten 2026 als überholt; effektive Planung orientiert sich an Energie, persönlichen Fokusphasen und dem Big Picture der eigenen Quartalsziele; eine kritische Aufgabe pro Tag schlägt viele kleine Punkte. Überwindung starrer Planung zugunsten zielorientierter Quartalsrhythmen bestätigt den methodischen Kern der 12-Week-Year-Methode – direktes Marktumfeld für den 12wy-planner.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/tagesplanung-2026-schluss-mit-starren-to-do-listen/68543253",
+        date: "2026-04",
+        category: "Produktivität & Planung",
+        addedAt: "2026-05-02",
+      },
       // Neu: 2026-05-01
       {
         summary: "TechRadar (2026): 'Best Objectives and Key Results (OKR) software of 2026' – Umfassender Vergleich führender OKR-Plattformen 2026: Spezialisierte Nischen-Tools für spezifische Methoden (wie 12 Week Year) fehlen in der Marktübersicht. OKR-Markt wächst stark, bietet aber kaum Lösungen speziell für das 12-Wochen-Zyklus-Modell – direktes Alleinstellungsmerkmal des 12wy-planners als dediziertes Planungstool für die 12-Week-Year-Methode.",
@@ -8399,6 +8467,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 2026-05-02
+      {
+        summary: "DocMedicus Gesundheits-Lexikon (2026): 'Vorzeitiger Samenerguss (Ejaculatio praecox) – Medikamentöse Therapie' – Übersicht medikamentöser Optionen: SSRIs (Dapoxetin, On-demand), topische Anästhetika und PDE5-Hemmer; multimodaler Therapieansatz kombiniert medikamentöse mit psychologischen Methoden; psychologische Auslöser spielen in der Mehrzahl der Fälle eine zentrale Rolle. Breites medizinisches Therapiespektrum mit expliziter Nennung psychologischer Ansätze schafft direktes Marktumfeld für Hypnose-Selbsthilfe als komplementäre Option – direkte Positionierungschance für orgasmus-hinauszoegern.de.",
+        source: "gesundheits-lexikon.com",
+        url: "https://www.gesundheits-lexikon.com/Sexualitaet-Partnerschaft/Vorzeitiger-Samenerguss-Ejaculatio-praecox/Medikamentoese-Therapie",
+        date: "2026-04",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-05-02",
+      },
+      {
+        summary: "Der Niedergelassene Arzt (2026): 'Ejaculatio praecox – Ursachen, Diagnostik und Behandlungsmöglichkeiten' – Fachinformation für niedergelassene Ärzte: Ejaculatio praecox hat überwiegend psychologische Auslöser; multimodaler Behandlungsansatz aus Verhaltenstherapie, Medikamenten und psychologischer Unterstützung als aktuelle Leitlinie; Selbsthilfeoptionen als ergänzende Massnahme empfohlen. Institutionalisiertes Fachwissen über psychologische Ursachen stärkt das Marktumfeld für psychologisch-basierte Selbsthilfe-Produkte wie Hypnose-Audios – direktes Wirksamkeitsumfeld für orgasmus-hinauszoegern.de.",
+        source: "der-niedergelassene-arzt.de",
+        url: "https://www.der-niedergelassene-arzt.de/medizin-und-forschung/details/ejaculatio-praecox-ursachen-diagnostik-und-behandlungsmoeglichkeiten/1",
+        date: "2026-04",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-05-02",
+      },
       // Neu: 2026-05-01
       {
         summary: "euronews.com (17. Januar 2026): 'Not just a young man's game: male sexual desire soars until middle age' – Neue Forschung zeigt, dass männliches sexuelles Interesse und Verlangen bis ins mittlere Alter (40+) oft anhält oder zunimmt; der Mythos, Sexualität sei primär ein Thema junger Männer, wird wissenschaftlich widerlegt. Wachsendes wissenschaftliches Interesse an männlicher Sexualgesundheit über alle Altersgruppen hinweg validiert den breiten Marktbedarf für Selbsthilfe-Produkte zur Sexualitätskontrolle wie orgasmus-hinauszoegern.de.",
@@ -12137,6 +12222,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 2026-05-02
+      {
+        summary: "deutsche-startups.de (26. Februar 2026): 'Diese Marketing-Tools sollten Gründer:innen kennen' – Überblick über essenzielle Marketing-Tools für Startups und Gründer:innen 2026: SEO-Tools, Social Media, Content-Erstellung und strategische Planungstools; strukturiertes Vorgehen mit klarer Zielgruppen- und Wettbewerbsanalyse als unerlässliches Fundament. Wachsende Gründerszene mit steigendem Bedarf an einsteigerfreundlichen, geführten Marketingkonzept-Tools – direktes Marktumfeld für das interaktive Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "deutsche-startups.de",
+        url: "https://www.deutsche-startups.de/2026/02/26/diese-marketing-tools-sollten-gruenderinnen-kennen/",
+        date: "2026-02-26",
+        category: "Marketing-Tools & Software",
+        addedAt: "2026-05-02",
+      },
+      {
+        summary: "jens.marketing (2026): 'KI im Marketing: Strategie, Tools und Umsetzung (2026)' – Umfassender Praxisguide zur KI-Integration in Marketingprozesse: Strategieentwicklung, Tool-Auswahl und Umsetzung; Kernbotschaft: Ohne klares Marketingkonzept und Strategie bleibt jeder KI-Einsatz wirkungslos. Bestätigt die strategische Notwendigkeit strukturierter Marketingplanung (PESTEL, SWOT, 7P, Budget, KPIs) als Fundament für jeden KI-Einsatz – direktes Marktargument für das interaktive Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "jens.marketing",
+        url: "https://jens.marketing/ki-im-marketing-strategie-tools-und-umsetzung-2026/",
+        date: "2026-04",
+        category: "MarTech & Trends",
+        addedAt: "2026-05-02",
+      },
       // Neu: 2026-05-01
       {
         summary: "ZHAW Institut für Marketing Management (28. Mai 2026): 'Swiss MarTech Summit 2026' – Der Swiss MarTech Summit findet am 28. Mai 2026 an der ZHAW Winterthur statt; Schwerpunkte: KI-Agenten in der Content-Produktion (Keynote: Jonathan Fearns, Accenture), Reinvention des Marketings durch KI-Automatisierung; erstmals wird der Swiss MarTech Award 2026 vergeben. Institutionalisierter Schweizer MarTech-Dialog stärkt Nachfrage nach strukturierten Marketing-Planungstools – direktes Wachstumsumfeld für das Marketingkonzept-Tool auf learnfluencer.ch.",
