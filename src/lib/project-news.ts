@@ -28,6 +28,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-02
       {
+        summary: "swissICT (Mai 2026): '#DIGITUP & Generalversammlung, 5. Mai 2026 Zürich' – swissICT stellt den neuen Geschäftsführer Kurt Lanz vor (Amtsantritt 1. August 2026) und bietet rund 25 Sessions zu KI, Digital Sovereignty und ICT-Bildung; der Anlass markiert den Führungswechsel beim wichtigsten Schweizer ICT-Branchenverband. Als ICT-Prüfungsorganisation im selben Ökosystem profitiert SIZ AG direkt von einem Branchenkalender, der Qualifikationsstandards und Fachkräftebedarf prägt.",
+        source: "swissICT",
+        url: "https://www.swissict.ch/digitup-gv-2026/",
+        date: "2026-05-05",
+        category: "Arbeitsmarkt & IT",
+        addedAt: "2026-05-02",
+      },
+      {
         summary: "cmm360.ch (2026): 'KI 2026: Innovation trifft Pragmatismus' – 2026 tritt KI in ihre industrielle Phase: von der experimentellen Standalone-Funktion zur Grundlage vieler Arbeitsbereiche; Fokus liegt nicht mehr auf Einführung, sondern auf effektivem Management – technisch robust, regulatorisch sicher und strategisch gesteuert. Wachsende KI-Kompetenzanforderungen an Mitarbeitende aller Branchen erhöhen den strukturellen Bedarf nach anerkannten Qualifikationsnachweisen – direktes Wachstumsumfeld für SIZ AG als ICT-Prüfungsorganisation.",
         source: "cmm360.ch",
         url: "https://www.cmm360.ch/artikel/ki-2026-innovation-trifft-pragmatismus/",
@@ -2067,6 +2075,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "mindrocket-trading": {
     news: [
       // Neu: 2026-05-02
+      {
+        summary: "Optimus Futures (2026): 'Best Futures to Trade in 2026' – Umfassender Marktguide für die wichtigsten Futures-Instrumente 2026: ES-Futures bleiben das liquideste Index-Instrument; Micro-Futures (MES, MNQ) gelten als vollwertige Alternative zu Standard-Kontrakten mit derselben Liquidität; algorithmische Strategien profitieren von konstantem Volumen und engen Spreads. Direkte Marktvalidierung der ES-Fokus-Strategie von Mind Rocket Trading sowie Einsteigerargument für Micro-ES-Konten.",
+        source: "Optimus Futures",
+        url: "https://optimusfutures.com/blog/best-futures-to-trade/",
+        date: "2026-04",
+        category: "Futures & Trading",
+        addedAt: "2026-05-02",
+      },
+      {
+        summary: "TraderVPS (2026): '5 Key APIs for Algorithmic Futures Trading 2026' – Überblick über die wichtigsten APIs für algorithmischen Futures-Handel, darunter NinjaTrader-kompatible Schnittstellen; wachsende Retail-Nachfrage nach systematisierten, automatisierten Handelslösungen; NinjaTrader-Ecosystem bleibt führende Infrastruktur. Steigende Marktnachfrage nach algorithmischen Ansätzen stärkt die Positionierung von Mind Rocket Trading als NinjaTrader-basiertem Anbieter.",
+        source: "TraderVPS",
+        url: "https://www.tradervps.com/blog/key-apis-algo-futures-trading",
+        date: "2026-04",
+        category: "Trading-Technologie",
+        addedAt: "2026-05-02",
+      },
+      {
+        summary: "trading.ch (2026): 'Steuern auf Trading-Gewinne in der Schweiz – Praxisleitfaden' – Kapitalgewinne aus Futures sind für Privatpersonen in der Schweiz grundsätzlich steuerfrei; Einstufung als gewerbsmässiger Händler nach Kreisschreiben 36 ist die entscheidende Grenze; konkrete Kriterien für Privatanleger klar dargestellt. Steuerfreiheit für private Futures-Trader in der Schweiz ist ein starkes Vermarktungsargument für die Schweizer Zielgruppe von Mind Rocket Trading.",
+        source: "trading.ch",
+        url: "https://trading.ch/anleitungen/steuern/",
+        date: "2026-03",
+        category: "Regulierung",
+        addedAt: "2026-05-02",
+      },
       {
         summary: "oneuptrader.com (1. Mai 2026): 'S&P 500 Technical Analysis – 1 May 2026' – S&P 500 schloss April 2026 mit neuem ATH bei 7'230.12; Nasdaq schloss bei 25'114.44 (Allzeithoch) – stärkste Monatsperformance seit 2020. Nächste Unterstützungszone bei 7'100–7'130. Longs favorisieren den Trend, aber auf aktuellem Level wird Nachjagen weniger attraktiv. FOMC-Entscheid am 6. Mai 2026 und Nahost-Entwicklungen als Schlüsselkatalysatoren. Persistente Aufwärtsdynamik mit flachen Korrekturen setzt Massstab für algorithmische ES-Futures-Strategien – direktes Marktumfeld für mindrocket-trading.com.",
         source: "oneuptrader.com",
@@ -7324,6 +7356,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-02
       {
+        summary: "Superframeworks (2026): 'Most Profitable Micro SaaS Niches in 2026' – Produktivitäts- und Planungstools gehören zu den profitabelsten Micro-SaaS-Kategorien 2026; der Markt wächst von $15,7 Mrd. (2024) auf $59,6 Mrd. (2030) bei jährlich ~30%; Nischenfokus mit klar definierter Buyer-Persona ist der entscheidende Erfolgsfaktor. Ideale Marktbedingungen für fokussierte Nischen-Planungstools wie den 12wy-planner als methodenspezifisches SaaS-Produkt.",
+        source: "superframeworks.com",
+        url: "https://superframeworks.com/articles/profitable-micro-saas-niches",
+        date: "2026-04",
+        category: "SaaS & Tools",
+        addedAt: "2026-05-02",
+      },
+      {
+        summary: "MyPAPlanner (März 2026): 'Best Business Planners for 2026: Compared and Reviewed' – Vergleich führender Business-Planner 2026: Quartalsbasierte Formate mit Weekly Reviews und Big-Three-Fokus dominieren; dedizierte digitale Tools für die 12-Week-Year-Methode fehlen im gesamten Marktüberblick vollständig. Das Fehlen digitaler Nischen-Tools für die 12-Wochen-Methode bestätigt die Marktlücke des 12wy-planners als methodenspezifische SaaS-Lösung.",
+        source: "mypaplanner.com",
+        url: "https://www.mypaplanner.com/blog/2026/3/28/best-business-planners-for-2026-compared-and-reviewed",
+        date: "2026-03-28",
+        category: "Produktivität & Planung",
+        addedAt: "2026-05-02",
+      },
+      {
+        summary: "12week-breakthrough.com (2026): '12-Week Year Tools, Templates & Planners: The Definitive Guide' – Umfassender Guide zu Tools und Plannern für die 12-Week-Year-Methode 2026; die fünf Methoden-Säulen (Vision, Ziele, Ausführungsplan, Zeitnutzung, Messung/Accountability) erfordern bisher Kombinationen aus mehreren verschiedenen Tools. Anhaltender Bedarf nach einer integrierten Lösung für alle fünf Säulen in einem Tool bestätigt die Alleinstellungsposition des 12wy-planners.",
+        source: "12week-breakthrough.com",
+        url: "https://12week-breakthrough.com/12-week-year-tools/",
+        date: "2026-04",
+        category: "12 Week Year Methode",
+        addedAt: "2026-05-02",
+      },
+      {
         summary: "ad-hoc-news.de (2026): 'Produktivität 2026: Mehr Entscheidungskraft, weniger To-Do-Listen' – 2026 bringt einen Paradigmenwechsel: Statt neuer Apps und endloser Aufgabenlisten steht bewusste Entscheidungskompetenz im Fokus; 'Was ist gerade am wichtigsten für meine Ziele?' ersetzt 'Wie erledige ich alles?'; Energie vor Zeit, Tiefe vor Quantität. Trend zu intentionaler, zielgebundener Priorisierung bestätigt die Relevanz methodischer Planungsframes – direktes Marktumfeld für den 12wy-planner als Werkzeug bewusster Quartalsplanung nach der 12-Week-Year-Methode.",
         source: "ad-hoc-news.de",
         url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/produktivitaet-2026-mehr-entscheidungskraft-weniger-to-do-listen/68486226",
@@ -8469,6 +8525,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-02
       {
+        summary: "ad-hoc-news.de (2026): 'Hypnose wird 2026 zum Mainstream-Tool gegen Stress' – Wissenschaft bestätigt: Hypnose moduliert nachweislich die Amygdala-Aktivität und ermöglicht schnelle Neuverdrahtung von Stressreaktionen; erste Krankenkassen zeigen Offenheit; lange Wartezeiten im Gesundheitssystem machen kurze, wirksame Selbsthilfe-Interventionen attraktiver. Gesellschaftliche Akzeptanz von Hypnose als Selbsthilfe-Werkzeug stärkt die Glaubwürdigkeit und das Suchvolumen für ergänzende Produkte wie orgasmus-hinauszoegern.de.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/hypnose-wird-2026-zum-mainstream-tool-gegen-stress/68477939",
+        date: "2026-04",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-05-02",
+      },
+      {
         summary: "DocMedicus Gesundheits-Lexikon (2026): 'Vorzeitiger Samenerguss (Ejaculatio praecox) – Medikamentöse Therapie' – Übersicht medikamentöser Optionen: SSRIs (Dapoxetin, On-demand), topische Anästhetika und PDE5-Hemmer; multimodaler Therapieansatz kombiniert medikamentöse mit psychologischen Methoden; psychologische Auslöser spielen in der Mehrzahl der Fälle eine zentrale Rolle. Breites medizinisches Therapiespektrum mit expliziter Nennung psychologischer Ansätze schafft direktes Marktumfeld für Hypnose-Selbsthilfe als komplementäre Option – direkte Positionierungschance für orgasmus-hinauszoegern.de.",
         source: "gesundheits-lexikon.com",
         url: "https://www.gesundheits-lexikon.com/Sexualitaet-Partnerschaft/Vorzeitiger-Samenerguss-Ejaculatio-praecox/Medikamentoese-Therapie",
@@ -9440,6 +9504,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "lampenfieber": {
     news: [
       // Neu: 2026-05-02
+      {
+        summary: "die-medientrainer.de (März 2025): 'Lampenfieber neu gedacht' – Aktuelle Hirnforschung auf Auftrittsangst angewendet: dreigliedrige Strategie aus Benennen statt Unterdrücken, Normalisieren der Emotion und Werte-Fokus statt Selbstfokus; wissenschaftlich fundierte Methoden zur Neuprogrammierung der Stressreaktion vor Auftritten. Wachsendes Interesse an praxisnahen, neurowissenschaftlich basierten Methoden validiert den Ansatz von lampenfieber-besiegen.de als evidenzbasiertes Selbsthilfeprodukt.",
+        source: "die-medientrainer.de",
+        url: "https://www.die-medientrainer.de/2025/03/01/lampenfieber-neu-gedacht/",
+        date: "2025-03",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-05-02",
+      },
+      {
+        summary: "die-medientrainer.de (April 2025): 'Lampenfieber einfach wegatmen' – Praxisorientierter Artikel zu Atemtechniken (Nasenatemübungen, 4-7-8-Technik) zur sofortigen Stressreduktion vor Auftritten; Wissenschaft bestätigt: Atemkontrolle aktiviert direkt den Parasympathikus und dämpft sympathische Stressreaktionen. Atemtechniken als einstiegsfreundliche Methode positionieren Hypnose-Audio als vertiefende, längerfristige Ergänzung – stärkt das Gesamtangebot von lampenfieber-besiegen.de.",
+        source: "die-medientrainer.de",
+        url: "https://www.die-medientrainer.de/2025/04/02/lampenfieber-einfach-wegatmen/",
+        date: "2025-04",
+        category: "Psychologie & Forschung",
+        addedAt: "2026-05-02",
+      },
+      {
+        summary: "ad-hoc-news.de (2026): 'Hypnose wird 2026 zum Mainstream-Tool gegen Stress' – Hypnose als Selbsthilfe-Methode gewinnt gesellschaftliche Akzeptanz; erste Unternehmen pilotieren Hypnose-Programme im BGM; Wartezeiten im Gesundheitssystem erhöhen den Bedarf nach schnellen, niederschwelligen Interventionen. Gesellschaftlicher Mainstreaming-Trend für Hypnose erhöht Bekanntheit und Suchvolumen für Hypnose-Audio-Produkte wie lampenfieber-besiegen.de direkt.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/hypnose-wird-2026-zum-mainstream-tool-gegen-stress/68477939",
+        date: "2026-04",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-05-02",
+      },
       {
         summary: "healthymind.ch (2026): 'Hypnose und Wissenschaft – Studien bestätigen die Wirksamkeit der Hypnosetherapie' – Über 200 empirische Studien belegen die Wirksamkeit klinischer Hypnose; besonders wirksam bei allen Angst- und Belastungsstörungen sowie psychosomatischen Problemen. Wachsende wissenschaftliche Evidenzlage für Hypnose gegen Angststörungen stärkt die Marktpositionierung für Audio-Hypnose-Produkte – direkter Wirksamkeitsnachweis für lampenfieber-besiegen.de.",
         source: "healthymind.ch",
@@ -12223,6 +12311,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "marketingplan-software": {
     news: [
       // Neu: 2026-05-02
+      {
+        summary: "Trend Report (März 2026): 'Googles KI-Marketing-Assistent für den Mittelstand – Pomelli geht live' – Google Labs rollte am 9. März 2026 'Pomelli' in über 170 Länder aus: Das Tool analysiert Unternehmenswebseiten, erkennt Markenidentität automatisch und generiert daraus Content und Social-Media-Kampagnen – gezielt für KMU ohne eigene Marketing-Abteilung. Wachsende KI-Marketing-Tool-Landschaft für KMU bestätigt den Bedarf nach strukturierter strategischer Planung (PESTEL, SWOT, Budget) als Grundlage vor dem Tool-Einsatz – direktes Positionierungsargument für das Marketingkonzept-Tool.",
+        source: "trendreport.de",
+        url: "https://trendreport.de/googles-ki-marketing-assistent-fuer-den-mittelstand/",
+        date: "2026-03",
+        category: "MarTech & Trends",
+        addedAt: "2026-05-02",
+      },
       {
         summary: "deutsche-startups.de (26. Februar 2026): 'Diese Marketing-Tools sollten Gründer:innen kennen' – Überblick über essenzielle Marketing-Tools für Startups und Gründer:innen 2026: SEO-Tools, Social Media, Content-Erstellung und strategische Planungstools; strukturiertes Vorgehen mit klarer Zielgruppen- und Wettbewerbsanalyse als unerlässliches Fundament. Wachsende Gründerszene mit steigendem Bedarf an einsteigerfreundlichen, geführten Marketingkonzept-Tools – direktes Marktumfeld für das interaktive Marketingkonzept-Tool auf learnfluencer.ch.",
         source: "deutsche-startups.de",
