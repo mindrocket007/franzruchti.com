@@ -1539,6 +1539,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-02
       {
+        summary: "coachingausbildungen.ch (2026): 'Coaching-Marktanalyse 2025/2026: Welche Trends prägen die deutschsprachige Region?' – Analyse des Schweizer Coaching-Markts: hybride Formate (Online + Präsenz) gewinnen stark an Bedeutung; KI-gestütztes Coaching wächst als neue Kategorie; Professionalisierung und Marktsegmentierung schreiten 2026 voran; Persönlichkeitsentwicklung und Führungskräftecoaching bleiben Kernthemen. Wachsender und sich professionalisierender Coaching-Markt mit hybriden und digitalen Formaten schafft stabiles Nachfrageumfeld – direktes Wachstumsumfeld für skalierbare Online-Programme wie jene von Mind Rocket GmbH.",
+        source: "coachingausbildungen.ch",
+        url: "https://www.coachingausbildungen.ch/coaching-markt-schweiz-trends-2025-2026-analyse/",
+        date: "2026-04",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-05-02",
+      },
+      {
         summary: "springest.de (2026): '118 Persönlichkeitsentwicklung Seminare, Kurse und Weiterbildungen' – Breites Marktangebot an Präsenz- und Online-Kursen zu Kommunikation, Selbstbewusstsein, Resilienz und Selbstmanagement; wachsende Plattformtransparenz erhöht gesellschaftliche Nachfrage und demokratisiert den Zugang zu Persönlichkeitsentwicklungsformaten im deutschsprachigen Raum. Aktiver Weiterbildungsmarkt für Persönlichkeitsentwicklung schafft stabiles Nachfrageumfeld für Online-Programme wie jene von Mind Rocket GmbH.",
         source: "springest.de",
         url: "https://www.springest.de/personliche-entwicklung/personlichkeitsentwicklung",
@@ -2091,6 +2099,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "mindrocket-trading": {
     news: [
       // Neu: 2026-05-02
+      {
+        summary: "PR Newswire / NinjaTrader (Januar 2026): 'NinjaTrader Expands Into Europe to Support the Next Generation of Retail Futures Traders' – NinjaTrader (Teil der Kraken/PINC Group nach $1.5-Mrd.-Akquisition Mai 2025) expandiert im Januar 2026 via Payward Europe Digital Solutions (CySEC-reguliert, MiFID) in den EU-Markt; Start in Niederlanden und Deutschland, danach Frankreich und Italien; europäische Retail-Trader erhalten erstmals Direktzugang zu US-Futures und NinjaTraders vollständiger Algo-Trading-Umgebung (NinjaScript, Order Flow+, Simulated Trading). Regulierter NinjaTrader-Markteintritt in Europa öffnet neue europäische Zielmärkte für ES-Futures-Strategien – direktes Wachstumsumfeld für algorithmische Trading-Angebote wie mindrocket-trading.com.",
+        source: "prnewswire.com / NinjaTrader",
+        url: "https://www.prnewswire.com/news-releases/ninjatrader-expands-into-europe-to-support-the-next-generation-of-retail-futures-traders-302674573.html",
+        date: "2026-01",
+        category: "Trading-Technologie",
+        addedAt: "2026-05-02",
+      },
       {
         summary: "tradeify.co (2026): 'Best Affordable Futures Prop Firms of 2026' – Überblick der günstigsten Prop-Firm-Anbieter 2026 für Futures-Trader: Apex Trader Funding mit Einstiegsgebühren ab $19.90 (90% Rabatt-Aktionen), No-Subscription-Modell ab März 2026 und 100% Gewinnbehalt auf ersten $25K; Markttransparenz wächst durch unabhängige Vergleichsportale. Wachsender Wettbewerb unter günstigen Prop-Firms erhöht die Zugänglichkeit für algorithmische ES-Futures-Strategien und wächst das potenzielle Kundensegment für regelbasierte Trading-Angebote wie mindrocket-trading.com.",
         source: "tradeify.co",
@@ -4539,6 +4555,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-02
       {
+        summary: "Mental Health America (Mai 2026): '2026 Mental Health Month Action Guide' – Jährlicher Aktionsleitfaden von Mental Health America (MHA) für den Mental Health Month Mai 2026; Fokus auf praktische Werkzeuge, Ressourcen und Selbsthilfe-Tools für mentale Gesundheit im Alltag; strukturierter Ansatz zur Integration mentaler Gesundheitspraxis mit konkreten Handlungsanleitungen. Institutionelles Engagement für mentale Gesundheits-Tools und Selbsthilfe stärkt gesellschaftliche Akzeptanz kompakter mentaler Werkzeugsammlungen – direktes Marktumfeld für mindtools.ch.",
+        source: "mhanational.org",
+        url: "https://mhanational.org/2026-mental-health-month-action-guide/",
+        date: "2026-05",
+        category: "Mental Health",
+        addedAt: "2026-05-02",
+      },
+      {
         summary: "Blinkist (2026): 'Die 100 besten Selbsthilfe-Bücher' – Die globale Zusammenfassungsplattform Blinkist verzeichnet 2026 anhaltend hohe Nachfrage nach Selbsthilfe-Inhalten; Selbsthilfe gehört zu den meistgenutzten Kategorien der Plattform weltweit; persönliche Entwicklung, Resilienz und Mindset-Training bleiben Top-Themen. Stabile Massenmarkt-Nachfrage nach kompakten Selbsthilfe-Inhalten in digitaler Form bestätigt das Marktpotenzial für praxisnahe digitale Werkzeuge wie mindtools.ch.",
         source: "blinkist.com",
         url: "https://www.blinkist.com/en/content/topics/self-help-en",
@@ -5502,6 +5526,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "hypnovital": {
     news: [
       // Neu: 2026-05-02
+      {
+        summary: "BBGM Bundesverband Betriebliches Gesundheitsmanagement (8. Januar 2026): 'Gesund ins neue Jahr – unsere BBGM-Schwerpunkte für 2026' – Der führende deutsche BGM-Branchenverband setzt 2026 Schwerpunkte auf psychische Gesundheit, Digitalisierung von BGM-Angeboten, Prävention und skalierbare Interventionen für Unternehmen aller Größen; expliziter Fokus auf niedrigschwellige, messbare Gesundheitsmaßnahmen mit nachweisbarem ROI. BGM-Leitorganisation priorisiert 2026 exakt die Themensäulen, auf denen hypnovital® aufbaut – direktes strategisches Marktumfeld für hypnovital.net.",
+        source: "bbgm.de",
+        url: "https://bbgm.de/blog/2026/01/08/gesund-ins-neue-jahr-unsere-bbgm-schwerpunkte-fuer-2026/",
+        date: "2026-01-08",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-02",
+      },
+      {
+        summary: "ASU Arbeitsmedizin (2026): 'Resilienz statt Burnout: KI unterstützt beim Umgang mit psychischer Belastung' – Medizinisches Fachjournal für Arbeitsmedizin: KI-gestützte digitale Tools werden zunehmend zur Burnout-Prävention und Resilienzstärkung am Arbeitsplatz eingesetzt; smarte Kombination aus digitalen Interventionen und menschlicher Begleitung gilt als wirksamste Präventionsstrategie für psychische Belastung. Institutionelle Anerkennung digitaler KI-Interventionen gegen psychische Belastung schafft Rückenwind für skalierbare digitale Präventionsangebote – direktes Marktumfeld für hypnovital.net.",
+        source: "asu-arbeitsmedizin.com",
+        url: "https://www.asu-arbeitsmedizin.com/praxis/resilienz-statt-burnout-ki-unterstuetzt-beim-umgang-mit-psychischer-belastung",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-02",
+      },
       {
         summary: "ad-hoc-news.de (2026): 'Achtsamkeit wird 2026 zur Kassenleistung' – Achtsamkeitstraining wird in Deutschland 2026 zur anerkannten Kassenleistung (§20 SGB V); Krankenkassen erstatten 80–100% der Kursgebühren für ZPP-zertifizierte Programme; ein achtwöchiges Achtsamkeitstraining wirkt bei Angststörungen ähnlich gut wie Antidepressiva; 37% der Unternehmen haben Achtsamkeits- und Resilienz-Workshops bereits im BGM-Programm. Institutionelle Anerkennung von Achtsamkeitstraining als präventive Gesundheitsleistung stärkt den gesellschaftlichen Rückenwind für hypnovital®-Programme im BGM-Kontext.",
         source: "ad-hoc-news.de",
@@ -7428,6 +7468,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-02
       {
+        summary: "12week-breakthrough.com (2026): 'The Complete 12-Week Year Implementation Guide for 2026' – Vollständiger Implementierungsleitfaden für die 12-Week-Year-Methode 2026: OKR-Mindset (Objectives und Key Results), vier fokussierte 12-Wochen-Zyklen pro Jahr als Alternative zur Jahresplanung, KI-gestütztes Tracking von Leading Indicators für automatisierte Fortschrittsberichte; Rückstände lösen sich in neuen Zyklen auf statt sich über das ganze Jahr zu schleppen. Der meistgelesene Methodenleitfaden zu 12 Week Year 2026 treibt Suchvolumen und Methodennachfrage – direktes Marktumfeld für den 12wy-planner als methodenspezifisches SaaS-Tool.",
+        source: "12week-breakthrough.com",
+        url: "https://12week-breakthrough.com/implementation-guide-2026-12-week-year/",
+        date: "2026-04",
+        category: "12 Week Year Methode",
+        addedAt: "2026-05-02",
+      },
+      {
         summary: "Superframeworks (2026): 'Most Profitable Micro SaaS Niches in 2026' – Produktivitäts- und Planungstools gehören zu den profitabelsten Micro-SaaS-Kategorien 2026; der Markt wächst von $15,7 Mrd. (2024) auf $59,6 Mrd. (2030) bei jährlich ~30%; Nischenfokus mit klar definierter Buyer-Persona ist der entscheidende Erfolgsfaktor. Ideale Marktbedingungen für fokussierte Nischen-Planungstools wie den 12wy-planner als methodenspezifisches SaaS-Produkt.",
         source: "superframeworks.com",
         url: "https://superframeworks.com/articles/profitable-micro-saas-niches",
@@ -8597,6 +8645,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-02
       {
+        summary: "HYPNOS – Zentrum für Hypnose (2026): 'Sexualstörungen mit Hypnose behandeln' – Klinische Übersicht zur Behandlung sexueller Funktionsstörungen (inkl. Ejaculatio praecox) mit Hypnose: tiefenpsychologische Arbeit an unbewussten Ursachen, Integration in multimodale Therapiekonzepte, breite wissenschaftliche Anerkennung klinischer Hypnose für psychosomatische Beschwerden; vorzeitiger Samenerguss als häufigste behandelte Sexualstörung. Führende Hypnose-Fachklinik bestätigt wissenschaftliche Basis hypnosebasierter Behandlung von Ejaculatio praecox – direkter Wirksamkeitsnachweis für orgasmus-hinauszoegern.de.",
+        source: "hypnose-zentrum.com",
+        url: "https://hypnose-zentrum.com/therapiefelder/psychosomatik-und-koerper/sexualstoerungen-mit-hypnose-behandeln/",
+        date: "2026-04",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-05-02",
+      },
+      {
         summary: "ad-hoc-news.de (2026): 'Hypnose wird 2026 zum Mainstream-Tool gegen Stress' – Wissenschaft bestätigt: Hypnose moduliert nachweislich die Amygdala-Aktivität und ermöglicht schnelle Neuverdrahtung von Stressreaktionen; erste Krankenkassen zeigen Offenheit; lange Wartezeiten im Gesundheitssystem machen kurze, wirksame Selbsthilfe-Interventionen attraktiver. Gesellschaftliche Akzeptanz von Hypnose als Selbsthilfe-Werkzeug stärkt die Glaubwürdigkeit und das Suchvolumen für ergänzende Produkte wie orgasmus-hinauszoegern.de.",
         source: "ad-hoc-news.de",
         url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/hypnose-wird-2026-zum-mainstream-tool-gegen-stress/68477939",
@@ -9576,6 +9632,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "lampenfieber": {
     news: [
       // Neu: 2026-05-02
+      {
+        summary: "rampenpfau.de (9. Januar 2026): 'In drei Schritten weg vom Lampenfieber' – Hirnforschungs-basierte dreigliedrige Strategie gegen Auftrittsangst: (1) Emotion benennen statt unterdrücken aktiviert den präfrontalen Kortex, (2) Lampenfieber normalisieren als universelle und evolutionär nützliche Reaktion, (3) Werte-Fokus statt Selbstfokus für authentisches Auftreten; evidenzbasierte Neurowissenschaft als Fundament. Praxisnahe evidenzbasierte Strategien gegen Lampenfieber stärken das Suchvolumen und das inhaltliche Ökosystem – direktes Marktumfeld für lampenfieber-besiegen.de.",
+        source: "rampenpfau.de",
+        url: "https://rampenpfau.de/2026/01/09/in-drei-schritten-weg-vom-lampenfieber/",
+        date: "2026-01-09",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-05-02",
+      },
       {
         summary: "die-medientrainer.de (März 2025): 'Lampenfieber neu gedacht' – Aktuelle Hirnforschung auf Auftrittsangst angewendet: dreigliedrige Strategie aus Benennen statt Unterdrücken, Normalisieren der Emotion und Werte-Fokus statt Selbstfokus; wissenschaftlich fundierte Methoden zur Neuprogrammierung der Stressreaktion vor Auftritten. Wachsendes Interesse an praxisnahen, neurowissenschaftlich basierten Methoden validiert den Ansatz von lampenfieber-besiegen.de als evidenzbasiertes Selbsthilfeprodukt.",
         source: "die-medientrainer.de",
@@ -10687,6 +10751,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "learnfluencer": {
     news: [
       // Neu: 2026-05-02
+      {
+        summary: "Cegos Integrata (2026): 'Die wichtigsten E-Learning-Trends 2026' – Hybride Lernformate (Präsenz + Online), KI-gestützte Personalisierung und Micro-Learning als Top-Trends 2026; bis 2030 sollen über 70% aller Trainings digital erfolgen (2023: 38%); KI ermöglicht adaptive, echtzeitangepasste Lernpfade auf Basis von Lernerdaten. Institutionelle Trendprognose des führenden europäischen Trainingsanbieters positioniert KI-Lernkompetenz als zentrale Zukunftskompetenz – direktes Thought-Leadership-Feld für learnfluencer.ch.",
+        source: "cegos-integrata.de",
+        url: "https://www.cegos-integrata.de/blog/learning-development/digital-learning/die-wichtigsten-e-learning-trends-2026",
+        date: "2026-04",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-05-02",
+      },
+      {
+        summary: "Ministerium für Kultus, Jugend und Sport Baden-Württemberg (2026): Pressemitteilung LEARNTEC 2026 – Offizielles bildungspolitisches Signal: KI-Integration in Schulen als staatliche Schulentwicklungsaufgabe; DigitalPakt Schule 2.0 als struktureller Rahmen für flächendeckende digitale Bildungsinfrastruktur; immersive Lerntechnologien und KI-Lernassistenten als nächste Welle. Bildungspolitische Verankerung von KI-Bildung auf Ministeriumsebene schafft starken institutionellen Rückenwind – direktes Positionierungsumfeld für Thought-Leadership-Plattformen wie learnfluencer.ch.",
+        source: "km.baden-wuerttemberg.de",
+        url: "https://km.baden-wuerttemberg.de/de/service/pressemitteilung/pid/learntec-2026",
+        date: "2026-04",
+        category: "Weiterbildung Schweiz",
+        addedAt: "2026-05-02",
+      },
       {
         summary: "forumbd.de (2026): 'Das Forum Bildung Digitalisierung auf der LEARNTEC 2026' – Das Forum Bildung Digitalisierung präsentiert sich an der LEARNTEC 2026 (5.–7. Mai, Karlsruhe) mit zwei Panel-Diskussionen zur schulischen KI-Strategie auf der school@LEARNTEC Spotlight Stage sowie eigenem Stand (M30, Halle 2); Keynote von Board-Mitglied Raph Müller-Eiselt: 'And now also AI?!' – KI als zwingende Schulentwicklungsaufgabe. Institutionelle NGO-Präsenz für KI-Bildung stärkt das gesellschaftliche Diskursfeld rund um Lernkompetenz und digitale Transformation – direktes Thought-Leadership-Umfeld für learnfluencer.ch.",
         source: "forumbd.de",
@@ -12392,6 +12472,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-02
       {
+        summary: "Bexolutions (2026): 'Marketing-Automation für Schweizer KMU 2026: Tools & ROI' – Marketing-Automation ist 2026 kein Nice-to-have mehr, sondern entscheidender Wettbewerbsvorteil für Schweizer KMU; strukturierte Marketingplanung (Strategie, Zielgruppe, Wettbewerbsanalyse) als notwendiges Fundament für effektiven KI- und Automation-Einsatz; messbare KPIs und ROI-Nachweis als Erfolgskriterium. Schweizer KMU-Markt sucht 2026 aktiv nach strukturierten, ROI-orientierten Marketing-Planungstools – direktes Marktargument für das interaktive Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "bexolutions.ch",
+        url: "https://bexolutions.ch/marketing-automation-fur-schweizer-kmu-2026-tools-roi/",
+        date: "2026-04",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-05-02",
+      },
+      {
         summary: "Trend Report (März 2026): 'Googles KI-Marketing-Assistent für den Mittelstand – Pomelli geht live' – Google Labs rollte am 9. März 2026 'Pomelli' in über 170 Länder aus: Das Tool analysiert Unternehmenswebseiten, erkennt Markenidentität automatisch und generiert daraus Content und Social-Media-Kampagnen – gezielt für KMU ohne eigene Marketing-Abteilung. Wachsende KI-Marketing-Tool-Landschaft für KMU bestätigt den Bedarf nach strukturierter strategischer Planung (PESTEL, SWOT, Budget) als Grundlage vor dem Tool-Einsatz – direktes Positionierungsargument für das Marketingkonzept-Tool.",
         source: "trendreport.de",
         url: "https://trendreport.de/googles-ki-marketing-assistent-fuer-den-mittelstand/",
@@ -13541,6 +13629,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "bestattungsplaner": {
     news: [
       // Neu: 2026-05-02
+      {
+        summary: "Abschied'26 (2026): 'Erste Schweizer Fachmesse für Vorsorge, Pflege und Trauer' – ABSCHIED'26 findet am 29.–30. Oktober 2026 an der Messe Luzern statt; über 60 Aussteller und Partner aus Vorsorge, Bestattung, Pflege und Trauerbegleitung; Fachforum mit Vorträgen und Panel-Diskussionen zu Digitalisierung, Recht und Bestattungskultur; grosses Brancheninteresse bereits ein Jahr vor Durchführung. Erste dedizierte Schweizer Branchenmesse für Bestattungsvorsorge markiert Professionalisierung und institutionelle Reife der Branche – direktes strukturelles Signal für bestattungsplaner.ch.",
+        source: "abschied.swiss",
+        url: "https://www.abschied.swiss",
+        date: "2026-10",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-05-02",
+      },
+      {
+        summary: "todesanzeigenschweiz.ch (2026): 'Was kostet eine Beerdigung in der Schweiz?' – Umfassender Kostenüberblick für Bestattungen in der Schweiz: Gesamtkosten CHF 2'000–10'000+; regionale Kostenunterschiede von bis zu 50x bei Friedhofgebühren zwischen Kantonshauptstädten (Studie 2022); Kremation als günstigste und häufigste Option (>80% aller Bestattungen); fehlende Preistransparenz als gesellschaftliches Problem. Hohe Kostenunterschiede und mangelnde Transparenz erhöhen den gesellschaftlichen Bedarf nach digitalem Preisvergleich und Planungstools – direktes Marktargument für bestattungsplaner.ch.",
+        source: "todesanzeigenschweiz.ch",
+        url: "https://todesanzeigenschweiz.ch/blog/kosten-beerdigung-schweiz/",
+        date: "2026-04",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-05-02",
+      },
       {
         summary: "everlife.ch (2026): 'Was ist eine Kremation?' – Über 80% der Verstorbenen in der Schweiz werden kremiert; Erdbestattungen machen nur noch 10–15% aller Beerdigungen aus; Kremation bietet mehr Gestaltungsspielraum für individuelle Abschiednahme und wird seit Jahrzehnten zunehmend bevorzugt. Kremation als dominante Schweizer Bestattungsform schafft einheitlicheres Marktumfeld für digitale Bestattungsplanung – direktes Marktumfeld für bestattungsplaner.ch.",
         source: "everlife.ch",
