@@ -2092,6 +2092,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-02
       {
+        summary: "tradeify.co (2026): 'Best Affordable Futures Prop Firms of 2026' – Überblick der günstigsten Prop-Firm-Anbieter 2026 für Futures-Trader: Apex Trader Funding mit Einstiegsgebühren ab $19.90 (90% Rabatt-Aktionen), No-Subscription-Modell ab März 2026 und 100% Gewinnbehalt auf ersten $25K; Markttransparenz wächst durch unabhängige Vergleichsportale. Wachsender Wettbewerb unter günstigen Prop-Firms erhöht die Zugänglichkeit für algorithmische ES-Futures-Strategien und wächst das potenzielle Kundensegment für regelbasierte Trading-Angebote wie mindrocket-trading.com.",
+        source: "tradeify.co",
+        url: "https://tradeify.co/post/best-affordable-futures-prop-firms-of-2026",
+        date: "2026-04",
+        category: "Futures & Trading",
+        addedAt: "2026-05-02",
+      },
+      {
+        summary: "elitetraderfunding.app (2026): 'Apex Prop Firm Complete 2026 Review: Elite Trader Funding Comparison' – Vergleich Apex Trader Funding vs. Elite Trader Funding 2026: Apex mit $743 Mio. ausbezahlt seit 2022, 4.4-Sterne-Rating bei 18'000+ Trustpilot-Bewertungen, 100% Gewinnbehalt auf ersten $25K; EOD- und Intraday-Drawdown-Optionen nach Apex 4.0-Relaunch März 2026. Wachsende unabhängige Prop-Firm-Berichterstattung und Markttransparenz stärken das Umfeld für regelbasierte ES-Futures-Strategien – direktes Positionierungsumfeld für mindrocket-trading.com.",
+        source: "elitetraderfunding.app",
+        url: "https://www.elitetraderfunding.app/blog/apex-prop-firm-complete-2026-review-elite-trader-funding-comparison",
+        date: "2026-04",
+        category: "Futures & Trading",
+        addedAt: "2026-05-02",
+      },
+      {
         summary: "propfirmshop.com (März 2026): 'Apex 4.0 dropped in March 2026: Six rules that got deleted overnight' – Detaillierte Analyse der sechs abgeschafften Regeln bei Apex Trader Funding 4.0: MAE-Regel, 5:1-RR-Anforderung, One-Direction-Regel, 7-tägige Mindesthandelsperiode, monatliche Abo-Gebühren und Chart-Reviews entfallen; neue Intraday- und EOD-Drawdown-Optionen. Wochentäglich aktualisiertes Prop-Firm-Verzeichnis bestätigt die führende Stellung von Apex für algorithmische ES-Futures-Strategien – direktes Regelwerk-Update für mindrocket-trading.com.",
         source: "propfirmshop.com",
         url: "https://propfirmshop.com/blog/apex-4-0-dropped-in-march-2026-six-rules-that-got-deleted-overnight/",
@@ -5486,6 +5502,38 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "hypnovital": {
     news: [
       // Neu: 2026-05-02
+      {
+        summary: "ad-hoc-news.de (2026): 'Achtsamkeit wird 2026 zur Kassenleistung' – Achtsamkeitstraining wird in Deutschland 2026 zur anerkannten Kassenleistung (§20 SGB V); Krankenkassen erstatten 80–100% der Kursgebühren für ZPP-zertifizierte Programme; ein achtwöchiges Achtsamkeitstraining wirkt bei Angststörungen ähnlich gut wie Antidepressiva; 37% der Unternehmen haben Achtsamkeits- und Resilienz-Workshops bereits im BGM-Programm. Institutionelle Anerkennung von Achtsamkeitstraining als präventive Gesundheitsleistung stärkt den gesellschaftlichen Rückenwind für hypnovital®-Programme im BGM-Kontext.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/achtsamkeit-wird-2026-zur-kassenleistung/68954207",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-02",
+      },
+      {
+        summary: "ad-hoc-news.de (2026): 'Arbeitsschutz 2026: Psychische Belastung wird zur Hauptgefahr' – Psychische Belastungen entwickeln sich 2026 zur anerkannten Hauptgefahr im Arbeitsschutz; EU-OSHA startet Kampagne 'Healthy Workplaces 2026–2028' mit Fokus auf psychosoziale Risiken; 29% der EU-Beschäftigten leiden unter arbeitsbedingtem Stress, Depressionen oder Angstzuständen; organisatorische Mängel und mentale Beanspruchung gelten als Hauptursachen für Arbeitsunfälle. Neue institutionelle Einordnung psychischer Belastung als primäres Arbeitsschutzthema treibt Nachfrage nach skalierbaren BGM-Präventionsprogrammen – direktes Wachstumsumfeld für hypnovital®.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/arbeitsschutz-2026-psychische-belastung-wird-zur-hauptgefahr/69248888",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-02",
+      },
+      {
+        summary: "ad-hoc-news.de (2026): 'EU startet Kampagne für psychische Gesundheit am Arbeitsplatz' – EU-OSHA lanciert dreijährige Kampagne 'Gemeinsam für psychische Gesundheit am Arbeitsplatz' (2026–2028); Erhebung Oktober 2025: rund 29% der EU-Beschäftigten leiden unter arbeitsbedingtem Stress; die Kampagne fordert Arbeitgeber zur aktiven Prävention psychosozialer Risiken auf, die gleichwertig mit physischen Gefährdungen in die Beurteilung einzubeziehen sind. EU-weite institutionelle Initiative für psychische Gesundheit am Arbeitsplatz schafft strukturellen Rückenwind für BGM-Präventionsangebote wie hypnovital®.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/eu-startet-kampagne-fuer-psychische-gesundheit-am-arbeitsplatz/68462667",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-02",
+      },
+      {
+        summary: "ad-hoc-news.de (2026): 'Arbeitsschutz 2026: Neue Regeln für Sicherheit und Psyche' – Neue Arbeitsschutzregelungen 2026 integrieren psychische Gesundheit als gleichrangige Gefährdung neben physischen Risiken; psychosoziale Gefährdungsbeurteilung nach §5 ArbSchG wird verstärkt behördlich kontrolliert; Unternehmen müssen aktiv handeln, um regulatorische Compliance zu gewährleisten. Wachsende regulatorische Anforderungen schaffen strukturelle Nachfrage nach niedrigschwelligen, skalierbaren BGM-Präventionsprogrammen – direktes Marktumfeld für hypnovital®.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/arbeitsschutz-2026-neue-regeln-fuer-sicherheit-und-psyche/68979127",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-02",
+      },
       {
         summary: "ad-hoc-news.de (2026): 'Psychische Gesundheit: Prävention wird zum Megatrend 2026' – Unternehmen und Institutionen setzen 2026 verstärkt auf mentale Prävention: Resilienztraining, KI-gestützte Tools und strukturierte BGM-Programme; psychische Gesundheit avanciert zum strategischen Unternehmensziel; der Trend übertrifft somatische Gesundheitsprogramme. Makro-Trend zu institutionalisierter Prävention psychischer Erkrankungen schafft wachsendes Marktumfeld für skalierbare Präventionsprogramme – direktes Nachfrageumfeld für hypnovital®-BGM-Angebote.",
         source: "ad-hoc-news.de",
