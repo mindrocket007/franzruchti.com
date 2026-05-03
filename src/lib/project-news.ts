@@ -28,6 +28,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-03
       {
+        summary: "ict-berufsbildung.ch (2026): 'ICT-Regiomeisterschaften 2026' – ICT-Berufsbildung Schweiz führt 2026 die regionalen Berufswettbewerbe für Informatik und Mediamatik durch; Lernende messen ihre praktischen ICT-Kompetenzen in realitätsnahen Aufgaben; Regiomeisterschaften sind Qualifikationsrunde für nationale Berufsmeisterschaften; Wettbewerb fördert sichtbare Auseinandersetzung mit ICT-Berufsbildung in der Öffentlichkeit. Öffentlichkeitswirksame Förderung der ICT-Berufsbildung erhöht die gesellschaftliche Anerkennung von ICT-Zertifizierungen – direktes positives Umfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation.",
+        source: "ict-berufsbildung.ch",
+        url: "https://www.ict-berufsbildung.ch/ict-regiomeisterschaften-2026",
+        date: "2026-04",
+        category: "Digitale Bildung",
+        addedAt: "2026-05-03",
+      },
+      {
+        summary: "ict-berufsbildung.ch (2026): 'Höhere Fachprüfung ICT-Manager 2026' – ICT-Berufsbildung Schweiz kündigt die Höhere Fachprüfung ICT-Manager 2026 an; Qualification auf höchstem HBB-Niveau (NQR 7, Master-Äquivalent); ICT-Manager HFP ist einer der anspruchsvollsten und renommiertesten Abschlüsse in der Schweizer ICT-Bildungslandschaft; hohe Nachfrage nach qualifizierten ICT-Führungspersönlichkeiten bestätigt starken Arbeitsmarkt. Wachsende Nachfrage nach top-qualifizierten ICT-Führungskräften stärkt das gesamte Ökosystem der ICT-Qualifikationen – positives Marktumfeld für SIZ AG als anerkannte Prüfungsorganisation.",
+        source: "ict-berufsbildung.ch",
+        url: "https://www.ict-berufsbildung.ch/hoehere-fachpruefung-ict-manager-2026",
+        date: "2026-04",
+        category: "Arbeitsmarkt & IT",
+        addedAt: "2026-05-03",
+      },
+      {
         summary: "Schweizerische Koordinationsstelle für Bildungsforschung SKBF / SBFI (März 2026): 'Bildungsbericht Schweiz 2026' – Der umfassende Schweizer Bildungsbericht 2026 wurde am 23. März 2026 von Bundespräsident Guy Parmelin entgegengenommen; Berufsbildung bleibt zentraler Bildungsweg auf Sekundarstufe II mit ausgeprägter Arbeitsmarktnähe; BFS prognostiziert 16 Prozent mehr Lernende 2024–2033 mit besonders starkem Wachstum in ICT und Gesundheits-/Sozialwesen; Digitalisierung und neue Kompetenzanforderungen prägen alle Bildungsstufen. Strukturwachstum im ICT-Bildungsbereich und steigende Digitalkompetenz-Anforderungen bestätigen das strategische Marktumfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation.",
         source: "skbf-csre.ch / SBFI",
         url: "https://www.skbf-csre.ch/fileadmin/files/pdf/bildungsberichte/2026/BiBer_2026_DE.pdf",
@@ -2125,6 +2141,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "mindrocket-trading": {
     news: [
       // Neu: 2026-05-03
+      {
+        summary: "propfirmplus.com (2026): 'Algo Trading Futures Prop Firms 2026: What's Allowed and What's Not' – Umfassender Überblick der Automationsrichtlinien bei Futures-Prop-Firms 2026: Fast alle grossen Prop-Firms erlauben semi-automatisierten Handel (ATM-Strategien, Risikomanagement-Skripte); vollautomatisiertes 'Set and Forget' auf funded Accounts ist bei den meisten Firmen (inkl. Apex 4.0) verboten; Apex 4.0 verlangt aktives menschliches Management auf Performance Accounts. Automatisierungslandschaft 2026 begünstigt regelbasierte, human-in-the-loop Strategien wie jene von mindrocket-trading.com mit NinjaScript-basierten ES-Futures-Systemen.",
+        source: "propfirmplus.com",
+        url: "https://propfirmplus.com/algo-trading-on-futures-prop-firms-whats-actually-allowed-in-2026/",
+        date: "2026-04",
+        category: "Trading-Technologie",
+        addedAt: "2026-05-03",
+      },
       {
         summary: "PropFirmApp (2026): '10 Best Futures Prop Firms 2026' – Unabhängiges Vergleichsportal listet die 10 besten Futures-Prop-Firmen 2026; NinjaTrader gewinnt Auszeichnung als #1 Futures-Broker 2026 von BrokerChooser; Markt wächst durch Transparenz und zunehmende Trader-Community; detaillierte Regelwerke, Auszahlungsquoten und Plattformintegration als Entscheidungskriterien. Wachsendes und transparentes Prop-Firm-Ökosystem erhöht die Attraktivität des Futures-Handels für neue Trader – direktes Wachstumsumfeld für algorithmische ES-Futures-Strategien wie mindrocket-trading.com.",
         source: "propfirmapp.com",
@@ -5586,6 +5610,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "hypnovital": {
     news: [
       // Neu: 2026-05-03
+      {
+        summary: "ad-hoc-news.de (2026): 'Burnout-Gefahr 2026: Psychische Belastungen am Arbeitsplatz steigen' – Aktuelle Meldung: Psychische Belastungen und Burnout-Risiken am Arbeitsplatz nehmen 2026 weiter zu; Fachleute warnen vor steigenden Krankheitsausfällen und Produktivitätsverlusten; strukturelle Zunahme psychischer Belastung durch Digitalisierung, Homeoffice und Leistungsdruck; Unternehmen sind gefordert, wirksame Präventionsmassnahmen zu implementieren. Wachsende öffentliche Wahrnehmung der Burnout-Gefahr 2026 schafft direkte Nachfrage nach skalierbaren Burnout-Präventionsprogrammen – Wachstumsumfeld für hypnovital® BGM-Angebote.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/burnout-gefahr-2026-psychische-belastungen-am-arbeitsplatz-steigen/68532499",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-03",
+      },
+      {
+        summary: "bernerbaer.ch (2026): 'Bundesgesundheitsministerium 2026: Warum psychische Gesundheit am Arbeitsplatz jetzt Priorität hat' – Analyse: Psychische Erkrankungen haben sich 2026 zum wichtigsten Einzelfaktor für Arbeitsausfälle entwickelt; steigende Krankheitskosten und Produktivitätsverluste zwingen Unternehmen zum Handeln; BGM-Programme mit wissenschaftlichem Fundament gewinnen an Bedeutung; mentale Gesundheitsförderung rückt von Nice-to-have zur unternehmerischen Pflicht. Politisch und gesellschaftlich wachsende Priorisierung psychischer Gesundheit am Arbeitsplatz schafft strukturellen Rückenwind für hypnovital® BGM-Programme.",
+        source: "bernerbaer.ch",
+        url: "https://bernerbaer.ch/bundesgesundheitsministerium-2026-warum-psychische-gesundheit-am-arbeitsplatz-jetzt-prioritaet-hat/",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-03",
+      },
+      {
+        summary: "hrtoday.ch (2026): 'Betriebliches Gesundheitsmanagement – Moderne Burnout-Prävention für Ihr Unternehmen' – HR-Fachmedium beleuchtet moderne BGM-Ansätze: strukturierte Programme zur Burnout-Prävention zahlen sich betriebswirtschaftlich aus (ROI 3–5 Franken pro investiertem Franken); hybride Arbeitsmodelle erfordern digitale BGM-Lösungen, die alle Mitarbeitenden unabhängig vom Standort erreichen; Kombination aus präventiven und reaktiven Massnahmen als Best Practice. Breite HR-Fachmedien-Deckung bestätigt wachsende Relevanz strukturierter BGM-Angebote – direktes Marktumfeld für die skalierbaren hypnovital® BGM-Programme.",
+        source: "hrtoday.ch",
+        url: "https://www.hrtoday.ch/de/article/betriebliches-gesundheits-management-moderne-burnout-praevention-fuer-ihr-unternehmen",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-03",
+      },
       {
         summary: "gesundheit-heute.ch (2. Mai 2026): 'Burnout – Wenn Stress zur Krankheit wird' – Schweizer Gesundheitsportal berichtet am 2. Mai 2026: Über alle Branchen hinweg geben knapp 30% der Erwerbstätigen erhöhten Stress und Anzeichen von Burnout an; rund ein Drittel der Schweizer Bevölkerung hat in den vergangenen 12 Monaten psychische Probleme erlebt; wirtschaftlicher Schaden durch Stress in der Schweiz: CHF 6,5 Mrd. pro Jahr; strukturelle Zunahme psychischer Belastung als gesellschaftliches Problem. Aktueller Medienecho bestätigt den wachsenden gesellschaftlichen Bedarf nach skalierbaren Burnout-Präventionsprogrammen – direktes Wachstumsumfeld für hypnovital®.",
         source: "gesundheit-heute.ch",
@@ -10872,6 +10920,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-03
       {
+        summary: "swissnova.swiss (2026): 'Weiterbildung für Unternehmen in der Schweiz: 10 Trends für 2026' – Schweizer Weiterbildungsplattform identifiziert 10 Schlüsseltrends für Unternehmensweiterbildung 2026: KI-gestützte Personalisierung, Micro-Learning, hybride Formate, Soft-Skill-Integration und Learning Analytics; Weiterbildung wird zunehmend als strategische Investition statt Kostenpunkt gesehen; KI-Kompetenz als must-have für alle Funktionen; lebenslanges Lernen als Wettbewerbsvorteil. Institutionell bestätigte Weiterbildungstrends 2026 positionieren KI-Lernkompetenz als Kernthema – direktes Thought-Leadership-Feld für learnfluencer.ch.",
+        source: "swissnova.swiss",
+        url: "https://unternehmen.swissnova.swiss/weiterbildung-unternehmen-schweiz-trends-2026/",
+        date: "2026-04",
+        category: "Weiterbildung Schweiz",
+        addedAt: "2026-05-03",
+      },
+      {
         summary: "Digital Engagiert (2026): 'E-Learning in 2026: Trends, Technologien und was sich verändert' – KI verändert E-Learning grundlegend 2026: Lernplattformen analysieren individuelles Lernverhalten und passen Inhalt, Tempo und Schwierigkeitsgrad dynamisch an; bis 2030 sollen über 70% aller Trainings digital erfolgen (2023: 38%); hybride Formate aus Präsenz, Online und Micro-Learning verbreiten sich; Soft Skills rücken gleichwertig neben technische Kompetenzen. Digitale Bildungsplattform positioniert KI-Lernkompetenz als zentrale Zukunftskompetenz 2026 – direktes Thought-Leadership-Feld für learnfluencer.ch.",
         source: "digitalengagiert.de",
         url: "https://www.digitalengagiert.de/e-learning-in-2026-trends-technologien-und-was-sich-veraendert/",
@@ -12601,6 +12657,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-03
       {
+        summary: "bexolutions.ch (2026): 'Marketing-Automation für Schweizer KMU 2026: Tools & ROI' – Schweizer Marketing-Agentur zeigt: Marketing-Automation ist 2026 kein Nice-to-have, sondern entscheidender Wettbewerbsvorteil für KMU; durchschnittlich 6–9 Stunden Zeitersparnis pro Woche; ROI durch Lead-Nurturing, E-Mail-Automatisierung und CRM-Integration nachweisbar; Tool-Auswahl nach Unternehmensgrösse und Zielen empfohlen. Schweizer Marktperspektive bestätigt wachsende Professionalisierung des KMU-Marketings – direktes Wachstumsumfeld für das interaktive Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "bexolutions.ch",
+        url: "https://bexolutions.ch/marketing-automation-fur-schweizer-kmu-2026-tools-roi/",
+        date: "2026-04",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-05-03",
+      },
+      {
+        summary: "kimarketing.ch (2026): 'Die besten KI-Marketing-Tools 2026 für Schweizer KMU – nicht die grösste Liste, sondern die richtige' – Kuratierte Auswahl der effektivsten KI-Marketing-Tools 2026 für Schweizer KMU: Fokus auf Text-/Reasoning-Modelle, Bild-Tools, SEO-Werkzeuge, Workflow-Automations und CMS; maximal 5 Kernwerkzeuge empfohlen; strategische Marketingplanung als Voraussetzung für effektiven Tool-Einsatz. Wachsendes KI-Tool-Ökosystem für KMU-Marketing bestätigt Bedarf nach strukturierten Analyse-Frameworks (PESTEL, SWOT, 5 Forces) – direktes Marktargument für das Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "kimarketing.ch",
+        url: "https://www.kimarketing.ch/beste-ki-marketing-tools-2026-kmu/",
+        date: "2026-04",
+        category: "MarTech & Trends",
+        addedAt: "2026-05-03",
+      },
+      {
         summary: "T2D3 (2026): 'B2B SaaS Marketing OKRs (with template)' – Praxisleitfaden für B2B-SaaS-Marketing mit OKR-Framework: strukturierte Verbindung von Marketingstrategie (Marktanalyse, Zielgruppe, Wettbewerb) mit messbaren KPIs; OKR-Template für Marketing-Teams mit klaren Erfolgskennzahlen; strukturierte strategische Planung als Voraussetzung vor Tool-Einsatz. Wachsender professioneller Standard für datenbasierte, strukturierte Marketingplanung in B2B-SaaS validiert den Bedarf nach interaktiven Marketing-Analyse-Tools wie PESTEL, SWOT und BCG – direktes Marktargument für das Marketingkonzept-Tool auf learnfluencer.ch.",
         source: "t2d3.pro",
         url: "https://www.t2d3.pro/learn/saas-marketing-okr-and-template",
@@ -13767,6 +13839,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "bestattungsplaner": {
     news: [
       // Neu: 2026-05-03
+      {
+        summary: "luzernerzeitung.ch (2026): 'HORW: Die digitalen Bestatter' – Luzerner Zeitung berichtet über den wachsenden Trend digitaler Bestattungsangebote in der Schweiz: Erste Kontakte erfolgen zunehmend digital; Informationssuche und Angebotsvergleich finden online statt; trotz Digitalisierung bleibt persönlicher Kontakt bei der eigentlichen Bestattung zentral; Schweizer Bestattungsunternehmen investieren in digitale Präsenz und Online-Angebote. Bestätigte Digitalisierungstendenz in der Schweizer Bestattungsbranche validiert den Marktbedarf für Online-Planungsportale – direktes Wachstumsumfeld für bestattungsplaner.ch.",
+        source: "luzernerzeitung.ch",
+        url: "https://www.luzernerzeitung.ch/wirtschaft/horw-die-digitalen-bestatter-ld.85302",
+        date: "2026-04",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-05-03",
+      },
       {
         summary: "bestattungsvergleich.de (2026): 'Alternative Bestattungsformen im Überblick' – Umfassende Übersicht alternativer Bestattungsformen: Diamantbestattung, Naturbestattung, Waldbestattung, Seebestattung und weitere ökologische Optionen gewinnen stark an Bedeutung; Trend zu mehr Individualität und ökologischer Nachhaltigkeit auch in der Bestattungsbranche; Informationsbedarf der Bevölkerung steigt stark. Wachsendes Interesse an nicht-traditionellen Bestattungsformen und steigender Informationsbedarf treiben Nachfrage nach transparenten Online-Planungsportalen – direktes Wachstumsumfeld für bestattungsplaner.ch.",
         source: "bestattungsvergleich.de",
