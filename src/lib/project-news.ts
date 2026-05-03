@@ -5627,6 +5627,38 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-03
       {
+        summary: "ad-hoc-news.de (Mai 2026): 'Arbeitsschutz 2026: Neue Regeln, psychische Gesundheit und KI' – Ab Mai 2026 treten bedeutende Änderungen im Arbeitsschutzrecht in Kraft: Neue Schwellenwerte für Sicherheitsbeauftragte, Pflicht zur Gefährdungsbeurteilung psychischer Belastung verschärft; EU AI Act und KI-Sicherheitsschulung integrieren neue Anforderungen; fast 87% der EHS-Fachleute sehen psychische Gesundheit als Kernaufgabe. Neue gesetzliche Pflichten zum psychischen Arbeitsschutz ab Mai 2026 schaffen strukturellen Nachfrageschub für präventive BGM-Lösungen – direktes Wachstumsumfeld für hypnovital® Audio-Programme.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/wirtschaft/arbeitsschutz-2026-neue-regeln-psychische-gesundheit-und-ki/69265961",
+        date: "2026-05",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-03",
+      },
+      {
+        summary: "ad-hoc-news.de (April/Mai 2026): 'Psychische Gesundheit am Arbeitsplatz: Neue Strategien gegen den Burnout' – Experten fordern Systemwechsel weg von individuellen Wellness-Programmen hin zu strukturellen Lösungen: Anpassung von Arbeitsbelastung, Führungskräfte-Schulung und Teamdynamik als wirksame Präventionsansätze; digitale Tools zur Unterstützung kombiniert mit persönlicher Anleitung als Best Practice. Nachfrage nach strukturellen und digitalen BGM-Lösungen bestätigt das Marktpotenzial für skalierbare Audio-basierte Interventionen wie hypnovital®.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/psychische-gesundheit-am-arbeitsplatz-neue-strategien-gegen-den-burnout/69248005",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-03",
+      },
+      {
+        summary: "ad-hoc-news.de (April/Mai 2026): 'Arbeitsschutz 2026: Psychische Belastung rückt in den Fokus' – 881,5 Mio. Krankheitstage in Deutschland 2025; am Welttag Sicherheit und Gesundheit (28. April 2026) stehen psychische Belastungen im Mittelpunkt; Experten fordern systematische Gefährdungsbeurteilung psychischer Belastung als Pflichtmassnahme für alle Betriebe. Wachsender institutioneller Druck auf Unternehmen zur Implementierung psychischer BGM-Massnahmen – direktes Marktumfeld für hypnovital® Firmentrainings und BGM-Audio-Programme.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/arbeitsschutz-2026-psychische-belastung-rueckt-in-den-fokus/69249970",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-03",
+      },
+      {
+        summary: "ad-hoc-news.de (April/Mai 2026): 'Arbeitsschutz in Deutschland: Psychische Belastung wird zur neuen Gefahr' – Analyse: Psychische Erkrankungen führende Ursache für Arbeitsausfälle; traditionelle Arbeitsschutzkonzepte reichen nicht mehr aus; Unternehmen müssen psychischen Arbeitsschutz aktiv gestalten; Prävention und Frühintervention als Schlüsselmassnahmen gefordert. Systemischer Wandel im Arbeitsschutz hin zu psychischer Gesundheitsprävention schafft wachsende Nachfrage nach skalierbaren BGM-Lösungen – Wachstumsumfeld für hypnovital® als digitales BGM-Angebot.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/arbeitsschutz-in-deutschland-psychische-belastung-wird-zur-neuen-gefahr/69254786",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-03",
+      },
+      {
         summary: "ad-hoc-news.de (2026): 'Burnout-Gefahr 2026: Psychische Belastungen am Arbeitsplatz steigen' – Aktuelle Meldung: Psychische Belastungen und Burnout-Risiken am Arbeitsplatz nehmen 2026 weiter zu; Fachleute warnen vor steigenden Krankheitsausfällen und Produktivitätsverlusten; strukturelle Zunahme psychischer Belastung durch Digitalisierung, Homeoffice und Leistungsdruck; Unternehmen sind gefordert, wirksame Präventionsmassnahmen zu implementieren. Wachsende öffentliche Wahrnehmung der Burnout-Gefahr 2026 schafft direkte Nachfrage nach skalierbaren Burnout-Präventionsprogrammen – Wachstumsumfeld für hypnovital® BGM-Angebote.",
         source: "ad-hoc-news.de",
         url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/burnout-gefahr-2026-psychische-belastungen-am-arbeitsplatz-steigen/68532499",
@@ -10951,6 +10983,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "learnfluencer": {
     news: [
       // Neu: 2026-05-03
+      {
+        summary: "SIW Schweizerisches Institut für Weiterbildung (2026): 'dipl. KI Professional – Bau dir deinen eigenen KI-Experten!' – SIW lanciert den Diplomlehrgang 'KI Professional' für Führungskräfte und Fachleute, die KI strategisch einsetzen und eigene KI-Lösungen entwickeln wollen; praxisorientierter Lehrgang mit Fokus auf LLM-Anwendungen, Prompt Engineering und KI-Implementierung im Unternehmenskontext; Teil des wachsenden institutionellen KI-Weiterbildungsangebots in der Schweiz. Neue KI-Qualifizierungsangebote in der Schweiz bestätigen die Nachfrage nach KI-Kompetenzaufbau – direktes Thought-Leadership-Umfeld für learnfluencer.ch.",
+        source: "siw.swiss",
+        url: "https://siw.swiss/lehrgaenge/dipl-ki-professional-2/",
+        date: "2026-04",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-05-03",
+      },
       {
         summary: "swissnova.swiss (2026): 'Weiterbildung für Unternehmen in der Schweiz: 10 Trends für 2026' – Schweizer Weiterbildungsplattform identifiziert 10 Schlüsseltrends für Unternehmensweiterbildung 2026: KI-gestützte Personalisierung, Micro-Learning, hybride Formate, Soft-Skill-Integration und Learning Analytics; Weiterbildung wird zunehmend als strategische Investition statt Kostenpunkt gesehen; KI-Kompetenz als must-have für alle Funktionen; lebenslanges Lernen als Wettbewerbsvorteil. Institutionell bestätigte Weiterbildungstrends 2026 positionieren KI-Lernkompetenz als Kernthema – direktes Thought-Leadership-Feld für learnfluencer.ch.",
         source: "swissnova.swiss",
