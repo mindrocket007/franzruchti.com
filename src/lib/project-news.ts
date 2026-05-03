@@ -7665,6 +7665,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-03
       {
+        summary: "saaswelt.de (2026): 'Micro SaaS als Solopreneur: Warum 2026 das beste Jahr zum Starten ist' – Der Micro-SaaS-Markt wächst jährlich ~30% (von USD 15,70 Mrd. 2024 auf USD 59,60 Mrd. 2030); spezialisierte Nischen-Tools mit spezifischen Methoden erzielen Gewinnmargen bis 80%; niedrige Gemeinkosten und skalierbare Nischenlösungen machen 2026 zum optimalen Eintrittsfenster. Dynamisches Micro-SaaS-Wachstum bestätigt das Marktpotenzial für methodenspezifische Planungstools wie den 12wy-planner.",
+        source: "saaswelt.de",
+        url: "https://www.saaswelt.de/artikel/micro-saas-solopreneur",
+        date: "2026-04",
+        category: "SaaS & Tools",
+        addedAt: "2026-05-03",
+      },
+      {
+        summary: "thunderbit.com (2026): 'SaaS-Markttrends und Statistiken 2026: Die wichtigsten Zahlen' – Globaler SaaS-Markt erreicht 2026 USD 375,57 Mrd., wächst bis 2034 auf USD 1.482 Mrd. (CAGR 18,7%); 75% aller SaaS-Unternehmen implementieren bis 2026 KI-Automatisierung für mindestens einen Kernprozess; Vertikales SaaS wächst 2–3x schneller als horizontales; nutzungsbasierte Preismodelle verdrängen klassische Abonnements. Starkes globales SaaS-Wachstum und KI-Integration schaffen günstiges Marktumfeld für spezialisierte Nischen-SaaS-Tools wie den 12wy-planner.",
+        source: "thunderbit.com",
+        url: "https://thunderbit.com/blog/saas-statistics-market-trends",
+        date: "2026-04",
+        category: "SaaS & Tools",
+        addedAt: "2026-05-03",
+      },
+      {
+        summary: "technica-online.ch (2026): 'Globale SaaS-Trends 2026: Kernbanken & KI im Aufwind' – Schweizer Tech-Fachmagazin analysiert globale SaaS-Markttrends 2026: KI-gestützte SaaS-Lösungen dominieren das Wachstum; Marktvolumen 2026 bei USD 375+ Mrd.; Schweizer Unternehmen investieren verstärkt in Cloud-basierte Software-Dienste. Wachsendes Marktvolumen und KI-Integration im SaaS-Bereich schaffen strukturelles Wachstumsumfeld für spezialisierte Produktivitäts-SaaS-Tools wie den 12wy-planner.",
+        source: "technica-online.ch",
+        url: "https://technica-online.ch/saas-marktwachstum-2026/",
+        date: "2026-04",
+        category: "SaaS & Tools",
+        addedAt: "2026-05-03",
+      },
+      {
         summary: "GainHQ (2026): 'SaaS Product Roadmap 2026: Build, Prioritize, Scale' – Umfassender SaaS-Produktstrategie-Guide 2026: strukturierte Quartalsplanung mit OKR und Roadmap als Kernmethodik für skalierbare SaaS-Produkte; Priorisierungsrahmen für Feature-Entwicklung; Kundenfeedback-Integration in agile Planungszyklen als Industriestandard. Wachsendes institutionelles Interesse an strukturierter Quartals- und Jahresplanung in der SaaS-Branche bestätigt die Nachfrage nach methodenspezifischen Planungstools – direktes Marktumfeld für den 12wy-planner.",
         source: "gainhq.com",
         url: "https://gainhq.com/blog/saas-product-roadmap/",
@@ -12808,6 +12832,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "marketingplan-software": {
     news: [
       // Neu: 2026-05-03
+      {
+        summary: "bitrix24.de (2026): 'Die besten SaaS-Tools, die jedes Unternehmen 2026 nutzen sollte' – Umfassender Überblick der wichtigsten SaaS-Kategorien 2026 für Unternehmen: Kollaborationstools, CRM, Projektmanagement, Marketing-Automatisierung und Analysetools; durchschnittliche Unternehmensausgaben für SaaS bis USD 3'500 pro Mitarbeiter/Jahr; Trend zu All-in-One-Plattformen mit integrierten Analysefunktionen. Wachsendes SaaS-Tool-Ökosystem erhöht den Bedarf nach strukturierten Planungsframeworks (PESTEL, SWOT, BCG) als strategische Grundlage – direktes Wachstumsumfeld für das Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "bitrix24.de",
+        url: "https://www.bitrix24.de/articles/die-besten-saas-tools-die-jedes-unternehmen-nutzen-sollte.php",
+        date: "2026-04",
+        category: "MarTech & Trends",
+        addedAt: "2026-05-03",
+      },
       {
         summary: "bexolutions.ch (2026): 'Marketing-Automation für Schweizer KMU 2026: Tools & ROI' – Schweizer Marketing-Agentur zeigt: Marketing-Automation ist 2026 kein Nice-to-have, sondern entscheidender Wettbewerbsvorteil für KMU; durchschnittlich 6–9 Stunden Zeitersparnis pro Woche; ROI durch Lead-Nurturing, E-Mail-Automatisierung und CRM-Integration nachweisbar; Tool-Auswahl nach Unternehmensgrösse und Zielen empfohlen. Schweizer Marktperspektive bestätigt wachsende Professionalisierung des KMU-Marketings – direktes Wachstumsumfeld für das interaktive Marketingkonzept-Tool auf learnfluencer.ch.",
         source: "bexolutions.ch",
