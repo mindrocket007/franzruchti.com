@@ -5627,6 +5627,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-03
       {
+        summary: "hypnovital.net (3. Mai 2026): 'Werden Sie hypnovital® Coach – Ausbildungsstart 3. Mai 2026' – Hypnovital lanciert am heutigen 3. Mai 2026 den nächsten Ausbildungszyklus für hypnovital® Coaches in der ganzen Schweiz; die Coach-Ausbildung vermittelt das systematische hypnovital®-Verfahren zur Verhaltensänderung im limbischen System; Coaches setzen das Verfahren in öffentlichen Kursen sowie in Unternehmen für BGM und Teamentwicklung ein. Direkter Ausbildungsstart des hypnovital®-Coach-Programms am heutigen Tag – operatives Signal für wachsende Netzwerkbasis und Marktpräsenz von hypnovital®.",
+        source: "hypnovital.net",
+        url: "https://hypnovital.net/coach-werden/",
+        date: "2026-05-03",
+        category: "hypnovital direkt",
+        addedAt: "2026-05-03",
+      },
+      {
+        summary: "humanresourcesmanager.de (2026): 'HR-Trends 2026: Mentale Gesundheit, KI und Recruiting' – Führendes HR-Fachmagazin identifiziert mentale Gesundheit als strategischen Schlüsseltrend 2026: steigende Zahl psychisch bedingter Absenzen besonders bei unter 35-Jährigen durch Kombination aus globalen Krisen, Leistungsdruck und intensivem Social-Media-Konsum; Unternehmen müssen strukturelle Lösungen finden – Räume für Regeneration, gesunde Meeting-Kultur, Führungskräfte mit Belastungsblick; KI verändert HR-Prozesse und Weiterbildung gleichzeitig. Institutionelles HR-Signal für steigende strukturelle Nachfrage nach skalierbaren, digitalisierten BGM-Lösungen – direktes Marktumfeld für hypnovital® BGM-Programme.",
+        source: "humanresourcesmanager.de",
+        url: "https://www.humanresourcesmanager.de/personalmanagement/hr-trends-fuer-2026-ki-mentale-gesundheit/",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-03",
+      },
+      {
+        summary: "personalradar.ch (2026): 'HR-Trends 2026: Die Prozesse sind perfekt, aber die Leute laufen davon' – Schweizer HR-Blog analysiert das zentrale HR-Paradox 2026: trotz optimierter Prozesse verlassen zunehmend Mitarbeitende die Unternehmen; psychisch bedingte Absenzen bei unter 35-Jährigen steigen alarmierend; steigende globale Krisen, Leistungsdruck und Social-Media-Überflutung als Treiber; menschliche Verbindung und sinnstiftendes Arbeitsumfeld als Gegenmassnahmen gefordert. Schweizer HR-Fachperspektive bestätigt Dringlichkeit struktureller mentaler Gesundheitslösungen im Arbeitsumfeld – direktes Marktumfeld für hypnovital® als präventives BGM-Angebot.",
+        source: "personalradar.ch",
+        url: "https://www.personalradar.ch/allgemein/hr-trends-2026-die-prozesse-sind-perfekt-aber-die-leute-laufen-davon/20553",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-03",
+      },
+      {
         summary: "ad-hoc-news.de (Mai 2026): 'Arbeitsschutz 2026: Neue Regeln, psychische Gesundheit und KI' – Ab Mai 2026 treten bedeutende Änderungen im Arbeitsschutzrecht in Kraft: Neue Schwellenwerte für Sicherheitsbeauftragte, Pflicht zur Gefährdungsbeurteilung psychischer Belastung verschärft; EU AI Act und KI-Sicherheitsschulung integrieren neue Anforderungen; fast 87% der EHS-Fachleute sehen psychische Gesundheit als Kernaufgabe. Neue gesetzliche Pflichten zum psychischen Arbeitsschutz ab Mai 2026 schaffen strukturellen Nachfrageschub für präventive BGM-Lösungen – direktes Wachstumsumfeld für hypnovital® Audio-Programme.",
         source: "ad-hoc-news.de",
         url: "https://www.ad-hoc-news.de/wirtschaft/arbeitsschutz-2026-neue-regeln-psychische-gesundheit-und-ki/69265961",
@@ -7664,6 +7688,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "12wy-planner": {
     news: [
       // Neu: 2026-05-03
+      {
+        summary: "northlyapp.com (2026): 'OKR Methode: Der komplette Leitfaden 2026' – Umfassender deutschsprachiger OKR-Leitfaden 2026: Objectives and Key Results als bewährtes Zielsetzungs-Framework; OKRs und 12-Week-Year-Methode ergänzen sich ideal – OKRs geben die Ausrichtung, 12-Wochen-Zyklen liefern den persönlichen Ausführungsrhythmus; wöchentliche Check-ins und klar messbare Key Results als Kernprinzipien; KI-gestützte OKR-Tracking-Tools als neue Kategorie 2026. Wachsendes deutschsprachiges Interesse an OKR-Methodik bestätigt die Nachfrage nach methodenspezifischen Planungstools – direktes Marktumfeld für den 12wy-planner.",
+        source: "northlyapp.com",
+        url: "https://northlyapp.com/de/blog/okr-methode-komplett-leitfaden/",
+        date: "2026-04",
+        category: "Produktivität & Planung",
+        addedAt: "2026-05-03",
+      },
+      {
+        summary: "mooncamp.com (2026): 'Was sind OKRs? Der Guide zur OKR-Methode [2026]' – mooncamp (führende OKR-Software-Plattform) publiziert vollständigen OKR-Guide 2026: OKRs als quartalsbasiertes Zielsystem kombinierbar mit der 12-Week-Year-Methode; Fokus auf wenige, wirkungsvolle Ziele; transparente, hierarchisch verknüpfte Zielsysteme für Teams; Wochenrhythmus und regelmässige Retrospektiven als Erfolgskomponenten. Professionelle OKR-Software-Plattform bestätigt quartalsbasierte Methodik als Marktstandard – direktes Marktumfeld für den 12wy-planner als komplementäres Planungstool.",
+        source: "mooncamp.com",
+        url: "https://mooncamp.com/okr",
+        date: "2026-04",
+        category: "Zielsetzung & OKR",
+        addedAt: "2026-05-03",
+      },
       {
         summary: "saaswelt.de (2026): 'Micro SaaS als Solopreneur: Warum 2026 das beste Jahr zum Starten ist' – Der Micro-SaaS-Markt wächst jährlich ~30% (von USD 15,70 Mrd. 2024 auf USD 59,60 Mrd. 2030); spezialisierte Nischen-Tools mit spezifischen Methoden erzielen Gewinnmargen bis 80%; niedrige Gemeinkosten und skalierbare Nischenlösungen machen 2026 zum optimalen Eintrittsfenster. Dynamisches Micro-SaaS-Wachstum bestätigt das Marktpotenzial für methodenspezifische Planungstools wie den 12wy-planner.",
         source: "saaswelt.de",
@@ -9912,6 +9952,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-03
       {
+        summary: "NOACK Hypnotherapie Berlin (2026): 'Redeangst ist kein Lampenfieber: Aufklärung, Tipps, Hilfe' – Spezialisierte Hypnotherapiepraxis Berlin klärt den Unterschied auf: einfaches Lampenfieber (normale Nervosität) vs. klinische Redeangst (ausgeprägter Störungswert, systematische Therapie erforderlich); Hypnotherapie erkennt und löst die unbewussten Ursachen der Redeangst in wenigen Sitzungen; klare Handlungsempfehlungen für Selbsthilfe und professionelle Unterstützung. Breite medizinische Differenzierung zwischen Lampenfieber und Redeangst bestätigt das Marktpotenzial für spezialisierte Hypnose-Selbsthilfeangebote – direktes Marktumfeld für lampenfieber-besiegen.de.",
+        source: "noack-hypnose.de",
+        url: "https://www.noack-hypnose.de/redeangst/",
+        date: "2026-04",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-05-03",
+      },
+      {
         summary: "Kiez Hypnose Berlin (2026): 'Hypnose gegen Lampenfieber und Auftrittsangst' – Berliner Hypnosepraxis: Lampenfieber und Auftrittsangst als eine der häufigsten Phobien überhaupt; Hypnose als bewährte Methode, die in 2–3 Sitzungen die Ursachen im Unterbewusstsein aufspürt und umprogrammiert; besondere Wirksamkeit durch direkten Zugang zum Unterbewusstsein; typische Behandlungsdauer deutlich kürzer als bei konventioneller Therapie. Aktive, gut sichtbare Nachfrage nach professioneller Hypnosebehandlung gegen Lampenfieber stärkt das Suchvolumen und das inhaltliche Ökosystem – direktes Marktumfeld für lampenfieber-besiegen.de.",
         source: "kiez-hypnose.de",
         url: "https://www.kiez-hypnose.de/hypnose-berlin/lampenfieber/",
@@ -11055,6 +11103,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "learnfluencer": {
     news: [
       // Neu: 2026-05-03
+      {
+        summary: "Swiss School of Business and Management Geneva (SSBM) (2026): 'Top Trends in Online Education for 2026: AI, AR, and Beyond' – SSBM Geneva identifiziert die Top-Trends in der Online-Bildung 2026: KI-gestützte adaptive Lernpfade, Augmented Reality (AR) und immersive Lernerlebnisse, personalisierte Lernempfehlungen und Micro-Credentials als Wachstumsfelder; Online-Bildung tritt 2026 in eine neue Reifephase mit massgeschneiderten, technologiegestützten Formaten. Renommierte Schweizer Business School bestätigt KI und neue Lerntechnologien als zentrale Bildungstrends 2026 – direktes Thought-Leadership-Umfeld für learnfluencer.ch.",
+        source: "ssbm.ch",
+        url: "https://www.ssbm.ch/top-trends-in-online-education-for-2026-ai-ar-and-beyond/",
+        date: "2026-04",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-05-03",
+      },
       {
         summary: "SIW Schweizerisches Institut für Weiterbildung (2026): 'dipl. KI Professional – Bau dir deinen eigenen KI-Experten!' – SIW lanciert den Diplomlehrgang 'KI Professional' für Führungskräfte und Fachleute, die KI strategisch einsetzen und eigene KI-Lösungen entwickeln wollen; praxisorientierter Lehrgang mit Fokus auf LLM-Anwendungen, Prompt Engineering und KI-Implementierung im Unternehmenskontext; Teil des wachsenden institutionellen KI-Weiterbildungsangebots in der Schweiz. Neue KI-Qualifizierungsangebote in der Schweiz bestätigen die Nachfrage nach KI-Kompetenzaufbau – direktes Thought-Leadership-Umfeld für learnfluencer.ch.",
         source: "siw.swiss",
@@ -12832,6 +12888,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "marketingplan-software": {
     news: [
       // Neu: 2026-05-03
+      {
+        summary: "aivie.ch (2026): 'Marketing-Automation mit kmu.digital 2026: Jetzt Förderung nutzen' – Aivie (Marketing-Automation-Plattform aus der Schweiz) zeigt: Schweizer KMU können 2026 über das kmu.digital-Förderprogramm des Bundes Subventionen für Marketing-Automation erhalten; strukturierte Marketingplanung und strategische Analyse (Zielgruppe, Segmentierung, Persona) als unerlässliche Voraussetzung vor dem Tool-Einsatz; ROI durch Lead-Nurturing, E-Mail-Automationen und CRM-Integration messbar. Staatliche Schweizer Förderung für KMU-Marketing-Automation 2026 erhöht strukturell die Investitionsbereitschaft – direktes Marktargument für strategische Marketing-Planungstools wie das Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "aivie.ch",
+        url: "https://aivie.ch/marketing-automation-kmu-digital-forderung/",
+        date: "2026-04",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-05-03",
+      },
       {
         summary: "bitrix24.de (2026): 'Die besten SaaS-Tools, die jedes Unternehmen 2026 nutzen sollte' – Umfassender Überblick der wichtigsten SaaS-Kategorien 2026 für Unternehmen: Kollaborationstools, CRM, Projektmanagement, Marketing-Automatisierung und Analysetools; durchschnittliche Unternehmensausgaben für SaaS bis USD 3'500 pro Mitarbeiter/Jahr; Trend zu All-in-One-Plattformen mit integrierten Analysefunktionen. Wachsendes SaaS-Tool-Ökosystem erhöht den Bedarf nach strukturierten Planungsframeworks (PESTEL, SWOT, BCG) als strategische Grundlage – direktes Wachstumsumfeld für das Marketingkonzept-Tool auf learnfluencer.ch.",
         source: "bitrix24.de",
