@@ -26,6 +26,15 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 2026-05-03
+      {
+        summary: "Schweizerische Koordinationsstelle für Bildungsforschung SKBF / SBFI (März 2026): 'Bildungsbericht Schweiz 2026' – Der umfassende Schweizer Bildungsbericht 2026 wurde am 23. März 2026 von Bundespräsident Guy Parmelin entgegengenommen; Berufsbildung bleibt zentraler Bildungsweg auf Sekundarstufe II mit ausgeprägter Arbeitsmarktnähe; BFS prognostiziert 16 Prozent mehr Lernende 2024–2033 mit besonders starkem Wachstum in ICT und Gesundheits-/Sozialwesen; Digitalisierung und neue Kompetenzanforderungen prägen alle Bildungsstufen. Strukturwachstum im ICT-Bildungsbereich und steigende Digitalkompetenz-Anforderungen bestätigen das strategische Marktumfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation.",
+        source: "skbf-csre.ch / SBFI",
+        url: "https://www.skbf-csre.ch/fileadmin/files/pdf/bildungsberichte/2026/BiBer_2026_DE.pdf",
+        date: "2026-03-23",
+        category: "Bildungspolitik",
+        addedAt: "2026-05-03",
+      },
       // Neu: 2026-05-02
       {
         summary: "inside-it.ch (29. April 2026): 'SwissICT wählt Kurt Lanz als neuen Geschäftsführer' – Der Ökonom und erfahrene Verbandsstratege Kurt Lanz übernimmt per 1. August 2026 die Geschäftsführung von swissICT; er folgt auf Christian Hunziker, der Mitte Mai in Frühpension geht. Lanz war zuletzt CEO des Energieverbands Powerloop und davor Mitglied der Geschäftsleitung von Economiesuisse (Digitalisierungsportfolio). Führungswechsel beim wichtigsten Schweizer ICT-Branchenverband – relevanter Governance-Wechsel im direkten Ökosystem von SIZ AG als anerkannte ICT-Prüfungsorganisation.",
@@ -1537,6 +1546,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
+      // Neu: 2026-05-03
+      {
+        summary: "courseticket.com (2026): 'Persönlichkeitsentwicklung – Kurse, Coaching & Online-Programme' – Deutschsprachige Plattform für Präsenz- und Online-Kurse zu Persönlichkeitsentwicklung: breites Angebot zu Selbstvertrauen, Kommunikation, Achtsamkeit, Resilienz und Zielsetzung; Transparenz über Kursformate, Preise und Bewertungen wächst; Zugangsschwelle zu persönlicher Entwicklung sinkt durch Digitalisierung und Plattformisierung. Aktiver und wachsender Marktplatz für Persönlichkeitsentwicklungs-Programme im DACH-Raum validiert das Nachfragepotenzial für skalierbare digitale Angebote wie jene von Mind Rocket GmbH.",
+        source: "courseticket.com",
+        url: "https://www.courseticket.com/de/c/persoenlichkeitsentwicklung",
+        date: "2026-04",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-05-03",
+      },
+      {
+        summary: "sinnsucher.de (2026): 'Persönlichkeitsentwicklung – Online-Kurse' – Spezialisierte Plattform für Online-Kurse zu persönlicher Entwicklung, innerer Arbeit und Sinnsuche im deutschsprachigen Raum; wachsendes Angebot für Menschen, die über Standardangebote hinaus tiefere Persönlichkeitsarbeit suchen; Community-Aspekt und vertrauenswürdige Kuratierung als Differenzierungsmerkmale. Entstehende Nischen-Plattformökonomie für tiefere Persönlichkeitsentwicklung ergänzt das Ökosystem für Online-Programme wie jene von Mind Rocket GmbH.",
+        source: "sinnsucher.de",
+        url: "https://www.sinnsucher.de/kurse/persoenlichkeitsentwicklung",
+        date: "2026-04",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-05-03",
+      },
       // Neu: 2026-05-02
       {
         summary: "coachingausbildungen.ch (2026): 'Coaching-Marktanalyse 2025/2026: Welche Trends prägen die deutschsprachige Region?' – Analyse des Schweizer Coaching-Markts: hybride Formate (Online + Präsenz) gewinnen stark an Bedeutung; KI-gestütztes Coaching wächst als neue Kategorie; Professionalisierung und Marktsegmentierung schreiten 2026 voran; Persönlichkeitsentwicklung und Führungskräftecoaching bleiben Kernthemen. Wachsender und sich professionalisierender Coaching-Markt mit hybriden und digitalen Formaten schafft stabiles Nachfrageumfeld – direktes Wachstumsumfeld für skalierbare Online-Programme wie jene von Mind Rocket GmbH.",
@@ -2098,6 +2124,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 2026-05-03
+      {
+        summary: "PropFirmApp (2026): '10 Best Futures Prop Firms 2026' – Unabhängiges Vergleichsportal listet die 10 besten Futures-Prop-Firmen 2026; NinjaTrader gewinnt Auszeichnung als #1 Futures-Broker 2026 von BrokerChooser; Markt wächst durch Transparenz und zunehmende Trader-Community; detaillierte Regelwerke, Auszahlungsquoten und Plattformintegration als Entscheidungskriterien. Wachsendes und transparentes Prop-Firm-Ökosystem erhöht die Attraktivität des Futures-Handels für neue Trader – direktes Wachstumsumfeld für algorithmische ES-Futures-Strategien wie mindrocket-trading.com.",
+        source: "propfirmapp.com",
+        url: "https://propfirmapp.com/prop-firms/futures",
+        date: "2026-04",
+        category: "Futures & Trading",
+        addedAt: "2026-05-03",
+      },
+      {
+        summary: "lunefi.com (2026): 'Tradecopia Review 2026: Best Futures Prop Trade Copier' – Tradecopia ermöglicht automatisches Kopieren von Trades zwischen mehreren NinjaTrader-Prop-Firm-Accounts; API-basierte Integration für simultanes Management mehrerer Evaluation- und Funded-Accounts; stark gewachsene Kategorie der Prop-Trade-Copier als Zeichen zunehmender Professionalisierung. Reifende Infrastruktur für Multi-Account-Trading und Automatisierung stärkt das technologische Ökosystem für algorithmische ES-Futures-Strategien – direktes Marktumfeld für mindrocket-trading.com.",
+        source: "lunefi.com",
+        url: "https://lunefi.com/blog/tradecopia-review-2026-best-futures-prop-trade-copier",
+        date: "2026-04",
+        category: "Trading-Technologie",
+        addedAt: "2026-05-03",
+      },
       // Neu: 2026-05-02
       {
         summary: "PR Newswire / NinjaTrader (Januar 2026): 'NinjaTrader Expands Into Europe to Support the Next Generation of Retail Futures Traders' – NinjaTrader (Teil der Kraken/PINC Group nach $1.5-Mrd.-Akquisition Mai 2025) expandiert im Januar 2026 via Payward Europe Digital Solutions (CySEC-reguliert, MiFID) in den EU-Markt; Start in Niederlanden und Deutschland, danach Frankreich und Italien; europäische Retail-Trader erhalten erstmals Direktzugang zu US-Futures und NinjaTraders vollständiger Algo-Trading-Umgebung (NinjaScript, Order Flow+, Simulated Trading). Regulierter NinjaTrader-Markteintritt in Europa öffnet neue europäische Zielmärkte für ES-Futures-Strategien – direktes Wachstumsumfeld für algorithmische Trading-Angebote wie mindrocket-trading.com.",
@@ -4553,6 +4596,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 2026-05-03
+      {
+        summary: "Holon Health (2026): 'Top 5 Free Mental Health Apps 2026 (That Actually Help!)' – Übersicht der fünf wirksamsten kostenlosen Mental-Health-Apps 2026; globaler Markt für digitale mentale Gesundheit wächst auf über 6 Mrd. USD bis 2026; Apps mit CBT-Techniken, Achtsamkeit und Stimmungstracking als Hauptkategorien; Hybrid-Ansätze aus KI und menschlicher Unterstützung als wirksamste Kombination. Wachsender globaler Markt für digitale Mental-Health-Tools bestätigt die gesellschaftliche Akzeptanz kompakter digitaler Selbsthilfe-Werkzeuge – direktes Marktumfeld für mindtools.ch.",
+        source: "holonhealth.com",
+        url: "https://www.holonhealth.com/top-5-free-mental-health-apps/",
+        date: "2026-04",
+        category: "Mental Health",
+        addedAt: "2026-05-03",
+      },
+      {
+        summary: "Startup House (2026): 'Mental Health App Features for 2026: Must-Haves, AI Tools, and Compliance' – Tech-Entwicklungsguide für mentale Gesundheitsangebote 2026: KI-Personalisierung, Gamification, CBT-Tools, Compliance und hybride Formate als Must-Haves; Produktteams hybridisieren Kategorien da Nutzer umfassende Lösungen über Multi-App-Ansätze bevorzugen. Institutionelle Produktentwicklungs-Orientierung an digitalen Mental-Health-Tools bestätigt die Wachstumsrichtung des Markts – direktes Marktumfeld für kompakte digitale Werkzeugsammlungen wie mindtools.ch.",
+        source: "startup-house.com",
+        url: "https://startup-house.com/blog/mental-health-app-features",
+        date: "2026-04",
+        category: "Mental Health",
+        addedAt: "2026-05-03",
+      },
       // Neu: 2026-05-02
       {
         summary: "Mental Health America (Mai 2026): '2026 Mental Health Month Action Guide' – Jährlicher Aktionsleitfaden von Mental Health America (MHA) für den Mental Health Month Mai 2026; Fokus auf praktische Werkzeuge, Ressourcen und Selbsthilfe-Tools für mentale Gesundheit im Alltag; strukturierter Ansatz zur Integration mentaler Gesundheitspraxis mit konkreten Handlungsanleitungen. Institutionelles Engagement für mentale Gesundheits-Tools und Selbsthilfe stärkt gesellschaftliche Akzeptanz kompakter mentaler Werkzeugsammlungen – direktes Marktumfeld für mindtools.ch.",
@@ -5525,6 +5585,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 2026-05-03
+      {
+        summary: "gesundheit-heute.ch (2. Mai 2026): 'Burnout – Wenn Stress zur Krankheit wird' – Schweizer Gesundheitsportal berichtet am 2. Mai 2026: Über alle Branchen hinweg geben knapp 30% der Erwerbstätigen erhöhten Stress und Anzeichen von Burnout an; rund ein Drittel der Schweizer Bevölkerung hat in den vergangenen 12 Monaten psychische Probleme erlebt; wirtschaftlicher Schaden durch Stress in der Schweiz: CHF 6,5 Mrd. pro Jahr; strukturelle Zunahme psychischer Belastung als gesellschaftliches Problem. Aktueller Medienecho bestätigt den wachsenden gesellschaftlichen Bedarf nach skalierbaren Burnout-Präventionsprogrammen – direktes Wachstumsumfeld für hypnovital®.",
+        source: "gesundheit-heute.ch",
+        url: "https://gesundheit-heute.ch/2026/05/02/burnout-wenn-stress-zur-krankheit-wird/",
+        date: "2026-05-02",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-03",
+      },
+      {
+        summary: "burnout-hilfe-basel.ch (2026): 'Burnout-Prävention, Neurofeedback & Coaching in Lebenskrisen' – Spezialisierte Schweizer Praxis setzt auf Neurofeedback und Hypnose als frühzeitige Intervention: gezielte Hypnose-Anwendungen ermöglichen Burnout-Prävention bereits im Frühstadium, bevor es zum vollständigen Burnout kommt; multimodale Kombination aus Neurofeedback, Coaching und Hypnose als state-of-the-art Ansatz. Schweizer Fachpraxis bestätigt die wissenschaftliche Wirksamkeit hypnosebasierter Burnout-Prävention – direktes Wirkungsfeld für skalierbare hypnovital®-BGM-Programme.",
+        source: "burnout-hilfe-basel.ch",
+        url: "https://www.burnout-hilfe-basel.ch/",
+        date: "2026-04",
+        category: "Hypnose & Coaching",
+        addedAt: "2026-05-03",
+      },
       // Neu: 2026-05-02
       {
         summary: "BBGM Bundesverband Betriebliches Gesundheitsmanagement (8. Januar 2026): 'Gesund ins neue Jahr – unsere BBGM-Schwerpunkte für 2026' – Der führende deutsche BGM-Branchenverband setzt 2026 Schwerpunkte auf psychische Gesundheit, Digitalisierung von BGM-Angeboten, Prävention und skalierbare Interventionen für Unternehmen aller Größen; expliziter Fokus auf niedrigschwellige, messbare Gesundheitsmaßnahmen mit nachweisbarem ROI. BGM-Leitorganisation priorisiert 2026 exakt die Themensäulen, auf denen hypnovital® aufbaut – direktes strategisches Marktumfeld für hypnovital.net.",
@@ -7466,6 +7543,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 2026-05-03
+      {
+        summary: "GainHQ (2026): 'SaaS Product Roadmap 2026: Build, Prioritize, Scale' – Umfassender SaaS-Produktstrategie-Guide 2026: strukturierte Quartalsplanung mit OKR und Roadmap als Kernmethodik für skalierbare SaaS-Produkte; Priorisierungsrahmen für Feature-Entwicklung; Kundenfeedback-Integration in agile Planungszyklen als Industriestandard. Wachsendes institutionelles Interesse an strukturierter Quartals- und Jahresplanung in der SaaS-Branche bestätigt die Nachfrage nach methodenspezifischen Planungstools – direktes Marktumfeld für den 12wy-planner.",
+        source: "gainhq.com",
+        url: "https://gainhq.com/blog/saas-product-roadmap/",
+        date: "2026-04",
+        category: "SaaS & Tools",
+        addedAt: "2026-05-03",
+      },
+      {
+        summary: "Business Meister (2026): 'Jahresplanung 2026: 7 Schritte zu deinem Erfolg' – Praxisleitfaden für strukturierte Jahres- und Quartalsplanung 2026 im Businesskontext: 7-Schritte-Framework mit Visionsarbeit, Zielformulierung, Prioritätenmatrix und vierteljährlichem Review; wachsendes Interesse an strukturierter persönlicher Jahresplanung im deutschsprachigen Raum. Kontinuierlich wachsendes Suchvolumen nach strukturierten Planungsmethoden im DACH-Raum bestätigt die Nachfrage nach methodenspezifischen digitalen Planungstools – direktes Marktumfeld für den 12wy-planner.",
+        source: "business-meister.com",
+        url: "https://www.business-meister.com/post/jahresplanung-2026",
+        date: "2026-04",
+        category: "Produktivität & Planung",
+        addedAt: "2026-05-03",
+      },
       // Neu: 2026-05-02
       {
         summary: "12week-breakthrough.com (2026): 'The Complete 12-Week Year Implementation Guide for 2026' – Vollständiger Implementierungsleitfaden für die 12-Week-Year-Methode 2026: OKR-Mindset (Objectives und Key Results), vier fokussierte 12-Wochen-Zyklen pro Jahr als Alternative zur Jahresplanung, KI-gestütztes Tracking von Leading Indicators für automatisierte Fortschrittsberichte; Rückstände lösen sich in neuen Zyklen auf statt sich über das ganze Jahr zu schleppen. Der meistgelesene Methodenleitfaden zu 12 Week Year 2026 treibt Suchvolumen und Methodennachfrage – direktes Marktumfeld für den 12wy-planner als methodenspezifisches SaaS-Tool.",
@@ -8643,6 +8737,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 2026-05-03
+      {
+        summary: "Dr. med. Heike Melzer, München (2026): 'Vorzeitiger Samenerguss (Ejaculatio Praecox)' – Fachärztin für Psychosomatische Medizin und Psychotherapie mit Schwerpunkt sexuelle Funktionsstörungen: Ejaculatio praecox als häufigste sexuelle Störung bei Männern aller Altersgruppen (ca. 30%); organische Ursachen in weniger als 2% der Fälle; psychotherapeutische und hypnotherapeutische Ansätze mit nachgewiesener hoher Erfolgsrate. Führende Fachärztin für Psychosomatik bestätigt den rein psychologischen Ursprung und die hervorragende Behandelbarkeit von Ejaculatio praecox – direkter Wirksamkeitsnachweis für orgasmus-hinauszoegern.de.",
+        source: "dr-med-heike-melzer.de",
+        url: "https://dr-med-heike-melzer.de/vorzeitiger-samenerguss-ejaculatio-praecox/",
+        date: "2026-04",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-05-03",
+      },
+      {
+        summary: "Volker van den Boom, Systemische Therapie (2026): 'Ejaculatio Praecox – vorzeitiger Samenerguss' – Systemischer Therapeut: Ejaculatio praecox betrifft schätzungsweise 15–30% aller Männer; deutliche Unterschätzung durch Scham und mangelnde Aufklärung; direktes Ansprechen der psychischen Ursache durch hypnotherapeutische und systemische Interventionen mit hohen Erfolgsquoten; Zugangsschwelle zu Selbsthilfe-Ressourcen sinkt durch digitale Angebote. Persistente Scham-Barriere und mangelnde Aufklärung schaffen stabilen Bedarf für anonyme, digitale Selbsthilfe-Produkte – direktes Marktargument für orgasmus-hinauszoegern.de.",
+        source: "volker-vandenboom.de",
+        url: "https://www.volker-vandenboom.de/Ejaculatio_Praecox.html",
+        date: "2026-04",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-05-03",
+      },
       // Neu: 2026-05-02
       {
         summary: "HYPNOS – Zentrum für Hypnose (2026): 'Sexualstörungen mit Hypnose behandeln' – Klinische Übersicht zur Behandlung sexueller Funktionsstörungen (inkl. Ejaculatio praecox) mit Hypnose: tiefenpsychologische Arbeit an unbewussten Ursachen, Integration in multimodale Therapiekonzepte, breite wissenschaftliche Anerkennung klinischer Hypnose für psychosomatische Beschwerden; vorzeitiger Samenerguss als häufigste behandelte Sexualstörung. Führende Hypnose-Fachklinik bestätigt wissenschaftliche Basis hypnosebasierter Behandlung von Ejaculatio praecox – direkter Wirksamkeitsnachweis für orgasmus-hinauszoegern.de.",
@@ -9631,6 +9742,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 2026-05-03
+      {
+        summary: "Kiez Hypnose Berlin (2026): 'Hypnose gegen Lampenfieber und Auftrittsangst' – Berliner Hypnosepraxis: Lampenfieber und Auftrittsangst als eine der häufigsten Phobien überhaupt; Hypnose als bewährte Methode, die in 2–3 Sitzungen die Ursachen im Unterbewusstsein aufspürt und umprogrammiert; besondere Wirksamkeit durch direkten Zugang zum Unterbewusstsein; typische Behandlungsdauer deutlich kürzer als bei konventioneller Therapie. Aktive, gut sichtbare Nachfrage nach professioneller Hypnosebehandlung gegen Lampenfieber stärkt das Suchvolumen und das inhaltliche Ökosystem – direktes Marktumfeld für lampenfieber-besiegen.de.",
+        source: "kiez-hypnose.de",
+        url: "https://www.kiez-hypnose.de/hypnose-berlin/lampenfieber/",
+        date: "2026-04",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-05-03",
+      },
       // Neu: 2026-05-02
       {
         summary: "rampenpfau.de (9. Januar 2026): 'In drei Schritten weg vom Lampenfieber' – Hirnforschungs-basierte dreigliedrige Strategie gegen Auftrittsangst: (1) Emotion benennen statt unterdrücken aktiviert den präfrontalen Kortex, (2) Lampenfieber normalisieren als universelle und evolutionär nützliche Reaktion, (3) Werte-Fokus statt Selbstfokus für authentisches Auftreten; evidenzbasierte Neurowissenschaft als Fundament. Praxisnahe evidenzbasierte Strategien gegen Lampenfieber stärken das Suchvolumen und das inhaltliche Ökosystem – direktes Marktumfeld für lampenfieber-besiegen.de.",
@@ -10750,6 +10870,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 2026-05-03
+      {
+        summary: "Digital Engagiert (2026): 'E-Learning in 2026: Trends, Technologien und was sich verändert' – KI verändert E-Learning grundlegend 2026: Lernplattformen analysieren individuelles Lernverhalten und passen Inhalt, Tempo und Schwierigkeitsgrad dynamisch an; bis 2030 sollen über 70% aller Trainings digital erfolgen (2023: 38%); hybride Formate aus Präsenz, Online und Micro-Learning verbreiten sich; Soft Skills rücken gleichwertig neben technische Kompetenzen. Digitale Bildungsplattform positioniert KI-Lernkompetenz als zentrale Zukunftskompetenz 2026 – direktes Thought-Leadership-Feld für learnfluencer.ch.",
+        source: "digitalengagiert.de",
+        url: "https://www.digitalengagiert.de/e-learning-in-2026-trends-technologien-und-was-sich-veraendert/",
+        date: "2026-04",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-05-03",
+      },
       // Neu: 2026-05-02
       {
         summary: "Cegos Integrata (2026): 'Die wichtigsten E-Learning-Trends 2026' – Hybride Lernformate (Präsenz + Online), KI-gestützte Personalisierung und Micro-Learning als Top-Trends 2026; bis 2030 sollen über 70% aller Trainings digital erfolgen (2023: 38%); KI ermöglicht adaptive, echtzeitangepasste Lernpfade auf Basis von Lernerdaten. Institutionelle Trendprognose des führenden europäischen Trainingsanbieters positioniert KI-Lernkompetenz als zentrale Zukunftskompetenz – direktes Thought-Leadership-Feld für learnfluencer.ch.",
@@ -12470,6 +12599,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 2026-05-03
+      {
+        summary: "T2D3 (2026): 'B2B SaaS Marketing OKRs (with template)' – Praxisleitfaden für B2B-SaaS-Marketing mit OKR-Framework: strukturierte Verbindung von Marketingstrategie (Marktanalyse, Zielgruppe, Wettbewerb) mit messbaren KPIs; OKR-Template für Marketing-Teams mit klaren Erfolgskennzahlen; strukturierte strategische Planung als Voraussetzung vor Tool-Einsatz. Wachsender professioneller Standard für datenbasierte, strukturierte Marketingplanung in B2B-SaaS validiert den Bedarf nach interaktiven Marketing-Analyse-Tools wie PESTEL, SWOT und BCG – direktes Marktargument für das Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "t2d3.pro",
+        url: "https://www.t2d3.pro/learn/saas-marketing-okr-and-template",
+        date: "2026-04",
+        category: "Strategie & Analyse",
+        addedAt: "2026-05-03",
+      },
       // Neu: 2026-05-02
       {
         summary: "Bexolutions (2026): 'Marketing-Automation für Schweizer KMU 2026: Tools & ROI' – Marketing-Automation ist 2026 kein Nice-to-have mehr, sondern entscheidender Wettbewerbsvorteil für Schweizer KMU; strukturierte Marketingplanung (Strategie, Zielgruppe, Wettbewerbsanalyse) als notwendiges Fundament für effektiven KI- und Automation-Einsatz; messbare KPIs und ROI-Nachweis als Erfolgskriterium. Schweizer KMU-Markt sucht 2026 aktiv nach strukturierten, ROI-orientierten Marketing-Planungstools – direktes Marktargument für das interaktive Marketingkonzept-Tool auf learnfluencer.ch.",
@@ -13628,6 +13766,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 2026-05-03
+      {
+        summary: "bestattungsvergleich.de (2026): 'Alternative Bestattungsformen im Überblick' – Umfassende Übersicht alternativer Bestattungsformen: Diamantbestattung, Naturbestattung, Waldbestattung, Seebestattung und weitere ökologische Optionen gewinnen stark an Bedeutung; Trend zu mehr Individualität und ökologischer Nachhaltigkeit auch in der Bestattungsbranche; Informationsbedarf der Bevölkerung steigt stark. Wachsendes Interesse an nicht-traditionellen Bestattungsformen und steigender Informationsbedarf treiben Nachfrage nach transparenten Online-Planungsportalen – direktes Wachstumsumfeld für bestattungsplaner.ch.",
+        source: "bestattungsvergleich.de",
+        url: "https://www.bestattungsvergleich.de/ratgeber/bestattungsarten/alternative-bestattungsformen/",
+        date: "2026-04",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-05-03",
+      },
+      {
+        summary: "todesfall-checkliste.de (2026): 'Naturbestattungen Schweiz' – Praxisorientierter Leitfaden zu Naturbestattungen in der Schweiz: Waldbestattung, Seebestattung, Diamant aus Asche und weitere Optionen; konkrete Informationen zu rechtlichen Anforderungen, Kosten und Anbietern; Nachfrage nach individuellen, naturnahen Bestattungsformen wächst schweizweit. Wachsende Nachfrage nach individuellen Naturbestattungsformen erhöht den Bedarf nach umfassenden Online-Planungsressourcen in der Schweiz – direktes Marktumfeld für bestattungsplaner.ch.",
+        source: "todesfall-checkliste.de",
+        url: "https://todesfall-checkliste.de/bestattungsarten/naturbestattungen-schweiz",
+        date: "2026-04",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-05-03",
+      },
       // Neu: 2026-05-02
       {
         summary: "Abschied'26 (2026): 'Erste Schweizer Fachmesse für Vorsorge, Pflege und Trauer' – ABSCHIED'26 findet am 29.–30. Oktober 2026 an der Messe Luzern statt; über 60 Aussteller und Partner aus Vorsorge, Bestattung, Pflege und Trauerbegleitung; Fachforum mit Vorträgen und Panel-Diskussionen zu Digitalisierung, Recht und Bestattungskultur; grosses Brancheninteresse bereits ein Jahr vor Durchführung. Erste dedizierte Schweizer Branchenmesse für Bestattungsvorsorge markiert Professionalisierung und institutionelle Reife der Branche – direktes strukturelles Signal für bestattungsplaner.ch.",
