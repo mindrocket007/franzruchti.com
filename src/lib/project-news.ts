@@ -28,6 +28,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-04
       {
+        summary: "swissict.ch (Januar 2026): 'Jahresrückblick 2025 & Ausblick 2026' – SwissICT, der wichtigste Schweizer ICT-Branchenverband, blickt zurück auf 2025 und setzt für 2026 klare Prioritäten: KI-Kompetenz als Kernthema, Nachwuchsförderung durch Berufsbildung und digitale Souveränität als strategische Agenda. Direkte Ausrichtung des zentralen ICT-Verbands auf KI-Bildung und Fachkräftenachwuchs bestätigt das strategische Marktumfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation.",
+        source: "swissict.ch",
+        url: "https://www.swissict.ch/jahresruckblick-2025-ausblick-2026/",
+        date: "2026-01",
+        category: "Digitale Bildung",
+        addedAt: "2026-05-04",
+      },
+      {
+        summary: "tbbk-ctfp.ch (7. Januar 2026): 'Informationen der Tripartiten Berufsbildungskonferenz vom 7. Januar 2026' – Die Tripartite Berufsbildungskonferenz (Bund, Kantone, Sozialpartner) erörtert zentrale Herausforderungen der Schweizer Berufsbildung: Digitalisierung und KI als systemische Herausforderung, Stärkung der Attraktivität der Berufsbildung, und Umsetzung der Berufsbildungsziele 2030; ICT-Berufsbildung als Wachstumsfeld identifiziert. Institutioneller Rahmen für ICT-Berufsbildung wird auf höchster Ebene aktiv gestärkt – direktes Marktumfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation.",
+        source: "tbbk-ctfp.ch",
+        url: "https://tbbk-ctfp.ch/de/aktuelles/232-informationen-der-tripartiten-berufsbildungskonferenz-vom-7-januar-2026",
+        date: "2026-01-07",
+        category: "Bildungspolitik",
+        addedAt: "2026-05-04",
+      },
+      {
         summary: "stepping-stone.ch (Mai 2026): 'Teilnahme an der DigitUp 2026 in Zürich' – Stepping Stone AG, einer der führenden Schweizer ICT-Personalvermittler, berichtet über ihre Teilnahme am swissICT #DIGITUP 2026 (5. Mai 2026, Zürich); das Event vereint die Schweizer ICT-Community zu 25 Sessions zu KI, Digital Sovereignty und ICT-Bildung; Stepping Stone setzt das Branchennetzwerk aktiv für Talentgewinnung und Marktpositionierung ein. Aktive Beteiligung führender Schweizer ICT-Personalvermittler am #DIGITUP bestätigt die Vitalität des ICT-Ökosystems – direktes Signal für anhaltende Nachfrage nach qualifizierten ICT-Fachkräften und damit für ICT-Qualifizierungsangebote wie jene der SIZ AG.",
         source: "stepping-stone.ch",
         url: "https://www.stepping-stone.ch/en/news/detail-view/teilnahme-an-der-digitup-2026-in-zuerich/",
@@ -1589,6 +1605,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-04
       {
+        summary: "coachingzentrum.ch (2026): 'CAS Resilienztraining – Modulstart 2. Juni & 19. August 2026' – Coachingzentrum Olten bietet 2026 das CAS Resilienztraining mit Modulstart am 2. Juni und 19. August 2026 digital an; Ausbildung zu Resilienz Coaches für Einzelpersonen und Teams; Mental Health und Agilität als Kernkompetenzen; Zertifikat auf Hochschulniveau. Wachsendes institutionelles Coaching-Ausbildungsangebot mit Fokus auf Resilienz und Mental Fitness bestätigt die hohe Nachfrage – direktes Ausbildungs-Ökosystem für Mind Rocket GmbH's Programme.",
+        source: "coachingzentrum.ch",
+        url: "https://www.coachingzentrum.ch/ausbildung/cas-resilienztraining/",
+        date: "2026-06",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-05-04",
+      },
+      {
         summary: "coachingausbildungen.ch (2026): 'Coaching-Markt Schweiz: Trends 2025/2026 – Analyse' – Umfassende Marktanalyse des Schweizer Coaching-Markts: wachsende Nachfrage nach digitalem Coaching und Online-Programmen; Integration von KI-Tools in Coaching-Prozesse als wichtigster Differenzierungsfaktor; Coaching-Markt Schweiz profitiert von gestiegener gesellschaftlicher Akzeptanz von Persönlichkeitsentwicklung; hybride Formate (Online + Präsenz) als dominante Angebotsform 2026. Wachsender und digital transformierter Schweizer Coaching-Markt bietet direktes Wachstumsumfeld für digitale Programme und Online-Ausbildungen der Mind Rocket GmbH.",
         source: "coachingausbildungen.ch",
         url: "https://www.coachingausbildungen.ch/coaching-markt-schweiz-trends-2025-2026-analyse/",
@@ -2175,6 +2199,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "mindrocket-trading": {
     news: [
       // Neu: 2026-05-04
+      {
+        summary: "CME Group (4. Mai 2026): 'CME Group to Continue Expansion of Regulated Crypto Suite with Launch of Avalanche and Sui Futures' – CME Group startet heute den offiziellen Launch von Avalanche (AVAX) und Sui (SUI) Futures in Standard- und Micro-Kontrakten (AVAX Standard: 5'000 AVAX; SUI Standard: 50'000 SUI); ab 29. Mai 2026 24/7-Trading für alle CME Krypto-Futures; CME Krypto-Derivate-Volumen überschritt 2025 die Marke von 3 Billionen USD. Institutionelle Expansion des CME-Derivatuniversums auf neue Krypto-Assets signalisiert zunehmende Professionalisierung und Breite des regulierten Futures-Markts – relevantes Marktumfeld für algorithmische Futures-Trader wie Mind Rocket Trading.",
+        source: "CME Group",
+        url: "https://www.cmegroup.com/media-room/press-releases/2026/4/07/cme_group_to_continueexpansionofregulatedcryptosuitewithlaunchof.html",
+        date: "2026-05-04",
+        category: "Futures & Trading",
+        addedAt: "2026-05-04",
+      },
+      {
+        summary: "en.spaziocrypto.com (4. Mai 2026): 'SUI Futures on CME May 4, 2026: Price Impact Analysis' – Analyse zum heutigen SUI Futures Launch am CME: Institutioneller Zugang zu SUI-Kontrakten erstmals via CFTC-regulierten Marktplatz; Cash-Settlement-Mechanismus; Preisdynamik des SUI-Tokens vor und nach dem Launch; Micro-Kontrakt (5'000 SUI) senkt Einstiegshürde für institutionelle und semi-professionelle Trader. Regulierte institutionelle Krypto-Futures-Instrumente am CME diversifizieren das Futures-Ökosystem – Kontext für algorithmische Trader wie Mind Rocket Trading.",
+        source: "en.spaziocrypto.com",
+        url: "https://en.spaziocrypto.com/trading/sui-futures-cme-may-4-institutional-access-token-down-66-percent/",
+        date: "2026-05-04",
+        category: "Futures & Trading",
+        addedAt: "2026-05-04",
+      },
+      {
+        summary: "ninjatrader.com (2026): 'E-mini S&P 500 Futures – Instrument Guide' – NinjaTrader dokumentiert das ES-Futures-Instrument als zentrales Handelsvehikel: 8x mehr tägliche Liquidität als alle S&P 500 ETFs kombiniert; Tick-Wert $12.50 (0.25 Punkte); 24h Handel Sun–Fri; typische Tagesbewegung 40–80 Punkte (2026); höchste Liquidität in Regular Trading Hours 9:30–16:00 ET. Direkter Broker-Guide des Standard-Handelsinstruments für algorithmische ES-Futures-Strategien wie jene von Mind Rocket Trading.",
+        source: "ninjatrader.com",
+        url: "https://ninjatrader.com/futures/futures-contracts/equity-index/e-mini-s-p-500/",
+        date: "2026-05",
+        category: "Futures & Trading",
+        addedAt: "2026-05-04",
+      },
       {
         summary: "fortunly.com (Mai 2026): 'Best Futures Prop Trading Firms in May 2026' – Unabhängiges Finanzvergleichsportal analysiert den Futures-Prop-Firm-Markt Mai 2026: Suchvolumen für Prop-Trading explodierte +55x zwischen 2020–2026; globale Auszahlungen 2025 über 325 Mio. USD; Markt verlagert sich von unregulierten Forex-Modellen hin zu regulierten Futures-Firmen; umfassender Vergleich führender Anbieter inkl. Apex Trader Funding, Topstep und NinjaTrader. Explodierende Nachfrage nach Futures-Prop-Firmen und regulatorische Professionalisierung des Markts bestätigen das Wachstumsumfeld für algorithmische ES-Futures-Strategien – direktes Marktumfeld für mindrocket-trading.com.",
         source: "fortunly.com",
@@ -5703,6 +5751,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-04
       {
+        summary: "ost.ch (2026): 'CAS Stress und Stressmanagement – Ostschweizer Fachhochschule' – OST bietet 2026 ein akademisches CAS Stress und Stressmanagement (20 Präsenztage, CHF 7'900, berufsbegleitend) mit Schwerpunkt auf Erkennen, Verstehen und Bewältigen von Stress in verschiedenen Lebensbereichen an. Akademische Institutionen integrieren Stressmanagement als regulären Weiterbildungsgegenstand – bestätigt die gesellschaftliche Professionalisierung des BGM-Markts und das Wachstumsumfeld für skalierbare hypnovital®-Programme.",
+        source: "ost.ch",
+        url: "https://www.ost.ch/de/weiterbildung/weiterbildungsangebot/gesundheit/psychische-gesundheit/cas-stress-und-stressmanagement",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-04",
+      },
+      {
+        summary: "resilienzify.ch (2026): 'Stressmanagement Seminar 2026 – KI-gestütztes Microlearning & hybride Praxistage' – Resilienzify kombiniert 2026 Live-Onlinekurse, persönliches Peer-Coaching, KI-gestütztes Microlearning und Praxistage in Zürich, Bern und Basel zu einem innovativen Stressmanagement-Programm; Langzeitbegleitung und Community als Differenzierungsmerkmale. Innovative hybride Stressmanagement-Formate mit KI bestätigen den Trend zu digitalen, skalierbaren BGM-Lösungen – direktes Wachstumsumfeld für hypnovital® als digitales Audio-Programm für Unternehmen.",
+        source: "resilienzify.ch",
+        url: "https://www.resilienzify.ch/stressmanagement-seminar/",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-04",
+      },
+      {
         summary: "ad-hoc-news.de (2026): 'Psychische Gesundheit am Arbeitsplatz: Burnout-Prävention wird zum Milliardenmarkt' – Analyse: rund 18–25 % der Beschäftigten leiden unter emotionaler Erschöpfung oder Burnout; strukturierte Burnout-Präventionsprogramme am Arbeitsplatz erweisen sich im Meta-Review als klar wirksamer als rein individuelle Massnahmen; Organisationen suchen skalierbare digitale BGM-Lösungen, da psychisch bedingte Absenzen die grösste Einzelkostenstelle im betrieblichen Gesundheitsmanagement darstellen. Bewiesene und wachsende Nachfrage nach skalierbaren BGM-Lösungen zur Burnout-Prävention deckt sich direkt mit dem Angebot von hypnovital® als digitales Audio-Gruppenprogramm für Unternehmen.",
         source: "ad-hoc-news.de",
         url: "https://www.ad-hoc-news.de/wissenschaft/psychische-gesundheit-am-arbeitsplatz-burnout-praevention-wird-zum/69272208",
@@ -7782,6 +7846,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-04
       {
+        summary: "mooncamp.com (2026): 'Die 10 besten Softwares für strategische Planung in 2026' – Mooncamp analysiert die führenden strategischen Planungssoftware-Tools 2026: OKR-Systeme, Projektmanagement und Zielverfolgungstools im Vergleich; kein Tool ist spezifisch auf die 12-Week-Year-Methode ausgerichtet; OKR-Software dominiert den Markt für Quartals-Planung. Marktlücke für methodenspezifische Planungstools bestätigt sich – der 12wy-planner als dediziertes Tool für die Brian-Moran-Methode mit Weekly Execution Score und Scorecard ist klar differenziert.",
+        source: "mooncamp.com",
+        url: "https://mooncamp.com/blog/strategic-planning-software",
+        date: "2026-04",
+        category: "SaaS & Tools",
+        addedAt: "2026-05-04",
+      },
+      {
         summary: "12week-breakthrough.com (2026): 'The Complete 12-Week Year Implementation Guide for 2026' – Umfassender Implementierungsguide für die 12-Week-Year-Methode 2026: Schritt-für-Schritt-Anleitung für Quartalsplanung, wöchentliche Reviews und Execution-Rituale; Verbindung von 12-Week-Year mit OKR-Methodik als Best-Practice-Ansatz für Personen und Teams; zunehmende Nachfrage nach strukturierten Planungsformaten durch gestiegene Remote-Work-Verbreitung. Dedizierter 12-Week-Year-Coaching-Anbieter bestätigt starkes Interesse an methodenspezifischen Planungstools – direktes Marktumfeld für den 12wy-planner als digitales SaaS-Tool.",
         source: "12week-breakthrough.com",
         url: "https://12week-breakthrough.com/implementation-guide-2026-12-week-year/",
@@ -9049,6 +9121,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-04
       {
+        summary: "gospring.de (2026): 'Vorzeitiger Samenerguss – Mittel im Vergleich' – GoSpring vergleicht die wichtigsten Mittel gegen vorzeitigen Samenerguss: Dapoxetin/Priligy (einziges zugelassenes SSRI on-demand), Fortacin (Lokalanästhetikum, verlängert Zeit auf bis zu 11 Min.), SSRIs off-label, Kondome und nicht-medikamentöse Ansätze inkl. Hypnose und mentale Techniken; wachsende Akzeptanz für holistische Ansätze. Breiter Produktvergleich mit expliziter Einbeziehung von Hypnose als Behandlungsoption bestätigt die wachsende Marktakzeptanz nicht-medikamentöser Selbsthilfe – direktes Umfeld für orgasmus-hinauszoegern.de als Audio-Hypnose-Produkt.",
+        source: "gospring.de",
+        url: "https://www.gospring.de/ratgeber/vorzeitiger-samenerguss/mittel-im-vergleich",
+        date: "2026-04",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-05-04",
+      },
+      {
+        summary: "gokapsel.de (2026): 'Medikamente gegen vorzeitigen Samenerguss – Überblick und Wirkung' – Gokapsel erläutert Medikamente gegen vorzeitigen Samenerguss und ihre Wirkungsweisen; Ejaculatio praecox betrifft 20–30% aller Männer; psychische Komponenten dominieren; Dapoxetin, SSRIs, Lokalanästhetika und Verhaltenstherapie als anerkannte Behandlungen. Wachsendes digitales Ratgeber-Ökosystem für sexuelle Gesundheit bei Männern zeigt starkes gesellschaftliches Informationsbedürfnis – direktes Marktumfeld für orgasmus-hinauszoegern.de als niedrigschwellige, anonyme Selbsthilfe-Alternative.",
+        source: "gokapsel.de",
+        url: "https://www.gokapsel.de/post/medikamente-vorzeitiger-samenerguss",
+        date: "2026-04",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-05-04",
+      },
+      {
         summary: "gesundheitsinformation.de (2026): 'Vorzeitiger Samenerguss (Ejaculatio praecox)' – Evidenzbasierte Informationsplattform der deutschen Gesundheitsbehörden: Ejaculatio praecox betrifft ca. 30% aller Männer und ist die häufigste sexuelle Funktionsstörung; psychologische Ursachen dominieren deutlich gegenüber organischen (unter 2%); bewährte Behandlungsansätze umfassen Stopp-Start-Techniken, Beckenbodentraining, SSRIs (Dapoxetin) sowie psychotherapeutische und hypnotherapeutische Methoden; körperliche Aktivität reduziert laut neuer internationaler Studie die Symptomatik signifikant. Offizielle Gesundheitsinformationen bestätigen die hohe Verbreitung und die hervorragende Behandelbarkeit von Ejaculatio praecox – direkter Wirksamkeitsnachweis für hypnosebasierte Selbsthilfeprodukte wie orgasmus-hinauszoegern.de.",
         source: "gesundheitsinformation.de",
         url: "https://www.gesundheitsinformation.de/vorzeitiger-samenerguss-ejaculatio-praecox.html",
@@ -10062,6 +10150,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "lampenfieber": {
     news: [
       // Neu: 2026-05-04
+      {
+        summary: "herzweg-hypnose.de (2026): 'Lampenfieber überwinden mit Hypnose – Sicher auftreten & frei sprechen' – Herzweg Hypnose erklärt die Wirkungsweise bei Lampenfieber: Im hypnotischen Zustand können tief verankerte Angstmuster aufgelöst und neue, positive Assoziationen für Auftrittssituationen verankert werden; positive Visualisierung, mentale Probe des Auftritts und Ressourcenverankerung als Kernmethoden. Wachsendes deutschsprachiges Netz spezialisierter Hypnose-Anbieter für Lampenfieber bestätigt Marktakzeptanz und hohe Behandlungsnachfrage – direktes Wettbewerbsumfeld für das Audio-Hypnose-Produkt auf lampenfieber-besiegen.de.",
+        source: "herzweg-hypnose.de",
+        url: "https://herzweg-hypnose.de/hypnose/lampenfieber/",
+        date: "2026-04",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-05-04",
+      },
       {
         summary: "findyourway.ch (2026): 'Hypnose bei Auftrittsangst – Souveränes Auftreten mit Hypnose' – Schweizer Hypnose-Praxis erklärt: Hypnosetherapie bei Auftrittsangst und Lampenfieber wirkt durch Umstrukturierung unbewusster Denk- und Reaktionsmuster; im hypnotischen Zustand werden angsterzeugende Assoziationen aufgelöst und neue souveräne Verhaltensmuster verankert; in wenigen Sitzungen nachhaltige Veränderung erreichbar; Hypnose ist wissenschaftlich anerkannte Methode für Angstbehandlung. Schweizer Fachpraxis bestätigt Wirksamkeit von Hypnose bei Auftrittsangst und Lampenfieber – direkter Wirksamkeitsnachweis für das Hypnose-Audio-Produkt auf lampenfieber-besiegen.de.",
         source: "findyourway.ch",
@@ -11223,6 +11319,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "learnfluencer": {
     news: [
       // Neu: 2026-05-04
+      {
+        summary: "IHK Schleswig-Holstein (2026): 'AI-Act: Was Unternehmen jetzt wissen müssen – AI Act Literacy & KI-Schulungspflicht' – IHK erläutert die KI-Schulungspflicht nach EU AI Act Artikel 4: Unternehmen müssen allen KI-einsetzenden Mitarbeitenden nachweisbare KI-Kompetenz vermitteln; ab August 2026 drohen Bußgelder bis zu 35 Mio. Euro; IHK bietet Grundkurse und berät bei der Umsetzung eines strukturierten Schulungskonzepts. Regulatorische KI-Schulungspflicht durch EU AI Act schafft unmittelbaren und messbaren Weiterbildungsbedarf – direktes Thought-Leadership-Potenzial für learnfluencer.ch als KI-Lernkompetenz-Plattform.",
+        source: "IHK Schleswig-Holstein",
+        url: "https://www.ihk.de/schleswig-holstein/standortpolitik/sicherheit/ai-act-literacy-ki-schulungspflicht-6434794",
+        date: "2026-04",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-05-04",
+      },
       {
         summary: "digitalengagiert.de (2026): 'E-Learning in 2026: Trends, KI & digitale Bildung' – Umfassende Trendanalyse: KI-gestützte adaptive Lernpfade als dominanter Trend 2026; 'Learning in the flow of work' löst starre Kursformate ab; Microlearning als bevorzugtes Format im digitalen Arbeitsalltag; 82,5% der Unternehmen aus DACH-Raum sehen in KI und adaptiven Lernsystemen den grössten Hebel für erfolgreiche Personalentwicklung (Benchmarking-Studie 450+ Unternehmen). E-Learning-Expertenmeinung 2026 bestätigt KI-Integration, Microlearning und arbeitsintegriertes Lernen als Schlüsseltrends – direktes Thought-Leadership-Themenfeld für learnfluencer.ch.",
         source: "digitalengagiert.de",
@@ -13026,6 +13130,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-04
       {
+        summary: "Qonto (2026): 'SWOT-Analyse: In 4 Schritten zur Strategieentwicklung für KMU' – Die führende europäische KMU-Finanzplattform Qonto erklärt die SWOT-Analyse als unverzichtbaren Schritt zur Strategieentwicklung: Stärken, Schwächen, Chancen und Risiken strukturiert analysieren; SWOT als Grundlage für Marketingplan und Wachstumsstrategie; Verknüpfung mit PESTEL für externe Faktoren empfohlen. Verbreitung von SWOT als KMU-Strategiestandard durch grosse Finanzplattformen bestätigt den Bedarf nach geführten, interaktiven Analyse-Tools – direktes Marktumfeld für das Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "Qonto / qonto.com",
+        url: "https://qonto.com/de/blog/kmu/tipps-und-tools/swot-analyse",
+        date: "2026-03",
+        category: "Strategie & Analyse",
+        addedAt: "2026-05-04",
+      },
+      {
         summary: "bexolutions.ch (2026): 'Marketing-Automation für Schweizer KMU 2026: Tools & ROI' – Schweizer Digital-Agentur analysiert Marketing-Automation-Markt für KMU 2026: Marketing-Automation ist 2026 kein Nice-to-have mehr, sondern entscheidender Wettbewerbsvorteil; strukturierte Marketingplanung (Zielgruppe, Segmentierung, SWOT-Analyse) als unerlässliche Voraussetzung vor dem Tool-Einsatz; ROI durch Lead-Nurturing, E-Mail-Automationen und CRM-Integration klar messbar; Schweizer KMU können 2026 über das kmu.digital-Förderprogramm des Bundes Subventionen erhalten. Wachsende Schweizer KMU-Investitionsbereitschaft in strukturierte Marketingplanung bestätigt die Nachfrage nach strategischen Marketing-Analyse-Tools wie dem Marketingkonzept-Tool auf learnfluencer.ch.",
         source: "bexolutions.ch",
         url: "https://bexolutions.ch/marketing-automation-fur-schweizer-kmu-2026-tools-roi/",
@@ -14233,6 +14345,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "bestattungsplaner": {
     news: [
       // Neu: 2026-05-04
+      {
+        summary: "ref.ch (2026): 'Zwei Kantonsparlamente für Sterbehilfe in Spitälern und Heimen' – Reformierte Medien berichten: Sowohl Kanton Zürich als auch Kanton Luzern haben parlamentarisch dafür gestimmt, dass Sterbehilfe von EXIT und DIGNITAS neu auch in Spitälern und Heimen erlaubt sein soll; Volksabstimmung in Zürich für 2026 angekündigt; religiöse Parteien haben Referendum lanciert. Wachsende gesellschaftliche Normalisierung von Sterbehilfe erhöht die Auseinandersetzung mit Vorsorge und Bestattungsplanung – direktes Impulse-Umfeld für bestattungsplaner.ch.",
+        source: "ref.ch",
+        url: "https://www.ref.ch/news/sterbehilfe-assistierter-suizid-zurich-luzern-spitaler-heime-dignitas/",
+        date: "2026-04",
+        category: "Recht & Regelungen",
+        addedAt: "2026-05-04",
+      },
+      {
+        summary: "Tagesanzeiger (2026): 'Sterbehilfe Zürich: EXIT und DIGNITAS auch in Spitälern' – Tagesanzeiger berichtet über den historischen Beschluss des Zürcher Kantonsrats (81:27 Stimmen): Assistierter Suizid soll in Zürich neu in allen Spitälern und Alters-/Pflegeheimen erlaubt sein; Volksabstimmung 2026 angekündigt; Zürich-Bevölkerung votierte 2011 mit ~80% für Selbstbestimmung. Öffentliche Medienberichterstattung über Sterbehilfe erhöht gesellschaftliche Aufmerksamkeit für Vorsorge und Bestattungsplanung – direktes Impulse-Umfeld für bestattungsplaner.ch als Online-Planungsportal.",
+        source: "Tagesanzeiger",
+        url: "https://www.tagesanzeiger.ch/sterbehilfe-zuerich-exit-und-dignitas-auch-in-spitaelern-341158547136",
+        date: "2026-04",
+        category: "Recht & Regelungen",
+        addedAt: "2026-05-04",
+      },
       {
         summary: "everlife.ch (2026): 'Everlife.ch – Nr. 1 für die Bestattungsvorsorge in der Schweiz' – Everlife.ch positioniert sich als All-in-One-Plattform für digitale Bestattungsvorsorge Schweiz: Vorsorge ermöglicht Regelung zu Lebzeiten ohne Zeitdruck; digitale Verwaltung spart Angehörigen fast 50 Stunden Formalitäten; Plattform integriert administrative und emotionale Aspekte der Bestattungsplanung; ca. 40% der Schweizer suchen Bestatter online, über 60% der unter 40-Jährigen; Digitalisierung der Branche beschleunigt sich. Wachsende digitale Konkurrenz im Schweizer Online-Bestattungsmarkt bestätigt die Validierung des Geschäftsmodells – direktes Marktumfeld für bestattungsplaner.ch als Lead-Vermittlungsportal.",
         source: "everlife.ch",
