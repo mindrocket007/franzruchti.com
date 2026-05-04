@@ -2200,6 +2200,39 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-04
       {
+        summary: "NinjaTrader (2026): 'S&P 500 Futures Trading Strategies' – NinjaTrader präsentiert die vier wichtigsten ES-Futures-Handelsstrategien: Pullback-Strategie mit 21-SMA, Trend-Gap-Strategie, Fade-Strategie und Opening Range Breakout. Praxisleitfaden für strukturierten Einstieg in den ES-Handel mit konkreten Entry/Exit-Regeln. Umfassender Strategieüberblick vom führenden Futures-Broker bestätigt die breite Anwendbarkeit regelbasierter Ansätze – relevantes Lernmaterial für algorithmische Trader auf der NinjaTrader-Plattform wie Mind Rocket Trading.",
+        source: "ninjatrader.com",
+        url: "https://ninjatrader.com/futures/blogs/s-p-500-index-futures-trading-strategies/",
+        date: "2026",
+        category: "Futures & Trading",
+        addedAt: "2026-05-04",
+      },
+      {
+        summary: "NinjaTrader (2026): 'ES vs MES: Which S&P Futures Fits Your Account?' – Detaillierter Vergleich von E-mini S&P 500 (ES, $50 Multiplier) und Micro E-mini S&P 500 (MES, $5 Multiplier, 1/10 der Grösse): Gleiche Marktexposition, zehnfach unterschiedliches Risiko pro Kontrakt; MES für Konten unter $10'000 empfohlen; ES für professionelle Skalierung. Direkte Entscheidungshilfe für Positionsgrössenplanung und Account-Sizing – praktisch relevantes Wissen für systematische ES-Futures-Trader.",
+        source: "ninjatrader.com",
+        url: "https://ninjatrader.com/futures/blogs/es-vs-mes-futures/",
+        date: "2026",
+        category: "Futures & Trading",
+        addedAt: "2026-05-04",
+      },
+      {
+        summary: "bookmap.com (2026): 'Day Trading Futures Explained | Futures Trading Strategies 2026' – Umfassender Leitfaden zu Day-Trading-Strategien für Futures 2026: Scalping, Momentum Trading, Order-Flow-Analyse mit Bookmap; Echtzeit-Liquiditätsvisualisierung als Edge für ES-Futures-Trader; Fokus auf institutionelle Auftragsflüsse und Liquiditätszonen. Aktuelle Perspektive auf professionelle Futures-Trading-Methodik 2026 – bestätigt Nachfrage nach strukturierten, toolgestützten Handelsansätzen wie jenen von Mind Rocket Trading.",
+        source: "bookmap.com",
+        url: "https://bookmap.com/blog/day-trading-futures-strategies-risks-and-rewards-explained",
+        date: "2026",
+        category: "Trading-Technologie",
+        addedAt: "2026-05-04",
+      },
+      {
+        summary: "io-fund.com (2026): 'S&P 500 Outlook 2026: Rising Volatility Risk and Key Support Levels' – IO Fund analysiert erhöhte Volatilitätsrisiken für Q2/Q3 2026: 8 technische Zyklen zeigen divergente Signale; extreme bullische Stimmung bei gleichzeitig hoher Aktienallokation als Kontraindikator; Schlüsselunterstützungszone bei 5'500–5'800. Erhöhte S&P-Volatilität in Q2/Q3 bedeutet potenziell mehr handelbare Bewegungen im ES/MES-Futures-Markt – relevantes Marktumfeld für algorithmische Day-Trader auf NinjaTrader wie Mind Rocket Trading.",
+        source: "io-fund.com",
+        url: "https://io-fund.com/broad-market/sp500-outlook-2026-volatility-support-levels",
+        date: "2026",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-05-04",
+      },
+      // Neu: 2026-05-04
+      {
         summary: "CME Group (4. Mai 2026): 'CME Group to Continue Expansion of Regulated Crypto Suite with Launch of Avalanche and Sui Futures' – CME Group startet heute den offiziellen Launch von Avalanche (AVAX) und Sui (SUI) Futures in Standard- und Micro-Kontrakten (AVAX Standard: 5'000 AVAX; SUI Standard: 50'000 SUI); ab 29. Mai 2026 24/7-Trading für alle CME Krypto-Futures; CME Krypto-Derivate-Volumen überschritt 2025 die Marke von 3 Billionen USD. Institutionelle Expansion des CME-Derivatuniversums auf neue Krypto-Assets signalisiert zunehmende Professionalisierung und Breite des regulierten Futures-Markts – relevantes Marktumfeld für algorithmische Futures-Trader wie Mind Rocket Trading.",
         source: "CME Group",
         url: "https://www.cmegroup.com/media-room/press-releases/2026/4/07/cme_group_to_continueexpansionofregulatedcryptosuitewithlaunchof.html",
@@ -7870,6 +7903,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-04
       {
+        summary: "basicthinking.de (27. April 2026): '5 Gründe, warum viele Unternehmen 2026 ihre Software-Stacks verkleinern' – Trend zur SaaS-Konsolidierung: Unternehmen reduzieren 2026 aktiv die Zahl ihrer Tools, da Tool-Proliferation zu Produktivitätsverlust, Sicherheitsrisiken und Kostendruck führt; gefragt sind integrierte, fokussierte Lösungen statt Feature-Überfrachtung. Konsolidierungstrend im SaaS-Markt unterstreicht den Wert fokussierter, methodenspezifischer Planungstools: Der 12wy-planner als Single-Purpose-Tool für die 12-Week-Year-Methode profitiert davon, dass User gezielt nach einfachen, klaren Lösungen suchen.",
+        source: "basicthinking.de",
+        url: "https://www.basicthinking.de/blog/2026/04/27/5-gruende-warum-viele-unternehmen-2026-ihre-software-stacks-verkleinern/",
+        date: "2026-04-27",
+        category: "SaaS & Tools",
+        addedAt: "2026-05-04",
+      },
+      // Neu: 2026-05-04
+      {
         summary: "mooncamp.com (2026): 'Die 10 besten Softwares für strategische Planung in 2026' – Mooncamp analysiert die führenden strategischen Planungssoftware-Tools 2026: OKR-Systeme, Projektmanagement und Zielverfolgungstools im Vergleich; kein Tool ist spezifisch auf die 12-Week-Year-Methode ausgerichtet; OKR-Software dominiert den Markt für Quartals-Planung. Marktlücke für methodenspezifische Planungstools bestätigt sich – der 12wy-planner als dediziertes Tool für die Brian-Moran-Methode mit Weekly Execution Score und Scorecard ist klar differenziert.",
         source: "mooncamp.com",
         url: "https://mooncamp.com/blog/strategic-planning-software",
@@ -9143,6 +9185,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 2026-05-04
+      {
+        summary: "UKE Hamburg (Universitätsklinikum Hamburg-Eppendorf, 2026): 'Digitale Gesundheit – Sexuelle Gesundheit' – Das UKE bündelt digitale Angebote im Bereich sexuelle Gesundheit: Online-Ressourcen, Apps und digitale Interventionen für Sexualfunktionsstörungen, Informationen zu Therapieoptionen und Selbsthilfe. Institutionelle Aufmerksamkeit eines führenden deutschen Universitätsklinikums auf digitale Sexualgesundheits-Angebote bestätigt Legitimität und Nachfrage nach digitalen Selbsthilfe-Lösungen – positives Marktumfeld für orgasmus-hinauszoegern.de.",
+        source: "uke.de",
+        url: "https://www.uke.de/landingpage/digitale-gesundheit-im-uke/sexuelle-gesundheit/index.html",
+        date: "2026",
+        category: "Digital Health",
+        addedAt: "2026-05-04",
+      },
       // Neu: 2026-05-04
       {
         summary: "gospring.de (2026): 'Vorzeitiger Samenerguss – Mittel im Vergleich' – GoSpring vergleicht die wichtigsten Mittel gegen vorzeitigen Samenerguss: Dapoxetin/Priligy (einziges zugelassenes SSRI on-demand), Fortacin (Lokalanästhetikum, verlängert Zeit auf bis zu 11 Min.), SSRIs off-label, Kondome und nicht-medikamentöse Ansätze inkl. Hypnose und mentale Techniken; wachsende Akzeptanz für holistische Ansätze. Breiter Produktvergleich mit expliziter Einbeziehung von Hypnose als Behandlungsoption bestätigt die wachsende Marktakzeptanz nicht-medikamentöser Selbsthilfe – direktes Umfeld für orgasmus-hinauszoegern.de als Audio-Hypnose-Produkt.",
