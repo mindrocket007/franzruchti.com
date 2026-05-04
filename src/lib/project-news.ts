@@ -28,6 +28,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-04
       {
+        summary: "ict-berufsbildung.ch (2026): 'Neuer KI-Abschluss – erste Absolventinnen und Absolventen 2026' – ICT-Berufsbildung Schweiz führt 2026 einen neuen Berufsabschluss im Bereich Künstliche Intelligenz ein; die ersten Absolventinnen und Absolventen treten 2026 in den Arbeitsmarkt ein; Abschluss kombiniert ICT-Grundkompetenz mit KI-Anwendungswissen auf Berufsbildungsniveau. Neuer KI-Abschluss auf dem Schweizer Berufsbildungsmarkt bestätigt wachsende Nachfrage nach formalisierten KI-Qualifikationen – direktes Marktumfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation.",
+        source: "ict-berufsbildung.ch",
+        url: "https://www.ict-berufsbildung.ch/projekte/weiterbildung/neuer-ki-abschluss",
+        date: "2026-04",
+        category: "Digitale Bildung",
+        addedAt: "2026-05-04",
+      },
+      {
         summary: "swissict.ch (Januar 2026): 'Jahresrückblick 2025 & Ausblick 2026' – SwissICT, der wichtigste Schweizer ICT-Branchenverband, blickt zurück auf 2025 und setzt für 2026 klare Prioritäten: KI-Kompetenz als Kernthema, Nachwuchsförderung durch Berufsbildung und digitale Souveränität als strategische Agenda. Direkte Ausrichtung des zentralen ICT-Verbands auf KI-Bildung und Fachkräftenachwuchs bestätigt das strategische Marktumfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation.",
         source: "swissict.ch",
         url: "https://www.swissict.ch/jahresruckblick-2025-ausblick-2026/",
@@ -1605,6 +1613,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-04
       {
+        summary: "unternehmen.swissnova.swiss (2026): 'Weiterbildung für Unternehmen in der Schweiz: 10 Trends für 2026' – SwissNova analysiert die zehn wichtigsten Weiterbildungstrends für Schweizer Unternehmen 2026: KI-gestütztes personalisiertes Lernen, Microlearning, hybride Formate, Learning-in-the-Flow-of-Work; wachsende Investitionen in Mitarbeiterentwicklung und persönliche Kompetenzen. Wachsende Nachfrage nach strukturierten, personalisierten Weiterbildungsangeboten in Schweizer Unternehmen bestätigt das Marktumfeld für Mind Rocket GmbH's Programme zur persönlichen Entwicklung.",
+        source: "swissnova.swiss",
+        url: "https://unternehmen.swissnova.swiss/weiterbildung-unternehmen-schweiz-trends-2026/",
+        date: "2026-04",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-05-04",
+      },
+      {
         summary: "coachingzentrum.ch (2026): 'CAS Resilienztraining – Modulstart 2. Juni & 19. August 2026' – Coachingzentrum Olten bietet 2026 das CAS Resilienztraining mit Modulstart am 2. Juni und 19. August 2026 digital an; Ausbildung zu Resilienz Coaches für Einzelpersonen und Teams; Mental Health und Agilität als Kernkompetenzen; Zertifikat auf Hochschulniveau. Wachsendes institutionelles Coaching-Ausbildungsangebot mit Fokus auf Resilienz und Mental Fitness bestätigt die hohe Nachfrage – direktes Ausbildungs-Ökosystem für Mind Rocket GmbH's Programme.",
         source: "coachingzentrum.ch",
         url: "https://www.coachingzentrum.ch/ausbildung/cas-resilienztraining/",
@@ -2199,6 +2215,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "mindrocket-trading": {
     news: [
       // Neu: 2026-05-04
+      {
+        summary: "NinjaTrader (30. Januar 2026): 'NinjaTrader Expands Into Europe to Support the Next Generation of Retail Futures Traders' – NinjaTrader lanciert per 30. Januar 2026 sein Futures-Handelsangebot in Europa: Startmärkte sind Niederlande und Deutschland, reguliert über PEDSL-CY (CySEC-Lizenz 342/17, MiFID); Zugang zu US- und europäischen Futures-Kontrakten via NinjaTrader-Plattform; Expansion nach Frankreich und Italien für Ende 2026 angekündigt. Europäischer Marktlaunch des führenden Futures-Brokers NinjaTrader öffnet neue Zielgruppen und bestätigt das Wachstumspotenzial des algorithmischen Futures-Handels – direktes Marktumfeld für Mind Rocket Trading.",
+        source: "ninjatrader.com / prnewswire.com",
+        url: "https://ninjatrader.com/news/ninjatrader-expands-into-europe-to-support-the-next-generation-of-retail-futures-traders/",
+        date: "2026-01-30",
+        category: "Trading-Technologie",
+        addedAt: "2026-05-04",
+      },
       {
         summary: "NinjaTrader (2026): 'S&P 500 Futures Trading Strategies' – NinjaTrader präsentiert die vier wichtigsten ES-Futures-Handelsstrategien: Pullback-Strategie mit 21-SMA, Trend-Gap-Strategie, Fade-Strategie und Opening Range Breakout. Praxisleitfaden für strukturierten Einstieg in den ES-Handel mit konkreten Entry/Exit-Regeln. Umfassender Strategieüberblick vom führenden Futures-Broker bestätigt die breite Anwendbarkeit regelbasierter Ansätze – relevantes Lernmaterial für algorithmische Trader auf der NinjaTrader-Plattform wie Mind Rocket Trading.",
         source: "ninjatrader.com",
@@ -4786,6 +4810,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-04
       {
+        summary: "bildung-schweiz.ch (2026): 'Persönlichkeitsentwicklung – Aus- und Weiterbildungsangebote Schweiz' – Bildung Schweiz, das führende Schweizer Bildungsportal, listet umfangreiche Weiterbildungsangebote im Bereich Persönlichkeitsentwicklung: wachsende Nachfrage nach digitalen und hybriden Formaten; Themen wie Resilienz, Selbstmanagement, Kommunikation und emotionale Intelligenz als Top-Kategorien. Wachsendes institutionelles Angebot zur Persönlichkeitsentwicklung in der Schweiz bestätigt das Marktumfeld für mindtools.ch als Anbieter digitaler Selbsthilfe-Werkzeuge.",
+        source: "bildung-schweiz.ch",
+        url: "https://www.bildung-schweiz.ch/topics/persoenlichkeitsentwicklung",
+        date: "2026-04",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-05-04",
+      },
+      {
         summary: "databridgemarketresearch.com (2026): 'Markt für Persönlichkeitsentwicklung – Globale Marktzahlen, Analyse des Marktanteils und der Trends – Branchenüberblick und Prognose bis 2032' – Data Bridge Market Research analysiert den globalen Personal-Development-Markt: starkes Wachstum durch steigende Nachfrage nach digitalen Selbsthilfe-Produkten; zunehmende Integration von KI-Coaching und personalisierten Lernpfaden; Verlagerung zu digitalem Content und E-Books als wichtigstes Marktsegment; globaler Fokus auf psychische Gesundheit und emotionales Wohlbefinden als Hauptwachstumstreiber. Strukturell wachsender globaler Markt für digitale Persönlichkeitsentwicklungs-Tools bestätigt das Marktumfeld für mindtools.ch als Anbieter kompakter digitaler Selbsthilfe-Werkzeuge.",
         source: "databridgemarketresearch.com",
         url: "https://www.databridgemarketresearch.com/de/reports/global-personal-development-market",
@@ -5799,6 +5831,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "hypnovital": {
     news: [
       // Neu: 2026-05-04
+      {
+        summary: "nume.ch (2026): 'Mentale Gesundheit 2026: Warum gesunde Führung Pflicht ist' – Schweizer Personalmanagement-Plattform NUMERUS/NUME analysiert: Wirtschaftlicher Erfolg hängt 2026 direkt von der mentalen Fitness der Belegschaft ab; jeder dritte Erwerbstätige ist von stressbedingter emotionaler Erschöpfung betroffen; gesunde Führung wird zur Pflichtdisziplin für Unternehmen; psychische Gesundheit am Arbeitsplatz als strategisches Thema. Steigende institutionelle Aufmerksamkeit auf mentale Gesundheit und BGM in Schweizer Unternehmen bestätigt das Marktumfeld für hypnovital® als skalierbare BGM-Lösung.",
+        source: "nume.ch",
+        url: "https://www.nume.ch/mentale-gesundheit-2026-warum-gesunde-fuehrung-pflicht-ist/",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-04",
+      },
       {
         summary: "ost.ch (2026): 'CAS Stress und Stressmanagement – Ostschweizer Fachhochschule' – OST bietet 2026 ein akademisches CAS Stress und Stressmanagement (20 Präsenztage, CHF 7'900, berufsbegleitend) mit Schwerpunkt auf Erkennen, Verstehen und Bewältigen von Stress in verschiedenen Lebensbereichen an. Akademische Institutionen integrieren Stressmanagement als regulären Weiterbildungsgegenstand – bestätigt die gesellschaftliche Professionalisierung des BGM-Markts und das Wachstumsumfeld für skalierbare hypnovital®-Programme.",
         source: "ost.ch",
@@ -7903,6 +7943,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-04
       {
+        summary: "northlyapp.com (2026): 'OKR-Methode: Der komplette Leitfaden 2026' – Northly liefert einen umfassenden OKR-Leitfaden für 2026: Objectives & Key Results als Quartalsplanungsmethode, Integration mit KI-Tools zur automatischen Fortschrittsmessung, Kombination OKR + 12-Week-Year für fokussierte Umsetzung empfohlen. Wachsende Popularität der OKR-Methodik als Quartalsplanung bestätigt das Marktumfeld für den 12wy-planner als fokussiertes Planungstool für die 12-Week-Year-Methode.",
+        source: "northlyapp.com",
+        url: "https://northlyapp.com/de/blog/okr-methode-komplett-leitfaden/",
+        date: "2026-04",
+        category: "Produktivität & Planung",
+        addedAt: "2026-05-04",
+      },
+      {
         summary: "basicthinking.de (27. April 2026): '5 Gründe, warum viele Unternehmen 2026 ihre Software-Stacks verkleinern' – Trend zur SaaS-Konsolidierung: Unternehmen reduzieren 2026 aktiv die Zahl ihrer Tools, da Tool-Proliferation zu Produktivitätsverlust, Sicherheitsrisiken und Kostendruck führt; gefragt sind integrierte, fokussierte Lösungen statt Feature-Überfrachtung. Konsolidierungstrend im SaaS-Markt unterstreicht den Wert fokussierter, methodenspezifischer Planungstools: Der 12wy-planner als Single-Purpose-Tool für die 12-Week-Year-Methode profitiert davon, dass User gezielt nach einfachen, klaren Lösungen suchen.",
         source: "basicthinking.de",
         url: "https://www.basicthinking.de/blog/2026/04/27/5-gruende-warum-viele-unternehmen-2026-ihre-software-stacks-verkleinern/",
@@ -9187,6 +9235,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-04
       {
+        summary: "noack-hypnose.de (2026): 'Ejaculatio Praecox (vorzeitiger Samenerguss): Aufklärung, Tipps, Hilfe' – NOACK Hypnotherapie Berlin erklärt: Ejaculatio praecox ist eine der häufigsten männlichen Sexualstörungen; Hypnotherapie als Methode der ersten Wahl neben konventioneller Sexualpsychotherapie; limitierende Glaubenssätze und destruktive Denkmuster als häufige Ursache; Online- und Präsenz-Hypnotherapie verfügbar. Wachsendes deutschsprachiges Angebot an Hypnose-Spezialisten für Ejaculatio praecox bestätigt Marktakzeptanz und Behandlungsnachfrage – Wettbewerbsumfeld für das digitale Audio-Hypnose-Produkt auf orgasmus-hinauszoegern.de.",
+        source: "noack-hypnose.de",
+        url: "https://www.noack-hypnose.de/ejaculatio-praecox-bzw-vorzeitiger-samenerguss/",
+        date: "2026-04",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-05-04",
+      },
+      {
         summary: "UKE Hamburg (Universitätsklinikum Hamburg-Eppendorf, 2026): 'Digitale Gesundheit – Sexuelle Gesundheit' – Das UKE bündelt digitale Angebote im Bereich sexuelle Gesundheit: Online-Ressourcen, Apps und digitale Interventionen für Sexualfunktionsstörungen, Informationen zu Therapieoptionen und Selbsthilfe. Institutionelle Aufmerksamkeit eines führenden deutschen Universitätsklinikums auf digitale Sexualgesundheits-Angebote bestätigt Legitimität und Nachfrage nach digitalen Selbsthilfe-Lösungen – positives Marktumfeld für orgasmus-hinauszoegern.de.",
         source: "uke.de",
         url: "https://www.uke.de/landingpage/digitale-gesundheit-im-uke/sexuelle-gesundheit/index.html",
@@ -10233,6 +10289,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "lampenfieber": {
     news: [
       // Neu: 2026-05-04
+      {
+        summary: "wagner-empowerment.de (2026): 'Online Seminar & 1:1 Redeangst überwinden – Coaching, Mentaltraining & Hypnose' – Wagner Empowerment bietet 2026 Online-Seminare und Einzelcoachings zur Überwindung von Redeangst und Lampenfieber: Kombination aus Mentaltraining, Hypnose und Coaching-Methoden; Unterschied Lampenfieber vs. ausgeprägte Redeangst mit je unterschiedlichen Therapieansätzen; neue Seminartermine 2026 mit begrenzter Teilnehmerzahl. Spezialisierte Angebote zur Überwindung von Redeangst und Auftrittsangst bestätigen anhaltende Nachfrage – Wettbewerbsumfeld für das Audio-Hypnose-Produkt auf lampenfieber-besiegen.de.",
+        source: "wagner-empowerment.de",
+        url: "https://www.wagner-empowerment.de/online-seminar-redeangst-ueberwinden/",
+        date: "2026-04",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-05-04",
+      },
       {
         summary: "herzweg-hypnose.de (2026): 'Lampenfieber überwinden mit Hypnose – Sicher auftreten & frei sprechen' – Herzweg Hypnose erklärt die Wirkungsweise bei Lampenfieber: Im hypnotischen Zustand können tief verankerte Angstmuster aufgelöst und neue, positive Assoziationen für Auftrittssituationen verankert werden; positive Visualisierung, mentale Probe des Auftritts und Ressourcenverankerung als Kernmethoden. Wachsendes deutschsprachiges Netz spezialisierter Hypnose-Anbieter für Lampenfieber bestätigt Marktakzeptanz und hohe Behandlungsnachfrage – direktes Wettbewerbsumfeld für das Audio-Hypnose-Produkt auf lampenfieber-besiegen.de.",
         source: "herzweg-hypnose.de",
@@ -11402,6 +11466,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "learnfluencer": {
     news: [
       // Neu: 2026-05-04
+      {
+        summary: "digitalengagiert.de (2026): 'E-Learning in 2026: Trends, KI & digitale Bildung' – Umfassende Analyse der E-Learning-Entwicklungen 2026: KI-gestützte personalisierte Lernpfade als zentraler Trend; Lernplattformen analysieren individuelles Lernverhalten und passen Inhalte dynamisch an; Verlagerung von statischen Kursen zu adaptiven Lernumgebungen; KI-Tools als unverzichtbare Assistenten für Lerndesigner. Beschleunigter Wandel im E-Learning durch KI-Integration bestätigt die Relevanz der learnfluencer.ch-Plattform als Thought-Leadership-Portal für Lernkompetenz und KI-Weiterbildung.",
+        source: "digitalengagiert.de",
+        url: "https://www.digitalengagiert.de/e-learning-in-2026-trends-technologien-und-was-sich-veraendert/",
+        date: "2026-04",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-05-04",
+      },
       {
         summary: "IHK Schleswig-Holstein (2026): 'AI-Act: Was Unternehmen jetzt wissen müssen – AI Act Literacy & KI-Schulungspflicht' – IHK erläutert die KI-Schulungspflicht nach EU AI Act Artikel 4: Unternehmen müssen allen KI-einsetzenden Mitarbeitenden nachweisbare KI-Kompetenz vermitteln; ab August 2026 drohen Bußgelder bis zu 35 Mio. Euro; IHK bietet Grundkurse und berät bei der Umsetzung eines strukturierten Schulungskonzepts. Regulatorische KI-Schulungspflicht durch EU AI Act schafft unmittelbaren und messbaren Weiterbildungsbedarf – direktes Thought-Leadership-Potenzial für learnfluencer.ch als KI-Lernkompetenz-Plattform.",
         source: "IHK Schleswig-Holstein",
@@ -13221,6 +13293,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-04
       {
+        summary: "kimarketing.ch (2026): 'Die besten KI-Marketing-Tools 2026 für Schweizer KMU – nicht die grösste Liste, sondern die richtige' – KIMarketing.ch kuratiert die relevantesten KI-Marketing-Tools für Schweizer KMU: Fokus auf Schweizer Datenschutz (nDSG), praxisorientierte Auswahl; Tools für Content, Social Media, E-Mail und Marketing-Automatisierung; strategische Planung als notwendige Ergänzung zu Automatisierungs-Tools. Schweizer KMU-Fokus auf KI-Marketing-Tools bestätigt wachsende Akzeptanz digitaler Marketingplanung – direktes Marktumfeld für das interaktive Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "kimarketing.ch",
+        url: "https://www.kimarketing.ch/beste-ki-marketing-tools-2026-kmu/",
+        date: "2026-04",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-05-04",
+      },
+      {
         summary: "Qonto (2026): 'SWOT-Analyse: In 4 Schritten zur Strategieentwicklung für KMU' – Die führende europäische KMU-Finanzplattform Qonto erklärt die SWOT-Analyse als unverzichtbaren Schritt zur Strategieentwicklung: Stärken, Schwächen, Chancen und Risiken strukturiert analysieren; SWOT als Grundlage für Marketingplan und Wachstumsstrategie; Verknüpfung mit PESTEL für externe Faktoren empfohlen. Verbreitung von SWOT als KMU-Strategiestandard durch grosse Finanzplattformen bestätigt den Bedarf nach geführten, interaktiven Analyse-Tools – direktes Marktumfeld für das Marketingkonzept-Tool auf learnfluencer.ch.",
         source: "Qonto / qonto.com",
         url: "https://qonto.com/de/blog/kmu/tipps-und-tools/swot-analyse",
@@ -14436,6 +14516,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "bestattungsplaner": {
     news: [
       // Neu: 2026-05-04
+      {
+        summary: "everlife.ch (2026): 'Bestattungsvorsorge Schweiz: Nur 10% der Todesfälle durch Vorsorgevertrag abgedeckt' – Everlife / Stiftung Schweizerische Bestattungsvorsorge analysiert den Schweizer Markt: Während in Frankreich 25% und in den Niederlanden 85% der Todesfälle durch Vorsorgeverträge abgedeckt sind, liegt der Schweizer Anteil bei nur 10%; rund 90% der Schweizer wählen die Kremation; starkes Wachstumspotenzial im Schweizer Bestattungsvorsorge-Markt. Niedriger Digitalisierungsgrad in der Schweizer Bestattungsvorsorge bei gleichzeitig hoher Kremationsrate und hohem Wachstumspotenzial bestätigt das Potenzial für bestattungsplaner.ch als digitale Lead-Plattform.",
+        source: "everlife.ch",
+        url: "https://everlife.ch/de/",
+        date: "2026-04",
+        category: "Markt & Trends",
+        addedAt: "2026-05-04",
+      },
       {
         summary: "ref.ch (2026): 'Zwei Kantonsparlamente für Sterbehilfe in Spitälern und Heimen' – Reformierte Medien berichten: Sowohl Kanton Zürich als auch Kanton Luzern haben parlamentarisch dafür gestimmt, dass Sterbehilfe von EXIT und DIGNITAS neu auch in Spitälern und Heimen erlaubt sein soll; Volksabstimmung in Zürich für 2026 angekündigt; religiöse Parteien haben Referendum lanciert. Wachsende gesellschaftliche Normalisierung von Sterbehilfe erhöht die Auseinandersetzung mit Vorsorge und Bestattungsplanung – direktes Impulse-Umfeld für bestattungsplaner.ch.",
         source: "ref.ch",
