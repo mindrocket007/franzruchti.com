@@ -4760,6 +4760,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
         category: "Buchmarkt & Publishing",
         addedAt: "2026-05-04",
       },
+      {
+        summary: "buchmarkt.de (Februar 2026): 'KI-Studie der IG Digital 2026: Wie KI die Arbeit in Buchverlagen verändert' – Eine Studie der IG Digital zeigt, wie KI die Arbeit in Buchverlagen verändert und damit auch den Self-Publishing-Markt beeinflusst; hybride Publikationsmodelle gewinnen 2026 an Bedeutung; der Markt verschiebt sich zugunsten kleinerer, authentischer Angebote mit klarer Nische. Für mindtools.ch als Indie-PDF-Anbieter: Markttrend bestätigt die Positionierung als kompakter, authentischer Nischenanbieter mit echtem Mehrwert gegenüber generischen KI-Inhalten.",
+        source: "buchmarkt.de",
+        url: "https://buchmarkt.de/2026/02/25/ki-studie-der-ig-digital-2026-wie-ki-die-arbeit-in-buchverlagen-veraendert/",
+        date: "2026-02-25",
+        category: "Buchmarkt & Publishing",
+        addedAt: "2026-05-04",
+      },
+      {
+        summary: "marketresearchfuture.com (2026): 'Personal Development Market – Globale Prognose bis 2035' – Der globale Markt für persönliche Entwicklung wird 2026 auf rund 67 Milliarden USD geschätzt und soll bis 2035 auf über 122 Milliarden USD wachsen (CAGR 6,93%); Treiber sind Digitalisierung, KI-gestützte Personalisierung und wachsendes Bewusstsein für mentale Gesundheit; DACH-Markt profitiert überproportional, da psychische Gesundheit als gesellschaftliches Schlüsselthema stark zunimmt. Strukturell wachsender globaler Markt für Persönlichkeitsentwicklungs-Tools bestätigt das strategische Marktumfeld für mindtools.ch als digitales Werkzeugportal.",
+        source: "marketresearchfuture.com",
+        url: "https://www.marketresearchfuture.com/de/reports/personal-development-market-31636",
+        date: "2026-05",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-05-04",
+      },
       // Neu: 2026-05-03
       {
         summary: "Holon Health (2026): 'Top 5 Free Mental Health Apps 2026 (That Actually Help!)' – Übersicht der fünf wirksamsten kostenlosen Mental-Health-Apps 2026; globaler Markt für digitale mentale Gesundheit wächst auf über 6 Mrd. USD bis 2026; Apps mit CBT-Techniken, Achtsamkeit und Stimmungstracking als Hauptkategorien; Hybrid-Ansätze aus KI und menschlicher Unterstützung als wirksamste Kombination. Wachsender globaler Markt für digitale Mental-Health-Tools bestätigt die gesellschaftliche Akzeptanz kompakter digitaler Selbsthilfe-Werkzeuge – direktes Marktumfeld für mindtools.ch.",
@@ -5762,6 +5778,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         summary: "resilienzify.ch (2026): 'Stressmanagement Seminar 2026 – KI-gestütztes Microlearning & hybride Praxistage' – Resilienzify kombiniert 2026 Live-Onlinekurse, persönliches Peer-Coaching, KI-gestütztes Microlearning und Praxistage in Zürich, Bern und Basel zu einem innovativen Stressmanagement-Programm; Langzeitbegleitung und Community als Differenzierungsmerkmale. Innovative hybride Stressmanagement-Formate mit KI bestätigen den Trend zu digitalen, skalierbaren BGM-Lösungen – direktes Wachstumsumfeld für hypnovital® als digitales Audio-Programm für Unternehmen.",
         source: "resilienzify.ch",
         url: "https://www.resilienzify.ch/stressmanagement-seminar/",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-04",
+      },
+      {
+        summary: "gesundheitsfoerderung.ch (2026): 'Betriebliches Gesundheitsmanagement – Friendly Work Space' – Gesundheitsförderung Schweiz unterstützt Unternehmen mit dem 'Friendly Work Space'-Label beim Aufbau systematischer BGM-Strukturen und organisiert 2026 eine BGM-Tagung zum Thema 'Gesunde Teams – Wie Zusammenarbeit gelingt'; das Label ist in der Schweizer Unternehmenslandschaft anerkannter Standard für gesunde Arbeitsplätze. Institutionelle BGM-Förderung durch Gesundheitsförderung Schweiz stärkt das Marktumfeld und potenzielle Kooperations-/Zertifizierungspartnerschaften für hypnovital® als BGM-Programmanbieter.",
+        source: "gesundheitsfoerderung.ch",
+        url: "https://gesundheitsfoerderung.ch/betriebliches-gesundheitsmanagement",
         date: "2026-04",
         category: "BGM & Gesundheit",
         addedAt: "2026-05-04",
@@ -9144,6 +9168,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         category: "Sexuelle Gesundheit",
         addedAt: "2026-05-04",
       },
+      {
+        summary: "schweizer-illustrierte.ch (2026): 'Vorzeitiger Samenerguss: Tipps und Medikamente' – Das Schweizer Gesundheitsportal beleuchtet den vorzeitigen Samenerguss als häufige Störung bei Schweizer Männern und stellt aktuelle Behandlungsoptionen vor: Dapoxetin, Verhaltenstechniken (Stopp-Start, Squeeze) und alternative Selbsthilfemethoden. Der Artikel zeigt, dass Schweizer Männer aktiv nach Selbsthilfelösungen suchen und eine wachsende Nachfrage nach niedrigschwelligen, anonymen Angeboten besteht – direktes Marktumfeld für orgasmus-hinauszoegern.de.",
+        source: "schweizer-illustrierte.ch",
+        url: "https://www.schweizer-illustrierte.ch/lifestyle/gesundheit-und-fitness/vorzeitiger-samenerguss-tipps-medikamente",
+        date: "2026-04",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-05-04",
+      },
       // Neu: 2026-05-03
       {
         summary: "Dr. med. Heike Melzer, München (2026): 'Vorzeitiger Samenerguss (Ejaculatio Praecox)' – Fachärztin für Psychosomatische Medizin und Psychotherapie mit Schwerpunkt sexuelle Funktionsstörungen: Ejaculatio praecox als häufigste sexuelle Störung bei Männern aller Altersgruppen (ca. 30%); organische Ursachen in weniger als 2% der Fälle; psychotherapeutische und hypnotherapeutische Ansätze mit nachgewiesener hoher Erfolgsrate. Führende Fachärztin für Psychosomatik bestätigt den rein psychologischen Ursprung und die hervorragende Behandelbarkeit von Ejaculatio praecox – direkter Wirksamkeitsnachweis für orgasmus-hinauszoegern.de.",
@@ -11325,6 +11357,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         url: "https://www.ihk.de/schleswig-holstein/standortpolitik/sicherheit/ai-act-literacy-ki-schulungspflicht-6434794",
         date: "2026-04",
         category: "Lernkompetenz & KI",
+        addedAt: "2026-05-04",
+      },
+      {
+        summary: "marketingprofs.com (2026): 'B2B Thought Leadership Content Trends for 2026' – MarketingProfs zeigt, dass 47 Prozent der B2B-Marketer ihren Einsatz von Research-basiertem Thought-Leadership-Content erhöhen wollen; datengestützter, authentischer Content wird zum wichtigsten Differenzierungsfaktor im KI-gesättigten Markt; Thought Leadership generiert messbar mehr qualifizierte Leads als klassischer Produktcontent. Starke Bestätigung der Content-Strategie für learnfluencer.ch: Research-basierter Thought-Leadership-Content zu KI und Lernkompetenz ist genau das, was B2B-Entscheider 2026 nachfragen.",
+        source: "marketingprofs.com",
+        url: "https://www.marketingprofs.com/charts/2026/54063/b2b-thought-leadership-content-trends-for-2026",
+        date: "2026-04",
+        category: "Content & Thought Leadership",
         addedAt: "2026-05-04",
       },
       {
@@ -14367,6 +14407,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         url: "https://everlife.ch/de/bestattungsvorsorge/",
         date: "2026-04",
         category: "Digitale Vorsorge",
+        addedAt: "2026-05-04",
+      },
+      {
+        summary: "bestatter.ch (2026): 'Kremation vs. Erdbestattung in der Schweiz – Was du wissen musst' – Der offizielle Verband der Bestattungsdienste Schweiz publiziert aktuelle Daten zur Kremation: Über 90 Prozent aller Verstorbenen in der Schweiz werden kremiert, Tendenz weiter steigend; Gründe sind Kosten, Flexibilität bei der Urnenbeisetzung und wachsende Akzeptanz alternativer Bestattungsformen. Wichtiger Markttrend für bestattungsplaner.ch: Die überwiegende Präferenz für Kremation stärkt die Nachfrage nach flexiblen, digitalen Planungsangeboten rund um Urnenbestattungen.",
+        source: "bestatter.ch",
+        url: "https://bestatter.ch/en/cremation-vs-burial-in-switzerland-what-you-need-to-know/",
+        date: "2026-04",
+        category: "Bestattungsbranche Schweiz",
         addedAt: "2026-05-04",
       },
       // Neu: 2026-05-03
