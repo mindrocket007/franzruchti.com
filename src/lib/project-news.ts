@@ -28,6 +28,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-04
       {
+        summary: "stepping-stone.ch (Mai 2026): 'Teilnahme an der DigitUp 2026 in Zürich' – Stepping Stone AG, einer der führenden Schweizer ICT-Personalvermittler, berichtet über ihre Teilnahme am swissICT #DIGITUP 2026 (5. Mai 2026, Zürich); das Event vereint die Schweizer ICT-Community zu 25 Sessions zu KI, Digital Sovereignty und ICT-Bildung; Stepping Stone setzt das Branchennetzwerk aktiv für Talentgewinnung und Marktpositionierung ein. Aktive Beteiligung führender Schweizer ICT-Personalvermittler am #DIGITUP bestätigt die Vitalität des ICT-Ökosystems – direktes Signal für anhaltende Nachfrage nach qualifizierten ICT-Fachkräften und damit für ICT-Qualifizierungsangebote wie jene der SIZ AG.",
+        source: "stepping-stone.ch",
+        url: "https://www.stepping-stone.ch/en/news/detail-view/teilnahme-an-der-digitup-2026-in-zuerich/",
+        date: "2026-05",
+        category: "Arbeitsmarkt & IT",
+        addedAt: "2026-05-04",
+      },
+      {
         summary: "ict-berufsbildung.ch / swisscybersecurity.net (31. März 2026): 'ICT-Diplomfeier 2026 – Die höhere Berufsbildung bleibt wichtig für den Schweizer Arbeitsmarkt' – ICT-Berufsbildung Schweiz diplomiert 145 ICT-Fachkräfte der höheren Berufsbildung; Abschlüsse auf NQR 5–7 (Teamleiter bis ICT-Manager HFP); Zeremonie betont die strategische Bedeutung der höheren Berufsbildung für den Schweizer Arbeitsmarkt angesichts einer prognostizierten ICT-Fachkräftelücke von 54'000 bis 2033. Wachsender Bedarf an qualifizierten ICT-Abschlüssen auf höherem Berufsbildungsniveau bestätigt das strukturelle Wachstumsumfeld für SIZ AG als ICT-Prüfungsorganisation.",
         source: "swisscybersecurity.net",
         url: "https://www.swisscybersecurity.net/news/2026-03-31/ict-berufsbildung-schweiz-diplomiert-145-ict-fachkraeften",
@@ -2167,6 +2175,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "mindrocket-trading": {
     news: [
       // Neu: 2026-05-04
+      {
+        summary: "fortunly.com (Mai 2026): 'Best Futures Prop Trading Firms in May 2026' – Unabhängiges Finanzvergleichsportal analysiert den Futures-Prop-Firm-Markt Mai 2026: Suchvolumen für Prop-Trading explodierte +55x zwischen 2020–2026; globale Auszahlungen 2025 über 325 Mio. USD; Markt verlagert sich von unregulierten Forex-Modellen hin zu regulierten Futures-Firmen; umfassender Vergleich führender Anbieter inkl. Apex Trader Funding, Topstep und NinjaTrader. Explodierende Nachfrage nach Futures-Prop-Firmen und regulatorische Professionalisierung des Markts bestätigen das Wachstumsumfeld für algorithmische ES-Futures-Strategien – direktes Marktumfeld für mindrocket-trading.com.",
+        source: "fortunly.com",
+        url: "https://fortunly.com/investments/futures-prop-firms/",
+        date: "2026-05",
+        category: "Futures & Trading",
+        addedAt: "2026-05-04",
+      },
+      {
+        summary: "financemagnates.com (2026): 'Best Prop Firms in 2026: Top Picks for Traders' – Finance Magnates analysiert die Top-Prop-Firmen 2026 global: Futures-Prop-Firmen setzen sich durch regulierte Struktur und transparente Regelwerke gegenüber CFD/Forex-Modellen durch; neuer FIXML-Datensicherheitsstandard ab 3. Juni 2026 verbindlich für alle Prop-Firmen; Branchentrend zu Retention-Modellen statt Challenge-Volumen; Wachstum durch Zugang für Retail-Trader weltweit. Regulatorische Professionalisierung und wachsende Transparenz im Prop-Trading-Markt schaffen stabilere Rahmenbedingungen für systematische ES-Futures-Strategien – direktes Wachstumsumfeld für mindrocket-trading.com.",
+        source: "financemagnates.com",
+        url: "https://www.financemagnates.com/forex/best-prop-firms-in-2026-top-picks-for-traders/",
+        date: "2026-05",
+        category: "Futures & Trading",
+        addedAt: "2026-05-04",
+      },
       {
         summary: "ninjatrader.com / prnewswire.com (30. Januar 2026): 'NinjaTrader Expands Into Europe to Support the Next Generation of Retail Futures Traders' – NinjaTrader (Teil der Kraken-Gruppe seit $1.5Mrd.-Übernahme 2025) expandiert per 30. Januar 2026 offiziell nach Europa; Markteintritt über CySEC-regulierte Payward Europe Digital Solutions; Launch zunächst in Niederlanden und Deutschland mit vollem Plattformzugang inklusive Charting, Order Flow, Backtesting und Futures-Simulator. Europäische Expansion der führenden Futures-Handelsplattform NinjaTrader erweitert die Trader-Basis und die Ökosystem-Relevanz von NinjaScript-basierten Strategien wie jenen von mindrocket-trading.com direkt.",
         source: "ninjatrader.com",
