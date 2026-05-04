@@ -26,6 +26,23 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 2026-05-04
+      {
+        summary: "ict-berufsbildung.ch / swisscybersecurity.net (31. März 2026): 'ICT-Diplomfeier 2026 – Die höhere Berufsbildung bleibt wichtig für den Schweizer Arbeitsmarkt' – ICT-Berufsbildung Schweiz diplomiert 145 ICT-Fachkräfte der höheren Berufsbildung; Abschlüsse auf NQR 5–7 (Teamleiter bis ICT-Manager HFP); Zeremonie betont die strategische Bedeutung der höheren Berufsbildung für den Schweizer Arbeitsmarkt angesichts einer prognostizierten ICT-Fachkräftelücke von 54'000 bis 2033. Wachsender Bedarf an qualifizierten ICT-Abschlüssen auf höherem Berufsbildungsniveau bestätigt das strukturelle Wachstumsumfeld für SIZ AG als ICT-Prüfungsorganisation.",
+        source: "swisscybersecurity.net",
+        url: "https://www.swisscybersecurity.net/news/2026-03-31/ict-berufsbildung-schweiz-diplomiert-145-ict-fachkraeften",
+        date: "2026-03-31",
+        category: "Arbeitsmarkt & IT",
+        addedAt: "2026-05-04",
+      },
+      {
+        summary: "ict-berufsbildung.ch (2026): 'Berufsbildung mit Abstand grösste Zubringerin an ICT-Fachkräften' – ICT-Berufsbildung Schweiz publiziert Fachkräftebedarfsprognose bis 2033: Schweiz muss bis 2033 eine Lücke von 54'000 ICT-Fachkräften schliessen; 79 Prozent aller ICT-Abschlüsse stammen aus der Berufsbildung; Lehrstellenquote muss von 5.9 auf 8.1 Prozent erhöht werden; ICT-Berufsbildung als einzige skalierbare Antwort auf den strukturellen Fachkräftemangel. Dramatisch wachsender ICT-Fachkräftebedarf stärkt die gesellschaftliche Relevanz von ICT-Qualifikationen und damit das Umfeld für SIZ AG als anerkannte Prüfungsorganisation.",
+        source: "ict-berufsbildung.ch",
+        url: "https://www.ict-berufsbildung.ch/berufsbildung-mit-abstand-groesste-zubringerin-an-ict-fachkraeften",
+        date: "2026-04",
+        category: "Arbeitsmarkt & IT",
+        addedAt: "2026-05-04",
+      },
       // Neu: 2026-05-03
       {
         summary: "ict-berufsbildung.ch (2026): 'ICT-Regiomeisterschaften 2026' – ICT-Berufsbildung Schweiz führt 2026 die regionalen Berufswettbewerbe für Informatik und Mediamatik durch; Lernende messen ihre praktischen ICT-Kompetenzen in realitätsnahen Aufgaben; Regiomeisterschaften sind Qualifikationsrunde für nationale Berufsmeisterschaften; Wettbewerb fördert sichtbare Auseinandersetzung mit ICT-Berufsbildung in der Öffentlichkeit. Öffentlichkeitswirksame Förderung der ICT-Berufsbildung erhöht die gesellschaftliche Anerkennung von ICT-Zertifizierungen – direktes positives Umfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation.",
@@ -1562,6 +1579,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
+      // Neu: 2026-05-04
+      {
+        summary: "coachingausbildungen.ch (2026): 'Coaching-Markt Schweiz: Trends 2025/2026 – Analyse' – Umfassende Marktanalyse des Schweizer Coaching-Markts: wachsende Nachfrage nach digitalem Coaching und Online-Programmen; Integration von KI-Tools in Coaching-Prozesse als wichtigster Differenzierungsfaktor; Coaching-Markt Schweiz profitiert von gestiegener gesellschaftlicher Akzeptanz von Persönlichkeitsentwicklung; hybride Formate (Online + Präsenz) als dominante Angebotsform 2026. Wachsender und digital transformierter Schweizer Coaching-Markt bietet direktes Wachstumsumfeld für digitale Programme und Online-Ausbildungen der Mind Rocket GmbH.",
+        source: "coachingausbildungen.ch",
+        url: "https://www.coachingausbildungen.ch/coaching-markt-schweiz-trends-2025-2026-analyse/",
+        date: "2026-04",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-05-04",
+      },
       // Neu: 2026-05-03
       {
         summary: "courseticket.com (2026): 'Persönlichkeitsentwicklung – Kurse, Coaching & Online-Programme' – Deutschsprachige Plattform für Präsenz- und Online-Kurse zu Persönlichkeitsentwicklung: breites Angebot zu Selbstvertrauen, Kommunikation, Achtsamkeit, Resilienz und Zielsetzung; Transparenz über Kursformate, Preise und Bewertungen wächst; Zugangsschwelle zu persönlicher Entwicklung sinkt durch Digitalisierung und Plattformisierung. Aktiver und wachsender Marktplatz für Persönlichkeitsentwicklungs-Programme im DACH-Raum validiert das Nachfragepotenzial für skalierbare digitale Angebote wie jene von Mind Rocket GmbH.",
@@ -2140,6 +2166,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 2026-05-04
+      {
+        summary: "ninjatrader.com / prnewswire.com (30. Januar 2026): 'NinjaTrader Expands Into Europe to Support the Next Generation of Retail Futures Traders' – NinjaTrader (Teil der Kraken-Gruppe seit $1.5Mrd.-Übernahme 2025) expandiert per 30. Januar 2026 offiziell nach Europa; Markteintritt über CySEC-regulierte Payward Europe Digital Solutions; Launch zunächst in Niederlanden und Deutschland mit vollem Plattformzugang inklusive Charting, Order Flow, Backtesting und Futures-Simulator. Europäische Expansion der führenden Futures-Handelsplattform NinjaTrader erweitert die Trader-Basis und die Ökosystem-Relevanz von NinjaScript-basierten Strategien wie jenen von mindrocket-trading.com direkt.",
+        source: "ninjatrader.com",
+        url: "https://ninjatrader.com/news/ninjatrader-expands-into-europe-to-support-the-next-generation-of-retail-futures-traders/",
+        date: "2026-01-30",
+        category: "Trading-Technologie",
+        addedAt: "2026-05-04",
+      },
+      {
+        summary: "catinathebroker.com (März 2026): 'Apex Trader Funding Rule Changes in 2026: What You Need to Know' – Apex Trader Funding führt per 1. März 2026 das grosse Regelwerk 4.0 ein: 6 Legacy-Regeln abgeschafft (inkl. MAE, 5:1-Risiko-Ertrags-Regel, 7-Tage-Minimum); monatliche Billing abgeschafft, EOD Trailing Drawdown als Standard; neue wöchentliche Auszahlungsoption nach 5-Tage-Qualifikation; $99 PA-Aktivierungsgebühr eingeführt; CFTC-Transparenzanforderungen für Prop-Firmen 2026 verschärft. Vereinfachte und CFTC-konforme Apex-4.0-Regeln stärken das regulatorische Fundament für algorithmische Futures-Trader wie Nutzer von mindrocket-trading.com.",
+        source: "catinathebroker.com",
+        url: "https://www.catinathebroker.com/blog/apextraderfunding2026",
+        date: "2026-03",
+        category: "Regulierung",
+        addedAt: "2026-05-04",
+      },
       // Neu: 2026-05-03
       {
         summary: "propfirmplus.com (2026): 'Algo Trading Futures Prop Firms 2026: What's Allowed and What's Not' – Umfassender Überblick der Automationsrichtlinien bei Futures-Prop-Firms 2026: Fast alle grossen Prop-Firms erlauben semi-automatisierten Handel (ATM-Strategien, Risikomanagement-Skripte); vollautomatisiertes 'Set and Forget' auf funded Accounts ist bei den meisten Firmen (inkl. Apex 4.0) verboten; Apex 4.0 verlangt aktives menschliches Management auf Performance Accounts. Automatisierungslandschaft 2026 begünstigt regelbasierte, human-in-the-loop Strategien wie jene von mindrocket-trading.com mit NinjaScript-basierten ES-Futures-Systemen.",
@@ -4636,6 +4679,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 2026-05-04
+      {
+        summary: "databridgemarketresearch.com (2026): 'Markt für Persönlichkeitsentwicklung – Globale Marktzahlen, Analyse des Marktanteils und der Trends – Branchenüberblick und Prognose bis 2032' – Data Bridge Market Research analysiert den globalen Personal-Development-Markt: starkes Wachstum durch steigende Nachfrage nach digitalen Selbsthilfe-Produkten; zunehmende Integration von KI-Coaching und personalisierten Lernpfaden; Verlagerung zu digitalem Content und E-Books als wichtigstes Marktsegment; globaler Fokus auf psychische Gesundheit und emotionales Wohlbefinden als Hauptwachstumstreiber. Strukturell wachsender globaler Markt für digitale Persönlichkeitsentwicklungs-Tools bestätigt das Marktumfeld für mindtools.ch als Anbieter kompakter digitaler Selbsthilfe-Werkzeuge.",
+        source: "databridgemarketresearch.com",
+        url: "https://www.databridgemarketresearch.com/de/reports/global-personal-development-market",
+        date: "2026-04",
+        category: "Buchmarkt & Publishing",
+        addedAt: "2026-05-04",
+      },
       // Neu: 2026-05-03
       {
         summary: "Holon Health (2026): 'Top 5 Free Mental Health Apps 2026 (That Actually Help!)' – Übersicht der fünf wirksamsten kostenlosen Mental-Health-Apps 2026; globaler Markt für digitale mentale Gesundheit wächst auf über 6 Mrd. USD bis 2026; Apps mit CBT-Techniken, Achtsamkeit und Stimmungstracking als Hauptkategorien; Hybrid-Ansätze aus KI und menschlicher Unterstützung als wirksamste Kombination. Wachsender globaler Markt für digitale Mental-Health-Tools bestätigt die gesellschaftliche Akzeptanz kompakter digitaler Selbsthilfe-Werkzeuge – direktes Marktumfeld für mindtools.ch.",
@@ -5625,6 +5677,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 2026-05-04
+      {
+        summary: "ad-hoc-news.de (2026): 'Psychische Gesundheit am Arbeitsplatz: Burnout-Prävention wird zum Milliardenmarkt' – Analyse: rund 18–25 % der Beschäftigten leiden unter emotionaler Erschöpfung oder Burnout; strukturierte Burnout-Präventionsprogramme am Arbeitsplatz erweisen sich im Meta-Review als klar wirksamer als rein individuelle Massnahmen; Organisationen suchen skalierbare digitale BGM-Lösungen, da psychisch bedingte Absenzen die grösste Einzelkostenstelle im betrieblichen Gesundheitsmanagement darstellen. Bewiesene und wachsende Nachfrage nach skalierbaren BGM-Lösungen zur Burnout-Prävention deckt sich direkt mit dem Angebot von hypnovital® als digitales Audio-Gruppenprogramm für Unternehmen.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/wissenschaft/psychische-gesundheit-am-arbeitsplatz-burnout-praevention-wird-zum/69272208",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-04",
+      },
+      {
+        summary: "healthexpo.ch (2026): 'HealthExpo 2026 – Fachmesse für betriebliches Gesundheitsmanagement Schweiz' – Schweizer Fachmesse für BGM und Arbeitsgesundheit 2026: Aussteller aus den Bereichen mentale Gesundheit, Stressmanagement, Burnout-Prävention und digitale Gesundheitslösungen; Fachmesse spiegelt die stark wachsende Institutionalisierung von BGM in Schweizer Unternehmen. Etablierte Schweizer BGM-Fachmesse signalisiert die zunehmende Professionalisierung und Investitionsbereitschaft für BGM-Lösungen – direktes institutionelles Marktumfeld für hypnovital® als digitales BGM-Angebot.",
+        source: "healthexpo.ch",
+        url: "https://healthexpo.ch/",
+        date: "2026-04",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-04",
+      },
       // Neu: 2026-05-03
       {
         summary: "hypnovital.net (3. Mai 2026): 'Werden Sie hypnovital® Coach – Ausbildungsstart 3. Mai 2026' – Hypnovital lanciert am heutigen 3. Mai 2026 den nächsten Ausbildungszyklus für hypnovital® Coaches in der ganzen Schweiz; die Coach-Ausbildung vermittelt das systematische hypnovital®-Verfahren zur Verhaltensänderung im limbischen System; Coaches setzen das Verfahren in öffentlichen Kursen sowie in Unternehmen für BGM und Teamentwicklung ein. Direkter Ausbildungsstart des hypnovital®-Coach-Programms am heutigen Tag – operatives Signal für wachsende Netzwerkbasis und Marktpräsenz von hypnovital®.",
@@ -7687,6 +7756,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 2026-05-04
+      {
+        summary: "12week-breakthrough.com (2026): 'The Complete 12-Week Year Implementation Guide for 2026' – Umfassender Implementierungsguide für die 12-Week-Year-Methode 2026: Schritt-für-Schritt-Anleitung für Quartalsplanung, wöchentliche Reviews und Execution-Rituale; Verbindung von 12-Week-Year mit OKR-Methodik als Best-Practice-Ansatz für Personen und Teams; zunehmende Nachfrage nach strukturierten Planungsformaten durch gestiegene Remote-Work-Verbreitung. Dedizierter 12-Week-Year-Coaching-Anbieter bestätigt starkes Interesse an methodenspezifischen Planungstools – direktes Marktumfeld für den 12wy-planner als digitales SaaS-Tool.",
+        source: "12week-breakthrough.com",
+        url: "https://12week-breakthrough.com/implementation-guide-2026-12-week-year/",
+        date: "2026-04",
+        category: "12 Week Year Methode",
+        addedAt: "2026-05-04",
+      },
       // Neu: 2026-05-03
       {
         summary: "northlyapp.com (2026): 'OKR Methode: Der komplette Leitfaden 2026' – Umfassender deutschsprachiger OKR-Leitfaden 2026: Objectives and Key Results als bewährtes Zielsetzungs-Framework; OKRs und 12-Week-Year-Methode ergänzen sich ideal – OKRs geben die Ausrichtung, 12-Wochen-Zyklen liefern den persönlichen Ausführungsrhythmus; wöchentliche Check-ins und klar messbare Key Results als Kernprinzipien; KI-gestützte OKR-Tracking-Tools als neue Kategorie 2026. Wachsendes deutschsprachiges Interesse an OKR-Methodik bestätigt die Nachfrage nach methodenspezifischen Planungstools – direktes Marktumfeld für den 12wy-planner.",
@@ -8945,6 +9023,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 2026-05-04
+      {
+        summary: "gesundheitsinformation.de (2026): 'Vorzeitiger Samenerguss (Ejaculatio praecox)' – Evidenzbasierte Informationsplattform der deutschen Gesundheitsbehörden: Ejaculatio praecox betrifft ca. 30% aller Männer und ist die häufigste sexuelle Funktionsstörung; psychologische Ursachen dominieren deutlich gegenüber organischen (unter 2%); bewährte Behandlungsansätze umfassen Stopp-Start-Techniken, Beckenbodentraining, SSRIs (Dapoxetin) sowie psychotherapeutische und hypnotherapeutische Methoden; körperliche Aktivität reduziert laut neuer internationaler Studie die Symptomatik signifikant. Offizielle Gesundheitsinformationen bestätigen die hohe Verbreitung und die hervorragende Behandelbarkeit von Ejaculatio praecox – direkter Wirksamkeitsnachweis für hypnosebasierte Selbsthilfeprodukte wie orgasmus-hinauszoegern.de.",
+        source: "gesundheitsinformation.de",
+        url: "https://www.gesundheitsinformation.de/vorzeitiger-samenerguss-ejaculatio-praecox.html",
+        date: "2026-04",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-05-04",
+      },
       // Neu: 2026-05-03
       {
         summary: "Dr. med. Heike Melzer, München (2026): 'Vorzeitiger Samenerguss (Ejaculatio Praecox)' – Fachärztin für Psychosomatische Medizin und Psychotherapie mit Schwerpunkt sexuelle Funktionsstörungen: Ejaculatio praecox als häufigste sexuelle Störung bei Männern aller Altersgruppen (ca. 30%); organische Ursachen in weniger als 2% der Fälle; psychotherapeutische und hypnotherapeutische Ansätze mit nachgewiesener hoher Erfolgsrate. Führende Fachärztin für Psychosomatik bestätigt den rein psychologischen Ursprung und die hervorragende Behandelbarkeit von Ejaculatio praecox – direkter Wirksamkeitsnachweis für orgasmus-hinauszoegern.de.",
@@ -9950,6 +10037,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 2026-05-04
+      {
+        summary: "findyourway.ch (2026): 'Hypnose bei Auftrittsangst – Souveränes Auftreten mit Hypnose' – Schweizer Hypnose-Praxis erklärt: Hypnosetherapie bei Auftrittsangst und Lampenfieber wirkt durch Umstrukturierung unbewusster Denk- und Reaktionsmuster; im hypnotischen Zustand werden angsterzeugende Assoziationen aufgelöst und neue souveräne Verhaltensmuster verankert; in wenigen Sitzungen nachhaltige Veränderung erreichbar; Hypnose ist wissenschaftlich anerkannte Methode für Angstbehandlung. Schweizer Fachpraxis bestätigt Wirksamkeit von Hypnose bei Auftrittsangst und Lampenfieber – direkter Wirksamkeitsnachweis für das Hypnose-Audio-Produkt auf lampenfieber-besiegen.de.",
+        source: "findyourway.ch",
+        url: "https://findyourway.ch/hypnose-bei-auftrittsangst-lampenfieber/",
+        date: "2026-04",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-05-04",
+      },
       // Neu: 2026-05-03
       {
         summary: "NOACK Hypnotherapie Berlin (2026): 'Redeangst ist kein Lampenfieber: Aufklärung, Tipps, Hilfe' – Spezialisierte Hypnotherapiepraxis Berlin klärt den Unterschied auf: einfaches Lampenfieber (normale Nervosität) vs. klinische Redeangst (ausgeprägter Störungswert, systematische Therapie erforderlich); Hypnotherapie erkennt und löst die unbewussten Ursachen der Redeangst in wenigen Sitzungen; klare Handlungsempfehlungen für Selbsthilfe und professionelle Unterstützung. Breite medizinische Differenzierung zwischen Lampenfieber und Redeangst bestätigt das Marktpotenzial für spezialisierte Hypnose-Selbsthilfeangebote – direktes Marktumfeld für lampenfieber-besiegen.de.",
@@ -11102,6 +11198,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 2026-05-04
+      {
+        summary: "digitalengagiert.de (2026): 'E-Learning in 2026: Trends, KI & digitale Bildung' – Umfassende Trendanalyse: KI-gestützte adaptive Lernpfade als dominanter Trend 2026; 'Learning in the flow of work' löst starre Kursformate ab; Microlearning als bevorzugtes Format im digitalen Arbeitsalltag; 82,5% der Unternehmen aus DACH-Raum sehen in KI und adaptiven Lernsystemen den grössten Hebel für erfolgreiche Personalentwicklung (Benchmarking-Studie 450+ Unternehmen). E-Learning-Expertenmeinung 2026 bestätigt KI-Integration, Microlearning und arbeitsintegriertes Lernen als Schlüsseltrends – direktes Thought-Leadership-Themenfeld für learnfluencer.ch.",
+        source: "digitalengagiert.de",
+        url: "https://www.digitalengagiert.de/e-learning-in-2026-trends-technologien-und-was-sich-veraendert/",
+        date: "2026-04",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-05-04",
+      },
+      {
+        summary: "swissnova.swiss (2026): 'Weiterbildung für Unternehmen in der Schweiz: 10 Trends für 2026' – Schweizer Weiterbildungsplattform identifiziert 10 Schlüsseltrends für Unternehmensweiterbildung 2026: KI-personalisierte Lernpfade, hybride Lernmodelle, Kompetenzbasierung statt Zertifikatsfokus, Microlearning-Integration in Arbeitsprozesse und Lerntransfer-Messung als Kernthemen; Schweizer Unternehmen investieren 2026 verstärkt in strategische Personalentwicklung. Aktuelle Schweizer Weiterbildungstrends 2026 decken sich direkt mit dem Thought-Leadership-Themenfeld von learnfluencer.ch als Plattform für Lernkompetenz und KI-Weiterbildung.",
+        source: "swissnova.swiss",
+        url: "https://unternehmen.swissnova.swiss/weiterbildung-unternehmen-schweiz-trends-2026/",
+        date: "2026-04",
+        category: "Weiterbildung Schweiz",
+        addedAt: "2026-05-04",
+      },
       // Neu: 2026-05-03
       {
         summary: "Swiss School of Business and Management Geneva (SSBM) (2026): 'Top Trends in Online Education for 2026: AI, AR, and Beyond' – SSBM Geneva identifiziert die Top-Trends in der Online-Bildung 2026: KI-gestützte adaptive Lernpfade, Augmented Reality (AR) und immersive Lernerlebnisse, personalisierte Lernempfehlungen und Micro-Credentials als Wachstumsfelder; Online-Bildung tritt 2026 in eine neue Reifephase mit massgeschneiderten, technologiegestützten Formaten. Renommierte Schweizer Business School bestätigt KI und neue Lerntechnologien als zentrale Bildungstrends 2026 – direktes Thought-Leadership-Umfeld für learnfluencer.ch.",
@@ -12887,6 +13000,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 2026-05-04
+      {
+        summary: "bexolutions.ch (2026): 'Marketing-Automation für Schweizer KMU 2026: Tools & ROI' – Schweizer Digital-Agentur analysiert Marketing-Automation-Markt für KMU 2026: Marketing-Automation ist 2026 kein Nice-to-have mehr, sondern entscheidender Wettbewerbsvorteil; strukturierte Marketingplanung (Zielgruppe, Segmentierung, SWOT-Analyse) als unerlässliche Voraussetzung vor dem Tool-Einsatz; ROI durch Lead-Nurturing, E-Mail-Automationen und CRM-Integration klar messbar; Schweizer KMU können 2026 über das kmu.digital-Förderprogramm des Bundes Subventionen erhalten. Wachsende Schweizer KMU-Investitionsbereitschaft in strukturierte Marketingplanung bestätigt die Nachfrage nach strategischen Marketing-Analyse-Tools wie dem Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "bexolutions.ch",
+        url: "https://bexolutions.ch/marketing-automation-fur-schweizer-kmu-2026-tools-roi/",
+        date: "2026-04",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-05-04",
+      },
       // Neu: 2026-05-03
       {
         summary: "aivie.ch (2026): 'Marketing-Automation mit kmu.digital 2026: Jetzt Förderung nutzen' – Aivie (Marketing-Automation-Plattform aus der Schweiz) zeigt: Schweizer KMU können 2026 über das kmu.digital-Förderprogramm des Bundes Subventionen für Marketing-Automation erhalten; strukturierte Marketingplanung und strategische Analyse (Zielgruppe, Segmentierung, Persona) als unerlässliche Voraussetzung vor dem Tool-Einsatz; ROI durch Lead-Nurturing, E-Mail-Automationen und CRM-Integration messbar. Staatliche Schweizer Förderung für KMU-Marketing-Automation 2026 erhöht strukturell die Investitionsbereitschaft – direktes Marktargument für strategische Marketing-Planungstools wie das Marketingkonzept-Tool auf learnfluencer.ch.",
@@ -14086,6 +14208,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 2026-05-04
+      {
+        summary: "everlife.ch (2026): 'Everlife.ch – Nr. 1 für die Bestattungsvorsorge in der Schweiz' – Everlife.ch positioniert sich als All-in-One-Plattform für digitale Bestattungsvorsorge Schweiz: Vorsorge ermöglicht Regelung zu Lebzeiten ohne Zeitdruck; digitale Verwaltung spart Angehörigen fast 50 Stunden Formalitäten; Plattform integriert administrative und emotionale Aspekte der Bestattungsplanung; ca. 40% der Schweizer suchen Bestatter online, über 60% der unter 40-Jährigen; Digitalisierung der Branche beschleunigt sich. Wachsende digitale Konkurrenz im Schweizer Online-Bestattungsmarkt bestätigt die Validierung des Geschäftsmodells – direktes Marktumfeld für bestattungsplaner.ch als Lead-Vermittlungsportal.",
+        source: "everlife.ch",
+        url: "https://everlife.ch/de/bestattungsvorsorge/",
+        date: "2026-04",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-05-04",
+      },
       // Neu: 2026-05-03
       {
         summary: "luzernerzeitung.ch (2026): 'HORW: Die digitalen Bestatter' – Luzerner Zeitung berichtet über den wachsenden Trend digitaler Bestattungsangebote in der Schweiz: Erste Kontakte erfolgen zunehmend digital; Informationssuche und Angebotsvergleich finden online statt; trotz Digitalisierung bleibt persönlicher Kontakt bei der eigentlichen Bestattung zentral; Schweizer Bestattungsunternehmen investieren in digitale Präsenz und Online-Angebote. Bestätigte Digitalisierungstendenz in der Schweizer Bestattungsbranche validiert den Marktbedarf für Online-Planungsportale – direktes Wachstumsumfeld für bestattungsplaner.ch.",
