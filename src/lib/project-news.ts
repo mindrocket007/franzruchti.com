@@ -28,6 +28,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-05
       {
+        summary: "NZZ / KOF ETH Zürich (2026): 'KOF-Studie: KI verändert den Schweizer Arbeitsmarkt dramatisch' – Die KOF Konjunkturforschungsstelle der ETH Zürich belegt: Bis zu 40% aller Schweizer Jobs sind durch KI-gestützte Automatisierung transformierbar; besonders administrative Routinetätigkeiten und kognitive Standardaufgaben betroffen; gleichzeitig entstehen neue Berufsprofile, die nachweisbare digitale Kompetenzen voraussetzen; Fachkräftemangel bei KI-kompetenten ICT-Profis verschärft sich strukturell. Dramatische KI-bedingte Transformation des Schweizer Arbeitsmarkts erhöht den Bedarf an formalisierten Digitalkompetenznachweisen und ICT-Zertifizierungen – direktes Wachstumsumfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation.",
+        source: "nzz.ch / KOF ETH Zürich",
+        url: "https://www.nzz.ch/wirtschaft/kof-studie-ki-veraendert-den-schweizer-arbeitsmarkt-dramatisch-ld.1905520",
+        date: "2026-05",
+        category: "Arbeitsmarkt & IT",
+        addedAt: "2026-05-05",
+      },
+      // Neu: 2026-05-05
+      {
         summary: "ict-berufsbildung.ch (2026): 'ICT-Fachfrau/-mann EFZ: Fit für die Zukunft' – Ab August 2026 gilt für Lernende im ICT-Berufsfeld die neue Bildungsverordnung und der neue Bildungsplan: modernisierte Kompetenzen in Sicherheitsstandards, KI-gestützter Prozessautomatisierung und Datenschutz-Sensibilisierung; Englisch neu in Sprachmodulen mit Fachbezug; VPA auf 6 Stunden reduziert und mit Fachgespräch ergänzt; Inkraftsetzung per 1. Januar 2026 für Lernende mit Lehrstart August 2026. Modernisierung der ICT-Grundausbildung erhöht die Attraktivität von ICT-Berufen und steigert die Nachfrage nach ICT-Zertifizierung – direktes Wachstumsumfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation.",
         source: "ict-berufsbildung.ch",
         url: "https://www.ict-berufsbildung.ch/ict-fachfrau-mann-efz-fit-fuer-die-zukunft",
@@ -1622,6 +1631,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-05
       {
+        summary: "Adecco Schweiz (Q1 2026): 'Arbeitsmarkt Schweiz: Job Index Q1 2026 zeigt Stabilisierung ohne Entwarnung' – Adecco-Stellenmarktmonitor Q1 2026: Schweizer Arbeitsmarkt stabilisiert sich auf reduziertem Niveau; wachsende Unsicherheit durch KI-Transformation treibt Nachfrage nach Resilienzcoaching, Karriereentwicklung und persönlicher Kompetenzentwicklung; Soft Skills und persönliche Kompetenzen als Schlüssel zur langfristigen Beschäftigungsfähigkeit identifiziert; stärkere Investitionen in individuelle Mitarbeiterentwicklung werden erwartet. Wachsende Arbeitsmarktunsicherheit und steigende Priorität von Soft Skills bestätigen das Marktumfeld für Mind Rocket GmbHs Online-Programme zur persönlichen Entwicklung und Resilienzstärkung.",
+        source: "adecco.com",
+        url: "https://www.adecco.com/de-ch/blog/job-index-q1-2026",
+        date: "2026-04",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-05-05",
+      },
+      // Neu: 2026-05-05
+      {
         summary: "mindset-coaching.ch (2026): 'Mindset Coaching Deutsch – Online Schweiz seit 2005' – Erfahrener Schweizer Mindset-Coach Birol Isik begleitet seit 2005 Privatpersonen und Unternehmen bei Resilienzaufbau, Potenzialentfaltung und Veränderungsgestaltung; Online- und Präsenzformate; Fokus auf innere Blockaden lösen und neue konstruktive Denkmuster entwickeln. Wachsendes Angebot etablierter Mindset-Coaches in der Schweiz bestätigt die steigende Nachfrage nach professioneller Persönlichkeitsentwicklung – direktes Wachstumsumfeld für Mind Rocket GmbH als Anbieter skalierbarer Online-Programme.",
         source: "mindset-coaching.ch",
         url: "https://mindset-coaching.ch/",
@@ -2232,6 +2250,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 2026-05-05
+      {
+        summary: "fundedprogram.com (2026): 'Apex Trader Funding Review 2026: Futures Accounts Guide' – Unabhängige Prop-Firm-Review-Plattform analysiert Apex Trader Funding nach dem 4.0-Update (1. März 2026): Einmalige Evaluationsgebühr statt monatlicher Gebühren; Wahl zwischen EOD-Trailing- und Intraday-Trailing-Drawdown; 100% Gewinnbeteiligung bei freigegebenen Auszahlungen; automatisierte Auszahlungen ohne manuelle Überprüfung; Apex hat seit 2022 nachweislich über $660 Millionen an Trader ausgezahlt und gilt als einzige Prop Firm über der $1-Milliarden-Auszahlungsmarke. Das transparente 4.0-Update macht algorithmisches Prop-Trading für disziplinierte Futures-Trader zugänglicher – direktes Marktumfeld für Mind Rocket Trading als Anbieter von algorithmischen ES-Futures-Strategien.",
+        source: "fundedprogram.com",
+        url: "https://fundedprogram.com/apex-trader-funding-review/",
+        date: "2026-05",
+        category: "Prop Trading Apex",
+        addedAt: "2026-05-05",
+      },
       // Neu: 2026-05-05
       {
         summary: "cryptogmail.com (2026): 'Trading Regulation in Switzerland 2026: Retail Guide' – Übersicht der Schweizer Handelsregulierung für Retail-Trader: Schweizer Broker sind nicht an EU-ESMA-Leverage-Limits gebunden und ermöglichen höhere Hebel für qualifizierte Anleger; FINMA beaufsichtigt Schweizer Broker, private Trader benötigen keine Lizenz; Prop Trading bis CHF 5 Mrd. Jahresvolumen ohne Sonderlizenz erlaubt; Kapitalgewinne für private Trader grundsätzlich steuerfrei. Vorteilhafter regulatorischer Rahmen der Schweiz für Prop-Trader und algorithmische Futures-Strategien bestätigt das günstige Marktumfeld für Mind Rocket Trading.",
@@ -4837,6 +4864,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-05
       {
+        summary: "Testzentrale Deutschland (2026): 'Digitale Selbsthilfe bei psychischen Störungen' – Führender deutschsprachiger Fachverlag für psychologische Testverfahren thematisiert digitale Selbsthilfe als wachsendes Marktsegment: KI-gestützte Apps, Chat-basierte Interventionen und digitale Selbsthilfetools als komplementäre Angebote neben klassischer Therapie; Digitale Gesundheitsanwendungen (DiGA) als regulierter Rahmen für erstattungsfähige digitale Selbsthilfe; wachsendes Expertenwissen zu Chancen und Risiken digitaler Selbsthilfetools. Wachsendes institutionelles und wissenschaftliches Interesse an digitalen Selbsthilfe-Werkzeugen für psychische Gesundheit bestätigt das Marktumfeld – direktes Umfeld für mindtools.ch als Plattform für digitale mentale Werkzeuge und Selbsthilfe-Tools.",
+        source: "testzentrale.de",
+        url: "https://www.testzentrale.de/thema/digitale-selbsthilfe-bei-psychischen-stoerungen",
+        date: "2026-05",
+        category: "Mental Health",
+        addedAt: "2026-05-05",
+      },
+      // Neu: 2026-05-05
+      {
         summary: "mindsupport.ch (2026): 'MIND SHOP – Bücher, Workbooks & Eigenkreationen für Persönlichkeitswachstum' – Schweizer Online-Shop für mentale Selbsthilfe-Produkte: Bücher, Workbooks und individuelle Werkzeuge zu Resilienz, Achtsamkeit, Selbstführung und mentaler Stärke; direkt kaufbar und sofort anwendbar; Fokus auf Persönlichkeitswachstum durch praktische mentale Methoden. Aktives Schweizer Angebot an physischen und digitalen Selbsthilfe-Produkten belegt die Kaufbereitschaft im DACH-Markt für mentale Werkzeuge – direktes Wettbewerbsumfeld für mindtools.ch als digitale Selbsthilfe-Tool-Plattform.",
         source: "mindsupport.ch",
         url: "https://www.mindsupport.ch/mindshop-onlineshop",
@@ -5866,6 +5902,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 2026-05-05
+      {
+        summary: "ad-hoc-news.de (Januar 2026): 'DGUV-Reform 2026: Digitale Tools für psychische Gefährdungsbeurteilung erhalten Rechtssicherheit' – Die reformierte DGUV Vorschrift 2 (Januar 2026) räumt digitalen Analysewerkzeugen für die psychische Gefährdungsbeurteilung am Arbeitsplatz erstmals klare Rechtssicherheit ein; Unternehmen können nun digital validierte Messinstrumente und Präventionstools rechtssicher im BGM einsetzen; psychische Belastungsanalyse wird als Pflicht für alle Betriebe bekräftigt; Rechtssicherheit für DiGAs (Digitale Gesundheitsanwendungen) als BGM-Massnahmen gestärkt. Neue Rechtssicherheit für digitale BGM-Lösungen und die institutionelle Pflicht zur psychischen Gefährdungsbeurteilung stärken die Nachfrage nach skalierbaren Präventionslösungen – direktes Marktumfeld für hypnovital® als digitale BGM-Präventionslösung.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/dguv-reform-2026-digitale-tools-fuer-psychische-gefaehrdungsbeurteilung/68566053",
+        date: "2026-01",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-05",
+      },
       // Neu: 2026-05-05
       {
         summary: "Zurich Versicherung (2026): 'Bis zu 120 Milliarden Euro Produktivitätsverlust in 2030: Psychische Erkrankungen belasten Deutschlands Wirtschaft' – Zurich Group Deutschland beziffert den Produktivitätsverlust durch psychische Erkrankungen 2026 auf 87 Milliarden Euro (1,9% des BIP); bis 2030 drohen 120 Milliarden Euro Verlust jährlich; Burnout, Depressionen und Angststörungen als Haupttreiber; betriebliche Gesundheitsförderung (BGM) als wirtschaftlich gebotene Massnahme. Dramatischer volkswirtschaftlicher Schaden durch psychische Erkrankungen unterstreicht den dringenden unternehmerischen Handlungsbedarf – hypnovital® als skalierbare, kosteneffiziente BGM-Präventionslösung adressiert dieses Problem direkt.",
@@ -7988,6 +8033,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-05
       {
+        summary: "Nat Eliason / nateliason.com (2026): 'The 12 Week Year by Brian Moran: Notes and Review' – Einflussreicher Productivity-Blogger und Buchautor analysiert die 12-Week-Year-Methode: Kernkonzept ist die Behandlung jedes 12-Wochen-Zyklus als vollständiges Jahr mit klaren Zielen, wöchentlichem Scoring und einem strukturierten Planungs- und Reflexionssystem; Methode schafft konstante Dringlichkeit und klare Prioritäten statt Jahresplanungs-Prokrastination; besonders wirksam in Kombination mit digitalen Tracking-Tools. Kontinuierliche internationale Aufmerksamkeit der Productivity-Community für die 12-Week-Year-Methode bestätigt das Marktinteresse – direktes Nutzerumfeld für den 12wy-planner als dediziertes SaaS-Tool für die Methode von Brian Moran.",
+        source: "nateliason.com",
+        url: "https://www.nateliason.com/notes/12-week-year-brian-moran",
+        date: "2026-05",
+        category: "12 Week Year Methode",
+        addedAt: "2026-05-05",
+      },
+      // Neu: 2026-05-05
+      {
         summary: "Amazon.de (2026): 'Planer 2026 OKR Quartalsplaner 1: Strategisch Ziele erreichen – mit Objectives und Key Results' (Janine Kirchhof) – Physischer OKR-Quartalsplaner für 2026 auf Amazon erhältlich; kombiniert OKR-Methode mit 12-Wochen-Zyklen für Karrierecoaching und Transformation; zeigt wachsende Konsumnachfrage nach methodenbasierter Quartalsplanung. Physische Planer können keine dynamischen SaaS-Funktionen wie automatisches Fortschritts-Tracking oder Statistiken bieten – der 12wy-planner als digitales Tool schliesst diese Lücke und skaliert unbegrenzt.",
         source: "Amazon.de",
         url: "https://www.amazon.de/Planer-2026-Quartalsplaner-Karrierecoaching-Transformation/dp/B0FXG1BKGH",
@@ -9289,6 +9343,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-05
       {
+        summary: "tiefenhypnose.hamburg (2026): 'Vorzeitiger Samenerguss: Hilfe durch Tiefenhypnose Hamburg' – Spezialisierte Hypnotherapie-Praxis Hamburg bietet Tiefenhypnose als Behandlung für vorzeitigen Samenerguss (Ejaculatio praecox) an: psychische Ursachen als Hauptfaktor, Hypnotherapie als wirksamer Behandlungsansatz ohne Nebenwirkungen; Ansatz kombiniert Tiefenentspannung, Suggestionstechniken und mentales Training zur Verlängerung der Ejakulationslatenz; Online-Sitzungen verfügbar. Spezialisiertes Hypnotherapieangebot für Ejaculatio praecox belegt anhaltende Nachfrage und Marktrelevanz im DACH-Raum – Wettbewerbsumfeld für das Audio-Hypnose-Selbsthilfeprogramm auf orgasmus-hinauszoegern.de als skalierbare, kostengünstige Alternative.",
+        source: "tiefenhypnose.hamburg",
+        url: "https://www.tiefenhypnose.hamburg/vorzeitiger-samenerguss",
+        date: "2026-05",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-05-05",
+      },
+      // Neu: 2026-05-05
+      {
         summary: "ISG Institut für Sexualgesundheit (2026): 'Vorzeitiger Samenerguss (Ejaculatio Praecox)' – ISG Deutschland informiert umfassend zu Ejaculatio praecox als häufigster männlicher Sexualstörung (20–30% aller Männer betroffen); erklärt biologische, neurologische und psychologische Ursachen; Selbsthilfetechniken (Stopp-Start-Technik, Squeeze-Technik) sowie Hypnose als anerkannte Behandlungsansätze neben medikamentöser Therapie. Institutionelles deutsches Informationsangebot zu Ejaculatio praecox belegt die anhaltende gesellschaftliche Relevanz und den Behandlungsbedarf – direktes Marktumfeld für das Selbsthilfe-Audio-Programm auf orgasmus-hinauszoegern.de.",
         source: "isg-info.de",
         url: "https://www.isg-info.de/wissenswertes/infomaterial/infoblaetter-fuer-maenner/vorzeitiger-samenerguss-ejaculatio-praecox.html",
@@ -10351,6 +10414,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 2026-05-05
+      {
+        summary: "Springer Nature / Metzig & Schuster (5. Aufl.): 'Prüfungsangst und Lampenfieber: Bewertungssituationen vorbereiten und meistern' – Wissenschaftliches Standardwerk zur Prüfungsangst und Auftrittsangst (5. aktualisierte Auflage): ca. 10% aller Studierenden leiden unter behandlungsbedürftiger Prüfungsangst; umfassendes Kapitel zu Lampenfieber und Bewertungsangst als Bewertungsangst-Spektrum; evidenzbasierte Strategien inklusive Mentaltraining, Entspannungsverfahren und Hypnose; Standardreferenz für Therapeuten und Betroffene. Wissenschaftlich fundiertes Standardwerk bestätigt Lampenfieber und Prüfungsangst als verbreitete, behandlungsbedürftige Störungsbilder mit anerkanntem Handlungsbedarf – direktes Marktumfeld für das Audio-Hypnose-Produkt auf lampenfieber-besiegen.de.",
+        source: "link.springer.com",
+        url: "https://link.springer.com/book/10.1007/978-3-662-54696-3",
+        date: "2026-05",
+        category: "Psychologie & Forschung",
+        addedAt: "2026-05-05",
+      },
       // Neu: 2026-05-05
       {
         summary: "studienstrategie.de (2026): 'Prüfungsangst überwinden: Lampenfieber und Blackout vermeiden' – Umfassender Ratgeber für Schüler und Studenten: Unterschied zwischen normalem, leistungssteigerndem Lampenfieber und behandlungsbedürftiger Prüfungsangst (ca. 10% aller Studierenden betroffen); Atemtechniken, Mentaltraining und Hypnose als evidenzbasierte Methoden; konkrete Tipps zur Vorbereitung und Stressbewältigung am Prüfungstag. Wachsendes öffentliches Bewusstsein für Prüfungs- und Auftrittsangst sowie Hypnose als anerkannter Lösungsansatz stärkt die Nachfrage – direktes Marktumfeld für das Audio-Hypnose-Produkt auf lampenfieber-besiegen.de.",
@@ -11537,6 +11609,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 2026-05-05
+      {
+        summary: "lohncheck.ch (2026): 'Gefragte Berufe 2026 – Zukunft der Arbeit' – Schweizer Lohnvergleichsplattform analysiert die meistgefragten Berufe 2026: KI-Kompetenzen, digitale Lernfähigkeit und kontinuierliches Upskilling als zentrale Anforderungen des Arbeitsmarkts; Berufe mit hoher Lernkurve und Anpassungsfähigkeit dominieren die Nachfrage; lebenslanges Lernen als strategischer Karrierefaktor im KI-Zeitalter; Berufsabschluss reicht nicht mehr fürs ganze Leben – Wissen verändert sich schneller als je zuvor. Wachsende Bedeutung digitaler Lernkompetenz und kontinuierlichem Upskilling auf dem Schweizer Arbeitsmarkt bestätigt das Marktumfeld für learnfluencer.ch als Thought-Leadership-Portal für Lernkompetenz und KI-Weiterbildung.",
+        source: "lohncheck.ch",
+        url: "https://lohncheck.ch/de/articles/arbeitsmarkt-2026",
+        date: "2026-05",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-05-05",
+      },
       // Neu: 2026-05-05
       {
         summary: "wissensmanagement.net (2026): 'Wissensmanagement – Das Magazin für Digitalisierung, Vernetzung & Collaboration: Learning' – Etabliertes deutschsprachiges Fachmagazin für Corporate Learning und Wissensmanagement thematisiert 2026 die Verschmelzung von KI, digitaler Zusammenarbeit und modernem Lernen; Fokus auf Learning Analytics, KI-Tutoren und kollaboratives Lernen als Treiber der digitalen Transformation. Relevantes Fachmedium für Entscheidungsträger in Lernmanagement und Weiterbildung – direktes Publikumsumfeld für learnfluencer.ch als Thought-Leadership-Portal für Lernkompetenz und digitale Bildung.",
@@ -13374,6 +13455,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-05
       {
+        summary: "campus.swiss / Swiss Marketing (2026): 'Marketing für KMU – Seminar' – Bildungsplattform des offiziellen Schweizer Marketingverbands bietet 3-tägiges Seminar 'Marketing für KMU' an: KMU lernen, sich mit begrenzten Ressourcen von Mitbewerbern abzuheben; strategische Marketingplanung, Kundengewinnung und nachhaltiges Wachstum; Kombination klassischer Marketingmethoden (SWOT, 7P, Marktanalyse) mit digitaler Strategie; Swiss-Marketing-Zertifikat als anerkannter Abschluss. Institutionalisiertes Schweizer Marketing-Weiterbildungsangebot mit SWOT- und Strategieanalysefokus für KMU bestätigt den Bedarf nach strukturierter Marketingplanung – direktes Marktumfeld für das interaktive Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "campus.swiss",
+        url: "https://campus.swiss/marketing-kommunikation/marketing-fuer-kmu/",
+        date: "2026-05",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-05-05",
+      },
+      // Neu: 2026-05-05
+      {
         summary: "Asana (2026): 'PESTEL-Analyse: Definition, Erklärung und Beispiele! [2026]' – Asana erklärt die PESTEL-Analyse (Politisch, Wirtschaftlich, Soziokulturell, Technologisch, Ökologisch, Rechtlich) als strategisches Analyse-Instrument für Unternehmensplanung und Marketingstrategie; Schritt-für-Schritt-Anleitung mit Vorlage und Praxisbeispielen; PESTEL als Grundlage für fundierte Marketingkonzepte empfohlen. Wachsendes Interesse an strukturierten Strategieanalyse-Frameworks wie PESTEL bei KMU bestätigt den Bedarf nach geführten, interaktiven Tools – direktes Marktumfeld für das interaktive Marketingkonzept-Tool auf learnfluencer.ch mit integrierter PESTEL-Analyse.",
         source: "asana.com",
         url: "https://asana.com/de/resources/pest-analysis",
@@ -14605,6 +14695,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 2026-05-05
+      {
+        summary: "krematorium.ch / BGF Bernische Genossenschaft für Feuerbestattung (2026): 'Preise und Leistungen – Krematorium Bern' – Grösste Schweizer Krematoriumsgenossenschaft publiziert aktuelle Preisliste und Leistungsübersicht: Einäscherung, Urnenauswahl, Abholservice und Bestattungsbegleitung als klar strukturierte Leistungspakete; transparente Preisgestaltung als Antwort auf wachsende Konsumentennachfrage nach Kostenklarheit; Kremation als günstigste und meistgewählte Bestattungsform klar positioniert (ca. 90% der Schweizer wählen Kremation). Transparente Preisgestaltung etablierter Krematoriumsanbieter und die dominierende Marktstellung der Kremation bestätigen den Bedarf nach digitalen Vergleichs- und Planungsplattformen – direktes Marktumfeld für bestattungsplaner.ch als Lead-Plattform für Bestattungsdienstleistungen.",
+        source: "krematorium.ch",
+        url: "https://www.krematorium.ch/de/page/Dienstleistungen/Preise-und-Leistungen-71398",
+        date: "2026-05",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-05-05",
+      },
       // Neu: 2026-05-05
       {
         summary: "mondial-ritual.ch (2026): 'Individuelle Bestattungsplanung für die gesamte Schweiz' – Mondial Ritual bietet schweizweite Bestattungsplanung und -vorsorge mit individuellem Beratungsservice; deckt alle Regionen der Schweiz ab; Beratung online und vor Ort; transparenter Überblick über Leistungsumfang und Kosten. Aktiver Marktteilnehmer im Schweizer Bestattungsvorsorge-Markt mit nationalem Angebot bestätigt das Wachstum des Online-Bestattungsplanungssegments und den Bedarf nach digitalen Vergleichs- und Vermittlungsplattformen – direktes Marktumfeld für bestattungsplaner.ch.",
