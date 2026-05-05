@@ -28,6 +28,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-05
       {
+        summary: "swissICT (5. Mai 2026): '#DIGITUP 2026 – Die Schweizer ICT-Community trifft sich in Zürich' – Drittes DIGITUP-Event von swissICT (5. Mai 2026, Zürich, 12–20 Uhr): 25 Sessions zu KI, digitaler Souveränität, Bildung und Zukunft der Arbeit; freier Eintritt für alle an Digitalisierung Interessierten; anschliessend swissICT-Generalversammlung und Apéro. Das DIGITUP als jährlicher Treffpunkt der Schweizer ICT-Community stärkt die Vernetzung und setzt die Agenda der Branche – direktes Wachstumsumfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation und aktiver Akteur im Schweizer ICT-Ökosystem.",
+        source: "swissICT",
+        url: "https://www.swissict.ch/event/digitup-wo-die-swissict-community-wirkung-zeigt/",
+        date: "2026-05-05",
+        category: "Digitale Bildung",
+        addedAt: "2026-05-05",
+      },
+      // Neu: 2026-05-05
+      {
         summary: "NZZ / KOF ETH Zürich (2026): 'KOF-Studie: KI verändert den Schweizer Arbeitsmarkt dramatisch' – Die KOF Konjunkturforschungsstelle der ETH Zürich belegt: Bis zu 40% aller Schweizer Jobs sind durch KI-gestützte Automatisierung transformierbar; besonders administrative Routinetätigkeiten und kognitive Standardaufgaben betroffen; gleichzeitig entstehen neue Berufsprofile, die nachweisbare digitale Kompetenzen voraussetzen; Fachkräftemangel bei KI-kompetenten ICT-Profis verschärft sich strukturell. Dramatische KI-bedingte Transformation des Schweizer Arbeitsmarkts erhöht den Bedarf an formalisierten Digitalkompetenznachweisen und ICT-Zertifizierungen – direktes Wachstumsumfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation.",
         source: "nzz.ch / KOF ETH Zürich",
         url: "https://www.nzz.ch/wirtschaft/kof-studie-ki-veraendert-den-schweizer-arbeitsmarkt-dramatisch-ld.1905520",
@@ -2267,6 +2276,24 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 2026-05-05
+      {
+        summary: "CNBC (4. Mai 2026): 'Stock market news for May 4, 2026' – S&P 500 verlor 0,41% auf 7.200,75 Punkte; Dow Jones gab 557 Punkte (-1,13%) auf 48.941,90 ab; Nasdaq verlor 0,19%. Auslöser: Nahostkonflikte eskalierten – die Vereinigten Arabischen Emirate meldeten erstmals seit dem US-Iran-Waffenstillstand Abschuss iranischer Raketen; WTI-Rohöl stieg +4,39% auf 106,42 USD/Barrel; Brent +5,8% auf 114,44 USD. Am 5. Mai notieren S&P-Futures mit +0,01% leicht erholt. Geopolitische Eskalationen im Nahen Osten als direkte Marktbeweger mit sofortiger ES-Futures-Volatilität – relevantes Signal für algorithmische Risikomanagement-Strategien wie jene von Mind Rocket Trading.",
+        source: "CNBC",
+        url: "https://www.cnbc.com/2026/05/03/stock-market-today-live-updates.html",
+        date: "2026-05-04",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-05-05",
+      },
+      // Neu: 2026-05-05
+      {
+        summary: "FactSet (1. Mai 2026): 'S&P 500 Earnings Season Update: May 1, 2026' – Q1 2026 Earnings Season: 80% der S&P 500 Unternehmen haben berichtet; Blended Earnings Growth >10% YoY; 75% der Unternehmen übertreffen EPS-Schätzungen; für die Woche ab 4. Mai rapportieren 126 weitere Unternehmen inkl. 2 Dow-Komponenten. Robuste Q1-Unternehmensgewinne bestätigen fundamentale Marktstärke trotz kurzfristiger geopolitischer Volatilität – relevantes Kontext-Signal für ES-Futures-Trader bei der mittelfristigen Trendeinschätzung.",
+        source: "FactSet",
+        url: "https://insight.factset.com/sp-500-earnings-season-update-may-1-2026",
+        date: "2026-05-01",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-05-05",
+      },
       // Neu: 2026-05-05
       {
         summary: "fundedprogram.com (2026): 'Apex Trader Funding Review 2026: Futures Accounts Guide' – Unabhängige Prop-Firm-Review-Plattform analysiert Apex Trader Funding nach dem 4.0-Update (1. März 2026): Einmalige Evaluationsgebühr statt monatlicher Gebühren; Wahl zwischen EOD-Trailing- und Intraday-Trailing-Drawdown; 100% Gewinnbeteiligung bei freigegebenen Auszahlungen; automatisierte Auszahlungen ohne manuelle Überprüfung; Apex hat seit 2022 nachweislich über $660 Millionen an Trader ausgezahlt und gilt als einzige Prop Firm über der $1-Milliarden-Auszahlungsmarke. Das transparente 4.0-Update macht algorithmisches Prop-Trading für disziplinierte Futures-Trader zugänglicher – direktes Marktumfeld für Mind Rocket Trading als Anbieter von algorithmischen ES-Futures-Strategien.",
