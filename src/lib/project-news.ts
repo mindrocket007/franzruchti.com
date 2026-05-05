@@ -1631,6 +1631,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-05
       {
+        summary: "inhesa.ch (2026): 'Coaching Arbeitsmarkt Schweiz: Karrierechancen & Trends' – INHESA analysiert den Schweizer Coaching-Arbeitsmarkt: Hybride Formate sind 2026 Standard; Nachfrage nach AI-integrierten Coaching-Tools wächst stark; Spezialisierung auf Resilienz, Transformationsbegleitung und digitale Kompetenzentwicklung als gefragte Nischen; Coaching wird als strategisches HR-Tool immer häufiger in KMU eingesetzt. Wachsender und sich professionalisierender Schweizer Coaching-Arbeitsmarkt bestätigt das Marktumfeld für skalierbare digitale Entwicklungsprogramme von Mind Rocket GmbH.",
+        source: "inhesa.ch",
+        url: "https://www.inhesa.ch/coaching-arbeitsmarkt-schweiz-karrierechancen-und-trends/",
+        date: "2026-05",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-05-05",
+      },
+      {
+        summary: "birolisik.ch (2026): 'Persönlichkeitsentwicklung Coaching 2026/2027 DACH' – Erfahrener Schweizer Mindset-Coach Birol Isik analysiert die wichtigsten Coaching-Trends im DACH-Raum 2026/2027: wachsende Nachfrage nach tiefgreifender Persönlichkeitsarbeit; Kombination von Mindset-Coaching, Selbstführung und digitaler Resilienz als gefragte Schwerpunkte; hybride Online-/Präsenzformate als bevorzugtes Modell; KI als Hilfsmittel für personalisierte Entwicklungspläne. Wachsendes Marktangebot im Bereich Persönlichkeitsentwicklungs-Coaching im DACH-Raum bestätigt die Nachfrage – direktes Wachstumsumfeld für Mind Rocket GmbHs skalierbare Online-Programme.",
+        source: "birolisik.ch",
+        url: "https://birolisik.ch/persoenlichkeitsentwicklung-coaching/",
+        date: "2026-05",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-05-05",
+      },
+      // Neu: 2026-05-05
+      {
         summary: "Adecco Schweiz (Q1 2026): 'Arbeitsmarkt Schweiz: Job Index Q1 2026 zeigt Stabilisierung ohne Entwarnung' – Adecco-Stellenmarktmonitor Q1 2026: Schweizer Arbeitsmarkt stabilisiert sich auf reduziertem Niveau; wachsende Unsicherheit durch KI-Transformation treibt Nachfrage nach Resilienzcoaching, Karriereentwicklung und persönlicher Kompetenzentwicklung; Soft Skills und persönliche Kompetenzen als Schlüssel zur langfristigen Beschäftigungsfähigkeit identifiziert; stärkere Investitionen in individuelle Mitarbeiterentwicklung werden erwartet. Wachsende Arbeitsmarktunsicherheit und steigende Priorität von Soft Skills bestätigen das Marktumfeld für Mind Rocket GmbHs Online-Programme zur persönlichen Entwicklung und Resilienzstärkung.",
         source: "adecco.com",
         url: "https://www.adecco.com/de-ch/blog/job-index-q1-2026",
@@ -4864,6 +4881,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-05
       {
+        summary: "mymeditatemate.com (2026): '8 Best AI Mental Health Apps for 2026' – Meditate Mate bewertet die wirksamsten KI-gestützten Mental-Health-Apps 2026: Wysa (5 Mio. Nutzer in 90+ Ländern, meistausgezeichnete KI-Mental-Health-App), Woebot (Stanford-CBT-Grundlage), Youper (multimodale emotionale Gesundheitsassistenz mit Fitbit/Apple HealthKit-Integration), Headspace Ebb (5.000+ Meditationen, KI-Empfehlungen) und Flourish (RCT-geprüft); globaler Mental-Health-Markt 450 Milliarden USD; KI-Apps ergänzen professionelle Therapie, ersetzen sie aber nicht. Wachsendes Ökosystem klinisch validierter KI-Mental-Health-Apps bestätigt die gesellschaftliche Akzeptanz kompakter digitaler Selbsthilfe-Werkzeuge – direktes Wachstumsumfeld für mindtools.ch als Plattform für mentale Werkzeuge und Selbsthilfe-Tools.",
+        source: "mymeditatemate.com",
+        url: "https://mymeditatemate.com/blogs/wellness-tech/best-ai-mental-health-apps",
+        date: "2026-05",
+        category: "Mental Health",
+        addedAt: "2026-05-05",
+      },
+      // Neu: 2026-05-05
+      {
         summary: "Testzentrale Deutschland (2026): 'Digitale Selbsthilfe bei psychischen Störungen' – Führender deutschsprachiger Fachverlag für psychologische Testverfahren thematisiert digitale Selbsthilfe als wachsendes Marktsegment: KI-gestützte Apps, Chat-basierte Interventionen und digitale Selbsthilfetools als komplementäre Angebote neben klassischer Therapie; Digitale Gesundheitsanwendungen (DiGA) als regulierter Rahmen für erstattungsfähige digitale Selbsthilfe; wachsendes Expertenwissen zu Chancen und Risiken digitaler Selbsthilfetools. Wachsendes institutionelles und wissenschaftliches Interesse an digitalen Selbsthilfe-Werkzeugen für psychische Gesundheit bestätigt das Marktumfeld – direktes Umfeld für mindtools.ch als Plattform für digitale mentale Werkzeuge und Selbsthilfe-Tools.",
         source: "testzentrale.de",
         url: "https://www.testzentrale.de/thema/digitale-selbsthilfe-bei-psychischen-stoerungen",
@@ -5902,6 +5928,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 2026-05-05
+      {
+        summary: "chairtech.de (2026): 'Betriebliches Gesundheitsmanagement Pflicht? Was gilt 2026' – ChairTech klärt auf: BGM ist in Deutschland nicht vollständig gesetzlich vorgeschrieben, aber Kernelemente wie Arbeitsschutz und Betriebliches Eingliederungsmanagement (BEM) sind bereits Pflicht; 2026 machen steigende Mitarbeitererwartungen, zunehmender Fachkräftemangel und verschärfte Kontrollen BGM faktisch unverzichtbar für alle Unternehmen; in der Schweiz gilt analoger faktischer Druck durch Arbeitsrecht und wachsende Compliance-Anforderungen. Wachsender faktischer Zwang zu BGM-Massnahmen – unabhängig von konkreter Gesetzespflicht – erhöht die strukturelle Nachfrage nach skalierbaren, einfach einsetzbaren BGM-Lösungen wie hypnovital® als digitales Audio-Programm für Betriebe.",
+        source: "chairtech.de",
+        url: "https://www.chairtech.de/betriebliches-gesundheitsmanagement-pflicht/",
+        date: "2026-05",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-05",
+      },
       // Neu: 2026-05-05
       {
         summary: "ad-hoc-news.de (Januar 2026): 'DGUV-Reform 2026: Digitale Tools für psychische Gefährdungsbeurteilung erhalten Rechtssicherheit' – Die reformierte DGUV Vorschrift 2 (Januar 2026) räumt digitalen Analysewerkzeugen für die psychische Gefährdungsbeurteilung am Arbeitsplatz erstmals klare Rechtssicherheit ein; Unternehmen können nun digital validierte Messinstrumente und Präventionstools rechtssicher im BGM einsetzen; psychische Belastungsanalyse wird als Pflicht für alle Betriebe bekräftigt; Rechtssicherheit für DiGAs (Digitale Gesundheitsanwendungen) als BGM-Massnahmen gestärkt. Neue Rechtssicherheit für digitale BGM-Lösungen und die institutionelle Pflicht zur psychischen Gefährdungsbeurteilung stärken die Nachfrage nach skalierbaren Präventionslösungen – direktes Marktumfeld für hypnovital® als digitale BGM-Präventionslösung.",
@@ -8033,6 +8068,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-05
       {
+        summary: "vistage.com (2026): 'Productivity Trends for 2026 and Beyond' – Vistage (weltweit grösste CEO-Peer-Advisory-Organisation) analysiert die wichtigsten Produktivitätstrends 2026: klare Vision und strategische Prioritäten als Fundament für Quartalsplanung; Leading Indicators und wöchentliches Scoring als Kern systematischer Produktivitätssysteme; Reduktion von Tool-Überflutung durch fokussierte Single-Purpose-Lösungen; 12-Wochen-Zyklen als bewährtes System gegen Prokrastination durch Jahresplanung. Institutioneller Business-Fokus auf Quarterly Planning und strategische Prioritätensetzung bestätigt das Marktumfeld für den 12wy-planner als fokussiertes SaaS-Tool für die 12-Week-Year-Methode.",
+        source: "vistage.com",
+        url: "https://www.vistage.com/research-center/business-operations/productivity-execution/productivity-trends-for-2026-and-beyond/",
+        date: "2026-05",
+        category: "Produktivität & Planung",
+        addedAt: "2026-05-05",
+      },
+      {
+        summary: "hoodshub.tech (2026): 'Productivity Trends 2026: What's Actually Changing and Why It Matters' – Hoodshub analysiert echte Produktivitätsveränderungen 2026: Tool-Konsolidierung als grösster Shift (weg von Dutzenden Tools hin zu fokussierten Systemen); KI-Assistenten automatisieren repetitive Aufgaben und sparen Teams bis zu 5 Stunden pro Woche; Async-Kommunikation schützt Deep-Work-Phasen; methodenbasierte Planung statt Ad-hoc-Organisation als strategischer Vorteil. Tool-Konsolidierung und Fokus auf methodenspezifische Planungssysteme bestätigen den Wert des 12wy-planners als Single-Purpose-Tool für die 12-Week-Year-Methode.",
+        source: "hoodshub.tech",
+        url: "https://hoodshub.tech/blogs/productivity-trends-2026/",
+        date: "2026-05",
+        category: "SaaS & Tools",
+        addedAt: "2026-05-05",
+      },
+      // Neu: 2026-05-05
+      {
         summary: "Nat Eliason / nateliason.com (2026): 'The 12 Week Year by Brian Moran: Notes and Review' – Einflussreicher Productivity-Blogger und Buchautor analysiert die 12-Week-Year-Methode: Kernkonzept ist die Behandlung jedes 12-Wochen-Zyklus als vollständiges Jahr mit klaren Zielen, wöchentlichem Scoring und einem strukturierten Planungs- und Reflexionssystem; Methode schafft konstante Dringlichkeit und klare Prioritäten statt Jahresplanungs-Prokrastination; besonders wirksam in Kombination mit digitalen Tracking-Tools. Kontinuierliche internationale Aufmerksamkeit der Productivity-Community für die 12-Week-Year-Methode bestätigt das Marktinteresse – direktes Nutzerumfeld für den 12wy-planner als dediziertes SaaS-Tool für die Methode von Brian Moran.",
         source: "nateliason.com",
         url: "https://www.nateliason.com/notes/12-week-year-brian-moran",
@@ -9343,6 +9395,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-05
       {
+        summary: "wiekannmanlanger.com (2026): 'Vorzeitiger Samenerguss Heilung Durch Hypnose' – Spezialisiertes Informationsportal erklärt den hypnotherapeutischen Ansatz zur Behandlung von Ejaculatio praecox: Hypnosesuggestionen verändern unbewusste Denk- und Reaktionsmuster, die zur frühzeitigen Ejakulation beitragen; regelmässige Audio-Anwendung verankert neue Kontrollmuster im Unterbewusstsein nachhaltig; Kombination von Tiefenentspannung und direkten Suggestionen als Kern der Methode. Wachsendes Informationsangebot zu Hypnose als Behandlungsmethode für Ejaculatio praecox bestätigt Marktakzeptanz – direktes Wettbewerbsumfeld und Validierung für das Audio-Hypnose-Produkt auf orgasmus-hinauszoegern.de.",
+        source: "wiekannmanlanger.com",
+        url: "https://wiekannmanlanger.com/vorzeitiger-samenerguss/vorzeitiger-samenerguss-heilung-durch-hypnose/",
+        date: "2026-05",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-05-05",
+      },
+      // Neu: 2026-05-05
+      {
         summary: "tiefenhypnose.hamburg (2026): 'Vorzeitiger Samenerguss: Hilfe durch Tiefenhypnose Hamburg' – Spezialisierte Hypnotherapie-Praxis Hamburg bietet Tiefenhypnose als Behandlung für vorzeitigen Samenerguss (Ejaculatio praecox) an: psychische Ursachen als Hauptfaktor, Hypnotherapie als wirksamer Behandlungsansatz ohne Nebenwirkungen; Ansatz kombiniert Tiefenentspannung, Suggestionstechniken und mentales Training zur Verlängerung der Ejakulationslatenz; Online-Sitzungen verfügbar. Spezialisiertes Hypnotherapieangebot für Ejaculatio praecox belegt anhaltende Nachfrage und Marktrelevanz im DACH-Raum – Wettbewerbsumfeld für das Audio-Hypnose-Selbsthilfeprogramm auf orgasmus-hinauszoegern.de als skalierbare, kostengünstige Alternative.",
         source: "tiefenhypnose.hamburg",
         url: "https://www.tiefenhypnose.hamburg/vorzeitiger-samenerguss",
@@ -10414,6 +10475,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 2026-05-05
+      {
+        summary: "Klett-Cotta Verlag (2026): 'Von Prüfungsangst zu Prüfungsmut, von Lampenfieber zu Auftrittslust' (Cersten Jacob) – Neues Fachbuch von Klett-Cotta, einem der renommiertesten deutschen Fachverlage für Psychologie und Therapie: praktische Strategien für Bewertungssituationen; Verbindung von Prüfungsangst und Lampenfieber als Leistungsangst-Spektrum; evidenzbasierte Methoden zum Aufbau von Prüfungsmut und Auftrittslust. Neues Fachbuch-Angebot zum Thema Lampenfieber und Prüfungsangst bei renommiertem Fachverlag bestätigt anhaltende gesellschaftliche Nachfrage nach Lösungen – direktes Marktumfeld für das Audio-Hypnose-Produkt auf lampenfieber-besiegen.de.",
+        source: "klett-cotta.de",
+        url: "https://www.klett-cotta.de/produkt/cersten-jacob-von-pruefungsangst-zu-pruefungsmut-von-lampenfieber-zu-auftrittslust-9783608430943-t-2566",
+        date: "2026-05",
+        category: "Psychologie & Forschung",
+        addedAt: "2026-05-05",
+      },
+      {
+        summary: "studieren.at (2026): 'Prüfungsangst: Wie du sie in den Griff bekommst' – Österreichisches Studierenden-Portal: Neun von zehn Studierenden haben schon einmal Prüfungsangst erlebt; psychologische Beratungsstellen der Universitäten verzeichnen seit Einführung des Bachelor-Master-Systems steigenden Zulauf; Hypnose, NLP, Entspannungstechniken und Körpersprachen-Training als wirksame Methoden empfohlen; professionelle Therapie bei starker Prüfungsangst gut behandelbar. Wachsende institutionelle und gesellschaftliche Aufmerksamkeit auf Prüfungsangst an Hochschulen bestätigt Behandlungsbedarf – direktes Marktumfeld für das Audio-Hypnose-Produkt auf lampenfieber-besiegen.de.",
+        source: "studieren.at",
+        url: "https://www.studieren.at/krisen-im-studium/pruefungsangst/",
+        date: "2026-05",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-05-05",
+      },
+      {
+        summary: "DAK Gesundheit (2026): 'Prüfungsangst: Das hilft' – Grosse deutsche Krankenkasse klärt über Prüfungsangst auf: Unterschied zwischen leistungssteigernder Aufregung und behandlungsbedürftiger Prüfungsangst; Entspannungstechniken, Atemübungen, Visualisierungen und kognitive Strategien als evidenzbasierte Massnahmen; Hypnose und professionelle Unterstützung als empfohlene Methoden bei starker Ausprägung. Institutionelle Gesundheitsaufklärung einer grossen deutschen Krankenkasse zum Thema Prüfungsangst bestätigt gesellschaftliche Relevanz – direktes Marktumfeld für Selbsthilfe-Audio-Programme wie jenes auf lampenfieber-besiegen.de.",
+        source: "dak.de",
+        url: "https://www.dak.de/dak/gesundheit/psychische-gesundheit/pruefungsangst-das-hilft_142830",
+        date: "2026-05",
+        category: "Psychologie & Forschung",
+        addedAt: "2026-05-05",
+      },
       // Neu: 2026-05-05
       {
         summary: "Springer Nature / Metzig & Schuster (5. Aufl.): 'Prüfungsangst und Lampenfieber: Bewertungssituationen vorbereiten und meistern' – Wissenschaftliches Standardwerk zur Prüfungsangst und Auftrittsangst (5. aktualisierte Auflage): ca. 10% aller Studierenden leiden unter behandlungsbedürftiger Prüfungsangst; umfassendes Kapitel zu Lampenfieber und Bewertungsangst als Bewertungsangst-Spektrum; evidenzbasierte Strategien inklusive Mentaltraining, Entspannungsverfahren und Hypnose; Standardreferenz für Therapeuten und Betroffene. Wissenschaftlich fundiertes Standardwerk bestätigt Lampenfieber und Prüfungsangst als verbreitete, behandlungsbedürftige Störungsbilder mit anerkanntem Handlungsbedarf – direktes Marktumfeld für das Audio-Hypnose-Produkt auf lampenfieber-besiegen.de.",
