@@ -28,6 +28,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-06
       {
+        summary: "SIZ AG (März 2026): 'Newsflash März 2026 – Neue Prüfungsregeln gegen KI-Missbrauch ab 30. März 2026' – SIZ schärft per 30. März 2026 die Prüfungsregeln für alle SIZ-Modulprüfungen: KI-basierte Office-Funktionen und Add-ins, die Prüfungsaufgaben automatisiert lösen, sind untersagt; SIZ-Zertifizierungen sollen eigenständige Kompetenz belegen; bisherige Regelungen wurden durch neue KI-Funktionen in Office zunehmend unterlaufen. Proaktive Qualitätssicherungsmassnahme im KI-Zeitalter stärkt das Vertrauen in SIZ-Diplome als verlässliche Kompetenznachweise – klares Signal für die Integrität der SIZ AG als Prüfungsorganisation.",
+        source: "siz.ch",
+        url: "https://siz.ch/newsflash-maerz-2026/",
+        date: "2026-03",
+        category: "SIZ AG direkt",
+        addedAt: "2026-05-06",
+      },
+      // Neu: 2026-05-06
+      {
         summary: "siz.ch (2026): 'ICT Power-User SIZ Systems & Network – Komplettüberarbeitung 2026' – Das Diplom ICT Power-User SIZ im Bereich Systems & Network wird 2026 vollständig überarbeitet: Neue Modulidentifikationen und Lernziele (SP1) treten per August 2026 in Kraft. Inhaltliche Modernisierung des technisch anspruchsvollsten SIZ-Diploms stärkt die Marktposition von SIZ AG als zeitgemässe ICT-Prüfungsorganisation – direktes Zeichen für Innovationsstärke und Relevanz im Schweizer ICT-Markt.",
         source: "siz.ch",
         url: "https://siz.ch/angebot/ict-power-user-siz-systems-network/",
@@ -2294,6 +2303,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 2026-05-06
+      {
+        summary: "QuantVPS (2026): 'Prop Firms That Allow News Trading in 2026' – Analyse der aktuellen Prop-Firm-Richtlinien für News-Trading: Die meisten Futures-Prop-Firmen erlauben grundsätzlich News-Trading; einzelne Firmen setzen erhöhte Margins oder temporäre Positionslimits während High-Impact-Events (FOMC, NFP, CPI); vollautomatisches Hochfrequenz-News-Trading bleibt verboten; semi-automatische Systeme mit menschlicher Entscheidungskontrolle sind weitgehend erlaubt. Differenzierte Regulierungslage bei Prop-Firmen für News-Trading bietet operativen Rahmen für regelkonforme algorithmisch unterstützte Trading-Strategien – direktes Marktumfeld für transparente Trading-Ansätze auf mindrocket-trading.com.",
+        source: "quantvps.com",
+        url: "https://www.quantvps.com/blog/prop-firms-allow-news-trading",
+        date: "2026-05",
+        category: "Regulierung",
+        addedAt: "2026-05-06",
+      },
       // Neu: 2026-05-06
       {
         summary: "CNBC (29. April 2026): 'Fed hält Zinsen stabil trotz 4 Gegenstimmen – stagflationäres Risiko durch Iran-Krieg' – Das FOMC stimmte 8:4 für unveränderte Zinsen bei 3,50–3,75%; vier Dissenter wollten die expansive Bias aus dem Statement entfernen – stärkstes Dissens-Signal seit mehreren Jahren; anhaltender Iran-Krieg treibt WTI-Öl auf über 106 USD/Barrel und baut stagflationären Druck auf; Powell beendet seine Amtszeit; Märkte preisen keine weiteren Zinssenkungen bis weit ins 2027 ein. Ungewöhnlich starkes FOMC-Dissens-Signal und stagflationärer Druck durch geopolitische Ölpreisrisiken schaffen erhöhte Makro-Unsicherheit für ES-Futures-Positioning – direktes Marktumfeld für algorithmische Risikomanagement-Strategien auf mindrocket-trading.com.",
@@ -4959,6 +4977,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-06
       {
+        summary: "GlobeNewswire (5. Mai 2026): 'Mental Health Awareness Month Highlights Growing Search for Self-Help Resources' – Mental Health Awareness Month Mai 2026 dokumentiert explosives Wachstum der Suchanfragen nach Selbsthilfe-Ressourcen; laut West Health-Gallup-Umfrage bewertet nur 29% der US-Erwachsenen ihre psychische Gesundheit als 'hervorragend' (vs. 43% vor der Pandemie); wachsende Nachfrage nach praktischen, direkt anwendbaren Self-Help-Werkzeugen auf Rekordhoch. Globaler Awareness-Impuls für mentale Selbsthilfe im Mai 2026 treibt die Suchnachfrage nach Self-Help-Tools – direktes Sichtbarkeitsumfeld für mindtools.ch als Anbieter niedrigschwelliger mentaler Werkzeuge.",
+        source: "GlobeNewswire",
+        url: "https://www.globenewswire.com/news-release/2026/05/05/3288421/0/en/Mental-Health-Awareness-Month-Highlights-Growing-Search-for-Self-Help-Resources.html",
+        date: "2026-05-05",
+        category: "Mental Health",
+        addedAt: "2026-05-06",
+      },
+      // Neu: 2026-05-06
+      {
         summary: "ad-hoc-news.de (Mai 2026): 'Stress erreicht 2026 neuen Höchststand in Deutschland' – Stressbelastung und psychische Erkrankungen erreichen 2026 Rekordwerte; Burnout-Ausfälle stiegen in 5 Jahren um 33%; Unternehmen und Privatpersonen reagieren mit Resilienz-Programmen und mentaler Prävention. Steigende Belastung schafft direkten Bedarf an einfach zugänglichen, erschwinglichen mentalen Werkzeugen – direktes Wachstumsumfeld für mindtools.ch als niedrigschwellige Selbsthilfe-Plattform.",
         source: "ad-hoc-news.de",
         url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/stress-erreicht-2026-neuen-hoechststand-in-deutschland/69077850",
@@ -6023,6 +6050,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 2026-05-06
+      {
+        summary: "Mental Health America (Mai 2026): 'Mental Health Month 2026 – More Good Days, Together' – Der globale Mental Health Awareness Month Mai 2026 steht unter dem Thema 'More Good Days, Together'; Mental Health America betont kollektive Verantwortung für psychisches Wohlbefinden; Unternehmen setzen flexible Work-Policies, Burnout-Prävention und Leadership-geführte Gespräche um; laut US-Umfrage bewertet nur 29% der Erwachsenen ihre psychische Gesundheit als 'hervorragend' (vs. 43% vor der Pandemie). Globaler Awareness-Monat Mai 2026 für mentale Gesundheit am Arbeitsplatz schafft direktes Kommunikations- und Sichtbarkeitsumfeld für hypnovital® als bewährten BGM-Anbieter für Burnout-Prävention.",
+        source: "mhanational.org",
+        url: "https://mhanational.org/2026-mental-health-month-action-guide/",
+        date: "2026-05",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-06",
+      },
       // Neu: 2026-05-06
       {
         summary: "hypnosekongress.net (2026): 'Internationaler Hypnosekongress 2026 in Winterthur, 20./21. Juni 2026' – Der Internationale Hypnosekongress 2026 findet am 20./21. Juni in der AXA Arena Winterthur statt; Teilnehmende: Therapeuten, Ärzte, Coaches; Live-Demos und praxisorientierte Workshops; internationale Experten aus Medizin, Psychologie, Hypnose und Forschung. Schweizer Hypnosekongress als wichtigstes Branchen-Netzwerkevent 2026 bietet hypnovital® Sichtbarkeit und Positionierungsmöglichkeiten im direkten Branchenumfeld.",
@@ -11884,6 +11920,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-06
       {
+        summary: "KMU-Magazin Schweiz (2026): 'Wie Führungskräfte zum «Learnfluencer» werden' – Das Schweizer KMU-Fachmagazin thematisiert den Learnfluencer-Begriff im Business-Kontext: Führungskräfte als Learnfluencer stärken die intrinsische Lernmotivation der Mitarbeitenden, verbinden individuelles und kollektives Lernen und etablieren eine lernkulturelle Eigenverantwortung; hybride Lernformate und KI-Integration als operative Umsetzung. Schweizer Business-Fachmagazin verbreitet den Learnfluencer-Begriff als zeitgemässes Führungskonzept – direktes Thought-Leadership-Umfeld und Markenvalidierung für learnfluencer.ch.",
+        source: "kmu-magazin.ch",
+        url: "https://www.kmu-magazin.ch/wissen/strategie-management/wie-fuehrungskraefte-zum-learnfluencer-werden",
+        date: "2026-05",
+        category: "Content & Thought Leadership",
+        addedAt: "2026-05-06",
+      },
+      {
+        summary: "Haufe.de (2026): 'Weiterbildung braucht Learnfluencer' – Haufe, der führende deutschsprachige Verlag für HR und Personalmanagement, erklärt: Learnfluencer sind Personen, die als treibende Kräfte einer modernen Lernkultur agieren – sie teilen Lernerfahrungen, motivieren andere zur Weiterbildung und verbinden individuelles mit kollektivem Lernen; Corporate Learning braucht interne Learnfluencer als Katalysatoren für Lernkultur. Verwendung des Begriffs 'Learnfluencer' durch führenden HR-Fachverlag im DACH-Raum bestätigt den Begriff als Business-Standard – direktes Thought-Leadership-Umfeld für learnfluencer.ch.",
+        source: "haufe.de",
+        url: "https://www.haufe.de/personal/neues-lernen/weiterbildung-braucht-learnfluencer_589614_634382.html",
+        date: "2026-05",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-05-06",
+      },
+      // Neu: 2026-05-06
+      {
         summary: "ict-berufsbildung.ch (2026): 'Neuer eidgenössischer KI-Abschluss stärkt Wirtschaft – erste Absolventinnen 2026' – ICT-Berufsbildung Schweiz lanciert den ersten eidgenössischen KI-Fachausweis (AI Business Specialist); erste Absolventinnen und Absolventen treten 2026 in den Arbeitsmarkt ein; Abschluss kombiniert ICT-Grundkompetenz mit KI-Anwendungswissen; Schweizer Wirtschaft fordert KI-Spezialisten, die KI strategisch integrieren und praktisch umsetzen können. Neuer nationaler KI-Abschluss in der Schweiz schafft ein konkretes Weiterbildungsumfeld und Thought-Leadership-Thema für learnfluencer.ch als Plattform für Lernkompetenz und KI-Weiterbildung.",
         source: "ict-berufsbildung.ch",
         url: "https://www.ict-berufsbildung.ch/neuer-eidgenoessischer-ki-abschluss-staerkt-wirtschaft",
@@ -13735,6 +13788,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 2026-05-06
+      {
+        summary: "KMU Performer AG (2026): 'Unsere KMU Marketing-Trends 2026' – Schweizer Marketing-Spezialist analysiert die wichtigsten Trends 2026: KI-Integration als Standard in der Marketingstrategie für Schweizer KMU; Fokus auf messbaren ROI statt Streuung; Customer-Journey-Analyse und strukturiertes Marketingkonzept (Zielgruppe, Positionierung, SWOT, Kanäle) als unverzichtbare Grundlage vor dem Tool-Einsatz; Omnichannel-Ansätze und Automatisierung als Umsetzung. Schweizer Marketingexperten betonen 2026 strukturiertes Marketingkonzept als strategische Basis vor dem KI-Tool-Einsatz – direktes Marktumfeld und Validierung für das interaktive Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "kmu-performer.ch",
+        url: "https://kmu-performer.ch/trends-2026/",
+        date: "2026-05",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-05-06",
+      },
       // Neu: 2026-05-06
       {
         summary: "martech.org (April 2026): 'MarTech 2026: AI drives a major industry reset' – martech.org konstatiert: KI wird 2026 zum Standard im MarTech-Stack; 90,3% der Marketer nutzen KI-Agenten; globaler MarTech-Markt auf dem Weg zu über USD 1 Billion (2026); Kerntrend: strukturierte Marketingplanung als Fundament vor dem KI-Tool-Einsatz. Starkes Marktwachstum und KI-Durchdringung im MarTech-Bereich bestätigt die Nachfrage nach strukturierten Marketingkonzept-Tools – direktes Wachstumsumfeld für das Marketingplan-Tool auf learnfluencer.ch.",
