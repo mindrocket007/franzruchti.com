@@ -2276,6 +2276,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 2026-05-06
+      {
+        summary: "fxstreet.de (5. Mai 2026): 'WTI-Öl fällt, da die Versorgungssorgen um Hormus nachlassen, Iran-US-Risiken bleiben bestehen' – WTI-Rohöl gab nach anfänglichem Anstieg nach Hormus-Entspannung wieder nach; US-Iran-Spannungen halten die Volatilität hoch; Brent blieb auf erhöhtem Niveau; Marktteilnehmer reagieren sensitiv auf jeden Nahost-Schlagzeile. Anhaltende geopolitische Volatilität durch Nahost-Spannungen schafft erhöhte Intraday-Bewegungen in ES-Futures – direktes Marktumfeld für algorithmische Risikomanagement-Strategien wie jene von Mind Rocket Trading.",
+        source: "fxstreet.de.com",
+        url: "https://www.fxstreet.de.com/news/wti-ol-zieht-sich-zuruck-da-die-versorgungsangste-in-der-strasse-von-hormus-nachlassen-iran-us-spannungen-halten-die-volatilitat-hoch-202605050918",
+        date: "2026-05-05",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-05-06",
+      },
+      {
+        summary: "investing.com / S&P 500 E-Mini (Mai 2026): 'S&P 500 E-Mini Futures: Bullish Trend Intact but Pullback Risks Rising' – S&P 500 E-Mini notiert bei 7.308,75 (Stand Anfang Mai 2026); April-Monatskerze schloss nahe des Hochs und erhöht Chancen für weitere Aufwaerts-Bewegungen im Mai; technische Analyse zeigt bullisches Ziel bei 7.550, Bears erwarten Konsolidierung; FOMC-Entscheid vom 6. Mai als naechster Katalysator. Klar definiertes technisches Szenario fuer ES-Futures Anfang Mai 2026 mit bullischem Grundbias – relevantes Marktumfeld fuer algorithmische Einstiegsstrategien wie jene von Mind Rocket Trading.",
+        source: "investing.com",
+        url: "https://www.investing.com/analysis/sp-500-emini-futures-bullish-trend-intact-but-pullback-risks-rising-200679573",
+        date: "2026-05",
+        category: "Futures & Trading",
+        addedAt: "2026-05-06",
+      },
       // Neu: 2026-05-05
       {
         summary: "CNBC (4. Mai 2026): 'Stock market news for May 4, 2026' – S&P 500 verlor 0,41% auf 7.200,75 Punkte; Dow Jones gab 557 Punkte (-1,13%) auf 48.941,90 ab; Nasdaq verlor 0,19%. Auslöser: Nahostkonflikte eskalierten – die Vereinigten Arabischen Emirate meldeten erstmals seit dem US-Iran-Waffenstillstand Abschuss iranischer Raketen; WTI-Rohöl stieg +4,39% auf 106,42 USD/Barrel; Brent +5,8% auf 114,44 USD. Am 5. Mai notieren S&P-Futures mit +0,01% leicht erholt. Geopolitische Eskalationen im Nahen Osten als direkte Marktbeweger mit sofortiger ES-Futures-Volatilität – relevantes Signal für algorithmische Risikomanagement-Strategien wie jene von Mind Rocket Trading.",
@@ -5955,6 +5972,39 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 2026-05-06
+      {
+        summary: "hypnosekongress.net (2026): 'Internationaler Hypnosekongress 2026 in Winterthur, 20./21. Juni 2026' – Der Internationale Hypnosekongress 2026 findet am 20./21. Juni in der AXA Arena Winterthur statt; Teilnehmende: Therapeuten, Ärzte, Coaches; Live-Demos und praxisorientierte Workshops; internationale Experten aus Medizin, Psychologie, Hypnose und Forschung. Schweizer Hypnosekongress als wichtigstes Branchen-Netzwerkevent 2026 bietet hypnovital® Sichtbarkeit und Positionierungsmöglichkeiten im direkten Branchenumfeld.",
+        source: "hypnosekongress.net",
+        url: "https://hypnosekongress.net/",
+        date: "2026-06",
+        category: "Hypnose & Coaching",
+        addedAt: "2026-05-06",
+      },
+      {
+        summary: "gesundheitsfoerderung.ch (2026): 'Betriebliches Gesundheitsmanagement (BGM) – Friendly Work Space' – Gesundheitsförderung Schweiz hat Qualitätskriterien für umfassendes BGM entwickelt und zeichnet Betriebe mit dem Label Friendly Work Space aus; Fokus 2026 auf hybride Gesundheitsangebote, mentale Gesundheit und messbaren ROI; Veranstaltungen und Weiterbildungen für BGM-Verantwortliche auf der Plattform. Die führende Schweizer BGM-Organisation setzt 2026 klare Standards und schafft einen wachsenden Markt für skalierbare BGM-Lösungen wie hypnovital®.",
+        source: "gesundheitsfoerderung.ch",
+        url: "https://gesundheitsfoerderung.ch/unser-engagement/betriebliches-gesundheitsmanagement",
+        date: "2026-05",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-06",
+      },
+      {
+        summary: "srf.ch (2026): 'Psychische Erkrankungen am Arbeitsplatz kosten Schweizer Wirtschaft Milliarden' – Psychische Erkrankungen kosten die Schweizer Wirtschaft fast 20 Milliarden Franken pro Jahr; rund 20% der Erwerbstätigen leiden unter psychischen Problemen; über 30% fühlen sich emotional erschöpft; AXA-Studie: In keinem anderen Industrieland beeinträchtigt Arbeit das psychische Wohlbefinden so stark wie in der Schweiz; ROI für Präventionsmassnahmen liegt bei 5:1. Dramatische psychische Belastungssituation am Schweizer Arbeitsplatz unterstreicht den dringlichen Bedarf an wirksamen Präventionsangeboten – direktes Marktumfeld für hypnovital®.",
+        source: "srf.ch",
+        url: "https://www.srf.ch/news/dialog/ausgebrannt-im-job-psychische-gesundheit-teuer-und-unterschaetzt",
+        date: "2026-05",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-06",
+      },
+      {
+        summary: "ad-hoc-news.de (2026): 'Digitale Gesundheits-Apps: Spezialisierung statt Einheitslösung' – Der Markt für Mental-Health-Apps 2026 diversifiziert sich: Nachfrage verschiebt sich von Breitband-Apps zu spezialisierten Lösungen für konkrete Zielgruppen; KI-gestützte, personalisierte Angebote wachsen am schnellsten; B2B-BGM-Integration als wichtigster Wachstumskanal. Spezialisierungs- und B2B-Trend im digitalen Gesundheitsmarkt begünstigt fokussierte Angebote wie hypnovital® als gezielte BGM-Audioanwendung.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/digitale-gesundheits-apps-spezialisierung-statt-einheitsloesung/68494060",
+        date: "2026-05",
+        category: "Digitale Gesundheit",
+        addedAt: "2026-05-06",
+      },
       // Neu: 2026-05-05
       {
         summary: "chairtech.de (2026): 'Betriebliches Gesundheitsmanagement Pflicht? Was gilt 2026' – ChairTech klärt auf: BGM ist in Deutschland nicht vollständig gesetzlich vorgeschrieben, aber Kernelemente wie Arbeitsschutz und Betriebliches Eingliederungsmanagement (BEM) sind bereits Pflicht; 2026 machen steigende Mitarbeitererwartungen, zunehmender Fachkräftemangel und verschärfte Kontrollen BGM faktisch unverzichtbar für alle Unternehmen; in der Schweiz gilt analoger faktischer Druck durch Arbeitsrecht und wachsende Compliance-Anforderungen. Wachsender faktischer Zwang zu BGM-Massnahmen – unabhängig von konkreter Gesetzespflicht – erhöht die strukturelle Nachfrage nach skalierbaren, einfach einsetzbaren BGM-Lösungen wie hypnovital® als digitales Audio-Programm für Betriebe.",
@@ -8093,6 +8143,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 2026-05-06
+      {
+        summary: "pickoutright.com (2026): '10 Essential Productivity SaaS Tools for 2026' – Produktivitäts-SaaS-Übersicht 2026: Agentic Workflows als dominierendes Paradigma (weg von manuellem Dateneingabe-Tools, hin zu KI-integrierten Plattformen, die Bedürfnisse voraussagen); Tool-Fokus auf Methodentreue und einfache Nutzung steigt; kein einziges aufgeführtes Tool ist spezifisch auf die 12-Week-Year-Methode ausgerichtet. Wachsender Markt für fokussierte Produktivitäts-SaaS-Tools und fehlende 12-Week-Year-Spezialisten in 2026-Rankings bestätigen die Differenzierungschance für den 12wy-planner als dediziertes Planungstool.",
+        source: "pickoutright.com",
+        url: "https://pickoutright.com/blog/essential-productivity-saas-tools-2026/",
+        date: "2026-05",
+        category: "SaaS & Tools",
+        addedAt: "2026-05-06",
+      },
       // Neu: 2026-05-05
       {
         summary: "vistage.com (2026): 'Productivity Trends for 2026 and Beyond' – Vistage (weltweit grösste CEO-Peer-Advisory-Organisation) analysiert die wichtigsten Produktivitätstrends 2026: klare Vision und strategische Prioritäten als Fundament für Quartalsplanung; Leading Indicators und wöchentliches Scoring als Kern systematischer Produktivitätssysteme; Reduktion von Tool-Überflutung durch fokussierte Single-Purpose-Lösungen; 12-Wochen-Zyklen als bewährtes System gegen Prokrastination durch Jahresplanung. Institutioneller Business-Fokus auf Quarterly Planning und strategische Prioritätensetzung bestätigt das Marktumfeld für den 12wy-planner als fokussiertes SaaS-Tool für die 12-Week-Year-Methode.",
@@ -9420,6 +9479,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 2026-05-06
+      {
+        summary: "researchandmarkets.com (2026): 'Premature Ejaculation Drug Market – Global Forecast to 2032' – Der globale Markt für EP-Behandlungen wächst von USD 3,86 Mrd. (2024) auf USD 4,24 Mrd. (2025) und soll bis 2032 USD 8,33 Mrd. erreichen (CAGR ~10%); neben Medikamenten (Dapoxetin/Priligy) und Lokalanästhetika gewinnen digitale und psychologische Ansätze an Bedeutung. Strukturelles Marktwachstum im EP-Behandlungssegment belegt die langfristige Nachfrage nach digitalen Selbsthilfeprodukten – direktes Marktumfeld für orgasmus-hinauszoegern.de.",
+        source: "researchandmarkets.com",
+        url: "https://www.researchandmarkets.com/report/premature-ejaculation-drug",
+        date: "2026-03",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-05-06",
+      },
       // Neu: 2026-05-05
       {
         summary: "wiekannmanlanger.com (2026): 'Vorzeitiger Samenerguss Heilung Durch Hypnose' – Spezialisiertes Informationsportal erklärt den hypnotherapeutischen Ansatz zur Behandlung von Ejaculatio praecox: Hypnosesuggestionen verändern unbewusste Denk- und Reaktionsmuster, die zur frühzeitigen Ejakulation beitragen; regelmässige Audio-Anwendung verankert neue Kontrollmuster im Unterbewusstsein nachhaltig; Kombination von Tiefenentspannung und direkten Suggestionen als Kern der Methode. Wachsendes Informationsangebot zu Hypnose als Behandlungsmethode für Ejaculatio praecox bestätigt Marktakzeptanz – direktes Wettbewerbsumfeld und Validierung für das Audio-Hypnose-Produkt auf orgasmus-hinauszoegern.de.",
@@ -10502,6 +10570,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 2026-05-06
+      {
+        summary: "rampenpfau.de (6. April 2026): 'Lampenfieber wegen Vortrags-Kritik?' – Dr. Thomas A. Coucoulis erklärt, wie Angst vor negativer Bewertung Lampenfieber verstärkt und wie man durch kognitive Umstrukturierung und Expositionstraining die Auftrittsangst überwindet; praktische Tipps für Präsentationen trotz Kritik-Angst. Aktive Content-Produktion zum Thema Lampenfieber durch Fachexperten bestätigt anhaltend hohe gesellschaftliche Nachfrage nach Lösungen – direktes Marktumfeld für lampenfieber-besiegen.de.",
+        source: "rampenpfau.de",
+        url: "https://rampenpfau.de/2026/04/06/lampenfieber-wegen-vortrags-kritik/",
+        date: "2026-04-06",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-05-06",
+      },
       // Neu: 2026-05-05
       {
         summary: "Klett-Cotta Verlag (2026): 'Von Prüfungsangst zu Prüfungsmut, von Lampenfieber zu Auftrittslust' (Cersten Jacob) – Neues Fachbuch von Klett-Cotta, einem der renommiertesten deutschen Fachverlage für Psychologie und Therapie: praktische Strategien für Bewertungssituationen; Verbindung von Prüfungsangst und Lampenfieber als Leistungsangst-Spektrum; evidenzbasierte Methoden zum Aufbau von Prüfungsmut und Auftrittslust. Neues Fachbuch-Angebot zum Thema Lampenfieber und Prüfungsangst bei renommiertem Fachverlag bestätigt anhaltende gesellschaftliche Nachfrage nach Lösungen – direktes Marktumfeld für das Audio-Hypnose-Produkt auf lampenfieber-besiegen.de.",
@@ -11722,6 +11799,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 2026-05-06
+      {
+        summary: "ict-berufsbildung.ch (2026): 'Neuer eidgenössischer KI-Abschluss stärkt Wirtschaft – erste Absolventinnen 2026' – ICT-Berufsbildung Schweiz lanciert den ersten eidgenössischen KI-Fachausweis (AI Business Specialist); erste Absolventinnen und Absolventen treten 2026 in den Arbeitsmarkt ein; Abschluss kombiniert ICT-Grundkompetenz mit KI-Anwendungswissen; Schweizer Wirtschaft fordert KI-Spezialisten, die KI strategisch integrieren und praktisch umsetzen können. Neuer nationaler KI-Abschluss in der Schweiz schafft ein konkretes Weiterbildungsumfeld und Thought-Leadership-Thema für learnfluencer.ch als Plattform für Lernkompetenz und KI-Weiterbildung.",
+        source: "ict-berufsbildung.ch",
+        url: "https://www.ict-berufsbildung.ch/neuer-eidgenoessischer-ki-abschluss-staerkt-wirtschaft",
+        date: "2026-05",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-05-06",
+      },
       // Neu: 2026-05-05
       {
         summary: "lohncheck.ch (2026): 'Gefragte Berufe 2026 – Zukunft der Arbeit' – Schweizer Lohnvergleichsplattform analysiert die meistgefragten Berufe 2026: KI-Kompetenzen, digitale Lernfähigkeit und kontinuierliches Upskilling als zentrale Anforderungen des Arbeitsmarkts; Berufe mit hoher Lernkurve und Anpassungsfähigkeit dominieren die Nachfrage; lebenslanges Lernen als strategischer Karrierefaktor im KI-Zeitalter; Berufsabschluss reicht nicht mehr fürs ganze Leben – Wissen verändert sich schneller als je zuvor. Wachsende Bedeutung digitaler Lernkompetenz und kontinuierlichem Upskilling auf dem Schweizer Arbeitsmarkt bestätigt das Marktumfeld für learnfluencer.ch als Thought-Leadership-Portal für Lernkompetenz und KI-Weiterbildung.",
@@ -13566,6 +13652,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 2026-05-06
+      {
+        summary: "martech.org (April 2026): 'MarTech 2026: AI drives a major industry reset' – martech.org konstatiert: KI wird 2026 zum Standard im MarTech-Stack; 90,3% der Marketer nutzen KI-Agenten; globaler MarTech-Markt auf dem Weg zu über USD 1 Billion (2026); Kerntrend: strukturierte Marketingplanung als Fundament vor dem KI-Tool-Einsatz. Starkes Marktwachstum und KI-Durchdringung im MarTech-Bereich bestätigt die Nachfrage nach strukturierten Marketingkonzept-Tools – direktes Wachstumsumfeld für das Marketingplan-Tool auf learnfluencer.ch.",
+        source: "martech.org",
+        url: "https://martech.org/martech-2026-ai-drives-a-major-industry-reset/",
+        date: "2026-04",
+        category: "MarTech & Trends",
+        addedAt: "2026-05-06",
+      },
       // Neu: 2026-05-05
       {
         summary: "campus.swiss / Swiss Marketing (2026): 'Marketing für KMU – Seminar' – Bildungsplattform des offiziellen Schweizer Marketingverbands bietet 3-tägiges Seminar 'Marketing für KMU' an: KMU lernen, sich mit begrenzten Ressourcen von Mitbewerbern abzuheben; strategische Marketingplanung, Kundengewinnung und nachhaltiges Wachstum; Kombination klassischer Marketingmethoden (SWOT, 7P, Marktanalyse) mit digitaler Strategie; Swiss-Marketing-Zertifikat als anerkannter Abschluss. Institutionalisiertes Schweizer Marketing-Weiterbildungsangebot mit SWOT- und Strategieanalysefokus für KMU bestätigt den Bedarf nach strukturierter Marketingplanung – direktes Marktumfeld für das interaktive Marketingkonzept-Tool auf learnfluencer.ch.",
