@@ -26,6 +26,15 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 2026-05-06
+      {
+        summary: "siz.ch (2026): 'ICT Power-User SIZ Systems & Network – Komplettüberarbeitung 2026' – Das Diplom ICT Power-User SIZ im Bereich Systems & Network wird 2026 vollständig überarbeitet: Neue Modulidentifikationen und Lernziele (SP1) treten per August 2026 in Kraft. Inhaltliche Modernisierung des technisch anspruchsvollsten SIZ-Diploms stärkt die Marktposition von SIZ AG als zeitgemässe ICT-Prüfungsorganisation – direktes Zeichen für Innovationsstärke und Relevanz im Schweizer ICT-Markt.",
+        source: "siz.ch",
+        url: "https://siz.ch/angebot/ict-power-user-siz-systems-network/",
+        date: "2026-05",
+        category: "SIZ AG direkt",
+        addedAt: "2026-05-06",
+      },
       // Neu: 2026-05-05
       {
         summary: "swissICT (5. Mai 2026): '#DIGITUP 2026 – Die Schweizer ICT-Community trifft sich in Zürich' – Drittes DIGITUP-Event von swissICT (5. Mai 2026, Zürich, 12–20 Uhr): 25 Sessions zu KI, digitaler Souveränität, Bildung und Zukunft der Arbeit; freier Eintritt für alle an Digitalisierung Interessierten; anschliessend swissICT-Generalversammlung und Apéro. Das DIGITUP als jährlicher Treffpunkt der Schweizer ICT-Community stärkt die Vernetzung und setzt die Agenda der Branche – direktes Wachstumsumfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation und aktiver Akteur im Schweizer ICT-Ökosystem.",
@@ -4923,6 +4932,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 2026-05-06
+      {
+        summary: "ad-hoc-news.de (Mai 2026): 'Stress erreicht 2026 neuen Höchststand in Deutschland' – Stressbelastung und psychische Erkrankungen erreichen 2026 Rekordwerte; Burnout-Ausfälle stiegen in 5 Jahren um 33%; Unternehmen und Privatpersonen reagieren mit Resilienz-Programmen und mentaler Prävention. Steigende Belastung schafft direkten Bedarf an einfach zugänglichen, erschwinglichen mentalen Werkzeugen – direktes Wachstumsumfeld für mindtools.ch als niedrigschwellige Selbsthilfe-Plattform.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/stress-erreicht-2026-neuen-hoechststand-in-deutschland/69077850",
+        date: "2026-05",
+        category: "Mental Health",
+        addedAt: "2026-05-06",
+      },
+      {
+        summary: "bildungspool.ch (2026): 'Persönlichkeitsentwicklung – Kursangebote Schweiz 2026' – Der Schweizer Markt für Persönlichkeitsentwicklung ist 2026 stark gewachsen, mit über 90 Events auf einer einzigen Plattform; Online-Kurse und hybride Formate nehmen kontinuierlich zu. Aktives Wachstum des Marktvolumens bestätigt steigendes Interesse an praktischen mentalen Werkzeugen – direktes Wachstumsumfeld für mindtools.ch.",
+        source: "bildungspool.ch",
+        url: "https://www.bildungspool.ch/persoenlichkeitsentwicklung.php",
+        date: "2026-05",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-05-06",
+      },
       // Neu: 2026-05-05
       {
         summary: "mymeditatemate.com (2026): '8 Best AI Mental Health Apps for 2026' – Meditate Mate bewertet die wirksamsten KI-gestützten Mental-Health-Apps 2026: Wysa (5 Mio. Nutzer in 90+ Ländern, meistausgezeichnete KI-Mental-Health-App), Woebot (Stanford-CBT-Grundlage), Youper (multimodale emotionale Gesundheitsassistenz mit Fitbit/Apple HealthKit-Integration), Headspace Ebb (5.000+ Meditationen, KI-Empfehlungen) und Flourish (RCT-geprüft); globaler Mental-Health-Markt 450 Milliarden USD; KI-Apps ergänzen professionelle Therapie, ersetzen sie aber nicht. Wachsendes Ökosystem klinisch validierter KI-Mental-Health-Apps bestätigt die gesellschaftliche Akzeptanz kompakter digitaler Selbsthilfe-Werkzeuge – direktes Wachstumsumfeld für mindtools.ch als Plattform für mentale Werkzeuge und Selbsthilfe-Tools.",
@@ -9481,6 +9507,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-06
       {
+        summary: "Nature / International Journal of Impotence Research (2024): 'New Technologies for Treatment of Premature Ejaculation' – Neue medizintechnische Geräte (u.a. 'In2 patch') zeigen vielversprechende Ergebnisse bei der Behandlung von lebenslangem PE ohne Medikamente; traditionelle SSRI-Behandlung zeigt begrenzte Wirksamkeit und niedrige Adhärenz. Trend zu nicht-medikamentösen, selbstangewendeten Lösungen stärkt die Marktposition von Hypnose-Audio-Produkten als alternative Therapieansätze – direktes Marktumfeld für orgasmus-hinauszoegern.de.",
+        source: "nature.com",
+        url: "https://www.nature.com/articles/s41443-024-00875-w",
+        date: "2024-05",
+        category: "Digital Health",
+        addedAt: "2026-05-06",
+      },
+      {
         summary: "researchandmarkets.com (2026): 'Premature Ejaculation Drug Market – Global Forecast to 2032' – Der globale Markt für EP-Behandlungen wächst von USD 3,86 Mrd. (2024) auf USD 4,24 Mrd. (2025) und soll bis 2032 USD 8,33 Mrd. erreichen (CAGR ~10%); neben Medikamenten (Dapoxetin/Priligy) und Lokalanästhetika gewinnen digitale und psychologische Ansätze an Bedeutung. Strukturelles Marktwachstum im EP-Behandlungssegment belegt die langfristige Nachfrage nach digitalen Selbsthilfeprodukten – direktes Marktumfeld für orgasmus-hinauszoegern.de.",
         source: "researchandmarkets.com",
         url: "https://www.researchandmarkets.com/report/premature-ejaculation-drug",
@@ -10571,6 +10605,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "lampenfieber": {
     news: [
       // Neu: 2026-05-06
+      {
+        summary: "NOACK Hypnotherapie Berlin (2026): 'Glossophobie – Hypnose bei Redeangst' – Glossophobie (Sprechangst in der Öffentlichkeit) ist eine klar definierte Angststörung, die mit Hypnotherapie gut behandelbar ist; Menschen mit Lampenfieber sprechen besonders gut auf Hypnose an, was zu spürbarer Angstreduktion führt. Fachlich fundierter Wirksamkeitsnachweis für Hypnose bei Redeangst – direktes Argument für den Produktansatz von lampenfieber-besiegen.de.",
+        source: "noack-hypnose.de",
+        url: "https://www.noack-hypnose.de/glossophobie/",
+        date: "2026-05",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-05-06",
+      },
+      {
+        summary: "Satormedia (2026): 'Lampenfieber überwinden: Redeangst ade!' – Kompakter Informations-Hub mit multimodalen Behandlungsansätzen für Lampenfieber: Atemübungen, mentales Training, professionelle Unterstützung; das Freiburger Institut für Musikermedizin hat ein multimodales Therapiemodell entwickelt (Verhaltenstherapie + Körperarbeit + mentale Techniken). Wachsende Informationsnachfrage bestätigt Marktbedarf für niedrigschwellige Selbsthilfe-Angebote – direktes Umfeld für lampenfieber-besiegen.de.",
+        source: "satormedia.com",
+        url: "https://www.satormedia.com/lampenfieber/inhalte-lampenfieber.html",
+        date: "2026-05",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-05-06",
+      },
       {
         summary: "rampenpfau.de (6. April 2026): 'Lampenfieber wegen Vortrags-Kritik?' – Dr. Thomas A. Coucoulis erklärt, wie Angst vor negativer Bewertung Lampenfieber verstärkt und wie man durch kognitive Umstrukturierung und Expositionstraining die Auftrittsangst überwindet; praktische Tipps für Präsentationen trotz Kritik-Angst. Aktive Content-Produktion zum Thema Lampenfieber durch Fachexperten bestätigt anhaltend hohe gesellschaftliche Nachfrage nach Lösungen – direktes Marktumfeld für lampenfieber-besiegen.de.",
         source: "rampenpfau.de",
