@@ -2296,6 +2296,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-06
       {
+        summary: "CNBC (29. April 2026): 'Fed hält Zinsen stabil trotz 4 Gegenstimmen – stagflationäres Risiko durch Iran-Krieg' – Das FOMC stimmte 8:4 für unveränderte Zinsen bei 3,50–3,75%; vier Dissenter wollten die expansive Bias aus dem Statement entfernen – stärkstes Dissens-Signal seit mehreren Jahren; anhaltender Iran-Krieg treibt WTI-Öl auf über 106 USD/Barrel und baut stagflationären Druck auf; Powell beendet seine Amtszeit; Märkte preisen keine weiteren Zinssenkungen bis weit ins 2027 ein. Ungewöhnlich starkes FOMC-Dissens-Signal und stagflationärer Druck durch geopolitische Ölpreisrisiken schaffen erhöhte Makro-Unsicherheit für ES-Futures-Positioning – direktes Marktumfeld für algorithmische Risikomanagement-Strategien auf mindrocket-trading.com.",
+        source: "CNBC",
+        url: "https://www.cnbc.com/2026/04/29/fed-interest-rate-decision-april-2026.html",
+        date: "2026-04-29",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-05-06",
+      },
+      {
+        summary: "Fox Business (29. April 2026): 'Fed lässt Zinsen unverändert zum Abschluss von Powells Amtszeit' – Fed hielt Zinsen zum dritten Mal in Folge stabil bei 3,50–3,75%; Marktpreise reflektieren keine weiteren Zinssenkungen bis weit ins 2027 hinein; Powells Amtszeit endet am 15. Mai 2026; Kevin Warsh als Nachfolger noch im Senat-Bestätigungsverfahren. Ende der Powell-Ära und Stabilisierung der US-Zinspolitik ohne Senkungssignale prägen das geldpolitische Regime für ES-Futures-Trading in Q2/Q3 2026 – direkter Makro-Kontext für algorithmische Strategien auf mindrocket-trading.com.",
+        source: "Fox Business",
+        url: "https://www.foxbusiness.com/economy/federal-reserve-interest-rate-decision-april-29-2026",
+        date: "2026-04-29",
+        category: "Regulierung",
+        addedAt: "2026-05-06",
+      },
+      {
         summary: "fxstreet.de (5. Mai 2026): 'WTI-Öl fällt, da die Versorgungssorgen um Hormus nachlassen, Iran-US-Risiken bleiben bestehen' – WTI-Rohöl gab nach anfänglichem Anstieg nach Hormus-Entspannung wieder nach; US-Iran-Spannungen halten die Volatilität hoch; Brent blieb auf erhöhtem Niveau; Marktteilnehmer reagieren sensitiv auf jeden Nahost-Schlagzeile. Anhaltende geopolitische Volatilität durch Nahost-Spannungen schafft erhöhte Intraday-Bewegungen in ES-Futures – direktes Marktumfeld für algorithmische Risikomanagement-Strategien wie jene von Mind Rocket Trading.",
         source: "fxstreet.de.com",
         url: "https://www.fxstreet.de.com/news/wti-ol-zieht-sich-zuruck-da-die-versorgungsangste-in-der-strasse-von-hormus-nachlassen-iran-us-spannungen-halten-die-volatilitat-hoch-202605050918",
@@ -8179,6 +8195,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "12wy-planner": {
     news: [
       // Neu: 2026-05-06
+      {
+        summary: "iDel (2026): 'Productivity System Guide 2026: GTD, Pomodoro, Time Blocking' – Umfassende Analyse der erfolgreichsten Produktivitätssysteme 2026: Hybrid-Ansätze (GTD + Time Blocking) übertreffen Einzelmethoden-Adherenz für Wissensarbeiter; KI-Integration ermöglicht automatisches Leading-Indicator-Tracking; 12-Wochen-Zyklen als bewährtes System gegen Jahresplanungs-Prokrastination identifiziert; 85%-Wochenaufgaben-Erfüllungsrate als optimale Ambition-Realismus-Balance; Buffer-Wochen zwischen Zyklen zur Burnout-Prävention empfohlen. Breite Anerkennung von 12-Wochen-Planungszyklen als Produktivitätsstandard in aktuellen System-Vergleichen bestätigt die Marktrelevanz des 12wy-planners als dediziertes Tool für die 12-Week-Year-Methode.",
+        source: "idel.com",
+        url: "https://idel.com/productivity-system-guide-2026/",
+        date: "2026-05",
+        category: "Produktivität & Planung",
+        addedAt: "2026-05-06",
+      },
       {
         summary: "pickoutright.com (2026): '10 Essential Productivity SaaS Tools for 2026' – Produktivitäts-SaaS-Übersicht 2026: Agentic Workflows als dominierendes Paradigma (weg von manuellem Dateneingabe-Tools, hin zu KI-integrierten Plattformen, die Bedürfnisse voraussagen); Tool-Fokus auf Methodentreue und einfache Nutzung steigt; kein einziges aufgeführtes Tool ist spezifisch auf die 12-Week-Year-Methode ausgerichtet. Wachsender Markt für fokussierte Produktivitäts-SaaS-Tools und fehlende 12-Week-Year-Spezialisten in 2026-Rankings bestätigen die Differenzierungschance für den 12wy-planner als dediziertes Planungstool.",
         source: "pickoutright.com",
@@ -14963,6 +14987,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "bestattungsplaner": {
     news: [
       // Neu: 2026-05-06
+      {
+        summary: "VZ VermögensZentrum (2026): 'Kontrolle über sein digitales Erbe behalten' – VZ VermögensZentrum, führende Schweizer Anlage- und Vorsorgeberatung, erklärt digitalen Nachlass als Teil der Gesamtvorsorge: Online-Konten, Crypto-Assets, Cloud-Daten und Social-Media-Profile bedürfen klarer Verfügungsregelungen im Todesfall; Kombination aus schriftlicher Nachlassverfügung und digitalem Passwort-Tresor empfohlen; enge Verbindung zwischen digitaler Vorsorge und klassischer Bestattungsplanung. Wachsendes institutionelles Bewusstsein für digitalen Nachlass als integralen Teil der Gesamtvorsorge schafft Nachfrage nach umfassenden digitalen Vorsorge- und Bestattungsplanungs-Plattformen – direktes Marktumfeld für bestattungsplaner.ch.",
+        source: "vermoegenszentrum.ch",
+        url: "https://www.vermoegenszentrum.ch/wissen/kontrolle-ueber-sein-digitales-erbe-behalten",
+        date: "2026-05",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-05-06",
+      },
       {
         summary: "Vorsorgeforum.ch (April 2026): 'Schweiz wird älter' – Das Vorsorgeforum Schweiz dokumentiert: Im Jahr 2025 überstieg die Zahl der Personen ab 65 Jahren in der Schweiz erstmals die Zahl der unter 20-Jährigen; die demografische Alterung schreitet schneller voran als erwartet; strukturelle Auswirkungen auf Vorsorge, Bestattungsplanung und Nachfolgeregelungen sind bereits spürbar. Beschleunigtes demografisches Altern der Schweiz erhöht strukturell die jährliche Zahl der Todesfälle und die gesellschaftliche Dringlichkeit von digitaler Bestattungsvorsorge – direktes Wachstumsumfeld für bestattungsplaner.ch als Lead-Plattform für Bestattungsdienstleistungen.",
         source: "vorsorgeforum.ch",
