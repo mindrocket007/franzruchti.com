@@ -1647,6 +1647,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
+      // Neu: 2026-05-06
+      {
+        summary: "BFH Berner Fachhochschule (Mai 2026): 'Resilienz – Widerstandsfähigkeit im Arbeitsalltag' – Nächste Durchführung des BFH-Kurses: 11. Mai 2026; die Berner Fachhochschule vermittelt die Prinzipien der Resilienz-Kompetenz und regt zu praktischen Übungen an; gezieltes Training baut systematisch Bewältigungsstrategien auf; Kurs richtet sich an Führungskräfte und Fachleute aller Branchen, auch Einzelpersonen; berufsbegleitend, kompakt, mit anerkanntem Hochschulzertifikat. Institutionelles Hochschulangebot für Resilienztraining zeigt wachsende akademische Verankerung des Themas mentale Stärke – direktes Marktumfeld für Mind Rocket GmbH als Anbieter skalierbarerer digitaler Persönlichkeitsentwicklungs-Programme.",
+        source: "bfh.ch",
+        url: "https://www.bfh.ch/de/weiterbildung/kurse/resilienz-widerstandsfaehigkeit-arbeitsalltag/",
+        date: "2026-05-11",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-05-06",
+      },
       // Neu: 2026-05-05
       {
         summary: "inhesa.ch (2026): 'Coaching Arbeitsmarkt Schweiz: Karrierechancen & Trends' – INHESA analysiert den Schweizer Coaching-Arbeitsmarkt: Hybride Formate sind 2026 Standard; Nachfrage nach AI-integrierten Coaching-Tools wächst stark; Spezialisierung auf Resilienz, Transformationsbegleitung und digitale Kompetenzentwicklung als gefragte Nischen; Coaching wird als strategisches HR-Tool immer häufiger in KMU eingesetzt. Wachsender und sich professionalisierender Schweizer Coaching-Arbeitsmarkt bestätigt das Marktumfeld für skalierbare digitale Entwicklungsprogramme von Mind Rocket GmbH.",
@@ -14953,6 +14962,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 2026-05-06
+      {
+        summary: "Vorsorgeforum.ch (April 2026): 'Schweiz wird älter' – Das Vorsorgeforum Schweiz dokumentiert: Im Jahr 2025 überstieg die Zahl der Personen ab 65 Jahren in der Schweiz erstmals die Zahl der unter 20-Jährigen; die demografische Alterung schreitet schneller voran als erwartet; strukturelle Auswirkungen auf Vorsorge, Bestattungsplanung und Nachfolgeregelungen sind bereits spürbar. Beschleunigtes demografisches Altern der Schweiz erhöht strukturell die jährliche Zahl der Todesfälle und die gesellschaftliche Dringlichkeit von digitaler Bestattungsvorsorge – direktes Wachstumsumfeld für bestattungsplaner.ch als Lead-Plattform für Bestattungsdienstleistungen.",
+        source: "vorsorgeforum.ch",
+        url: "https://www.vorsorgeforum.ch/bvg-aktuell/2026/4/2/schweiz-wird-aelter.html",
+        date: "2026-04-02",
+        category: "Markt & Trends",
+        addedAt: "2026-05-06",
+      },
       // Neu: 2026-05-05
       {
         summary: "krematorium.ch / BGF Bernische Genossenschaft für Feuerbestattung (2026): 'Preise und Leistungen – Krematorium Bern' – Grösste Schweizer Krematoriumsgenossenschaft publiziert aktuelle Preisliste und Leistungsübersicht: Einäscherung, Urnenauswahl, Abholservice und Bestattungsbegleitung als klar strukturierte Leistungspakete; transparente Preisgestaltung als Antwort auf wachsende Konsumentennachfrage nach Kostenklarheit; Kremation als günstigste und meistgewählte Bestattungsform klar positioniert (ca. 90% der Schweizer wählen Kremation). Transparente Preisgestaltung etablierter Krematoriumsanbieter und die dominierende Marktstellung der Kremation bestätigen den Bedarf nach digitalen Vergleichs- und Planungsplattformen – direktes Marktumfeld für bestattungsplaner.ch als Lead-Plattform für Bestattungsdienstleistungen.",
