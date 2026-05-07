@@ -28,6 +28,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-07
       {
+        summary: "Zentrum Bildung Baden (2026): 'ICT Advanced-User SIZ Weiterbildung – Praxisorientiertes Diplomstudium' – Das Zentrum Bildung in Baden bietet den ICT Advanced-User SIZ als akkreditiertes Diplomprogramm an: Kurseinstieg jeweils zum Semesterstart; Lerninhalte auf aktuellen Praxisstandard ausgerichtet; direkter Praxisbezug mit Prüfungen am SIZ-Testcenter; modular aufgebaut mit Schwerpunkten in Windows, Office und Netzwerk-Grundlagen. Die flächendeckende Verfügbarkeit des ICT Advanced-User SIZ an Schweizer Weiterbildungszentren belegt die anhaltend hohe Marktnachfrage – direktes Wachstumsumfeld für SIZ AG als neutrale ICT-Prüfungsorganisation.",
+        source: "zentrumbildung.ch",
+        url: "https://www.zentrumbildung.ch/weiterbildung/informatik/ict-advanced-user-siz",
+        date: "2026-05",
+        category: "SIZ AG direkt",
+        addedAt: "2026-05-07",
+      },
+      {
         summary: "Berufsberatung.ch / SDBB (2026): 'ICT Professional SIZ – Nationaler Qualifikationsrahmen Schweiz' – Das Schweizerische Dienstleistungszentrum Berufsbildung (SDBB) führt den ICT Professional SIZ in seiner offiziellen nationalen Berufsberatungs-Datenbank; Partner-Schulen wie Benedict Zürich bieten Kursstarts ab Mai 2026 (18. Mai) an; ICT Professional SIZ als anerkannter Qualitätsnachweis für Systems & Network Kompetenz auf nationaler Ebene verankert. Aufnahme des ICT Professional SIZ im offiziellen Schweizer Berufsberatungs-Ökosystem bestätigt die gesellschaftliche Anerkennung und institutionelle Verankerung – direktes Reputationssignal für SIZ AG als Qualitätsprüfungsorganisation im Schweizer ICT-Markt.",
         source: "berufsberatung.ch (SDBB)",
         url: "https://www.berufsberatung.ch/dyn/show/2886?id=59751",
@@ -1667,6 +1675,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-07
       {
+        summary: "Coaching Institut Living Sense (2026): 'Online Coaching Practitioner – Ausbildung mit Start September 2026' – Das Coaching Institut Living Sense bietet ab September 2026 einen Online-Lehrgang zum Coaching Practitioner an: erfahrungsorientiertes Lernen mit Dienstags 18–21 Uhr als berufsbegleitendem Format; Fokus auf Ressourcenstärkung und Zielerreichung; Kombination aus Online-Lerneinheiten und Live-Praxis. Wachsende Anzahl akkreditierter Online-Coaching-Ausbildungen in der Schweiz zeigt die Professionalisierung des Marktes – direktes Marktumfeld für Mind Rocket GmbH als Anbieter skalierbarer digitaler Entwicklungsprogramme.",
+        source: "coaching-institut.ch",
+        url: "https://coaching-institut.ch/coaching-practitioner-online/",
+        date: "2026-05",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-05-07",
+      },
+      {
         summary: "HUK AG Schweiz (2026): 'Persönlichkeitsentwicklung mit Coaching & Mentoring' – Die HUK AG als Schweizer Spezialist für Führungsentwicklung und Persönlichkeitscoaching zeigt: Coaching und Mentoring sind 2026 unverzichtbare Instrumente für nachhaltige Persönlichkeitsentwicklung; hybride Formate (Online/Präsenz) als Standard; individuelle Kompetenzentwicklung und Potenzialentfaltung als wachsender Markt in Schweizer Unternehmen. Etabliertes Schweizer Coaching-Unternehmen bestätigt wachsende Nachfrage nach strukturierter Persönlichkeitsentwicklung – direktes Marktumfeld für Mind Rocket GmbH als Anbieter skalierbarer digitaler Entwicklungsprogramme.",
         source: "huk-ag.ch",
         url: "https://huk-ag.ch/persoenlichkeitsentwicklung/",
@@ -2322,6 +2338,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "mindrocket-trading": {
     news: [
       // Neu: 2026-05-07
+      {
+        summary: "Tradovate Prop (2026): 'NinjaTrader Pulse Indicator – Stärkung der Prop-Trading-Performance' – Prop-Trading-Blog von Tradovate erklärt den NinjaTrader Pulse Indicator als Kerninstrument für gezieltes Momentum-Trading auf ES Futures und anderen CME-Kontrakten: Visualisierung von Marktdynamik und Ausbruchspunkten in Echtzeit; Einsatz in Prop-Firm-Evaluierungen als messbares Performance-Differenzierungsmerkmal; direkter Bezug zu NinjaTrader als führender Futures-Trading-Plattform. Integration spezialisierter NinjaTrader-Indikatoren als Branchenstandard in Prop-Trading-Ausbildung und -Performance-Optimierung bestätigt das technologische Ökosystem – direktes Marktumfeld für NinjaTrader-basierte Strategien auf mindrocket-trading.com.",
+        source: "prop.tradovate.com",
+        url: "https://prop.tradovate.com/blogs/ninjatrader-pulse-indicator-prop-trading/",
+        date: "2026-05",
+        category: "Trading-Technologie",
+        addedAt: "2026-05-07",
+      },
       {
         summary: "FuturesBuff (2026): 'Apex Trader Funding 4.0 – Grösste Überarbeitung in der Prop-Firm-Geschichte' – Apex Trader Funding lancierte am 1. März 2026 das grösste Update in der Unternehmensgeschichte: Monatliche Abonnementgebühren abgeschafft, 5:1-Risiko-Ertrags-Regelung und One-Direction-Regel gestrichen, manuelle Auszahlungsprüfungen durch Automatisierung ersetzt, Regelwerk auf ein Minimum vereinfacht; weltgrösste Futures-Prop-Firm mit über 200'000 aktiven Tradern und Evaluations-Accounts ab USD 30 in Aktionspreisen. Radikale Vereinfachung der ATF-Regeln und Wegfall monatlicher Fees senkt Eintrittsbarrieren für algorithmische ES-Futures-Trader massiv – direktes Wachstumsumfeld für die Strategien auf mindrocket-trading.com.",
         source: "futuresbuff.com",
@@ -5013,6 +5037,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-07
       {
+        summary: "HaDEA / EU-Kommission (5. Mai 2026): 'European Mental Health Week 2026 – EU-geförderte Projekte für mentale Gesundheit' – Die Europäische Gesundheitsbehörde HaDEA präsentiert EU-finanzierte Projekte anlässlich der European Mental Health Week (5.–11. Mai 2026): WHO-Programm 'Self-Help Plus' (SH+) mit digitalen Selbsthilfe-Modulen für Erwachsene in der Schweiz; digitale Apps für Jugendliche zu Mood-Tracking und Stressmanagement; Hybrid-Ansätze aus Online-Modulen und Fachgesprächen als evidenzbasierter Goldstandard. EU-weite Evidenzbasis für digitale Selbsthilfe-Tools und mentale Gesundheitsprogramme belegt gesellschaftliche Akzeptanz und Wirksamkeit – direktes Marktumfeld für mindtools.ch als Plattform niedrigschwelliger mentaler Werkzeuge.",
+        source: "hadea.ec.europa.eu",
+        url: "https://hadea.ec.europa.eu/news/european-mental-health-week-2026-discover-eu-funded-projects-making-mental-health-priority-2026-05-05_en",
+        date: "2026-05-05",
+        category: "Mental Health",
+        addedAt: "2026-05-07",
+      },
+      {
         summary: "gymperformance.ch (2026): 'Self Improvement – Top 3 Bücher über Persönlichkeitsentwicklung' – Schweizer Performance-Blog empfiehlt die meistgelesenen Bücher zur Persönlichkeitsentwicklung 2026: Klassiker von James Clear, Tony Robbins und Napoleon Hill auf Top-Plätzen; Fokus auf Mindset, Zielsetzung und mentale Stärke als wachsende gesellschaftliche Priorität; Bücher ergänzend zu digitalen Tools als Standard. Schweizer Wachstumsmarkt für praktische Selbstentwicklungs-Ressourcen bestätigt die Nachfrage nach niedrigschwelligen mentalen Werkzeugen – direktes Wachstumsumfeld für mindtools.ch als Plattform für digitale mentale Tools.",
         source: "gymperformance.ch",
         url: "https://gymperformance.ch/persoenlichkeitsentwicklung/",
@@ -6096,6 +6128,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "hypnovital": {
     news: [
       // Neu: 2026-05-07
+      {
+        summary: "bloomindo.de (2026): 'Mental Health im Betrieblichen Gesundheitsmanagement – Warum psychische Gesundheit zum BGM-Pflichtthema wird' – Praxisleitfaden zu Mental Health als zentralem BGM-Handlungsfeld 2026: Psychische Erkrankungen verantworten rund 15% aller Fehltage in Unternehmen; Burnout-Prävention, Stressmanagement und Resilienzförderung als bewährte Kernangebote; frühzeitige Präventionsmassnahmen sparen Kosten und schützen Leistungsfähigkeit; digitale BGM-Angebote senken Hemmschwelle für Nutzung. Professioneller Fachdiskurs über Mental Health als BGM-Pflichtthema bestätigt die Marktnachfrage für skalierbare digitale Gesundheitslösungen – direktes Umfeld für hypnovital® als Audio-Hypnose-Plattform für Burnout-Prävention.",
+        source: "bloomindo.de",
+        url: "https://bloomindo.de/impulse/mental-health-im-betrieblichen-gesundheitsmanagement/",
+        date: "2026-05",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-07",
+      },
       {
         summary: "BODYMEDIA Fachmagazin (Mai 2026): 'HealthEXPO 2026 setzt auf messbare Gesundheit statt Mythen' – Fachorgan der Fitness- und Gesundheitsbranche berichtet: HealthEXPO 2026 positioniert sich als 'bislang grösster Gesundheits-Erlebnistag der Schweiz' (30. Mai 2026, Messe Basel); Programm umfasst 20+ medizinische und fitnessbezogene Check-ups (Körperzusammensetzung, Blutdruck etc.), rund 120 Neuheiten aus Medizin, Prävention und Longevity; neuer B2B-Business-Campus für Unternehmen mit Networking und Speed-Dating zu Gesundheit als strategischem Wettbewerbsfaktor; neuer Longevity-Schwerpunkt (biologisches Alter, gesunde Lebensverlängerung); 40+ Experten zu mentaler Gesundheit, Stressbewältigung und Resilienz. Fachdiskurs über Messbarkeit von Gesundheitsmassnahmen und BGM-ROI stärkt das Marktumfeld für nachweisbar wirksame digitale Gesundheitsangebote wie hypnovital®.",
         source: "bodymedia.de",
@@ -8303,6 +8343,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-07
       {
+        summary: "OKRchamp (2026): '2026 OKR Execution Roadmap – Readiness, Ops, Champions' – Umfassender Praxis-Leitfaden zur OKR-Umsetzung im Jahresverlauf 2026: OKRs als wöchentliche Praxis mit leichten, wiederholbaren Rhythmen; kurze Check-ins mit transparenten Confidence Scores (1–10); Quarterly Resets als Kernmethodik; 4,3 Quartalszyklen in 2026 als natürliches Planungsraster; starke Parallelität von OKR-Quartalszyklen und 12-Wochen-Jahresstruktur bestätigt. Starke Nachfrage nach klar strukturierten Quartals-Planungs-Methoden zeigt das Wachstumsumfeld für den 12wy-planner – direktes Nutzerumfeld für das SaaS-Tool mit 12-Week-Year-Fokus.",
+        source: "okrchamp.com",
+        url: "https://okrchamp.com/okr-roadmap-2026-readiness-ops-champions/",
+        date: "2026-05",
+        category: "Zielsetzung & OKR",
+        addedAt: "2026-05-07",
+      },
+      {
         summary: "Intentional E Blog (2026): '12 Week Year Planning Guide – Achieve Your Goals Faster' – Praxisleitfaden zur Umsetzung der 12-Week-Year-Methode von Brian Moran: Jeder 12-Wochen-Zyklus als vollständiges Jahr mit klarer Zielformulierung, wöchentlichem Scoring und Review-Sessions; Buffer-Wochen zwischen Zyklen zur Burnout-Prävention empfohlen; KI-Tools als wachsender Enabler für automatisches Tracking von Leading Indicators. Anhaltend starke internationale Content-Produktion zur 12-Week-Year-Methode belegt die hohe Nachfrage – direktes Nutzerumfeld für den 12wy-planner als dediziertes SaaS-Tool für die Methode.",
         source: "intentionaleblog.com",
         url: "https://intentionaleblog.com/12-week-year-planning/",
@@ -9656,6 +9704,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-07
       {
+        summary: "Prof. Dr. Sommer / maennergesundheit.info (2026): 'Ejaculatio praecox – Medizinische Bewertung und Behandlungsoptionen' – Renommierter Männergesundheits-Experte erklärt vorzeitigen Samenerguss als häufige Funktionsstörung (10–30% aller Männer betroffen): Differenzierung in lebenslang (primär) vs. erworben (sekundär); psychische Mitbeteiligung in Mehrheit der Fälle wissenschaftlich belegt; Verhaltenstechniken (Start-Stopp, Squeeze) und mentale Methoden als evidenzbasierte Erstlinie; Selbsthilfe-Programme als niedrigschwellige Einstiegsoption vor medizinischer Intervention empfohlen. Medizinischer Expertenkonsens zur psychischen Komponente als Hauptursache und Verhaltenstechniken als Erstlinie bestätigt die Positionierung von Audio-Hypnose als zielgruppengerechte Selbsthilfe-Option – direktes Marktumfeld für orgasmus-hinauszoegern.de.",
+        source: "maennergesundheit.info",
+        url: "https://www.maennergesundheit.info/leistungen/maennliche-sexualmedizin/ejakulationsstoerung/vorzeitiger-samenerguss.html",
+        date: "2026-05",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-05-07",
+      },
+      {
         summary: "MOOCI Gesundheitsplattform (2026): 'Vorzeitiger Samenerguss – Kosten, Ablauf und Behandlungsoptionen' – Unabhängige Gesundheitsplattform für medizinische Eingriffe analysiert Behandlungsoptionen bei Ejaculatio praecox: Medizinische Interventionen kosten EUR 2.000–5.000+; verhaltensbasierte Selbsthilfe und psychologische Methoden als erste Behandlungslinie empfohlen; digitale Selbsthilfeprogramme als kostengünstige Einstiegsoption zunehmend anerkannt. Hohe Kosten für medizinische Behandlungen und Empfehlung von Selbsthilfe als Erstlinie schaffen direktes Marktumfeld für das günstige Audio-Hypnose-Produkt auf orgasmus-hinauszoegern.de.",
         source: "mooci.org",
         url: "https://www.mooci.org/intimchirurgie/vorzeitiger-samenerguss/",
@@ -10772,6 +10828,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "lampenfieber": {
     news: [
       // Neu: 2026-05-07
+      {
+        summary: "WEKA Schweiz (2026): 'Lampenfieber – 5 Tricks für das Überwinden von Lampenfieber' – Führende Schweizer Praxis-Plattform für Führungskräfte erklärt konkrete Lampenfieber-Bewältigungsstrategien: Atemübungen zur Aktivierung des Parasympathikus; positive Visualisierung des Auftritts; Körpersprache und Power-Posing als Selbstvertrauen-Booster; gründliche Vorbereitung als wichtigste Grundlage; Reframing von Nervosität als Energiequelle statt Hindernis. WEKA Schweiz als Fachplattform für Business-Kommunikation zeigt anhaltend hohe Relevanz von Lampenfieber-Lösungen in professionellen Kontexten – direktes Nutzerumfeld für lampenfieber-besiegen.de als praktische Audio-Selbsthilfe-Lösung.",
+        source: "weka.ch",
+        url: "https://www.weka.ch/themen/fuehrung-kompetenzen/kommunikation-und-auftritt/praesentation-und-moderation/article/lampenfieber-5-tricks-fuer-das-ueberwinden-von-lampenfieber/",
+        date: "2026-05",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-05-07",
+      },
       {
         summary: "BoConnect (2026): 'Hypnose gegen Angst und Lampenfieber' – Umfassende Erklärung der Hypnose-Wirkungsweise bei Lampenfieber und Auftrittsangst: Positive Suggestionen ersetzen Versagensangst durch neues Selbstbild im Unterbewusstsein; Trance-Zustand macht das Unterbewusstsein besonders empfänglich für neue Muster; Audio-Hypnose als zugängliche Selbstanwendungs-Option beschrieben. Wachsendes Online-Informationsangebot zur Hypnose als Behandlungsoption für Lampenfieber bestätigt Marktakzeptanz – direktes Sichtbarkeitsumfeld für das Audio-Hypnose-Produkt auf lampenfieber-besiegen.de.",
         source: "boconnect.de",
@@ -12026,6 +12090,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "learnfluencer": {
     news: [
       // Neu: 2026-05-07
+      {
+        summary: "Steinbeis+Akademie – Digital Learning & Leadership (Mai 2026): 'LEARNTEC 2026 Innovation Island – Lernzukunft hautnah erleben' – Das Institut für Digitales Lernen & Leadership berichtet von der LEARNTEC 2026 (5.–7. Mai, Karlsruhe): die 'Innovation Island' als neue Begegnungszone für KI-Anwendungen in der Bildung; praxisnahe Demos von KI-Coaches, adaptiven Lernumgebungen und XR-Learning; Fokus auf 'Learning in the Flow of Work' als dominierendem Paradigma 2026; KI-gestützte Lernpfade und immersive Lernformate als nächste Stufe der Corporate-Learning-Evolution. Praxisbericht eines renommierten deutschen Bildungsinstituts bestätigt KI-gestützte Lernpfade und Thought Leadership in Lernkompetenz als die prägenden Trends 2026 – kernrelevantes Themenfeld für learnfluencer.ch.",
+        source: "digital-learning-leadership.com (Steinbeis+Akademie)",
+        url: "https://digital-learning-leadership.com/allgemein/learntec-2026-innovation-islanmd/",
+        date: "2026-05",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-05-07",
+      },
       {
         summary: "AV-Views (Mai 2026): 'LEARNTEC 2026: Wenn Technologie zum Lernpartner wird' – AV-Fachmedium berichtet live aus der LEARNTEC 2026 (5.–7. Mai, Karlsruhe): Im Corporate-Learning-Bereich dominieren KI-gestützte Lösungen wie KI-Gesprächssimulationen (TrainHQ), Human-AI-Coaching-Hybride (thankscoach) und XR-Trainings für Onboarding und Sicherheitsszenarien (baermedia); DigitalPakt Schule 2.0 und KI in der Berufsausbildung als schulische Leitthemen; Gamification mit Serious-Gaming-Software und digitalen Escape Rooms als wachsendes Segment. Praxisbericht aus Europas grösster E-Learning-Messe bestätigt KI-Coaching-Hybride und immersives Lernen als dominierende Corporate-Learning-Trends 2026 – direktes Thought-Leadership-Themenumfeld für learnfluencer.ch.",
         source: "av-views.com",
@@ -13931,6 +14003,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-07
       {
+        summary: "onflow.ch (2026): 'Erfolgreiche Marketingstrategie für KMU – Situationsanalyse als Fundament' – Schweizer Digital-Marketing-Agentur erklärt Aufbau eines strukturierten Marketingkonzepts für KMU: Situationsanalyse (SWOT, Markt, Wettbewerb) als unverzichtbare Grundlage; klare Zielgruppen-Definition und Positionierung als nächster Schritt; kanalübergreifende Massnahmenpläne mit messbaren KPIs; Marketingkonzept als kontinuierlicher Prozess mit regelmässigen Reviews; Empfehlung: vor KI-Tool-Einsatz zuerst Strategie und Konzept definieren. Schweizer Digital-Praxis-Know-how für KMU bestätigt SWOT/Situationsanalyse als Pflichtgrundlage jedes Marketingkonzepts – direkte Validierung des All-in-One-Ansatzes von learnfluencer.ch/tools/marketingkonzept.",
+        source: "onflow.ch",
+        url: "https://www.onflow.ch/knowhow/marketingstrategie-fuer-kmu/",
+        date: "2026-05",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-05-07",
+      },
+      {
         summary: "KIMarketing.ch (Mai 2026): 'Die besten KI-Marketing-Tools 2026 für Schweizer KMU – nicht die grösste Liste, sondern die richtige' – Schweizer KI-Marketing-Fachportal empfiehlt 5 Kernwerkzeuge statt umfassender Tool-Listen: Text-/Reasoning-Modell, Visual-Tool, SEO-Werkzeug, Automation-Tool, Messsystem; Kernprinzip: 'Zuerst braucht es Ziel, Workflow und Verantwortlichkeit. Dann erst wird klar, welches Tool den Engpass wirklich löst'; strukturierter Marketingplan als unverzichtbare Voraussetzung vor dem KI-Tool-Einsatz betont. Schweizer KI-Marketing-Experten bestätigen: strukturierte Marketingplanung ist der KI-Enabler – direkte Validierung für das interaktive Marketingkonzept-Tool auf learnfluencer.ch als logische Vorstufe zum KI-gestützten Marketing-Einsatz.",
         source: "kimarketing.ch",
         url: "https://www.kimarketing.ch/beste-ki-marketing-tools-2026-kmu/",
@@ -15216,6 +15296,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "bestattungsplaner": {
     news: [
       // Neu: 2026-05-07
+      {
+        summary: "Caprez Bestattungen (2026): 'Bestattungskosten Graubünden – Transparente Preisübersicht' – Schweizer Bestattungsunternehmen Caprez veröffentlicht transparente Kostenübersicht für Bestattungen in der Ostschweiz: Feuerbestattung ab CHF 1'800 im Grundpaket; Erdbestattung inkl. Dienstleistungen und Kremation ab CHF 3'500; grosse regionale Preisunterschiede je nach Gemeinde und Kanton in der Schweiz. Wachsende Transparenzkultur in der Schweizer Bestattungsbranche mit öffentlichen Kostenübersichten bestätigt die Marktbereitschaft für digitale Lead-Vermittlung und Preisvergleich – direktes Wachstumsumfeld für bestattungsplaner.ch als transparente Online-Plattform.",
+        source: "caprez-bestattungen.ch",
+        url: "https://www.caprez-bestattungen.ch/bestattung/kosten/",
+        date: "2026-05",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-05-07",
+      },
       {
         summary: "Luzerner Zeitung (2026): 'HORW: Die digitalen Bestatter' – Die Luzerner Zeitung berichtet über bestattungsplaner.ch als Schweizer Lead-Plattform für digitale Bestattungsvermittlung: Betreiber Johannes Ruchti (hauptberuflich Bestatter bei Hager Imbach Kriens) vermittelt Aufträge an lokale Bestatter gegen fixe Entschädigung; aktueller Fokus Zentralschweiz mit Expansionsplänen auf die gesamte Schweiz; Online-Bestattungsplanung als aufkommender Markttrend in der Schweizer Bestattungsbranche dokumentiert. Direkter regionaler Medienbericht über das Geschäftsmodell bestätigt das Marktkonzept und dokumentiert das Wachstumspotenzial von bestattungsplaner.ch im Schweizer Bestattungsmarkt.",
         source: "luzernerzeitung.ch",
