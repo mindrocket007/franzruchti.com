@@ -26,6 +26,15 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 2026-05-07
+      {
+        summary: "Berufsberatung.ch / SDBB (2026): 'ICT Professional SIZ – Nationaler Qualifikationsrahmen Schweiz' – Das Schweizerische Dienstleistungszentrum Berufsbildung (SDBB) führt den ICT Professional SIZ in seiner offiziellen nationalen Berufsberatungs-Datenbank; Partner-Schulen wie Benedict Zürich bieten Kursstarts ab Mai 2026 (18. Mai) an; ICT Professional SIZ als anerkannter Qualitätsnachweis für Systems & Network Kompetenz auf nationaler Ebene verankert. Aufnahme des ICT Professional SIZ im offiziellen Schweizer Berufsberatungs-Ökosystem bestätigt die gesellschaftliche Anerkennung und institutionelle Verankerung – direktes Reputationssignal für SIZ AG als Qualitätsprüfungsorganisation im Schweizer ICT-Markt.",
+        source: "berufsberatung.ch (SDBB)",
+        url: "https://www.berufsberatung.ch/dyn/show/2886?id=59751",
+        date: "2026-05",
+        category: "SIZ AG direkt",
+        addedAt: "2026-05-07",
+      },
       // Neu: 2026-05-06
       {
         summary: "SIZ AG (März 2026): 'Newsflash März 2026 – Neue Prüfungsregeln gegen KI-Missbrauch ab 30. März 2026' – SIZ schärft per 30. März 2026 die Prüfungsregeln für alle SIZ-Modulprüfungen: KI-basierte Office-Funktionen und Add-ins, die Prüfungsaufgaben automatisiert lösen, sind untersagt; SIZ-Zertifizierungen sollen eigenständige Kompetenz belegen; bisherige Regelungen wurden durch neue KI-Funktionen in Office zunehmend unterlaufen. Proaktive Qualitätssicherungsmassnahme im KI-Zeitalter stärkt das Vertrauen in SIZ-Diplome als verlässliche Kompetenznachweise – klares Signal für die Integrität der SIZ AG als Prüfungsorganisation.",
@@ -1656,6 +1665,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
+      // Neu: 2026-05-07
+      {
+        summary: "HUK AG Schweiz (2026): 'Persönlichkeitsentwicklung mit Coaching & Mentoring' – Die HUK AG als Schweizer Spezialist für Führungsentwicklung und Persönlichkeitscoaching zeigt: Coaching und Mentoring sind 2026 unverzichtbare Instrumente für nachhaltige Persönlichkeitsentwicklung; hybride Formate (Online/Präsenz) als Standard; individuelle Kompetenzentwicklung und Potenzialentfaltung als wachsender Markt in Schweizer Unternehmen. Etabliertes Schweizer Coaching-Unternehmen bestätigt wachsende Nachfrage nach strukturierter Persönlichkeitsentwicklung – direktes Marktumfeld für Mind Rocket GmbH als Anbieter skalierbarer digitaler Entwicklungsprogramme.",
+        source: "huk-ag.ch",
+        url: "https://huk-ag.ch/persoenlichkeitsentwicklung/",
+        date: "2026-05",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-05-07",
+      },
       // Neu: 2026-05-06
       {
         summary: "BFH Berner Fachhochschule (Mai 2026): 'Resilienz – Widerstandsfähigkeit im Arbeitsalltag' – Nächste Durchführung des BFH-Kurses: 11. Mai 2026; die Berner Fachhochschule vermittelt die Prinzipien der Resilienz-Kompetenz und regt zu praktischen Übungen an; gezieltes Training baut systematisch Bewältigungsstrategien auf; Kurs richtet sich an Führungskräfte und Fachleute aller Branchen, auch Einzelpersonen; berufsbegleitend, kompakt, mit anerkanntem Hochschulzertifikat. Institutionelles Hochschulangebot für Resilienztraining zeigt wachsende akademische Verankerung des Themas mentale Stärke – direktes Marktumfeld für Mind Rocket GmbH als Anbieter skalierbarerer digitaler Persönlichkeitsentwicklungs-Programme.",
@@ -2303,6 +2321,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 2026-05-07
+      {
+        summary: "FuturesBuff (2026): 'Apex Trader Funding 4.0 – Grösste Überarbeitung in der Prop-Firm-Geschichte' – Apex Trader Funding lancierte am 1. März 2026 das grösste Update in der Unternehmensgeschichte: Monatliche Abonnementgebühren abgeschafft, 5:1-Risiko-Ertrags-Regelung und One-Direction-Regel gestrichen, manuelle Auszahlungsprüfungen durch Automatisierung ersetzt, Regelwerk auf ein Minimum vereinfacht; weltgrösste Futures-Prop-Firm mit über 200'000 aktiven Tradern und Evaluations-Accounts ab USD 30 in Aktionspreisen. Radikale Vereinfachung der ATF-Regeln und Wegfall monatlicher Fees senkt Eintrittsbarrieren für algorithmische ES-Futures-Trader massiv – direktes Wachstumsumfeld für die Strategien auf mindrocket-trading.com.",
+        source: "futuresbuff.com",
+        url: "https://futuresbuff.com/apex-trader-funding/",
+        date: "2026-03",
+        category: "Futures & Trading",
+        addedAt: "2026-05-07",
+      },
       // Neu: 2026-05-06
       {
         summary: "FinanceFeeds / fxnewsgroup (April 2026): 'NinjaTrader Partners With Adclear to Automate Marketing Compliance' – NinjaTrader Group implementiert die KI-gestützte Compliance-Plattform Adclear für Marketing-Inhalte: Automatisches Screening von Social-Media-Posts, Produkt-Updates und Influencer-Inhalten in Echtzeit gegen anwendbare Vorschriften; Review-Zeit laut NinjaTrader um 90% reduziert; Abdeckung sowohl US- als auch europäische Büros. Systematische KI-Compliance für Marketing bei NinjaTrader zeigt die zunehmende Regulierungsreife der Futures-Plattform – relevant für Mind Rocket Trading als NinjaTrader-Nutzer im Kontext steigender Compliance-Anforderungen für Prop-Trading-Plattformen in Europa.",
@@ -4984,6 +5011,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 2026-05-07
+      {
+        summary: "gymperformance.ch (2026): 'Self Improvement – Top 3 Bücher über Persönlichkeitsentwicklung' – Schweizer Performance-Blog empfiehlt die meistgelesenen Bücher zur Persönlichkeitsentwicklung 2026: Klassiker von James Clear, Tony Robbins und Napoleon Hill auf Top-Plätzen; Fokus auf Mindset, Zielsetzung und mentale Stärke als wachsende gesellschaftliche Priorität; Bücher ergänzend zu digitalen Tools als Standard. Schweizer Wachstumsmarkt für praktische Selbstentwicklungs-Ressourcen bestätigt die Nachfrage nach niedrigschwelligen mentalen Werkzeugen – direktes Wachstumsumfeld für mindtools.ch als Plattform für digitale mentale Tools.",
+        source: "gymperformance.ch",
+        url: "https://gymperformance.ch/persoenlichkeitsentwicklung/",
+        date: "2026-05",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-05-07",
+      },
       // Neu: 2026-05-06
       {
         summary: "GlobeNewswire (5. Mai 2026): 'Mental Health Awareness Month Highlights Growing Search for Self-Help Resources' – Mental Health Awareness Month Mai 2026 dokumentiert explosives Wachstum der Suchanfragen nach Selbsthilfe-Ressourcen; laut West Health-Gallup-Umfrage bewertet nur 29% der US-Erwachsenen ihre psychische Gesundheit als 'hervorragend' (vs. 43% vor der Pandemie); wachsende Nachfrage nach praktischen, direkt anwendbaren Self-Help-Werkzeugen auf Rekordhoch. Globaler Awareness-Impuls für mentale Selbsthilfe im Mai 2026 treibt die Suchnachfrage nach Self-Help-Tools – direktes Sichtbarkeitsumfeld für mindtools.ch als Anbieter niedrigschwelliger mentaler Werkzeuge.",
@@ -8265,6 +8301,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 2026-05-07
+      {
+        summary: "Intentional E Blog (2026): '12 Week Year Planning Guide – Achieve Your Goals Faster' – Praxisleitfaden zur Umsetzung der 12-Week-Year-Methode von Brian Moran: Jeder 12-Wochen-Zyklus als vollständiges Jahr mit klarer Zielformulierung, wöchentlichem Scoring und Review-Sessions; Buffer-Wochen zwischen Zyklen zur Burnout-Prävention empfohlen; KI-Tools als wachsender Enabler für automatisches Tracking von Leading Indicators. Anhaltend starke internationale Content-Produktion zur 12-Week-Year-Methode belegt die hohe Nachfrage – direktes Nutzerumfeld für den 12wy-planner als dediziertes SaaS-Tool für die Methode.",
+        source: "intentionaleblog.com",
+        url: "https://intentionaleblog.com/12-week-year-planning/",
+        date: "2026-05",
+        category: "12 Week Year Methode",
+        addedAt: "2026-05-07",
+      },
       // Neu: 2026-05-06
       {
         summary: "iDel (2026): 'Productivity System Guide 2026: GTD, Pomodoro, Time Blocking' – Umfassende Analyse der erfolgreichsten Produktivitätssysteme 2026: Hybrid-Ansätze (GTD + Time Blocking) übertreffen Einzelmethoden-Adherenz für Wissensarbeiter; KI-Integration ermöglicht automatisches Leading-Indicator-Tracking; 12-Wochen-Zyklen als bewährtes System gegen Jahresplanungs-Prokrastination identifiziert; 85%-Wochenaufgaben-Erfüllungsrate als optimale Ambition-Realismus-Balance; Buffer-Wochen zwischen Zyklen zur Burnout-Prävention empfohlen. Breite Anerkennung von 12-Wochen-Planungszyklen als Produktivitätsstandard in aktuellen System-Vergleichen bestätigt die Marktrelevanz des 12wy-planners als dediziertes Tool für die 12-Week-Year-Methode.",
@@ -9609,6 +9654,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 2026-05-07
+      {
+        summary: "MOOCI Gesundheitsplattform (2026): 'Vorzeitiger Samenerguss – Kosten, Ablauf und Behandlungsoptionen' – Unabhängige Gesundheitsplattform für medizinische Eingriffe analysiert Behandlungsoptionen bei Ejaculatio praecox: Medizinische Interventionen kosten EUR 2.000–5.000+; verhaltensbasierte Selbsthilfe und psychologische Methoden als erste Behandlungslinie empfohlen; digitale Selbsthilfeprogramme als kostengünstige Einstiegsoption zunehmend anerkannt. Hohe Kosten für medizinische Behandlungen und Empfehlung von Selbsthilfe als Erstlinie schaffen direktes Marktumfeld für das günstige Audio-Hypnose-Produkt auf orgasmus-hinauszoegern.de.",
+        source: "mooci.org",
+        url: "https://www.mooci.org/intimchirurgie/vorzeitiger-samenerguss/",
+        date: "2026-05",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-05-07",
+      },
       // Neu: 2026-05-06
       {
         summary: "lovebetter.de (2026): 'Orgasmus hinauszögern – 10 erprobte Methoden für längeren Sex' – Umfassender deutschsprachiger Ratgeber zu Techniken zum Hinauszögern des Orgasmus: Start-Stopp-Methode, Squeeze-Technik, Beckenbodentraining, Atemübungen, mentale Fokus-Strategien und Selbsttraining; klar strukturierter Selbsthilfe-Ansatz ohne Medikamente. Der wachsende SEO-Markt für Suchbegriffe rund um 'Orgasmus hinauszögern' bestätigt die anhaltende Nachfrage nach Selbsthilfe-Lösungen – direktes Suchvolumen-Umfeld für orgasmus-hinauszoegern.de als hypnosebasiertes Audioprodukt.",
@@ -10717,6 +10771,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 2026-05-07
+      {
+        summary: "BoConnect (2026): 'Hypnose gegen Angst und Lampenfieber' – Umfassende Erklärung der Hypnose-Wirkungsweise bei Lampenfieber und Auftrittsangst: Positive Suggestionen ersetzen Versagensangst durch neues Selbstbild im Unterbewusstsein; Trance-Zustand macht das Unterbewusstsein besonders empfänglich für neue Muster; Audio-Hypnose als zugängliche Selbstanwendungs-Option beschrieben. Wachsendes Online-Informationsangebot zur Hypnose als Behandlungsoption für Lampenfieber bestätigt Marktakzeptanz – direktes Sichtbarkeitsumfeld für das Audio-Hypnose-Produkt auf lampenfieber-besiegen.de.",
+        source: "boconnect.de",
+        url: "https://www.boconnect.de/post/hypnose-gegen-angst-und-lampenfieber",
+        date: "2026-05",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-05-07",
+      },
       // Neu: 2026-05-06
       {
         summary: "NOACK Hypnotherapie Berlin (2026): 'Glossophobie – Hypnose bei Redeangst' – Glossophobie (Sprechangst in der Öffentlichkeit) ist eine klar definierte Angststörung, die mit Hypnotherapie gut behandelbar ist; Menschen mit Lampenfieber sprechen besonders gut auf Hypnose an, was zu spürbarer Angstreduktion führt. Fachlich fundierter Wirksamkeitsnachweis für Hypnose bei Redeangst – direktes Argument für den Produktansatz von lampenfieber-besiegen.de.",
@@ -15152,6 +15215,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 2026-05-07
+      {
+        summary: "Luzerner Zeitung (2026): 'HORW: Die digitalen Bestatter' – Die Luzerner Zeitung berichtet über bestattungsplaner.ch als Schweizer Lead-Plattform für digitale Bestattungsvermittlung: Betreiber Johannes Ruchti (hauptberuflich Bestatter bei Hager Imbach Kriens) vermittelt Aufträge an lokale Bestatter gegen fixe Entschädigung; aktueller Fokus Zentralschweiz mit Expansionsplänen auf die gesamte Schweiz; Online-Bestattungsplanung als aufkommender Markttrend in der Schweizer Bestattungsbranche dokumentiert. Direkter regionaler Medienbericht über das Geschäftsmodell bestätigt das Marktkonzept und dokumentiert das Wachstumspotenzial von bestattungsplaner.ch im Schweizer Bestattungsmarkt.",
+        source: "luzernerzeitung.ch",
+        url: "https://www.luzernerzeitung.ch/wirtschaft/horw-die-digitalen-bestatter-ld.85302",
+        date: "2026-05",
+        category: "Bestattungsplaner direkt",
+        addedAt: "2026-05-07",
+      },
       // Neu: 2026-05-06
       {
         summary: "VZ VermögensZentrum (2026): 'Kontrolle über sein digitales Erbe behalten' – VZ VermögensZentrum, führende Schweizer Anlage- und Vorsorgeberatung, erklärt digitalen Nachlass als Teil der Gesamtvorsorge: Online-Konten, Crypto-Assets, Cloud-Daten und Social-Media-Profile bedürfen klarer Verfügungsregelungen im Todesfall; Kombination aus schriftlicher Nachlassverfügung und digitalem Passwort-Tresor empfohlen; enge Verbindung zwischen digitaler Vorsorge und klassischer Bestattungsplanung. Wachsendes institutionelles Bewusstsein für digitalen Nachlass als integralen Teil der Gesamtvorsorge schafft Nachfrage nach umfassenden digitalen Vorsorge- und Bestattungsplanungs-Plattformen – direktes Marktumfeld für bestattungsplaner.ch.",
