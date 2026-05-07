@@ -2305,6 +2305,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-06
       {
+        summary: "FinanceFeeds / fxnewsgroup (April 2026): 'NinjaTrader Partners With Adclear to Automate Marketing Compliance' – NinjaTrader Group implementiert die KI-gestützte Compliance-Plattform Adclear für Marketing-Inhalte: Automatisches Screening von Social-Media-Posts, Produkt-Updates und Influencer-Inhalten in Echtzeit gegen anwendbare Vorschriften; Review-Zeit laut NinjaTrader um 90% reduziert; Abdeckung sowohl US- als auch europäische Büros. Systematische KI-Compliance für Marketing bei NinjaTrader zeigt die zunehmende Regulierungsreife der Futures-Plattform – relevant für Mind Rocket Trading als NinjaTrader-Nutzer im Kontext steigender Compliance-Anforderungen für Prop-Trading-Plattformen in Europa.",
+        source: "financefeeds.com / fxnewsgroup.com",
+        url: "https://financefeeds.com/ninjatrader-partners-with-adclear-to-automate-marketing-compliance/",
+        date: "2026-04",
+        category: "Trading-Technologie",
+        addedAt: "2026-05-06",
+      },
+      // Neu: 2026-05-06
+      {
         summary: "QuantVPS (2026): 'Prop Firms That Allow News Trading in 2026' – Analyse der aktuellen Prop-Firm-Richtlinien für News-Trading: Die meisten Futures-Prop-Firmen erlauben grundsätzlich News-Trading; einzelne Firmen setzen erhöhte Margins oder temporäre Positionslimits während High-Impact-Events (FOMC, NFP, CPI); vollautomatisches Hochfrequenz-News-Trading bleibt verboten; semi-automatische Systeme mit menschlicher Entscheidungskontrolle sind weitgehend erlaubt. Differenzierte Regulierungslage bei Prop-Firmen für News-Trading bietet operativen Rahmen für regelkonforme algorithmisch unterstützte Trading-Strategien – direktes Marktumfeld für transparente Trading-Ansätze auf mindrocket-trading.com.",
         source: "quantvps.com",
         url: "https://www.quantvps.com/blog/prop-firms-allow-news-trading",
@@ -6050,6 +6059,32 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 2026-05-07
+      {
+        summary: "BODYMEDIA Fachmagazin (Mai 2026): 'HealthEXPO 2026 setzt auf messbare Gesundheit statt Mythen' – Fachorgan der Fitness- und Gesundheitsbranche berichtet: HealthEXPO 2026 positioniert sich als 'bislang grösster Gesundheits-Erlebnistag der Schweiz' (30. Mai 2026, Messe Basel); Programm umfasst 20+ medizinische und fitnessbezogene Check-ups (Körperzusammensetzung, Blutdruck etc.), rund 120 Neuheiten aus Medizin, Prävention und Longevity; neuer B2B-Business-Campus für Unternehmen mit Networking und Speed-Dating zu Gesundheit als strategischem Wettbewerbsfaktor; neuer Longevity-Schwerpunkt (biologisches Alter, gesunde Lebensverlängerung); 40+ Experten zu mentaler Gesundheit, Stressbewältigung und Resilienz. Fachdiskurs über Messbarkeit von Gesundheitsmassnahmen und BGM-ROI stärkt das Marktumfeld für nachweisbar wirksame digitale Gesundheitsangebote wie hypnovital®.",
+        source: "bodymedia.de",
+        url: "https://www.bodymedia.de/news/healthexpo-2026-setzt-auf-messbare-gesundheit-statt-mythen/",
+        date: "2026-05",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-07",
+      },
+      // Neu: 2026-05-06
+      {
+        summary: "labor-werte.de (2026): 'Gesundheitstrends 2026 – nachhaltig, digital und mental im Fokus' – Drei Kerntrends prägen das Gesundheitsjahr 2026: (1) Nachhaltigkeit in Ernährung und Lebensstil, (2) Digitalisierung durch Telemedizin, Gesundheits-Apps und Wearables, (3) mentale Gesundheit als gesellschaftliche Priorität mit wachsender Entstigmatisierung. Der breite gesellschaftliche Trend hin zu Mental Health als Kernthema stärkt das Marktumfeld für hypnovital® als skalierbare digitale Lösung für Burnout-Prävention und mentale Stärkung.",
+        source: "labor-werte.de",
+        url: "https://labor-werte.de/gesundheitstrends-2026-nachhaltig-digital-und-mental-im-fokus/",
+        date: "2026-04",
+        category: "Digitale Gesundheit",
+        addedAt: "2026-05-06",
+      },
+      {
+        summary: "DGH (Deutsche Gesellschaft für Hypnose) 2026: 'Was kostet eine Hypnosebehandlung? Was zahlt die Krankenkasse?' – Hypnosebehandlung kostet pro Sitzung üblicherweise 100–200 EUR; Krankenkassen übernehmen im Rahmen von Psychotherapie (bei bestimmten Diagnosen) anteilig; Audio-Selbsthilfeprogramme liegen ohne Kassenerstattung preislich deutlich günstiger. Die Kostenübersicht der DGH zeigt: günstige Audio-Hypnose wie jene von hypnovital® liegt im attraktiven Preissegment für Interessierte ohne Therapieplatz oder Kassenerstattung.",
+        source: "dgh-hypnose.de",
+        url: "https://dgh-hypnose.de/was-kostet-eine-hypnosebehandlung-was-zahlt-die-krankenkasse",
+        date: "2026-03",
+        category: "Hypnose & Coaching",
+        addedAt: "2026-05-06",
+      },
       // Neu: 2026-05-06
       {
         summary: "Mental Health America (Mai 2026): 'Mental Health Month 2026 – More Good Days, Together' – Der globale Mental Health Awareness Month Mai 2026 steht unter dem Thema 'More Good Days, Together'; Mental Health America betont kollektive Verantwortung für psychisches Wohlbefinden; Unternehmen setzen flexible Work-Policies, Burnout-Prävention und Leadership-geführte Gespräche um; laut US-Umfrage bewertet nur 29% der Erwachsenen ihre psychische Gesundheit als 'hervorragend' (vs. 43% vor der Pandemie). Globaler Awareness-Monat Mai 2026 für mentale Gesundheit am Arbeitsplatz schafft direktes Kommunikations- und Sichtbarkeitsumfeld für hypnovital® als bewährten BGM-Anbieter für Burnout-Prävention.",
@@ -9576,6 +9611,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-06
       {
+        summary: "lovebetter.de (2026): 'Orgasmus hinauszögern – 10 erprobte Methoden für längeren Sex' – Umfassender deutschsprachiger Ratgeber zu Techniken zum Hinauszögern des Orgasmus: Start-Stopp-Methode, Squeeze-Technik, Beckenbodentraining, Atemübungen, mentale Fokus-Strategien und Selbsttraining; klar strukturierter Selbsthilfe-Ansatz ohne Medikamente. Der wachsende SEO-Markt für Suchbegriffe rund um 'Orgasmus hinauszögern' bestätigt die anhaltende Nachfrage nach Selbsthilfe-Lösungen – direktes Suchvolumen-Umfeld für orgasmus-hinauszoegern.de als hypnosebasiertes Audioprodukt.",
+        source: "lovebetter.de",
+        url: "https://lovebetter.de/ejakulation-hinauszoegern-9-tricks-die-wirklich-helfen/",
+        date: "2026-04",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-05-06",
+      },
+      // Neu: 2026-05-06
+      {
         summary: "Nature / International Journal of Impotence Research (2024): 'New Technologies for Treatment of Premature Ejaculation' – Neue medizintechnische Geräte (u.a. 'In2 patch') zeigen vielversprechende Ergebnisse bei der Behandlung von lebenslangem PE ohne Medikamente; traditionelle SSRI-Behandlung zeigt begrenzte Wirksamkeit und niedrige Adhärenz. Trend zu nicht-medikamentösen, selbstangewendeten Lösungen stärkt die Marktposition von Hypnose-Audio-Produkten als alternative Therapieansätze – direktes Marktumfeld für orgasmus-hinauszoegern.de.",
         source: "nature.com",
         url: "https://www.nature.com/articles/s41443-024-00875-w",
@@ -11918,6 +11962,40 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 2026-05-07
+      {
+        summary: "AV-Views (Mai 2026): 'LEARNTEC 2026: Wenn Technologie zum Lernpartner wird' – AV-Fachmedium berichtet live aus der LEARNTEC 2026 (5.–7. Mai, Karlsruhe): Im Corporate-Learning-Bereich dominieren KI-gestützte Lösungen wie KI-Gesprächssimulationen (TrainHQ), Human-AI-Coaching-Hybride (thankscoach) und XR-Trainings für Onboarding und Sicherheitsszenarien (baermedia); DigitalPakt Schule 2.0 und KI in der Berufsausbildung als schulische Leitthemen; Gamification mit Serious-Gaming-Software und digitalen Escape Rooms als wachsendes Segment. Praxisbericht aus Europas grösster E-Learning-Messe bestätigt KI-Coaching-Hybride und immersives Lernen als dominierende Corporate-Learning-Trends 2026 – direktes Thought-Leadership-Themenumfeld für learnfluencer.ch.",
+        source: "av-views.com",
+        url: "https://www.av-views.com/2026/05/learntec-2026-wenn-technologie-zum-lernpartner-wird/",
+        date: "2026-05",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-05-07",
+      },
+      {
+        summary: "homeandsmart.de (Mai 2026): 'LEARNTEC 2026: Was KI, Metaverse und Masterclasses mit der Bildung der Zukunft wirklich machen' – Tech-Medien berichten von der LEARNTEC 2026 (5.–7. Mai, Karlsruhe): KI und Metaverse-Technologien als Doppelschwergewicht; 400+ Aussteller aus 30+ Ländern; neue ganztägige Masterclasses mit Praxis-Fokus; Future Lab zum direkten Ausprobieren KI-basierter Lernpfade und immersiver Lernumgebungen; LEARNTEC als 'Europas bedeutendste Veranstaltung für digitale Bildung'. Breites Tech-Medienecho auf LEARNTEC 2026 bestätigt KI und immersives Lernen als gesellschaftlichen Bildungsstandard 2026 – direktes Thought-Leadership-Themenumfeld für learnfluencer.ch als Plattform für Lernkompetenz und KI-Weiterbildung.",
+        source: "homeandsmart.de",
+        url: "https://www.homeandsmart.de/learntec-2026-digitale-bildung-highlights-0001-655065",
+        date: "2026-05",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-05-07",
+      },
+      // Neu: 2026-05-06
+      {
+        summary: "The Digital Talents (2026): 'E-Learning 2026 – Diese 5 Trends verändern, wie Du lernst und arbeitest' – Die wichtigsten E-Learning-Trends für 2026 auf Deutsch: (1) KI-gestützte personalisierte Lernpfade mit adaptivem Feedback, (2) VR/AR für realitätsnahe Praxisübungen, (3) Microlearning als Standard, (4) Skills Validation statt Diplom-Fokus, (5) Lernen als kontinuierliche Meta-Kompetenz. Das Konzept des kontinuierlichen Lernens als wichtigste Meta-Kompetenz bestätigt das Kern-Positioning von learnfluencer.ch als Thought-Leadership-Plattform für Lernkompetenz.",
+        source: "thedigitaltalents.com",
+        url: "https://www.thedigitaltalents.com/e-learning-2026-diese-5-trends-veraendern-wie-du-lernst-und-arbeitest/",
+        date: "2026-04",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-05-06",
+      },
+      {
+        summary: "TalentLMS (2026): 'The TalentLMS 2026 L&D Report: The State of Workplace Learning' – Globale Studie mit 1.200 L&D-Professionals: 82,5% sehen KI & adaptive Lernsysteme als grössten Hebel; 81,8% berichten zu wenig Freiraum für Weiterbildung; hybride Lernmodelle bei 80,3% im Einsatz; Soft Skills und Anpassungsfähigkeit nehmen in Relevanz zu. Umfassende globale Daten zum Zustand des betrieblichen Lernens 2026 – direktes Marktumfeld und Argumentationsgrundlage für learnfluencer.ch als Thought-Leadership-Portal.",
+        source: "talentlms.com",
+        url: "https://www.talentlms.com/research/learning-development-report-2026",
+        date: "2026-04",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-05-06",
+      },
       // Neu: 2026-05-06
       {
         summary: "KMU-Magazin Schweiz (2026): 'Wie Führungskräfte zum «Learnfluencer» werden' – Das Schweizer KMU-Fachmagazin thematisiert den Learnfluencer-Begriff im Business-Kontext: Führungskräfte als Learnfluencer stärken die intrinsische Lernmotivation der Mitarbeitenden, verbinden individuelles und kollektives Lernen und etablieren eine lernkulturelle Eigenverantwortung; hybride Lernformate und KI-Integration als operative Umsetzung. Schweizer Business-Fachmagazin verbreitet den Learnfluencer-Begriff als zeitgemässes Führungskonzept – direktes Thought-Leadership-Umfeld und Markenvalidierung für learnfluencer.ch.",
@@ -13788,6 +13866,32 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 2026-05-07
+      {
+        summary: "KIMarketing.ch (Mai 2026): 'Die besten KI-Marketing-Tools 2026 für Schweizer KMU – nicht die grösste Liste, sondern die richtige' – Schweizer KI-Marketing-Fachportal empfiehlt 5 Kernwerkzeuge statt umfassender Tool-Listen: Text-/Reasoning-Modell, Visual-Tool, SEO-Werkzeug, Automation-Tool, Messsystem; Kernprinzip: 'Zuerst braucht es Ziel, Workflow und Verantwortlichkeit. Dann erst wird klar, welches Tool den Engpass wirklich löst'; strukturierter Marketingplan als unverzichtbare Voraussetzung vor dem KI-Tool-Einsatz betont. Schweizer KI-Marketing-Experten bestätigen: strukturierte Marketingplanung ist der KI-Enabler – direkte Validierung für das interaktive Marketingkonzept-Tool auf learnfluencer.ch als logische Vorstufe zum KI-gestützten Marketing-Einsatz.",
+        source: "kimarketing.ch",
+        url: "https://www.kimarketing.ch/beste-ki-marketing-tools-2026-kmu/",
+        date: "2026-05",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-05-07",
+      },
+      // Neu: 2026-05-06
+      {
+        summary: "pestel-analysis.com (2026): 'PESTLE Analysis – Digital Tools for Smarter Business Analysis' – Spezialisierte Plattform für digitale PESTLE-Analyse-Tools mit AI-gestützter Branchen- und Marktanalyse; setzt auf geführte digitale Frameworks statt Beratungsmandaten. Das Entstehen von Spezialanbietern für einzelne strategische Analyserahmen bestätigt die Marktnachfrage nach interaktiven, geführten Tools – komplementäres Umfeld für das Marketingkonzept-Tool auf learnfluencer.ch, das PESTEL, 5 Forces, SWOT, BCG und 7P in einem Tool integriert.",
+        source: "pestel-analysis.com",
+        url: "https://pestel-analysis.com/",
+        date: "2026-04",
+        category: "Marketing-Tools & Software",
+        addedAt: "2026-05-06",
+      },
+      {
+        summary: "canvasbusinessmodel.com (2026): 'CANVAS, SWOT, PESTEL & BCG Matrix Editable Templates for Startups' – Plattform mit 11'000 vorgefertigten Business-Canvas-Analysen inkl. SWOT, PESTEL, 5 Forces und BCG Matrix; Fokus auf Startups und Gründer; international, nicht Schweiz-spezifisch. Wachsende Anzahl Template-Plattformen für strategische Analyse-Frameworks zeigt strukturelle Marktnachfrage – bestätigt das Marktumfeld für ein interaktives All-in-One-Marketingkonzept-Tool mit Schweizer KMU-Fokus.",
+        source: "canvasbusinessmodel.com",
+        url: "https://canvasbusinessmodel.com/",
+        date: "2026-04",
+        category: "Marketing-Tools & Software",
+        addedAt: "2026-05-06",
+      },
       // Neu: 2026-05-06
       {
         summary: "KMU Performer AG (2026): 'Unsere KMU Marketing-Trends 2026' – Schweizer Marketing-Spezialist analysiert die wichtigsten Trends 2026: KI-Integration als Standard in der Marketingstrategie für Schweizer KMU; Fokus auf messbaren ROI statt Streuung; Customer-Journey-Analyse und strukturiertes Marketingkonzept (Zielgruppe, Positionierung, SWOT, Kanäle) als unverzichtbare Grundlage vor dem Tool-Einsatz; Omnichannel-Ansätze und Automatisierung als Umsetzung. Schweizer Marketingexperten betonen 2026 strukturiertes Marketingkonzept als strategische Basis vor dem KI-Tool-Einsatz – direktes Marktumfeld und Validierung für das interaktive Marketingkonzept-Tool auf learnfluencer.ch.",
