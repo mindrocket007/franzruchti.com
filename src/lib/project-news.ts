@@ -1692,6 +1692,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-08
       {
+        summary: "SNF Academy / snfa.ch (2025/2026): 'Mindset Coaching Videos Deutsch (DACH) 2025/2026' – Die SNF Academy kuratiert inspirierende, praxisnahe und tiefgründige Mindset-Coaching-Videos auf Deutsch für den DACH-Raum: Inhalte zu Persönlichkeitsentwicklung, Business und Erfolgsdenken; Schwerpunkte auf Selbst-Leadership, Mindset-Transformation und Motivationspsychologie; wachsendes Publikum im deutschsprachigen Raum für digitale Coaching-Inhalte. Starke Nachfrage nach deutschsprachigen digitalen Coaching-Inhalten im DACH-Raum bestätigt das Marktumfeld – direktes Wachstumssignal für Mind Rocket GmbH als Anbieter digitaler Persönlichkeitsentwicklungs-Programme auf Deutsch.",
+        source: "snfa.ch",
+        url: "https://snfa.ch/mindset-coaching-videos-deutsch/",
+        date: "2026",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-05-08",
+      },
+      {
         summary: "ensa.swiss / swissinfo.ch (2026): 'Mental Health First Aid Schweiz 2026 – Psychische Erste Hilfe als neue Lernkompetenz' – Das Schweizer Mental Health First Aid Programm ensa bietet 2026 Kurse in Basel, Schaffhausen, Zürich, Bülach und Winterthur an: achtstündiger Kurs zur psychischen Ersten Hilfe für Erwachsene; Nachweis-Zertifikat für Arbeitgeber und Privatpersonen; starke Nachfrage von HR-Abteilungen und Führungskräften; psychische Selbsthilfe-Kompetenz (Self-Leadership) als neue Grundfertigkeit für Führungskräfte und Einzelpersonen etabliert sich. Wachsende gesellschaftliche Nachfrage nach strukturierten Selbsthilfe-Kompetenzen für psychische Gesundheit – direktes Marktumfeld für Mind Rocket GmbH als Anbieter digitaler Persönlichkeitsentwicklungs-Programme.",
         source: "ensa.swiss",
         url: "https://www.ensa.swiss/en/",
@@ -2380,6 +2388,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "mindrocket-trading": {
     news: [
       // Neu: 2026-05-08
+      {
+        summary: "nortonrosefulbright.com / SEC.gov (11. März 2026): 'SEC–CFTC 2026 MOU: Neue Ära der regulatorischen Harmonisierung' – Die SEC (Chairman Paul S. Atkins) und CFTC (Chairman Michael S. Selig) unterzeichneten am 11. März 2026 ein historisches Memorandum of Understanding (MOU): Koordination bei Produktdefinitionen, Margin-Frameworks, Clearing und dualen Registrierungen; Joint Harmonization Initiative für Krypto-Assets und algorithmischen Handel; Reduktion doppelter Meldepflichten; koordinierte Marktüberwachung. Historische Regulierungsharmonisierung von SEC und CFTC reduziert regulatorische Reibung für Futures-Trader – direkter positiver Regulierungsausblick für die ES-Futures-Strategien auf mindrocket-trading.com.",
+        source: "nortonrosefulbright.com",
+        url: "https://www.nortonrosefulbright.com/en-us/knowledge/publications/b5c57f5c/sec-cftc-2026-mou-signals-a-new-era-of-regulatory-harmonization",
+        date: "2026-03-11",
+        category: "Regulierung",
+        addedAt: "2026-05-08",
+      },
+      {
+        summary: "propscorer.com (2026): 'Apex 2026 EOD Overhaul: $1K Daily Limit, Reduced Contracts' – Detaillierte Analyse der Apex Trader Funding 4.0-Änderungen für EOD-Accounts ab März 2026: $1'000 Daily Loss Limit pro $50K-Account; reduzierte maximale Kontraktanzahl; EOD-Trail wird täglich um 4:59:59 PM ET neu berechnet; keine wiederkehrenden Monatsgebühren mehr – einmalige Zahlung. Die strukturellen Änderungen bei Apex 4.0 erfordern Anpassung der Positionsgrössenstrategie im ES-Futures-Handel – direkt relevant für die Trading-Strategien auf mindrocket-trading.com.",
+        source: "propscorer.com",
+        url: "https://www.propscorer.com/blog/apex-eod-overhaul-daily-limit-2026",
+        date: "2026",
+        category: "Prop Trading Apex",
+        addedAt: "2026-05-08",
+      },
+      {
+        summary: "propfirmescape.com (2026): 'Apex Trader Funding Rules 2026: The March 1st Pivot Explained' – Umfassende Erklärung der Apex-Regeländerungen per 1. März 2026 (Legacy vs. neue Accounts): Zwei neue Produktlinien (EOD Trail vs. Intraday Trail); 50%-Konsistenzregel gelockert; MAE-Regel (Maximum Adverse Excursion) abgeschafft; 5:1 Risk-Reward-Einschränkung aufgehoben; klare Legacy-vs.-Neu-Unterscheidung für bestehende Konten. Umfassende Regeländerungen per 1. März 2026 erfordern vollständige Neubewertung von ES-Futures-Strategien – direktes Regelwerk für die Prop-Trading-Inhalte auf mindrocket-trading.com.",
+        source: "propfirmescape.com",
+        url: "https://propfirmescape.com/blog/apex-evaluation-rules-2026/",
+        date: "2026-03",
+        category: "Prop Trading Apex",
+        addedAt: "2026-05-08",
+      },
       {
         summary: "propfirmplus.com (2026): 'Algo Trading on Futures Prop Firms 2026: What's Allowed and What's Not' – Umfassender Praxisleitfaden zu erlaubten algorithmischen Handelsstrategien bei Futures Prop Firms 2026: Semi-automatisiertes Handeln (TradingView-Alerts, NinjaTrader-ATM-Strategien) universell erlaubt; vollständig automatisierte EAs/Bots auf funded Accounts bei fast keiner Firm zulässig; Apex Trader Funding und FundedNext ermöglichen EA/Bot-Strategien mit minimalen Einschränkungen; klare Leitlinie: Mensch bleibt aktiv in der Überwachung. Klare Branchenregeln zu Semi-Automatisierung vs. Vollautomatisierung als entscheidende Entscheidungsgrundlage für NinjaTrader-basierte Strategieentwicklung – direktes regulatorisches Umfeld für die Trading-Strategien auf mindrocket-trading.com.",
         source: "propfirmplus.com",
@@ -6228,6 +6260,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "hypnovital": {
     news: [
       // Neu: 2026-05-08
+      {
+        summary: "SNF Academy / snfa.ch (2026): 'Prävention gegen Depression und Burnout 2026' – Die SNF Academy bietet spezialisierte Online-Ausbildungen zur Burnout- und Depressionsprävention an: 365 Tage flexibler Zugang, 100% online, kein Präsenzzwang, freier Startzeitpunkt; wissenschaftlich fundierte Inhalte zur psychischen Gesundheitsförderung; speziell auf berufsbegleitende Teilnahme ausgerichtet; Schwerpunkte: Stressmanagement, Burnout-Prophylaxe und mentale Resilienz. Wachsendes institutionalisiertes Angebot zur Burnout-Prävention in der Schweiz bestätigt den etablierten Markt für digitale Prävention – direktes Marktumfeld für hypnovital® Audio-Programme als skalierbare Burnout-Präventionslösung.",
+        source: "snfa.ch",
+        url: "https://snfa.ch/praevention-gegen-depression-und-burnout/",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-08",
+      },
       {
         summary: "bernerbaer.ch (2026): 'Bundesgesundheitsministerium 2026: Warum psychische Gesundheit am Arbeitsplatz jetzt Priorität hat' – Analyse der gesundheitspolitischen Prioritätensetzung für 2026: psychische Gesundheit am Arbeitsplatz als strategisches Gesundheitspolitik-Thema des Jahres; Burnout-Prävention und Stressmanagement erhalten erhöhte öffentliche Aufmerksamkeit; Arbeitgeber stehen in der Pflicht, präventive Massnahmen zu implementieren; evidenzbasierte Interventionen wie Entspannungsverfahren, Achtsamkeit und Audio-Coaching werden empfohlen. Gesundheitspolitische Priorisierung mentaler Gesundheit am Arbeitsplatz schafft institutionelles Rückenwind-Signal – direktes Wachstumsumfeld für hypnovital® als skalierbare Audio-Coaching-Lösung für BGM und Burnout-Prävention.",
         source: "bernerbaer.ch",
