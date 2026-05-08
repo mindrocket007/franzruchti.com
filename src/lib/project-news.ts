@@ -28,6 +28,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-08
       {
+        summary: "ICT-Berufsbildung Schweiz / netzwoche.ch (2025): 'ICT-Berufsbildung reicht revidierten Bildungsplan für ICT-Fachmann/-frau EFZ ein' – ICT-Berufsbildung Schweiz hat die vollständig überarbeitete Bildungsverordnung für ICT-Fachfrau/-mann EFZ beim SBFI eingereicht: neue Kompetenzschwerpunkte Cybersecurity, Datenschutz-Sensibilisierung und systematische Prozessautomatisierung; Anpassung an aktuelle Wirtschaftsanforderungen und KI-Transformation; Inkrafttreten der neuen Bildungsverordnung für neue Lernende ab August 2026; meistgewählter ICT-Ausbildungsberuf der Schweiz erhält grundlegende Modernisierung. Revision des meistgewählten Schweizer ICT-Ausbildungsberufs stärkt die Nachfrage nach SIZ-Prüfungen als Qualitätsstandards in der modernen ICT-Berufsbildung – direktes Wachstumsumfeld für SIZ AG.",
+        source: "netzwoche.ch",
+        url: "https://www.netzwoche.ch/news/2025-06-13/ict-berufsbildung-reicht-revidierten-bildungsplan-fuer-ict-fachmann-frau-efz-ein",
+        date: "2025-06",
+        category: "Digitale Bildung",
+        addedAt: "2026-05-08",
+      },
+      {
         summary: "ICT-Berufsbildung Schweiz (2026): 'Jahresbericht 2025 – Wachstum, Revision und KI-Bildungsoffensive' – ICT-Berufsbildung Schweiz präsentiert im Jahresbericht 2025 die Leitlinien für 2026: Revision der ICT-Fachmann/-frau-EFZ-Ausbildung mit 17 neuen Handlungskompetenzen ab August 2026; Lancierung des eidg. Fachausweises 'AI Business Specialist' (erste Prüfung Herbst 2026); Bedarf an 54'000 zusätzlichen ICT-Fachkräften bis 2033; Fokus auf Internationalisierung der Schweizer ICT-Bildung. Branchenübergreifende Wachstumsagenda mit Fokus auf KI-Qualifikationen und Bildungsrevision stärkt das Marktumfeld – direktes Wachstumssignal für SIZ AG als anerkannte ICT-Prüfungsorganisation.",
         source: "ict-berufsbildung.ch",
         url: "https://www.ict-berufsbildung.ch/jahresbericht-2025",
@@ -1684,6 +1692,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-08
       {
+        summary: "ensa.swiss / swissinfo.ch (2026): 'Mental Health First Aid Schweiz 2026 – Psychische Erste Hilfe als neue Lernkompetenz' – Das Schweizer Mental Health First Aid Programm ensa bietet 2026 Kurse in Basel, Schaffhausen, Zürich, Bülach und Winterthur an: achtstündiger Kurs zur psychischen Ersten Hilfe für Erwachsene; Nachweis-Zertifikat für Arbeitgeber und Privatpersonen; starke Nachfrage von HR-Abteilungen und Führungskräften; psychische Selbsthilfe-Kompetenz (Self-Leadership) als neue Grundfertigkeit für Führungskräfte und Einzelpersonen etabliert sich. Wachsende gesellschaftliche Nachfrage nach strukturierten Selbsthilfe-Kompetenzen für psychische Gesundheit – direktes Marktumfeld für Mind Rocket GmbH als Anbieter digitaler Persönlichkeitsentwicklungs-Programme.",
+        source: "ensa.swiss",
+        url: "https://www.ensa.swiss/en/",
+        date: "2026",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-05-08",
+      },
+      {
         summary: "sportmentalakademie.com (April 2026): 'Swiss Coaching Day 2026 – Dein Coaching-Event in Bern' – Die Sport Mental Akademie bewirbt den Swiss Coaching Day 2026 als zentrale Vernetzungsveranstaltung für Coaches, Berater und Trainer: 23. April 2026, Champions Lounge, Wankdorf-Stadion Bern; Workshops, Keynotes und Networking für Coaches, HR-Spezialisten und Führungskräfte; Fokus auf persönliche Entwicklung und professionelles Coaching. Schweizer Coaching-Community-Event auf höchstem Niveau dokumentiert die aktive Professionalisierung der Branche – direktes Marktumfeld für Mind Rocket GmbH als Anbieter digitaler Persönlichkeitsentwicklungs-Programme.",
         source: "sportmentalakademie.com",
         url: "https://sportmentalakademie.com/weiterbildungen/swiss-coaching-day/",
@@ -2364,6 +2380,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "mindrocket-trading": {
     news: [
       // Neu: 2026-05-08
+      {
+        summary: "propfirmplus.com (2026): 'Algo Trading on Futures Prop Firms 2026: What's Allowed and What's Not' – Umfassender Praxisleitfaden zu erlaubten algorithmischen Handelsstrategien bei Futures Prop Firms 2026: Semi-automatisiertes Handeln (TradingView-Alerts, NinjaTrader-ATM-Strategien) universell erlaubt; vollständig automatisierte EAs/Bots auf funded Accounts bei fast keiner Firm zulässig; Apex Trader Funding und FundedNext ermöglichen EA/Bot-Strategien mit minimalen Einschränkungen; klare Leitlinie: Mensch bleibt aktiv in der Überwachung. Klare Branchenregeln zu Semi-Automatisierung vs. Vollautomatisierung als entscheidende Entscheidungsgrundlage für NinjaTrader-basierte Strategieentwicklung – direktes regulatorisches Umfeld für die Trading-Strategien auf mindrocket-trading.com.",
+        source: "propfirmplus.com",
+        url: "https://propfirmplus.com/algo-trading-on-futures-prop-firms-whats-actually-allowed-in-2026/",
+        date: "2026",
+        category: "Regulierung",
+        addedAt: "2026-05-08",
+      },
       {
         summary: "apextraderfunding.com (2026): 'Wie viel Prozent der Trader bestehen Prop-Firm-Challenges? – Erfolgsquoten 2026' – Apex Trader Funding veröffentlicht Branchendaten zu Prop-Firm-Bestehensquoten: Apex erreicht 15–20% Bestehensquote beim ersten Versuch (doppelter Branchenschnitt von 5–10%); 86% aller Trader erreichen nie ein funded Account; die Apex-3.0-Updates (Ende 2025) führten zu 10–15% höheren Bestehensquoten; $598 Mio. Auszahlungen seit 2022 bei $15,4 Mio. monatlich. Branchenweite Erfolgsraten von 5–15% unterstreichen die Notwendigkeit strukturierter Strategien – direkter Kontext für die ES-Futures-Strategien auf mindrocket-trading.com.",
         source: "apextraderfunding.com",
@@ -5088,6 +5112,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-08
       {
+        summary: "SWI swissinfo.ch (2026): 'Gesucht: Auswege aus der Mental-Health-Krise – Schweizweite Debatte über psychische Gesundheit' – Swissinfo analysiert die wachsende Mental-Health-Krise in der Schweiz: erheblicher Teil der Schweizer Bevölkerung leidet unter psychischen Beschwerden; Zugangshürden zu professioneller Hilfe (Wartezeiten, Kosten) als systemisches Problem; digitale Selbsthilfe-Tools und niedrigschwellige Angebote als kurzfristige Lösung gefragt; gesellschaftliche Entstigmatisierung als Schlüssel zur breiteren Nutzung. Öffentlichkeitswirksame Debatte über Zugangshürden zu psychischer Gesundheitsversorgung in der Schweiz schafft direkten Marktbedarf für niedrigschwellige digitale Selbsthilfe-Tools – Wachstumsumfeld für mindtools.ch.",
+        source: "swissinfo.ch",
+        url: "https://www.swissinfo.ch/ger/politik/gesucht-auswege-aus-der-mental-health-krise/48808184",
+        date: "2026",
+        category: "Mental Health",
+        addedAt: "2026-05-08",
+      },
+      {
         summary: "The National Council for Mental Wellbeing (Mai 2026): 'Mental Health Awareness Month 2026 – More Good Days, Together' – Das National Council for Mental Wellbeing lanciert Mental Health Awareness Month Mai 2026 unter dem Thema 'More Good Days, Together': Fokus auf Gemeinschaft und zugängliche Unterstützung; breite Palette an Selbsthilfe-Ressourcen, Toolkits und digitalen Materialien; Aufruf zu offenem Gespräch über mentale Gesundheit; Screening-Tools und praktische Aktionsanleitungen. Globaler Awareness-Monat für mentale Gesundheit im Mai 2026 verstärkt die gesellschaftliche Relevanz praktischer Selbsthilfe-Werkzeuge – direktes Sichtbarkeitsumfeld für mindtools.ch als Plattform niedrigschwelliger mentaler Tools.",
         source: "thenationalcouncil.org",
         url: "https://www.thenationalcouncil.org/mental-health-awareness-month/",
@@ -6196,6 +6228,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "hypnovital": {
     news: [
       // Neu: 2026-05-08
+      {
+        summary: "bernerbaer.ch (2026): 'Bundesgesundheitsministerium 2026: Warum psychische Gesundheit am Arbeitsplatz jetzt Priorität hat' – Analyse der gesundheitspolitischen Prioritätensetzung für 2026: psychische Gesundheit am Arbeitsplatz als strategisches Gesundheitspolitik-Thema des Jahres; Burnout-Prävention und Stressmanagement erhalten erhöhte öffentliche Aufmerksamkeit; Arbeitgeber stehen in der Pflicht, präventive Massnahmen zu implementieren; evidenzbasierte Interventionen wie Entspannungsverfahren, Achtsamkeit und Audio-Coaching werden empfohlen. Gesundheitspolitische Priorisierung mentaler Gesundheit am Arbeitsplatz schafft institutionelles Rückenwind-Signal – direktes Wachstumsumfeld für hypnovital® als skalierbare Audio-Coaching-Lösung für BGM und Burnout-Prävention.",
+        source: "bernerbaer.ch",
+        url: "https://bernerbaer.ch/bundesgesundheitsministerium-2026-warum-psychische-gesundheit-am-arbeitsplatz-jetzt-prioritaet-hat/",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-08",
+      },
       {
         summary: "ad-hoc-news.de / Pressemitteilung (Mai 2026): 'Betriebliches Gesundheitsmanagement setzt 2026 auf Strategie und Psyche' – Branchenanalyse zu den BGM-Trends 2026: Unternehmen verschieben den Fokus von reaktiver Krisenbewältigung zu präventiver mentaler Gesundheit; psychisches Wohlbefinden als strategische HR-Priorität; digitale Gesundheitsangebote (Apps, Online-Coaching, Audio-Programme) steigern die Nutzungsquote deutlich; ROI von BGM-Investitionen: 3–5 Franken pro investiertem Franken durch reduzierte Fehlzeiten. Strategische Priorisierung mentaler Gesundheit und digitaler Präventionsangebote als BGM-Kerntrend 2026 – direktes Marktumfeld für hypnovital® als skalierbare Audio-Hypnose-Lösung für Burnout-Prävention und Stressmanagement.",
         source: "ad-hoc-news.de",
@@ -8428,6 +8468,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-08
       {
+        summary: "AsianEfficiency.com (2026): 'The 12 Week Year: The Ultimate Strategy – Common Mistakes & AI Integration 2026' – Detaillierter Praxisleitfaden zur 12-Week-Year-Methode für 2026: KI-Tools automatisieren heute Leading-Indicator-Tracking, generieren wöchentliche Fortschrittsberichte und erkennen frühzeitig Abweichungen von den Zielen; häufigste Fehler bei der 12-Week-Year-Umsetzung (zu viele Ziele, fehlende Wochenschnitte, unklare Metriken) und deren Lösung; KI-Assistenz senkt den manuellen Mess-Overhead erheblich und erhöht Bestehensrate. KI-gestützte Automatisierung des 12-Week-Year-Trackings als aufkommender Standard bestätigt die Marktnachfrage nach smarten Planungstools – direktes Wachstumsumfeld für den 12wy-planner als dediziertes SaaS-Tool.",
+        source: "asianefficiency.com",
+        url: "https://www.asianefficiency.com/systems/common-12-week-year-mistakes/",
+        date: "2026",
+        category: "12 Week Year Methode",
+        addedAt: "2026-05-08",
+      },
+      {
         summary: "griply.app (2026): 'Plan Your Goals for 2026: A Practical Step-by-Step Guide' – Praktischer Leitfaden zur Jahresziel-Planung mit Strukturmethoden für 2026: Jahresziele in Quartals-Meilensteine aufbrechen; wöchentliche Aktionsplanung und tägliches Scoring; Empfehlung der 12-Week-Year-Methode als einer der wirksamsten Rahmen für fokussierte Execution; KI-Assistenz für automatisches Tracking und Fortschrittsberichte. Wachsender Markt für strukturierte Zielplanungs-Apps bestätigt die Nachfrage nach 12-Week-Year-spezifischen Tools – direktes Wettbewerbs- und Marktumfeld für den 12wy-planner als dediziertes SaaS-Tool.",
         source: "griply.app",
         url: "https://griply.app/guides/plan-your-goals-for-2026",
@@ -9806,6 +9854,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-08
       {
+        summary: "hypnose-empfehlung.ch (2026): 'Hypnose gegen vorzeitigen Samenerguss – Schweizer Ratgeber' – Schweizer Hypnose-Ratgeberportal erklärt den Einsatz von Hypnose bei vorzeitigem Samenerguss: Hypnose als nachhaltige Alternative zu medikamentösen Behandlungen; Umprogrammierung des Unterbewusstseins als Wirkprinzip; Studie von 2018 zeigt Erfolgsrate von rund 83% bei Hypnose-Behandlung; Selbsthypnose als begleitende Methode im Alltag; Vorteile: keine Nebenwirkungen, nachhaltige Wirkung. Schweizer Fachportal bestätigt Hypnose-Behandlung als hochwirksame Alternative mit 83% Erfolgsrate – direktes Marktumfeld für orgasmus-hinauszoegern.de als Selbsthypnose-Audio-Programm.",
+        source: "hypnose-empfehlung.ch",
+        url: "https://hypnose-empfehlung.ch/hypnose-gegen-vorzeitigen-samenerguss/",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-05-08",
+      },
+      {
         summary: "Men's Health / love.menshealth.de (2026): 'Vorzeitiger Samenerguss: 6 Tipps, die wirklich helfen' – Men's Health erklärt die 6 wirksamsten Selbsthilfe-Methoden gegen vorzeitigen Samenerguss: Start-Stopp-Technik, Squeeze-Methode, Beckenbodentraining, Atemkontrolle, Kondome mit Verzögerungseffekt und mentale Fokussierungsmethoden; Hypnose und mentale Techniken als natürlicher Ansatz erwähnt. Etabliertes Männermagazin mit breiter Reichweite als Marktvalidierung für das Thema – direktes Nachfrageumfeld für orgasmus-hinauszoegern.de als audiobasierte Hypnose-Selbsthilfe-Lösung.",
         source: "love.menshealth.de",
         url: "https://love.menshealth.de/potenz/das-hilft-gegen-vorzeitigen-samenerguss/",
@@ -10947,6 +11003,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "lampenfieber": {
     news: [
       // Neu: 2026-05-08
+      {
+        summary: "wagner-empowerment.de (2026): 'Online-Seminar Redeangst überwinden – Termine 2026 bundesweit' – Spezialisiertes Coaching-Institut bietet für 2026 mehrere Seminare und 1:1-Coachings zur Redeangst-Überwindung an: Termine u.a. August und November 2026 in Frankfurt, Hamburg, München, Augsburg und Leipzig; Kombination aus Mentaltraining, Coaching und Hypnose als bewährter Methodenmix; begrenzte Teilnehmerzahl für intensive Gruppenbegleitung; Einstiegsmöglichkeit über Online-Seminar. Buchungskalender mit konkreten Terminen 2026 zeigt aktive Marktnachfrage nach professioneller Lampenfieber-Behandlung – direktes Wettbewerbsumfeld und Nachfragebeweis für lampenfieber-besiegen.de als niederschwellige Audio-Alternative.",
+        source: "wagner-empowerment.de",
+        url: "https://www.wagner-empowerment.de/online-seminar-redeangst-%C3%BCberwinden/",
+        date: "2026",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-05-08",
+      },
       {
         summary: "findyourway.ch (Schweiz, 2026): 'Hypnose bei Auftrittsangst – Lampenfieber nachhaltig überwinden' – Schweizer Hypnose-Praxis erklärt die Wirkung von Hypnose bei Auftrittsangst und Lampenfieber: Unterbewusstsein als Ort der Angstreaktionen; hypnotische Tiefenentspannung löst unbewusste Blockaden; neue Konditionierung auf Selbstvertrauen und Ruhe; Langzeitwirkung durch Veränderung mentaler Muster; kombinierbar mit Visualisierungsübungen und Coaching. Schweizer Praxis-Expertise bestätigt Hypnose als nachhaltigste Methode zur Auflösung von Auftrittsangst – direktes Marktumfeld für lampenfieber-besiegen.de als Hypnose-Audio-Lösung.",
         source: "findyourway.ch",
@@ -12226,6 +12290,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "learnfluencer": {
     news: [
       // Neu: 2026-05-08
+      {
+        summary: "Haufe.de (2026): 'Weiterbildung braucht Learnfluencer – Die neuen Multiplikatoren für betriebliches Lernen' – Haufe analysiert die wachsende Bedeutung von Learnfluencern in der betrieblichen Weiterbildung: Learnfluencer stärken die intrinsische Motivation der Mitarbeitenden für eigenverantwortliches Lernen; Verbindung von individuellem und kollektivem Lernen als zentrale Funktion; Learnfluencer entstehen organisch als informelle Lernmultiplikatoren in Teams und Organisationen; Nachfrage nach Learnfluencer-Kompetenzen als eigene Berufsqualifikation wächst stetig. Etablierte HR-Fachmedienpräsenz des Begriffs 'Learnfluencer' auf Haufe als Beleg für die gesellschaftliche Verankerung des Konzepts – direktes Thought-Leadership-Fundament für learnfluencer.ch als Plattform für Lernkompetenz und KI-Bildung.",
+        source: "haufe.de",
+        url: "https://www.haufe.de/personal/neues-lernen/weiterbildung-braucht-learnfluencer_589614_634382.html",
+        date: "2026",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-05-08",
+      },
       {
         summary: "digitalengagiert.de (2026): 'E-Learning in 2026: Trends, KI & digitale Bildung – Was sich verändert' – Umfassende Trendanalyse zu E-Learning und digitaler Bildung 2026: KI-gestützte personalisierte Lernpfade als Standard; adaptive Lernplattformen passen sich in Echtzeit an individuelle Stärken und Schwächen an; Microlearning und mobile-first als vorherrschende Formate; KI-Tutoren übernehmen Routinebegleitung; Lernkompetenz (Learning how to learn) als Schlüsselqualifikation des 21. Jahrhunderts. Digitaler Bildungsmarkt-Momentum mit KI-gestütztem Lernen als Leitthema 2026 stärkt das Thought-Leadership-Potenzial – direktes Marktumfeld für learnfluencer.ch als Plattform für KI-Kompetenz und Lernkompetenz.",
         source: "digitalengagiert.de",
@@ -14156,6 +14228,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-08
       {
+        summary: "kmu-performer.ch (2026): 'KMU Marketing-Trends 2026 – Strategie vor Tool' – Schweizer KMU-Marketing-Experten analysieren die wichtigsten Marketing-Trends für KMU in 2026: Strategie und strukturiertes Marketingkonzept als unerlässliche Grundlage vor dem Einsatz von KI-Tools; KI-Marketing als Differenzierungsfaktor für KMU, die strategisch aufgestellt sind; SWOT-Analyse und Marktpositionierung als Pflichtbausteine; klare Warnung vor isoliertem Tool-Einsatz ohne konzeptionelles Fundament. Führende Schweizer KMU-Marketing-Experten positionieren klares Strategie-Framework als unerlässliche Voraussetzung für KI-Tools – direkte Marktvalidierung des All-in-One-Marketingkonzept-Ansatzes von learnfluencer.ch/tools/marketingkonzept.",
+        source: "kmu-performer.ch",
+        url: "https://kmu-performer.ch/trends-2026/",
+        date: "2026",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-05-08",
+      },
+      {
         summary: "KIMarketing.ch (2026): 'Die besten KI‑Marketing-Tools 2026 für Schweizer KMU – nicht die grösste Liste, sondern die richtige' – Kuratierter Guide zu KI-Marketing-Tools für Schweizer KMU: KI-Tools schreiben heute auch Strategien und Analysen, nicht nur Texte; SWOT-Analysen und Marktpositionierung durch KI-gestützte Datenauswertung; empfohlener Tool-Stack: SEO-Tools, Social-Ads-KI, automatisierte Reportings; Warnung vor Tool-Überflutung ohne strategische Grundlage. Praxisorientierter Guide bestätigt SWOT/Strategieanalyse als Pflichtgrundlage vor dem Tool-Einsatz – direkte Validierung des All-in-One-Marketingkonzept-Ansatzes von learnfluencer.ch/tools/marketingkonzept.",
         source: "kimarketing.ch",
         url: "https://www.kimarketing.ch/beste-ki-marketing-tools-2026-kmu/",
@@ -15466,6 +15546,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "bestattungsplaner": {
     news: [
       // Neu: 2026-05-08
+      {
+        summary: "everlife.ch (2026): 'Was kostet eine Kremation in der Schweiz? – Kosten, Trends und digitale Vorsorge' – Schweizer Bestattungsportal erklärt Kremationskosten und -trends in der Schweiz: Kremation kostet zwischen CHF 500 und 1'000 (reine Einäscherung); fast 90% der Schweizerinnen und Schweizer bevorzugen heute die Feuerbestattung; grosse regionale Preisunterschiede zwischen Kantonen; wachsendes Interesse an digitaler Bestattungsvorsorge zur Kostenkontrolle und Entlastung der Angehörigen. Nahezu 90% Kremationsrate in der Schweiz und wachsendes Kostenbewusstsein als klares Signal für den Bedarf an transparenter digitaler Bestattungsplanung – direktes Marktumfeld für bestattungsplaner.ch als Lead-Plattform.",
+        source: "everlife.ch",
+        url: "https://everlife.ch/de/veroffentlichung/was-kostet-eine-kremation-in-der-schweiz/",
+        date: "2026",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-05-08",
+      },
       {
         summary: "abschiedsplaner.online (2026): 'Vorsorge- & Abschiedsplaner – Erfahrene Partner für Bestattungen, Vorsorgen, Trauern & Gedenken' – Schweizer Online-Portal für Bestattungsvorsorge und Abschiedsplanung: ganzheitlicher Ansatz von Vorsorgedokumenten bis Gedenk-Services; Partnerschaft mit lokalen Bestattungsunternehmen in der ganzen Schweiz; digitale Begleitung von der Vorsorge bis zur Nachbetreuung der Hinterbliebenen; persönlicher Kontakt bleibt zentraler Bestandteil des Angebots. Schweizer Konkurrenzplattform für digitale Bestattungsplanung mit Partnermodell zeigt aktive Marktentwicklung – relevant als Wettbewerbs- und Positionierungssignal für bestattungsplaner.ch.",
         source: "abschiedsplaner.online",
