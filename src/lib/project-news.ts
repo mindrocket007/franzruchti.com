@@ -26,6 +26,15 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 2026-05-08
+      {
+        summary: "ICT-Berufsbildung Schweiz (2026): 'Jahresbericht 2025 – Wachstum, Revision und KI-Bildungsoffensive' – ICT-Berufsbildung Schweiz präsentiert im Jahresbericht 2025 die Leitlinien für 2026: Revision der ICT-Fachmann/-frau-EFZ-Ausbildung mit 17 neuen Handlungskompetenzen ab August 2026; Lancierung des eidg. Fachausweises 'AI Business Specialist' (erste Prüfung Herbst 2026); Bedarf an 54'000 zusätzlichen ICT-Fachkräften bis 2033; Fokus auf Internationalisierung der Schweizer ICT-Bildung. Branchenübergreifende Wachstumsagenda mit Fokus auf KI-Qualifikationen und Bildungsrevision stärkt das Marktumfeld – direktes Wachstumssignal für SIZ AG als anerkannte ICT-Prüfungsorganisation.",
+        source: "ict-berufsbildung.ch",
+        url: "https://www.ict-berufsbildung.ch/jahresbericht-2025",
+        date: "2026",
+        category: "Digitale Bildung",
+        addedAt: "2026-05-08",
+      },
       // Neu: 2026-05-07
       {
         summary: "Zentrum Bildung Baden (2026): 'ICT Advanced-User SIZ Weiterbildung – Praxisorientiertes Diplomstudium' – Das Zentrum Bildung in Baden bietet den ICT Advanced-User SIZ als akkreditiertes Diplomprogramm an: Kurseinstieg jeweils zum Semesterstart; Lerninhalte auf aktuellen Praxisstandard ausgerichtet; direkter Praxisbezug mit Prüfungen am SIZ-Testcenter; modular aufgebaut mit Schwerpunkten in Windows, Office und Netzwerk-Grundlagen. Die flächendeckende Verfügbarkeit des ICT Advanced-User SIZ an Schweizer Weiterbildungszentren belegt die anhaltend hohe Marktnachfrage – direktes Wachstumsumfeld für SIZ AG als neutrale ICT-Prüfungsorganisation.",
@@ -6127,6 +6136,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 2026-05-08
+      {
+        summary: "ad-hoc-news.de / Pressemitteilung (Mai 2026): 'Betriebliches Gesundheitsmanagement setzt 2026 auf Strategie und Psyche' – Branchenanalyse zu den BGM-Trends 2026: Unternehmen verschieben den Fokus von reaktiver Krisenbewältigung zu präventiver mentaler Gesundheit; psychisches Wohlbefinden als strategische HR-Priorität; digitale Gesundheitsangebote (Apps, Online-Coaching, Audio-Programme) steigern die Nutzungsquote deutlich; ROI von BGM-Investitionen: 3–5 Franken pro investiertem Franken durch reduzierte Fehlzeiten. Strategische Priorisierung mentaler Gesundheit und digitaler Präventionsangebote als BGM-Kerntrend 2026 – direktes Marktumfeld für hypnovital® als skalierbare Audio-Hypnose-Lösung für Burnout-Prävention und Stressmanagement.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/betriebliches-gesundheitsmanagement-setzt-2026-auf-strategie-und-psyche/68972135",
+        date: "2026-05",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-08",
+      },
+      {
+        summary: "Sportgesundheitspark Nürnberg (2026): 'Symposium 2026: Mentale Gesundheit & Arbeit' – Interdisziplinäres Fachsymposium zu mentaler Gesundheit am Arbeitsplatz: Burnout-Prävention und Resilienz als Hauptthemen; Schnittstelle zwischen Sport, Gesundheit und psychischem Wohlbefinden am Arbeitsplatz; evidenzbasierte Methoden für betriebliches Gesundheitsmanagement präsentiert; internationale Expertinnen und Experten aus Psychologie, Medizin und Betriebswirtschaft. Fachdiskurs auf Symposiums-Niveau bestätigt mentale Gesundheit am Arbeitsplatz als etablierten Schwerpunkt des professionellen BGM – direktes Wachstumsumfeld für hypnovital® als Audio-Hypnose-Lösung für Burnout-Prävention im BGM-Kontext.",
+        source: "sportgesundheitspark.de",
+        url: "https://www.sportgesundheitspark.de/akademie/symposien-in-veranstaltungen/symposium-mentale-gesundheit-2026",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-08",
+      },
       // Neu: 2026-05-07
       {
         summary: "bloomindo.de (2026): 'Mental Health im Betrieblichen Gesundheitsmanagement – Warum psychische Gesundheit zum BGM-Pflichtthema wird' – Praxisleitfaden zu Mental Health als zentralem BGM-Handlungsfeld 2026: Psychische Erkrankungen verantworten rund 15% aller Fehltage in Unternehmen; Burnout-Prävention, Stressmanagement und Resilienzförderung als bewährte Kernangebote; frühzeitige Präventionsmassnahmen sparen Kosten und schützen Leistungsfähigkeit; digitale BGM-Angebote senken Hemmschwelle für Nutzung. Professioneller Fachdiskurs über Mental Health als BGM-Pflichtthema bestätigt die Marktnachfrage für skalierbare digitale Gesundheitslösungen – direktes Umfeld für hypnovital® als Audio-Hypnose-Plattform für Burnout-Prävention.",
@@ -10827,6 +10853,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 2026-05-08
+      {
+        summary: "findyourway.ch (Schweiz, 2026): 'Hypnose bei Auftrittsangst – Lampenfieber nachhaltig überwinden' – Schweizer Hypnose-Praxis erklärt die Wirkung von Hypnose bei Auftrittsangst und Lampenfieber: Unterbewusstsein als Ort der Angstreaktionen; hypnotische Tiefenentspannung löst unbewusste Blockaden; neue Konditionierung auf Selbstvertrauen und Ruhe; Langzeitwirkung durch Veränderung mentaler Muster; kombinierbar mit Visualisierungsübungen und Coaching. Schweizer Praxis-Expertise bestätigt Hypnose als nachhaltigste Methode zur Auflösung von Auftrittsangst – direktes Marktumfeld für lampenfieber-besiegen.de als Hypnose-Audio-Lösung.",
+        source: "findyourway.ch",
+        url: "https://findyourway.ch/hypnose-bei-auftrittsangst-lampenfieber/",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-05-08",
+      },
+      {
+        summary: "NOACK Hypnotherapie Berlin (2026): 'Redeangst ist kein Lampenfieber – Aufklärung, Tipps, Hilfe' – Renommierte Hypnotherapie-Praxis klärt über den Unterschied zwischen Redeangst und Lampenfieber auf: Redeangst als tiefere, phobische Reaktion mit starker Vermeidungstendenz; Lampenfieber als normales, leistungssteigerndes Kribbeln; Hypnotherapie als Goldstandard bei Redeangst mit phobischem Anteil; Mischformen häufig, da Lampenfieber chronifiziert; Fallstricke bei falscher Selbstdiagnose und falschem Selbsthilfe-Ansatz. Expertenwissen über Redeangst vs. Lampenfieber schärft die Zielgruppen-Differenzierung – direktes Marktverständnis für lampenfieber-besiegen.de als Audio-Lösung für leichtere bis mittlere Auftrittsangst.",
+        source: "noack-hypnose.de",
+        url: "https://www.noack-hypnose.de/redeangst/",
+        date: "2026",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-05-08",
+      },
       // Neu: 2026-05-07
       {
         summary: "WEKA Schweiz (2026): 'Lampenfieber – 5 Tricks für das Überwinden von Lampenfieber' – Führende Schweizer Praxis-Plattform für Führungskräfte erklärt konkrete Lampenfieber-Bewältigungsstrategien: Atemübungen zur Aktivierung des Parasympathikus; positive Visualisierung des Auftritts; Körpersprache und Power-Posing als Selbstvertrauen-Booster; gründliche Vorbereitung als wichtigste Grundlage; Reframing von Nervosität als Energiequelle statt Hindernis. WEKA Schweiz als Fachplattform für Business-Kommunikation zeigt anhaltend hohe Relevanz von Lampenfieber-Lösungen in professionellen Kontexten – direktes Nutzerumfeld für lampenfieber-besiegen.de als praktische Audio-Selbsthilfe-Lösung.",
@@ -12089,6 +12132,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 2026-05-08
+      {
+        summary: "digitalengagiert.de (2026): 'E-Learning in 2026: Trends, KI & digitale Bildung – Was sich verändert' – Umfassende Trendanalyse zu E-Learning und digitaler Bildung 2026: KI-gestützte personalisierte Lernpfade als Standard; adaptive Lernplattformen passen sich in Echtzeit an individuelle Stärken und Schwächen an; Microlearning und mobile-first als vorherrschende Formate; KI-Tutoren übernehmen Routinebegleitung; Lernkompetenz (Learning how to learn) als Schlüsselqualifikation des 21. Jahrhunderts. Digitaler Bildungsmarkt-Momentum mit KI-gestütztem Lernen als Leitthema 2026 stärkt das Thought-Leadership-Potenzial – direktes Marktumfeld für learnfluencer.ch als Plattform für KI-Kompetenz und Lernkompetenz.",
+        source: "digitalengagiert.de",
+        url: "https://www.digitalengagiert.de/e-learning-in-2026-trends-technologien-und-was-sich-veraendert/",
+        date: "2026",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-05-08",
+      },
+      {
+        summary: "AV-views.com (Mai 2026): 'LEARNTEC 2026: Wenn Technologie zum Lernpartner wird' – Praxisbericht zur LEARNTEC 2026 (Europas grösste Fachmesse für Lerntechnologie, Karlsruhe): KI als aktiver Lernpartner statt passives Werkzeug; emotionale KI erkennt Lernblockaden und passt Tempo und Format an; Gamification und immersive VR/AR-Szenarien für Risikokompetenztraining; organisationales Lernen als strategischer Wettbewerbsvorteil; Lernkultur als entscheidender Faktor. Marktführende Lerntechnologie-Messe dokumentiert den Paradigmenwechsel zu KI-getriebenem Lernen – direktes Thought-Leadership-Themenfeld für learnfluencer.ch als Plattform für Lernkompetenz und KI-Weiterbildung.",
+        source: "av-views.com",
+        url: "https://www.av-views.com/2026/05/learntec-2026-wenn-technologie-zum-lernpartner-wird/",
+        date: "2026-05",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-05-08",
+      },
       // Neu: 2026-05-07
       {
         summary: "Steinbeis+Akademie – Digital Learning & Leadership (Mai 2026): 'LEARNTEC 2026 Innovation Island – Lernzukunft hautnah erleben' – Das Institut für Digitales Lernen & Leadership berichtet von der LEARNTEC 2026 (5.–7. Mai, Karlsruhe): die 'Innovation Island' als neue Begegnungszone für KI-Anwendungen in der Bildung; praxisnahe Demos von KI-Coaches, adaptiven Lernumgebungen und XR-Learning; Fokus auf 'Learning in the Flow of Work' als dominierendem Paradigma 2026; KI-gestützte Lernpfade und immersive Lernformate als nächste Stufe der Corporate-Learning-Evolution. Praxisbericht eines renommierten deutschen Bildungsinstituts bestätigt KI-gestützte Lernpfade und Thought Leadership in Lernkompetenz als die prägenden Trends 2026 – kernrelevantes Themenfeld für learnfluencer.ch.",
@@ -14001,6 +14061,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 2026-05-08
+      {
+        summary: "KIMarketing.ch (2026): 'Die besten KI‑Marketing-Tools 2026 für Schweizer KMU – nicht die grösste Liste, sondern die richtige' – Kuratierter Guide zu KI-Marketing-Tools für Schweizer KMU: KI-Tools schreiben heute auch Strategien und Analysen, nicht nur Texte; SWOT-Analysen und Marktpositionierung durch KI-gestützte Datenauswertung; empfohlener Tool-Stack: SEO-Tools, Social-Ads-KI, automatisierte Reportings; Warnung vor Tool-Überflutung ohne strategische Grundlage. Praxisorientierter Guide bestätigt SWOT/Strategieanalyse als Pflichtgrundlage vor dem Tool-Einsatz – direkte Validierung des All-in-One-Marketingkonzept-Ansatzes von learnfluencer.ch/tools/marketingkonzept.",
+        source: "kimarketing.ch",
+        url: "https://www.kimarketing.ch/beste-ki-marketing-tools-2026-kmu/",
+        date: "2026",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-05-08",
+      },
+      {
+        summary: "bexolutions.ch (2026): 'Marketing-Automation für Schweizer KMU 2026: Tools & ROI' – Praxis-Guide für Marketing-Automation in Schweizer KMU: Automation ohne strategisches Fundament erzeugt keinen ROI; PESTEL-Analyse und Marktumfeldanalyse als Voraussetzung für erfolgreiche Automation; KMU mit strukturiertem Marketingkonzept erzielen 3x höheren ROI aus Automation-Investitionen; Lead-Generierung, E-Mail-Marketing und CRM als Kernfelder; empfohlene KMU-gerechte Tools mit Schweizer Datenschutz-Compliance. Klare Korrelation zwischen strukturiertem Marketingkonzept und Automation-Erfolg bestätigt den strategischen Mehrwert des Marketingkonzept-Tools – direktes Marktumfeld für learnfluencer.ch/tools/marketingkonzept.",
+        source: "bexolutions.ch",
+        url: "https://bexolutions.ch/marketing-automation-fur-schweizer-kmu-2026-tools-roi/",
+        date: "2026",
+        category: "MarTech & Trends",
+        addedAt: "2026-05-08",
+      },
       // Neu: 2026-05-07
       {
         summary: "onflow.ch (2026): 'Erfolgreiche Marketingstrategie für KMU – Situationsanalyse als Fundament' – Schweizer Digital-Marketing-Agentur erklärt Aufbau eines strukturierten Marketingkonzepts für KMU: Situationsanalyse (SWOT, Markt, Wettbewerb) als unverzichtbare Grundlage; klare Zielgruppen-Definition und Positionierung als nächster Schritt; kanalübergreifende Massnahmenpläne mit messbaren KPIs; Marketingkonzept als kontinuierlicher Prozess mit regelmässigen Reviews; Empfehlung: vor KI-Tool-Einsatz zuerst Strategie und Konzept definieren. Schweizer Digital-Praxis-Know-how für KMU bestätigt SWOT/Situationsanalyse als Pflichtgrundlage jedes Marketingkonzepts – direkte Validierung des All-in-One-Ansatzes von learnfluencer.ch/tools/marketingkonzept.",
@@ -15295,6 +15372,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 2026-05-08
+      {
+        summary: "abschiedsplaner.online (2026): 'Vorsorge- & Abschiedsplaner – Erfahrene Partner für Bestattungen, Vorsorgen, Trauern & Gedenken' – Schweizer Online-Portal für Bestattungsvorsorge und Abschiedsplanung: ganzheitlicher Ansatz von Vorsorgedokumenten bis Gedenk-Services; Partnerschaft mit lokalen Bestattungsunternehmen in der ganzen Schweiz; digitale Begleitung von der Vorsorge bis zur Nachbetreuung der Hinterbliebenen; persönlicher Kontakt bleibt zentraler Bestandteil des Angebots. Schweizer Konkurrenzplattform für digitale Bestattungsplanung mit Partnermodell zeigt aktive Marktentwicklung – relevant als Wettbewerbs- und Positionierungssignal für bestattungsplaner.ch.",
+        source: "abschiedsplaner.online",
+        url: "https://www.abschiedsplaner.online/",
+        date: "2026",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-05-08",
+      },
       // Neu: 2026-05-07
       {
         summary: "Caprez Bestattungen (2026): 'Bestattungskosten Graubünden – Transparente Preisübersicht' – Schweizer Bestattungsunternehmen Caprez veröffentlicht transparente Kostenübersicht für Bestattungen in der Ostschweiz: Feuerbestattung ab CHF 1'800 im Grundpaket; Erdbestattung inkl. Dienstleistungen und Kremation ab CHF 3'500; grosse regionale Preisunterschiede je nach Gemeinde und Kanton in der Schweiz. Wachsende Transparenzkultur in der Schweizer Bestattungsbranche mit öffentlichen Kostenübersichten bestätigt die Marktbereitschaft für digitale Lead-Vermittlung und Preisvergleich – direktes Wachstumsumfeld für bestattungsplaner.ch als transparente Online-Plattform.",
