@@ -1682,6 +1682,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
+      // Neu: 2026-05-08
+      {
+        summary: "sportmentalakademie.com (April 2026): 'Swiss Coaching Day 2026 – Dein Coaching-Event in Bern' – Die Sport Mental Akademie bewirbt den Swiss Coaching Day 2026 als zentrale Vernetzungsveranstaltung für Coaches, Berater und Trainer: 23. April 2026, Champions Lounge, Wankdorf-Stadion Bern; Workshops, Keynotes und Networking für Coaches, HR-Spezialisten und Führungskräfte; Fokus auf persönliche Entwicklung und professionelles Coaching. Schweizer Coaching-Community-Event auf höchstem Niveau dokumentiert die aktive Professionalisierung der Branche – direktes Marktumfeld für Mind Rocket GmbH als Anbieter digitaler Persönlichkeitsentwicklungs-Programme.",
+        source: "sportmentalakademie.com",
+        url: "https://sportmentalakademie.com/weiterbildungen/swiss-coaching-day/",
+        date: "2026-04-23",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-05-08",
+      },
+      {
+        summary: "SNF Academy / snfa.ch (2026): 'Life Transformation Mindset Coach Ausbildung – Berufsbegleitend 2026' – Die SNF Academy bietet eine berufsbegleitende Mindset-Coach-Ausbildung für Persönlichkeitsentwicklung, NLP und mentales Training an: modulares Programm mit Live-Online-Einheiten; anerkannte Schweizer Ausbildungsinstitution; Schwerpunkte auf Selbst-Leadership, Glaubenssätze und Transformation. Wachsende Angebotstiefe im Schweizer Markt für Online-Coaching-Ausbildungen zeigt die steigende gesellschaftliche Nachfrage nach Persönlichkeitsentwicklung – direktes Marktumfeld für Mind Rocket GmbH als Anbieter skalierbarerer digitaler Entwicklungsprogramme.",
+        source: "snfa.ch",
+        url: "https://snfa.ch/life-transformation-mindset-coach-ausbildung/",
+        date: "2026-05",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-05-08",
+      },
       // Neu: 2026-05-07
       {
         summary: "Coaching Institut Living Sense (2026): 'Online Coaching Practitioner – Ausbildung mit Start September 2026' – Das Coaching Institut Living Sense bietet ab September 2026 einen Online-Lehrgang zum Coaching Practitioner an: erfahrungsorientiertes Lernen mit Dienstags 18–21 Uhr als berufsbegleitendem Format; Fokus auf Ressourcenstärkung und Zielerreichung; Kombination aus Online-Lerneinheiten und Live-Praxis. Wachsende Anzahl akkreditierter Online-Coaching-Ausbildungen in der Schweiz zeigt die Professionalisierung des Marktes – direktes Marktumfeld für Mind Rocket GmbH als Anbieter skalierbarer digitaler Entwicklungsprogramme.",
@@ -2346,6 +2363,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 2026-05-08
+      {
+        summary: "PropTradingVibes (Februar 2026): 'Topstep Consistency Rule 2026: 50% Best-Day Cap' – Detaillierte Analyse der Topstep-Regeländerungen ab 5. Februar 2026: Dual-Path-Express-Funded-Account (Standard vs. Consistency); beide Pfade mit 50%-Concentration-Cap; Consistency-Pfad ermöglicht Auszahlung in 3 statt 5 Handelstagen; Largest-Day-Cap auf 40% für Consistency-EFA-Pfad. Klärung der neuen Topstep-Regeln hilft Prop-Trading-Strategien an die neuen Anforderungen anzupassen – direkt relevant für die ES-Futures-Strategien auf mindrocket-trading.com.",
+        source: "proptradingvibes.com",
+        url: "https://proptradingvibes.com/blog/topstep-consistency-rule",
+        date: "2026-02",
+        category: "Regulierung",
+        addedAt: "2026-05-08",
+      },
+      {
+        summary: "PropTradingVibes (2026): 'Topstep Rules 2026: Drawdown, $150 Winning Day, Consistency' – Vollständige Regelübersicht für Topstep-Trading-Combine und Express-Funded-Account 2026: Drawdown-Regeln, Winning-Day-Anforderung ($150 pro Gewinntag, 5 nicht konsekutive Tage), Consistency-Regel (50% Best-Day-Cap) und neue Dual-Path-Option. Klar strukturierter Überblick aller aktuellen Topstep-Anforderungen stärkt die strategische Planung – relevant für den systematischen ES-Futures-Handel auf mindrocket-trading.com.",
+        source: "proptradingvibes.com",
+        url: "https://proptradingvibes.com/blog/topstep-rules-overview",
+        date: "2026-05",
+        category: "Regulierung",
+        addedAt: "2026-05-08",
+      },
       // Neu: 2026-05-07
       {
         summary: "Tradovate Prop (2026): 'NinjaTrader Pulse Indicator – Stärkung der Prop-Trading-Performance' – Prop-Trading-Blog von Tradovate erklärt den NinjaTrader Pulse Indicator als Kerninstrument für gezieltes Momentum-Trading auf ES Futures und anderen CME-Kontrakten: Visualisierung von Marktdynamik und Ausbruchspunkten in Echtzeit; Einsatz in Prop-Firm-Evaluierungen als messbares Performance-Differenzierungsmerkmal; direkter Bezug zu NinjaTrader als führender Futures-Trading-Plattform. Integration spezialisierter NinjaTrader-Indikatoren als Branchenstandard in Prop-Trading-Ausbildung und -Performance-Optimierung bestätigt das technologische Ökosystem – direktes Marktumfeld für NinjaTrader-basierte Strategien auf mindrocket-trading.com.",
@@ -5044,6 +5078,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 2026-05-08
+      {
+        summary: "The National Council for Mental Wellbeing (Mai 2026): 'Mental Health Awareness Month 2026 – More Good Days, Together' – Das National Council for Mental Wellbeing lanciert Mental Health Awareness Month Mai 2026 unter dem Thema 'More Good Days, Together': Fokus auf Gemeinschaft und zugängliche Unterstützung; breite Palette an Selbsthilfe-Ressourcen, Toolkits und digitalen Materialien; Aufruf zu offenem Gespräch über mentale Gesundheit; Screening-Tools und praktische Aktionsanleitungen. Globaler Awareness-Monat für mentale Gesundheit im Mai 2026 verstärkt die gesellschaftliche Relevanz praktischer Selbsthilfe-Werkzeuge – direktes Sichtbarkeitsumfeld für mindtools.ch als Plattform niedrigschwelliger mentaler Tools.",
+        source: "thenationalcouncil.org",
+        url: "https://www.thenationalcouncil.org/mental-health-awareness-month/",
+        date: "2026-05",
+        category: "Mental Health",
+        addedAt: "2026-05-08",
+      },
+      {
+        summary: "Mental Health America (MHA, 2026): 'MHA Awareness Calendar 2026 – More Good Days, Together' – Mental Health America stellt den offiziellen Awareness-Kalender für 2026 vor: Mental Health Month (Mai), alle relevanten Awareness-Tage und Wochen mit Ressourcen und Aktionsmaterialien; Theme 'More Good Days, Together'; digitale Selbsthilfe-Toolkits und KI-gestützte Screening-Tools als Standard-Ressourcen; Aufruf zur gesellschaftlichen Vernetzung. Systematischer Awareness-Kalender der grössten US-Mental-Health-Organisation strukturiert die Nachfrage nach Selbsthilfe-Tools über das gesamte Jahr – direktes Marktumfeld für mindtools.ch als Plattform niedrigschwelliger digitaler Werkzeuge.",
+        source: "mhanational.org",
+        url: "https://mhanational.org/mha-awareness-calendar-2026/",
+        date: "2026",
+        category: "Mental Health",
+        addedAt: "2026-05-08",
+      },
       // Neu: 2026-05-07
       {
         summary: "HaDEA / EU-Kommission (5. Mai 2026): 'European Mental Health Week 2026 – EU-geförderte Projekte für mentale Gesundheit' – Die Europäische Gesundheitsbehörde HaDEA präsentiert EU-finanzierte Projekte anlässlich der European Mental Health Week (5.–11. Mai 2026): WHO-Programm 'Self-Help Plus' (SH+) mit digitalen Selbsthilfe-Modulen für Erwachsene in der Schweiz; digitale Apps für Jugendliche zu Mood-Tracking und Stressmanagement; Hybrid-Ansätze aus Online-Modulen und Fachgesprächen als evidenzbasierter Goldstandard. EU-weite Evidenzbasis für digitale Selbsthilfe-Tools und mentale Gesundheitsprogramme belegt gesellschaftliche Akzeptanz und Wirksamkeit – direktes Marktumfeld für mindtools.ch als Plattform niedrigschwelliger mentaler Werkzeuge.",
@@ -8367,6 +8418,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 2026-05-08
+      {
+        summary: "griply.app (2026): 'Plan Your Goals for 2026: A Practical Step-by-Step Guide' – Praktischer Leitfaden zur Jahresziel-Planung mit Strukturmethoden für 2026: Jahresziele in Quartals-Meilensteine aufbrechen; wöchentliche Aktionsplanung und tägliches Scoring; Empfehlung der 12-Week-Year-Methode als einer der wirksamsten Rahmen für fokussierte Execution; KI-Assistenz für automatisches Tracking und Fortschrittsberichte. Wachsender Markt für strukturierte Zielplanungs-Apps bestätigt die Nachfrage nach 12-Week-Year-spezifischen Tools – direktes Wettbewerbs- und Marktumfeld für den 12wy-planner als dediziertes SaaS-Tool.",
+        source: "griply.app",
+        url: "https://griply.app/guides/plan-your-goals-for-2026",
+        date: "2026-05",
+        category: "SaaS & Tools",
+        addedAt: "2026-05-08",
+      },
+      {
+        summary: "StartupGTM Substack (2026): 'How You Should Actually Plan 2026 – Implementation Guide with Prompts' – Praxisleitfaden für strategische Jahresplanung in Startups: Break-downs in 12-Wochen-Zyklen als empfohlene Methode; Weekly Scoring und Leading Indicators als Kernpunkte; KI-Prompts für Zielformulierung und Fortschrittsmessung; explizite Empfehlung des 12-Week-Year-Frameworks für fokussierte Execution. Praxisorientierter GTM-Guide mit Empfehlung von 12-Wochen-Planung als effektivstes Modell bestätigt die Relevanz der Methode in professionellen Wachstumskontexten – direktes Marktumfeld für den 12wy-planner.",
+        source: "startupgtm.substack.com",
+        url: "https://startupgtm.substack.com/p/how-you-should-actually-plan-2026",
+        date: "2026",
+        category: "12 Week Year Methode",
+        addedAt: "2026-05-08",
+      },
       // Neu: 2026-05-07
       {
         summary: "OKRchamp (2026): '2026 OKR Execution Roadmap – Readiness, Ops, Champions' – Umfassender Praxis-Leitfaden zur OKR-Umsetzung im Jahresverlauf 2026: OKRs als wöchentliche Praxis mit leichten, wiederholbaren Rhythmen; kurze Check-ins mit transparenten Confidence Scores (1–10); Quarterly Resets als Kernmethodik; 4,3 Quartalszyklen in 2026 als natürliches Planungsraster; starke Parallelität von OKR-Quartalszyklen und 12-Wochen-Jahresstruktur bestätigt. Starke Nachfrage nach klar strukturierten Quartals-Planungs-Methoden zeigt das Wachstumsumfeld für den 12wy-planner – direktes Nutzerumfeld für das SaaS-Tool mit 12-Week-Year-Fokus.",
@@ -9728,6 +9796,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 2026-05-08
+      {
+        summary: "Men's Health / love.menshealth.de (2026): 'Vorzeitiger Samenerguss: 6 Tipps, die wirklich helfen' – Men's Health erklärt die 6 wirksamsten Selbsthilfe-Methoden gegen vorzeitigen Samenerguss: Start-Stopp-Technik, Squeeze-Methode, Beckenbodentraining, Atemkontrolle, Kondome mit Verzögerungseffekt und mentale Fokussierungsmethoden; Hypnose und mentale Techniken als natürlicher Ansatz erwähnt. Etabliertes Männermagazin mit breiter Reichweite als Marktvalidierung für das Thema – direktes Nachfrageumfeld für orgasmus-hinauszoegern.de als audiobasierte Hypnose-Selbsthilfe-Lösung.",
+        source: "love.menshealth.de",
+        url: "https://love.menshealth.de/potenz/das-hilft-gegen-vorzeitigen-samenerguss/",
+        date: "2026",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-05-08",
+      },
+      {
+        summary: "IhreApotheken.de (2026): 'Vorzeitiger Samenerguss: Ursachen und Behandlung' – Offizielles Informationsportal der deutschen Apotheken erklärt vorzeitigen Samenerguss: häufigste männliche Sexualfunktionsstörung mit ca. 20–30% Betroffenenrate; Unterschied psychogener vs. organischer Ursachen; Behandlungsoptionen von Verhaltenstherapie bis medikamentöser Intervention; niedrigschwellige Selbsthilfe als erste Empfehlung. Medizinisch fundierte Beratungsplattform als gesellschaftliche Legitimation des Themas und Beleg für den Beratungsbedarf – direktes Marktumfeld für orgasmus-hinauszoegern.de als günstige, diskrete Selbsthilfe-Option.",
+        source: "ihreapotheken.de",
+        url: "https://ihreapotheken.de/themenuebersicht/vorzeitiger-samenerguss",
+        date: "2026",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-05-08",
+      },
       // Neu: 2026-05-07
       {
         summary: "Prof. Dr. Sommer / maennergesundheit.info (2026): 'Ejaculatio praecox – Medizinische Bewertung und Behandlungsoptionen' – Renommierter Männergesundheits-Experte erklärt vorzeitigen Samenerguss als häufige Funktionsstörung (10–30% aller Männer betroffen): Differenzierung in lebenslang (primär) vs. erworben (sekundär); psychische Mitbeteiligung in Mehrheit der Fälle wissenschaftlich belegt; Verhaltenstechniken (Start-Stopp, Squeeze) und mentale Methoden als evidenzbasierte Erstlinie; Selbsthilfe-Programme als niedrigschwellige Einstiegsoption vor medizinischer Intervention empfohlen. Medizinischer Expertenkonsens zur psychischen Komponente als Hauptursache und Verhaltenstechniken als Erstlinie bestätigt die Positionierung von Audio-Hypnose als zielgruppengerechte Selbsthilfe-Option – direktes Marktumfeld für orgasmus-hinauszoegern.de.",
