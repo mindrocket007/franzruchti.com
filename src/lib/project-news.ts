@@ -2365,6 +2365,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-08
       {
+        summary: "apextraderfunding.com (2026): 'Wie viel Prozent der Trader bestehen Prop-Firm-Challenges? – Erfolgsquoten 2026' – Apex Trader Funding veröffentlicht Branchendaten zu Prop-Firm-Bestehensquoten: Apex erreicht 15–20% Bestehensquote beim ersten Versuch (doppelter Branchenschnitt von 5–10%); 86% aller Trader erreichen nie ein funded Account; die Apex-3.0-Updates (Ende 2025) führten zu 10–15% höheren Bestehensquoten; $598 Mio. Auszahlungen seit 2022 bei $15,4 Mio. monatlich. Branchenweite Erfolgsraten von 5–15% unterstreichen die Notwendigkeit strukturierter Strategien – direkter Kontext für die ES-Futures-Strategien auf mindrocket-trading.com.",
+        source: "apextraderfunding.com",
+        url: "https://apextraderfunding.com/resources/prop-trading/what-percentage-of-traders-pass-prop-firm-challenges/",
+        date: "2026",
+        category: "Prop Trading Apex",
+        addedAt: "2026-05-08",
+      },
+      {
         summary: "PropTradingVibes (Februar 2026): 'Topstep Consistency Rule 2026: 50% Best-Day Cap' – Detaillierte Analyse der Topstep-Regeländerungen ab 5. Februar 2026: Dual-Path-Express-Funded-Account (Standard vs. Consistency); beide Pfade mit 50%-Concentration-Cap; Consistency-Pfad ermöglicht Auszahlung in 3 statt 5 Handelstagen; Largest-Day-Cap auf 40% für Consistency-EFA-Pfad. Klärung der neuen Topstep-Regeln hilft Prop-Trading-Strategien an die neuen Anforderungen anzupassen – direkt relevant für die ES-Futures-Strategien auf mindrocket-trading.com.",
         source: "proptradingvibes.com",
         url: "https://proptradingvibes.com/blog/topstep-consistency-rule",
