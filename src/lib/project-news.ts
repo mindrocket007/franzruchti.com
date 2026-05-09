@@ -5278,6 +5278,55 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 2026-05-09
+      {
+        summary: "ad-hoc-news.de (2026-05): 'Buchmarkt reagiert 2026 mit Welle an Psychologie-Ratgebern' – Verlage setzen 2026 stark auf wissenschaftlich fundierte Ratgeber zu mentaler Gesundheit, weg von allgemeinen Lebenshilfen hin zu spezialisierten Titeln mit nachweisbarer Wirksamkeit. Relevant, da mindtools.ch im selben Segment (mentale Werkzeuge, Selbstentwicklung) positioniert ist und der Trend zu fundierten, spezifischen Angeboten das Kaufverhalten beeinflusst.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/buchmarkt-reagiert-2026-mit-welle-an-psychologie-ratgebern/68596624",
+        date: "2026-05",
+        category: "Buchmarkt & Publishing",
+        addedAt: "2026-05-09",
+      },
+      {
+        summary: "ad-hoc-news.de (2026-05): 'Buchmarkt 2026: KI und Persönlichkeit dominieren Business-Bestseller' – KI und Persönlichkeitsentwicklung sind die bestimmenden Themen in Business-Büchern 2026. Käufer investieren bereitwilliger in hochwertige Ratgeber-Inhalte, was für digitale PDF-Angebote wie jene von mindtools.ch eine Chance darstellt.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/buchmarkt-2026-ki-und-persoenlichkeit-dominieren-business-bestseller/69076676",
+        date: "2026-05",
+        category: "Buchmarkt & Publishing",
+        addedAt: "2026-05-09",
+      },
+      {
+        summary: "ad-hoc-news.de (2026-05): 'Psychische Gesundheit: Prävention wird zum Megatrend 2026' – Prävention und Selbsthilfe bei psychischer Gesundheit wachsen zum Megatrend, mit starker Nachfrage nach praktischen Tools und Ratgebern. Direkt relevant für das Angebot mentaler Werkzeuge auf mindtools.ch.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/psychische-gesundheit-praevention-wird-zum-megatrend-2026/69142710",
+        date: "2026-05",
+        category: "Mental Health",
+        addedAt: "2026-05-09",
+      },
+      {
+        summary: "ad-hoc-news.de (2026-05): 'Resilienz wird messbar: Neue Wege für mentale Gesundheit im Jahr 2026' – Messbare Resilienz-Tools und strukturierte Ansätze gewinnen an Bedeutung. Für mindtools.ch relevant, da der Markt klar auf strukturierte, nachweisbare Methoden statt auf allgemeine Motivationsplattformen setzt.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/resilienz-wird-messbar-neue-wege-fuer-mentale-gesundheit-im-jahr-2026/69153813",
+        date: "2026-05",
+        category: "Mental Health",
+        addedAt: "2026-05-09",
+      },
+      {
+        summary: "boersenblatt.net (2026-05): 'Deutschschweizer Buchmarkt 2025 mit leichtem Umsatzplus' – Der Deutschschweizer Buchmarkt erzielte 2025 einen Umsatz von 581,8 Mio. CHF (+1,1%), wobei Ratgeber mit rund 17% Marktanteil stabil blieben. Sachbücher stehen unter Druck durch kostenlose Online-Inhalte – zeigt, dass Differenzierung über Qualität und Mehrwert entscheidend ist.",
+        source: "boersenblatt.net",
+        url: "https://www.boersenblatt.net/news/buchhandel-news/deutschschweizer-buchmarkt-2025-mit-leichtem-umsatzplus-414121",
+        date: "2026-05",
+        category: "Buchmarkt & Publishing",
+        addedAt: "2026-05-09",
+      },
+      {
+        summary: "medinside.ch (2026-04): 'Digitale Therapie-App erhält neuen Namen' – Ab Juli 2026 werden digitale Gesundheits-Apps in der Schweiz erstmals von der Krankenkasse erstattet. Benecura wird als Evida Med neu positioniert. Dies signalisiert wachsende gesellschaftliche Akzeptanz digitaler Mental-Health-Angebote – Rückenwind für mindtools.ch.",
+        source: "medinside.ch",
+        url: "https://www.medinside.ch/de/digitale-therapie-app-erhaelt-neuen-namen-20260420",
+        date: "2026-05",
+        category: "Mental Health",
+        addedAt: "2026-05-09",
+      },
       // Neu: 2026-05-08
       {
         summary: "coachingausbildungen.ch (Januar 2026): 'Coaching-Markt Schweiz Trends 2025/2026' – Systemische Ansätze und individuelle Persönlichkeitsentwicklung gewinnen in der Schweiz weiter an Bedeutung; digitale und KI-gestützte Coaching-Angebote sind auf dem Vormarsch. Diese Entwicklung bestätigt das Marktumfeld, in dem mindtools.ch mit mentalen Werkzeugen und praxisorientierten Techniken aus NLP, Achtsamkeit und KVT tätig ist.",
@@ -14602,6 +14651,55 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 2026-05-09
+      {
+        summary: "martech.org (2026-05): 'Martech 2026: AI drives a major industry reset' – Die MarTech-Landschaft wuchs 2026 nur um 0,7% (15'505 Tools), aber KI verändert die Grundstruktur: 90% der Marketingorganisationen nutzen KI-Agenten, erst 23% in Vollproduktion. KI verschiebt den Wert von Features zu Outcomes. Direkt relevant für die Positionierung des Marketingplan-Tools als strukturiertes KMU-Planungswerkzeug.",
+        source: "martech.org",
+        url: "https://martech.org/martech-2026-ai-drives-a-major-industry-reset/",
+        date: "2026-05",
+        category: "MarTech & Trends",
+        addedAt: "2026-05-09",
+      },
+      {
+        summary: "topsoft.ch (2026-05): 'Swiss MarTech Summit 2026: Wo sich die Schweizer Marketing-Tech-Community trifft' – Der Swiss MarTech Summit findet am 28. Mai 2026 an der ZHAW Winterthur statt (3. Ausgabe). Keynotes, Praxiscases und der Swiss MarTech Award 2026 stehen auf dem Programm. Zeigt die Dynamik der Schweizer MarTech-Szene und bietet Sichtbarkeits-Chancen für learnfluencer.ch/tools.",
+        source: "topsoft.ch",
+        url: "https://topsoft.ch/themen/swiss-martech-summit-2026-wo-sich-die-schweizer-marketing-tech-community-trifft/",
+        date: "2026-05",
+        category: "MarTech & Trends",
+        addedAt: "2026-05-09",
+      },
+      {
+        summary: "bexolutions.ch (2026-05): 'Marketing-Automation für Schweizer KMU 2026: Tools & ROI' – Marketing-Automation ist 2026 ein entscheidender Wettbewerbsvorteil für Schweizer KMU. Unternehmen sparen durchschnittlich 6–9 Stunden/Woche und erzielen 50% höhere Conversion-Raten durch automatisiertes Lead-Nurturing. Unterstreicht die Nachfrage nach integrierten Marketingplanung-Tools für KMU.",
+        source: "bexolutions.ch",
+        url: "https://bexolutions.ch/marketing-automation-fur-schweizer-kmu-2026-tools-roi/",
+        date: "2026-05",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-05-09",
+      },
+      {
+        summary: "kmu.admin.ch (2026-05): 'KI und Marketing Automation: eine Chance für KMU' – Das offizielle Schweizer KMU-Portal erläutert, wie KI und Marketing-Automation KMUs bei Lead-Generierung, Kundenbindung und Kampagnenoptimierung helfen. Conversational AI und Predictive Marketing werden als wichtige Zukunftsfelder genannt – validiert das Marktpotenzial des Marketingkonzept-Tools.",
+        source: "kmu.admin.ch",
+        url: "https://www.kmu.admin.ch/kmu/en/home/concrete-know-how/sme-management/marketing/marketing-tools/ai-automation-marketing.html",
+        date: "2026-05",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-05-09",
+      },
+      {
+        summary: "kmu-performer.ch (2026-05): 'Unsere KMU Marketing-Trends 2026' – Generative Engine Optimization (GEO), intelligente CRM-Systeme und WhatsApp-Marketing (98% Öffnungsrate) sind die wichtigsten KMU-Marketing-Trends 2026. Zeigt, dass KMUs zunehmend strukturierte Marketingstrategien benötigen – Kernargument für das interaktive Marketingkonzept-Tool.",
+        source: "kmu-performer.ch",
+        url: "https://kmu-performer.ch/trends-2026/",
+        date: "2026-05",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-05-09",
+      },
+      {
+        summary: "zhaw.ch (2026-05): 'Swiss MarTech Award 2026' – Die ZHAW verleiht im Rahmen des Swiss MarTech Summit 2026 (28. Mai) den Swiss MarTech Award für Innovationen in der Marketing-Technologie. Finalisten werden am 15. Mai 2026 bekannt gegeben. Zeigt institutionelles Interesse der Schweiz an Marketing-Tech-Innovationen.",
+        source: "zhaw.ch",
+        url: "https://www.zhaw.ch/de/sml/institute-zentren/imm/ueber-uns/marketing-management-labs/martech-lab/swiss-martech-summit-2026/swiss-martech-award-2026",
+        date: "2026-05",
+        category: "Strategie & Analyse",
+        addedAt: "2026-05-09",
+      },
       // Neu: 2026-05-08
       {
         summary: "bexolutions.ch (2026): 'KI-Marketing für Schweizer KMU 2026 – Praxisleitfaden' – GEO (Generative Engine Optimization), Microsoft Advertising, intelligentes CRM und WhatsApp-Integration sind Top-Themen. KMU benötigen zunehmend strukturierte Strategietools als Grundlage – was den Nutzen des Marketingkonzept-Tools (PESTEL, SWOT, 7P) auf learnfluencer.ch unterstreicht.",
@@ -15945,6 +16043,39 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 2026-05-09
+      {
+        summary: "ekz-crosstour.ch (2026-05-04): 'Die Branche für Bestattungsvorsorge boomt und verzeichnet ein enormes Wachstum' – Global Market Vision veröffentlichte eine Studie zum globalen Bestattungsvorsorge-Markt (2026–2033) mit starken Wachstumsprognosen. Relevante Marktsignale für bestattungsplaner.ch als digitale Lead-Plattform in diesem wachsenden Segment.",
+        source: "ekz-crosstour.ch",
+        url: "https://ekz-crosstour.ch/2026/05/04/die-branche-fur-bestattungsvorsorge-boomt-und-verzeichnet-ein-enormes-wachstum/",
+        date: "2026-05",
+        category: "Markt & Trends",
+        addedAt: "2026-05-09",
+      },
+      {
+        summary: "ekz-crosstour.ch (2026-04-08): 'Der Markt für Bestattungs- und Friedhofsdienstleistungen wird bis 2033 voraussichtlich rasant wachsen' – Marktforschungsstudie prognostiziert starkes Wachstum im globalen Bestattungs- und Friedhofsdienstleistungsmarkt mit Fokus auf westeuropäische Märkte. Bestätigt das langfristige Potenzial für digitale Bestattungsportale wie bestattungsplaner.ch.",
+        source: "ekz-crosstour.ch",
+        url: "https://ekz-crosstour.ch/2026/04/08/der-markt-fur-bestattungs-und-friedhofsdienstleistungen-wird-bis-2847-voraussichtlich-rasant-wachsen/",
+        date: "2026-04",
+        category: "Markt & Trends",
+        addedAt: "2026-05-09",
+      },
+      {
+        summary: "everlife.ch (2026-05): 'Was kostet eine Kremation in der Schweiz?' – Fast 90% der Schweizer wählen mittlerweile die Kremation. Kosten variieren stark je nach Kanton (in Zürich teils kostenlos, in ländlichen Kantonen bis mehrere Tausend CHF). Diese Kostenunsicherheit ist ein zentrales Argument für Vergleichs- und Planungsportale wie bestattungsplaner.ch.",
+        source: "everlife.ch",
+        url: "https://everlife.ch/de/veroffentlichung/was-kostet-eine-kremation-in-der-schweiz/",
+        date: "2026-05",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-05-09",
+      },
+      {
+        summary: "beobachter.ch (2026-05): 'Vorsorgedokumente erstellen Schweiz: Anleitung und Vorlagen' – Der Beobachter informiert ausführlich über Patientenverfügung, Vorsorgeauftrag und Bestattungsanordnung als wichtige Vorsorgedokumente. Die wachsende Medienaufmerksamkeit für digitale Vorsorge stärkt die Nachfrage nach Planungsportalen wie bestattungsplaner.ch.",
+        source: "beobachter.ch",
+        url: "https://www.beobachter.ch/gesetze-recht/erwachsenenschutz/vorsorge-regeln-so-gehts-schritt-fur-schritt-40112",
+        date: "2026-05",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-05-09",
+      },
       // Neu: 2026-05-08
       {
         summary: "bestatter.ch (2026): 'Digitaler Nachlass – Was passiert mit Online-Konten nach dem Tod?' – Der Schweizer Verband der Bestattungsdienste informiert umfassend über digitalen Nachlass und Online-Konten nach dem Tod. Für bestattungsplaner.ch ist das digitale Vorsorge-Thema ein wachsendes Bedürfnis, das ergänzende Beratungsleistungen ermöglicht und neue Zielgruppen in der jüngeren Generation erschliesst.",
