@@ -26,6 +26,23 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 2026-05-10
+      {
+        summary: "woche-bb.ch / BWZT (Mai 2026): 'Woche der Berufsbildung 2026 – 4. bis 8. Mai 2026' – Die nationale Woche der Berufsbildung 2026 findet vom 4. bis 8. Mai statt: 23 Kantone beteiligen sich, 40 Regionalradios berichten von Lernenden und Ausbildungsverantwortlichen; am Mittwoch, 6. Mai 2026 berichten rund 20 Lernende direkt aus ihren Ausbildungsbetrieben. ICT-Lehrberufe gehören zu den meistgewählten Ausbildungswegen der Schweiz. Die jährliche, nationale Woche der Berufsbildung steigert die gesellschaftliche Sichtbarkeit und Wertschätzung von ICT-Ausbildungswegen – direktes positives Marktumfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation.",
+        source: "woche-bb.ch / BWZT",
+        url: "https://www.bwzt.ch/news/sg_bwzt/2026/05/woche-der-berufsbildung-2026.html",
+        date: "2026-05",
+        category: "Digitale Bildung",
+        addedAt: "2026-05-10",
+      },
+      {
+        summary: "siw.swiss (2026): 'AI Business Specialist mit eidg. Fachausweis – Vorbereitung bei SIW' – Das Schweizerische Institut für Weiterbildung (SIW) bietet als akkreditierter Vorbereitungsanbieter für den neuen eidgenössischen Fachausweis AI Business Specialist einen Lehrgang an: Business-orientierter Ansatz ohne technische Vorkenntnisse; erste eidgenössische Berufsprüfung Herbst 2026; Bund erstattet bis zu 50 % der Kurskosten (max. CHF 9'500). Wachsendes Angebot akkreditierter Vorbereitungskurse für KI-Fachausweise durch SIZ-Partnerinstitutionen stärkt die Relevanz des gesamten ICT-Qualifizierungsökosystems – direktes positives Marktumfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation.",
+        source: "siw.swiss",
+        url: "https://siw.swiss/lehrgaenge/businessai-mit-eidg-fachausweis/",
+        date: "2026-05",
+        category: "Digitale Bildung",
+        addedAt: "2026-05-10",
+      },
       // Neu: 2026-05-08
       {
         summary: "siz.ch (April 2026): 'Newsflash April 2026 – Launch der neuen mySIZ-Plattform' – SIZ hat im April 2026 eine komplett neue mySIZ-Plattform unter my.siz.ch lanciert: Prüfungsteilnehmende registrieren sich neu über ihre Bildungsinstitution; alle Teilnehmenden müssen einem Kurs zugewiesen sein; Prüfungspasswörter für Testprüfungen entfallen; Datenmigration erfolgte per 8. April 2026. Die Plattformmodernisierung ist ein direktes SIZ-Eigeninvestment in die Zukunftsfähigkeit der Prüfungsinfrastruktur und stärkt die Zusammenarbeit mit Partnerschulen und Dozierenden.",
@@ -1754,6 +1771,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
+      // Neu: 2026-05-10
+      {
+        summary: "heb-coachingfachschule.ch (Mai 2026): 'HEB Coaching Basic – Ausbildungen starten im Mai 2026 in Basel und Bern' – Die HEB Coaching Fachschule startet am 8. Mai 2026 neue Coaching-Grundausbildungen in Basel und Bern: Praxisorientiertes Ausbildungskonzept mit Wissensinputs und intensiven Übungscoachings; modularer Aufbau; Schwerpunkte auf Gesprächsführung, Systemisches Coaching und persönliche Kompetenzentwicklung. Aktive Marktdynamik bei Schweizer Coaching-Ausbildungen im Mai 2026 zeigt die hohe strukturelle Nachfrage – direktes Wachstumsumfeld für Mind Rocket GmbH als Anbieter digitaler Persönlichkeitsentwicklungs-Programme.",
+        source: "heb-coachingfachschule.ch",
+        url: "https://www.heb-coachingfachschule.ch/",
+        date: "2026-05",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-05-10",
+      },
+      {
+        summary: "kurs-finden.ch (2026): 'Coaching & Persönlichkeitsentwicklung – 98 Weiterbildungsangebote in der Schweiz 2026' – Das Schweizer Kursverzeichnis kurs-finden.ch listet 98 aktive Kurs- und Weiterbildungsangebote im Bereich Persönlichkeitsentwicklung und Coaching für 2026; Angebote reichen von Einzelcoaching über Gruppentraining bis zu Online-Zertifikatslehrgängen; Themenschwerpunkte: Selbstführung, Resilienz, Mindset und berufliche Neuorientierung. Die breite Angebotsvielfalt und hohe Kursanzahl bestätigen den strukturellen Wachstumsmarkt für Coaching-Inhalte – direktes Marktumfeld für Mind Rocket GmbH als Anbieter digitaler Persönlichkeitsentwicklungs-Programme.",
+        source: "kurs-finden.ch",
+        url: "https://www.kurs-finden.ch/wohlbefinden/personlichkeitsentwicklung/",
+        date: "2026-05",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-05-10",
+      },
       // Neu: 2026-05-08
       {
         summary: "coachingausbildungen.ch (März 2026): 'Coaching-Markt Schweiz 2025/2026 – Trends und Analyse' – Der Schweizer Coaching-Markt wächst weiter: Hybride Formate (Präsenz + Online), KI-gestütztes Coaching und spezialisierte Nischenangebote prägen die Branche; der globale Online-Coaching-Markt soll bis 2028 auf 4,5 Mrd. USD wachsen (CAGR 13%). Individuell zugeschnittene Programme und modulare Formate sind besonders gefragt – direktes Wachstumsumfeld für Mind Rocket GmbH als Anbieter digitaler Persönlichkeitsentwicklungs-Programme.",
