@@ -2477,6 +2477,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-10
       {
+        summary: "thestreet.com (2026-05-08): 'Stock Market Today (May 8, 2026): Nasdaq, S&P 500 jump as strong April jobs report overshadows fresh military exchange in Middle East' – S&P 500 crosst erstmals die 7'400-Marke; Nasdaq +4,5% und S&P 500 +2,3% mit 6 Gewinnerwochen in Folge (längste Siegesserie seit 2024). Nonfarm Payrolls April: +115'000 (erwartet: 55'000). Starkes makroökonomisches Marktumfeld mit neuem historischen Meilenstein – direktes Handelsumfeld für ES-Futures-Strategien bei Mind Rocket Trading.",
+        source: "thestreet.com",
+        url: "https://www.thestreet.com/latest-news/stock-market-today-may-8-2026-updates",
+        date: "2026-05-08",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-05-10",
+      },
+      {
+        summary: "cnbc.com (2026-05-08): 'How much further does this Teflon market have to go? Here's what traders say' – Nach dem Durchbruch des S&P 500 durch die 7'400er-Marke analysieren Trader und Strategen die Nachhaltigkeit der Rally: Resilienz gegenüber geopolitischen Risiken (Nahost), starke Earnings und fallende Ölpreise treiben den Markt. 6 Gewinnerwochen in Folge trotz Risiken – wichtige Marktanalyse zur Bewertung der ES-Futures-Trendstärke für algorithmische Strategien.",
+        source: "cnbc.com",
+        url: "https://www.cnbc.com/2026/05/08/how-much-further-can-this-teflon-market-go-heres-what-traders-say.html",
+        date: "2026-05-08",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-05-10",
+      },
+      {
         summary: "invezz.com (2026-05-07): 'Here's why the S&P 500 Index futures have surged to a record high' – ES Futures erreichten am 7. Mai 2026 ein All-Time-High von 7'390 (von YTD-Tief 6'352); Treiber: starke Earnings (+27% vs. 13%-Schätzung), US-Iran-Deal-Hoffnung und sinkende Ölpreise. ADP-Jobdaten: 109'000 neue private Stellen im April (stärkstes Wachstum seit Januar 2025). Starkes Marktumfeld mit Breakout-Extension-Session unterstützt algorithmische Long-Strategien auf ES Futures – direktes Handelsumfeld für Mind Rocket Trading.",
         source: "invezz.com",
         url: "https://invezz.com/news/2026/05/07/heres-why-the-sp-500-index-futures-have-surged-to-a-record-high/",
@@ -12769,6 +12785,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "learnfluencer": {
     news: [
       // Neu: 2026-05-10
+      {
+        summary: "educativa.com (2026): 'KI-Trends in der Bildung für 2026' – KI-gestützte Personalisierung ermöglicht adaptive Lernpfade in Echtzeit; intelligente Tutoren-Systeme begleiten Lernende proaktiv statt reaktiv; AR/VR für immersive Lernerfahrungen; prädiktive Analyse zur Früherkennung von Lernrückständen. Die Megatrends 2026 bestätigen KI-Lernkompetenz als zentrales Thema – direktes inhaltliches Fundament für learnfluencer.ch als Thought-Leadership-Plattform.",
+        source: "educativa.com",
+        url: "https://www.educativa.com/de/blog/ki-trends-in-der-bildung-fuer-2026/",
+        date: "2026",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-05-10",
+      },
       {
         summary: "wirtschaftskraft.de (Mai 2026): 'Digitale Bildung im Wandel: LEARNTEC 2026 setzt starke Impulse für Schulen und Unternehmen' – Die LEARNTEC 2026 in Karlsruhe verzeichnete über 11.000 Fachbesuchende aus 34 Ländern; KI als strategischer Treiber im Corporate Learning sowie Gamification und immersives Lernen dominierten die Messe. Schulbesucher rückläufig – Unternehmenslernen stabil trotz schwieriger Wirtschaftslage. Klares EdTech-Marktbild für learnfluencer.ch: KI als Lernpartner ist das dominierende Narrativ 2026.",
         source: "wirtschaftskraft.de",
