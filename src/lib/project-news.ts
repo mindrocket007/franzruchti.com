@@ -2485,6 +2485,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         addedAt: "2026-05-10",
       },
       {
+        summary: "cnbc.com (2026-05-06): 'S&P 500 pulls back from record as investors eye oil prices and Iran deal developments' – Einen Tag nach dem Allzeit-Hoch zog der S&P 500 um 0,38% auf 7'337 zurück; Öl erholte sich von Tagestiefs, US-Iran-Verhandlungen bremsten die Risikobereitschaft. Semiconductor-Werte (Broadcom, Micron) belasteten. Klassisches Post-ATH-Pullback-Szenario – wichtige Markt-Orientierung für kurzfristige ES-Futures-Positionierung im algorithmischen Handel.",
+        source: "cnbc.com",
+        url: "https://www.cnbc.com/2026/05/06/stock-market-today-live-updates.html",
+        date: "2026-05-06",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-05-10",
+      },
+      {
         summary: "cnbc.com (2026-05-05): 'Dow surges 600 points, S&P 500 posts first close above 7,300 as traders hope for Iran deal' – Dow Jones +600 Punkte, S&P 500 schloss erstmals über 7'300 (5. Mai 2026); Treiber: Hoffnung auf US-Iran-Friedensabkommen senkte Ölpreise und reduzierte Inflationsdruck. ES Futures profitierten von der risikofreudigen Marktstimmung. Geopolitische Entspannung als Marktimpuls – relevant für Positionierungsentscheidungen algorithmischer ES-Futures-Strategien auf Mind Rocket Trading.",
         source: "cnbc.com",
         url: "https://www.cnbc.com/2026/05/05/stock-market-today-live-updates.html",
@@ -6510,6 +6518,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 2026-05-10
+      {
+        summary: "sgb.ch (SGB – Schweizerischer Gewerkschaftsbund): 'Über die Hälfte der Schweizer Arbeitnehmenden sind berufsbedingten Gesundheitsrisiken und Stress ausgesetzt' – Über 50% der Schweizer Arbeitnehmenden leiden unter psychosozialen Risiken (Burnout-Gefahr), fast doppelt so viele wie vor 20 Jahren. 59% leiden oft/immer unter hohem Arbeitstempo, 52% unter Termindruck – weit über EU-Schnitt. SGB warnt vor einer 'Burnout-Epidemie' und fordert verstärkte Schutzmaßnahmen. Starkes Strukturargument für präventive BGM-Angebote wie hypnovital-Coaching und Audio-Programme.",
+        source: "sgb.ch",
+        url: "https://www.sgb.ch/themen/arbeit/detail/ueber-die-haelfte-der-schweizer-arbeitnehmenden-sind-berufsbedingten-gesundheitsrisiken-und-stress-ausgesetzt",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-10",
+      },
       // Neu: 2026-05-09
       {
         summary: "mind-steps.de (2026-05-07): 'Betriebliches Gesundheitsmanagement: Was Fehltage mit Führung zu tun haben' – Artikel von Constantin Sander zeigt, dass Direktkrankheitskosten in Deutschland von 337 Mrd. (2015) auf 491 Mrd. Euro (2023) gestiegen sind. Belegt den steigenden Handlungsdruck für BGM-Anbieter wie hypnovital.",
