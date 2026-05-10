@@ -2477,6 +2477,46 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-10
       {
+        summary: "cmegroup.com / tradingview.com (Mai 2026): 'ES Futures – 52-Wochen-Hoch bei 7'410.50' – ES Futures (E-mini S&P 500) erreichten im Globex-Handel ein frisches 52-Wochen-Hoch bei 7'410.50 Punkten, getrieben von positiven Jobless-Claims-Daten (200k Initial Jobless Claims, 8:30 ET). Der Wochenverlauf zeigte jedoch am Donnerstag einen Failed-Breakout-and-Reversal, der die multi-tägige Bull-Alignment gebrochen hat. Wichtige technische Benchmarks für algorithmische ES-Futures-Strategien – direktes Preis-Referenzumfeld für Mind Rocket Trading im Mai 2026.",
+        source: "cmegroup.com",
+        url: "https://www.cmegroup.com/markets/equities/sp/e-mini-sandp500.html",
+        date: "2026-05",
+        category: "Futures & Trading",
+        addedAt: "2026-05-10",
+      },
+      {
+        summary: "ninjatrader.com (März 2026): 'NinjaTrader Connect – Neue Brokerage-Infrastrukturplattform für Futures und Prediction Markets' – Am 3. März 2026 lancierte NinjaTrader Group 'NinjaTrader Connect': eine End-to-End-Infrastrukturplattform, die Fintechs, Brokerages und Trading-Plattformen über eine einzige API Zugang zu regulierten Futures und Prediction Markets ermöglicht, inkl. Onboarding, Funding, Risikokontrollen und Retail-Trading-Experience. NinjaTrader-Ökosystem wächst massiv als Brokerage-Infrastruktur – direkte Plattformstärkung für NinjaTrader-basierte Strategien auf mindrocket-trading.com.",
+        source: "ninjatrader.com",
+        url: "https://ninjatrader.com/news/ninjatrader-connect-transforming-brokerage-infrastructure/",
+        date: "2026-03",
+        category: "Trading-Technologie",
+        addedAt: "2026-05-10",
+      },
+      {
+        summary: "tradersmagazine.com (2026): 'Outlook 2026: Martin Franchi, NinjaTrader' – NinjaTrader-CEO Martin Franchi sieht 2026 als transformatives Jahr: neue kundenorientierte Produkte, exchange-listed tradierbare Instrumente und neue Distributionsmodelle; NinjaTrader 8.1.6 bringt Bug-Fixes und leistungsstarke neue Features für Charting, Order-Entry und professionelle Trading-Tools. Plattformkontinuität und strategisches Wachstum bestätigen NinjaTrader als führende Futures-Trading-Infrastruktur – Fundament für die Strategie-Inhalte auf mindrocket-trading.com.",
+        source: "tradersmagazine.com",
+        url: "https://www.tradersmagazine.com/news/outlook-2026-martin-franchi-ninjatrader/",
+        date: "2026-01",
+        category: "Trading-Technologie",
+        addedAt: "2026-05-10",
+      },
+      {
+        summary: "propfirmscan.com (Mai 2026): 'Best Prop Firms for European Traders 2026' – Übersichtsplattform für europäische Prop-Trader listet 2026 regulierte und nicht regulierte Prop-Firmen nach Transparenz und Auszahlungshistorie. ESMA beobachtet den Sektor zunehmend; Futures-basierte Prop-Firmen gelten als regulatorisch stabiler als CFD/Forex-Modelle. Zunehmende regulatorische Reife des europäischen Prop-Trading-Markts schafft Planungssicherheit – wichtiges Marktumfeld für algorithmische ES-Futures-Strategien auf mindrocket-trading.com.",
+        source: "propfirmscan.com",
+        url: "https://propfirmscan.com/prop-firms/europe",
+        date: "2026-05",
+        category: "Regulierung",
+        addedAt: "2026-05-10",
+      },
+      {
+        summary: "medium.com / nurp.com (2026): 'Why 2026 Will Be The Year Algorithmic Trading Goes Mainstream' – Der algorithmische Handelsmarkt wird 2026 auf 13–25 Mrd. USD geschätzt (je nach Studie), mit CAGR von 3,7–11,5% bis 2035. Machine-Learning-gesteuerte Modelle ersetzen regelbasierte Algorithmen; KI-Integration in Futures-Handel (historische Preisdaten, Makro-Indikatoren, Echtzeit-Mustererkennung) wird 2026 Mainstream. Algorithmischer Handel geht 2026 in den Mainstream über – direktes Wachstumsumfeld für NinjaTrader-basierte algorithmische ES-Futures-Strategien auf mindrocket-trading.com.",
+        source: "medium.com",
+        url: "https://medium.com/@algorithmictradingstrategies/why-2026-will-be-the-year-algorithmic-trading-goes-mainstream-and-why-you-should-start-now-6932055d2944",
+        date: "2026-05",
+        category: "Trading-Technologie",
+        addedAt: "2026-05-10",
+      },
+      {
         summary: "thestreet.com (2026-05-08): 'Stock Market Today (May 8, 2026): Nasdaq, S&P 500 jump as strong April jobs report overshadows fresh military exchange in Middle East' – S&P 500 crosst erstmals die 7'400-Marke; Nasdaq +4,5% und S&P 500 +2,3% mit 6 Gewinnerwochen in Folge (längste Siegesserie seit 2024). Nonfarm Payrolls April: +115'000 (erwartet: 55'000). Starkes makroökonomisches Marktumfeld mit neuem historischen Meilenstein – direktes Handelsumfeld für ES-Futures-Strategien bei Mind Rocket Trading.",
         source: "thestreet.com",
         url: "https://www.thestreet.com/latest-news/stock-market-today-may-8-2026-updates",
@@ -5336,6 +5376,39 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 2026-05-10
+      {
+        summary: "reichanlebensenergie.de (Mai 2026): '5 grosse Veränderungen und Trends 2026 im Bereich Persönlichkeits-Entwicklung und Energiearbeit' – Der Persönlichkeitsentwicklungsmarkt 2026 verschiebt sich: weg von schnellen Motivations-Pflastern, hin zu echter Transformation mit Sinn und Tiefe. Energiearbeit verbindet sich mit seelischer Gesundheit; der Markt professionalisiert sich; digitale Formate und Mikro-Coaching gewinnen an Bedeutung. Direkt relevant für mindtools.ch: Der Trend zu tiefgreifenden, strukturierten mentalen Werkzeugen statt oberflächlicher Selbsthilfe stärkt das Marktumfeld.",
+        source: "reichanlebensenergie.de",
+        url: "https://reichanlebensenergie.de/prognose-2026-persoenlichkeitsentwicklung/",
+        date: "2026-05",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-05-10",
+      },
+      {
+        summary: "springhealth.com (2026): '8 Mental Health Trends for 2026 – KI und digitale Selbsthilfe als neue Frontlinie' – 2026 nutzen 1 von 6 Erwachsenen KI-Tools wie ChatGPT als erste Anlaufstelle für mentale Gesundheitsberatung; Telehealth und digitale Psychiatrie sind als Standard etabliert; der Fokus verschiebt sich von Krisenintervention zu proaktiver Prävention. KI-gestützte Mental-Health-Werkzeuge sind 2026 Mainstream – Rückenwind für digitale Angebote wie mindtools.ch.",
+        source: "springhealth.com",
+        url: "https://www.springhealth.com/blog/2026-mental-health-trends-for-your-workplace",
+        date: "2026-05",
+        category: "Mental Health",
+        addedAt: "2026-05-10",
+      },
+      {
+        summary: "headletic.de (2026): 'Persönlichkeitsentwicklung Bücher – Die 10 besten für 2026' – Deutschsprachige Buchempfehlungsseite listet meistgesuchte Persönlichkeitsentwicklungs-Bücher für 2026; Mindset, Zielsetzung und Achtsamkeit dominieren die Nachfrage. Zeigt das hohe Suchvolumen im DACH-Raum nach strukturierten Persönlichkeitsentwicklungs-Inhalten – direktes Marktumfeld für mindtools.ch als PDF-Buchvertrieb.",
+        source: "headletic.de",
+        url: "https://headletic.de/persoenlichkeitsentwicklung-buchempfehlungen/",
+        date: "2026-05",
+        category: "Buchmarkt & Publishing",
+        addedAt: "2026-05-10",
+      },
+      {
+        summary: "apa.org (Januar 2026): 'AI, Neuroscience and Data Are Fueling Personalized Mental Health Care' – KI und Neurowissenschaft ermöglichen hochgradig personalisierte psychische Gesundheitsversorgung: Wearables, App-Daten und Hirnscans werden kombiniert, um beste Interventionen individuell zu bestimmen. Technologie validiert datengestützte mentale Werkzeuge – Markttrend, der das Angebot evidenzbasierter Tools auf mindtools.ch aufwertet.",
+        source: "apa.org",
+        url: "https://www.apa.org/monitor/2026/01-02/trends-personalized-mental-health-care",
+        date: "2026-01",
+        category: "Mental Health",
+        addedAt: "2026-05-10",
+      },
       // Neu: 2026-05-09
       {
         summary: "ad-hoc-news.de (2026-05): 'Buchmarkt reagiert 2026 mit Welle an Psychologie-Ratgebern' – Verlage setzen 2026 stark auf wissenschaftlich fundierte Ratgeber zu mentaler Gesundheit, weg von allgemeinen Lebenshilfen hin zu spezialisierten Titeln mit nachweisbarer Wirksamkeit. Relevant, da mindtools.ch im selben Segment (mentale Werkzeuge, Selbstentwicklung) positioniert ist und der Trend zu fundierten, spezifischen Angeboten das Kaufverhalten beeinflusst.",
@@ -6535,6 +6608,38 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "hypnovital": {
     news: [
       // Neu: 2026-05-10
+      {
+        summary: "gesundheitsfoerderung.ch (Mai 2026): 'Nationale BGM-Tagung 2026 – Gesunde Teamarbeit im Fokus' – Die Nationale BGM-Tagung 2026 findet am 15. September im Kursaal Bern statt und wird von Gesundheitsförderung Schweiz, Suva und SECO organisiert. Thema: gesundheitliche Herausforderungen moderner Teamarbeit mit strukturellen Lösungen für hybride und agile Teams. Das Event ist der wichtigste Schweizer BGM-Fachkongress und zeigt, dass BGM 2026 in Unternehmensführung und HR als Pflichtthema angekommen ist – direktes Marktumfeld für hypnovital® als skalierbare BGM-Audio-Lösung.",
+        source: "gesundheitsfoerderung.ch",
+        url: "https://gesundheitsfoerderung.ch/veranstaltungen/betriebliches-gesundheitsmanagement-bgm",
+        date: "2026-05",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-10",
+      },
+      {
+        summary: "handelsblatt.com (Mai 2026): 'Digitale Gesundheit 2026 – Das erwartet die Digital-Health-Branche' – Das Handelsblatt analysiert die wichtigsten Digital-Health-Trends für 2026: KI-gestützte Diagnostik, personalisierte Gesundheits-Apps und Audio-Coaching-Lösungen wachsen überdurchschnittlich; B2B-BGM-Integration digitaler Gesundheitsangebote wird zum wichtigsten Wachstumskanal; der Hypnose-App-Markt wird 2026 auf USD 1,2 Mrd. bewertet und soll bis 2033 auf USD 3,5 Mrd. wachsen (CAGR 12,5%). Strukturelles Marktwachstum für digitale Audio-Gesundheitsangebote – hypnovital® ist mit seinen Audio-Programmen optimal in diesem Wachstumsmarkt positioniert.",
+        source: "handelsblatt.com",
+        url: "https://www.handelsblatt.com/technik/medizin/digitale-gesundheit-das-erwartet-die-digital-health-branche-2026/100184788.html",
+        date: "2026-05",
+        category: "Digitale Gesundheit",
+        addedAt: "2026-05-10",
+      },
+      {
+        summary: "yellowshark.com (Mai 2026): 'Human Resources Trends Schweiz 2026 – Mentale Gesundheit als strategischer HR-Faktor' – HR-Trendreport für die Schweiz 2026: Mentale Gesundheit und Burnout-Prävention gehören zu den Top-5-Themen aller Schweizer HR-Verantwortlichen; Flexibilität, Sinnorientierung und psychisches Wohlbefinden werden als wirtschaftliche Faktoren, nicht als 'Soft Topics' verstanden; ROI von BGM-Investitionen: 3–5 CHF pro eingesetztem Franken. HR-Trend bestätigt: Schweizer Unternehmen suchen 2026 aktiv nach skalierbaren BGM-Lösungen – direktes Verkaufsargument für hypnovital® Firmenangebote.",
+        source: "yellowshark.com",
+        url: "https://yellowshark.com/human-resources-trends-fuer-die-schweiz-2026/",
+        date: "2026-05",
+        category: "Arbeitsmarkt & Wellness",
+        addedAt: "2026-05-10",
+      },
+      {
+        summary: "hypnosekongress.net / smsh.ch (Mai 2026): 'HypnoseKongress 2026 – Online-Anmeldung ab 30. April offen' – Der HypnoseKongress 2026 öffnet ab 30. April 2026 die Online-Anmeldung; das Schweizer Institut für Medizinische Hypnose (SIMH) vermeldet über 800 Absolventen in mehr als 50 Grundkursen; Angebote von OMNI Hypnoseausbildung in Zürich, Winterthur, Bern, St. Gallen und Zug unterstreichen die wachsende Nachfrage nach professioneller Hypnoseausbildung in der Schweiz. Die boomende Schweizer Hypnose-Community und der HypnoseKongress 2026 schaffen ideales Netzwerk- und Sichtbarkeitsumfeld für hypnovital® als etablierte Marke im Hypnose-Coaching.",
+        source: "smsh.ch",
+        url: "https://smsh.ch/",
+        date: "2026-05",
+        category: "Hypnose & Coaching",
+        addedAt: "2026-05-10",
+      },
       {
         summary: "sgb.ch (SGB – Schweizerischer Gewerkschaftsbund): 'Über die Hälfte der Schweizer Arbeitnehmenden sind berufsbedingten Gesundheitsrisiken und Stress ausgesetzt' – Über 50% der Schweizer Arbeitnehmenden leiden unter psychosozialen Risiken (Burnout-Gefahr), fast doppelt so viele wie vor 20 Jahren. 59% leiden oft/immer unter hohem Arbeitstempo, 52% unter Termindruck – weit über EU-Schnitt. SGB warnt vor einer 'Burnout-Epidemie' und fordert verstärkte Schutzmaßnahmen. Starkes Strukturargument für präventive BGM-Angebote wie hypnovital-Coaching und Audio-Programme.",
         source: "sgb.ch",
@@ -8847,6 +8952,39 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 2026-05-10
+      {
+        summary: "12week-breakthrough.com (2026): '12-Week Year Templates: The Ultimate 2026 Guide' – Umfassender Praxisleitfaden mit Vorlagen für die 12-Wochen-Methode 2026, inklusive KI-gestütztem Tracking und Wochenplänen. Wachsendes Ökosystem an Templates und Guides rund um die 12WY-Methode treibt organische Nachfrage für dedizierte SaaS-Tools wie den 12wy-planner.",
+        source: "12week-breakthrough.com",
+        url: "https://12week-breakthrough.com/12-week-year-templates/",
+        date: "2026-05",
+        category: "12 Week Year Methode",
+        addedAt: "2026-05-10",
+      },
+      {
+        summary: "fortunebusinessinsights.com (2026): 'Productivity Apps Market Size – USD 14.46 Mrd. 2026, Wachstum zu USD 30.85 Mrd. bis 2034' – Der globale Markt für Produktivitäts-Apps wird 2026 auf 14,46 Milliarden USD geschätzt und soll bis 2034 mit einer CAGR von 9,94% auf 30,85 Mrd. USD wachsen. Starkes Marktmomentum für Zielplanungs-SaaS bestätigt das Wachstumspotenzial des 12wy-planners.",
+        source: "fortunebusinessinsights.com",
+        url: "https://www.fortunebusinessinsights.com/productivity-apps-market-110254",
+        date: "2026-05",
+        category: "SaaS & Tools",
+        addedAt: "2026-05-10",
+      },
+      {
+        summary: "peoplemanagingpeople.com (2026): 'Best Goal-Setting Software 2026 – OKR-Markt boomt' – OKR-Rahmen und Zielplanungs-Software sind 2026 Standardtools in Unternehmen; spezialisierte Plattformen integrieren zunehmend KI-gestützte Fortschrittsverfolgung und automatische Wochenberichte. Marktvalidierung für strukturierte Zielplanungs-Tools – direktes Wettbewerbs- und Wachstumsumfeld für den 12wy-planner.",
+        source: "peoplemanagingpeople.com",
+        url: "https://peoplemanagingpeople.com/tools/okr-software/",
+        date: "2026-05",
+        category: "Zielsetzung & OKR",
+        addedAt: "2026-05-10",
+      },
+      {
+        summary: "ad-hoc-news.de (Mai 2026): '2026: Das Jahr der Gesunden Produktivität' – Gesunde Produktivität und nachhaltiges Zeitmanagement werden 2026 als Gegentrend zu Burnout und Überlastung zum Megatrend. Strukturierte Methoden wie die 12-Wochen-Planung passen perfekt in dieses Narrativ – Rückenwind für den 12wy-planner als Tool für nachhaltige Zielerreichung.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/2026-das-jahr-der-gesunden-produktivitaet/68446767",
+        date: "2026-05",
+        category: "Produktivität & Planung",
+        addedAt: "2026-05-10",
+      },
       // Neu: 2026-05-09
       {
         summary: "12weekyear.com (2026-05): 'The Achieve App – Official 12 Week Year App' – Die offizielle 12 Week Year App von Brian Moran heisst 'Achieve' (new.achieve.12weekyear.com) und bietet das vollständige Execution-System als SaaS. Direkter Wettbewerber zum 12wy-planner; zeigt dass der Methoden-Erfinder selbst in den App-Markt eingestiegen ist.",
@@ -10282,6 +10420,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 2026-05-10
+      {
+        summary: "heute.at (2026): 'Peinliches Problem vieler Männer – neue App soll helfen' – Eine Studie vom EAU26-Kongress (Europäische Gesellschaft für Urologie) in London testete 80 Männer mit vorzeitigem Samenerguss in einem 12-wöchigen Programm aus Achtsamkeit und Verhaltenstherapie: Die durchschnittliche Zeit bis zur Ejakulation verdoppelte sich von 61 auf 125 Sekunden; 22 % der Teilnehmer berichteten danach keinerlei Probleme mehr. Solche wissenschaftlichen Ergebnisse stärken das Vertrauen in psychologisch-basierte Selbsthilfeansätze wie das Hypnose-Audio von orgasmus-hinauszoegern.de.",
+        source: "heute.at",
+        url: "https://www.heute.at/s/neue-app-hilft-maennern-bei-vorzeitigem-samenerguss-120170355",
+        date: "2026-05",
+        category: "Digital Health",
+        addedAt: "2026-05-10",
+      },
+      {
+        summary: "fitbook.de (2026): 'Vorzeitiger Samenerguss lässt sich laut Studie mit Yoga verhindern' – Eine Studie zeigte, dass Männer, die regelmässig Yoga praktizierten, die Zeit bis zum Samenerguss von 26 Sekunden auf ca. 90 Sekunden (Verdreifachung) verlängern konnten. Ergänzend verbesserte moderates Laufen (30 Min./Tag, 5x/Woche) die Symptomatik signifikant. Körperlich-mentale Methoden gewinnen als Erstbehandlung an wissenschaftlicher Anerkennung – starkes Argument für niedrigschwellige Mind-Body-Ansätze wie das Hypnose-Audio von orgasmus-hinauszoegern.de.",
+        source: "fitbook.de",
+        url: "https://www.fitbook.de/mind-body/vorzeitigen-samenerguss-verhindern-training-forschung",
+        date: "2026-05",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-05-10",
+      },
+      {
+        summary: "aerzteblatt.de (2026): 'Wenig Sport und sozialer Druck können vorzeitigen Samenerguss fördern' – Das Deutsche Ärzteblatt berichtet über internationale Forschung: Bewegungsmangel und psychosozialer Stress erhöhen das Risiko für vorzeitigen Samenerguss; körperliche Aktivität und Stressreduktion als erste Behandlungslinie empfohlen. Klare medizinische Anerkennung psycho-physischer Einflussfaktoren stärkt die Legitimität von Selbsthilfe-Programmen wie dem Hypnose-Audio auf orgasmus-hinauszoegern.de.",
+        source: "aerzteblatt.de",
+        url: "https://www.aerzteblatt.de/news/sexualstoerung-wenig-sport-und-sozialer-druck-koennen-vorzeitigen-samenerguss-foerdern-a891eb05-0c55-4723-8aeb-f581e80658de",
+        date: "2026-05",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-05-10",
+      },
       // Neu: 2026-05-09
       {
         summary: "hims.com (2026-05): 'Premature Ejaculation Hypnosis: Does it Work?' – Englischsprachiges Gesundheitsportal diskutiert Hypnose als Behandlungsansatz: Ein Hypnotherapeut berichtet von 95 % Erfolgsrate bei 147 behandelten Männern (März 2025–März 2026). Stützt die Produktversprechen von orgasmus-hinauszoegern.de mit aktuellen Praxisdaten.",
@@ -11473,6 +11636,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 2026-05-10
+      {
+        summary: "rampenpfau.de (2026-01-09): 'In drei Schritten weg vom Lampenfieber' – Dr. Thomas A. Coucoulis, Auftrittscoach und Psychotherapeut, beschreibt einen 3-Schritte-Plan: (1) Lampenfieber als normale Körperreaktion verstehen und akzeptieren, (2) mentale Umrahmung von Angst in Aufregung, (3) konkrete Exposition und Übung. Praxisnaher Beitrag eines Fachexperten bestätigt, dass Selbsthilfemethoden bei Lampenfieber wirksam sind – direktes Argument für das Audio-Hypnose-Angebot auf lampenfieber-besiegen.de.",
+        source: "rampenpfau.de",
+        url: "https://rampenpfau.de/2026/01/09/in-drei-schritten-weg-vom-lampenfieber/",
+        date: "2026-01",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-05-10",
+      },
+      {
+        summary: "uni-luebeck.de (2026-02): 'Musikerinnen und Musiker mit Auftrittsangst leiden häufiger unter Depressionen' – Forschende der Universität Lübeck untersuchten den Zusammenhang zwischen Selbstwertgefühl, Auftrittsangst und Depression bei Berufsmusikern. Ergebnis: Wenn geringes Selbstwertgefühl und Auftrittsangst zusammenfallen, steigt die Wahrscheinlichkeit für Depressionen signifikant. Ergänzend entwickeln MHL und Uni Lübeck den LIMIT-Fragebogen zur Früherkennung psychischer Belastungen. Wissenschaftliche Bestätigung der gesundheitlichen Schwere von Auftrittsangst untermauert die Dringlichkeit wirksamer Selbsthilfe-Angebote wie lampenfieber-besiegen.de.",
+        source: "uni-luebeck.de",
+        url: "https://www.uni-luebeck.de/forschung/aktuelles-zur-forschung/aktuelles-zur-forschung/artikel/musikerinnen-und-musiker-mit-auftrittsangst-leiden-haeufiger-unter-depressionen.html",
+        date: "2026-02",
+        category: "Psychologie & Forschung",
+        addedAt: "2026-05-10",
+      },
+      {
+        summary: "ottonova.de (2026): 'Lampenfieber: Was du gegen Redeangst tun kannst' – Digitale Krankenkasse ottonova informiert über Lampenfieber und Redeangst: 80 % aller Menschen kennen Lampenfieber; Unterschied zwischen nützlicher Aktivierung und belastender Angst; konkrete Methoden wie Atemübungen, Visualisierung und professionelle Unterstützung inklusive Hypnose. Institutionelle Gesundheitsaufklärung eines Krankenversicherers stärkt gesellschaftliche Akzeptanz von Selbsthilfemethoden – direktes Marktumfeld für lampenfieber-besiegen.de.",
+        source: "ottonova.de",
+        url: "https://www.ottonova.de/gesund-leben/mentales-training/lampenfieber-behandeln",
+        date: "2026-05",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-05-10",
+      },
       // Neu: 2026-05-08
       {
         summary: "gedankenportal.de (2026): 'Hypnose gegen Ängste – Aktueller Forschungsstand 2026' – Zusammenfassung des aktuellen Forschungsstands: Neue Studien belegen die langfristige Stabilität von Hypnose-Ergebnissen bei Ängsten; Hypnose gegen Auftritts- und Prüfungsangst erzielt schnelle Resultate (oft 3-4 Sitzungen). Wirksamkeit auch durch eine Studie der Universität Tübingen gestützt – starke wissenschaftliche Vertrauensbasis für ein Hypnose-Audio-Produkt wie lampenfieber-besiegen.de.",
@@ -12815,6 +13003,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
         url: "https://checkpoint-elearning.de/node/28208",
         date: "2026-05",
         category: "E-Learning & EdTech",
+        addedAt: "2026-05-10",
+      },
+      {
+        summary: "caaie.ch (2026): 'CAAIE – KI Weiterbildung für Berufstätige Zürich 2026' – Das Center for Applied AI in Education bietet in Zürich praxisorientierte KI-Weiterbildungen für Berufstätige an; Kursstarts im Sommer/Herbst 2026; Fokus auf direkte Anwendbarkeit von KI im Berufsalltag. Schweizer KI-Weiterbildungsangebote boomen – direkt relevantes Themenfeld für learnfluencer.ch als Thought-Leadership-Plattform zu KI-Kompetenz.",
+        source: "caaie.ch",
+        url: "https://www.caaie.ch/",
+        date: "2026-05",
+        category: "Weiterbildung Schweiz",
+        addedAt: "2026-05-10",
+      },
+      {
+        summary: "ict-berufsbildung.ch (2026): 'Neuer KI-Abschluss – Eidgenössischer Fachausweis AI Business Specialist' – ICT-Berufsbildung Schweiz entwickelt einen neuen eidgenössischen Fachausweis für KI-Fachleute; erste Prüfungen ab Herbst 2026 geplant; hohe Nachfrage und Dringlichkeit im Arbeitsmarkt als Haupttreiber. Formalisierung von KI-Kompetenz als Berufsqualifikation ist das zentrale Signal für learnfluencer.ch als Plattform für Lernkompetenz und KI-Weiterbildung.",
+        source: "ict-berufsbildung.ch",
+        url: "https://www.ict-berufsbildung.ch/projekte/weiterbildung/neuer-ki-abschluss",
+        date: "2026-05",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-05-10",
+      },
+      {
+        summary: "phzh.ch (2026): 'SGAB-Tagung 2026: Digitale Transformation konkret – Lerntechnologien in Berufs- und Erwachsenenbildung' – Die Pädagogische Hochschule Zürich veranstaltet gemeinsam mit der SGAB am 12. März 2026 eine Fachtagung zu Lerntechnologien und digitaler Transformation in der Erwachsenenbildung. Schweizer Institutionen setzen 2026 aktiv Akzente im digitalen Lernen – direktes Thought-Leadership-Umfeld für learnfluencer.ch.",
+        source: "phzh.ch",
+        url: "https://phzh.ch/weiterbildung/alle-weiterbildungen/weiterbildungsanlass/?anlassId=144647234",
+        date: "2026-03",
+        category: "Weiterbildung Schweiz",
         addedAt: "2026-05-10",
       },
       // Neu: 2026-05-08
@@ -14786,6 +14998,55 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 2026-05-10
+      {
+        summary: "chiefmartec.com (Mai 2026): '2026 Marketing Technology Landscape – Peak Martech?' – Der MarTech-Markt hat laut chiefmartec.com 15'500+ Produkte erreicht und zeigt erste Plateauzeichen; KI verändert die Grundstruktur, während generische Lösungen konsolidieren. Ein fokussiertes, strukturiertes Marketingkonzept-Tool wie learnfluencer.ch/tools/marketingkonzept differenziert sich klar im übersättigten MarTech-Markt durch strategische Tiefe statt Feature-Breite.",
+        source: "chiefmartec.com",
+        url: "https://chiefmartec.com/2026/05/2026-marketing-technology-landscape-supergraphic-peak-martech-achieved-maybe/",
+        date: "2026-05",
+        category: "MarTech & Trends",
+        addedAt: "2026-05-10",
+      },
+      {
+        summary: "capterra.com.de (2026): 'Marketing Planning Software – Verzeichnis 2026' – Capterra führt Marketing-Planungssoftware als eigene wachsende Kategorie: viele Anbieter, aber die meisten zu komplex oder zu teuer für KMU. Ein schlankes, strukturiertes Schweizer Tool mit PESTEL, SWOT und 7P-Framework füllt diese Marktlücke direkt.",
+        source: "capterra.com.de",
+        url: "https://www.capterra.com.de/directory/30964/marketing-planning/software",
+        date: "2026-05",
+        category: "Marketing-Tools & Software",
+        addedAt: "2026-05-10",
+      },
+      {
+        summary: "jimdo.com (2026): '10 beste Marketing-Tools für kleine Unternehmen 2026' – Jimdo identifiziert die Top-Marketing-Tools für KMU: Einfachheit, Integration und Erschwinlichkeit stehen im Vordergrund. Spezialisierte Strategie-Tools (PESTEL, SWOT, BCG) heben sich klar von generischen Kommunikationstools ab – direktes Positionierungsargument für learnfluencer.ch/tools/marketingkonzept.",
+        source: "jimdo.com",
+        url: "https://www.jimdo.com/de/magazin/die-10-besten-marketing-tools-fuer-kleine-unternehmen-im-jahr-2026/",
+        date: "2026-05",
+        category: "Marketing-Tools & Software",
+        addedAt: "2026-05-10",
+      },
+      {
+        summary: "dinmo.com (2026): 'PESTEL Analysis 2026 – Strategic Framework Guide' – PESTEL bleibt 2026 zentrales Strategie-Framework, wobei KI-Einflüsse (T) und neue Regularien wie die EU-KI-Verordnung (L) besonders kritisch sind. Ein interaktives Tool, das PESTEL strukturiert abbildet, bedient die anhaltend hohe Nachfrage nach praxisorientierter Strategieplanung.",
+        source: "dinmo.com",
+        url: "https://www.dinmo.com/marketing-strategy/pestel-analysis/",
+        date: "2026-05",
+        category: "Strategie & Analyse",
+        addedAt: "2026-05-10",
+      },
+      {
+        summary: "lorien.group (2026): 'Online-Marketing-Strategie für KMU 2026 – Leitfaden' – Strategische Planung mit klarem Kanal- und Budget-Fokus ist für Schweizer KMU 2026 unverzichtbar. Der Leitfaden betont strukturierte Frameworks als Grundlage jeder erfolgreichen Marketingstrategie – direkte Relevanz für ein Tool, das 7P, Budget und KPI-Planung integriert.",
+        source: "lorien.group",
+        url: "https://www.lorien.group/blog/online-marketing-strategie-kmu",
+        date: "2026-05",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-05-10",
+      },
+      {
+        summary: "kimarketing.ch (2026): 'Beste KI-Marketing-Tools 2026 für KMU' – Der ideale KMU-Marketing-Stack 2026 braucht selten mehr als fünf Kernwerkzeuge. Ein integriertes Marketingkonzept-Tool wie learnfluencer.ch/tools/marketingkonzept entspricht dem Bedürfnis nach fokussierter Planung statt Tool-Wildwuchs.",
+        source: "kimarketing.ch",
+        url: "https://www.kimarketing.ch/beste-ki-marketing-tools-2026-kmu/",
+        date: "2026-05",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-05-10",
+      },
       // Neu: 2026-05-09
       {
         summary: "martech.org (2026-05): 'Martech 2026: AI drives a major industry reset' – Die MarTech-Landschaft wuchs 2026 nur um 0,7% (15'505 Tools), aber KI verändert die Grundstruktur: 90% der Marketingorganisationen nutzen KI-Agenten, erst 23% in Vollproduktion. KI verschiebt den Wert von Features zu Outcomes. Direkt relevant für die Positionierung des Marketingplan-Tools als strukturiertes KMU-Planungswerkzeug.",
@@ -16178,6 +16439,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 2026-05-10
+      {
+        summary: "widevoices.com (2026): 'Feuerbestattung in der Schweiz – Preise und wichtige Informationen für 2026' – Über 90 % aller Bestattungen in der Schweiz sind heute Kremationen; Kosten variieren je nach Kanton stark zwischen CHF 3'500 und CHF 9'500; Liberalisierung hat breite Angebotsvielfalt geschaffen. Die wachsende Kostenunsicherheit und regionale Preisunterschiede untermauern den Bedarf an transparenten Vergleichsportalen wie bestattungsplaner.ch.",
+        source: "widevoices.com",
+        url: "https://widevoices.com/de/articles/feuerbestattung-in-der-schweiz-preise-und-wichtige-informationen-fur-2026",
+        date: "2026-05",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-05-10",
+      },
+      {
+        summary: "age-stiftung.ch (2026): 'Letzte Reise – Interaktiver Bestattungsplaner für Gemeinden' – Die Age-Stiftung fördert einen interaktiven Online-Bestattungsplaner, der in Gemeinde-Websites integriert werden kann und Angehörigen praktische Hilfe bei der Planung ohne Bestattungsinstitut bietet. Das Förderprojekt zeigt den wachsenden gesellschaftlichen Bedarf nach digitalen Planungshilfen rund um den Todesfall.",
+        source: "age-stiftung.ch",
+        url: "https://www.age-stiftung.ch/foerderung/letzte-reise-interaktiver-bestattungsplaner-fuer-gemeinden",
+        date: "2026-05",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-05-10",
+      },
+      {
+        summary: "pacemo.de (2026): 'Digitalisierung der Bestattungsbranche – KI und Online-Plattformen als Wendepunkt' – Digitale Plattformen und KI-gestützte Prozessautomatisierung verändern die Bestattungsbranche fundamental. Experten erwarten, dass erste Kontakte künftig fast ausschliesslich digital stattfinden, während der persönliche Abschluss erhalten bleibt – ein Modell, das bestattungsplaner.ch bereits lebt.",
+        source: "pacemo.de",
+        url: "https://www.pacemo.de/digitalisierung-der-bestattungsbranche-teil-7/",
+        date: "2026-05",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-05-10",
+      },
       // Neu: 2026-05-09
       {
         summary: "ekz-crosstour.ch (2026-05-04): 'Die Branche für Bestattungsvorsorge boomt und verzeichnet ein enormes Wachstum' – Global Market Vision veröffentlichte eine Studie zum globalen Bestattungsvorsorge-Markt (2026–2033) mit starken Wachstumsprognosen. Relevante Marktsignale für bestattungsplaner.ch als digitale Lead-Plattform in diesem wachsenden Segment.",
