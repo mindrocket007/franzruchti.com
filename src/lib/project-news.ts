@@ -2475,6 +2475,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 2026-05-10
+      {
+        summary: "invezz.com (2026-05-07): 'Here's why the S&P 500 Index futures have surged to a record high' – ES Futures erreichten am 7. Mai 2026 ein All-Time-High von 7'390 (von YTD-Tief 6'352); Treiber: starke Earnings (+27% vs. 13%-Schätzung), US-Iran-Deal-Hoffnung und sinkende Ölpreise. ADP-Jobdaten: 109'000 neue private Stellen im April (stärkstes Wachstum seit Januar 2025). Starkes Marktumfeld mit Breakout-Extension-Session unterstützt algorithmische Long-Strategien auf ES Futures – direktes Handelsumfeld für Mind Rocket Trading.",
+        source: "invezz.com",
+        url: "https://invezz.com/news/2026/05/07/heres-why-the-sp-500-index-futures-have-surged-to-a-record-high/",
+        date: "2026-05-07",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-05-10",
+      },
+      {
+        summary: "cnbc.com (2026-05-05): 'Dow surges 600 points, S&P 500 posts first close above 7,300 as traders hope for Iran deal' – Dow Jones +600 Punkte, S&P 500 schloss erstmals über 7'300 (5. Mai 2026); Treiber: Hoffnung auf US-Iran-Friedensabkommen senkte Ölpreise und reduzierte Inflationsdruck. ES Futures profitierten von der risikofreudigen Marktstimmung. Geopolitische Entspannung als Marktimpuls – relevant für Positionierungsentscheidungen algorithmischer ES-Futures-Strategien auf Mind Rocket Trading.",
+        source: "cnbc.com",
+        url: "https://www.cnbc.com/2026/05/05/stock-market-today-live-updates.html",
+        date: "2026-05-05",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-05-10",
+      },
       // Neu: 2026-05-09
       {
         summary: "fxleaders.com (2026-04-21): 'FINRA Scraps $25,000 Pattern Day Trader Rule – New Intraday Margin Standards Launch June 2026' – Die SEC genehmigte am 14. April 2026 FINRAs Vorschlag, die $25.000-Mindestkapitalpflicht für Pattern Day Trader ab 4. Juni 2026 abzuschaffen. Stattdessen gilt ein echtzeitbasiertes Intraday-Margin-System. Massive Deregulierung senkt die Einstiegshürde für US-Day-Trader – die Zielgruppe von Mind Rocket Trading wächst damit deutlich.",
@@ -12734,6 +12751,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 2026-05-10
+      {
+        summary: "wirtschaftskraft.de (Mai 2026): 'Digitale Bildung im Wandel: LEARNTEC 2026 setzt starke Impulse für Schulen und Unternehmen' – Die LEARNTEC 2026 in Karlsruhe verzeichnete über 11.000 Fachbesuchende aus 34 Ländern; KI als strategischer Treiber im Corporate Learning sowie Gamification und immersives Lernen dominierten die Messe. Schulbesucher rückläufig – Unternehmenslernen stabil trotz schwieriger Wirtschaftslage. Klares EdTech-Marktbild für learnfluencer.ch: KI als Lernpartner ist das dominierende Narrativ 2026.",
+        source: "wirtschaftskraft.de",
+        url: "https://wirtschaftskraft.de/artikel/digitale-bildung-im-wandel-learntec-2026-setzt-starke-impulse-fuer-schulen-und-unternehmen",
+        date: "2026-05",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-05-10",
+      },
+      {
+        summary: "checkpoint-elearning.de (Mai 2026): 'LEARNTEC 2026: Impulse für die Bildungswelt von morgen' – LEARNTEC 2026 (5.–7. Mai, Karlsruhe): 11.000+ Besucher, Kongress mit +25% Teilnehmerwachstum, KI als Lernpartner im Zentrum. Erstmals wurde digitale Souveränität und Datenschutz explizit thematisiert. Aussteller aus 20 Ländern; ab 2027 kehrt LEARNTEC in den Februar zurück. Strategische Marktinformation für learnfluencer.ch als Thought-Leadership-Plattform im KI-Lernbereich.",
+        source: "checkpoint-elearning.de",
+        url: "https://checkpoint-elearning.de/node/28456",
+        date: "2026-05",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-05-10",
+      },
+      {
+        summary: "checkpoint-elearning.de (Mai 2026): 'Digitale Bildung im Fokus – der LEARNTEC-Kongress 2026' – Der LEARNTEC-Kongress 2026 verzeichnete 25% mehr Teilnehmende als das Vorjahr; Schwerpunkte: KI-Kompetenzentwicklung, digitale Souveränität und immersives Lernen in Schule und Unternehmen. Starkes Kongresswachstum belegt das steigende institutionelle Interesse an digitalen Lernlösungen – direkt relevantes Marktumfeld für learnfluencer.ch.",
+        source: "checkpoint-elearning.de",
+        url: "https://checkpoint-elearning.de/node/28208",
+        date: "2026-05",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-05-10",
+      },
       // Neu: 2026-05-08
       {
         summary: "SwissNova (2026): 'Weiterbildung für Unternehmen Schweiz – 10 Trends für 2026' – KI-personalisiertes Lernen, Soft Skills, hybride Formate und kompetenzbasierte Ansätze stehen im Vordergrund; Unternehmensweiterbildung wird zur strategischen Investition. Direkter Relevanznachweis für Thought-Leadership-Inhalte auf learnfluencer.ch zu Lernkompetenz und digitaler Transformation.",
