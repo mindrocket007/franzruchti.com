@@ -2475,6 +2475,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 2026-05-09
+      {
+        summary: "fxleaders.com (2026-04-21): 'FINRA Scraps $25,000 Pattern Day Trader Rule – New Intraday Margin Standards Launch June 2026' – Die SEC genehmigte am 14. April 2026 FINRAs Vorschlag, die $25.000-Mindestkapitalpflicht für Pattern Day Trader ab 4. Juni 2026 abzuschaffen. Stattdessen gilt ein echtzeitbasiertes Intraday-Margin-System. Massive Deregulierung senkt die Einstiegshürde für US-Day-Trader – die Zielgruppe von Mind Rocket Trading wächst damit deutlich.",
+        source: "fxleaders.com",
+        url: "https://www.fxleaders.com/news/2026/04/21/finra-scraps-25000-pattern-day-trader-rule-new-intraday-margin-standards-launch-june-2026-big-win-for-active-traders/",
+        date: "2026-04",
+        category: "Regulierung",
+        addedAt: "2026-05-09",
+      },
+      {
+        summary: "apextraderfunding.com (2026-05): 'How Do Prop Firm Payouts Work in 2026?' – Apex Trader Funding hat seine Preisstruktur 2026 komplett überarbeitet: Einmalige Evaluierungsgebühr statt monatlicher Abo-Kosten. Auszahlungen über $660 Mio. seit 2022, Trustpilot-Bewertung 4,4/5. Trader behalten 100% der ersten $25k pro Account, danach 90%.",
+        source: "apextraderfunding.com",
+        url: "https://apextraderfunding.com/resources/prop-trading/how-do-prop-firm-payouts-work/",
+        date: "2026-05",
+        category: "Futures & Trading",
+        addedAt: "2026-05-09",
+      },
       // Neu: 2026-05-08
       {
         summary: "ninjatrader.com (März 2026): 'NinjaTrader Connect – Transforming Brokerage Infrastructure for Futures and Prediction Markets' – NinjaTrader Group lancierte am 3. März 2026 'NinjaTrader Connect', eine End-to-End-Infrastrukturplattform, die Fintechs und Brokerages über eine einzelne API den Zugang zu regulierten Futures und Prediction Markets ermöglicht. Der B2B-Pivot der primären Trading-Plattform stärkt Stabilität und Ökosystem für Mind Rocket Trading-Strategien auf NinjaTrader-Basis.",
@@ -6476,6 +6493,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 2026-05-09
+      {
+        summary: "mind-steps.de (2026-05-07): 'Betriebliches Gesundheitsmanagement: Was Fehltage mit Führung zu tun haben' – Artikel von Constantin Sander zeigt, dass Direktkrankheitskosten in Deutschland von 337 Mrd. (2015) auf 491 Mrd. Euro (2023) gestiegen sind. Belegt den steigenden Handlungsdruck für BGM-Anbieter wie hypnovital.",
+        source: "mind-steps.de",
+        url: "https://www.mind-steps.de/2026/05/07/betriebliches-gesundheitsmanagement/",
+        date: "2026-05",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-09",
+      },
       // Neu: 2026-05-08
       {
         summary: "ad-hoc-news.de (April 2026): 'BGM-Tagung 2026 – Gesunde Teams: Wie Zusammenarbeit gelingt' – Die Nationale BGM-Tagung 2026 findet am 15. September im Kursaal Bern statt und widmet sich Lösungen für hybride und agile Teams sowie dem Einsatz von KI für gesündere Zusammenarbeit. Organisiert von Gesundheitsförderung Schweiz, Suva und SECO, werden rund 1.000 Fachleute aus HR und BGM erwartet – ein direkter Berührungspunkt für hypnovital-Angebote im Bereich BGM und Burnout-Prävention.",
@@ -8771,6 +8797,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 2026-05-09
+      {
+        summary: "12weekyear.com (2026-05): 'The Achieve App – Official 12 Week Year App' – Die offizielle 12 Week Year App von Brian Moran heisst 'Achieve' (new.achieve.12weekyear.com) und bietet das vollständige Execution-System als SaaS. Direkter Wettbewerber zum 12wy-planner; zeigt dass der Methoden-Erfinder selbst in den App-Markt eingestiegen ist.",
+        source: "12weekyear.com",
+        url: "https://new.achieve.12weekyear.com/",
+        date: "2026-05",
+        category: "12 Week Year Methode",
+        addedAt: "2026-05-09",
+      },
+      {
+        summary: "medium.com (2026-01): 'The 12-Week Year: The Ultimate Guide. What It Is & How to Use It' – Detaillierter Praxisartikel auf Medium beschreibt die 12WY-Methode mit 2026-spezifischen Implementierungstipps inkl. KI-Tools zum automatischen Tracking. Wachsendes Content-Ökosystem rund um die Methode treibt organische Nachfrage für SaaS-Tools wie den 12wy-planner.",
+        source: "medium.com",
+        url: "https://medium.com/@dan.mintz/the-12-week-year-the-ultimate-guide-what-it-is-how-to-use-it-3807142a8cbb",
+        date: "2026-01",
+        category: "12 Week Year Methode",
+        addedAt: "2026-05-09",
+      },
       // Neu: 2026-05-08
       {
         summary: "12week-breakthrough.com (Januar 2026): 'Implementation Guide 2026 – 12 Week Year mit KI-Integration' – Detaillierter Praxisleitfaden zur 12-Week-Year-Methode: KI-Tools automatisieren Leading-Indicator-Tracking, generieren wöchentliche Fortschrittsberichte und erkennen Abweichungen frühzeitig. Häufige Fehler bei der Umsetzung (zu viele Ziele, unklare Metriken) werden erläutert. Direktes Wachstumsumfeld für den 12wy-planner als dediziertes SaaS-Tool für die 12-Wochen-Methode.",
@@ -10189,6 +10232,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 2026-05-09
+      {
+        summary: "hims.com (2026-05): 'Premature Ejaculation Hypnosis: Does it Work?' – Englischsprachiges Gesundheitsportal diskutiert Hypnose als Behandlungsansatz: Ein Hypnotherapeut berichtet von 95 % Erfolgsrate bei 147 behandelten Männern (März 2025–März 2026). Stützt die Produktversprechen von orgasmus-hinauszoegern.de mit aktuellen Praxisdaten.",
+        source: "hims.com",
+        url: "https://www.hims.com/blog/premature-ejaculation-hypnosis",
+        date: "2026-05",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-05-09",
+      },
       // Neu: 2026-05-08
       {
         summary: "seelenpraxis-marx.de (2026): 'Hypnose gegen vorzeitigen Samenerguss – Düsseldorfer Praxis erklärt den Ansatz' – Hypnosetherapie wird als wirksame Methode gegen vorzeitigen Samenerguss beschrieben: Negative Glaubenssätze werden aufgelöst, Selbstvertrauen aufgebaut und Stressauslöser identifiziert – oft in nur 2-3 Sitzungen. Stützt die Positionierung von orgasmus-hinauszoegern.de als günstigere, jederzeit verfügbare Selbsthilfe-Alternative zu Therapeuten-Sitzungen.",
