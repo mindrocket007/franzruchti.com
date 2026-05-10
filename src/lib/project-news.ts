@@ -5412,6 +5412,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-10
       {
+        summary: "textilzeitung.at (Mai 2026): 'Zahlen & Trends 2026 – Shift im Handel: Ist Self-Care das neue Shopping?' – Konsumentinnen kaufen 2026 weniger Produkte, investieren aber mehr in sich selbst: Self-Care wird zum neuen Shopping-Treiber, psychisches Wohlbefinden überholt materiellen Konsum. Direktes Wachstumssignal für PDF-Buchverkauf und persönliche Entwicklung – stärkt das Marktumfeld für mindtools.ch.",
+        source: "textilzeitung.at",
+        url: "https://www.textilzeitung.at/business/news/zahlen--trends-2026-shift-im-handel-ist-selfcare-das-neue-shopping-17609",
+        date: "2026-05",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-05-10",
+      },
+      {
         summary: "reichanlebensenergie.de (Mai 2026): '5 grosse Veränderungen und Trends 2026 im Bereich Persönlichkeits-Entwicklung und Energiearbeit' – Der Persönlichkeitsentwicklungsmarkt 2026 verschiebt sich: weg von schnellen Motivations-Pflastern, hin zu echter Transformation mit Sinn und Tiefe. Energiearbeit verbindet sich mit seelischer Gesundheit; der Markt professionalisiert sich; digitale Formate und Mikro-Coaching gewinnen an Bedeutung. Direkt relevant für mindtools.ch: Der Trend zu tiefgreifenden, strukturierten mentalen Werkzeugen statt oberflächlicher Selbsthilfe stärkt das Marktumfeld.",
         source: "reichanlebensenergie.de",
         url: "https://reichanlebensenergie.de/prognose-2026-persoenlichkeitsentwicklung/",
@@ -8987,6 +8995,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "12wy-planner": {
     news: [
       // Neu: 2026-05-10
+      {
+        summary: "monday.com (Mai 2026): '14 Best Planner Apps for 2026: Tools That Scale With Your Work' – monday.com listet die 14 besten digitalen Planner-Apps 2026 auf: KI-Features, Integrationen und kollaboratives Tracking sind die entscheidenden Differenzierungsmerkmale. Wachsender Markt für digitale Planungs-Tools bestätigt die Positionierung des 12wy-planners als spezialisiertes 12-Week-Year-SaaS-Tool.",
+        source: "monday.com",
+        url: "https://monday.com/blog/productivity/productivity-planner/",
+        date: "2026-05",
+        category: "SaaS & Tools",
+        addedAt: "2026-05-10",
+      },
       {
         summary: "12week-breakthrough.com (2026): '12-Week Year Templates: The Ultimate 2026 Guide' – Umfassender Praxisleitfaden mit Vorlagen für die 12-Wochen-Methode 2026, inklusive KI-gestütztem Tracking und Wochenplänen. Wachsendes Ökosystem an Templates und Guides rund um die 12WY-Methode treibt organische Nachfrage für dedizierte SaaS-Tools wie den 12wy-planner.",
         source: "12week-breakthrough.com",
@@ -13007,6 +13023,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "learnfluencer": {
     news: [
       // Neu: 2026-05-10
+      {
+        summary: "ekz-crosstour.ch (2026-05-04): 'Mobiles Lernen – Marktanteil, grosse Trends und Wachstum der E-Learning-Branche' – Der globale E-Learning-Markt wächst auf geschätzte USD 457.8 Mrd.; mobiles Lernen ist treibende Kraft durch Smartphone-Durchdringung und Micro-Learning-Formate. Wachstumssignal für Thought-Leadership-Plattformen wie learnfluencer.ch, die sich an der Schnittstelle Lernen, KI und Weiterbildung positionieren.",
+        source: "ekz-crosstour.ch",
+        url: "https://ekz-crosstour.ch/2026/05/04/mobiles-lernen-marktanteil-grose-trends-und-wachstum-der-e-learning-branche/",
+        date: "2026-05",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-05-10",
+      },
       {
         summary: "educativa.com (2026): 'KI-Trends in der Bildung für 2026' – KI-gestützte Personalisierung ermöglicht adaptive Lernpfade in Echtzeit; intelligente Tutoren-Systeme begleiten Lernende proaktiv statt reaktiv; AR/VR für immersive Lernerfahrungen; prädiktive Analyse zur Früherkennung von Lernrückständen. Die Megatrends 2026 bestätigen KI-Lernkompetenz als zentrales Thema – direktes inhaltliches Fundament für learnfluencer.ch als Thought-Leadership-Plattform.",
         source: "educativa.com",
