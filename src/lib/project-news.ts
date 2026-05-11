@@ -28,6 +28,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-11
       {
+        summary: "ict-berufsbildung.ch (2025/2026): '15 Jahre ICT-Berufsbildung Schweiz – Ein Rückblick auf Meilensteine der digitalen Berufsbildung' – ICT-Berufsbildung Schweiz wurde am 25. März 2010 gegründet und feierte 2025 ihr 15-jähriges Jubiläum: 5 Berufsgrundbildungen, 5 eidgenössische Fachausweise, 2 Diplome der höheren Berufsbildung, 15 Mitarbeitende und über 50 umgesetzte Projekte. Meilensteine: Einführung E-Tutor 2014, Berufsprüfung Cyber Security Specialist 2019, WorldSkills Lyon Gold in Cyber Security 2024 (historisches Erstmals), KI-Fachabteilung im Kompetenzzentrum 2025. Das 15-jährige Jubiläum zeigt die institutionelle Reife des ICT-Bildungsökosystems – direktes Wachstumsumfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation im selben Bildungsraum.",
+        source: "ict-berufsbildung.ch",
+        url: "https://www.ict-berufsbildung.ch/15-jahre-ict-berufsbildung-schweiz-ein-rueckblick-auf-meilensteine-der-digitalen-berufsbildung",
+        date: "2025",
+        category: "Digitale Bildung",
+        addedAt: "2026-05-11",
+      },
+      {
+        summary: "bildungsklick.de / BIBB (Mai 2026): 'BIBB veröffentlicht Datenreport zum Berufsbildungsbericht 2026' – Das Bundesinstitut für Berufsbildung (BIBB) hat den umfassenden Datenreport zum Berufsbildungsbericht 2026 veröffentlicht, der strukturelle Trends in der dualen Berufsbildung im gesamten DACH-Raum dokumentiert; Digitalisierung, KI-Kompetenz und Fachkräftemangel sind zentrale Themen. Als komplementärer Marktkontext zeigt der BIBB-Bericht: Die Nachfrage nach formalisierten ICT-Qualifikationen wächst strukturell beidseitig des Rheins – relevantes Marktumfeld für SIZ AG als Schweizer ICT-Prüfungsorganisation.",
+        source: "bildungsklick.de / BIBB",
+        url: "https://bildungsklick.de/aus-und-weiterbildung/detail/bibb-datenreport-berufsbildungsbericht-2026",
+        date: "2026-05",
+        category: "Bildungspolitik",
+        addedAt: "2026-05-11",
+      },
+      {
         summary: "ict-berufsbildung-ost.ch (April 2026): 'ICT-Fachfrau/-mann EFZ: Fit für die Zukunft – Infoanlass BiVo 2026' – Am 27. April 2026 führte ICT-Berufsbildung Ostschweiz einen Online-Infoanlass zur neuen Bildungsverordnung (BiVo 2026) für ICT-Fachfrau/-mann EFZ durch: Neue Kompetenzen in Sicherheitsstandards, Datenschutz-Sensibilisierung und systematischer Automatisierung von ICT-Prozessen; Englisch neu integriert in Sprachmodulen; VPA auf 6 Stunden verkürzt. Die Revision stärkt die Qualität und Marktrelevanz der SIZ-kompatiblen Grundausbildung ab 2026 – positives Marktumfeld für SIZ AG als Prüfungsorganisation.",
         source: "ict-berufsbildung-ost.ch",
         url: "https://ict-berufsbildung-ost.ch/ictfl26/",
@@ -15117,6 +15133,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
       },
     ],
     social: [
+      {
+        platform: "LinkedIn",
+        description: "Franz Ruchti: 'Viele reden über Influencer, ich gehe einen anderen Weg' – Franz Ruchti positioniert sich auf LinkedIn als Learnfluencer und geht bewusst seinen eigenen Weg als Thought Leader für Lernkompetenz und digitale Bildung.",
+        url: "https://de.linkedin.com/posts/franzruchti_viele-reden-%C3%BCber-influencer-ich-gehe-einen-activity-7404802961203425280-MBrF",
+        date: "2026",
+        sentiment: "positiv",
+        author: "Franz Ruchti",
+        addedAt: "2026-05-11",
+      },
       {
         platform: "LinkedIn",
         description: "Artikel 'Fuehrungskraefte als Learnfluencer' ueber die Transformation der Lernkultur in Zeiten von KI.",
