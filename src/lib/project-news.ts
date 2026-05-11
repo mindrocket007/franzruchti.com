@@ -26,6 +26,15 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 2026-05-11
+      {
+        summary: "ict-berufsbildung-ost.ch (April 2026): 'ICT-Fachfrau/-mann EFZ: Fit für die Zukunft – Infoanlass BiVo 2026' – Am 27. April 2026 führte ICT-Berufsbildung Ostschweiz einen Online-Infoanlass zur neuen Bildungsverordnung (BiVo 2026) für ICT-Fachfrau/-mann EFZ durch: Neue Kompetenzen in Sicherheitsstandards, Datenschutz-Sensibilisierung und systematischer Automatisierung von ICT-Prozessen; Englisch neu integriert in Sprachmodulen; VPA auf 6 Stunden verkürzt. Die Revision stärkt die Qualität und Marktrelevanz der SIZ-kompatiblen Grundausbildung ab 2026 – positives Marktumfeld für SIZ AG als Prüfungsorganisation.",
+        source: "ict-berufsbildung-ost.ch",
+        url: "https://ict-berufsbildung-ost.ch/ictfl26/",
+        date: "2026-04",
+        category: "Digitale Bildung",
+        addedAt: "2026-05-11",
+      },
       // Neu: 2026-05-10
       {
         summary: "woche-bb.ch / BWZT (Mai 2026): 'Woche der Berufsbildung 2026 – 4. bis 8. Mai 2026' – Die nationale Woche der Berufsbildung 2026 findet vom 4. bis 8. Mai statt: 23 Kantone beteiligen sich, 40 Regionalradios berichten von Lernenden und Ausbildungsverantwortlichen; am Mittwoch, 6. Mai 2026 berichten rund 20 Lernende direkt aus ihren Ausbildungsbetrieben. ICT-Lehrberufe gehören zu den meistgewählten Ausbildungswegen der Schweiz. Die jährliche, nationale Woche der Berufsbildung steigert die gesellschaftliche Sichtbarkeit und Wertschätzung von ICT-Ausbildungswegen – direktes positives Marktumfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation.",
@@ -1771,6 +1780,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
+      // Neu: 2026-05-11
+      {
+        summary: "swissnova.swiss (2026): 'Weiterbildung für Unternehmen in der Schweiz: 10 Trends für 2026' – Die zehn wichtigsten Weiterbildungstrends für Schweizer Unternehmen 2026: KI-gestütztes Lernen, Microlearning, hybride Formate und personalisierte Entwicklungspfade dominieren; Soft Skills und mentale Gesundheit gewinnen als Weiterbildungsthemen an Bedeutung. Für Mind Rocket GmbH bestätigt dieser Trend die anhaltende Nachfrage nach flexiblen, digitalen Persönlichkeitsentwicklungs-Programmen in der Deutschschweiz.",
+        source: "swissnova.swiss",
+        url: "https://unternehmen.swissnova.swiss/weiterbildung-unternehmen-schweiz-trends-2026/",
+        date: "2026-05",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-05-11",
+      },
       // Neu: 2026-05-10
       {
         summary: "heb-coachingfachschule.ch (Mai 2026): 'HEB Coaching Basic – Ausbildungen starten im Mai 2026 in Basel und Bern' – Die HEB Coaching Fachschule startet am 8. Mai 2026 neue Coaching-Grundausbildungen in Basel und Bern: Praxisorientiertes Ausbildungskonzept mit Wissensinputs und intensiven Übungscoachings; modularer Aufbau; Schwerpunkte auf Gesprächsführung, Systemisches Coaching und persönliche Kompetenzentwicklung. Aktive Marktdynamik bei Schweizer Coaching-Ausbildungen im Mai 2026 zeigt die hohe strukturelle Nachfrage – direktes Wachstumsumfeld für Mind Rocket GmbH als Anbieter digitaler Persönlichkeitsentwicklungs-Programme.",
@@ -5419,6 +5437,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 2026-05-11
+      {
+        summary: "swissinfo.ch (2026): 'Gesucht: Auswege aus der Mental-Health-Krise' – SWI swissinfo.ch analysiert die psychische Gesundheitskrise in der Schweiz: Ein erheblicher Anteil der Bevölkerung leidet unter Stress, Burnout und Angstzuständen; staatliche und private Angebote sind stark gefragt, aber oft schwer zugänglich. Die strukturelle Mental-Health-Nachfrage schafft direktes Marktpotenzial für niedrigschwellige Selbsthilfe-Tools wie die PDF-Programme auf mindtools.ch.",
+        source: "swissinfo.ch",
+        url: "https://www.swissinfo.ch/ger/politik/gesucht-auswege-aus-der-mental-health-krise/48808184",
+        date: "2026-05",
+        category: "Mental Health",
+        addedAt: "2026-05-11",
+      },
       // Neu: 2026-05-10
       {
         summary: "textilzeitung.at (Mai 2026): 'Zahlen & Trends 2026 – Shift im Handel: Ist Self-Care das neue Shopping?' – Konsumentinnen kaufen 2026 weniger Produkte, investieren aber mehr in sich selbst: Self-Care wird zum neuen Shopping-Treiber, psychisches Wohlbefinden überholt materiellen Konsum. Direktes Wachstumssignal für PDF-Buchverkauf und persönliche Entwicklung – stärkt das Marktumfeld für mindtools.ch.",
@@ -10529,6 +10556,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 2026-05-11
+      {
+        summary: "bettrocker.com (2026): 'Akupunktur, Hypnose, Homöopathie bei vorzeitiger Ejakulation – Übersicht alternativer Behandlungsansätze' – Übersicht über komplementäre Methoden gegen Ejaculatio praecox: Hypnose wird als wirksam für psychisch bedingte Fälle eingestuft, die die Mehrheit der Betroffenen ausmachen; Akupunktur hat begrenzte Evidenz. Positioniert Hypnose als legitimen, niedrigschwelligen Behandlungsansatz – stärkt die Glaubwürdigkeit von orgasmus-hinauszoegern.de als Selbsthilfe-Lösung.",
+        source: "bettrocker.com",
+        url: "https://bettrocker.com/akupunktur-hypnose-homoeopathie-bei-vorzeitiger-ejakulation/",
+        date: "2026-05",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-05-11",
+      },
       // Neu: 2026-05-10
       {
         summary: "heute.at (2026): 'Peinliches Problem vieler Männer – neue App soll helfen' – Eine Studie vom EAU26-Kongress (Europäische Gesellschaft für Urologie) in London testete 80 Männer mit vorzeitigem Samenerguss in einem 12-wöchigen Programm aus Achtsamkeit und Verhaltenstherapie: Die durchschnittliche Zeit bis zur Ejakulation verdoppelte sich von 61 auf 125 Sekunden; 22 % der Teilnehmer berichteten danach keinerlei Probleme mehr. Solche wissenschaftlichen Ergebnisse stärken das Vertrauen in psychologisch-basierte Selbsthilfeansätze wie das Hypnose-Audio von orgasmus-hinauszoegern.de.",
@@ -11745,6 +11781,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 2026-05-11
+      {
+        summary: "noack-hypnose.de (2026): 'Redeangst ist kein Lampenfieber – Aufklärung, Tipps und Hilfe' – Hypnotherapeut Noack erklärt den wichtigen Unterschied: Lampenfieber ist situativ und normal, Redeangst ist eine psychische Belastung mit tiefen Wurzeln, die gezielte Behandlung braucht; Hypnose wirkt direkt auf das Unterbewusstsein und hilft bei tief verwurzelter Auftrittsangst nachhaltig. Differenzierte Aufklärung durch Fachexperten stärkt die Legitimität des Hypnose-Audio-Angebots auf lampenfieber-besiegen.de.",
+        source: "noack-hypnose.de",
+        url: "https://www.noack-hypnose.de/redeangst/",
+        date: "2026-05",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-05-11",
+      },
       // Neu: 2026-05-10
       {
         summary: "rampenpfau.de (2026-01-09): 'In drei Schritten weg vom Lampenfieber' – Dr. Thomas A. Coucoulis, Auftrittscoach und Psychotherapeut, beschreibt einen 3-Schritte-Plan: (1) Lampenfieber als normale Körperreaktion verstehen und akzeptieren, (2) mentale Umrahmung von Angst in Aufregung, (3) konkrete Exposition und Übung. Praxisnaher Beitrag eines Fachexperten bestätigt, dass Selbsthilfemethoden bei Lampenfieber wirksam sind – direktes Argument für das Audio-Hypnose-Angebot auf lampenfieber-besiegen.de.",
@@ -15124,6 +15169,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 2026-05-11
+      {
+        summary: "kmu-performer.ch (2026): 'Unsere KMU Marketing-Trends 2026' – KMU Performer analysiert die wichtigsten Schweizer KMU-Marketing-Trends 2026: KI-gestützte Personalisierung, Content-Marketing mit echtem Mehrwert und strukturierte Planungstools gewinnen gegenüber taktischen Schnellschüssen an Bedeutung; Schweizer KMU investieren verstärkt in strategische Fundamente. Direkte Nachfrage nach strukturierten Planungslösungen wie learnfluencer.ch/tools/marketingkonzept mit PESTEL, SWOT und 7P.",
+        source: "kmu-performer.ch",
+        url: "https://kmu-performer.ch/trends-2026/",
+        date: "2026-05",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-05-11",
+      },
       // Neu: 2026-05-10
       {
         summary: "chiefmartec.com (Mai 2026): '2026 Marketing Technology Landscape – Peak Martech?' – Der MarTech-Markt hat laut chiefmartec.com 15'500+ Produkte erreicht und zeigt erste Plateauzeichen; KI verändert die Grundstruktur, während generische Lösungen konsolidieren. Ein fokussiertes, strukturiertes Marketingkonzept-Tool wie learnfluencer.ch/tools/marketingkonzept differenziert sich klar im übersättigten MarTech-Markt durch strategische Tiefe statt Feature-Breite.",
@@ -16565,6 +16619,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 2026-05-11
+      {
+        summary: "startupvalley.news (2026): 'Wie Digitalisierung die Bestattungsbranche verändert – Sind traditionelle Ansätze noch zeitgemäß?' – Analyse der digitalen Transformation in der Bestattungsbranche am Beispiel mymoria: Transparenz der Preise, Online-Buchung und digitale Prozessautomatisierung heben den Standard; der erste digitale Kontakt findet heute fast immer online statt, während das persönliche Abschlussgespräch erhalten bleibt. Bestätigt das Geschäftsmodell von bestattungsplaner.ch als digitales Lead-Portal mit Weitervermittlung an lokale Bestatter.",
+        source: "startupvalley.news",
+        url: "https://startupvalley.news/de/mymoria/",
+        date: "2026-05",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-05-11",
+      },
       // Neu: 2026-05-10
       {
         summary: "widevoices.com (2026): 'Feuerbestattung in der Schweiz – Preise und wichtige Informationen für 2026' – Über 90 % aller Bestattungen in der Schweiz sind heute Kremationen; Kosten variieren je nach Kanton stark zwischen CHF 3'500 und CHF 9'500; Liberalisierung hat breite Angebotsvielfalt geschaffen. Die wachsende Kostenunsicherheit und regionale Preisunterschiede untermauern den Bedarf an transparenten Vergleichsportalen wie bestattungsplaner.ch.",
