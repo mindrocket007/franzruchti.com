@@ -10694,6 +10694,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-11
       {
+        summary: "sardona24.ch / stgallen24.ch (2026): 'Das sind die Sex-Trends 2026' – Schweizer Regionalmedien berichten über Sex-Trends 2026: 'Healthy Pleasure' als zentraler Trend – Sexualität wird als Teil ganzheitlicher Gesundheit zelebriert; Enttabuisierung und offenerer Umgang mit sexuellen Themen nehmen zu. Positives gesellschaftliches Marktklima für Selbsthilfe-Produkte zu sexueller Gesundheit wie orgasmus-hinauszoegern.de.",
+        source: "sardona24.ch",
+        url: "https://sardona24.ch/articles/355647-das-sind-die-sex-trends-2026",
+        date: "2026",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-05-11",
+      },
+      {
+        summary: "baseljetzt.ch (2026): 'Sex, Sinn und Selbstbestimmung: Das sind die Intimitäts-Trends 2026' – Sexologin Elisabeth Neumann analysiert Trends: Bewusstere Haltung zu Lust, stärkere Verbindung von Sexualität und ganzheitlicher Gesundheit. Ca. 55 % der Schweizer sprechen selten offen mit Partnern über sexuelle Themen – unterstreicht den Bedarf für diskrete, niedrigschwellige Selbsthilfe-Angebote wie orgasmus-hinauszoegern.de.",
+        source: "baseljetzt.ch",
+        url: "https://www.baseljetzt.ch/sex-sinn-und-selbstbestimmung-das-sind-die-intimitaets-trends-2026/506059",
+        date: "2026",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-05-11",
+      },
+      {
         summary: "bettrocker.com (2026): 'Akupunktur, Hypnose, Homöopathie bei vorzeitiger Ejakulation – Übersicht alternativer Behandlungsansätze' – Übersicht über komplementäre Methoden gegen Ejaculatio praecox: Hypnose wird als wirksam für psychisch bedingte Fälle eingestuft, die die Mehrheit der Betroffenen ausmachen; Akupunktur hat begrenzte Evidenz. Positioniert Hypnose als legitimen, niedrigschwelligen Behandlungsansatz – stärkt die Glaubwürdigkeit von orgasmus-hinauszoegern.de als Selbsthilfe-Lösung.",
         source: "bettrocker.com",
         url: "https://bettrocker.com/akupunktur-hypnose-homoeopathie-bei-vorzeitiger-ejakulation/",
