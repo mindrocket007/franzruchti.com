@@ -2509,6 +2509,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 2026-05-11
+      {
+        summary: "blog.pickmytrade.trade (2026): 'Mastering Performance Metrics in Algo Trading 2026' – Überblick über die wichtigsten Performance-Kennzahlen für algorithmischen Handel 2026: Win Rate liegt in robusten Systemen bei 45–70%, Profit Factor und adaptive KI-Strategien erreichen Sharpe Ratios von 1.5–2.26 in volatilen Märkten. Plattformen wie PickMyTrade automatisieren TradingView-Strategien direkt zu Brokern wie Tradovate oder Rithmic für 24/7-Execution. Relevant für Mind Rocket Trading, das systematische ES-Futures-Strategien und algorithmischen Handel vermittelt.",
+        source: "blog.pickmytrade.trade",
+        url: "https://blog.pickmytrade.trade/mastering-performance-metrics-algo-trading-2026/",
+        date: "2026-05",
+        category: "Trading-Technologie",
+        addedAt: "2026-05-11",
+      },
       // Neu: 2026-05-10
       {
         summary: "cmegroup.com / tradingview.com (Mai 2026): 'ES Futures – 52-Wochen-Hoch bei 7'410.50' – ES Futures (E-mini S&P 500) erreichten im Globex-Handel ein frisches 52-Wochen-Hoch bei 7'410.50 Punkten, getrieben von positiven Jobless-Claims-Daten (200k Initial Jobless Claims, 8:30 ET). Der Wochenverlauf zeigte jedoch am Donnerstag einen Failed-Breakout-and-Reversal, der die multi-tägige Bull-Alignment gebrochen hat. Wichtige technische Benchmarks für algorithmische ES-Futures-Strategien – direktes Preis-Referenzumfeld für Mind Rocket Trading im Mai 2026.",
@@ -6649,6 +6658,39 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 2026-05-11
+      {
+        summary: "netzwoche.ch (Februar 2026): 'KI entlastet nicht – sie erhöht das Burnout-Risiko' – Eine laufende Studie der UC Berkeley zeigt: Das parallele Verwenden von drei und mehr KI-Tools bildet die kritische Grenze, wo Produktivität nachlässt und das Risiko für Erschöpfung steigt. KI verdichtet Aufgaben und erhöht den Druck auf Mitarbeitende, statt zu entlasten. Diese Paradoxie stärkt die Nachfrage nach mentalen Gesundheitslösungen wie hypnovital®, das als Ausgleich zu technologischer Überforderung wirkt.",
+        source: "netzwoche.ch",
+        url: "https://www.netzwoche.ch/news/2026-02-12/ki-entlastet-nicht-sie-erhoeht-das-burnout-risiko",
+        date: "2026-02",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-11",
+      },
+      {
+        summary: "ad-hoc-news.de (2026): 'Führungskräfte im Burnout-Wettlauf: KI und Kosten stressen Manager' – Führungskräfte stehen 2026 unter doppeltem Druck: Digitalisierung und KI-Einführung einerseits, Kostendruck und Produktivitätserwartungen andererseits. Burnout-Prävention für Führungskräfte gewinnt als BGM-Schwerpunkt deutlich an Bedeutung – direktes Wachstumsfeld für hypnovital® Entspannungs- und Stressreduktionsprogramme im B2B-BGM-Segment.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/fuehrungskraefte-im-burnout-wettlauf-ki-und-kosten-stressen-manager/68612306",
+        date: "2026-05",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-11",
+      },
+      {
+        summary: "ad-hoc-news.de (2026): 'Betriebliches Gesundheitsmanagement wird zum Produktivitätsfaktor' – Systematische BGM-Programme erzielen nachweislich bis zu 46 Krankheitstage-Einsparungen pro Mitarbeiter in drei Jahren. Unternehmen erkennen BGM zunehmend als strategischen Wettbewerbsvorteil, was den Markt für skalierbare BGM-Lösungen wie hypnovital® stärkt – Audio-Entspannung ist als niedrigschwelligstes BGM-Tool besonders gefragt.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/betriebliches-gesundheitsmanagement-wird-zum-produktivitaetsfaktor/69029619",
+        date: "2026-05",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-11",
+      },
+      {
+        summary: "ad-hoc-news.de (2026): 'Arbeitswelt 2026: Erholung wird zum Erfolgsfaktor' – Regeneration, Schlaf und mentale Auszeiten werden 2026 offiziell als Produktivitätsfaktoren anerkannt. Unternehmen integrieren Erholungszeiten zunehmend ins BGM – eine Entwicklung, die das Angebot von hypnovital® (Audio-Entspannungsprogramme, Stressreduktion, Schlafförderung) als evidenzbasiertes BGM-Tool direkt stärkt.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/arbeitswelt-2026-erholung-wird-zum-erfolgsfaktor/69059879",
+        date: "2026-05",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-11",
+      },
       // Neu: 2026-05-10
       {
         summary: "gesundheitsfoerderung.ch (Mai 2026): 'Nationale BGM-Tagung 2026 – Gesunde Teamarbeit im Fokus' – Die Nationale BGM-Tagung 2026 findet am 15. September im Kursaal Bern statt und wird von Gesundheitsförderung Schweiz, Suva und SECO organisiert. Thema: gesundheitliche Herausforderungen moderner Teamarbeit mit strukturellen Lösungen für hybride und agile Teams. Das Event ist der wichtigste Schweizer BGM-Fachkongress und zeigt, dass BGM 2026 in Unternehmensführung und HR als Pflichtthema angekommen ist – direktes Marktumfeld für hypnovital® als skalierbare BGM-Audio-Lösung.",
@@ -8994,6 +9036,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 2026-05-11
+      {
+        summary: "ad-hoc-news.de (2026): 'Produktivität 2026: Weniger arbeiten, mehr schaffen' – 2026 definiert Produktivität neu: statt mehr Stunden, mehr Fokus durch Micro-Habits, Deep Work und KI-Automatisierung von Routineaufgaben (Terminplanung, E-Mail, Dateneingabe), die mentalen Freiraum für anspruchsvolle Arbeit schafft. Der Trend zu effizientem Arbeiten in klar definierten Zeitblöcken ist direktes Validierungssignal für das 12-Wochen-Jahr-Konzept und Tools wie den 12WY-Planner.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/wissenschaft/produktivitaet-2026-weniger-arbeiten-mehr-schaffen/69302016",
+        date: "2026-05",
+        category: "Produktivität & Planung",
+        addedAt: "2026-05-11",
+      },
+      {
+        summary: "ad-hoc-news.de (2026): 'Produktivität 2026: Mikro-Habits ersetzen den Leistungsdruck' – Neurowissenschaftliche Studien bestätigen: strukturierte Mikro-Routinen übertreffen Motivations-Apps deutlich. Habit Stacking und Dopamin-Loops durch kleine, konsistente Erfolge programmieren das Gehirn effektiver als angstgetriebene Deadlines klassischer Projektmanagement-Tools. Direktes Argument für rhythmische Planungstools wie den 12WY-Planner, der wöchentliche Review-Zyklen und 12-Wochen-Sprints strukturiert.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/produktivitaet-2026-mikro-habits-ersetzen-den-leistungsdruck/68467914",
+        date: "2026-05",
+        category: "Produktivität & Planung",
+        addedAt: "2026-05-11",
+      },
       // Neu: 2026-05-10
       {
         summary: "monday.com (Mai 2026): '14 Best Planner Apps for 2026: Tools That Scale With Your Work' – monday.com listet die 14 besten digitalen Planner-Apps 2026 auf: KI-Features, Integrationen und kollaboratives Tracking sind die entscheidenden Differenzierungsmerkmale. Wachsender Markt für digitale Planungs-Tools bestätigt die Positionierung des 12wy-planners als spezialisiertes 12-Week-Year-SaaS-Tool.",
@@ -13022,6 +13081,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 2026-05-11
+      {
+        summary: "bsozd.com (Mai 2026): 'EdTech Talks 2026: Experteneinblicke in die digitale Bildungswelt' – Die EdTech Talks 2026 (u.a. 27. Mai) bringen EdTech-Experten zusammen, die über KI, Learning Analytics und Gamification im Bildungsbereich diskutieren; Schwerpunkt: Gründen im EdTech-Bereich und menschenzentrierte Produktentwicklung für digitale Lernangebote. Für learnfluencer.ch ist dieses wachsende Ökosystem an EdTech-Diskursen eine direkte Chance zur Thought Leadership Positionierung im Bereich Lernen und KI.",
+        source: "bsozd.com",
+        url: "https://www.bsozd.com/403926/edtech-talks-2026-experteneinblicke-in-die-digitale-bildungswelt/",
+        date: "2026-05",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-05-11",
+      },
       // Neu: 2026-05-10
       {
         summary: "ekz-crosstour.ch (2026-05-04): 'Mobiles Lernen – Marktanteil, grosse Trends und Wachstum der E-Learning-Branche' – Der globale E-Learning-Markt wächst auf geschätzte USD 457.8 Mrd.; mobiles Lernen ist treibende Kraft durch Smartphone-Durchdringung und Micro-Learning-Formate. Wachstumssignal für Thought-Leadership-Plattformen wie learnfluencer.ch, die sich an der Schnittstelle Lernen, KI und Weiterbildung positionieren.",
