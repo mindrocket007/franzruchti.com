@@ -10701,6 +10701,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         category: "Hypnose & Therapie",
         addedAt: "2026-05-11",
       },
+      {
+        summary: "news-medical.net (März 2026): 'App-based therapy helps men improve control over premature ejaculation' – Bericht über die CLIMACS-Studie vom EAU26-Kongress: Männer, die die App nutzten, berichteten signifikant verbesserte Ejakulationskontrolle, reduzierten Leidensdruck und bessere Beziehungsqualität. Die App kombiniert Achtsamkeit, Arousal-Awareness und CBT. Zeigt, dass verhaltens- und psychologisch-basierte Heimtherapien wissenschaftlich anerkannt werden – stärkt die Glaubwürdigkeit von Hypnose-Audio-Produkten in dieser Nische.",
+        source: "news-medical.net",
+        url: "https://www.news-medical.net/news/20260313/App-based-therapy-helps-men-improve-control-over-premature-ejaculation.aspx",
+        date: "2026-03",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-05-11",
+      },
       // Neu: 2026-05-10
       {
         summary: "heute.at (2026): 'Peinliches Problem vieler Männer – neue App soll helfen' – Eine Studie vom EAU26-Kongress (Europäische Gesellschaft für Urologie) in London testete 80 Männer mit vorzeitigem Samenerguss in einem 12-wöchigen Programm aus Achtsamkeit und Verhaltenstherapie: Die durchschnittliche Zeit bis zur Ejakulation verdoppelte sich von 61 auf 125 Sekunden; 22 % der Teilnehmer berichteten danach keinerlei Probleme mehr. Solche wissenschaftlichen Ergebnisse stärken das Vertrauen in psychologisch-basierte Selbsthilfeansätze wie das Hypnose-Audio von orgasmus-hinauszoegern.de.",
@@ -11924,6 +11932,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
         url: "https://www.noack-hypnose.de/redeangst/",
         date: "2026-05",
         category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-05-11",
+      },
+      {
+        summary: "Frontiers in Human Neuroscience (2025): 'Thirty years of public speaking anxiety research: topic modeling and semantic trend forecasting' – Peer-reviewte Metastudie, die 30 Jahre PSA-Forschung auswertet und zukünftige Trends prognostiziert. VR-Exposition und körperorientierte Methoden gewinnen an Bedeutung. Für lampenfieber-besiegen.de relevant als wissenschaftliche Legitimierung des Themenfelds und SEO-Autorität durch Themenaktualität.",
+        source: "frontiersin.org",
+        url: "https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2025.1653899/full",
+        date: "2025",
+        category: "Psychologie & Forschung",
+        addedAt: "2026-05-11",
+      },
+      {
+        summary: "Macquarie University / The Lighthouse (Mai 2025): 'Fear of public speaking can be conquered: new research' – Aktuelle Forschung der Macquarie University zeigt: Kognitive Umstrukturierung (Ängste als Experiment behandeln und auswerten) ist effektiver als reines Sprechtraining. Bestätigt, dass mentale/psychologische Ansätze – wie Hypnose – bei Redeangst wissenschaftlich überlegen sind gegenüber rein technischem Training.",
+        source: "lighthouse.mq.edu.au",
+        url: "https://lighthouse.mq.edu.au/article/may-2025/fear-of-public-speaking-can-be-conquered-new-research",
+        date: "2025-05",
+        category: "Psychologie & Forschung",
         addedAt: "2026-05-11",
       },
       // Neu: 2026-05-10
