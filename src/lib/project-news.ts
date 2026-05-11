@@ -6775,6 +6775,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-11
       {
+        summary: "hypnose-arnold.ch (2026): 'Stress- und Burnout-Prävention mit Hypnose: Ein kraftvoller Weg zu Balance und Resilienz' – Hypnose reduziert Stress auf drei Ebenen gleichzeitig: Beruhigung des Nervensystems, Neuausrichtung negativer Denkmuster und Aufbau mentaler Resilienz; regelmässige Selbsthypnose-Praxis als wirksamer Burnout-Präventionsweg; geführte Audio-Hypnose als niederschwellige, skalierbare Methode für den Alltag. Fachliche Fundierung durch Hypnose-Experten bestätigt: Audio-Hypnose-Programme wie hypnovital® sind evidenzbasierte BGM-Präventionslösungen.",
+        source: "hypnose-arnold.ch",
+        url: "https://www.hypnose-arnold.ch/post/stress-und-burnout",
+        date: "2026-05",
+        category: "Hypnose & Coaching",
+        addedAt: "2026-05-11",
+      },
+      {
         summary: "ad-hoc-news.de (Mai 2026): 'Burnout-Schutz wird 2026 zum strategischen Muss für Unternehmen' – Experten prognostizieren: Employee Wellbeing wird 2026 zum entscheidenden Faktor für Arbeitgeberattraktivität und Unternehmensleistung. Fachkräftemangel zwingt Unternehmen zum Umdenken; Wohlbefinden wird fester Bestandteil von Führungsprinzipien, Budgets und Abläufen statt separatem Programm. Direktes Marktargument für hypnovital® als skalierbare, digitale BGM-Präventionslösung für Unternehmen.",
         source: "ad-hoc-news.de",
         url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/burnout-schutz-wird-2026-zum-strategischen-muss-fuer-unternehmen/68485357",
@@ -11943,6 +11951,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-11
       {
+        summary: "buecher.de / Dr. Alfred Pöltel (2026): 'Lampenfieber & Redeangst ade! Die Hypnose gegen Auftrittsangst (MP3-Download)' – Vergleichbares Hypnose-Audio-Produkt von Hypnosetherapeut Dr. Alfred Pöltel auf führenden deutschen Audio-Plattformen (buecher.de, Apple Audiobooks, BookBeat); Produkt adressiert dieselbe Zielgruppe mit identischem Ansatz wie lampenfieber-besiegen.de. Das Vorhandensein etablierter Konkurrenzprodukte auf Grossplattformen bestätigt den Markt für Audio-Hypnose gegen Lampenfieber und unterstreicht die Produktrelevanz.",
+        source: "buecher.de",
+        url: "https://www.buecher.de/shop/hoerbuch-download/lampenfieber-redeangst-ade-die-hypnose-gegen-auftrittsangst-mp3-download/poeltel-dr-alfred/products_products/detail/prod_id/63665433/",
+        date: "2026-05",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-05-11",
+      },
+      {
+        summary: "hypno-empowerment.de (2026): 'Hypnose bei Redeangst: Wie Sie Lampenfieber und Präsentationsangst nachhaltig überwinden' – Spezialisierte Hypnose-Fachpraxis beschreibt: Hypnosetherapie wirkt gezielt auf unbewusste Angstmuster, stärkt das Vertrauen in die eigene Leistungsfähigkeit und ermöglicht nachhaltige Überwindung von Redeangst ohne Willenskraft oder Vermeidungsstrategien. Wachsendes Angebot spezialisierter Hypnose-Therapien gegen Redeangst bestätigt die Marktakzeptanz – direktes Validierungssignal für lampenfieber-besiegen.de als digitale Audio-Alternative.",
+        source: "hypno-empowerment.de",
+        url: "https://www.hypno-empowerment.de/hypnose-bei-redeangst/",
+        date: "2026-05",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-05-11",
+      },
+      {
         summary: "noack-hypnose.de (2026): 'Redeangst ist kein Lampenfieber – Aufklärung, Tipps und Hilfe' – Hypnotherapeut Noack erklärt den wichtigen Unterschied: Lampenfieber ist situativ und normal, Redeangst ist eine psychische Belastung mit tiefen Wurzeln, die gezielte Behandlung braucht; Hypnose wirkt direkt auf das Unterbewusstsein und hilft bei tief verwurzelter Auftrittsangst nachhaltig. Differenzierte Aufklärung durch Fachexperten stärkt die Legitimität des Hypnose-Audio-Angebots auf lampenfieber-besiegen.de.",
         source: "noack-hypnose.de",
         url: "https://www.noack-hypnose.de/redeangst/",
@@ -15355,6 +15379,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "marketingplan-software": {
     news: [
       // Neu: 2026-05-11
+      {
+        summary: "insor.ch (2026): 'Marketing-Automatisierung ohne HubSpot-Abo: Warum Schweizer KMU auf Mautic setzen' – INSOR Insights zeigt: Schweizer KMU setzen zunehmend auf datensouveräne Open-Source-Lösungen (Mautic) statt teurer SaaS-Abos; strategische Marketingplanung (Segmentierung, Personas, Content-Konzept) bleibt Voraussetzung für erfolgreiche Automation. Nachfrage nach kostengünstigen, datenschutzkonformen Marketing-Tools in der Schweiz 2026 – unterstreicht den Bedarf an strukturierten Planungstools wie dem interaktiven Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "insor.ch",
+        url: "https://www.insor.ch/blog/mautic-deine-datenhoheit-und-tiefere-marketingautomation-kosten",
+        date: "2026-05",
+        category: "Marketing-Tools & Software",
+        addedAt: "2026-05-11",
+      },
       {
         summary: "kmu-performer.ch (2026): 'Unsere KMU Marketing-Trends 2026' – KMU Performer analysiert die wichtigsten Schweizer KMU-Marketing-Trends 2026: KI-gestützte Personalisierung, Content-Marketing mit echtem Mehrwert und strukturierte Planungstools gewinnen gegenüber taktischen Schnellschüssen an Bedeutung; Schweizer KMU investieren verstärkt in strategische Fundamente. Direkte Nachfrage nach strukturierten Planungslösungen wie learnfluencer.ch/tools/marketingkonzept mit PESTEL, SWOT und 7P.",
         source: "kmu-performer.ch",
