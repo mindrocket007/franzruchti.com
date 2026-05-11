@@ -2545,6 +2545,46 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-11
       {
+        summary: "ninjatrader.com / prnewswire.com (März 2026): 'NinjaTrader Connect – End-to-End-Infrastrukturplattform für Futures' – NinjaTrader Group lancierte am 3. März 2026 NinjaTrader Connect: B2B-Plattform, die Fintechs und Brokerages über eine einzige API regulierte Futures und Prediction Markets anbieten lässt, inkl. White-Label-Trading-Plattform, Onboarding, Funding, Risikokontrollen und Back-Office-Clearing. NinjaTrader wurde für USD 1,5 Milliarden von Kraken übernommen. Plattformwachstum stärkt NinjaTrader als primäre Infrastruktur für ES-Futures-Strategien auf mindrocket-trading.com.",
+        source: "ninjatrader.com",
+        url: "https://ninjatrader.com/news/ninjatrader-connect-transforming-brokerage-infrastructure/",
+        date: "2026-03",
+        category: "Trading-Technologie",
+        addedAt: "2026-05-11",
+      },
+      {
+        summary: "futuresproptrader.com (Mai 2026): 'Apex Trader Funding 4.0 OTP-Modell analysiert' – Apex führte per 1. März 2026 das '4.0 One-Time Payment'-Modell ein: Monatliche Gebühren entfallen, einmalige Pauschale für 30-Tage-Evaluation, Wahl zwischen EOD- oder Intraday-Drawdown, 100% Gewinnanteil auf die ersten USD 25k pro Konto. Seit 30. März 2026 wurden über USD 738 Mio. an Trader ausgezahlt. Relevante Marktentwicklung für Prop-Trader, die ES-Futures über Apex handeln.",
+        source: "futuresproptrader.com",
+        url: "https://futuresproptrader.com/",
+        date: "2026-05",
+        category: "Futures & Trading",
+        addedAt: "2026-05-11",
+      },
+      {
+        summary: "coindesk.com / cmegroup.com (2026): 'CME Group führt 24/7 Krypto-Futures ab Mai 2026 ein' – CME Group lanciert ab 29. Mai 2026 rund-um-die-Uhr-Handel für Krypto-Futures und Optionen (CFTC-Genehmigung ausstehend). Neue Produkte: SUI-Futures (4. Mai 2026), Bitcoin-Volatilitäts-Futures (1. Juni 2026). Krypto-Derivate-Volumen bei CME wächst um 19% im Tagesschnitt. CME-Expansion stärkt den institutionalisierten Futures-Handel – relevanter Marktkontext für Mind Rocket Trading.",
+        source: "coindesk.com / cmegroup.com",
+        url: "https://www.coindesk.com/business/2025/10/02/cme-group-to-launch-24-7-crypto-futures-and-options-trading-in-early-2026",
+        date: "2026-05",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-05-11",
+      },
+      {
+        summary: "trading.ch (2026): 'Daytrading in der Schweiz – Steuer- und Regulierungsrahmen 2026' – Schweizer Übersicht: Kapitalgewinne für private Day-Trader grundsätzlich steuerfrei, jedoch erhöhtes Risiko der Einstufung als Berufshändler bei kurzer Haltedauer, Hebelfinanzierung oder Gewinnen über 50% des Einkommens. Als professioneller Trader sind Gewinne als Einkommen steuerpflichtig (Faustregel: ca. 35% für Steuern einrechnen). Wichtige regulatorische Rahmenbedingungen für Schweizer Trader auf mindrocket-trading.com.",
+        source: "trading.ch",
+        url: "https://trading.ch/daytrading/",
+        date: "2026-05",
+        category: "Regulierung",
+        addedAt: "2026-05-11",
+      },
+      {
+        summary: "tradersmagazine.com / xabcdtrading.com (2026): 'NinjaTrader 8.1.6 – Neues Pulse-Tool und Maus-Hotkeys für Profi-Trader' – NinjaTrader 8.1.6 bringt das neue 'Pulse'-Tool zum Ablesen der Marktpartizipation, Maus-Hotkeys für schnellere Order-Platzierung sowie wichtige Bug-Fixes. CEO-Ausblick 2026: transformatives Jahr durch neue kundenorientierte Produkte und exchange-listed tradierbare Instrumente. Plattform-Updates stärken NinjaTrader als Kerninfrastruktur für algorithmische Strategien auf mindrocket-trading.com.",
+        source: "tradersmagazine.com",
+        url: "https://www.tradersmagazine.com/news/outlook-2026-martin-franchi-ninjatrader/",
+        date: "2026-05",
+        category: "Trading-Technologie",
+        addedAt: "2026-05-11",
+      },
+      {
         summary: "blog.pickmytrade.trade (2026): 'Mastering Performance Metrics in Algo Trading 2026' – Überblick über die wichtigsten Performance-Kennzahlen für algorithmischen Handel 2026: Win Rate liegt in robusten Systemen bei 45–70%, Profit Factor und adaptive KI-Strategien erreichen Sharpe Ratios von 1.5–2.26 in volatilen Märkten. Plattformen wie PickMyTrade automatisieren TradingView-Strategien direkt zu Brokern wie Tradovate oder Rithmic für 24/7-Execution. Relevant für Mind Rocket Trading, das systematische ES-Futures-Strategien und algorithmischen Handel vermittelt.",
         source: "blog.pickmytrade.trade",
         url: "https://blog.pickmytrade.trade/mastering-performance-metrics-algo-trading-2026/",
@@ -5455,6 +5495,38 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-11
       {
+        summary: "coachingausbildungen.ch (2026): 'Coaching-Markt Schweiz – Trends 2025/2026' – Der globale Coaching-Umsatz wächst bis 2026 auf rund USD 7,31 Milliarden; Gesundheits- und Wellness-Coaching in der Schweiz wächst mit 6,59% p.a. Haupttrends: Individualisierung, ganzheitliche Denkmodelle, digitale Formate und KI-basiertes Coaching. Die wachsende Professionalisierung und der Shift hin zu sinnorientierten statt rein leistungsorientierten Entwicklungsformaten bestätigen das Marktumfeld für mentale Werkzeuge auf mindtools.ch.",
+        source: "coachingausbildungen.ch",
+        url: "https://www.coachingausbildungen.ch/coaching-markt-schweiz-trends-2025-2026-analyse/",
+        date: "2026-05",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-05-11",
+      },
+      {
+        summary: "ad-hoc-news.de (Mai 2026): 'Buchmarkt setzt auf wissenschaftliche Selbsthilfe' – Der deutschsprachige Buchmarkt erlebt 2026 eine Flut an Neuerscheinungen zu Meditation, Achtsamkeit und Selbsthilfe mit verstärktem Fokus auf evidenzbasierte, proaktive Strategien und spezifische Themen wie Anti-Grübeln. E-Books erzielten im Schweizer Buchmarkt 2024 CHF 32,3 Mio., Hörbücher CHF 11,9 Mio. Wachsender Markt für digitale Selbsthilfe-Inhalte stärkt die Nachfrage nach PDF-Büchern und mentalen Werkzeugkästen wie mindtools.ch.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/buchmarkt-setzt-auf-wissenschaftliche-selbsthilfe/68597801",
+        date: "2026-05",
+        category: "Buchmarkt & Publishing",
+        addedAt: "2026-05-11",
+      },
+      {
+        summary: "startup-house.com (2026): 'Mental Health App Features for 2026 – Must-Haves, AI Tools und Compliance' – Kernfeatures 2026: Personalisierung, Mood-Tracking, geführte CBT/Achtsamkeitsinhalte, KI-Unterstützung, Teletherapie, Community und robuster Datenschutz. Der globale Markt für digitale Mental-Health-Apps übertrifft USD 6 Milliarden (2026). Regulierte digitale Therapeutika (DiGA in Deutschland) erfordern klinischen Nutzennachweis. Wachsender Markt für strukturierte, evidenzbasierte digitale Mental-Health-Werkzeuge – direktes Wachstumsumfeld für mindtools.ch.",
+        source: "startup-house.com",
+        url: "https://startup-house.com/blog/mental-health-app-features",
+        date: "2026-05",
+        category: "Mental Health",
+        addedAt: "2026-05-11",
+      },
+      {
+        summary: "databridgemarketresearch.com (2026): 'Globaler Markt für Persönlichkeitsentwicklung – Analyse und Prognose bis 2032' – Der weltweite Markt für persönliche Entwicklung (Personal Development) wächst kontinuierlich, getrieben durch steigende Nachfrage nach Sinn, innerer Balance und echter Verbindung statt reiner Leistungsoptimierung. In der Schweiz kostet Persönlichkeitsentwicklungscoaching im Schnitt CHF 100–200 pro Stunde. Wachsender Markt mit Shift zu tiefgreifenden Angeboten stärkt das Potenzial für strukturierte PDF-Werkzeuge auf mindtools.ch.",
+        source: "databridgemarketresearch.com",
+        url: "https://www.databridgemarketresearch.com/de/reports/global-personal-development-market",
+        date: "2026-05",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-05-11",
+      },
+      {
         summary: "swissinfo.ch (2026): 'Gesucht: Auswege aus der Mental-Health-Krise' – SWI swissinfo.ch analysiert die psychische Gesundheitskrise in der Schweiz: Ein erheblicher Anteil der Bevölkerung leidet unter Stress, Burnout und Angstzuständen; staatliche und private Angebote sind stark gefragt, aber oft schwer zugänglich. Die strukturelle Mental-Health-Nachfrage schafft direktes Marktpotenzial für niedrigschwellige Selbsthilfe-Tools wie die PDF-Programme auf mindtools.ch.",
         source: "swissinfo.ch",
         url: "https://www.swissinfo.ch/ger/politik/gesucht-auswege-aus-der-mental-health-krise/48808184",
@@ -6702,6 +6774,54 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "hypnovital": {
     news: [
       // Neu: 2026-05-11
+      {
+        summary: "ad-hoc-news.de (Mai 2026): 'Burnout-Schutz wird 2026 zum strategischen Muss für Unternehmen' – Experten prognostizieren: Employee Wellbeing wird 2026 zum entscheidenden Faktor für Arbeitgeberattraktivität und Unternehmensleistung. Fachkräftemangel zwingt Unternehmen zum Umdenken; Wohlbefinden wird fester Bestandteil von Führungsprinzipien, Budgets und Abläufen statt separatem Programm. Direktes Marktargument für hypnovital® als skalierbare, digitale BGM-Präventionslösung für Unternehmen.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/burnout-schutz-wird-2026-zum-strategischen-muss-fuer-unternehmen/68485357",
+        date: "2026-05",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-11",
+      },
+      {
+        summary: "ad-hoc-news.de (Mai 2026): 'KI wird 2026 zur Burnout-Prävention in KMU' – Kleine und mittlere Unternehmen setzen vermehrt auf KI zur Prävention von Überlastung: KI automatisiert Aufgaben, erkennt Belastungsmuster frühzeitig und erfordert klare Regeln. KMU-fokussierter BGM-Trend schafft Marktpotenzial für niedrigschwellige digitale Lösungen wie hypnovital® als Audio-Hypnoseprogramm für den Arbeitsalltag.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/ki-wird-2026-zur-burnout-praevention-in-kmu/68622426",
+        date: "2026-05",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-11",
+      },
+      {
+        summary: "ad-hoc-news.de (Mai 2026): 'Unternehmen verordnen 2026 die erzwungene Erholung' – Im ersten Quartal 2026 setzen Konzerne zunehmend auf 'Enforced Recovery': verpflichtende Ruhephasen für Führungskräfte, da freiwillige Erholungsmodelle bei Top-Entscheidern gescheitert sind. Massnahmen umfassen biometrisches Tracking mit Wearables und kognitive Entlastung durch 'Microbreaks' und Atemtechniken. Struktureller Erholungsbedarf öffnet Markt für Audio-Hypnoseprogramme wie hypnovital® als evidenzbasiertes Entspannungswerkzeug.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/unternehmen-verordnen-2026-die-erzwungene-erholung/68563743",
+        date: "2026-05",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-11",
+      },
+      {
+        summary: "ad-hoc-news.de (Mai 2026): 'Hypnose-App-Markt erreicht 2026 Milliardenbewertung' – Der globale Hypnose-App-Markt wurde 2026 auf USD 1,2 Milliarden bewertet und wird bis 2033 auf USD 3,5 Milliarden anwachsen (CAGR 12,5%). Haupttreiber: wachsendes Bewusstsein für psychische Gesundheit, Mainstream-Adoption für Stressmanagement und die Verschmelzung von Audio-Hypnose mit KI-personalisierten Sitzungen basierend auf biometrischen Daten. Direkte Marktbestätigung für hypnovital® als Anbieter von Audio-Hypnoseprogrammen.",
+        source: "ad-hoc-news.de / verifiedmarketreports.com",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/hypnose-wird-2026-zum-mainstream-tool-gegen-stress/68477939",
+        date: "2026-05",
+        category: "Digitale Gesundheit",
+        addedAt: "2026-05-11",
+      },
+      {
+        summary: "fhnews.ch (Mai 2026): 'Nationale BGM-Tagung 2026: Gesunde Teams – Wie Zusammenarbeit gelingt' – Die Tagung am 15. September 2026 (Kursaal Bern) mit rund 1.000 Fachleuten aus HR, BGM und Management adressiert Gesundheitsherausforderungen hybrider und agiler Teams, Rolle von KI-Tools im BGM und psychologische Sicherheit als Führungsaufgabe. Weiteres Positionierungssignal für hypnovital® als BGM-Audio-Programmlösung für Schweizer Unternehmen.",
+        source: "fhnews.ch",
+        url: "https://www.fhnews.ch/artikel/nationale-bgm-tagung-2026-gesunde-teams-wie-zusammenarbeit-gelingt",
+        date: "2026-09",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-11",
+      },
+      {
+        summary: "coachingausbildungen.ch (2026): 'Coaching-Markt Schweiz – Trends 2025/2026 Analyse' – Der globale Coaching-Umsatz wächst auf rund USD 7,31 Milliarden bis 2026. Schweizer Gesundheits- und Wellness-Coaching wächst mit 6,59% p.a. (2025–2029). Trend zu Qualität, Individualisierung und digitalen Formaten (KI-Coaching, Walk & Talk). Wachsender professionalisierter Coaching-Markt in der Schweiz bestätigt steigende Nachfrage nach hypnovital®-Angeboten im Schnittfeld Hypnose, Coaching und BGM.",
+        source: "coachingausbildungen.ch",
+        url: "https://www.coachingausbildungen.ch/coaching-markt-schweiz-trends-2025-2026-analyse/",
+        date: "2026-05",
+        category: "Hypnose & Coaching",
+        addedAt: "2026-05-11",
+      },
       {
         summary: "netzwoche.ch (Februar 2026): 'KI entlastet nicht – sie erhöht das Burnout-Risiko' – Eine laufende Studie der UC Berkeley zeigt: Das parallele Verwenden von drei und mehr KI-Tools bildet die kritische Grenze, wo Produktivität nachlässt und das Risiko für Erschöpfung steigt. KI verdichtet Aufgaben und erhöht den Druck auf Mitarbeitende, statt zu entlasten. Diese Paradoxie stärkt die Nachfrage nach mentalen Gesundheitslösungen wie hypnovital®, das als Ausgleich zu technologischer Überforderung wirkt.",
         source: "netzwoche.ch",
