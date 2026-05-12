@@ -28,6 +28,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-12
       {
+        summary: "ict-berufsbildung.ch (März 2026): 'ICT-Diplomfeier 2026: Die höhere Berufsbildung bleibt wichtig für den Schweizer Arbeitsmarkt' – An der ICT-Diplomfeier vom 27. März 2026 erhielten 145 von 235 Kandidatinnen und Kandidaten ihre eidgenössischen Fachausweise als Cyber Security Specialists, ICT-Platform Development Specialists und Information Security Manager. Marc Marthaler, Geschäftsführer ICT-Berufsbildung Schweiz: 'Die höhere Berufsbildung schafft hochqualifizierte Fachkräfte, die sofort produktiv sind.' Direktes Validierungssignal für den Stellenwert formalisierter ICT-Zertifizierungen im Schweizer Arbeitsmarkt – positives Marktumfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation.",
+        source: "ict-berufsbildung.ch",
+        url: "https://www.ict-berufsbildung.ch/ict-diplomfeier-2026-die-hoehere-berufsbildung-bleibt-wichtig-fuer-den-schweizer-arbeitsmarkt",
+        date: "2026-03",
+        category: "Arbeitsmarkt & IT",
+        addedAt: "2026-05-12",
+      },
+      {
+        summary: "ict-berufsbildung.ch (2026): 'Neuer eidgenössischer KI-Abschluss stärkt Wirtschaft' – ICT-Berufsbildung Schweiz lanciert einen neuen eidgenössischen Berufsabschluss im Bereich Künstliche Intelligenz, der speziell auf die Anforderungen der Schweizer Wirtschaft ausgerichtet ist. Der KI-Abschluss ergänzt das bestehende Portfolio der ICT-Qualifikationen und stärkt den Schweizer Bildungsrahmen für KI-Kompetenzen. Die Integration von KI-Kompetenzen in den Schweizer Qualifikationsrahmen erhöht die strukturelle Nachfrage nach formalisierten ICT-Bildungswegen – direktes positives Marktumfeld für SIZ AG als Prüfungsorganisation.",
+        source: "ict-berufsbildung.ch",
+        url: "https://www.ict-berufsbildung.ch/neuer-eidgenoessischer-ki-abschluss-staerkt-wirtschaft",
+        date: "2026",
+        category: "Digitale Bildung",
+        addedAt: "2026-05-12",
+      },
+      {
+        summary: "siw.swiss (2026): 'Die Schweiz verschläft ihren digitalen Nachwuchs – und riskiert 54'400 offene ICT-Stellen' – Das Schweizerische Institut für Weiterbildung (SIW) warnt: Bis 2033 müssen über 54'000 zusätzliche ICT-Fachkräfte ausgebildet werden. Die Berufsbildung stellt 81% der ICT-Fachkräfte, aber der aktuelle Ausbildungsstand reicht nicht aus. Struktureller ICT-Fachkräftemangel erhöht den gesellschaftlichen Druck auf alle Akteure der ICT-Bildungslandschaft, qualitativ hochwertige Zertifizierungen anzubieten – direktes positives Marktumfeld für SIZ AG als führende ICT-Prüfungsorganisation.",
+        source: "siw.swiss",
+        url: "https://siw.swiss/ict-nachwuchs/",
+        date: "2026",
+        category: "Arbeitsmarkt & IT",
+        addedAt: "2026-05-12",
+      },
+      {
         summary: "ict-bbag.ch (2026): 'Resultate Regionalmeisterschaften 2026 – ICT-Berufsbildung Aargau' – Die ICT-Berufsbildung Aargau publiziert die vollständigen Ranglisten der ICT-Regionalmeisterschaften 2026 für die Disziplinen Software Application Development, Web Technologies, Cloud Computing, Mediamatics und Cyber Security. Die Top 11 jeder Disziplin qualifizieren sich für die Schweizer Meisterschaften ICTskills2027 (SwissSkills 2027, 14.–18. September 2027, Bern). Aktiver Nachwuchswettbewerb in der Schweizer ICT-Bildungslandschaft stärkt die gesellschaftliche Sichtbarkeit und Wertschätzung für ICT-Kompetenzen – direktes positives Marktumfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation.",
         source: "ict-bbag.ch",
         url: "https://www.ict-bbag.ch/resultate-regionalmeisterschaften-2026/",
@@ -2586,6 +2610,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "mindrocket-trading": {
     news: [
       // Neu: 2026-05-12
+      {
+        summary: "brokerchooser.com (2026): 'NinjaTrader Review 2026 – #1 Futures Broker & Algo Trading' – BrokerChooser kürte NinjaTrader 2026 zum #1 Futures Broker: 1,9 Millionen Nutzer weltweit, NinjaScript C#-Framework für automatisierte Strategien, umfangreicher Marktplatz für Third-Party-Tools. Advanced Trade Management (ATM) Strategies werden von den meisten Prop Firms akzeptiert und gelten als 'Geheimwaffe für Prop Trader'. NinjaTrader bleibt 2026 das führende Ökosystem für ES-Futures-Händler und algorithmische Strategien – zentrales Tool im Umfeld von Mind Rocket Trading.",
+        source: "brokerchooser.com",
+        url: "https://brokerchooser.com/broker-reviews/ninjatrader-review/algo-trading-at-ninjatrader",
+        date: "2026",
+        category: "Trading-Technologie",
+        addedAt: "2026-05-12",
+      },
+      {
+        summary: "damnpropfirms.com (Mai 2026): '4 Algo Trading Futures Prop Firms – Verified for May 2026' – Analyse der verifizierten Prop Firms, die algorithmisches Trading auf Futures-Märkten erlauben: Vollautomatisierte Strategien, semi-automatisierte Tools und NinjaTrader 8 als meistunterstützte Plattform. Stand März 2026: Automation-Policies variieren stark; einige Firmen erlauben volle Algos, die meisten erlauben semi-automatische Tools. Klarer Markttrend zur Akzeptanz automatisierter Handelsstrategien bei Prop Firms – wichtiges Umfeld für Mind Rocket Trading Strategien.",
+        source: "damnpropfirms.com",
+        url: "https://damnpropfirms.com/best-prop-firms-for-algo-trading/",
+        date: "2026-05",
+        category: "Futures & Trading",
+        addedAt: "2026-05-12",
+      },
+      {
+        summary: "proptradingvibes.com (2026): 'Trading Automation Prop Firms – Was erlauben die grössten Firmen?' – Detaillierte Übersicht über Automation-Policies der wichtigsten Futures Prop Firms 2026: Vergleich zwischen vollautomatisierten EAs, semi-automatischen Tools und manuellen Strategien; NinjaTrader als meistunterstützte Plattform für automatisierte Strategien. Wachsende Transparenz über Automation-Policies erleichtert Tradern die Wahl der richtigen Prop Firm für algorithmische Ansätze – relevantes Marktumfeld für Mind Rocket Trading Community.",
+        source: "proptradingvibes.com",
+        url: "https://proptradingvibes.com/blog/trading-automation-prop-firms-6e063",
+        date: "2026",
+        category: "Futures & Trading",
+        addedAt: "2026-05-12",
+      },
       {
         summary: "cnbc.com (11. Mai 2026): 'S&P 500 erreicht neue Allzeithochs – Sechste Gewinnwoche in Folge' – Der S&P 500 erzielte am 11. Mai 2026 neue Allzeithochs (7.412 Punkte) nach sechs aufeinanderfolgenden Gewinnwochen – dem längsten Aufwärtstrend seit 2024. Der April war der beste Börsenmonat seit 2020, getrieben durch starke Q1-Unternehmensgewinne und nachlassende Handelsspannungen. Für ES-Futures-Trader bei Mind Rocket Trading bedeutet dies ein marktaktives Umfeld mit erhöhten Handelsmöglichkeiten.",
         source: "cnbc.com",
@@ -5626,6 +5674,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-12
       {
+        summary: "mentalhealth-gmbh.ch (2026): 'Mental Health GmbH – Kurse für psychische Gesundheit in der Schweiz' – Die Mental Health GmbH Schweiz bietet spezialisierte Kurse zur Förderung psychischer Gesundheit an: präventive Angebote für Einzelpersonen und Unternehmen, Fokus auf mentale Stärke, Resilienz und Selbsthilfe-Kompetenzen. Das wachsende spezialisierte Angebot im Bereich mentale Werkzeuge und Selbsthilfe in der Schweiz bestätigt die strukturelle Nachfrage – direktes positives Marktumfeld für mindtools.ch als Anbieter digitaler mentaler Werkzeuge.",
+        source: "mentalhealth-gmbh.ch",
+        url: "https://mentalhealth-gmbh.ch/",
+        date: "2026",
+        category: "Mental Health",
+        addedAt: "2026-05-12",
+      },
+      {
         summary: "uzhfoundation.ch (April 2026): 'Therapie-App der PUK übertrifft klassische Therapie in Studien' – Die Universität Zürich berichtet, dass eine von der Psychiatrischen Universitätsklinik (PUK) entwickelte transdiagnostische Therapie-App, die Präsenztherapie mit digitalen Tools kombiniert, Studienergebnisse erzielt, die vergleichbar oder besser als klassische Therapie sind. Das zeigt, dass Schweizer Institutionen zunehmend digitale mentale Werkzeuge wissenschaftlich validieren. Für mindtools.ch als Anbieter digitaler mentaler Werkzeuge ist dies ein positives Marktumfeld-Signal.",
         source: "uzhfoundation.ch",
         url: "https://www.uzhfoundation.ch/en/topics/changes-in-society/digitalization/therapy-app",
@@ -6946,6 +7002,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "hypnovital": {
     news: [
       // Neu: 2026-05-12
+      {
+        summary: "ergotherapie.ch (2026): 'Burnout-Prävention – Kurs am 6. Juni 2026, Zürich' – Der Ergotherapie-Verband Schweiz bietet einen Kurs zur Burnout-Prävention am Samstag, 6. Juni 2026 in Zürich an. Fokus: psychische Erschöpfung als häufigste Ursache langfristiger Arbeitsausfälle; fast ein Drittel der Schweizer Berufstätigen fühlt sich emotional erschöpft. Das wachsende institutionelle Kursangebot zur Burnout-Prävention zeigt die gesellschaftliche Dringlichkeit des Themas – direktes positives Marktumfeld für hypnovital® als Anbieter von BGM-Lösungen und Burnout-Prävention.",
+        source: "ergotherapie.ch",
+        url: "https://ergotherapie.ch/courses/burnout-praevention/",
+        date: "2026-06",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-12",
+      },
+      {
+        summary: "swisslife.ch (2026): 'Swiss Life BGM: Online-Seminar Burnout-Prävention – Impuls-Referat für Unternehmen' – Swiss Life bietet als Teil seines betrieblichen Gesundheitsmanagements (BGM) ein Online-Seminar zur Burnout-Prävention für Unternehmen an: Bewusstsein für Warnsignale wie emotionale Erschöpfung, Zynismus und Leistungsabfall. Die Integration von Burnout-Prävention als BGM-Standardangebot grosser Schweizer Versicherer bestätigt, dass BGM-Lösungen im Unternehmensmarkt etabliert und gefragt sind – direktes positives Marktumfeld für hypnovital® als spezialisierter BGM-Anbieter.",
+        source: "swisslife.ch",
+        url: "https://www.swisslife.ch/de/unternehmen/unsere-loesungen/betriebliches-gesundheitsmanagement/kurse/online-seminare/burnout-praevention.html",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-12",
+      },
+      {
+        summary: "axa.ch (2026): 'AXA wecare: Burnout-Prävention am Arbeitsplatz' – AXA Schweiz bietet Unternehmenskunden Burnout-Prävention als Kernbestandteil ihres BGM-Programms 'wecare' an: Gesundheitsprävention, Mitarbeiterzufriedenheit und Kostensenkung durch Verhinderung von Burnout-Ausfällen als zentrales Argument. Grossversicherer wie AXA legitimieren und verbreiten Burnout-Prävention als BGM-Standard in Schweizer Unternehmen – strukturell wachsendes Marktumfeld für hypnovital® als innovativer BGM-Anbieter mit Hypnose-Coaching-Ansatz.",
+        source: "axa.ch",
+        url: "https://www.axa.ch/de/unternehmenskunden/angebote/gesundheit-unfall/bgm-wecare/gesundheitspraevention/burnout-praevention.html",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-12",
+      },
       {
         summary: "MySwitzerland.com (2026): 'Hypnosekongress 2026 in Winterthur' – Der Internationale HypnoseKongress 2026 findet am 20./21. Juni 2026 in der AXA Arena Winterthur statt. Veranstaltung für Therapeuten, Mediziner und Coaches. Wichtigstes Schweizer Branchen-Event im direkten Umfeld von hypnovital®.",
         source: "myswitzerland.com",
@@ -9406,6 +9486,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-12
       {
+        summary: "beyondtime.ai (2026): 'The 12-Week Year: Why Quarterly Planning Beats Annual Goals' – Beyond Time AI analysiert, warum die 12-Week-Year-Methode (Brian Moran) die Jahresplanung übertrifft: Vier frische Starts pro Jahr, kürzere Feedback-Schleifen für schnellere Kurskorrektur, jede Woche zählt bei nur 12 Wochen Horizont. KI-Tools übernehmen 2026 automatisch das Tracking von Leading Indicators und generieren wöchentliche Fortschrittsberichte. Integration von KI in 12-Week-Year-Workflows steigert die Attraktivität passender SaaS-Planungstools wie dem 12wy-planner.",
+        source: "beyondtime.ai",
+        url: "https://beyondtime.ai/blog/the-12-week-year-why-quarterly-planning-beats-annual-goals",
+        date: "2026",
+        category: "12 Week Year Methode",
+        addedAt: "2026-05-12",
+      },
+      {
+        summary: "blog.logrocket.com (2026): 'The 12-Week Year approach to productivity and planning' – LogRocket erklärt die 12-Week-Year-Methode für Product Manager: Komprimierung des Planungshorizonts auf 12 Wochen eliminiert die 'Urgency Gap', die Prokrastination fördert; regelmässige 13-Wochen-Zyklen schaffen konsistenten Ausführungsdruck; Weekly Scorecard als zentrales Messinstrument. Wachsende Adaption der 12-Week-Year-Methode in Tech und Product Management bestätigt das Marktpotenzial für dedizierte SaaS-Planungstools wie dem 12wy-planner.",
+        source: "blog.logrocket.com",
+        url: "https://blog.logrocket.com/product-management/12-week-year-approach/",
+        date: "2026",
+        category: "Produktivität & Planung",
+        addedAt: "2026-05-12",
+      },
+      {
         summary: "assistsyourbiz.com (2026): 'How the 12 Week Year Changes Everything' – Praxisbericht über die 12-Week-Year-Methode von Brian P. Moran: 90-Tage-Ziele als überlegene Alternative zur reinen Jahresplanung, weil der Jahresplan regelmässig an veränderte Umstände angepasst werden muss und Quartalszyklen regelmässige Reflexion erzwingen. Steigende internationale Aufmerksamkeit für die 12-Week-Year-Methode erhöht die organische Nachfrage nach passenden SaaS-Planungstools wie dem 12wy-planner.",
         source: "assistsyourbiz.com",
         url: "https://www.assistsyourbiz.com/virtual-assistance/blog/12-week-year-plan/",
@@ -10932,6 +11028,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-12
       {
+        summary: "noack-hypnose.de (2026): 'Ejaculatio Praecox – Aufklärung, Tipps, Hilfe' – NOACK Hypnotherapie Berlin & online erklärt Ursachen und Behandlung von Ejaculatio praecox: Ursachen in Psyche, Chemie und Verhalten; Hypnosetherapie als wirksamer Ansatz mit Erfolgsrate von ca. 83% laut 2018-Studie (2–3 Sessions für merkliche Verbesserungen). Die zunehmende Online-Sichtbarkeit von Hypnosetherapie-Angeboten für Ejaculatio praecox zeigt wachsende Nachfrage nach niedrigschwelligen Selbsthilfealternativen – direktes Marktumfeld für orgasmus-hinauszoegern.de.",
+        source: "noack-hypnose.de",
+        url: "https://www.noack-hypnose.de/ejaculatio-praecox-bzw-vorzeitiger-samenerguss/",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-05-12",
+      },
+      {
+        summary: "hypnosepraxismeier.ch (2026): 'Hypnose gegen Sexualstörungen – Praxis Meier Schweiz' – Die Hypnosepraxis Meier in der Schweiz bietet Hypnosetherapie speziell bei Sexualstörungen an, darunter vorzeitiger Samenerguss. Hypnose wirkt direkt im Unterbewusstsein zur Umprogrammierung von Verhaltensmustern und negativen Glaubenssätzen. Das aktive Angebot Schweizer Hypnosepraktiker für sexuelle Gesundheit zeigt die Normalität des Behandlungsansatzes – positives Marktumfeld für orgasmus-hinauszoegern.de als skalierbare Selbsthilfealternative zur Einzeltherapie.",
+        source: "hypnosepraxismeier.ch",
+        url: "https://www.hypnosepraxismeier.ch/sexualstoerung/",
+        date: "2026",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-05-12",
+      },
+      {
         summary: "gesundheitsinformation.de / BZgA (2026): 'Was kann ich selbst tun? – Verhaltenstherapeutische Methoden gegen vorzeitigen Samenerguss' – Das Bundesgesundheitsportal gesundheitsinformation.de bestätigt, dass verhaltenstherapeutische Methoden wie Start-Stopp-Technik und Beckenbodentraining wissenschaftlich wirksam gegen vorzeitigen Samenerguss sind und Beckenbodentraining in Studien medikamentösen Effekten vergleichbar ist. Die staatliche Legitimierung dieser Selbsthilfe-Methoden schafft Glaubwürdigkeit für das gesamte Marktsegment digitaler Selbsthilfeprodukte – positives Marktumfeld für orgasmus-hinauszoegern.de.",
         source: "gesundheitsinformation.de",
         url: "https://www.gesundheitsinformation.de/was-kann-ich-selbst-tun.html",
@@ -12197,6 +12309,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "lampenfieber": {
     news: [
       // Neu: 2026-05-12
+      {
+        summary: "noack-hypnose.de (2026): 'Redeangst ist kein Lampenfieber – Aufklärung, Tipps, Hilfe' – NOACK Hypnotherapie Berlin differenziert: Redeangst ist eine tiefergehende psychologische Problematik im Vergleich zu normalem Lampenfieber; Ursachen liegen im Unbewussten, weshalb Willenskraft allein scheitert. Hypnotherapie als wirksamer Ansatz durch direkte Arbeit auf unbewusster Ebene und Aufbau neuer neuronaler Muster. Die fachliche Differenzierung hebt die Ernsthaftigkeit des Themas hervor und unterstreicht den Bedarf an wirksamen Selbsthilfemethoden – positives Marktumfeld für lampenfieber-besiegen.de.",
+        source: "noack-hypnose.de",
+        url: "https://www.noack-hypnose.de/redeangst/",
+        date: "2026",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-05-12",
+      },
+      {
+        summary: "institut-fuer-hypnose.de (2026): 'Hypnose bei Lampenfieber, Präsentationsangst, Sprechangst' – Das Institut für Hypnose bietet mentales Training und Hypnose gegen Lampenfieber, Redeangst und Prüfungsangst an: Hypnose erreicht unbewusste Ebene und ermöglicht neue neuronale Strategien für Ruhe und Gelassenheit; Behandlung schnell, effektiv und nachhaltig. Das aktive Angebot spezialisierter Hypnose-Institute für Lampenfieber-Behandlung bestätigt die Marktbasis für Selbsthilfealternativen – direktes Marktumfeld für lampenfieber-besiegen.de.",
+        source: "institut-fuer-hypnose.de",
+        url: "https://institut-fuer-hypnose.de/redeangst-praesentationsangst-und-lampenfieber/",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-05-12",
+      },
       {
         summary: "blaubahn.com (Mai 2026): 'Primäre Behandlung bei Prüfungsangst sollte Psychotherapie sein' – 53% der Studierenden leiden unter Prüfungsangst, ein Viertel davon in schwerer Form. Belegt die Verbreitung von Auftritts- und Prüfungsangst als Marktgrundlage für lampenfieber-besiegen.de als niedrigschwellige Selbsthilfeoption.",
         source: "blaubahn.com",
@@ -13591,6 +13719,38 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "learnfluencer": {
     news: [
       // Neu: 2026-05-12
+      {
+        summary: "digitalengagiert.de (2026): 'E-Learning in 2026: Trends, KI & digitale Bildung' – Umfassende Analyse der E-Learning-Transformation 2026: KI analysiert individuelles Lernverhalten und passt Inhalte dynamisch an; globaler E-Learning-Markt überschreitet 400 Milliarden USD; personalisierte Lernpfade ersetzen starre Kurspfade. Arbeitnehmer benötigen zunehmend KI-Systemkenntnisse, Datenanalyse und digitale Kommunikation als Kernkompetenz. Die rasante digitale Transformation des Lernmarkts bestätigt den Bedarf an Thought-Leadership für Lernkompetenz und KI – direktes Kernumfeld für learnfluencer.ch.",
+        source: "digitalengagiert.de",
+        url: "https://www.digitalengagiert.de/e-learning-in-2026-trends-technologien-und-was-sich-veraendert/",
+        date: "2026",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-05-12",
+      },
+      {
+        summary: "cegos-integrata.de (2026): 'Die wichtigsten E-Learning-Trends 2026' – Cegos Integrata identifiziert die zentralen E-Learning-Trends 2026: KI als lernunterstützender Coach statt reiner Wissensdatenbank; AR/VR als Standardkomponenten vieler Trainingsprogramme; Soft Skills und Praxis-Integration als unverzichtbare Ergänzung zu technischen Kompetenzen. Die professionelle Lernbranche setzt 2026 vollständig auf KI-gestütztes, personalisiertes Lernen – direkter inhaltlicher Bezug zu learnfluencer.ch als Thought-Leadership-Plattform für Lernkompetenz.",
+        source: "cegos-integrata.de",
+        url: "https://www.cegos-integrata.de/blog/learning-development/digital-learning/die-wichtigsten-e-learning-trends-2026",
+        date: "2026",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-05-12",
+      },
+      {
+        summary: "educativa.com (2026): 'KI-Trends in der Bildung für 2026' – Educativa dokumentiert: KI entwickelt sich von Pilotprojekten zum alltäglichen Unterrichtseinsatz 2026; personalisierte Instruktion passt sich in Echtzeit an individuelle Lernbereitschaft an; hybride Lernräume und adaptive Systeme als Standard in Bildungseinrichtungen. Die tiefe Integration von KI in Bildungsangebote aller Stufen unterstreicht die wachsende Bedeutung von KI-Lernkompetenz – Kernthema von learnfluencer.ch.",
+        source: "educativa.com",
+        url: "https://www.educativa.com/de/blog/ki-trends-in-der-bildung-fuer-2026/",
+        date: "2026",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-05-12",
+      },
+      {
+        summary: "unternehmen.swissnova.swiss (2026): 'Weiterbildung für Unternehmen in der Schweiz: 10 Trends für 2026' – SwissNova analysiert: KI-Systemkenntnisse, Datenanalyse und digitale Kommunikation als wachsende Kernkompetenzen; kritisches Denken und menschliche Interaktion bleiben zentral. Der Bedarf an KI-Spezialistinnen und KI-Spezialisten in der Schweiz wird als hoch eingeschätzt und wächst massiv. Schweizer Unternehmen priorisieren KI-Weiterbildung – direktes Zielgruppenumfeld für learnfluencer.ch als Thought-Leadership-Plattform für Lernkompetenz und KI.",
+        source: "unternehmen.swissnova.swiss",
+        url: "https://unternehmen.swissnova.swiss/weiterbildung-unternehmen-schweiz-trends-2026/",
+        date: "2026",
+        category: "Weiterbildung Schweiz",
+        addedAt: "2026-05-12",
+      },
       {
         summary: "tarsus.ai (Mai 2026): 'LEARNTEC 2026 – Die Checkliste für deinen Besuch' – Praxisorientierter Leitfaden für Fachbesucher der LEARNTEC 2026 (5.–7. Mai, Karlsruhe): KI-Lernpartnerschaften, digitale Souveränität und immersives Lernen als Themenschwerpunkte; über 11.000 Besuchende aus 34 Ländern. Das rasante Wachstum der LEARNTEC 2026 (+25% Kongressteilnehmende) unterstreicht den Megatrend KI-gestütztes Lernen – direktes Thought-Leadership-Umfeld für learnfluencer.ch.",
         source: "tarsus.ai",
@@ -15661,6 +15821,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-12
       {
+        summary: "bexolutions.ch (2026): 'Marketing-Automation für Schweizer KMU 2026: Tools & ROI' – Bexolutions analysiert: systematische Automatisierung repetitiver Aufgaben als Kernstrategie; Schweizer KMU stehen vor der Herausforderung, mit begrenzten Ressourcen im digitalen Wettbewerb zu bestehen. KI-Marketing ist 2026 kein Luxus mehr, sondern Notwendigkeit. Der wachsende Druck auf Schweizer KMU zur Digitalisierung ihrer Marketingprozesse bestätigt den Bedarf an einfachen, fokussierten Marketingkonzept-Tools wie learnfluencer.ch/tools/marketingkonzept.",
+        source: "bexolutions.ch",
+        url: "https://bexolutions.ch/marketing-automation-fur-schweizer-kmu-2026-tools-roi/",
+        date: "2026",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-05-12",
+      },
+      {
+        summary: "kimarketing.ch (2026): 'Die besten KI-Marketing-Tools 2026 für Schweizer KMU – nicht die grösste Liste, sondern die richtige' – KIMarketing.ch kuratiert die relevantesten KI-Marketing-Tools für Schweizer KMU 2026: praxistaugliche Lösungen, einfacher Einstieg, KI-Marketing als Notwendigkeit für wettbewerbsfähige KMU positioniert. Das aktive Schweizer KI-Marketing-Ökosystem 2026 zeigt den strukturellen Bedarf an integrierten Marketing-Analyse-Tools – direktes Marktumfeld für das Marketingkonzept-Tool auf learnfluencer.ch mit PESTEL, SWOT, 5 Forces und 7P.",
+        source: "kimarketing.ch",
+        url: "https://www.kimarketing.ch/beste-ki-marketing-tools-2026-kmu/",
+        date: "2026",
+        category: "Marketing-Tools & Software",
+        addedAt: "2026-05-12",
+      },
+      {
+        summary: "kmu-performer.ch (2026): 'KMU Marketing-Trends 2026 – Was Schweizer KMU jetzt wissen müssen' – KMU Performer AG identifiziert die wichtigsten Marketing-Trends: strategische Marketingplanung als Schlüsselfaktor, KI-gestützte Analyse und messbare KPIs als Erfolgsfaktoren. Schweizer KMU investieren 2026 zunehmend in strukturierte Marketingplanung und -tools. Wachsende Investitionsbereitschaft bei KMU für Marketingplanung bestätigt das Marktpotenzial für das Marketingkonzept-Tool auf learnfluencer.ch mit integrierten Analyse-Frameworks und Budget-Planung.",
+        source: "kmu-performer.ch",
+        url: "https://kmu-performer.ch/trends-2026/",
+        date: "2026",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-05-12",
+      },
+      {
         summary: "kmuverband.ch (2026): 'MarTech für Schweizer KMU' – Der Schweizerische KMU Verband thematisiert Marketing Technology als strategisches Instrument. Typische Fehler bei KMU: Tools ohne Plan, fehlende Integrationen, zu hohe Komplexität. Zeigt Marktbedarf für einfache, fokussierte Marketing-Tools wie learnfluencer.ch/tools/marketingkonzept.",
         source: "kmuverband.ch",
         url: "https://www.kmuverband.ch/martech.html",
@@ -17135,6 +17319,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "bestattungsplaner": {
     news: [
       // Neu: 2026-05-12
+      {
+        summary: "age-stiftung.ch (2026): 'Letzte Reise – Interaktiver Bestattungsplaner für Gemeinden' – Die Age-Stiftung fördert 'Letzte Reise', einen interaktiven Bestattungsplaner speziell für Schweizer Gemeinden: Angehörige erhalten praktische Hilfe bei der Bestattungsplanung; Datenbank für regionale Bestattungsdienstleister; Beta-Version wird bis 2026 zur Marktreife weiterentwickelt. Das Engagement der Age-Stiftung für digitale Bestattungsplanungstools zeigt institutionelles Vertrauen in das digitale Bestattungsportal-Konzept – Validierungssignal für das Geschäftsmodell von bestattungsplaner.ch.",
+        source: "age-stiftung.ch",
+        url: "https://www.age-stiftung.ch/foerderung/letzte-reise-interaktiver-bestattungsplaner-fuer-gemeinden",
+        date: "2026",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-05-12",
+      },
+      {
+        summary: "startupvalley.news (2026): 'mymoria: Vom Todesfall zur digitalen Bestattungsplanung' – StartupValley porträtiert mymoria als innovatives Startup für digitale Bestattungsplanung: vollständig digitaler Prozess vom Todesfall bis zur Bestattung; transparente Preisgestaltung online; wachsende Akzeptanz digitaler Bestattungsportale in der DACH-Region. Das Startup-Ökosystem rund um digitale Bestattungsportale bestätigt den strukturellen Markttrend zur Online-Bestattungsplanung – relevanter Wettbewerbs- und Marktkontext für bestattungsplaner.ch als Schweizer Lead-Portal.",
+        source: "startupvalley.news",
+        url: "https://startupvalley.news/de/mymoria/",
+        date: "2026",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-05-12",
+      },
+      {
+        summary: "luzernerzeitung.ch (2026): 'Horw: Die digitalen Bestatter' – Die Luzerner Zeitung berichtet über digitale Bestattungsunternehmen in der Zentralschweiz: vollständige Online-Buchung ohne persönliche Vorbesprechung; transparente Preise; Experten erwarten, dass Bestattungen künftig vermehrt übers Internet gebucht werden, persönlicher Kontakt bleibt aber wichtig. Das traditionelle Medieninteresse an digitalen Bestattungsmodellen zeigt wachsende gesellschaftliche Akzeptanz des Online-Bestattungsmarktplatzes – positives Signal für bestattungsplaner.ch.",
+        source: "luzernerzeitung.ch",
+        url: "https://www.luzernerzeitung.ch/wirtschaft/horw-die-digitalen-bestatter-ld.85302",
+        date: "2026",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-05-12",
+      },
       {
         summary: "kremation.online (2026): 'Anonyme Bestattungen online organisieren in der Schweiz' – Das Online-Portal kremation.online ermöglicht die vollständig digitale Buchung anonymer Kremationen in der Schweiz: transparente Preisgestaltung, klare Prozessführung, keine persönliche Vorbesprechung erforderlich. Das Aufkommen dedizierter Online-Bestattungsportale zeigt den Wandel der Schweizer Bestattungsbranche zur digitalen Direktbuchung – bestätigt das Geschäftsmodell von bestattungsplaner.ch als digitales Lead-Portal.",
         source: "kremation.online",
