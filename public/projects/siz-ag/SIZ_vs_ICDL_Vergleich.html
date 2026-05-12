@@ -153,6 +153,10 @@ section.dark { background: var(--siz-blue-dark); color: #fff; max-width: none; }
 section.dark .inner { max-width: 1200px; margin: 0 auto; }
 section.dark h2 { color: #fff; }
 section.dark .sub { color: rgba(255,255,255,0.85); }
+section.dark .card-body,
+section.dark .card-body p,
+section.dark .card-body li,
+section.dark .card-body ul { color: rgba(255,255,255,0.94); }
 
 h2 {
   font-size: 2rem;
@@ -726,8 +730,13 @@ footer .red-stripes {
         </tr>
         <tr>
           <td class="label">Preis pro Modul</td>
-          <td class="siz"><strong>CHF 90</strong> pro Modul – einheitlich, transparent, zentral kalkuliert.</td>
+          <td class="siz"><strong>CHF 90</strong> Smart-User · <strong>CHF 110</strong> Advanced-User · <strong>CHF 260–330</strong> Power-User. Einheitliche Tarife für Partnerschulen, zentral kalkuliert. Keine Anmelde- oder ID-Gebühr.</td>
           <td>Ca. <strong>CHF 65–85</strong> pro Modul + einmalig <strong>CHF 145 für ICDL-ID/Skills Card</strong>. Preise variieren pro Testcenter (kein nationaler Einheitspreis).</td>
+        </tr>
+        <tr>
+          <td class="label">Support für Lehrkräfte &amp; Lernende</td>
+          <td class="siz"><strong>Kostenlose SIZ-Supportabteilung</strong> für alle Partnerschul-Lehrkräfte und Lernende – telefonisch und per E-Mail. Begleitung bei mySIZ-Onboarding, didaktischen Fragen, Prüfungs&shy;organisation.</td>
+          <td>Support primär über das Testcenter oder den Software-Anbieter Sophia. Kein zentraler kostenfreier CH-Support für Lehrkräfte.</td>
         </tr>
         <tr>
           <td class="label">Pruefungs&shy;volumen CH</td>
@@ -754,7 +763,7 @@ footer .red-stripes {
   <h2>SIZ-<strong>Diplome &amp; Module</strong> 2026</h2>
   <p class="sub">Vier Diplomstufen vom Einstieg bis zur IT-Laufbahn · Stand siz.ch/angebot</p>
 
-  <p>Die SIZ AG bietet 2026 vier aktive Diplome an. Jedes Diplom besteht aus 3–4 Modulen, die einzeln geprüft werden. Modulgebühr: <strong>CHF 90.– pro Modul</strong>. Module bleiben dauerhaft gültig – Diplome werden ab dem letzten bestandenen Modul ausgestellt.</p>
+  <p>Die SIZ AG bietet 2026 vier aktive Diplome an. Jedes Diplom besteht aus 3–4 Modulen, die einzeln geprüft werden. Die Modul&shy;gebühren für Lernende von SIZ-Partnerschulen sind nach Stufe gestaffelt: <strong>Smart-User CHF 90 · Advanced-User CHF 110 · Power-User CHF 260–330</strong> pro Modul. Module bleiben dauerhaft gültig – Diplome werden ab dem letzten bestandenen Modul ausgestellt. Keine Anmelde- oder ID-Gebühr.</p>
 
   <div class="diploma-list">
 
@@ -762,7 +771,7 @@ footer .red-stripes {
       <div class="dipl-side">
         <span class="level">Einstieg</span>
         <div class="name">ICT Smart-User SIZ</div>
-        <div class="price">3 Module · CHF 270.–</div>
+        <div class="price">3 Module · CHF 270.– (CHF 90/Modul)</div>
       </div>
       <div class="dipl-body">
         <p style="margin: 0 0 0.8rem; font-size: 0.92rem; color: var(--ink-soft);"><strong>Zielgruppe:</strong> Sek I, Lernende-Übergang, allgemeine Anwender ohne Vorkenntnisse.</p>
@@ -781,7 +790,7 @@ footer .red-stripes {
       <div class="dipl-side">
         <span class="level">Mittel · Hauptprodukt</span>
         <div class="name">ICT Advanced-User SIZ</div>
-        <div class="price">4 Module · CHF 360.–</div>
+        <div class="price">4 Module · CHF 440.– (CHF 110/Modul)</div>
       </div>
       <div class="dipl-body">
         <p style="margin: 0 0 0.8rem; font-size: 0.92rem; color: var(--ink-soft);"><strong>Zielgruppe:</strong> KV EFZ – inhaltlich auf Handlungskompetenz&shy;bereich E (HKB E) abgestimmt. Höhere Berufsbildung, Sachbearbeitende.</p>
@@ -801,7 +810,7 @@ footer .red-stripes {
       <div class="dipl-side">
         <span class="level">Fortgeschritten</span>
         <div class="name">ICT Power-User SIZ Data &amp; Technology</div>
-        <div class="price">3 Module · CHF 270.–</div>
+        <div class="price">3 Module · CHF 780.– (CHF 260/Modul)</div>
       </div>
       <div class="dipl-body">
         <p style="margin: 0 0 0.8rem; font-size: 0.92rem; color: var(--ink-soft);"><strong>Zielgruppe:</strong> KV-Option Technologie (3. Lehrjahr). Sachbearbeitung mit Datenanalyse-Schwerpunkt.</p>
@@ -820,7 +829,7 @@ footer .red-stripes {
       <div class="dipl-side">
         <span class="level">IT-Laufbahn</span>
         <div class="name">ICT Power-User SIZ Systems &amp; Network</div>
-        <div class="price">3 Module · CHF 270.–</div>
+        <div class="price">3 Module · CHF 990.– (CHF 330/Modul)</div>
       </div>
       <div class="dipl-body">
         <p style="margin: 0 0 0.8rem; font-size: 0.92rem; color: var(--ink-soft);"><strong>Zielgruppe:</strong> Übergang ins IT-Berufsfeld nach KV. Brücke zur ICT-Fachfrau/-mann EFZ.</p>
@@ -919,18 +928,19 @@ footer .red-stripes {
       <table class="price-table">
         <thead><tr><th>Position</th><th style="text-align:right;">CHF</th></tr></thead>
         <tbody>
-          <tr><td>Modul AU1 – Kommunikation</td><td class="amount">90.–</td></tr>
-          <tr><td>Modul AU2 – Präsentation</td><td class="amount">90.–</td></tr>
-          <tr><td>Modul AU3 – Texte</td><td class="amount">90.–</td></tr>
-          <tr><td>Modul AU4 – Tabellen</td><td class="amount">90.–</td></tr>
+          <tr><td>Modul AU1 – Kommunikation</td><td class="amount">110.–</td></tr>
+          <tr><td>Modul AU2 – Präsentation</td><td class="amount">110.–</td></tr>
+          <tr><td>Modul AU3 – Texte</td><td class="amount">110.–</td></tr>
+          <tr><td>Modul AU4 – Tabellen</td><td class="amount">110.–</td></tr>
           <tr><td>Anmeldegebühr / ID</td><td class="amount">0.–</td></tr>
           <tr><td>mySIZ-Plattform (in Modulgebühr enthalten)</td><td class="amount">0.–</td></tr>
+          <tr><td>Support-Hotline (kostenfrei)</td><td class="amount">0.–</td></tr>
         </tbody>
         <tfoot>
-          <tr><td>Total Diplom Advanced-User SIZ</td><td class="amount">360.–</td></tr>
+          <tr><td>Total Diplom Advanced-User SIZ</td><td class="amount">440.–</td></tr>
         </tfoot>
       </table>
-      <p style="font-size: 0.85rem; color: var(--mute); margin: 0;">Einheitliche, zentral kalkulierte Pruefungsgebuehr. Keine versteckten Zusatzkosten. Lehrmittel separat.</p>
+      <p style="font-size: 0.85rem; color: var(--mute); margin: 0;">Tarif Partnerschulen. Keine versteckten Zusatzkosten – inklusive mySIZ-Plattform und kostenfreiem Support für Lehrkräfte und Lernende. Lehrmittel separat.</p>
     </div>
 
     <div>
@@ -956,7 +966,7 @@ footer .red-stripes {
 
   <div class="box highlight">
     <h4>Direktvergleich der Gesamtkosten</h4>
-    <p style="font-size: 1.05rem;">Für ein vollständiges Anwender-Diplom liegt SIZ Advanced-User (4 Module · CHF 360) <strong>rund 20 % günstiger</strong> als ein vergleichbares ICDL Base + ID-Setup (~CHF 445). Bei ICDL Standard (7 Module + ID) summieren sich die Kosten auf <strong>~CHF 670</strong> – während ein SIZ-Aufstiegsweg Smart→Advanced (7 Module · CHF 630) bereits zwei volle Diplome liefert.</p>
+    <p style="font-size: 1.05rem;"><strong>SIZ Smart-User (CHF 270)</strong> deckt 3 Module inkl. Präsentation und Teams-Kollaboration ab – und ist damit rund <strong>40 % günstiger</strong> als ICDL Base mit 4 Modulen + Skills Card (~CHF 445). <strong>SIZ Advanced-User (CHF 440)</strong> liegt deutlich unter ICDL Standard (~CHF 670) und bietet tiefere, kombinations&shy;orientierte Inhalte. Zusätzlich enthalten: mySIZ-Plattform und <strong>kostenfreier Support</strong> für Lehrkräfte und Lernende – ein Mehrwert, den ICDL nicht in dieser Form bietet.</p>
   </div>
 </section>
 
@@ -1057,6 +1067,12 @@ footer .red-stripes {
   <div class="box pro">
     <h4>Der Lehrer-Hebel: mySIZ auch ohne Diplom-Anspruch</h4>
     <p>Viele Schulen unterschätzen diesen Punkt: <strong>Eine Lehrkraft kann mit mySIZ ihre gesamte ICT-Lektionsplanung abdecken</strong> – Lernzielchecks für jedes Thema, Testprüfungen als Erfahrungs&shy;note, fertige Aufgaben&shy;datenbank. Selbst wenn am Schluss <em>kein einziger Lernender</em> die scharfe Diplomprüfung ablegt, hat die Lehrkraft enorm Arbeit gespart. Dieses Modell gibt es bei ICDL nicht in dieser Form.</p>
+  </div>
+
+  <div class="box highlight">
+    <h4>Kostenfreier SIZ-Support für Lehrkräfte und Lernende</h4>
+    <p>Die SIZ AG betreibt eine eigene <strong>Support-Abteilung in Zürich</strong>, die telefonisch und per E-Mail kostenfrei für alle Lehrkräfte und Lernende der Partnerschulen erreichbar ist. Das Team begleitet beim mySIZ-Onboarding, klärt Lernziel-Fragen, hilft bei der Prüfungs&shy;organisation und bei technischen Anliegen. Reaktionszeit in der Regel innerhalb eines Arbeitstags.</p>
+    <p style="margin-top: 0.6rem; font-size: 0.93rem;"><strong>Im Vergleich:</strong> Bei ICDL läuft der Support primär über das jeweilige Testcenter oder den Software-Anbieter (Sophia). Einen zentralen, kostenfreien Schweizer Support speziell für Lehrkräfte gibt es nicht in dieser Form.</p>
   </div>
 </section>
 
@@ -1243,6 +1259,7 @@ footer .red-stripes {
         <li>Klassenverwaltung mit Echtzeit-Übersicht</li>
         <li>Didaktisches Begleit&shy;material zu jedem Modul</li>
         <li>Lehrkräfte-Community und Austausch mit der SIZ-Prüfungskommission</li>
+        <li><strong>Kostenfreier SIZ-Support</strong> per Telefon und E-Mail für didaktische, technische und organisatorische Fragen</li>
         <li><strong>Auch ohne Diplom-Anspruch</strong>: mySIZ als reguläres Lern- und Test-Tool nutzbar</li>
         <li>Etablierte Lehrmittel von Compendio, hep – sofort einsetzbar</li>
       </ul>
@@ -1313,12 +1330,12 @@ footer .red-stripes {
     <summary>Was kostet ein vollständiges SIZ-Diplom?</summary>
     <div class="answer">
       <ul>
-        <li><strong>Smart-User SIZ</strong> (3 Module): CHF 270.–</li>
-        <li><strong>Advanced-User SIZ</strong> (4 Module): CHF 360.–</li>
-        <li><strong>Power-User Data &amp; Technology</strong> (3 Module): CHF 270.–</li>
-        <li><strong>Power-User Systems &amp; Network</strong> (3 Module): CHF 270.–</li>
+        <li><strong>Smart-User SIZ</strong> (3 Module à CHF 90.–): CHF 270.–</li>
+        <li><strong>Advanced-User SIZ</strong> (4 Module à CHF 110.–): CHF 440.–</li>
+        <li><strong>Power-User Data &amp; Technology</strong> (3 Module à CHF 260.–): CHF 780.–</li>
+        <li><strong>Power-User Systems &amp; Network</strong> (3 Module à CHF 330.–): CHF 990.–</li>
       </ul>
-      <p>Modulgebühr: CHF 90.– pro Modul. Keine Anmelde&shy;gebühr, keine Skills-Card, keine versteckten Zusatzkosten. Lehrmittel werden separat über die Bildungs&shy;institution oder direkt beim Verlag bezogen.</p>
+      <p>Preise für Lernende von SIZ-Partnerschulen. Im Selbststudium liegen die Modul&shy;gebühren rund 20 % höher. Keine Anmelde&shy;gebühr, keine Skills-Card, keine versteckten Zusatzkosten. <strong>Kostenfreier Support</strong> für Lehrkräfte und Lernende sowie die mySIZ-Plattform sind inklusive. Lehrmittel werden separat über die Bildungs&shy;institution oder direkt beim Verlag bezogen.</p>
     </div>
   </details>
 
