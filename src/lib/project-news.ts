@@ -1815,6 +1815,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-12
       {
+        summary: "swissICT #DIGITUP (5. Mai 2026, Zürich): swissICT versammelte am 5. Mai 2026 in Zürich die Schweizer ICT-Community zum #DIGITUP-Event, wo in rund 30 Sessions Themen wie Digitale Souveränität, KI und digitale Bildung diskutiert wurden. Das Event spiegelt die hohe Dynamik im Bereich digitaler Weiterbildung und persönlicher Kompetenzentwicklung wider. Für Mind Rocket GmbH ist dies relevant, da die wachsende Nachfrage nach digitalen Lern- und Entwicklungsangeboten das Marktpotenzial für das eigene E-Learning- und Coaching-Portfolio unterstützt.",
+        source: "swissict.ch",
+        url: "https://www.swissict.ch/digitup-gv-2026/",
+        date: "2026-05",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-05-12",
+      },
+      {
         summary: "loesungs-impulse.ch (2026): 'PLI Coaching Ausbildung Schweiz – Neue Starts Frühjahr/Sommer 2026' – Die Lösung Impulse Coaching Akademie bietet in der Schweiz an mehreren Standorten PLI-zertifizierte Coaching-Ausbildungen an mit Starts im Frühjahr und Sommer 2026. Fokus: lösungs- und ressourcenorientiertes Coaching, Zertifizierung nach Berufsbildungsstandards. Das aktive Schweizer Coaching-Ausbildungsmarktsignal bestätigt die strukturell wachsende Nachfrage nach persönlichkeitsentwicklenden Formaten – direktes Wachstumsumfeld für Mind Rocket GmbH als Anbieter digitaler Programme.",
         source: "loesungs-impulse.ch",
         url: "https://loesungs-impulse.ch/coaching-ausbildung/",
@@ -2578,6 +2586,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "mindrocket-trading": {
     news: [
       // Neu: 2026-05-12
+      {
+        summary: "cnbc.com (11. Mai 2026): 'S&P 500 erreicht neue Allzeithochs – Sechste Gewinnwoche in Folge' – Der S&P 500 erzielte am 11. Mai 2026 neue Allzeithochs (7.412 Punkte) nach sechs aufeinanderfolgenden Gewinnwochen – dem längsten Aufwärtstrend seit 2024. Der April war der beste Börsenmonat seit 2020, getrieben durch starke Q1-Unternehmensgewinne und nachlassende Handelsspannungen. Für ES-Futures-Trader bei Mind Rocket Trading bedeutet dies ein marktaktives Umfeld mit erhöhten Handelsmöglichkeiten.",
+        source: "cnbc.com",
+        url: "https://www.cnbc.com/2026/05/07/stock-market-today-live-updates.html",
+        date: "2026-05",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-05-12",
+      },
+      {
+        summary: "apextraderfunding.com (März 2026): 'Apex Trader Funding lockert Prop-Trading-Regeln deutlich' – Apex Trader Funding hat im März 2026 seine Regeln für Prop-Trading-Konten erheblich gelockert: Die Mindesthandelstage-Anforderung wurde abgeschafft, und wöchentliche Auszahlungen sind ab dem 5. Tag möglich. Mit über 660 Mio. USD Auszahlungen seit 2022 und Kontogrößen von 25.000 bis 300.000 USD ist Apex eine der bedeutendsten Prop Firms für ES Futures. Für Mind Rocket Trading-Trader, die Apex als Kapitalquelle nutzen, sind die neuen flexibleren Bedingungen direkt relevant.",
+        source: "apextraderfunding.com",
+        url: "https://apextraderfunding.com/resources/prop-trading/prop-firm-trading-guide/",
+        date: "2026-03",
+        category: "Futures & Trading",
+        addedAt: "2026-05-12",
+      },
       {
         summary: "lunefi.com (2026): 'Best NinjaTrader Trade Copiers for Prop Firms 2026 – Reviews, Comparisons & Setup' – Detailliertes Review der besten NinjaTrader Trade-Copier-Lösungen für Prop-Trading-Firmen 2026: Produktvergleich, Setup-Anleitungen und Trader-Bewertungen. Wachsendes Ökosystem spezialisierter NinjaTrader-Dienste für Prop-Trader – direktes Marktumfeld für algorithmische ES-Futures-Strategien auf mindrocket-trading.com.",
         source: "lunefi.com",
@@ -5601,6 +5625,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "mindtools": {
     news: [
       // Neu: 2026-05-12
+      {
+        summary: "uzhfoundation.ch (April 2026): 'Therapie-App der PUK übertrifft klassische Therapie in Studien' – Die Universität Zürich berichtet, dass eine von der Psychiatrischen Universitätsklinik (PUK) entwickelte transdiagnostische Therapie-App, die Präsenztherapie mit digitalen Tools kombiniert, Studienergebnisse erzielt, die vergleichbar oder besser als klassische Therapie sind. Das zeigt, dass Schweizer Institutionen zunehmend digitale mentale Werkzeuge wissenschaftlich validieren. Für mindtools.ch als Anbieter digitaler mentaler Werkzeuge ist dies ein positives Marktumfeld-Signal.",
+        source: "uzhfoundation.ch",
+        url: "https://www.uzhfoundation.ch/en/topics/changes-in-society/digitalization/therapy-app",
+        date: "2026-04",
+        category: "Mental Health",
+        addedAt: "2026-05-12",
+      },
       {
         summary: "brainpoint.ch (2026): 'Persönlichkeitsentwicklung – Wege zum persönlichen Wachstum' – Das Schweizer Institut brainpoint.ch beschreibt persönliche Entwicklung als bewussten Prozess zur Entfaltung eigener Potenziale: Selbsterkenntnis, bewussteres Handeln und ein erfüllteres Leben. Persönliche Entwicklung fördert Resilienz, verbessert zwischenmenschliche Beziehungen und steigert die Lebenszufriedenheit. Wachsende Nachfrage nach strukturierten Entwicklungs-Tools im Schweizer Markt stärkt das Marktumfeld für mindtools.ch als digitales Werkzeug-Portfolio.",
         source: "brainpoint.ch",
@@ -10899,6 +10931,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "orgasmus": {
     news: [
       // Neu: 2026-05-12
+      {
+        summary: "gesundheitsinformation.de / BZgA (2026): 'Was kann ich selbst tun? – Verhaltenstherapeutische Methoden gegen vorzeitigen Samenerguss' – Das Bundesgesundheitsportal gesundheitsinformation.de bestätigt, dass verhaltenstherapeutische Methoden wie Start-Stopp-Technik und Beckenbodentraining wissenschaftlich wirksam gegen vorzeitigen Samenerguss sind und Beckenbodentraining in Studien medikamentösen Effekten vergleichbar ist. Die staatliche Legitimierung dieser Selbsthilfe-Methoden schafft Glaubwürdigkeit für das gesamte Marktsegment digitaler Selbsthilfeprodukte – positives Marktumfeld für orgasmus-hinauszoegern.de.",
+        source: "gesundheitsinformation.de",
+        url: "https://www.gesundheitsinformation.de/was-kann-ich-selbst-tun.html",
+        date: "2026-04",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-05-12",
+      },
       {
         summary: "SRF Wissen (2026): 'Orgasmus zur Unzeit – Vorzeitiger Samenerguss: Was tun, wenn Mann zu schnell kommt?' – SRF Wissen gibt einen umfassenden Überblick über vorzeitigen Samenerguss: psychologische und physiologische Ursachen werden erklärt; Behandlungsoptionen inkl. Verhaltenstherapie, Hypnose und Sexualtherapie werden als wirksam bewertet. Die redaktionelle Berichterstattung des Schweizer Staatsrundfunks reduziert den Tabustatus und steigert die Nachfrage nach zugänglichen, diskreten Selbsthilfelösungen wie orgasmus-hinauszoegern.de.",
         source: "SRF Wissen",
