@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIZ vs. ICDL/ECDL – Der umfassende Vergleich für Schweizer Schulen, Lehrkräfte und Lernende</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --siz-blue: #4880B6;
+  --siz-blue-dark: #2D5A8A;
+  --siz-blue-light: #7791B3;
+  --siz-blue-lite: #CDD4E1;
+  --siz-blue-soft: #EFF3F8;
+  --siz-red: #E30613;
+  --siz-red-dark: #A30009;
+  --accent-cyan: #5EC5ED;
+  --ink: #2D3940;
+  --ink-soft: #4A5965;
+  --mute: #859AB7;
+  --bg: #FFFFFF;
+  --bg-soft: #F5F7FA;
+  --line: #E2E8F0;
+  --ok: #1e7a4a;
+  --warn: #b75a00;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: 'Roboto', 'Segoe UI', system-ui, sans-serif;
+  font-weight: 400;
+  color: var(--ink);
+  line-height: 1.55;
+  background: var(--bg);
+  font-size: 16px;
+}
+
+/* TOPBAR */
+.topbar {
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+  padding: 14px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.topbar .brand {
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  color: var(--siz-blue-dark);
+}
+.topbar .meta {
+  color: var(--mute);
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(115deg, var(--siz-blue-soft) 0%, var(--siz-blue-lite) 50%, var(--siz-blue-light) 100%);
+  padding: 5rem 2rem 4rem;
+  position: relative;
+  overflow: hidden;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; right: 0;
+  width: 8px;
+  height: 100%;
+  background: repeating-linear-gradient(180deg, var(--siz-red) 0 16px, transparent 16px 32px);
+  opacity: 0.65;
+}
+.hero-inner { max-width: 1200px; margin: 0 auto; }
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--siz-blue-dark);
+  margin-bottom: 1rem;
+}
+.hero h1 {
+  font-size: clamp(2.3rem, 5.5vw, 4rem);
+  font-weight: 300;
+  margin: 0 0 1.2rem;
+  color: var(--siz-blue-dark);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+}
+.hero h1 strong { font-weight: 700; }
+.hero .lead {
+  font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+  max-width: 850px;
+  color: var(--ink-soft);
+  margin: 0 0 1.8rem;
+}
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.tag {
+  background: rgba(255,255,255,0.7);
+  border: 1px solid rgba(72,128,182,0.3);
+  padding: 0.35rem 0.85rem;
+  border-radius: 2px;
+  font-size: 0.82rem;
+  color: var(--siz-blue-dark);
+  font-weight: 500;
+}
+
+/* TOC */
+nav.toc {
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+  padding: 0.8rem 2rem;
+  position: sticky;
+  top: 53px;
+  z-index: 90;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+nav.toc a {
+  color: var(--siz-blue-dark);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-right: 1.6rem;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.15s;
+}
+nav.toc a:hover { border-bottom-color: var(--siz-red); }
+
+/* SECTIONS */
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+section.alt { background: var(--bg-soft); max-width: none; }
+section.alt .inner { max-width: 1200px; margin: 0 auto; }
+section.dark { background: var(--siz-blue-dark); color: #fff; max-width: none; }
+section.dark .inner { max-width: 1200px; margin: 0 auto; }
+section.dark h2 { color: #fff; }
+section.dark .sub { color: rgba(255,255,255,0.85); }
+
+h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0 0 0.4rem;
+  color: var(--siz-blue-dark);
+  letter-spacing: -0.01em;
+}
+h2 strong { font-weight: 700; }
+.sub {
+  font-size: 1rem;
+  color: var(--mute);
+  margin: 0 0 2.5rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--siz-blue-dark);
+  margin: 0 0 0.8rem;
+}
+p { margin: 0 0 1rem; }
+
+/* TL;DR */
+.tldr {
+  background: linear-gradient(135deg, var(--siz-blue-soft) 0%, #fff 100%);
+  border-left: 4px solid var(--siz-red);
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  margin-bottom: 2.5rem;
+}
+.tldr-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--siz-red);
+  margin-bottom: 0.6rem;
+}
+.tldr p { margin: 0; font-size: 1.05rem; color: var(--ink); }
+
+/* COMPARISON TABLE */
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  overflow: hidden;
+  font-size: 0.95rem;
+}
+.compare-table thead th {
+  background: var(--siz-blue-dark);
+  color: #fff;
+  padding: 1rem 1.2rem;
+  text-align: left;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  border-bottom: none;
+}
+.compare-table thead th:nth-child(2) {
+  background: var(--siz-blue);
+  border-left: 3px solid var(--siz-red);
+}
+.compare-table tbody td {
+  padding: 1rem 1.2rem;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+.compare-table tbody tr:nth-child(even) { background: var(--bg-soft); }
+.compare-table tbody tr:last-child td { border-bottom: none; }
+.compare-table td.label {
+  font-weight: 500;
+  color: var(--siz-blue-dark);
+  width: 22%;
+}
+.compare-table td.siz {
+  border-left: 3px solid var(--siz-red);
+  background: rgba(72,128,182,0.04);
+}
+.compare-table .check { color: var(--ok); font-weight: 700; margin-right: 4px; }
+.compare-table .x { color: var(--mute); font-weight: 700; margin-right: 4px; }
+
+/* CARDS */
+.card-grid {
+  display: grid;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+.card-grid.cols-2 { grid-template-columns: 1fr 1fr; }
+.card-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+.card-grid.cols-4 { grid-template-columns: repeat(4, 1fr); }
+.card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.card-head {
+  background: var(--siz-blue-dark);
+  color: #fff;
+  padding: 0.9rem 1.2rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+.card-head.red { background: var(--siz-red); }
+.card-head.blue { background: var(--siz-blue); }
+.card-head.light { background: var(--siz-blue-soft); color: var(--siz-blue-dark); }
+.card-body { padding: 1.2rem; flex: 1; }
+.card-body ul { margin: 0; padding-left: 1.2rem; }
+.card-body li { margin-bottom: 0.5rem; color: var(--ink-soft); font-size: 0.92rem; }
+.card-body p { font-size: 0.92rem; color: var(--ink-soft); }
+
+/* KPI */
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.kpi {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--siz-blue);
+  padding: 1.5rem 1rem;
+  text-align: center;
+  border-radius: 2px;
+}
+.kpi .num {
+  color: var(--siz-blue-dark);
+  font-size: 2.1rem;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.4rem;
+  line-height: 1;
+}
+.kpi .label {
+  color: var(--mute);
+  font-size: 0.82rem;
+  letter-spacing: 0.03em;
+  line-height: 1.3;
+}
+
+/* DIPLOMA CARDS */
+.diploma-list { display: grid; gap: 1.5rem; }
+.dipl {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+}
+.dipl-side {
+  background: linear-gradient(160deg, var(--siz-blue) 0%, var(--siz-blue-dark) 100%);
+  color: #fff;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.dipl-side .level {
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  opacity: 0.85;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  background: rgba(255,255,255,0.15);
+  padding: 0.2rem 0.6rem;
+  border-radius: 2px;
+  width: max-content;
+}
+.dipl-side .name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 0.3rem;
+}
+.dipl-side .price {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  opacity: 0.92;
+}
+.dipl-body {
+  padding: 1.3rem 1.5rem;
+}
+.dipl-body table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+.dipl-body th, .dipl-body td {
+  text-align: left;
+  padding: 0.45rem 0.6rem;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+.dipl-body th {
+  color: var(--mute);
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+}
+.dipl-body td.code {
+  font-weight: 700;
+  color: var(--siz-blue-dark);
+  width: 70px;
+}
+.dipl-body td.duration {
+  color: var(--mute);
+  font-size: 0.85rem;
+  white-space: nowrap;
+  text-align: right;
+}
+
+/* PRICE TABLE */
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border: 1px solid var(--line);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+.price-table th {
+  background: var(--siz-blue-dark);
+  color: #fff;
+  text-align: left;
+  padding: 0.9rem 1rem;
+  font-weight: 500;
+}
+.price-table td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--line);
+}
+.price-table td.amount {
+  font-weight: 500;
+  color: var(--siz-blue-dark);
+  white-space: nowrap;
+}
+.price-table tfoot td {
+  font-weight: 700;
+  background: var(--siz-blue-soft);
+  color: var(--siz-blue-dark);
+}
+
+/* BOXES */
+.box {
+  background: #fff;
+  border: 1px solid var(--line);
+  padding: 1.4rem 1.6rem;
+  border-radius: 2px;
+  margin-bottom: 1rem;
+}
+.box.pro {
+  border-left: 4px solid var(--ok);
+  background: #f4fbf6;
+}
+.box.contra {
+  border-left: 4px solid var(--mute);
+  background: var(--bg-soft);
+}
+.box.warn {
+  border-left: 4px solid var(--siz-red);
+  background: #fff6f6;
+}
+.box.highlight {
+  border-left: 4px solid var(--siz-blue);
+  background: var(--siz-blue-soft);
+}
+.box h4 {
+  margin: 0 0 0.5rem;
+  color: var(--siz-blue-dark);
+  font-size: 1rem;
+}
+.box.pro h4 { color: var(--ok); }
+.box.warn h4 { color: var(--siz-red-dark); }
+.box ul { margin: 0; padding-left: 1.2rem; }
+.box li { margin-bottom: 0.35rem; color: var(--ink-soft); font-size: 0.93rem; }
+.box p:last-child { margin-bottom: 0; }
+
+/* FAQ */
+details.faq {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 1rem 1.3rem;
+  margin-bottom: 0.6rem;
+}
+details.faq[open] {
+  border-color: var(--siz-blue);
+  box-shadow: 0 2px 8px rgba(72,128,182,0.1);
+}
+details.faq summary {
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--siz-blue-dark);
+  font-size: 1rem;
+  list-style: none;
+  position: relative;
+  padding-right: 30px;
+}
+details.faq summary::-webkit-details-marker { display: none; }
+details.faq summary::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 1.4rem;
+  color: var(--siz-red);
+  font-weight: 300;
+  line-height: 1;
+}
+details.faq[open] summary::after { content: "−"; }
+details.faq .answer {
+  margin-top: 0.9rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--line);
+  color: var(--ink-soft);
+  font-size: 0.93rem;
+}
+details.faq .answer ul { margin: 0.5rem 0 0; padding-left: 1.3rem; }
+details.faq .answer li { margin-bottom: 0.3rem; }
+
+/* QUOTE */
+blockquote {
+  margin: 1.5rem 0;
+  padding: 1.2rem 1.5rem;
+  background: var(--siz-blue-soft);
+  border-left: 4px solid var(--siz-red);
+  font-style: italic;
+  color: var(--ink);
+  font-size: 1.05rem;
+}
+
+/* AUDIENCE GRID */
+.audience-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+.audience {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--siz-blue);
+  padding: 1.5rem;
+  border-radius: 2px;
+}
+.audience .icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.audience h3 {
+  margin-bottom: 1rem;
+  font-size: 1.15rem;
+}
+.audience ul { padding-left: 1.2rem; margin: 0; }
+.audience li {
+  margin-bottom: 0.6rem;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+}
+
+/* SOURCES */
+.sources {
+  background: var(--bg-soft);
+  padding: 1.5rem;
+  border-radius: 2px;
+  font-size: 0.85rem;
+  margin-top: 2rem;
+}
+.sources h4 {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+  margin: 0 0 0.8rem;
+  color: var(--mute);
+}
+.sources ul { margin: 0; padding-left: 1.2rem; }
+.sources li {
+  margin-bottom: 0.3rem;
+  color: var(--ink-soft);
+}
+.sources a {
+  color: var(--siz-blue-dark);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--mute);
+}
+.sources a:hover { border-bottom-color: var(--siz-blue); }
+
+/* FOOTER */
+footer {
+  background: var(--siz-blue-dark);
+  color: rgba(255,255,255,0.92);
+  padding: 3rem 2rem 2rem;
+  text-align: center;
+}
+footer h3 {
+  color: #fff;
+  margin: 0 0 0.8rem;
+  font-weight: 300;
+}
+footer p { color: rgba(255,255,255,0.85); }
+footer a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(255,255,255,0.5);
+}
+footer .meta {
+  margin-top: 2rem;
+  font-size: 0.78rem;
+  opacity: 0.55;
+  letter-spacing: 0.05em;
+}
+footer .red-stripes {
+  display: block;
+  width: 80px;
+  height: 4px;
+  margin: 1rem auto;
+  background: repeating-linear-gradient(90deg, var(--siz-red) 0 12px, transparent 12px 18px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+  .card-grid.cols-2,
+  .card-grid.cols-3,
+  .card-grid.cols-4 { grid-template-columns: 1fr; }
+  .dipl { grid-template-columns: 1fr; }
+  .audience-grid { grid-template-columns: 1fr; }
+  section { padding: 3rem 1.2rem; }
+  .hero { padding: 3rem 1.2rem; }
+  .compare-table { font-size: 0.85rem; }
+  .compare-table td, .compare-table th { padding: 0.6rem; }
+}
+
+/* PRINT */
+@media print {
+  nav.toc, .topbar { display: none; }
+  section { page-break-inside: avoid; padding: 1.5rem; }
+  .hero { padding: 2rem 1.5rem; }
+  section.dark { background: #fff; color: var(--ink); }
+  section.dark h2 { color: var(--siz-blue-dark); }
+  body { font-size: 10pt; }
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span class="brand">SIZ AG · Akquisition</span>
+  <span class="meta">Vergleich SIZ vs. ICDL/ECDL · Stand 12.05.2026</span>
+</div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="kicker">Entscheidungshilfe für Schulen, Lehrkräfte &amp; Lernende</div>
+    <h1>SIZ oder <strong>ICDL/ECDL</strong>?<br>Der ehrliche Vergleich.</h1>
+    <p class="lead">Beide Programme zertifizieren ICT-Anwenderkompetenzen. Doch sie unterscheiden sich fundamental in Trägerschaft, Praxisbezug, Verankerung im Schweizer Bildungssystem – und im Marktwert. Diese Seite liefert Fakten, Zahlen und Argumente für eine fundierte Entscheidung.</p>
+    <div class="hero-tags">
+      <span class="tag">Kosten transparent</span>
+      <span class="tag">Modulinhalte im Detail</span>
+      <span class="tag">Prüfungsformate</span>
+      <span class="tag">mySIZ-Plattform</span>
+      <span class="tag">Verlage &amp; Lehrmittel</span>
+      <span class="tag">CH-Berufsbildungs-Verankerung</span>
+    </div>
+  </div>
+</header>
+
+<nav class="toc">
+  <a href="#tldr">Kurzfassung</a>
+  <a href="#direktvergleich">Direktvergleich</a>
+  <a href="#siz-diplome">SIZ-Diplome</a>
+  <a href="#icdl-module">ICDL-Module</a>
+  <a href="#kosten">Kosten</a>
+  <a href="#pruefung">Prüfungsformat</a>
+  <a href="#mysiz">mySIZ-Plattform</a>
+  <a href="#verlage">Verlage &amp; Lehrmittel</a>
+  <a href="#verankerung">CH-Verankerung</a>
+  <a href="#trusted-issuer">E-ID &amp; Trust</a>
+  <a href="#vorteile">Vorteile für …</a>
+  <a href="#wann-icdl">Wann ICDL?</a>
+  <a href="#faq">FAQ</a>
+  <a href="#quellen">Quellen</a>
+</nav>
+
+<!-- TLDR -->
+<section id="tldr">
+  <div class="tldr">
+    <div class="tldr-label">Kurzfassung in 60 Sekunden</div>
+    <p><strong>SIZ ist der Schweizer Gold-Standard für ICT-Anwenderkompetenzen</strong> – verankert im KV EFZ (HKB E), getragen vom Kaufmännischen Verband Schweiz und Swico, geprüft von rund 60 Schweizer Fachexpertinnen und -experten mit Praxisbezug zum hiesigen Büroalltag. <strong>ICDL/ICDL ist ein internationaler Basisnachweis</strong> – generisch, weltweit portabel, aber nicht im KV-Bildungsplan verankert und ohne nationales Pruefungsexperten-Gremium. Für Schweizer Lernende, Lehrkräfte und Schulen ist SIZ in den meisten Fällen die strategisch sinnvollere Wahl. ICDL hat seine Berechtigung bei Auslandsambitionen oder in internationalen Konzernen.</p>
+  </div>
+
+  <div class="kpi-grid">
+    <div class="kpi"><span class="num">~9 000</span><span class="label">SIZ-Prüfungs&shy;teilnehmende pro Jahr</span></div>
+    <div class="kpi"><span class="num">~110 000</span><span class="label">SIZ-Modul-Durchgänge p.a. (LZC + Test + Exam)</span></div>
+    <div class="kpi"><span class="num">~60</span><span class="label">SIZ-Fachexperten in der Prüfungs&shy;kommission</span></div>
+    <div class="kpi"><span class="num">&gt;90</span><span class="label">Partner-Bildungs&shy;institute in der Schweiz</span></div>
+    <div class="kpi"><span class="num">seit 1991</span><span class="label">SIZ etabliert im CH-Arbeitsmarkt</span></div>
+  </div>
+</section>
+
+<!-- DIREKTVERGLEICH -->
+<section id="direktvergleich" class="alt">
+  <div class="inner">
+    <h2>Direkt&shy;vergleich auf <strong>einen Blick</strong></h2>
+    <p class="sub">Die 12 wichtigsten Unterscheidungsmerkmale</p>
+
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>Merkmal</th>
+          <th>SIZ – Schweizerisches Informatik-Zertifikat</th>
+          <th>ICDL/ECDL – International Certification of Digital Literacy</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="label">Trägerschaft</td>
+          <td class="siz">SIZ AG, getragen vom <strong>Kaufmännischen Verband Schweiz</strong> und <strong>Swico</strong> (Verband der ICT-Anbieter). Eigene Schweizer Prüfungskommission.</td>
+          <td>ICDL Foundation, Dublin (IE). In CH seit 01.01.2025 von der <em>Swiss Informatics Society</em> mit Unterstützung der SAQ übernommen (Markenwechsel ECDL→ICDL läuft).</td>
+        </tr>
+        <tr>
+          <td class="label">Fokus</td>
+          <td class="siz"><strong>Schweizer Arbeitsmarkt.</strong> Stark auf die Bedürfnisse hiesiger KMU und kaufmännischer Berufe zugeschnitten.</td>
+          <td>Internationaler Standard, weltweit anerkannt in über 100 Ländern, verbreitet in Grosskonzernen.</td>
+        </tr>
+        <tr>
+          <td class="label">Inhaltliche Tiefe</td>
+          <td class="siz">Geht oft tiefer in <strong>Anwendungs&shy;kombinationen</strong> (z.B. Integration von Excel in Word, Datenflüsse zwischen Office-Apps, Cloud-Kollaboration mit Teams/OneDrive).</td>
+          <td>Stark modular aufgebaut; prüft oft <em>isoliertes Wissen pro Programm</em>.</td>
+        </tr>
+        <tr>
+          <td class="label">Prüfungsfragen</td>
+          <td class="siz"><strong>~60 Schweizer Fachexperten</strong> entwickeln jährlich neue Fragen aus dem hiesigen Büroalltag. Praxisorientierte Fallbeispiele.</td>
+          <td>Fragen werden <em>international</em> bei der ICDL Foundation in Dublin generiert und pro Land lokalisiert. Kein nationales CH-Expertengremium.</td>
+        </tr>
+        <tr>
+          <td class="label">Praxisbezug</td>
+          <td class="siz">Schweizer Beispiele: CH-Lohnausweis, E-Banking mit QR-Rechnung, Geschäfts&shy;korrespondenz nach SN-Norm, Schweizer Tastaturlayout.</td>
+          <td>Generische, neutrale Beispiele. Keine CH-Bezüge in den Aufgabenstellungen.</td>
+        </tr>
+        <tr>
+          <td class="label">Verankerung KV EFZ</td>
+          <td class="siz"><strong>Direkt in HKB E</strong> (Bildungsplan KV EFZ 2023) verankert. Module decken e1–e6 ab.</td>
+          <td>SBFI-thematisch anerkannt, aber <em>nicht</em> im KV-Bildungsplan referenziert. Additiv.</td>
+        </tr>
+        <tr>
+          <td class="label">Lehrkräfte-Plattform</td>
+          <td class="siz"><strong>mySIZ</strong> – Cloud-Plattform mit Lernzielchecks, Testprüfungen, Klassen&shy;verwaltung, didaktischen Materialien. Lehrkräfte können das System auch ohne Diplom-Anspruch ihrer Klasse voll nutzen.</td>
+          <td><em>Sophia-System</em> mit Diagnose&shy;tests (diagnosetest.ch). Funktional ähnlich, aber kein didaktischer Austausch und kein CH-spezifisches Schulungsmaterial integriert.</td>
+        </tr>
+        <tr>
+          <td class="label">Sprachen</td>
+          <td class="siz">DE / FR / IT (alle drei Landessprachen, vollständig lokalisiert mit CH-Spezifika).</td>
+          <td>DE / FR / IT / EN sowie global 41+ Sprachen – Inhalte aber international standardisiert.</td>
+        </tr>
+        <tr>
+          <td class="label">Preis pro Modul</td>
+          <td class="siz"><strong>CHF 90</strong> pro Modul – einheitlich, transparent, zentral kalkuliert.</td>
+          <td>Ca. <strong>CHF 65–85</strong> pro Modul + einmalig <strong>CHF 145 für ICDL-ID/Skills Card</strong>. Preise variieren pro Testcenter (kein nationaler Einheitspreis).</td>
+        </tr>
+        <tr>
+          <td class="label">Pruefungs&shy;volumen CH</td>
+          <td class="siz"><strong>~110 000 Modul-Durchgänge/Jahr</strong> (LZC + Testprüfung + scharfe Prüfung) auf eigener CH-Plattform.</td>
+          <td>Internationales System Sophia, in CH ca. 300 Testcenter. CH-Volumen nicht öffentlich ausgewiesen.</td>
+        </tr>
+        <tr>
+          <td class="label">Lehrmittel CH</td>
+          <td class="siz">Etablierte Schweizer Verlage stimmen Lehrmittel mit SIZ ab: <strong>Compendio, hep, Edubook</strong>. Plus eigene SIZ-Lernzielkataloge.</td>
+          <td>Compendio/hep liefern teils ICDL-konformen Stoff, aber kein expliziter ICDL-Schwerpunkt. Hauptsächlich internationale Tools (TEST4U, klickdichschlau.at).</td>
+        </tr>
+        <tr>
+          <td class="label">Akzeptanz am CH-Arbeitsmarkt</td>
+          <td class="siz">Gilt bei Schweizer Arbeitgebern als <strong>«Gold-Standard»</strong> und Beweis, dass jemand die spezifischen Schweizer Büro&shy;abläufe beherrscht.</td>
+          <td>Solider Basisnachweis. Bei Grenzgängern oder Auslands&shy;kandidaturen häufig bevorzugt.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- SIZ DIPLOME -->
+<section id="siz-diplome">
+  <h2>SIZ-<strong>Diplome &amp; Module</strong> 2026</h2>
+  <p class="sub">Vier Diplomstufen vom Einstieg bis zur IT-Laufbahn · Stand siz.ch/angebot</p>
+
+  <p>Die SIZ AG bietet 2026 vier aktive Diplome an. Jedes Diplom besteht aus 3–4 Modulen, die einzeln geprüft werden. Modulgebühr: <strong>CHF 90.– pro Modul</strong>. Module bleiben dauerhaft gültig – Diplome werden ab dem letzten bestandenen Modul ausgestellt.</p>
+
+  <div class="diploma-list">
+
+    <div class="dipl">
+      <div class="dipl-side">
+        <span class="level">Einstieg</span>
+        <div class="name">ICT Smart-User SIZ</div>
+        <div class="price">3 Module · CHF 270.–</div>
+      </div>
+      <div class="dipl-body">
+        <p style="margin: 0 0 0.8rem; font-size: 0.92rem; color: var(--ink-soft);"><strong>Zielgruppe:</strong> Sek I, Lernende-Übergang, allgemeine Anwender ohne Vorkenntnisse.</p>
+        <table>
+          <thead><tr><th>Modul</th><th>Bezeichnung</th><th>Inhalt</th><th style="text-align:right;">Lekt.</th></tr></thead>
+          <tbody>
+            <tr><td class="code">SU1</td><td>Kommunikation &amp; Präsentation</td><td>E-Mail, Kalender, Teams, Internet, Datenschutz, KI-Tools, PowerPoint</td><td class="duration">20</td></tr>
+            <tr><td class="code">SU3</td><td>Texte</td><td>Word: Dokumente, Formatierung, Tabellen, Illustrationen, Kommentare</td><td class="duration">16</td></tr>
+            <tr><td class="code">SU4</td><td>Tabellen</td><td>Excel: Tabellen, Formeln, Funktionen, Diagramme, Druckaufbereitung</td><td class="duration">16</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="dipl">
+      <div class="dipl-side">
+        <span class="level">Mittel · Hauptprodukt</span>
+        <div class="name">ICT Advanced-User SIZ</div>
+        <div class="price">4 Module · CHF 360.–</div>
+      </div>
+      <div class="dipl-body">
+        <p style="margin: 0 0 0.8rem; font-size: 0.92rem; color: var(--ink-soft);"><strong>Zielgruppe:</strong> KV EFZ Handlungskompetenz&shy;bereich E (Hauptprodukt). Höhere Berufsbildung, Sachbearbeitende.</p>
+        <table>
+          <thead><tr><th>Modul</th><th>Bezeichnung</th><th>Inhalt</th><th style="text-align:right;">Lekt.</th></tr></thead>
+          <tbody>
+            <tr><td class="code">AU1</td><td>Kommunikation</td><td>Outlook/Teams fortgeschritten, Kollaborations&shy;workflows, Cloud-Office</td><td class="duration">24</td></tr>
+            <tr><td class="code">AU2</td><td>Präsentation</td><td>PowerPoint Advanced: Animationen, Master, multimediale Aufbereitung</td><td class="duration">20</td></tr>
+            <tr><td class="code">AU3</td><td>Texte</td><td>Word Advanced: Seriendruck, Formatvorlagen, Verzeichnisse, Formulare</td><td class="duration">24</td></tr>
+            <tr><td class="code">AU4</td><td>Tabellen</td><td>Excel Advanced: Pivot-Tabellen, Verweise, Datenbankfunktionen, Statistik</td><td class="duration">28</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="dipl">
+      <div class="dipl-side">
+        <span class="level">Fortgeschritten</span>
+        <div class="name">ICT Power-User SIZ Data &amp; Technology</div>
+        <div class="price">3 Module · CHF 270.–</div>
+      </div>
+      <div class="dipl-body">
+        <p style="margin: 0 0 0.8rem; font-size: 0.92rem; color: var(--ink-soft);"><strong>Zielgruppe:</strong> KV-Option Technologie (3. Lehrjahr). Sachbearbeitung mit Datenanalyse-Schwerpunkt.</p>
+        <table>
+          <thead><tr><th>Modul</th><th>Bezeichnung</th><th>Inhalt</th><th style="text-align:right;">Lekt.</th></tr></thead>
+          <tbody>
+            <tr><td class="code">PU41</td><td>Office-Integration</td><td>Excel↔Word↔PowerPoint, Datenflüsse, Automatisierung, Power Query</td><td class="duration">28</td></tr>
+            <tr><td class="code">PU42</td><td>Datenbanken</td><td>Access oder SQL: Tabellen, Abfragen, Beziehungen, Berichte</td><td class="duration">28</td></tr>
+            <tr><td class="code">PU45</td><td>ICT-Technologien</td><td>Cloud-Architektur, IoT, Cybersicherheit, KI-Grundlagen, Datenschutz CH</td><td class="duration">24</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="dipl">
+      <div class="dipl-side">
+        <span class="level">IT-Laufbahn</span>
+        <div class="name">ICT Power-User SIZ Systems &amp; Network</div>
+        <div class="price">3 Module · CHF 270.–</div>
+      </div>
+      <div class="dipl-body">
+        <p style="margin: 0 0 0.8rem; font-size: 0.92rem; color: var(--ink-soft);"><strong>Zielgruppe:</strong> Übergang ins IT-Berufsfeld nach KV. Brücke zur ICT-Fachfrau/-mann EFZ.</p>
+        <table>
+          <thead><tr><th>Modul</th><th>Bezeichnung</th><th>Inhalt</th><th style="text-align:right;">Lekt.</th></tr></thead>
+          <tbody>
+            <tr><td class="code">PU11</td><td>Hardware</td><td>PC-Aufbau, Komponenten, Peripherie, Troubleshooting</td><td class="duration">24</td></tr>
+            <tr><td class="code">PU12</td><td>Betriebssysteme</td><td>Windows-Administration, Benutzer&shy;verwaltung, Skripte</td><td class="duration">24</td></tr>
+            <tr><td class="code">PU13</td><td>Netzwerke</td><td>TCP/IP, LAN/WLAN, Router, Switches, Netzwerksicherheit</td><td class="duration">28</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="box highlight" style="margin-top: 1.5rem;">
+    <h4>Drei-Stufen-Prüfungsmodell auf mySIZ</h4>
+    <p>Jedes SIZ-Modul kann auf der Plattform mySIZ in drei aufeinander aufbauenden Stufen geübt und geprüft werden:</p>
+    <ul>
+      <li><strong>Stufe 1 · Lernziel-Check (LZC):</strong> 10–20 Min, unlimitiert wiederholbar, 30 Tage gültig. Themen-Check während des Unterrichts.</li>
+      <li><strong>Stufe 2 · Testprüfung:</strong> ~60 Min, ca. 30 Fragen, unlimitiert. Generalprobe – kann als Erfahrungsnote in den Unterricht einfliessen.</li>
+      <li><strong>Stufe 3 · Exam-Modulprüfung:</strong> ~60 Min, scharf, Fixtermin, freiwillig. Führt zum offiziellen Diplom.</li>
+    </ul>
+    <p style="margin-top: 0.8rem;"><strong>Wichtig für Lehrkräfte:</strong> Stufe 1+2 können voll genutzt werden, auch wenn niemand das Diplom anstrebt. mySIZ ersetzt damit oft externe Lernziel&shy;kontrollen und spart Prüfungs&shy;erstellungsaufwand.</p>
+  </div>
+</section>
+
+<!-- ICDL MODULE -->
+<section id="icdl-module" class="alt">
+  <div class="inner">
+    <h2>ICDL/ECDL <strong>Modulstruktur</strong></h2>
+    <p class="sub">15 Module weltweit · in der Schweiz über icdl.ch buchbar</p>
+
+    <p>ICDL ist stark modular aufgebaut. Kandidatinnen und Kandidaten erwerben eine ICDL-ID (Skills Card) und legen einzelne Modulprüfungen in einem zertifizierten Testcenter ab. Diplome werden je nach absolvierter Modulkombination ausgestellt.</p>
+
+    <div class="card-grid cols-3">
+
+      <div class="card">
+        <div class="card-head blue">ICDL Base · 4 Pflichtmodule</div>
+        <div class="card-body">
+          <ul>
+            <li><strong>Computer Essentials</strong> – Betriebssystem-Grundlagen</li>
+            <li><strong>Online Essentials</strong> – Internet, E-Mail, Browser</li>
+            <li><strong>Word Processing</strong> – Textverarbeitung</li>
+            <li><strong>Spreadsheets</strong> – Tabellenkalkulation</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head blue">ICDL Standard · Base + 3 Wahlmodule</div>
+        <div class="card-body">
+          <ul>
+            <li>Using Databases</li>
+            <li>Presentation</li>
+            <li>Online Collaboration</li>
+            <li>IT Security</li>
+            <li>Image Editing</li>
+            <li>Computing (nur DE-Raum)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head blue">ICDL Advanced · 4 Einzelzertifikate</div>
+        <div class="card-body">
+          <ul>
+            <li><strong>Word Processing Advanced</strong></li>
+            <li><strong>Spreadsheets Advanced</strong></li>
+            <li><strong>Database Advanced</strong></li>
+            <li><strong>Presentation Advanced</strong></li>
+          </ul>
+          <p style="margin-top:0.6rem;">Plus Zusatzmodul <em>Typing Skills</em> (kombinierbar).</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="box contra">
+      <h4>Strukturunterschied auf einen Blick</h4>
+      <p>ICDL prüft Programme isoliert. SIZ prüft <strong>Anwendungs&shy;kombinationen</strong>: Wer bei SIZ AU3 (Word) eine bestandene Modulprüfung ablegt, beherrscht nicht nur Word – sondern auch wie Daten aus Excel in Word einfliessen, wie Seriendruck mit Outlook-Adressbüchern funktioniert und wie Cloud-Kollaboration in Teams sauber dokumentiert wird. Das ist näher am Schweizer Büroalltag.</p>
+    </div>
+  </div>
+</section>
+
+<!-- KOSTEN -->
+<section id="kosten">
+  <h2>Kosten<strong>vergleich</strong></h2>
+  <p class="sub">Realistische Total Cost of Certification für ein vollständiges Diplom</p>
+
+  <div class="card-grid cols-2">
+
+    <div>
+      <h3>SIZ – Beispielrechnung Advanced-User (KV EFZ)</h3>
+      <table class="price-table">
+        <thead><tr><th>Position</th><th style="text-align:right;">CHF</th></tr></thead>
+        <tbody>
+          <tr><td>Modul AU1 – Kommunikation</td><td class="amount">90.–</td></tr>
+          <tr><td>Modul AU2 – Präsentation</td><td class="amount">90.–</td></tr>
+          <tr><td>Modul AU3 – Texte</td><td class="amount">90.–</td></tr>
+          <tr><td>Modul AU4 – Tabellen</td><td class="amount">90.–</td></tr>
+          <tr><td>Anmeldegebühr / ID</td><td class="amount">0.–</td></tr>
+          <tr><td>mySIZ-Plattform (in Modulgebühr enthalten)</td><td class="amount">0.–</td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td>Total Diplom Advanced-User SIZ</td><td class="amount">360.–</td></tr>
+        </tfoot>
+      </table>
+      <p style="font-size: 0.85rem; color: var(--mute); margin: 0;">Einheitliche, zentral kalkulierte Pruefungsgebuehr. Keine versteckten Zusatzkosten. Lehrmittel separat.</p>
+    </div>
+
+    <div>
+      <h3>ICDL – Beispielrechnung ICDL Base (4 Module)</h3>
+      <table class="price-table">
+        <thead><tr><th>Position</th><th style="text-align:right;">CHF</th></tr></thead>
+        <tbody>
+          <tr><td>ICDL-ID / Skills Card (einmalig)</td><td class="amount">145.–</td></tr>
+          <tr><td>Modul Computer Essentials</td><td class="amount">~75.–</td></tr>
+          <tr><td>Modul Online Essentials</td><td class="amount">~75.–</td></tr>
+          <tr><td>Modul Word Processing</td><td class="amount">~75.–</td></tr>
+          <tr><td>Modul Spreadsheets</td><td class="amount">~75.–</td></tr>
+          <tr><td>Wiederholung Modul (falls nötig)</td><td class="amount">60.– / Vers.</td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td>Total ICDL Base (ohne Wiederholung)</td><td class="amount">~445.–</td></tr>
+        </tfoot>
+      </table>
+      <p style="font-size: 0.85rem; color: var(--mute); margin: 0;">Preise variieren pro Testcenter. Diagnose&shy;tests kostenpflichtig (~CHF 40). Quelle: Benedict-Preisblatt 2025, Jobcom-Preistabelle 08/2025.</p>
+    </div>
+
+  </div>
+
+  <div class="box highlight">
+    <h4>Direktvergleich der Gesamtkosten</h4>
+    <p style="font-size: 1.05rem;">Für ein vollständiges Anwender-Diplom liegt SIZ Advanced-User (4 Module · CHF 360) <strong>rund 20 % günstiger</strong> als ein vergleichbares ICDL Base + ID-Setup (~CHF 445). Bei ICDL Standard (7 Module + ID) summieren sich die Kosten auf <strong>~CHF 670</strong> – während ein SIZ-Aufstiegsweg Smart→Advanced (7 Module · CHF 630) bereits zwei volle Diplome liefert.</p>
+  </div>
+</section>
+
+<!-- PRÜFUNG -->
+<section id="pruefung" class="alt">
+  <div class="inner">
+    <h2>Prüfungs<strong>format</strong> &amp; Qualitätssicherung</h2>
+    <p class="sub">Wer schreibt die Fragen – und warum ist das entscheidend?</p>
+
+    <div class="card-grid cols-2">
+
+      <div class="card">
+        <div class="card-head" style="background: var(--siz-red);">SIZ – Prüfungs&shy;kommission Schweiz</div>
+        <div class="card-body">
+          <ul>
+            <li><strong>~60 Schweizer Fachexpertinnen und -experten</strong> in der SIZ-Prüfungs&shy;kommission – Lehrpersonen, Wirtschafts&shy;vertreter, Branchenpraktiker</li>
+            <li><strong>Jährliche neue Prüfungsfragen</strong> aus aktuellen Schweizer Praxis&shy;szenarien (CH-Lohnausweis, QR-Rechnungen, KV-Korrespondenz)</li>
+            <li>Praxisorientierte <strong>Fallbeispiele</strong> in der Originalsoftware (Microsoft 365, Cloud-Office)</li>
+            <li>Bestehensgrenze 75 %, ~60 Min pro Modul</li>
+            <li>Prüfungsabnahme an akkreditierten <strong>SIZ-Partnerschulen</strong> (&gt;90 in der Schweiz)</li>
+            <li>Modul-übergreifende Kombinations&shy;aufgaben (Excel→Word→Outlook)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head" style="background: var(--mute);">ICDL – International standardisiert</div>
+        <div class="card-body">
+          <ul>
+            <li>Fragen werden zentral bei der <strong>ICDL Foundation in Dublin</strong> entwickelt und pro Land lokalisiert</li>
+            <li><strong>Kein nationales CH-Expertengremium</strong> für Frageentwicklung</li>
+            <li>Prüfungssystem <strong>Sophia</strong>: standardisierte, automatisierte Auswertung</li>
+            <li>Praxisaufgaben + Multiple-Choice, 45 Min pro Modul, Bestehensgrenze 75 %</li>
+            <li>~300 Testcenter in CH/FL (Markenwechsel ECDL→ICDL seit 01.01.2025)</li>
+            <li>Module prüfen <em>isoliertes</em> Programm-Wissen, ohne CH-spezifische Fall&shy;beispiele</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <blockquote>«Eine SIZ-Prüfung simuliert einen realen Schweizer Büroalltag – mit Kundenkorrespondenz nach SN-Norm, QR-Rechnungsabwicklung und Microsoft-Teams-Kollaboration. Eine ICDL-Prüfung simuliert die Bedienung einer Software.»</blockquote>
+  </div>
+</section>
+
+<!-- MYSIZ -->
+<section id="mysiz">
+  <h2><strong>mySIZ</strong> – die Plattform, die Lehrkräfte entlastet</h2>
+  <p class="sub">Cloud-basiertes Lern- und Prüfungssystem unter mysiz.siz.ch</p>
+
+  <p>Die SIZ AG betreibt mit <strong>mySIZ</strong> eine eigene, in der Schweiz gehostete Lern- und Prüfungs&shy;plattform für Lehrkräfte und Lernende. Sie ist das Herzstück des SIZ-Mehrwerts für Schulen – und ein zentraler Unterschied zu ICDL.</p>
+
+  <div class="card-grid cols-3">
+
+    <div class="card">
+      <div class="card-head">Für Lehrkräfte</div>
+      <div class="card-body">
+        <ul>
+          <li>Klassen anlegen und verwalten</li>
+          <li>Lernziel-Checks für jedes Thema freischalten</li>
+          <li>Testprüfungen als <strong>Erfahrungsnote</strong> nutzen</li>
+          <li>Resultate aller Lernenden in Echtzeit einsehen</li>
+          <li>Didaktische Begleitmaterialien zu jedem Modul</li>
+          <li>Austausch in der SIZ-Lehrkräfte-Community</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">Für Lernende</div>
+      <div class="card-body">
+        <ul>
+          <li>Individuelle Lernfortschritt&shy;übersicht</li>
+          <li>Unlimitierte Wiederholungen der LZC und Testprüfungen (30 Tage)</li>
+          <li>Detail-Feedback nach jeder Aufgabe</li>
+          <li>Realsoftware (Microsoft 365) im Browser</li>
+          <li>Vorbereitung exakt im Stil der scharfen Prüfung</li>
+          <li>Mobile zugänglich</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">Für Schulleitungen</div>
+      <div class="card-body">
+        <ul>
+          <li>Übersicht über alle Klassen und Module</li>
+          <li>Quoten und Bestehensraten als KPI</li>
+          <li>SIZ-Partnerschule = Qualitätsmerkmal nach aussen</li>
+          <li>Geringe Verwaltungslast – SIZ stellt Diplome zentral aus</li>
+          <li>Marketing&shy;materialien für Eltern und Lehrbetriebe</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="box pro">
+    <h4>Der Lehrer-Hebel: mySIZ auch ohne Diplom-Anspruch</h4>
+    <p>Viele Schulen unterschätzen diesen Punkt: <strong>Eine Lehrkraft kann mit mySIZ ihre gesamte ICT-Lektionsplanung abdecken</strong> – Lernzielchecks für jedes Thema, Testprüfungen als Erfahrungs&shy;note, fertige Aufgaben&shy;datenbank. Selbst wenn am Schluss <em>kein einziger Lernender</em> die scharfe Diplomprüfung ablegt, hat die Lehrkraft enorm Arbeit gespart. Dieses Modell gibt es bei ICDL nicht in dieser Form.</p>
+  </div>
+</section>
+
+<!-- VERLAGE -->
+<section id="verlage" class="alt">
+  <div class="inner">
+    <h2>Verlage &amp; <strong>Lehrmittel</strong></h2>
+    <p class="sub">Etablierte Schweizer Bildungs&shy;verlage stimmen Lehrmittel auf SIZ ab</p>
+
+    <p>Ein häufig übersehener Vorteil von SIZ ist das ausgereifte <strong>Lehrmittel-Ökosystem</strong>. Schweizer Bildungs&shy;verlage haben über Jahre hinweg Lehrwerke entwickelt, die exakt auf SIZ-Lernzielkataloge abgestimmt sind. Lehrkräfte können damit ohne Eigen&shy;entwicklung direkt starten.</p>
+
+    <div class="card-grid cols-3">
+
+      <div class="card">
+        <div class="card-head">Compendio Bildungsmedien</div>
+        <div class="card-body">
+          <p>Teil der Kalaidos / Klett-Gruppe. ICT-Lehrmittel für Sek II, KV und höhere Berufsbildung. Klima&shy;neutrale Produktion in Merenschwand (Edubook). SIZ-Module SU/AU/PU sind durchgängig mit eigenen Kurs&shy;werken abgedeckt.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">hep Verlag</div>
+        <div class="card-body">
+          <p>Spezialisiert auf Schweizer Berufsbildung Sek II und Weiterbildung. Office-Lehrmittel, die KV-EFZ-Bildungsplan und SIZ-Module synchron abdecken. Print + digitale Begleit&shy;materialien.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">Edubook</div>
+        <div class="card-body">
+          <p>Print&shy;produktions&shy;partner für Compendio und andere CH-Bildungsverlage. Sicherstellung kurzer Lieferketten und CH-Qualitäts&shy;standard.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="card-grid cols-2">
+
+      <div class="box pro">
+        <h4>SIZ – verlagsmässig integriert</h4>
+        <ul>
+          <li>Compendio, hep und Edubook liefern <strong>SIZ-konforme Kurswerke</strong> für jedes Diplom</li>
+          <li>Lernzielkataloge der SIZ AG dienen den Verlagen als <strong>Strukturvorgabe</strong></li>
+          <li>Lehrwerk + mySIZ-Aufgabenpool greifen <strong>nahtlos ineinander</strong></li>
+          <li>Print, digital, Audio-Versionen für alle Lerntypen</li>
+          <li>Aktualisierungs&shy;zyklus parallel zu SIZ-Lernzielen</li>
+        </ul>
+      </div>
+
+      <div class="box contra">
+        <h4>ICDL – internationale Vorbereitungs-Tools</h4>
+        <ul>
+          <li>Kein expliziter CH-Lehrmittel&shy;schwerpunkt bei den grossen Verlagen</li>
+          <li>Hauptsächlich internationale Vorbereitungs-Tools: <strong>TEST4U</strong> (EU, DE/EN), <strong>klickdichschlau.at</strong> (Österreich, gratis)</li>
+          <li>Compendio/hep haben teils ICDL-konforme Stoffe, aber keine durchgängige Verlags&shy;reihe</li>
+          <li>Höhere Eigen&shy;entwicklung durch Lehrkräfte nötig</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- VERANKERUNG -->
+<section id="verankerung">
+  <h2>Verankerung in der <strong>Schweizer Berufsbildung</strong></h2>
+  <p class="sub">Wie sichtbar ist die Zertifizierung im KV EFZ Bildungsplan 2023?</p>
+
+  <p>Die SIZ-Diplome – insbesondere der <strong>ICT Advanced-User SIZ</strong> – sind direkt auf den Handlungs&shy;kompetenz&shy;bereich E (HKB E) des KV EFZ Bildungsplans 2023 abgestimmt. Das bedeutet: Lernende erwerben in der Lehre Kompetenzen, die SIZ unmittelbar zertifizieren kann.</p>
+
+  <div class="box highlight">
+    <h4>Mapping KV EFZ HKB E ↔ SIZ Advanced-User</h4>
+    <table class="price-table" style="margin-top: 0.5rem;">
+      <thead><tr><th>HKB</th><th>Handlungskompetenz</th><th>SIZ-Modul</th></tr></thead>
+      <tbody>
+        <tr><td><strong>e1</strong></td><td>Applikationen anwenden</td><td>AU1, AU3</td></tr>
+        <tr><td><strong>e2</strong></td><td>Recherchieren und auswerten</td><td>AU1, AU3</td></tr>
+        <tr><td><strong>e3</strong></td><td>Statistiken auswerten</td><td>AU4</td></tr>
+        <tr><td><strong>e4</strong></td><td>Multimedial aufbereiten</td><td>AU2</td></tr>
+        <tr><td><strong>e5</strong></td><td>Technologien einrichten (Option Tech)</td><td>PU45</td></tr>
+        <tr><td><strong>e6</strong></td><td>Grosse Datenmengen auswerten (Option Tech)</td><td>PU41</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top: 0.8rem; font-size: 0.9rem;">Quelle: HKB-E-Cheatsheet, SIZ AG · Bildungsplan KV EFZ 2023, SKKAB/IGKG</p>
+  </div>
+
+  <div class="card-grid cols-2">
+
+    <div class="box pro">
+      <h4>SIZ – Bildungsplan&shy;-Anker</h4>
+      <p>SIZ-Module sind in vielen Schweizer Bildungs&shy;institutionen Teil der regulären KV-Ausbildung. Das Diplom kann direkt während der Lehre erworben werden, ohne separat&shy;es Programm. Etablierte Praxis an &gt;90 SIZ-Partner&shy;schulen.</p>
+    </div>
+
+    <div class="box contra">
+      <h4>ICDL – additiv, ohne BiVo-Anker</h4>
+      <p>ICDL ist vom SBFI <em>thematisch</em> als IT-Anwender&shy;nachweis anerkannt. Es ist aber <strong>nicht</strong> in der Bildungsverordnung KV EFZ 2023 oder im Bildungsplan HKB E direkt referenziert. ICDL bleibt damit eine additive Zusatz&shy;qualifikation – nicht Teil der regulären Berufsbildungs&shy;struktur.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- TRUSTED ISSUER -->
+<section id="trusted-issuer" class="alt">
+  <div class="inner">
+    <h2>Zukunfts&shy;sicher: <strong>Trusted Issuer im CH-E-ID-Ökosystem</strong></h2>
+    <p class="sub">Was bedeutet die kommende Schweizer E-ID für ICT-Zertifikate?</p>
+
+    <p>Die Schweiz baut bis 2026/27 ein staatliches E-ID-Ökosystem auf (Bundesgesetz BGEID, BIT/EJPD). In diesem Ökosystem können Organisationen als <strong>«Trusted Issuer»</strong> verifizierbare digitale Nachweise (Verifiable Credentials) ausstellen. Diplome und Zertifikate werden damit kryptografisch fälschungssicher und maschinell prüfbar.</p>
+
+    <div class="card-grid cols-2">
+
+      <div class="box pro">
+        <h4>SIZ – CH-Trusted-Issuer in Vorbereitung</h4>
+        <ul>
+          <li>SIZ AG ist als Schweizer Prüfungs&shy;organisation prädestiniert für die Rolle eines <strong>verifizierten Trusted Issuers</strong></li>
+          <li>SIZ-Diplome werden künftig direkt ins E-ID-Wallet der Lernenden ausgestellt</li>
+          <li>Arbeitgeber können Diplome <strong>per QR-Scan in Sekunden verifizieren</strong> – keine telefonischen Nachfragen mehr</li>
+          <li>Kryptografisch fälschungssicher – Bewerbungs&shy;betrug wird unmöglich</li>
+          <li>CH-Rechtsrahmen, CH-Datenschutz, CH-Hosting</li>
+        </ul>
+      </div>
+
+      <div class="box contra">
+        <h4>ICDL – Trust-Anchor international</h4>
+        <ul>
+          <li>ICDL Foundation Dublin als zentraler internationaler Issuer</li>
+          <li>Anbindung an das Schweizer E-ID-Ökosystem nicht primär priorisiert</li>
+          <li>Diplom-Verifikation aktuell über zentrales ICDL-Portal (online)</li>
+          <li>Internationale Anerkennung als Stärke – aber lokale CH-Anbindung als Schwäche im neuen Trust-Framework</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <p style="margin-top: 1rem; font-size: 0.92rem; color: var(--mute);">→ Detail-Vorlage: <a href="https://franzruchti.com/project/siz-ag/trusted-issuer-eid" style="color: var(--siz-blue-dark);">SIZ als Trusted Issuer im CH-E-ID-Ökosystem</a></p>
+  </div>
+</section>
+
+<!-- VORTEILE -->
+<section id="vorteile">
+  <h2>Vorteile <strong>für …</strong></h2>
+  <p class="sub">Wer profitiert wie von einer SIZ-Zertifizierung?</p>
+
+  <div class="audience-grid">
+
+    <div class="audience">
+      <div class="icon" style="color: var(--siz-blue);">🎓</div>
+      <h3>Lernende &amp; Schülerinnen / Schüler</h3>
+      <ul>
+        <li><strong>Anerkannt am CH-Arbeitsmarkt</strong> – «Gold-Standard» bei Schweizer Arbeitgebern</li>
+        <li>Praktische, nicht abstrakte Inhalte – direkt im Lehrbetrieb anwendbar</li>
+        <li>Aufstiegspfad sichtbar: Smart → Advanced → Power-User</li>
+        <li>mySIZ-Plattform: unlimitiert üben, Detail-Feedback, Realsoftware</li>
+        <li>Diplom für die Bewerbungsmappe – konkrete, dokumentierte Kompetenz</li>
+        <li>Module bleiben dauerhaft gültig (kein Verfallsdatum)</li>
+        <li>Lebenslanger Lernpfad: Ergänzungen ohne Komplettwiederholung möglich</li>
+      </ul>
+    </div>
+
+    <div class="audience">
+      <div class="icon" style="color: var(--siz-red);">👩‍🏫</div>
+      <h3>Lehrkräfte</h3>
+      <ul>
+        <li><strong>mySIZ entlastet</strong>: fertige Lernzielchecks, Testprüfungen, Erfahrungsnoten</li>
+        <li>Kein Pruefungserstellungs&shy;aufwand mehr für Office-Themen</li>
+        <li>Klassenverwaltung mit Echtzeit-Übersicht</li>
+        <li>Didaktisches Begleit&shy;material zu jedem Modul</li>
+        <li>Lehrkräfte-Community und Austausch mit der SIZ-Prüfungskommission</li>
+        <li><strong>Auch ohne Diplom-Anspruch</strong>: mySIZ als reguläres Lern- und Test-Tool nutzbar</li>
+        <li>Etablierte Lehrmittel von Compendio, hep – sofort einsetzbar</li>
+      </ul>
+    </div>
+
+    <div class="audience">
+      <div class="icon" style="color: var(--siz-blue-dark);">🏫</div>
+      <h3>Schulen &amp; Schulleitungen</h3>
+      <ul>
+        <li><strong>SIZ-Partnerschule</strong> = sichtbares Qualitätsmerkmal</li>
+        <li>Direkte Verankerung in KV EFZ HKB E – kein additiv aufgesetztes Zusatz&shy;programm</li>
+        <li>KPI-Übersicht: Bestehensquoten, Modul-Statistiken</li>
+        <li>Geringe Verwaltungslast: SIZ stellt Diplome zentral aus</li>
+        <li>Marketing-Materialien für Eltern, Lehrbetriebe und Behörden</li>
+        <li>Eigene Schweizer Plattform mySIZ – DSG/DSGVO-konformes CH-Hosting</li>
+        <li>Zukunftssicher durch geplante E-ID-Anbindung (Trusted Issuer)</li>
+        <li>Verbundene Nachfrage: 90+ Partnerschulen bilden ein landesweites Qualitäts&shy;netzwerk</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- WANN ICDL -->
+<section id="wann-icdl" class="alt">
+  <div class="inner">
+    <h2>Fair: <strong>Wann ist ICDL die richtige Wahl?</strong></h2>
+    <p class="sub">SIZ ist nicht immer die beste Antwort. Hier sprechen Gründe für ICDL.</p>
+
+    <p>Eine ehrliche Beratung erkennt die Stärken des Wettbewerbs an. ICDL/ICDL hat klare Vorteile in bestimmten Szenarien – und genau das macht eine bewusste Entscheidung möglich.</p>
+
+    <div class="card-grid cols-2">
+
+      <div class="box pro">
+        <h4>ICDL ist sinnvoll, wenn …</h4>
+        <ul>
+          <li>… die Karriereperspektive klar im <strong>Ausland</strong> liegt (EU, USA, Asien)</li>
+          <li>… der Arbeitgeber ein <strong>internationaler Grosskonzern</strong> ist, bei dem globale Standards in HR/IT-Abteilung etabliert sind</li>
+          <li>… die Person als <strong>Grenzgänger</strong> in CH arbeitet, aber im Ausland lebt</li>
+          <li>… eine Schule explizit auf <strong>internationale Klientel</strong> ausgerichtet ist (z.B. International School)</li>
+          <li>… eine bestimmte Berufsbildungs&shy;ordnung ICDL explizit als Vor&shy;leistung anerkennt (z.B. Hauswart-Berufs&shy;prüfung)</li>
+        </ul>
+      </div>
+
+      <div class="box highlight">
+        <h4>SIZ ist die bessere Wahl, wenn …</h4>
+        <ul>
+          <li>… die Berufslaufbahn klar in der <strong>Schweiz</strong> stattfindet (&gt;90 % der Schweizer Lernenden)</li>
+          <li>… die Person KV EFZ macht oder ins Schweizer KMU geht</li>
+          <li>… die Schule den Anschluss an das KV-Berufsbildungs&shy;system optimieren will</li>
+          <li>… didaktischer Mehrwert (mySIZ, Lernzielchecks, CH-Verlagsmaterial) gewünscht ist</li>
+          <li>… eine zukunftssichere E-ID-fähige Zertifizierung wichtig ist</li>
+          <li>… günstigere und transparentere Kosten gewünscht sind</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <h2><strong>Häufig gestellte Fragen</strong></h2>
+  <p class="sub">Was Eltern, Lehrkräfte und Schulleitungen wirklich wissen wollen</p>
+
+  <details class="faq">
+    <summary>Was kostet ein vollständiges SIZ-Diplom?</summary>
+    <div class="answer">
+      <ul>
+        <li><strong>Smart-User SIZ</strong> (3 Module): CHF 270.–</li>
+        <li><strong>Advanced-User SIZ</strong> (4 Module): CHF 360.–</li>
+        <li><strong>Power-User Data &amp; Technology</strong> (3 Module): CHF 270.–</li>
+        <li><strong>Power-User Systems &amp; Network</strong> (3 Module): CHF 270.–</li>
+      </ul>
+      <p>Modulgebühr: CHF 90.– pro Modul. Keine Anmelde&shy;gebühr, keine Skills-Card, keine versteckten Zusatzkosten. Lehrmittel werden separat über die Bildungs&shy;institution oder direkt beim Verlag bezogen.</p>
+    </div>
+  </details>
+
+  <details class="faq">
+    <summary>Wer schreibt eigentlich die SIZ-Prüfungsfragen?</summary>
+    <div class="answer">
+      <p>Die SIZ-Prüfungs&shy;kommission besteht aus rund <strong>60 Schweizer Fachexpertinnen und -experten</strong> – Lehrpersonen aus Berufs&shy;fachschulen, IT-Verantwortliche aus Unternehmen, Branchen&shy;praktiker und Vertreterinnen und Vertreter des Kaufmännischen Verbands. Jährlich werden neue Prüfungsfragen aus dem aktuellen Schweizer Büroalltag entwickelt. Das stellt sicher, dass Themen wie QR-Rechnungen, der Schweizer Lohn&shy;ausweis oder branchen&shy;übliche Korrespondenz nach SN-Norm tatsächlich abgebildet sind.</p>
+    </div>
+  </details>
+
+  <details class="faq">
+    <summary>Welche Vorteile bringt mir mySIZ als Lehrkraft konkret?</summary>
+    <div class="answer">
+      <ul>
+        <li>Sofort einsetzbare Lernzielchecks für jedes Thema – kein eigener Aufgabenpool nötig</li>
+        <li>Testprüfungen können als <strong>Erfahrungsnote</strong> in die Zeugnisnote einfliessen</li>
+        <li>Klassenverwaltung mit Echtzeit-Übersicht aller Lernenden</li>
+        <li>Detail-Feedback nach jeder Aufgabe – Lernende verstehen Fehler selbst</li>
+        <li>Microsoft 365 direkt im Browser – kein Software-Setup an der Schule</li>
+        <li>Auch ohne Anspruch auf das scharfe Diplom voll nutzbar</li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="faq">
+    <summary>Ist ein SIZ-Diplom auch im Ausland anerkannt?</summary>
+    <div class="answer">
+      <p>SIZ ist primär auf den <strong>Schweizer Arbeitsmarkt</strong> ausgerichtet und im Ausland weniger bekannt als ICDL. Wer eine Auslandskarriere plant, kann SIZ als Basis erwerben und zusätzlich ICDL-Module ablegen. In der Praxis erwarten Schweizer Arbeitgeber bei einer Schweizer Bewerbung in &gt;90 % der Fälle das SIZ-Diplom als Standard&shy;referenz.</p>
+    </div>
+  </details>
+
+  <details class="faq">
+    <summary>Wieso sind SIZ-Module nach 30 Jahren noch relevant – trotz KI und ChatGPT?</summary>
+    <div class="answer">
+      <p>Gerade weil KI-Tools in den Arbeitsalltag einziehen, sind solide ICT-Grundlagen wichtiger denn je. Wer Excel-Pivot-Tabellen nicht versteht, kann auch das Resultat einer KI nicht prüfen. SIZ-Module integrieren bereits KI-Tools in die Lernzielkataloge (SU1: Prompt-Engineering, KI-Ergebnisse beurteilen). Die Prüfungs&shy;experten halten die Inhalte aktuell – jedes Jahr neue Fragen.</p>
+    </div>
+  </details>
+
+  <details class="faq">
+    <summary>Kann ein Lernender vom ICDL auf SIZ umsteigen?</summary>
+    <div class="answer">
+      <p>Ja. Inhaltlich gibt es grosse Überlappungen zwischen ICDL Base/Standard und SIZ Smart/Advanced. Wer bereits ICDL-Module hat, ist bei der SIZ-Vorbereitung gut gerüstet. Es gibt jedoch keine direkte 1:1-Anerkennung – jede SIZ-Modulprüfung wird einzeln abgelegt. Empfehlung: mySIZ-Lernzielcheck zur Standort&shy;bestimmung, dann gezielt die SIZ-Module ablegen.</p>
+    </div>
+  </details>
+
+  <details class="faq">
+    <summary>Wie lange ist ein SIZ-Diplom gültig?</summary>
+    <div class="answer">
+      <p>SIZ-Module und -Diplome haben <strong>kein Verfallsdatum</strong>. Einmal erworben, bleibt das Diplom dauerhaft gültig. Inhaltlich entwickeln sich Microsoft 365 und KI-Tools natürlich weiter – wer beruflich aktuell bleiben will, kann jederzeit neue Module ergänzen (z.B. Power-User auf einem bestehenden Advanced-User aufbauen).</p>
+    </div>
+  </details>
+
+  <details class="faq">
+    <summary>Was kostet die Plattform mySIZ für eine Schule?</summary>
+    <div class="answer">
+      <p>Die Nutzung von mySIZ ist für SIZ-Partnerschulen <strong>in der Modulgebühr enthalten</strong> – es gibt keine separate Plattform&shy;lizenz. Schulen melden sich als SIZ-Partner an, registrieren ihre Klassen, und Lehrkräfte erhalten Vollzugriff auf Lernzielchecks, Testprüfungen und Klassen&shy;verwaltung. Details und Onboarding-Prozess über die SIZ AG.</p>
+    </div>
+  </details>
+
+  <details class="faq">
+    <summary>Wie unterscheidet sich SIZ Smart-User von ICDL Base?</summary>
+    <div class="answer">
+      <p>Beide adressieren dasselbe Einstiegs-Niveau, aber mit unterschiedlichem Aufbau:</p>
+      <ul>
+        <li><strong>SIZ Smart-User</strong>: 3 Module (SU1 Kommunikation/Präsentation, SU3 Texte, SU4 Tabellen) – integriert Outlook/Teams/PowerPoint/Word/Excel in praxisnahen Schweizer Use-Cases inkl. KI-Tools.</li>
+        <li><strong>ICDL Base</strong>: 4 Module (Computer Essentials, Online Essentials, Word, Excel) – separate Prüfung pro Programm, ohne Kombinationsaufgaben.</li>
+      </ul>
+      <p>SIZ-Smart-User deckt damit auch Präsentation (PowerPoint) und Kollaboration (Teams) ab – ICDL Base nicht.</p>
+    </div>
+  </details>
+
+  <details class="faq">
+    <summary>Welche Lehrmittel werden für SIZ empfohlen?</summary>
+    <div class="answer">
+      <p>Die führenden Schweizer Bildungsverlage haben SIZ-konforme Lehrwerke im Angebot:</p>
+      <ul>
+        <li><strong>Compendio Bildungsmedien</strong>: durchgängige Reihe für alle SIZ-Module SU/AU/PU, Print + digital</li>
+        <li><strong>hep Verlag</strong>: Office-Lehrmittel mit KV-EFZ + SIZ-Mapping</li>
+        <li><strong>Edubook</strong>: Produktions&shy;partner für CH-Print mit kurzen Lieferketten</li>
+      </ul>
+      <p>Lehrkräfte können die Lehrmittel direkt mit den mySIZ-Aufgaben kombinieren – Strukturen sind aufeinander abgestimmt.</p>
+    </div>
+  </details>
+
+</section>
+
+<!-- DARK CTA -->
+<section class="dark">
+  <div class="inner">
+    <h2>Bereit für das <strong>nächste Gespräch</strong>?</h2>
+    <p class="sub">SIZ AG begleitet Schulen und Bildungs&shy;institutionen ab dem ersten Schritt</p>
+    <div class="card-grid cols-3" style="margin-top: 2rem;">
+      <div class="card" style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);">
+        <div class="card-head light">1 · Onboarding-Gespräch</div>
+        <div class="card-body" style="color: rgba(255,255,255,0.92);">
+          <p>Persönliches Gespräch mit der SIZ AG zu Ihrer Schule, Ihren Klassen und Ihren Zielen. Unverbindlich.</p>
+        </div>
+      </div>
+      <div class="card" style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);">
+        <div class="card-head light">2 · Partnerschule werden</div>
+        <div class="card-body" style="color: rgba(255,255,255,0.92);">
+          <p>Anmeldung als SIZ-Partner&shy;institut, Aktivierung von mySIZ, Schulung der Lehrkräfte.</p>
+        </div>
+      </div>
+      <div class="card" style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);">
+        <div class="card-head light">3 · Erste Prüfungen</div>
+        <div class="card-body" style="color: rgba(255,255,255,0.92);">
+          <p>Lernende üben über mySIZ, legen Modul&shy;prüfungen ab und erhalten ihr SIZ-Diplom.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUELLEN -->
+<section id="quellen">
+  <h2><strong>Quellen</strong> &amp; weiterführende Dokumente</h2>
+  <p class="sub">Recherche-Stand 12.05.2026</p>
+
+  <div class="card-grid cols-2">
+
+    <div class="sources">
+      <h4>SIZ AG – Primärquellen</h4>
+      <ul>
+        <li><a href="https://siz.ch/angebot" target="_blank">siz.ch/angebot – aktuelles Diplom-Portfolio</a></li>
+        <li><a href="https://siz.ch" target="_blank">siz.ch – Geschäftsstelle, Trägerschaft, Prüfungskommission</a></li>
+        <li><a href="https://mysiz.siz.ch" target="_blank">mysiz.siz.ch – Online-Lern- und Prüfungsplattform</a></li>
+        <li><a href="https://franzruchti.com/project/siz-ag/wer-ist-siz" target="_blank">Wer ist SIZ – Übersicht</a></li>
+        <li><a href="https://franzruchti.com/project/siz-ag/diplome" target="_blank">SIZ-Diplome-Detail</a></li>
+        <li><a href="https://franzruchti.com/project/siz-ag/trusted-issuer-eid" target="_blank">SIZ als Trusted Issuer im CH-E-ID-Ökosystem</a></li>
+        <li><a href="https://franzruchti.com/project/siz-ag/kv-efz-landschaft" target="_blank">KV-EFZ-Landschaft &amp; HKB-E-Mapping</a></li>
+      </ul>
+    </div>
+
+    <div class="sources">
+      <h4>ICDL/ECDL – Vergleichsquellen</h4>
+      <ul>
+        <li><a href="https://www.ecdl.ch/en/candidates/certificates-and-modules/" target="_blank">ecdl.ch – Module &amp; Zertifikate CH</a></li>
+        <li><a href="https://www.icdl.ch/de/kandidaten/tests/" target="_blank">icdl.ch – Prüfungsablauf</a></li>
+        <li><a href="https://icdl.org/icdl-modules-programs/" target="_blank">icdl.org – Globale Modulübersicht</a></li>
+        <li><a href="https://www.swissinformatics.org/ecdl.php" target="_blank">Swiss Informatics Society – Übernahme 2025</a></li>
+        <li><a href="https://www.jobcom.ch/wp-content/uploads/2025/08/ICDL-Preistabelle.pdf" target="_blank">Jobcom-Preistabelle ICDL 08/2025 (PDF)</a></li>
+        <li><a href="https://www.benedict.ch/informatik/zuerich/kurs/europaeischer-computerfuehrerschein-ecdl-base/" target="_blank">Benedict-Schulen Preise</a></li>
+        <li><a href="https://www.icdl.de/zertifizierungspruefungen-mit-sophia/" target="_blank">Sophia-Prüfungssystem (Beschreibung DE)</a></li>
+        <li><a href="https://www.diagnosetest.ch" target="_blank">diagnosetest.ch – CH-Diagnose&shy;plattform ICDL</a></li>
+      </ul>
+    </div>
+
+    <div class="sources">
+      <h4>Lehrmittel-Verlage</h4>
+      <ul>
+        <li><a href="https://www.compendio.ch" target="_blank">Compendio Bildungsmedien</a></li>
+        <li><a href="https://www.hep-verlag.ch/berufsbildung-ch" target="_blank">hep Verlag – Berufsbildung CH</a></li>
+        <li><a href="https://www.edubook.ch" target="_blank">Edubook AG</a></li>
+      </ul>
+    </div>
+
+    <div class="sources">
+      <h4>Berufsbildung CH</h4>
+      <ul>
+        <li>SKKAB / IGKG – Bildungsplan KV EFZ 2023, HKB E</li>
+        <li>SBFI – Anerkennung internationaler ICT-Zertifikate</li>
+        <li>BGEID / BIT – CH-E-ID-Ökosystem (Inkraftsetzung 2026/27)</li>
+        <li>Kaufmännischer Verband Schweiz – SIZ-Trägerschaft</li>
+        <li>Swico – SIZ-Trägerschaft (Verband der ICT-Anbieter)</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <h3>SIZ AG – Schweizerisches Informatik-Zertifikat</h3>
+  <span class="red-stripes"></span>
+  <p>Reitergasse 9 · 8004 Zürich · info@siz.ch · <a href="https://siz.ch" target="_blank">siz.ch</a></p>
+  <p style="margin-top: 1rem;">Getragen vom Kaufmännischen Verband Schweiz und Swico · Seit 1991 im Schweizer Bildungsmarkt</p>
+  <div class="meta">Vergleichsdokument SIZ vs. ICDL/ECDL · Stand 12.05.2026 · Für interne und externe Akquisition</div>
+</footer>
+
+</body>
+</html>

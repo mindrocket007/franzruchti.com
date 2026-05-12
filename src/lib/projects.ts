@@ -93,6 +93,11 @@ export const projects: Project[] = [
         file: "/projects/siz-ag/SIZ_KV_EFZ_Landschaft.html",
       },
       {
+        slug: "vergleich-icdl",
+        title: "Vergleich SIZ vs. ICDL/ECDL · Entscheidungshilfe für Schulen",
+        file: "/projects/siz-ag/SIZ_vs_ICDL_Vergleich.html",
+      },
+      {
         slug: "argumentarium",
         title: "Argumentarium",
         file: "/projects/siz-ag/SIZ_Argumentarium.html",
