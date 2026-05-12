@@ -2579,6 +2579,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-12
       {
+        summary: "TradeStation Insights (Mai 2026): 'Good-Bye $25,000 Day Trading Limit – What's Next?' – Die SEC hat am 14. April 2026 die FINRA-Regelung zur Abschaffung der Pattern-Day-Trader-Regel (PDT) genehmigt. Die bisherige Mindestkapitalgrenze von USD 25'000 entfällt ab 4. Juni 2026. Massive regulatorische Vereinfachung für Retail Day Trader – direktes Umfeld von Mind Rocket Trading.",
+        source: "tradestation.com",
+        url: "https://www.tradestation.com/insights/2026/05/06/day-trade-rule-change/",
+        date: "2026-05",
+        category: "Regulierung",
+        addedAt: "2026-05-12",
+      },
+      {
+        summary: "Trade Ideas (April 2026): 'PDT Rule Repeal 2026: What It Means for Traders' – Detaillierte Analyse der Auswirkungen der PDT-Regelabschaffung auf den Retail-Trading-Markt. Neue Intraday Margin Level (IML)-Berechnungen ersetzen die starre End-of-Day-Methodik ab 4. Juni 2026. Regulatorisches Update mit direktem Einfluss auf Day-Trading-Community und Prop-Trading-Firmen wie Apex.",
+        source: "trade-ideas.com",
+        url: "https://www.trade-ideas.com/2026/04/28/pdt-rule-repeal-2026-trading-opportunities/",
+        date: "2026-04",
+        category: "Regulierung",
+        addedAt: "2026-05-12",
+      },
+      {
         summary: "CNBC / CME Group (12. Mai 2026): 'ES Futures (Jun 26) auf neuem 52-Wochen-Hoch bei 7'415.50' – Der E-mini S&P 500 June 2026-Kontrakt (ESM26) erreichte ein neues 52-Wochen-Hoch bei 7'410.50 im Globex-Handel; aktueller Kurs: 7'415.50; Open Interest: 2,02 Mio. Kontrakte; starkes technisches Signal (Strong Buy). Das anhaltend starke Indexniveau schafft günstige Bedingungen für systematische ES-Futures-Handelsstrategien – relevanter Marktkontext für die auf mindrocket-trading.com vermittelten Handelsansätze.",
         source: "CNBC / CME Group",
         url: "https://www.cnbc.com/quotes/@SP.1",
@@ -5570,6 +5586,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-12
       {
+        summary: "coachingausbildungen.ch (2026): 'Schweizer Coaching-Markt – Trends, Wachstum & Zukunftsausblick' – Der Schweizer Coaching-Markt 2026 steht unter dem Zeichen von Konsolidierung: Wirksamkeit wird zum Differenzierungsmerkmal. Integrierte Ansätze aus verschiedenen Interventionstechniken nehmen zu. Marktumfeld für Persönlichkeitsentwicklungstools wie mindtools.ch.",
+        source: "coachingausbildungen.ch",
+        url: "https://www.coachingausbildungen.ch/coaching-markt-schweiz-trends-wachstum-zukunft/",
+        date: "2026-03",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-05-12",
+      },
+      {
         summary: "bfh.ch (2026): 'CAS Persönlichkeitsentwicklung – Berner Fachhochschule Wirtschaft' – Die BFH Wirtschaft bietet einen Weiterbildungs-CAS im Bereich Persönlichkeitsentwicklung an: praxisorientierte Förderung von Selbst- und Sozialkompetenzen, Resilienz und Führungsqualitäten; anerkannter CAS-Abschluss auf Hochschulniveau. Das Angebot eines renommierten Schweizer Hochschulinstituts bestätigt die gesellschaftliche Anerkennung des Marktfeldes – direktes Validierungssignal für mindtools.ch als ergänzendes Selbsthilfe-Portfolio.",
         source: "bfh.ch",
         url: "https://www.bfh.ch/en/continuing-education/cas/personal-development/",
@@ -6858,6 +6882,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "hypnovital": {
     news: [
       // Neu: 2026-05-12
+      {
+        summary: "MySwitzerland.com (2026): 'Hypnosekongress 2026 in Winterthur' – Der Internationale HypnoseKongress 2026 findet am 20./21. Juni 2026 in der AXA Arena Winterthur statt. Veranstaltung für Therapeuten, Mediziner und Coaches. Wichtigstes Schweizer Branchen-Event im direkten Umfeld von hypnovital®.",
+        source: "myswitzerland.com",
+        url: "https://www.myswitzerland.com/en-us/experiences/events/hypnosekongress-2026/",
+        date: "2026-05",
+        category: "Hypnose & Coaching",
+        addedAt: "2026-05-12",
+      },
       {
         summary: "inhesa.ch (2026): 'Coaching bei Burnout Schweiz – Lösungen, Methoden und Prävention' – Umfassender Guide zur Burnout-Prävention und -Behandlung durch Coaching in der Schweiz: Verhaltens- und Kognitionstherapie, Entspannungsverfahren (inkl. Hypnose) sowie digitale Selbsthilfeprogramme werden als wirksame Methoden eingestuft; Fokus auf niedrigschwelligen, skalierbaren Ansätzen für Unternehmen und Einzelpersonen. Schweizer Fachportale positionieren Hypnose-Coaching als etablierte Burnout-Präventionsmethode – direktes Validierungssignal für hypnovital® als Audio-Hypnose-BGM-Lösung.",
         source: "inhesa.ch",
@@ -9309,6 +9341,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "12wy-planner": {
     news: [
       // Neu: 2026-05-12
+      {
+        summary: "thecodest.co (2026): 'SaaS in 2026: Strategy, Steps, and Checklist for High Adoption' – SaaS-Produkte 2026 bewegen sich hin zu KI-nativen Architekturen und modularen Apps. 70% der SaaS-Implementierungsfehler entstehen durch unzureichendes Change Management. Micro-SaaS-Winner erreichen ersten Umsatz in 1-3 Monaten nach MVP-Launch – Marktkontext für den 12WY Planner als fokussiertes Nischen-SaaS-Tool.",
+        source: "thecodest.co",
+        url: "https://thecodest.co/en/blog/saas-in-2026-strategy-steps-and-checklist-for-high-adoption/",
+        date: "2026-03",
+        category: "SaaS & Tools",
+        addedAt: "2026-05-12",
+      },
       {
         summary: "cloudmagazin.com (Februar 2026): 'SaaS-Konsolidierung: Wie CIOs den Tool-Wildwuchs stoppen' – Laut Lünendonk-Studie planen 58% der DACH-IT-Entscheider für 2026 eine aktive SaaS-Rationalisierung: Fokus auf wenige, hochintegrierte Tools statt breites Portfolio. Unternehmen setzen verstärkt auf spezialisierte, fokussierte Lösungen – ein direktes Marktargument für den 12WY-Planner als fokussiertes Nischentool für die 12-Week-Year-Methode gegenüber generischen Projektmanagement-Plattformen.",
         source: "cloudmagazin.com",
@@ -12077,6 +12117,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "lampenfieber": {
     news: [
       // Neu: 2026-05-12
+      {
+        summary: "blaubahn.com (Mai 2026): 'Primäre Behandlung bei Prüfungsangst sollte Psychotherapie sein' – 53% der Studierenden leiden unter Prüfungsangst, ein Viertel davon in schwerer Form. Belegt die Verbreitung von Auftritts- und Prüfungsangst als Marktgrundlage für lampenfieber-besiegen.de als niedrigschwellige Selbsthilfeoption.",
+        source: "blaubahn.com",
+        url: "https://blaubahn.com/2026/05/primare-behandlung-bei-prufungsangst-sollte-psychotherapie-sein/",
+        date: "2026-05",
+        category: "Psychologie & Forschung",
+        addedAt: "2026-05-12",
+      },
       {
         summary: "elke-luckner.de (2026): 'Auftrittsangst: Heute zeig ich was ich kann' – Auftrittscoach Elke Luckner beschreibt systematische Ansätze zur Überwindung von Auftrittsangst: mentale Stärke aufbauen, innere Blockaden lösen, Auftrittssituation als persönliche Chance neu rahmen. Spezialisierte Coaching-Angebote für Auftrittsangst boomen 2026 – die steigende Zahl professioneller Fachanbieterin bestätigt den Markt und legitimiert Audio-Hypnose als skalierbare, zugängliche Alternative zu teurem 1:1-Coaching auf lampenfieber-besiegen.de.",
         source: "elke-luckner.de",
@@ -15532,6 +15580,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "marketingplan-software": {
     news: [
       // Neu: 2026-05-12
+      {
+        summary: "kmuverband.ch (2026): 'MarTech für Schweizer KMU' – Der Schweizerische KMU Verband thematisiert Marketing Technology als strategisches Instrument. Typische Fehler bei KMU: Tools ohne Plan, fehlende Integrationen, zu hohe Komplexität. Zeigt Marktbedarf für einfache, fokussierte Marketing-Tools wie learnfluencer.ch/tools/marketingkonzept.",
+        source: "kmuverband.ch",
+        url: "https://www.kmuverband.ch/martech.html",
+        date: "2026-03",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-05-12",
+      },
       {
         summary: "netzpuls.ch (2026): 'Marketing-Mix 4P: Was steckt dahinter – und wozu braucht ein KMU dieses Konzept?' – Netzpuls AG Bern erklärt: Der Marketing-Mix 4P ist das universelle Grundkonzept für KMU-Marketing – Produkt, Preis, Platz und Promotion; ohne strukturierten Mix bleibt Marketing taktisches Stückwerk statt strategisches System. Der Artikel unterstreicht die Nachfrage nach geführten, strukturierten Marketing-Framework-Tools – direktes Positionierungsargument für learnfluencer.ch/tools/marketingkonzept mit 7P, PESTEL, SWOT und BCG.",
         source: "netzpuls.ch",
