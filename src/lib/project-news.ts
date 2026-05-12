@@ -2579,6 +2579,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-12
       {
+        summary: "lunefi.com (2026): 'Best NinjaTrader Trade Copiers for Prop Firms 2026 – Reviews, Comparisons & Setup' – Detailliertes Review der besten NinjaTrader Trade-Copier-Lösungen für Prop-Trading-Firmen 2026: Produktvergleich, Setup-Anleitungen und Trader-Bewertungen. Wachsendes Ökosystem spezialisierter NinjaTrader-Dienste für Prop-Trader – direktes Marktumfeld für algorithmische ES-Futures-Strategien auf mindrocket-trading.com.",
+        source: "lunefi.com",
+        url: "https://lunefi.com/blog/best-ninjatrader-trade-copiers-prop-firms-2026-reviews-comparisons-setup",
+        date: "2026-05",
+        category: "Trading-Technologie",
+        addedAt: "2026-05-12",
+      },
+      {
+        summary: "damnpropfirms.com (Mai 2026): '4 Algo Trading Futures Prop Firms – Verified for May 2026' – Die vier besten Prop-Firmen für algorithmischen Futures-Trading 2026: Bulenox, Tradeify und Apex (mit Einschränkungen) erlauben Expert Advisors, automatisierte NinjaTrader-Strategien und TradingView-Signal-basierte Ausführung. Strukturiertes, wachsendes Ökosystem für algorithmic Prop-Trading bestätigt den Markt für automatisierte ES-Futures-Strategien auf mindrocket-trading.com.",
+        source: "damnpropfirms.com",
+        url: "https://damnpropfirms.com/best-prop-firms-for-algo-trading/",
+        date: "2026-05",
+        category: "Futures & Trading",
+        addedAt: "2026-05-12",
+      },
+      {
         summary: "TradeStation Insights (Mai 2026): 'Good-Bye $25,000 Day Trading Limit – What's Next?' – Die SEC hat am 14. April 2026 die FINRA-Regelung zur Abschaffung der Pattern-Day-Trader-Regel (PDT) genehmigt. Die bisherige Mindestkapitalgrenze von USD 25'000 entfällt ab 4. Juni 2026. Massive regulatorische Vereinfachung für Retail Day Trader – direktes Umfeld von Mind Rocket Trading.",
         source: "tradestation.com",
         url: "https://www.tradestation.com/insights/2026/05/06/day-trade-rule-change/",
@@ -5585,6 +5601,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "mindtools": {
     news: [
       // Neu: 2026-05-12
+      {
+        summary: "brainpoint.ch (2026): 'Persönlichkeitsentwicklung – Wege zum persönlichen Wachstum' – Das Schweizer Institut brainpoint.ch beschreibt persönliche Entwicklung als bewussten Prozess zur Entfaltung eigener Potenziale: Selbsterkenntnis, bewussteres Handeln und ein erfüllteres Leben. Persönliche Entwicklung fördert Resilienz, verbessert zwischenmenschliche Beziehungen und steigert die Lebenszufriedenheit. Wachsende Nachfrage nach strukturierten Entwicklungs-Tools im Schweizer Markt stärkt das Marktumfeld für mindtools.ch als digitales Werkzeug-Portfolio.",
+        source: "brainpoint.ch",
+        url: "https://brainpoint.ch/angebot/personlichkeitsentwicklung/",
+        date: "2026-05",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-05-12",
+      },
+      {
+        summary: "promentesana.ch (2026): 'Pro Mente Sana – Psychische Gesundheit stärken Schweiz' – Pro Mente Sana zeigt: Mentales Wohlbefinden ist kein statisches Konzept, sondern aktiv beeinflussbar – ähnlich wie körperliche Gesundheit durch Ernährung und Sport. Schweizweit ist jede dritte arbeitende Person von stressbedingter emotionaler Erschöpfung betroffen. Das wachsende gesellschaftliche Bewusstsein für psychische Gesundheit bestätigt den Markt für niedrigschwellige mentale Selbsthilfe-Tools wie die PDF-Werkzeuge auf mindtools.ch.",
+        source: "promentesana.ch",
+        url: "https://promentesana.ch/english",
+        date: "2026-05",
+        category: "Mental Health",
+        addedAt: "2026-05-12",
+      },
       {
         summary: "coachingausbildungen.ch (2026): 'Schweizer Coaching-Markt – Trends, Wachstum & Zukunftsausblick' – Der Schweizer Coaching-Markt 2026 steht unter dem Zeichen von Konsolidierung: Wirksamkeit wird zum Differenzierungsmerkmal. Integrierte Ansätze aus verschiedenen Interventionstechniken nehmen zu. Marktumfeld für Persönlichkeitsentwicklungstools wie mindtools.ch.",
         source: "coachingausbildungen.ch",
@@ -9341,6 +9373,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "12wy-planner": {
     news: [
       // Neu: 2026-05-12
+      {
+        summary: "assistsyourbiz.com (2026): 'How the 12 Week Year Changes Everything' – Praxisbericht über die 12-Week-Year-Methode von Brian P. Moran: 90-Tage-Ziele als überlegene Alternative zur reinen Jahresplanung, weil der Jahresplan regelmässig an veränderte Umstände angepasst werden muss und Quartalszyklen regelmässige Reflexion erzwingen. Steigende internationale Aufmerksamkeit für die 12-Week-Year-Methode erhöht die organische Nachfrage nach passenden SaaS-Planungstools wie dem 12wy-planner.",
+        source: "assistsyourbiz.com",
+        url: "https://www.assistsyourbiz.com/virtual-assistance/blog/12-week-year-plan/",
+        date: "2026-05",
+        category: "12 Week Year Methode",
+        addedAt: "2026-05-12",
+      },
       {
         summary: "thecodest.co (2026): 'SaaS in 2026: Strategy, Steps, and Checklist for High Adoption' – SaaS-Produkte 2026 bewegen sich hin zu KI-nativen Architekturen und modularen Apps. 70% der SaaS-Implementierungsfehler entstehen durch unzureichendes Change Management. Micro-SaaS-Winner erreichen ersten Umsatz in 1-3 Monaten nach MVP-Launch – Marktkontext für den 12WY Planner als fokussiertes Nischen-SaaS-Tool.",
         source: "thecodest.co",
