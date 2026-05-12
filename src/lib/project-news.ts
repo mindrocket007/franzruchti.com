@@ -26,6 +26,15 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 2026-05-12
+      {
+        summary: "ict-bbag.ch (2026): 'Resultate Regionalmeisterschaften 2026 – ICT-Berufsbildung Aargau' – Die ICT-Berufsbildung Aargau publiziert die vollständigen Ranglisten der ICT-Regionalmeisterschaften 2026 für die Disziplinen Software Application Development, Web Technologies, Cloud Computing, Mediamatics und Cyber Security. Die Top 11 jeder Disziplin qualifizieren sich für die Schweizer Meisterschaften ICTskills2027 (SwissSkills 2027, 14.–18. September 2027, Bern). Aktiver Nachwuchswettbewerb in der Schweizer ICT-Bildungslandschaft stärkt die gesellschaftliche Sichtbarkeit und Wertschätzung für ICT-Kompetenzen – direktes positives Marktumfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation.",
+        source: "ict-bbag.ch",
+        url: "https://www.ict-bbag.ch/resultate-regionalmeisterschaften-2026/",
+        date: "2026-05",
+        category: "Digitale Bildung",
+        addedAt: "2026-05-12",
+      },
       // Neu: 2026-05-11
       {
         summary: "ict-berufsbildung.ch (2025/2026): '15 Jahre ICT-Berufsbildung Schweiz – Ein Rückblick auf Meilensteine der digitalen Berufsbildung' – ICT-Berufsbildung Schweiz wurde am 25. März 2010 gegründet und feierte 2025 ihr 15-jähriges Jubiläum: 5 Berufsgrundbildungen, 5 eidgenössische Fachausweise, 2 Diplome der höheren Berufsbildung, 15 Mitarbeitende und über 50 umgesetzte Projekte. Meilensteine: Einführung E-Tutor 2014, Berufsprüfung Cyber Security Specialist 2019, WorldSkills Lyon Gold in Cyber Security 2024 (historisches Erstmals), KI-Fachabteilung im Kompetenzzentrum 2025. Das 15-jährige Jubiläum zeigt die institutionelle Reife des ICT-Bildungsökosystems – direktes Wachstumsumfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation im selben Bildungsraum.",
@@ -1796,6 +1805,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
+      // Neu: 2026-05-12
+      {
+        summary: "loesungs-impulse.ch (2026): 'PLI Coaching Ausbildung Schweiz – Neue Starts Frühjahr/Sommer 2026' – Die Lösung Impulse Coaching Akademie bietet in der Schweiz an mehreren Standorten PLI-zertifizierte Coaching-Ausbildungen an mit Starts im Frühjahr und Sommer 2026. Fokus: lösungs- und ressourcenorientiertes Coaching, Zertifizierung nach Berufsbildungsstandards. Das aktive Schweizer Coaching-Ausbildungsmarktsignal bestätigt die strukturell wachsende Nachfrage nach persönlichkeitsentwicklenden Formaten – direktes Wachstumsumfeld für Mind Rocket GmbH als Anbieter digitaler Programme.",
+        source: "loesungs-impulse.ch",
+        url: "https://loesungs-impulse.ch/coaching-ausbildung/",
+        date: "2026-05",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-05-12",
+      },
+      {
+        summary: "beyou.ch (Mai 2026): 'BE YOU – Breathwork, Heilungsreisen und persönliche Entwicklung in Winterthur' – Das BE YOU Zentrum in Winterthur bietet im Mai 2026 mehrere Veranstaltungen für persönliche Entwicklung an: Breathwork-Abend am 5. Mai, 'Raum für Ruhe und innere Ausrichtung' am 3. Mai sowie Tag der offenen Tür am 23. Mai. Schwerpunkte: Atemarbeit, Mindfulness, Selbstreflexion. Aktives, wachsendes Angebot im Bereich ganzheitlicher Persönlichkeitsentwicklung in der Deutschschweiz bestätigt den Markt für Mind Rocket GmbH.",
+        source: "beyou.ch",
+        url: "https://www.beyou.ch/",
+        date: "2026-05",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-05-12",
+      },
       // Neu: 2026-05-11
       {
         summary: "swissnova.swiss (2026): 'Weiterbildung für Unternehmen in der Schweiz: 10 Trends für 2026' – Die zehn wichtigsten Weiterbildungstrends für Schweizer Unternehmen 2026: KI-gestütztes Lernen, Microlearning, hybride Formate und personalisierte Entwicklungspfade dominieren; Soft Skills und mentale Gesundheit gewinnen als Weiterbildungsthemen an Bedeutung. Für Mind Rocket GmbH bestätigt dieser Trend die anhaltende Nachfrage nach flexiblen, digitalen Persönlichkeitsentwicklungs-Programmen in der Deutschschweiz.",
@@ -2543,6 +2569,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 2026-05-12
+      {
+        summary: "CNBC / CME Group (12. Mai 2026): 'ES Futures (Jun 26) auf neuem 52-Wochen-Hoch bei 7'415.50' – Der E-mini S&P 500 June 2026-Kontrakt (ESM26) erreichte ein neues 52-Wochen-Hoch bei 7'410.50 im Globex-Handel; aktueller Kurs: 7'415.50; Open Interest: 2,02 Mio. Kontrakte; starkes technisches Signal (Strong Buy). Das anhaltend starke Indexniveau schafft günstige Bedingungen für systematische ES-Futures-Handelsstrategien – relevanter Marktkontext für die auf mindrocket-trading.com vermittelten Handelsansätze.",
+        source: "CNBC / CME Group",
+        url: "https://www.cnbc.com/quotes/@SP.1",
+        date: "2026-05-12",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-05-12",
+      },
       // Neu: 2026-05-11
       {
         summary: "ninjatrader.com / prnewswire.com (März 2026): 'NinjaTrader Connect – End-to-End-Infrastrukturplattform für Futures' – NinjaTrader Group lancierte am 3. März 2026 NinjaTrader Connect: B2B-Plattform, die Fintechs und Brokerages über eine einzige API regulierte Futures und Prediction Markets anbieten lässt, inkl. White-Label-Trading-Plattform, Onboarding, Funding, Risikokontrollen und Back-Office-Clearing. NinjaTrader wurde für USD 1,5 Milliarden von Kraken übernommen. Plattformwachstum stärkt NinjaTrader als primäre Infrastruktur für ES-Futures-Strategien auf mindrocket-trading.com.",
@@ -5493,6 +5528,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 2026-05-12
+      {
+        summary: "bfh.ch (2026): 'CAS Persönlichkeitsentwicklung – Berner Fachhochschule Wirtschaft' – Die BFH Wirtschaft bietet einen Weiterbildungs-CAS im Bereich Persönlichkeitsentwicklung an: praxisorientierte Förderung von Selbst- und Sozialkompetenzen, Resilienz und Führungsqualitäten; anerkannter CAS-Abschluss auf Hochschulniveau. Das Angebot eines renommierten Schweizer Hochschulinstituts bestätigt die gesellschaftliche Anerkennung des Marktfeldes – direktes Validierungssignal für mindtools.ch als ergänzendes Selbsthilfe-Portfolio.",
+        source: "bfh.ch",
+        url: "https://www.bfh.ch/en/continuing-education/cas/personal-development/",
+        date: "2026-05",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-05-12",
+      },
       // Neu: 2026-05-11
       {
         summary: "coachingausbildungen.ch (2026): 'Coaching-Markt Schweiz – Trends 2025/2026' – Der globale Coaching-Umsatz wächst bis 2026 auf rund USD 7,31 Milliarden; Gesundheits- und Wellness-Coaching in der Schweiz wächst mit 6,59% p.a. Haupttrends: Individualisierung, ganzheitliche Denkmodelle, digitale Formate und KI-basiertes Coaching. Die wachsende Professionalisierung und der Shift hin zu sinnorientierten statt rein leistungsorientierten Entwicklungsformaten bestätigen das Marktumfeld für mentale Werkzeuge auf mindtools.ch.",
@@ -6773,6 +6817,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 2026-05-12
+      {
+        summary: "inhesa.ch (2026): 'Coaching bei Burnout Schweiz – Lösungen, Methoden und Prävention' – Umfassender Guide zur Burnout-Prävention und -Behandlung durch Coaching in der Schweiz: Verhaltens- und Kognitionstherapie, Entspannungsverfahren (inkl. Hypnose) sowie digitale Selbsthilfeprogramme werden als wirksame Methoden eingestuft; Fokus auf niedrigschwelligen, skalierbaren Ansätzen für Unternehmen und Einzelpersonen. Schweizer Fachportale positionieren Hypnose-Coaching als etablierte Burnout-Präventionsmethode – direktes Validierungssignal für hypnovital® als Audio-Hypnose-BGM-Lösung.",
+        source: "inhesa.ch",
+        url: "https://www.inhesa.ch/coaching-bei-burnout-schweiz-loesungen-methoden-praevention/",
+        date: "2026-05",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-12",
+      },
+      {
+        summary: "salutacoach.ch (2026): 'Betriebliches Gesundheitsmanagement (BGM) – Praxisorientierte Lösungen für Schweizer Unternehmen' – SalutaCoach bietet strukturierte BGM-Programme für Schweizer Unternehmen: Von der Gefährdungsbeurteilung über Stress-Management bis zu konkreten Präventionsmassnahmen. Jeder in BGM investierte Franken generiert 3–5 CHF ROI durch reduzierte Fehlzeiten und höhere Produktivität. Das wachsende BGM-Anbieterfeld bestätigt die institutionelle Nachfrage – direktes Marktumfeld für hypnovital® als skalierbare digitale BGM-Präventionslösung.",
+        source: "salutacoach.ch",
+        url: "https://www.salutacoach.ch/betriebliches-gesundheitsmanagement/",
+        date: "2026-05",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-12",
+      },
       // Neu: 2026-05-11
       {
         summary: "hypnose-arnold.ch (2026): 'Stress- und Burnout-Prävention mit Hypnose: Ein kraftvoller Weg zu Balance und Resilienz' – Hypnose reduziert Stress auf drei Ebenen gleichzeitig: Beruhigung des Nervensystems, Neuausrichtung negativer Denkmuster und Aufbau mentaler Resilienz; regelmässige Selbsthypnose-Praxis als wirksamer Burnout-Präventionsweg; geführte Audio-Hypnose als niederschwellige, skalierbare Methode für den Alltag. Fachliche Fundierung durch Hypnose-Experten bestätigt: Audio-Hypnose-Programme wie hypnovital® sind evidenzbasierte BGM-Präventionslösungen.",
@@ -9207,6 +9268,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 2026-05-12
+      {
+        summary: "cloudmagazin.com (Februar 2026): 'SaaS-Konsolidierung: Wie CIOs den Tool-Wildwuchs stoppen' – Laut Lünendonk-Studie planen 58% der DACH-IT-Entscheider für 2026 eine aktive SaaS-Rationalisierung: Fokus auf wenige, hochintegrierte Tools statt breites Portfolio. Unternehmen setzen verstärkt auf spezialisierte, fokussierte Lösungen – ein direktes Marktargument für den 12WY-Planner als fokussiertes Nischentool für die 12-Week-Year-Methode gegenüber generischen Projektmanagement-Plattformen.",
+        source: "cloudmagazin.com",
+        url: "https://www.cloudmagazin.com/2026/02/25/saas-konsolidierung-cios-tool-wildwuchs-stoppen/",
+        date: "2026-02",
+        category: "SaaS & Tools",
+        addedAt: "2026-05-12",
+      },
+      {
+        summary: "manus.im (2026): '12 Best AI Productivity Tools in 2026' – Übersicht der besten KI-Produktivitätstools 2026: Laut Gartner werden KI-Agenten bis 2027 58 Mrd. USD in Produktivitätssoftware disruptieren; die entscheidende Unterscheidung liegt zwischen KI-Agenten (erledigen Aufgaben) und KI-Tools (unterstützen Teile von Aufgaben). Spezialisierte Zielplanungstools wie der 12WY-Planner profitieren, wenn KI-Features ergänzend zur Methodik eingesetzt werden statt als Ersatz für strukturiertes Denken.",
+        source: "manus.im",
+        url: "https://manus.im/blog/best-ai-productivity-tools",
+        date: "2026-05",
+        category: "Produktivität & Planung",
+        addedAt: "2026-05-12",
+      },
       // Neu: 2026-05-11
       {
         summary: "ad-hoc-news.de (2026): 'Produktivität 2026: Weniger arbeiten, mehr schaffen' – 2026 definiert Produktivität neu: statt mehr Stunden, mehr Fokus durch Micro-Habits, Deep Work und KI-Automatisierung von Routineaufgaben (Terminplanung, E-Mail, Dateneingabe), die mentalen Freiraum für anspruchsvolle Arbeit schafft. Der Trend zu effizientem Arbeiten in klar definierten Zeitblöcken ist direktes Validierungssignal für das 12-Wochen-Jahr-Konzept und Tools wie den 12WY-Planner.",
@@ -10700,6 +10778,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 2026-05-12
+      {
+        summary: "SRF Wissen (2026): 'Orgasmus zur Unzeit – Vorzeitiger Samenerguss: Was tun, wenn Mann zu schnell kommt?' – SRF Wissen gibt einen umfassenden Überblick über vorzeitigen Samenerguss: psychologische und physiologische Ursachen werden erklärt; Behandlungsoptionen inkl. Verhaltenstherapie, Hypnose und Sexualtherapie werden als wirksam bewertet. Die redaktionelle Berichterstattung des Schweizer Staatsrundfunks reduziert den Tabustatus und steigert die Nachfrage nach zugänglichen, diskreten Selbsthilfelösungen wie orgasmus-hinauszoegern.de.",
+        source: "SRF Wissen",
+        url: "https://www.srf.ch/wissen/gesundheit/orgasmus-zur-unzeit-vorzeitiger-samenerguss-was-tun-wenn-mann-zu-schnell-kommt",
+        date: "2026-05",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-05-12",
+      },
       // Neu: 2026-05-11
       {
         summary: "sardona24.ch / stgallen24.ch (2026): 'Das sind die Sex-Trends 2026' – Schweizer Regionalmedien berichten über Sex-Trends 2026: 'Healthy Pleasure' als zentraler Trend – Sexualität wird als Teil ganzheitlicher Gesundheit zelebriert; Enttabuisierung und offenerer Umgang mit sexuellen Themen nehmen zu. Positives gesellschaftliches Marktklima für Selbsthilfe-Produkte zu sexueller Gesundheit wie orgasmus-hinauszoegern.de.",
@@ -11949,6 +12036,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 2026-05-12
+      {
+        summary: "elke-luckner.de (2026): 'Auftrittsangst: Heute zeig ich was ich kann' – Auftrittscoach Elke Luckner beschreibt systematische Ansätze zur Überwindung von Auftrittsangst: mentale Stärke aufbauen, innere Blockaden lösen, Auftrittssituation als persönliche Chance neu rahmen. Spezialisierte Coaching-Angebote für Auftrittsangst boomen 2026 – die steigende Zahl professioneller Fachanbieterin bestätigt den Markt und legitimiert Audio-Hypnose als skalierbare, zugängliche Alternative zu teurem 1:1-Coaching auf lampenfieber-besiegen.de.",
+        source: "elke-luckner.de",
+        url: "https://elke-luckner.de/auftrittsangst/",
+        date: "2026-05",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-05-12",
+      },
       // Neu: 2026-05-11
       {
         summary: "buecher.de / Dr. Alfred Pöltel (2026): 'Lampenfieber & Redeangst ade! Die Hypnose gegen Auftrittsangst (MP3-Download)' – Vergleichbares Hypnose-Audio-Produkt von Hypnosetherapeut Dr. Alfred Pöltel auf führenden deutschen Audio-Plattformen (buecher.de, Apple Audiobooks, BookBeat); Produkt adressiert dieselbe Zielgruppe mit identischem Ansatz wie lampenfieber-besiegen.de. Das Vorhandensein etablierter Konkurrenzprodukte auf Grossplattformen bestätigt den Markt für Audio-Hypnose gegen Lampenfieber und unterstreicht die Produktrelevanz.",
@@ -13326,6 +13422,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 2026-05-12
+      {
+        summary: "tarsus.ai (Mai 2026): 'LEARNTEC 2026 – Die Checkliste für deinen Besuch' – Praxisorientierter Leitfaden für Fachbesucher der LEARNTEC 2026 (5.–7. Mai, Karlsruhe): KI-Lernpartnerschaften, digitale Souveränität und immersives Lernen als Themenschwerpunkte; über 11.000 Besuchende aus 34 Ländern. Das rasante Wachstum der LEARNTEC 2026 (+25% Kongressteilnehmende) unterstreicht den Megatrend KI-gestütztes Lernen – direktes Thought-Leadership-Umfeld für learnfluencer.ch.",
+        source: "tarsus.ai",
+        url: "https://tarsus.ai/praxiswissen/learntec-2026",
+        date: "2026-05",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-05-12",
+      },
+      {
+        summary: "christaschaefer.de (Mai 2026): 'LEARNTEC 2026: Was mich an der Zukunft des Lernens fasziniert' – Christa Schäfer, Expertin für digitales Lernen, berichtet über die zentralen Erkenntnisse der LEARNTEC 2026: KI als kollaborativer Lernpartner (nicht Ersatz), Gamification für nachhaltige Motivation, und die Notwendigkeit von 'Human Skills' im KI-Zeitalter. Relevantes Thought-Leadership-Umfeld für learnfluencer.ch als KI-Lernkompetenz-Plattform in der Schweiz.",
+        source: "christaschaefer.de",
+        url: "https://www.christaschaefer.de/blog/2026/learntec-2026-was-mich-an-der-zukunft-des-lernens-fasziniert/",
+        date: "2026-05",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-05-12",
+      },
       // Neu: 2026-05-11
       {
         summary: "bsozd.com (Mai 2026): 'EdTech Talks 2026: Experteneinblicke in die digitale Bildungswelt' – Die EdTech Talks 2026 (u.a. 27. Mai) bringen EdTech-Experten zusammen, die über KI, Learning Analytics und Gamification im Bildungsbereich diskutieren; Schwerpunkt: Gründen im EdTech-Bereich und menschenzentrierte Produktentwicklung für digitale Lernangebote. Für learnfluencer.ch ist dieses wachsende Ökosystem an EdTech-Diskursen eine direkte Chance zur Thought Leadership Positionierung im Bereich Lernen und KI.",
@@ -15378,6 +15491,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 2026-05-12
+      {
+        summary: "netzpuls.ch (2026): 'Marketing-Mix 4P: Was steckt dahinter – und wozu braucht ein KMU dieses Konzept?' – Netzpuls AG Bern erklärt: Der Marketing-Mix 4P ist das universelle Grundkonzept für KMU-Marketing – Produkt, Preis, Platz und Promotion; ohne strukturierten Mix bleibt Marketing taktisches Stückwerk statt strategisches System. Der Artikel unterstreicht die Nachfrage nach geführten, strukturierten Marketing-Framework-Tools – direktes Positionierungsargument für learnfluencer.ch/tools/marketingkonzept mit 7P, PESTEL, SWOT und BCG.",
+        source: "netzpuls.ch",
+        url: "https://www.netzpuls.ch/marketing-mix-4-p-was-steckt-dahinter-und-wozu-braucht-ein-kmu-dieses-konzept/",
+        date: "2026-05",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-05-12",
+      },
       // Neu: 2026-05-11
       {
         summary: "insor.ch (2026): 'Marketing-Automatisierung ohne HubSpot-Abo: Warum Schweizer KMU auf Mautic setzen' – INSOR Insights zeigt: Schweizer KMU setzen zunehmend auf datensouveräne Open-Source-Lösungen (Mautic) statt teurer SaaS-Abos; strategische Marketingplanung (Segmentierung, Personas, Content-Konzept) bleibt Voraussetzung für erfolgreiche Automation. Nachfrage nach kostengünstigen, datenschutzkonformen Marketing-Tools in der Schweiz 2026 – unterstreicht den Bedarf an strukturierten Planungstools wie dem interaktiven Marketingkonzept-Tool auf learnfluencer.ch.",
@@ -16836,6 +16958,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 2026-05-12
+      {
+        summary: "kremation.online (2026): 'Anonyme Bestattungen online organisieren in der Schweiz' – Das Online-Portal kremation.online ermöglicht die vollständig digitale Buchung anonymer Kremationen in der Schweiz: transparente Preisgestaltung, klare Prozessführung, keine persönliche Vorbesprechung erforderlich. Das Aufkommen dedizierter Online-Bestattungsportale zeigt den Wandel der Schweizer Bestattungsbranche zur digitalen Direktbuchung – bestätigt das Geschäftsmodell von bestattungsplaner.ch als digitales Lead-Portal.",
+        source: "kremation.online",
+        url: "https://www.kremation.online/",
+        date: "2026-05",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-05-12",
+      },
       // Neu: 2026-05-11
       {
         summary: "startupvalley.news (2026): 'Wie Digitalisierung die Bestattungsbranche verändert – Sind traditionelle Ansätze noch zeitgemäß?' – Analyse der digitalen Transformation in der Bestattungsbranche am Beispiel mymoria: Transparenz der Preise, Online-Buchung und digitale Prozessautomatisierung heben den Standard; der erste digitale Kontakt findet heute fast immer online statt, während das persönliche Abschlussgespräch erhalten bleibt. Bestätigt das Geschäftsmodell von bestattungsplaner.ch als digitales Lead-Portal mit Weitervermittlung an lokale Bestatter.",
