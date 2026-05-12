@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wer ist SIZ? – Schweizerisches Informatik-Zertifikat</title>
+<style>
+  :root {
+    --siz-blue: #003D7A;
+    --siz-blue-dark: #00264D;
+    --siz-red: #E30018;
+    --grey: #555555;
+    --light: #F2F2F2;
+    --border: #E5E5E5;
+    --white: #FFFFFF;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Calibri", Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.55;
+    background: var(--white);
+  }
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, var(--siz-blue) 0%, var(--siz-blue-dark) 100%);
+    color: var(--white);
+    padding: 4rem 2rem 5rem;
+    position: relative;
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 4px;
+    background: var(--siz-red);
+  }
+  .hero-inner { max-width: 1200px; margin: 0 auto; }
+  .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 1rem;
+  }
+  .hero h1 {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    margin: 0 0 1rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  .hero .lead {
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    max-width: 800px;
+    color: rgba(255,255,255,0.92);
+  }
+  .hero .badge-row {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+  .badge {
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.25);
+    padding: 0.4rem 0.9rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+  }
+  /* NAV */
+  nav.toc {
+    position: sticky;
+    top: 0;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    padding: 0.7rem 2rem;
+    z-index: 50;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  nav.toc a {
+    color: var(--siz-blue);
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-right: 1.5rem;
+    font-weight: 500;
+  }
+  nav.toc a:hover { color: var(--siz-red); }
+  /* SECTIONS */
+  section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+  }
+  section h2 {
+    color: var(--siz-blue);
+    font-size: 2rem;
+    margin: 0 0 0.4rem;
+    letter-spacing: -0.01em;
+  }
+  section .subtitle {
+    color: var(--siz-red);
+    font-size: 1rem;
+    margin: 0 0 2rem;
+    font-weight: 500;
+  }
+  /* KPI BAR */
+  .kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.8rem;
+    margin: 2rem 0;
+  }
+  .kpi {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-top: 4px solid var(--siz-blue);
+    border-radius: 4px;
+    padding: 1.5rem 1rem;
+    text-align: center;
+  }
+  .kpi .num {
+    color: var(--siz-blue);
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  .kpi .label {
+    color: var(--grey);
+    font-size: 0.85rem;
+  }
+  /* TWO-COL */
+  .two-col, .three-col, .six-grid, .four-col {
+    display: grid;
+    gap: 1.5rem;
+  }
+  .two-col { grid-template-columns: 1fr 1fr; }
+  .three-col { grid-template-columns: repeat(3, 1fr); }
+  .four-col { grid-template-columns: repeat(4, 1fr); }
+  .six-grid { grid-template-columns: repeat(3, 1fr); }
+  .card {
+    background: var(--light);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .card .card-head {
+    background: var(--siz-blue);
+    color: var(--white);
+    padding: 0.7rem 1rem;
+    font-weight: 600;
+  }
+  .card.red .card-head { background: var(--siz-red); }
+  .card .card-body {
+    padding: 1rem 1.2rem;
+    color: var(--grey);
+  }
+  .card .card-body ul {
+    margin: 0;
+    padding-left: 1.2rem;
+  }
+  .card .card-body li {
+    margin-bottom: 0.4rem;
+  }
+  /* DIPLOMA CARDS */
+  .dipl {
+    border-radius: 4px;
+    overflow: hidden;
+    background: var(--light);
+    display: flex;
+    flex-direction: column;
+  }
+  .dipl-head {
+    background: var(--siz-blue);
+    color: var(--white);
+    padding: 1.5rem 1.2rem;
+  }
+  .dipl-head .level {
+    color: var(--siz-red);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    background: var(--white);
+    padding: 0.2rem 0.6rem;
+    border-radius: 3px;
+    display: inline-block;
+  }
+  .dipl-head .name {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-top: 0.7rem;
+  }
+  .dipl-body { padding: 1.2rem; flex: 1; }
+  .dipl-body h4 {
+    color: var(--siz-blue);
+    margin: 0 0 0.4rem;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .dipl-body p { margin: 0 0 1rem; color: var(--grey); }
+  .dipl-body code {
+    background: var(--white);
+    border: 1px solid var(--border);
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+    font-size: 0.85rem;
+    color: var(--siz-blue);
+  }
+  /* PROCESS */
+  .process {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.8rem;
+  }
+  .step {
+    background: var(--light);
+    border-radius: 4px;
+    overflow: hidden;
+    text-align: center;
+  }
+  .step-head {
+    background: var(--siz-blue);
+    color: var(--white);
+    padding: 1.5rem 1rem;
+  }
+  .step-head .num {
+    color: var(--siz-red);
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .step-head .title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 0.4rem;
+  }
+  .step-body {
+    padding: 1.2rem;
+    color: var(--grey);
+    font-size: 0.95rem;
+  }
+  /* HIGHLIGHT */
+  .highlight {
+    background: var(--siz-red);
+    color: var(--white);
+    padding: 1.2rem 1.5rem;
+    border-radius: 4px;
+    margin-top: 2rem;
+    font-weight: 500;
+  }
+  /* PEOPLE */
+  .people-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .people-list li {
+    padding: 0.7rem 0;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+  }
+  .people-list li:last-child { border-bottom: none; }
+  .people-list .name { font-weight: 600; color: var(--siz-blue); }
+  .people-list .role { color: var(--grey); }
+  /* DARK SECTION */
+  .dark-section {
+    background: var(--siz-blue);
+    color: var(--white);
+    margin: 0;
+    max-width: none;
+    padding: 4rem 2rem;
+  }
+  .dark-section .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .dark-section h2 { color: var(--white); }
+  .dark-section .subtitle { color: rgba(255,255,255,0.85); }
+  .dark-section .card { background: rgba(255,255,255,0.08); }
+  .dark-section .card .card-body { color: rgba(255,255,255,0.92); }
+  /* FOOTER */
+  footer {
+    background: var(--siz-blue-dark);
+    color: var(--white);
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  footer .inner { max-width: 1200px; margin: 0 auto; }
+  footer h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.4rem;
+  }
+  footer .contact {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    opacity: 0.9;
+  }
+  footer a {
+    color: var(--white);
+    text-decoration: none;
+    border-bottom: 1px dotted rgba(255,255,255,0.5);
+  }
+  footer a:hover { border-bottom-color: var(--white); }
+  footer .meta {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    opacity: 0.6;
+  }
+
+  @media (max-width: 900px) {
+    .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+    .two-col, .three-col, .four-col, .six-grid { grid-template-columns: 1fr; }
+    .process { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  /* Print */
+  @media print {
+    nav.toc { display: none; }
+    section { page-break-inside: avoid; padding: 1.5rem 1rem; }
+    .hero { padding: 2rem; }
+    .dark-section { background: var(--white); color: #1a1a1a; }
+    .dark-section h2 { color: var(--siz-blue); }
+    .dark-section .card { background: var(--light); }
+    .dark-section .card .card-body { color: var(--grey); }
+    body { font-size: 10pt; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">SIZ AG · Schweizerisches Informatik-Zertifikat</div>
+    <h1>Wer ist SIZ?</h1>
+    <p class="lead">Die führende ICT-Prüfungsorganisation der Schweiz – seit 1991 praxisnah, unabhängig, fälschungssicher. Getragen vom Kaufmännischen Verband der Schweiz und Swico.</p>
+    <div class="badge-row">
+      <span class="badge">Unabhängige Prüfungsorganisation</span>
+      <span class="badge">Schweizer Arbeitsmarkt</span>
+      <span class="badge">Praxis vor Theorie</span>
+      <span class="badge">Cloud-basierte Plattform mySIZ</span>
+    </div>
+  </div>
+</header>
+
+<nav class="toc">
+  <a href="#ueberblick">Überblick</a>
+  <a href="#traegerschaft">Trägerschaft & VR</a>
+  <a href="#was-wir-machen">Was wir machen</a>
+  <a href="#pk">Prüfungskommission</a>
+  <a href="#diplome">Diplomangebot</a>
+  <a href="#mysiz">Plattform mySIZ</a>
+  <a href="#prozess">Lernen → Prüfung</a>
+  <a href="#wert">Wert des Diploms</a>
+  <a href="#ki">KI-Strategie</a>
+  <a href="#zukunft">Strategische Stossrichtungen</a>
+  <a href="#kontakt">Kontakt</a>
+</nav>
+
+<section id="ueberblick">
+  <h2>SIZ auf einen Blick</h2>
+  <p class="subtitle">Unabhängig · praxisnah · seit 1991 im Schweizer Bildungsmarkt</p>
+  <p>Die SIZ AG entwickelt, betreibt und zertifiziert Prüfungen für ICT-Anwenderkompetenzen. Wir sind eine neutrale Prüfungsorganisation – getragen vom Kaufmännischen Verband der Schweiz und Swico, dem Verband der ICT-Anbieter.</p>
+
+  <div class="kpi-grid">
+    <div class="kpi"><span class="num">9 000</span><span class="label">Prüfungs­teilnehmende p.a.</span></div>
+    <div class="kpi"><span class="num">110 000</span><span class="label">Modul-Prüfungen p.a.</span></div>
+    <div class="kpi"><span class="num">&gt;90</span><span class="label">Partner-Bildungs­institute</span></div>
+    <div class="kpi"><span class="num">~60</span><span class="label">Fachexperten in der Prüfungs­kommission</span></div>
+    <div class="kpi"><span class="num">&gt;100 000</span><span class="label">SIZ-Diplome seit 1991</span></div>
+  </div>
+
+  <div class="three-col">
+    <div class="card red">
+      <div class="card-head">Diplome</div>
+      <div class="card-body">Gestaffelte Prüfungen vom Anfänger bis Experte – Fokus auf praktische Anwendung.</div>
+    </div>
+    <div class="card red">
+      <div class="card-head">Trainings</div>
+      <div class="card-body">Lernzielchecks, Test- und Exam-Prüfungen für eine effiziente Vorbereitung.</div>
+    </div>
+    <div class="card red">
+      <div class="card-head">Prüfungskommission</div>
+      <div class="card-body">~60 Fachexperten – Lehrpersonen und Wirtschaftsvertretende.</div>
+    </div>
+  </div>
+</section>
+
+<section id="traegerschaft">
+  <h2>Trägerschaft & Verwaltungsrat</h2>
+  <p class="subtitle">Verankert in Wirtschaft und Bildung – mit Rang und Namen</p>
+  <div class="two-col">
+    <div class="card">
+      <div class="card-head">Trägerschaft</div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Kaufmännischer Verband der Schweiz</strong> – Stimme der kaufmännischen Bildung und Berufsleute</li>
+          <li><strong>Swico</strong> – Verband der ICT-Anbieter in der Schweiz</li>
+          <li>Beide Verbände sind im Verwaltungsrat aktiv vertreten – Garantie für Qualität und Praxisbezug</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-head">Verwaltungsrat</div>
+      <div class="card-body">
+        <ul class="people-list">
+          <li><span class="name">Dr. Alain Gut</span><span class="role">Präsident</span></li>
+          <li><span class="name">Sascha M. Burkhalter</span><span class="role">Mitglied</span></li>
+          <li><span class="name">Prof. Dr. Daniel Jositsch</span><span class="role">Mitglied</span></li>
+          <li><span class="name">Adrian Müller</span><span class="role">Mitglied</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top: 1.5rem;">
+    <div class="card-head">Geschäftsleitung</div>
+    <div class="card-body"><strong>Wolfram Schmidt</strong> – Geschäftsleiter SIZ AG. Schlanke, fokussierte Geschäftsstelle (3.8 FTE) für Strategie, Prüfungsbetrieb und Stakeholder-Support.</div>
+  </div>
+</section>
+
+<section id="was-wir-machen">
+  <h2>Was wir machen</h2>
+  <p class="subtitle">Vom Lernzielcheck bis zum fälschungssicheren Diplom – alles aus einer Hand</p>
+  <div class="six-grid">
+    <div class="card red"><div class="card-head">Prüfungen entwickeln</div><div class="card-body">Eigene Prüfungskommission mit ~60 Fachexperten entwickelt, schreibt, korrigiert und gibt Prüfungen frei. 30 Fragetypen, jährlich neue Serien.</div></div>
+    <div class="card red"><div class="card-head">Praxisbezug sicherstellen</div><div class="card-body">Mini-Cases mit Berufsbezug für KMU und Konzern. Was Mitarbeitende wirklich können müssen, wird abgefragt – nichts anderes.</div></div>
+    <div class="card red"><div class="card-head">Qualität sichern</div><div class="card-body">Monitoring der Ergebnisse pro Schule. Bei Auffälligkeiten suchen wir aktiv das Gespräch – enger Kontakt zu Schulen und Lehrpersonen.</div></div>
+    <div class="card red"><div class="card-head">Plattform betreiben</div><div class="card-body">mySIZ – die Cloud-basierte Lern- und Prüfungsplattform: LZC, Test- und Exam-Prüfungen, Abos, Rechnungen, Zertifikate.</div></div>
+    <div class="card red"><div class="card-head">Zertifizieren</div><div class="card-body">Standardisierte, faire Prüfungen. Fälschungssicheres digitales Zertifikat mit QR-Code und detaillierter Themenausweisung.</div></div>
+    <div class="card red"><div class="card-head">Mit dem Markt entwickeln</div><div class="card-body">Ausrichtung an Bildungsreformen (z.B. KV BiVo 2023), Zusammenarbeit mit Verlagen, Integration neuer Technologien wie KI.</div></div>
+  </div>
+</section>
+
+<section id="pk" class="dark-section">
+  <div class="inner">
+    <h2>Prüfungskommission – das Herz von SIZ</h2>
+    <p class="subtitle">~60 Fachexperten aus Schule und Wirtschaft</p>
+    <div class="two-col">
+      <div class="card">
+        <div class="card-head">Wer ist dabei?</div>
+        <div class="card-body">
+          <ul>
+            <li>Lehrpersonen aus Berufs- und Mittelschulen</li>
+            <li>Wirtschaftsvertretende aus KMU und Konzernen</li>
+            <li>Aufgeteilt in fachspezifische Modulkommissionen</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head">Was sie machen</div>
+        <div class="card-body">
+          <ul>
+            <li>Prüfungsfragen entwickeln (30 Fragetypen)</li>
+            <li>Mini-Cases mit Praxisbezug schreiben</li>
+            <li>Korrektur der offenen / praktischen Aufgaben</li>
+            <li>Freigabe und jährliche Erneuerung der Prüfungen</li>
+            <li>Fachlicher Dialog mit Verlagen und Schulen</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="diplome">
+  <h2>Diplomangebot</h2>
+  <p class="subtitle">4 Diplome – 15 aufeinander aufbauende Module</p>
+  <div class="four-col">
+    <div class="dipl">
+      <div class="dipl-head">
+        <div class="level">Einstieg</div>
+        <div class="name">ICT Smart-User SIZ</div>
+      </div>
+      <div class="dipl-body">
+        <h4>Zielgruppe</h4>
+        <p>Bürotätigkeit, Wiedereinstieg, RAV-Zielgruppe</p>
+        <h4>Module</h4>
+        <p><code>SU1</code> · <code>SU3</code> · <code>SU4</code></p>
+      </div>
+    </div>
+    <div class="dipl">
+      <div class="dipl-head">
+        <div class="level">Mittel</div>
+        <div class="name">ICT Advanced-User SIZ</div>
+      </div>
+      <div class="dipl-body">
+        <h4>Zielgruppe</h4>
+        <p>KV-Lehre, HMS, kaufmännische Grundbildung</p>
+        <h4>Module</h4>
+        <p><code>AU1N</code> · <code>AU3 (K/M)</code> · <code>AU4 (K/M)</code></p>
+      </div>
+    </div>
+    <div class="dipl">
+      <div class="dipl-head">
+        <div class="level">Fortgeschritten</div>
+        <div class="name">ICT Power-User SIZ</div>
+      </div>
+      <div class="dipl-body">
+        <h4>Zielgruppe</h4>
+        <p>Data Technology · Systems &amp; Network · Web</p>
+        <h4>Module</h4>
+        <p><code>PU11–13</code> · <code>PU21/22</code> · <code>PU41/42/45</code></p>
+      </div>
+    </div>
+    <div class="dipl">
+      <div class="dipl-head">
+        <div class="level">Experte</div>
+        <div class="name">ICT Professional SIZ</div>
+      </div>
+      <div class="dipl-body">
+        <h4>Zielgruppe</h4>
+        <p>Spezialisierung Systems &amp; Network oder Web</p>
+        <h4>Module</h4>
+        <p><code>SP1</code> · <code>SP2</code></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="mysiz">
+  <h2>mySIZ – die Lern- und Prüfungsplattform</h2>
+  <p class="subtitle">Cloud-basiert · alles digital · alles aktuell</p>
+  <div class="two-col">
+    <div class="card">
+      <div class="card-head">Funktionen</div>
+      <div class="card-body">
+        <ul>
+          <li>Lernzielchecks (LZC) – formativer Wissensstand</li>
+          <li>Test-Prüfungen – realistische Vorbereitung</li>
+          <li>Exam-Prüfungen – die scharfe SIZ-Prüfung</li>
+          <li>Mini-Prüfungen – integriert in Verlags-Lehrmittel</li>
+          <li>Virtualisierungsumgebung für IT-Praxisprüfungen</li>
+          <li>Verwaltung Schulen, Kandidaten, Kommission, Verlage</li>
+          <li>Abonnemente, Rechnungen, Zertifikatsausstellung</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-head">Was uns unterscheidet</div>
+      <div class="card-body">
+        <ul>
+          <li>Vollständig digitale Prozesskette</li>
+          <li>Cloud-basiert seit 2025 – ortsunabhängig nutzbar</li>
+          <li>Jährlich neue Prüfungsserien</li>
+          <li>30 Fragetypen – inkl. KI-sicherer Aufgaben</li>
+          <li>Integration mit Lehrmittelverlagen</li>
+          <li>Zentrale Verwaltung aller Stakeholder</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="prozess">
+  <h2>Vom Lernen zur Prüfung</h2>
+  <p class="subtitle">Klare Struktur – 20 Lektionen Unterricht, 60 oder 90 Minuten Prüfung</p>
+  <div class="process">
+    <div class="step">
+      <div class="step-head">
+        <div class="num">Schritt 1</div>
+        <div class="title">Unterricht</div>
+      </div>
+      <div class="step-body">
+        20 Lektionen × 45 Min<br>≈ 15 Stunden<br>ca. 80 % Lernen / 20 % Üben
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-head">
+        <div class="num">Schritt 2</div>
+        <div class="title">Vorbereitung</div>
+      </div>
+      <div class="step-body">
+        Lernzielchecks (LZC)<br>Test-Prüfungen auf mySIZ<br>Feedback und Vertiefung
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-head">
+        <div class="num">Schritt 3</div>
+        <div class="title">Prüfung</div>
+      </div>
+      <div class="step-body">
+        60 oder 90 Minuten<br>Praxisorientierte Mini-Cases<br>KI-sichere Aufgaben
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-head">
+        <div class="num">Schritt 4</div>
+        <div class="title">Zertifikat</div>
+      </div>
+      <div class="step-body">
+        Korrektur durch Kommission<br>Fälschungssicher · QR-Code<br>Themen-Ausweis
+      </div>
+    </div>
+  </div>
+  <div class="highlight">
+    Praxisbezug ist kein Schlagwort: Mini-Cases bilden Tätigkeiten ab, die Mitarbeitende in KMU und Konzern wirklich brauchen.
+  </div>
+</section>
+
+<section id="wert">
+  <h2>Warum ein SIZ-Diplom Wert hat</h2>
+  <p class="subtitle">Drei Perspektiven – ein gemeinsamer Nenner: Schweizer Arbeitsmarkt</p>
+  <div class="three-col">
+    <div class="card">
+      <div class="card-head">Für Lernende</div>
+      <div class="card-body">
+        <ul>
+          <li>Fälschungssicheres Zertifikat mit QR-Code</li>
+          <li>Themen-Ausweis: zeigt, was geprüft wurde</li>
+          <li>Unterscheidungsmerkmal in der Bewerbung</li>
+          <li>Höheres Niveau als der ICDL</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-head">Für Schulen</div>
+      <div class="card-body">
+        <ul>
+          <li>Standardisierte, faire Prüfungen</li>
+          <li>Eng mit BiVo 2023 / KV-Reform abgestimmt</li>
+          <li>Cloud-Plattform mySIZ – wenig Aufwand</li>
+          <li>Direkter Draht zur Prüfungskommission</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-head">Für Arbeitgeber</div>
+      <div class="card-body">
+        <ul>
+          <li>Kompetenznachweis für ICT-Anwendung</li>
+          <li>Praxisbezug zu KMU- und Konzern-Realität</li>
+          <li>Schweizer Standard – hier entwickelt</li>
+          <li>Zulassungsvoraussetzung für eidg. Fachausweise</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ki" class="dark-section">
+  <div class="inner">
+    <h2>SIZ und Künstliche Intelligenz</h2>
+    <p class="subtitle">KI ist Werkzeug – Praxisnachweis bleibt zentral</p>
+    <p style="max-width: 800px; color: rgba(255,255,255,0.92); font-size: 1.1rem;">KI verändert die Arbeitswelt – und damit, was Mitarbeitende können müssen. SIZ baut KI gezielt in Prüfungen ein, statt sie zu verbieten.</p>
+    <div class="two-col" style="margin-top: 2rem;">
+      <div class="card">
+        <div class="card-head">Was wir machen</div>
+        <div class="card-body">
+          <ul>
+            <li>KI-sichere Aufgaben: Datei-Manipulation, die KI nicht abschliessen kann</li>
+            <li>KI-Tools dürfen genutzt werden – wie der Taschenrechner</li>
+            <li>Jährliche Erneuerung der Prüfungs- und LZC-Serien</li>
+            <li>Themenspezifische Integration neuer KI-Funktionen</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card red">
+        <div class="card-head">Was uns leitet</div>
+        <div class="card-body">
+          <ul>
+            <li>Wer eine Aufgabe nur mit KI löst, soll nicht bestehen</li>
+            <li>Im Zentrum steht praktische Anwendung von Gelerntem</li>
+            <li>KI-Kompetenz ist Teil der Prüfung, nicht ein Schlupfloch</li>
+            <li>Innovator-Position bei ICT-Prüfungen in der Schweiz</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="zukunft">
+  <h2>Wohin sich SIZ entwickelt</h2>
+  <p class="subtitle">Erneuerung statt Bewahren – konkrete Stossrichtungen 2026+</p>
+  <div class="six-grid">
+    <div class="card"><div class="card-head">Advanced-User stärker auf KV-Lehre</div><div class="card-body">Reaktivierung der KV-Schulen nach BiVo 2023, vertiefte Partnerschaft.</div></div>
+    <div class="card"><div class="card-head">Smart-User als RAV-Standard</div><div class="card-body">Etablierung als Schweizer Standard für berufliche Neuorientierung.</div></div>
+    <div class="card"><div class="card-head">Power-User als Zulassungsweg</div><div class="card-body">Voraussetzung für eidg. Fachausweise – heute Rechnungslegung, morgen Controlling, Revision.</div></div>
+    <div class="card"><div class="card-head">Branchen-Variationen</div><div class="card-body">Advanced-User-Varianten für Hotellerie, Gesundheit, Logistik, Mediamatik etc.</div></div>
+    <div class="card"><div class="card-head">KI-Innovator</div><div class="card-body">Erste Prüfungsorganisation mit konsequent KI-integrierten Prüfungen.</div></div>
+    <div class="card"><div class="card-head">Modernes Backend</div><div class="card-body">Cloud-basierte IT-Systeme – effiziente Geschäftsstelle (3.8 FTE).</div></div>
+  </div>
+</section>
+
+<footer id="kontakt">
+  <div class="inner">
+    <h3>SIZ AG · Schweizerisches Informatik-Zertifikat</h3>
+    <div class="contact">
+      Reitergasse 9, Postfach, 8021 Zürich<br>
+      <a href="tel:+41443849040">044 384 90 40</a> · <a href="mailto:info@siz.ch">info@siz.ch</a> · <a href="https://www.siz.ch" target="_blank" rel="noopener">www.siz.ch</a>
+    </div>
+    <div class="meta">Stand: 29. April 2026 · Quellen: siz.ch (Über uns, Impressum, Verwaltungsrat) · interne Präsentationen SIZ_Überblick_2025, SIZ_IKA_20251122, SIZ_kfmv_20251029</div>
+  </div>
+</footer>
+
+</body>
+</html>

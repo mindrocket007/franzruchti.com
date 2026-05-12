@@ -43,6 +43,11 @@ export const projects: Project[] = [
         file: "/projects/siz-ag/GL-Dossier-DirektionsAssistentin.html",
       },
       {
+        slug: "dossier-hotel-kommunikation",
+        title: "GL-Dossier Hotel-Kommunikationsfachfrau/-mann EFZ",
+        file: "/projects/siz-ag/GL-Dossier-Hotel-Kommunikationsfachfrau-mann-EFZ.html",
+      },
+      {
         slug: "dossier-kaufmaennische-ausbildung",
         title: "GL-Dossier Kaufmännische Ausbildung",
         file: "/projects/siz-ag/GL-Dossier-Kaufmaennische-Ausbildung.html",
@@ -58,6 +63,11 @@ export const projects: Project[] = [
         file: "/projects/siz-ag/GL-Dossier-Blueprint-Template.html",
       },
       {
+        slug: "wer-ist-siz",
+        title: "Wer ist SIZ AG?",
+        file: "/projects/siz-ag/SIZ_WerIstSIZ.html",
+      },
+      {
         slug: "ceo-siz-agent",
         title: "CEO SIZ-Agent (Erstversion)",
         file: "/projects/siz-ag/ceo-siz-agent.html",
@@ -71,6 +81,16 @@ export const projects: Project[] = [
         slug: "meeting-wolfram",
         title: "Meeting Wolfram · Mo 20.04.2026",
         file: "/projects/siz-ag/Meeting_Wolfram_Montag.html",
+      },
+      {
+        slug: "trusted-issuer-eid",
+        title: "Sitzungsvorlage · Trusted Issuer im CH-E-ID-Ökosystem",
+        file: "/projects/siz-ag/SIZ_Trusted_Issuer_E-ID.html",
+      },
+      {
+        slug: "kv-efz-landschaft",
+        title: "KV-EFZ-Landschaft · Akteure, Gremien, Strategie 2030",
+        file: "/projects/siz-ag/SIZ_KV_EFZ_Landschaft.html",
       },
       {
         slug: "argumentarium",

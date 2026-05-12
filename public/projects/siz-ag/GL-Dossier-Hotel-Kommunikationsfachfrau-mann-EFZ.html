@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GL-Dossier: Hotel-Kommunikationsfachfrau/-mann EFZ — SIZ AG</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#185FA5;--blue-dark:#0d3d6e;--blue-light:#E6F1FB;--blue-mid:#378ADD;
+  --green:#1D9E75;--green-light:#E1F5EE;--teal:#0F6E56;--green-deep:#0F6E56;
+  --amber:#BA7517;--amber-light:#FAEEDA;
+  --red:#A32D2D;--red-light:#FCEBEB;
+  --purple:#534AB7;--purple-light:#EEEDFE;
+  --gray:#333330;--gray-light:#F4F3EF;--gray-mid:#777770;
+  --border:#D8D6CF;--bg:#F7F6F2;--white:#FFFFFF;
+  --siz-blue:#185FA5;--siz-navy:#0d3d6e;
+  --hk-accent:#9C27B0;--hk-accent-dark:#6A1B9A;--hk-accent-light:#F3E5F5;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'IBM Plex Sans',sans-serif;background:var(--bg);color:var(--gray);font-size:14px;line-height:1.6}
+.topnav{position:sticky;top:0;z-index:100;background:var(--siz-navy);display:flex;align-items:center;gap:0;box-shadow:0 2px 12px rgba(0,0,0,.25)}
+.topnav-brand{padding:.75rem 1.5rem;color:#fff;font-weight:700;font-size:14px;border-right:1px solid rgba(255,255,255,.1);white-space:nowrap}
+.topnav-brand span{color:#7DB9E8;font-weight:400}
+.topnav-links{display:flex;gap:0;flex:1;overflow-x:auto}
+.topnav-links a{color:rgba(255,255,255,.75);text-decoration:none;padding:.75rem 1rem;font-size:12px;white-space:nowrap;transition:all .2s;border-right:1px solid rgba(255,255,255,.08)}
+.topnav-links a:hover,.topnav-links a.active{color:#fff;background:rgba(255,255,255,.1)}
+.topnav-meta{padding:.75rem 1.5rem;color:rgba(255,255,255,.45);font-size:11px;font-family:'IBM Plex Mono',monospace;white-space:nowrap;border-left:1px solid rgba(255,255,255,.1)}
+.section{padding:3rem 2rem;max-width:1280px;margin:0 auto}
+.section-hero{background:linear-gradient(135deg,var(--siz-navy) 0%,var(--blue) 60%,var(--hk-accent) 100%);color:#fff;padding:4rem 2rem 3rem;position:relative;overflow:hidden}
+.section-hero::before{content:'';position:absolute;top:-50%;right:-10%;width:600px;height:600px;background:radial-gradient(circle,rgba(255,255,255,.06) 0%,transparent 70%);border-radius:50%}
+.hero-inner{max-width:1280px;margin:0 auto;position:relative;z-index:1}
+.hero-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);border-radius:20px;padding:4px 14px;font-size:11px;font-family:'IBM Plex Mono',monospace;margin-bottom:1.25rem;color:rgba(255,255,255,.9)}
+.hero-title{font-size:clamp(24px,4vw,40px);font-weight:700;line-height:1.2;margin-bottom:.5rem}
+.hero-subtitle{font-size:16px;font-weight:300;color:rgba(255,255,255,.8);margin-bottom:2rem}
+.hero-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1rem;margin-top:2.5rem}
+.kpi-card{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:1.25rem 1rem;text-align:center}
+.kpi-num{font-size:1.9rem;font-weight:700;line-height:1;color:#fff}
+.kpi-label{font-size:11px;color:rgba(255,255,255,.78);margin-top:4px;line-height:1.4}
+.kpi-icon{font-size:20px;margin-bottom:6px}
+
+.sec-label{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:1.5rem;display:flex;align-items:center;gap:12px}
+.sec-label::after{content:'';flex:1;height:1px;background:var(--border)}
+
+.insight-banner,.alert-banner{display:flex;gap:1rem;padding:1.25rem 1.5rem;border-radius:12px;margin-bottom:1rem}
+.insight-banner{background:var(--green-light);border-left:4px solid var(--green)}
+.alert-banner{background:var(--amber-light);border-left:4px solid var(--amber)}
+.insight-banner-icon,.alert-banner-icon{font-size:24px;flex-shrink:0}
+.insight-banner-body,.alert-banner-body{font-size:13px;line-height:1.6}
+.insight-banner-body strong,.alert-banner-body strong{display:block;margin-bottom:.35rem;font-size:14px}
+
+.three-col{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:1.5rem}
+.card-title{font-size:13px;font-weight:600;color:var(--gray);margin-bottom:1rem;display:flex;align-items:center;gap:8px}
+
+.ebenen-grid{display:flex;flex-direction:column;gap:6px}
+.ebene{border:1px solid var(--border);border-radius:10px;overflow:hidden;cursor:pointer;transition:box-shadow .2s}
+.ebene:hover{box-shadow:0 4px 16px rgba(0,0,0,.08)}
+.ebene-header{display:flex;align-items:center;min-height:64px}
+.ebene-num{width:56px;min-height:64px;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:18px;font-weight:700;color:#fff;flex-shrink:0}
+.ebene-info{flex:1;background:var(--white);padding:.875rem 1.25rem;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.ebene-title{font-size:14px;font-weight:600;min-width:200px;flex-shrink:0}
+.ebene-desc{font-size:12px;color:#555;flex:1;min-width:180px}
+.ebene-tags{display:flex;gap:5px;flex-wrap:wrap;flex-shrink:0;margin-left:auto}
+.ebene-siz{background:var(--white);border-top:1px solid var(--border);padding:1rem 1.25rem 1rem 72px;display:none}
+.ebene-siz.open{display:block}
+.ebene-siz-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:.875rem;margin-top:.25rem}
+.siz-item{background:var(--gray-light);border-radius:8px;padding:.875rem 1rem}
+.siz-item strong{display:block;font-size:12px;font-weight:600;color:#222;margin-bottom:4px}
+.siz-item p{font-size:11px;color:#444;line-height:1.6}
+.siz-item a{color:var(--blue);text-decoration:none;font-size:11px}
+.siz-highlight{border-left:3px solid var(--blue);background:var(--blue-light)}
+.siz-highlight strong{color:var(--blue-dark)}
+.siz-warn{border-left:3px solid var(--amber);background:var(--amber-light)}
+.siz-warn strong{color:#7A4C04}
+.siz-good{border-left:3px solid var(--green);background:var(--green-light)}
+.siz-good strong{color:var(--teal)}
+
+.e1 .ebene-num{background:#1a1a18}
+.e2 .ebene-num{background:var(--blue)}
+.e3 .ebene-num{background:var(--teal)}
+.e4 .ebene-num{background:var(--blue-mid)}
+.e5 .ebene-num{background:var(--green)}
+.e6 .ebene-num{background:var(--amber)}
+.e7 .ebene-num{background:var(--purple)}
+.e8 .ebene-num{background:var(--red)}
+.e9 .ebene-num{background:#333}
+.tag{display:inline-block;font-size:10px;padding:2px 9px;border-radius:10px;font-weight:500;white-space:nowrap}
+.tag-blue{background:var(--blue-light);color:var(--blue-dark)}
+.tag-green{background:var(--green-light);color:var(--teal)}
+.tag-amber{background:var(--amber-light);color:#633806}
+.tag-purple{background:var(--purple-light);color:var(--purple)}
+.tag-gray{background:var(--gray-light);color:var(--gray)}
+.tag-red{background:var(--red-light);color:var(--red)}
+.tag-siz{background:#E6F1FB;color:#0d3d6e;font-weight:600}
+
+.hkb-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
+.hkb-card{background:var(--white);border:1px solid var(--border);border-left:4px solid var(--gray-mid);border-radius:10px;padding:1.25rem;position:relative}
+.hkb-letter{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:var(--gray-mid);color:#fff;font-weight:700;font-size:14px;margin-right:.5rem}
+.hkb-title{font-size:13px;font-weight:600;display:inline}
+.hkb-desc{font-size:12px;color:#555;margin-top:.75rem;line-height:1.55}
+.hkb-siz{display:inline-block;margin-top:.75rem;font-size:11px;font-weight:600;color:#fff;background:var(--hk-accent);padding:3px 10px;border-radius:10px}
+
+.swot-grid{display:grid;grid-template-columns:1fr 1fr;gap:3px;border-radius:12px;overflow:hidden;border:1px solid var(--border)}
+.swot-cell{padding:1.5rem;background:var(--white)}
+.swot-cell:nth-child(1){border-bottom:3px solid var(--green);border-right:3px solid var(--border)}
+.swot-cell:nth-child(2){border-bottom:3px solid var(--red);border-left:3px solid var(--border)}
+.swot-cell:nth-child(3){border-top:3px solid var(--border);border-right:3px solid var(--border)}
+.swot-cell:nth-child(4){border-top:3px solid var(--border);border-left:3px solid var(--border)}
+.swot-head{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.875rem;display:flex;align-items:center;gap:8px}
+.swot-cell:nth-child(1) .swot-head{color:var(--teal)}
+.swot-cell:nth-child(2) .swot-head{color:var(--red)}
+.swot-cell:nth-child(3) .swot-head{color:var(--blue)}
+.swot-cell:nth-child(4) .swot-head{color:var(--amber)}
+.swot-items{list-style:none}
+.swot-items li{font-size:12px;color:#333;padding:6px 0;border-bottom:1px solid var(--border);display:flex;gap:8px;align-items:flex-start}
+.swot-items li:last-child{border-bottom:none}
+.swot-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0;margin-top:6px}
+.swot-cell:nth-child(1) .swot-dot{background:var(--green)}
+.swot-cell:nth-child(2) .swot-dot{background:var(--red)}
+.swot-cell:nth-child(3) .swot-dot{background:var(--blue)}
+.swot-cell:nth-child(4) .swot-dot{background:var(--amber)}
+
+.markt-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.markt-box{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:1.5rem}
+.markt-title{font-size:12px;font-weight:600;color:var(--gray-mid);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1.25rem}
+.bar-chart{display:flex;flex-direction:column;gap:10px}
+.bar-row{display:flex;align-items:center;gap:10px}
+.bar-label{font-size:11px;color:#555;width:170px;flex-shrink:0;line-height:1.3}
+.bar-track{flex:1;background:var(--gray-light);border-radius:4px;height:24px;overflow:hidden}
+.bar-fill{height:100%;border-radius:4px;display:flex;align-items:center;padding-left:8px;font-size:11px;font-weight:600;color:#fff;transition:width 1s ease}
+.bar-val{font-size:11px;color:#555;width:90px;flex-shrink:0;text-align:right}
+
+.siz-treppe{display:flex;gap:6px;margin-top:.5rem}
+.treppe-step{flex:1;border-radius:10px;padding:1.25rem 1rem;text-align:center;border:2px solid transparent}
+.treppe-smart{background:#E1F5EE;border-color:var(--green)}
+.treppe-advanced{background:#E6F1FB;border-color:var(--blue)}
+.treppe-power{background:var(--gray-light);border-color:var(--border);opacity:.6}
+.treppe-icon{font-size:28px;margin-bottom:8px}
+.treppe-title{font-size:13px;font-weight:700;margin-bottom:4px}
+.treppe-smart .treppe-title{color:var(--teal)}
+.treppe-advanced .treppe-title{color:var(--blue)}
+.treppe-power .treppe-title{color:var(--gray-mid)}
+.treppe-desc{font-size:11px;line-height:1.5;color:#555}
+.treppe-badge{display:inline-block;margin-top:8px;font-size:10px;font-weight:600;padding:3px 10px;border-radius:10px}
+.treppe-smart .treppe-badge{background:var(--green);color:#fff}
+.treppe-advanced .treppe-badge{background:var(--blue-light);color:var(--blue-dark)}
+.treppe-power .treppe-badge{background:var(--gray-light);color:var(--gray-mid)}
+
+.steps{display:flex;flex-direction:column;gap:0}
+.step{display:flex;gap:0;position:relative}
+.step-connector{display:flex;flex-direction:column;align-items:center;width:48px;flex-shrink:0}
+.step-dot{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#fff;flex-shrink:0;z-index:1}
+.step-line{flex:1;width:2px;background:var(--border);min-height:20px}
+.step:last-child .step-line{display:none}
+.step-content{flex:1;background:var(--white);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:10px}
+.step-meta{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--gray-mid);margin-bottom:4px}
+.step-title{font-size:14px;font-weight:600;color:var(--gray);margin-bottom:4px}
+.step-body{font-size:12px;color:#555;line-height:1.6}
+
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.download-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.download-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:1.5rem;display:flex;flex-direction:column;gap:.75rem}
+.dl-icon{font-size:32px}
+.dl-name{font-size:14px;font-weight:600;color:var(--gray)}
+.dl-desc{font-size:12px;color:var(--gray-mid);line-height:1.5}
+.dl-btn{display:inline-flex;align-items:center;gap:6px;background:var(--blue);color:#fff;padding:.5rem 1rem;border-radius:8px;font-size:12px;font-weight:600;text-decoration:none;margin-top:auto}
+
+.section-divider{border:none;border-top:1px solid var(--border);margin:0}
+.fade-in{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+.fade-in.visible{opacity:1;transform:translateY(0)}
+
+.school-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}
+.school-card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:1.25rem;border-top:3px solid var(--hk-accent)}
+.school-card.priority{border-top-color:var(--green);background:linear-gradient(180deg,var(--green-light) 0%,var(--white) 30%)}
+.school-name{font-size:13px;font-weight:700;margin-bottom:.25rem}
+.school-meta{font-size:11px;color:var(--gray-mid);margin-bottom:.5rem}
+.school-body{font-size:12px;line-height:1.6;color:#444}
+.school-tag{display:inline-block;font-size:10px;padding:2px 8px;border-radius:10px;background:var(--hk-accent-light);color:var(--hk-accent-dark);font-weight:600;margin-right:4px;margin-top:4px}
+.school-tag.green{background:var(--green-light);color:var(--teal)}
+.school-tag.amber{background:var(--amber-light);color:#7A4C04}
+
+@media print{.topnav{display:none}.ebene-siz{display:block!important}.section{padding:1rem}}
+@media(max-width:900px){.markt-grid,.two-col,.three-col{grid-template-columns:1fr}.swot-grid{grid-template-columns:1fr}.siz-treppe{flex-direction:column}}
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="topnav-brand">SIZ AG <span>GL-Dossier</span></div>
+  <div class="topnav-links">
+    <a href="#onepager" class="active">One-Pager</a>
+    <a href="#strategischer-befund">Befund</a>
+    <a href="#detail">Ebenen E1–E9</a>
+    <a href="#hkb">HKB A–D</a>
+    <a href="#schulen">Schulen</a>
+    <a href="#businesscase">Business Case</a>
+    <a href="#swot">SWOT</a>
+    <a href="#nextSteps">Roadmap</a>
+    <a href="#anhaenge">Anhänge</a>
+  </div>
+  <div class="topnav-meta">HoKo EFZ · Mai 2026</div>
+</nav>
+
+<!-- ═══ HERO / ONE-PAGER ═══ -->
+<div class="section-hero" id="onepager">
+  <div class="hero-inner">
+    <div class="hero-badge">📋 GL-Dossier · SIZ AG · Beruf-Nr. 79200</div>
+    <div class="hero-title">Hotel-Kommunikationsfachfrau / Hotel-Kommunikationsfachmann EFZ<br><span style="font-weight:300;font-size:.65em;color:rgba(255,255,255,.85)">3 Jahre Grundbildung · Empfang &amp; Marketing &amp; Administration</span></div>
+    <div class="hero-subtitle">Marktanalyse &amp; Strategiebewertung für die SIZ AG — Berufsbildung Schweiz, Mai 2026</div>
+
+    <div class="hero-kpis">
+      <div class="kpi-card">
+        <div class="kpi-icon">📚</div>
+        <div class="kpi-num">79200</div>
+        <div class="kpi-label">SBFI-Berufsnummer<br>BiVo seit 01.01.2017</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-icon">👥</div>
+        <div class="kpi-num">~400</div>
+        <div class="kpi-label">Lernende/Jahrgang (geschätzt)<br>~1'200 aktive Lehrverhältnisse CH</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-icon">🏫</div>
+        <div class="kpi-num">8+</div>
+        <div class="kpi-label">Berufsfachschulen &amp; Schulhotels<br>HFT, EHL Passugg, BFS Brig u.a.</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-icon">💻</div>
+        <div class="kpi-num">4 HKB</div>
+        <div class="kpi-label">Handlungskompetenzbereiche<br>3 davon mit IT-Bezug (Office, PMS, Marketing)</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-icon">💰</div>
+        <div class="kpi-num">CHF 54k</div>
+        <div class="kpi-label">CHF/Jahr Direktpotenzial<br>realistisch (50 % von ~400 Lernenden)</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-icon">⚡</div>
+        <div class="kpi-num">2027–28</div>
+        <div class="kpi-label">BiVo-Revision absehbar<br>Window für SIZ-Verankerung</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ STRATEGISCHER BEFUND ═══ -->
+<div class="section" id="strategischer-befund">
+  <div class="sec-label">⚡ Strategischer Befund — Ausgangslage &amp; SIZ-Ansatz</div>
+
+  <div class="alert-banner fade-in">
+    <div class="alert-banner-icon">⚠️</div>
+    <div class="alert-banner-body">
+      <strong>HoKo ist ein Greenfield für SIZ — kein Anker, aber kein Konkurrent</strong>
+      Die Bildungsverordnung vom 11.10.2016 verlangt <em>kein</em> formales IT-Zertifikat als Zulassung. ECDL/ICDL ist nicht in der BiVo verankert, SIZ ebenfalls nicht. Anders als bei Hauswart (PO 2018, Ziffer 3.1.2 — SIZ explizit anerkannt) gibt es hier keinen "Gold-Anker". Der Beruf ist aber von 4 Handlungskompetenzbereichen geprägt, in denen 3 stark IT-getrieben sind: Marketing &amp; Kooperationen, Administrative Arbeitsprozesse, Gäste beraten/betreuen (mit PMS/Channel-Manager). <strong>SIZ kann hier von Null auf positionieren — als der Schweizer Standard für die digitale Hotelkommunikation.</strong>
+    </div>
+  </div>
+
+  <div class="insight-banner fade-in">
+    <div class="insight-banner-icon">🎯</div>
+    <div class="insight-banner-body">
+      <strong>Drei Hebel, die hier funktionieren — alle adressierbar in 2026/27</strong>
+      (1) <strong>Schul-Push:</strong> Berufsfachschulen wie HFT Thun, EHL Passugg, BFS Brig haben ICT/IT als reguläres Schulfach — ICT Smart-User SIZ als integrierbares Modul anbieten.
+      (2) <strong>BiVo-Revisions-Lobby:</strong> Janine Bolliger (HotellerieSuisse, SKBQ-Präsidentin Hotel-Kommunikation) ansprechen — ICT Smart-User SIZ als empfohlenes Element in der nächsten BiVo-Revision (2027/28 absehbar) verankern.
+      (3) <strong>Lernenden-Marketing:</strong> Schweizer Zertifikat als Differenzierungs-Asset im Lebenslauf — "Schweizer Hotellerie braucht Schweizer IT-Standard" — direkt an die Lernenden-Zielgruppe.
+    </div>
+  </div>
+
+  <div class="three-col fade-in" style="margin-top:1.5rem">
+    <div class="card">
+      <div class="card-title">🟢 Hebel, die hier funktionieren</div>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:8px">
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--green);font-weight:700">✓</span> 3 von 4 HKBs sind IT-getrieben — Smart-User passt exakt</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--green);font-weight:700">✓</span> EHL Passugg + HFT Thun = bekannte Schulhotels mit IT-Curricula</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--green);font-weight:700">✓</span> Branchen-Trend: Digitalisierung in Hotels — PMS, Channel Manager, Social Media Pflicht</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--green);font-weight:700">✓</span> BiVo-Revision 2027/28 erwartet — Lobbying-Window offen</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--green);font-weight:700">✓</span> SIZ-Bestand: HFT Thun bereits SIZ-affin (siehe SIZ_Prospects 2026)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">🔴 Hürden im Segment</div>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:8px">
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--red);font-weight:700">✗</span> Kein Pflicht-IT-Zertifikat in BiVo — Akquise rein freiwillig</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--red);font-weight:700">✗</span> Trägerschaft zentralisiert (Hotel &amp; Gastro formation) — wenig Schulanwender-Macht</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--red);font-weight:700">✗</span> Schulhotel-Modell (10–20 Wochen/Jahr) erschwert externe Modul-Integration</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--red);font-weight:700">✗</span> Lernende mit knappem Lehrlohn (CHF 1'020/1'300/1'550) — Selbstzahlerbereitschaft tief</li>
+        <li style="display:flex;gap:8px;font-size:12px"><span style="color:var(--red);font-weight:700">✗</span> Risiko: ICDL ist im Tourismus-Marketing präsent — könnte Standard setzen</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">🎯 SIZ-Produkt-Empfehlung</div>
+      <p style="font-size:12px;color:#555;margin-bottom:.75rem">HoKo braucht Office-Basics, Outlook, Excel-Listen, einfache Web/Social-Media-Tools, PMS-Verständnis. Smart-User deckt das exakt ab; Advanced ist Bonus für Marketing-Affine.</p>
+      <div style="display:flex;flex-direction:column;gap:6px">
+        <div style="background:var(--green-light);border-radius:6px;padding:.5rem .75rem;font-size:12px"><strong style="color:var(--teal)">🥇 Primär:</strong> <span style="color:#333">ICT Smart-User SIZ</span><br><span style="font-size:11px;color:#555">3 Module × CHF 90 = <strong>CHF 270/Lernende</strong> · Office, Internet, Online-Zusammenarbeit</span></div>
+        <div style="background:var(--blue-light);border-radius:6px;padding:.5rem .75rem;font-size:12px"><strong style="color:var(--blue-dark)">🥈 Sekundär:</strong> <span style="color:#333">ICT Advanced-User SIZ — Marketing-Module</span><br><span style="font-size:11px;color:#555">Für Lernende mit Schwerpunkt Marketing/Social Media (HKB C)</span></div>
+        <div style="background:var(--gray-light);border-radius:6px;padding:.5rem .75rem;font-size:12px"><strong style="color:var(--gray-mid)">💎 Nicht relevant:</strong> <span style="color:#333">Power-User</span><br><span style="font-size:11px;color:#555">IT-Profi-Niveau — über das Berufsbild hinaus</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- ═══ EBENEN E1–E9 ═══ -->
+<div class="section" id="detail">
+  <div class="sec-label">Systemübersicht — Ebenen E1 bis E9 (klicken für Details)</div>
+  <div class="ebenen-grid">
+
+    <!-- E1 -->
+    <div class="ebene e1 fade-in" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E1</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Gesetzliche Grundlage / SBFI</div>
+          <div class="ebene-desc">BBG SR 412.10 · BiVo erlassen 11.10.2016 · in Kraft seit 01.01.2017 · Beruf-Nr. 79200 · Status aktiv · NQR 4</div>
+          <div class="ebene-tags"><span class="tag tag-gray">Bundesebene</span><span class="tag tag-gray">EFZ</span><span class="tag tag-gray">3 Jahre</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="ebene-siz-grid">
+          <div class="siz-item"><strong>Berufsbezeichnung</strong><p>DE: Hotel-Kommunikationsfachfrau EFZ / Hotel-Kommunikationsfachmann EFZ<br>FR: Employée/Employé en communication hôtelière CFC<br>Englisch (empfohlen): Guest Relations Officer, Federal Diploma of VET</p></div>
+          <div class="siz-item"><strong>Gesetzliche Grundlage</strong><p>Art. 19 BBG (SR 412.10) · Berufliche Grundbildung mit EFZ<br>Verordnung des SBFI über die berufliche Grundbildung<br>BiVo erlassen <strong>11.10.2016</strong>, in Kraft seit <strong>01.01.2017</strong><br>Bildungsplan in der jeweils aktuellen Fassung</p></div>
+          <div class="siz-item"><strong>Eckdaten der Ausbildung</strong><p>Lehrdauer: <strong>3 Jahre</strong> · NQR-Niveau 4<br>Schulische Bildung: <strong>1'640 Lektionen</strong> total<br>Überbetriebliche Kurse (üK): <strong>15 Tage</strong> über 3 Jahre<br>ISCED-Ausbildungsfeld: 1013 (Gastgewerbe und Catering)</p></div>
+          <div class="siz-item"><strong>Status &amp; Revision</strong><p>BiVo-Status: <strong>aktiv</strong> · keine offizielle Revision angekündigt<br>Erfahrungsgemäss BiVo-Revisionen alle 8–10 Jahre<br><strong>BiVo-Revision absehbar 2027/28</strong> — frühzeitig Lobbying-Window</p></div>
+          <div class="siz-item siz-highlight"><strong>🔗 SBFI-Berufsverzeichnis</strong><p><a href="https://www.becc.admin.ch/becc/public/bvz/beruf/show/79200" target="_blank">becc.admin.ch · Beruf 79200</a><br><a href="https://www.fedlex.admin.ch/eli/cc/2021/495/de" target="_blank">Verordnung SR 412.101.221.81 (fedlex.admin.ch)</a></p></div>
+          <div class="siz-item siz-good"><strong>SBFI-Subvention für Schulhotel-Variante</strong><p>50 % Bundesbeitrag möglich für Vorbereitungs-/Schulhotelmodule. SIZ-Modul kann bei Integration in den Lehrgang als subventionsberechtigt argumentiert werden — wichtiger Vorteil im Schul-Pitch.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- E2 -->
+    <div class="ebene e2 fade-in" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E2</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Trägerschaft / OdA</div>
+          <div class="ebene-desc">Hotel &amp; Gastro formation Schweiz (Inst-Nr. 100378) · HotellerieSuisse · GastroSuisse</div>
+          <div class="ebene-tags"><span class="tag tag-blue">Hotelleriesuisse = Kernhebel</span><span class="tag tag-siz">Janine Bolliger</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="ebene-siz-grid">
+          <div class="siz-item siz-highlight"><strong>Hotel &amp; Gastro formation Schweiz</strong><p>Trägerorganisation für die Berufsbildung der Hotellerie- und Gastronomiebranche · Institutions-Nr. 100378<br>Adresse: Avenue Général-Guisan 42a, 1800 Vevey<br><a href="https://www.hotelgastro.ch" target="_blank">www.hotelgastro.ch</a><br>Verantwortlich für Bildungsverordnung, Bildungsplan, Prüfungskommission, Wegleitungen, Lehrmittel</p></div>
+          <div class="siz-item siz-highlight"><strong>HotellerieSuisse — branchen-strategischer Partner</strong><p>Verbandssitz: Monbijoustrasse 130, 3007 Bern · T 031 370 42 83<br><a href="https://www.hotelleriesuisse.ch" target="_blank">www.hotelleriesuisse.ch</a><br><strong>Janine Bolliger</strong> · Vertreterin Hotellerie · <strong>Präsidentin SKBQ Hotel-Kommunikation</strong><br>SKBQ = Schweizerische Kommission für Berufsentwicklung und Qualität — entscheidet über BiVo-Revisionen!</p></div>
+          <div class="siz-item"><strong>GastroSuisse</strong><p>Mit-Trägerverband · Vertritt Gastronomie/Hotellerie<br>Sekretariat: Blumenfeldstrasse 20, 8046 Zürich<br><a href="https://www.gastrosuisse.ch" target="_blank">www.gastrosuisse.ch</a><br>Bildungsplan-Mitentwicklung 2016 dokumentiert</p></div>
+          <div class="siz-item"><strong>Prüfungskommission 37</strong><p>Verantwortlich für Qualifikationsverfahren (QV) der HoKo<br>Sekretariat via hotelgastro.ch · <a href="https://xn--abschlussprfung-9vb.ch/berufe/hotel-kommunikationsfachfrau-mann-efz/" target="_blank">abschlussprüfung.ch · Beruf 37</a><br>Mitglieder &amp; Chefexperten: separate Liste auf der QV-Website (auf <a href="pruefungskommission-37.csv" download>pruefungskommission-37.csv</a> zu pflegen)</p></div>
+          <div class="siz-item siz-highlight"><strong>⭐ SIZ-Strategie E2</strong><p>Erstkontakt mit <strong>Janine Bolliger</strong> (HotellerieSuisse, SKBQ-Präsidentin) priorisieren — sie ist die Schlüsselperson für eine BiVo-Revision. Argument: "Schweizer Hotellerie braucht Schweizer IT-Standard, nicht ein internationales Label aus dem Tourismus-Konkurrenzland."</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- E3 -->
+    <div class="ebene e3 fade-in" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E3</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Bildungsverordnung / Qualifikationsverfahren (statt PO)</div>
+          <div class="ebene-desc">Kein IT-Zertifikat in BiVo Pflicht · QV durchgeführt von PK 37 · 3 praktische Situationen + schriftlich + mündlich</div>
+          <div class="ebene-tags"><span class="tag tag-amber">Kein Pflicht-IT-Zertifikat</span><span class="tag tag-siz">Greenfield</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="ebene-siz-grid">
+          <div class="siz-item siz-warn"><strong>⚠️ KEIN IT-Zertifikat in BiVo Pflicht</strong><p>Im Gegensatz zu Hauswart-FA (PO 2018, Ziff. 3.1.2: "ECDL Base oder SIZ I") verlangt die HoKo-BiVo <strong>kein</strong> formales IT-Zertifikat als Zulassung. ICT-Kompetenzen sind <em>im Bildungsplan integriert</em> (HKB C, D), aber kein externes Zertifikat ist vorgeschrieben.</p></div>
+          <div class="siz-item"><strong>Zulassungsbedingungen Lehre</strong><p>• Abgeschlossene obligatorische Schulzeit · ggf. Aufnahmeverfahren des Lehrbetriebs<br>• Bei Schulhotel: ggf. Aufnahmeprüfung (EHL Passugg etc.)<br>• Sprachkompetenzen (DE/FR) wichtig im Berufsalltag</p></div>
+          <div class="siz-item"><strong>Qualifikationsverfahren (QV)</strong><p>Organisiert durch <strong>Prüfungskommission 37</strong><br>3 praktische Situationen (im Lehrbetrieb dokumentiert)<br>Schriftliche Prüfung (Berufskenntnisse)<br>Mündliche Prüfung<br>Allgemeinbildung gemäss VAB</p></div>
+          <div class="siz-item"><strong>Lernortkooperation</strong><p>3 Lernorte gemäss BBG Art. 16:<br>• <strong>Lehrbetrieb</strong> (Hotel) — Kernpraxis<br>• <strong>Berufsfachschule</strong> 1–2 Tage/Woche oder 10–20 Wochen/Jahr im Schulhotel<br>• <strong>üK Hotel &amp; Gastro formation</strong> — 15 Tage Total</p></div>
+          <div class="siz-item siz-highlight"><strong>🎯 SIZ-Hebel im QV-Kontext</strong><p>Lernende können SIZ-Zertifikat als <strong>begleitende Qualifikation</strong> erwerben — als Mehrwert auf dem Lehrabgangs-Lebenslauf. SIZ kann argumentieren: "Wer mit ICT Smart-User SIZ ins QV geht, ist im praktischen Teil bei den IT-Tätigkeiten (PMS, Marketing, Verwaltung) klar im Vorteil."</p></div>
+          <div class="siz-item"><strong>🔗 BiVo &amp; Bildungsplan</strong><p><a href="https://www.hotelleriesuisse.ch/de/download-2F28CE5E-4D6A-44EE-9B58-5D60949877EC.secure" target="_blank">Bildungsverordnung HoKo (hotelleriesuisse.ch)</a><br><a href="https://www.hotelleriesuisse.ch/de/download-28199E21-C289-4D1B-A5FE-551264970469.secure" target="_blank">Bildungsplan HoKo (hotelleriesuisse.ch)</a><br><a href="https://www.a-b-z.ch/resources/HoKo_EFZHotel-Kommunikationsfachmann_EFZ.pdf" target="_blank">Bildungsplan-PDF (a-b-z.ch Spiegel)</a></p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- E4 -->
+    <div class="ebene e4 fade-in" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E4</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Prüfungskommission 37 / SKBQ Hotel-Kommunikation</div>
+          <div class="ebene-desc">PK 37 (QV) + SKBQ (Strategie/Revision) · SKBQ-Präsidium: <strong>Janine Bolliger</strong> · Mitgliederliste partiell öffentlich</div>
+          <div class="ebene-tags"><span class="tag tag-blue">Operativer Hebel</span><span class="tag tag-siz">SKBQ = strategisch</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="ebene-siz-grid">
+          <div class="siz-item siz-highlight"><strong>SKBQ Hotel-Kommunikation — strategisches Gremium</strong><p>Schweizerische Kommission für Berufsentwicklung und Qualität (SKBQ) gemäss BBG Art. 8.<br><strong>Präsidentin: Janine Bolliger, HotellerieSuisse</strong><br>SKBQ entscheidet über Bildungsplan-Anpassungen, BiVo-Revisionen, Lehrmittelfreigabe.<br>= <strong>der eine Kontakt für SIZ-Verankerung in nächste BiVo</strong></p></div>
+          <div class="siz-item"><strong>Prüfungskommission 37 — operativ</strong><p>Verantwortlich für Durchführung des QV jährlich<br>Erstellt Prüfungsaufgaben, schult Chefexperten<br>Mitgliederliste &amp; Chefexperten: separat auf <a href="https://xn--abschlussprfung-9vb.ch" target="_blank">abschlussprüfung.ch</a></p></div>
+          <div class="siz-item"><strong>Kontakt PK 37 / SKBQ</strong><p>Über Hotel &amp; Gastro formation Schweiz<br>Avenue Général-Guisan 42a, 1800 Vevey<br>T 021 925 70 70 · <a href="mailto:info@hotelgastro.ch">info@hotelgastro.ch</a><br>Konkrete Kontakte sind separat zu erfassen (siehe pruefungskommission-37.csv)</p></div>
+          <div class="siz-item siz-highlight"><strong>⭐ SIZ-Strategie E4</strong><p><strong>SKBQ ist der Schlüssel.</strong> Anders als bei Hauswart-FA (Gleichwertigkeitsantrag bei der PK reicht) braucht es bei einem EFZ-Beruf eine BiVo/Bildungsplan-Anpassung — entschieden von der SKBQ. Daher: Janine Bolliger gezielt einladen, vor der Revision 2027/28 eine SIZ-Position einbringen.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- E5 -->
+    <div class="ebene e5 fade-in" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E5</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Bildungsplan (statt Wegleitung)</div>
+          <div class="ebene-desc">Bildungsplan zur BiVo · 4 HKBs · Leistungsziele für 3 Lernorte · regelmässig überarbeitet durch SKBQ</div>
+          <div class="ebene-tags"><span class="tag tag-green">Operative Basis</span><span class="tag tag-siz">SIZ-Anker schaffen</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="ebene-siz-grid">
+          <div class="siz-item"><strong>Inhalt Bildungsplan</strong><p>1. Berufsbild &amp; Berufspädagogische Grundlagen<br>2. <strong>4 Handlungskompetenzbereiche (HKB)</strong> mit Leitziel, Richtzielen, Leistungszielen je Lernort<br>3. Lektionentafel der Berufsfachschule<br>4. Organisation, Aufteilung &amp; Dauer der üK<br>5. Qualifikationsverfahren · Bewertung · Notation</p></div>
+          <div class="siz-item"><strong>4 Handlungskompetenzbereiche (Anhang Bildungsplan)</strong><p><strong>A</strong> Gäste beraten und betreuen<br><strong>B</strong> Nachhaltigkeit und Qualitätsvorgaben sicherstellen<br><strong>C</strong> Marketingmassnahmen und Kooperationen gestalten<br><strong>D</strong> Administrative Arbeitsprozesse organisieren<br><em>Detail siehe Sektion HKB A–D</em></p></div>
+          <div class="siz-item siz-good"><strong>✅ IT-Bezug im Bildungsplan</strong><p><strong>HKB C (Marketing):</strong> Social Media, Website, Newsletter, Online-Kampagnen<br><strong>HKB D (Administration):</strong> Korrespondenz, Datenpflege Gäste/Mitarbeiter, Buchhaltungs-Vorarbeit, Dokumentationen<br><strong>HKB A (Gästeprozesse):</strong> PMS-Bedienung, Channel-Manager, Reservation, Check-In/Out<br>3 von 4 HKBs = <strong>direkter Smart-User-Bedarf</strong></p></div>
+          <div class="siz-item siz-highlight"><strong>⭐ SIZ-Ankerpunkt im Bildungsplan</strong><p>Aktuell ist SIZ <strong>nicht</strong> im Bildungsplan verankert. Ziel: bei nächster Bildungsplan-Revision <strong>"ICT Smart-User SIZ als empfohlenes ergänzendes Zertifikat"</strong> in den Erläuterungen oder als Anhang einbauen. SKBQ-Beschluss ausreichend, kein neues SBFI-Verfahren nötig.</p></div>
+          <div class="siz-item"><strong>🔗 Bildungsplan-Dokument</strong><p><a href="https://www.hotelleriesuisse.ch/de/download-28199E21-C289-4D1B-A5FE-551264970469.secure" target="_blank">Bildungsplan HoKo (hotelleriesuisse.ch)</a><br><a href="https://www.a-b-z.ch/resources/HoKo_EFZHotel-Kommunikationsfachmann_EFZ.pdf" target="_blank">PDF-Spiegel auf a-b-z.ch</a></p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- E6 -->
+    <div class="ebene e6 fade-in" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E6</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Lernzielkatalog / Qualifikationsprofil</div>
+          <div class="ebene-desc">4 HKBs · Leitziele/Richtziele/Leistungsziele je Lernort · IT-Tools nicht namentlich in Plan, aber implizit in vielen Leistungszielen</div>
+          <div class="ebene-tags"><span class="tag tag-amber">HKB C+D = SIZ-relevant</span><span class="tag tag-siz">3 von 4 mit IT</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="ebene-siz-grid">
+          <div class="siz-item"><strong>Struktur des Qualifikationsprofils</strong><p>Pro HKB ein Leitziel · pro HKB mehrere Richtziele · pro Richtziel mehrere Leistungsziele für die 3 Lernorte (Betrieb, Schule, üK)<br>Insgesamt &gt;100 Leistungsziele über alle HKBs verteilt<br>Bewertung im QV erfolgt anhand dieser Leistungsziele</p></div>
+          <div class="siz-item siz-highlight"><strong>🎯 IT-Werkzeuge im Qualifikationsprofil</strong><p><strong>HKB A:</strong> Property Management System (PMS), Channel Manager, Online-Reservation<br><strong>HKB C:</strong> CMS/Webtool, Social Media Plattformen, E-Mail-Marketing-Tools, Bildbearbeitung<br><strong>HKB D:</strong> MS Office (Word, Excel, Outlook), Buchhaltungssoftware, Dateiablagesysteme<br>Werkzeuge sind im Plan <strong>nicht namentlich genannt</strong> — aber in der Praxis Standard</p></div>
+          <div class="siz-item"><strong>SIZ-Modul-Matching</strong><p><strong>Smart-User Modul 1</strong> (Computer- + Online-Grundlagen) → HKB A, D<br><strong>Smart-User Modul 2</strong> (Textverarbeitung Word) → HKB C, D<br><strong>Smart-User Modul 3</strong> (Tabellenkalkulation Excel) → HKB B, D<br>→ <strong>3 Smart-User Module = vollständige Abdeckung</strong> der IT-affinen Leistungsziele</p></div>
+          <div class="siz-item siz-good"><strong>⭐ Argumentation gegenüber SKBQ</strong><p>"Der Bildungsplan setzt IT-Kompetenzen als Voraussetzung — ohne sie sind HKB C und D nicht erfüllbar. Ein Schweizer Standard-Zertifikat (SIZ) macht diese Voraussetzung sichtbar und überprüfbar — auch für die Lehrbetriebe, die heute keine einheitliche IT-Vorqualifikation haben."</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- E7 -->
+    <div class="ebene e7 fade-in" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E7</div>
+        <div class="ebene-info">
+          <div class="ebene-title">SIZ-Produkt-Positionierung</div>
+          <div class="ebene-desc">ICT Smart-User SIZ = Primärprodukt · CHF 270/Lernende · ICT Advanced-User SIZ optional für Marketing-Spezialisierung</div>
+          <div class="ebene-tags"><span class="tag tag-green">Smart-User</span><span class="tag tag-siz">CHF 270/Lernende</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div style="margin-top:.75rem">
+          <div class="siz-treppe">
+            <div class="treppe-step treppe-smart">
+              <div class="treppe-icon">💡</div>
+              <div class="treppe-title">ICT Smart-User SIZ</div>
+              <div class="treppe-desc">Office-Basics, Outlook, Excel-Listen, Internet, E-Mail · Genau das, was im Hotel-Backoffice täglich gebraucht wird</div>
+              <div class="treppe-badge">✅ Primär-Empfehlung</div>
+            </div>
+            <div class="treppe-step treppe-advanced">
+              <div class="treppe-icon">🔧</div>
+              <div class="treppe-title">ICT Advanced-User SIZ</div>
+              <div class="treppe-desc">Erweiterte Excel-Funktionen, Präsentationen, Datenbank-Grundlagen · Für HoKo mit Marketing-Schwerpunkt sinnvoll</div>
+              <div class="treppe-badge">Optional / Add-On</div>
+            </div>
+            <div class="treppe-step treppe-power">
+              <div class="treppe-icon">⚙️</div>
+              <div class="treppe-title">SIZ Power-User</div>
+              <div class="treppe-desc">IT-Admin-Niveau · Über Berufsbild HoKo hinaus</div>
+              <div class="treppe-badge">Nicht relevant</div>
+            </div>
+          </div>
+          <div class="siz-item siz-highlight" style="margin-top:1rem"><strong>⭐ Umsatz-Kalkulation (SIZ-Preismodell)</strong><p><strong>ICT Smart-User SIZ:</strong> 3 Module × CHF 90 = <strong>CHF 270/Lernende</strong> Prüfungsgebühren an SIZ<br>Bei <strong>~400 Lernenden/Jahrgang</strong> × 30 % Marktanteil = <strong>~CHF 32'400/Jahr</strong> direkter Umsatz<br>Bei 50 % Marktanteil (realistisch nach 2–3 Jahren Schul-Push) = <strong>~CHF 54'000/Jahr</strong><br>Bei 70 % Marktanteil (Maximum nach BiVo-Verankerung) = <strong>~CHF 75'600/Jahr</strong><br><em>Add-On Advanced-User für ~10 % Lernende mit Marketing-Schwerpunkt: zusätzlich ~CHF 3'600–7'200/Jahr</em></p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- E8 -->
+    <div class="ebene e8 fade-in" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E8</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Bildungsanbieter / Schulen</div>
+          <div class="ebene-desc">8+ Berufsfachschulen &amp; Schulhotels · HFT Thun (DE) &amp; Crans-Montana (FR) als ÜK-Hubs · EHL Passugg Vollzeit · BFS Brig, G'ART Luzern, abz, BBZB Luzern</div>
+          <div class="ebene-tags"><span class="tag tag-red">Marktkanal</span><span class="tag tag-gray">8+ Schulen</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="ebene-siz-grid">
+          <div class="siz-item siz-highlight"><strong>Top 1: Hotelfachschule Thun (HFT) — DE-Hub</strong><p><a href="https://www.hfthun.ch" target="_blank">hfthun.ch</a> · Schulhotel-Variante (Block) für Deutschschweiz<br><strong>SIZ-affin</strong> (gem. SIZ_Prospects 2026: HFT als IT-relevant gelistet)<br>Standort: Thun BE · primärer ÜK-Hub für DE</p></div>
+          <div class="siz-item siz-highlight"><strong>Top 2: EHL Hotelfachschule Passugg</strong><p><a href="https://passugg.ehl.edu" target="_blank">passugg.ehl.edu</a> · Vollzeit-Schul-Variante (3 Jahre)<br>IT/Online Marketing/Accounting im Curriculum (eigene Webseite-Angabe)<br>Standort: Chur-Passugg GR · Premium-Image</p></div>
+          <div class="siz-item siz-highlight"><strong>Top 3: Schulhotel Crans-Montana — FR-Hub</strong><p>Block-Variante für Romandie (französischsprachig)<br>Hauptstandort für FR-Lernende<br>Über Hotel &amp; Gastro formation organisiert</p></div>
+          <div class="siz-item"><strong>Berufsfachschule Oberwallis (Visp/Brig)</strong><p><a href="https://www.berufsbildung-vs.ch/berufslehre/hotel-kommunikationsshyfachmann-frau-efz-292" target="_blank">berufsbildung-vs.ch</a><br>Zentrum für berufliche Grundbildung und Berufsmatura<br>HoKo regulär im Angebot</p></div>
+          <div class="siz-item"><strong>Aus-/Weiterbildungszentrum G'ART Luzern</strong><p><a href="https://gart.ch/ausbildung/hoko/" target="_blank">gart.ch</a> · Schulhotel-Variante mit Block-Kursen<br>Standort: Luzern (Jugendherberge zu Fuss erreichbar)</p></div>
+          <div class="siz-item"><strong>abz · Aarauerstrasse 30, Olten</strong><p><a href="https://www.a-b-z.ch/bildung/grundbildung/hotel-kommunikationsfachmann-frau-efz" target="_blank">a-b-z.ch</a> · Aus- und Weiterbildungszentrum<br>Hat Bildungsplan-PDF auf eigener Site gespiegelt — informierter Anbieter</p></div>
+          <div class="siz-item"><strong>Berufsbildungszentrum BBZB Luzern</strong><p><a href="https://beruf.lu.ch" target="_blank">beruf.lu.ch · BBZB</a> · Kantonale Berufsfachschule LU<br>HoKo-Lehrgang regulär</p></div>
+          <div class="siz-item"><strong>Weitere kantonale BFS</strong><p>SG, BE, ZH, AG bieten je nach Lehrbetriebs-Standort Beschulung an<br>Vollständige Liste auf <a href="https://www.hotelgastro.ch" target="_blank">hotelgastro.ch</a> · pflegen in <a href="hotel-kommunikation-schulen.csv" download>hotel-kommunikation-schulen.csv</a></p></div>
+          <div class="siz-item siz-warn"><strong>⚠️ Konzentration als Hebel</strong><p>Anders als bei Hauswart-FA (15+ regionale Anbieter) ist HoKo auf <strong>2 ÜK-Hubs (Thun DE, Crans-Montana FR) + 1 Vollzeit-Schule (Passugg) + ~5 kantonale BFS</strong> konzentriert. <strong>Vorteil für SIZ: Wenige, aber bedeutende Schulen → Sales-Zyklus überschaubar.</strong></p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- E9 -->
+    <div class="ebene e9 fade-in" onclick="toggleEbene(this)">
+      <div class="ebene-header">
+        <div class="ebene-num">E9</div>
+        <div class="ebene-info">
+          <div class="ebene-title">Lernenden-Profil / IT-Vorwissen</div>
+          <div class="ebene-desc">Typisch: 16–22 J. · direkter Sek-I-Anschluss · IT-Niveau Smartphone-affin, aber Office-schwach · Smart-User = ideal</div>
+          <div class="ebene-tags"><span class="tag tag-gray">Smart-User Niveau</span><span class="tag tag-siz">Office-Basics nötig</span></div>
+        </div>
+      </div>
+      <div class="ebene-siz">
+        <div class="ebene-siz-grid">
+          <div class="siz-item"><strong>Typisches Lernenden-Profil</strong><p>Alter: 16–22 Jahre · meist direkter Anschluss an Sek I (oft 10. Schuljahr/Brückenangebot)<br>Voraussetzung: Freude am Kontakt mit Menschen, Sprachen (DE/FR/EN)<br>Lehrlohn: CHF 1'020 (1.J) · CHF 1'300 (2.J) · CHF 1'550 (3.J) — knapp, Selbstzahler-Bereitschaft tief</p></div>
+          <div class="siz-item"><strong>IT-Kenntnisse beim Lehrbeginn (typisch)</strong><p>📱 Smartphone &amp; Social Media: <strong>hoch</strong> (Instagram, TikTok, WhatsApp)<br>💻 Word: <strong>basis</strong> (Schulniveau)<br>📊 Excel: <strong>schwach bis basis</strong><br>📧 E-Mail (Outlook): <strong>schwach</strong> — wird im Lehrbetrieb erst aufgebaut<br>🏨 PMS: <strong>kein Vorwissen</strong> — wird im Betrieb gelernt</p></div>
+          <div class="siz-item siz-highlight"><strong>⭐ Richtige SIZ-Positionierung</strong><p><strong>ICT Smart-User SIZ ist genau das passende Niveau.</strong> Lernende brauchen den professionellen Sprung von "Smartphone-affin" auf "Office-Backoffice-fähig". Smart-User deckt diesen Sprung exakt ab.<br>Advanced-User für ~10 % der Lernenden mit Marketing-Schwerpunkt als Add-On.</p></div>
+          <div class="siz-item"><strong>Motivation für IT-Zertifikat</strong><p><strong>Pflicht (heute):</strong> Keine — kein BiVo-Pflicht-IT-Zertifikat<br><strong>Nutzen (heute):</strong> Differenzierung im Lebenslauf, Mehrwert beim Stellenwechsel im Hotel-/Gastro-Sektor, Anschlussfähigkeit zur Berufsmatura<br><strong>Pflicht (Vision 2027/28):</strong> Wenn SIZ in Bildungsplan verankert wird, automatisch jeder Jahrgang</p></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- ═══ HKB A–D ═══ -->
+<div class="section" id="hkb">
+  <div class="sec-label">Handlungskompetenzbereiche A–D — Qualifikationsprofil HoKo (SIZ-Relevanz-Markierung)</div>
+  <p style="font-size:13px;color:#555;margin-bottom:1rem">Die 4 Handlungskompetenzbereiche des Bildungsplans (Quelle: Bildungsplan zur BiVo, Anhang). Markiert ist, wo <strong>SIZ Smart-User</strong> die benötigten IT-Kompetenzen abdeckt.</p>
+  <div class="hkb-grid">
+    <div class="hkb-card" style="border-left-color:var(--hk-accent);background:var(--hk-accent-light)">
+      <span class="hkb-letter" style="background:var(--hk-accent)">A</span><span class="hkb-title">Gäste beraten und betreuen</span>
+      <div class="hkb-desc">Gäste empfangen &amp; verabschieden · Reservationen entgegennehmen · Anliegen lösen · Spezialwünsche koordinieren · mehrsprachige Korrespondenz · Reklamationen<br><strong>IT-Tools (implizit):</strong> Property Management System (PMS), Channel Manager, Mail (Outlook), Excel-Buchungslisten, CRM</div>
+      <span class="hkb-siz">🎯 SIZ Smart-User: E-Mail + Office-Listen</span>
+    </div>
+    <div class="hkb-card" style="border-left-color:var(--green)">
+      <span class="hkb-letter" style="background:var(--green)">B</span><span class="hkb-title">Nachhaltigkeit und Qualitätsvorgaben sicherstellen</span>
+      <div class="hkb-desc">Hygiene-Standards umsetzen · Sicherheitskonzepte einhalten · Energieeffizienz unterstützen · Qualitätssicherung dokumentieren · ISO/QMS-Vorgaben<br><strong>IT-Tools (implizit):</strong> Excel-Statistiken, Checklisten-Tools, einfache Dokumentationssoftware</div>
+      <span class="hkb-siz">🎯 SIZ Smart-User: Excel-Grundlagen</span>
+    </div>
+    <div class="hkb-card" style="border-left-color:var(--hk-accent);background:var(--hk-accent-light)">
+      <span class="hkb-letter" style="background:var(--hk-accent)">C</span><span class="hkb-title">Marketingmassnahmen und Kooperationen gestalten</span>
+      <div class="hkb-desc">Mitwirken bei Web-, Social-Media- und Newsletter-Kampagnen · Kooperationen mit Tourismus-Partnern · Auswertungen Belegung &amp; Kanäle · Bilder/Texte für Plattformen<br><strong>IT-Tools (implizit):</strong> CMS, Social Media Plattformen, E-Mail-Marketing-Tools, Bildbearbeitung-Basics, Excel-Auswertungen</div>
+      <span class="hkb-siz">🎯 SIZ Smart-User + Advanced (Add-On)</span>
+    </div>
+    <div class="hkb-card" style="border-left-color:var(--hk-accent);background:var(--hk-accent-light)">
+      <span class="hkb-letter" style="background:var(--hk-accent)">D</span><span class="hkb-title">Administrative Arbeitsprozesse organisieren</span>
+      <div class="hkb-desc">Korrespondenz schriftlich/elektronisch · Datenpflege Gäste/Mitarbeiter · Buchhaltungs-Vorarbeit (Belege, Kassa) · Berichte und Dossiers · Ablage analog &amp; digital<br><strong>IT-Tools (implizit):</strong> Word, Excel, Outlook, einfache Buchhaltungssoftware, Cloud-Ablagen (OneDrive/SharePoint)</div>
+      <span class="hkb-siz">🎯 SIZ Smart-User: Vollabdeckung</span>
+    </div>
+  </div>
+  <div class="alert-banner fade-in" style="margin-top:1.5rem">
+    <div class="alert-banner-icon">📊</div>
+    <div class="alert-banner-body">
+      <strong>3 von 4 HKBs IT-getrieben — SIZ deckt sie ab</strong>
+      A, C, D verlangen alltäglich Office, E-Mail, Excel-Listen, Web-Pflege. Nur HKB B (Nachhaltigkeit/Qualität) ist eher physisch geprägt — auch dort ist Excel-Dokumentation Standard. <strong>SIZ Smart-User = Pflicht-Plattform für die digitalen Aufgaben des Berufs.</strong>
+    </div>
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- ═══ SCHULEN ═══ -->
+<div class="section" id="schulen">
+  <div class="sec-label">Schulen &amp; Bildungsanbieter — Sales-Liste mit Priorisierung</div>
+  <div class="school-grid">
+    <div class="school-card priority">
+      <div class="school-name">🥇 Hotelfachschule Thun (HFT)</div>
+      <div class="school-meta">Thun BE · Schulhotel DE · ÜK-Hub für Deutschschweiz</div>
+      <div class="school-body">Zentraler Block-Standort für deutschsprachige HoKo-Lernende. Bereits in SIZ-Prospects-Liste 2026 als IT-relevant gelistet → <strong>SIZ-Vorbeziehung wahrscheinlich</strong>. Erstkontakt sofort sinnvoll.<br>
+        <span class="school-tag green">Top-Prio</span><span class="school-tag green">SIZ-affin</span></div>
+    </div>
+    <div class="school-card priority">
+      <div class="school-name">🥇 EHL Hotelfachschule Passugg (SSTH)</div>
+      <div class="school-meta">Chur-Passugg GR · Vollzeit-Schule · 3 Jahre</div>
+      <div class="school-body">Premium-Schule mit IT, Online Marketing &amp; Accounting im Curriculum. Bereits SIZ-Bestandskunde laut unternehmen_import.csv (EHLPAS, Aktivität 22.11.2025/06.08.2026). <strong>Bestehender Kontakt — sofort SIZ-Smart-User-Modul anbieten.</strong><br>
+        <span class="school-tag green">Top-Prio</span><span class="school-tag green">Bestandskunde</span></div>
+    </div>
+    <div class="school-card">
+      <div class="school-name">🥈 Schulhotel Crans-Montana</div>
+      <div class="school-meta">Crans-Montana VS · Schulhotel FR · ÜK-Hub Romandie</div>
+      <div class="school-body">FR-Pendant zur HFT Thun. Wichtig für Skalierung in die Romandie. SIZ-Module gibt es auf Französisch — sofort einsetzbar.<br>
+        <span class="school-tag">Romandie</span><span class="school-tag">FR-Sprache</span></div>
+    </div>
+    <div class="school-card">
+      <div class="school-name">Berufsfachschule Oberwallis (BFS Brig)</div>
+      <div class="school-meta">Brig/Visp VS · Zentrum für Grundbildung</div>
+      <div class="school-body">Kantonale BFS mit HoKo-Angebot. Walliser Hotellerie ist gut vernetzt (Crans, Zermatt, Saas) — Hebel für Lehrbetriebe.<br>
+        <span class="school-tag">Kantonale BFS</span></div>
+    </div>
+    <div class="school-card">
+      <div class="school-name">G'ART Aus- &amp; Weiterbildungszentrum</div>
+      <div class="school-meta">Luzern · Schulhotel-Variante</div>
+      <div class="school-body">Luzerner Standort mit Block-Kursen. Tourismus-Hochburg → grosses Lehrbetriebsumfeld.<br>
+        <span class="school-tag">Block-Kurse</span></div>
+    </div>
+    <div class="school-card">
+      <div class="school-name">abz · Aarau-Buchs-Zofingen</div>
+      <div class="school-meta">Olten/Aarau · gegründet als Privatanbieter</div>
+      <div class="school-body">Hat Bildungsplan-PDF aktiv auf eigener Site gespiegelt — informierter Anbieter, eher offen für Zusatz-Zertifizierungen. Bereits SIZ-Bestandskunde (BBZOLT in unternehmen_import.csv, Olten).<br>
+        <span class="school-tag green">Bestandskunde</span></div>
+    </div>
+    <div class="school-card">
+      <div class="school-name">BBZB Luzern</div>
+      <div class="school-meta">Luzern · Kantonale Berufsfachschule</div>
+      <div class="school-body">Kantonal SIZ-zugängliche Berufsschule mit HoKo im Programm. Über Bildungsverwaltung Kanton LU adressierbar.<br>
+        <span class="school-tag">Kantonal</span></div>
+    </div>
+    <div class="school-card">
+      <div class="school-name">Bildungszentrum Interlaken (BZI)</div>
+      <div class="school-meta">Interlaken BE · Tourismus-Hub</div>
+      <div class="school-body">Bestandskunde laut unternehmen_import.csv (BZINTE, Aktivität 13.04.2026). Berner Oberland mit starker Hotellerie. SIZ-Vorbindung vorhanden.<br>
+        <span class="school-tag green">Bestandskunde</span></div>
+    </div>
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- ═══ BUSINESS CASE ═══ -->
+<div class="section" id="businesscase">
+  <div class="sec-label">Business Case — Marktpotenzial für die SIZ AG</div>
+  <div class="markt-grid fade-in">
+    <div class="markt-box">
+      <div class="markt-title">📊 Marktpotenzial ICT Smart-User SIZ (CHF/Jahr Prüfungsgebühren)</div>
+      <div class="bar-chart">
+        <div class="bar-row">
+          <div class="bar-label">Gesamtmarkt (~400 Lernende × CHF 270)</div>
+          <div class="bar-track"><div class="bar-fill" style="width:100%;background:var(--hk-accent)">CHF 108'000</div></div>
+          <div class="bar-val">max.</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Maximum (70 % Marktanteil)</div>
+          <div class="bar-track"><div class="bar-fill" style="width:70%;background:var(--green)">CHF 75'600</div></div>
+          <div class="bar-val">ambitiös</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Realistisch (50 %)</div>
+          <div class="bar-track"><div class="bar-fill" style="width:50%;background:var(--blue)">CHF 54'000</div></div>
+          <div class="bar-val">realistisch</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Konservativ (30 %)</div>
+          <div class="bar-track"><div class="bar-fill" style="width:30%;background:var(--amber)">CHF 32'400</div></div>
+          <div class="bar-val">Einstieg 2026/27</div>
+        </div>
+      </div>
+      <p style="font-size:11px;color:var(--gray-mid);margin-top:.75rem"><strong>Basis:</strong> Smart-User = 3 Module × CHF 90 = CHF 270/Lernende · Lernenden-Schätzung ~400/Jahrgang anhand Branchengrössen. Exakte Zahl via BFS Statistik der beruflichen Grundbildung zu verifizieren.</p>
+    </div>
+    <div class="markt-box">
+      <div class="markt-title">🎯 Hebel-Wirkung über die Phasen</div>
+      <div class="bar-chart">
+        <div class="bar-row">
+          <div class="bar-label">Heute: Zufallspartner</div>
+          <div class="bar-track"><div class="bar-fill" style="width:5%;background:var(--gray-mid)">CHF ~5k</div></div>
+          <div class="bar-val">Status Quo</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Ph.1: HFT + EHL Passugg + abz</div>
+          <div class="bar-track"><div class="bar-fill" style="width:30%;background:var(--amber)">CHF 32'400</div></div>
+          <div class="bar-val">12 Mte</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Ph.2: + Crans-Montana + alle BFS</div>
+          <div class="bar-track"><div class="bar-fill" style="width:50%;background:var(--blue)">CHF 54'000</div></div>
+          <div class="bar-val">24 Mte</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Ph.3: SIZ in Bildungsplan (BiVo-Rev)</div>
+          <div class="bar-track"><div class="bar-fill" style="width:70%;background:var(--hk-accent)">CHF 75'600</div></div>
+          <div class="bar-val">36–48 Mte</div>
+        </div>
+      </div>
+      <p style="font-size:11px;color:var(--gray-mid);margin-top:.75rem"><strong>Plus:</strong> ~10 % Add-On Advanced-User-Module = +CHF 3'600–7'200/Jahr · <strong>3-Jahres-Ziel: CHF 80'000+ p.a. Direktumsatz</strong> nur aus HoKo</p>
+    </div>
+  </div>
+
+  <div class="two-col" style="margin-top:1.5rem">
+    <div class="card">
+      <div class="card-title">💡 Strategische Ausgangslage</div>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:6px;font-size:12px;line-height:1.6">
+        <li><strong style="color:var(--green)">+</strong> 3 Schulen sind bereits SIZ-Bestandskunden (EHL Passugg, abz Olten, BZ Interlaken)</li>
+        <li><strong style="color:var(--green)">+</strong> 3 von 4 HKBs sind IT-getrieben — Argumentations-Basis stark</li>
+        <li><strong style="color:var(--green)">+</strong> Konzentrierter Schul-Markt (8+ Anbieter, 2 Hubs) → kurzer Sales-Zyklus</li>
+        <li><strong style="color:var(--green)">+</strong> Janine Bolliger (HotellerieSuisse) als SKBQ-Präsidentin direkt ansprechbar</li>
+        <li><strong style="color:var(--red)">−</strong> Kein BiVo-Pflicht-Anker — Akquise rein freiwillig</li>
+        <li><strong style="color:var(--red)">−</strong> Lehrlohn knapp → Selbstzahler-Bereitschaft tief, Schule muss zahlen</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">🚀 Skalierungspotenzial (Blueprint)</div>
+      <p style="font-size:12px;color:#444;line-height:1.6">HoKo als <strong>Pilot-EFZ</strong> für die Hotellerie-/Gastro-Branche. Bei Erfolg übertragbar auf:<br>
+        <strong>• Fachfrau/-mann Hotellerie-Hauswirtschaft EFZ</strong> (neu seit 2024, ersetzt Hotelfachfrau EFZ) — ähnliche Trägerschaft, ähnliche IT-Anforderungen<br>
+        <strong>• Restaurationsfachfrau/-mann EFZ</strong> — gleiche OdA Hotel &amp; Gastro formation<br>
+        <strong>• Tourismusfachfrau/-mann EFZ + FA</strong> — Tourismusverband<br>
+        Kumuliert in der Hotel-/Tourismus-/Gastro-Schiene <strong>~1'500–2'000 Lernende/Jahr</strong> = <strong>CHF 200k+/Jahr</strong> Skalierungspotenzial bei vollständiger Erschliessung über 5 Jahre.</p>
+    </div>
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- ═══ SWOT ═══ -->
+<div class="section" id="swot">
+  <div class="sec-label">SWOT-Analyse — SIZ AG im HoKo-EFZ-Segment</div>
+  <div class="swot-grid">
+    <div class="swot-cell">
+      <div class="swot-head">💪 Stärken (Strengths)</div>
+      <ul class="swot-items">
+        <li><div class="swot-dot"></div><div>Bestandskunden EHL Passugg, abz Olten, BZ Interlaken — Vertrauensbasis vorhanden</div></li>
+        <li><div class="swot-dot"></div><div>Smart-User-Modul-Inhalt = exaktes Match zum Berufsalltag (Office, Outlook, Excel)</div></li>
+        <li><div class="swot-dot"></div><div>Swiss-made-Argument: "Schweizer Hotellerie braucht Schweizer IT-Standard"</div></li>
+        <li><div class="swot-dot"></div><div>SIZ-Module in DE und FR verfügbar — passt zu DE/FR-Schulhotel-Logik</div></li>
+        <li><div class="swot-dot"></div><div>Konkurrenzfreies Greenfield: kein etabliertes IT-Zertifikat im Beruf</div></li>
+      </ul>
+    </div>
+    <div class="swot-cell">
+      <div class="swot-head">⚠️ Schwächen (Weaknesses)</div>
+      <ul class="swot-items">
+        <li><div class="swot-dot"></div><div>SIZ kein Pflicht-Element der BiVo — keine "Auto-Akquise" wie bei Hauswart</div></li>
+        <li><div class="swot-dot"></div><div>Bekanntheit bei Hotel &amp; Gastro formation Schweiz aktuell tief</div></li>
+        <li><div class="swot-dot"></div><div>Kein bestehender Kontakt zu SKBQ-Präsidentin Janine Bolliger dokumentiert</div></li>
+        <li><div class="swot-dot"></div><div>Lernende-Marketing braucht eigenes Branding (≠ Hauswart-Argument)</div></li>
+      </ul>
+    </div>
+    <div class="swot-cell">
+      <div class="swot-head">🎯 Chancen (Opportunities)</div>
+      <ul class="swot-items">
+        <li><div class="swot-dot"></div><div>BiVo-Revision absehbar 2027/28 — Lobbying-Window jetzt offen</div></li>
+        <li><div class="swot-dot"></div><div>Branchen-Trend Digitalisierung: PMS, Channel Manager, Social Media werden Pflicht</div></li>
+        <li><div class="swot-dot"></div><div>Hotellerie-Branche fordert junge Talente mit Digitalkompetenz</div></li>
+        <li><div class="swot-dot"></div><div>Skalierung auf Fachfrau Hotellerie-Hauswirtschaft EFZ + Restauration EFZ</div></li>
+        <li><div class="swot-dot"></div><div>SBFI-Subventions-Argument bei Vollzeit-Schul-Variante (50 % Bundesbeitrag)</div></li>
+      </ul>
+    </div>
+    <div class="swot-cell">
+      <div class="swot-head">🔴 Risiken (Threats)</div>
+      <ul class="swot-items">
+        <li><div class="swot-dot"></div><div>ICDL etabliert sich im Tourismus-Marketing als internationaler Standard</div></li>
+        <li><div class="swot-dot"></div><div>Schulen entwickeln eigene IT-Module intern → SIZ überflüssig</div></li>
+        <li><div class="swot-dot"></div><div>BiVo-Revision verankert ICDL explizit (vorher SI/SAQ-Lobby aktiv)</div></li>
+        <li><div class="swot-dot"></div><div>Hotel &amp; Gastro formation entwickelt eigenes "HoKo-Digital-Modul"</div></li>
+        <li><div class="swot-dot"></div><div>Lehrlohn-Knappheit erschwert Lernende-direkten Verkauf — alle muss Schule fördern</div></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- ═══ NÄCHSTE SCHRITTE ═══ -->
+<div class="section" id="nextSteps">
+  <div class="sec-label">Empfohlene Massnahmen — Priorisierte Roadmap</div>
+  <div class="steps">
+
+    <div class="step">
+      <div class="step-connector">
+        <div class="step-dot" style="background:var(--green)">1</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <div class="step-meta">Mai–Juni 2026 · Sofort · Hohe Priorität</div>
+        <div class="step-title">Bestandskunden aktivieren — EHL Passugg, abz Olten, BZ Interlaken</div>
+        <div class="step-body">3 SIZ-Bestandskunden, die HoKo anbieten, gezielt mit konkretem Pitch ansprechen: "Sie haben bereits SIZ — bauen Sie ICT Smart-User ins HoKo-Curriculum ein, kostenlose Lehrer-Schulung &amp; Modul-Pilot inklusive." Ziel: bis Juli 2026 schriftliche Zusage von mindestens 2/3.</div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-connector">
+        <div class="step-dot" style="background:var(--blue)">2</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <div class="step-meta">Juni–September 2026 · Mittelfristig</div>
+        <div class="step-title">HFT Thun gewinnen — der DE-Hub der Branche</div>
+        <div class="step-body">HFT Thun ist in SIZ-Prospects 2026 bereits als IT-relevant gelistet. Präsentationstermin im Lehrgangsleiter-Team buchen. Argument: Schulhotel-Block-Variante mit integriertem SIZ-Smart-User-Modul = Differenzierungsargument gegenüber EHL Passugg. Ziel: Pilot-Klasse Schuljahr 2026/27.</div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-connector">
+        <div class="step-dot" style="background:var(--purple)">3</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <div class="step-meta">Juli–Dezember 2026 · Strategisch</div>
+        <div class="step-title">Janine Bolliger / SKBQ Hotel-Kommunikation kontaktieren</div>
+        <div class="step-body">SKBQ-Präsidentin als Schlüsselperson für BiVo-Revision 2027/28 ansprechen. Erste Beziehung aufbauen: Branchen-Event teilnehmen, persönliches Gespräch, SIZ-Position vorstellen. Kein "harter Sales-Pitch" — Beziehungs-Investment für 18–24 Monate.</div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-connector">
+        <div class="step-dot" style="background:var(--teal)">4</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <div class="step-meta">Q4 2026 – Q2 2027 · Aufbau</div>
+        <div class="step-title">Schulhotel Crans-Montana &amp; Romandie-Schulen</div>
+        <div class="step-body">Französischsprachige Schiene aufrollen: Schulhotel Crans-Montana, Berufsbildung VS, evtl. Genfer/Waadtländer BFS. SIZ-FR-Module bereits vorhanden — Pilot-Material auf Französisch erstellen. Vorteil: Romandie-Schulen entscheiden oft kantonal-zentralisiert → ein Entscheid skaliert auf mehrere Standorte.</div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-connector">
+        <div class="step-dot" style="background:var(--amber)">5</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <div class="step-meta">Q1 2027 – Q4 2027 · BiVo-Lobbying</div>
+        <div class="step-title">Memorandum für SKBQ — SIZ in Bildungsplan-Revision verankern</div>
+        <div class="step-body">Schriftliches Memorandum an SKBQ Hotel-Kommunikation: "ICT Smart-User SIZ als empfohlenes Element im Bildungsplan HoKo (Anhang)". Argumente: 3 von 4 HKBs IT-getrieben · Schweizer Standard · bereits bei XYZ Schulen erfolgreich integriert · Lernende erhalten Differenzierungs-Asset. Ziel: Beschluss SKBQ Q4 2027 oder mit BiVo-Revision 2028.</div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-connector">
+        <div class="step-dot" style="background:var(--gray)">6</div>
+      </div>
+      <div class="step-content">
+        <div class="step-meta">2028+ · Skalierung</div>
+        <div class="step-title">Blueprint auf Hotellerie-Hauswirtschaft + Restauration EFZ ausrollen</div>
+        <div class="step-body">Mit HoKo-Erfolg als Beweisstück bei Hotel &amp; Gastro formation die anderen Berufe der gleichen Trägerschaft adressieren: Fachfrau Hotellerie-Hauswirtschaft EFZ (neu seit 2024), Restaurationsfachfrau EFZ. Skalierungspotenzial: zusätzliche ~1'000 Lernende/Jahr → CHF 100k+ Direktumsatz pro Jahr.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr class="section-divider">
+
+<!-- ═══ ANHÄNGE ═══ -->
+<div class="section" id="anhaenge">
+  <div class="sec-label">Anhänge &amp; Downloads</div>
+  <div class="download-grid">
+    <div class="download-card">
+      <div class="dl-icon">📊</div>
+      <div class="dl-name">Schulen &amp; Anbieter</div>
+      <div class="dl-desc">Alle 8+ Bildungsanbieter mit Adressen, Kontakten, Lehrgangszeiten, Kosten und IT-Lösung. Status-Markierung Bestand/Prospect.</div>
+      <a class="dl-btn" href="hotel-kommunikation-schulen.csv" download>⬇ schulen-anbieter.csv</a>
+    </div>
+    <div class="download-card">
+      <div class="dl-icon">👥</div>
+      <div class="dl-name">Prüfungskommission 37 + SKBQ</div>
+      <div class="dl-desc">Bekannte Mitglieder der PK 37 und SKBQ-Vertreter. Janine Bolliger (HotellerieSuisse) als SKBQ-Präsidentin im Fokus.</div>
+      <a class="dl-btn" href="pruefungskommission-37.csv" download>⬇ pruefungskommission-37.csv</a>
+    </div>
+    <div class="download-card">
+      <div class="dl-icon">📝</div>
+      <div class="dl-name">Bildungsplan-Quellen</div>
+      <div class="dl-desc">Originale Bildungsplan- und BiVo-PDFs der HotellerieSuisse, gespiegelt für lokale Recherche.</div>
+      <a class="dl-btn" href="https://www.hotelleriesuisse.ch/de/download-28199E21-C289-4D1B-A5FE-551264970469.secure" target="_blank">📄 Bildungsplan</a>
+    </div>
+    <div class="download-card">
+      <div class="dl-icon">📋</div>
+      <div class="dl-name">GL Executive Summary</div>
+      <div class="dl-desc">Kurzfassung für die Geschäftsleitung — 1-Pager mit den wichtigsten Zahlen, Hebeln und nächsten Schritten.</div>
+      <a class="dl-btn" href="zusammenfassung-gl-praesentation.html">📄 Summary</a>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:1.5rem">
+    <div class="card-title">🔗 Wichtige externe Links</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:.75rem;margin-top:.75rem">
+      <div style="font-size:12px"><strong>SBFI Berufsverzeichnis</strong><br><a href="https://www.becc.admin.ch/becc/public/bvz/beruf/show/79200" target="_blank" style="color:var(--blue)">becc.admin.ch · Beruf 79200</a></div>
+      <div style="font-size:12px"><strong>BiVo / Bildungsplan (HotellerieSuisse)</strong><br><a href="https://www.hotelleriesuisse.ch/de/download-2F28CE5E-4D6A-44EE-9B58-5D60949877EC.secure" target="_blank" style="color:var(--blue)">Bildungsverordnung HoKo</a></div>
+      <div style="font-size:12px"><strong>Hotel &amp; Gastro formation Schweiz</strong><br><a href="https://www.hotelgastro.ch" target="_blank" style="color:var(--blue)">hotelgastro.ch</a></div>
+      <div style="font-size:12px"><strong>Berufsberatung.ch HoKo</strong><br><a href="https://www.berufsberatung.ch/dyn/show/1900?id=10353" target="_blank" style="color:var(--blue)">berufsberatung.ch · HoKo</a></div>
+      <div style="font-size:12px"><strong>Berufe Hotel Gastro</strong><br><a href="https://berufehotelgastro.ch/berufe/hotel-kommunikationsfachfrau-hotel-kommunikationsfachmann-efz" target="_blank" style="color:var(--blue)">berufehotelgastro.ch</a></div>
+      <div style="font-size:12px"><strong>Prüfungskommission 37</strong><br><a href="https://xn--abschlussprfung-9vb.ch/berufe/hotel-kommunikationsfachfrau-mann-efz/" target="_blank" style="color:var(--blue)">abschlussprüfung.ch</a></div>
+      <div style="font-size:12px"><strong>EHL Hotelfachschule Passugg</strong><br><a href="https://passugg.ehl.edu/en/study/hoko" target="_blank" style="color:var(--blue)">passugg.ehl.edu</a></div>
+      <div style="font-size:12px"><strong>ICT Smart-User SIZ</strong><br><a href="https://www.enter-it.ch/ict-diplome-zertifikate/ict-smart-user-siz/" target="_blank" style="color:var(--blue)">enter-it.ch</a></div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:1.5rem">
+    <div class="card-title">📚 Methodische Hinweise &amp; offene Punkte</div>
+    <ul style="list-style:none;display:flex;flex-direction:column;gap:6px;font-size:12px;line-height:1.6">
+      <li><strong style="color:var(--amber)">⚠️</strong> <strong>Lernenden-Zahl</strong> ist eine Schätzung (~400/Jahrgang) — exakte BFS-Statistik (Lehrverhältnisse Hotel-Kommunikationsfachleute EFZ) noch zu beziehen via <a href="https://www.bfs.admin.ch/bfs/de/home/statistiken/bildung-wissenschaft/personen-ausbildung/sekundarstufe-II/berufliche-grundbildung-lehrverhaeltnisse.html" target="_blank">bfs.admin.ch</a></li>
+      <li><strong style="color:var(--amber)">⚠️</strong> <strong>SKBQ-Mitgliederliste</strong> ist nicht vollständig öffentlich — direkter Kontakt via Hotel &amp; Gastro formation oder HotellerieSuisse aufbauen, um aktuelle Konstellation zu erfahren</li>
+      <li><strong style="color:var(--amber)">⚠️</strong> <strong>BiVo-Revisionstiming</strong> ist eine Schätzung (8–10 Jahre Rhythmus) — exakter Zeitplan via SBFI-Newsletter Berufsentwicklung beobachten</li>
+      <li><strong style="color:var(--green)">✓</strong> <strong>Berufsnummer 79200</strong> verifiziert via SBFI BVZ am 07.05.2026</li>
+      <li><strong style="color:var(--green)">✓</strong> <strong>Trägerschaft Hotel &amp; Gastro formation Schweiz</strong> verifiziert (Inst-Nr. 100378)</li>
+      <li><strong style="color:var(--green)">✓</strong> <strong>4 HKBs A–D</strong> aus offiziellen Quellen (berufsberatung.ch, berufehotelgastro.ch) bestätigt</li>
+    </ul>
+  </div>
+</div>
+
+<div style="background:var(--siz-navy);color:rgba(255,255,255,.5);text-align:center;padding:1.5rem;font-size:11px;font-family:'IBM Plex Mono',monospace">
+  SIZ AG · GL-Dossier Hotel-Kommunikationsfachfrau/-mann EFZ · Beruf-Nr. 79200 · Erstellt Mai 2026 · Vertraulich
+</div>
+
+<script>
+function toggleEbene(el){
+  const siz=el.querySelector('.ebene-siz');
+  if(!siz)return;
+  const open=siz.classList.contains('open');
+  document.querySelectorAll('.ebene-siz.open').forEach(s=>s.classList.remove('open'));
+  if(!open)siz.classList.add('open');
+}
+const observer=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}});
+},{threshold:.1});
+document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
+const sections=document.querySelectorAll('[id]');
+const navLinks=document.querySelectorAll('.topnav-links a');
+window.addEventListener('scroll',()=>{
+  let cur='';
+  sections.forEach(s=>{if(window.scrollY>=s.offsetTop-80)cur=s.id});
+  navLinks.forEach(l=>{
+    l.classList.remove('active');
+    if(l.getAttribute('href')==='#'+cur)l.classList.add('active');
+  });
+});
+window.addEventListener('load',()=>{
+  document.querySelectorAll('.bar-fill').forEach(b=>{
+    const w=b.style.width;b.style.width='0';
+    setTimeout(()=>{b.style.width=w;},300);
+  });
+});
+</script>
+</body>
+</html>

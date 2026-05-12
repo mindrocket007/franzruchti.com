@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>SIZ als Trusted Issuer im CH-E-ID-Ökosystem – Sitzungsvorlage</title>
+<style>
+  @page { size: A4; margin: 14mm 14mm 12mm 14mm; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    color: #1a1a1a;
+    background: #f4f4f2;
+    line-height: 1.3;
+    font-size: 9.6pt;
+  }
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 12px auto;
+    padding: 14mm 14mm 12mm 14mm;
+    background: #ffffff;
+    box-shadow: 0 2px 18px rgba(0,0,0,0.08);
+  }
+  header {
+    border-bottom: 2px solid #b71c1c;
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  header .brand {
+    font-size: 8.5pt;
+    letter-spacing: 2px;
+    color: #b71c1c;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  header .meta {
+    font-size: 8.5pt;
+    color: #555;
+    text-align: right;
+  }
+  h1 {
+    font-size: 15.5pt;
+    margin: 4px 0 2px 0;
+    color: #1a1a1a;
+    letter-spacing: -0.2px;
+  }
+  h2 {
+    font-size: 10pt;
+    margin: 7px 0 3px 0;
+    color: #b71c1c;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 2px;
+  }
+  .subtitle {
+    color: #555;
+    font-size: 9.5pt;
+    margin-bottom: 8px;
+  }
+  .lead {
+    background: #fff8f3;
+    border-left: 3px solid #b71c1c;
+    padding: 8px 11px;
+    font-size: 10pt;
+    margin-bottom: 8px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 6px;
+  }
+  .grid-3 { grid-template-columns: 1fr 1fr 1fr; }
+  .box p.kompakt { margin: 0; font-size: 9.2pt; }
+  .box.pos { background: #f4faf3; border-color: #cce0c9; }
+  .box.neg { background: #fdf3f3; border-color: #e6cccc; }
+  .box.pos h3 { color: #1e6e1e; }
+  .box.neg h3 { color: #a02020; }
+  .box {
+    background: #fafafa;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    padding: 6px 9px;
+  }
+  .box h3 {
+    font-size: 9.5pt;
+    margin: 0 0 4px 0;
+    color: #1a1a1a;
+  }
+  ul { margin: 2px 0 0 16px; padding: 0; }
+  li { margin-bottom: 2px; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9.3pt;
+    margin-top: 4px;
+  }
+  th, td {
+    text-align: left;
+    padding: 5px 7px;
+    border-bottom: 1px solid #ececec;
+    vertical-align: top;
+  }
+  th {
+    background: #f5f0ec;
+    color: #1a1a1a;
+    font-weight: 600;
+    font-size: 9pt;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+  }
+  td.siz { background: #f4faf3; }
+  td.icdl { background: #fafafa; color: #555; }
+  .actions {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    gap: 8px;
+    margin-top: 4px;
+  }
+  .actions .num {
+    background: #b71c1c;
+    color: #fff;
+    width: 22px; height: 22px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700;
+    font-size: 10pt;
+  }
+  .actions .row { display: contents; }
+  .actions .row + .row .num,
+  .actions .row + .row .text { margin-top: 5px; }
+  footer {
+    margin-top: 10px;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 6px;
+    font-size: 7.8pt;
+    color: #666;
+    display: flex;
+    justify-content: space-between;
+  }
+  .quote {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 8px 11px;
+    font-style: italic;
+    font-size: 9.8pt;
+    border-radius: 3px;
+    margin: 4px 0 8px 0;
+  }
+  .quote::before { content: "„"; font-size: 14pt; vertical-align: -3px; margin-right: 2px; color: #b71c1c; }
+  .quote::after  { content: """; font-size: 14pt; vertical-align: -3px; margin-left: 2px; color: #b71c1c; }
+  @media print {
+    body { background: #fff; }
+    .page { margin: 0; box-shadow: none; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <div>
+      <div class="brand">SIZ AG · Strategie-Vorlage</div>
+      <h1>Trusted Issuer im Schweizer E-ID-Ökosystem</h1>
+      <div class="subtitle">Positionierung gegenüber ICDL/ECDL · Vorbereitung Q3 2026</div>
+    </div>
+    <div class="meta">
+      Sitzung: ___________<br>
+      Datum: 11.05.2026<br>
+      Verantwortlich: F. Ruchti
+    </div>
+  </header>
+
+  <div class="lead">
+    <strong>Kernthese:</strong> Die staatliche Schweizer E-ID startet frühestens Q3 2026. Der Bund nennt <em>Diplome</em> explizit als Anwendungsfall. Wer in den ersten 12 Monaten als Trusted Issuer erkennbar ist, prägt den Standard für berufliche Digitalkompetenz – wer später kommt, übernimmt fremde Spielregeln.
+  </div>
+
+  <h2>1 · Ausgangslage</h2>
+  <div class="grid">
+    <div class="box">
+      <h3>BGEID / swiyu (Stand Mai 2026)</h3>
+      <ul>
+        <li>Volksabstimmung 28.09.2025 angenommen (50.39 %)</li>
+        <li>Inkrafttreten frühestens Q3 2026, Wallet "swiyu"</li>
+        <li>Anwendungsfälle laut Bund: Wohnsitz, Handelsregister, <strong>Diplome</strong>, Tickets, Mitgliedskarten</li>
+        <li>Pilot Lernfahrausweis AR seit 04/2024 läuft</li>
+        <li>Hochschulen (Adnovum-Webinar 2026) bereiten VCs aktiv vor</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3>Was SIZ bereits hat</h3>
+      <ul>
+        <li>Prüfungskommission mit Praxis-Experten</li>
+        <li>Jährlich neu erstellte Prüfungen inkl. Minicase</li>
+        <li>Digitale Zertifikate über virtualbadge.io (DID + kryptografische Signatur, drittprüfbar)</li>
+        <li>Verankerung in Schweizer Prüfungsordnungen (kfmv, Berufsbildung)</li>
+        <li>Sprachhoheit DE/FR/IT</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>2 · Warum gerade 20h-Diplome (Micro-Credentials) profitieren</h2>
+  <div class="grid grid-3">
+    <div class="box">
+      <h3>Genau dafür gemacht</h3>
+      <p class="kompakt">Open Badges wurden 2011 für Micro-Credentials entwickelt – kurze, stackbare Lerneinheiten. 20h ist Standardgröße, nicht Schwäche.</p>
+    </div>
+    <div class="box">
+      <h3>EU/CH-Rückenwind</h3>
+      <p class="kompakt">EU-Empfehlung Micro-Credentials (2022), SBFI-Anerkennungs­infrastruktur in Aufbau. swiyu behandelt 20h-Credential und Bachelor technisch gleich.</p>
+    </div>
+    <div class="box">
+      <h3>Stückzahl-Vorteil</h3>
+      <p class="kompakt">Kurzes Format = hohe Stückzahl = viele Verifikationen = sichtbare Marktpräsenz. ICDL gibt pro Modul (12–30h) bereits Badges aus.</p>
+    </div>
+  </div>
+
+  <h2>3 · Abgrenzung SIZ vs. ICDL/ECDL</h2>
+  <table>
+    <thead>
+      <tr>
+        <th style="width:28%">Dimension</th>
+        <th style="width:36%">SIZ</th>
+        <th style="width:36%">ICDL / ECDL</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Aussteller-Sitz</td>
+        <td class="siz">Schweiz</td>
+        <td class="icdl">Irland (ICDL Foundation), Brand-Wechsel ECDL → ICDL läuft</td>
+      </tr>
+      <tr>
+        <td>Anschluss CH-swiyu</td>
+        <td class="siz">Direkt möglich, kurzer Weg zur Trusted-Issuer-Liste</td>
+        <td class="icdl">Über internationalen Umweg, organisatorisch ungelöst</td>
+      </tr>
+      <tr>
+        <td>Prüfungserstellung</td>
+        <td class="siz">Jährlich neu, CH-Expertenkommission, Praxis-Minicase</td>
+        <td class="icdl">Global standardisiert, modular, automatisiert</td>
+      </tr>
+      <tr>
+        <td>Verankerung CH-Prüfungsordnungen</td>
+        <td class="siz">Etabliert (kfmv, Berufsbildung)</td>
+        <td class="icdl">Punktuell (z.B. Hauswart EFZ)</td>
+      </tr>
+      <tr>
+        <td>Sprachhoheit DE/FR/IT</td>
+        <td class="siz">Nativ</td>
+        <td class="icdl">Übersetzt</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>4 · Botschaft Richtung VR und Markt</h2>
+  <div class="quote">
+    ICDL hat globale Reichweite, aber keine institutionelle Verankerung im Schweizer E-ID-Ökosystem. SIZ hat die Substanz – Prüfungskommission, jährlich neue Prüfung, Praxisfälle – und den Schweizer Bezug. Was fehlt, ist der formale Schritt: Antrag auf Anerkennung als Trusted Issuer im swiyu-Ökosystem, sobald der Bund die Listing-Prozesse 2026/27 öffnet.
+  </div>
+
+  <h2>5 · Was Trusted Issuer ist – und was nicht</h2>
+  <div class="grid">
+    <div class="box pos">
+      <h3>✓ Trusted Issuer IST</h3>
+      <p class="kompakt"><strong>Kryptografisch verifizierbarer Aussteller.</strong> Jeder Dritte kann maschinell prüfen: "Echt von SIZ, unverändert". Technische Vertrauensebene – sinnvoll auch für 20h-Diplome.</p>
+    </div>
+    <div class="box neg">
+      <h3>✗ Trusted Issuer ist NICHT</h3>
+      <p class="kompakt"><strong>Eidgenössische Anerkennung nach BBG.</strong> Keine staatsrechtliche Wirkung auf Berufsausübung oder Lohnstufe. Davon klar zu trennen – sonst falsche Erwartungen im VR und am Markt.</p>
+    </div>
+  </div>
+
+  <h2>6 · Empfohlene Beschlüsse</h2>
+  <div class="actions">
+    <div class="row"><div class="num">1</div><div class="text"><strong>Beobachtungsmandat erteilen.</strong> SIZ-interne Person als Verantwortliche/n für den E-ID-Anschluss benennen. Erstes Statusupdate bis Ende Q3 2026, sobald der Bund Trusted-Issuer-Prozesse veröffentlicht.</div></div>
+    <div class="row"><div class="num">2</div><div class="text"><strong>Technische Brücke prüfen.</strong> virtualbadge.io anfragen, ob deren DID-Infrastruktur mit der swiyu-Wallet kompatibel ist und welche Migration ggf. nötig wäre (Open Badge 2.0 → 3.0 / W3C VC).</div></div>
+    <div class="row"><div class="num">3</div><div class="text"><strong>Claim in Marketing aufnehmen.</strong> "Vom Schweizer Berufsverband-Standard zum Trusted Issuer im CH-E-ID-Ökosystem" als Leitidee in Kommunikation, Marketingkonzept und Partner-Gesprächen verankern – vor ICDL.</div></div>
+    <div class="row"><div class="num">4</div><div class="text"><strong>LinkedIn-Beitrag terminieren.</strong> Pos­itionsstärkender Post zum Thema "Trusted Issuer" frühestens nach Beschluss 1 freigeben – um Anspruch und Belegbarkeit synchron zu halten.</div></div>
+  </div>
+
+  <footer>
+    <div>Quellen: bj.admin.ch · srf.ch · digitale-verwaltung-schweiz.ch · adnovum.com · ecdl.ch · icdl.org</div>
+    <div>SIZ AG · Strategie-Vorlage · Vertraulich</div>
+  </footer>
+
+</div>
+</body>
+</html>

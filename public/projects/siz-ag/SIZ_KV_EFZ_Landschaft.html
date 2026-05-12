@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>KV EFZ Landschaft · Akteure, Gremien, Strategie 2030</title>
+<style>
+  :root{
+    --siz-rot:#E30613;
+    --siz-rot-dark:#A30009;
+    --siz-blau:#4880B6;
+    --siz-blau-dark:#2D5A8A;
+    --siz-blau-soft:#EFF3F8;
+    --ink:#1a1a1a;
+    --ink-soft:#4a5965;
+    --mute:#7b8a99;
+    --line:#e2e8f0;
+    --bg:#f8fafc;
+    --gold:#F59E0B;
+    --ok:#10B981;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:"Segoe UI","Helvetica Neue",Arial,sans-serif;line-height:1.5}
+  .wrap{max-width:1180px;margin:0 auto;padding:32px 28px 64px}
+  header.hero{border-bottom:3px solid var(--siz-rot);padding-bottom:20px;margin-bottom:28px;display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+  header .brand{font-size:11px;letter-spacing:2px;color:var(--siz-rot);text-transform:uppercase;font-weight:700;margin-bottom:6px}
+  header h1{font-size:32px;margin:0;font-weight:300;color:var(--siz-blau-dark);letter-spacing:-0.5px;line-height:1.15}
+  header h1 strong{font-weight:700;color:var(--ink)}
+  header .subtitle{color:var(--mute);font-size:15px;margin-top:4px}
+  header .meta{font-size:13px;color:var(--mute);text-align:right;line-height:1.6}
+  header .meta b{color:var(--ink)}
+
+  h2{font-size:13px;text-transform:uppercase;letter-spacing:1.5px;color:var(--siz-rot);margin:48px 0 14px;border-bottom:1px solid var(--line);padding-bottom:6px;font-weight:700}
+  h3{font-size:18px;margin:18px 0 8px;color:var(--siz-blau-dark);font-weight:600}
+  h4{font-size:14px;margin:14px 0 6px;color:var(--ink);font-weight:600;text-transform:uppercase;letter-spacing:0.5px}
+  p{margin:6px 0 12px}
+  a{color:var(--siz-blau);text-decoration:none;border-bottom:1px dotted var(--siz-blau)}
+  a:hover{color:var(--siz-rot);border-bottom-color:var(--siz-rot)}
+
+  .lead{background:#fff8f3;border-left:4px solid var(--siz-rot);padding:14px 18px;font-size:15px;margin-bottom:18px;border-radius:0 4px 4px 0}
+
+  .grid{display:grid;gap:16px}
+  .grid-2{grid-template-columns:1fr 1fr}
+  .grid-3{grid-template-columns:1fr 1fr 1fr}
+  .grid-4{grid-template-columns:repeat(4,1fr)}
+  .grid-5{grid-template-columns:repeat(5,1fr)}
+  @media(max-width:900px){.grid-3,.grid-4,.grid-5{grid-template-columns:1fr 1fr}.grid-2{grid-template-columns:1fr}}
+
+  .card{background:#fff;border:1px solid var(--line);border-radius:6px;padding:18px 20px;box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+  .card h3{margin-top:0}
+  .card.featured{border-top:4px solid var(--siz-rot)}
+  .card.blue{border-top:4px solid var(--siz-blau)}
+  .card.dark{background:var(--ink);color:#fff;border:0}
+  .card.dark h3{color:#fff}
+  .card.dark p{color:#cbd5e1}
+  .card.soft{background:var(--siz-blau-soft)}
+
+  table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0 14px}
+  th,td{text-align:left;padding:8px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:var(--siz-blau-soft);color:var(--siz-blau-dark);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:0.5px}
+  tr.highlight td{background:#fffbeb}
+  td.star{color:var(--siz-rot);font-weight:700;font-size:16px}
+
+  ul.tight{margin:6px 0 12px;padding-left:20px}
+  ul.tight li{margin-bottom:4px;font-size:14px}
+
+  .tag{display:inline-block;background:var(--siz-blau-soft);color:var(--siz-blau-dark);padding:3px 9px;border-radius:3px;font-size:11px;font-weight:600;letter-spacing:0.4px;text-transform:uppercase;margin-right:4px}
+  .tag.red{background:#fee2e2;color:var(--siz-rot-dark)}
+  .tag.gold{background:#fef3c7;color:#92400e}
+  .tag.green{background:#d1fae5;color:#065f46}
+  .tag.gray{background:#f1f5f9;color:#475569}
+
+  /* Diagram */
+  .diagram{background:#fff;border:1px solid var(--line);border-radius:6px;padding:22px;margin:6px 0 18px}
+  .diagram svg{width:100%;height:auto;display:block}
+
+  /* 19 Branchen */
+  .branchen{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+  @media(max-width:900px){.branchen{grid-template-columns:repeat(3,1fr)}}
+  @media(max-width:600px){.branchen{grid-template-columns:repeat(2,1fr)}}
+  .br{background:#fff;border:1px solid var(--line);border-radius:4px;padding:10px 12px;font-size:13px;display:flex;flex-direction:column;gap:3px}
+  .br .big{font-weight:700;color:var(--siz-blau-dark);font-size:14px}
+  .br .meta{font-size:11px;color:var(--mute);text-transform:uppercase;letter-spacing:0.3px}
+  .br.top3{border-top:4px solid var(--siz-rot);background:#fff8f3}
+  .br.top9{border-top:3px solid var(--gold);background:#fffbeb}
+
+  /* Timeline */
+  .timeline{position:relative;padding:14px 0;margin:10px 0 8px}
+  .timeline::before{content:"";position:absolute;left:0;right:0;top:50%;height:2px;background:var(--line)}
+  .tl-row{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;position:relative;z-index:1}
+  .tl-item{background:#fff;border:1px solid var(--line);border-radius:6px;padding:10px 12px;text-align:center;font-size:12px}
+  .tl-item.now{border-color:var(--siz-rot);border-width:2px;background:#fff8f3}
+  .tl-item.future{background:var(--siz-blau-soft);border-style:dashed}
+  .tl-item .year{font-weight:700;color:var(--siz-blau-dark);font-size:15px;display:block;margin-bottom:4px}
+
+  /* Docs */
+  .docs-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media(max-width:800px){.docs-grid{grid-template-columns:1fr}}
+  .doc{display:flex;justify-content:space-between;align-items:center;background:#fff;border:1px solid var(--line);border-radius:5px;padding:11px 14px;font-size:13px;gap:10px}
+  .doc:hover{border-color:var(--siz-blau);background:var(--siz-blau-soft)}
+  .doc a{border-bottom:none;flex:1}
+  .doc .src{font-size:10px;color:var(--mute);text-transform:uppercase;letter-spacing:0.5px;background:var(--bg);padding:2px 6px;border-radius:3px;font-weight:600;flex-shrink:0}
+
+  footer{margin-top:48px;padding-top:18px;border-top:1px solid var(--line);font-size:12px;color:var(--mute);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+
+  .siz-banner{background:linear-gradient(135deg,var(--siz-rot) 0%,var(--siz-rot-dark) 100%);color:#fff;padding:22px 26px;border-radius:8px;margin:14px 0 18px}
+  .siz-banner h3{color:#fff;margin:0 0 6px;font-size:20px}
+  .siz-banner p{color:#ffe5e5;margin:0;font-size:15px;line-height:1.55}
+
+  .person{background:#fff;border-left:4px solid var(--gold);padding:14px 18px;border-radius:0 4px 4px 0;margin:10px 0 16px}
+  .person .name{font-weight:700;color:var(--ink);font-size:16px}
+  .person .roles{font-size:13px;color:var(--ink-soft);margin-top:4px}
+  .person .why{font-size:14px;color:var(--ink-soft);margin-top:8px;font-style:italic}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <div>
+      <div class="brand">SIZ AG · Strategiedokument</div>
+      <h1>Die <strong>KV-EFZ-Landschaft</strong> Schweiz</h1>
+      <div class="subtitle">Wer trägt, wer entscheidet, wer prüft – und wo SIZ einspielt</div>
+    </div>
+    <div class="meta">
+      Stand: <b>11.05.2026</b><br>
+      Autor: <b>F. Ruchti</b><br>
+      Verteiler: Intern SIZ AG
+    </div>
+  </header>
+
+  <div class="lead">
+    Die kaufmännische Grundbildung Kauffrau/Kaufmann EFZ ist die <b>grösste Berufsausbildung der Schweiz</b> mit rund 13'000 Lernenden pro Jahrgang. Die Trägerschaft ist föderal-pluralistisch organisiert: <b>BIKAS</b> (vormals SKKAB) trägt den Beruf, <b>IGKG Schweiz</b> die grösste der 19 Branchen, der <b>kfmv</b> sitzt strategisch in beiden Gremien – und ist gleichzeitig Mit-Eigentümer von SIZ.
+  </div>
+
+  <h2>1 · System-Architektur auf einen Blick</h2>
+  <div class="diagram">
+    <svg viewBox="0 0 1100 760" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+          <path d="M0,0 L0,6 L9,3 z" fill="#7b8a99"/>
+        </marker>
+      </defs>
+
+      <!-- Ebene 1 · Bund -->
+      <rect x="20" y="20" width="1060" height="100" rx="6" fill="#EFF3F8" stroke="#4880B6" stroke-width="1"/>
+      <text x="40" y="48" font-size="12" fill="#4880B6" font-weight="700" letter-spacing="1">EBENE 1 · BUND</text>
+      <rect x="290" y="58" width="240" height="50" rx="4" fill="#2D5A8A"/>
+      <text x="410" y="80" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">SBFI</text>
+      <text x="410" y="98" text-anchor="middle" fill="#cdd4e1" font-size="10">Bildungsverordnung &amp; Bildungsplan</text>
+      <rect x="570" y="58" width="240" height="50" rx="4" fill="#4880B6"/>
+      <text x="690" y="80" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">SDBB</text>
+      <text x="690" y="98" text-anchor="middle" fill="#e7eef7" font-size="10">Dienstleistungszentrum · berufsberatung.ch</text>
+
+      <!-- Ebene 2 · Kantone -->
+      <rect x="20" y="140" width="1060" height="100" rx="6" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1"/>
+      <text x="40" y="168" font-size="12" fill="#5b21b6" font-weight="700" letter-spacing="1">EBENE 2 · KANTONE (EDK-WELT)</text>
+      <rect x="290" y="178" width="240" height="50" rx="4" fill="#5b21b6"/>
+      <text x="410" y="200" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">EDK</text>
+      <text x="410" y="218" text-anchor="middle" fill="#e9d5ff" font-size="10">Konferenz Erziehungsdirektoren</text>
+      <rect x="570" y="178" width="240" height="50" rx="4" fill="#7c3aed"/>
+      <text x="690" y="200" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">SBBK</text>
+      <text x="690" y="218" text-anchor="middle" fill="#e9d5ff" font-size="10">26 kantonale Berufsbildungsämter</text>
+
+      <!-- Ebene 3 · Trägerschaft -->
+      <rect x="20" y="260" width="1060" height="100" rx="6" fill="#fff8f3" stroke="#E30613" stroke-width="1"/>
+      <text x="40" y="288" font-size="12" fill="#E30613" font-weight="700" letter-spacing="1">EBENE 3 · TRÄGERSCHAFT (OdA)</text>
+      <rect x="60" y="298" width="290" height="50" rx="4" fill="#E30613"/>
+      <text x="205" y="320" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">BIKAS</text>
+      <text x="205" y="338" text-anchor="middle" fill="#ffe5e5" font-size="10">vormals SKKAB · Träger EFZ</text>
+      <rect x="395" y="298" width="290" height="50" rx="4" fill="#A30009"/>
+      <text x="540" y="320" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">IGKG Schweiz</text>
+      <text x="540" y="338" text-anchor="middle" fill="#ffe5e5" font-size="10">Träger EBA · grösste EFZ-Branche D&amp;A</text>
+      <rect x="730" y="298" width="290" height="50" rx="4" fill="#4880B6"/>
+      <text x="875" y="320" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">SKBQ</text>
+      <text x="875" y="338" text-anchor="middle" fill="#cdd4e1" font-size="10">Gemeinsame Qualitätskommission</text>
+
+      <!-- Ebene 4 · Verbände -->
+      <rect x="20" y="380" width="1060" height="100" rx="6" fill="#fffbeb" stroke="#F59E0B" stroke-width="1"/>
+      <text x="40" y="408" font-size="12" fill="#92400e" font-weight="700" letter-spacing="1">EBENE 4 · DACH-OdA, MITGLIEDER &amp; LEHRBETRIEBE</text>
+      <rect x="50" y="418" width="155" height="50" rx="4" fill="#fff" stroke="#F59E0B" stroke-width="1.5"/>
+      <text x="127" y="440" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a1a">kfmv</text>
+      <text x="127" y="458" text-anchor="middle" font-size="10" fill="#7b8a99">Kaufm. Verband ⭐</text>
+      <rect x="215" y="418" width="155" height="50" rx="4" fill="#fff" stroke="#F59E0B" stroke-width="1.5"/>
+      <text x="292" y="440" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a1a">SAV</text>
+      <text x="292" y="458" text-anchor="middle" font-size="10" fill="#7b8a99">Arbeitgeberverband</text>
+      <rect x="380" y="418" width="155" height="50" rx="4" fill="#fff" stroke="#F59E0B" stroke-width="1.5"/>
+      <text x="457" y="440" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a1a">sgv</text>
+      <text x="457" y="458" text-anchor="middle" font-size="10" fill="#7b8a99">Gewerbeverband</text>
+      <rect x="545" y="418" width="220" height="50" rx="4" fill="#fff" stroke="#F59E0B" stroke-width="1.5"/>
+      <text x="655" y="440" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a1a">19 Branchen</text>
+      <text x="655" y="458" text-anchor="middle" font-size="10" fill="#7b8a99">Bank, Handel, D&amp;A, MEM, ...</text>
+      <rect x="775" y="418" width="255" height="50" rx="4" fill="#fff" stroke="#F59E0B" stroke-width="1.5"/>
+      <text x="902" y="440" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a1a">Lehrbetriebe national</text>
+      <text x="902" y="458" text-anchor="middle" font-size="10" fill="#7b8a99">Post, Migros, Raiffeisen</text>
+
+      <!-- Ebene 5 · Schulkonferenzen -->
+      <rect x="20" y="500" width="1060" height="100" rx="6" fill="#ecfdf5" stroke="#059669" stroke-width="1"/>
+      <text x="40" y="528" font-size="12" fill="#065f46" font-weight="700" letter-spacing="1">EBENE 5 · SCHULKONFERENZEN (Rektorate / Schulleitende)</text>
+      <rect x="80" y="538" width="270" height="50" rx="4" fill="#059669"/>
+      <text x="215" y="560" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">SKKBS ⭐</text>
+      <text x="215" y="578" text-anchor="middle" fill="#d1fae5" font-size="10">Kaufm. Berufsfachschulen (öffentlich)</text>
+      <rect x="395" y="538" width="270" height="50" rx="4" fill="#10b981"/>
+      <text x="530" y="560" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">KSHW</text>
+      <text x="530" y="578" text-anchor="middle" fill="#d1fae5" font-size="10">Handels-/Wirtschafts­mittelschulen (>50)</text>
+      <rect x="710" y="538" width="290" height="50" rx="4" fill="#047857"/>
+      <text x="855" y="560" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">VSH</text>
+      <text x="855" y="578" text-anchor="middle" fill="#d1fae5" font-size="10">Privatschulen Schweiz (42: AKAD, Feusi, ...)</text>
+
+      <!-- Ebene 6 · Umsetzung -->
+      <rect x="20" y="620" width="1060" height="120" rx="6" fill="#f1f5f9" stroke="#4a5965" stroke-width="1"/>
+      <text x="40" y="648" font-size="12" fill="#4a5965" font-weight="700" letter-spacing="1">EBENE 6 · UMSETZUNG · 3 LERNORTE (Triale Berufsbildung)</text>
+      <rect x="60" y="660" width="320" height="60" rx="4" fill="#fff" stroke="#4a5965" stroke-width="1.5"/>
+      <text x="220" y="683" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a1a">Berufsfachschulen</text>
+      <text x="220" y="702" text-anchor="middle" font-size="11" fill="#4a5965">KV Zürich, BMS Bern, KV Luzern, ...</text>
+      <text x="220" y="715" text-anchor="middle" font-size="10" fill="#7b8a99">+ WMS &amp; Privatschulen als alternative Wege</text>
+      <rect x="395" y="660" width="320" height="60" rx="4" fill="#fff" stroke="#4a5965" stroke-width="1.5"/>
+      <text x="555" y="683" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a1a">Lehrbetriebe (>15'000)</text>
+      <text x="555" y="702" text-anchor="middle" font-size="11" fill="#4a5965">Bank, KMU, Verwaltung, Industrie</text>
+      <text x="555" y="715" text-anchor="middle" font-size="10" fill="#7b8a99">QV-Note &quot;betriebliches Praxis-LZC&quot;</text>
+      <rect x="730" y="660" width="290" height="60" rx="4" fill="#fff" stroke="#4a5965" stroke-width="1.5"/>
+      <text x="875" y="683" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a1a">ÜK · Überbetriebliche Kurse</text>
+      <text x="875" y="702" text-anchor="middle" font-size="11" fill="#4a5965">Branchenspezifisch · von OdA</text>
+      <text x="875" y="715" text-anchor="middle" font-size="10" fill="#7b8a99">→ QV (Qualifikationsverfahren)</text>
+
+      <!-- Verbindungslinien -->
+      <line x1="550" y1="120" x2="550" y2="138" stroke="#7b8a99" stroke-width="1.5" marker-end="url(#arrow)"/>
+      <line x1="550" y1="240" x2="550" y2="258" stroke="#7b8a99" stroke-width="1.5" marker-end="url(#arrow)"/>
+      <line x1="350" y1="348" x2="395" y2="348" stroke="#7b8a99" stroke-width="1.5"/>
+      <line x1="685" y1="348" x2="730" y2="348" stroke="#7b8a99" stroke-width="1.5"/>
+      <line x1="540" y1="358" x2="540" y2="378" stroke="#7b8a99" stroke-width="1.5" marker-end="url(#arrow)"/>
+      <line x1="550" y1="480" x2="550" y2="498" stroke="#7b8a99" stroke-width="1.5" marker-end="url(#arrow)"/>
+      <line x1="550" y1="600" x2="550" y2="618" stroke="#7b8a99" stroke-width="1.5" marker-end="url(#arrow)"/>
+    </svg>
+  </div>
+  <p style="font-size:12px;color:var(--mute);margin-top:-8px">⭐ SKKBS und kfmv sind die zwei effektivsten SIZ-Pull-Hebel: SKKBS direkt zu allen KV-Schulleitenden, kfmv über die Trägerschaftsebene zu BIKAS+IGKG.</p>
+
+  <h2>1b · Der Bildungsplan – Hierarchie der Dokumente</h2>
+  <div class="lead">
+    "Lehrplan" ist nicht gleich "Lehrplan". Es gibt eine klare <b>Hierarchie von 8 Dokumenten</b> – vom Bundesrecht (BiVo) bis zum konkreten Schullehrplan einer einzelnen Schule. Wer das System nicht kennt, redet schnell aneinander vorbei.
+  </div>
+
+  <div class="diagram">
+    <svg viewBox="0 0 1100 580" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="ar2" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+          <path d="M0,0 L0,6 L9,3 z" fill="#7b8a99"/>
+        </marker>
+      </defs>
+
+      <!-- Pyramide Spitze: BiVo -->
+      <rect x="380" y="20" width="340" height="60" rx="6" fill="#2D5A8A"/>
+      <text x="550" y="46" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">BiVo · Bildungsverordnung</text>
+      <text x="550" y="66" text-anchor="middle" fill="#cdd4e1" font-size="11">SBFI (Bundesrecht) · regelt Beruf insgesamt · 16 Seiten</text>
+
+      <!-- Bildungsplan -->
+      <rect x="290" y="110" width="520" height="60" rx="6" fill="#E30613"/>
+      <text x="550" y="136" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">Bildungsplan (BiPla)</text>
+      <text x="550" y="156" text-anchor="middle" fill="#ffe5e5" font-size="11">BIKAS erstellt · SBFI genehmigt · national · 1.87 MB · 5 HKBs · alle 19 Branchen</text>
+
+      <!-- Anhang 1 -->
+      <rect x="240" y="200" width="620" height="40" rx="4" fill="#A30009"/>
+      <text x="550" y="225" text-anchor="middle" fill="#fff" font-size="13" font-weight="600">Anhang 1 · Umsetzungsdokumente · BIKAS + 19 Branchen</text>
+
+      <!-- Vier Säulen unter BiPla -->
+      <rect x="60" y="280" width="220" height="80" rx="6" fill="#fff" stroke="#4880B6" stroke-width="2"/>
+      <text x="170" y="305" text-anchor="middle" font-size="13" font-weight="700" fill="#2D5A8A">Nat. Lehrplan BFS</text>
+      <text x="170" y="324" text-anchor="middle" font-size="11" fill="#4a5965">BIKAS · Berufsfachschulen</text>
+      <text x="170" y="340" text-anchor="middle" font-size="10" fill="#7b8a99">3 PDFs: 1./2./3. Lehrjahr</text>
+      <text x="170" y="354" text-anchor="middle" font-size="10" fill="#7b8a99">EFZ + SOG + SOG/BM</text>
+
+      <rect x="295" y="280" width="220" height="80" rx="6" fill="#fff" stroke="#4880B6" stroke-width="2"/>
+      <text x="405" y="305" text-anchor="middle" font-size="13" font-weight="700" fill="#2D5A8A">Nat. Lehrplan ABU</text>
+      <text x="405" y="324" text-anchor="middle" font-size="11" fill="#4a5965">SBFI · Allgemeinbildung</text>
+      <text x="405" y="340" text-anchor="middle" font-size="10" fill="#7b8a99">Gesellschaft, Sprache,</text>
+      <text x="405" y="354" text-anchor="middle" font-size="10" fill="#7b8a99">120 Lekt./Jahr</text>
+
+      <rect x="530" y="280" width="220" height="80" rx="6" fill="#fff" stroke="#4880B6" stroke-width="2"/>
+      <text x="640" y="305" text-anchor="middle" font-size="13" font-weight="700" fill="#2D5A8A">Rahmenregl. ÜK</text>
+      <text x="640" y="324" text-anchor="middle" font-size="11" fill="#4a5965">BIKAS + Branchen</text>
+      <text x="640" y="340" text-anchor="middle" font-size="10" fill="#7b8a99">Überbetriebliche Kurse</text>
+      <text x="640" y="354" text-anchor="middle" font-size="10" fill="#7b8a99">vom 30.06.2023</text>
+
+      <rect x="765" y="280" width="270" height="80" rx="6" fill="#fff" stroke="#4880B6" stroke-width="2"/>
+      <text x="900" y="305" text-anchor="middle" font-size="13" font-weight="700" fill="#2D5A8A">Branchenkundliche Pläne</text>
+      <text x="900" y="324" text-anchor="middle" font-size="11" fill="#4a5965">19 Branchen je eigen</text>
+      <text x="900" y="340" text-anchor="middle" font-size="10" fill="#7b8a99">z.B. IGKG für D&amp;A</text>
+      <text x="900" y="354" text-anchor="middle" font-size="10" fill="#7b8a99">Swissbanking für Bank</text>
+
+      <!-- Schullehrpläne -->
+      <rect x="60" y="400" width="455" height="70" rx="6" fill="#fffbeb" stroke="#F59E0B" stroke-width="2"/>
+      <text x="287" y="425" text-anchor="middle" font-size="14" font-weight="700" fill="#92400e">Schullehrpläne (SchuLP)</text>
+      <text x="287" y="446" text-anchor="middle" font-size="11" fill="#4a5965">Kanton (z.B. Bern als Pionier) oder einzelne Schule</text>
+      <text x="287" y="462" text-anchor="middle" font-size="11" fill="#4a5965"><b>KV Zürich verwendet nat. Lehrplan direkt</b></text>
+
+      <!-- Lehrperson-Ebene -->
+      <rect x="530" y="400" width="505" height="70" rx="6" fill="#ecfdf5" stroke="#059669" stroke-width="2"/>
+      <text x="782" y="425" text-anchor="middle" font-size="14" font-weight="700" fill="#065f46">Lehrperson · operative Umsetzung</text>
+      <text x="782" y="446" text-anchor="middle" font-size="11" fill="#4a5965">Konkrete Lektionen, Aufgaben, Lernkontrollen, Auswertungen</text>
+      <text x="782" y="462" text-anchor="middle" font-size="11" fill="#4a5965"><b>Hier kommen Tools wie SIZ ins Spiel</b></text>
+
+      <!-- Unten: Lernende -->
+      <rect x="290" y="510" width="520" height="50" rx="6" fill="#1a1a1a"/>
+      <text x="550" y="535" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Lernende · ~13'000 pro Jahrgang Schweiz</text>
+      <text x="550" y="552" text-anchor="middle" fill="#cbd5e1" font-size="11">3 Lehrjahre · QV (Qualifikationsverfahren) · EFZ</text>
+
+      <!-- Lines -->
+      <line x1="550" y1="80" x2="550" y2="108" stroke="#7b8a99" stroke-width="1.5" marker-end="url(#ar2)"/>
+      <line x1="550" y1="170" x2="550" y2="198" stroke="#7b8a99" stroke-width="1.5" marker-end="url(#ar2)"/>
+      <line x1="550" y1="240" x2="550" y2="260" stroke="#7b8a99" stroke-width="1.5"/>
+      <line x1="170" y1="260" x2="900" y2="260" stroke="#7b8a99" stroke-width="1.5"/>
+      <line x1="170" y1="260" x2="170" y2="278" stroke="#7b8a99" stroke-width="1.5" marker-end="url(#ar2)"/>
+      <line x1="405" y1="260" x2="405" y2="278" stroke="#7b8a99" stroke-width="1.5" marker-end="url(#ar2)"/>
+      <line x1="640" y1="260" x2="640" y2="278" stroke="#7b8a99" stroke-width="1.5" marker-end="url(#ar2)"/>
+      <line x1="900" y1="260" x2="900" y2="278" stroke="#7b8a99" stroke-width="1.5" marker-end="url(#ar2)"/>
+      <line x1="170" y1="360" x2="170" y2="398" stroke="#7b8a99" stroke-width="1.5" marker-end="url(#ar2)"/>
+      <line x1="640" y1="360" x2="640" y2="398" stroke="#7b8a99" stroke-width="1.5" marker-end="url(#ar2)"/>
+      <line x1="287" y1="470" x2="287" y2="490" stroke="#7b8a99" stroke-width="1.5"/>
+      <line x1="782" y1="470" x2="782" y2="490" stroke="#7b8a99" stroke-width="1.5"/>
+      <line x1="287" y1="490" x2="782" y2="490" stroke="#7b8a99" stroke-width="1.5"/>
+      <line x1="550" y1="490" x2="550" y2="508" stroke="#7b8a99" stroke-width="1.5" marker-end="url(#ar2)"/>
+    </svg>
+  </div>
+
+  <h4>Was bedeuten "BFS" und "ABU"?</h4>
+  <div class="grid grid-2">
+    <div class="card blue">
+      <h4 style="margin-top:0">BFS · Berufsfachschule</h4>
+      <p style="font-size:14px">Die Schule, in die KV-Lernende <b>1 Tag pro Woche</b> gehen (im 1. Lehrjahr oft 2 Tage). Klassische "Berufsschule".</p>
+      <p style="font-size:13px"><b>Beispiele:</b> KV Zürich, BWZ Bern, KBZ St. Gallen, HKV Aarau, WKS Bern</p>
+      <p style="font-size:13px"><b>Was hier unterrichtet wird:</b> der berufsbildende Unterricht – die <b>5 HKBs A–E</b> aus dem BiPla (Wirtschaft, Kommunikation, Prozesse, Kunden, Technologie)</p>
+      <p style="font-size:12px;color:var(--mute)">Geregelt durch BIKAS-Bildungsplan + Nat. Lehrplan BFS</p>
+    </div>
+    <div class="card">
+      <h4 style="margin-top:0">ABU · Allgemeinbildender Unterricht</h4>
+      <p style="font-size:14px">Ein <b>eigenes Schulfach</b> an der BFS, <b>berufsübergreifend</b> – Pflicht für <i>alle</i> EFZ-Berufe (nicht KV-spezifisch).</p>
+      <p style="font-size:13px"><b>Umfang:</b> ca. 120 Lektionen/Jahr (3 Lekt./Woche)</p>
+      <p style="font-size:13px"><b>Inhalt:</b> Sprache &amp; Kommunikation · Gesellschaft (Recht, Politik, Wirtschaft, Ethik, Kultur, Ökologie, Technologie, Identität)</p>
+      <p style="font-size:12px;color:var(--mute)">Geregelt durch eigenen Rahmenlehrplan ABU – direkt vom SBFI (nicht BIKAS)</p>
+    </div>
+  </div>
+
+  <h4>Wochen-Programm einer KV-Lernenden im Überblick</h4>
+  <table>
+    <tr>
+      <th style="width:30%">Unterrichtsteil</th>
+      <th style="width:22%">Wer regelt</th>
+      <th style="width:18%">Umfang</th>
+      <th>Inhalt</th>
+    </tr>
+    <tr class="highlight"><td><b>Berufsbildender Unterricht</b></td><td>BIKAS<br>(Bildungsplan + Nat. Lehrplan BFS)</td><td>~10–13 Lekt./Woche</td><td>5 HKBs A–E – <b>HKB E ist hier drin → SIZ-Andockpunkt</b></td></tr>
+    <tr><td>ABU · Allgemeinbildung</td><td>SBFI direkt (Rahmenlehrplan ABU)</td><td>3 Lekt./Woche</td><td>Sprache &amp; Gesellschaft – berufsübergreifend</td></tr>
+    <tr><td>Sport</td><td>Kanton</td><td>1 Lekt./Woche</td><td>–</td></tr>
+    <tr><td>Berufsmaturität (optional)</td><td>SBFI</td><td>zusätzlich</td><td>Mathematik, 2. Fremdsprache, vertiefte allgemeinbildende Fächer</td></tr>
+  </table>
+  <p style="font-size:13px;color:var(--ink-soft)"><b>Wichtig für SIZ-Gespräche:</b> HKB E "Einsetzen von Technologien der digitalen Arbeitswelt" ist Teil des <b>berufsbildenden</b> Unterrichts (BIKAS) – <i>nicht</i> Teil von ABU. Wenn eine Schulleitung sagt "wir haben wenig ICT-Stunden", könnte sie HKB E mit ABU verwechseln.</p>
+
+  <h4>Lehrplan-Inventar mit Stichdaten</h4>
+  <table>
+    <tr>
+      <th style="width:22%">Dokument</th>
+      <th style="width:18%">Wer erstellt</th>
+      <th style="width:14%">Wer erlässt</th>
+      <th style="width:14%">Gültigkeit</th>
+      <th>Aktueller Stand</th>
+    </tr>
+    <tr><td><b>BiVo</b> – Bildungsverordnung</td><td>SBFI auf Antrag BIKAS</td><td>SBFI</td><td>Bundesrecht</td><td>genehmigt <b>16.08.2021</b> · in Kraft <b>01.01.2023</b></td></tr>
+    <tr><td><b>Bildungsplan (BiPla)</b></td><td>BIKAS</td><td>SBFI genehmigt</td><td>national</td><td>Version <b>01.06.2023</b> · 1.87 MB · 5 HKBs</td></tr>
+    <tr><td><b>Qualifikationsprofil</b></td><td>BIKAS</td><td>SBFI</td><td>national</td><td>Teil des BiPla</td></tr>
+    <tr><td><b>Anhang 1 · Umsetzungsdok.</b></td><td>BIKAS + 19 Branchen</td><td>BIKAS (Empfehlung)</td><td>branchen­spez.</td><td>Factsheet <b>17.02.2025</b>, laufend ergänzt</td></tr>
+    <tr><td><b>Nat. Lehrplan BFS (EFZ)</b></td><td>BIKAS</td><td>BIKAS</td><td>BFS, 3 LJ</td><td>3 PDFs pro Lehrjahr</td></tr>
+    <tr><td><b>Nat. Lehrplan BFS (SOG)</b></td><td>BIKAS</td><td>BIKAS</td><td>WMS / schulisch</td><td>SOG + SOG mit BM</td></tr>
+    <tr><td><b>Nat. Lehrplan ABU</b></td><td>SBFI</td><td>SBFI</td><td>alle Berufe</td><td>laufend, ältere Tradition</td></tr>
+    <tr><td><b>Rahmenreglement ÜK</b></td><td>BIKAS + Branchen</td><td>BIKAS</td><td>überbetriebl. Kurse</td><td><b>30.06.2023</b></td></tr>
+    <tr><td><b>Beurteilungsinstrumente QV</b></td><td>BIKAS</td><td>BIKAS</td><td>QV-Vorbereitung</td><td><b>07.11.2024</b></td></tr>
+    <tr><td><b>Branchenkundliche Pläne</b></td><td>jede der 19 Branchen</td><td>jeweilige Branche</td><td>branchen­spez.</td><td>laufend (Bank: SBV-Guide 30.01.2024)</td></tr>
+    <tr><td><b>Schullehrplan (SchuLP)</b></td><td>Kanton oder Schule</td><td>Kanton/Schule</td><td>lokal</td><td>Bern kantonal · KV Zürich = nat. Lehrplan</td></tr>
+    <tr class="highlight"><td><b>Lektionen, LZC, Aufgaben</b></td><td>Lehrpersonen</td><td>– (operativ)</td><td>pro Klasse</td><td><b>Hier setzt SIZ als Werkzeug an</b></td></tr>
+  </table>
+
+  <h2>1c · Bildungsplan-Lebenszyklus mit Daten</h2>
+  <p>Ein vollständiger Reformzyklus von der ersten Idee bis zur ersten Abschlussklasse dauert in der Schweiz typisch <b>9 Jahre</b>. Hier am Beispiel BiVo 2023 mit den realen Daten:</p>
+
+  <div class="diagram">
+    <svg viewBox="0 0 1100 320" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="ar3" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+          <path d="M0,0 L0,6 L9,3 z" fill="#E30613"/>
+        </marker>
+      </defs>
+
+      <!-- Zeitlinie -->
+      <line x1="60" y1="160" x2="1040" y2="160" stroke="#4a5965" stroke-width="3"/>
+
+      <!-- Phasen -->
+      <!-- 1 Anstoss -->
+      <circle cx="100" cy="160" r="10" fill="#4880B6"/>
+      <text x="100" y="80" text-anchor="middle" font-size="13" font-weight="700" fill="#2D5A8A">1 · Anstoss</text>
+      <text x="100" y="98" text-anchor="middle" font-size="11" fill="#4a5965">SKKAB lanciert</text>
+      <text x="100" y="112" text-anchor="middle" font-size="11" fill="#4a5965">"Kaufleute 2022"</text>
+      <text x="100" y="138" text-anchor="middle" font-size="14" font-weight="700" fill="#E30613">2017</text>
+
+      <!-- 2 Entwicklung -->
+      <circle cx="250" cy="160" r="10" fill="#4880B6"/>
+      <text x="250" y="80" text-anchor="middle" font-size="13" font-weight="700" fill="#2D5A8A">2 · Entwicklung</text>
+      <text x="250" y="98" text-anchor="middle" font-size="11" fill="#4a5965">5 HKBs definiert</text>
+      <text x="250" y="112" text-anchor="middle" font-size="11" fill="#4a5965">Bildungsplan-Entwurf</text>
+      <text x="250" y="138" text-anchor="middle" font-size="14" font-weight="700" fill="#E30613">2018–2020</text>
+
+      <!-- 3 Anhörung -->
+      <circle cx="400" cy="160" r="10" fill="#4880B6"/>
+      <text x="400" y="80" text-anchor="middle" font-size="13" font-weight="700" fill="#2D5A8A">3 · Anhörung</text>
+      <text x="400" y="98" text-anchor="middle" font-size="11" fill="#4a5965">SKKAB-intern + SBFI</text>
+      <text x="400" y="112" text-anchor="middle" font-size="11" fill="#4a5965">SBFI-Ticket 18.12.2020</text>
+      <text x="400" y="138" text-anchor="middle" font-size="14" font-weight="700" fill="#E30613">2020–2021</text>
+
+      <!-- 4 Erlass -->
+      <circle cx="550" cy="160" r="12" fill="#E30613" stroke="#fff" stroke-width="2"/>
+      <text x="550" y="80" text-anchor="middle" font-size="13" font-weight="700" fill="#A30009">4 · ERLASS</text>
+      <text x="550" y="98" text-anchor="middle" font-size="11" fill="#4a5965">SBFI genehmigt</text>
+      <text x="550" y="112" text-anchor="middle" font-size="11" fill="#4a5965">BiVo + BiPla</text>
+      <text x="550" y="138" text-anchor="middle" font-size="14" font-weight="700" fill="#E30613">16.08.2021</text>
+
+      <!-- 5 Inkraft -->
+      <circle cx="700" cy="160" r="12" fill="#E30613" stroke="#fff" stroke-width="2"/>
+      <text x="700" y="80" text-anchor="middle" font-size="13" font-weight="700" fill="#A30009">5 · INKRAFT</text>
+      <text x="700" y="98" text-anchor="middle" font-size="11" fill="#4a5965">Lehrbeginn August</text>
+      <text x="700" y="112" text-anchor="middle" font-size="11" fill="#4a5965">erste Klasse</text>
+      <text x="700" y="138" text-anchor="middle" font-size="14" font-weight="700" fill="#E30613">01.01.2023</text>
+
+      <!-- 6 Wartung -->
+      <circle cx="830" cy="160" r="10" fill="#F59E0B"/>
+      <text x="830" y="80" text-anchor="middle" font-size="13" font-weight="700" fill="#92400e">6 · Wartung</text>
+      <text x="830" y="98" text-anchor="middle" font-size="11" fill="#4a5965">Anhang 1 ergänzt</text>
+      <text x="830" y="112" text-anchor="middle" font-size="11" fill="#4a5965">QV-Instrumente</text>
+      <text x="830" y="138" text-anchor="middle" font-size="14" font-weight="700" fill="#E30613">2024–2025</text>
+
+      <!-- 7 Erste QV -->
+      <circle cx="960" cy="160" r="12" fill="#10b981" stroke="#fff" stroke-width="2"/>
+      <text x="960" y="80" text-anchor="middle" font-size="13" font-weight="700" fill="#065f46">7 · ERSTES QV</text>
+      <text x="960" y="98" text-anchor="middle" font-size="11" fill="#4a5965">Erste Abschluss­klasse</text>
+      <text x="960" y="112" text-anchor="middle" font-size="11" fill="#4a5965">Lessons learned</text>
+      <text x="960" y="138" text-anchor="middle" font-size="14" font-weight="700" fill="#E30613">Sommer 2026</text>
+
+      <!-- Verbindungspfeile darunter -->
+      <text x="550" y="210" text-anchor="middle" font-size="12" fill="#4a5965" font-weight="600">↑ 4 Jahre Vorbereitung</text>
+      <text x="830" y="210" text-anchor="middle" font-size="12" fill="#4a5965" font-weight="600">↑ laufend (BIKAS Ressort Berufsentw.)</text>
+
+      <!-- Box: Nächste Revision -->
+      <rect x="350" y="240" width="400" height="60" rx="6" fill="#EFF3F8" stroke="#4880B6" stroke-width="2" stroke-dasharray="6,4"/>
+      <text x="550" y="262" text-anchor="middle" font-size="13" font-weight="700" fill="#2D5A8A">Nächste Bildungsplan-Revision</text>
+      <text x="550" y="282" text-anchor="middle" font-size="11" fill="#4a5965">Konsultationsphase ~2028 · neue BiVo ~2032</text>
+      <text x="550" y="296" text-anchor="middle" font-size="11" fill="#E30613" font-weight="700">→ SIZ-Einflussfenster: JETZT bis 2028</text>
+    </svg>
+  </div>
+
+  <h4>Wer macht was im Lebenszyklus</h4>
+  <table>
+    <tr>
+      <th style="width:22%">Phase</th>
+      <th style="width:38%">Akteure</th>
+      <th>Was passiert konkret</th>
+    </tr>
+    <tr><td><b>1 · Anstoss</b><br>2017</td><td>SKKAB-Vorstand + Branchen</td><td>Beschluss zum Reformprojekt "Kaufleute 2022"</td></tr>
+    <tr><td><b>2 · Entwicklung</b><br>2018–2020</td><td>SKKAB-Projektteams · BIKAS Berufsentwicklung · externe Expertinnen · 19 Branchen</td><td>5 Handlungskompetenzbereiche (HKB A–E) definiert, Bildungsplan-Entwurf erstellt</td></tr>
+    <tr><td><b>3 · Anhörung</b><br>Aug 2020 – Mai 2021</td><td>SKKAB-intern (Aug–Sep 2020) → SBFI-Anhörung mit Kantonen, Sozialpartnern, Schulen (Anfang 2021)</td><td>SBFI erteilt "Ticket" am 18.12.2020 · Stellungnahmen ausgewertet bis Ende Mai 2021</td></tr>
+    <tr class="highlight"><td><b>4 · Erlass</b><br>16.08.2021</td><td>SBFI (Bund)</td><td>Genehmigung BiVo + Bildungsplan</td></tr>
+    <tr class="highlight"><td><b>5 · Inkraftsetzung</b><br>01.01.2023 · Lehrbeginn Aug 2023</td><td>SBFI · BIKAS · 26 Kantone · alle Berufsfachschulen · 19 Branchen · Lehrbetriebe</td><td>Umstellung von fachorientiertem zu handlungskompetenz­orientiertem Unterricht</td></tr>
+    <tr><td><b>6 · Wartung &amp; Anpassung</b><br>2023–laufend</td><td>BIKAS Ressort Berufsentwicklung (Regula Rothen) · SKBQ · 19 Branchen</td><td>Anhang 1 ergänzt (Factsheet 17.02.2025), Beurteilungsinstrumente (07.11.2024), Schul-Feedback</td></tr>
+    <tr><td><b>7 · Erstes QV</b><br>Sommer 2026</td><td>Schulen + Lehrbetriebe + ÜK + BIKAS-Prüfungskommission</td><td>Lessons learned aus dem ersten Abschlussjahrgang BiVo 2023</td></tr>
+    <tr><td><b>8 · Nächste Revision</b><br>~2028 → ~2032</td><td>BIKAS Vorstand · SBFI · Stakeholder</td><td>Konsultationsphase ab ~2028 · neue BiVo ~2032 (10-Jahres-Zyklus)</td></tr>
+  </table>
+
+  <h2>1d · Kantonale Lehrplan-Praxis – wer hat einen eigenen Schullehrplan?</h2>
+  <div class="lead">
+    Es gibt <b>keine zentrale Liste</b>, welcher Kanton eigene Schullehrpläne (SchuLP) hat und welcher den nationalen Lehrplan direkt verwendet. Die Recherche aus öffentlichen Quellen zeigt drei verschiedene Umsetzungs-Modelle nebeneinander.
+  </div>
+
+  <div class="grid grid-3">
+    <div class="card blue">
+      <h4>Modell A · Nationaler Lehrplan 1:1</h4>
+      <p style="font-size:13px">Die Schule verwendet die nationalen PDFs (1./2./3. LJ) <b>direkt</b>, ohne kantonale Zwischenebene. Lehrpersonen orientieren sich an den nationalen Leistungszielen, machen die Konkretisierung selbst.</p>
+      <p style="font-size:13px"><b>Vorteil:</b> einheitlich gesamtschweizerisch · <b>Nachteil:</b> jede Schule erfindet eigene Aufgaben.</p>
+      <p style="font-size:12px;color:var(--mute)"><b>Beispiel: KV Zürich</b></p>
+    </div>
+    <div class="card featured">
+      <span class="tag red">Vorbild</span>
+      <h4>Modell B · Kantonal abgestimmt</h4>
+      <p style="font-size:13px">Alle BFS eines Kantons schreiben <b>gemeinsam</b> einen kantonalen SchuLP. Sie teilen Aufgaben, Wahlpflicht-Module, fächerübergreifende Kompetenzaufgaben.</p>
+      <p style="font-size:13px"><b>Vorteil:</b> Synergien · Stabilität · <b>Nachteil:</b> Aufwand initial.</p>
+      <p style="font-size:12px;color:var(--mute)"><b>Beispiel: Kanton Bern (der "Berner Weg")</b></p>
+    </div>
+    <div class="card">
+      <h4>Modell C · Schule-eigen</h4>
+      <p style="font-size:13px">Einzelne Schule schreibt ihren eigenen SchuLP oder Rahmenlehrplan – andere im selben Kanton machen es anders oder gar nicht.</p>
+      <p style="font-size:13px"><b>Vorteil:</b> Schulprofil · <b>Nachteil:</b> Heterogenität im Kanton.</p>
+      <p style="font-size:12px;color:var(--mute)"><b>Beispiel: Aargau (WSKVW + HKV Aarau separat)</b></p>
+    </div>
+  </div>
+
+  <h4>Recherchierter Stand pro Kanton (Stichprobe der grossen, Stand 11.05.2026)</h4>
+  <table>
+    <tr>
+      <th style="width:14%">Kanton</th>
+      <th style="width:14%">Modell</th>
+      <th style="width:35%">Was bekannt ist</th>
+      <th style="width:37%">Quelle / Anmerkung</th>
+    </tr>
+    <tr><td><b>Bern (BE)</b></td><td><span class="tag red">B</span></td><td>Kantonaler SchuLP "Berner Weg" – alle BFS gemeinsam (KV BL, BWZ Langenthal, BWZ Emme, WKS Bern u.a.)</td><td>die-reform.ch, verlagskv.ch</td></tr>
+    <tr><td><b>Zürich (ZH)</b></td><td><span class="tag">A</span></td><td>Kein eigener kantonaler SchuLP für die KV-Fächer – nutzt nationalen Lehrplan direkt. Separates Projekt nur für ABU.</td><td>kvz-schule.ch, lkbzh.ch</td></tr>
+    <tr><td><b>Aargau (AG)</b></td><td><span class="tag gold">C</span></td><td>WSKVW: eigener "Kantonaler Lehrplan KV 1.+2. Schuljahr" (PDF). HKV Aarau: separater Rahmenlehrplan</td><td>wskvw.ch, hkvaarau.ch</td></tr>
+    <tr><td><b>Luzern (LU)</b></td><td><span class="tag gray">?</span></td><td>BBZW liefert Schulinformationen pro Beruf, kein einheitlicher kantonaler SchuLP erkennbar</td><td>beruf.lu.ch · evtl. Modell C</td></tr>
+    <tr><td>St. Gallen (SG)</td><td><span class="tag gray">?</span></td><td>KBZ St. Gallen ist BIKAS-Partnerschule, aber Schullehrplan-Status nicht öffentlich</td><td>kbzsg.ch</td></tr>
+    <tr><td>Basel-Stadt (BS)</td><td><span class="tag gray">?</span></td><td>Status nicht öffentlich auffindbar</td><td>–</td></tr>
+    <tr><td>Basel-Land (BL)</td><td><span class="tag gray">?</span></td><td>Status nicht öffentlich auffindbar</td><td>–</td></tr>
+    <tr><td>Waadt (VD)</td><td><span class="tag gray">?</span></td><td>Frankophone Kantone führen typischerweise eigene Lehrpläne wegen Sprache</td><td>vermutlich Modell B/C</td></tr>
+    <tr><td>Genf (GE)</td><td><span class="tag gray">?</span></td><td>siehe Waadt</td><td>vermutlich Modell B/C</td></tr>
+    <tr><td>Tessin (TI)</td><td><span class="tag gray">?</span></td><td>Italophoner Kanton, separate Lehrmittel-Tradition</td><td>vermutlich Modell B</td></tr>
+    <tr><td>Übrige 16 Kantone</td><td><span class="tag gray">?</span></td><td>Status nicht recherchiert – AR, AI, GL, GR, JU, NE, NW, OW, SH, SO, SZ, TG, UR, VS, ZG, FR</td><td>–</td></tr>
+  </table>
+
+  <div class="card soft" style="margin-top:14px">
+    <h4>Empfehlung für vollständige Liste</h4>
+    <p style="font-size:14px">Die einzige Stelle, die einen aktuellen Überblick über alle Kantone hat, ist die <b>SKKBS</b> (Schulleitenden-Konferenz). Anfrage über Geschäftsstelle: <a href="https://www.skkbs-csepc.ch/home" target="_blank">skkbs-csepc.ch</a></p>
+    <p style="font-size:13px;color:var(--ink-soft)"><b>Alternativ:</b> Anfrage an SDBB (Bund) oder an die 26 kantonalen Berufsbildungsämter (SBBK) über die EDK-Geschäftsstelle. Dort liegt die Vollzugskompetenz für Schullehrpläne.</p>
+  </div>
+
+  <h2>2 · Die drei Träger im Detail</h2>
+  <div class="grid grid-3">
+    <div class="card featured">
+      <span class="tag red">EFZ-Träger</span>
+      <h3>BIKAS</h3>
+      <p style="font-size:13px;color:var(--mute);margin-top:-4px">Bildung Kaufleute Schweiz</p>
+      <p>Trägt seit 2012 den Beruf <b>Kauffrau/Kaufmann EFZ</b>. Rebranding von SKKAB → BIKAS 2024 als Teil der Strategie 2030. Sitz: Bern.</p>
+      <h4>Vorstand (12)</h4>
+      <ul class="tight">
+        <li>Bruno Schumacher – Post</li>
+        <li><b>Melinda Bangerter</b> – kfmv ⭐</li>
+        <li>Monika Eicher – Raiffeisen</li>
+        <li>Michel Fischer – Treuhand/Immo</li>
+        <li>Rafael Giobbi – Bank</li>
+        <li>Nicole Meier – SAV</li>
+        <li>Karin Nietlisbach – Migros</li>
+        <li>Regula Rothen – MEM</li>
+        <li>Thomas Suter – Spedition</li>
+        <li>Ueli Stursberg – Handel</li>
+        <li>Simon Werren – Privatversicherung</li>
+        <li>Stefan Gamper – GL (beratend)</li>
+      </ul>
+    </div>
+
+    <div class="card featured">
+      <span class="tag red">EBA-Träger + D&A</span>
+      <h3>IGKG Schweiz</h3>
+      <p style="font-size:13px;color:var(--mute);margin-top:-4px">Interessengemeinschaft Kaufmännische Grundbildung</p>
+      <p>Träger der <b>2-jährigen EBA</b>-Ausbildung und der <b>grössten EFZ-Branche D&amp;A</b> (Dienstleistung &amp; Administration). Sitz: Schwanengasse 9, 3011 Bern.</p>
+      <h4>Vorstand</h4>
+      <ul class="tight">
+        <li><b>Melinda Bangerter</b> – Co-Präs · kfmv ⭐</li>
+        <li><b>Nicole Meier</b> – Co-Präs · SAV</li>
+        <li>Dieter Kläy – Vizepräs · sgv</li>
+        <li>Tamara Pedrazzoli – kfmv SIC TI</li>
+        <li>Lilian Burgener – SAV</li>
+        <li>Bruno Ruppen – sgv</li>
+        <li>Regula Hasler – Kurskommissionen</li>
+        <li>Karin Imboden – GL (beratend)</li>
+      </ul>
+    </div>
+
+    <div class="card blue">
+      <span class="tag">Gemeinsame Kommission</span>
+      <h3>SKBQ</h3>
+      <p style="font-size:13px;color:var(--mute);margin-top:-4px">Schweiz. Kommission Berufsentwicklung &amp; Qualität</p>
+      <p>Von BIKAS und IGKG <b>gemeinsam</b> getragenes Gremium für die Qualitätssicherung beider Grundbildungen (EBA + EFZ). Hier wird die operative Schnittstelle gesteuert.</p>
+      <h4>Bedeutung für SIZ</h4>
+      <p style="font-size:13px">Wenn BIKAS bis 2025 die Trägerverantwortung für EBA übernimmt (siehe Strategie 2030), wird SKBQ noch zentraler. Direkte Kontakte hier sind <b>strategischer Hebel</b>.</p>
+    </div>
+  </div>
+
+  <h2>3 · Die Schlüsselperson: Melinda Bangerter</h2>
+  <div class="person">
+    <div class="name">⭐ Melinda Bangerter</div>
+    <div class="roles">
+      <b>kfmv:</b> Verantwortliche Bereich Bildung ·
+      <b>IGKG Schweiz:</b> Co-Präsidentin ·
+      <b>BIKAS:</b> Vorstandsmitglied ·
+      <b>ICT-BB:</b> Vorstandsmitglied
+    </div>
+    <div class="why">Bangerter ist die einzige Person im Schweizer KV-Bildungssystem, die mit einer Bewegung sowohl bei BIKAS (Gesamtberuf EFZ) als auch bei IGKG (grösste Branche D&amp;A) als auch beim kfmv (Träger von SIZ) etwas bewegen kann. Ihre Vierfach-Position macht sie für SIZ praktisch konkurrenzlos als Hebel.</div>
+  </div>
+
+  <h2>4 · Die 19 Ausbildungs- und Prüfungsbranchen</h2>
+  <p>Drei Branchen vereinen rund 65% aller Lehrverhältnisse, weitere sechs rund 25%. Die restlichen zehn unter 10% zusammen (Stand SKKAB-Strategie 2030, 2023).</p>
+  <div class="branchen">
+    <div class="br top3"><span class="big">D&amp;A</span><span class="meta">Top 3 · IGKG</span></div>
+    <div class="br top3"><span class="big">Bank</span><span class="meta">Top 3 · Swissbanking</span></div>
+    <div class="br top3"><span class="big">Handel</span><span class="meta">Top 3</span></div>
+    <div class="br top9"><span class="big">MEM</span><span class="meta">Top 9 · Swissmem</span></div>
+    <div class="br top9"><span class="big">Privatversicherung</span><span class="meta">Top 9 · SVV</span></div>
+    <div class="br top9"><span class="big">Treuhand / Immobilien</span><span class="meta">Top 9</span></div>
+    <div class="br top9"><span class="big">Öffentliche Verwaltung</span><span class="meta">Top 9</span></div>
+    <div class="br top9"><span class="big">Internat. Speditionslogistik</span><span class="meta">Top 9 · Spedlogswiss</span></div>
+    <div class="br top9"><span class="big">Hotel-Gastro-Tourismus</span><span class="meta">Top 9 · hotelleriesuisse</span></div>
+    <div class="br"><span class="big">Automobil-Gewerbe</span><span class="meta">AGVS</span></div>
+    <div class="br"><span class="big">Bauen und Wohnen</span><span class="meta">Branche</span></div>
+    <div class="br"><span class="big">Bundesverwaltung</span><span class="meta">Branche</span></div>
+    <div class="br"><span class="big">Gesundheit</span><span class="meta">Branche</span></div>
+    <div class="br"><span class="big">Krank./Sozial­vers.</span><span class="meta">Branche</span></div>
+    <div class="br"><span class="big">Marketing &amp; Komm.</span><span class="meta">Branche</span></div>
+    <div class="br"><span class="big">Nahrungsmittel-Industrie</span><span class="meta">Branche</span></div>
+    <div class="br"><span class="big">Notariate Schweiz</span><span class="meta">Branche</span></div>
+    <div class="br"><span class="big">Reisen</span><span class="meta">Branche</span></div>
+    <div class="br"><span class="big">Transport</span><span class="meta">Branche</span></div>
+  </div>
+
+  <h2>5 · Weitere Player im KV-Ökosystem</h2>
+  <div class="grid grid-2">
+    <div class="card">
+      <h3>Bund &amp; Kantone</h3>
+      <table>
+        <tr><th>Akteur</th><th>Rolle</th></tr>
+        <tr><td><b>SBFI</b></td><td>Staatssekretariat Bildung – erlässt BiVo, genehmigt Bildungsplan</td></tr>
+        <tr><td><b>SDBB</b></td><td>Schweiz. Dienstleistungszentrum Berufsbildung – berufsberatung.ch, Lehrmittel</td></tr>
+        <tr><td><b>EHB</b></td><td>Eidg. Hochschule für Berufsbildung – Lehrpersonen-Ausbildung</td></tr>
+        <tr><td><b>EDK</b></td><td>Konferenz der kantonalen Erziehungsdirektoren – Dachorgan der Kantone</td></tr>
+        <tr><td><b>SBBK</b></td><td>Schweiz. Berufsbildungsämter-Konferenz – Vollzug in 26 Kantonen (Fachkonferenz EDK)</td></tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <h3>Verbände &amp; Sozialpartner</h3>
+      <table>
+        <tr><th>Akteur</th><th>Rolle</th></tr>
+        <tr><td><b>kfmv</b></td><td>Kaufm. Verband · Sozialpartner · <b>Mit-Eigentümer SIZ AG</b></td></tr>
+        <tr><td><b>SAV</b></td><td>Schweiz. Arbeitgeberverband · Co-Präsidium IGKG</td></tr>
+        <tr><td><b>sgv</b></td><td>Schweiz. Gewerbeverband · Vizepräsidium IGKG</td></tr>
+        <tr><td><b>Swico</b></td><td>ICT-Verband · <b>Mit-Eigentümer SIZ AG</b></td></tr>
+        <tr><td><b>ICT-Berufsbildung</b></td><td>OdA für ICT-Berufe – Schnittstelle zu HKB E</td></tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <h3>Schulkonferenzen &amp; Schulverbünde</h3>
+      <table>
+        <tr><th>Akteur</th><th>Rolle</th></tr>
+        <tr class="highlight"><td><b>SKKBS</b> ⭐</td><td>Konferenz <b>Schulleitender</b> kaufm. Berufsfachschulen · zentraler Pull-Hebel zu KV Zürich &amp; Co.</td></tr>
+        <tr><td><b>KSHW</b></td><td>Konferenz Schweizer Handels- und Wirtschafts­mittelschulen (>50 öffentliche WMS)</td></tr>
+        <tr><td><b>VSH</b></td><td>Verband Schweiz. Handelsschulen (42 Privatschulen: AKAD, Feusi, HSO, Bénédict, ...)</td></tr>
+        <tr><td><b>kv edupool</b></td><td>Grösstes CH-Bildungsnetzwerk im kaufm. Bereich · Prüfungsorganisation · kfmv im Vorstand</td></tr>
+        <tr><td><b>KV Bildungsgruppe Schweiz</b></td><td>Verbund mehrerer KV-Schulen (Marketing/Strategie)</td></tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <h3>Lehrmittel &amp; Prüfung</h3>
+      <table>
+        <tr><th>Akteur</th><th>Rolle</th></tr>
+        <tr><td><b>Verlag SKV</b></td><td>Standard-Lehrmittel · seit 2025 zu Orell Füssli</td></tr>
+        <tr><td><b>WINGS Lehrmittel</b></td><td>Konkurrenz-Lehrmittel mit Demo-Links zu mySIZ-LZC</td></tr>
+        <tr><td><b>LERN:GALAXIE</b></td><td>Digitale Lernplattform Verlag SKV</td></tr>
+        <tr><td><b>SIZ AG</b></td><td>Lernziel-Checks · Testprüfungen · Modulprüfungen ICT</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <h2>5b · Die Schul-Ebene: Hebel direkt zu den KV-Schulen</h2>
+  <div class="lead">
+    Während BIKAS/IGKG die <b>Rahmenbedingungen</b> setzen, entscheiden die <b>Schulleitenden</b> über die operative Nutzung von Tools wie SIZ. Drei Konferenzen organisieren diese Schulleitenden – jede mit eigenem Profil.
+  </div>
+  <div class="grid grid-3">
+    <div class="card featured">
+      <span class="tag red">Direkter Hebel zu KV Zürich</span>
+      <h3>SKKBS</h3>
+      <p style="font-size:13px;color:var(--mute);margin-top:-4px">Schweiz. Konferenz der kaufmännischen Berufsfachschulen</p>
+      <p><b>Mitglieder:</b> Rektoren/Rektorinnen aller öffentlichen KV-Berufsfachschulen Schweiz (inkl. KV Zürich, KBZ SG, KBZ Zug, KV Luzern, BWZ Bern u.a.).</p>
+      <h4>Was SKKBS tut</h4>
+      <ul class="tight">
+        <li>Modernisiert die kaufm. Grundbildung wirtschaftsorientiert</li>
+        <li>Treibt Lehrpersonen-Weiterbildung, integrierte Berufsmaturität</li>
+        <li>Stellt Erfahrungen aus Schulen für andere Schulen bereit</li>
+        <li>Direkte Stellungnahmen an SBFI/BIKAS in Reformprozessen</li>
+      </ul>
+      <h4>SIZ-Bedeutung</h4>
+      <p style="font-size:13px"><b>Höchster strategischer Wert.</b> Eine Empfehlung der SKKBS für SIZ-LZC würde innerhalb von Monaten in fast allen KV-Schulen ankommen. Ziel: SKKBS-Präsidium einladen für Demo.</p>
+    </div>
+    <div class="card blue">
+      <span class="tag">Öffentliche WMS</span>
+      <h3>KSHW</h3>
+      <p style="font-size:13px;color:var(--mute);margin-top:-4px">Konferenz Schweizer Handels- und Wirtschaftsmittelschulen</p>
+      <p><b>Mitglieder:</b> Über 50 öffentliche Handels- und Wirtschaftsmittelschulen (WMS-Schulen) in der ganzen Schweiz.</p>
+      <h4>Was KSHW tut</h4>
+      <ul class="tight">
+        <li>Vernetzung der WMS-Schulen</li>
+        <li>Kooperation mit anderen Verbänden &amp; Konferenzen</li>
+        <li>Sek-II-Schulen Wirtschaft/Handel</li>
+      </ul>
+      <h4>SIZ-Bedeutung</h4>
+      <p style="font-size:13px">WMS-Lernende absolvieren ebenfalls das EFZ – mit anderem Curriculum-Weg. SIZ-Module sind hier <b>seltener</b> verankert, aber Potenzial gross. <i>Phase 2 nach SKKBS.</i></p>
+    </div>
+    <div class="card">
+      <span class="tag gold">Private Schulen</span>
+      <h3>VSH</h3>
+      <p style="font-size:13px;color:var(--mute);margin-top:-4px">Verband Schweizerischer Handelsschulen</p>
+      <p><b>Mitglieder:</b> 42 Privatschulen, gegründet 1978 in Bern – darunter AKAD, Bénédict, Feusi, HSO Wirtschaftsschule, SWS, Sport Academy Zürich.</p>
+      <h4>Was VSH tut</h4>
+      <ul class="tight">
+        <li>Praxisorientierte Ausbildungen Business/Management/Health</li>
+        <li>Eigene VSH-Diplome &amp; Prüfungen</li>
+        <li>Qualitätssicherung der Mitglieder</li>
+      </ul>
+      <h4>SIZ-Bedeutung</h4>
+      <p style="font-size:13px">Memory-Eintrag "kv edupool Pull-Strategie" definiert: VSH ist <b>Phase 1</b> nach kfmv/edupool. Hohe Konversionsrate erwartet (private Schulen entscheiden schneller).</p>
+    </div>
+  </div>
+
+  <h2>6 · BIKAS-Strategie 2030 – Kernpunkte</h2>
+  <div class="lead">
+    <b>Ambition:</b> Aus der koordinierenden "Konferenz" SKKAB soll eine starke <b>Leitorganisation</b> BIKAS werden, die alle kaufmännischen Grundbildungen steuert – mittelfristig auch Teile der Höheren Berufsbildung. Vom Vorstand beschlossen am 11.05.2023, in Kraft seit 01.01.2024.
+  </div>
+
+  <div class="grid grid-2">
+    <div class="card">
+      <h4>Strategische Handlungsfelder (SH1–5)</h4>
+      <ul class="tight">
+        <li><b>SH1:</b> Berufsentwicklung &amp; Innovation ermöglichen</li>
+        <li><b>SH2:</b> Koordinierte Umsetzung &amp; Qualität fördern</li>
+        <li><b>SH3:</b> Einbindung der Stakeholder verbessern</li>
+        <li><b>SH4:</b> Begeisterung für kaufm. Ausbildung wecken</li>
+        <li><b>SH5:</b> Organisationsentwicklung &amp; Ressourcen</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>Neue Ressorts (mit Leitung)</h4>
+      <ul class="tight">
+        <li><b>Berufsentwicklung:</b> Regula Rothen (MEM)</li>
+        <li><b>Betriebl. Bildung &amp; QV:</b> Ueli Stursberg (Handel)</li>
+        <li><b>Qualität &amp; üK:</b> Rafael Giobbi (Bank)</li>
+        <li><b>Finanzen:</b> Michel Fischer (Treuhand/Immo)</li>
+        <li><b>Kommunikation:</b> Thomas Suter (Spedition)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>Konkrete Schritte bis 2026</h4>
+      <ul class="tight">
+        <li>BIKAS übernimmt EBA-Trägerschaft von IGKG (Delegiertenversammlung 2025)</li>
+        <li>19 Branchen stärker ins operative Geschäft eingebunden</li>
+        <li>Erweiterung Vorstand um kfmv + 3 nationale Lehrbetriebe</li>
+        <li>Mittelfristig: Trägerschaft einzelner HBB-Bildungsgänge</li>
+        <li>Rollende Strategieplanung – jährliche Überprüfung</li>
+      </ul>
+    </div>
+    <div class="card soft">
+      <h4>SIZ-Bezug zur Strategie</h4>
+      <p style="font-size:13px">SH1 (Innovation), SH2 (Qualität) und SH3 (Stakeholder) sind <b>direkte Andockpunkte für SIZ</b>:</p>
+      <ul class="tight">
+        <li>Innovation durch standardisierte digitale Lernziel-Checks</li>
+        <li>Qualität durch BiVo-2023-Lernzielbezug pro Aufgabe</li>
+        <li>Stakeholder: kfmv (BIKAS-Vorstand) + Swico = SIZ-Eigentümer</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>7 · Wie steht BIKAS / IGKG zu SIZ?</h2>
+  <div class="siz-banner">
+    <h3>Der Befund: Strukturell verbunden, operativ noch unterprofiliert.</h3>
+    <p>SIZ ist über den kfmv (BIKAS-Vorstand + IGKG Co-Präsidium) und Swico institutionell mit beiden Trägerorganisationen verbunden – aber als Werkzeug für HKB E "Einsetzen von Technologien der digitalen Arbeitswelt" noch nicht systematisch im Bildungsplan verankert.</p>
+  </div>
+
+  <div class="grid grid-2">
+    <div class="card">
+      <h4>Verbindungen, die heute bestehen</h4>
+      <ul class="tight">
+        <li>kfmv ist Mit-Eigentümer SIZ und sitzt in BIKAS + IGKG Vorstand</li>
+        <li>Swico ist Mit-Eigentümer SIZ + Träger ICT-Berufsbildung</li>
+        <li>SIZ-Modulprüfungen sind in branchenspezifischen Ausbildungsplänen mehrerer Branchen referenziert</li>
+        <li>WINGS-Lehrmittel verlinkt direkt auf mySIZ-Lernziel-Checks</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>Was im Bildungsplan EFZ steht – und was nicht</h4>
+      <ul class="tight">
+        <li>HKB E ist gleich gross wie HKB D (je 160 Lekt. im 1. LJ)</li>
+        <li>240 Pflicht-Lektionen total in 1. + 2. LJ</li>
+        <li>Option Technologie 3. LJ: 120 zusätzliche Lekt. → SIZ Power-User Diplom</li>
+        <li><b>Aber:</b> kein expliziter Verweis auf SIZ im Bildungsplan – nur generische Leistungsziele</li>
+        <li>Schulen sind frei, mit welchem Tool sie HKB E umsetzen</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>Office-Kenntnisse im Plan</h4>
+      <ul class="tight">
+        <li><b>e1.bs1a:</b> Gängige Applikationen anwenden (K3)</li>
+        <li><b>e1.bs1b:</b> Aspekte beim Arbeiten in der Cloud (K2)</li>
+        <li><b>e2.bs4a:</b> Daten empfängergerecht aufbereiten (K3)</li>
+        <li><b>e3.bs1b:</b> Statistiken und Datensätze erstellen (K3)</li>
+        <li><b>e4.bs1d:</b> Gestaltungsentwurf mit Programmen erstellen (K3)</li>
+      </ul>
+      <p style="font-size:12px;color:var(--mute);margin-top:8px">→ Mapping zu SIZ-Modulen AU1–AU4 + PU41/PU45 (siehe HKB-E-Cheatsheet)</p>
+    </div>
+    <div class="card">
+      <h4>Strategisches Ziel SIZ</h4>
+      <ul class="tight">
+        <li>Verankerung in der nächsten Bildungsplan-Revision als <b>empfohlenes Umsetzungsinstrument</b> für HKB E</li>
+        <li>Listing in Anhang 1 BIKAS-Umsetzungsdokumente</li>
+        <li>Direkter Pull über kfmv-Vorstand (Bangerter, Pedrazzoli)</li>
+        <li>SKBQ-Kontakt für Qualitätsdiskussion</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>8 · Revisions-Zyklus &amp; nächste Termine</h2>
+  <div class="timeline">
+    <div class="tl-row">
+      <div class="tl-item"><span class="year">2003</span>BiVo 2003 – fachorientiert</div>
+      <div class="tl-item"><span class="year">2012</span>BiVo 2012 – Kompetenznachweis</div>
+      <div class="tl-item now"><span class="year">2023</span>BiVo 2023 – handlungs­kompetenz­orientiert · 5 HKB · in Kraft</div>
+      <div class="tl-item"><span class="year">2025</span>BIKAS-DV: EBA-Übernahme­entscheid</div>
+      <div class="tl-item future"><span class="year">2026</span>Erste Abschluss­klasse BiVo 2023 · QV-Lessons-Learned</div>
+      <div class="tl-item future"><span class="year">~2032</span>Nächste BiVo-Revision (10-Jahres-Zyklus)</div>
+    </div>
+  </div>
+  <p style="font-size:13px;color:var(--ink-soft)">Berufsbildungsverordnungen werden in der Schweiz typischerweise alle <b>~10 Jahre</b> revidiert. Anpassungen an einzelnen Lernzielen oder Anhängen sind aber laufend möglich – BIKAS hat dafür das Ressort "Berufsentwicklung" unter Regula Rothen geschaffen. <b>Fenster für SIZ-Einfluss:</b> jetzt bis 2028, bevor die nächste Revision strategisch geplant wird.</p>
+
+  <h2>9 · KV Zürich – die spezifische Situation</h2>
+  <div class="grid grid-2">
+    <div class="card">
+      <h4>Was KV Zürich macht</h4>
+      <ul class="tight">
+        <li>Verwendet den <b>nationalen Lehrplan BFS</b> direkt (kein eigener kantonaler SchuLP)</li>
+        <li>PDFs für 1./2./3. Lehrjahr auf kvz-schule.ch</li>
+        <li>HKB E: 160 + 80 = 240 Pflicht-Lektionen</li>
+        <li>Option Technologie 3. LJ: 120 Lekt.</li>
+        <li>Eigener Zusatz: Sonderwoche Mobilität (Fremdsprachen)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>Was das für die Sitzung 22.05.2026 bedeutet</h4>
+      <ul class="tight">
+        <li>Lehrpersonen unterrichten nach <b>nationalem</b> Lehrplan – keine Zürich-Sonderregeln</li>
+        <li>Argumentation kann 1:1 auf alle CH-KV-Schulen übertragen werden</li>
+        <li>Kantonal abgestimmte Schullehrpläne machen <b>nur Bern</b> – Zürich noch nicht</li>
+        <li>→ Pilot in Zürich = Referenzfall für ganze Deutschschweiz</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>10 · Dokumenten-Hub</h2>
+  <h3>Offizielle Erlasse</h3>
+  <div class="docs-grid">
+    <div class="doc"><a href="https://www.fedlex.admin.ch/eli/cc/2021/495/de" target="_blank">Bildungsverordnung Kauffrau/Kaufmann EFZ (SBFI)</a><span class="src">fedlex.ch</span></div>
+    <div class="doc"><a href="https://igkg.ch/download/bildungsplan-efz-ab-2023/" target="_blank">Bildungsplan EFZ ab 2023 (1.87 MB)</a><span class="src">igkg.ch</span></div>
+    <div class="doc"><a href="https://www.bikas.ch/fachinformationen/dokumente-bivo-2023/" target="_blank">Dokumente BiVo 2023 (Übersicht)</a><span class="src">bikas.ch</span></div>
+    <div class="doc"><a href="https://www.admin.ch/de/nsb?id=84720" target="_blank">SBFI-Mitteilung neue kaufm. Grundbildung 2023</a><span class="src">admin.ch</span></div>
+  </div>
+
+  <h3>Nationale Lehrpläne (Berufsfachschule)</h3>
+  <div class="docs-grid">
+    <div class="doc"><a href="https://www.kvz-schule.ch/fileadmin/data/dokumente/bildungsangebot/grundbildung/efz/lehrplaene/nationaler_lehrplan_berufsfachschule_kauffrau-kaufmann_efz_1._lehrjahr.pdf" target="_blank">Nationaler Lehrplan BFS – 1. Lehrjahr</a><span class="src">kvz-schule.ch</span></div>
+    <div class="doc"><a href="https://www.kvz-schule.ch/bildungsangebot/grundbildung/kauffrau/kaufmann-efz" target="_blank">KV Zürich – KV EFZ Übersicht</a><span class="src">kvz-schule.ch</span></div>
+    <div class="doc"><a href="https://www.bikas.ch/fachinformationen/gb2023/" target="_blank">Umsetzung ab 2023 (BIKAS)</a><span class="src">bikas.ch</span></div>
+    <div class="doc"><a href="https://igkg.ch/kauffrau-kaufmann-efz-dienstleistung-und-administration/grundlagendokumente/" target="_blank">IGKG D&amp;A – Grundlagendokumente</a><span class="src">igkg.ch</span></div>
+  </div>
+
+  <h3>Strategie &amp; Gremien</h3>
+  <div class="docs-grid">
+    <div class="doc"><a href="https://www.bikas.ch/download/skkab-strategie-2030/" target="_blank">SKKAB/BIKAS Strategie 2030 (PDF)</a><span class="src">bikas.ch</span></div>
+    <div class="doc"><a href="https://www.bikas.ch/ueber-uns/" target="_blank">BIKAS Vorstand &amp; Mitglieder</a><span class="src">bikas.ch</span></div>
+    <div class="doc"><a href="https://igkg.ch/ueber-uns/vorstand/" target="_blank">IGKG Vorstand</a><span class="src">igkg.ch</span></div>
+    <div class="doc"><a href="https://www.bikas.ch/fachinformationen/skbq-kaufleute/" target="_blank">SKBQ Kaufleute EBA und EFZ</a><span class="src">bikas.ch</span></div>
+  </div>
+
+  <h3>Verbände &amp; Sozialpartner</h3>
+  <div class="docs-grid">
+    <div class="doc"><a href="https://www.kfmv.ch/wissen/lehre/reform-kv-lehre" target="_blank">kfmv – Reform der KV-Lehre</a><span class="src">kfmv.ch</span></div>
+    <div class="doc"><a href="https://www.kfmv.ch/ueber-uns/engagement/berufsbildung" target="_blank">kfmv – Engagement Berufsbildung</a><span class="src">kfmv.ch</span></div>
+    <div class="doc"><a href="https://verlagskv.ch/" target="_blank">Verlag SKV (Lehrmittel)</a><span class="src">verlagskv.ch</span></div>
+    <div class="doc"><a href="https://www.swissbanking.ch/_Resources/Persistent/3/5/7/2/3572d74b83604a2ab884ebd33be0960895c3ed6d/SBV_Guide_Kauffrau_Kaufmann_DE_2024_01_30.pdf" target="_blank">Guide Branche Bank (SBV)</a><span class="src">swissbanking.ch</span></div>
+  </div>
+
+  <h3>Schulkonferenzen &amp; Vollzug</h3>
+  <div class="docs-grid">
+    <div class="doc"><a href="https://www.skkbs-csepc.ch/home" target="_blank">SKKBS – Konferenz kaufm. Berufsfachschulen</a><span class="src">skkbs-csepc.ch</span></div>
+    <div class="doc"><a href="https://www.kshw.ch/de/" target="_blank">KSHW – Handels- und Wirtschaftsmittelschulen</a><span class="src">kshw.ch</span></div>
+    <div class="doc"><a href="https://vsh-asec.ch/" target="_blank">VSH – Privatschulen Schweiz</a><span class="src">vsh-asec.ch</span></div>
+    <div class="doc"><a href="https://www.edk.ch/de/sbbk/" target="_blank">SBBK – Berufsbildungsämter-Konferenz</a><span class="src">edk.ch</span></div>
+    <div class="doc"><a href="https://www.sdbb.ch/berufsbildung/mehr-erfahren" target="_blank">SDBB – Dienstleistungszentrum Berufsbildung</a><span class="src">sdbb.ch</span></div>
+    <div class="doc"><a href="https://www.edk.ch/" target="_blank">EDK – Konferenz Erziehungsdirektoren</a><span class="src">edk.ch</span></div>
+  </div>
+
+  <h2>11 · Glossar &amp; Abkürzungen</h2>
+  <table>
+    <tr><th style="width:14%">Kürzel</th><th>Bedeutung</th></tr>
+    <tr><td><b>BIKAS</b></td><td>Bildung Kaufleute Schweiz (vormals SKKAB seit 2024) – Träger Kauffrau/Kaufmann EFZ</td></tr>
+    <tr><td><b>BiVo</b></td><td>Bildungsverordnung – vom SBFI erlassen, regelt Inhalte und Dauer einer Grundbildung</td></tr>
+    <tr><td><b>BiPla</b></td><td>Bildungsplan – Detailregelung der Lernziele und Lektionen, vom SBFI genehmigt</td></tr>
+    <tr><td><b>Dach-OdA</b></td><td>Organisationen der Arbeitswelt auf Dachebene (kfmv, SAV, sgv) – Sozialpartner</td></tr>
+    <tr><td><b>D&amp;A</b></td><td>Branche Dienstleistung &amp; Administration – grösste der 19 EFZ-Branchen, von IGKG getragen</td></tr>
+    <tr><td><b>EBA</b></td><td>Eidg. Berufsattest – 2-jährige Grundbildung (kürzer als EFZ)</td></tr>
+    <tr><td><b>EDK</b></td><td>Schweizerische Konferenz der kantonalen Erziehungsdirektoren</td></tr>
+    <tr><td><b>EFZ</b></td><td>Eidg. Fähigkeitszeugnis – 3-jährige Grundbildung (klassische Berufslehre)</td></tr>
+    <tr><td><b>EHB</b></td><td>Eidg. Hochschule für Berufsbildung – Ausbildung der Berufsbildungsverantwortlichen</td></tr>
+    <tr><td><b>HBB</b></td><td>Höhere Berufsbildung (Berufsprüfungen, Höhere Fachprüfungen, Höhere Fachschulen)</td></tr>
+    <tr><td><b>HKB</b></td><td>Handlungskompetenzbereich – BiVo 2023 kennt 5 HKBs (A–E)</td></tr>
+    <tr><td><b>IGKG Schweiz</b></td><td>Interessengemeinschaft Kaufmännische Grundbildung – Träger EBA + Branche D&amp;A</td></tr>
+    <tr><td><b>KSHW</b></td><td>Konferenz Schweizer Handels- und Wirtschaftsmittelschulen (öffentlich, >50 WMS)</td></tr>
+    <tr><td><b>kfmv</b></td><td>Kaufmännischer Verband Schweiz – Sozialpartner, Mit-Eigentümer SIZ AG</td></tr>
+    <tr><td><b>OdA</b></td><td>Organisation der Arbeitswelt – Trägerorganisation eines Berufs</td></tr>
+    <tr><td><b>QV</b></td><td>Qualifikationsverfahren – Abschlussprüfung am Ende der Grundbildung</td></tr>
+    <tr><td><b>SAV</b></td><td>Schweizerischer Arbeitgeberverband</td></tr>
+    <tr><td><b>SBBK</b></td><td>Schweiz. Berufsbildungsämter-Konferenz – 26 kantonale Ämter, Fachkonferenz EDK</td></tr>
+    <tr><td><b>SBFI</b></td><td>Staatssekretariat für Bildung, Forschung und Innovation (Bund)</td></tr>
+    <tr><td><b>SchuLP</b></td><td>Schullehrplan – schul- oder kantonsspezifische Umsetzung des nationalen Lehrplans</td></tr>
+    <tr><td><b>SDBB</b></td><td>Schweiz. Dienstleistungszentrum Berufsbildung &amp; Berufsberatung – berufsberatung.ch</td></tr>
+    <tr><td><b>sgv</b></td><td>Schweizerischer Gewerbeverband</td></tr>
+    <tr><td><b>SKBQ</b></td><td>Schweiz. Kommission Berufsentwicklung und Qualität – gemeinsam BIKAS+IGKG</td></tr>
+    <tr><td><b>SKKBS</b></td><td>Schweiz. Konferenz der kaufmännischen Berufsfachschulen – Schulleiter-Konferenz ⭐</td></tr>
+    <tr><td><b>Swico</b></td><td>Verband der ICT-Anbieter Schweiz – Mit-Eigentümer SIZ AG</td></tr>
+    <tr><td><b>üK / ÜK</b></td><td>Überbetriebliche Kurse – branchenspezifische Praxis-Kurse, von OdA organisiert</td></tr>
+    <tr><td><b>VSH</b></td><td>Verband Schweizerischer Handelsschulen (privat) – 42 Mitglieder (AKAD, Feusi, ...)</td></tr>
+    <tr><td><b>WMS</b></td><td>Wirtschaftsmittelschule – Sekundarstufe-II-Schule, alternativer Weg zum KV-EFZ</td></tr>
+  </table>
+
+  <footer>
+    <div>SIZ AG · KV-EFZ-Landschaft · vertraulich</div>
+    <div>Stand 11.05.2026 · Quellen: BIKAS, IGKG, kvz-schule.ch, fedlex, kfmv</div>
+  </footer>
+
+</div>
+</body>
+</html>
