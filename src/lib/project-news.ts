@@ -26,6 +26,39 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 2026-05-13
+      {
+        summary: "alice.ch / SVEB (März 2026): 'Bildungsbericht 2026: Ungleichheit in der Weiterbildung' – Der Schweizerische Verband für Weiterbildung (SVEB) analysiert die Befunde des Bildungsberichts Schweiz 2026: Weiterbildungspartizipation ist stark von Bildungsstand und Erwerbssituation abhängig; fast jede fünfte Person mit Migrationshintergrund bleibt langfristig geringqualifiziert; betriebliche Unterstützung (Finanzierung, Freistellung) begünstigt selektiv bereits Gutqualifizierte. Die strukturelle Ungleichheit bei der Weiterbildungspartizipation erhöht den gesellschaftlichen Druck auf modulare, niedrigschwellige Qualifizierungsformate – direktes Marktumfeld für SIZ AG als stufenweiser ICT-Prüfungsanbieter.",
+        source: "alice.ch",
+        url: "https://alice.ch/de/news/bildungsbericht-2026-ungleichheit-in-der-weiterbildung/",
+        date: "2026-03",
+        category: "Bildungspolitik",
+        addedAt: "2026-05-13",
+      },
+      {
+        summary: "travailsuisse.ch (25. März 2026): 'Bildungsbericht Schweiz 2026: Warnsignale für die Berufsbildung' – TravailSuisse (Arbeitnehmerverband, 170'000 Mitglieder) kommentiert den Bildungsbericht Schweiz 2026 und ortet Warnsignale: Stagnation bei Abschlussquoten Sek. II, sinkende Zahl ausbildender Betriebe, Rückgang schulischer Kompetenzen bei Lernbeginn (minus eine Schulklasse in 10 Jahren), eingeschränkte Durchlässigkeit zum Tertiärbereich. TravailSuisse fordert konkrete politische Massnahmen zur Stärkung der Berufsbildung. Die politisch formulierten Reformforderungen im Berufsbildungsbereich schaffen Investitionsdruck – direktes Wachstumsumfeld für SIZ AG als Modernisierungsakteur in der Schweizer ICT-Bildungslandschaft.",
+        source: "travailsuisse.ch",
+        url: "https://www.travailsuisse.ch/de/bildung/2026-03-25/bildungsbericht-schweiz-2026-warnsignale-fuer-die-berufsbildung",
+        date: "2026-03-25",
+        category: "Bildungspolitik",
+        addedAt: "2026-05-13",
+      },
+      {
+        summary: "SBFI / news.admin.ch (März 2026): 'Lehrstellenmarkt 2026: stabile Situation zum Jahresbeginn' – Das Staatssekretariat für Bildung, Forschung und Innovation (SBFI) meldet: Per Ende März 2026 wurden gesamtschweizerisch rund 42'000 Lehrverträge abgeschlossen – leicht mehr als im Vorjahr; ca. 20'000 Lehrstellen noch ausgeschrieben. Die Tripartite Berufsbildungskonferenz (TBBK) überwacht die Lage quartalsweise mit den Kantonen. Ein stabiler und leicht wachsender Lehrstellenmarkt signalisiert eine nachhaltige Ausbildungsdynamik – positives Grundumfeld für SIZ AG als ICT-Prüfungsanbieter im Schweizer Berufsbildungsmarkt.",
+        source: "news.admin.ch",
+        url: "https://www.news.admin.ch/de/newnsb/zko_dheXVUvSLA6e89Nzy",
+        date: "2026-03",
+        category: "Bildungspolitik",
+        addedAt: "2026-05-13",
+      },
+      {
+        summary: "SBFI (2026): 'Lehrstellen 2026: Stabilität und Perspektiven' – Das SBFI publiziert seinen Bericht zu Stabilität und Perspektiven im Schweizer Lehrstellenmarkt 2026: ICT-Berufe gehören zu den meistgesuchten Ausbildungsberufen; Digitalisierung und KI prägen Anforderungsprofile neu; strukturell stabile Lehrstellensituation trotz demografischer Herausforderungen. Die langfristig stabile Lehrstellensituation in ICT-Berufen bestätigt nachhaltige Nachfrage nach SIZ-Qualifizierungen als anerkannten Prüfungsstandards im Schweizer Berufsbildungssystem.",
+        source: "sbfi.admin.ch",
+        url: "https://www.sbfi.admin.ch/de/newnsb/OVkVyzcAcyws7JijZucf7",
+        date: "2026",
+        category: "Bildungspolitik",
+        addedAt: "2026-05-13",
+      },
       // Neu: 2026-05-12
       {
         summary: "ict-berufsbildung.ch (März 2026): 'ICT-Diplomfeier 2026: Die höhere Berufsbildung bleibt wichtig für den Schweizer Arbeitsmarkt' – An der ICT-Diplomfeier vom 27. März 2026 erhielten 145 von 235 Kandidatinnen und Kandidaten ihre eidgenössischen Fachausweise als Cyber Security Specialists, ICT-Platform Development Specialists und Information Security Manager. Marc Marthaler, Geschäftsführer ICT-Berufsbildung Schweiz: 'Die höhere Berufsbildung schafft hochqualifizierte Fachkräfte, die sofort produktiv sind.' Direktes Validierungssignal für den Stellenwert formalisierter ICT-Zertifizierungen im Schweizer Arbeitsmarkt – positives Marktumfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation.",
@@ -2609,6 +2642,47 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 2026-05-13
+      {
+        summary: "daytradingtoolkit.com (Mai 2026): 'PDT Rule Eliminated 2026 – Complete Guide' – Day Trading Toolkit veröffentlicht umfassenden Leitfaden zur historischen PDT-Regelabschaffung: Die $25'000-Mindestkapitalanforderung entfällt ab 4. Juni 2026; neue Intraday Margin Level (IML)-Berechnung koppelt Margins an die tatsächliche Marktexposition; 90-Tage-Beschränkung und 4-Trades-in-5-Tagen-Regel entfallen vollständig. ES Futures und andere Futures-Märkte profitieren von massiv gesteigertem Retail-Trader-Zufluss aus dem Aktienbereich. Die Öffnung des US-Day-Trading-Markts ist ein struktureller Nachfragesog für professionelle Futures-Strategien – direktes Wachstumsumfeld für mindrocket-trading.com.",
+        source: "daytradingtoolkit.com",
+        url: "https://daytradingtoolkit.com/market-insights/pdt-rule-eliminated-2026-complete-guide/",
+        date: "2026-05",
+        category: "Regulierung",
+        addedAt: "2026-05-13",
+      },
+      {
+        summary: "academy.tradeology.app (April 2026): 'The PDT Rule Is Being Eliminated: What Changes June 4, 2026' – TradeOlogy Academy erklärt die PDT-Regelabschaffung im Detail: SEC genehmigte FINRAs Vorschlag am 14. April 2026; Inkrafttreten am 4. Juni 2026; Übergangszeit bis Oktober 2027 für einzelne Broker; Futures-Trader sind strukturell bevorzugt, da ES Futures bereits immer unbegrenzt tradebar waren und spezifische Vorteile (Section 1256-Besteuerung, 23h/Tag Handel, Leverage-Flexibilität) behalten. Die Regelabschaffung validiert ES Futures als attraktivste Asset-Klasse für aktive Trader – direktes Marktumfeld für algorithmische Futures-Strategien auf mindrocket-trading.com.",
+        source: "academy.tradeology.app",
+        url: "https://academy.tradeology.app/day-trading/pdt-rule-explained",
+        date: "2026-04",
+        category: "Regulierung",
+        addedAt: "2026-05-13",
+      },
+      {
+        summary: "quantinsti.com (2026): 'FINRA PDT Rule Removal 2026: What US Traders Need to Know' – QuantInsti, führende Plattform für algorithmisches Trading-Education, analysiert die FINRA-PDT-Regelabschaffung: Detaillierte IML-Mechanismen; Implikationen für Prop Firms, Retail Trader und algorithmische Systeme; ES Futures bleiben attraktivste Klasse für systematisches Day Trading. Die Breite der institutionellen Medienresonanz signalisiert einen Paradigmenwechsel im Retail Trading – wachsendes Nachfrageumfeld für qualitativ hochwertige Futures-Strategien und Trading-Bildung auf mindrocket-trading.com.",
+        source: "quantinsti.com",
+        url: "https://www.quantinsti.com/articles/finra-pdt-rule-removal-2026/",
+        date: "2026-04",
+        category: "Regulierung",
+        addedAt: "2026-05-13",
+      },
+      {
+        summary: "angelinvestorsnetwork.com (2026): 'Pattern Day Trader Rule Eliminated: SEC 2026 Impact' – Angel Investors Network analysiert die Auswirkungen der PDT-Abschaffung auf das gesamte Trading-Ökosystem: Zugang für Kleinanleger dramatisch erleichtert; strukturell steigende Nachfrage nach Trading-Strategien und -Bildung; Prop Firms wie Apex Trader Funding profitieren von grösserem Trader-Pool. Der historische Zugang-Durchbruch für Retail-Trader erhöht strukturell die Nachfrage nach professionellen ES-Futures-Strategien und Trading-Guidance – direktes Wachstumsumfeld für mindrocket-trading.com.",
+        source: "angelinvestorsnetwork.com",
+        url: "https://angelinvestorsnetwork.com/regulatory-compliance/pattern-day-trader-rule-eliminated-sec-2026-implications",
+        date: "2026-04",
+        category: "Regulierung",
+        addedAt: "2026-05-13",
+      },
+      {
+        summary: "tradezero.com (2026): 'The $25,000 Day Trading Minimum Is Gone. Here's What It Means for You.' – TradeZero-Blog erklärt die praktischen Konsequenzen der PDT-Abschaffung für Retail-Trader: $25'000-Mindestanforderung entfällt ab 4. Juni 2026; neue IML-Regeln ersetzen die starre PDT-Grenze; Futures-spezifische Vorteile (Section 1256-Steuervorteile, 23h-Handelsfenster, hohe Leverage-Flexibilität) bleiben vollständig bestehen und machen ES Futures auch nach PDT-Abschaffung zur attraktivsten Day-Trading-Klasse. Breite Trader-Community-Kommunikation zur Regelabschaffung signalisiert massive Marktbelebung – direktes Wachstumsumfeld für ES-Futures-Strategien auf mindrocket-trading.com.",
+        source: "tradezero.com",
+        url: "https://tradezero.com/en-us/blog/the-usd25-000-day-trading-minimum-is-gone-here-s-what-it-means-for-you",
+        date: "2026-04",
+        category: "Regulierung",
+        addedAt: "2026-05-13",
+      },
       // Neu: 2026-05-12
       {
         summary: "brokerchooser.com (2026): 'NinjaTrader Review 2026 – #1 Futures Broker & Algo Trading' – BrokerChooser kürte NinjaTrader 2026 zum #1 Futures Broker: 1,9 Millionen Nutzer weltweit, NinjaScript C#-Framework für automatisierte Strategien, umfangreicher Marktplatz für Third-Party-Tools. Advanced Trade Management (ATM) Strategies werden von den meisten Prop Firms akzeptiert und gelten als 'Geheimwaffe für Prop Trader'. NinjaTrader bleibt 2026 das führende Ökosystem für ES-Futures-Händler und algorithmische Strategien – zentrales Tool im Umfeld von Mind Rocket Trading.",
@@ -13718,6 +13792,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 2026-05-13
+      {
+        summary: "managerSeminare (2024/2025): 'Lernkultur fördern | Die Learnfluencer' – managerSeminare, eines der führenden deutschsprachigen Fachmagazine für Personal- und Organisationsentwicklung, hat das Konzept der Learnfluencer als eigenständigen redaktionellen Fachartikel aufgegriffen: Learnfluencer stärken die intrinsische Lernmotivation der Mitarbeitenden, verknüpfen individuelles und kollektives Lernen und etablieren eigenverantwortliche Lernkulturen; Abgrenzung zu Mentor- und Expertenrollen durch systemischen Lernkulturansatz. Die Aufnahme des Learnfluencer-Begriffs im führenden deutschsprachigen Managementmagazin bestätigt den DACH-Mainstream-Durchbruch des Konzepts – direktes Positionierungsumfeld für learnfluencer.ch als Thought-Leadership-Plattform für Lernkompetenz und digitale Bildung.",
+        source: "managerseminare.de",
+        url: "https://www.managerseminare.de/ms_Artikel/Lernkultur-foerdern-Die-Learnfluencer,284702",
+        date: "2025",
+        category: "Content & Thought Leadership",
+        addedAt: "2026-05-13",
+      },
       // Neu: 2026-05-12
       {
         summary: "digitalengagiert.de (2026): 'E-Learning in 2026: Trends, KI & digitale Bildung' – Umfassende Analyse der E-Learning-Transformation 2026: KI analysiert individuelles Lernverhalten und passt Inhalte dynamisch an; globaler E-Learning-Markt überschreitet 400 Milliarden USD; personalisierte Lernpfade ersetzen starre Kurspfade. Arbeitnehmer benötigen zunehmend KI-Systemkenntnisse, Datenanalyse und digitale Kommunikation als Kernkompetenz. Die rasante digitale Transformation des Lernmarkts bestätigt den Bedarf an Thought-Leadership für Lernkompetenz und KI – direktes Kernumfeld für learnfluencer.ch.",
