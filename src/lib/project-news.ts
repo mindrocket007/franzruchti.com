@@ -5746,6 +5746,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 2026-05-13
+      {
+        summary: "buchmarkt.de (5. März 2026): 'Deutschschweizer Buchmarkt schliesst 2025 mit leichtem Umsatzplus ab' – Der Deutschschweizer Buchmarkt erzielte 2025 einen Gesamtumsatz von CHF 581,8 Mio. (+1,1 % ggü. Vorjahr); 18,5 Mio. Bücher inkl. E-Books verkauft (+0,3 %); Wachstum in stationärem und Online-Handel; starkes Weihnachtsgeschäft (+10,9 % im Dezember) als Haupttreiber. Leichtes Marktplus im Schweizer Buchhandel zeigt strukturelle Stabilität des DACH-Buchmarkts – positives Grundumfeld für PDF-Buchverkauf und digitale Selbsthilfe-Inhalte wie mindtools.ch.",
+        source: "buchmarkt.de",
+        url: "https://buchmarkt.de/2026/03/05/deutschschweizer-buchmarkt-hat-2025-mit-leichtem-umsatzplus-abgeschlossen/",
+        date: "2026-03-05",
+        category: "Buchmarkt & Publishing",
+        addedAt: "2026-05-13",
+      },
+      {
+        summary: "apa.org (Januar/Februar 2026): 'AI, Neuroscience and Data Are Fueling Personalized Mental Health Care' – Die American Psychological Association beschreibt, wie KI und Neurowissenschaft 2026 hochgradig personalisierte mentale Gesundheitsversorgung ermöglichen: Wearables, App-Daten und Hirnscans werden kombiniert; generative KI-Chatbots wie Therabot liefern skalierbare Unterstützung bei Symptomspitzen; Fokus verschiebt sich von Krisenintervention zu proaktiver Prävention. Technologischer Paradigmenwechsel in der Mental-Health-Versorgung validiert datengestützte mentale Werkzeuge – direktes Wachstumsumfeld für mindtools.ch.",
+        source: "apa.org",
+        url: "https://www.apa.org/monitor/2026/01-02/trends-personalized-mental-health-care",
+        date: "2026-01",
+        category: "Mental Health",
+        addedAt: "2026-05-13",
+      },
+      {
+        summary: "Frontiers in Digital Health (2026): 'Mental health outcomes and use of online mental health tools following a public health deployment of the mindfulness meditation app Headspace' – Frontiers-Studie belegt positive Auswirkungen auf psychische Gesundheit durch Einsatz digitaler Achtsamkeits-Tools in einer öffentlichen Gesundheitsintervention; Headspace-Nutzung korreliert mit messbaren Verbesserungen bei Stress und Wohlbefinden. Wissenschaftliche Validierung von Online-Mental-Health-Tools stärkt die Glaubwürdigkeit des gesamten Segments – direktes Marktumfeld für mindtools.ch.",
+        source: "frontiersin.org",
+        url: "https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2026.1793455/full",
+        date: "2026",
+        category: "Mental Health",
+        addedAt: "2026-05-13",
+      },
       // Neu: 2026-05-12
       {
         summary: "mentalhealth-gmbh.ch (2026): 'Mental Health GmbH – Kurse für psychische Gesundheit in der Schweiz' – Die Mental Health GmbH Schweiz bietet spezialisierte Kurse zur Förderung psychischer Gesundheit an: präventive Angebote für Einzelpersonen und Unternehmen, Fokus auf mentale Stärke, Resilienz und Selbsthilfe-Kompetenzen. Das wachsende spezialisierte Angebot im Bereich mentale Werkzeuge und Selbsthilfe in der Schweiz bestätigt die strukturelle Nachfrage – direktes positives Marktumfeld für mindtools.ch als Anbieter digitaler mentaler Werkzeuge.",
@@ -9558,6 +9583,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 2026-05-13
+      {
+        summary: "northlyapp.com (2026): 'OKR Methode: Der komplette Leitfaden 2026' – Northly analysiert die OKR-Methode als quartalsweisen Regelkreis: 2–5 Objectives pro Team, 2–5 Key Results als messbare Indikatoren, wöchentliche Check-ins und Quarterly Resets als Kernstruktur; Unternehmen mit OKR-Rahmen sind 3,5-fach erfolgreicher als Konkurrenten ohne strukturierte Zielplanung. Wachsende OKR-Adoption im DACH-Markt schafft Nachfrage nach niedrigschwelligen Planungstools – direktes Wachstumsumfeld für den 12wy-planner als strukturiertes Quartalsplanungs-SaaS.",
+        source: "northlyapp.com",
+        url: "https://northlyapp.com/de/blog/okr-methode-komplett-leitfaden/",
+        date: "2026",
+        category: "Zielsetzung & OKR",
+        addedAt: "2026-05-13",
+      },
+      {
+        summary: "monday.com (Mai 2026): '14 Best Planner Apps for 2026: Tools That Scale With Your Work' – monday.com listet die 14 besten digitalen Planner-Apps 2026: KI-Features, Integrationen und kollaboratives Tracking sind entscheidende Differenzierungsmerkmale; globaler Produktivitäts-App-Markt 2026 auf USD 14,46 Mrd. geschätzt, bis 2034 Wachstum auf 30,85 Mrd. (CAGR 9,94%). Starkes Marktmomentum für Zielplanungs-SaaS bestätigt das Wachstumspotenzial des 12wy-planners als spezialisiertes 12-Week-Year-Tool.",
+        source: "monday.com",
+        url: "https://monday.com/blog/project-management/goal-management-software/",
+        date: "2026-05",
+        category: "SaaS & Tools",
+        addedAt: "2026-05-13",
+      },
+      {
+        summary: "12week-breakthrough.com (2026): 'The Complete 12-Week Year Implementation Guide for 2026' – Detaillierter Praxisleitfaden zur 12-Week-Year-Methode mit Fokus auf KI-Integration 2026: KI automatisiert Leading-Indicator-Tracking und generiert wöchentliche Fortschrittsberichte; häufigste Fehler (zu viele Ziele, unklare Metriken, fehlende Wochenschnitte) und Lösungen; Notion-, Excel- und Web-Templates als Einstiegspunkt. Wachsendes Content-Ökosystem rund um die 12WY-Methode treibt organische Nachfrage für dedizierte SaaS-Tools wie den 12wy-planner.",
+        source: "12week-breakthrough.com",
+        url: "https://12week-breakthrough.com/implementation-guide-2026-12-week-year/",
+        date: "2026",
+        category: "12 Week Year Methode",
+        addedAt: "2026-05-13",
+      },
       // Neu: 2026-05-12
       {
         summary: "beyondtime.ai (2026): 'The 12-Week Year: Why Quarterly Planning Beats Annual Goals' – Beyond Time AI analysiert, warum die 12-Week-Year-Methode (Brian Moran) die Jahresplanung übertrifft: Vier frische Starts pro Jahr, kürzere Feedback-Schleifen für schnellere Kurskorrektur, jede Woche zählt bei nur 12 Wochen Horizont. KI-Tools übernehmen 2026 automatisch das Tracking von Leading Indicators und generieren wöchentliche Fortschrittsberichte. Integration von KI in 12-Week-Year-Workflows steigert die Attraktivität passender SaaS-Planungstools wie dem 12wy-planner.",
@@ -11100,6 +11150,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 2026-05-13
+      {
+        summary: "heute.at (2026): 'Peinliches Problem vieler Männer – neue App soll helfen' – Auf dem EAU26-Kongress (Europäische Gesellschaft für Urologie, London) wurden Ergebnisse einer klinischen Studie mit 80 Männern präsentiert: Ein 12-wöchiges Programm aus Achtsamkeit und Verhaltenstherapie verdoppelte die durchschnittliche Zeit bis zur Ejakulation von 61 auf 125 Sekunden; 22 % der Teilnehmer berichteten danach keinerlei Probleme mehr. Wissenschaftliche Kongressergebnisse stärken das Vertrauen in psychologisch-basierte Selbsthilfeansätze wie das Hypnose-Audio von orgasmus-hinauszoegern.de.",
+        source: "heute.at",
+        url: "https://www.heute.at/s/neue-app-hilft-maennern-bei-vorzeitigem-samenerguss-120170355",
+        date: "2026",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-05-13",
+      },
+      {
+        summary: "Walk In Ruhr / wir-ruhr.de (19. Februar 2026): 'Tabubruch ist online – Digitale Plattform zur Sexuellen Gesundheit' – Walk In Ruhr lanciert eine digitale Informationsplattform zu sexueller Gesundheit: wissenschaftlich fundiert, inklusiv und barrierearm aufbereitet; Tabuisierung als zentrales gesellschaftliches Problem adressiert; niedrigschwelliger Online-Zugang zu Informationen zu sexuellen Themen als neue Norm. Entstigmatisierung sexueller Gesundheitsthemen durch digitale Plattformen schafft gesellschaftliche Akzeptanz für Selbsthilfe-Produkte – direktes positives Marktumfeld für orgasmus-hinauszoegern.de.",
+        source: "wir-ruhr.de",
+        url: "https://www.wir-ruhr.de/2026/02/19/tabubruch-ist-online-digitale-plattform-zur-sexuellen-gesundheit/",
+        date: "2026-02-19",
+        category: "Digital Health",
+        addedAt: "2026-05-13",
+      },
+      {
+        summary: "richestsoft.com (2026): 'Sexuelle Wellness-Trends, die man 2026 im Auge behalten sollte' – Analyse der Sexual-Wellness-Trends 2026: Virtuelle Therapie und Coaching werden Mainstream; Apps bieten maßgeschneiderte Unterstützung für sexuelle Gesundheit und Aufklärung; bis 2026 gilt sexuelles Wohlbefinden als wichtiger Gesundheitsschwerpunkt, nicht mehr als Tabuthema. Globaler Trend zur Enttabuisierung und Digitalisierung sexueller Gesundheit bestätigt wachsende Nachfrage – direktes Marktumfeld für orgasmus-hinauszoegern.de.",
+        source: "richestsoft.com",
+        url: "https://richestsoft.com/de/blog/sexual-wellness-trends/",
+        date: "2026",
+        category: "Digital Health",
+        addedAt: "2026-05-13",
+      },
       // Neu: 2026-05-12
       {
         summary: "noack-hypnose.de (2026): 'Ejaculatio Praecox – Aufklärung, Tipps, Hilfe' – NOACK Hypnotherapie Berlin & online erklärt Ursachen und Behandlung von Ejaculatio praecox: Ursachen in Psyche, Chemie und Verhalten; Hypnosetherapie als wirksamer Ansatz mit Erfolgsrate von ca. 83% laut 2018-Studie (2–3 Sessions für merkliche Verbesserungen). Die zunehmende Online-Sichtbarkeit von Hypnosetherapie-Angeboten für Ejaculatio praecox zeigt wachsende Nachfrage nach niedrigschwelligen Selbsthilfealternativen – direktes Marktumfeld für orgasmus-hinauszoegern.de.",
@@ -12382,6 +12457,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 2026-05-13
+      {
+        summary: "furios-campus.de (22. April 2026): 'Neues Semester, gleiche Angst: Wie wir mit Nervosität und Redeangst im Studium klarkommen' – Campus-Magazin der FU Berlin berichtet über Redeangst als persistentes Problem im Studium; Interview mit Psychologischem Beratungsdienst der FU Berlin; Angst vor Referaten und Seminarteilnahme als verbreitetes Phänomen; praktische Handlungsempfehlungen aus der Hochschulpsychologie. Hochschulmedien thematisieren Redeangst als Studienproblem – direktes Nachfrageumfeld für niedrigschwellige Selbsthilfe-Angebote wie lampenfieber-besiegen.de.",
+        source: "furios-campus.de",
+        url: "https://furios-campus.de/2026/04/22/neues-semester-gleiche-angst-wie-wir-mit-nervositaet-und-redeangst-im-studium-klarkommen/",
+        date: "2026-04-22",
+        category: "Psychologie & Forschung",
+        addedAt: "2026-05-13",
+      },
+      {
+        summary: "ad-hoc-news.de (19. Januar 2026): 'KI und VR besiegen die Angst vor dem Reden' – KI-gestützte Analyse-Tools und VR-Anwendungen revolutionieren das Rhetorik-Training: Apps ermöglichen 10-minütige 'Warm-up-Speaks' vor wichtigen Terminen; KI übernimmt technische Ausführungsanalyse (Stimme, Tempo, Blickkontakt), während Human-Coaching auf Authentizität und Storytelling fokussiert; Arbeitsmarktexperten 2026: emotionale Intelligenz und Überzeugungskraft als 'härteste Währung' im Beruf. Technologischer Aufwärtstrend im Bereich Redekompetenz bestätigt die breite gesellschaftliche Nachfrage – direktes Wachstumsumfeld für lampenfieber-besiegen.de.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/ki-und-vr-besiegen-die-angst-vor-dem-reden/68500034",
+        date: "2026-01-19",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-05-13",
+      },
+      {
+        summary: "gedankenportal.de (2026): 'Hypnose gegen Ängste 2026: Alles, was du wissen musst' – Umfassender Ratgeber zu Hypnose gegen Angststörungen inkl. Lampenfieber: neue Studien 2026 bestätigen langfristige Stabilität der Hypnose-Ergebnisse; 3–4 Sitzungen reichen oft für spürbare Erleichterung; Hypnose identifiziert spezifische Auslöser und Glaubenssätze; Selbsthypnose als begleitende Alltagsmethode. Aktuelle Forschungsbestätigung der Hypnose-Wirksamkeit bei Angst stärkt die Glaubwürdigkeit von Audio-Selbsthypnose-Produkten – direktes Marktumfeld für lampenfieber-besiegen.de.",
+        source: "gedankenportal.de",
+        url: "https://gedankenportal.de/hypnose-gegen-aengste/",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-05-13",
+      },
       // Neu: 2026-05-12
       {
         summary: "noack-hypnose.de (2026): 'Redeangst ist kein Lampenfieber – Aufklärung, Tipps, Hilfe' – NOACK Hypnotherapie Berlin differenziert: Redeangst ist eine tiefergehende psychologische Problematik im Vergleich zu normalem Lampenfieber; Ursachen liegen im Unbewussten, weshalb Willenskraft allein scheitert. Hypnotherapie als wirksamer Ansatz durch direkte Arbeit auf unbewusster Ebene und Aufbau neuer neuronaler Muster. Die fachliche Differenzierung hebt die Ernsthaftigkeit des Themas hervor und unterstreicht den Bedarf an wirksamen Selbsthilfemethoden – positives Marktumfeld für lampenfieber-besiegen.de.",
