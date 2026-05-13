@@ -28,6 +28,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-13
       {
+        summary: "sbfi.admin.ch (6. Mai 2026): 'Attraktivität der Berufsbildung wird weiter gestärkt' – Der Bundesrat hat am 6. Mai 2026 den Bericht «Attraktivität der Berufsbildung» verabschiedet und stellt 2026–2028 drei Millionen Franken für die betriebliche Bildung bereit. Im Rahmen der Initiative «Berufsbildung 2030» wird u.a. die höhere Berufsbildung gezielt besser kommuniziert. Ein direktes positives Umfeld für Zertifizierungsorganisationen wie SIZ AG als anerkannte ICT-Prüfungsorganisation im Schweizer Berufsbildungssystem.",
+        source: "sbfi.admin.ch",
+        url: "https://www.sbfi.admin.ch/de/newnsb/xs-SgVCUR4Teaow8BDFu3",
+        date: "2026-05-06",
+        category: "Bildungspolitik",
+        addedAt: "2026-05-13",
+      },
+      {
         summary: "alice.ch / SVEB (März 2026): 'Bildungsbericht 2026: Ungleichheit in der Weiterbildung' – Der Schweizerische Verband für Weiterbildung (SVEB) analysiert die Befunde des Bildungsberichts Schweiz 2026: Weiterbildungspartizipation ist stark von Bildungsstand und Erwerbssituation abhängig; fast jede fünfte Person mit Migrationshintergrund bleibt langfristig geringqualifiziert; betriebliche Unterstützung (Finanzierung, Freistellung) begünstigt selektiv bereits Gutqualifizierte. Die strukturelle Ungleichheit bei der Weiterbildungspartizipation erhöht den gesellschaftlichen Druck auf modulare, niedrigschwellige Qualifizierungsformate – direktes Marktumfeld für SIZ AG als stufenweiser ICT-Prüfungsanbieter.",
         source: "alice.ch",
         url: "https://alice.ch/de/news/bildungsbericht-2026-ungleichheit-in-der-weiterbildung/",
@@ -2643,6 +2651,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "mindrocket-trading": {
     news: [
       // Neu: 2026-05-13
+      {
+        summary: "CNBC (10. Mai 2026): 'S&P 500 schliesst erstmals über 7'400 – trotz Iran-Spannungen' – Am 10. Mai 2026 schloss der S&P 500 erstmals über 7'400 Punkte, trotz geopolitischer Spannungen rund um den Iran. Analysten wie Mary Ann Bartels (Sanctuary Wealth) sehen den S&P langfristig auf dem Weg zu 10'000–13'000 Punkten innerhalb von drei Jahren. Die überwundenen Handelskriegs-Ängste schaffen ein klareres technisches Bild für algorithmische ES-Futures-Strategien – direktes Marktumfeld für mindrocket-trading.com.",
+        source: "cnbc.com",
+        url: "https://www.cnbc.com/2026/05/10/stock-market-today-live-updates.html",
+        date: "2026-05-10",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-05-13",
+      },
       {
         summary: "daytradingtoolkit.com (Mai 2026): 'PDT Rule Eliminated 2026 – Complete Guide' – Day Trading Toolkit veröffentlicht umfassenden Leitfaden zur historischen PDT-Regelabschaffung: Die $25'000-Mindestkapitalanforderung entfällt ab 4. Juni 2026; neue Intraday Margin Level (IML)-Berechnung koppelt Margins an die tatsächliche Marktexposition; 90-Tage-Beschränkung und 4-Trades-in-5-Tagen-Regel entfallen vollständig. ES Futures und andere Futures-Märkte profitieren von massiv gesteigertem Retail-Trader-Zufluss aus dem Aktienbereich. Die Öffnung des US-Day-Trading-Markts ist ein struktureller Nachfragesog für professionelle Futures-Strategien – direktes Wachstumsumfeld für mindrocket-trading.com.",
         source: "daytradingtoolkit.com",
@@ -13894,6 +13910,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-13
       {
+        summary: "netzwoche.ch (8. Mai 2026): 'KI durchdringt den Alltag in der Schweiz' – Die Netzwoche fasst am 8. Mai 2026 aktuelle Studien und Nutzungsdaten zusammen: KI-Tools sind im Schweizer Alltag angekommen; ICT-Berufsbildung Schweiz lanciert parallel ein Bildungsprojekt für einen neuen eidgenössischen KI-Abschluss mit Ziel der ersten Absolventen noch 2026. Formale KI-Qualifikation trifft auf explodierende Nutzungszahlen – direktes Content-Umfeld für learnfluencer.ch als Thought-Leadership-Plattform für Lernkompetenz und KI.",
+        source: "netzwoche.ch",
+        url: "https://www.netzwoche.ch/news/2026-05-08/ki-durchdringt-den-alltag-in-der-schweiz",
+        date: "2026-05-08",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-05-13",
+      },
+      {
         summary: "managerSeminare (2024/2025): 'Lernkultur fördern | Die Learnfluencer' – managerSeminare, eines der führenden deutschsprachigen Fachmagazine für Personal- und Organisationsentwicklung, hat das Konzept der Learnfluencer als eigenständigen redaktionellen Fachartikel aufgegriffen: Learnfluencer stärken die intrinsische Lernmotivation der Mitarbeitenden, verknüpfen individuelles und kollektives Lernen und etablieren eigenverantwortliche Lernkulturen; Abgrenzung zu Mentor- und Expertenrollen durch systemischen Lernkulturansatz. Die Aufnahme des Learnfluencer-Begriffs im führenden deutschsprachigen Managementmagazin bestätigt den DACH-Mainstream-Durchbruch des Konzepts – direktes Positionierungsumfeld für learnfluencer.ch als Thought-Leadership-Plattform für Lernkompetenz und digitale Bildung.",
         source: "managerseminare.de",
         url: "https://www.managerseminare.de/ms_Artikel/Lernkultur-foerdern-Die-Learnfluencer,284702",
@@ -17501,6 +17525,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 2026-05-13
+      {
+        summary: "srf.ch (aktuell): 'Digitale Identitäten begraben – neues Feld für neue Bestatter' – SRF berichtet über die Digitalisierung der Bestattungsbranche Schweiz: Online-Plattformen gewinnen an Relevanz, Bestatter erwarten künftig mehr Online-Buchungen, betonen aber den Wert des persönlichen Kontakts. Digitaler Nachlass (Social-Media-Konten, Datenverwaltung nach dem Tod) ist ein wachsendes gesellschaftliches Thema. Für bestattungsplaner.ch: Pionierposition als Lead-Portal in einem Markt, der digitale Angebote erst beginnt zu adoptieren.",
+        source: "srf.ch",
+        url: "https://www.srf.ch/news/wirtschaft/digitale-identitaeten-beerdigen-neues-feld-fuer-neue-bestatter",
+        date: "2026",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-05-13",
+      },
       // Neu: 2026-05-12
       {
         summary: "age-stiftung.ch (2026): 'Letzte Reise – Interaktiver Bestattungsplaner für Gemeinden' – Die Age-Stiftung fördert 'Letzte Reise', einen interaktiven Bestattungsplaner speziell für Schweizer Gemeinden: Angehörige erhalten praktische Hilfe bei der Bestattungsplanung; Datenbank für regionale Bestattungsdienstleister; Beta-Version wird bis 2026 zur Marktreife weiterentwickelt. Das Engagement der Age-Stiftung für digitale Bestattungsplanungstools zeigt institutionelles Vertrauen in das digitale Bestattungsportal-Konzept – Validierungssignal für das Geschäftsmodell von bestattungsplaner.ch.",
