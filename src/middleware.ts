@@ -26,6 +26,48 @@ async function verifyToken(cookieValue: string, secret: string): Promise<boolean
 }
 
 export async function middleware(req: NextRequest) {
+  const path = req.nextUrl.pathname;
+
+  if (path.startsWith("/share/")) {
+    const sharePassword = process.env.SHARE_PASSWORD;
+    if (!sharePassword) {
+      return new NextResponse("Share not configured", { status: 503 });
+    }
+
+    const auth = req.headers.get("authorization");
+    if (!auth || !auth.startsWith("Basic ")) {
+      return new NextResponse("Authentication required", {
+        status: 401,
+        headers: {
+          "WWW-Authenticate": 'Basic realm="SIZ-AG Share"',
+          "Content-Type": "text/plain; charset=utf-8",
+        },
+      });
+    }
+
+    const encoded = auth.slice(6);
+    let decoded = "";
+    try {
+      decoded = atob(encoded);
+    } catch {
+      return new NextResponse("Invalid credentials", { status: 401 });
+    }
+    const idx = decoded.indexOf(":");
+    const password = idx >= 0 ? decoded.slice(idx + 1) : decoded;
+
+    if (password !== sharePassword) {
+      return new NextResponse("Invalid credentials", {
+        status: 401,
+        headers: { "WWW-Authenticate": 'Basic realm="SIZ-AG Share"' },
+      });
+    }
+
+    const response = NextResponse.next();
+    response.headers.set("X-Robots-Tag", "noindex, nofollow");
+    response.headers.set("Cache-Control", "private, no-store");
+    return response;
+  }
+
   const cookie = req.cookies.get("auth")?.value;
   const secret = process.env.AUTH_SECRET || "fallback";
 
@@ -39,5 +81,11 @@ export async function middleware(req: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/dashboard/:path*", "/project/:path*", "/fitness/:path*"],
+  matcher: [
+    "/dashboard/:path*",
+    "/project/:path*",
+    "/projects/:path*",
+    "/fitness/:path*",
+    "/share/:path*",
+  ],
 };
