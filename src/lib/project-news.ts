@@ -1889,6 +1889,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-14
       {
+        summary: "presseschleuder.com (Mai 2026): 'Warum innere Arbeit heute wichtiger ist denn je' – Persönlichkeitsentwicklung bedeutet weit mehr als Motivation oder positives Denken – es geht um das Loslassen alter Begrenzungen und die Entfaltung des eigenen Potenzials durch gezielte Bewusstseinsarbeit. Neue Denk- und Handlungsweisen entstehen nur, wenn hinderliche Muster erkannt und aufgelöst werden. Dieser Trend zu tieferer innerer Transformation bestätigt das Angebotsumfeld von Mind Rocket GmbH.",
+        source: "presseschleuder.com",
+        url: "https://www.presseschleuder.com/2026/05/warum-innere-arbeit-heute-wichtiger-ist-denn-je/",
+        date: "2026-05",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-05-14",
+      },
+      {
         summary: "coachingausbildungen.ch (Januar 2026): 'Coaching-Marktanalyse 2025/2026: Welche Trends prägen die deutschsprachige Region?' – Eine aktuelle Analyse des Schweizer Coaching-Markts zeigt, dass hybride Angebote (Online + Präsenz), KI-gestütztes Coaching und spezialisierte Nischen stark wachsen. Besonders die Kombination aus persönlicher Entwicklung, mentaler Gesundheit und finanzieller Bildung ist gefragt – ein Profil, das exakt dem Angebot von Mind Rocket GmbH entspricht. Die Nachfrage nach qualitativ hochwertigem Coaching steigt laut Analyse weiter an.",
         source: "coachingausbildungen.ch",
         url: "https://www.coachingausbildungen.ch/coaching-markt-schweiz-trends-2025-2026-analyse/",
@@ -2685,6 +2693,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "mindrocket-trading": {
     news: [
       // Neu: 2026-05-14 (Recherche 2026-05-14)
+      {
+        summary: "Bloomberg (14. April 2026): 'SEC genehmigt Plan zur Abschaffung der Day-Trading-Beschränkungen für Kleinanleger' – Die SEC hat am 14. April 2026 die Pattern Day Trader (PDT) Regel abgeschafft, die seit 2001 ein Mindestkapital von 25.000 USD für aktive Day Trader verlangte. Ab dem 4. Juni 2026 gilt ein positionsbasiertes Margin-Modell. Dies senkt die Einstiegshürde für Retail-Futures-Trader erheblich – direktes Wachstumsumfeld für die Mind Rocket Trading Community.",
+        source: "bloomberg.com",
+        url: "https://www.bloomberg.com/news/articles/2026-04-14/sec-approves-plan-removing-day-trading-limit-for-small-investors",
+        date: "2026-04-14",
+        category: "Regulierung",
+        addedAt: "2026-05-14",
+      },
       {
         summary: "CoinDesk (4. Mai 2026): 'Kraken-Muttergesellschaft Payward schliesst Bitnomial-Übernahme ab (550 Mio. USD) und sichert CFTC-Trifecta' – Krakens Muttergesellschaft Payward schloss am 4. Mai 2026 die Übernahme von Bitnomial ab und erhält damit eine vollständige CFTC-Lizenzstruktur (Designated Contract Market, Derivatives Clearing Organization und Futures Commission Merchant) – ein seltenes Trifecta in einem Konzern. NinjaTrader ist in dieses Krypto/Futures-Ökosystem eingebettet, was langfristige Plattformveränderungen für NinjaTrader-Nutzer wie mindrocket-trading.com bedeuten kann.",
         source: "coindesk.com",
@@ -5856,6 +5872,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-14 (Recherche 2026-05-14)
       {
+        summary: "ad-hoc-news.de (April 2026): 'Mentale Gesundheit 2026: Der Trend geht zu nachhaltigen Routinen' – Experten beobachten 2026 einen klaren Trend weg von reaktiver Behandlung hin zur proaktiven Pflege des mentalen Wohlbefindens durch nachhaltige Alltagsroutinen. Mikro-Interventionen und einfache tägliche Werkzeuge ersetzen komplexe Selbstoptimierungsprogramme. Dieser Trend unterstützt das Angebot von mindtools.ch, das genau solche mentalen Alltagswerkzeuge als digitale Produkte und PDF-Bücher bereitstellt.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/mentale-gesundheit-2026-der-trend-geht-zu-nachhaltigen-routinen/68501634",
+        date: "2026-04",
+        category: "Mental Health",
+        addedAt: "2026-05-14",
+      },
+      {
+        summary: "ad-hoc-news.de (Mai 2026): 'Psychische Gesundheit: Neue Leitlinien und digitale Hilfen im Kampf gegen die Krise' – Neue Leitlinien und digitale Self-Help-Tools gewinnen im deutschsprachigen Raum 2026 massiv an Bedeutung, da psychische Erkrankungen die Invalidenversicherung mit rund 0,5 Milliarden Franken Defizit belasten. Digitale Angebote zur Prävention werden als niederschwellige Brücke zu professioneller Hilfe positioniert. Für mindtools.ch als Plattform für digitale mentale Werkzeuge eröffnet das ein wachsendes Marktumfeld.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/wissenschaft/psychische-gesundheit-neue-leitlinien-und-digitale-hilfen-im-kampf-gegen/69299500",
+        date: "2026-05",
+        category: "Mental Health",
+        addedAt: "2026-05-14",
+      },
+      {
+        summary: "bildung.pr-gateway.de (Mai 2026): 'Warum innere Arbeit heute wichtiger ist denn je' – Nachhaltige innere Veränderung entsteht nie ausschliesslich von aussen – wahre Transformation beginnt immer im Inneren des Menschen. Gezielte Bewusstseinsarbeit mit praktischen mentalen Werkzeugen ermöglicht es, hinderliche Muster zu erkennen und aufzulösen. Das Thema spiegelt direkt das Angebot von mindtools.ch, das praxisnahe mentale Tools für den Alltag vertreibt.",
+        source: "bildung.pr-gateway.de",
+        url: "https://bildung.pr-gateway.de/warum-innere-arbeit-heute-wichtiger-ist-denn-je",
+        date: "2026-05",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-05-14",
+      },
+      {
         summary: "Mindtools.com (März 2026): 'Mindtools Product Update March 2026' – Mindtools.com (das globale Corporate-L&D-Tool, nicht mindtools.ch) veröffentlichte im März 2026 ein umfassendes Produkt-Update: fünf neue Bite-Sized Masterclasses mit führenden Denkern, neue Skills-Practice-Module im Skills Accelerator und KI-Innovation-Hub. Mindtools-Kineo wurde als Top-20-Custom-Content-Development-Company 2026 (Training Industry) ausgezeichnet. Der aktive Betrieb des gleichnamigen globalen Portals unterstreicht die Marktverwechslungsgefahr – und gleichzeitig den Beweis, dass der Name 'MindTools' Glaubwürdigkeit im Self-Help-Segment signalisiert (Positionierungsvorteil für mindtools.ch).",
         source: "mindtools.com",
         url: "https://www.mindtools.com/blog/mindtools-product-update-march-2026/",
@@ -7234,6 +7274,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "hypnovital": {
     news: [
       // Neu: 2026-05-14
+      {
+        summary: "DAK-Gesundheit (April 2026): 'Förderpreis 2026 – Digitale Lösungen für eine gesunde Arbeitswelt gesucht' – Die DAK-Gesundheit schrieb im April 2026 ihren BGM-Förderpreis unter dem Motto 'Neue Wege zur gesunden Arbeit – digital, gesund, menschlich, zukunftsfähig' aus. Insgesamt 60.000 Euro stehen als Förderleistung bereit; Einreichungen sind bis 4. Juli 2026 möglich. Dieser Trend zu digital-orientierten BGM-Lösungen ist ein direktes Wachstumsumfeld für hypnovital® mit seinen Audio-Programmen zur Stressbewältigung.",
+        source: "dak.de",
+        url: "https://www.dak.de/presse/bundesthemen/politik-unternehmensnachrichten/foerderpreis-2026-digitale-loesungen-fuer-eine-gesunde-arbeitswelt-gesucht_166554",
+        date: "2026-04",
+        category: "Digitale Gesundheit",
+        addedAt: "2026-05-14",
+      },
       {
         summary: "it-boltwise.de (2026): 'Dauerstress in der Schweiz – neue Ansätze zur Entlastung' – Fast ein Drittel der Schweizer Bevölkerung leidet unter Dauerstress; neue Konzepte wie digitale Beratung, Achtsamkeitsprogramme und Slow Productivity werden als Lösungen diskutiert. Ortsunabhängige, sofort zugängliche Angebote wie Audio-Hypnose von hypnovital® positionieren sich ideal als Einstiegsangebot für Stressprävention im Schweizer Markt.",
         source: "it-boltwise.de",
@@ -11382,6 +11430,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "orgasmus": {
     news: [
       // Neu: 2026-05-14
+      {
+        summary: "watson.de (Januar 2026): 'Vorzeitiger Samenerguss und Erektionsstörungen: Expertin erklärt Gründe' – Die Sexologin Beatrix Roidinger erklärt die häufigsten sexuellen Funktionsstörungen bei Männern, allen voran den vorzeitigen Samenerguss als das verbreitetste Problem. Viele dieser Störungen sind durch gezieltes Training und offene Kommunikation behandelbar; die negativen Auswirkungen unrealistischer Pornografie-Standards auf die männliche Sexualgesundheit werden thematisiert. Der Artikel gibt Männern praktische Orientierung bei diesem Tabuthema – positives Umfeld für niedrigschwellige Selbsthilfsangebote wie orgasmus-hinauszoegern.de.",
+        source: "watson.de",
+        url: "https://www.watson.de/leben/liebe-sex/572009503-vorzeitiger-samenerguss-und-erektionsstoerungen-expertin-erklaert-gruende",
+        date: "2026-01-29",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-05-14",
+      },
       {
         summary: "impotenz-selbsthilfe.org (2026): 'Vorzeitiger Samenerguss – Ursachen und Behandlungsmethoden im Überblick' – Das Fachportal impotenz-selbsthilfe.org fasst aktuelle Behandlungsleitlinien zusammen: Dapoxetin (einziger EU-zugelassener Wirkstoff) verdoppelt bis verdreifacht die Ejakulationszeit; Verhaltenstechniken (Start-Stopp, Squeeze) und Beckenbodentraining zeigen in Studien medikamentös vergleichbare Effekte. Der starke Informationsbedarf rund um Selbsthilfemethoden bestätigt das Marktpotenzial für niedrigschwellige Audio-Angebote wie orgasmus-hinauszoegern.de.",
         source: "impotenz-selbsthilfe.org",
