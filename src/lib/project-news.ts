@@ -26,6 +26,15 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 2026-05-14
+      {
+        summary: "KOF ETH Zürich (April 2026): 'Bildung ist wichtig – gerade im Zeitalter von KI' – Das KOF Konjunkturforschungsinstitut der ETH Zürich betont: Produktivitätsgewinne durch KI sind bei gut ausgebildeten Personen am stärksten, die mit KI-Tools umgehen können; lebenslanges Lernen wird zur unabdingbaren Voraussetzung; KI wird Lernen und Arbeitsmarkt fundamentell verändern. Bestätigt den strukturellen Bedeutungsgewinn formaler ICT-Qualifikationen – direktes Wachstumsumfeld für SIZ AG als anerkannte Schweizer ICT-Prüfungsorganisation.",
+        source: "kof.ethz.ch",
+        url: "https://kof.ethz.ch/news-und-veranstaltungen/kof-news/2026/04/bildung-ist-wichtig-gerade-im-zeitalter-von-ki.html",
+        date: "2026-04",
+        category: "Digitale Bildung",
+        addedAt: "2026-05-14",
+      },
       // Neu: 2026-05-13
       {
         summary: "sbfi.admin.ch (6. Mai 2026): 'Attraktivität der Berufsbildung wird weiter gestärkt' – Der Bundesrat hat am 6. Mai 2026 den Bericht «Attraktivität der Berufsbildung» verabschiedet und stellt 2026–2028 drei Millionen Franken für die betriebliche Bildung bereit. Im Rahmen der Initiative «Berufsbildung 2030» wird u.a. die höhere Berufsbildung gezielt besser kommuniziert. Ein direktes positives Umfeld für Zertifizierungsorganisationen wie SIZ AG als anerkannte ICT-Prüfungsorganisation im Schweizer Berufsbildungssystem.",
@@ -2650,6 +2659,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 2026-05-14
+      {
+        summary: "CNBC (13. Mai 2026): 'S&P 500 futures climb after tech-driven rally leads index to new record' – Der S&P 500 erklomm am 13. Mai 2026 ein neues Allzeithoch; ES-Futures notierten bei 7'469.50 in der Vorbörsensitzung. Treiber: Tech-Rally durch Nvidia und andere Halbleiterwerte, begünstigt durch Nvidia-CEO Jensen Huang, der US-Präsident Trump auf seiner China-Reise nach Peking begleitete. PPI-Daten April (+1.4% ggü. Vormonat) heisser als erwartet, Markt zeigt sich aber resilient mit neuen Allzeithochs auch bei Nasdaq. Nachhaltige Aufwärtsdynamik und erneutes ATH bestätigen favorables Handelsumfeld für algorithmische ES-Futures-Strategien auf mindrocket-trading.com.",
+        source: "cnbc.com",
+        url: "https://www.cnbc.com/2026/05/13/stock-market-today-live-updates.html",
+        date: "2026-05-13",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-05-14",
+      },
+      {
+        summary: "oneuptrader.com (13. Mai 2026): 'S&P 500 (ES) Technical Analysis 13 May 2026' – ES-Futures setzen die V-förmige Erholung von den März-Tiefs fort und etablierten einen nachhaltigen Ausbruch über die vorherige ATH-Zone bei 7'100. Käufer treten auch bei flachen Pullbacks ein; was als scharfe V-förmige Erholung begann, hat sich zu einem nachhaltigen Ausbruch entwickelt. Das Marktbild ist technisch bullisch: Der Trend bleibt intakt solange ES über der früheren Ausbruchszone hält. Klares, regelbasiertes Marktumfeld für trendfolgende algorithmische ES-Futures-Strategien wie auf mindrocket-trading.com.",
+        source: "oneuptrader.com",
+        url: "https://blog.oneuptrader.com/analysis/technical-analysis/sp-500-es-technical-analysis-13-may-2026/",
+        date: "2026-05-13",
+        category: "Futures & Trading",
+        addedAt: "2026-05-14",
+      },
       // Neu: 2026-05-13
       {
         summary: "CNBC (10. Mai 2026): 'S&P 500 schliesst erstmals über 7'400 – trotz Iran-Spannungen' – Am 10. Mai 2026 schloss der S&P 500 erstmals über 7'400 Punkte, trotz geopolitischer Spannungen rund um den Iran. Analysten wie Mary Ann Bartels (Sanctuary Wealth) sehen den S&P langfristig auf dem Weg zu 10'000–13'000 Punkten innerhalb von drei Jahren. Die überwundenen Handelskriegs-Ängste schaffen ein klareres technisches Bild für algorithmische ES-Futures-Strategien – direktes Marktumfeld für mindrocket-trading.com.",
@@ -13908,6 +13934,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 2026-05-14
+      {
+        summary: "KOF ETH Zürich (April 2026): 'Bildung ist wichtig – gerade im Zeitalter von KI' – Das KOF Konjunkturforschungsinstitut der ETH Zürich analysiert: Produktivitätsgewinne durch KI sind bei gut ausgebildeten Personen am stärksten; lebenslanges Lernen wird zur Voraussetzung, um mit der rasanten Halbwertszeit von Wissen Schritt zu halten; KI wird Lernen und Arbeitsmarkt fundamental verändern; aktuelle Daten zeigen beschleunigten KI-Einsatz in Schweizer Unternehmen. Schweizer Top-Forschungsinstitut bestätigt strategische Bedeutung von Lernkompetenz im KI-Zeitalter – direktes Thought-Leadership-Umfeld für learnfluencer.ch.",
+        source: "kof.ethz.ch",
+        url: "https://kof.ethz.ch/news-und-veranstaltungen/kof-news/2026/04/bildung-ist-wichtig-gerade-im-zeitalter-von-ki.html",
+        date: "2026-04",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-05-14",
+      },
       // Neu: 2026-05-13
       {
         summary: "netzwoche.ch (8. Mai 2026): 'KI durchdringt den Alltag in der Schweiz' – Die Netzwoche fasst am 8. Mai 2026 aktuelle Studien und Nutzungsdaten zusammen: KI-Tools sind im Schweizer Alltag angekommen; ICT-Berufsbildung Schweiz lanciert parallel ein Bildungsprojekt für einen neuen eidgenössischen KI-Abschluss mit Ziel der ersten Absolventen noch 2026. Formale KI-Qualifikation trifft auf explodierende Nutzungszahlen – direktes Content-Umfeld für learnfluencer.ch als Thought-Leadership-Plattform für Lernkompetenz und KI.",
