@@ -162,10 +162,63 @@ footer p { color: rgba(255,255,255,0.85); }
 footer a { color: #fff; text-decoration: none; border-bottom: 1px dotted rgba(255,255,255,0.5); }
 footer .meta { margin-top: 2rem; font-size: 0.78rem; opacity: 0.55; letter-spacing: 0.05em; }
 
+/* Hierarchie-Grafik */
+.hierarchy { max-width: 880px; margin: 1.5rem auto 2.5rem; display: flex; flex-direction: column; align-items: center; gap: 0.45rem; }
+.h-node { background: #fff; border: 1px solid var(--line); border-radius: 4px; padding: 0.85rem 1.4rem; text-align: center; min-width: 320px; box-shadow: 0 1px 3px rgba(45,90,138,0.06); transition: transform 0.15s, box-shadow 0.15s; }
+.h-node:hover { transform: translateY(-1px); box-shadow: 0 4px 10px rgba(45,90,138,0.12); }
+.h-node .h-role { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--mute); display: block; margin-bottom: 0.25rem; font-weight: 500; }
+.h-node .h-name { font-size: 1rem; color: var(--siz-blue-dark); font-weight: 500; line-height: 1.3; }
+.h-node .h-name a { color: var(--siz-blue-dark); text-decoration: none; border-bottom: 1px dotted var(--siz-blue-light); }
+.h-node .h-name a:hover { color: var(--siz-red); border-bottom-color: var(--siz-red); }
+.h-node.level-plan { background: var(--siz-blue-dark); border-color: var(--siz-blue-dark); }
+.h-node.level-plan .h-role { color: rgba(255,255,255,0.6); }
+.h-node.level-plan .h-name { color: #fff; font-size: 1.15rem; font-weight: 700; }
+.h-node.level-plan .h-name a { color: #fff; border-bottom-color: rgba(255,255,255,0.4); }
+.h-node.level-plan .h-name a:hover { color: #fff; border-bottom-color: #fff; }
+.h-node.level-coord { background: var(--siz-blue-soft); border-color: var(--siz-blue-lite); }
+.h-node.level-pillar { background: var(--bg-soft); border-color: var(--line); min-width: 220px; padding: 0.55rem 1rem; }
+.h-node.level-pillar .h-name { font-size: 0.92rem; }
+.h-node.level-pillar.active { background: var(--siz-blue-soft); border-color: var(--siz-blue); border-width: 2px; }
+.h-node.level-pillar.active .h-name { color: var(--siz-blue-dark); font-weight: 700; }
+.h-node.level-measure { background: #fff; border-left: 4px solid var(--siz-red); border-color: var(--siz-red-dark); }
+.h-node.level-leader { background: var(--siz-red); border-color: var(--siz-red-dark); }
+.h-node.level-leader .h-role { color: rgba(255,255,255,0.7); }
+.h-node.level-leader .h-name { color: #fff; font-size: 1.15rem; font-weight: 700; }
+.h-node.level-leader .h-name a { color: #fff; border-bottom-color: rgba(255,255,255,0.5); }
+.h-node.level-leader .h-name a:hover { color: #fff; border-bottom-color: #fff; }
+.h-arrow { color: var(--siz-blue-light); font-size: 1.2rem; line-height: 1; user-select: none; }
+.h-pillars { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.5rem; width: 100%; margin: 0.2rem 0; }
+.h-anchor { display: flex; align-items: center; gap: 0.6rem; font-size: 0.85rem; color: var(--ink-soft); margin-top: 0.2rem; }
+.h-anchor::before { content: "↳"; color: var(--siz-red); font-weight: 700; }
+.hierarchy-caption { text-align: center; font-size: 0.85rem; color: var(--mute); margin-top: 0.8rem; font-style: italic; }
+
+/* Wording-Cards */
+.wording-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; margin: 1.5rem 0; }
+.wording-card { background: #fff; border: 1px solid var(--line); border-radius: 2px; overflow: hidden; }
+.wording-card .wc-head { background: var(--siz-blue-dark); color: #fff; padding: 0.7rem 1rem; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.12em; font-weight: 500; }
+.wording-card .wc-head.short { background: var(--siz-red); }
+.wording-card .wc-head.mid { background: var(--siz-blue); }
+.wording-card .wc-body { padding: 1rem 1.2rem; }
+.wording-card .wc-text { font-size: 0.92rem; color: var(--ink); line-height: 1.5; font-style: italic; }
+.wording-card .wc-usage { margin-top: 0.7rem; font-size: 0.75rem; color: var(--mute); text-transform: uppercase; letter-spacing: 0.08em; }
+
+.do-dont { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.5rem 0; }
+.do-dont .dd-col { background: #fff; border: 1px solid var(--line); border-radius: 2px; overflow: hidden; }
+.do-dont .dd-head { padding: 0.8rem 1rem; color: #fff; font-weight: 500; letter-spacing: 0.04em; }
+.do-dont .dd-head.do { background: var(--ok); }
+.do-dont .dd-head.dont { background: var(--siz-red); }
+.do-dont .dd-body { padding: 1rem 1.2rem; }
+.do-dont .dd-body ul { margin: 0; padding-left: 1.2rem; }
+.do-dont .dd-body li { font-size: 0.9rem; color: var(--ink-soft); margin-bottom: 0.5rem; }
+
 @media (max-width: 900px) {
   .card-grid.cols-2, .card-grid.cols-3, .card-grid.cols-4 { grid-template-columns: 1fr; }
   .kpi-grid { grid-template-columns: repeat(2, 1fr); }
   .compare-table td.label { width: 35%; }
+  .wording-grid { grid-template-columns: 1fr; }
+  .do-dont { grid-template-columns: 1fr; }
+  .h-pillars { grid-template-columns: 1fr 1fr; }
+  .h-node { min-width: 0; width: 100%; }
 }
 </style>
 </head>
@@ -196,6 +249,7 @@ footer .meta { margin-top: 2rem; font-size: 0.78rem; opacity: 0.55; letter-spaci
   <a href="#status">Status</a>
   <a href="#asymmetrie">Asymmetrie</a>
   <a href="#partner">digitalswitzerland</a>
+  <a href="#wording">Sprachregelung</a>
   <a href="#asks">Unsere Asks</a>
   <a href="#angebot">Unser Angebot</a>
   <a href="#kanaele">Kanäle &amp; Events</a>
@@ -421,6 +475,147 @@ footer .meta { margin-top: 2rem; font-size: 0.78rem; opacity: 0.55; letter-spaci
       <tr><td class="lead-col">Community Talks / Webinare</td><td>Online-Format, Member-Fokus</td><td>Mehrmals jährlich</td><td><span class="badge ok">hoch</span> HR-Webinar zur Microcredential-Implementierung</td></tr>
     </tbody>
   </table>
+  </div>
+</section>
+
+<section id="wording" class="alt">
+  <div class="inner">
+  <h2><strong>Sprachregelung</strong> – Was wir korrekt über uns sagen dürfen</h2>
+  <p class="sub">Hierarchie · Wording in drei Längen · Do's &amp; Don'ts</p>
+
+  <p style="color: var(--ink-soft); margin-bottom: 1rem;">Die Mail von Linda Mülli vom 07.05.2026 ist juristisch und marketingstrategisch sehr präzise. Linda formuliert: <em>«Wir würden das SIZ als <strong>Leader für das Microcredential</strong> präsentieren.»</em> Daraus ergibt sich eine klare, ehrliche Sprachregelung – und drei Aussagen, die wir <strong>nicht</strong> verwenden dürfen, ohne überzogen zu wirken.</p>
+
+  <h3 style="margin-top: 1.5rem;">Hierarchie des Swiss AI Action Plans</h3>
+  <p style="color: var(--ink-soft); margin-bottom: 0.8rem;">Wo genau die SIZ AG in der Plan-Architektur sitzt:</p>
+
+  <div class="hierarchy">
+
+    <div class="h-node level-plan">
+      <span class="h-role">Gesamtplan</span>
+      <span class="h-name"><a href="https://digitalswitzerland.com/contribute-to-the-ai-action-plan-for-switzerland/" target="_blank" rel="noopener">Swiss AI Action Plan</a></span>
+    </div>
+    <div class="h-arrow">▲</div>
+
+    <div class="h-node level-coord">
+      <span class="h-role">Koordinator (im Auftrag des Bundes)</span>
+      <span class="h-name"><a href="https://digitalswitzerland.com/" target="_blank" rel="noopener">digitalswitzerland</a> · gemeinsam mit <a href="https://www.bakom.admin.ch/" target="_blank" rel="noopener">BAKOM</a> &amp; <a href="https://www.accenture.com/ch-de" target="_blank" rel="noopener">Accenture</a></span>
+    </div>
+    <div class="h-arrow">▲</div>
+
+    <div class="h-node level-coord">
+      <span class="h-role">Politischer Pate</span>
+      <span class="h-name"><a href="https://www.admin.ch/gov/de/start/bundesrat/mitglieder-des-bundesrates/albert-roesti.html" target="_blank" rel="noopener">Bundesrat Albert Rösti</a></span>
+    </div>
+    <div class="h-arrow">▲</div>
+
+    <div style="width: 100%; text-align: center; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--mute); font-weight: 500; margin: 0.5rem 0 0.2rem;">Vier Säulen</div>
+    <div class="h-pillars">
+      <div class="h-node level-pillar"><span class="h-name">AI Governance</span></div>
+      <div class="h-node level-pillar"><span class="h-name">Digital Infrastructure</span></div>
+      <div class="h-node level-pillar"><span class="h-name">AI-enabled Data</span></div>
+      <div class="h-node level-pillar active"><span class="h-name"><a href="https://digitalswitzerland.com/topic/education-literacy" target="_blank" rel="noopener">AI Expertise</a></span></div>
+    </div>
+    <div class="h-arrow">▲</div>
+
+    <div class="h-node">
+      <span class="h-role">Eine von mehreren Massnahmen in der Säule</span>
+      <span class="h-name">Mehrere Aktionen identifiziert · darunter das KI-Microcredential</span>
+    </div>
+    <div class="h-arrow">▲</div>
+
+    <div class="h-node level-measure">
+      <span class="h-role">Konkrete Massnahme</span>
+      <span class="h-name"><a href="https://www.siz.ch/" target="_blank" rel="noopener">KI-Microcredential</a> · Schweizer Anwender-Zertifizierung</span>
+    </div>
+    <div class="h-arrow">▲</div>
+
+    <div class="h-node level-leader">
+      <span class="h-role">Leader / Action Owner</span>
+      <span class="h-name"><a href="https://www.siz.ch/" target="_blank" rel="noopener">SIZ AG</a></span>
+    </div>
+
+  </div>
+
+  <p class="hierarchy-caption">Hierarchie gemäss Mail Linda Mülli, 07.05.2026, und veröffentlichten digitalswitzerland-Quellen.</p>
+
+  <div class="box highlight" style="margin-top: 2rem;">
+    <h4>Die zentrale Klarstellung</h4>
+    <p>Die SIZ AG ist <strong>Leader für die Massnahme Microcredential</strong> – nicht Leader des AI Action Plans. Der Plan wird von digitalswitzerland koordiniert, politisch von Bundesrat Rösti gestützt. Aber: «Leader für das Microcredential» ist die <em>stärkste ehrliche Formulierung</em>, die wir verwenden können – sie macht uns zum nationalen Standard für AI-Anwender-Kompetenz und ist marktwirtschaftlich wertvoller als ein generisches «Plan-Leader»-Label.</p>
+  </div>
+
+  <h3 style="margin-top: 2.5rem;">Wording in drei Längen</h3>
+  <p style="color: var(--ink-soft); margin-bottom: 0.8rem;">Eine konsequente Drei-Längen-Regelung – nutzen alle SIZ-Texte ab sofort. Mitarbeitende, Partnerschulen und VR halten sich daran.</p>
+
+  <div class="wording-grid">
+    <div class="wording-card">
+      <div class="wc-head short">Kurz · Footer / Signatur</div>
+      <div class="wc-body">
+        <p class="wc-text">«Action Owner · Swiss AI Action Plan · KI-Microcredential»</p>
+        <div class="wc-usage">Logo-Footer · Visitenkarte · Mail-Signatur · Sticker</div>
+      </div>
+    </div>
+
+    <div class="wording-card">
+      <div class="wc-head mid">Mittel · News &amp; LinkedIn</div>
+      <div class="wc-body">
+        <p class="wc-text">«SIZ AG · Leader für das Microcredential im Swiss AI Action Plan.»</p>
+        <div class="wc-usage">News-Teaser · LinkedIn-Bio · Visitenkarten-Rückseite · Slide-Untertitel</div>
+      </div>
+    </div>
+
+    <div class="wording-card">
+      <div class="wc-head">Lang · Pressemitteilung &amp; VR</div>
+      <div class="wc-body">
+        <p class="wc-text">«Die SIZ AG ist offizieller Leader (Action Owner) für die Massnahme KI-Microcredential im Swiss AI Action Plan, koordiniert durch digitalswitzerland im Auftrag des Bundes unter politischer Schirmherrschaft von Bundesrat Albert Rösti.»</p>
+        <div class="wc-usage">Pressemitteilung · Op-Ed · VR-Doku · Behördenkorrespondenz</div>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="margin-top: 1.5rem;">Englisch (international)</h3>
+  <div class="box">
+    <p style="font-style: italic; margin: 0; color: var(--siz-blue-dark);">«SIZ · Lead Partner · AI Microcredential · Swiss AI Action Plan»</p>
+  </div>
+
+  <h3 style="margin-top: 2rem;">Do's &amp; Don'ts</h3>
+
+  <div class="do-dont">
+    <div class="dd-col">
+      <div class="dd-head do">✓ KORREKT – diese Formulierungen sind sicher</div>
+      <div class="dd-body">
+        <ul>
+          <li>«SIZ AG ist <strong>offizieller Leader für das Microcredential</strong> im Swiss AI Action Plan»</li>
+          <li>«Das <strong>SIZ-KI-Microcredential ist eine offizielle Aktion</strong> des Swiss AI Action Plans»</li>
+          <li>«Die SIZ AG <strong>verantwortet</strong> im Swiss AI Action Plan die Massnahme <strong>KI-Microcredential</strong>»</li>
+          <li>«Im Auftrag von digitalswitzerland zeichnet die SIZ AG für die Microcredential-Massnahme verantwortlich»</li>
+          <li>«SIZ AG · <strong>Action Owner</strong> · KI-Microcredential im Swiss AI Action Plan»</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="dd-col">
+      <div class="dd-head dont">✗ FALSCH – diese Aussagen vermeiden</div>
+      <div class="dd-body">
+        <ul>
+          <li><span style="text-decoration: line-through;">«SIZ ist Leader des Swiss AI Action Plans»</span><br><em style="color: var(--mute); font-size: 0.82rem;">Nein – das ist digitalswitzerland als Koordinator.</em></li>
+          <li><span style="text-decoration: line-through;">«SIZ führt den AI Action Plan an»</span><br><em style="color: var(--mute); font-size: 0.82rem;">Nein – wir führen eine Massnahme an.</em></li>
+          <li><span style="text-decoration: line-through;">«SIZ ist Mit-Initiator des AI Action Plans»</span><br><em style="color: var(--mute); font-size: 0.82rem;">Nein – initiiert hat digitalswitzerland mit dem Bund.</em></li>
+          <li><span style="text-decoration: line-through;">«SIZ ist der KI-Beauftragte der Schweiz»</span><br><em style="color: var(--mute); font-size: 0.82rem;">Nein – politische Verantwortung trägt der Bund.</em></li>
+          <li><span style="text-decoration: line-through;">«SIZ ist Action Owner der Säule AI Expertise»</span><br><em style="color: var(--mute); font-size: 0.82rem;">Nicht gesichert – wir sind Owner einer Massnahme innerhalb der Säule, nicht der Säule selbst.</em></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="margin-top: 2.5rem;">Übergabe-Text für die digitalswitzerland-Webseite</h3>
+  <p style="color: var(--ink-soft); margin-bottom: 0.8rem;">Folgenden 4-Satz-Beschrieb liefern wir Linda zur 1:1-Übernahme auf die Action-Plan-Webseite. Wenn digitalswitzerland selbst formuliert, riskieren wir Sprachregelungs-Abweichungen oder unscharfe Positionierung. Deshalb proaktiv:</p>
+
+  <div class="box highlight">
+    <h4 style="margin-bottom: 0.8rem;">Beschrieb für die Webseite – Vorschlag SIZ AG (4 Sätze, ca. 90 Wörter)</h4>
+    <p style="font-size: 1.02rem; line-height: 1.6; color: var(--ink); margin-bottom: 0;">Die SIZ AG ist offizieller Leader für die Massnahme <strong>KI-Microcredential</strong> im Swiss AI Action Plan. Als Schweizer Prüfungsstelle für Anwender-Kompetenzen seit 1991 zertifiziert sie jährlich rund 100'000 Prüfungen. Das KI-Microcredential ist in drei Levels aufgebaut – Advanced-User, Power-User und Professional – und schliesst die Lücke zwischen Hersteller-Credentials (Microsoft, Google, AWS) und der eidgenössischen Berufsprüfung AI Business Specialist. Es ist hersteller­neutral, in der Schweiz verankert und auf revDSG sowie EU AI Act ausgerichtet.</p>
+  </div>
+
+  <p style="color: var(--ink-soft); margin-top: 1rem; font-size: 0.9rem;"><em>Übergabe-Modus:</em> Wolfram (oder Franz) schickt diesen Text per E-Mail an Linda mit der Bitte um 1:1-Übernahme. Falls Anpassungs­wünsche kommen, gemeinsam justieren – aber die Kernformulierung «<strong>Leader für die Massnahme Microcredential</strong>» bleibt unverhandelbar.</p>
   </div>
 </section>
 
