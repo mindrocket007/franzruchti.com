@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>digitalswitzerland-Partnerschaft – Marketingplan SIZ AG</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --siz-blue: #4880B6;
+  --siz-blue-dark: #2D5A8A;
+  --siz-blue-light: #7791B3;
+  --siz-blue-lite: #CDD4E1;
+  --siz-blue-soft: #EFF3F8;
+  --siz-red: #E30613;
+  --siz-red-dark: #A30009;
+  --accent-cyan: #5EC5ED;
+  --ink: #2D3940;
+  --ink-soft: #4A5965;
+  --mute: #859AB7;
+  --bg: #FFFFFF;
+  --bg-soft: #F5F7FA;
+  --line: #E2E8F0;
+  --ok: #1e7a4a;
+  --warn: #b75a00;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: 'Roboto', 'Segoe UI', system-ui, sans-serif; font-weight: 400; color: var(--ink); line-height: 1.55; background: var(--bg); font-size: 16px; }
+
+.topbar { background: var(--bg); border-bottom: 1px solid var(--line); padding: 14px 32px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+.topbar .brand { font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.78rem; color: var(--siz-blue-dark); }
+.topbar .meta { color: var(--mute); font-size: 0.78rem; letter-spacing: 0.05em; }
+
+.hero { background: linear-gradient(115deg, var(--siz-blue-soft) 0%, var(--siz-blue-lite) 50%, var(--siz-blue-light) 100%); padding: 5rem 2rem 4rem; position: relative; overflow: hidden; }
+.hero::after { content: ""; position: absolute; top: 0; right: 0; width: 8px; height: 100%; background: repeating-linear-gradient(180deg, var(--siz-red) 0 16px, transparent 16px 32px); opacity: 0.65; }
+.hero-inner { max-width: 1200px; margin: 0 auto; }
+.kicker { text-transform: uppercase; letter-spacing: 0.18em; font-size: 0.78rem; font-weight: 500; color: var(--siz-blue-dark); margin-bottom: 1rem; }
+.hero h1 { font-size: clamp(2.2rem, 5.2vw, 3.8rem); font-weight: 300; margin: 0 0 1.2rem; color: var(--siz-blue-dark); line-height: 1.05; letter-spacing: -0.01em; }
+.hero h1 strong { font-weight: 700; }
+.hero .lead { font-size: clamp(1.05rem, 1.6vw, 1.25rem); max-width: 880px; color: var(--ink-soft); margin: 0 0 1.8rem; }
+.hero-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.tag { background: rgba(255,255,255,0.7); border: 1px solid rgba(72,128,182,0.3); padding: 0.35rem 0.85rem; border-radius: 2px; font-size: 0.82rem; color: var(--siz-blue-dark); font-weight: 500; }
+
+nav.toc { background: var(--bg); border-bottom: 1px solid var(--line); padding: 0.8rem 2rem; position: sticky; top: 53px; z-index: 90; overflow-x: auto; white-space: nowrap; }
+nav.toc a { color: var(--siz-blue-dark); text-decoration: none; font-size: 0.85rem; font-weight: 500; margin-right: 1.6rem; padding-bottom: 2px; border-bottom: 2px solid transparent; transition: border-color 0.15s; }
+nav.toc a:hover { border-bottom-color: var(--siz-red); }
+
+section { max-width: 1200px; margin: 0 auto; padding: 4rem 2rem; }
+section.alt { background: var(--bg-soft); max-width: none; }
+section.alt .inner { max-width: 1200px; margin: 0 auto; }
+section.dark { background: var(--siz-blue-dark); color: #fff; max-width: none; }
+section.dark .inner { max-width: 1200px; margin: 0 auto; }
+section.dark h2 { color: #fff; }
+section.dark .sub { color: rgba(255,255,255,0.85); }
+
+h2 { font-size: 2rem; font-weight: 300; margin: 0 0 0.4rem; color: var(--siz-blue-dark); letter-spacing: -0.01em; }
+h2 strong { font-weight: 700; }
+.sub { font-size: 1rem; color: var(--mute); margin: 0 0 2.5rem; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; }
+h3 { font-size: 1.25rem; font-weight: 500; color: var(--siz-blue-dark); margin: 0 0 0.8rem; }
+p { margin: 0 0 1rem; }
+
+.tldr { background: linear-gradient(135deg, var(--siz-blue-soft) 0%, #fff 100%); border-left: 4px solid var(--siz-red); padding: 1.5rem 2rem; border-radius: 2px; margin-bottom: 2.5rem; }
+.tldr-label { font-size: 0.75rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; color: var(--siz-red); margin-bottom: 0.6rem; }
+.tldr p { margin: 0 0 0.6rem; font-size: 1.05rem; color: var(--ink); }
+.tldr p:last-child { margin-bottom: 0; }
+
+.compare-table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid var(--line); border-radius: 2px; overflow: hidden; font-size: 0.92rem; }
+.compare-table thead th { background: var(--siz-blue-dark); color: #fff; padding: 1rem 1.2rem; text-align: left; font-weight: 500; letter-spacing: 0.04em; }
+.compare-table thead th:nth-child(2) { background: var(--siz-blue); border-left: 3px solid var(--siz-red); }
+.compare-table tbody td { padding: 0.85rem 1rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+.compare-table tbody tr:nth-child(even) { background: var(--bg-soft); }
+.compare-table tbody tr:last-child td { border-bottom: none; }
+.compare-table td.label { font-weight: 500; color: var(--siz-blue-dark); width: 22%; }
+.compare-table td.siz { border-left: 3px solid var(--siz-red); background: rgba(72,128,182,0.04); }
+
+.card-grid { display: grid; gap: 1.2rem; margin-bottom: 2rem; }
+.card-grid.cols-2 { grid-template-columns: 1fr 1fr; }
+.card-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+.card-grid.cols-4 { grid-template-columns: repeat(4, 1fr); }
+.card { background: #fff; border: 1px solid var(--line); border-radius: 2px; overflow: hidden; display: flex; flex-direction: column; }
+.card-head { background: var(--siz-blue-dark); color: #fff; padding: 0.9rem 1.2rem; font-weight: 500; font-size: 0.95rem; letter-spacing: 0.02em; display: flex; justify-content: space-between; align-items: center; }
+.card-head .pill { background: rgba(255,255,255,0.18); font-size: 0.7rem; padding: 0.15rem 0.55rem; border-radius: 2px; letter-spacing: 0.06em; text-transform: uppercase; }
+.card-head.red { background: var(--siz-red); }
+.card-head.blue { background: var(--siz-blue); }
+.card-head.light { background: var(--siz-blue-soft); color: var(--siz-blue-dark); }
+.card-head.green { background: var(--ok); }
+.card-head.amber { background: var(--warn); }
+.card-body { padding: 1.2rem; flex: 1; }
+.card-body ul { margin: 0.4rem 0; padding-left: 1.2rem; }
+.card-body li { margin-bottom: 0.4rem; color: var(--ink-soft); font-size: 0.9rem; }
+.card-body p { font-size: 0.92rem; color: var(--ink-soft); margin-bottom: 0.7rem; }
+.card-body .kv { display: grid; grid-template-columns: 110px 1fr; gap: 0.3rem 0.7rem; font-size: 0.85rem; margin-top: 0.6rem; }
+.card-body .kv dt { color: var(--mute); text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.06em; padding-top: 2px; }
+.card-body .kv dd { margin: 0; color: var(--ink); }
+
+.kpi-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem; margin: 2rem 0; }
+.kpi { background: #fff; border: 1px solid var(--line); border-top: 4px solid var(--siz-blue); padding: 1.5rem 1rem; text-align: center; border-radius: 2px; }
+.kpi .num { color: var(--siz-blue-dark); font-size: 1.95rem; font-weight: 700; display: block; margin-bottom: 0.4rem; line-height: 1; }
+.kpi .label { color: var(--mute); font-size: 0.78rem; letter-spacing: 0.03em; line-height: 1.3; }
+
+.box { background: #fff; border: 1px solid var(--line); padding: 1.4rem 1.6rem; border-radius: 2px; margin-bottom: 1rem; }
+.box.pro { border-left: 4px solid var(--ok); background: #f4fbf6; }
+.box.contra { border-left: 4px solid var(--mute); background: var(--bg-soft); }
+.box.warn { border-left: 4px solid var(--siz-red); background: #fff6f6; }
+.box.highlight { border-left: 4px solid var(--siz-blue); background: var(--siz-blue-soft); }
+.box h4 { margin: 0 0 0.5rem; color: var(--siz-blue-dark); font-size: 1rem; }
+.box.pro h4 { color: var(--ok); }
+.box.warn h4 { color: var(--siz-red-dark); }
+.box ul { margin: 0; padding-left: 1.2rem; }
+.box li { margin-bottom: 0.35rem; color: var(--ink-soft); font-size: 0.93rem; }
+.box p:last-child { margin-bottom: 0; }
+
+.matrix { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid var(--line); font-size: 0.88rem; margin-bottom: 1rem; }
+.matrix th { background: var(--siz-blue-dark); color: #fff; padding: 0.85rem 0.9rem; text-align: left; font-weight: 500; font-size: 0.85rem; letter-spacing: 0.03em; }
+.matrix td { padding: 0.75rem 0.9rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+.matrix tbody tr:nth-child(even) { background: var(--bg-soft); }
+.matrix td.lead-col { font-weight: 500; color: var(--siz-blue-dark); white-space: nowrap; }
+.matrix .badge { display: inline-block; background: var(--siz-blue); color: #fff; padding: 0.12rem 0.5rem; border-radius: 2px; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.04em; }
+.matrix .badge.red { background: var(--siz-red); }
+.matrix .badge.ok { background: var(--ok); }
+.matrix .badge.mute { background: var(--mute); }
+.matrix .badge.warn { background: var(--warn); }
+
+details.faq { background: #fff; border: 1px solid var(--line); border-radius: 2px; padding: 1rem 1.3rem; margin-bottom: 0.6rem; }
+details.faq[open] { border-color: var(--siz-blue); box-shadow: 0 2px 8px rgba(72,128,182,0.1); }
+details.faq summary { cursor: pointer; font-weight: 500; color: var(--siz-blue-dark); font-size: 1rem; list-style: none; position: relative; padding-right: 30px; }
+details.faq summary::-webkit-details-marker { display: none; }
+details.faq summary::after { content: "+"; position: absolute; right: 0; top: 0; font-size: 1.4rem; color: var(--siz-red); font-weight: 300; line-height: 1; }
+details.faq[open] summary::after { content: "−"; }
+details.faq .answer { margin-top: 0.9rem; padding-top: 0.9rem; border-top: 1px solid var(--line); color: var(--ink-soft); font-size: 0.93rem; }
+details.faq .answer ul { margin: 0.5rem 0 0; padding-left: 1.3rem; }
+details.faq .answer li { margin-bottom: 0.3rem; }
+
+.timeline { position: relative; padding-left: 2.5rem; }
+.timeline::before { content: ""; position: absolute; left: 0.6rem; top: 0; bottom: 0; width: 2px; background: var(--siz-blue-lite); }
+.t-item { position: relative; margin-bottom: 1.8rem; }
+.t-item::before { content: ""; position: absolute; left: -2.4rem; top: 0.3rem; width: 14px; height: 14px; background: var(--siz-red); border: 3px solid #fff; box-shadow: 0 0 0 2px var(--siz-blue); border-radius: 50%; }
+.t-item .t-date { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--siz-red); font-weight: 700; margin-bottom: 0.3rem; }
+.t-item h4 { margin: 0 0 0.4rem; color: var(--siz-blue-dark); font-size: 1.05rem; }
+.t-item p { font-size: 0.93rem; color: var(--ink-soft); margin: 0; }
+
+.sources { background: var(--bg-soft); padding: 1.5rem; border-radius: 2px; font-size: 0.85rem; margin-top: 2rem; }
+.sources h4 { text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.75rem; margin: 0 0 0.8rem; color: var(--mute); }
+.sources ul { margin: 0; padding-left: 1.2rem; }
+.sources li { margin-bottom: 0.3rem; color: var(--ink-soft); }
+.sources a { color: var(--siz-blue-dark); text-decoration: none; border-bottom: 1px dotted var(--mute); }
+.sources a:hover { border-bottom-color: var(--siz-blue); }
+
+.ask-row { display: grid; grid-template-columns: 60px 1fr; gap: 1rem; padding: 1.2rem 0; border-bottom: 1px solid var(--line); }
+.ask-row:last-child { border-bottom: none; }
+.ask-num { font-size: 2.4rem; font-weight: 300; color: var(--siz-red); line-height: 1; }
+.ask-body h4 { margin: 0 0 0.4rem; color: var(--siz-blue-dark); font-size: 1.1rem; }
+.ask-body p { margin: 0 0 0.4rem; font-size: 0.95rem; color: var(--ink-soft); }
+.ask-body .quote { font-style: italic; color: var(--siz-blue-dark); border-left: 3px solid var(--siz-blue-lite); padding-left: 0.8rem; margin-top: 0.5rem; font-size: 0.9rem; }
+
+footer { background: var(--siz-blue-dark); color: rgba(255,255,255,0.92); padding: 3rem 2rem 2rem; text-align: center; }
+footer h3 { color: #fff; margin: 0 0 0.8rem; font-weight: 300; }
+footer p { color: rgba(255,255,255,0.85); }
+footer a { color: #fff; text-decoration: none; border-bottom: 1px dotted rgba(255,255,255,0.5); }
+footer .meta { margin-top: 2rem; font-size: 0.78rem; opacity: 0.55; letter-spacing: 0.05em; }
+
+@media (max-width: 900px) {
+  .card-grid.cols-2, .card-grid.cols-3, .card-grid.cols-4 { grid-template-columns: 1fr; }
+  .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+  .compare-table td.label { width: 35%; }
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span class="brand">SIZ AG · Marketing &amp; Partner</span>
+  <span class="meta">Vertraulich · intern · 14.05.2026</span>
+</div>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="kicker">Marketingplan · Partnerschaft mit digitalswitzerland</div>
+    <h1>Wir sind <strong>Action Owner</strong> im Swiss AI Action Plan.<br>Nicht Bittsteller.</h1>
+    <p class="lead">digitalswitzerland sucht das schweizerische Microcredential, um den AI Action Plan zu beliefern. Bundesrat Albert Rösti ist Schirmherr. Microsoft, Google und AWS sind Hersteller-Credentials, ICT-Berufsbildung Schweiz liefert erst Ende 2026 das Senior-Niveau. Im Anwender-Segment ist die SIZ AG strukturell konkurrenzlos. Dieses Papier setzt den Rahmen für unsere Verhandlungs- und Vermarktungsstrategie 2026/2027.</p>
+    <div class="hero-tags">
+      <span class="tag">220+ Member-Organisationen</span>
+      <span class="tag">14'000+ Newsletter-Abonnenten</span>
+      <span class="tag">BAKOM · Accenture · Bundesrat Rösti</span>
+      <span class="tag">Global AI Summit Genève 2027</span>
+      <span class="tag">Action Owner Säule AI Expertise</span>
+    </div>
+  </div>
+</div>
+
+<nav class="toc">
+  <a href="#tldr">TL;DR</a>
+  <a href="#status">Status</a>
+  <a href="#asymmetrie">Asymmetrie</a>
+  <a href="#partner">digitalswitzerland</a>
+  <a href="#asks">Unsere Asks</a>
+  <a href="#angebot">Unser Angebot</a>
+  <a href="#kanaele">Kanäle &amp; Events</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#talking-points">Call-Talking-Points</a>
+  <a href="#kpi">KPI</a>
+  <a href="#risiken">Risiken</a>
+  <a href="#quellen">Quellen</a>
+</nav>
+
+<section id="tldr">
+  <div class="tldr">
+    <div class="tldr-label">Kernbotschaft</div>
+    <p><strong>digitalswitzerland hat die SIZ AG als Leader des AI-Microcredentials im Swiss AI Action Plan bestätigt</strong> (Bestätigungs-Mail Linda Mülli, 07.05.2026). Wir verhandeln nicht um Aufnahme – wir definieren die Bedingungen unserer Beteiligung.</p>
+    <p>Im Anwender-Segment hat keiner ein vergleichbares Schweizer Cert: Microsoft/Google/AWS sind Hersteller-Credentials, die AI Business Specialist FA der ICT-Berufsbildung Schweiz adressiert das Senior-Niveau und kommt erst Herbst 2026. <strong>Wir sind die einzige Schweizer Lösung für die breite Belegschaft</strong> – exakt das, was Bundesrat Rösti und digitalswitzerland für den Action Plan brauchen.</p>
+    <p>Dieser Plan formuliert sechs konkrete <em>Asks</em> an digitalswitzerland und sieben <em>Deliverables</em>, die wir im Gegenzug liefern. Schwerpunkt: Sichtbarkeit (Logo, Speaker-Slots, Newsletter), strategische Mitgestaltung (Working Group AI Expertise) und Mitglieder-Pipeline (HR-Abteilungen von UBS, Swisscom, SBB, Migros, IBM, Google, Swiss Post, ETH).</p>
+  </div>
+
+  <div class="kpi-grid">
+    <div class="kpi"><span class="num">220+</span><span class="label">digitalswitzerland<br>Member-Organisationen</span></div>
+    <div class="kpi"><span class="num">14'000+</span><span class="label">Newsletter<br>Abonnenten (monatlich)</span></div>
+    <div class="kpi"><span class="num">4</span><span class="label">Tier-1-Events 2026<br>Andermatt · Locarno · Davos · Bern</span></div>
+    <div class="kpi"><span class="num">3</span><span class="label">SIZ-KI-Levels (AU/PU/Prof)<br>Anwender-First-Mover</span></div>
+    <div class="kpi"><span class="num">2027</span><span class="label">Global AI Summit Genève<br>Endmarker</span></div>
+  </div>
+</section>
+
+<section id="status" class="alt">
+  <div class="inner">
+  <h2><strong>Status</strong> – Was bereits geschehen ist</h2>
+  <p class="sub">Chronik der Annäherung digitalswitzerland ↔ SIZ AG</p>
+
+  <div class="timeline">
+    <div class="t-item">
+      <div class="t-date">17. März 2026</div>
+      <h4>Erstkontakt &amp; Unterlagen-Übergabe</h4>
+      <p>Erstes Gespräch Franziska / Linda Mülli mit Wolfram Schmidt. SIZ präsentiert das KI-Modul-Konzept (Drei-Level-Architektur Advanced-User / Power-User / Professional). Unterlagen werden intern bei digitalswitzerland zirkuliert.</p>
+    </div>
+    <div class="t-item">
+      <div class="t-date">7. Mai 2026, 10:28</div>
+      <h4>Bestätigung als offizielle Aktion</h4>
+      <p>Linda Mülli teilt mit: <em>«Wir haben die Bestätigung erhalten, dass wir das Microcredential als offizielle Aktion des Swiss AI Action Plans positionieren können.»</em> Bittet um SIZ-Logo zur Nennung als <strong>Leader</strong> auf der im Aufbau befindlichen AI-Action-Plan-Seite. Schlägt Dienstags-Call vor.</p>
+    </div>
+    <div class="t-item">
+      <div class="t-date">7. Mai 2026, 12:33</div>
+      <h4>Logo &amp; finale Modulidentifikation übergeben</h4>
+      <p>Wolfram Schmidt schickt Logo (CMYK, RGB, PNG, SVG-Varianten) plus die <strong>finale Modulidentifikation für das Zertifikat</strong>. Bietet Dienstags-/Mittwochs-Slots an.</p>
+    </div>
+    <div class="t-item">
+      <div class="t-date">7. Mai 2026, 14:01</div>
+      <h4>Termin-Bestätigung &amp; Member-Feedback-Schleife</h4>
+      <p>Linda Mülli bestätigt Dienstagsnachmittag-Termin. <em>«Wir fragen noch einige Feedbacks von weiteren Mitgliedern an.»</em> &rarr; SIZ wird also intern bei den 220+ Mitgliedern positioniert, bevor das Microcredential extern lanciert wird.</p>
+    </div>
+    <div class="t-item">
+      <div class="t-date">14. Mai 2026 (heute)</div>
+      <h4>Aktueller Auftrag</h4>
+      <p>Wolfram Schmidt beauftragt Franz Ruchti (Leiter Markt &amp; Partner) mit Erarbeitung des Marketingplans für die Zusammenarbeit – einschliesslich Member-Angebot, Reziprozitäts-Logik und Aktivitäten-Roadmap bis Global AI Summit Genève 2027.</p>
+    </div>
+  </div>
+
+  <div class="box highlight">
+    <h4>Asymmetrie-Lesart der Korrespondenz</h4>
+    <p>Linda Mülli initiiert jede Iteration, schreibt aus Position des Anfragenden (<em>«hättest du Zeit für einen kurzen Call?»</em>, <em>«könntest du uns euer Logo zukommen lassen?»</em>). Sie zirkuliert SIZ-Material bei den Mitgliedern – nicht umgekehrt. Bundesrat Rösti ist im Boot, digitalswitzerland <strong>muss</strong> liefern. Die Verhandlungsposition der SIZ ist stark. Diese Lesart soll der Plan operationalisieren.</p>
+  </div>
+  </div>
+</section>
+
+<section id="asymmetrie">
+  <h2><strong>Wer braucht wen?</strong> – Verhandlungsasymmetrie</h2>
+  <p class="sub">Strukturanalyse der gegenseitigen Abhängigkeit</p>
+
+  <table class="compare-table">
+    <thead>
+      <tr>
+        <th>Dimension</th>
+        <th>digitalswitzerland braucht SIZ</th>
+        <th>SIZ braucht digitalswitzerland</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="label">Liefer-Druck Action Plan</td>
+        <td class="siz">Microcredential ist eine der wenigen <strong>konkret beschreibbaren</strong> Massnahmen für 2026/2027. Ohne Action Owner = Glaubwürdigkeitsverlust gegenüber Rösti / BAKOM / Accenture / 220 Mitgliedern.</td>
+        <td>Sichtbarkeit auf nationaler Bühne, aber wir können das Cert auch ohne Action-Plan-Stempel vermarkten (mit Schulen, KV-Verbänden, HR).</td>
+      </tr>
+      <tr>
+        <td class="label">Schweizer Anwender-Cert</td>
+        <td class="siz">Existiert nur bei der SIZ. Microsoft / Google / AWS sind Hersteller-zentriert, ICDL ist international &amp; ohne Schweizer Datenschutz-Fokus, AI Business Specialist FA ist Senior-Stufe.</td>
+        <td>Wir bauen das KI-Cert ohnehin – auch ohne Action Plan würde es lanciert.</td>
+      </tr>
+      <tr>
+        <td class="label">Trägerschaft &amp; Glaubwürdigkeit</td>
+        <td class="siz">Suchen Träger mit eidg. Renommee, Branchenneutralität, jahrzehntelanger Prüfungs-Track-Record (seit 1991). SIZ ist die einzige Schweizer Anwender-Prüfungsstelle dieser Grössenordnung.</td>
+        <td>Schirmherrschaft Bundesrat Rösti und Co-Branding mit Swiss AI Action Plan stärkt unser Positionierungs-Argument gegenüber Schulen und Kantonen – aber wir haben mit Swico / Dr. Alain Gut / Dr. Daniel Jositsch bereits politisches Renommee im VR.</td>
+      </tr>
+      <tr>
+        <td class="label">Mitglieder-Pipeline</td>
+        <td class="siz">Wollen ihren Mitgliedern (UBS, Swisscom, SBB, Migros, IBM, Google, Swiss Post, ETH) konkrete Tools für die KI-Mitarbeiter-Befähigung anbieten. Brauchen eine prüfbare Lösung.</td>
+        <td>HR-Zugang zu 220 Konzern-Personalabteilungen ist enormer Hebel – wir würden Jahre brauchen, das selbst aufzubauen.</td>
+      </tr>
+      <tr>
+        <td class="label">Strukturelle Unabhängigkeit</td>
+        <td class="siz">Brauchen einen Träger, der <strong>nicht selbst schult und nicht selbst Lehrmittel verkauft</strong>. SIZ erfüllt das – schult nicht, verkauft keine Webkurse, keine Marge auf Vorbereitungskursen.</td>
+        <td>Nicht zwingend benötigt – wir können diese Unabhängigkeit auch ohne dr Plattform argumentieren.</td>
+      </tr>
+      <tr>
+        <td class="label">Substituierbarkeit</td>
+        <td class="siz"><strong>Kaum substituierbar</strong> innert relevanter Zeit. Ein neuer Träger müsste 5–10 Jahre Prüfungsökosystem aufbauen.</td>
+        <td>Hoch substituierbar – mehrere andere Verbände/Plattformen können national-strategische Promotion liefern (SBFI, BBT, swissICT, KGV).</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="box pro">
+    <h4>Folgerung</h4>
+    <p>Die SIZ AG hat die strukturell stärkere Verhandlungsposition. digitalswitzerland kann ohne SIZ keinen glaubwürdigen Microcredential-Action-Plan-Eintrag liefern; SIZ kann ohne digitalswitzerland weiterhin wachsen. Diese Asymmetrie nutzen wir nicht aggressiv (das schadet der Beziehung), aber wir verhandeln <strong>auf Augenhöhe statt aus Demuts-Haltung</strong>: keine Rabatte als Geschenk, sondern Leistungspakete mit klarer Reziprozität.</p>
+  </div>
+</section>
+
+<section id="partner" class="alt">
+  <div class="inner">
+  <h2><strong>digitalswitzerland</strong> – Wer ist die Gegenseite?</h2>
+  <p class="sub">Profil, Mitglieder, Themen, Kanäle, Events</p>
+
+  <div class="card-grid cols-2">
+    <div class="card">
+      <div class="card-head">Organisation</div>
+      <div class="card-body">
+        <p>Branchenübergreifende, politisch neutrale Dachorganisation für die Digitalisierung der Schweiz. Sitz Zürich (Dufourstrasse 23) und Bern. <strong>220+ Mitglieder</strong> aus Wirtschaft, Wissenschaft, Verwaltung.</p>
+        <dl class="kv">
+          <dt>Mission</dt><dd>Schweiz als führende digitale Nation</dd>
+          <dt>Themen</dt><dd>AI · Cybersecurity · Daten · Digitale Identitäten · Bildung &amp; Medienkompetenz · Gesundheit · Public Policy</dd>
+          <dt>Strukturpartner</dt><dd>BAKOM · Accenture · Presence Switzerland · S-GE · Innosuisse · Swissnex · Bundesrat Rösti</dd>
+          <dt>Co-Finanzierung</dt><dd>Hauptfinancierer ICT-Berufsbildung Schweiz</dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head blue">Schlüsselperson</div>
+      <div class="card-body">
+        <p><strong>Linda Mülli, PhD</strong><br>Lead | Education, Professionals &amp; Diversity</p>
+        <dl class="kv">
+          <dt>Mail</dt><dd>linda@digitalswitzerland.com</dd>
+          <dt>Mobile</dt><dd>+41 79 350 96 09</dd>
+          <dt>Erreichbar</dt><dd>Mo–Do</dd>
+          <dt>Hintergrund</dt><dd>PhD Kulturwissenschaft &amp; Europäische Ethnologie (Uni Basel), Senior Project Manager digitalswitzerland</dd>
+          <dt>Co-Lead</dt><dd>Sandrine Denti (zweite Ansprechperson Education)</dd>
+        </dl>
+        <p style="margin-top: 0.8rem;"><em>Sie ist die operative Eigentümerin der Bildungs-/Microcredential-Schiene – nicht die strategische Letztentscheiderin. Auf strategischer Ebene: Marc Walder (Präsident Foundation Council) und Stefan Metzger (Managing Director).</em></p>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="margin-top: 2rem;">Mitgliedschaft – die HR-Pipeline für SIZ</h3>
+  <p style="color: var(--ink-soft); margin-bottom: 1.2rem;">220+ Mitglieder, namentlich gesichert sind u.a. die folgenden Schwergewichte – jedes davon eine eigene HR-Abteilung mit interner Academy und KI-Skills-Bedarf:</p>
+
+  <div class="card-grid cols-4">
+    <div class="card"><div class="card-head light">Finanz/Versicherung</div><div class="card-body"><ul><li>UBS</li><li>Zurich Insurance (üblich)</li><li>Swiss Re (üblich)</li></ul></div></div>
+    <div class="card"><div class="card-head light">Telco/Tech</div><div class="card-body"><ul><li>Swisscom</li><li>Google</li><li>IBM</li><li>Swico (Verband)</li></ul></div></div>
+    <div class="card"><div class="card-head light">Detailhandel/Logistik</div><div class="card-body"><ul><li>Migros</li><li>SBB</li><li>Swiss Post</li></ul></div></div>
+    <div class="card"><div class="card-head light">Akademie/Bildung</div><div class="card-body"><ul><li>ETH Zürich</li><li>ICT-Berufsbildung Schweiz</li><li>ADIS (Alliance for Digital Inclusion)</li></ul></div></div>
+  </div>
+
+  <div class="box highlight">
+    <h4>Konzern-Academy-Effekt</h4>
+    <p>UBS Academy, Swisscom Academy, SBB-Bildung, Migros Klubschule, IBM SkillsBuild – alle haben interne KI-Schulungs-Initiativen ohne unabhängigen Schluss-Nachweis. Das SIZ-Microcredential schliesst diese Lücke. Eine einzige durchgreifende Kooperation mit z.B. UBS Academy (3'000 Mitarbeitende) entspricht dem Volumen einer Mittelschule.</p>
+  </div>
+
+  <h3 style="margin-top: 2rem;">Der Swiss AI Action Plan im Überblick</h3>
+
+  <div class="card-grid cols-2">
+    <div class="card">
+      <div class="card-head">Vier Säulen</div>
+      <div class="card-body">
+        <ul>
+          <li><strong>AI Governance</strong> – Regulierungs-Frame, EU-AI-Act-Anschluss</li>
+          <li><strong>Digital Infrastructure</strong> – Compute, Datacenter, Konnektivität</li>
+          <li><strong>AI-enabled Data</strong> – Datenspaces, Datenqualität, Verfügbarkeit</li>
+          <li><strong>AI Expertise</strong> &larr; <strong>HIER ist SIZ verankert</strong></li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-head">Prozess-Zeitachse</div>
+      <div class="card-body">
+        <ul>
+          <li>01.12.2025 – Start öffentliche Konsultation</li>
+          <li>20.01.2026 – «Zero Draft» am WEF Davos</li>
+          <li>Mai 2026 – «First Draft» (Andermatt)</li>
+          <li>15.09.2026 – Forum Bern (Umsetzung Phase 1)</li>
+          <li>2027 – <strong>Global AI Summit Genève</strong> als nationaler Showcase</li>
+        </ul>
+        <p style="margin-top: 0.6rem;"><em>Konsultations-Plattform: chat.digitalswitzerland.ch</em></p>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="margin-top: 2rem;">Kommunikations- und Vertriebskanäle (Inventar)</h3>
+
+  <table class="matrix">
+    <thead>
+      <tr>
+        <th>Kanal</th>
+        <th>Reichweite / Profil</th>
+        <th>Frequenz</th>
+        <th>Eignung für SIZ-Microcredential</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="lead-col">Newsletter</td><td>14'000+ Abonnenten, C-Level Schweiz</td><td>Monatlich</td><td><span class="badge ok">sehr hoch</span> Lancierung + Quartals-Updates</td></tr>
+      <tr><td class="lead-col">LinkedIn-Firmenseite</td><td>~30'000 Follower (geschätzt), aktives Posting</td><td>Mehrmals wöchentlich</td><td><span class="badge ok">sehr hoch</span> Co-Posts mit Schirmherrschafts-Visual</td></tr>
+      <tr><td class="lead-col">News-Sektion digitalswitzerland.com</td><td>«Comments by Leaders», Pressemitteilungen, White Papers, Studien</td><td>Wöchentlich</td><td><span class="badge ok">hoch</span> Op-Ed von Wolfram Schmidt</td></tr>
+      <tr><td class="lead-col">Digital Gipfel Andermatt</td><td>C-Level Schweiz inkl. Bundesräte, ~300 Teilnehmer</td><td>1× jährlich, 26.–27.05.2026</td><td><span class="badge red">erstklassig</span> Speaker-Slot KI-Expertise-Panel</td></tr>
+      <tr><td class="lead-col">AI in Action Locarno</td><td>By invitation only, ~80 Teilnehmer, AI-Fokus</td><td>1× jährlich, 05.08.2026</td><td><span class="badge ok">hoch</span> Demo / Booth Microcredential</td></tr>
+      <tr><td class="lead-col">digitalswitzerland Forum Bern</td><td>Grösstes Jahres-Mitgliedertreffen, ~500 Teilnehmer</td><td>1× jährlich, 15.09.2026</td><td><span class="badge red">erstklassig</span> Breakout / Stand, Phase-1-Umsetzung</td></tr>
+      <tr><td class="lead-col">WEF Davos</td><td>4 High-Level-Side-Events, internationales Publikum</td><td>1× jährlich, 19.–23.01.2027</td><td><span class="badge">mittel</span> bei Lancierungs-Reife</td></tr>
+      <tr><td class="lead-col">Digital Shapers Magazin</td><td>108-Seiten-Print, BILANZ / Handelszeitung / PME, jährlich</td><td>1× jährlich, Herbst</td><td><span class="badge ok">hoch</span> Wolfram für 2027 nominieren</td></tr>
+      <tr><td class="lead-col">DigitalBarometer</td><td>Co-publizierte Studie, breite Medienauflage</td><td>1× jährlich</td><td><span class="badge">mittel</span> SIZ als Datenlieferant «AI-Fluency-Quote»</td></tr>
+      <tr><td class="lead-col">Annual Report</td><td>Print + PDF, breite Verteilung</td><td>1× jährlich</td><td><span class="badge">mittel</span> Case Study Box «Action Owner SIZ»</td></tr>
+      <tr><td class="lead-col">Working Groups</td><td>Cybersecurity, Digital Health, Data Spaces – Education-WG im Aufbau</td><td>Permanent</td><td><span class="badge red">strategisch</span> Sitz erringen</td></tr>
+      <tr><td class="lead-col">AI Action Plan-Webseite</td><td>Im Aufbau, alle Action Owner mit Logo + Beschreibung</td><td>Dauerhaft online</td><td><span class="badge red">erstklassig</span> Leader-Logo + offizieller Beschrieb</td></tr>
+      <tr><td class="lead-col">Community Talks / Webinare</td><td>Online-Format, Member-Fokus</td><td>Mehrmals jährlich</td><td><span class="badge ok">hoch</span> HR-Webinar zur Microcredential-Implementierung</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section id="asks">
+  <h2><strong>Unsere Asks</strong> – Was wir von digitalswitzerland verlangen</h2>
+  <p class="sub">Sechs konkrete Forderungen für die Partnerschaft</p>
+
+  <p style="color: var(--ink-soft); margin-bottom: 1.5rem;">Die folgenden Punkte gehen über das hinaus, was Linda Mülli bereits angeboten hat (Logo-Listung auf der AI-Action-Plan-Seite). Sie sind Bedingung der vertieften Zusammenarbeit – nicht Verhandlungspositionen, die «runterverhandelt» werden, sondern Marktwert-Erwartungen, die wir als Action Owner einbringen.</p>
+
+  <div class="box">
+    <div class="ask-row">
+      <div class="ask-num">1</div>
+      <div class="ask-body">
+        <h4>«Leader»-Status auf der AI-Action-Plan-Seite mit definiertem Beschrieb</h4>
+        <p>Nicht nur Logo, sondern: SIZ-Logo, Kurzbeschrieb (von uns vorformuliert), Direktlink zu siz.ch/ki, Sprachregelung «<em>Official Microcredential of the Swiss AI Action Plan – issued by SIZ AG</em>». Beschrieb-Inhalt definiert SIZ, digitalswitzerland publiziert ohne redaktionelle Eingriffe.</p>
+        <p class="quote">«Damit wir den Status sauber in Schulen und HR-Abteilungen kommunizieren können, brauchen wir die definitive Sprachregelung schriftlich.»</p>
+      </div>
+    </div>
+    <div class="ask-row">
+      <div class="ask-num">2</div>
+      <div class="ask-body">
+        <h4>Garantierter Speaker-Slot Digital Gipfel Andermatt</h4>
+        <p>26.–27.05.2026: Wolfram Schmidt auf dem AI-Expertise-Panel oder als Keynote-Speaker «Skills für die KI-Schweiz». Falls 2026 zeitlich zu kurzfristig, dann garantierter Slot am Forum Bern 15.09.2026 inkl. namentlicher Programmnennung.</p>
+        <p class="quote">«Ein Action Owner gehört auf die Bühne, nicht nur ins Logo-Feld unten in der Webseite.»</p>
+      </div>
+    </div>
+    <div class="ask-row">
+      <div class="ask-num">3</div>
+      <div class="ask-body">
+        <h4>Sitz in der Working Group «AI Expertise» bzw. «Education &amp; Skills»</h4>
+        <p>Permanenter Sitz mit Stimmrecht. Dadurch sichert die SIZ die Definitionshoheit über «AI-Fluency» und «Anwender-Niveau» innerhalb des Action Plans und kann verhindern, dass Hersteller-Credentials (Microsoft AB-Reihe, Google AI Essentials) den Schweizer Standard usurpieren.</p>
+        <p class="quote">«Wer den Begriff definiert, definiert den Markt. Wir wollen mit am Tisch sitzen, wenn der Plan ausformuliert wird.»</p>
+      </div>
+    </div>
+    <div class="ask-row">
+      <div class="ask-num">4</div>
+      <div class="ask-body">
+        <h4>Lancierungs-Welle: Newsletter, LinkedIn, News-Beitrag</h4>
+        <p>Bei öffentlicher Lancierung des Microcredentials (Q3 2026, Datum noch zu bestätigen): Newsletter-Lead-Story, LinkedIn-Co-Post mit Bundesrats-Schirmherrschafts-Visual (sofern verfügbar), Comment-by-Leader-Beitrag von Wolfram Schmidt auf digitalswitzerland.com. Zusätzlich: gemeinsame Pressemitteilung mit Verteiler an Schweizer Wirtschaftspresse.</p>
+        <p class="quote">«Die Lancierung ist der wichtigste Marketing-Moment der nächsten zwei Jahre. Wir gestalten ihn gemeinsam, oder wir verschieben.»</p>
+      </div>
+    </div>
+    <div class="ask-row">
+      <div class="ask-num">5</div>
+      <div class="ask-body">
+        <h4>HR-Roundtable mit Top-10-Mitgliedern</h4>
+        <p>digitalswitzerland organisiert einen geschlossenen Roundtable mit den HR-Leitungen der Top-10-Konzernmitglieder (UBS, Swisscom, SBB, Migros, IBM, Google, Swiss Post, Post Finance, Zurich, ETH). SIZ präsentiert das Microcredential als KI-Skills-Cert für die Belegschaft. Ziel: 2–3 Konzern-Piloten 2026/2027.</p>
+        <p class="quote">«Wir brauchen den direkten HR-Zugang zu den grossen Mitgliedern – nicht den Umweg über Mitglieder-Mails.»</p>
+      </div>
+    </div>
+    <div class="ask-row">
+      <div class="ask-num">6</div>
+      <div class="ask-body">
+        <h4>Co-publizierter Annual Report 2026 / Whitepaper «State of AI-Fluency in CH»</h4>
+        <p>SIZ liefert Daten der ersten Microcredential-Kohorten (Anzahl Zertifizierte, Branchenverteilung, Bestehensquoten, demografische Aufschlüsselung). digitalswitzerland publiziert als gemeinsame Studie mit Co-Branding – plus Print-Beilage bei BILANZ/Handelszeitung (Digital-Shapers-Kanal-Anbindung).</p>
+        <p class="quote">«Wir sind die einzige Stelle, die diese Daten überhaupt erheben kann. Daraus muss eine gemeinsame Geschichte werden.»</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="angebot" class="alt">
+  <div class="inner">
+  <h2><strong>Unser Angebot</strong> – Was die SIZ liefert</h2>
+  <p class="sub">Sieben Deliverables im Austausch</p>
+
+  <p style="color: var(--ink-soft); margin-bottom: 1.5rem;">Diese Leistungen sind <em>nicht</em> als kostenfreie Geschenke ausgestaltet. Sie sind <em>marktgerechte Pakete</em>, die digitalswitzerland-Mitglieder bevorzugt erhalten – mit klar bezifferbarem Wert.</p>
+
+  <div class="card-grid cols-2">
+    <div class="card">
+      <div class="card-head blue">Deliverable 1 — Member-Konditionen</div>
+      <div class="card-body">
+        <p><strong>Member-Tarif 15 %</strong> auf SIZ-KI-Prüfungsgebühren für Mitarbeitende von digitalswitzerland-Mitgliedern. Technisch via Promo-Code an HR-Abteilung.</p>
+        <p><em>Wichtig:</em> Kein Tiefpreis, sondern Member-Premium-Positionierung. Listenpreis bleibt sichtbar. Member-Tarif signalisiert Wertschätzung, nicht Discount-Anbiederung.</p>
+        <dl class="kv">
+          <dt>Wert pro Member</dt><dd>15 % × Mitarbeiterzahl</dd>
+          <dt>Dauer</dt><dd>2026/2027, danach Review</dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head blue">Deliverable 2 — Pilot-Plätze 2026</div>
+      <div class="card-body">
+        <p><strong>Limitierte Anzahl Pilot-Plätze</strong> für Member-Konzerne in Q3/Q4 2026 (Vorschlag: 100 kostenfreie Microcredential-Prüfungen, verteilt auf 3–5 Member-Pilote). Verbindlich: Member liefern Use Cases + Daten für die Whitepaper.</p>
+        <dl class="kv">
+          <dt>Kapazität</dt><dd>100 Plätze (Marketing-Budget)</dd>
+          <dt>Bedingung</dt><dd>HR-Case-Study + Daten-Freigabe</dd>
+          <dt>Kosten SIZ</dt><dd>~CHF 15'000 Marketing-Aufwand</dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head blue">Deliverable 3 — Speaker / Content für Events</div>
+      <div class="card-body">
+        <p>SIZ stellt Wolfram Schmidt (Geschäftsführer) und Franz Ruchti (Leiter Markt &amp; Partner) als Speaker für digitalswitzerland-Events bereit. Plus: bei Bedarf Prüfungs-Experten als Fachreferenten für Working Groups.</p>
+        <dl class="kv">
+          <dt>Slots 2026</dt><dd>Andermatt · Locarno · Bern · Davos 2027</dd>
+          <dt>Content</dt><dd>Keynotes, Panels, Workshops</dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head blue">Deliverable 4 — Co-Branding &amp; Logo-Lizenz</div>
+      <div class="card-body">
+        <p>SIZ akzeptiert das Co-Branding «Official Microcredential of the Swiss AI Action Plan» auf siz.ch, Lehrmitteln und Marketing-Material – im Gegenzug zur Logo-Listung auf der AI-Action-Plan-Webseite. Klare Brand-Guidelines beidseitig.</p>
+        <dl class="kv">
+          <dt>Format</dt><dd>Co-Branded Badge auf digitalen Zertifikaten</dd>
+          <dt>Pflege</dt><dd>SIZ-Marketing + digitalswitzerland-Comms</dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head blue">Deliverable 5 — Daten-Reporting</div>
+      <div class="card-body">
+        <p>SIZ liefert pro Quartal anonymisierte Statistiken (Zertifizierte nach Branche, Niveau, Region, demografischer Schnitt) an digitalswitzerland. Basis für DigitalBarometer, Annual Report, AI-Action-Plan-Reporting Richtung Bund.</p>
+        <dl class="kv">
+          <dt>Frequenz</dt><dd>Quartalsweise, anonymisiert</dd>
+          <dt>Dashboard</dt><dd>Möglich (mySIZ-Anbindung)</dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head blue">Deliverable 6 — HR-Integration mySIZ</div>
+      <div class="card-body">
+        <p>mySIZ-Anbindung an Member-LMS möglich (UBS Academy, Swisscom Academy, Migros Klubschule). Bestätigungs-Service über API: HR sieht Zertifizierungs-Status der eigenen Mitarbeitenden live. Technische Roadmap bei Bedarf.</p>
+        <dl class="kv">
+          <dt>API</dt><dd>REST + Webhook bei Bestehen</dd>
+          <dt>Pilot</dt><dd>1 Konzern 2026, danach skalieren</dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head blue">Deliverable 7 — Train-the-Trainer / SIZ-Akademie-Programm</div>
+      <div class="card-body">
+        <p>Konzern-Academies, die intern KI-Schulungen anbieten wollen, erhalten SIZ-Trainer-Briefings und Prüfungsleiter-Zertifizierung. Damit können sie selbst auf SIZ-Microcredential vorbereiten – ohne externen Schulungs-Anbieter zwischengeschaltet.</p>
+        <dl class="kv">
+          <dt>Dauer</dt><dd>2-tägiges TtT-Format</dd>
+          <dt>Preis</dt><dd>Listenpreis, kein Member-Rabatt (Premium-Service)</dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head amber">Deliverable A — Was wir NICHT anbieten</div>
+      <div class="card-body">
+        <p>Folgende Punkte sind <strong>ausgeschlossen</strong> – damit wir die Verhandlungslinie klarhalten:</p>
+        <ul>
+          <li>Kein Gratis-Zugang zur Microcredential-Prüfung für alle Member-Mitarbeitenden</li>
+          <li>Keine Exklusivität gegenüber Konkurrenz-Verbänden (swissICT, KGV, ICT-BB)</li>
+          <li>Keine Abgabe von Roh-Daten der Prüflinge (Datenschutz revDSG)</li>
+          <li>Keine Mit-Entscheidungsrechte über SIZ-Prüfungsinhalte ausserhalb der WG</li>
+          <li>Keine SIZ-Eigenfinanzierung digitalswitzerland-Operations</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section id="kanaele">
+  <h2><strong>Aktivitäten-Roadmap</strong> – Auf den Global AI Summit Genève 2027</h2>
+  <p class="sub">12 Monate, drei Phasen, vier Event-Anker</p>
+
+  <div class="card-grid cols-3">
+    <div class="card">
+      <div class="card-head red">Phase 1 — Verhandeln</div>
+      <div class="card-body">
+        <p><strong>Mai bis Juli 2026</strong></p>
+        <ul>
+          <li>20.05. Call Wolfram ↔ Linda (Verhandlungs-Eröffnung)</li>
+          <li>23.05. Memorandum of Understanding (Entwurf SIZ)</li>
+          <li>26.–27.05. Digital Gipfel Andermatt – Wolfram Speaker-Anfrage</li>
+          <li>Juni: Working-Group-Sitz bestätigen</li>
+          <li>Juni–Juli: HR-Roundtable Top-10-Member terminieren</li>
+          <li>Juli: AI-Action-Plan-Seite live mit SIZ-Logo</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head blue">Phase 2 — Lancieren</div>
+      <div class="card-body">
+        <p><strong>August bis November 2026</strong></p>
+        <ul>
+          <li>05.08. AI in Action Locarno – Microcredential-Demo</li>
+          <li>Aug/Sep: Öffentliche Lancierung KI Advanced-User SIZ</li>
+          <li>Newsletter-Lead-Story digitalswitzerland</li>
+          <li>LinkedIn Co-Posts (Wolfram + digitalswitzerland)</li>
+          <li>15.09. Forum Bern – Breakout / Booth</li>
+          <li>Okt: Erste Konzern-Piloten starten</li>
+          <li>Nov: Whitepaper-Entwurf «State of AI-Fluency»</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head green">Phase 3 — Skalieren</div>
+      <div class="card-body">
+        <p><strong>Dezember 2026 bis September 2027</strong></p>
+        <ul>
+          <li>Dez 2026: Erste Q4-Daten an digitalswitzerland</li>
+          <li>Jan 2027: WEF-Side-Event Davos (falls Reife)</li>
+          <li>Q1 2027: Whitepaper Publikation</li>
+          <li>Q1/Q2 2027: 5–10 Member-Konzerne im Rollout</li>
+          <li>Frühjahr 2027: Digital Shapers Wolfram-Nominierung</li>
+          <li>Mai 2027: Digital Gipfel 2027 – Erfolgs-Showcase</li>
+          <li><strong>Global AI Summit Genève 2027 – SIZ als Schweizer Skills-Showcase</strong></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="margin-top: 2rem;">Event-spezifische Spielpläne</h3>
+
+  <div class="card-grid cols-2">
+    <div class="card">
+      <div class="card-head">Digital Gipfel Andermatt · 26./27.05.2026</div>
+      <div class="card-body">
+        <p><strong>Ziel:</strong> Wolfram Schmidt auf der Bühne, SIZ-Microcredential in den Plenums-Folien des AI Action Plans als Beispiel-Action genannt.</p>
+        <p><strong>Asks an digitalswitzerland:</strong> Speaker-Slot oder Panel-Teilnahme; Erwähnung im Plenums-Folien-Deck; Networking-Slot mit Rösti.</p>
+        <p><strong>Wir bringen mit:</strong> Wolfram, Franz, finaler Modulbeschrieb, Logo-Bundle, 50 Lufthansa-Stick-Werbegeschenke (USB mit Microcredential-Beschrieb).</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-head">AI in Action Locarno · 05.08.2026</div>
+      <div class="card-body">
+        <p><strong>Ziel:</strong> Demo-Slot oder Lightning-Talk zum Microcredential; informelle HR-Gespräche im Networking-Setting.</p>
+        <p><strong>Asks:</strong> Demo-Slot 15 Min im «AI Literacy / Future of Work»-Track; Einladung Franz + Wolfram.</p>
+        <p><strong>Wir bringen mit:</strong> Live-Demo mySIZ, kurzer Erklärfilm (3 Min), 1–2 Pilot-Mitarbeiter eines Konzerns als Testimonial.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-head">digitalswitzerland Forum Bern · 15.09.2026</div>
+      <div class="card-body">
+        <p><strong>Ziel:</strong> Breakout-Session «Skills für die KI-Schweiz – das Microcredential im Einsatz»; Stand mit Tablet-Demo; HR-Roundtable im Vorprogramm.</p>
+        <p><strong>Asks:</strong> Breakout-Slot 45 Min; Booth in Member-Expo-Bereich; Programm-Print-Nennung mit Logo.</p>
+        <p><strong>Wir bringen mit:</strong> Wolfram als Moderator, ein Konzern-Pilot-Sponsor als Co-Speaker, gedruckte Microcredential-Broschüre (deutsch/französisch), 200 Stück.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-head">Global AI Summit Genève · 2027</div>
+      <div class="card-body">
+        <p><strong>Ziel:</strong> SIZ als Showcase «How Switzerland Built a National AI Skills Standard». Hochbühne mit Bund + 100+ internationalen Delegierten.</p>
+        <p><strong>Asks:</strong> Erwähnung im Plenum, Side-Event-Slot, Stand im Schweiz-Pavillon.</p>
+        <p><strong>Wir bringen mit:</strong> Bis dann hoffentlich 5'000+ Zertifizierte, Whitepaper, internationaler Übersetzung des Microcredential-Beschriebs in EN/FR/IT.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing" class="alt">
+  <div class="inner">
+  <h2><strong>Pricing &amp; Pilot-Strategie</strong></h2>
+  <p class="sub">Keine Rabattschlacht – Premium-Positionierung dank Action-Plan-Stempel</p>
+
+  <div class="box highlight">
+    <h4>Grundprinzip</h4>
+    <p>Der Action-Plan-Stempel <strong>erhöht</strong> den Wert des Microcredentials. Wir senken nicht den Preis – wir erhöhen die Wertkommunikation. Member-Tarif bleibt 15 % als Anerkennung der Partnerschaft, aber nicht als Marketing-Argument.</p>
+  </div>
+
+  <table class="compare-table">
+    <thead>
+      <tr>
+        <th>Segment</th>
+        <th>Konditionen</th>
+        <th>Begründung</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="label">Listenpreis (alle Kunden)</td>
+        <td class="siz">Standard SIZ-Tarif Microcredential KI Advanced-User (Preis-Definition durch SIZ, abhängig vom finalen Konzept)</td>
+        <td>Marktpreis ohne Sonderkondition – Referenzpunkt für alle Vergleiche</td>
+      </tr>
+      <tr>
+        <td class="label">digitalswitzerland-Mitglieder</td>
+        <td class="siz">15 % Member-Tarif für Mitarbeitende, via HR-Promo-Code</td>
+        <td>Anerkennung der Partnerschaft, signalisiert Wertschätzung – nicht Tiefpreis</td>
+      </tr>
+      <tr>
+        <td class="label">Pilot-Konzerne 2026 (3–5)</td>
+        <td class="siz">100 kostenfreie Plätze gegen Daten-Freigabe + Case Study</td>
+        <td>Marketing-Investition – wir kaufen Cases und Daten für Whitepaper</td>
+      </tr>
+      <tr>
+        <td class="label">Konzern-Volumenstaffel</td>
+        <td class="siz">Ab 500 Mitarbeitende: zusätzliche 5–10 % Volumenstaffel (verhandelbar)</td>
+        <td>Standard B2B-Praxis – nicht digitalswitzerland-spezifisch</td>
+      </tr>
+      <tr>
+        <td class="label">Train-the-Trainer</td>
+        <td class="siz">Listenpreis (keine Member-Reduktion)</td>
+        <td>Premium-Service mit hohem Ausbildungs-Aufwand</td>
+      </tr>
+      <tr>
+        <td class="label">Andere Verbands-Mitglieder<br>(swissICT, KGV, ICT-BB etc.)</td>
+        <td class="siz">Gleiche 15 %-Marge möglich, separat zu verhandeln</td>
+        <td>Wir geben digitalswitzerland keine Exklusivität – das ist unser Hebel gegenüber anderen Verbänden</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="box warn">
+    <h4>Was wir nicht tun</h4>
+    <ul>
+      <li><strong>Keine «Gratis für alle Member»-Aktion</strong> – würde den Markt verbrennen und den Action-Plan-Stempel entwerten</li>
+      <li><strong>Keine zeitlich unbefristete Aktionen</strong> – alle Konditionen mit Sunset-Klausel Ende 2027</li>
+      <li><strong>Keine Co-Branded-Co-Preise mit Schulen</strong> – Schulen erhalten weiterhin Standardpreis, dürfen aber Member-Promo-Code an Konzerne weitergeben</li>
+    </ul>
+  </div>
+  </div>
+</section>
+
+<section id="talking-points">
+  <h2><strong>Talking Points</strong> – Briefing für Wolframs Dienstags-Call mit Linda</h2>
+  <p class="sub">Eröffnungs-Call der vertieften Verhandlung</p>
+
+  <div class="card-grid cols-2">
+    <div class="card">
+      <div class="card-head red">Eröffnung (5 Min)</div>
+      <div class="card-body">
+        <ul>
+          <li>Dank für die offizielle Action-Owner-Bestätigung</li>
+          <li>Bestätigung Logo-Lieferung erfolgt</li>
+          <li>Frage: Wann genau geht die AI-Action-Plan-Seite live? Wer publiziert?</li>
+          <li>Frage: Welche Mitglieder-Feedbacks zur SIZ-Modulidentifikation sind bisher reingekommen?</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-head blue">Strategischer Block (15 Min)</div>
+      <div class="card-body">
+        <ul>
+          <li>SIZ-Sichtweise: Microcredential ist <strong>die Anwender-Antwort</strong> auf den Action Plan, komplementär zur AI Business Specialist FA</li>
+          <li>Reziprozitäts-Logik: Wir liefern den verifizierbaren Schluss, ihr liefert die Mitglieder-Pipeline</li>
+          <li>Drei konkrete Asks zuerst nennen: Working-Group-Sitz, Speaker-Slot, HR-Roundtable</li>
+          <li>Konzern-Beispiele platzieren: UBS Academy, Swisscom Academy – wo der Hebel sitzt</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-head">Operatives (10 Min)</div>
+      <div class="card-body">
+        <ul>
+          <li>Lancierungs-Zeitfenster: Wir zielen Q3 2026, Datum noch zu definieren</li>
+          <li>Vorschlag MoU-Entwurf: SIZ liefert Erstentwurf bis Ende Mai</li>
+          <li>Datenschutz / revDSG: Vereinbarung über Statistik-Lieferung an digitalswitzerland</li>
+          <li>Sprachversionen: DE zum Start, FR + IT in Phase 2</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-head green">Close (5 Min)</div>
+      <div class="card-body">
+        <ul>
+          <li>Vereinbaren: nächster Folge-Termin in 2 Wochen</li>
+          <li>Vereinbaren: schriftliche Bestätigung des Status (E-Mail von Linda an Wolfram, copy: Marc Walder)</li>
+          <li>Vereinbaren: Wer macht was bis dahin (Wolfram: MoU-Entwurf, Linda: Working-Group-Sitz-Klärung, HR-Roundtable-Vorschlagsliste)</li>
+          <li>Frage an Linda offen lassen: «Brauchen Sie von uns noch etwas, damit die Action-Plan-Seite live gehen kann?»</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="box warn">
+    <h4>Vermeiden im Call</h4>
+    <ul>
+      <li><strong>Nicht</strong> «Was können wir für euch tun?» – das ist die Demuts-Eröffnung. Stattdessen: «Wie operationalisieren wir die Zusammenarbeit?»</li>
+      <li><strong>Nicht</strong> Rabatte oder Gratis-Aktionen anbieten, bevor Asks platziert sind</li>
+      <li><strong>Nicht</strong> Konkurrenz-Verbände (ICT-BB, swissICT) abwerten – sie sind teilweise eigene Member oder Partner</li>
+      <li><strong>Nicht</strong> die AI Business Specialist FA als Konkurrenz framen – sondern als Senior-Komplement zur SIZ-Anwender-Stufe</li>
+      <li><strong>Nicht</strong> die Mitgliederliste explizit erfragen – das wirkt akquisitorisch. Lieber: «Welche Mitglieder hätten als HR-Roundtable-Partner Interesse?»</li>
+    </ul>
+  </div>
+</section>
+
+<section id="kpi" class="alt">
+  <div class="inner">
+  <h2><strong>KPIs</strong> – Erfolgsmessung 2026/2027</h2>
+  <p class="sub">Klare Ziele, klare Verantwortlichkeiten</p>
+
+  <table class="matrix">
+    <thead>
+      <tr>
+        <th>KPI</th>
+        <th>Ziel Ende 2026</th>
+        <th>Ziel Mitte 2027</th>
+        <th>Verantwortlich</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="lead-col">Microcredential-Listung AI-Action-Plan-Seite</td><td>Live mit Logo + Beschrieb</td><td>Aktualisiert mit Zahlen</td><td>Linda Mülli</td></tr>
+      <tr><td class="lead-col">Speaker-Slots digitalswitzerland-Events</td><td>2 (Andermatt + Forum)</td><td>+1 (Davos)</td><td>Franz Ruchti</td></tr>
+      <tr><td class="lead-col">Working-Group-Sitz AI Expertise</td><td>Bestätigt</td><td>Aktive Mitarbeit, 4 Sitzungen</td><td>Wolfram Schmidt</td></tr>
+      <tr><td class="lead-col">HR-Roundtables</td><td>1 mit Top-10-Member</td><td>2 weitere</td><td>Franz Ruchti</td></tr>
+      <tr><td class="lead-col">Konzern-Pilote (Mitarbeiter-Microcredentials)</td><td>3 Piloten, 100 Personen</td><td>10 Piloten, 1'000 Personen</td><td>SIZ Markt &amp; Partner</td></tr>
+      <tr><td class="lead-col">Newsletter-Erwähnungen</td><td>1 Lead + 2 Updates</td><td>4 Updates</td><td>Linda Mülli</td></tr>
+      <tr><td class="lead-col">LinkedIn-Co-Posts</td><td>3</td><td>+6</td><td>digitalswitzerland-Comms</td></tr>
+      <tr><td class="lead-col">News-Beitrag Wolfram Schmidt</td><td>1</td><td>+1</td><td>Wolfram Schmidt</td></tr>
+      <tr><td class="lead-col">Whitepaper «State of AI-Fluency»</td><td>Entwurf</td><td>Publiziert</td><td>SIZ + digitalswitzerland</td></tr>
+      <tr><td class="lead-col">Anteil zertifizierter Member-Mitarbeiter</td><td>—</td><td>500 zertifiziert</td><td>SIZ + Member-HR</td></tr>
+      <tr><td class="lead-col">Co-Branding auf Member-Karrieren-Seiten</td><td>—</td><td>3 Member (HR-Anforderungs-Profile)</td><td>SIZ Markt &amp; Partner</td></tr>
+      <tr><td class="lead-col">Showcase Global AI Summit Genève</td><td>—</td><td>SIZ im Programm</td><td>Wolfram + Linda</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section id="risiken">
+  <h2><strong>Risiken &amp; politische Klippen</strong></h2>
+  <p class="sub">Was schiefgehen kann und wie wir vorbeugen</p>
+
+  <div class="card-grid cols-2">
+    <div class="card">
+      <div class="card-head amber">Risiko 1 — Logo-Listung ohne Inhalt</div>
+      <div class="card-body">
+        <p>digitalswitzerland publiziert SIZ-Logo auf der Action-Plan-Seite, aber liefert keinen der weiteren Asks (kein Speaker, kein WG-Sitz, kein Roundtable). Wir werden zum Schaufenster ohne Substanz.</p>
+        <p><strong>Vorbeugung:</strong> MoU oder schriftliche Vereinbarung mit den Asks vor Logo-Freigabe. Falls digitalswitzerland blockt, Logo erst nach Bestätigung der drei Kern-Asks freigeben.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-head amber">Risiko 2 — ICT-BB-Konflikt</div>
+      <div class="card-body">
+        <p>ICT-Berufsbildung Schweiz (Hauptträger AI Business Specialist FA) ist selbst digitalswitzerland-Mitglied. Konkurrenz-Wahrnehmung möglich. Bangerter (kfmv) ist parallel BIKAS-Präsident.</p>
+        <p><strong>Vorbeugung:</strong> Sprachregelung «Anwender (SIZ) + Senior (FA) = Schweizer Skills-Treppe». Aktiv ICT-BB als Komplement framen. Frühzeitiger Austausch mit Andreas Kaelin / ICT-BB.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-head amber">Risiko 3 — Hersteller-Lobby</div>
+      <div class="card-body">
+        <p>Microsoft (AB-Reihe), Google (AI Essentials), AWS (AIF-C01) sind alle digitalswitzerland-Member. Hersteller-Lobby könnte versuchen, ihre Credentials parallel als «offizielle Action-Plan-Schulungen» zu positionieren.</p>
+        <p><strong>Vorbeugung:</strong> WG-Sitz nutzen, um Sprachregelung «<em>einziges Schweizer, herstellerneutrales Anwender-Cert</em>» zu etablieren. Hersteller dürfen Lehrmittel liefern – aber der Microcredential-Stempel bleibt bei SIZ.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-head amber">Risiko 4 — politischer Wechsel</div>
+      <div class="card-body">
+        <p>Bundesrat Rösti könnte 2027 aus dem Amt scheiden, BAKOM-Leitung wechseln, Accenture als Berater ersetzt werden. Schirmherrschaft schwankt.</p>
+        <p><strong>Vorbeugung:</strong> SIZ-Wert nicht nur an Rösti binden, sondern Co-Branding mit «Swiss AI Action Plan» – das überlebt Personalwechsel. Mehrere VR-Stützen (Gut/Swico, Jositsch/Ständerat, Burkhalter/kfmv) bauen.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-head amber">Risiko 5 — Datenschutz / revDSG</div>
+      <div class="card-body">
+        <p>Datenlieferung an digitalswitzerland für Whitepaper / DigitalBarometer kann revDSG-Konflikte auslösen, wenn Prüflinge nicht zugestimmt haben.</p>
+        <p><strong>Vorbeugung:</strong> Nur anonymisierte Aggregate liefern. Prüfungs-Anmeldeformular um Statistik-Einwilligung erweitern. Datenschutz-Vertrag (DPA) mit digitalswitzerland abschliessen.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-head amber">Risiko 6 — Member-Erwartung «Gratis-Schulung»</div>
+      <div class="card-body">
+        <p>digitalswitzerland-Member könnten erwarten, dass der Action-Plan-Status auch günstige oder gratis Microcredentials für ihre Belegschaft bedeutet.</p>
+        <p><strong>Vorbeugung:</strong> Aktiv kommunizieren: «Der Action-Plan-Status erhöht den Wert. Mitglieder erhalten 15 % Member-Tarif, keine Gratis-Aktionen.» Pilot-Plätze klar als limitiertes Marketing-Investment framen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="quellen" class="alt">
+  <div class="inner">
+  <h2><strong>Quellen</strong> &amp; weiterführende Dokumente</h2>
+  <p class="sub">Recherche-Basis Stand 14.05.2026</p>
+
+  <div class="sources">
+    <h4>digitalswitzerland Webpräsenz</h4>
+    <ul>
+      <li><a href="https://digitalswitzerland.com/" target="_blank">digitalswitzerland.com – Startseite</a></li>
+      <li><a href="https://digitalswitzerland.com/about" target="_blank">About digitalswitzerland</a></li>
+      <li><a href="https://digitalswitzerland.com/membership-and-partnership/" target="_blank">Membership &amp; Partnership</a></li>
+      <li><a href="https://digitalswitzerland.com/topic/artificial-intelligence" target="_blank">Topic AI</a></li>
+      <li><a href="https://digitalswitzerland.com/topic/education-literacy" target="_blank">Topic Education &amp; Literacy</a></li>
+      <li><a href="https://digitalswitzerland.com/programm/education-skilled-workforce/" target="_blank">Programm Education, Professionals &amp; Diversity</a></li>
+      <li><a href="https://digitalswitzerland.com/contribute-to-the-ai-action-plan-for-switzerland/" target="_blank">AI Action Plan – Mitwirken</a></li>
+      <li><a href="https://digitalswitzerland.com/de/von-der-e-id-zum-ai-action-plan-die-schweiz-positioniert-sich-fuer-die-digitale-zukunft/" target="_blank">Von der e-ID zum AI Action Plan</a></li>
+      <li><a href="https://digitalswitzerland.ch/events/digital-gipfel-schweiz-2026" target="_blank">Digital Gipfel Schweiz 2026</a></li>
+      <li><a href="https://digitalswitzerland.com/news/switzerland-to-host-the-global-ai-summit-2027-in-geneva" target="_blank">Global AI Summit 2027 in Genève</a></li>
+    </ul>
+
+    <h4 style="margin-top: 1rem;">Schlüsselpersonen</h4>
+    <ul>
+      <li><a href="https://ch.linkedin.com/in/linda-muelli-phd-14b2088b/de" target="_blank">Linda Mülli, PhD – LinkedIn</a></li>
+      <li><a href="https://www.linkedin.com/company/digitalswitzerland/" target="_blank">digitalswitzerland – LinkedIn Firmenseite</a></li>
+    </ul>
+
+    <h4 style="margin-top: 1rem;">Microcredential-Kontext</h4>
+    <ul>
+      <li><a href="https://www.sbfi.admin.ch/de/microcredentials-de" target="_blank">SBFI – Microcredentials in der Schweiz</a></li>
+      <li><a href="https://blog.zhaw.ch/lehren-und-lernen/microcredentials-an-der-zhaw-digitale-zertifikate-fuer-flexifles-lernen/" target="_blank">ZHAW Blog – Microcredentials als digitale Zertifikate</a></li>
+    </ul>
+
+    <h4 style="margin-top: 1rem;">SIZ-interne Bezugsdokumente</h4>
+    <ul>
+      <li><a href="/project/siz-ag/office-ki-landschaft">SIZ-Schwesterseite: Office &amp; KI-Zertifikate Anbieter-Landschaft</a></li>
+      <li><a href="/project/siz-ag/vergleich-icdl">SIZ vs. ICDL Vergleich</a></li>
+      <li><a href="/project/siz-ag/kv-efz-landschaft">KV-EFZ-Landschaft</a></li>
+      <li><code>G:\Meine Ablage\SIZ\SIZ AG\Module\KI\2026-03-05-KI-Modul SIZ.pdf</code> – Konzept-PPTX W. Schmidt</li>
+      <li><code>G:\Meine Ablage\SIZ\SIZ AG\Module\KI\MID AU KI.pdf</code> – Modul-Identifikation Advanced-User V1</li>
+    </ul>
+  </div>
+  </div>
+</section>
+
+<footer>
+  <h3>Internes Strategiepapier – Marketing &amp; Partner</h3>
+  <p>Erstellt 14.05.2026 · Franz Ruchti · Leiter Markt &amp; Partner SIZ AG</p>
+  <p>Adressaten: Wolfram Schmidt (Geschäftsführung), Dr. Alain Gut (VR-Präsident), VR-Mitglieder</p>
+  <p class="meta">SIZ AG · Reitergasse 9 · Postfach · 8021 Zürich · <a href="https://www.siz.ch">www.siz.ch</a></p>
+</footer>
+
+</body>
+</html>

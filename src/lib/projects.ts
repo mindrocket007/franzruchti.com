@@ -103,6 +103,11 @@ export const projects: Project[] = [
         file: "/projects/siz-ag/Office_KI_Landschaft.html",
       },
       {
+        slug: "digitalswitzerland-partnerschaft",
+        title: "digitalswitzerland-Partnerschaft · Marketingplan AI Action Plan",
+        file: "/projects/siz-ag/digitalswitzerland_Partnerschaft.html",
+      },
+      {
         slug: "argumentarium",
         title: "Argumentarium",
         file: "/projects/siz-ag/SIZ_Argumentarium.html",
