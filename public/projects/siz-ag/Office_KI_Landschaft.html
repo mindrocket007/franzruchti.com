@@ -1,0 +1,1493 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Office- und KI-Zertifikate – Schweizer Anbieter-Landschaft 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --siz-blue: #4880B6;
+  --siz-blue-dark: #2D5A8A;
+  --siz-blue-light: #7791B3;
+  --siz-blue-lite: #CDD4E1;
+  --siz-blue-soft: #EFF3F8;
+  --siz-red: #E30613;
+  --siz-red-dark: #A30009;
+  --accent-cyan: #5EC5ED;
+  --ink: #2D3940;
+  --ink-soft: #4A5965;
+  --mute: #859AB7;
+  --bg: #FFFFFF;
+  --bg-soft: #F5F7FA;
+  --line: #E2E8F0;
+  --ok: #1e7a4a;
+  --warn: #b75a00;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: 'Roboto', 'Segoe UI', system-ui, sans-serif;
+  font-weight: 400;
+  color: var(--ink);
+  line-height: 1.55;
+  background: var(--bg);
+  font-size: 16px;
+}
+
+.topbar {
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+  padding: 14px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.topbar .brand {
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  color: var(--siz-blue-dark);
+}
+.topbar .meta { color: var(--mute); font-size: 0.78rem; letter-spacing: 0.05em; }
+
+.hero {
+  background: linear-gradient(115deg, var(--siz-blue-soft) 0%, var(--siz-blue-lite) 50%, var(--siz-blue-light) 100%);
+  padding: 5rem 2rem 4rem;
+  position: relative;
+  overflow: hidden;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; right: 0;
+  width: 8px;
+  height: 100%;
+  background: repeating-linear-gradient(180deg, var(--siz-red) 0 16px, transparent 16px 32px);
+  opacity: 0.65;
+}
+.hero-inner { max-width: 1200px; margin: 0 auto; }
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--siz-blue-dark);
+  margin-bottom: 1rem;
+}
+.hero h1 {
+  font-size: clamp(2.2rem, 5.2vw, 3.8rem);
+  font-weight: 300;
+  margin: 0 0 1.2rem;
+  color: var(--siz-blue-dark);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+}
+.hero h1 strong { font-weight: 700; }
+.hero .lead {
+  font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+  max-width: 880px;
+  color: var(--ink-soft);
+  margin: 0 0 1.8rem;
+}
+.hero-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.tag {
+  background: rgba(255,255,255,0.7);
+  border: 1px solid rgba(72,128,182,0.3);
+  padding: 0.35rem 0.85rem;
+  border-radius: 2px;
+  font-size: 0.82rem;
+  color: var(--siz-blue-dark);
+  font-weight: 500;
+}
+
+nav.toc {
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+  padding: 0.8rem 2rem;
+  position: sticky;
+  top: 53px;
+  z-index: 90;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+nav.toc a {
+  color: var(--siz-blue-dark);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-right: 1.6rem;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.15s;
+}
+nav.toc a:hover { border-bottom-color: var(--siz-red); }
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+section.alt { background: var(--bg-soft); max-width: none; }
+section.alt .inner { max-width: 1200px; margin: 0 auto; }
+section.dark { background: var(--siz-blue-dark); color: #fff; max-width: none; }
+section.dark .inner { max-width: 1200px; margin: 0 auto; }
+section.dark h2 { color: #fff; }
+section.dark .sub { color: rgba(255,255,255,0.85); }
+
+h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0 0 0.4rem;
+  color: var(--siz-blue-dark);
+  letter-spacing: -0.01em;
+}
+h2 strong { font-weight: 700; }
+.sub {
+  font-size: 1rem;
+  color: var(--mute);
+  margin: 0 0 2.5rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--siz-blue-dark);
+  margin: 0 0 0.8rem;
+}
+p { margin: 0 0 1rem; }
+
+.tldr {
+  background: linear-gradient(135deg, var(--siz-blue-soft) 0%, #fff 100%);
+  border-left: 4px solid var(--siz-red);
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  margin-bottom: 2.5rem;
+}
+.tldr-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--siz-red);
+  margin-bottom: 0.6rem;
+}
+.tldr p { margin: 0; font-size: 1.05rem; color: var(--ink); }
+
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  overflow: hidden;
+  font-size: 0.92rem;
+}
+.compare-table thead th {
+  background: var(--siz-blue-dark);
+  color: #fff;
+  padding: 1rem 1.2rem;
+  text-align: left;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+.compare-table thead th:nth-child(2) {
+  background: var(--siz-blue);
+  border-left: 3px solid var(--siz-red);
+}
+.compare-table tbody td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+.compare-table tbody tr:nth-child(even) { background: var(--bg-soft); }
+.compare-table tbody tr:last-child td { border-bottom: none; }
+.compare-table td.label {
+  font-weight: 500;
+  color: var(--siz-blue-dark);
+  width: 19%;
+}
+.compare-table td.siz {
+  border-left: 3px solid var(--siz-red);
+  background: rgba(72,128,182,0.04);
+}
+
+.card-grid {
+  display: grid;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+.card-grid.cols-2 { grid-template-columns: 1fr 1fr; }
+.card-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+.card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.card-head {
+  background: var(--siz-blue-dark);
+  color: #fff;
+  padding: 0.9rem 1.2rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-head .pill {
+  background: rgba(255,255,255,0.18);
+  font-size: 0.7rem;
+  padding: 0.15rem 0.55rem;
+  border-radius: 2px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.card-head.red { background: var(--siz-red); }
+.card-head.blue { background: var(--siz-blue); }
+.card-head.light { background: var(--siz-blue-soft); color: var(--siz-blue-dark); }
+.card-head.green { background: var(--ok); }
+.card-head.amber { background: var(--warn); }
+.card-body { padding: 1.2rem; flex: 1; }
+.card-body ul { margin: 0.4rem 0; padding-left: 1.2rem; }
+.card-body li { margin-bottom: 0.4rem; color: var(--ink-soft); font-size: 0.9rem; }
+.card-body p { font-size: 0.92rem; color: var(--ink-soft); margin-bottom: 0.7rem; }
+.card-body .kv { display: grid; grid-template-columns: 100px 1fr; gap: 0.3rem 0.7rem; font-size: 0.85rem; margin-top: 0.6rem; }
+.card-body .kv dt { color: var(--mute); text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.06em; padding-top: 2px; }
+.card-body .kv dd { margin: 0; color: var(--ink); }
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.kpi {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--siz-blue);
+  padding: 1.5rem 1rem;
+  text-align: center;
+  border-radius: 2px;
+}
+.kpi .num {
+  color: var(--siz-blue-dark);
+  font-size: 1.95rem;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.4rem;
+  line-height: 1;
+}
+.kpi .label {
+  color: var(--mute);
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+  line-height: 1.3;
+}
+
+.box {
+  background: #fff;
+  border: 1px solid var(--line);
+  padding: 1.4rem 1.6rem;
+  border-radius: 2px;
+  margin-bottom: 1rem;
+}
+.box.pro { border-left: 4px solid var(--ok); background: #f4fbf6; }
+.box.contra { border-left: 4px solid var(--mute); background: var(--bg-soft); }
+.box.warn { border-left: 4px solid var(--siz-red); background: #fff6f6; }
+.box.highlight { border-left: 4px solid var(--siz-blue); background: var(--siz-blue-soft); }
+.box h4 {
+  margin: 0 0 0.5rem;
+  color: var(--siz-blue-dark);
+  font-size: 1rem;
+}
+.box.pro h4 { color: var(--ok); }
+.box.warn h4 { color: var(--siz-red-dark); }
+.box ul { margin: 0; padding-left: 1.2rem; }
+.box li { margin-bottom: 0.35rem; color: var(--ink-soft); font-size: 0.93rem; }
+.box p:last-child { margin-bottom: 0; }
+
+details.faq {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 1rem 1.3rem;
+  margin-bottom: 0.6rem;
+}
+details.faq[open] {
+  border-color: var(--siz-blue);
+  box-shadow: 0 2px 8px rgba(72,128,182,0.1);
+}
+details.faq summary {
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--siz-blue-dark);
+  font-size: 1rem;
+  list-style: none;
+  position: relative;
+  padding-right: 30px;
+}
+details.faq summary::-webkit-details-marker { display: none; }
+details.faq summary::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 1.4rem;
+  color: var(--siz-red);
+  font-weight: 300;
+  line-height: 1;
+}
+details.faq[open] summary::after { content: "−"; }
+details.faq .answer {
+  margin-top: 0.9rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--line);
+  color: var(--ink-soft);
+  font-size: 0.93rem;
+}
+details.faq .answer ul { margin: 0.5rem 0 0; padding-left: 1.3rem; }
+details.faq .answer li { margin-bottom: 0.3rem; }
+
+.matrix {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border: 1px solid var(--line);
+  font-size: 0.88rem;
+  margin-bottom: 1rem;
+}
+.matrix th {
+  background: var(--siz-blue-dark);
+  color: #fff;
+  padding: 0.85rem 0.9rem;
+  text-align: left;
+  font-weight: 500;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+}
+.matrix td {
+  padding: 0.75rem 0.9rem;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+.matrix tbody tr:nth-child(even) { background: var(--bg-soft); }
+.matrix td.lead-col {
+  font-weight: 500;
+  color: var(--siz-blue-dark);
+  white-space: nowrap;
+}
+.matrix .badge {
+  display: inline-block;
+  background: var(--siz-blue);
+  color: #fff;
+  padding: 0.12rem 0.5rem;
+  border-radius: 2px;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+.matrix .badge.red { background: var(--siz-red); }
+.matrix .badge.ok { background: var(--ok); }
+.matrix .badge.mute { background: var(--mute); }
+.matrix .badge.warn { background: var(--warn); }
+
+.sources {
+  background: var(--bg-soft);
+  padding: 1.5rem;
+  border-radius: 2px;
+  font-size: 0.85rem;
+  margin-top: 2rem;
+}
+.sources h4 {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+  margin: 0 0 0.8rem;
+  color: var(--mute);
+}
+.sources ul { margin: 0; padding-left: 1.2rem; }
+.sources li { margin-bottom: 0.3rem; color: var(--ink-soft); }
+.sources a {
+  color: var(--siz-blue-dark);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--mute);
+}
+.sources a:hover { border-bottom-color: var(--siz-blue); }
+
+footer {
+  background: var(--siz-blue-dark);
+  color: rgba(255,255,255,0.92);
+  padding: 3rem 2rem 2rem;
+  text-align: center;
+}
+footer h3 { color: #fff; margin: 0 0 0.8rem; font-weight: 300; }
+footer p { color: rgba(255,255,255,0.85); }
+footer a { color: #fff; text-decoration: none; border-bottom: 1px dotted rgba(255,255,255,0.5); }
+footer .meta { margin-top: 2rem; font-size: 0.78rem; opacity: 0.55; letter-spacing: 0.05em; }
+footer .red-stripes {
+  display: block;
+  width: 80px;
+  height: 4px;
+  margin: 1rem auto;
+  background: repeating-linear-gradient(90deg, var(--siz-red) 0 12px, transparent 12px 18px);
+}
+
+@media (max-width: 900px) {
+  .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+  .card-grid.cols-2,
+  .card-grid.cols-3 { grid-template-columns: 1fr; }
+  section { padding: 3rem 1.2rem; }
+  .hero { padding: 3rem 1.2rem; }
+  .compare-table, .matrix { font-size: 0.82rem; }
+  .compare-table td, .compare-table th,
+  .matrix td, .matrix th { padding: 0.55rem; }
+}
+
+@media print {
+  nav.toc, .topbar { display: none; }
+  section { page-break-inside: avoid; padding: 1.5rem; }
+  .hero { padding: 2rem 1.5rem; }
+  section.dark { background: #fff; color: var(--ink); }
+  section.dark h2 { color: var(--siz-blue-dark); }
+  body { font-size: 10pt; }
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span class="brand">SIZ AG · Marktbeobachtung</span>
+  <span class="meta">Office- &amp; KI-Zertifikate · Anbieter-Landschaft Schweiz · Stand 14.05.2026</span>
+</div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="kicker">Marktübersicht für Schulen, HR und Entscheidende</div>
+    <h1>Office- und <strong>KI-Zertifikate</strong> im Vergleich.<br>Wer prüft? Wer schult?</h1>
+    <p class="lead">Word, Excel, PowerPoint – und neu auch Künstliche Intelligenz, Prompt-Engineering und Datenschutz im KI-Alltag. Die Anbieter-Landschaft hat sich 2025/2026 stark verändert: Microsoft hat mit der AB-Reihe vier neue KI-Zertifikate eingeführt, Google ein eigenes Programm gestartet, ICDL ein KI-Modul ergänzt und mit dem <em>AI Business Specialist mit eidg. Fachausweis</em> kommt 2026 erstmals eine schweizerische staatlich anerkannte KI-Berufsprüfung. Diese Seite trennt sauber: Wer stellt die <strong>Zertifikate und Diplome</strong> aus – und wer macht in der Schweiz die <strong>Wissensvermittlung</strong> dazu?</p>
+    <div class="hero-tags">
+      <span class="tag">Microsoft MOS &amp; AB-Reihe</span>
+      <span class="tag">Google AI Essentials</span>
+      <span class="tag">AWS AIF-C01</span>
+      <span class="tag">ICDL AI-Modul</span>
+      <span class="tag">SIZ Smart/Advanced/Power-User</span>
+      <span class="tag">AI Business Specialist FA</span>
+      <span class="tag">CH-Schulungsanbieter</span>
+    </div>
+  </div>
+</header>
+
+<nav class="toc">
+  <a href="#tldr">Kurzfassung</a>
+  <a href="#logik">Markt-Logik</a>
+  <a href="#office-anbieter">Office-Anbieter</a>
+  <a href="#ki-anbieter">KI-Anbieter</a>
+  <a href="#office-vergleich">Office-Vergleich</a>
+  <a href="#ki-vergleich">KI-Vergleich</a>
+  <a href="#schulung-ch">Schulung in CH</a>
+  <a href="#aibs">AI Business Specialist FA</a>
+  <a href="#siz-position">SIZ-Position</a>
+  <a href="#faq">FAQ</a>
+  <a href="#quellen">Quellen</a>
+</nav>
+
+<!-- TL;DR -->
+<section id="tldr">
+  <div class="tldr">
+    <div class="tldr-label">Kurzfassung in 60 Sekunden</div>
+    <p>Im Bereich Office-Anwendung (Word, Excel, PowerPoint) prüfen in der Schweiz vor allem drei Anbieter: <strong>SIZ AG</strong> (Smart/Advanced/Power-User, prüfungsneutral, in der eigenen Schule), <strong>Microsoft</strong> (MOS-Reihe MO-100/200/300 über Certiport-Testcenter) und <strong>ICDL</strong> (ICDL Foundation Dublin, in CH ab 2025 SIS). Im neuen Feld KI/Copilot ist Microsoft mit AI-900 + der frischen AB-Reihe (AB-730, AB-731, AB-100, AB-900) am breitesten aufgestellt; Google folgt mit «Generative AI Leader», «AI Essentials» und dem 2026 lancierten «Google AI Professional Certificate». AWS deckt mit AIF-C01 die Cloud-/KI-Grundlagen ab. ICDL bietet ein kurzes «Artificial Intelligence»-Insight-Modul. <strong>SIZ hat aktuell kein eigenes KI-Diplom</strong> – KI-Themen wurden Dezember 2025 in die Modulinhalte (MID) eingearbeitet, und ab 30.03.2026 sind KI-Tools in scharfen SIZ-Prüfungen ausdrücklich geregelt. <strong>Die Wissensvermittlung</strong> zu allen diesen Zertifikaten passiert in der Schweiz fast vollständig durch externe Schulen – Digicomp, KV Business School Zürich, KV Luzern Berufsakademie, Klubschule Migros, IPSO, IBAW, WISS, HSO und andere – als Präsenz, Online-Live oder Selbststudium. Eine eidg. anerkannte KI-Berufsprüfung gibt es ab Herbst 2026: <strong>AI Business Specialist mit eidg. Fachausweis</strong>, Trägerschaft ICT-Berufsbildung Schweiz, SBFI-registriert. Eine vergleichbare staatliche Anerkennung haben weder Microsoft- noch Google- noch ICDL-Zertifikate – sie sind Hersteller-Credentials bzw. internationale Industriestandards.</p>
+  </div>
+
+  <div class="kpi-grid">
+    <div class="kpi"><span class="num">3</span><span class="label">grosse Office-Zertifikats&shy;anbieter in CH</span></div>
+    <div class="kpi"><span class="num">7+</span><span class="label">aktuelle KI-Zertifikate von Microsoft, Google, AWS, IBM, ICDL</span></div>
+    <div class="kpi"><span class="num">CHF 90</span><span class="label">günstigstes Modul (SIZ Smart-User Partnerschule)</span></div>
+    <div class="kpi"><span class="num">~CHF 140</span><span class="label">Microsoft MO-Prüfung (USD 104 plus Testcenter)</span></div>
+    <div class="kpi"><span class="num">Herbst 2026</span><span class="label">1. Berufsprüfung AI Business Specialist FA</span></div>
+  </div>
+</section>
+
+<!-- MARKT-LOGIK -->
+<section id="logik" class="alt">
+  <div class="inner">
+    <h2>Markt-Logik: <strong>Prüfung ≠ Schulung</strong></h2>
+    <p class="sub">Zwei Märkte, drei Rollen</p>
+
+    <div class="card-grid cols-3">
+      <div class="card">
+        <div class="card-head">Zertifikats-Trägerschaft</div>
+        <div class="card-body">
+          <p>Wer stellt das Diplom aus, wer entwickelt die Fragen, wer kontrolliert die Qualität? Das sind klassisch <strong>Hersteller</strong> (Microsoft, Google, AWS, IBM, Adobe), <strong>internationale Stiftungen</strong> (ICDL Foundation) oder <strong>nationale Prüfungsorganisationen</strong> (SIZ AG, ICT-Berufsbildung Schweiz für eidg. Berufsprüfungen).</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head blue">Schulungs-Anbieter</div>
+        <div class="card-body">
+          <p>Wer bringt den Stoff den Lernenden bei – Präsenz, Online-Live, Blended oder Selbststudium? Das sind in der Schweiz <strong>private Weiterbildungs-Institute</strong> (Digicomp, ipso, WISS, HSO), <strong>Berufsfachschulen und Berufsakademien</strong> (KV-Schulen, ABB, BBZ), <strong>kantonale Klubschulen</strong> (Migros) und teilweise <strong>die Hersteller selbst</strong> (Microsoft Learn, Google Skills, AWS Skill Builder, kostenfrei aber prüfungsfern).</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head red">Testcenter</div>
+        <div class="card-body">
+          <p>Wo wird scharf geprüft? Bei <strong>Microsoft</strong>, <strong>Adobe</strong>, <strong>IC³</strong>: zentrale Certiport- oder Pearson-VUE-Testcenter (meist in Schulen mit Akkreditierung, aber als separater Geschäftszweig). Bei <strong>ICDL</strong>: ca. 300 ICDL-Testcenter in CH/FL. Bei <strong>SIZ</strong>: <em>in der eigenen Partnerschule</em>, ohne separates Testcenter – die Schule ist gleichzeitig Prüfungsort.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="box highlight">
+      <h4>Warum diese Trennung wichtig ist</h4>
+      <p>Lehrkräfte und Schulleitungen verwechseln oft «wir bilden zu Microsoft MO-200 aus» mit «wir sind Microsoft-zertifiziert». Tatsächlich gilt: <strong>Microsoft, Google und AWS schulen ihre Anwender-Zertifikate nicht selbst in der Schweiz</strong>. Sie veröffentlichen Lerninhalte (Microsoft Learn, Google Skills, AWS Skill Builder), aber die Lehrer:in vor Ort, das Klassenzimmer, der Lehrgang – das machen Drittanbieter. Microsoft verdient an der Prüfungsgebühr und an Software-Lizenzen, nicht am Kurs. Genau das gilt auch für SIZ: Geprüft wird zentral, geschult wird dezentral durch Partnerschulen. Anders bei ICDL: hier verkauft die ICDL-Foundation parallel eigene Webkurse über shop.ecdl.ch.</p>
+    </div>
+  </div>
+</section>
+
+<!-- OFFICE-ANBIETER -->
+<section id="office-anbieter">
+  <h2>Zertifikats-Anbieter: <strong>Office (Word, Excel, PowerPoint)</strong></h2>
+  <p class="sub">Wer prüft was — auf einen Blick</p>
+
+  <div class="card-grid cols-3">
+    <div class="card">
+      <div class="card-head red">SIZ AG <span class="pill">CH</span></div>
+      <div class="card-body">
+        <p><strong>ICT Smart-/Advanced-/Power-User SIZ</strong> – Schweizer Prüfungsorganisation seit 1991, getragen vom Kaufmännischen Verband Schweiz und Swico.</p>
+        <ul>
+          <li>Smart-User: SU1 Kommunikation &amp; Präsentation, SU3 Texte, SU4 Tabellen</li>
+          <li>Advanced-User (KV-EFZ-Niveau): AU1, AU3, AU4</li>
+          <li>Power-User Data &amp; Technology: PU41/42/45</li>
+          <li>Power-User Systems &amp; Network: PU11/12/13</li>
+        </ul>
+        <dl class="kv">
+          <dt>Prüfungsort</dt><dd>In der eigenen Partnerschule</dd>
+          <dt>Modulgebühr</dt><dd>CHF 90 / 110 / 260 / 330</dd>
+          <dt>Dauer</dt><dd>~60 Min scharfe Prüfung</dd>
+          <dt>Inkl.</dt><dd>mySIZ, LZC + Testprüfungen unlimitiert, Support</dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head blue">Microsoft <span class="pill">US</span></div>
+      <div class="card-body">
+        <p><strong>Microsoft Office Specialist (MOS)</strong> – Hersteller-Zertifikat. Verteilt über Certiport-Testcenter.</p>
+        <ul>
+          <li>MO-100 Word (Associate)</li>
+          <li>MO-200 Excel (Associate)</li>
+          <li>MO-300 PowerPoint (Associate)</li>
+          <li>MO-400 Outlook (Associate)</li>
+          <li>MO-101 Word Expert · MO-201 Excel Expert</li>
+        </ul>
+        <dl class="kv">
+          <dt>Prüfungsort</dt><dd>Certiport-Testcenter (in CH bei Digicomp u.a.)</dd>
+          <dt>Prüfungsgebühr</dt><dd>USD 104 pro Modul (~CHF 95) plus Testcenter-Aufschlag</dd>
+          <dt>Dauer</dt><dd>50 Min, performance-basiert in der echten App</dd>
+          <dt>Diplom</dt><dd>MOS Associate nach 3 Modulen</dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">ICDL Foundation <span class="pill">IE</span></div>
+      <div class="card-body">
+        <p><strong>ICDL Base / Standard / Advanced</strong> – internationale Stiftung, Dublin. In CH ab 2025 betreut durch Swiss Informatics Society (SIS) mit Unterstützung der SAQ.</p>
+        <ul>
+          <li>Base: Computer Essentials, Online Essentials, Word Processing, Spreadsheets</li>
+          <li>Standard: Präsentationen, IT-Sicherheit, Online-Zusammenarbeit, Bildbearbeitung</li>
+          <li>Advanced: Word, Excel, Presentation, Access</li>
+          <li>Insights: u.a. Artificial Intelligence (kurzer Kurs + Test)</li>
+        </ul>
+        <dl class="kv">
+          <dt>Prüfungsort</dt><dd>~300 ICDL-Testcenter in CH/FL</dd>
+          <dt>Skills Card</dt><dd>CHF 145 einmalig + CHF 65–85 pro Modul</dd>
+          <dt>Dauer</dt><dd>~45 Min pro Modul, Multiple Choice + Praxis-Aufgaben</dd>
+          <dt>Diagnose</dt><dd>diagnosetest.ch: CHF 27 (Base), CHF 32 (Advanced)</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+  <div class="box contra">
+    <h4>Weniger relevant für den SIZ-Markt</h4>
+    <ul>
+      <li><strong>Adobe ACA (Adobe Certified Associate)</strong> – fokussiert auf Photoshop, InDesign, Illustrator; kein Office-Anwender-Pendant.</li>
+      <li><strong>IC³ Digital Literacy</strong> – Schul-Zertifikat (eher US-Markt), in CH kaum verbreitet.</li>
+      <li><strong>Apple Teacher / Apple Schoolwork</strong> – kein Anwender-Zertifikat für Office-Skills, sondern Lehrkräfte-Programm.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- KI-ANBIETER -->
+<section id="ki-anbieter" class="alt">
+  <div class="inner">
+    <h2>Zertifikats-Anbieter: <strong>KI / Prompt / Copilot / Datenschutz</strong></h2>
+    <p class="sub">Stand Mai 2026 – das Feld ist in Bewegung</p>
+
+    <div class="card-grid cols-3">
+      <div class="card">
+        <div class="card-head blue">Microsoft – Fundamentals</div>
+        <div class="card-body">
+          <p><strong>AI-900 «Azure AI Fundamentals»</strong> seit 2020, ab 2024 stark mit GenAI/Copilot-Inhalten ergänzt. Wird per 30.06.2026 zur <strong>AI-901</strong> aktualisiert.</p>
+          <dl class="kv">
+            <dt>Niveau</dt><dd>Einstieg, kein Coding</dd>
+            <dt>Dauer</dt><dd>~45 Min, ~40 Fragen</dd>
+            <dt>Preis</dt><dd>USD 99 (~CHF 90)</dd>
+            <dt>Sprachen</dt><dd>de/en/fr u.v.m.</dd>
+            <dt>Gültigkeit</dt><dd>Fundamentals = lebenslang</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head blue">Microsoft – AB-Reihe (NEU 2026)</div>
+        <div class="card-body">
+          <p>Vier neue Zertifikate, eingeführt Februar 2026:</p>
+          <ul>
+            <li><strong>AB-900</strong> Copilot &amp; Agent Administration Fundamentals</li>
+            <li><strong>AB-730</strong> AI Business Professional (Associate) – Anwender-Niveau, Copilot im Alltag</li>
+            <li><strong>AB-731</strong> AI Transformation Leader – Senior-Manager-Profil</li>
+            <li><strong>AB-100</strong> Agentic AI Business Solutions Architect (Expert, 100 Min)</li>
+          </ul>
+          <dl class="kv">
+            <dt>Niveau</dt><dd>Fundamentals → Associate → Expert</dd>
+            <dt>Dauer</dt><dd>45 Min (AB-730/731), 100 Min (AB-100)</dd>
+            <dt>Voraussetzung AB-100</dt><dd>vorher AB-730 oder AB-731</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head blue">Microsoft Applied Skills</div>
+        <div class="card-body">
+          <p>Schnelle Lab-basierte Mikro-Credentials (~45 Min, ohne Buch-Lernen). Aktuell u.a.:</p>
+          <ul>
+            <li><em>Streamline business workflows with AI chat</em></li>
+            <li><em>Create an AI agent</em></li>
+            <li><em>Build an agent-first app</em> (live ab Juni 2026)</li>
+          </ul>
+          <p>Eignen sich für niedrigschwellige Einstiege und Re-Skilling.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head green">Google – AI Essentials</div>
+        <div class="card-body">
+          <p>Über Coursera/Google Skills. Niedrigschwellig, &lt;10 h.</p>
+          <dl class="kv">
+            <dt>Inhalt</dt><dd>Gemini, Prompting-Grundlagen, ethische Nutzung</dd>
+            <dt>Preis</dt><dd>USD 49</dd>
+            <dt>Tools</dt><dd>Gemini Advanced, NotebookLM, Workspace</dd>
+            <dt>Sprache</dt><dd>vor allem Englisch</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head green">Google – Generative AI Leader</div>
+        <div class="card-body">
+          <p>Google-Cloud-Zertifikat. 50–60 Multiple-Choice-Fragen, 90 Min.</p>
+          <dl class="kv">
+            <dt>Niveau</dt><dd>Business-/Leadership-fokussiert, kein Coding</dd>
+            <dt>Zielgruppe</dt><dd>PM, Berater:innen, Führungskräfte</dd>
+            <dt>Tools</dt><dd>Gemini, Vertex AI, Google AI Studio</dd>
+            <dt>Preis</dt><dd>USD 99 (Online-Proctored)</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head green">Google – AI Professional Certificate</div>
+        <div class="card-body">
+          <p>Im Februar 2026 lanciert. 7-Kurs-Programm, &gt;20 Hands-on-Projekte.</p>
+          <dl class="kv">
+            <dt>Niveau</dt><dd>Aufbau, branchen-übergreifend</dd>
+            <dt>Inkl.</dt><dd>3 Monate Workspace Business Standard</dd>
+            <dt>Format</dt><dd>Coursera, ~3–6 Monate Lernzeit</dd>
+            <dt>Outcome</dt><dd>Career-Cert mit Workspace-Schwerpunkt</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head amber">AWS – AI Practitioner</div>
+        <div class="card-body">
+          <p><strong>AWS Certified AI Practitioner (AIF-C01)</strong>, seit 2024 verfügbar.</p>
+          <dl class="kv">
+            <dt>Niveau</dt><dd>Foundational</dd>
+            <dt>Dauer</dt><dd>90 Min, 65 Fragen</dd>
+            <dt>Preis</dt><dd>USD 100 (~CHF 90)</dd>
+            <dt>Sprachen</dt><dd>de/en/fr u.v.m.</dd>
+            <dt>Fokus</dt><dd>AWS-spezifisch (Bedrock, SageMaker), aber konzeptionelle Inhalte breit anwendbar</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">IBM SkillsBuild</div>
+        <div class="card-body">
+          <p>Kostenfreie Online-Kurse mit IBM-Badges. Über KI-Campus + IBM Training.</p>
+          <ul>
+            <li>«Artificial Intelligence Fundamentals» (Badge)</li>
+            <li>«AI Developer Professional Certificate» (Coursera)</li>
+            <li>«AI Engineering Professional Certificate» (Coursera)</li>
+          </ul>
+          <p>Geeignet für Selbststudium und ergänzende Nachweise – keine staatliche Anerkennung.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head light">ICDL Insights – Artificial Intelligence</div>
+        <div class="card-body">
+          <p>Kurz-Modul (E-Learning + kurzer Test), Teil der ICDL-Insights-Reihe.</p>
+          <ul>
+            <li>Was ist KI? ML, Neuronale Netze, Deep Learning</li>
+            <li>Anwendungen: NLP, Data Mining, Entscheidungs&shy;unterstützung</li>
+            <li>Grenzen, Ethik, soziale und wirtschaftliche Auswirkungen</li>
+          </ul>
+          <p>Niedrige Tiefe, aber niedrigschwellig integrierbar in bestehende ICDL-Testcenter.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">LinkedIn × Microsoft</div>
+        <div class="card-body">
+          <p><strong>Career Essentials in Generative AI</strong> (LinkedIn Learning + Microsoft). Kostenfrei, mit Professional Certificate.</p>
+          <ul>
+            <li>5 Module: Ethik, Prompting, Copilot in Word/Excel/Outlook/Teams</li>
+            <li>Quizze + Workbooks</li>
+            <li>Co-Branding LinkedIn + Microsoft – auf LinkedIn-Profil sichtbar</li>
+          </ul>
+          <p>Kein staatliches Diplom, aber Marketing-stark, weil sichtbar auf LinkedIn.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">Bitkom Akademie · TÜV</div>
+        <div class="card-body">
+          <p>Deutsche Anbieter, in CH teilweise gebucht.</p>
+          <ul>
+            <li>Bitkom «AI Manager» (Lehrgang ab 12.02.2026)</li>
+            <li>«Chief Digital Officer» (ab 26.03.2026)</li>
+            <li>TÜV-Verband + Bitkom: gemeinsame Offensive «digitale Souveränität»</li>
+            <li>«Geprüfter Prompt Engineer» (Akademie Herkert, SGD)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">OpenAI Academy</div>
+        <div class="card-body">
+          <p>OpenAI hat angekündigt, ab Ende 2025 / Anfang 2026 erste eigene Zertifikate zu pilotieren.</p>
+          <p>Stand Mai 2026 noch in der Pilot-Phase, keine breite Marktrelevanz für CH-Anwender:innen-Zertifikate.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="box warn">
+      <h4>SIZ-Status: kein eigenständiges KI-Diplom (Stand Mai 2026)</h4>
+      <p>Die SIZ AG bietet aktuell kein eigenes KI- oder Prompt-Modul an. Drei Bewegungen sind aber sichtbar:</p>
+      <ul>
+        <li>Die <strong>Modulinhalte (MID)</strong> wurden im Dezember 2025 sprachlich überarbeitet und für die ab 2026 generierten Exam-Prüfungen an KI-Anforderungen angepasst.</li>
+        <li>Ab <strong>30.03.2026</strong> ist in den Prüfungsbestimmungen klargestellt, dass Upload und Download von Prüfungsdateien in KI-Tools während scharfer Prüfungen unzulässig sind.</li>
+        <li>Ein <strong>Lehrmittel «Einführung in die Künstliche Intelligenz»</strong> ist auf der SIZ-Lehrmittelliste gelistet und kann von Partnerschulen im Unterricht eingesetzt werden – aber ohne eigenes Modul-Diplom.</li>
+      </ul>
+      <p>Das ist Hebel und Risiko zugleich: Wer im KV-EFZ-Segment ein praxisnahes, schweizerisches KI-Anwender-Modul will, findet bei SIZ heute kein dediziertes Diplom. Wer ein Microsoft- oder Google-zentriertes KI-Programm sucht, findet bei den Herstellern reichhaltige, aber Cloud-/Tool-spezifische Credentials.</p>
+    </div>
+  </div>
+</section>
+
+<!-- OFFICE-VERGLEICH -->
+<section id="office-vergleich">
+  <h2>Direktvergleich <strong>Office-Zertifikate</strong></h2>
+  <p class="sub">SIZ Advanced-User · Microsoft MOS · ICDL Standard</p>
+
+  <table class="compare-table">
+    <thead>
+      <tr>
+        <th>Merkmal</th>
+        <th>SIZ ICT Advanced-User</th>
+        <th>Microsoft MOS (MO-100/200/300)</th>
+        <th>ICDL Standard</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="label">Trägerschaft</td>
+        <td class="siz">SIZ AG, getragen vom kfmv Schweiz + Swico. Schweizer Prüfungskommission mit ~60 Fachexpert:innen.</td>
+        <td>Microsoft Corp. Prüfungsabnahme via Certiport (Pearson VUE).</td>
+        <td>ICDL Foundation Dublin. CH ab 2025: Swiss Informatics Society.</td>
+      </tr>
+      <tr>
+        <td class="label">Prüfungsort</td>
+        <td class="siz">In der eigenen Partnerschule</td>
+        <td>Certiport-Testcenter (in CH oft Digicomp, KV-Schulen mit Akkreditierung)</td>
+        <td>ICDL-Testcenter (~300 in CH/FL)</td>
+      </tr>
+      <tr>
+        <td class="label">Prüfungsformat</td>
+        <td class="siz">~60 Min, scharfe Modulprüfung; vorher unbegrenzt LZC + Testprüfungen</td>
+        <td>50 Min, performance-basiert (Aufgaben in echter App)</td>
+        <td>~45 Min, Multiple Choice + Praxis-Aufgaben</td>
+      </tr>
+      <tr>
+        <td class="label">Module für Diplom</td>
+        <td class="siz">3 (AU1 Kommunikation &amp; Präsentation, AU3 Texte, AU4 Tabellen)</td>
+        <td>3 von 4 (Word + Excel + PowerPoint oder Outlook)</td>
+        <td>~4 Module je nach Profil (Word, Excel, Online, Sicherheit etc.)</td>
+      </tr>
+      <tr>
+        <td class="label">Kosten pro Modul</td>
+        <td class="siz">CHF 110 Partnerschule, ca. CHF 132 Selbststudium</td>
+        <td>USD 104 + Testcenter-Aufschlag (oft CHF 130–180)</td>
+        <td>CHF 65–85 + einmalige Skills Card CHF 145</td>
+      </tr>
+      <tr>
+        <td class="label">Diplom-Total (ungefähr)</td>
+        <td class="siz">CHF 330 (3 × 110)</td>
+        <td>CHF 450–550 (3 Module + Testcenter-Aufschlag)</td>
+        <td>CHF 405–485 (4 Module + Skills Card + Diagnosen)</td>
+      </tr>
+      <tr>
+        <td class="label">Sprachen</td>
+        <td class="siz">DE/FR/IT (Schweizer Kontext)</td>
+        <td>DE/EN/FR u.v.m.</td>
+        <td>DE/EN/FR + viele weitere</td>
+      </tr>
+      <tr>
+        <td class="label">CH-Verankerung</td>
+        <td class="siz">Inhaltlich abgestimmt auf KV-EFZ HKB E; namentlich in Wegleitung Hauswart FA + PO Fachausweis Finanz- &amp; Rechnungswesen.</td>
+        <td>Keine spezifische CH-Verankerung in Bildungsplänen.</td>
+        <td>Hauswart-FA-Wegleitung 2018: ECDL Base gleichwertig SIZ I. Keine Verankerung im KV EFZ.</td>
+      </tr>
+      <tr>
+        <td class="label">Anwendungs-Tiefe</td>
+        <td class="siz">Praxisnah Schweizer Büroalltag, jährlich von der Fachkommission aktualisiert.</td>
+        <td>Sehr nah an Microsoft 365 Apps. Reine Produkt-Kompetenz.</td>
+        <td>Generisch / international, app-unabhängig (Word ODER Writer).</td>
+      </tr>
+      <tr>
+        <td class="label">Anbieter-Neutralität</td>
+        <td class="siz">Neutral – SIZ verkauft weder Software noch Kurse. Schulen tragen die Schulung.</td>
+        <td>Hersteller-Cert (Bias zur eigenen Produkt-Welt).</td>
+        <td>Stiftung in Reorganisation. Verkauft parallel eigene Webkurse via shop.ecdl.ch.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- KI-VERGLEICH -->
+<section id="ki-vergleich" class="alt">
+  <div class="inner">
+    <h2>Direktvergleich <strong>KI-/Copilot-Zertifikate</strong></h2>
+    <p class="sub">Einstiegs-Level – das wahrscheinlich relevanteste Segment für SIZ-Partnerschulen</p>
+
+    <table class="matrix">
+      <thead>
+        <tr>
+          <th>Zertifikat</th>
+          <th>Trägerschaft</th>
+          <th>Niveau</th>
+          <th>Format</th>
+          <th>Preis</th>
+          <th>Sprache</th>
+          <th>Fokus</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="lead-col">AI-900 / AI-901</td>
+          <td>Microsoft</td>
+          <td><span class="badge">Fundamentals</span></td>
+          <td>~45 Min Online-Prüfung</td>
+          <td>USD 99</td>
+          <td>DE/EN/FR …</td>
+          <td>Azure-AI-Konzepte, GenAI, Copilot-Grundlagen</td>
+        </tr>
+        <tr>
+          <td class="lead-col">AB-900</td>
+          <td>Microsoft</td>
+          <td><span class="badge">Fundamentals</span></td>
+          <td>~45 Min Online-Prüfung</td>
+          <td>USD 99</td>
+          <td>EN (DE in Roll-out)</td>
+          <td>Copilot- &amp; Agent-Administration</td>
+        </tr>
+        <tr>
+          <td class="lead-col">AB-730</td>
+          <td>Microsoft</td>
+          <td><span class="badge ok">Associate</span></td>
+          <td>45 Min, Multiple Choice + Szenarien</td>
+          <td>USD 165</td>
+          <td>EN (DE in Roll-out)</td>
+          <td>AI Business Professional – Copilot im Alltag</td>
+        </tr>
+        <tr>
+          <td class="lead-col">AB-731</td>
+          <td>Microsoft</td>
+          <td><span class="badge ok">Associate</span></td>
+          <td>45 Min</td>
+          <td>USD 165</td>
+          <td>EN (DE in Roll-out)</td>
+          <td>AI Transformation Leader – Adoption, Risk, Culture</td>
+        </tr>
+        <tr>
+          <td class="lead-col">AB-100</td>
+          <td>Microsoft</td>
+          <td><span class="badge red">Expert</span></td>
+          <td>100 Min, Szenarien + Lab</td>
+          <td>USD 165+</td>
+          <td>EN</td>
+          <td>Agentic AI Solutions Architect</td>
+        </tr>
+        <tr>
+          <td class="lead-col">Applied Skills</td>
+          <td>Microsoft</td>
+          <td><span class="badge mute">Mikro</span></td>
+          <td>45 Min Lab-Bewertung</td>
+          <td>frei (Lernen) + ggf. Prüfungsgebühr</td>
+          <td>EN/DE</td>
+          <td>«Streamline workflows with AI chat», «Create an AI agent»</td>
+        </tr>
+        <tr>
+          <td class="lead-col">Generative AI Leader</td>
+          <td>Google Cloud</td>
+          <td><span class="badge">Foundational</span></td>
+          <td>90 Min, 50–60 MC</td>
+          <td>USD 99</td>
+          <td>EN</td>
+          <td>Gemini, Vertex AI, AI-Studio – Business-Sicht</td>
+        </tr>
+        <tr>
+          <td class="lead-col">AI Essentials</td>
+          <td>Google + Coursera</td>
+          <td><span class="badge mute">Einstieg</span></td>
+          <td>&lt;10 h Kurs + Quiz</td>
+          <td>USD 49</td>
+          <td>EN</td>
+          <td>Prompting, Gemini-Grundlagen, Ethik</td>
+        </tr>
+        <tr>
+          <td class="lead-col">AI Professional Cert</td>
+          <td>Google + Coursera</td>
+          <td><span class="badge ok">Aufbau</span></td>
+          <td>7 Kurse, &gt;20 Projekte</td>
+          <td>Coursera-Abo</td>
+          <td>EN</td>
+          <td>Workspace-zentriert (Docs/Slides/Sheets)</td>
+        </tr>
+        <tr>
+          <td class="lead-col">AIF-C01</td>
+          <td>AWS</td>
+          <td><span class="badge">Foundational</span></td>
+          <td>90 Min, 65 Fragen</td>
+          <td>USD 100</td>
+          <td>DE/EN/FR u.v.m.</td>
+          <td>AWS AI-Services, ML-Konzepte, GenAI</td>
+        </tr>
+        <tr>
+          <td class="lead-col">ICDL Artificial Intelligence</td>
+          <td>ICDL Foundation</td>
+          <td><span class="badge mute">Einstieg</span></td>
+          <td>E-Learning + kurzer Test</td>
+          <td>~CHF 50–80 (TC-abhängig)</td>
+          <td>DE/EN/FR</td>
+          <td>KI-Grundlagen, Ethik, NLP – produkt-unabhängig</td>
+        </tr>
+        <tr>
+          <td class="lead-col">Career Essentials in Gen AI</td>
+          <td>LinkedIn + Microsoft</td>
+          <td><span class="badge mute">Einstieg</span></td>
+          <td>5 Videos + Quiz</td>
+          <td>kostenfrei</td>
+          <td>EN/DE</td>
+          <td>Marketing-starkes Profil-Badge</td>
+        </tr>
+        <tr>
+          <td class="lead-col">IBM AI Foundations</td>
+          <td>IBM SkillsBuild</td>
+          <td><span class="badge mute">Einstieg</span></td>
+          <td>Online-Kurs + Test</td>
+          <td>kostenfrei</td>
+          <td>DE/EN</td>
+          <td>Klassische ML-Konzepte + watsonx-Anwendungen</td>
+        </tr>
+        <tr>
+          <td class="lead-col">AI Business Specialist FA</td>
+          <td>ICT-Berufsbildung CH</td>
+          <td><span class="badge red">Eidg. Berufsprüfung</span></td>
+          <td>BP nach BBG, modular</td>
+          <td>Kurs CHF 8'000–14'000 + Prüfungsgebühr</td>
+          <td>DE/FR/IT</td>
+          <td>Bindeglied Technologie ↔ Business, KMU-Praxis</td>
+        </tr>
+        <tr>
+          <td class="lead-col">Bitkom AI Manager</td>
+          <td>Bitkom Akademie</td>
+          <td><span class="badge mute">Lehrgang</span></td>
+          <td>mehrtägiger Kurs</td>
+          <td>~EUR 2'500–3'500</td>
+          <td>DE</td>
+          <td>Management-/Compliance-Fokus, DACH</td>
+        </tr>
+        <tr>
+          <td class="lead-col">Geprüfter Prompt Engineer</td>
+          <td>Akademie Herkert / SGD</td>
+          <td><span class="badge mute">Anbieter-Cert</span></td>
+          <td>2-Tages-Lehrgang oder Fernkurs</td>
+          <td>~EUR 1'500</td>
+          <td>DE</td>
+          <td>Prompt-Engineering, ChatGPT, Copilot</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="box highlight">
+      <h4>Was diese Tabelle nicht zeigt – und wo SIZ punkten kann</h4>
+      <p>Was in dieser Landschaft <strong>fehlt</strong>, ist ein praxisnahes, schweizerisches Anwender-Zertifikat zum Thema «KI im Büroalltag mit Schweizer Datenschutz-Realität». Microsoft, Google und AWS prüfen produktbezogen, ICDL prüft Grundwissen, IBM und LinkedIn prüfen knappes Bewusstsein. Die <strong>eidg. Berufsprüfung «AI Business Specialist FA»</strong> setzt erst auf KV-EFZ-Niveau plus mehrere Jahre Berufserfahrung an – für 16- bis 20-Jährige in Berufsfachschulen zu hoch. <strong>Das Loch dazwischen ist da</strong>: KV-Lernende, Hauswart-, Assistenz- und HoKo-Lernende brauchen ein Anwender-Cert zu KI-Nutzung, Prompt-Hygiene und Datenschutz (DSG/revDSG, EU AI Act), das in der eigenen Schule prüfbar ist – analog SIZ Advanced-User.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SCHULUNG-CH -->
+<section id="schulung-ch">
+  <h2>Wissensvermittlung in der Schweiz: <strong>Wer schult zu welchem Zertifikat?</strong></h2>
+  <p class="sub">Die Schulungs-Landschaft ist getrennt von der Zertifikats-Landschaft</p>
+
+  <table class="matrix">
+    <thead>
+      <tr>
+        <th>Schulungsanbieter</th>
+        <th>Format</th>
+        <th>SIZ</th>
+        <th>Microsoft MOS</th>
+        <th>Microsoft AI-900/AB-Reihe</th>
+        <th>Google AI</th>
+        <th>AWS AIF</th>
+        <th>ICDL</th>
+        <th>AI Business Specialist FA</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="lead-col">Digicomp (Zürich, Bern, Lausanne)</td>
+        <td>Präsenz + Online-Live (hybrid)</td>
+        <td>—</td>
+        <td><span class="badge ok">✓</span></td>
+        <td><span class="badge ok">✓</span></td>
+        <td><span class="badge ok">✓</span></td>
+        <td><span class="badge ok">✓</span></td>
+        <td>—</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td class="lead-col">KV Business School Zürich</td>
+        <td>Blended, Lehrgänge + Seminare</td>
+        <td><span class="badge ok">✓</span></td>
+        <td><span class="badge ok">✓</span></td>
+        <td>—</td>
+        <td>—</td>
+        <td>—</td>
+        <td>—</td>
+        <td><span class="badge ok">✓</span></td>
+      </tr>
+      <tr>
+        <td class="lead-col">KV Luzern Berufsakademie</td>
+        <td>Blended + Präsenz</td>
+        <td><span class="badge ok">✓</span></td>
+        <td><span class="badge ok">✓</span></td>
+        <td>—</td>
+        <td>—</td>
+        <td>—</td>
+        <td><span class="badge ok">✓</span></td>
+        <td><span class="badge ok">✓</span></td>
+      </tr>
+      <tr>
+        <td class="lead-col">Klubschule Migros</td>
+        <td>Präsenz + Selbststudium</td>
+        <td><span class="badge ok">✓</span></td>
+        <td>—</td>
+        <td>—</td>
+        <td>—</td>
+        <td>—</td>
+        <td><span class="badge ok">✓</span></td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td class="lead-col">IPSO (Wallisellen, Solothurn)</td>
+        <td>Präsenz + Blended</td>
+        <td><span class="badge ok">✓</span></td>
+        <td><span class="badge ok">✓</span></td>
+        <td><span class="badge ok">✓</span></td>
+        <td>—</td>
+        <td>—</td>
+        <td><span class="badge ok">✓</span></td>
+        <td><span class="badge ok">✓</span></td>
+      </tr>
+      <tr>
+        <td class="lead-col">IBAW (Luzern)</td>
+        <td>Präsenz + Online</td>
+        <td><span class="badge ok">✓</span></td>
+        <td>—</td>
+        <td>—</td>
+        <td>—</td>
+        <td>—</td>
+        <td><span class="badge ok">✓</span></td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td class="lead-col">WISS (Wirtschafts­informatikschule CH)</td>
+        <td>Blended, modular</td>
+        <td><span class="badge ok">✓</span></td>
+        <td>—</td>
+        <td><span class="badge ok">✓</span></td>
+        <td>—</td>
+        <td>—</td>
+        <td>—</td>
+        <td><span class="badge ok">✓</span></td>
+      </tr>
+      <tr>
+        <td class="lead-col">HSO (Höhere Fachschule Wirtschaft)</td>
+        <td>Berufsbegleitend</td>
+        <td>—</td>
+        <td>—</td>
+        <td>—</td>
+        <td>—</td>
+        <td>—</td>
+        <td>—</td>
+        <td><span class="badge ok">✓</span></td>
+      </tr>
+      <tr>
+        <td class="lead-col">SIW (Schweizer Inst. für Wirtschaft)</td>
+        <td>Online-Lehrgänge</td>
+        <td>—</td>
+        <td>—</td>
+        <td>—</td>
+        <td>—</td>
+        <td>—</td>
+        <td>—</td>
+        <td><span class="badge ok">✓</span></td>
+      </tr>
+      <tr>
+        <td class="lead-col">WSKVW (Wirtschaftsschule KV Winterthur)</td>
+        <td>70 % online + Präsenz</td>
+        <td><span class="badge ok">✓</span></td>
+        <td>—</td>
+        <td>—</td>
+        <td>—</td>
+        <td>—</td>
+        <td>—</td>
+        <td><span class="badge ok">✓</span></td>
+      </tr>
+      <tr>
+        <td class="lead-col">Microsoft Learn (kostenfrei)</td>
+        <td>Selbststudium online</td>
+        <td>—</td>
+        <td><span class="badge ok">✓</span></td>
+        <td><span class="badge ok">✓</span></td>
+        <td>—</td>
+        <td>—</td>
+        <td>—</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td class="lead-col">Google Skills / Coursera</td>
+        <td>Selbststudium online</td>
+        <td>—</td>
+        <td>—</td>
+        <td>—</td>
+        <td><span class="badge ok">✓</span></td>
+        <td>—</td>
+        <td>—</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td class="lead-col">AWS Skill Builder</td>
+        <td>Selbststudium online</td>
+        <td>—</td>
+        <td>—</td>
+        <td>—</td>
+        <td>—</td>
+        <td><span class="badge ok">✓</span></td>
+        <td>—</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td class="lead-col">LinkedIn Learning</td>
+        <td>Selbststudium online</td>
+        <td>—</td>
+        <td><span class="badge ok">✓</span></td>
+        <td><span class="badge ok">✓</span></td>
+        <td><span class="badge ok">✓</span></td>
+        <td>—</td>
+        <td>—</td>
+        <td>—</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="box pro">
+    <h4>Beobachtung: SIZ und MOS leben vom gleichen Schulungs-Netzwerk</h4>
+    <p>Die Schulen, die SIZ schulen (Klubschule, KV-Schulen, IPSO, IBAW), schulen häufig auch Microsoft MOS und teilweise ICDL. Sie haben Lehrkräfte, Lehrmittel (Compendio, hep, Edubook) und Räume bereits aufgebaut. Das macht eine SIZ-KI-Erweiterung niedrigschwellig anbieterseitig umsetzbar: Die Multiplikatoren sitzen am gleichen Tisch.</p>
+  </div>
+
+  <div class="box contra">
+    <h4>Beobachtung: Reine Hersteller-Wege sind in CH nur online verfügbar</h4>
+    <p>Wer ausschliesslich über Microsoft Learn, Google Skills oder AWS Skill Builder lernt, lernt im Selbststudium online und auf Englisch (mit DE-Übersetzung der Prüfungen). Es gibt <strong>keine Microsoft-, Google- oder AWS-eigenen Klassenzimmer-Kurse in der Schweiz</strong>. Diese Lücke füllen Digicomp, KV-Schulen, IPSO, WISS, HSO. Das ist gut für die Schulen – und schlecht für Lernende, die strukturierte Präsenz-Vorbereitung brauchen, aber keinen Anbieter neben sich finden.</p>
+  </div>
+</section>
+
+<!-- AI BUSINESS SPECIALIST FA -->
+<section id="aibs" class="alt">
+  <div class="inner">
+    <h2>Sonderfall: <strong>AI Business Specialist mit eidg. Fachausweis</strong></h2>
+    <p class="sub">Die erste staatlich anerkannte KI-Berufsprüfung der Schweiz</p>
+
+    <div class="card-grid cols-2">
+      <div class="card">
+        <div class="card-head red">Eckdaten</div>
+        <div class="card-body">
+          <dl class="kv">
+            <dt>Trägerschaft</dt><dd>ICT-Berufsbildung Schweiz (Verband)</dd>
+            <dt>Anerkennung</dt><dd>SBFI-registriert, eidgenössische Berufsprüfung (BP)</dd>
+            <dt>Erste Prüfung</dt><dd>Herbst 2026</dd>
+            <dt>Anerkennung</dt><dd>Eidg. Fachausweis – analog Hauswart FA, FA Finanz- &amp; Rechnungswesen</dd>
+            <dt>SBFI-Förderung</dt><dd>50 % der Kursgebühren (max. CHF 9'500)</dd>
+            <dt>Zielgruppe</dt><dd>Bindeglied Technologie ↔ Business in KMU</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head blue">Schulungsanbieter (Auswahl)</div>
+        <div class="card-body">
+          <p>Mindestens neun Anbieter bewerben Vorbereitungslehrgänge ab April/Oktober 2026:</p>
+          <ul>
+            <li>HSO (Höhere Fachschule)</li>
+            <li>WISS (Wirtschaftsinformatikschule)</li>
+            <li>SIW (Schweizer Institut für Wirtschaft)</li>
+            <li>IPSO (Informatik &amp; Wirtschaft)</li>
+            <li>WSKVW (Winterthur, 70 % online)</li>
+            <li>KV Business School Zürich</li>
+            <li>WKS Bern</li>
+            <li>KBZ Zug</li>
+            <li>GAT</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="box highlight">
+      <h4>Was bedeutet das für SIZ?</h4>
+      <p>Der <strong>AI Business Specialist FA</strong> ist eine eidg. Berufsprüfung auf der Stufe «über KV-EFZ» – also ein Folge-Diplom für Erwerbstätige mit kaufmännischer oder technischer Grundbildung. Das Segment, das SIZ bedient (Lernende in der Grundbildung, Smart/Advanced-User), bleibt unberührt. Im Gegenteil: Ein SIZ-Advanced-User-Diplom mit KI-Anteil wäre eine <strong>logische Eingangs-Stufe</strong> für die spätere Berufsprüfung. Gleichzeitig sollte SIZ die Kommunikation klar trennen – es gibt keine Konkurrenz, sondern eine sequentielle Bildungs-Treppe: SIZ Smart → SIZ Advanced (mit KI-Anteil neu) → ICT-Berufsprüfung «AI Business Specialist FA».</p>
+    </div>
+  </div>
+</section>
+
+<!-- SIZ POSITION -->
+<section id="siz-position">
+  <h2>SIZ-Position in dieser <strong>Landschaft</strong></h2>
+  <p class="sub">Was SIZ schon ist – und welche Hebel offen liegen</p>
+
+  <div class="card-grid cols-2">
+    <div class="card">
+      <div class="card-head green">Stärken im Vergleich</div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Prüfungsneutralität:</strong> SIZ verkauft keine Software, keine Webkurse, kein Lehrmittel. Microsoft, Google, AWS und ICDL haben hier Interessenskonflikte (Eigene Produkte / Eigene Kurse).</li>
+          <li><strong>Prüfung in der Schule:</strong> Kein externes Testcenter, kein Reise- oder Buchungsaufwand für Lernende. Microsoft MOS / ICDL verlangen separate Testcenter-Termine.</li>
+          <li><strong>Schweizer Praxisbezug:</strong> ~60 Fachexpert:innen aus CH-Schule und ‑Wirtschaft entwickeln die Fragen. Microsoft prüft Microsoft-Produkte, ICDL prüft generisch.</li>
+          <li><strong>KV-EFZ-Affinität:</strong> AU-Diplom ist inhaltlich auf HKB E abgestimmt, in eidg. Wegleitungen Hauswart FA + Fachausweis Finanz- &amp; Rechnungswesen namentlich anerkannt.</li>
+          <li><strong>Modulpreise transparent &amp; tief:</strong> SU 90 / AU 110 (Partnerschule) inklusive unlimitierter Lernziel-Checks + Testprüfungen + Support. Kein Skills-Card-Aufschlag wie bei ICDL.</li>
+          <li><strong>250'000+ Absolvent:innen seit 1991</strong> – etablierte Marke im CH-Arbeitsmarkt.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head amber">Offene Hebel</div>
+      <div class="card-body">
+        <ul>
+          <li><strong>Eigenes KI-Anwender-Modul:</strong> Lücke im Markt zwischen produktnahen Hersteller-Certs und der hochstufigen Berufsprüfung AI Business Specialist FA. Ein SIZ-Modul «KI-Anwendung &amp; Datenschutz in der Schweizer Büropraxis» würde KV-Lernende, HoKo-EFZ-Lernende, Hauswart-FA-Kandidat:innen und Quereinsteiger:innen erreichen.</li>
+          <li><strong>Datenschutz-Schweizer Spezifika:</strong> revDSG (in Kraft seit 01.09.2023), EU AI Act, kantonale Schul-Datenschutz-Regeln – diese Mischung deckt kein internationales Programm so spezifisch ab wie SIZ es könnte.</li>
+          <li><strong>Sichtbarkeit im KV EFZ:</strong> Inhaltliche Abstimmung auf HKB E ist da, aber im neuen Bildungsplan 2023 ist SIZ namentlich nicht erwähnt. Im Gegensatz zu ICDL Base (in Hauswart-FA-Wegleitung 2018 genannt) und der BiVo-Verankerung anderer Branchenstandards.</li>
+          <li><strong>Lehrmittel-Update:</strong> «Einführung in die Künstliche Intelligenz» ist gelistet, aber noch kein didaktisch durchstrukturiertes Compendio/hep-Buch im Stil von AU1.</li>
+          <li><strong>E-ID Trusted Issuer:</strong> SIZ als Trusted Issuer im CH-E-ID-Ökosystem würde die Diplom-Verifizierung digital, fälschungssicher und arbeitgeber-tauglich machen – ein Wettbewerbsvorteil gegenüber Hersteller-Badges.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="box highlight">
+    <h4>Vorschlag: Positionierung «KI mit Schweizer Praxisbezug»</h4>
+    <p>SIZ kann sich in der Anbieter-Landschaft klar positionieren als <strong>«das Schweizer Anwender-Cert für Office und KI – neutral, prüfungs-fokussiert, in der Schule, mit Datenschutz-Schweizer Realität»</strong>. Microsoft, Google, AWS bleiben für produktspezifische Tiefe relevant, ICDL für Auslandsmobilität, der AI Business Specialist FA für Berufsprüfungs-Ambitionen. SIZ adressiert die Mitte – und genau dort liegt das Volumen-Geschäft an Schulen.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="alt">
+  <div class="inner">
+    <h2>Häufige <strong>Fragen</strong></h2>
+    <p class="sub">FAQ aus Akquisitions-Gesprächen mit Schulen, HR, Eltern</p>
+
+    <details class="faq">
+      <summary>Was unterscheidet ein Hersteller-Zertifikat (Microsoft, Google, AWS) von einer Prüfungsstelle wie SIZ?</summary>
+      <div class="answer">
+        <p>Hersteller-Zertifikate prüfen die Kompetenz in der eigenen Produkt-Welt. Microsoft prüft in Microsoft 365, Google prüft Gemini/Workspace, AWS prüft AWS-AI-Services. Das ist sinnvoll, aber bedingt: wechselt eine Schule oder Firma das Produkt, verliert das Cert an Bedeutung. SIZ prüft <strong>Anwendungs-Kompetenz unabhängig vom Software-Hersteller</strong> – am Schweizer Büroalltag entwickelt, von einer neutralen Schweizer Prüfungskommission. Beide Welten haben ihre Berechtigung; sie sind keine Konkurrenz, sondern ergänzen einander.</p>
+      </div>
+    </details>
+
+    <details class="faq">
+      <summary>Bietet SIZ heute schon ein KI- oder Prompt-Engineering-Modul an?</summary>
+      <div class="answer">
+        <p>Stand Mai 2026 nein. SIZ hat im Dezember 2025 die Modulinhalte (MID) an aktuelle KI-Anforderungen angepasst und ab 30.03.2026 in den Prüfungsbestimmungen klargestellt, dass KI-Tools während scharfer Modulprüfungen reglementiert sind. Ein eigenständiges KI-Modul mit eigenem Diplom existiert nicht. Ein Lehrmittel «Einführung in die Künstliche Intelligenz» ist auf der SIZ-Lehrmittelliste gelistet.</p>
+      </div>
+    </details>
+
+    <details class="faq">
+      <summary>Wer schult in der Schweiz Microsoft MO-100, MO-200, MO-300 und die AI-900-Reihe?</summary>
+      <div class="answer">
+        <p>Microsoft schult selbst nicht im Klassenzimmer in der Schweiz. Microsoft Learn (kostenfreies Online-Lernen) ist der einzige Hersteller-Kanal. Präsenz- und Online-Live-Kurse bieten in CH unter anderem <strong>Digicomp</strong> (Boot-Camps hybrid, alle Standorte), <strong>IPSO</strong> (Wallisellen, Solothurn), <strong>WISS</strong>, <strong>KV Business School Zürich</strong> und einige Berufsfachschulen mit Certiport-Akkreditierung. Geprüft wird scharf in einem Certiport-Testcenter.</p>
+      </div>
+    </details>
+
+    <details class="faq">
+      <summary>Was kostet eine Microsoft MOS-Prüfung in der Schweiz wirklich?</summary>
+      <div class="answer">
+        <p>Die Microsoft-Lizenz-Gebühr liegt bei USD 104 (~CHF 95) pro Modul. Dazu kommt der Testcenter-Aufschlag in der Schweiz, der je nach Anbieter zwischen CHF 35 und CHF 90 liegt. Realistische Endpreise pro MO-Prüfung: CHF 130–180. Drei Module für das MOS-Associate-Diplom: CHF 400–550. Zum Vergleich: SIZ Advanced-User komplett (3 Module) liegt bei CHF 330 inkl. Lernziel-Checks und Testprüfungen.</p>
+      </div>
+    </details>
+
+    <details class="faq">
+      <summary>Ist der «AI Business Specialist mit eidg. Fachausweis» ein Konkurrent zu SIZ?</summary>
+      <div class="answer">
+        <p>Nein. Der AI Business Specialist FA ist eine eidg. Berufsprüfung der ICT-Berufsbildung Schweiz und setzt mehrere Jahre Berufserfahrung sowie meist eine abgeschlossene Grundbildung voraus. SIZ Smart-/Advanced-User sind Anwender-Zertifikate auf Sekundarstufe II und Anfänger-Erwerbstätigen-Niveau. Die beiden Programme sind hintereinander geschaltet, nicht parallel: SIZ Advanced-User → KV EFZ → später AI Business Specialist FA.</p>
+      </div>
+    </details>
+
+    <details class="faq">
+      <summary>Welche Anbieter sind für Datenschutz im KI-Kontext relevant?</summary>
+      <div class="answer">
+        <p>International: Microsoft (mit Compliance-Inhalten in AB-731 und AB-900), Google (Verantwortliche-KI-Inhalte in den Gemini-Programmen), Bitkom Akademie und TÜV-Verband (DACH-Compliance-Schiene). In der Schweiz spezifisch zum revDSG: heute lückenhaft. Genau hier liegt ein Hebel – ein SIZ-Modul könnte revDSG, EU AI Act, kantonale Schul-Datenschutz-Regeln und KI-Anwendung praxisnah bündeln.</p>
+      </div>
+    </details>
+
+    <details class="faq">
+      <summary>Brauchen KV-Lernende heute zwingend ein KI-Zertifikat?</summary>
+      <div class="answer">
+        <p>Zwingend nein – im Bildungsplan KV EFZ 2023 ist KI nicht namentlich erwähnt, in HKB E aber implizit verankert (Recherchieren, Auswerten, Aufbereiten). Praktisch werden KI-Tools (Copilot, Gemini, ChatGPT) im Lehrbetrieb bereits eingesetzt. Ein zusätzliches Anwender-Zertifikat erhöht für Lernende die Sichtbarkeit auf dem Arbeitsmarkt und gibt Lehrkräften eine strukturierte Lern-Folie. SIZ könnte hier genau diese Lücke füllen.</p>
+      </div>
+    </details>
+
+    <details class="faq">
+      <summary>Sind die internationalen Hersteller-Zertifikate in der Schweiz arbeitsrechtlich anerkannt?</summary>
+      <div class="answer">
+        <p>«Anerkannt» ist mehrdeutig. Microsoft, Google, AWS und ICDL sind <strong>Industrie-Standards</strong> – Arbeitgeber kennen sie und schätzen sie, vor allem in internationalen Konzernen. Sie sind aber <strong>keine staatlich anerkannten Bildungsabschlüsse</strong> in der Schweiz. Staatliche Anerkennung haben nur eidg. Berufsprüfungen (BP) und höhere Fachprüfungen (HFP), z.B. der neue AI Business Specialist FA. SIZ-Diplome sind <strong>keine eidg. anerkannten Abschlüsse</strong>, werden aber in eidg. Prüfungsordnungen (Hauswart FA, Fachausweis Finanz- &amp; Rechnungswesen) namentlich aufgeführt.</p>
+      </div>
+    </details>
+
+    <details class="faq">
+      <summary>Wie aktuell sind die Microsoft-Zertifikate?</summary>
+      <div class="answer">
+        <p>Microsoft hat 2024 begonnen, GenAI-Inhalte in bestehende Fundamentals einzubauen. Februar 2026 wurden vier neue Zertifikate (AB-900, AB-730, AB-731, AB-100) eingeführt. AI-900 wird per 30.06.2026 zu AI-901 aktualisiert. Wer AI-900 vor diesem Datum besteht, behält das Zertifikat unbeschränkt gültig. Die MOS-Reihe (MO-100/200/300) ist auf Microsoft 365 Apps modernisiert – die Office-2019-Variante läuft parallel weiter, mit abnehmender Marktrelevanz.</p>
+      </div>
+    </details>
+
+    <details class="faq">
+      <summary>Was kostet ein kompletter KI-Lehrgang mit Vorbereitung und Prüfung typischerweise?</summary>
+      <div class="answer">
+        <p>Spannweite gross: ein Microsoft-AI-900-Selbststudium kostet nur die Prüfungsgebühr USD 99 (~CHF 90). Ein begleiteter Kurs bei Digicomp oder IPSO bewegt sich bei CHF 1'500–2'500 inkl. Prüfungsgebühr. Ein Lehrgang zum AI Business Specialist FA bei HSO/WISS/IPSO liegt bei CHF 8'000–14'000 plus Prüfungsgebühr – aber mit 50 % SBFI-Rückerstattung. Die LinkedIn × Microsoft «Career Essentials» sind kostenfrei mit Profil-Badge. ICDL Artificial Intelligence: ~CHF 50–80 für Modul + Skills Card.</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<!-- QUELLEN -->
+<section id="quellen">
+  <h2>Quellen &amp; <strong>Weiterlesen</strong></h2>
+  <p class="sub">Diese Seite wurde aus folgenden Anbieter-Quellen und Marktanalysen aufgebaut (Stand 14.05.2026)</p>
+
+  <div class="sources">
+    <h4>SIZ AG</h4>
+    <ul>
+      <li><a href="https://siz.ch/angebot/" target="_blank" rel="noopener">siz.ch/angebot</a> – aktuelle SIZ-Diplome und Module</li>
+      <li><a href="https://siz.ch/newsflash-dezember-2025/" target="_blank" rel="noopener">siz.ch Newsflash Dezember 2025</a> – MID-Überarbeitung zu KI</li>
+      <li><a href="https://siz.ch/newsflash-april-2026/" target="_blank" rel="noopener">siz.ch Newsflash April 2026</a> – mySIZ-Relaunch</li>
+      <li><a href="https://siz.ch/Trainingsplattformen" target="_blank" rel="noopener">siz.ch/Trainingsplattformen</a> – Lehrmittel und Testprüfungen</li>
+      <li>Schwesterseite: <a href="/project/siz-ag/vergleich-icdl">SIZ vs. ICDL/ECDL</a></li>
+    </ul>
+
+    <h4>Microsoft</h4>
+    <ul>
+      <li><a href="https://learn.microsoft.com/en-us/credentials/browse/?products=m365-apps" target="_blank" rel="noopener">learn.microsoft.com – Microsoft 365 Apps Credentials</a></li>
+      <li><a href="https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-associate-m365-apps/" target="_blank" rel="noopener">MOS Associate Microsoft 365 Apps</a></li>
+      <li><a href="https://learn.microsoft.com/en-us/credentials/certifications/exams/ai-900/" target="_blank" rel="noopener">AI-900 Azure AI Fundamentals</a></li>
+      <li><a href="https://learn.microsoft.com/en-us/credentials/certifications/ai-business-professional/" target="_blank" rel="noopener">AB-730 AI Business Professional</a></li>
+      <li><a href="https://learn.microsoft.com/en-us/credentials/certifications/ai-transformation-leader/" target="_blank" rel="noopener">AB-731 AI Transformation Leader</a></li>
+      <li><a href="https://learn.microsoft.com/en-us/credentials/certifications/copilot-and-agent-administration-fundamentals/" target="_blank" rel="noopener">AB-900 Copilot &amp; Agent Administration Fundamentals</a></li>
+      <li><a href="https://techcommunity.microsoft.com/blog/skills-hub-blog/microsoft-credentials-roundup-february-2026-edition/3666867" target="_blank" rel="noopener">Microsoft Credentials Roundup Februar 2026</a></li>
+    </ul>
+
+    <h4>Google</h4>
+    <ul>
+      <li><a href="https://cloud.google.com/learn/certification/generative-ai-leader" target="_blank" rel="noopener">Google Cloud – Generative AI Leader</a></li>
+      <li><a href="https://www.skills.google/paths/2336" target="_blank" rel="noopener">Google Skills – AI Essentials</a></li>
+      <li><a href="https://www.coursera.org/professional-certificates/google-ai" target="_blank" rel="noopener">Coursera – Google AI Professional Certificate</a></li>
+    </ul>
+
+    <h4>AWS, IBM, ICDL, LinkedIn</h4>
+    <ul>
+      <li><a href="https://aws.amazon.com/certification/certified-ai-practitioner/" target="_blank" rel="noopener">AWS Certified AI Practitioner (AIF-C01)</a></li>
+      <li><a href="https://skillsbuild.org/de/adult-learners/digital-credentials" target="_blank" rel="noopener">IBM SkillsBuild – Digitale Zertifikate</a></li>
+      <li><a href="https://icdl.org/insights/artificial-intelligence/" target="_blank" rel="noopener">ICDL Insights – Artificial Intelligence</a></li>
+      <li><a href="https://www.linkedin.com/learning/paths/career-essentials-in-generative-ai-by-microsoft-and-linkedin" target="_blank" rel="noopener">LinkedIn + Microsoft – Career Essentials in Generative AI</a></li>
+    </ul>
+
+    <h4>Eidg. Berufsprüfung AI Business Specialist FA</h4>
+    <ul>
+      <li><a href="https://swiss-aibs.ch/" target="_blank" rel="noopener">swiss-aibs.ch – Trägerschaft / Übersicht</a></li>
+      <li><a href="https://www.hso.ch/aus-und-weiterbildungen/ai_business_specialist/" target="_blank" rel="noopener">HSO – AI Business Specialist FA</a></li>
+      <li><a href="https://www.wiss.ch/de-CH/Angebot/Wirtschaftsinformatik/AI-Business-Specialist-mit-eidg-FA" target="_blank" rel="noopener">WISS – AI Business Specialist FA</a></li>
+      <li><a href="https://siw.swiss/lehrgaenge/businessai-mit-eidg-fachausweis/" target="_blank" rel="noopener">SIW – Business AI mit eidg. FA</a></li>
+      <li><a href="https://www.netzwoche.ch/news/2025-10-14/fachausweis-ai-business-specialist-startet-2026" target="_blank" rel="noopener">Netzwoche – Fachausweis startet 2026</a></li>
+    </ul>
+
+    <h4>CH-Schulungsanbieter (Auswahl)</h4>
+    <ul>
+      <li><a href="https://digicomp.ch/courses-microsoft/office-365" target="_blank" rel="noopener">Digicomp – Microsoft Office</a></li>
+      <li><a href="https://www.kv-business-school.ch/" target="_blank" rel="noopener">KV Business School Zürich</a></li>
+      <li><a href="https://www.kvlu.ch/berufsakademie/" target="_blank" rel="noopener">KV Luzern Berufsakademie</a></li>
+      <li><a href="https://www.klubschule.ch/Angebote/Business/Office-und-ECDL/Microsoft-Office" target="_blank" rel="noopener">Klubschule Migros – Microsoft Office</a></li>
+      <li><a href="https://www.ipso.ch/angebote/office-kurse" target="_blank" rel="noopener">IPSO – Office-Kurse</a></li>
+      <li><a href="https://www.ibaw.ch/informatik/office-und-icdl/office/" target="_blank" rel="noopener">IBAW – Office &amp; ICDL</a></li>
+    </ul>
+
+    <h4>SBFI &amp; Berufsprüfungen</h4>
+    <ul>
+      <li><a href="https://www.sbfi.admin.ch/sbfi/de/home/bildung/weiterbildung/bundesbeitraege-fuer-kurse-die-auf-eidgenoessische-pruefungen-vorbereiten.html" target="_blank" rel="noopener">SBFI – Bundesbeiträge für Vorbereitungskurse</a> (50 % Rückerstattung, max. CHF 9'500 BP / 10'500 HFP)</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <h3>SIZ AG · Marktbeobachtung</h3>
+  <span class="red-stripes"></span>
+  <p>Diese Anbieter-Landschaft ist eine Arbeitsgrundlage für Akquisitions-, GL- und VR-Gespräche.<br>Fragen oder Korrekturen: <a href="mailto:info@siz.ch">info@siz.ch</a></p>
+  <p class="meta">Stand 14.05.2026 · Reitergasse 9, 8004 Zürich</p>
+</footer>
+
+</body>
+</html>

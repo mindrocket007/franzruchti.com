@@ -98,6 +98,11 @@ export const projects: Project[] = [
         file: "/projects/siz-ag/SIZ_vs_ICDL_Vergleich.html",
       },
       {
+        slug: "office-ki-landschaft",
+        title: "Office- & KI-Zertifikate · Schweizer Anbieter-Landschaft",
+        file: "/projects/siz-ag/Office_KI_Landschaft.html",
+      },
+      {
         slug: "argumentarium",
         title: "Argumentarium",
         file: "/projects/siz-ag/SIZ_Argumentarium.html",
