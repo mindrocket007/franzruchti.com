@@ -2686,6 +2686,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-14 (Recherche 2026-05-14)
       {
+        summary: "CoinDesk (4. Mai 2026): 'Kraken-Muttergesellschaft Payward schliesst Bitnomial-Übernahme ab (550 Mio. USD) und sichert CFTC-Trifecta' – Krakens Muttergesellschaft Payward schloss am 4. Mai 2026 die Übernahme von Bitnomial ab und erhält damit eine vollständige CFTC-Lizenzstruktur (Designated Contract Market, Derivatives Clearing Organization und Futures Commission Merchant) – ein seltenes Trifecta in einem Konzern. NinjaTrader ist in dieses Krypto/Futures-Ökosystem eingebettet, was langfristige Plattformveränderungen für NinjaTrader-Nutzer wie mindrocket-trading.com bedeuten kann.",
+        source: "coindesk.com",
+        url: "https://www.coindesk.com/business/2026/05/04/kraken-parent-payward-closes-usd550-million-bitnomial-deal-securing-full-cftc-derivatives-stack",
+        date: "2026-05-04",
+        category: "Trading-Technologie",
+        addedAt: "2026-05-14",
+      },
+      {
+        summary: "Invezz (4. Mai 2026): 'Kraken sichert seltene CFTC-Trifecta nach Bitnomial-Übernahme' – Nach Abschluss der Bitnomial-Akquisition verfügt Kraken über eine der wenigen vollständigen CFTC-Zulassungen in der Branche. Integration von Kraken, Bitnomial und NinjaTrader soll einen einzigen Zugangspunkt zu regulierten Futures und Kryptomärkten für institutionelle und Retail-Trader bieten. Dies verändert das regulatorische und infrastrukturelle Umfeld für NinjaTrader-basierte Handelsstrategien.",
+        source: "invezz.com",
+        url: "https://invezz.com/news/2026/05/04/kraken-secures-rare-cftc-trifecta-after-closing-bitnomial-acquisition/",
+        date: "2026-05-04",
+        category: "Trading-Technologie",
+        addedAt: "2026-05-14",
+      },
+      {
         summary: "CME Group / PRNewswire (12. Mai 2026): 'CME Group and Silicon Data Partner to Launch First Compute Futures' – CME Group und Silicon Data lancieren den weltweit ersten Futures-Markt für GPU-Computing-Kapazitäten, basierend auf täglichen GPU-Benchmark-Indizes für On-Demand-Mietpreise. Trader, Finanzinstitute, KI-Entwickler und Cloud-Anbieter können damit künftig Preisvolatilität im Billionen-Dollar-Compute-Markt hedgen. Neue Asset-Klasse auf CME stärkt das Ökosystem für Futures-Trader – direktes Innovationssignal für algorithmische Futures-Ansätze auf mindrocket-trading.com.",
         source: "cmegroup.com",
         url: "https://www.cmegroup.com/media-room/press-releases/2026/5/12/cme_group_and_silicondatapartnertolaunchfirstcomputefutures.html",
@@ -7219,6 +7235,46 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-14
       {
+        summary: "it-boltwise.de (2026): 'Dauerstress in der Schweiz – neue Ansätze zur Entlastung' – Fast ein Drittel der Schweizer Bevölkerung leidet unter Dauerstress; neue Konzepte wie digitale Beratung, Achtsamkeitsprogramme und Slow Productivity werden als Lösungen diskutiert. Ortsunabhängige, sofort zugängliche Angebote wie Audio-Hypnose von hypnovital® positionieren sich ideal als Einstiegsangebot für Stressprävention im Schweizer Markt.",
+        source: "it-boltwise.de",
+        url: "https://www.it-boltwise.de/dauerstress-in-der-schweiz-neue-ansaetze-zur-entlastung.html",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-14",
+      },
+      {
+        summary: "boerse-social.com (2026): 'Hypnose etabliert sich als Schlüssel zu Resilienz und Schlaf' – Hypnose wird von immer mehr Menschen als medikamentenfreie Methode bei Leistungsdruck, Schlafproblemen und psychischer Belastung genutzt; der Trend zeigt eine Normalisierung des Themas im D-A-CH-Raum. Für hypnovital® bestätigt dies den Markttrend für Audio-Hypnose-Produkte als niedrigschwellige Selbsthilfe-Alternative.",
+        source: "boerse-social.com",
+        url: "https://boerse-social.com/page/newsflow/hypnose_etabliert_sich_als_schlassel_zu_resilienz_und_schlaf_finanztrends",
+        date: "2026",
+        category: "Digitale Gesundheit",
+        addedAt: "2026-05-14",
+      },
+      {
+        summary: "premiummedicalcircle.com (2026): 'Wellbeing-Trends 2026: Ganzheitliche Gesundheit im Fokus' – Ganzheitliche Gesundheit wird 2026 zum neuen Standard: Mentale, physische und soziale Gesundheit werden nicht mehr getrennt betrachtet; Prävention schlägt Reaktion; digitale Lösungen für Achtsamkeit und Stressbewältigung sind als Ergänzung zur professionellen Therapie etabliert. Der Trend zu ganzheitlichem BGM-Ansatz stärkt den Markt für kombinierte Audio- und Coaching-Programme wie hypnovital®.",
+        source: "premiummedicalcircle.com",
+        url: "https://premiummedicalcircle.com/de/artikel/wellbeing-trends-2026-ganzheitliche-gesundheit",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-14",
+      },
+      {
+        summary: "shallalist.de (2026): 'Gesundheitstrends 2026: Prävention trifft Wohlbefinden' – Der Wohlbefindenstrend 2026 verknüpft Prävention und persönliche Gesundheitsförderung: Mental-Health-Apps erreichen 8 Milliarden USD Marktvolumen; Arbeitgeber investieren verstärkt in präventive BGM-Massnahmen; digitale Selbsthilfe und personalisierte Programme werden Mainstream. Wachsendes Bewusstsein für Prävention schafft Marktbedarf für niedrigschwellige Audio-Lösungen wie hypnovital®.",
+        source: "shallalist.de",
+        url: "https://shallalist.de/gesundheitstrends-2026-praevention-trifft-wohlbefinden/",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-14",
+      },
+      {
+        summary: "Max-Planck-Gesellschaft / mpg.de: 'Digitale Helfer für die mentale Gesundheit' – Die Max-Planck-Gesellschaft analysiert digitale Tools für mentale Gesundheit: Apps und Programme können klassische Therapie ergänzen, Zugang niederschwellig senken und präventiv wirken; personalisierte digitale Lösungen gewinnen an Bedeutung. Wissenschaftliche Bestätigung des Nutzens digitaler Mental-Health-Tools als Ergänzung – direktes Marktumfeld für Audio-Selbsthilfe wie hypnovital®.",
+        source: "mpg.de",
+        url: "https://www.mpg.de/26291391/digitale-helfer-fuer-mentale-gesundheit",
+        date: "2026",
+        category: "Digitale Gesundheit",
+        addedAt: "2026-05-14",
+      },
+      {
         summary: "handelszeitung.ch (März 2026): 'Psychische Erkrankungen am Arbeitsplatz kosten Schweizer Wirtschaft Milliarden' – Eine aktuelle AXA-Studie zeigt, dass der Arbeitsplatz das mentale Wohlbefinden nirgendwo stärker beeinflusst als in der Schweiz – fast 17 % der Arbeitnehmenden waren im vergangenen Jahr aus psychischen Gründen arbeitsunfähig, mit durchschnittlich 218 Tagen Ausfall. Der volkswirtschaftliche Schaden beläuft sich auf rund 17,3 Milliarden Franken jährlich, was den Handlungsbedarf für präventive BGM-Angebote wie hypnovital® klar unterstreicht.",
         source: "handelszeitung.ch",
         url: "https://www.handelszeitung.ch/insurance/psychischer-stress-am-arbeitsplatz-verursacht-kosten-in-milliardenhohe-690414",
@@ -9726,6 +9782,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "12wy-planner": {
     news: [
       // Neu: 2026-05-14
+      {
+        summary: "Reclaim AI (2026): 'Best Planner Apps 2026 – Übersicht der 14 führenden Produktivitäts-Tools' – Reclaim AI listet die 14 wichtigsten Planner-Apps 2026 (u.a. Motion, Sunsama, Notion) und analysiert ihre Stärken. Kein dediziertes 12-Week-Year-SaaS-Tool erscheint in den Top-Rankings – was eine klare Marktlücke für den 12wy-planner als spezialisiertes Quartalsziel-Tool signalisiert.",
+        source: "reclaim.ai",
+        url: "https://reclaim.ai/blog/best-planner-apps",
+        date: "2026",
+        category: "SaaS & Tools",
+        addedAt: "2026-05-14",
+      },
       {
         summary: "researchandmarkets.com (Januar 2026): 'OKR Software Market 2026–2030' – Der OKR-Software-Markt wächst 2026 von 1,58 auf 1,84 Milliarden USD (+16,5% CAGR) und soll bis 2030 auf 3,11 Milliarden USD steigen. Treiber sind Cloud-Adoption, KI-gestützte Performance-Insights und die Integration in HR-Systeme. Der Markt für strukturierte Zielsetzungs-Tools explodiert – der 12-Week-Year-Ansatz als kompaktes Quartalssystem differenziert sich klar von klassischen OKR-Enterprise-Tools.",
         source: "researchandmarkets.com",
@@ -12650,6 +12714,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "lampenfieber": {
     news: [
       // Neu: 2026-05-14
+      {
+        summary: "spickprofi.de (2026): 'Prüfungsangst-Therapie und Selbsthilfe – Hypnose als wirksamer Ansatz' – Umfassender Ratgeber erklärt Prüfungsangst und listet Hypnose als wirksamen Therapieansatz: Negative Denkmuster im Unterbewusstsein werden durch positive Suggestionen ersetzt, was Auftrittsangst direkt an der Wurzel bekämpft. Dies bestätigt die Wirksamkeit der Methode, die lampenfieber-besiegen.de einsetzt, und bietet Content-Validierung für die Produktkommunikation.",
+        source: "spickprofi.de",
+        url: "https://www.spickprofi.de/en/blogs/blog/pruefungsangst-therapie-selbsthilfe",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-05-14",
+      },
       {
         summary: "gedankenportal.de (2026): 'Hypnose gegen Ängste 2026 – aktuelle Studienlage und Praxisberichte' – Umfassender Ratgeber bestätigt: Neue Studien 2026 belegen langfristige Stabilität der Hypnose-Ergebnisse bei Angststörungen; 3–4 Sitzungen reichen meist für spürbare Verbesserungen; Hypnose identifiziert spezifische unbewusste Auslöser und Glaubenssätze; Selbsthypnose als begleitende Alltagsmethode etabliert sich. Aktuelle Forschungsbestätigung stärkt die Glaubwürdigkeit von Audio-Selbsthypnose-Produkten wie lampenfieber-besiegen.de.",
         source: "gedankenportal.de",
@@ -17785,6 +17857,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "bestattungsplaner": {
     news: [
       // Neu: 2026-05-14
+      {
+        summary: "ekz-crosstour.ch (13. Mai 2026): 'Markt für Palliativdienstleistungen – Tiefgehende Forschung und Wachstumsprognosen' – Der globale Markt für Palliativversorgung wächst und treibt das Bewusstsein für ganzheitliche Vorsorgeplanung (Pflege + Bestattung). Informierte Nutzer im Palliativumfeld gehören zu den wichtigsten Erstanwendern digitaler Bestattungsplaner – ein konkretes Zielgruppensegment für bestattungsplaner.ch.",
+        source: "ekz-crosstour.ch",
+        url: "https://ekz-crosstour.ch/2026/05/13/markt-fur-palliativdienstleistungen-tiefgehende-forschung-und-wachstumsprognosen/",
+        date: "2026-05-13",
+        category: "Markt & Trends",
+        addedAt: "2026-05-14",
+      },
       {
         summary: "everlife.ch (2026): 'Was kostet eine Kremation in der Schweiz? – Preisführer' – Everlife.ch zeigt: Über 90 % aller Bestattungen in der Schweiz sind Kremationen; Gesamtkosten variieren stark von CHF 3'000 bis CHF 9'000 je nach Kanton und Anbieter; transparente Preisvergleiche sind für Angehörige kaum verfügbar. Die extreme regionale Preisvarianz und das fehlende Preistransparenz-Angebot unterstreichen den Nutzen eines Vergleichsportals wie bestattungsplaner.ch.",
         source: "everlife.ch",
