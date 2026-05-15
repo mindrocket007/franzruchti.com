@@ -28,6 +28,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-15
       {
+        summary: "berufsbildung-vs.ch (Mai 2026): 'Woche der Berufsbildung 2026 – Vom Klassenzimmer in den Lehrbetrieb' – Die schweizweite Woche der Berufsbildung fand vom 4.–8. Mai 2026 statt; Mittwoch war der Digitalisierung in der Berufsbildung gewidmet. Im Wallis begleitete Radio Rottu täglich einen anderen Aspekt der dualen Berufsbildung und machte das Thema im Regional-Radio sichtbar. Regelmässige staatliche Kommunikationskampagne stärkt das Ansehen der Berufsbildung schweizweit – positives Sichtbarkeitsumfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation.",
+        source: "berufsbildung-vs.ch",
+        url: "https://www.berufsbildung-vs.ch/die-bfo/news-fotos/news/woche-der-berufsbildung-2026-vom-klassenzimmer-in-den-lehrbetrieb-1038",
+        date: "2026-05",
+        category: "Bildungspolitik",
+        addedAt: "2026-05-15",
+      },
+      {
+        summary: "ict-berufsbildung.ch: 'Revision ICT-Fachmann/-frau EFZ – Neue Bildungsverordnung ab August 2026' – Ab Lehrstart August 2026 gilt die revidierte Bildungsverordnung für ICT-Fachleute EFZ: Neu verankert sind Sicherheitsstandards, Datenschutzkompetenz und systematische ICT-Prozessautomatisierung; Englisch wird in kombinierten Sprachmodul-Lerneinheiten vermittelt; VPA auf 6h reduziert. Regionale Implementierungsveranstaltungen liefen ab März 2026. Die Modernisierung der ICT-Grundbildung stärkt das gesamte ICT-Ausbildungsumfeld – direktes Marktumfeld für SIZ AG als komplementäre ICT-Anwender-Zertifizierungsinstanz.",
+        source: "ict-berufsbildung.ch",
+        url: "https://www.ict-berufsbildung.ch/projekte/grundbildung/revision-ict-fachmann-frau-efz",
+        date: "2026",
+        category: "Arbeitsmarkt & IT",
+        addedAt: "2026-05-15",
+      },
+      {
         summary: "siz.ch (März 2026): 'Newsflash März 2026 – KI-Restriktionen bei SIZ-Prüfungen' – SIZ AG reagiert auf den KI-Fortschritt und passt per 30. März 2026 die Prüfungsordnung an: Office-Addins mit KI-Funktionalität, Microsoft 365 Copilot und das Hochladen von Prüfungsdateien in KI-Tools sind in Modulprüfungen verboten. Partnerschulen tragen die Verantwortung für die Durchsetzung via Admin Center. Direkt relevant für SIZ AG als Prüfungsorganisation, die ihre Zertifikatsintegrität im KI-Zeitalter sichert.",
         source: "siz.ch",
         url: "https://siz.ch/newsflash-maerz-2026/",
@@ -2751,6 +2767,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "mindrocket-trading": {
     news: [
       // Neu: 2026-05-15
+      {
+        summary: "CNBC (14. Mai 2026): 'Stock Market Today May 14, 2026 – S&P 500 und Nasdaq auf Allzeithoch, Dow überquert 50'000' – S&P 500 +0,77% auf 7.501,24 (neuer Allzeit-Schlusskurs), Nasdaq +0,88% auf 26.635,22, Dow +0,75% auf 50.063,46. Antreiber: Cisco +13,4% nach Ergebnis- und Guidance-Anhebung, Nvidia +4,4% dank US-Exportfreigabe für H200-Chips, US-China-Gipfel dämpfte Handelskonflikte. S&P auf dem Weg zur siebten Gewinnwoche in Folge. Das erneute Allzeithoch-Momentum beim S&P 500 am 14. Mai 2026 bestätigt das bullische Marktumfeld für ES Futures-Trading-Strategien auf mindrocket-trading.com.",
+        source: "cnbc.com",
+        url: "https://www.cnbc.com/2026/05/14/stock-market-today-live-updates.html",
+        date: "2026-05-14",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-05-15",
+      },
       {
         summary: "thestreet.com (14. Mai 2026): 'Stock Market May 14, 2026: S&P futures rise after closing at record high' – S&P 500 schloss am 13. Mai 2026 bei 7.501,24 (neues Allzeithoch), Nasdaq auf Rekordhoch 26.635; Dow Jones überquerte 50.000 nach Cisco-Earnings (+13% nach starkem Q3). Marktantrieb durch Tech-Earnings und US-China-Handelsoptimismus. Wachsendes Allzeithoch-Momentum bei ES Futures – positives Umfeld für algorithmisches Trading auf dem S&P 500.",
         source: "thestreet.com",
@@ -5978,6 +6002,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "mindtools": {
     news: [
       // Neu: 2026-05-15
+      {
+        summary: "buchmarkt.de (12. Mai 2026): 'Lesetipp: Kann es gelingen, das digitale Hörbuch stationär wieder zugänglich zu machen?' – Analyse der neuen stationären Hörbuch-Initiativen: Bastei Lübbes shelfie.audio (NFC-Chip, ab 4. Mai exklusiv bei Thalia für €16,99) und das Hörbuch-Hamburg-Lampe als Modelle für Cross-Media-Zugänglichkeit. Thalia produziert sein 100. eigenes Hörbuch. Trend zur physischen Verpackung digitaler Audioinhalte öffnet neue Vertriebskanäle – relevant für mindtools.ch als Anbieter digitaler Self-Help-Audio-Produkte.",
+        source: "buchmarkt.de",
+        url: "https://buchmarkt.de/2026/05/12/lesetipp-kann-es-gelingen-das-digitale-hoerbuch-stationaer-wieder-zugaenglich-zu-machen/",
+        date: "2026-05-12",
+        category: "Buchmarkt & Publishing",
+        addedAt: "2026-05-15",
+      },
+      {
+        summary: "buchmarkt.de (17. März 2026): 'Bastei Lübbe macht digitale Hörbücher mit shelfie.audio stationär zugänglich' – Innovatives NFC-Chip-Hörbuchformat: Kauf als physisches Objekt (€16,99), Inhalt dauerhaft per App abrufbar ohne Abo-Kosten, Nutzungsrechte übertragbar. ~30 Titel von Bestsellern (Follett, Kasten, Moyes). Ab 4. Mai 2026 exklusiv bei Thalia (9-Monats-Partnerschaft). Die Verbindung von physischem Kauf und digitalem Audio-Konsum bestätigt den Markt für Audio-Self-Help-Produkte – Vertriebsinnovationsmodell mit Relevanz für mindtools.ch.",
+        source: "buchmarkt.de",
+        url: "https://buchmarkt.de/2026/03/17/bastei-luebbe-macht-digitale-hoerbuecher-mit-shelfie-audio-stationaer-zugaenglich/",
+        date: "2026-03-17",
+        category: "Buchmarkt & Publishing",
+        addedAt: "2026-05-15",
+      },
+      {
+        summary: "buchinsider.net (20. April 2026): 'Buchmarkt Deutschland 2026 im Überblick – Strukturwandel trotz hohem Umsatz' – Der deutsche Buchmarkt 2026 zeigt höhere Umsätze bei sinkenden Verkaufszahlen; Audioformate gewinnen stark (Downloads 49,2%, Streaming 43,4%); junge Community-orientierte Leser treiben Marktdynamik. Sachbücher zu KI und Persönlichkeitsentwicklung dominieren Business-Bestsellerlisten. Wachsender Audiomarkt und Persönlichkeitsentwicklungs-Boom bestätigen das Marktpotenzial für digitale Self-Help-Inhalte wie auf mindtools.ch.",
+        source: "buchinsider.net",
+        url: "https://www.buchinsider.net/2026/04/20/buchmarkt-deutschland-trends/",
+        date: "2026-04-20",
+        category: "Buchmarkt & Publishing",
+        addedAt: "2026-05-15",
+      },
       {
         summary: "heimbildungsstaette.de (2026): 'Persönlichkeitsentwicklungs-Trends 2026' – Detaillierter Überblick der grossen Trends: 'Skillcation' (Lernen als Erlebnisreise), KI als Co-Pilot der Persönlichkeitsentwicklung, Fokus auf Tiefe statt Quick-Fix-Tipps, wissenschaftlich fundierte Angebote. Starke Überschneidung mit Mental Wellness und Resilienztraining. Bestätigt Nachfrage nach fundierten Selbstentwicklungs-Inhalten im DACH-Markt – direkte Zielgruppe von mindtools.ch.",
         source: "heimbildungsstaette.de",
@@ -11644,6 +11692,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "orgasmus": {
     news: [
       // Neu: 2026-05-15
+      {
+        summary: "wunderweib.de (2026): 'Sex-Trends 2026: 4 heiße Trends, die uns im neuen Jahr erwarten' – Slow Sex/Tantra (22% der Befragten wünschen sich diesen Stil), Healthy Pleasure als Gesundheitsaspekt: Amorelie Sexreport 2026 zeigt, dass 57% der Befragten sexuelle Dysfunktionen erfahren (inkl. Ejakulationsprobleme), Generation-Z-Selbstbestimmtheit, KI-gestützte Beziehungs- und Sexualberatungs-Apps. Der Mainstream-Diskurs über sexuelle Dysfunktionen und digitale Selbsthilfe legitimiert das Marktumfeld für Selbsthilfe-Angebote wie orgasmus-hinauszoegern.de.",
+        source: "wunderweib.de",
+        url: "https://www.wunderweib.de/sex-trends-2026-diese-4-heissen-trends-erwarten-uns-im-neuen-jahr-130067.html",
+        date: "2026-01",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-05-15",
+      },
       {
         summary: "ecancer.org (März 2026): 'EAU 2026: Smartphone app can help men last longer in bed, finds research' – CLIMACS-Studie präsentiert am European Association of Urology Annual Congress (London, März 2026): Melonga App® – erste klinisch getestete digitale Therapie für vorzeitigen Samenerguss. 22% der Nutzer nach 12 Wochen symptomfrei. Basis: Verhaltenstherapie, Mindfulness, Start-Stopp-Technik via App. Bestätigt breite klinische Anerkennung digitaler/mentaler Behandlungsansätze – stärkt Markt für Audio/Hypnose-Produkte wie orgasmus-hinauszoegern.de.",
         source: "ecancer.org",
