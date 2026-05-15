@@ -2768,6 +2768,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-15
       {
+        summary: "thestreet.com (13. Mai 2026): 'Stock Market Today May 13, 2026: Nasdaq, S&P 500 set new records as tech leads market despite inflation scare' – Nasdaq und S&P 500 setzten am 13. Mai 2026 neue Allzeithochs, angeführt von Tech-Werten trotz leichter Inflationsbedenken. Tech-Sektoren führen die Marktbewegung deutlich an; die Inflationssorgen bremsen kurzzeitig, werden aber von bullischer Gesamtstimmung überlagert. Relevante Marktinformation für ES Futures-Strategien, die auf Tech-getriebenes Momentum setzen.",
+        source: "thestreet.com",
+        url: "https://www.thestreet.com/latest-news/stock-market-today-may-13-2026-updates",
+        date: "2026-05-13",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-05-15",
+      },
+      {
+        summary: "thestreet.com (Mai 2026): 'JPMorgan resets S&P 500 price target for the rest of 2026' – JPMorgan erhöht sein Jahresendziel für den S&P 500 auf 7.600 Punkte (zuvor 7.200 nach geopolitischer Absenkung Anfang 2026). Treiber: starke Unternehmensgewinne und KI-Investitionsmomentum. Bei KGV 23x würde S&P 500 ~8.000 erreichen. Bullische Sell-Side-Revision des wichtigsten Marktindex stärkt das positive Gesamtnarrativ für ES Futures-Long-Strategien.",
+        source: "thestreet.com",
+        url: "https://www.thestreet.com/investing/jpmorgan-resets-sp-500-price-target-for-the-rest-of-2026-stock-market",
+        date: "2026-05",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-05-15",
+      },
+      {
+        summary: "thestreet.com (Mai 2026): 'JPMorgan doubles down on stock market message for 2026' – Jamie Dimon warnt: Markt befindet sich in den Top 15% der Bewertungshistorie; Credit Spreads auf Niedrigstniveaus signalisieren aggressiven Risikoappetit als Spät-Zyklus-Warnsignal. Zusatzbelastungen: 'One Big Beautiful Bill' (~300 Mrd. USD Ausgaben) und hohe Gaspreise könnten Inflation hartnäckiger halten als erwartet. Wichtiges Contrarian-Signal für ES Futures-Trader bei Risiko-Management und Tail-Risk-Absicherungen.",
+        source: "thestreet.com",
+        url: "https://www.thestreet.com/investing/stocks/jpmorgan-doubles-down-on-stock-market-message-for-2026",
+        date: "2026-05",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-05-15",
+      },
+      {
         summary: "ESMA (Februar 2026): 'Supervisory Briefing on Algorithmic Trading in the EU' – Die europäische Wertpapieraufsichtsbehörde ESMA definiert: Jedes System, bei dem ein Algorithmus automatisch Order-Parameter bestimmt (Preis, Timing, Menge), gilt als algorithmischer Handel mit entsprechenden Pre-Trade-Risk-Controls, Real-Time-Monitoring und Governance-Anforderungen nach MiFID II. Wer Third-Party-Algorithmen nutzt, bleibt vollverantwortlich für die Compliance. Direkte regulatorische Grundlage für alle algorithmischen NinjaTrader-Strategien auf mindrocket-trading.com.",
         source: "esma.europa.eu",
         url: "https://www.esma.europa.eu/sites/default/files/2026-02/ESMA74-1505669079-10311_Supervisory_Briefing_on_Algorithmic_Trading_in_the_EU.pdf",
@@ -14614,6 +14638,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "learnfluencer": {
     news: [
       // Neu: 2026-05-15
+      {
+        summary: "news.microsoft.com (Mai 2026): 'Neue Microsoft-Daten: KI-Nutzung steigt weiter – die Schweiz bleibt über dem Durchschnitt' – Laut neuesten Microsoft-Daten liegt die Schweizer KI-Nutzungsrate bei 37,8% – mehr als jede dritte Person im erwerbsfähigen Alter nutzt KI-Tools, womit die Schweiz deutlich über dem globalen Durchschnitt liegt. Die KI-Integration in den Arbeitsalltag beschleunigt sich weiter. Direktes Argument für learnfluencer.ch: KI-Lernkompetenz ist in der Schweiz bereits Mainstream-Thema.",
+        source: "news.microsoft.com",
+        url: "https://news.microsoft.com/source/emea/2026/05/neue-microsoft-daten-ki-nutzung-steigt-weiter-die-schweiz-bleibt-ueber-dem-durchschnitt/?lang=gs",
+        date: "2026-05",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-05-15",
+      },
       {
         summary: "EdTech Innovation Hub (2026): 'EdTech Predictions for 2026 – Education Moves into a More Intentional Digital Phase' – Für 2026 wird eine intentionalere digitale Phase im Bildungsbereich prognostiziert: Interoperabilität, digitale Credentials und datenbasierte Lernpfade werden zum Standard. Lernplattformen und Tools müssen nachweisbaren Nutzen liefern – ein starkes Argument für strukturierte, nachweisbare Lernkompetenzen, wie sie learnfluencer.ch fördert.",
         source: "edtechinnovationhub.com",
