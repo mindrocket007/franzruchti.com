@@ -2768,6 +2768,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-15
       {
+        summary: "ESMA (Februar 2026): 'Supervisory Briefing on Algorithmic Trading in the EU' – Die europäische Wertpapieraufsichtsbehörde ESMA definiert: Jedes System, bei dem ein Algorithmus automatisch Order-Parameter bestimmt (Preis, Timing, Menge), gilt als algorithmischer Handel mit entsprechenden Pre-Trade-Risk-Controls, Real-Time-Monitoring und Governance-Anforderungen nach MiFID II. Wer Third-Party-Algorithmen nutzt, bleibt vollverantwortlich für die Compliance. Direkte regulatorische Grundlage für alle algorithmischen NinjaTrader-Strategien auf mindrocket-trading.com.",
+        source: "esma.europa.eu",
+        url: "https://www.esma.europa.eu/sites/default/files/2026-02/ESMA74-1505669079-10311_Supervisory_Briefing_on_Algorithmic_Trading_in_the_EU.pdf",
+        date: "2026-02",
+        category: "Regulierung",
+        addedAt: "2026-05-15",
+      },
+      {
         summary: "CNBC (14. Mai 2026): 'Stock Market Today May 14, 2026 – S&P 500 und Nasdaq auf Allzeithoch, Dow überquert 50'000' – S&P 500 +0,77% auf 7.501,24 (neuer Allzeit-Schlusskurs), Nasdaq +0,88% auf 26.635,22, Dow +0,75% auf 50.063,46. Antreiber: Cisco +13,4% nach Ergebnis- und Guidance-Anhebung, Nvidia +4,4% dank US-Exportfreigabe für H200-Chips, US-China-Gipfel dämpfte Handelskonflikte. S&P auf dem Weg zur siebten Gewinnwoche in Folge. Das erneute Allzeithoch-Momentum beim S&P 500 am 14. Mai 2026 bestätigt das bullische Marktumfeld für ES Futures-Trading-Strategien auf mindrocket-trading.com.",
         source: "cnbc.com",
         url: "https://www.cnbc.com/2026/05/14/stock-market-today-live-updates.html",
@@ -10060,6 +10068,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-15
       {
+        summary: "ardas-it.com (2026): 'SaaS 2026 Trends – From AI Experiments to Production-Ready Platforms' – SaaS-Trendreport 2026: Klare Verschiebung von AI-Experimenten zu produktionsreifen Plattformen. Micro-SaaS-Tools mit spezifischen Funktionen (wie ein 12-Week-Year-Planner) profitieren besonders von nutzungsbasierten Preismodellen und wachsender Nachfrage nach spezialisierten Produktivitätslösungen. KI-gestützte Planung und automatische Fortschrittsverfolgung werden zum Standard-Feature-Set.",
+        source: "ardas-it.com",
+        url: "https://ardas-it.com/saas-2026-trends-from-ai-experiments-to-production-ready-platforms",
+        date: "2026-05",
+        category: "SaaS & Tools",
+        addedAt: "2026-05-15",
+      },
+      {
         summary: "fortunebusinessinsights.com (2026): 'Productivity Apps Market Size, Forecast to 2034' – Globaler Markt für Produktivitäts-Apps wächst von $14.46 Mrd. (2026) auf $30.85 Mrd. bis 2034 (CAGR 9.94%). OKR-Software-Segment wächst noch stärker: von $1.78 Mrd. (2026) auf $5.54 Mrd. bis 2035 (CAGR 13.47%). Key Drivers: Remote Work, Agile Culture, KI-Integration in Goal Tracking. Stark wachsender Markt, in dem der 12wy-planner als spezialisiertes 12-Week-Year-Tool positioniert ist.",
         source: "fortunebusinessinsights.com",
         url: "https://www.fortunebusinessinsights.com/productivity-apps-market-110254",
@@ -11693,6 +11709,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-15
       {
+        summary: "de.melonga.com (2026): 'CLIMACS-Studie – Erste klinische Studie zur digitalen Therapie bei vorzeitigem Samenerguss' – Die Philipps-Universität Marburg testete erstmals einen rein digitalen Therapieansatz für vorzeitigen Samenerguss zuhause via App. Die CLIMACS-Studie, präsentiert am EAU-Kongress 2026 in London, zeigt: 22% der Nutzer nach 12 Wochen symptomfrei, mittlere Latenzzeit verdoppelt (61 auf 125 Sekunden). Wissenschaftliche Legitimation des gesamten Marktsegments für digitale und audio-basierte Selbsthilfeangebote wie orgasmus-hinauszoegern.de.",
+        source: "de.melonga.com",
+        url: "https://de.melonga.com/climacs-studie/",
+        date: "2026-05",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-05-15",
+      },
+      {
         summary: "wunderweib.de (2026): 'Sex-Trends 2026: 4 heiße Trends, die uns im neuen Jahr erwarten' – Slow Sex/Tantra (22% der Befragten wünschen sich diesen Stil), Healthy Pleasure als Gesundheitsaspekt: Amorelie Sexreport 2026 zeigt, dass 57% der Befragten sexuelle Dysfunktionen erfahren (inkl. Ejakulationsprobleme), Generation-Z-Selbstbestimmtheit, KI-gestützte Beziehungs- und Sexualberatungs-Apps. Der Mainstream-Diskurs über sexuelle Dysfunktionen und digitale Selbsthilfe legitimiert das Marktumfeld für Selbsthilfe-Angebote wie orgasmus-hinauszoegern.de.",
         source: "wunderweib.de",
         url: "https://www.wunderweib.de/sex-trends-2026-diese-4-heissen-trends-erwarten-uns-im-neuen-jahr-130067.html",
@@ -13073,6 +13097,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "lampenfieber": {
     news: [
       // Neu: 2026-05-15
+      {
+        summary: "ad-hoc-news.de (Mai 2026): 'Psychologie 2026: Angst wird zur Stärke – Intuition zum Tool' – Psychologischer Trend 2026: Angst wird nicht mehr als Störfaktor, sondern als Ressource und Indikator emotionaler Intelligenz verstanden. Aktive Gefühlssteuerung statt passivem Aushalten – neuronale Kontrollmechanismen als Schlüssel zu mentaler Fitness. Bestätigt den Reframing-Ansatz moderner Lampenfieber-Behandlung, auf dem Hypnose-Audios wie lampenfieber-besiegen.de aufbauen.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/psychologie-2026-angst-wird-zur-staerke-intuition-zum-tool/68459708",
+        date: "2026-05",
+        category: "Psychologie & Forschung",
+        addedAt: "2026-05-15",
+      },
+      {
+        summary: "ad-hoc-news.de (Mai 2026): 'Resilienz-Boom: Kurse gegen Stress boomen 2026' – Resilienz-Kurse gegen Stress boomen 2026, mit Verschiebung hin zu wissenschaftlich fundierten, zielgenauen Interventionen statt generischer Entspannung. Zeigt hohe Nachfrage nach wirksamen Methoden gegen Auftrittsangst, die lampenfieber-besiegen.de mit dem Hypnose-Audio bedient.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/wissenschaft/resilienz-boom-kurse-gegen-stress-boomen-2026/69302068",
+        date: "2026-05",
+        category: "Psychologie & Forschung",
+        addedAt: "2026-05-15",
+      },
+      {
+        summary: "ad-hoc-news.de (Mai 2026): 'Psychologie setzt 2026 auf aktive Gefühlssteuerung' – Psychologie 2026 setzt auf aktive Gefühlssteuerung: neuronale Kontrollmechanismen und Psychotherapie als Schlüssel zu mentaler Fitness. Unterstützt den Hypnose-Ansatz von lampenfieber-besiegen.de, der genau diese aktive Umprogrammierung von Angstreaktionen anstrebt.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/psychologie-setzt-2026-auf-aktive-gefuehlssteuerung/69048479",
+        date: "2026-05",
+        category: "Psychologie & Forschung",
+        addedAt: "2026-05-15",
+      },
       {
         summary: "hypnosio.de (2026): 'Lampenfieber mit Hypnose behandeln – So bekommen Sie ihre Aufregung in den Griff' – Praxisartikel über Hypnose als direkte Behandlungsmethode bei Lampenfieber und Auftrittsangst. Beschreibt Wirkmechanismus: Hypnose löst unbewusste Blockaden, die klassisch Auftrittsangst auslösen. Direktes Marktumfeld-Signal für das Produkt lampenfieber-besiegen.de.",
         source: "hypnosio.de",
@@ -14566,6 +14614,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "learnfluencer": {
     news: [
       // Neu: 2026-05-15
+      {
+        summary: "EdTech Innovation Hub (2026): 'EdTech Predictions for 2026 – Education Moves into a More Intentional Digital Phase' – Für 2026 wird eine intentionalere digitale Phase im Bildungsbereich prognostiziert: Interoperabilität, digitale Credentials und datenbasierte Lernpfade werden zum Standard. Lernplattformen und Tools müssen nachweisbaren Nutzen liefern – ein starkes Argument für strukturierte, nachweisbare Lernkompetenzen, wie sie learnfluencer.ch fördert.",
+        source: "edtechinnovationhub.com",
+        url: "https://www.edtechinnovationhub.com/news/etih-edtech-predictions-for-2026-as-education-moves-into-a-more-intentional-digital-phase",
+        date: "2026-05",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-05-15",
+      },
       {
         summary: "familienleben.ch (2026): 'Bildungsbericht 2026: So wandelt sich die Schule für unsere Kinder' – Der Schweizer Bildungsbericht 2026 zeigt: 90% der Gymnasiasten nutzen generative KI (ChatGPT); KI ist bereits in der Schulrealität angekommen, in der Berufsbildung noch weniger. Digitale Geräte (Tablets, Notebooks) prägen den Alltag; Lernkompetenz wird zur Kernkompetenz. Direktes Argument für learnfluencer.ch als Thought-Leadership-Plattform zur KI-Lernkompetenz im Schweizer Bildungskontext.",
         source: "familienleben.ch",
