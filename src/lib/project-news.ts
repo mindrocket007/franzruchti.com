@@ -28,6 +28,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-15
       {
+        summary: "netzwoche.ch (6. Mai 2026): 'Digitale Resilienz in der Polykrise – der Schweizer ICT-Markt 2026 auf Wachstumskurs' – Trotz geopolitischer Spannungen und anhaltender Polykrise zeigt der Schweizer ICT-Markt starke Resilienz: 61% der befragten Schweizer Unternehmen planen höhere ICT-Budgets für die nächsten 6–12 Monate; weitere 23% halten die Ausgaben konstant. Investitionsschwerpunkte: KI, digitale Souveränität und Cybersecurity. Digitale Transformation gilt nicht mehr als Option, sondern als zentrales Instrument für Effizienz und Agilität in volatilen Märkten. Der wachsende Schweizer ICT-Markt erhöht strukturell die Nachfrage nach ICT-Qualifikationen und Weiterbildung – direktes Wachstumsumfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation.",
+        source: "netzwoche.ch",
+        url: "https://www.netzwoche.ch/news/2026-05-06/digitale-resilienz-in-der-polykrise-der-schweizer-ict-markt-2026-auf-wachstumskurs",
+        date: "2026-05-06",
+        category: "Wirtschaft & Digitalisierung",
+        addedAt: "2026-05-15",
+      },
+      {
         summary: "berufsbildung-vs.ch (Mai 2026): 'Woche der Berufsbildung 2026 – Vom Klassenzimmer in den Lehrbetrieb' – Die schweizweite Woche der Berufsbildung fand vom 4.–8. Mai 2026 statt; Mittwoch war der Digitalisierung in der Berufsbildung gewidmet. Im Wallis begleitete Radio Rottu täglich einen anderen Aspekt der dualen Berufsbildung und machte das Thema im Regional-Radio sichtbar. Regelmässige staatliche Kommunikationskampagne stärkt das Ansehen der Berufsbildung schweizweit – positives Sichtbarkeitsumfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation.",
         source: "berufsbildung-vs.ch",
         url: "https://www.berufsbildung-vs.ch/die-bfo/news-fotos/news/woche-der-berufsbildung-2026-vom-klassenzimmer-in-den-lehrbetrieb-1038",
@@ -2767,6 +2775,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "mindrocket-trading": {
     news: [
       // Neu: 2026-05-15
+      {
+        summary: "ninjatrader.com (Mai 2026): 'NinjaTrader Arena Cup 2026 – Kostenloses Futures-Turnier mit $250.000 Preisgeld' – NinjaTrader lanciert den Arena Cup 2026: kostenloser Wettbewerb auf Live-CME-Marktdaten ohne Kapitalrisiko; Anmeldung 4. Mai – 2. Juni 2026. Drei Qualifikationsrunden (dienstags 8:30–16:00 Uhr CT): Qualifier 1 (19. Mai), Qualifier 2 (26. Mai), Qualifier 3 (2. Juni). Top 10% jeder Runde (bis 1.000 Trader) qualifizieren sich für das Finale am 9. Juni mit $20.000 Preisgeld pro Runde. Direkter Community-Engagement für ES-Futures-Trader auf der NinjaTrader-Plattform – für Mind Rocket Trading-Nutzer ein kostenloser Praxistest ihrer Strategien auf realem Marktdaten.",
+        source: "ninjatrader.com",
+        url: "https://ninjatrader.com/arena-cup-2026/",
+        date: "2026-05",
+        category: "Mind Rocket Trading direkt",
+        addedAt: "2026-05-15",
+      },
+      {
+        summary: "support.apextraderfunding.com (seit 14. März 2026): 'Trading Halt – Alle Metals Contracts bei Apex Trader Funding gesperrt' – Seit dem 14. März 2026 sind alle Edelmetall- und Industriemetall-Futures dauerhaft gesperrt: Gold (GC, MGC), Silber (SI, QI, QO), Kupfer (HG), Platin (PL), Palladium (PA) – auf allen Plattformen (Rithmic, Tradovate, WealthCharts) und für alle Account-Typen. Kein Rückkehrdatum angekündigt; Handel mit gesperrten Instrumenten führt zur Account-Kündigung. Apex-Trader müssen Strategien auf Index-Futures (ES, NQ, MES, MNQ) fokussieren – operative Pflichtinformation für alle Mind Rocket Trading-Nutzer mit Apex-Konten.",
+        source: "support.apextraderfunding.com",
+        url: "https://support.apextraderfunding.com/hc/en-us/articles/46641038974107-Trading-Halt-Metals-Contracts",
+        date: "2026-03-14",
+        category: "Futures & Trading",
+        addedAt: "2026-05-15",
+      },
       {
         summary: "thestreet.com (13. Mai 2026): 'Stock Market Today May 13, 2026: Nasdaq, S&P 500 set new records as tech leads market despite inflation scare' – Nasdaq und S&P 500 setzten am 13. Mai 2026 neue Allzeithochs, angeführt von Tech-Werten trotz leichter Inflationsbedenken. Tech-Sektoren führen die Marktbewegung deutlich an; die Inflationssorgen bremsen kurzzeitig, werden aber von bullischer Gesamtstimmung überlagert. Relevante Marktinformation für ES Futures-Strategien, die auf Tech-getriebenes Momentum setzen.",
         source: "thestreet.com",
@@ -5979,6 +6003,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
     ],
     social: [
       {
+        platform: "X (Twitter)",
+        description: "LumiTraders (Trading-Analyse-Kanal mit über 50.000 Followern) bewirbt den NinjaTrader Arena Cup 2026: 'The NinjaTrader Arena Cup is here – a FREE futures trading competition with $250,000 in real cash prizes. Three Qualifying Rounds (Tuesdays, 8:30am–4:00pm CT): Qualifier 1 — May 19, 2026 / Qualifier 2 — May 26, 2026.' Zeigt die starke Community-Resonanz im NinjaTrader-Ökosystem für Futures-Wettbewerbe – direktes Engagement-Umfeld für Mind Rocket Trading.",
+        url: "https://x.com/LumiTraders/status/2051260307087999445",
+        date: "2026-05",
+        sentiment: "positiv",
+        author: "LumiTraders",
+        addedAt: "2026-05-15",
+      },
+      {
         platform: "LinkedIn",
         description: "Franz Ruchti als Geschäftsführer von Mind Rocket GmbH gelistet. Kein separates Mind Rocket Trading Profil oder Unternehmensseite gefunden.",
         url: "https://www.linkedin.com/in/franzruchti/",
@@ -7494,6 +7527,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "hypnovital": {
     news: [
       // Neu: 2026-05-15
+      {
+        summary: "fitnesstribune.com (2026): 'HealthEXPO Basel 2026 – Gesundheit, Fitness und Innovation hautnah erleben' – Die HealthEXPO 2026 findet am Samstag, 30. Mai 2026 in der Messe Basel statt (10–18 Uhr, freier Eintritt): über 120 neue Produkte und Services aus Medizin, Prävention, BGM und Longevity. Themenwelten: Betriebliches Gesundheitsmanagement, Mental Health, Bewegung, Ernährung und Arbeitsplatz der Zukunft. Begleitkongress mit Kompakt-Vorträgen zu Burnout-Prävention und BGM-Trends für Unternehmen. Die grösste Schweizer Gesundheitsmesse ist direktes Marktumfeld für hypnovital® als Anbieter digitaler Audio-Coaching-Programme für Betriebe.",
+        source: "fitnesstribune.com",
+        url: "https://fitnesstribune.com/healthexpo-basel-2026-gesundheit-fitness-und-innovation-hautnah-erleben/",
+        date: "2026-05",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-15",
+      },
+      {
+        summary: "bodymedia.de (2026): 'HealthEXPO 2026 mit Generationentanz und Pitch-Format' – Die HealthEXPO Basel 2026 (30. Mai, MesseBasel) präsentiert erstmals einen Generationentanz-Workshop sowie ein Startup-Pitch-Format für Gesundheitsinnovationen. Der B2B Business Campus vernetzt HR-Entscheider, BGM-Anbieter und Unternehmen via Speed-Dating und Networking. Neue Formate und B2B-Fokus unterstreichen den Charakter der HealthEXPO als Innovationsplattform – direktes Marktumfeld für hypnovital® als skalierbares digitales BGM-Präventionsprogramm für Schweizer Unternehmen.",
+        source: "bodymedia.de",
+        url: "https://www.bodymedia.de/news/healthexpo-2026-mit-generationentanz-und-pitch-format/",
+        date: "2026-05",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-15",
+      },
       {
         summary: "friendlyworkspace.ch (2026): 'Die Arbeitswelt verändert sich – wohin soll sich das BGM entwickeln?' – Vier Treiber der modernen Arbeitswelt mit Einfluss auf psychische Gesundheit: Digitalisierung, neue agile Arbeitsformen, Gig Economy und Nutzung gesundheitsbezogener Daten. BGM muss mit neuen Lösungen antworten – z.B. Disconnect-Strategien und wertschätzende Kommunikation auf Distanz. Direkt relevant für hypnovital als Anbieter moderner, digitaler BGM-Coaching-Lösungen.",
         source: "friendlyworkspace.ch",
