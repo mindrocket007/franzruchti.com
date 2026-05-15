@@ -2752,6 +2752,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-15
       {
+        summary: "thestreet.com (14. Mai 2026): 'Stock Market May 14, 2026: S&P futures rise after closing at record high' – S&P 500 schloss am 13. Mai 2026 bei 7.501,24 (neues Allzeithoch), Nasdaq auf Rekordhoch 26.635; Dow Jones überquerte 50.000 nach Cisco-Earnings (+13% nach starkem Q3). Marktantrieb durch Tech-Earnings und US-China-Handelsoptimismus. Wachsendes Allzeithoch-Momentum bei ES Futures – positives Umfeld für algorithmisches Trading auf dem S&P 500.",
+        source: "thestreet.com",
+        url: "https://www.thestreet.com/latest-news/stock-market-may-14-2026-sp-futures-rise-after-closing-at-record-high",
+        date: "2026-05-14",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-05-15",
+      },
+      {
+        summary: "thestreet.com (12. Mai 2026): 'Stock Market Today May 12, 2026: Nasdaq, Russell 2000 recover some losses after inflation, oil prices rise' – Nasdaq und Russell 2000 erholen sich nach Kursverlusten durch steigende Inflationsdaten und Ölpreisanstieg. Inflationssensitive Marktphasen erhöhen die Volatilität im ES Futures-Handel – relevant für algorithmische Strategien, die auf Volatilitätsmuster und Inflationsdaten-Impulse reagieren.",
+        source: "thestreet.com",
+        url: "https://www.thestreet.com/latest-news/stock-market-today-may-12-2026-updates",
+        date: "2026-05-12",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-05-15",
+      },
+      {
+        summary: "thestreet.com (11. Mai 2026): 'Stock Market Today May 11, 2026: Stocks post modest gains as oil rises; S&P 500, Russell 2000 set records' – S&P 500 und Russell 2000 setzten neue Allzeithochs trotz steigender Ölpreise. Moderate Gewinne bei breiter Marktbeteiligung. Stetiges Allzeithoch-Momentum des S&P 500 Mitte Mai 2026 bestätigt bullisches Marktumfeld – stärkende Rahmenbedingungen für ES Futures-Trading-Strategien.",
+        source: "thestreet.com",
+        url: "https://www.thestreet.com/latest-news/stock-market-today-may-11-2026-updates",
+        date: "2026-05-11",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-05-15",
+      },
+      {
         summary: "prnewswire.com (8. April 2026): 'CME Group International Average Daily Volume Reaches Record 11.4 Million Contracts in Q1 2026, Up 30% from 2025' – CME Group meldet Rekord-Handelsvolumen im Q1 2026: 36,2 Mio. Kontrakte täglich (+22% vs. Q1 2025). Equity Index (ES/S&P 500 Futures) +11% YoY. Bestätigung des wachsenden Markts für ES Futures-Trading; steigende Liquidität verbessert Handelsbedingungen für Strategien auf dem ES.",
         source: "prnewswire.com",
         url: "https://www.prnewswire.com/news-releases/cme-group-international-average-daily-volume-reaches-record-11-4-million-contracts-in-q1-2026--up-30-from-2025--302736320.html",
@@ -7390,6 +7414,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "hypnovital": {
     news: [
       // Neu: 2026-05-15
+      {
+        summary: "friendlyworkspace.ch (2026): 'Die Arbeitswelt verändert sich – wohin soll sich das BGM entwickeln?' – Vier Treiber der modernen Arbeitswelt mit Einfluss auf psychische Gesundheit: Digitalisierung, neue agile Arbeitsformen, Gig Economy und Nutzung gesundheitsbezogener Daten. BGM muss mit neuen Lösungen antworten – z.B. Disconnect-Strategien und wertschätzende Kommunikation auf Distanz. Direkt relevant für hypnovital als Anbieter moderner, digitaler BGM-Coaching-Lösungen.",
+        source: "friendlyworkspace.ch",
+        url: "https://friendlyworkspace.ch/de/die-arbeitswelt-veraendert-sich-wohin-soll-sich-das-bgm-entwickeln",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-15",
+      },
       {
         summary: "fhnews.ch (2026): 'Nationale BGM-Tagung 2026: «Gesunde Teams – Wie Zusammenarbeit gelingt»' – Die Nationale BGM-Tagung findet am 15. September 2026 im Kursaal Bern statt, organisiert von Gesundheitsförderung Schweiz, Suva und SECO. Thema: Gesunde Teamarbeit in hybriden Arbeitswelten. Hochkarätige Speaker (Thomas Zurbuchen, Nadja Schnetzler, Stephan Sigrist). BGM ist das Kernsegment von hypnovital; Workshops zu Prävention und mentaler Gesundheit bieten direkten Anknüpfungspunkt für hypnovital-Angebote.",
         source: "fhnews.ch",
@@ -14478,6 +14510,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "learnfluencer": {
     news: [
       // Neu: 2026-05-15
+      {
+        summary: "familienleben.ch (2026): 'Bildungsbericht 2026: So wandelt sich die Schule für unsere Kinder' – Der Schweizer Bildungsbericht 2026 zeigt: 90% der Gymnasiasten nutzen generative KI (ChatGPT); KI ist bereits in der Schulrealität angekommen, in der Berufsbildung noch weniger. Digitale Geräte (Tablets, Notebooks) prägen den Alltag; Lernkompetenz wird zur Kernkompetenz. Direktes Argument für learnfluencer.ch als Thought-Leadership-Plattform zur KI-Lernkompetenz im Schweizer Bildungskontext.",
+        source: "familienleben.ch",
+        url: "https://www.familienleben.ch/news/bildungsbericht-2026-so-wandelt-sich-die-schule-fuer-unsere-kinder-9974",
+        date: "2026",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-05-15",
+      },
       {
         summary: "professional-system.de (Mai 2026): 'LEARNTEC 2026: Über 11.000 Besucher, KI als bestimmendes Thema' – Messebericht zur LEARNTEC (5.-7. Mai 2026, Karlsruhe). KI als zentrales Lernthema: nicht mehr als Tool, sondern als Lernpartner. Über 340 Aussteller, 20 Länder. Agentic Learning als neues Konzept. Hochaktuelles Signal für learnfluencers KI-Lernkompetenz-Positionierung.",
         source: "professional-system.de",
