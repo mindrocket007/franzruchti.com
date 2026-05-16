@@ -1953,6 +1953,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
+      // Neu: 2026-05-16
+      {
+        summary: "heimbildungsstaette.de (2026): 'Coaching Trends 2026' – Hybrides Coaching als neue Norm: Online- und Präsenzformate verbinden sich; KI gilt als Schlüsseltrend zur Analyse von Klienten-Verhaltensmustern und Personalisierung; mentale Gesundheit und Resilienz werden 2026 stärker als je zuvor Teil von Coaching-Strategien; Spezialisierung und personalisierte Programme setzen sich gegen generische Angebote durch. Strukturelle Marktentwicklung im Coaching-Bereich bestätigt wachsende Nachfrage nach spezialisierten Persönlichkeitsentwicklungs-Programmen – direktes Wachstumsumfeld für Mind Rocket GmbH.",
+        source: "heimbildungsstaette.de",
+        url: "https://heimbildungsstaette.de/coaching-trends-2026/",
+        date: "2026",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-05-16",
+      },
+      {
+        summary: "peter-krause.net (2026): 'Die besten KI-Tools für Coaches im Überblick 2026' – Detaillierter Überblick: KI-Tools unterstützen Coaches bei Analyse von Klienten-Verhaltensmustern, personalisierten Coaching-Plänen, Session-Dokumentation und Fortschrittstracking. KI ergänzt menschliche Coaching-Qualität statt sie zu ersetzen. Wachsende Integration von KI in Coaching-Prozesse schafft neue Standards und erhöht den Professionalisierungsgrad der Branche – Marktentwicklung, von der digitale Anbieter wie Mind Rocket GmbH profitieren.",
+        source: "peter-krause.net",
+        url: "https://peter-krause.net/ki-blog/ki-tools/beste-ki-tools-coaches/",
+        date: "2026",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-05-16",
+      },
       // Neu: 2026-05-15
       {
         summary: "ki-trainingszentrum.com (2026): 'KI-gestütztes Mindset-Coaching: Wie KI persönliche Entwicklung fördert' – KI eröffnet individualisierte Lernpfade in der Persönlichkeitsentwicklung; hybride Modelle (Mensch + Maschine) setzen sich 2026 als Standard durch. Zwischen Sitzungen erinnern KI-Apps an Ziele und regen Selbstreflexion an. Relevant für Mind Rocket als Anbieter persönlicher Entwicklungsprogramme mit potenziellem KI-Integrationspotenzial.",
@@ -6092,6 +6109,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 2026-05-16
+      {
+        summary: "automateed.com (2026): 'Book Contents in 2026: Trends, Strategies & Industry Insights' – Analyse des globalen Buchmarkt-Inhalts 2026: Sachliteratur und Self-Help bleiben stärkste Wachstumskategorien; KI-unterstützte Content-Erstellung verändert Buchproduktion; digitale Formate (PDF, eBook, Audio) weiten Zugangswege aus; Nischen-Themen mit starker Zielgruppenaffinität profitieren von Digital-First-Distribution. Bestätigt strukturelles Wachstumspotenzial für spezialisierte digitale Self-Help-Produkte wie mindtools.ch.",
+        source: "automateed.com",
+        url: "https://www.automateed.com/book-contents",
+        date: "2026",
+        category: "Buchmarkt & Publishing",
+        addedAt: "2026-05-16",
+      },
+      {
+        summary: "fortunebusinessinsights.com (2026): 'E-Book-Markt 2026: 59,2 Mrd. USD – Wachstum zu 207,81 Mrd. USD bis 2034 (CAGR 16,99%)' – Globaler eBook-Markt 2025: 50,61 Mrd. USD; 2026: 59,2 Mrd. USD; bis 2034 auf 207,81 Mrd. USD bei CAGR 16,99%. Wachstumstreiber: mobile Lesegeräte, günstigere Preise, globale Zugänglichkeit. Starkes strukturelles Wachstum des eBook-Markts unterstreicht das Potenzial für digitale Self-Help-PDFs und E-Books – direktes Wachstumsumfeld für mindtools.ch.",
+        source: "fortunebusinessinsights.com",
+        url: "https://www.fortunebusinessinsights.com/ebook-market-111315",
+        date: "2026",
+        category: "Buchmarkt & Publishing",
+        addedAt: "2026-05-16",
+      },
       // Neu: 2026-05-15
       {
         summary: "buchmarkt.de (12. Mai 2026): 'Lesetipp: Kann es gelingen, das digitale Hörbuch stationär wieder zugänglich zu machen?' – Analyse der neuen stationären Hörbuch-Initiativen: Bastei Lübbes shelfie.audio (NFC-Chip, ab 4. Mai exklusiv bei Thalia für €16,99) und das Hörbuch-Hamburg-Lampe als Modelle für Cross-Media-Zugänglichkeit. Thalia produziert sein 100. eigenes Hörbuch. Trend zur physischen Verpackung digitaler Audioinhalte öffnet neue Vertriebskanäle – relevant für mindtools.ch als Anbieter digitaler Self-Help-Audio-Produkte.",
@@ -11848,6 +11882,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 2026-05-16
+      {
+        summary: "med-tech.world (2026): 'Sequoia: Tackling men's sexual health through science, technology, and honest conversation' – Analyse der digitalen Plattform Sequoia Health: 21-Tages-Personalisierungsplan, Tracking von 80+ Gesundheitsfaktoren (Erektion, Ausdauer, Energie, Stimmung), Kegel-Workouts und diskrete Online-Konsultationen. Partner von UNFPA und World Association for Sexual Health. Professionalisierung des digitalen Männergesundheits-Markts bestätigt wachsende Akzeptanz für nicht-pharmakologische Selbsthilfeangebote wie orgasmus-hinauszoegern.de.",
+        source: "med-tech.world",
+        url: "https://med-tech.world/news/sequoia-men-sexual-health-digital-platform/",
+        date: "2026",
+        category: "Digital Health",
+        addedAt: "2026-05-16",
+      },
       // Neu: 2026-05-15
       {
         summary: "de.melonga.com (2026): 'CLIMACS-Studie – Erste klinische Studie zur digitalen Therapie bei vorzeitigem Samenerguss' – Die Philipps-Universität Marburg testete erstmals einen rein digitalen Therapieansatz für vorzeitigen Samenerguss zuhause via App. Die CLIMACS-Studie, präsentiert am EAU-Kongress 2026 in London, zeigt: 22% der Nutzer nach 12 Wochen symptomfrei, mittlere Latenzzeit verdoppelt (61 auf 125 Sekunden). Wissenschaftliche Legitimation des gesamten Marktsegments für digitale und audio-basierte Selbsthilfeangebote wie orgasmus-hinauszoegern.de.",
@@ -13237,6 +13280,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 2026-05-16
+      {
+        summary: "rhetoriktrainer-fast.de (2026): 'Redeangst durch Virtual Reality bekämpfen – Wie VR-Coachings die Überwindung von Bühnenangst revolutionieren' – Nach Cambridge-University-Studie berichten 80% der VR-Coaching-Teilnehmer von signifikanter Reduktion ihrer Redeangst. VR ermöglicht sicheres Üben in realitätsnahen Szenarien. Technologische Innovation in der Lampenfieber-Behandlung bestätigt: Mentale und verhaltensbasierte Methoden sind hochwirksam – stärkt die Glaubwürdigkeit von Hypnose-Audios wie lampenfieber-besiegen.de als komplementäres Selbsthilfe-Tool.",
+        source: "rhetoriktrainer-fast.de",
+        url: "https://rhetoriktrainer-fast.de/redeangst-durch-virtual-reality-bekaempfen-wie-vr-coachings-die-ueberwindung-von-buehnenangst-revolutionieren/",
+        date: "2026",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-05-16",
+      },
+      {
+        summary: "ninaweniger.de (2026): 'Studie zu Redeangst (und wie man sie überwindet)' – Detaillierte Studienanalyse und Praxisforschung zu Redeangst: Ursachen, Häufigkeit, bewährte Behandlungsmethoden. Zeigt, dass Redeangst ein weitverbreitetes und gut behandelbares Phänomen ist – breite Nachfragebestätigung für spezialisierte Selbsthilfeangebote wie lampenfieber-besiegen.de.",
+        source: "ninaweniger.de",
+        url: "https://ninaweniger.de/redeangst/",
+        date: "2026",
+        category: "Psychologie & Forschung",
+        addedAt: "2026-05-16",
+      },
       // Neu: 2026-05-15
       {
         summary: "ad-hoc-news.de (Mai 2026): 'Psychologie 2026: Angst wird zur Stärke – Intuition zum Tool' – Psychologischer Trend 2026: Angst wird nicht mehr als Störfaktor, sondern als Ressource und Indikator emotionaler Intelligenz verstanden. Aktive Gefühlssteuerung statt passivem Aushalten – neuronale Kontrollmechanismen als Schlüssel zu mentaler Fitness. Bestätigt den Reframing-Ansatz moderner Lampenfieber-Behandlung, auf dem Hypnose-Audios wie lampenfieber-besiegen.de aufbauen.",
@@ -14754,6 +14814,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 2026-05-16
+      {
+        summary: "business-akademie.com (2026): 'Adaptives Lernen mit KI: IBB gewinnt eLearning AWARD 2026 für innovative Berufsqualifizierung' – Das Institut für Berufliche Bildung (IBB) erhält den eLearning AWARD 2026 in der Kategorie 'Adaptives Lernen, Schwerpunkt Berufsqualifizierung'. Adaptive KI-Systeme passen Lerninhalte automatisch an Vorwissen, Tempo und individuelle Bedürfnisse an; mehrere Tausend Teilnehmende mit messbarem Erfolg. Höchste deutsche E-Learning-Auszeichnung bestätigt: KI-adaptive Lernkompetenz ist das Zukunftsthema – direktes Content-Fundament für learnfluencer.ch.",
+        source: "business-akademie.com",
+        url: "https://www.business-akademie.com/wissen/news/adaptives-lernen-mit-ki-ibb-gewinnt-elearning-award-2026-fuer-innovative-berufsqualifizierung",
+        date: "2026",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-05-16",
+      },
+      {
+        summary: "learntec.de (Mai 2026): 'Deutscher E-Learning Award delina: Das sind die Gewinner 2026' – Die LEARNTEC (5.–7. Mai 2026, Karlsruhe), Europas führende E-Learning-Messe, prämiert die besten digitalen Lernlösungen mit dem delina-Award. Preisträger 2026 kommen aus den Bereichen KI-adaptive Lernplattformen, VR-Training und innovative Kompetenzentwicklungs-Tools. Branchenauszeichnung bestätigt: Digitale Lernkompetenz-Innovation ist das zentrale Wachstumsthema – Marktumfeld für Thought-Leadership-Plattformen wie learnfluencer.ch.",
+        source: "learntec.de",
+        url: "https://www.learntec.de/de/fokus/fuer-presse/pressemitteilungen/deutscher-e-learning-award-delina-das-sind-die-gewinner-2026.html",
+        date: "2026-05",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-05-16",
+      },
       // Neu: 2026-05-15
       {
         summary: "news.microsoft.com (Mai 2026): 'Neue Microsoft-Daten: KI-Nutzung steigt weiter – die Schweiz bleibt über dem Durchschnitt' – Laut neuesten Microsoft-Daten liegt die Schweizer KI-Nutzungsrate bei 37,8% – mehr als jede dritte Person im erwerbsfähigen Alter nutzt KI-Tools, womit die Schweiz deutlich über dem globalen Durchschnitt liegt. Die KI-Integration in den Arbeitsalltag beschleunigt sich weiter. Direktes Argument für learnfluencer.ch: KI-Lernkompetenz ist in der Schweiz bereits Mainstream-Thema.",
