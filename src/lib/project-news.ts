@@ -28,6 +28,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-16
       {
+        summary: "nume.ch (2026): 'Schweiz startet neue Berufsausbildung für KI-Spezialisten' – Der neue eidgenössische Fachausweis «AI Business Specialist» ist bundesweit genehmigt; erste Berufsprüfungen finden im Herbst 2026 statt. Über 20 Vorbereitungskursanbieter aus der ganzen Schweiz (inkl. IBAW, SIW, KV Zürich u.a.) haben die Kurse bereits gestartet; die Nachfrage ist laut ICT-Berufsbildung überdurchschnittlich hoch. AI Business Specialists sollen Unternehmen als 'Brückenbauer zwischen Technologie und Business' KI strategisch einbinden helfen. Wachsendes KI-Zertifizierungsumfeld stärkt die gesamte Schweizer ICT-Bildungslandschaft – relevantes Marktumfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation.",
+        source: "nume.ch",
+        url: "https://www.nume.ch/schweiz-startet-neue-berufsausbildung-fuer-ki-spezialisten/",
+        date: "2026",
+        category: "Arbeitsmarkt & IT",
+        addedAt: "2026-05-16",
+      },
+      {
         summary: "docs.siz.ch (Mai 2026): 'Verfügbare Prüfungen – PU45 Modulprüfungen ab Mai 2026' – Das offizielle SIZ-Handbuch dokumentiert, dass Testprüfungen für PU45-Module seit April 2026 verfügbar sind und reguläre Modulprüfungen seit Mai 2026 angeboten werden. Die neuen Lernziele (SP1) gelten ab August 2026; bis Juli 2026 bleibt die bisherige Version gültig. Direktrelevante operative Information für SIZ-Partnerschulen und Dozierende – zeigt laufende Modernisierung der SIZ-Prüfungsinfrastruktur.",
         source: "docs.siz.ch",
         url: "https://docs.siz.ch/de/handbuch/testpruefungen-und-lernzielkontrollen/durchfuehrung-einer-testpruefung/verfuegbare-pruefungen",
@@ -2809,6 +2817,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "mindrocket-trading": {
     news: [
       // Neu: 2026-05-16
+      {
+        summary: "financemagnates.com (2026): 'Kraken Completes $1.5B NinjaTrader Acquisition; Funded Accounts Jump 26% in Q1' – Kraken hat die 1,5-Milliarden-Dollar-Übernahme von NinjaTrader offiziell abgeschlossen. Die Zahl der gefundeten Accounts stieg in Q1 um 26%. Kraken plant, NinjaTraders FCM-Lizenz zu nutzen, um US-Kunden Margin und Futures-Handel anzubieten; NinjaTrader bleibt als eigenständige Plattform unter dem Kraken-Dach. Größte Plattformkonsolidierung im Retail-Futures-Bereich 2026 – direktes Marktumfeld für algorithmische ES-Futures-Trader auf mindrocket-trading.com.",
+        source: "financemagnates.com",
+        url: "https://www.financemagnates.com/cryptocurrency/kraken-completes-15b-ninjatrader-acquisition-as-funded-accounts-jump-26-in-q1/",
+        date: "2026",
+        category: "Trading-Technologie",
+        addedAt: "2026-05-16",
+      },
+      {
+        summary: "cointelegraph.com (2026): 'Kraken finalizes NinjaTrader buy as Q1 revenue jumps 19%' – Cointelegraph bestätigt den Abschluss der Kraken/NinjaTrader-Übernahme; Q1-Umsatz von Kraken stieg um 19% im Jahresvergleich auf 472 Mio. USD. NinjaTrader wird als eigenständige Plattform weitergeführt; Kunden erhalten Zugang zu Krypto- und Spot-Futures auf einer integrierten Plattform. Finanzielle Stärke der kombinierten Kraken/NinjaTrader-Einheit signalisiert nachhaltige Plattformentwicklung – positives Marktumfeld für NinjaTrader-basierte Trading-Strategien wie auf mindrocket-trading.com.",
+        source: "cointelegraph.com",
+        url: "https://cointelegraph.com/news/kraken-confirms-ninjatrader-aquisition-q1-revenue-rises",
+        date: "2026",
+        category: "Trading-Technologie",
+        addedAt: "2026-05-16",
+      },
+      {
+        summary: "igaming.org (2026): 'Kraken Completes NinjaTrader Deal and Reports Q1 Growth' – igaming.org fasst den Abschluss des Kraken/NinjaTrader-Deals zusammen: NinjaTrader-Funded-Accounts stiegen um 26% in Q1, Kraken verzeichnete 19% Umsatzwachstum. Die strategische Integration von traditionellen Futures und Krypto-Derivaten unter einem Dach ist 2026 ein klarer Markttrend. Wachsende Institutionalisierung und Plattformkonsolidierung im Retail-Futures-Handel – direktes Wachstumsumfeld für mindrocket-trading.com.",
+        source: "igaming.org",
+        url: "https://igaming.org/crypto/kraken-completes-ninjatrader-deal-and-reports-q1-growth/",
+        date: "2026",
+        category: "Trading-Technologie",
+        addedAt: "2026-05-16",
+      },
       {
         summary: "kryptoinsights.de (Mai 2026): 'Krypto-Futures: CME Group startet 24/7-Handel mit neuen Derivaten' – Ab 29. Mai 2026 ermöglicht die CME Group erstmals 24/7-Handel für Krypto-Futures (BTC, ETH, SOL, XRP, AVAX, SUI u.a.) auf CME Globex. Volumen 2025: 3 Bio. USD; täglich 407.200 Kontrakte (+46% YoY). Das Ende der 46-Stunden-Handelspause beseitigt das klassische CME-Gap-Trading-Setup. Wichtige Marktstrukturveränderung im Derivatehandel – zeigt Institutionalisierung von Krypto-Futures neben ES-Futures als Asset-Klasse; direktes Marktumfeld für algorithmische Trader auf mindrocket-trading.com.",
         source: "kryptoinsights.de",
@@ -14919,6 +14951,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "learnfluencer": {
     news: [
       // Neu: 2026-05-16
+      {
+        summary: "markt-kom.com (2026): 'Das sind die 100 «Digital Shapers 2026» der Schweiz' – Ringier kürt die 100 einflussreichsten digitalen Vordenkerinnen und Vordenker der Schweiz 2026. Kriterien: nachweisbarer digitaler Impact, Thought Leadership und transformative Wirkung in Wirtschaft und Gesellschaft. Die aktive Schweizer Thought-Leadership-Szene belegt: Digitale Kompetenz und Sichtbarkeit sind 2026 entscheidende Karriere- und Markenfaktoren – Marktumfeld für Thought-Leadership-Plattformen wie learnfluencer.ch mit Fokus auf Lernen, KI und Weiterbildung.",
+        source: "markt-kom.com",
+        url: "https://www.markt-kom.com/en/digital/das-sind-die-100-digital-shapers-2026-der-schweiz/",
+        date: "2026",
+        category: "Content & Thought Leadership",
+        addedAt: "2026-05-16",
+      },
+      {
+        summary: "nume.ch (2026): 'KI-Tools Schweizer Firmen 2026: Trends und Jobs' – Analyse, welche KI-Tools Schweizer Firmen 2026 einsetzen und wie das den Arbeitsmarkt verändert. 76% der Schweizer nutzen KI aktiv; Nachfrage nach KI-Kompetenzen und praxisorientierter Weiterbildung steigt rasant. Aktuelles KI-Marktbild für die Schweiz belegt: Lernkompetenz und KI-Weiterbildung sind 2026 strategische Unternehmensthemen – direktes Content-Feld für learnfluencer.ch.",
+        source: "nume.ch",
+        url: "https://www.nume.ch/ki-tools-schweizer-firmen-2026-trends-und-jobs/",
+        date: "2026",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-05-16",
+      },
       {
         summary: "ad-hoc-news.de (2026): 'Personalentwicklung 2026: Lernen findet keine Zeit mehr' – BENCHMARKING-Studie 2025: 81,8% der Unternehmen berichten, Mitarbeitende haben zu wenig Freiraum für Weiterbildung. Antwort: 'Learning in the Flow of Work' (LIFOW) – granulare Lerneinheiten werden direkt in Arbeitsprozesse (E-Mail, CRM, Teams/Slack) integriert. Zeitliche Lernlücke in Unternehmen bestätigt Relevanz von Lernkompetenz-Thought-Leadership – direktes Framing für learnfluencer.ch-Content.",
         source: "ad-hoc-news.de",
