@@ -2817,6 +2817,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
         category: "Futures & Trading",
         addedAt: "2026-05-16",
       },
+      {
+        summary: "cftc.gov (12. Mai 2026): 'CFTC Reaffirms Exclusive Jurisdiction Over Prediction Markets in Sixth Circuit Amicus Brief' – Die US-Commodity Futures Trading Commission bekräftigt in einem Amicus Brief vor dem Sixth Circuit Court of Appeals ihre exklusive Regulierungskompetenz über Prediction Markets gegenüber Einzelstaaten. Zeigt, dass US-Futures-Regulierung aktiv verteidigt wird und der CFTC-Rahmen für Retail-Futures-Trader stabil bleibt – positives Signal für regelkonforme algorithmische ES-Futures-Strategien wie jene von Mind Rocket Trading.",
+        source: "cftc.gov",
+        url: "https://www.cftc.gov/PressRoom/PressReleases/9230-26",
+        date: "2026-05-12",
+        category: "Regulierung",
+        addedAt: "2026-05-16",
+      },
+      {
+        summary: "sec.gov (2026): 'SEC and CFTC Announce Historic Memorandum of Understanding Between Agencies' – Die US-Regulatoren SEC und CFTC haben ein historisches MOU zur engeren Zusammenarbeit unterzeichnet: Koordination bei Innovation, Marktintegrität und Anleger-/Kundenschutz. Zeigt Harmonisierung des US-Finanzmarktregulierungsrahmens – für algorithmische Futures-Trader (ES, NQ) ein stabiles und transparenteres regulatorisches Umfeld in 2026.",
+        source: "sec.gov",
+        url: "https://www.sec.gov/newsroom/press-releases/2026-26-sec-cftc-announce-historic-memorandum-understanding-between-agencies",
+        date: "2026",
+        category: "Regulierung",
+        addedAt: "2026-05-16",
+      },
+      {
+        summary: "federalregister.gov (5. Mai 2026): 'Review of the Commitments of Traders Reporting Program' – Die CFTC hat eine öffentliche Konsultation zur Überprüfung des COT-Reporting-Programms lanciert (Frist: 4. Juni 2026): Häufigkeit, Inhalt und Nützlichkeit der Berichte sollen evaluiert werden. COT-Reports sind ein Schlüsselinstrument für algorithmische ES-Futures-Händler zur Analyse von Markt-Positionierungen institutioneller Trader – potenzielle Verbesserungen stärken die Datenbasis für systematische Strategien.",
+        source: "federalregister.gov",
+        url: "https://www.federalregister.gov/documents/2026/05/05/2026-08743/review-of-the-commitments-of-traders-reporting-program",
+        date: "2026-05-05",
+        category: "Regulierung",
+        addedAt: "2026-05-16",
+      },
       // Neu: 2026-05-15
       {
         summary: "ninjatrader.com (Mai 2026): 'NinjaTrader Arena Cup 2026 – Kostenloses Futures-Turnier mit $250.000 Preisgeld' – NinjaTrader lanciert den Arena Cup 2026: kostenloser Wettbewerb auf Live-CME-Marktdaten ohne Kapitalrisiko; Anmeldung 4. Mai – 2. Juni 2026. Drei Qualifikationsrunden (dienstags 8:30–16:00 Uhr CT): Qualifier 1 (19. Mai), Qualifier 2 (26. Mai), Qualifier 3 (2. Juni). Top 10% jeder Runde (bis 1.000 Trader) qualifizieren sich für das Finale am 9. Juni mit $20.000 Preisgeld pro Runde. Direkter Community-Engagement für ES-Futures-Trader auf der NinjaTrader-Plattform – für Mind Rocket Trading-Nutzer ein kostenloser Praxistest ihrer Strategien auf realem Marktdaten.",
@@ -18612,6 +18636,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         url: "https://everlife.ch/de/preise-fur-bestattungen/",
         date: "2026",
         category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-05-16",
+      },
+      {
+        summary: "ekz-crosstour.ch (15. Mai 2026): 'Bestattungsdienstleistungsmarkt – Bericht über globale Trends und Chancen' – Marktforschungsanalyse zum globalen Bestattungsdienstleistungsmarkt: Wachstumstreiber sind demografischer Wandel (steigende ältere Bevölkerung), Kremationstrend (+54% global), ökologische Alternativen und digitale Transformation mit zunehmenden Online-Buchungsplattformen. Der Markt wird 2026 auf USD 82,61 Mrd. bewertet; CAGR bis 2035 von 3,51%. Bestätigt globales Wachstum im Bestattungssegment und die strategische Relevanz digitaler Vermittlungsplattformen wie bestattungsplaner.ch.",
+        source: "ekz-crosstour.ch",
+        url: "https://ekz-crosstour.ch/2026/05/15/bestattungsdienstleistungsmarkt-bericht-uber-globale-trends-und-chancen/",
+        date: "2026-05-15",
+        category: "Markt & Trends",
         addedAt: "2026-05-16",
       },
       // Neu: 2026-05-15
