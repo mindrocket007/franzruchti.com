@@ -2802,6 +2802,30 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-16
       {
+        summary: "ninjatrader.com (Mai 2026): 'Futures Trading Outlook: E-Mini S&P 500 Index Trending Bullish' – NinjaTrader-Analyse: ES-Monthly-Chart zeigt klaren Aufwärtstrend mit höheren Hochs und Tiefs; Fibonacci-Extension bei 9.231,25 (+7.179 Ticks über aktuellem Markt). Nach V-förmiger Erholung aus den März-Tiefs nachhaltiger Ausbruch – Käufer dominieren auch bei oberflächlichen Pullbacks. Key-Support: 7.420 (4H-Close darunter = Trendwechselsignal). Bullisches technisches Fundament für ES-Futures-Long-Strategien wie jene auf mindrocket-trading.com.",
+        source: "ninjatrader.com",
+        url: "https://ninjatrader.com/futures/blogs/futures-trading-outlook-e-mini-s-p-500-index-trending-bullish/",
+        date: "2026-05",
+        category: "Futures & Trading",
+        addedAt: "2026-05-16",
+      },
+      {
+        summary: "ninjatrader.com (Mai 2026): 'Futures Trading Outlook: E-Mini S&P 500, Silver Futures Bullish' – NinjaTrader Multi-Asset-Outlook: ES (E-Mini S&P 500) und Silver Futures zeigen gleichzeitig bullische technische Setups. Breit getragene Risk-On-Stimmung über mehrere Asset-Klassen im Mai 2026 bestätigt das Momentum-Umfeld für algorithmische ES-Futures-Strategien auf mindrocket-trading.com.",
+        source: "ninjatrader.com",
+        url: "https://ninjatrader.com/futures/blogs/futures-trading-outlook-e-mini-s-p-500-silver-futures-bullish/",
+        date: "2026-05",
+        category: "Futures & Trading",
+        addedAt: "2026-05-16",
+      },
+      {
+        summary: "blog.oneuptrader.com (Mai 2026): 'S&P 500 (ES) Hits All-Time Highs, Technical Analysis' – OneUp Trader analysiert S&P 500 nach Allzeithochs im Mai 2026: Nachhaltiger Ausbruch ohne nennenswerte Widerstände; Treiber sind Momentum, verbesserte Marktstimmung und nachlassende Fed-Restriktionserwartungen. Bestätigt bullisches Marktumfeld für ES-Futures-Long-Strategien auf mindrocket-trading.com.",
+        source: "blog.oneuptrader.com",
+        url: "https://blog.oneuptrader.com/analysis/technical-analysis/sp-500-es-hits-all-time-highs-technical-analysis/",
+        date: "2026-05",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-05-16",
+      },
+      {
         summary: "financemagnates.com (Feb 2026): 'With CFD Brokers Showing Interest in Futures, NinjaTrader Extends Access for EU Retail Traders' – Branchenanalyse: Europäische CFD-Broker erwägen vermehrt den Wechsel zu börsengehandelten Futures; eine CME-Group-Umfrage zeigt, dass 4 von 5 Firmen ohne Listed Products deren Einführung planen. NinjaTrader expandiert ins europäische Retailgeschäft via PEDSL-CY (Payward Europe Digital Solutions, MiFID-Broker). Wachsender Regulierungsdruck auf OTC-Derivate treibt Nachfrage für regulierte Futures-Plattformen wie NinjaTrader – positives Marktumfeld für algorithmische ES-Futures-Strategien.",
         source: "financemagnates.com",
         url: "https://www.financemagnates.com/forex/with-cfd-brokers-showing-interest-in-futures-ninjatrader-extends-access-for-eu-retail-traders/",
