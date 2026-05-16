@@ -26,6 +26,15 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 2026-05-16
+      {
+        summary: "docs.siz.ch (Mai 2026): 'Verfügbare Prüfungen – PU45 Modulprüfungen ab Mai 2026' – Das offizielle SIZ-Handbuch dokumentiert, dass Testprüfungen für PU45-Module seit April 2026 verfügbar sind und reguläre Modulprüfungen seit Mai 2026 angeboten werden. Die neuen Lernziele (SP1) gelten ab August 2026; bis Juli 2026 bleibt die bisherige Version gültig. Direktrelevante operative Information für SIZ-Partnerschulen und Dozierende – zeigt laufende Modernisierung der SIZ-Prüfungsinfrastruktur.",
+        source: "docs.siz.ch",
+        url: "https://docs.siz.ch/de/handbuch/testpruefungen-und-lernzielkontrollen/durchfuehrung-einer-testpruefung/verfuegbare-pruefungen",
+        date: "2026-05",
+        category: "SIZ AG direkt",
+        addedAt: "2026-05-16",
+      },
       // Neu: 2026-05-15
       {
         summary: "netzwoche.ch (6. Mai 2026): 'Digitale Resilienz in der Polykrise – der Schweizer ICT-Markt 2026 auf Wachstumskurs' – Trotz geopolitischer Spannungen und anhaltender Polykrise zeigt der Schweizer ICT-Markt starke Resilienz: 61% der befragten Schweizer Unternehmen planen höhere ICT-Budgets für die nächsten 6–12 Monate; weitere 23% halten die Ausgaben konstant. Investitionsschwerpunkte: KI, digitale Souveränität und Cybersecurity. Digitale Transformation gilt nicht mehr als Option, sondern als zentrales Instrument für Effizienz und Agilität in volatilen Märkten. Der wachsende Schweizer ICT-Markt erhöht strukturell die Nachfrage nach ICT-Qualifikationen und Weiterbildung – direktes Wachstumsumfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation.",
@@ -2774,6 +2783,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 2026-05-16
+      {
+        summary: "financemagnates.com (Feb 2026): 'With CFD Brokers Showing Interest in Futures, NinjaTrader Extends Access for EU Retail Traders' – Branchenanalyse: Europäische CFD-Broker erwägen vermehrt den Wechsel zu börsengehandelten Futures; eine CME-Group-Umfrage zeigt, dass 4 von 5 Firmen ohne Listed Products deren Einführung planen. NinjaTrader expandiert ins europäische Retailgeschäft via PEDSL-CY (Payward Europe Digital Solutions, MiFID-Broker). Wachsender Regulierungsdruck auf OTC-Derivate treibt Nachfrage für regulierte Futures-Plattformen wie NinjaTrader – positives Marktumfeld für algorithmische ES-Futures-Strategien.",
+        source: "financemagnates.com",
+        url: "https://www.financemagnates.com/forex/with-cfd-brokers-showing-interest-in-futures-ninjatrader-extends-access-for-eu-retail-traders/",
+        date: "2026-02",
+        category: "Trading-Technologie",
+        addedAt: "2026-05-16",
+      },
+      {
+        summary: "leaprate.com (Jan 2026): 'NinjaTrader Expands Into EU Amid Rising Retail Futures Demand' – NinjaTrader expandiert ins europäische Retailgeschäft: Launch in Deutschland und Niederlande via Payward Europe Digital Solutions (PEDSL-CY, MiFID-lizenziert); Zugang zu US- und europäischen Futures-Kontrakten, advanced Charting und Order-Flow-Tools. NinjaTrader ist Teil der PINC Group (Kraken). Frankreich und Italien geplant für Ende 2026. Die europäische Expansion des führenden Futures-Brokers stärkt das Ökosystem für algorithmische Futures-Strategien direkt.",
+        source: "leaprate.com",
+        url: "https://www.leaprate.com/forex/brokers/ninjatrader-expands-into-eu-amid-rising-retail-futures-demand/",
+        date: "2026-01",
+        category: "Futures & Trading",
+        addedAt: "2026-05-16",
+      },
       // Neu: 2026-05-15
       {
         summary: "ninjatrader.com (Mai 2026): 'NinjaTrader Arena Cup 2026 – Kostenloses Futures-Turnier mit $250.000 Preisgeld' – NinjaTrader lanciert den Arena Cup 2026: kostenloser Wettbewerb auf Live-CME-Marktdaten ohne Kapitalrisiko; Anmeldung 4. Mai – 2. Juni 2026. Drei Qualifikationsrunden (dienstags 8:30–16:00 Uhr CT): Qualifier 1 (19. Mai), Qualifier 2 (26. Mai), Qualifier 3 (2. Juni). Top 10% jeder Runde (bis 1.000 Trader) qualifizieren sich für das Finale am 9. Juni mit $20.000 Preisgeld pro Runde. Direkter Community-Engagement für ES-Futures-Trader auf der NinjaTrader-Plattform – für Mind Rocket Trading-Nutzer ein kostenloser Praxistest ihrer Strategien auf realem Marktdaten.",
@@ -7526,6 +7552,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 2026-05-16
+      {
+        summary: "safety-security.ch (2026): 'BGM am fmpro Symposium 2026' – Das fmpro Symposium 2026 findet in der Messe Luzern statt; BGM-Experte Andreas Krause (FHNW, Institut für Mentale und Organisationale Gesundheit) präsentiert, wie Unternehmen die Resilienz ihrer Mitarbeitenden systematisch stärken können. BGM-Thema auf nationaler Fachmesse institutionalisiert – positives Sichtbarkeitssignal für hypnovital® als skalierbare digitale BGM-Präventionslösung.",
+        source: "safety-security.ch",
+        url: "https://www.safety-security.ch/bgm-am-fmpro-symposium-2026/",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-16",
+      },
+      {
+        summary: "ad-hoc-news.de (2026): 'BGM-Tagung 2026 setzt auf gesunde Teamarbeit' – Die Nationale BGM-Tagung 2026 findet am 15. September im Kursaal Bern statt (Veranstalter: Gesundheitsförderung Schweiz, Suva, SECO); Fokus auf psychologische Sicherheit und gesunde Teamarbeit als Basis für resiliente Organisationen. Die wichtigste BGM-Fachtagung der Schweiz thematisiert Burnout-Prävention und mentale Resilienz – direktes institutionelles Marktumfeld für hypnovital® als digitale Audio-Coaching-BGM-Lösung.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/bgm-tagung-2026-setzt-auf-gesunde-teamarbeit/68660567",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-16",
+      },
+      {
+        summary: "medicongress.ch (2026): 'FutureFit 2026 – Kongress für betriebliche Gesundheit' – FutureFit 2026 bietet konkrete Ansätze zu Fehlzeitenreduktion, Reintegration und mentaler Stabilisierung; klare Impulse, wie Führung wirksam in BGM eingebunden wird; praxisorientierte Modelle für resiliente Organisationen. Wachsende Kongress-Infrastruktur für BGM in der Schweiz unterstreicht die Professionalisierung des Marktes – positives institutionelles Umfeld für hypnovital® als skalierbare digitale BGM-Intervention.",
+        source: "medicongress.ch",
+        url: "https://medicongress.ch/kongress/futurefit2026/",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-16",
+      },
       // Neu: 2026-05-15
       {
         summary: "fitnesstribune.com (2026): 'HealthEXPO Basel 2026 – Gesundheit, Fitness und Innovation hautnah erleben' – Die HealthEXPO 2026 findet am Samstag, 30. Mai 2026 in der Messe Basel statt (10–18 Uhr, freier Eintritt): über 120 neue Produkte und Services aus Medizin, Prävention, BGM und Longevity. Themenwelten: Betriebliches Gesundheitsmanagement, Mental Health, Bewegung, Ernährung und Arbeitsplatz der Zukunft. Begleitkongress mit Kompakt-Vorträgen zu Burnout-Prävention und BGM-Trends für Unternehmen. Die grösste Schweizer Gesundheitsmesse ist direktes Marktumfeld für hypnovital® als Anbieter digitaler Audio-Coaching-Programme für Betriebe.",
@@ -10139,6 +10190,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 2026-05-16
+      {
+        summary: "12week-breakthrough.com (2026): '12-Week Year Tools, Templates & Planners: The Definitive Guide' – Umfassender Guide zu Tools für die 12-Week-Year-Methode: Bewertung von digitalen Apps, Notion-Templates, Excel-Sheets und spezialisierten Plannern; Empfehlung, mindestens einen vollen 12-Wochen-Zyklus mit einem Tool zu absolvieren, bevor gewechselt wird; Betonung, dass es kein 'bestes' Tool gibt, sondern nur das passende. Wachsendes Tool-Ökosystem rund um die 12WY-Methode bestätigt Marktchance für spezialisierte SaaS-Planungstools wie den 12wy-planner.",
+        source: "12week-breakthrough.com",
+        url: "https://12week-breakthrough.com/12-week-year-tools/",
+        date: "2026",
+        category: "12 Week Year Methode",
+        addedAt: "2026-05-16",
+      },
+      {
+        summary: "blog.logrocket.com (2026): 'The 12-Week Year Approach to Productivity and Planning' – Product-Management-Perspektive auf die 12WY-Methode: Verbindung von wöchentlichem Scorekeeping (Ziel: ≥85% Task Completion), Quartalsrhythmus mit Retrospektive und taktischen Pufferwochen; Adoption in der Tech/Product-Community wächst. Wachsende Zielgruppe aus Produktteams und Tech-Fachkräften für die 12-Week-Year-Methode – direkte Zielgruppe des 12wy-planners.",
+        source: "blog.logrocket.com",
+        url: "https://blog.logrocket.com/product-management/12-week-year-approach/",
+        date: "2026",
+        category: "Produktivität & Planung",
+        addedAt: "2026-05-16",
+      },
       // Neu: 2026-05-15
       {
         summary: "ardas-it.com (2026): 'SaaS 2026 Trends – From AI Experiments to Production-Ready Platforms' – SaaS-Trendreport 2026: Klare Verschiebung von AI-Experimenten zu produktionsreifen Plattformen. Micro-SaaS-Tools mit spezifischen Funktionen (wie ein 12-Week-Year-Planner) profitieren besonders von nutzungsbasierten Preismodellen und wachsender Nachfrage nach spezialisierten Produktivitätslösungen. KI-gestützte Planung und automatische Fortschrittsverfolgung werden zum Standard-Feature-Set.",
@@ -16894,6 +16962,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 2026-05-16
+      {
+        summary: "aivie.ch (2026): 'Marketing-Automation mit kmu.digital 2026: Jetzt Förderung nutzen' – Schweizer KMU können Marketing-Automatisierungsprojekte mit bis zu 80% Kostenförderung via kmu.digital realisieren; Aivie als Swiss Marketing Automation-Plattform auf Open-Source-Basis ist förderfähig. Fokus auf Customer-Journey-Automatisierung, Lead-Nurturing und datenbasierte Entscheidungen. Staatliche Förderung für Marketing-Digitalisierung bei Schweizer KMU unterstreicht institutionellen Push für strukturierte Marketingplanung – direktes Wachstumsumfeld für Tools wie learnfluencer.ch/tools/marketingkonzept.",
+        source: "aivie.ch",
+        url: "https://aivie.ch/marketing-automation-kmu-digital-forderung/",
+        date: "2026",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-05-16",
+      },
+      {
+        summary: "bexolutions.ch (2026): 'Marketing-Automation für Schweizer KMU 2026: Tools & ROI' – Detaillierter Vergleich führender Marketing-Automation-Tools (HubSpot, Mailchimp, ActiveCampaign) für Schweizer KMU; ROI-Analyse zeigt: Marketing-Automation generiert durchschnittlich 77% mehr Leads bei 30% Kostensenkung; empfohlen wird ein Einstieg mit CRM-Segmentierung und E-Mail-Automation. Wachsende Professionalisierung des KMU-Marketing-Ökosystems in der Schweiz – direktes Wachstumsumfeld für integrierte Marketingplanungs-Tools.",
+        source: "bexolutions.ch",
+        url: "https://bexolutions.ch/marketing-automation-fur-schweizer-kmu-2026-tools-roi/",
+        date: "2026",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-05-16",
+      },
       // Neu: 2026-05-15
       {
         summary: "edana.ch (6. Mai 2026): 'Wachstumsstrategien für KMU: Marketing und Automatisierung' – Frischer Artikel über strukturiertes KMU-Wachstum via GROW-Modell, CRM-Segmentierung, Marketing-Automatisierung und kanalspezifischer Strategie. Empfiehlt Fokus auf 2-3 Kanäle statt Omnipräsenz. Zeigt aktive Nachfrage nach strukturierten Marketing-Werkzeugen für KMU – direktes Marktumfeld des Marketingkonzept-Tools.",
@@ -18435,6 +18520,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 2026-05-16
+      {
+        summary: "everlife.ch (2026): 'Was kostet eine Kremation in der Schweiz?' – Aktueller Kostenüberblick: Kremation CHF 3'800–8'100 (Ø CHF 4'500–5'400); ca. 90% der Schweizer wählen Kremation statt Erdbestattung. Grösster Kostenfaktor: Sarg (ca. CHF 1'000, in der Schweiz obligatorisch). Everlife bietet Bestattungsvorsorge mit Ratenzahlung ab CHF 12.90/Monat über bis zu 25 Jahre. Der Boom der Kremation und wachsende Onlineaffinität bei der Vorsorge bestätigen die Marktchance für digitale Bestattungsplattformen wie bestattungsplaner.ch.",
+        source: "everlife.ch",
+        url: "https://everlife.ch/de/veroffentlichung/was-kostet-eine-kremation-in-der-schweiz/",
+        date: "2026",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-05-16",
+      },
+      {
+        summary: "everlife.ch (2026): 'Preisführer für Bestattungen in der Schweiz' – Everlife.ch präsentiert sich als führender Preisvergleichsanbieter für Schweizer Bestattungsleistungen; Analyse zeigt kantonale Preisunterschiede von bis zu CHF 6'000+ und unübersichtliche Kostenstrukturen für Hinterbliebene. Der Bedarf an Preistransparenz und Vergleichbarkeit im Schweizer Bestattungsmarkt bestätigt die Nachfrage nach neutralen Vermittlungsplattformen wie bestattungsplaner.ch.",
+        source: "everlife.ch",
+        url: "https://everlife.ch/de/preise-fur-bestattungen/",
+        date: "2026",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-05-16",
+      },
       // Neu: 2026-05-15
       {
         summary: "trauerportal.ch (2026): 'Was kostet eine Bestattung in der Schweiz?' – Aktueller Kostenvergleich: CHF 2.000–10.000+ je nach Region. Grosse kantonale Unterschiede (Zürich, Basel: Grundleistungen kostenlos; ländliche Kantone: volle Kosten). Empfehlung: mindestens 3 Offerten einholen. Untermauert den Bedarf an einem Preisvergleichs- und Vermittlungsportal wie bestattungsplaner.ch.",
