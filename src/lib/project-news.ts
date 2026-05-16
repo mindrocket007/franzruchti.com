@@ -35,6 +35,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         category: "SIZ AG direkt",
         addedAt: "2026-05-16",
       },
+      {
+        summary: "itmagazine.ch (2026): 'Informatik als Handwerk: Praxisnahe ICT‑Weiterbildungen an der STFW' – Die STFW (Schule für Technik und Weiterbildung) lanciert ab Oktober 2026 vier neue ICT-Lehrgänge: HF-Dipl. Informatiker/-in Applikationsentwicklung, HF-Dipl. Informatiker/-in Systemtechnik sowie die eidg. Fachausweise ICT-Application Development Specialist und ICT-Platform Development Specialist. Methodischer Ansatz: Theorie subsidiär und teilweise digital, Praxisarbeit in Teams im Zentrum, Instruktoren als Coaches aus der Wirtschaft. AI Business Specialist folgt 2027. Wachsendes Kursangebot führender Schweizer Weiterbildungsinstitutionen bestätigt nachhaltige Nachfrage nach praxisnahen ICT-Qualifikationen – direktes Wachstumsumfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation.",
+        source: "itmagazine.ch",
+        url: "https://www.itmagazine.ch/artikel/87127/Informatik_als_Handwerk_Praxisnahe_ICTWeiterbildungen_an_der_STFW.html",
+        date: "2026",
+        category: "Arbeitsmarkt & IT",
+        addedAt: "2026-05-16",
+      },
       // Neu: 2026-05-15
       {
         summary: "netzwoche.ch (6. Mai 2026): 'Digitale Resilienz in der Polykrise – der Schweizer ICT-Markt 2026 auf Wachstumskurs' – Trotz geopolitischer Spannungen und anhaltender Polykrise zeigt der Schweizer ICT-Markt starke Resilienz: 61% der befragten Schweizer Unternehmen planen höhere ICT-Budgets für die nächsten 6–12 Monate; weitere 23% halten die Ausgaben konstant. Investitionsschwerpunkte: KI, digitale Souveränität und Cybersecurity. Digitale Transformation gilt nicht mehr als Option, sondern als zentrales Instrument für Effizienz und Agilität in volatilen Märkten. Der wachsende Schweizer ICT-Markt erhöht strukturell die Nachfrage nach ICT-Qualifikationen und Weiterbildung – direktes Wachstumsumfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation.",
@@ -2822,6 +2830,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
         source: "blog.oneuptrader.com",
         url: "https://blog.oneuptrader.com/analysis/technical-analysis/sp-500-es-hits-all-time-highs-technical-analysis/",
         date: "2026-05",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-05-16",
+      },
+      {
+        summary: "heygotrade.com (2026): 'S&P 500 Mid-Year Outlook 2026: Sector Winners and Laggards' – Halbjahresausblick für den S&P 500: Halbleiter (Semis), Energie, Verteidigung und Industrie als Outperformer; kommerzielle REITs, Consumer Discretionary und Utilities als Nachzügler. Semis führen dank anhaltenden KI-Infrastrukturausgaben der Hyperscaler; Industriewerte profitieren von Re-Shoring-Trends. Empfehlung: Overweight Semis und Industrie für Wachstum, Energie und Defense als Cashflow-Hedge. Starkes fundamentales Momentum bestätigt das bullische Umfeld für algorithmische ES-Futures-Long-Strategien auf mindrocket-trading.com.",
+        source: "heygotrade.com",
+        url: "https://www.heygotrade.com/en/blog/sp-500-outlook-2026/",
+        date: "2026",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-05-16",
+      },
+      {
+        summary: "heygotrade.com (2026): 'Q2 2026 Outlook: 5 US Sectors Where Q1 Earnings Beats Set Up the Next Move' – Analyse der Q1-2026-Earnings-Season: Fünf US-Sektoren mit überraschend starken Q1-Resultaten bieten ein Setup für Q2-Aufwärtsbewegungen; Earnings-Qualität und Guidance sind die entscheidenden Katalysatoren für das Markttiming im zweiten Quartal. Earnings-getriebenes Momentum unterstützt den breit angelegten S&P-500-Aufwärtstrend – direktes marktfundamentales Umfeld für ES-Futures-Handelsstrategien wie jene auf mindrocket-trading.com.",
+        source: "heygotrade.com",
+        url: "https://www.heygotrade.com/en/blog/Q2-2026-Sector-Outlook-5-US-Sectors-Q1-Earnings-Beats/",
+        date: "2026",
         category: "Markt & Wirtschaft",
         addedAt: "2026-05-16",
       },
@@ -14877,6 +14901,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         url: "https://www.learntec.de/de/fokus/fuer-presse/pressemitteilungen/deutscher-e-learning-award-delina-das-sind-die-gewinner-2026.html",
         date: "2026-05",
         category: "E-Learning & EdTech",
+        addedAt: "2026-05-16",
+      },
+      {
+        summary: "itmagazine.ch (2026): 'Informatik als Handwerk: Praxisnahe ICT‑Weiterbildungen an der STFW' – Die STFW lanciert ab Oktober 2026 vier neue ICT-Weiterbildungen (HF Applikationsentwicklung, HF Systemtechnik sowie eidg. Fachausweise ICT-Application Development und ICT-Platform Development Specialist). Methodisches Alleinstellungsmerkmal: Theorie subsidiär, Praxisteamarbeit im Zentrum, Coaches aus der Wirtschaft – exemplarisch für den Schweizer EdTech-Trend zu praxisorientiertem Blended Learning. Zeigt, dass Schweizer Bildungsanbieter 2026 verstärkt auf hybride und praxisnahe Formate setzen – direktes Contentumfeld für learnfluencer.ch als Thought-Leadership-Plattform für Lernen und Weiterbildung.",
+        source: "itmagazine.ch",
+        url: "https://www.itmagazine.ch/artikel/87127/Informatik_als_Handwerk_Praxisnahe_ICTWeiterbildungen_an_der_STFW.html",
+        date: "2026",
+        category: "Weiterbildung Schweiz",
         addedAt: "2026-05-16",
       },
       // Neu: 2026-05-15
