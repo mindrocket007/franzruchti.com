@@ -2810,6 +2810,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-16
       {
+        summary: "kryptoinsights.de (Mai 2026): 'Krypto-Futures: CME Group startet 24/7-Handel mit neuen Derivaten' – Ab 29. Mai 2026 ermöglicht die CME Group erstmals 24/7-Handel für Krypto-Futures (BTC, ETH, SOL, XRP, AVAX, SUI u.a.) auf CME Globex. Volumen 2025: 3 Bio. USD; täglich 407.200 Kontrakte (+46% YoY). Das Ende der 46-Stunden-Handelspause beseitigt das klassische CME-Gap-Trading-Setup. Wichtige Marktstrukturveränderung im Derivatehandel – zeigt Institutionalisierung von Krypto-Futures neben ES-Futures als Asset-Klasse; direktes Marktumfeld für algorithmische Trader auf mindrocket-trading.com.",
+        source: "kryptoinsights.de",
+        url: "https://www.kryptoinsights.de/krypto-futures-cme-group-startet-24-7-handel-mit-neuen-derivaten/",
+        date: "2026-05",
+        category: "Trading-Technologie",
+        addedAt: "2026-05-16",
+      },
+      {
+        summary: "ad-hoc-news.de (2026): 'Prop Trading Deutschland: So funktioniert der Prop-Trading Broker für Funded Accounts' – Detaillierte Erläuterung des Prop-Trading-Modells im DACH-Raum: Trader handeln mit dem Kapital der Firm; nach bestandener Challenge winken Funded Accounts mit bis zu 80% Gewinnbeteiligung. Maximale Tagesverlustgrenze 5%, Gesamtrisikolimit 10% unter Startkapital. Steigende Popularität von Prop-Trading-Plattformen im deutschsprachigen Raum – wachsendes Zielgruppenumfeld für mindrocket-trading.com.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/prop-trading-deutschland-so-funktioniert-der-prop-trading-broker-fuer/68597461",
+        date: "2026",
+        category: "Futures & Trading",
+        addedAt: "2026-05-16",
+      },
+      {
         summary: "ninjatrader.com (Mai 2026): 'Futures Trading Outlook: E-Mini S&P 500 Index Trending Bullish' – NinjaTrader-Analyse: ES-Monthly-Chart zeigt klaren Aufwärtstrend mit höheren Hochs und Tiefs; Fibonacci-Extension bei 9.231,25 (+7.179 Ticks über aktuellem Markt). Nach V-förmiger Erholung aus den März-Tiefs nachhaltiger Ausbruch – Käufer dominieren auch bei oberflächlichen Pullbacks. Key-Support: 7.420 (4H-Close darunter = Trendwechselsignal). Bullisches technisches Fundament für ES-Futures-Long-Strategien wie jene auf mindrocket-trading.com.",
         source: "ninjatrader.com",
         url: "https://ninjatrader.com/futures/blogs/futures-trading-outlook-e-mini-s-p-500-index-trending-bullish/",
@@ -10298,6 +10314,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-16
       {
+        summary: "ad-hoc-news.de (2026): 'Selbstorganisation wird zur Schlüsselkompetenz 2026' – In hybriden Arbeitswelten mit weniger Fremdsteuerung ist Selbstorganisation 2026 die entscheidende Fähigkeit für Produktivität und Zufriedenheit. Methoden wie ALPEN, Time-Blocking und digitale Planer-Tools sind Standard. Wachsende Nachfrage nach strukturierten Selbstorganisations-Tools bestätigt Marktchance für spezialisierte Planungssoftware wie den 12wy-planner.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/selbstorganisation-wird-zur-schluesselkompetenz-2026/68563125",
+        date: "2026",
+        category: "Produktivität & Planung",
+        addedAt: "2026-05-16",
+      },
+      {
+        summary: "ad-hoc-news.de (2026): 'KI-Tools revolutionieren Projektmanagement 2026' – Unternehmen setzen 2026 auf KI-gestütztes Projektmanagement: automatisierter Ressourcenausgleich, intelligente Risikobewertung und Echtzeit-Zeitplananpassungen werden Standard. KI-PM-Tools ergänzen methodische Rahmen wie die 12-Week-Year-Methode – wachsendes Marktumfeld für strukturierte digitale Planungstools.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/ki-tools-revolutionieren-projektmanagement-2026/68649935",
+        date: "2026",
+        category: "SaaS & Tools",
+        addedAt: "2026-05-16",
+      },
+      {
         summary: "12week-breakthrough.com (2026): '12-Week Year Tools, Templates & Planners: The Definitive Guide' – Umfassender Guide zu Tools für die 12-Week-Year-Methode: Bewertung von digitalen Apps, Notion-Templates, Excel-Sheets und spezialisierten Plannern; Empfehlung, mindestens einen vollen 12-Wochen-Zyklus mit einem Tool zu absolvieren, bevor gewechselt wird; Betonung, dass es kein 'bestes' Tool gibt, sondern nur das passende. Wachsendes Tool-Ökosystem rund um die 12WY-Methode bestätigt Marktchance für spezialisierte SaaS-Planungstools wie den 12wy-planner.",
         source: "12week-breakthrough.com",
         url: "https://12week-breakthrough.com/12-week-year-tools/",
@@ -14887,6 +14919,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "learnfluencer": {
     news: [
       // Neu: 2026-05-16
+      {
+        summary: "ad-hoc-news.de (2026): 'Personalentwicklung 2026: Lernen findet keine Zeit mehr' – BENCHMARKING-Studie 2025: 81,8% der Unternehmen berichten, Mitarbeitende haben zu wenig Freiraum für Weiterbildung. Antwort: 'Learning in the Flow of Work' (LIFOW) – granulare Lerneinheiten werden direkt in Arbeitsprozesse (E-Mail, CRM, Teams/Slack) integriert. Zeitliche Lernlücke in Unternehmen bestätigt Relevanz von Lernkompetenz-Thought-Leadership – direktes Framing für learnfluencer.ch-Content.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/personalentwicklung-2026-lernen-findet-keine-zeit-mehr/68461115",
+        date: "2026",
+        category: "Weiterbildung Schweiz",
+        addedAt: "2026-05-16",
+      },
       {
         summary: "business-akademie.com (2026): 'Adaptives Lernen mit KI: IBB gewinnt eLearning AWARD 2026 für innovative Berufsqualifizierung' – Das Institut für Berufliche Bildung (IBB) erhält den eLearning AWARD 2026 in der Kategorie 'Adaptives Lernen, Schwerpunkt Berufsqualifizierung'. Adaptive KI-Systeme passen Lerninhalte automatisch an Vorwissen, Tempo und individuelle Bedürfnisse an; mehrere Tausend Teilnehmende mit messbarem Erfolg. Höchste deutsche E-Learning-Auszeichnung bestätigt: KI-adaptive Lernkompetenz ist das Zukunftsthema – direktes Content-Fundament für learnfluencer.ch.",
         source: "business-akademie.com",
