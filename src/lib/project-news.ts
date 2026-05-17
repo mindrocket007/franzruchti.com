@@ -1986,6 +1986,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
+      // Neu: 2026-05-17
+      {
+        summary: "berufliche-neuorientierung.ch (2026): 'Aktuelle Trends im Coaching und Möglichkeiten der Digitalisierung' – Coaching 2026 profitiert von Digitalisierung: Online-Coaching via Video, Telefon und Chat ermöglicht ortsunabhängige Beratung; hybride Formate kombinieren Präsenz- und Online-Sitzungen; das Coaching-Spektrum erweitert sich mit individuellen, integrativ-ganzheitlichen Ansätzen; systemisches Denken und KI-gestützte Tools gewinnen an Bedeutung. Strukturelle Marktentwicklung bestätigt wachsende Nachfrage nach spezialisierten digitalen Coaching- und Persönlichkeitsentwicklungs-Programmen – positives Wachstumsumfeld für Mind Rocket GmbH.",
+        source: "berufliche-neuorientierung.ch",
+        url: "https://berufliche-neuorientierung.ch/aktuelle-trends-im-coaching-und-moeglichkeiten-der-digitalisierung/",
+        date: "2026",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-05-17",
+      },
+      {
+        summary: "lvv-bildung.de (2026): 'Bildung 2026 in Deutschland: Was sich für Ausbildung, Umschulung, Weiterbildung & Coaching ändert' – Überblick über Veränderungen im Bildungs- und Coaching-Markt 2026: Digitalisierung von Lernformaten, Zunahme von Online-Coaching und staatlicher Förderung für Umschulungen, wachsende Bedeutung von Soft-Skills und mentaler Resilienz. Breiter gesellschaftlicher Wandel im Bereich Bildung und Coaching bestätigt die strukturelle Nachfrage nach Programmen für persönliche Entwicklung – direktes Wachstumsumfeld für Mind Rocket GmbH.",
+        source: "lvv-bildung.de",
+        url: "https://www.lvv-bildung.de/blog/bildung-2026-in-deutschland-was-sich-fuer-ausbildung-umschulung-weiterbildung-coaching-aendert",
+        date: "2026",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-05-17",
+      },
       // Neu: 2026-05-16
       {
         summary: "heimbildungsstaette.de (2026): 'Coaching Trends 2026' – Hybrides Coaching als neue Norm: Online- und Präsenzformate verbinden sich; KI gilt als Schlüsseltrend zur Analyse von Klienten-Verhaltensmustern und Personalisierung; mentale Gesundheit und Resilienz werden 2026 stärker als je zuvor Teil von Coaching-Strategien; Spezialisierung und personalisierte Programme setzen sich gegen generische Angebote durch. Strukturelle Marktentwicklung im Coaching-Bereich bestätigt wachsende Nachfrage nach spezialisierten Persönlichkeitsentwicklungs-Programmen – direktes Wachstumsumfeld für Mind Rocket GmbH.",
@@ -2833,6 +2850,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 2026-05-17
+      {
+        summary: "blog.pickmytrade.trade (2026): 'Best Prop Firm Trading Automation in 2026' – Vergleich der besten Prop Firms für automatisiertes Futures-Trading 2026: Semi-automatisiertes Setup mit TradingView-Alerts, Webhook-Execution und NinjaTrader als Ausführungsschicht ist der populärste Ansatz unter Retail-Algo-Tradern. Apex Trader Funding erlaubt Automatisierung in der Eval-Phase; auf funded Accounts ist aktive Überwachung erforderlich. Technologische Professionalisierung des Retail-Futures-Markts bestätigt wachsende Nachfrage nach strukturierten algorithmischen Handelsstrategien – direktes Marktumfeld für mindrocket-trading.com.",
+        source: "blog.pickmytrade.trade",
+        url: "https://blog.pickmytrade.trade/best-prop-firms-trading-automation-2026/",
+        date: "2026",
+        category: "Trading-Technologie",
+        addedAt: "2026-05-17",
+      },
+      {
+        summary: "blog.pickmytrade.trade (2026): 'My Funded Futures vs Apex 2026 Review' – Direktvergleich zweier führender ES-Futures-Prop-Firmen: My Funded Futures vs. Apex Trader Funding. Analyse von Payout-Strukturen, Regelwerken, erlaubten Trading-Stilen (inkl. Algo-Trading) und Evaluationskosten. Wachsendes institutionelles Angebot für Retail-Futures-Trader mit professionellen Strukturen – direktes Marktumfeld für algorithmische ES-Futures-Strategien wie auf mindrocket-trading.com.",
+        source: "blog.pickmytrade.trade",
+        url: "https://blog.pickmytrade.trade/my-funded-futures-vs-apex-2026-review/",
+        date: "2026",
+        category: "Futures & Trading",
+        addedAt: "2026-05-17",
+      },
       // Neu: 2026-05-16
       {
         summary: "financemagnates.com (2026): 'Kraken Completes $1.5B NinjaTrader Acquisition; Funded Accounts Jump 26% in Q1' – Kraken hat die 1,5-Milliarden-Dollar-Übernahme von NinjaTrader offiziell abgeschlossen. Die Zahl der gefundeten Accounts stieg in Q1 um 26%. Kraken plant, NinjaTraders FCM-Lizenz zu nutzen, um US-Kunden Margin und Futures-Handel anzubieten; NinjaTrader bleibt als eigenständige Plattform unter dem Kraken-Dach. Größte Plattformkonsolidierung im Retail-Futures-Bereich 2026 – direktes Marktumfeld für algorithmische ES-Futures-Trader auf mindrocket-trading.com.",
@@ -6246,6 +6280,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 2026-05-17
+      {
+        summary: "chris-ley.de (2026): 'Die besten Bücher für Persönlichkeitsentwicklung (2026)' – Kuratierte Liste der besten Persönlichkeitsentwicklungs-Bücher 2026: Klassiker wie 'Die 1%-Methode' (James Clear) und aktuelle Titel zu Selbstdisziplin, Fokus und emotionaler Intelligenz sind 2026 besonders gefragt. Digitale Formate (Kindle, PDF) und Zusammenfassungsdienste wie Blinkist ergänzen traditionelle Buchformate und senken die Einstiegshürde. Anhaltend starke Nachfrage nach strukturierten Self-Help-Inhalten in digitaler Form – direktes Wachstumsumfeld für mindtools.ch als digitaler Anbieter von Persönlichkeitsentwicklungs-Materialien.",
+        source: "chris-ley.de",
+        url: "https://chris-ley.de/magazin/die-besten-buecher-fuer-persoenlichkeitsentwicklung-2026/",
+        date: "2026",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-05-17",
+      },
       // Neu: 2026-05-16
       {
         summary: "automateed.com (2026): 'Book Contents in 2026: Trends, Strategies & Industry Insights' – Analyse des globalen Buchmarkt-Inhalts 2026: Sachliteratur und Self-Help bleiben stärkste Wachstumskategorien; KI-unterstützte Content-Erstellung verändert Buchproduktion; digitale Formate (PDF, eBook, Audio) weiten Zugangswege aus; Nischen-Themen mit starker Zielgruppenaffinität profitieren von Digital-First-Distribution. Bestätigt strukturelles Wachstumspotenzial für spezialisierte digitale Self-Help-Produkte wie mindtools.ch.",
@@ -10370,6 +10413,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 2026-05-17
+      {
+        summary: "factro.de (2026): 'OKR-Methode: Definition, Tipps & Umsetzung' – Praxisnahe Einführung in OKR (Objectives and Key Results): OKRs werden typischerweise in 8–12-Wochen-Zyklen gesetzt; Objectives sind qualitative, inspirierende Ziele; Key Results machen Fortschritt messbar. Kernprinzipien: Einfachheit, Fokus, Ambition, Transparenz. Wachsendes Interesse an strukturierten Ziel-Methoden mit 8–12-Wochen-Zyklen bestätigt die methodische Verwandtschaft zur 12-Week-Year-Methode – direktes inhaltliches Marktumfeld für den 12wy-planner.",
+        source: "factro.de",
+        url: "https://www.factro.de/blog/okr-methode/",
+        date: "2026",
+        category: "Zielsetzung & OKR",
+        addedAt: "2026-05-17",
+      },
+      {
+        summary: "frameworx.de (2026): 'OKRs für Zielsetzung & Strategie: So nutzt du die Methode effektiv – und vermeidest die häufigsten Fehler' – Strategische Einführung in OKR mit Praxis-Tipps: OKRs auf Quartals- und 12-Wochen-Ebene setzen; häufige Fehler vermeiden (zu viele Ziele, fehlende Kopplung zwischen Team- und Unternehmenszielen); Transparenz und regelmässige Reviews als Erfolgsschlüssel. Zunehmende Professionalisierung der Zielsetzungs-Methodik – direktes Wachstumsumfeld für strukturierte Planungs-Tools wie den 12wy-planner.",
+        source: "frameworx.de",
+        url: "https://frameworx.de/blog/okr-methode-fuer-zielsetzung-und-strategie/",
+        date: "2026",
+        category: "Produktivität & Planung",
+        addedAt: "2026-05-17",
+      },
       // Neu: 2026-05-16
       {
         summary: "ad-hoc-news.de (2026): 'Selbstorganisation wird zur Schlüsselkompetenz 2026' – In hybriden Arbeitswelten mit weniger Fremdsteuerung ist Selbstorganisation 2026 die entscheidende Fähigkeit für Produktivität und Zufriedenheit. Methoden wie ALPEN, Time-Blocking und digitale Planer-Tools sind Standard. Wachsende Nachfrage nach strukturierten Selbstorganisations-Tools bestätigt Marktchance für spezialisierte Planungssoftware wie den 12wy-planner.",
@@ -12044,6 +12104,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 2026-05-17
+      {
+        summary: "wissen-gesundheit.de (2026): 'Ejaculatio praecox – Vorzeitiger Samenerguss' – Medizinische Informationsseite zu Ejaculatio praecox: ca. 25–30% der Männer in westlichen Industrieländern betroffen; Diagnosekriterium ist Ejakulation innerhalb einer Minute nach Penetration kombiniert mit fehlender Kontrolle; Therapieoptionen umfassen Pharmakotherapie (Dapoxetin/SSRIs, Lidocain-Spray) sowie verhaltenstherapeutische und psychologische Methoden. Wachsende medizinische Online-Präsenz zu vorzeitigem Samenerguss zeigt gesellschaftlichen Enttabuisierungs-Trend – positive Marktentwicklung für diskrete Selbsthilfe-Angebote wie orgasmus-hinauszoegern.de.",
+        source: "wissen-gesundheit.de",
+        url: "https://www.wissen-gesundheit.de/Aktuelles/News/11521--Ejaculatio-praecox-Vorzeitiger-Samenerguss",
+        date: "2026",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-05-17",
+      },
+      {
+        summary: "caposano.de (2026): 'Ejaculatio praecox – Ursachen, Therapie und psychologische Begleitung' – Praxis für Sexualtherapie und Hypnotherapie informiert über Ejaculatio praecox: psychosomatische Ursachen (Stress, Angst, Konditionierung), verhaltenstherapeutische Techniken und hypnotherapeutische Begleitung als wirkungsvolle Kombinationstherapie; besondere Bedeutung von Selbsthilfe-Techniken für langfristige Verbesserung. Wachsendes Angebot professioneller Behandler für vorzeitigen Samenerguss bestätigt breite gesellschaftliche Nachfrage – positives Marktumfeld für audio-basierte Selbsthilfe wie orgasmus-hinauszoegern.de.",
+        source: "caposano.de",
+        url: "https://www.caposano.de/news/ejaculatio-praecox",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-05-17",
+      },
       // Neu: 2026-05-16
       {
         summary: "med-tech.world (2026): 'Sequoia: Tackling men's sexual health through science, technology, and honest conversation' – Analyse der digitalen Plattform Sequoia Health: 21-Tages-Personalisierungsplan, Tracking von 80+ Gesundheitsfaktoren (Erektion, Ausdauer, Energie, Stimmung), Kegel-Workouts und diskrete Online-Konsultationen. Partner von UNFPA und World Association for Sexual Health. Professionalisierung des digitalen Männergesundheits-Markts bestätigt wachsende Akzeptanz für nicht-pharmakologische Selbsthilfeangebote wie orgasmus-hinauszoegern.de.",
@@ -17275,6 +17352,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 2026-05-17
+      {
+        summary: "kmu-digitalisierung.agency (2026): 'Marketing Automation für Schweizer KMU: Vom ersten Lead zum systematischen Kundenaufbau' – Leitfaden für Schweizer KMU zum Einstieg in Marketing Automation: von der Lead-Generierung über CRM-Segmentierung bis zu automatisierten E-Mail-Kampagnen; besondere Herausforderungen in der Schweiz (Datenschutz-DSG, Mehrsprachigkeit, B2B-Fokus). Strukturierter Marketingplan als unverzichtbare Grundlage für jede Automatisierung. Wachsende Nachfrage nach strukturierter Marketingplanung bei Schweizer KMU – direktes Marktumfeld für den Marketingplan-Software-Service auf learnfluencer.ch.",
+        source: "kmu-digitalisierung.agency",
+        url: "https://kmu-digitalisierung.agency/marketing-automation-fuer-schweizer-kmu/",
+        date: "2026",
+        category: "KMU Marketing Schweiz",
+        addedAt: "2026-05-17",
+      },
       // Neu: 2026-05-16
       {
         summary: "aivie.ch (2026): 'Marketing-Automation mit kmu.digital 2026: Jetzt Förderung nutzen' – Schweizer KMU können Marketing-Automatisierungsprojekte mit bis zu 80% Kostenförderung via kmu.digital realisieren; Aivie als Swiss Marketing Automation-Plattform auf Open-Source-Basis ist förderfähig. Fokus auf Customer-Journey-Automatisierung, Lead-Nurturing und datenbasierte Entscheidungen. Staatliche Förderung für Marketing-Digitalisierung bei Schweizer KMU unterstreicht institutionellen Push für strukturierte Marketingplanung – direktes Wachstumsumfeld für Tools wie learnfluencer.ch/tools/marketingkonzept.",
