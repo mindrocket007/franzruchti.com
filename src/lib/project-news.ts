@@ -26,6 +26,23 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 2026-05-17
+      {
+        summary: "zg.ch / Wirtschaftsmittelschule Zug (2026): 'Ein zusätzliches Diplom: ICT Advanced-User SIZ' – Die Wirtschaftsmittelschule Zug WMS berichtet über das ICT Advanced-User SIZ als ergänzendes Qualifikationsangebot: Schülerinnen und Schüler können sich neben dem WMS-Abschluss zusätzlich das SIZ-Diplom erwerben und so ihre digitalen Kompetenzen formal nachweisen. Integration des SIZ-Diploms an einer kantonalen Wirtschaftsschule bestätigt die breite institutionelle Anerkennung – positives Reputationssignal für SIZ AG als Qualitätsprüfungsorganisation.",
+        source: "zg.ch (WMS Zug)",
+        url: "https://www.zg.ch/behoerden/direktion-fur-bildung-und-kultur/wms/portraet/news/ein-zusaetzliches-diplom-ict-advanced-user-siz",
+        date: "2026",
+        category: "SIZ AG direkt",
+        addedAt: "2026-05-17",
+      },
+      {
+        summary: "siz.ch (2026): 'Newsflash – Ratgeber Aus- und Weiterbildung in der ICT' – SIZ AG veröffentlicht Ratgeber-Reihe zur Aus- und Weiterbildung in der ICT: Übersicht aller SIZ-Diplome, Prüfungswege und Zielgruppen. SIZ positioniert sich damit als neutrale Informationsquelle für Bildungsverantwortliche und Bildungssuchende im Schweizer ICT-Markt. Direktes SIZ-Kommunikationsinstrument, das Reichweite und Bekanntheit der Prüfungsorganisation im Schweizer Bildungsmarkt stärkt.",
+        source: "siz.ch",
+        url: "https://siz.ch/newsflash-ratgeber-aus-und-weiterbildung-in-der-ict/",
+        date: "2026",
+        category: "SIZ AG direkt",
+        addedAt: "2026-05-17",
+      },
       // Neu: 2026-05-16
       {
         summary: "nume.ch (2026): 'Schweiz startet neue Berufsausbildung für KI-Spezialisten' – Der neue eidgenössische Fachausweis «AI Business Specialist» ist bundesweit genehmigt; erste Berufsprüfungen finden im Herbst 2026 statt. Über 20 Vorbereitungskursanbieter aus der ganzen Schweiz (inkl. IBAW, SIW, KV Zürich u.a.) haben die Kurse bereits gestartet; die Nachfrage ist laut ICT-Berufsbildung überdurchschnittlich hoch. AI Business Specialists sollen Unternehmen als 'Brückenbauer zwischen Technologie und Business' KI strategisch einbinden helfen. Wachsendes KI-Zertifizierungsumfeld stärkt die gesamte Schweizer ICT-Bildungslandschaft – relevantes Marktumfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation.",
@@ -7706,6 +7723,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 2026-05-17
+      {
+        summary: "ad-hoc-news.de (2026): 'KI-Hypnose erobert den Milliarden-Markt für mentale Gesundheit' – Der Markt für KI-gestützte Hypnotherapie erreicht 2026 ein Volumen von über 21 Milliarden US-Dollar. Plattformen wechseln von statischen Audio-Bibliotheken zu adaptiven KI-Systemen, die Sitzungen basierend auf Nutzerfeedback in Echtzeit anpassen. Besonders im betrieblichen Gesundheitsmanagement wächst die Nachfrage nach KI-gestützten Hypnose-Programmen. Wachsender institutioneller BGM-Markt für digitale Hypnose-Präventionslösungen bestätigt das Marktpotenzial von hypnovital® als audibasierte BGM-Lösung.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/wissenschaft/ki-hypnose-erobert-den-milliarden-markt-fuer-mentale-gesundheit/69351281",
+        date: "2026-05",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-17",
+      },
       // Neu: 2026-05-16
       {
         summary: "safety-security.ch (2026): 'BGM am fmpro Symposium 2026' – Das fmpro Symposium 2026 findet in der Messe Luzern statt; BGM-Experte Andreas Krause (FHNW, Institut für Mentale und Organisationale Gesundheit) präsentiert, wie Unternehmen die Resilienz ihrer Mitarbeitenden systematisch stärken können. BGM-Thema auf nationaler Fachmesse institutionalisiert – positives Sichtbarkeitssignal für hypnovital® als skalierbare digitale BGM-Präventionslösung.",
@@ -13416,6 +13442,31 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 2026-05-17
+      {
+        summary: "psychologenakademie.de (2026): 'Frei sprechen: Redeangst überwinden – Erfolgreiche Auftritte & Selbstbewusstes Sprechen' – Die Deutsche Psychologen Akademie bietet praxisorientierte Seminare zur Überwindung von Redeangst und Auftrittsangst: kognitiv-verhaltensbasierte Techniken, Selbstwahrnehmung und Körpersprache-Training. 90% der Teilnehmenden berichten signifikante Angstreduktion. Starkes Kursangebot etablierter Institutionen für Lampenfieber-Behandlung bestätigt breite gesellschaftliche Nachfrage – direktes Marktumfeld für selbstanwendbare Hypnose-Alternativen wie lampenfieber-besiegen.de.",
+        source: "psychologenakademie.de",
+        url: "https://www.psychologenakademie.de/seminar/frei-sprechen-5/",
+        date: "2026",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-05-17",
+      },
+      {
+        summary: "beatrixschwarzbach.de (2026): 'Sprechangst oder Lampenfieber – Was ist der Unterschied?' – Detaillierte Unterscheidung: Lampenfieber ist normale Aufregung vor einem Auftritt; Sprechangst ist eine ausgeprägte Angststörung, die das Alltagsleben einschränkt. Nur bei echter Sprechangst sind therapeutische Methoden wie Verhaltenstherapie oder Hypnose wirksam. Wissenschaftliche Begriffsabgrenzung stärkt das Bewusstsein für spezialisierte Behandlungsangebote – direktes Nachfrageumfeld für lampenfieber-besiegen.de als gezieltes Hypnose-Selbsthilfemittel.",
+        source: "beatrixschwarzbach.de",
+        url: "https://www.beatrixschwarzbach.de/artikel/lampenfieber-sprechangst",
+        date: "2026",
+        category: "Psychologie & Forschung",
+        addedAt: "2026-05-17",
+      },
+      {
+        summary: "sprachmagie.com (2026): 'Redeangst & Sprechangst – Lernen Sie angstfrei sprechen!' – Praxisguide zu Redeangst: Ursachen (soziale Phobie, negative Erfahrungen, Selbstbewusstsein), Symptome (Herzrasen, zitternde Stimme, Blackout) und bewährte Techniken zur Überwindung (Atemübungen, mentales Training, Exposition). Wachsendes Online-Informationsangebot zum Thema Redeangst zeigt breites gesellschaftliches Bewusstsein – bestätigt die Nachfrage nach niederschwelligen Selbsthilfeangeboten wie lampenfieber-besiegen.de.",
+        source: "sprachmagie.com",
+        url: "https://sprachmagie.com/redeangst/",
+        date: "2026",
+        category: "Lampenfieber & Auftrittsangst",
+        addedAt: "2026-05-17",
+      },
       // Neu: 2026-05-16
       {
         summary: "rhetoriktrainer-fast.de (2026): 'Redeangst durch Virtual Reality bekämpfen – Wie VR-Coachings die Überwindung von Bühnenangst revolutionieren' – Nach Cambridge-University-Studie berichten 80% der VR-Coaching-Teilnehmer von signifikanter Reduktion ihrer Redeangst. VR ermöglicht sicheres Üben in realitätsnahen Szenarien. Technologische Innovation in der Lampenfieber-Behandlung bestätigt: Mentale und verhaltensbasierte Methoden sind hochwirksam – stärkt die Glaubwürdigkeit von Hypnose-Audios wie lampenfieber-besiegen.de als komplementäres Selbsthilfe-Tool.",
@@ -14950,6 +15001,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 2026-05-17
+      {
+        summary: "haufe-akademie.de (2026): 'L&D 2026: KI als Gamechanger – Menschliche Skills als Erfolgsfaktor' – Learning & Development 2026 steht im Zeichen von KI als Gamechanger: Nicht Technik allein, sondern die Kombination aus KI-Kompetenz und menschlichen Fähigkeiten wie Resilienz, Empathie und Kreativität ist der Schlüsselfaktor. L&D rückt als strategische Funktion ins Zentrum der Unternehmensführung. Direktes Thought-Leadership-Fundament für learnfluencer.ch im Schnittfeld Lernkompetenz und KI.",
+        source: "haufe-akademie.de",
+        url: "https://www.haufe-akademie.de/digital-suite/blog/ds-digital-learning-day-2",
+        date: "2026",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-05-17",
+      },
+      {
+        summary: "lnd-pro.de (2026): 'Team Learning und Learnfluencer: Wie Unternehmen eine positive Lernkultur fördern können' – Learnfluencer-Konzept als Schlüssel zu nachhaltiger Lernkultur: Personen, die in Unternehmen intrinsische Lernmotivation fördern und kollektives mit individuellem Lernen verknüpfen. Team Learning als strategischer Wettbewerbsvorteil und Mitarbeiterbindungs-Tool. Direkte inhaltliche Bestätigung der learnfluencer.ch-Positionierung als Thought-Leadership-Plattform für Lernkompetenz.",
+        source: "lnd-pro.de",
+        url: "https://lnd-pro.de/team-learning-und-learnfluencer-wie-unternehmen-eine-positive-lernkultur-foerdern-koennen-2/",
+        date: "2026",
+        category: "Content & Thought Leadership",
+        addedAt: "2026-05-17",
+      },
       // Neu: 2026-05-16
       {
         summary: "markt-kom.com (2026): 'Das sind die 100 «Digital Shapers 2026» der Schweiz' – Ringier kürt die 100 einflussreichsten digitalen Vordenkerinnen und Vordenker der Schweiz 2026. Kriterien: nachweisbarer digitaler Impact, Thought Leadership und transformative Wirkung in Wirtschaft und Gesellschaft. Die aktive Schweizer Thought-Leadership-Szene belegt: Digitale Kompetenz und Sichtbarkeit sind 2026 entscheidende Karriere- und Markenfaktoren – Marktumfeld für Thought-Leadership-Plattformen wie learnfluencer.ch mit Fokus auf Lernen, KI und Weiterbildung.",
@@ -18765,6 +18833,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 2026-05-17
+      {
+        summary: "vorsorgeplaner.online (2026): 'Bestattungsverfügung 2026 kostenlos erstellen und herunterladen' – Digitaler Dienst ermöglicht das kostenlose Erstellen einer Bestattungsverfügung als rechtssicheres PDF; enthält alle wichtigen Festlegungen zu Bestattungsart, Ort, Feierlichkeiten und letzten Wünschen. Der Trend zu digitalen, selbst erstellbaren Vorsorgedokumenten zeigt wachsende gesellschaftliche Bereitschaft zur Online-Bestattungsplanung – direktes positives Marktumfeld für bestattungsplaner.ch als digitale Planungs- und Vermittlungsplattform.",
+        source: "vorsorgeplaner.online",
+        url: "https://vorsorgeplaner.online/kostenlose-vorlagen/bestattungsverfuegung-vordruck-kostenlos-herunterladen",
+        date: "2026",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-05-17",
+      },
       // Neu: 2026-05-16
       {
         summary: "everlife.ch (2026): 'Was kostet eine Kremation in der Schweiz?' – Aktueller Kostenüberblick: Kremation CHF 3'800–8'100 (Ø CHF 4'500–5'400); ca. 90% der Schweizer wählen Kremation statt Erdbestattung. Grösster Kostenfaktor: Sarg (ca. CHF 1'000, in der Schweiz obligatorisch). Everlife bietet Bestattungsvorsorge mit Ratenzahlung ab CHF 12.90/Monat über bis zu 25 Jahre. Der Boom der Kremation und wachsende Onlineaffinität bei der Vorsorge bestätigen die Marktchance für digitale Bestattungsplattformen wie bestattungsplaner.ch.",
