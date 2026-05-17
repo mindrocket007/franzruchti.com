@@ -325,6 +325,79 @@ export default function LongevityPage() {
       </section>
 
       <section className="mb-10">
+        <h2 className="text-lg font-semibold text-white mb-2">Personalisierte Kapseln (Schweiz & DACH)</h2>
+        <p className="text-neutral-400 text-sm mb-4">
+          Anbieter, die für dich individuell zusammenstellen — auf Basis Quiz oder Bluttest. Convenience-Plus,
+          aber meist teurer als Stufe-1-Einzelkauf bei Sponser/Burgerstein. Sinnvoll als Mikronährstoff-Lückenfüller
+          (B-Komplex, Zink, Selen, Jod) oder wenn du Wert auf alles-in-einer-Dose legst.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
+          <a href="https://indyvit.com/" target="_blank" rel="noopener noreferrer" className="bg-neutral-900 border border-neutral-800 rounded-xl p-4 hover:border-blue-500 transition-colors">
+            <div className="flex items-center justify-between mb-1">
+              <p className="font-semibold text-sm text-white">Indyvit</p>
+              <span className="text-[10px] px-2 py-0.5 rounded-full bg-green-600 text-white font-bold">MADE IN CH</span>
+            </div>
+            <p className="text-xs text-neutral-400 mb-2">On-demand-Produktion im Schweizer Labor. 15-Fragen-Quiz oder Bluttest. Kapseln in Dose, Lieferung 2–3 Tage. Konfigurator erlaubt Anpassung.</p>
+            <p className="text-xs font-mono text-neutral-300">ca. CHF 30–80/Monat</p>
+          </a>
+
+          <a href="https://www.bioniq.com/" target="_blank" rel="noopener noreferrer" className="bg-neutral-900 border border-neutral-800 rounded-xl p-4 hover:border-blue-500 transition-colors">
+            <div className="flex items-center justify-between mb-1">
+              <p className="font-semibold text-sm text-white">Bioniq</p>
+              <span className="text-[10px] px-2 py-0.5 rounded-full bg-blue-600 text-white font-bold">PREMIUM</span>
+            </div>
+            <p className="text-xs text-neutral-400 mb-2">Bis zu 35 Wirkstoffe als Granulat (in Wasser auflösen). GO = Quiz, PRO = mit Bluttest. Global verfügbar, CH-Versand.</p>
+            <p className="text-xs font-mono text-neutral-300">ca. CHF 100–200/Monat</p>
+          </a>
+
+          <a href="https://360football-supplements.ch/" target="_blank" rel="noopener noreferrer" className="bg-neutral-900 border border-neutral-800 rounded-xl p-4 hover:border-blue-500 transition-colors">
+            <div className="flex items-center justify-between mb-1">
+              <p className="font-semibold text-sm text-white">360Football Supplements</p>
+              <span className="text-[10px] px-2 py-0.5 rounded-full bg-orange-600 text-white font-bold">SPORTLER</span>
+            </div>
+            <p className="text-xs text-neutral-400 mb-2">All-in-1-Bluttest (Heimprobe), Auswertung in CH-Labor, danach individuelle Supplement-Empfehlung. Athleten-Fokus.</p>
+            <p className="text-xs font-mono text-neutral-300">Bluttest ca. CHF 200 + Supplements</p>
+          </a>
+
+          <a href="https://care.me/ch-de/tests/personalisierte-supplements/" target="_blank" rel="noopener noreferrer" className="bg-neutral-900 border border-neutral-800 rounded-xl p-4 hover:border-blue-500 transition-colors">
+            <div className="flex items-center justify-between mb-1">
+              <p className="font-semibold text-sm text-white">care.me</p>
+              <span className="text-[10px] px-2 py-0.5 rounded-full bg-neutral-700 text-white font-bold">CH-VERSAND</span>
+            </div>
+            <p className="text-xs text-neutral-400 mb-2">Bluttest + personalisierte Monatsbox. Lieferung in ca. 14 Tagen. Verschiedene Test-Pakete wählbar.</p>
+            <p className="text-xs font-mono text-neutral-300">je nach Paket CHF 80–250/Monat</p>
+          </a>
+
+          <a href="https://wunschkapsel.de/" target="_blank" rel="noopener noreferrer" className="bg-neutral-900 border border-neutral-800 rounded-xl p-4 hover:border-blue-500 transition-colors">
+            <div className="flex items-center justify-between mb-1">
+              <p className="font-semibold text-sm text-white">Wunschkapsel (DE)</p>
+              <span className="text-[10px] px-2 py-0.5 rounded-full bg-purple-600 text-white font-bold">DIY-REZEPTUR</span>
+            </div>
+            <p className="text-xs text-neutral-400 mb-2">Du gibst exakte Inhaltsstoffe + Dosen vor — Kapseln werden danach gefüllt. Kein Algorithmus, sondern echtes Custom-Compounding.</p>
+            <p className="text-xs font-mono text-neutral-300">ab ca. EUR 25/Monat, abhängig vom Stack</p>
+          </a>
+
+          <a href="https://www.dunatura.com/" target="_blank" rel="noopener noreferrer" className="bg-neutral-900 border border-neutral-800 rounded-xl p-4 hover:border-blue-500 transition-colors">
+            <div className="flex items-center justify-between mb-1">
+              <p className="font-semibold text-sm text-white">dunatura (DE)</p>
+              <span className="text-[10px] px-2 py-0.5 rounded-full bg-neutral-700 text-white font-bold">QUIZ-BASIERT</span>
+            </div>
+            <p className="text-xs text-neutral-400 mb-2">Mikronährstoff-Mix nach Online-Fragebogen, Versand auch in CH. Ohne Bluttest, Algorithmus-basiert.</p>
+            <p className="text-xs font-mono text-neutral-300">ca. EUR 40–80/Monat</p>
+          </a>
+        </div>
+
+        <div className="bg-neutral-900 border border-blue-500/30 rounded-xl p-4 text-sm">
+          <p className="font-semibold text-white mb-2">Empfehlung für deinen Fall</p>
+          <ul className="space-y-1.5 text-neutral-300 text-xs">
+            <li><span className="text-blue-400">•</span> Stufe 1 (Kreatin, Omega-3, Whey, Mg) <span className="text-neutral-500">selbst kaufen — Mengen zu gross für sinnvolle Kapseln, Personalisierung lohnt nicht</span></li>
+            <li><span className="text-blue-400">•</span> Indyvit oder Wunschkapsel als <span className="text-white font-medium">Mikronährstoff-Kapsel</span> (B-Komplex, Zink, Selen, Jod, Borax) — was du sonst in 7 Einzelpackungen kaufen müsstest</li>
+            <li><span className="text-blue-400">•</span> Bluttest <span className="text-white font-medium">unabhängig beim Hausarzt</span> machen — günstiger und ohne Verkäufer-Interesse</li>
+          </ul>
+        </div>
+      </section>
+
+      <section className="mb-10">
         <h2 className="text-lg font-semibold text-white mb-4">Schweizer Bezugsquellen (Sammlung)</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           <a href="https://sponser.ch/" target="_blank" rel="noopener noreferrer" className="bg-neutral-900 border border-neutral-800 rounded-xl p-4 hover:border-blue-500 transition-colors">
