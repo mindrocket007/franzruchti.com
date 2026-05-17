@@ -28,6 +28,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-17
       {
+        summary: "inside-it.ch (6. Mai 2026): 'SwissICT: Abend der grossen Abschiede' – An der swissICT-Generalversammlung und #DIGITUP-Anlass vom 5. Mai 2026 in Zürich wurden gleich vier verdiente Persönlichkeiten verabschiedet: Claude Honegger (ehem. Group CIO Credit Suisse, 15 Jahre im Vorstand) übernimmt die Präsidentschaft von Thomas Flatt (22 Jahre Vorstand, davon 20 als Präsident); CEO Christian Hunziker tritt nach 8 Jahren zurück (Nachfolger Kurt Lanz ab August 2026); Vorstandsmitglieder Frank Boller und Gerhard Storz (je ca. 20 Jahre) verabschiedet. Massiver Führungswechsel beim wichtigsten Schweizer ICT-Branchenverband – relevanter Governance-Wechsel im direkten Ökosystem von SIZ AG als anerkannte ICT-Prüfungsorganisation.",
+        source: "inside-it.ch",
+        url: "https://www.inside-it.ch/swissict-abend-der-grossen-abschiede-20260506",
+        date: "2026-05-06",
+        category: "Digitale Bildung",
+        addedAt: "2026-05-17",
+      },
+      {
         summary: "zg.ch / Wirtschaftsmittelschule Zug (2026): 'Ein zusätzliches Diplom: ICT Advanced-User SIZ' – Die Wirtschaftsmittelschule Zug WMS berichtet über das ICT Advanced-User SIZ als ergänzendes Qualifikationsangebot: Schülerinnen und Schüler können sich neben dem WMS-Abschluss zusätzlich das SIZ-Diplom erwerben und so ihre digitalen Kompetenzen formal nachweisen. Integration des SIZ-Diploms an einer kantonalen Wirtschaftsschule bestätigt die breite institutionelle Anerkennung – positives Reputationssignal für SIZ AG als Qualitätsprüfungsorganisation.",
         source: "zg.ch (WMS Zug)",
         url: "https://www.zg.ch/behoerden/direktion-fur-bildung-und-kultur/wms/portraet/news/ein-zusaetzliches-diplom-ict-advanced-user-siz",
@@ -2851,6 +2859,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "mindrocket-trading": {
     news: [
       // Neu: 2026-05-17
+      {
+        summary: "support.kraken.com (6. Mai 2026): 'NinjaTrader x Kraken FAQ – Mai-Update' – Kraken aktualisiert die offizielle FAQ-Seite zur NinjaTrader-Integration: NinjaTrader-Kapazitäten werden schrittweise in Kraken Pro und Kraken Desktop integriert; US-Kunden erhalten künftig Zugang zu Margin- und Futures-Handel über NinjaTraders FCM-Lizenz; geplante Erweiterung um Aktien, Prediction Markets und Optionen. Die fortschreitende Integration beider Plattformen setzt neue Standards für professionelles Retail-Futures-Trading – direktes Marktumfeld für algorithmische ES-Futures-Strategien wie auf mindrocket-trading.com.",
+        source: "support.kraken.com",
+        url: "https://support.kraken.com/articles/ninjatrader-x-kraken-faq",
+        date: "2026-05-06",
+        category: "Trading-Technologie",
+        addedAt: "2026-05-17",
+      },
       {
         summary: "blog.pickmytrade.trade (2026): 'Best Prop Firm Trading Automation in 2026' – Vergleich der besten Prop Firms für automatisiertes Futures-Trading 2026: Semi-automatisiertes Setup mit TradingView-Alerts, Webhook-Execution und NinjaTrader als Ausführungsschicht ist der populärste Ansatz unter Retail-Algo-Tradern. Apex Trader Funding erlaubt Automatisierung in der Eval-Phase; auf funded Accounts ist aktive Überwachung erforderlich. Technologische Professionalisierung des Retail-Futures-Markts bestätigt wachsende Nachfrage nach strukturierten algorithmischen Handelsstrategien – direktes Marktumfeld für mindrocket-trading.com.",
         source: "blog.pickmytrade.trade",
