@@ -28,6 +28,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-17
       {
+        summary: "swissinfo.ch (November 2025): 'Switzerland launches new vocational training in AI' – Die Schweiz lanciert mit dem «AI Business Specialist» einen neuen eidgenössischen Fachausweis (EFA) auf Tertiärstufe: Die Rolle beinhaltet die verantwortungsvolle, effiziente und compliance-konforme Integration von KI in Unternehmensprozesse. Das SBFI hat gleichzeitig 42 weitere Berufsbildungsgänge revidiert. Der englischsprachige Bericht auf dem internationalen Nachrichtenportal SWI bestätigt die globale Sichtbarkeit der Schweizer ICT-Bildungsinnovation – positives Reputationsumfeld für SIZ AG als anerkannte Prüfungsorganisation im wachsenden Schweizer KI-Bildungsmarkt.",
+        source: "swissinfo.ch",
+        url: "https://www.swissinfo.ch/eng/ai-work/new-ai-specialist-training-course-launched-in-switzerland/90922266",
+        date: "2025-11",
+        category: "Arbeitsmarkt & IT",
+        addedAt: "2026-05-17",
+      },
+      {
         summary: "inside-it.ch (6. Mai 2026): 'SwissICT: Abend der grossen Abschiede' – An der swissICT-Generalversammlung und #DIGITUP-Anlass vom 5. Mai 2026 in Zürich wurden gleich vier verdiente Persönlichkeiten verabschiedet: Claude Honegger (ehem. Group CIO Credit Suisse, 15 Jahre im Vorstand) übernimmt die Präsidentschaft von Thomas Flatt (22 Jahre Vorstand, davon 20 als Präsident); CEO Christian Hunziker tritt nach 8 Jahren zurück (Nachfolger Kurt Lanz ab August 2026); Vorstandsmitglieder Frank Boller und Gerhard Storz (je ca. 20 Jahre) verabschiedet. Massiver Führungswechsel beim wichtigsten Schweizer ICT-Branchenverband – relevanter Governance-Wechsel im direkten Ökosystem von SIZ AG als anerkannte ICT-Prüfungsorganisation.",
         source: "inside-it.ch",
         url: "https://www.inside-it.ch/swissict-abend-der-grossen-abschiede-20260506",
@@ -1995,6 +2003,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "mind-rocket": {
     news: [
       // Neu: 2026-05-17
+      {
+        summary: "swissobserver.ch (2026): 'AI Adoption Surges Among Swiss SMEs' – Schweizer Kleinunternehmen integrieren KI massiv: Wachsende Nutzung von KI-Tools für Kundenkommunikation, Buchhaltung und Personalentwicklung; gleichzeitig wächst der Bedarf an strukturierten Weiterbildungs- und Persönlichkeitsentwicklungs-Programmen, um KI-Potenziale effektiv zu nutzen. Digitale Transformation bei Schweizer KMU schafft neue Nachfrage nach persönlichen Entwicklungsprogrammen für Unternehmer und Führungskräfte – direktes Wachstumsumfeld für Mind Rocket GmbH.",
+        source: "swissobserver.ch",
+        url: "https://swissobserver.ch/news/ai-adoption-surges-among-swiss-smes/",
+        date: "2026",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-05-17",
+      },
       {
         summary: "berufliche-neuorientierung.ch (2026): 'Aktuelle Trends im Coaching und Möglichkeiten der Digitalisierung' – Coaching 2026 profitiert von Digitalisierung: Online-Coaching via Video, Telefon und Chat ermöglicht ortsunabhängige Beratung; hybride Formate kombinieren Präsenz- und Online-Sitzungen; das Coaching-Spektrum erweitert sich mit individuellen, integrativ-ganzheitlichen Ansätzen; systemisches Denken und KI-gestützte Tools gewinnen an Bedeutung. Strukturelle Marktentwicklung bestätigt wachsende Nachfrage nach spezialisierten digitalen Coaching- und Persönlichkeitsentwicklungs-Programmen – positives Wachstumsumfeld für Mind Rocket GmbH.",
         source: "berufliche-neuorientierung.ch",
@@ -15184,6 +15200,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-17
       {
+        summary: "swissinfo.ch (April 2026): '76% der Schweizer nutzen KI im Alltag' – Neue Umfrage aus April 2026: Drei Viertel der Schweizer Erwachsenen (76%) nutzen KI-Tools täglich; Anstieg von 62,4% im Vorjahr. 18–35-Jährige: 90,1% Nutzung; über 55-Jährige: 52,1%; Bildungsgefälle: 82,5% (hohe Bildung) vs. 69,4% (niedrige Bildung). 41% der Nutzer ersetzen klassische Suchmaschinen durch KI. Massiver Anstieg der aktiven KI-Nutzung in der Schweiz belegt steigenden Bedarf nach KI-Lernkompetenz und digitaler Weiterbildung – direkte Zielgruppen-Validierung für learnfluencer.ch als Thought-Leadership-Plattform.",
+        source: "swissinfo.ch",
+        url: "https://www.swissinfo.ch/eng/demographics/three-quarters-of-swiss-use-ai-tools-in-their-daily-lives/91199087",
+        date: "2026-04",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-05-17",
+      },
+      {
+        summary: "Deloitte Switzerland (2026): 'Switzerland invests in AI – AI ROI report' – Umfassender Deloitte-Bericht zu KI-Investitionen Schweizer Unternehmen 2026: 30% der Schweizer Firmen planen signifikante KI-Ausgabensteigerungen (+20–39%); 52% erwarten messbare KI-Renditen innerhalb eines Jahres (vs. 38% Europa-Durchschnitt); grösste Barrieren: fehlende KI-Kompetenzen (30%) und fehlende Use-Case-Identifikation (27%). KI-Kompetenzlücke in Schweizer Unternehmen als klarer Nachfragetreiber – direktes Thought-Leadership-Fundament für learnfluencer.ch als Plattform für Lernkompetenz und KI-Weiterbildung.",
+        source: "deloitte.com/ch",
+        url: "https://www.deloitte.com/ch/en/issues/generative-ai/switzerland-invests-in-ai.html",
+        date: "2026",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-05-17",
+      },
+      {
         summary: "haufe-akademie.de (2026): 'L&D 2026: KI als Gamechanger – Menschliche Skills als Erfolgsfaktor' – Learning & Development 2026 steht im Zeichen von KI als Gamechanger: Nicht Technik allein, sondern die Kombination aus KI-Kompetenz und menschlichen Fähigkeiten wie Resilienz, Empathie und Kreativität ist der Schlüsselfaktor. L&D rückt als strategische Funktion ins Zentrum der Unternehmensführung. Direktes Thought-Leadership-Fundament für learnfluencer.ch im Schnittfeld Lernkompetenz und KI.",
         source: "haufe-akademie.de",
         url: "https://www.haufe-akademie.de/digital-suite/blog/ds-digital-learning-day-2",
@@ -17457,6 +17489,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "marketingplan-software": {
     news: [
       // Neu: 2026-05-17
+      {
+        summary: "Deloitte Switzerland (2026): 'The State of AI in the Enterprise 2026' – Deloitte-Studie zum Unternehmenseinsatz von KI in der Schweiz: KI wird zur strategischen Geschäftsgrundlage; grösste Einsatzbereiche sind Produktverbesserung (57%), Serviceverbesserung (46%) und Prozesstransformation (40%). Schweizer Unternehmen sind bei Generative AI vorsichtiger als internationale Mitbewerber, holen aber auf. Professionalisierung des KI-Einsatzes in Schweizer Unternehmen erhöht die Nachfrage nach strukturierten, datengestützten Marketing-Planungstools – direktes Wachstumsumfeld für das Marketingkonzept-Tool auf learnfluencer.ch.",
+        source: "deloitte.com/ch",
+        url: "https://www.deloitte.com/ch/en/issues/generative-ai/state-of-ai-in-enterprise.html",
+        date: "2026",
+        category: "MarTech & Trends",
+        addedAt: "2026-05-17",
+      },
       {
         summary: "kmu-digitalisierung.agency (2026): 'Marketing Automation für Schweizer KMU: Vom ersten Lead zum systematischen Kundenaufbau' – Leitfaden für Schweizer KMU zum Einstieg in Marketing Automation: von der Lead-Generierung über CRM-Segmentierung bis zu automatisierten E-Mail-Kampagnen; besondere Herausforderungen in der Schweiz (Datenschutz-DSG, Mehrsprachigkeit, B2B-Fokus). Strukturierter Marketingplan als unverzichtbare Grundlage für jede Automatisierung. Wachsende Nachfrage nach strukturierter Marketingplanung bei Schweizer KMU – direktes Marktumfeld für den Marketingplan-Software-Service auf learnfluencer.ch.",
         source: "kmu-digitalisierung.agency",
