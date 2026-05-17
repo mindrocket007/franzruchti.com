@@ -9,6 +9,7 @@ const nav = [
   { href: "/fitness/gewicht", label: "Gewicht", icon: "M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" },
   { href: "/fitness/training", label: "Training", icon: "M4 6h16M4 10h16M4 14h16M4 18h16" },
   { href: "/fitness/recovery", label: "Recovery", icon: "M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" },
+  { href: "/fitness/longevity", label: "Longevity", icon: "M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" },
 ];
 
 export default function FitnessLayout({ children }: { children: React.ReactNode }) {
