@@ -2860,6 +2860,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-17
       {
+        summary: "shanerimmer.com (2026): 'Die rechtlichen Herausforderungen in der Prop Trading Branche: Zwischen Regulierung, Risikomanagement und globaler Fragmentierung' – Experten erwarten bis 2027/28 eine strengere Regulierung des Prop-Tradings via MiFID III; in der Schweiz ist Prop Trading weiterhin legal ohne FINMA-Lizenz. Klare Unterscheidung zwischen professionellem und Retail-Prop-Trading entscheidend für Anbieter. Relevant für Mind Rocket Trading zur Einschätzung des regulatorischen Umfelds für Kunden.",
+        source: "shanerimmer.com",
+        url: "https://shanerimmer.com/die-rechtlichen-herausforderungen-in-der-prop-trading-branche/",
+        date: "2026-04-15",
+        category: "Regulierung",
+        addedAt: "2026-05-17",
+      },
+      {
         summary: "support.kraken.com (6. Mai 2026): 'NinjaTrader x Kraken FAQ – Mai-Update' – Kraken aktualisiert die offizielle FAQ-Seite zur NinjaTrader-Integration: NinjaTrader-Kapazitäten werden schrittweise in Kraken Pro und Kraken Desktop integriert; US-Kunden erhalten künftig Zugang zu Margin- und Futures-Handel über NinjaTraders FCM-Lizenz; geplante Erweiterung um Aktien, Prediction Markets und Optionen. Die fortschreitende Integration beider Plattformen setzt neue Standards für professionelles Retail-Futures-Trading – direktes Marktumfeld für algorithmische ES-Futures-Strategien wie auf mindrocket-trading.com.",
         source: "support.kraken.com",
         url: "https://support.kraken.com/articles/ninjatrader-x-kraken-faq",
@@ -7791,6 +7799,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
         category: "BGM & Gesundheit",
         addedAt: "2026-05-17",
       },
+      {
+        summary: "ad-hoc-news.de (2026): 'Achtsamkeit wird 2026 zur Kassenleistung' – Deutsche Krankenkassen übernehmen erstmals bundesweit bis zu 100% der Kosten für zertifizierte Achtsamkeitsprogramme (§20 SGB V). Das MBSR-Programm kann Depressionssymptome signifikant reduzieren. Relevant für hypnovital, da die staatliche Anerkennung alternativer Mentalmethoden Hypnose-Coaching gesellschaftlich aufwertet und den Marktzugang für digitale Wellness-Programme erleichtert.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/gesundheitswesen-startet-achtsamkeitswochen-als-kassenleistung/68443360",
+        date: "2026-04-01",
+        category: "Digitale Gesundheit",
+        addedAt: "2026-05-17",
+      },
       // Neu: 2026-05-16
       {
         summary: "safety-security.ch (2026): 'BGM am fmpro Symposium 2026' – Das fmpro Symposium 2026 findet in der Messe Luzern statt; BGM-Experte Andreas Krause (FHNW, Institut für Mentale und Organisationale Gesundheit) präsentiert, wie Unternehmen die Resilienz ihrer Mitarbeitenden systematisch stärken können. BGM-Thema auf nationaler Fachmesse institutionalisiert – positives Sichtbarkeitssignal für hypnovital® als skalierbare digitale BGM-Präventionslösung.",
@@ -12121,6 +12137,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "orgasmus": {
     news: [
       // Neu: 2026-05-17
+      {
+        summary: "apomeds.com (2026): 'Vorzeitiger Samenerguss behandeln: Therapien für mehr Kontrolle' – Neben medikamentösen Optionen (Dapoxetin, Lidocain-Prilocain) gewinnen nicht-pharmakologische Ansätze wie Beckenboden-Training, Sexualtherapie und digitale Selbsthilfeprogramme an Bedeutung. Telemedizinische Zugänge zu diskreter Behandlung wachsen stark. Relevant für orgasmus-hinauszoegern.de, da Hypnose-Audio als ergänzende, diskrete Behandlungsoption in einem wachsenden Markt positionierbar ist.",
+        source: "apomeds.com",
+        url: "https://apomeds.com/de/vorzeitiger-samenerguss-behandeln",
+        date: "2026",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-05-17",
+      },
+      {
+        summary: "startupvalley.news (2026): 'Every Health: Telemedizin für sexuelle Gesundheit' – Telemedizinische Plattformen für sexuelle Gesundheit wachsen stark und bieten diskrete Online-Konsultationen und digitale Selbsthilfeprodukte an. Der Markt für digitale Sexualgesundheit expandiert in Europa und senkt die Hemmschwelle für Betroffene. Relevant für orgasmus-hinauszoegern.de, da der Trend zu diskreten digitalen Lösungen den Absatz von Hypnose-Audioprogrammen begünstigt.",
+        source: "startupvalley.news",
+        url: "https://startupvalley.news/de/every-health-sexuelle-gesundheit-telemedizin/",
+        date: "2026",
+        category: "Digital Health",
+        addedAt: "2026-05-17",
+      },
       {
         summary: "wissen-gesundheit.de (2026): 'Ejaculatio praecox – Vorzeitiger Samenerguss' – Medizinische Informationsseite zu Ejaculatio praecox: ca. 25–30% der Männer in westlichen Industrieländern betroffen; Diagnosekriterium ist Ejakulation innerhalb einer Minute nach Penetration kombiniert mit fehlender Kontrolle; Therapieoptionen umfassen Pharmakotherapie (Dapoxetin/SSRIs, Lidocain-Spray) sowie verhaltenstherapeutische und psychologische Methoden. Wachsende medizinische Online-Präsenz zu vorzeitigem Samenerguss zeigt gesellschaftlichen Enttabuisierungs-Trend – positive Marktentwicklung für diskrete Selbsthilfe-Angebote wie orgasmus-hinauszoegern.de.",
         source: "wissen-gesundheit.de",
