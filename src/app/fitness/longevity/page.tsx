@@ -398,6 +398,111 @@ export default function LongevityPage() {
       </section>
 
       <section className="mb-10">
+        <div className="flex items-center gap-3 mb-2">
+          <h2 className="text-lg font-semibold text-white">Mein Lee-Sport Stack (alles aus einer Hand)</h2>
+          <span className="text-[10px] px-2 py-0.5 rounded-full bg-green-600 text-white font-bold">EMPFOHLEN</span>
+        </div>
+        <p className="text-neutral-400 text-sm mb-4">
+          <a href="https://whey-protein.ch/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">whey-protein.ch (Lee-Sport)</a> in Rothenburg LU deckt das gesamte Stack ab —
+          Premium-Rohstoffe (Creapure®, KSM-66, K2Vital®), Same-Day-Versand aus CH bis 19:20,
+          Bio.inspecta-zertifiziert. Spart Zoll und mehrere Lieferanten.
+        </p>
+
+        <div className="bg-neutral-900 border border-neutral-800 rounded-xl p-5 mb-4">
+          <p className="font-semibold text-white text-sm mb-3">Sofort bestellen (Lücken im Bestand)</p>
+          <div className="space-y-2 mb-4">
+            <div className="flex items-center justify-between text-sm border-b border-neutral-800 pb-2">
+              <div>
+                <a href="https://whey-protein.ch/products/magnesium-bis-glycinat" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 font-medium">Magnesium Bis-Glycinat</a>
+                <p className="text-xs text-neutral-500">180 Kapseln · 4×/Tag = 360 mg Mg · reicht 45 Tage</p>
+              </div>
+              <span className="font-mono text-neutral-300">CHF 17.90</span>
+            </div>
+            <div className="flex items-center justify-between text-sm border-b border-neutral-800 pb-2">
+              <div>
+                <a href="https://whey-protein.ch/collections/whey-protein" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 font-medium">Whey Isolate</a>
+                <p className="text-xs text-neutral-500">90% Protein, laktosefrei · nur wenn &lt;150 g Eiweiss/Tag aus Essen</p>
+              </div>
+              <span className="font-mono text-neutral-300">CHF 31.90</span>
+            </div>
+          </div>
+          <div className="flex items-center justify-between border-t border-neutral-700 pt-3">
+            <span className="text-sm font-semibold text-white">Zwischensumme Prio 1</span>
+            <span className="font-mono text-white font-bold">CHF 49.80</span>
+          </div>
+        </div>
+
+        <div className="bg-neutral-900 border border-neutral-800 rounded-xl p-5 mb-4">
+          <p className="font-semibold text-white text-sm mb-3">Beim nächsten Nachkauf (wenn aktuelle Dosen leer)</p>
+          <div className="space-y-2">
+            <div className="flex items-center justify-between text-sm border-b border-neutral-800 pb-2">
+              <div>
+                <a href="https://whey-protein.ch/collections/creatin" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 font-medium">Creatin Monohydrat (Creapure®)</a>
+                <p className="text-xs text-neutral-500">ersetzt ESN Ultrapure + WellMix-Sticks</p>
+              </div>
+              <span className="font-mono text-neutral-300">ab CHF 19.90</span>
+            </div>
+            <div className="flex items-center justify-between text-sm border-b border-neutral-800 pb-2">
+              <div>
+                <a href="https://whey-protein.ch/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 font-medium">Vitamin D3 + K2 Tropfen</a>
+                <p className="text-xs text-neutral-500">ersetzt NatuRise Morning Sun</p>
+              </div>
+              <span className="font-mono text-neutral-300">CHF 18.90</span>
+            </div>
+            <div className="flex items-center justify-between text-sm border-b border-neutral-800 pb-2">
+              <div>
+                <a href="https://whey-protein.ch/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 font-medium">Omega-3 Kapseln</a>
+                <p className="text-xs text-neutral-500">ersetzt Fairvital Omega-3 (EPA+DHA-Gehalt vergleichen)</p>
+              </div>
+              <span className="font-mono text-neutral-300">CHF 20.90</span>
+            </div>
+            <div className="flex items-center justify-between text-sm border-b border-neutral-800 pb-2">
+              <div>
+                <a href="https://whey-protein.ch/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 font-medium">Bio Ashwagandha KSM-66</a>
+                <p className="text-xs text-neutral-500">ersetzt Zimmerli Pulver — KSM-66 ist der klinisch dokumentierte Extrakt</p>
+              </div>
+              <span className="font-mono text-neutral-300">CHF 19.90</span>
+            </div>
+            <div className="flex items-center justify-between text-sm border-b border-neutral-800 pb-2">
+              <div>
+                <a href="https://whey-protein.ch/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 font-medium">B Komplex Forte</a>
+                <p className="text-xs text-neutral-500">ersetzt Fairvital B-Komplex 50</p>
+              </div>
+              <span className="font-mono text-neutral-300">CHF 19.90</span>
+            </div>
+            <div className="flex items-center justify-between text-sm">
+              <div>
+                <a href="https://whey-protein.ch/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 font-medium">Bovines Kollagen Hydrolysat</a>
+                <p className="text-xs text-neutral-500">neu für Sehnen/Gelenke (Stufe 2)</p>
+              </div>
+              <span className="font-mono text-neutral-300">CHF 29.80</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-neutral-900 border border-orange-500/40 rounded-xl p-4 mb-4">
+          <p className="font-semibold text-white text-sm mb-2">NICHT nachkaufen (aufbrauchen)</p>
+          <ul className="space-y-1 text-xs text-neutral-300">
+            <li><span className="text-orange-400">×</span> <span className="font-medium">BCAA (Prozis)</span> <span className="text-neutral-500">— überflüssig wenn Whey/Eiweiss stimmt</span></li>
+            <li><span className="text-orange-400">×</span> <span className="font-medium">Beta-Alanin (Prozis)</span> <span className="text-neutral-500">— nur Sinn für 4–6-Min-Intervalle</span></li>
+            <li><span className="text-orange-400">×</span> <span className="font-medium">L-Citrullin Malat (Prozis)</span> <span className="text-neutral-500">— Pre-Workout-Spielerei, sekundär</span></li>
+          </ul>
+        </div>
+
+        <div className="bg-neutral-900 border border-blue-500/30 rounded-xl p-4">
+          <p className="font-semibold text-white text-sm mb-2">Warum Lee-Sport als einziger Lieferant?</p>
+          <ul className="space-y-1.5 text-xs text-neutral-300">
+            <li><span className="text-blue-400">•</span> Schweizer Firma (Rothenburg LU) — kein Zoll, kein EU-Frust</li>
+            <li><span className="text-blue-400">•</span> Same-Day-Versand bis 19:20 Uhr Mo–Fr</li>
+            <li><span className="text-blue-400">•</span> Premium-Rohstoffe: Creapure®, KSM-66, K2Vital®, Carnipure®, Sensoril</li>
+            <li><span className="text-blue-400">•</span> Bio.inspecta-zertifiziert seit 2015</li>
+            <li><span className="text-blue-400">•</span> Hotline 0800 400 430, support@lee-sport.ch</li>
+            <li><span className="text-blue-400">•</span> Deckt Sport + Mikronährstoffe ab (Sponser nur Sport, Burgerstein nur Apotheke)</li>
+          </ul>
+        </div>
+      </section>
+
+      <section className="mb-10">
         <h2 className="text-lg font-semibold text-white mb-4">Schweizer Bezugsquellen (Sammlung)</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           <a href="https://sponser.ch/" target="_blank" rel="noopener noreferrer" className="bg-neutral-900 border border-neutral-800 rounded-xl p-4 hover:border-blue-500 transition-colors">
