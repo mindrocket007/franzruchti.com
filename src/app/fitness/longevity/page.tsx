@@ -470,12 +470,26 @@ export default function LongevityPage() {
               </div>
               <span className="font-mono text-neutral-300">CHF 19.90</span>
             </div>
-            <div className="flex items-center justify-between text-sm">
+            <div className="flex items-center justify-between text-sm border-b border-neutral-800 pb-2">
               <div>
-                <a href="https://whey-protein.ch/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 font-medium">Bovines Kollagen Hydrolysat</a>
-                <p className="text-xs text-neutral-500">neu für Sehnen/Gelenke (Stufe 2)</p>
+                <a href="https://whey-protein.ch/products/bovines-kollagen-hydrolysat" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 font-medium">Bovines Kollagen Hydrolysat (1000 g)</a>
+                <p className="text-xs text-neutral-500">Sehnen/Gelenke (Stufe 2) · enthält 20.6 g Glycin pro 100 g → liefert 2 g Glycin/Tag gratis mit, Schlaf inklusive</p>
               </div>
               <span className="font-mono text-neutral-300">CHF 29.80</span>
+            </div>
+            <div className="flex items-center justify-between text-sm border-b border-neutral-800 pb-2">
+              <div>
+                <a href="https://whey-protein.ch/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 font-medium">Glycin Pulver</a>
+                <p className="text-xs text-neutral-500">nur nötig wenn du KEIN Kollagen nimmst — sonst Doppelung</p>
+              </div>
+              <span className="font-mono text-neutral-300">CHF 11.90</span>
+            </div>
+            <div className="flex items-center justify-between text-sm">
+              <div>
+                <a href="https://whey-protein.ch/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 font-medium">Koffein 200 Tabletten</a>
+                <p className="text-xs text-neutral-500">200 mg/Tab. · 3–6 mg/kg vor Krafttraining · nicht täglich, sonst Toleranz</p>
+              </div>
+              <span className="font-mono text-neutral-300">CHF 13.90</span>
             </div>
           </div>
         </div>
