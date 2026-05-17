@@ -2860,6 +2860,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-17
       {
+        summary: "financefeeds.com (Februar 2026): 'NinjaTrader Taps New International Chief For EU Push' – FinanceFeeds berichtet über NinjaTraders Strategie zur EU-Regulierungskonformität: Der neue GM International Christopher Tripp soll sicherstellen, dass NinjaTraders Expansion in regulierten Märkten unter MiFID-Rahmen korrekt abläuft. Die Plattformexpansion umfasst zunächst Niederlande und Deutschland, mit Frankreich und Italien als nächste Märkte in H2 2026. Für Schweizer und europäische ES-Futures-Trader gibt dies Planungssicherheit bezüglich der langfristigen Plattformzukunft von NinjaTrader.",
+        source: "financefeeds.com",
+        url: "https://financefeeds.com/ninjatrader-taps-new-international-chief-for-eu-push/",
+        date: "2026-02",
+        category: "Regulierung",
+        addedAt: "2026-05-17",
+      },
+      {
         summary: "shanerimmer.com (2026): 'Die rechtlichen Herausforderungen in der Prop Trading Branche: Zwischen Regulierung, Risikomanagement und globaler Fragmentierung' – Experten erwarten bis 2027/28 eine strengere Regulierung des Prop-Tradings via MiFID III; in der Schweiz ist Prop Trading weiterhin legal ohne FINMA-Lizenz. Klare Unterscheidung zwischen professionellem und Retail-Prop-Trading entscheidend für Anbieter. Relevant für Mind Rocket Trading zur Einschätzung des regulatorischen Umfelds für Kunden.",
         source: "shanerimmer.com",
         url: "https://shanerimmer.com/die-rechtlichen-herausforderungen-in-der-prop-trading-branche/",
@@ -7792,6 +7800,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-17
       {
+        summary: "nzz.ch (Februar 2026): 'Psychische Erkrankungen: Krankheitsausfälle belasten Unternehmen und Versicherer' – Psychisch bedingte Arbeitsunfähigkeiten dauern im Schnitt 218 Tage und sind in 95% der Fälle Vollzeitkrankschreibungen; die Fallzahlen bei Krankentaggeldversicherungen mit Diagnose 'psychische Erkrankung' sind in zehn Jahren um 60% gestiegen. Einige Unternehmen erhalten keine Krankentaggeldversicherung mehr – enormer Handlungsdruck für betriebliche Prävention. Starke Belastungszahlen erhöhen die Nachfrage nach bewährten BGM-Präventionslösungen – klarer Marktkontext für hypnovital® als digitales Burnout-Präventionsangebot.",
+        source: "nzz.ch",
+        url: "https://www.nzz.ch/wirtschaft/psychische-erkrankungen-krankheitsausfaelle-belasten-unternehmen-und-versicherer-ld.1923619",
+        date: "2026-02",
+        category: "Arbeitsmarkt & Wellness",
+        addedAt: "2026-05-17",
+      },
+      {
+        summary: "zhaw.ch (2026): 'WBK Resilienz und Burnout-Prophylaxe 2026' – Die ZHAW Soziale Arbeit bietet im September 2026 einen Weiterbildungskurs zu Resilienz und Burnout-Prophylaxe an (16./17. und 30. September 2026). Der akademische Rahmen bestätigt wachsende gesellschaftliche Nachfrage nach evidenzbasierter Burnout-Prävention in der Schweiz. Institutionelles Weiterbildungsangebot der ZHAW unterstreicht die Nachfrage nach strukturierten Burnout-Präventionsprogrammen – Marktumfeld, in dem sich hypnovital® als digitale Ergänzung positionieren kann.",
+        source: "zhaw.ch",
+        url: "https://www.zhaw.ch/de/sozialearbeit/weiterbildung/weiterbildung-nach-abschluss/wbk-weiterbildungskurse/wbk-resilienz-und-burnout-prophylaxe-2026",
+        date: "2026",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-17",
+      },
+      {
         summary: "ad-hoc-news.de (2026): 'KI-Hypnose erobert den Milliarden-Markt für mentale Gesundheit' – Der Markt für KI-gestützte Hypnotherapie erreicht 2026 ein Volumen von über 21 Milliarden US-Dollar. Plattformen wechseln von statischen Audio-Bibliotheken zu adaptiven KI-Systemen, die Sitzungen basierend auf Nutzerfeedback in Echtzeit anpassen. Besonders im betrieblichen Gesundheitsmanagement wächst die Nachfrage nach KI-gestützten Hypnose-Programmen. Wachsender institutioneller BGM-Markt für digitale Hypnose-Präventionslösungen bestätigt das Marktpotenzial von hypnovital® als audibasierte BGM-Lösung.",
         source: "ad-hoc-news.de",
         url: "https://www.ad-hoc-news.de/wissenschaft/ki-hypnose-erobert-den-milliarden-markt-fuer-mentale-gesundheit/69351281",
@@ -12137,6 +12161,38 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "orgasmus": {
     news: [
       // Neu: 2026-05-17
+      {
+        summary: "mgo-medizin.de (Mai 2026): 'DiGA-Update 2026: Neue Apps, veränderte Vergütung' – Das DiGA-Update 2026 bringt höhere Vergütungen und neue dauerhaft gelistete Apps im BfArM-Verzeichnis; der Großteil der 61 gelisteten DiGAs liegt im Mental-Health-Bereich. Sexuelle Gesundheit wächst als eigenständige DiGA-Nische, was die gesellschaftliche Akzeptanz für digitale Lösungen in diesem Bereich bestätigt. Wachsendes DiGA-Ökosystem zeigt steigendes Vertrauen von Nutzern und Kostenträgern in digitale Selbsthilfeprogramme – positives Marktumfeld für Hypnose-Audio-Downloads wie orgasmus-hinauszoegern.de.",
+        source: "mgo-medizin.de",
+        url: "https://mgo-medizin.de/allgemeinmedizin/diga-update-2026-neue-apps-verguetung/",
+        date: "2026-05",
+        category: "Digital Health",
+        addedAt: "2026-05-17",
+      },
+      {
+        summary: "hellobetter.de (2026): 'DiGA in der Sexualtherapie – HelloBetter erklärt den Einsatz' – HelloBetter Vaginismus Plus ist als DiGA gelistet und beschreibt, wie digitale Gesundheitsanwendungen in der Sexualtherapie eingesetzt werden. Der Artikel zeigt, dass der Weg für regulierte digitale Sexualgesundheits-Produkte geebnet ist und wachsende Akzeptanz bei Nutzern wie Kostenträgern besteht. Wachsende Legitimierung digitaler Sexualgesundheitsprodukte durch institutionelle Anbieter und Kostenträger stärkt das Marktumfeld für orgasmus-hinauszoegern.de.",
+        source: "hellobetter.de",
+        url: "https://hellobetter.de/aerzte-psychotherapeuten/diga-sexualtherapie/",
+        date: "2026",
+        category: "Digital Health",
+        addedAt: "2026-05-17",
+      },
+      {
+        summary: "unibee.de (2026): 'Hypnose als Langzeittherapie gegen vorzeitigen Samenerguss' – Erfahrungsberichte zeigen spürbare Verbesserungen bereits in 2–3 Sitzungen; reguläre Therapiedauer liegt bei 7 Sitzungen mit dauerhaften Effekten. Audio-basierte Selbsthypnose wird als kosteneffiziente Alternative zur Einzeltherapie positioniert, die jederzeit und diskret angewendet werden kann. Direkter Vergleichsartikel, der Audio-Selbsthypnose als wirksame Alternative zu Einzeltherapiesitzungen legitimiert – starkes inhaltliches Argument für orgasmus-hinauszoegern.de.",
+        source: "unibee.de",
+        url: "https://unibee.de/hypnose-als-langzeittherapie-gegen-vorzeitigen-samenerguss/",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-05-17",
+      },
+      {
+        summary: "dup-magazin.de (2026): 'Gesundheitstrends 2026: Warum KI, Resilienz und Selbstdisziplin die Zukunft prägen' – KI und digitale Tools definieren Gesundheit 2026 neu; 65% der jungen Deutschen zwischen 16 und 39 Jahren haben bereits mit KI über psychische Probleme gesprochen. Selbstdisziplin und Resilienz rücken als gesellschaftliche Gesundheitswerte in den Fokus – digitale Selbsthilfe wird zunehmend als normal akzeptiert. Gesellschaftliche Normalisierung digitaler Selbsthilfe bei Gesundheitsthemen begünstigt die Marktakzeptanz für Produkte wie orgasmus-hinauszoegern.de.",
+        source: "dup-magazin.de",
+        url: "https://www.dup-magazin.de/technologie/gesundheitstrends-2026-warum-ki-resilienz-und-selbstdisziplin-die-zukunft-praegen",
+        date: "2026",
+        category: "Digital Health",
+        addedAt: "2026-05-17",
+      },
       {
         summary: "apomeds.com (2026): 'Vorzeitiger Samenerguss behandeln: Therapien für mehr Kontrolle' – Neben medikamentösen Optionen (Dapoxetin, Lidocain-Prilocain) gewinnen nicht-pharmakologische Ansätze wie Beckenboden-Training, Sexualtherapie und digitale Selbsthilfeprogramme an Bedeutung. Telemedizinische Zugänge zu diskreter Behandlung wachsen stark. Relevant für orgasmus-hinauszoegern.de, da Hypnose-Audio als ergänzende, diskrete Behandlungsoption in einem wachsenden Markt positionierbar ist.",
         source: "apomeds.com",
