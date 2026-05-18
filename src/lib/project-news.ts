@@ -26,6 +26,23 @@ export interface ProjectIntel {
 export const projectIntel: Record<string, ProjectIntel> = {
   "siz-ag": {
     news: [
+      // Neu: 2026-05-18
+      {
+        summary: "ict-berufsbildung.ch (März 2026): 'ICT-Regionalmeisterschaften 2026: Das sind die Besten' – Über 330 ICT-Lernende aus der ganzen Schweiz traten in den Skills Web Technologies, Software Application Development, Cloud Computing, Mediamatics und Cyber Security an; Cyber Security lief als Online-Wettbewerb via Swiss Hacking Challenge bis Ende April 2026. Die Top 11 je Skill qualifizieren sich für die Schweizermeisterschaft ICTskills2027 (SwissSkills 2027, Bern, 14.–18. September 2027). Nationale ICT-Meisterschaften zeigen das Niveau und die Breite der Schweizer ICT-Nachwuchsförderung – positives Sichtbarkeitsumfeld für SIZ AG als anerkannte Prüfungsorganisation im Schweizer ICT-Bildungssystem.",
+        source: "ict-berufsbildung.ch",
+        url: "https://www.ict-berufsbildung.ch/ict-regional-shymeisterschaften-2026-das-sind-die-besten",
+        date: "2026-03",
+        category: "Arbeitsmarkt & IT",
+        addedAt: "2026-05-18",
+      },
+      {
+        summary: "siw.swiss (2026): 'Die Schweiz verschläft ihren digitalen Nachwuchs – und riskiert 54'400 offene ICT-Stellen' – Das SIW warnt: Bis 2033 fehlen 54'400 ICT-Fachkräfte in der Schweiz; die Schweiz bildet zu wenig Nachwuchs aus und riskiert einen massiven Fachkräftemangel in einem wachsenden Schlüsselsektor. Der strukturelle ICT-Fachkräftemangel ist langfristiger Nachfragetreiber für alle ICT-Qualifizierungsangebote – direktes Wachstumsumfeld für SIZ AG als anerkannte ICT-Prüfungsorganisation.",
+        source: "siw.swiss",
+        url: "https://siw.swiss/ict-nachwuchs/",
+        date: "2026",
+        category: "Arbeitsmarkt & IT",
+        addedAt: "2026-05-18",
+      },
       // Neu: 2026-05-17
       {
         summary: "swissinfo.ch (November 2025): 'Switzerland launches new vocational training in AI' – Die Schweiz lanciert mit dem «AI Business Specialist» einen neuen eidgenössischen Fachausweis (EFA) auf Tertiärstufe: Die Rolle beinhaltet die verantwortungsvolle, effiziente und compliance-konforme Integration von KI in Unternehmensprozesse. Das SBFI hat gleichzeitig 42 weitere Berufsbildungsgänge revidiert. Der englischsprachige Bericht auf dem internationalen Nachrichtenportal SWI bestätigt die globale Sichtbarkeit der Schweizer ICT-Bildungsinnovation – positives Reputationsumfeld für SIZ AG als anerkannte Prüfungsorganisation im wachsenden Schweizer KI-Bildungsmarkt.",
@@ -2002,6 +2019,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mind-rocket": {
     news: [
+      // Neu: 2026-05-18
+      {
+        summary: "coachingausbildungen.ch (2026): 'Coaching-Marktanalyse 2025/2026: Welche Trends prägen die deutschsprachige Region?' – Umfassende Marktanalyse des Schweizer Coaching-Markts: Zielgruppen weiten sich von Führungskräften auf Fach- und Spezialistinnen sowie Mitarbeitende in Transformationsprozessen aus; Walk & Talk Coaching gewinnt stark an Beliebtheit; hybride Formate (Präsenz + Online) sind neue Norm; KI-basiertes Coaching und virtuelle Plattformen wachsen. Online-Coach-Ausbildungen starten auch im Mai 2026. Strukturelle Ausweitung der Coaching-Zielgruppen und Digitalisierung der Formate schaffen neues Wachstumspotenzial – direktes Marktumfeld für Mind Rocket GmbHs digitale Persönlichkeitsentwicklungs-Programme.",
+        source: "coachingausbildungen.ch",
+        url: "https://www.coachingausbildungen.ch/coaching-markt-schweiz-trends-2025-2026-analyse/",
+        date: "2026",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-05-18",
+      },
+      {
+        summary: "coaching-ratgeber.de (2026): 'Was ändert sich im Coaching 2026? Trends, Chancen und neue Standards' – Überblick über die wichtigsten Veränderungen im Coaching-Markt 2026: KI-Tools ergänzen Coaches bei der Analyse von Klientenmustern und Fortschrittsverfolhung; Spezialisierung und personalisierte Programme setzen sich gegen generische Angebote durch; mentale Gesundheit und Resilienz rücken als Coaching-Kernthemen in den Vordergrund; Hybrid-Coaching als Standard. Professionalisierung und Spezialisierungsdruck im Coaching-Markt schaffen Nachfrage nach evidenzbasierteren Persönlichkeitsentwicklungs-Programmen – direktes Wachstumsumfeld für Mind Rocket GmbH.",
+        source: "coaching-ratgeber.de",
+        url: "https://www.coaching-ratgeber.de/was-aendert-sich-im-coaching-2026-trends-chancen-und-neue-standards/",
+        date: "2026",
+        category: "Persönlichkeitsentwicklung",
+        addedAt: "2026-05-18",
+      },
       // Neu: 2026-05-17
       {
         summary: "swissobserver.ch (2026): 'AI Adoption Surges Among Swiss SMEs' – Schweizer Kleinunternehmen integrieren KI massiv: Wachsende Nutzung von KI-Tools für Kundenkommunikation, Buchhaltung und Personalentwicklung; gleichzeitig wächst der Bedarf an strukturierten Weiterbildungs- und Persönlichkeitsentwicklungs-Programmen, um KI-Potenziale effektiv zu nutzen. Digitale Transformation bei Schweizer KMU schafft neue Nachfrage nach persönlichen Entwicklungsprogrammen für Unternehmer und Führungskräfte – direktes Wachstumsumfeld für Mind Rocket GmbH.",
@@ -6337,6 +6371,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindtools": {
     news: [
+      // Neu: 2026-05-18
+      {
+        summary: "precedenceresearch.com (2026): 'Mental Health Apps Market Size to Hit USD 41.16 Billion by 2035' – Globaler Mental-Health-Apps-Markt: 2026 bei USD 10,06 Mrd., Wachstum auf USD 41,16 Mrd. bis 2035 (CAGR 17,04%). Treiber: KI-gestützte Therapietools (61% der Entwickler), Wearable-Integration (58%), Teletherapie-Funktionen (57%). Self-Help-Lösungen für Angst und Depression wachsen um 51%. Massives globales Marktwachstum für digitale Mental-Health- und Self-Help-Tools bestätigt die strukturelle Nachfrage nach digitalen Persönlichkeitsentwicklungs-Produkten – direktes Wachstumsumfeld für mindtools.ch.",
+        source: "precedenceresearch.com",
+        url: "https://www.precedenceresearch.com/mental-health-apps-market",
+        date: "2026",
+        category: "Mental Health",
+        addedAt: "2026-05-18",
+      },
+      {
+        summary: "meetglimpse.com (2026): 'Top 12 Mental Health Trends of 2026' – Analyse der 12 wichtigsten mentalen Gesundheitstrends 2026: KI-gestützte emotionale Unterstützungs-Tools verbreiten sich rasant; Millionen nutzen KI-Chatbots für Stressmanagement, Mood Tracking und Wellness-Coaching; hybride Versorgungsmodelle (digitale Tools + lizenzierte Therapeuten) dominieren den Markt; präventive Resilienz-Programme in Schulen und Unternehmen gewinnen stark an Bedeutung. Breiter gesellschaftlicher Trend zu digitaler Selbsthilfe und Mental-Health-Tools bestätigt Nachfragepotenzial für spezialisierte Self-Help-Produkte wie mindtools.ch.",
+        source: "meetglimpse.com",
+        url: "https://meetglimpse.com/trends/mental-health-trends/",
+        date: "2026",
+        category: "Mental Health",
+        addedAt: "2026-05-18",
+      },
       // Neu: 2026-05-17
       {
         summary: "chris-ley.de (2026): 'Die besten Bücher für Persönlichkeitsentwicklung (2026)' – Kuratierte Liste der besten Persönlichkeitsentwicklungs-Bücher 2026: Klassiker wie 'Die 1%-Methode' (James Clear) und aktuelle Titel zu Selbstdisziplin, Fokus und emotionaler Intelligenz sind 2026 besonders gefragt. Digitale Formate (Kindle, PDF) und Zusammenfassungsdienste wie Blinkist ergänzen traditionelle Buchformate und senken die Einstiegshürde. Anhaltend starke Nachfrage nach strukturierten Self-Help-Inhalten in digitaler Form – direktes Wachstumsumfeld für mindtools.ch als digitaler Anbieter von Persönlichkeitsentwicklungs-Materialien.",
@@ -12203,6 +12254,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── orgasmus ────────────────────────────────────────────────
   "orgasmus": {
     news: [
+      // Neu: 2026-05-18
+      {
+        summary: "apa.org Monitor (Januar/Februar 2026): 'AI, neuroscience, and data are fueling personalized mental health care' – Die American Psychological Association dokumentiert 2026 den Durchbruch personalisierter digitaler Mental-Health-Versorgung: KI-gestützte Systeme analysieren Verhaltensmuster und bieten hypnose- und achtsamkeitsbasierte Selbsthilfeprogramme; Neurobiologie untermauert die Wirksamkeit audio-basierter Entspannungs- und Selbsthilfemethoden. Wissenschaftliche Legitimierung personalisierter, audio-basierter Digital-Gesundheitsangebote stärkt das Marktumfeld für nischenspezifische Hypnose-Audio-Downloads wie orgasmus-hinauszoegern.de.",
+        source: "apa.org",
+        url: "https://www.apa.org/monitor/2026/01-02/trends-personalized-mental-health-care",
+        date: "2026-01",
+        category: "Digital Health",
+        addedAt: "2026-05-18",
+      },
+      {
+        summary: "campbellhealthsolution.org (2026): '5 Major Mental Health Trends Set to Transform Access and Care in 2026' – Die fünf wichtigsten Mental-Health-Trends 2026: Hybrid-Versorgungsmodelle kombinieren digitale Tools mit therapeutischer Begleitung; Prävention und Resilienzaufbau werden priorisiert; digitale Selbsthilfe-Apps und Audioformate verbreiten sich als niederschwellige Erstversorgung; Stigmareduktion öffnet neue Nutzergruppen; personalisierte Programme übertreffen standardisierte. Normalisierung digitaler Selbsthilfe als Einstiegspfad in die mentale Gesundheitsversorgung begünstigt den Markt für diskrete Audio-Selbsthilfeprogramme wie orgasmus-hinauszoegern.de.",
+        source: "campbellhealthsolution.org",
+        url: "https://campbellhealthsolution.org/5-major-mental-health-trends-set-to-transform-access-and-care-in-2026/",
+        date: "2026",
+        category: "Digital Health",
+        addedAt: "2026-05-18",
+      },
       // Neu: 2026-05-17
       {
         summary: "mgo-medizin.de (Mai 2026): 'DiGA-Update 2026: Neue Apps, veränderte Vergütung' – Das DiGA-Update 2026 bringt höhere Vergütungen und neue dauerhaft gelistete Apps im BfArM-Verzeichnis; der Großteil der 61 gelisteten DiGAs liegt im Mental-Health-Bereich. Sexuelle Gesundheit wächst als eigenständige DiGA-Nische, was die gesellschaftliche Akzeptanz für digitale Lösungen in diesem Bereich bestätigt. Wachsendes DiGA-Ökosystem zeigt steigendes Vertrauen von Nutzern und Kostenträgern in digitale Selbsthilfeprogramme – positives Marktumfeld für Hypnose-Audio-Downloads wie orgasmus-hinauszoegern.de.",
@@ -15234,6 +15302,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── learnfluencer ───────────────────────────────────────────
   "learnfluencer": {
     news: [
+      // Neu: 2026-05-18
+      {
+        summary: "cegos-integrata.de (2026): 'Die wichtigsten E-Learning-Trends 2026' – Umfassende Trendanalyse: KI und adaptive Lernsysteme sind für 82,5% der Unternehmen der grösste Hebel für erfolgreiche Personalentwicklung; 80,3% nutzen hybride Lernmodelle; Microlearning (5–15 Min.) wird von 60% eingesetzt; adaptives Lernen verkürzt Lernzeiten um 22% und verbessert Wissensretention um 35%; 81,8% der Unternehmen beklagen zu wenig Lernzeit. Starke Marktdaten bestätigen die Relevanz von Lernkompetenz-Thought-Leadership 2026 – direktes inhaltliches Fundament für learnfluencer.ch als Plattform für Lernen, KI und Weiterbildung.",
+        source: "cegos-integrata.de",
+        url: "https://www.cegos-integrata.de/blog/learning-development/digital-learning/die-wichtigsten-e-learning-trends-2026",
+        date: "2026",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-05-18",
+      },
+      {
+        summary: "pinktum.com (2026): 'LEARNTEC 2026: 3 Trends, die das digitale Lernen verändern' – Rückblick auf die LEARNTEC 2026, Europas führende Fachmesse für digitales Lernen: Die drei dominierenden Themen waren KI-gestützte Lernbegleitung (KI als Co-Coach), Learning in the Flow of Work (Lernen direkt im Arbeitsprozess) und messbare Lernwirkung (Kompetenzentwicklung statt Klick-Tracking). Europas wichtigste E-Learning-Messe setzt die Themenagenda für Weiterbildungs-Thought-Leadership 2026 – direktes Inhaltsfeld für learnfluencer.ch.",
+        source: "pinktum.com",
+        url: "https://www.pinktum.com/de/trends-innovationen/learntec-2026-3-trends-die-das-digitale-lernen-veraendern/",
+        date: "2026",
+        category: "E-Learning & EdTech",
+        addedAt: "2026-05-18",
+      },
       // Neu: 2026-05-17
       {
         summary: "swissinfo.ch (April 2026): '76% der Schweizer nutzen KI im Alltag' – Neue Umfrage aus April 2026: Drei Viertel der Schweizer Erwachsenen (76%) nutzen KI-Tools täglich; Anstieg von 62,4% im Vorjahr. 18–35-Jährige: 90,1% Nutzung; über 55-Jährige: 52,1%; Bildungsgefälle: 82,5% (hohe Bildung) vs. 69,4% (niedrige Bildung). 41% der Nutzer ersetzen klassische Suchmaschinen durch KI. Massiver Anstieg der aktiven KI-Nutzung in der Schweiz belegt steigenden Bedarf nach KI-Lernkompetenz und digitaler Weiterbildung – direkte Zielgruppen-Validierung für learnfluencer.ch als Thought-Leadership-Plattform.",
@@ -17524,6 +17609,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── marketingplan-software ──────────────────────────────────
   "marketingplan-software": {
     news: [
+      // Neu: 2026-05-18
+      {
+        summary: "researchly.at (2026): 'Strategische Unternehmensanalyse: Methoden & Software (2026)' – Umfassender Guide zu digitalen Strategie-Tools: SWOT, PESTEL, Porter's Five Forces, Ansoff-Matrix und BCG-Matrix werden 2026 zunehmend durch KI-gestützte Analysesoftware unterstützt; in der Praxis dient SWOT als Ausgangspunkt, PESTEL und Porter füllen Umfelddaten, Aktionsoptionen werden mit Ansoff-Matrix und Blue Ocean entwickelt. KI beschleunigt jeden Schritt, strategische Interpretation bleibt beim Team. Wachsende Nachfrage nach integrierten digitalen Strategie-Tools zeigt direktes Wachstumsumfeld für das learnfluencer.ch-Marketingkonzept-Tool mit PESTEL, 5 Forces, SWOT und BCG.",
+        source: "researchly.at",
+        url: "https://www.researchly.at/post/strategische-unternehmensanalyse-tools",
+        date: "2026",
+        category: "Strategie & Analyse",
+        addedAt: "2026-05-18",
+      },
+      {
+        summary: "researchly.at (2026): 'SWOT-Analyse im Marketing: Anleitung & Beispiele für 2026' – Praxisguide zur SWOT-Analyse im Marketing 2026: Pragmatische, datenbasierte SWOT statt subjektiver Einschätzungen wird Standard; SWOT dient als Ausgangspunkt für strategische Marketingplanung; Integration mit Wettbewerbsanalysen (Porter) und Umfeldanalysen (PESTEL) empfohlen. Wachsendes Interesse an strukturierter, datengestützter Marketinganalyse bei KMU und Unternehmen – direktes Marktumfeld für interaktive Analyse-Tools wie learnfluencer.ch/tools/marketingkonzept.",
+        source: "researchly.at",
+        url: "https://www.researchly.at/post/swot-analyse-marketing",
+        date: "2026",
+        category: "Strategie & Analyse",
+        addedAt: "2026-05-18",
+      },
       // Neu: 2026-05-17
       {
         summary: "Deloitte Switzerland (2026): 'The State of AI in the Enterprise 2026' – Deloitte-Studie zum Unternehmenseinsatz von KI in der Schweiz: KI wird zur strategischen Geschäftsgrundlage; grösste Einsatzbereiche sind Produktverbesserung (57%), Serviceverbesserung (46%) und Prozesstransformation (40%). Schweizer Unternehmen sind bei Generative AI vorsichtiger als internationale Mitbewerber, holen aber auf. Professionalisierung des KI-Einsatzes in Schweizer Unternehmen erhöht die Nachfrage nach strukturierten, datengestützten Marketing-Planungstools – direktes Wachstumsumfeld für das Marketingkonzept-Tool auf learnfluencer.ch.",
@@ -19099,6 +19201,23 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── bestattungsplaner ───────────────────────────────────────
   "bestattungsplaner": {
     news: [
+      // Neu: 2026-05-18
+      {
+        summary: "everlife.ch (2026): 'Das digitale Gedenkportal von Everlife.ch' – Everlife.ch lanciert ein personalisiertes digitales Gedenkportal: Da immer weniger Menschen physische Grabstätten wählen (90% Kremation in der Schweiz), wird Trauer und Erinnerung zunehmend digital. Das einladungsbasierte Portal erlaubt Hinterbliebenen, Erinnerungen zu teilen, Nachrichten zu hinterlassen und Fotos hochzuladen – ergänzt durch einen sicheren digitalen Tresor für wichtige Vorsorgedokumente. Digitalisierung der Gedenkkultur und des Abschiedsrituals bestätigt den Megatrend der Online-Bestattungsplanung – direktes Marktumfeld für bestattungsplaner.ch als digitale Planungs- und Vermittlungsplattform.",
+        source: "everlife.ch",
+        url: "https://everlife.ch/de/ihr-gedenkportal/",
+        date: "2026",
+        category: "Digitale Vorsorge",
+        addedAt: "2026-05-18",
+      },
+      {
+        summary: "netzwerk-lebensende-bern.ch (2026): 'Everlife.ch als empfohlene Ressource' – Das Berner Netzwerk Lebensende listet Everlife.ch als empfohlene digitale Plattform für Bestattungsvorsorge und Lebensendplanung. Die Aufnahme durch ein anerkanntes Fachgremium des Gesundheits- und Sozialwesens zeigt die wachsende institutionelle Anerkennung digitaler Bestattungsplattformen in der Schweiz. Institutionelle Legitimierung digitaler Bestattungsplattformen durch Fachgremien unterstreicht den Reifegrad des Marktes – positives Reputationsumfeld für bestattungsplaner.ch als seriöser digitaler Vermittler.",
+        source: "netzwerk-lebensende-bern.ch",
+        url: "https://netzwerk-lebensende-bern.ch/de/everlifech",
+        date: "2026",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-05-18",
+      },
       // Neu: 2026-05-17
       {
         summary: "vorsorgeplaner.online (2026): 'Bestattungsverfügung 2026 kostenlos erstellen und herunterladen' – Digitaler Dienst ermöglicht das kostenlose Erstellen einer Bestattungsverfügung als rechtssicheres PDF; enthält alle wichtigen Festlegungen zu Bestattungsart, Ort, Feierlichkeiten und letzten Wünschen. Der Trend zu digitalen, selbst erstellbaren Vorsorgedokumenten zeigt wachsende gesellschaftliche Bereitschaft zur Online-Bestattungsplanung – direktes positives Marktumfeld für bestattungsplaner.ch als digitale Planungs- und Vermittlungsplattform.",
