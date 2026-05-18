@@ -1,4 +1,4 @@
-export interface NewsItem {
+﻿export interface NewsItem {
   summary: string;
   source: string;
   url: string;
@@ -2909,6 +2909,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "mindrocket-trading": {
     news: [
       // Neu: 2026-05-18
+      {
+        summary: "cnbc.com (2026-05-17): 'Stock futures fall after record-setting week for Wall Street' – ES Futures (ESM26) fielen am 17. Mai 2026 um -1.26% auf ~7.432 Punkte; Rückgang von All-Time-High ~7.540 durch steigende Anleiherenditen (10Y T-Note 4.60%, 11.75-Monats-Hoch) und Öl-Preisanstieg. Aktuelles Marktumfeld mit erhöhter Volatilität – relevanter Kontext für ES-Futures-Trader auf mindrocket-trading.",
+        source: "cnbc.com",
+        url: "https://www.cnbc.com/2026/05/17/stock-market-today-live-updates.html",
+        date: "2026-05",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-05-18",
+      },
       {
         summary: "CNBC (12. Mai 2026): 'New futures market for semiconductors comes as AI drives costs skyward' – CME Group und Silicon Data kündigen den ersten standardisierten Futures-Markt für GPU-Mietpreisindizes an. Der geplante Launch erfolgt Ende 2026, vorbehaltlich CFTC-Genehmigung. Strukturelle Ausweitung des Futures-Universums auf Computing-Power zeigt die wachsende Bedeutung algorithmischer Wetten auf technologische Ressourcen – direktes Marktumfeld für ES-Futures-Trader wie Mind Rocket Trading.",
         source: "CNBC",
@@ -6372,6 +6380,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "mindtools": {
     news: [
       // Neu: 2026-05-18
+      {
+        summary: "nzz.ch (2026): 'Selfpublishing wird immer einfacher, weil KI das Schreiben unterstützt' – Die NZZ berichtet über den wachsenden Selfpublishing-Trend, der durch KI-Tools weiter vereinfacht wird. Relevant für digitale PDF-Buchverkäufer wie mindtools.ch.",
+        source: "nzz.ch",
+        url: "https://www.nzz.ch/feuilleton/selfpublishing-wird-immer-einfacher-weil-ki-das-schreiben-unterstuetzt-ld.1825466",
+        date: "2026",
+        category: "Buchmarkt & Publishing",
+        addedAt: "2026-05-18",
+      },
+      {
+        summary: "fortune.com (2026-05-12): 'Chatbots are becoming mental health tools before they are ready' – Fortune berichtet im Mai 2026, dass KI-Chatbots zu Mental-Health-Tools werden, bevor sie dafür bereit sind. Wachsender Markt, aber regulatorische Fragen offen. Relevant für Positioning von tool-basierten Self-Help-Angeboten wie mindtools.ch.",
+        source: "fortune.com",
+        url: "https://fortune.com/2026/05/12/chatbots-are-becoming-mental-health-tools-before-they-are-ready/",
+        date: "2026-05",
+        category: "Mental Health",
+        addedAt: "2026-05-18",
+      },
       {
         summary: "precedenceresearch.com (2026): 'Mental Health Apps Market Size to Hit USD 41.16 Billion by 2035' – Globaler Mental-Health-Apps-Markt: 2026 bei USD 10,06 Mrd., Wachstum auf USD 41,16 Mrd. bis 2035 (CAGR 17,04%). Treiber: KI-gestützte Therapietools (61% der Entwickler), Wearable-Integration (58%), Teletherapie-Funktionen (57%). Self-Help-Lösungen für Angst und Depression wachsen um 51%. Massives globales Marktwachstum für digitale Mental-Health- und Self-Help-Tools bestätigt die strukturelle Nachfrage nach digitalen Persönlichkeitsentwicklungs-Produkten – direktes Wachstumsumfeld für mindtools.ch.",
         source: "precedenceresearch.com",
@@ -10556,6 +10580,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-18
       {
+        summary: "porchlightbooks.com (2026-02-24): 'The 12 Week Year Field Guide – Neuauflage Februar 2026' – Brian P. Moran und Michael Lennington veröffentlichten im Februar 2026 eine neue Ausgabe des Field Guide zur 12-Week-Year-Methode (Wiley). Zeigt anhaltende Popularität der Methode und wachsenden Markt für zugehörige Tools wie 12wy-planner.",
+        source: "porchlightbooks.com",
+        url: "https://www.porchlightbooks.com/products/12-week-year-field-guide-brian-p-moran-9781119475248",
+        date: "2026-02",
+        category: "12 Week Year Methode",
+        addedAt: "2026-05-18",
+      },
+      {
         summary: "DEV Community (Mai 2026): '7 Productivity App Trends in 2026' – Entwickler-Community analysiert die wichtigsten Trends bei Produktivitäts-Apps: KI-gesteuerte Zielempfehlungen, automatisiertes Fortschritts-Tracking und Integration in bestehende Tools (Kalender, Notion, Slack) dominieren den Markt. Apps, die Ziele direkt mit dem Kalender synchronisieren, setzen den Standard – direktes Differenzierungsfeld für den 12-Week-Year-Planner.",
         source: "DEV Community",
         url: "https://dev.to/matt_iscanner/7-productivity-app-trends-in-2026-4epo",
@@ -12256,6 +12288,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-18
       {
+        summary: "eaucongress.uroweb.org (2026-03-15): 'Smartphone app can help men last longer in bed – EAU26 Congress London' – Die CLIMACS-Studie (80 Männer, 12 Wochen): Smartphone-App Melonga verdoppelte die Ejakulationslatenz (61→125 Sekunden); 22% der Männer berichteten danach kein vorzeitiges Kommen mehr. Erste digitale Therapie-App für Ejaculatio praecox mit EU-Zulassung als Medizinprodukt – zeigt wachsende Legitimierung digitaler Selbsthilfe-Angebote in diesem Segment.",
+        source: "eaucongress.uroweb.org",
+        url: "https://eaucongress.uroweb.org/news/press-release-smartphone-app-can-help-men-last-longer-in-bed-finds-research",
+        date: "2026-03",
+        category: "Sexuelle Gesundheit",
+        addedAt: "2026-05-18",
+      },
+      {
         summary: "apa.org Monitor (Januar/Februar 2026): 'AI, neuroscience, and data are fueling personalized mental health care' – Die American Psychological Association dokumentiert 2026 den Durchbruch personalisierter digitaler Mental-Health-Versorgung: KI-gestützte Systeme analysieren Verhaltensmuster und bieten hypnose- und achtsamkeitsbasierte Selbsthilfeprogramme; Neurobiologie untermauert die Wirksamkeit audio-basierter Entspannungs- und Selbsthilfemethoden. Wissenschaftliche Legitimierung personalisierter, audio-basierter Digital-Gesundheitsangebote stärkt das Marktumfeld für nischenspezifische Hypnose-Audio-Downloads wie orgasmus-hinauszoegern.de.",
         source: "apa.org",
         url: "https://www.apa.org/monitor/2026/01-02/trends-personalized-mental-health-care",
@@ -13735,6 +13775,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "lampenfieber": {
     news: [
       // Neu: 2026-05-18
+      {
+        summary: "simplepractice.com (2026): '6 Emerging Trends Shaping Therapy in 2026' – Wachsende Nachfrage nach digitalen und Audio-Therapieangeboten; Zunahme von Self-Help-Lösungen bei Angststörungen. Digitale Formate gewinnen stark in der Therapielandschaft 2026 – positives Marktumfeld für Audio-Hypnose-Angebote wie lampenfieber-besiegen.de.",
+        source: "simplepractice.com",
+        url: "https://www.simplepractice.com/blog/trends-shaping-therapy-2026/",
+        date: "2026",
+        category: "Psychologie & Forschung",
+        addedAt: "2026-05-18",
+      },
       {
         summary: "myscience.de / Universität Würzburg (Februar 2026): 'Genetic study shows: Anxiety disorders have many causes' – Eine internationale Genomstudie identifizierte 58 genetische Varianten, die Angststörungen begünstigen und bestätigt die neurobiologische Basis von Phobien und Auftrittsangst. Wissenschaftliche Erkenntnisse zur genetischen Grundlage von Angststörungen stärken das Fundament für neurobiologisch orientierte Behandlungsansätze – und damit auch für Hypnose-basierte Interventionen wie lampenfieber-besiegen.de, die auf Unterbewusstsein und neuronale Muster abzielen.",
         source: "myscience.de",
@@ -15303,6 +15351,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "learnfluencer": {
     news: [
       // Neu: 2026-05-18
+      {
+        summary: "alice.ch / SVEB (2026-03): 'SVEB-Hackathon: KI in der Weiterbildung' – Am 11./12. März 2026 organisierte der Schweizerische Verband für Weiterbildung (SVEB) seinen ersten Hackathon zu KI-Potenzialen in der Weiterbildung in Zürich. Zeigt, dass KI in der Schweizer Weiterbildungsszene ganz oben auf der Agenda steht – direkter Anknüpfungspunkt für learnfluencer-Content zu Lernkompetenz und KI.",
+        source: "alice.ch",
+        url: "https://alice.ch/de/event/sveb-hackathon-ki-in-der-weiterbildung/",
+        date: "2026-03",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-05-18",
+      },
       {
         summary: "cegos-integrata.de (2026): 'Die wichtigsten E-Learning-Trends 2026' – Umfassende Trendanalyse: KI und adaptive Lernsysteme sind für 82,5% der Unternehmen der grösste Hebel für erfolgreiche Personalentwicklung; 80,3% nutzen hybride Lernmodelle; Microlearning (5–15 Min.) wird von 60% eingesetzt; adaptives Lernen verkürzt Lernzeiten um 22% und verbessert Wissensretention um 35%; 81,8% der Unternehmen beklagen zu wenig Lernzeit. Starke Marktdaten bestätigen die Relevanz von Lernkompetenz-Thought-Leadership 2026 – direktes inhaltliches Fundament für learnfluencer.ch als Plattform für Lernen, KI und Weiterbildung.",
         source: "cegos-integrata.de",
@@ -19202,6 +19258,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "bestattungsplaner": {
     news: [
       // Neu: 2026-05-18
+      {
+        summary: "srf.ch / SRF Reporter (2026-04-15): 'Kompost statt Sarg – Eine neue Art der Bestattung' – SRF Reporter berichtet zur Terramation: Verstorbene werden innerhalb von 40 Tagen in einem Container zu Humus umgewandelt. Zürich will als erste Schweizer Stadt Terramation einführen; der Kantonsrat unterstützt einen Volksauftrag zur Prüfung dieser neuen Bestattungsform. Contentthema und künftiges Angebotsfeld für bestattungsplaner.ch.",
+        source: "srf.ch",
+        url: "https://www.srf.ch/play/tv/reporter/video/kompost-statt-sarg---eine-neue-art-der-bestattung?urn=urn%3Asrf%3Avideo%3A5502ef2a-1602-4d75-8860-4a2d0c41a717",
+        date: "2026-04",
+        category: "Markt & Trends",
+        addedAt: "2026-05-18",
+      },
+      {
+        summary: "kremation-svfb.ch (2025-11): 'Expertentreffen Schweizer Krematorien 2025' – Über 60 Fachleute aus mehr als 20 Schweizer Krematorien trafen sich im November 2025: Themen Quecksilbermessungen, neue Bestattungsformen (Lavation), Betriebsoptimierung. Ca. 90% der Schweizer wählen Kremation; alternative Formen (Urne, See, Wald) boomen, Online-Anbieter erhöhen Kostendruck auf die Branche. Zeigt Digitalisierungsdruck in der Schweizer Bestattungsbranche – positiv für bestattungsplaner.ch.",
+        source: "kremation-svfb.ch",
+        url: "https://www.kremation-svfb.ch/",
+        date: "2025-11",
+        category: "Bestattungsbranche Schweiz",
+        addedAt: "2026-05-18",
+      },
       {
         summary: "everlife.ch (2026): 'Das digitale Gedenkportal von Everlife.ch' – Everlife.ch lanciert ein personalisiertes digitales Gedenkportal: Da immer weniger Menschen physische Grabstätten wählen (90% Kremation in der Schweiz), wird Trauer und Erinnerung zunehmend digital. Das einladungsbasierte Portal erlaubt Hinterbliebenen, Erinnerungen zu teilen, Nachrichten zu hinterlassen und Fotos hochzuladen – ergänzt durch einen sicheren digitalen Tresor für wichtige Vorsorgedokumente. Digitalisierung der Gedenkkultur und des Abschiedsrituals bestätigt den Megatrend der Online-Bestattungsplanung – direktes Marktumfeld für bestattungsplaner.ch als digitale Planungs- und Vermittlungsplattform.",
         source: "everlife.ch",
