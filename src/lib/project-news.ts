@@ -2926,6 +2926,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-18
       {
+        summary: "kagels-trading.de (Mai 2026): 'S&P 500 Kursprognose (SPX) – Wie geht es weiter? 2026' – Deutschsprachige Futures-Analyse: ES Futures markierten Anfang Mai 2026 neue Allzeithochs über 7.400 Punkte; V-förmige Erholung vom März-Tief (~6.300), Elliott-Wellen-Analyse zeigt abgeschlossene Aufwärtsimpulse (1)–(5); 88% der S&P-500-Unternehmen übertrafen Q1-2026-Gewinnerwartungen. Aktuelle technische Analyse des ES-Futures für deutschsprachige Trader – direktes Informationsumfeld für mindrocket-trading.com.",
+        source: "kagels-trading.de",
+        url: "https://www.kagels-trading.de/sp500-kursprognose/",
+        date: "2026-05",
+        category: "Futures & Trading",
+        addedAt: "2026-05-18",
+      },
+      {
         summary: "247wallst.com (2026-05-12): 'Stock Market Live May 12, 2026: S&P 500 (SPY) Sinks on Higher Inflation' – ES Futures (ESM26) fielen am 12. Mai 2026 infolge steigender Inflationssorgen und globaler Bond-Markt-Selloffs, verschärft durch hohe Ölpreise und stockende US-Iran-Friedensverhandlungen. Volatiles ES-Futures-Umfeld Mitte Mai 2026 – relevanter Kontext für Trading-Strategien auf mindrocket-trading.",
         source: "247wallst.com",
         url: "https://247wallst.com/investing/2026/05/12/stock-market-live-may-12-2026-sp-500-spy-sinks-on-higher-inflation/",
@@ -7932,6 +7940,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-18
       {
+        summary: "bodymedia.de (2026): 'HealthEXPO 2026 – Der grösste Gesundheits-Erlebnistag der Schweiz in neuer Dimension' – Fachmagazin Bodymedia berichtet: HealthEXPO 2026 findet am 30. Mai 2026 in der MesseBasel statt; über 120 Aussteller, 20.000 Besuchende erwartet, 20+ Health-Check-Stationen; Themenschwerpunkte: mentale Gesundheit am Arbeitsplatz, betriebliche Gesundheitsförderung (BGM), Prävention, Fitness und Innovation. Schweizweit grösste Gesundheitsmesse als direktes Markt- und Kooperationsumfeld für hypnovital® als BGM-Hypnose-Coaching-Anbieter.",
+        source: "bodymedia.de",
+        url: "https://www.bodymedia.de/news/healthexpo-2026-der-groessse-gesundheits-erlebnistag-der-schweiz-in-neuer-dimension/",
+        date: "2026-05",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-18",
+      },
+      {
         summary: "safety-security.ch (2026-05): 'ArbeitsSicherheit Schweiz – Fachmesse 20./21. Mai 2026, Zürich' – Fachmesse mit Schwerpunkt psychische Gesundheit am Arbeitsplatz; rund ein Drittel der Schweizer Bevölkerung leidet unter psychischen Problemen oder emotionaler Erschöpfung. Direkte Plattform für BGM-Anbieter wie hypnovital® zur Positionierung im Schweizer Arbeitsschutz-Markt.",
         source: "safety-security.ch",
         url: "https://www.safety-security.ch/arbeitssicherheit-schweiz-2026/",
@@ -10619,6 +10635,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "12wy-planner": {
     news: [
       // Neu: 2026-05-18
+      {
+        summary: "xtiles.app (2026): '12 Week Year Template – kostenlos, digital und editierbar' – xTiles bietet 2026 ein kostenloses, digitales und editierbares 12-Week-Year-Template an, das die Methode von Brian Moran direkt implementiert: Wochenplanung, Ziel-Tracking, Scorecard und Daily Rituals – alles in einer Vorlage. Steigende Nachfrage nach digitalen 12-Week-Year-Templates auf spezialisierten Tool-Plattformen bestätigt wachsendes Marktinteresse an der Methode – direktes Marktumfeld für den 12wy-planner als dediziertes SaaS.",
+        source: "xtiles.app",
+        url: "https://xtiles.app/en/templates/12-week-year-template/",
+        date: "2026",
+        category: "Produktivität & Planung",
+        addedAt: "2026-05-18",
+      },
+      {
+        summary: "developgoodhabits.com (2026): '12-Week Year Templates: 15 Free PDFs to Plan Your Quarter' – Develop Good Habits listet 15 kostenlose PDF-Vorlagen für das 12-Week-Year-System: Quarterly Plan Sheet, Weekly Plan, Scorecard, Vision Template, Daily Ritual Planner. Hohe Nachfrage nach strukturierten 12-Week-Year-Vorlagen belegt aktives Community-Interesse an der Methode – Marktvalidierung für 12wy-planner als strukturiertes Komplett-SaaS-Tool.",
+        source: "developgoodhabits.com",
+        url: "https://www.developgoodhabits.com/12-week-year-templates/",
+        date: "2026",
+        category: "Produktivität & Planung",
+        addedAt: "2026-05-18",
+      },
       {
         summary: "itwelt.at (2026): 'B2B SaaS-Wachstum 2026: Klare Strategien statt blinder Optimismus' – 72% der B2B-SaaS-Unternehmen erwarten 2026 stärkeres Wachstum als im Vorjahr. KI-gestützte Produktivitäts-Features und Nischen-Spezialisierung sind die stärksten Differenzierungsfaktoren. Spezifische SaaS-Nischen mit starkem Methoden-Fit – wie ein 12-Week-Year-Planner – profitieren von strukturell wachsender Nachfrage.",
         source: "itwelt.at",
