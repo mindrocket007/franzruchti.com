@@ -6389,6 +6389,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-18
       {
+        summary: "blog.vb-eg.de (April 2026): 'Selfcare-Boom: Welche Ausgaben lohnen sich wirklich?' – Self-Care ist 2026 offiziell wieder cool: Die VR Bank analysiert, in welche Self-Care-Kategorien Konsumenten tatsächlich investieren sollten – von mentalen Werkzeugen bis zu physischen Wellness-Produkten. Kern-Statement: Innere Arbeit und mentale Gesundheit haben den grössten nachhaltigen Return on Investment. Direktes Marktargument für digitale mentale Werkzeuge wie mindtools.ch – Self-Care-Investitionen verlagern sich hin zu Tools mit messbarem Nutzen.",
+        source: "blog.vb-eg.de",
+        url: "https://blog.vb-eg.de/2026/04/01/selfcare/",
+        date: "2026-04",
+        category: "Mental Health",
+        addedAt: "2026-05-18",
+      },
+      {
         summary: "nzz.ch (2026): 'Selfpublishing wird immer einfacher, weil KI das Schreiben unterstützt' – Die NZZ berichtet über den wachsenden Selfpublishing-Trend, der durch KI-Tools weiter vereinfacht wird. Relevant für digitale PDF-Buchverkäufer wie mindtools.ch.",
         source: "nzz.ch",
         url: "https://www.nzz.ch/feuilleton/selfpublishing-wird-immer-einfacher-weil-ki-das-schreiben-unterstuetzt-ld.1825466",
@@ -10595,6 +10603,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "12wy-planner": {
     news: [
       // Neu: 2026-05-18
+      {
+        summary: "itwelt.at (2026): 'B2B SaaS-Wachstum 2026: Klare Strategien statt blinder Optimismus' – 72% der B2B-SaaS-Unternehmen erwarten 2026 stärkeres Wachstum als im Vorjahr. KI-gestützte Produktivitäts-Features und Nischen-Spezialisierung sind die stärksten Differenzierungsfaktoren. Spezifische SaaS-Nischen mit starkem Methoden-Fit – wie ein 12-Week-Year-Planner – profitieren von strukturell wachsender Nachfrage.",
+        source: "itwelt.at",
+        url: "https://itwelt.at/news/b2b-saas-wachstum-2026-klare-strategien-statt-blinder-optimismus/",
+        date: "2026",
+        category: "SaaS & Tools",
+        addedAt: "2026-05-18",
+      },
+      {
+        summary: "omr.com (2026): 'SaaS-Markt im Wandel: Warum SaaS nicht tot ist' – Analyse des deutschen SaaS-Markts 2026: Trotz Konsolidierungsdruck bleiben spezialisierte SaaS-Produkte mit klarem Nutzen stark. Produktivitäts- und Zielsetzungs-Tools gehören zu den stabilsten Segmenten, da Unternehmen und Selbstständige strukturierte Planung priorisieren. Belegt Marktstabilität für methodenbasierte Produktivitäts-SaaS wie den 12wy-planner.",
+        source: "omr.com",
+        url: "https://omr.com/de/reviews/contenthub/saas-markt",
+        date: "2026",
+        category: "SaaS & Tools",
+        addedAt: "2026-05-18",
+      },
       {
         summary: "porchlightbooks.com (2026-02-24): 'The 12 Week Year Field Guide – Neuauflage Februar 2026' – Brian P. Moran und Michael Lennington veröffentlichten im Februar 2026 eine neue Ausgabe des Field Guide zur 12-Week-Year-Methode (Wiley). Zeigt anhaltende Popularität der Methode und wachsenden Markt für zugehörige Tools wie 12wy-planner.",
         source: "porchlightbooks.com",
