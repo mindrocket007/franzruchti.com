@@ -2910,6 +2910,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-18
       {
+        summary: "247wallst.com (2026-05-12): 'Stock Market Live May 12, 2026: S&P 500 (SPY) Sinks on Higher Inflation' – ES Futures (ESM26) fielen am 12. Mai 2026 infolge steigender Inflationssorgen und globaler Bond-Markt-Selloffs, verschärft durch hohe Ölpreise und stockende US-Iran-Friedensverhandlungen. Volatiles ES-Futures-Umfeld Mitte Mai 2026 – relevanter Kontext für Trading-Strategien auf mindrocket-trading.",
+        source: "247wallst.com",
+        url: "https://247wallst.com/investing/2026/05/12/stock-market-live-may-12-2026-sp-500-spy-sinks-on-higher-inflation/",
+        date: "2026-05-12",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-05-18",
+      },
+      {
         summary: "cnbc.com (2026-05-17): 'Stock futures fall after record-setting week for Wall Street' – ES Futures (ESM26) fielen am 17. Mai 2026 um -1.26% auf ~7.432 Punkte; Rückgang von All-Time-High ~7.540 durch steigende Anleiherenditen (10Y T-Note 4.60%, 11.75-Monats-Hoch) und Öl-Preisanstieg. Aktuelles Marktumfeld mit erhöhter Volatilität – relevanter Kontext für ES-Futures-Trader auf mindrocket-trading.",
         source: "cnbc.com",
         url: "https://www.cnbc.com/2026/05/17/stock-market-today-live-updates.html",
@@ -7899,6 +7907,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "hypnovital": {
     news: [
       // Neu: 2026-05-18
+      {
+        summary: "safety-security.ch (2026-05): 'ArbeitsSicherheit Schweiz – Fachmesse 20./21. Mai 2026, Zürich' – Fachmesse mit Schwerpunkt psychische Gesundheit am Arbeitsplatz; rund ein Drittel der Schweizer Bevölkerung leidet unter psychischen Problemen oder emotionaler Erschöpfung. Direkte Plattform für BGM-Anbieter wie hypnovital® zur Positionierung im Schweizer Arbeitsschutz-Markt.",
+        source: "safety-security.ch",
+        url: "https://www.safety-security.ch/arbeitssicherheit-schweiz-2026/",
+        date: "2026-05",
+        category: "BGM & Gesundheit",
+        addedAt: "2026-05-18",
+      },
       {
         summary: "ad-hoc-news.de (Mai 2026): 'Arbeitszeitreform 2026: Flexibilisierung trifft auf Burnout-Warnungen' – Neue Arbeitszeitregelungen in der DACH-Region werden von Experten kritisch begleitet: Mehr Flexibilisierung ohne Schutzstrukturen erhöht das Burnout-Risiko. Wissenschaftliche Warnungen zur Flexibilisierung schaffen eine starke Argumentationsbasis für präventive Gesundheitsangebote wie hypnovitals Coaching- und Audio-Programme.",
         source: "ad-hoc-news.de",
