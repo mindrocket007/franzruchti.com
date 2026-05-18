@@ -13816,6 +13816,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-18
       {
+        summary: "markus-fetzer.de (2026): 'Redeangst überwinden = Hypnose ist ein starkes Mittel' – Braunschweiger Hypnosetherapeutin erklärt Redeangst und Hypnose: Hypnose löst unbewusste Ursachen der Redeangst auf, verändert das Stressmuster direkt im Nervensystem und erzeugt neue, stabile Sprechmuster; in der Regel 3–5 Sitzungen für nachhaltige Besserung. Spezifischer Fachbeitrag zu Hypnose als Erstmethode bei Redeangst – direktes inhaltliches Marktumfeld für das Audio-Selbsthypnoseprogramm lampenfieber-besiegen.de.",
+        source: "markus-fetzer.de",
+        url: "https://markus-fetzer.de/redeangst/",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-05-18",
+      },
+      {
+        summary: "hypnose-hamburg-therapie.de (2026): 'Hypnose gegen Prüfungsangst – Hypnosepraxis Claudia Krebs Hamburg' – Spezialisierte Hypnosepraxis beschreibt: Prüfungsangst und Auftrittsangst entstehen durch unbewusste Konditionierung; Hypnose arbeitet direkt mit dem Unterbewusstsein, baut neue Reaktionsmuster auf und verankert Gelassenheit in Leistungssituationen. Ergebnisse oft bereits nach 1–3 Sitzungen spürbar. Wachsendes Hamburger Angebot für Hypnose bei Prüfungsangst zeigt breite regionale Nachfrage – positives Wettbewerbsumfeld für Audio-Selbsthilfe wie lampenfieber-besiegen.de.",
+        source: "hypnose-hamburg-therapie.de",
+        url: "https://www.hypnose-hamburg-therapie.de/pruefungsangst/",
+        date: "2026",
+        category: "Hypnose & Therapie",
+        addedAt: "2026-05-18",
+      },
+      {
         summary: "simplepractice.com (2026): '6 Emerging Trends Shaping Therapy in 2026' – Wachsende Nachfrage nach digitalen und Audio-Therapieangeboten; Zunahme von Self-Help-Lösungen bei Angststörungen. Digitale Formate gewinnen stark in der Therapielandschaft 2026 – positives Marktumfeld für Audio-Hypnose-Angebote wie lampenfieber-besiegen.de.",
         source: "simplepractice.com",
         url: "https://www.simplepractice.com/blog/trends-shaping-therapy-2026/",
@@ -17706,6 +17722,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "marketingplan-software": {
     news: [
       // Neu: 2026-05-18
+      {
+        summary: "gitnux.org (Februar 2026): 'Top 10 Best SWOT Analysis Software of 2026' – Unabhängiges Research-Portal Gitnux (zuletzt verifiziert April 2026) bewertet die besten SWOT-Analyse-Tools: Creately, Canva, MindMeister, Lucidchart und Miro führen das Ranking; Bewertungskriterien sind Ease of Use, Collaboration, Templates und Integration. Der wachsende Markt für spezialisierte SWOT-Software zeigt hohe Nachfrage nach strukturierten Analyse-Lösungen – direktes Marktumfeld für das Marketingkonzept-Tool auf learnfluencer.ch mit integrierter SWOT-Analyse.",
+        source: "gitnux.org",
+        url: "https://gitnux.org/best/swot-analysis-software/",
+        date: "2026-02",
+        category: "Marketing-Tools & Software",
+        addedAt: "2026-05-18",
+      },
       {
         summary: "researchly.at (2026): 'Strategische Unternehmensanalyse: Methoden & Software (2026)' – Umfassender Guide zu digitalen Strategie-Tools: SWOT, PESTEL, Porter's Five Forces, Ansoff-Matrix und BCG-Matrix werden 2026 zunehmend durch KI-gestützte Analysesoftware unterstützt; in der Praxis dient SWOT als Ausgangspunkt, PESTEL und Porter füllen Umfelddaten, Aktionsoptionen werden mit Ansoff-Matrix und Blue Ocean entwickelt. KI beschleunigt jeden Schritt, strategische Interpretation bleibt beim Team. Wachsende Nachfrage nach integrierten digitalen Strategie-Tools zeigt direktes Wachstumsumfeld für das learnfluencer.ch-Marketingkonzept-Tool mit PESTEL, 5 Forces, SWOT und BCG.",
         source: "researchly.at",
