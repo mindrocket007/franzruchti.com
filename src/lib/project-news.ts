@@ -2874,6 +2874,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   },
   "mindrocket-trading": {
     news: [
+      // Neu: 2026-05-18
+      {
+        summary: "CNBC (12. Mai 2026): 'New futures market for semiconductors comes as AI drives costs skyward' – CME Group und Silicon Data kündigen den ersten standardisierten Futures-Markt für GPU-Mietpreisindizes an. Der geplante Launch erfolgt Ende 2026, vorbehaltlich CFTC-Genehmigung. Strukturelle Ausweitung des Futures-Universums auf Computing-Power zeigt die wachsende Bedeutung algorithmischer Wetten auf technologische Ressourcen – direktes Marktumfeld für ES-Futures-Trader wie Mind Rocket Trading.",
+        source: "CNBC",
+        url: "https://www.cnbc.com/2026/05/12/new-futures-market-for-semiconductors-comes-as-ai-drives-costs-skyward.html",
+        date: "2026-05-12",
+        category: "Markt & Wirtschaft",
+        addedAt: "2026-05-18",
+      },
       // Neu: 2026-05-17
       {
         summary: "financefeeds.com (Februar 2026): 'NinjaTrader Taps New International Chief For EU Push' – FinanceFeeds berichtet über NinjaTraders Strategie zur EU-Regulierungskonformität: Der neue GM International Christopher Tripp soll sicherstellen, dass NinjaTraders Expansion in regulierten Märkten unter MiFID-Rahmen korrekt abläuft. Die Plattformexpansion umfasst zunächst Niederlande und Deutschland, mit Frankreich und Italien als nächste Märkte in H2 2026. Für Schweizer und europäische ES-Futures-Trader gibt dies Planungssicherheit bezüglich der langfristigen Plattformzukunft von NinjaTrader.",
@@ -7814,6 +7823,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── hypnovital ──────────────────────────────────────────────
   "hypnovital": {
     news: [
+      // Neu: 2026-05-18
+      {
+        summary: "ad-hoc-news.de (Mai 2026): 'Arbeitszeitreform 2026: Flexibilisierung trifft auf Burnout-Warnungen' – Neue Arbeitszeitregelungen in der DACH-Region werden von Experten kritisch begleitet: Mehr Flexibilisierung ohne Schutzstrukturen erhöht das Burnout-Risiko. Wissenschaftliche Warnungen zur Flexibilisierung schaffen eine starke Argumentationsbasis für präventive Gesundheitsangebote wie hypnovitals Coaching- und Audio-Programme.",
+        source: "ad-hoc-news.de",
+        url: "https://www.ad-hoc-news.de/wissenschaft/arbeitszeitreform-2026-flexibilisierung-trifft-auf-burnout-warnungen/69318387",
+        date: "2026-05",
+        category: "Arbeitsmarkt & Wellness",
+        addedAt: "2026-05-18",
+      },
       // Neu: 2026-05-17
       {
         summary: "nzz.ch (Februar 2026): 'Psychische Erkrankungen: Krankheitsausfälle belasten Unternehmen und Versicherer' – Psychisch bedingte Arbeitsunfähigkeiten dauern im Schnitt 218 Tage und sind in 95% der Fälle Vollzeitkrankschreibungen; die Fallzahlen bei Krankentaggeldversicherungen mit Diagnose 'psychische Erkrankung' sind in zehn Jahren um 60% gestiegen. Einige Unternehmen erhalten keine Krankentaggeldversicherung mehr – enormer Handlungsdruck für betriebliche Prävention. Starke Belastungszahlen erhöhen die Nachfrage nach bewährten BGM-Präventionslösungen – klarer Marktkontext für hypnovital® als digitales Burnout-Präventionsangebot.",
@@ -10485,6 +10503,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── 12wy-planner ───────────────────────────────────────────
   "12wy-planner": {
     news: [
+      // Neu: 2026-05-18
+      {
+        summary: "DEV Community (Mai 2026): '7 Productivity App Trends in 2026' – Entwickler-Community analysiert die wichtigsten Trends bei Produktivitäts-Apps: KI-gesteuerte Zielempfehlungen, automatisiertes Fortschritts-Tracking und Integration in bestehende Tools (Kalender, Notion, Slack) dominieren den Markt. Apps, die Ziele direkt mit dem Kalender synchronisieren, setzen den Standard – direktes Differenzierungsfeld für den 12-Week-Year-Planner.",
+        source: "DEV Community",
+        url: "https://dev.to/matt_iscanner/7-productivity-app-trends-in-2026-4epo",
+        date: "2026-05",
+        category: "Produktivität & Planung",
+        addedAt: "2026-05-18",
+      },
       // Neu: 2026-05-17
       {
         summary: "factro.de (2026): 'OKR-Methode: Definition, Tipps & Umsetzung' – Praxisnahe Einführung in OKR (Objectives and Key Results): OKRs werden typischerweise in 8–12-Wochen-Zyklen gesetzt; Objectives sind qualitative, inspirierende Ziele; Key Results machen Fortschritt messbar. Kernprinzipien: Einfachheit, Fokus, Ambition, Transparenz. Wachsendes Interesse an strukturierten Ziel-Methoden mit 8–12-Wochen-Zyklen bestätigt die methodische Verwandtschaft zur 12-Week-Year-Methode – direktes inhaltliches Marktumfeld für den 12wy-planner.",
@@ -13639,6 +13666,15 @@ export const projectIntel: Record<string, ProjectIntel> = {
   // ── lampenfieber ────────────────────────────────────────────
   "lampenfieber": {
     news: [
+      // Neu: 2026-05-18
+      {
+        summary: "myscience.de / Universität Würzburg (Februar 2026): 'Genetic study shows: Anxiety disorders have many causes' – Eine internationale Genomstudie identifizierte 58 genetische Varianten, die Angststörungen begünstigen und bestätigt die neurobiologische Basis von Phobien und Auftrittsangst. Wissenschaftliche Erkenntnisse zur genetischen Grundlage von Angststörungen stärken das Fundament für neurobiologisch orientierte Behandlungsansätze – und damit auch für Hypnose-basierte Interventionen wie lampenfieber-besiegen.de, die auf Unterbewusstsein und neuronale Muster abzielen.",
+        source: "myscience.de",
+        url: "https://www.myscience.de/en/news/2026/genetic_study_shows_anxiety_disorders_have_many_causes-2026-uni-wuerzburg",
+        date: "2026-02-03",
+        category: "Psychologie & Forschung",
+        addedAt: "2026-05-18",
+      },
       // Neu: 2026-05-17
       {
         summary: "psychologenakademie.de (2026): 'Frei sprechen: Redeangst überwinden – Erfolgreiche Auftritte & Selbstbewusstes Sprechen' – Die Deutsche Psychologen Akademie bietet praxisorientierte Seminare zur Überwindung von Redeangst und Auftrittsangst: kognitiv-verhaltensbasierte Techniken, Selbstwahrnehmung und Körpersprache-Training. 90% der Teilnehmenden berichten signifikante Angstreduktion. Starkes Kursangebot etablierter Institutionen für Lampenfieber-Behandlung bestätigt breite gesellschaftliche Nachfrage – direktes Marktumfeld für selbstanwendbare Hypnose-Alternativen wie lampenfieber-besiegen.de.",
