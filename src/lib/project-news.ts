@@ -28,6 +28,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
     news: [
       // Neu: 2026-05-18
       {
+        summary: "netzwoche.ch (6. Mai 2026): 'Die Arbeitslosigkeit steigt – und KI dürfte ein Grund sein' – Seit Herbst 2022 ist die Arbeitslosigkeit in KI-exponierten Berufen bis zu 30% stärker gestiegen als in weniger betroffenen Berufen; erstmals sind hochqualifizierte Wissensarbeiter (Softwareentwickler, Web-Designer, Marketing, Journalismus, HR) besonders betroffen. Strukturelle KI-bedingte Jobverschiebungen erhöhen den Druck auf ICT-Fachkräfte, anerkannte Qualifikationen wie SIZ-Diplome als Differenzierungsnachweis vorzuweisen – direkter Nachfragetreiber für ICT-Zertifizierungen.",
+        source: "netzwoche.ch",
+        url: "https://www.netzwoche.ch/news/2026-05-06/die-arbeitslosigkeit-steigt-und-ki-duerfte-ein-grund-sein",
+        date: "2026-05-06",
+        category: "Arbeitsmarkt & IT",
+        addedAt: "2026-05-18",
+      },
+      {
         summary: "ict-berufsbildung.ch (März 2026): 'ICT-Regionalmeisterschaften 2026: Das sind die Besten' – Über 330 ICT-Lernende aus der ganzen Schweiz traten in den Skills Web Technologies, Software Application Development, Cloud Computing, Mediamatics und Cyber Security an; Cyber Security lief als Online-Wettbewerb via Swiss Hacking Challenge bis Ende April 2026. Die Top 11 je Skill qualifizieren sich für die Schweizermeisterschaft ICTskills2027 (SwissSkills 2027, Bern, 14.–18. September 2027). Nationale ICT-Meisterschaften zeigen das Niveau und die Breite der Schweizer ICT-Nachwuchsförderung – positives Sichtbarkeitsumfeld für SIZ AG als anerkannte Prüfungsorganisation im Schweizer ICT-Bildungssystem.",
         source: "ict-berufsbildung.ch",
         url: "https://www.ict-berufsbildung.ch/ict-regional-shymeisterschaften-2026-das-sind-die-besten",
@@ -2020,6 +2028,14 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "mind-rocket": {
     news: [
       // Neu: 2026-05-18
+      {
+        summary: "netzwoche.ch (6. Mai 2026): 'Wie KI die Spielregeln der Arbeit verändert' – KI-Sonderthema der Netzwoche-Ausgabe vom 6. Mai 2026: KI verändert grundlegend, welche Kompetenzen im Arbeitsleben gefragt sind; Soft Skills, Anpassungsfähigkeit und persönliche Entwicklungsfähigkeit gewinnen massiv an Bedeutung als Differenzierungsfaktoren. Struktureller Wandel am Arbeitsmarkt durch KI schafft wachsende Nachfrage nach persönlicher Entwicklungsbegleitung und Coaching – direktes Marktumfeld für Mind Rocket GmbH.",
+        source: "netzwoche.ch",
+        url: "https://www.netzwoche.ch/news/2026-05-06/wie-ki-die-spielregeln-der-arbeit-veraendert",
+        date: "2026-05-06",
+        category: "Coaching & E-Learning",
+        addedAt: "2026-05-18",
+      },
       {
         summary: "coachingausbildungen.ch (2026): 'Coaching-Marktanalyse 2025/2026: Welche Trends prägen die deutschsprachige Region?' – Umfassende Marktanalyse des Schweizer Coaching-Markts: Zielgruppen weiten sich von Führungskräften auf Fach- und Spezialistinnen sowie Mitarbeitende in Transformationsprozessen aus; Walk & Talk Coaching gewinnt stark an Beliebtheit; hybride Formate (Präsenz + Online) sind neue Norm; KI-basiertes Coaching und virtuelle Plattformen wachsen. Online-Coach-Ausbildungen starten auch im Mai 2026. Strukturelle Ausweitung der Coaching-Zielgruppen und Digitalisierung der Formate schaffen neues Wachstumspotenzial – direktes Marktumfeld für Mind Rocket GmbHs digitale Persönlichkeitsentwicklungs-Programme.",
         source: "coachingausbildungen.ch",
@@ -15407,6 +15423,22 @@ export const projectIntel: Record<string, ProjectIntel> = {
   "learnfluencer": {
     news: [
       // Neu: 2026-05-18
+      {
+        summary: "netzwoche.ch (13. Mai 2026): 'KI-Entlassungen steigern nicht die Rendite' – Gartner-Analyse: 80% der Unternehmen mit KI-Automatisierung haben Stellen abgebaut, doch das allein erhöht den ROI nicht. Erfolgreiche Firmen unterscheiden sich durch strategische Investitionen in Kompetenzen, neue Rollen und Organisationsstrukturen – sie befähigen Mitarbeitende, KI-Systeme zu steuern und weiterzuentwickeln. Direktes Thought-Leadership-Fundament für learnfluencer.ch: KI-Kompetenzaufbau und Lernfähigkeit schlagen blossen Stellenabbau als ROI-Treiber.",
+        source: "netzwoche.ch",
+        url: "https://www.netzwoche.ch/news/2026-05-13/ki-entlassungen-steigern-nicht-die-rendite",
+        date: "2026-05-13",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-05-18",
+      },
+      {
+        summary: "netzwoche.ch (4. Mai 2026): 'KI im Arbeitsalltag: Profis zeigen den Weg zu echtem Mehrwert' – Wer KI sinnvoll im Arbeitsalltag einsetzt, ist messbar produktiver. Der Schlüssel liegt nicht in der Technologie, sondern in der Kompetenz, KI gezielt einzusetzen und dabei menschliche Kreativität, Intuition und Interaktion zu nutzen. Netzwoche-Praxisbericht unterstreicht die Nachfrage nach KI-Lernkompetenz als zentralem Themenfeld von learnfluencer.ch.",
+        source: "netzwoche.ch",
+        url: "https://www.netzwoche.ch/news/2026-05-04/ki-im-arbeitsalltag-profis-zeigen-den-weg-zu-echtem-mehrwert",
+        date: "2026-05-04",
+        category: "Lernkompetenz & KI",
+        addedAt: "2026-05-18",
+      },
       {
         summary: "alice.ch / SVEB (2026-03): 'SVEB-Hackathon: KI in der Weiterbildung' – Am 11./12. März 2026 organisierte der Schweizerische Verband für Weiterbildung (SVEB) seinen ersten Hackathon zu KI-Potenzialen in der Weiterbildung in Zürich. Zeigt, dass KI in der Schweizer Weiterbildungsszene ganz oben auf der Agenda steht – direkter Anknüpfungspunkt für learnfluencer-Content zu Lernkompetenz und KI.",
         source: "alice.ch",
